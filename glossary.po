@@ -321,7 +321,13 @@ msgid ""
 "characterized by the presence of many :keyword:`try` and :keyword:`except` "
 "statements.  The technique contrasts with the :term:`LBYL` style common to "
 "many other languages such as C."
-msgstr ""
+msgstr "Il est plus simple de demander pardon que demander permission. Ce "
+"style de développement Python fait l'hypothèse que le code est valide, et "
+"attrape les exceptions si cette hypothèse s'avère fausse. Ce style, propre "
+"et efficace, est caractérisé par la présence de beaucoup de mot clé "
+":keyword:`try` et :keyword:`except`. Cette technique de programmation "
+"contraste avec le style :term:`LBYL` présent courament dans des langages "
+"tel que C."
 
 #: ../src/Doc/glossary.rst:187
 #, fuzzy
