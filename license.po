@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-16 12:13\n"
+"POT-Creation-Date: 2012-10-16 20:12\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.7.0\n"
 
-#: ../Doc/license.rst:7
+#: ../src/Doc/license.rst:7
 msgid "History and License"
 msgstr "Histoire et Licence"
 
-#: ../Doc/license.rst:11
+#: ../src/Doc/license.rst:11
 msgid "History of the software"
 msgstr "Histoire du logiciel"
 
-#: ../Doc/license.rst:13
+#: ../src/Doc/license.rst:13
 msgid ""
 "Python was created in the early 1990s by Guido van Rossum at Stichting "
 "Mathematisch Centrum (CWI, see http://www.cwi.nl/) in the Netherlands as a "
@@ -38,7 +38,7 @@ msgstr ""
 "Python, bien qu'il inclut de nombreuses contributions de la part d'autres "
 "personnes."
 
-#: ../Doc/license.rst:18
+#: ../src/Doc/license.rst:18
 msgid ""
 "In 1995, Guido continued his work on Python at the Corporation for National "
 "Research Initiatives (CNRI, see http://www.cnri.reston.va.us/) in Reston, "
@@ -48,7 +48,7 @@ msgstr ""
 "Research Initiatives (CNRI, voir http://www.cnri.reston.va.us/) de Reston, "
 "en Viriginie, d'où il diffusa plusieurs versions du logiciel."
 
-#: ../Doc/license.rst:22
+#: ../src/Doc/license.rst:22
 msgid ""
 "In May 2000, Guido and the Python core development team moved to BeOpen.com "
 "to form the BeOpen PythonLabs team.  In October of the same year, the "
@@ -66,7 +66,7 @@ msgstr ""
 "s'agit d'une organisation à but non lucratif détenant les droits de "
 "propriété intellectuelle de Python. Zope Corporation en est un sponsor."
 
-#: ../Doc/license.rst:30
+#: ../src/Doc/license.rst:30
 msgid ""
 "All Python releases are Open Source (see http://www.opensource.org/ for the "
 "Open Source Definition). Historically, most, but not all, Python releases "
@@ -78,300 +78,322 @@ msgstr ""
 "toutes, des versions de Python ont également été compatible avec la GPL, le "
 "tableau ci-dessous résume les différentes versions."
 
-#: ../Doc/license.rst:35
+#: ../src/Doc/license.rst:35
 msgid "Release"
 msgstr "Version"
 
-#: ../Doc/license.rst:35
+#: ../src/Doc/license.rst:35
 msgid "Derived from"
 msgstr "Dérivé de"
 
-#: ../Doc/license.rst:35
+#: ../src/Doc/license.rst:35
 msgid "Year"
 msgstr "Année"
 
-#: ../Doc/license.rst:35
+#: ../src/Doc/license.rst:35
 msgid "Owner"
 msgstr "Propriétaire"
 
-#: ../Doc/license.rst:35
+#: ../src/Doc/license.rst:35
 #, fuzzy
 msgid "GPL compatible?"
 msgstr "Compatible avec la GPL ?"
 
-#: ../Doc/license.rst:37
+#: ../src/Doc/license.rst:37
 #, fuzzy
 msgid "0.9.0 thru 1.2"
 msgstr "0.9.0 à 1.2"
 
-#: ../Doc/license.rst:37
+#: ../src/Doc/license.rst:37
 #, fuzzy
 msgid "n/a"
 msgstr "n/a"
 
-#: ../Doc/license.rst:37
+#: ../src/Doc/license.rst:37
 msgid "1991-1995"
 msgstr "1991-1995"
 
-#: ../Doc/license.rst:37
+#: ../src/Doc/license.rst:37
 msgid "CWI"
 msgstr "CWI"
 
-#: ../Doc/license.rst:37 ../Doc/license.rst:39 ../Doc/license.rst:49
-#: ../Doc/license.rst:51 ../Doc/license.rst:53 ../Doc/license.rst:55
-#: ../Doc/license.rst:57 ../Doc/license.rst:59 ../Doc/license.rst:61
-#: ../Doc/license.rst:63 ../Doc/license.rst:65 ../Doc/license.rst:67
-#: ../Doc/license.rst:69 ../Doc/license.rst:71 ../Doc/license.rst:73
-#: ../Doc/license.rst:75 ../Doc/license.rst:77 ../Doc/license.rst:79
-#: ../Doc/license.rst:81 ../Doc/license.rst:83 ../Doc/license.rst:85
-#: ../Doc/license.rst:87 ../Doc/license.rst:89 ../Doc/license.rst:91
-#: ../Doc/license.rst:93 ../Doc/license.rst:95 ../Doc/license.rst:97
-#: ../Doc/license.rst:99 ../Doc/license.rst:101 ../Doc/license.rst:103
-#: ../Doc/license.rst:105
+#: ../src/Doc/license.rst:37 ../src/Doc/license.rst:39
+#: ../src/Doc/license.rst:49 ../src/Doc/license.rst:51
+#: ../src/Doc/license.rst:53 ../src/Doc/license.rst:55
+#: ../src/Doc/license.rst:57 ../src/Doc/license.rst:59
+#: ../src/Doc/license.rst:61 ../src/Doc/license.rst:63
+#: ../src/Doc/license.rst:65 ../src/Doc/license.rst:67
+#: ../src/Doc/license.rst:69 ../src/Doc/license.rst:71
+#: ../src/Doc/license.rst:73 ../src/Doc/license.rst:75
+#: ../src/Doc/license.rst:77 ../src/Doc/license.rst:79
+#: ../src/Doc/license.rst:81 ../src/Doc/license.rst:83
+#: ../src/Doc/license.rst:85 ../src/Doc/license.rst:87
+#: ../src/Doc/license.rst:89 ../src/Doc/license.rst:91
+#: ../src/Doc/license.rst:93 ../src/Doc/license.rst:95
+#: ../src/Doc/license.rst:97 ../src/Doc/license.rst:99
+#: ../src/Doc/license.rst:101 ../src/Doc/license.rst:103
+#: ../src/Doc/license.rst:105
 #, fuzzy
 msgid "yes"
 msgstr "oui"
 
-#: ../Doc/license.rst:39
+#: ../src/Doc/license.rst:39
 #, fuzzy
 msgid "1.3 thru 1.5.2"
 msgstr "1.3 à 1.5.2"
 
-#: ../Doc/license.rst:39
+#: ../src/Doc/license.rst:39
 msgid "1.2"
 msgstr "1.2"
 
-#: ../Doc/license.rst:39
+#: ../src/Doc/license.rst:39
 msgid "1995-1999"
 msgstr "1995-1999"
 
-#: ../Doc/license.rst:39 ../Doc/license.rst:41 ../Doc/license.rst:45
+#: ../src/Doc/license.rst:39 ../src/Doc/license.rst:41
+#: ../src/Doc/license.rst:45
 msgid "CNRI"
 msgstr "CNRI"
 
-#: ../Doc/license.rst:41 ../Doc/license.rst:43 ../Doc/license.rst:45
+#: ../src/Doc/license.rst:41 ../src/Doc/license.rst:43
+#: ../src/Doc/license.rst:45
 msgid "1.6"
 msgstr "1.6"
 
-#: ../Doc/license.rst:41
+#: ../src/Doc/license.rst:41
 msgid "1.5.2"
 msgstr "1.5.2"
 
-#: ../Doc/license.rst:41 ../Doc/license.rst:43
+#: ../src/Doc/license.rst:41 ../src/Doc/license.rst:43
 msgid "2000"
 msgstr "2000"
 
-#: ../Doc/license.rst:41 ../Doc/license.rst:43 ../Doc/license.rst:45
-#: ../Doc/license.rst:47
+#: ../src/Doc/license.rst:41 ../src/Doc/license.rst:43
+#: ../src/Doc/license.rst:45 ../src/Doc/license.rst:47
 msgid "no"
 msgstr "non"
 
-#: ../Doc/license.rst:43
+#: ../src/Doc/license.rst:43
 msgid "2.0"
 msgstr "2.0"
 
-#: ../Doc/license.rst:43
+#: ../src/Doc/license.rst:43
 msgid "BeOpen.com"
 msgstr "BeOpen.com"
 
-#: ../Doc/license.rst:45
+#: ../src/Doc/license.rst:45
 msgid "1.6.1"
 msgstr "1.6.1"
 
-#: ../Doc/license.rst:45 ../Doc/license.rst:47 ../Doc/license.rst:49
-#: ../Doc/license.rst:51 ../Doc/license.rst:53
+#: ../src/Doc/license.rst:45 ../src/Doc/license.rst:47
+#: ../src/Doc/license.rst:49 ../src/Doc/license.rst:51
+#: ../src/Doc/license.rst:53
 msgid "2001"
 msgstr "2001"
 
-#: ../Doc/license.rst:47
+#: ../src/Doc/license.rst:47
 msgid "2.1"
 msgstr "2.1"
 
-#: ../Doc/license.rst:47 ../Doc/license.rst:49
+#: ../src/Doc/license.rst:47 ../src/Doc/license.rst:49
 msgid "2.0+1.6.1"
 msgstr "2.0+1.6.1"
 
-#: ../Doc/license.rst:47 ../Doc/license.rst:49 ../Doc/license.rst:51
-#: ../Doc/license.rst:53 ../Doc/license.rst:55 ../Doc/license.rst:57
-#: ../Doc/license.rst:59 ../Doc/license.rst:61 ../Doc/license.rst:63
-#: ../Doc/license.rst:65 ../Doc/license.rst:67 ../Doc/license.rst:69
-#: ../Doc/license.rst:71 ../Doc/license.rst:73 ../Doc/license.rst:75
-#: ../Doc/license.rst:77 ../Doc/license.rst:79 ../Doc/license.rst:81
-#: ../Doc/license.rst:83 ../Doc/license.rst:85 ../Doc/license.rst:87
-#: ../Doc/license.rst:89 ../Doc/license.rst:91 ../Doc/license.rst:93
-#: ../Doc/license.rst:95 ../Doc/license.rst:97 ../Doc/license.rst:99
-#: ../Doc/license.rst:101 ../Doc/license.rst:103 ../Doc/license.rst:105
+#: ../src/Doc/license.rst:47 ../src/Doc/license.rst:49
+#: ../src/Doc/license.rst:51 ../src/Doc/license.rst:53
+#: ../src/Doc/license.rst:55 ../src/Doc/license.rst:57
+#: ../src/Doc/license.rst:59 ../src/Doc/license.rst:61
+#: ../src/Doc/license.rst:63 ../src/Doc/license.rst:65
+#: ../src/Doc/license.rst:67 ../src/Doc/license.rst:69
+#: ../src/Doc/license.rst:71 ../src/Doc/license.rst:73
+#: ../src/Doc/license.rst:75 ../src/Doc/license.rst:77
+#: ../src/Doc/license.rst:79 ../src/Doc/license.rst:81
+#: ../src/Doc/license.rst:83 ../src/Doc/license.rst:85
+#: ../src/Doc/license.rst:87 ../src/Doc/license.rst:89
+#: ../src/Doc/license.rst:91 ../src/Doc/license.rst:93
+#: ../src/Doc/license.rst:95 ../src/Doc/license.rst:97
+#: ../src/Doc/license.rst:99 ../src/Doc/license.rst:101
+#: ../src/Doc/license.rst:103 ../src/Doc/license.rst:105
 msgid "PSF"
 msgstr "PSF"
 
-#: ../Doc/license.rst:49
+#: ../src/Doc/license.rst:49
 msgid "2.0.1"
 msgstr "2.0.1"
 
-#: ../Doc/license.rst:51 ../Doc/license.rst:53 ../Doc/license.rst:55
+#: ../src/Doc/license.rst:51 ../src/Doc/license.rst:53
+#: ../src/Doc/license.rst:55
 msgid "2.1.1"
 msgstr "2.1.1"
 
-#: ../Doc/license.rst:51
+#: ../src/Doc/license.rst:51
 msgid "2.1+2.0.1"
 msgstr "2.1+2.0.1"
 
-#: ../Doc/license.rst:53 ../Doc/license.rst:59
+#: ../src/Doc/license.rst:53 ../src/Doc/license.rst:59
 msgid "2.2"
 msgstr "2.2"
 
-#: ../Doc/license.rst:55 ../Doc/license.rst:57
+#: ../src/Doc/license.rst:55 ../src/Doc/license.rst:57
 msgid "2.1.2"
 msgstr "2.1.2"
 
-#: ../Doc/license.rst:55 ../Doc/license.rst:57 ../Doc/license.rst:59
-#: ../Doc/license.rst:61
+#: ../src/Doc/license.rst:55 ../src/Doc/license.rst:57
+#: ../src/Doc/license.rst:59 ../src/Doc/license.rst:61
 msgid "2002"
 msgstr "2002"
 
-#: ../Doc/license.rst:57
+#: ../src/Doc/license.rst:57
 msgid "2.1.3"
 msgstr "2.1.3"
 
-#: ../Doc/license.rst:59 ../Doc/license.rst:61
+#: ../src/Doc/license.rst:59 ../src/Doc/license.rst:61
 msgid "2.2.1"
 msgstr "2.2.1"
 
-#: ../Doc/license.rst:61 ../Doc/license.rst:63 ../Doc/license.rst:65
+#: ../src/Doc/license.rst:61 ../src/Doc/license.rst:63
+#: ../src/Doc/license.rst:65
 msgid "2.2.2"
 msgstr "2.2.2"
 
-#: ../Doc/license.rst:63
+#: ../src/Doc/license.rst:63
 msgid "2.2.3"
 msgstr "2.2.3"
 
-#: ../Doc/license.rst:63 ../Doc/license.rst:65 ../Doc/license.rst:67
+#: ../src/Doc/license.rst:63 ../src/Doc/license.rst:65
+#: ../src/Doc/license.rst:67
 msgid "2002-2003"
 msgstr "2002-2003"
 
-#: ../Doc/license.rst:65 ../Doc/license.rst:67 ../Doc/license.rst:77
+#: ../src/Doc/license.rst:65 ../src/Doc/license.rst:67
+#: ../src/Doc/license.rst:77
 msgid "2.3"
 msgstr "2.3"
 
-#: ../Doc/license.rst:67 ../Doc/license.rst:69
+#: ../src/Doc/license.rst:67 ../src/Doc/license.rst:69
 msgid "2.3.1"
 msgstr "2.3.1"
 
-#: ../Doc/license.rst:69 ../Doc/license.rst:71
+#: ../src/Doc/license.rst:69 ../src/Doc/license.rst:71
 msgid "2.3.2"
 msgstr "2.3.2"
 
-#: ../Doc/license.rst:69 ../Doc/license.rst:71
+#: ../src/Doc/license.rst:69 ../src/Doc/license.rst:71
 msgid "2003"
 msgstr "2003"
 
-#: ../Doc/license.rst:71 ../Doc/license.rst:73
+#: ../src/Doc/license.rst:71 ../src/Doc/license.rst:73
 msgid "2.3.3"
 msgstr "2.3.3"
 
-#: ../Doc/license.rst:73 ../Doc/license.rst:75
+#: ../src/Doc/license.rst:73 ../src/Doc/license.rst:75
 msgid "2.3.4"
 msgstr "2.3.4"
 
-#: ../Doc/license.rst:73 ../Doc/license.rst:77
+#: ../src/Doc/license.rst:73 ../src/Doc/license.rst:77
 msgid "2004"
 msgstr "2004"
 
-#: ../Doc/license.rst:75
+#: ../src/Doc/license.rst:75
 msgid "2.3.5"
 msgstr "2.3.5"
 
-#: ../Doc/license.rst:75 ../Doc/license.rst:79 ../Doc/license.rst:81
+#: ../src/Doc/license.rst:75 ../src/Doc/license.rst:79
+#: ../src/Doc/license.rst:81
 msgid "2005"
 msgstr "2005"
 
-#: ../Doc/license.rst:77 ../Doc/license.rst:79 ../Doc/license.rst:87
+#: ../src/Doc/license.rst:77 ../src/Doc/license.rst:79
+#: ../src/Doc/license.rst:87
 msgid "2.4"
 msgstr "2.4"
 
-#: ../Doc/license.rst:79 ../Doc/license.rst:81
+#: ../src/Doc/license.rst:79 ../src/Doc/license.rst:81
 msgid "2.4.1"
 msgstr "2.4.1"
 
-#: ../Doc/license.rst:81 ../Doc/license.rst:83
+#: ../src/Doc/license.rst:81 ../src/Doc/license.rst:83
 msgid "2.4.2"
 msgstr "2.4.2"
 
-#: ../Doc/license.rst:83 ../Doc/license.rst:85
+#: ../src/Doc/license.rst:83 ../src/Doc/license.rst:85
 msgid "2.4.3"
 msgstr "2.4.3"
 
-#: ../Doc/license.rst:83 ../Doc/license.rst:85 ../Doc/license.rst:87
+#: ../src/Doc/license.rst:83 ../src/Doc/license.rst:85
+#: ../src/Doc/license.rst:87
 msgid "2006"
 msgstr "2006"
 
-#: ../Doc/license.rst:85
+#: ../src/Doc/license.rst:85
 msgid "2.4.4"
 msgstr "2.4.4"
 
-#: ../Doc/license.rst:87 ../Doc/license.rst:89 ../Doc/license.rst:95
+#: ../src/Doc/license.rst:87 ../src/Doc/license.rst:89
+#: ../src/Doc/license.rst:95
 msgid "2.5"
 msgstr "2.5"
 
-#: ../Doc/license.rst:89 ../Doc/license.rst:91
+#: ../src/Doc/license.rst:89 ../src/Doc/license.rst:91
 msgid "2.5.1"
 msgstr "2.5.1"
 
-#: ../Doc/license.rst:89
+#: ../src/Doc/license.rst:89
 msgid "2007"
 msgstr "2007"
 
-#: ../Doc/license.rst:91 ../Doc/license.rst:93
+#: ../src/Doc/license.rst:91 ../src/Doc/license.rst:93
 #, fuzzy
 msgid "2.5.2"
 msgstr "1.5.2"
 
-#: ../Doc/license.rst:91 ../Doc/license.rst:93 ../Doc/license.rst:95
-#: ../Doc/license.rst:97
+#: ../src/Doc/license.rst:91 ../src/Doc/license.rst:93
+#: ../src/Doc/license.rst:95 ../src/Doc/license.rst:97
 msgid "2008"
 msgstr "2008"
 
-#: ../Doc/license.rst:93
+#: ../src/Doc/license.rst:93
 #, fuzzy
 msgid "2.5.3"
 msgstr "2.5.1"
 
-#: ../Doc/license.rst:95 ../Doc/license.rst:97 ../Doc/license.rst:105
+#: ../src/Doc/license.rst:95 ../src/Doc/license.rst:97
+#: ../src/Doc/license.rst:105
 msgid "2.6"
 msgstr "2.6"
 
-#: ../Doc/license.rst:97 ../Doc/license.rst:99
+#: ../src/Doc/license.rst:97 ../src/Doc/license.rst:99
 msgid "2.6.1"
 msgstr "2.6.1"
 
-#: ../Doc/license.rst:99 ../Doc/license.rst:101
+#: ../src/Doc/license.rst:99 ../src/Doc/license.rst:101
 msgid "2.6.2"
 msgstr "2.6.2"
 
-#: ../Doc/license.rst:99 ../Doc/license.rst:101
+#: ../src/Doc/license.rst:99 ../src/Doc/license.rst:101
 msgid "2009"
 msgstr "2009"
 
-#: ../Doc/license.rst:101 ../Doc/license.rst:103
+#: ../src/Doc/license.rst:101 ../src/Doc/license.rst:103
 msgid "2.6.3"
 msgstr "2.6.3"
 
-#: ../Doc/license.rst:103
+#: ../src/Doc/license.rst:103
 msgid "2.6.4"
 msgstr "2.6.4"
 
 # 27e639c70836404ebf02971a9c77c682
 # 05ec1ee130a04168b3f577d2911bcf1e
-#: ../Doc/license.rst:103 ../Doc/license.rst:105
+#: ../src/Doc/license.rst:103 ../src/Doc/license.rst:105
 msgid "2010"
 msgstr ""
 
-#: ../Doc/license.rst:105
+#: ../src/Doc/license.rst:105
 #, fuzzy
 msgid "2.7"
 msgstr "2.0"
 
-#: ../Doc/license.rst:110
+#: ../src/Doc/license.rst:110
 msgid ""
 "GPL-compatible doesn't mean that we're distributing Python under the GPL.  "
 "All Python licenses, unlike the GPL, let you distribute a modified version "
@@ -386,7 +408,7 @@ msgstr ""
 "autre logiciel qui est lui, diffusé sous la licence GPL; les licences \"non "
 "compatible GPL\" ne le peuvent pas."
 
-#: ../Doc/license.rst:116
+#: ../src/Doc/license.rst:116
 #, fuzzy
 msgid ""
 "Thanks to the many outside volunteers who have worked under Guido's "
@@ -395,11 +417,11 @@ msgstr ""
 "Merci aux nombreux bénévoles qui ont travaillé sous la direction de Guido "
 "pour rendre ces versions possibles."
 
-#: ../Doc/license.rst:121
+#: ../src/Doc/license.rst:121
 msgid "Terms and conditions for accessing or otherwise using Python"
 msgstr ""
 
-#: ../Doc/license.rst:126
+#: ../src/Doc/license.rst:126
 msgid ""
 "This LICENSE AGREEMENT is between the Python Software Foundation (\"PSF\"), "
 "and the Individual or Organization (\"Licensee\") accessing and otherwise "
@@ -408,7 +430,7 @@ msgid ""
 msgstr ""
 
 # 39c409624663462386929ec15ab66641
-#: ../Doc/license.rst:130
+#: ../src/Doc/license.rst:130
 msgid ""
 "Subject to the terms and conditions of this License Agreement, PSF hereby "
 "grants Licensee a nonexclusive, royalty-free, world-wide license to "
@@ -420,7 +442,7 @@ msgid ""
 "in any derivative version prepared by Licensee."
 msgstr ""
 
-#: ../Doc/license.rst:139
+#: ../src/Doc/license.rst:139
 msgid ""
 "In the event Licensee prepares a derivative work that is based on or "
 "incorporates Python |release| or any part thereof, and wants to make the "
@@ -429,7 +451,7 @@ msgid ""
 "Python |release|."
 msgstr ""
 
-#: ../Doc/license.rst:145
+#: ../src/Doc/license.rst:145
 msgid ""
 "PSF is making Python |release| available to Licensee on an \"AS IS\" basis. "
 "PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF "
@@ -438,7 +460,7 @@ msgid ""
 "THE USE OF PYTHON |release| WILL NOT INFRINGE ANY THIRD PARTY RIGHTS."
 msgstr ""
 
-#: ../Doc/license.rst:151
+#: ../src/Doc/license.rst:151
 msgid ""
 "PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON |release| "
 "FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF "
@@ -446,13 +468,14 @@ msgid ""
 "DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF."
 msgstr ""
 
-#: ../Doc/license.rst:156 ../Doc/license.rst:197 ../Doc/license.rst:253
+#: ../src/Doc/license.rst:156 ../src/Doc/license.rst:197
+#: ../src/Doc/license.rst:253
 msgid ""
 "This License Agreement will automatically terminate upon a material breach "
 "of its terms and conditions."
 msgstr ""
 
-#: ../Doc/license.rst:159
+#: ../src/Doc/license.rst:159
 msgid ""
 "Nothing in this License Agreement shall be deemed to create any relationship "
 "of agency, partnership, or joint venture between PSF and Licensee.  This "
@@ -461,13 +484,13 @@ msgid ""
 "Licensee, or any third party."
 msgstr ""
 
-#: ../Doc/license.rst:165
+#: ../src/Doc/license.rst:165
 msgid ""
 "By copying, installing or otherwise using Python |release|, Licensee agrees "
 "to be bound by the terms and conditions of this License Agreement."
 msgstr ""
 
-#: ../Doc/license.rst:174
+#: ../src/Doc/license.rst:174
 msgid ""
 "This LICENSE AGREEMENT is between BeOpen.com (\"BeOpen\"), having an office "
 "at 160 Saratoga Avenue, Santa Clara, CA 95051, and the Individual or "
@@ -475,7 +498,7 @@ msgid ""
 "source or binary form and its associated documentation (\"the Software\")."
 msgstr ""
 
-#: ../Doc/license.rst:179
+#: ../src/Doc/license.rst:179
 msgid ""
 "Subject to the terms and conditions of this BeOpen Python License Agreement, "
 "BeOpen hereby grants Licensee a non-exclusive, royalty-free, world-wide "
@@ -486,7 +509,7 @@ msgid ""
 "prepared by Licensee."
 msgstr ""
 
-#: ../Doc/license.rst:186
+#: ../src/Doc/license.rst:186
 msgid ""
 "BeOpen is making the Software available to Licensee on an \"AS IS\" basis. "
 "BEOPEN MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY "
@@ -496,7 +519,7 @@ msgid ""
 "RIGHTS."
 msgstr ""
 
-#: ../Doc/license.rst:192
+#: ../src/Doc/license.rst:192
 msgid ""
 "BEOPEN SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF THE SOFTWARE "
 "FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF "
@@ -504,7 +527,7 @@ msgid ""
 "EVEN IF ADVISED OF THE POSSIBILITY THEREOF."
 msgstr ""
 
-#: ../Doc/license.rst:200
+#: ../src/Doc/license.rst:200
 msgid ""
 "This License Agreement shall be governed by and interpreted in all respects "
 "by the law of the State of California, excluding conflict of law provisions. "
@@ -517,13 +540,13 @@ msgid ""
 "according to the permissions granted on that web page."
 msgstr ""
 
-#: ../Doc/license.rst:210
+#: ../src/Doc/license.rst:210
 msgid ""
 "By copying, installing or otherwise using the software, Licensee agrees to "
 "be bound by the terms and conditions of this License Agreement."
 msgstr ""
 
-#: ../Doc/license.rst:216
+#: ../src/Doc/license.rst:216
 msgid ""
 "This LICENSE AGREEMENT is between the Corporation for National Research "
 "Initiatives, having an office at 1895 Preston White Drive, Reston, VA 20191 "
@@ -532,7 +555,7 @@ msgid ""
 "associated documentation."
 msgstr ""
 
-#: ../Doc/license.rst:222
+#: ../src/Doc/license.rst:222
 msgid ""
 "Subject to the terms and conditions of this License Agreement, CNRI hereby "
 "grants Licensee a nonexclusive, royalty-free, world-wide license to "
@@ -551,7 +574,7 @@ msgid ""
 "URL: http://hdl.handle.net/1895.22/1013.\""
 msgstr ""
 
-#: ../Doc/license.rst:237
+#: ../src/Doc/license.rst:237
 msgid ""
 "In the event Licensee prepares a derivative work that is based on or "
 "incorporates Python 1.6.1 or any part thereof, and wants to make the "
@@ -560,7 +583,7 @@ msgid ""
 "Python 1.6.1."
 msgstr ""
 
-#: ../Doc/license.rst:242
+#: ../src/Doc/license.rst:242
 msgid ""
 "CNRI is making Python 1.6.1 available to Licensee on an \"AS IS\" basis.  "
 "CNRI MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF "
@@ -569,7 +592,7 @@ msgid ""
 "THE USE OF PYTHON 1.6.1 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS."
 msgstr ""
 
-#: ../Doc/license.rst:248
+#: ../src/Doc/license.rst:248
 msgid ""
 "CNRI SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 1.6.1 FOR "
 "ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF "
@@ -577,7 +600,7 @@ msgid ""
 "THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF."
 msgstr ""
 
-#: ../Doc/license.rst:256
+#: ../src/Doc/license.rst:256
 msgid ""
 "This License Agreement shall be governed by the federal intellectual "
 "property law of the United States, including without limitation the federal "
@@ -595,20 +618,20 @@ msgid ""
 "products or services of Licensee, or any third party."
 msgstr ""
 
-#: ../Doc/license.rst:271
+#: ../src/Doc/license.rst:271
 msgid ""
 "By clicking on the \"ACCEPT\" button where indicated, or by copying, "
 "installing or otherwise using Python 1.6.1, Licensee agrees to be bound by "
 "the terms and conditions of this License Agreement."
 msgstr ""
 
-#: ../Doc/license.rst:281
+#: ../src/Doc/license.rst:281
 msgid ""
 "Copyright © 1991 - 1995, Stichting Mathematisch Centrum Amsterdam, The "
 "Netherlands.  All rights reserved."
 msgstr ""
 
-#: ../Doc/license.rst:284
+#: ../src/Doc/license.rst:284
 msgid ""
 "Permission to use, copy, modify, and distribute this software and its "
 "documentation for any purpose and without fee is hereby granted, provided "
@@ -619,7 +642,7 @@ msgid ""
 "software without specific, written prior permission."
 msgstr ""
 
-#: ../Doc/license.rst:292
+#: ../src/Doc/license.rst:292
 msgid ""
 "STICHTING MATHEMATISCH CENTRUM DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS "
 "SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, "
@@ -630,125 +653,126 @@ msgid ""
 "PERFORMANCE OF THIS SOFTWARE."
 msgstr ""
 
-#: ../Doc/license.rst:302
+#: ../src/Doc/license.rst:302
 msgid "Licenses and Acknowledgements for Incorporated Software"
 msgstr ""
 
-#: ../Doc/license.rst:304
+#: ../src/Doc/license.rst:304
 msgid ""
 "This section is an incomplete, but growing list of licenses and "
 "acknowledgements for third-party software incorporated in the Python "
 "distribution."
 msgstr ""
 
-#: ../Doc/license.rst:309
+#: ../src/Doc/license.rst:309
 msgid "Mersenne Twister"
 msgstr ""
 
-#: ../Doc/license.rst:311
+# fbf1b3f6f8a0432ebd6e7974eb4e7af1
+#: ../src/Doc/license.rst:311
 msgid ""
 "The :mod:`_random` module includes code based on a download from http://www."
-"math.keio.ac.jp/ matumoto/MT2002/emt19937ar.html. The following are the "
-"verbatim comments from the original code::"
+"math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html. The following "
+"are the verbatim comments from the original code::"
 msgstr ""
 
-#: ../Doc/license.rst:358
+#: ../src/Doc/license.rst:358
 msgid "Sockets"
 msgstr ""
 
-#: ../Doc/license.rst:360
+#: ../src/Doc/license.rst:360
 msgid ""
 "The :mod:`socket` module uses the functions, :func:`getaddrinfo`, and :func:"
 "`getnameinfo`, which are coded in separate source files from the WIDE "
 "Project, http://www.wide.ad.jp/. ::"
 msgstr ""
 
-#: ../Doc/license.rst:393
+#: ../src/Doc/license.rst:393
 msgid "Floating point exception control"
 msgstr ""
 
-#: ../Doc/license.rst:395
+#: ../src/Doc/license.rst:395
 msgid "The source for the :mod:`fpectl` module includes the following notice::"
 msgstr ""
 
 # 6b416180dd9e4daeb96b7e8131ef6c9b
-#: ../Doc/license.rst:435
+#: ../src/Doc/license.rst:435
 msgid "MD5 message digest algorithm"
 msgstr ""
 
 # b222353a8f12446c90580e78773f4521
-#: ../Doc/license.rst:437
+#: ../src/Doc/license.rst:437
 msgid ""
 "The source code for the :mod:`md5` module contains the following notice::"
 msgstr ""
 
-#: ../Doc/license.rst:485
+#: ../src/Doc/license.rst:485
 msgid "Asynchronous socket services"
 msgstr ""
 
-#: ../Doc/license.rst:487
+#: ../src/Doc/license.rst:487
 msgid ""
 "The :mod:`asynchat` and :mod:`asyncore` modules contain the following "
 "notice::"
 msgstr ""
 
-#: ../Doc/license.rst:512
+#: ../src/Doc/license.rst:512
 msgid "Cookie management"
 msgstr ""
 
 # ba4a8011b0184670b103398e98828287
-#: ../Doc/license.rst:514
+#: ../src/Doc/license.rst:514
 msgid "The :mod:`Cookie` module contains the following notice::"
 msgstr ""
 
-#: ../Doc/license.rst:540
+#: ../src/Doc/license.rst:540
 msgid "Execution tracing"
 msgstr ""
 
-#: ../Doc/license.rst:542
+#: ../src/Doc/license.rst:542
 msgid "The :mod:`trace` module contains the following notice::"
 msgstr ""
 
-#: ../Doc/license.rst:573
+#: ../src/Doc/license.rst:573
 msgid "UUencode and UUdecode functions"
 msgstr ""
 
-#: ../Doc/license.rst:575
+#: ../src/Doc/license.rst:575
 msgid "The :mod:`uu` module contains the following notice::"
 msgstr ""
 
-#: ../Doc/license.rst:603
+#: ../src/Doc/license.rst:603
 msgid "XML Remote Procedure Calls"
 msgstr ""
 
 # 375bd7d6785647eaa721e0e2623550cb
-#: ../Doc/license.rst:605
+#: ../src/Doc/license.rst:605
 msgid "The :mod:`xmlrpclib` module contains the following notice::"
 msgstr ""
 
-#: ../Doc/license.rst:636
+#: ../src/Doc/license.rst:636
 msgid "test_epoll"
 msgstr ""
 
-#: ../Doc/license.rst:638
+#: ../src/Doc/license.rst:638
 msgid "The :mod:`test_epoll` contains the following notice::"
 msgstr ""
 
-#: ../Doc/license.rst:662
+#: ../src/Doc/license.rst:662
 msgid "Select kqueue"
 msgstr ""
 
-#: ../Doc/license.rst:664
+#: ../src/Doc/license.rst:664
 msgid ""
 "The :mod:`select` and contains the following notice for the kqueue "
 "interface::"
 msgstr ""
 
-#: ../Doc/license.rst:692
+#: ../src/Doc/license.rst:692
 msgid "strtod and dtoa"
 msgstr ""
 
-#: ../Doc/license.rst:694
+#: ../src/Doc/license.rst:694
 msgid ""
 "The file :file:`Python/dtoa.c`, which supplies C functions dtoa and strtod "
 "for conversion of C doubles to and from strings, is derived from the file of "
@@ -758,12 +782,12 @@ msgid ""
 msgstr ""
 
 # 12c5d6d0c96942009d84603a70745861
-#: ../Doc/license.rst:722
+#: ../src/Doc/license.rst:722
 msgid "OpenSSL"
 msgstr ""
 
 # fc563fc0d9fd4fc09192ba1ab49cafac
-#: ../Doc/license.rst:724
+#: ../src/Doc/license.rst:724
 msgid ""
 "The modules :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` use the "
 "OpenSSL library for added performance if made available by the operating "
@@ -772,36 +796,36 @@ msgid ""
 msgstr ""
 
 # f459cf3fc215436f8b1dfa66ee66b586
-#: ../Doc/license.rst:859
+#: ../src/Doc/license.rst:859
 msgid "expat"
 msgstr ""
 
 # 1087fb15e6a6467999c67b9224f47847
-#: ../Doc/license.rst:861
+#: ../src/Doc/license.rst:861
 msgid ""
 "The :mod:`pyexpat` extension is built using an included copy of the expat "
 "sources unless the build is configured ``--with-system-expat``::"
 msgstr ""
 
 # c1f6ba7bce95499680d972ff8b19e2d8
-#: ../Doc/license.rst:888
+#: ../src/Doc/license.rst:888
 msgid "libffi"
 msgstr ""
 
 # 1914845bc0df4f0b8fe900750462de4a
-#: ../Doc/license.rst:890
+#: ../src/Doc/license.rst:890
 msgid ""
 "The :mod:`_ctypes` extension is built using an included copy of the libffi "
 "sources unless the build is configured ``--with-system-libffi``::"
 msgstr ""
 
 # 24241d4b3b1a48d187bdd8c7a1a03e7a
-#: ../Doc/license.rst:917
+#: ../src/Doc/license.rst:917
 msgid "zlib"
 msgstr ""
 
 # c548bcbf6fcd4e7c9b2df7b5daddc981
-#: ../Doc/license.rst:919
+#: ../src/Doc/license.rst:919
 msgid ""
 "The :mod:`zlib` extension is built using an included copy of the zlib "
 "sources if the zlib version found on the system is too old to be used for "
