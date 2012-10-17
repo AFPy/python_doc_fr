@@ -1,0 +1,1293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1990-2010, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-30 14:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.7.0\n"
+
+msgid "Building the documentation"
+msgstr "Construire la documentation"
+
+msgid "You need to have Python 2.4 or higher installed; the toolset used to build the docs is written in Python.  It is called *Sphinx*, it is not included in this tree, but maintained separately.  Also needed are the docutils, supplying the base markup that Sphinx uses, Jinja, a templating engine, and optionally Pygments, a code highlighter."
+msgstr ""
+"If vous faut Python 2.4 ou supérieur d’installé ; l’outil utilisé pour "
+"construire la documentation est écrit en Python. Il s’appele *Sphinx*, il "
+"n'est pas inclus dans cette arborescence mais maintenu séparément. Il faut "
+"également docutils, qui fournit le système de balisage de base utilisé par "
+"Sphinx, Jinja, un moteur de templates, et facultativement Pygments, un outil "
+"de coloration syntaxique."
+
+msgid "Using make"
+msgstr "Utiliser make"
+
+msgid "Luckily, a Makefile has been prepared so that on Unix, provided you have installed Python and Subversion, you can just run ::"
+msgstr ""
+"Heureusement un fichier Makefile existe, de façon à ce que sous Unix, si "
+"vous avez installé Python et Subversion, vous puissiez lancer ::"
+
+msgid "make html"
+msgstr "make html"
+
+msgid "to check out the necessary toolset in the `tools/` subdirectory and build the HTML output files.  To view the generated HTML, point your favorite browser at the top-level index `build/html/index.html` after running \"make\"."
+msgstr ""
+
+msgid "Available make targets are:"
+msgstr "Les différentes cibles de make sont :"
+
+msgid "\"html\", which builds standalone HTML files for offline viewing."
+msgstr ""
+"\"html\", qui construit les fichiers HTML permettant une consultation en mode "
+"déconnecté."
+
+msgid "\"htmlhelp\", which builds HTML files and a HTML Help project file usable to convert them into a single Compiled HTML (.chm) file -- these are popular under Microsoft Windows, but very handy on every platform."
+msgstr ""
+
+msgid "To create the CHM file, you need to run the Microsoft HTML Help Workshop over the generated project (.hhp) file."
+msgstr ""
+"Pour créer le fichier CHM, vous devez exécuter le Microsoft HTML Help "
+"Workshop sur le projet a généré (fichier .hhp)."
+
+#, fuzzy
+msgid "\"latex\", which builds LaTeX source files as input to \"pdflatex\" to produce PDF documents."
+msgstr ""
+"\"Latex\", qui fabrique des fichiers source LaTeX en entrée de \"pdflatex\" pour "
+"produire des documents PDF."
+
+#, fuzzy
+msgid "\"text\", which builds a plain text file for each source file."
+msgstr "«Texte», qui construit un fichier texte pour chaque fichier source."
+
+#, fuzzy
+msgid "\"linkcheck\", which checks all external references to see whether they are broken, redirected or malformed, and outputs this information to stdout as well as a plain-text (.txt) file."
+msgstr ""
+"\"Linkcheck\", qui vérifie toutes les références externes pour voir si elles "
+"sont brisées, redirigées ou mal formées, et sort ces informations sur la "
+"sortie standard ainsi qu'en texte brut (fichier .txt)."
+
+#, fuzzy
+msgid "\"changes\", which builds an overview over all versionadded/versionchanged/ deprecated items in the current version. This is meant as a help for the writer of the \"What's New\" document."
+msgstr ""
+"\"changes\", qui construit un aperçu sur tous les articles "
+"versionadded/versionchanged/deprecated dans la version actuelle. Ceci est "
+"conçu comme une aide pour l'auteur du document \"What's New\"."
+
+msgid "\"coverage\", which builds a coverage overview for standard library modules and C API."
+msgstr ""
+
+msgid "\"pydoc-topics\", which builds a Python module containing a dictionary with plain text documentation for the labels defined in `tools/sphinxext/pyspecific.py` -- pydoc needs these to show topic and keyword help."
+msgstr ""
+
+#, fuzzy
+msgid "A \"make update\" updates the Subversion checkouts in `tools/`."
+msgstr "Un \"make update\" met à jour les checkouts Subversion dans `tools/`."
+
+#, fuzzy
+msgid "Without make"
+msgstr "Sans make"
+
+msgid "You'll need to install the Sphinx package, either by checking it out via ::"
+msgstr ""
+"Vous aurez besoin d'installer le paquet Sphinx, avec la commande suivante::"
+
+msgid "svn co http://svn.python.org/projects/external/Sphinx-0.6.5/sphinx tools/sphinx"
+msgstr ""
+"svn co http://svn.python.org/projects/external/Sphinx-0.6.5/sphinx "
+"tools/sphinx"
+
+#, fuzzy
+msgid "or by installing it from PyPI."
+msgstr "ou en l'installant à partir PyPI."
+
+#, fuzzy
+msgid "Then, you need to install Docutils, either by checking it out via ::"
+msgstr "Ensuite, vous devez installer Docutils, avec la commande suivante::"
+
+msgid "svn co http://svn.python.org/projects/external/docutils-0.6/docutils tools/docutils"
+msgstr ""
+"svn co http://svn.python.org/projects/external/docutils-0.6/docutils "
+"tools/docutils"
+
+#, fuzzy
+msgid "or by installing it from http://docutils.sf.net/."
+msgstr "ou en l'installant à partir http://docutils.sf.net/."
+
+#, fuzzy
+msgid "You also need Jinja2, either by checking it out via ::"
+msgstr "Vous devez également de Jinja2, avec la commande suivante::"
+
+msgid "svn co http://svn.python.org/projects/external/Jinja-2.3.1/jinja2 tools/jinja2"
+msgstr ""
+"svn co http://svn.python.org/projects/external/Jinja-2.3.1/jinja2 "
+"tools/jinja2"
+
+#, fuzzy
+msgid "You can optionally also install Pygments, either as a checkout via ::"
+msgstr ""
+"Vous pouvez éventuellement installer Pygments, avec la commande suivante::"
+
+msgid "svn co http://svn.python.org/projects/external/Pygments-1.3.1/pygments tools/pygments"
+msgstr ""
+"svn co http://svn.python.org/projects/external/Pygments-1.3.1/pygments "
+"tools/pygments"
+
+#, fuzzy
+msgid "or from PyPI at http://pypi.python.org/pypi/Pygments."
+msgstr "ou à partir de PyPI à http://pypi.python.org/pypi/Pygments."
+
+#, fuzzy
+msgid "Then, make an output directory, e.g. under `build/`, and run ::"
+msgstr ""
+"Ensuite, faire un répertoire de sortie, par exemple sous `build/`, et "
+"lancer::"
+
+#, fuzzy
+msgid "python tools/sphinx-build.py -b<builder> . build/<outputdirectory>"
+msgstr "python tools/sphinx-build.py -b<builder>  . build/<outputdirectory>"
+
+msgid "where `<builder>` is one of html, text, latex, or htmlhelp (for explanations see the make targets above)."
+msgstr ""
+
+msgid "Differences to the LaTeX markup"
+msgstr ""
+
+msgid "Though the markup language is different, most of the concepts and markup types of the old LaTeX docs have been kept -- environments as reST directives, inline commands as reST roles and so forth."
+msgstr ""
+
+msgid "However, there are some differences in the way these work, partly due to the differences in the markup languages, partly due to improvements in Sphinx.  This section lists these differences, in order to give those familiar with the old format a quick overview of what they might run into."
+msgstr ""
+
+msgid "Inline markup"
+msgstr ""
+
+msgid "These changes have been made to inline markup:"
+msgstr ""
+
+msgid "**Cross-reference roles**"
+msgstr ""
+
+msgid "Most of the following semantic roles existed previously as inline commands, but didn't do anything except formatting the content as code.  Now, they cross-reference to known targets (some names have also been shortened):"
+msgstr ""
+
+msgid "*mod* (previously *refmodule* or *module*)"
+msgstr ""
+
+msgid "*func* (previously *function*)"
+msgstr ""
+
+msgid "*data* (new)"
+msgstr ""
+
+msgid "*const*"
+msgstr ""
+
+msgid "*class*"
+msgstr ""
+
+msgid "*meth* (previously *method*)"
+msgstr ""
+
+msgid "*attr* (previously *member*)"
+msgstr ""
+
+msgid "*exc* (previously *exception*)"
+msgstr ""
+
+msgid "*cdata*"
+msgstr ""
+
+msgid "*cfunc* (previously *cfunction*)"
+msgstr ""
+
+msgid "*cmacro* (previously *csimplemacro*)"
+msgstr ""
+
+msgid "*ctype*"
+msgstr ""
+
+msgid "Also different is the handling of *func* and *meth*: while previously parentheses were added to the callable name (like ``\\func{str()}``), they are now appended by the build system -- appending them in the source will result in double parentheses.  This also means that ``:func:`str(object)``` will not work as expected -- use ````str(object)```` instead!"
+msgstr ""
+
+msgid "**Inline commands implemented as directives**"
+msgstr ""
+
+msgid "These were inline commands in LaTeX, but are now directives in reST:"
+msgstr ""
+
+msgid "*deprecated*"
+msgstr ""
+
+msgid "*versionadded*"
+msgstr ""
+
+msgid "*versionchanged*"
+msgstr ""
+
+msgid "These are used like so::"
+msgstr ""
+
+msgid ".. deprecated:: 2.5    Reason of deprecation."
+msgstr ""
+
+msgid "Also, no period is appended to the text for *versionadded* and *versionchanged*."
+msgstr ""
+
+msgid "*note*"
+msgstr ""
+
+msgid "*warning*"
+msgstr ""
+
+msgid ".. note::     Content of note."
+msgstr ""
+
+msgid "**Otherwise changed commands**"
+msgstr ""
+
+msgid "The *samp* command previously formatted code and added quotation marks around it.  The *samp* role, however, features a new highlighting system just like *file* does:"
+msgstr ""
+
+msgid "``:samp:`open({filename}, {mode})``` results in :samp:`open({filename}, {mode})`"
+msgstr ""
+
+msgid "**Dropped commands**"
+msgstr ""
+
+msgid "These were commands in LaTeX, but are not available as roles:"
+msgstr ""
+
+msgid "*bfcode*"
+msgstr ""
+
+msgid "*character* (use :samp:`\\`\\`'c'\\`\\``)"
+msgstr ""
+
+msgid "*citetitle* (use ```Title <URL>`_``)"
+msgstr ""
+
+msgid "*code* (use ````code````)"
+msgstr ""
+
+msgid "*email* (just write the address in body text)"
+msgstr ""
+
+msgid "*filenq*"
+msgstr ""
+
+msgid "*filevar* (use the ``{...}`` highlighting feature of *file*)"
+msgstr ""
+
+msgid "*programopt*, *longprogramopt* (use *option*)"
+msgstr ""
+
+msgid "*ulink* (use ```Title <URL>`_``)"
+msgstr ""
+
+msgid "*url* (just write the URL in body text)"
+msgstr ""
+
+msgid "*var* (use ``*var*``)"
+msgstr ""
+
+msgid "*infinity*, *plusminus* (use the Unicode character)"
+msgstr ""
+
+msgid "*shortversion*, *version* (use the ``|version|`` and ``|release|`` substitutions)"
+msgstr ""
+
+msgid "*emph*, *strong* (use the reST markup)"
+msgstr ""
+
+msgid "**Backslash escaping**"
+msgstr ""
+
+msgid "In reST, a backslash must be escaped in normal text, and in the content of roles.  However, in code literals and literal blocks, it must not be escaped. Example: ``:file:`C:\\\\Temp\\\\my.tmp``` vs. ````open(\"C:\\Temp\\my.tmp\")````."
+msgstr ""
+
+msgid "Information units"
+msgstr ""
+
+msgid "Information units (*...desc* environments) have been made reST directives. These changes to information units should be noted:"
+msgstr ""
+
+msgid "**New names**"
+msgstr ""
+
+msgid "\"desc\" has been removed from every name.  Additionally, these directives have new names:"
+msgstr ""
+
+msgid "*cfunction* (previously *cfuncdesc*)"
+msgstr ""
+
+msgid "*cmacro* (previously *csimplemacrodesc*)"
+msgstr ""
+
+msgid "*exception* (previously *excdesc*)"
+msgstr ""
+
+msgid "*function* (previously *funcdesc*)"
+msgstr ""
+
+msgid "*attribute* (previously *memberdesc*)"
+msgstr ""
+
+msgid "The *classdesc\\** and *excclassdesc* environments have been dropped, the *class* and *exception* directives support classes documented with and without constructor arguments."
+msgstr ""
+
+msgid "**Multiple objects**"
+msgstr ""
+
+msgid "The equivalent of the *...line* commands is::"
+msgstr ""
+
+msgid ".. function:: do_foo(bar)               do_bar(baz)     Description of the functions."
+msgstr ""
+
+msgid "IOW, just give one signatures per line, at the same indentation level."
+msgstr ""
+
+msgid "**Arguments**"
+msgstr ""
+
+msgid "There is no *optional* command.  Just give function signatures like they should appear in the output::"
+msgstr ""
+
+msgid ".. function:: open(filename[, mode[, buffering]])     Description."
+msgstr ""
+
+msgid "Note: markup in the signature is not supported."
+msgstr ""
+
+msgid "**Indexing**"
+msgstr ""
+
+msgid "The *...descni* environments have been dropped.  To mark an information unit as unsuitable for index entry generation, use the *noindex* option like so::"
+msgstr ""
+
+msgid ".. function:: foo_*    :noindex:     Description."
+msgstr ""
+
+msgid "**New information units**"
+msgstr ""
+
+msgid "There are new generic information units: One is called \"describe\" and can be used to document things that are not covered by the other units::"
+msgstr ""
+
+msgid ".. describe:: a == b     The equals operator."
+msgstr ""
+
+msgid "The others are::"
+msgstr ""
+
+msgid ".. cmdoption:: -O     Describes a command-line option.  .. envvar:: PYTHONINSPECT     Describes an environment variable."
+msgstr ""
+
+msgid "Structure"
+msgstr ""
+
+msgid "The LaTeX docs were split in several toplevel manuals.  Now, all files are part of the same documentation tree, as indicated by the *toctree* directives in the sources (though individual output formats may choose to split them up into parts again).  Every *toctree* directive embeds other files as subdocuments of the current file (this structure is not necessarily mirrored in the filesystem layout).  The toplevel file is :file:`contents.rst`."
+msgstr ""
+
+msgid "However, most of the old directory structure has been kept, with the directories renamed as follows:"
+msgstr ""
+
+msgid ":file:`api` -> :file:`c-api`"
+msgstr ""
+
+msgid ":file:`dist` -> :file:`distutils`, with the single TeX file split up"
+msgstr ""
+
+msgid ":file:`doc` -> :file:`documenting`"
+msgstr ""
+
+msgid ":file:`ext` -> :file:`extending`"
+msgstr ""
+
+msgid ":file:`inst` -> :file:`installing`"
+msgstr ""
+
+msgid ":file:`lib` -> :file:`library`"
+msgstr ""
+
+msgid ":file:`mac` -> merged into :file:`library`, with :file:`mac/using.tex` moved to :file:`using/mac.rst`"
+msgstr ""
+
+msgid ":file:`ref` -> :file:`reference`"
+msgstr ""
+
+msgid ":file:`tut` -> :file:`tutorial`, with the single TeX file split up"
+msgstr ""
+
+msgid "Documenting Python"
+msgstr ""
+
+msgid "The Python language has a substantial body of documentation, much of it contributed by various authors. The markup used for the Python documentation is `reStructuredText`_, developed by the `docutils`_ project, amended by custom directives and using a toolset named `Sphinx`_ to postprocess the HTML output."
+msgstr ""
+
+msgid "This document describes the style guide for our documentation as well as the custom reStructuredText markup introduced by Sphinx to support Python documentation and how it should be used."
+msgstr ""
+
+msgid "If you're interested in contributing to Python's documentation, there's no need to write reStructuredText if you're not so inclined; plain text contributions are more than welcome as well.  Send an e-mail to docs@python.org or open an issue on the :ref:`tracker <reporting-bugs>`."
+msgstr ""
+
+msgid "Introduction"
+msgstr ""
+
+msgid "Python's documentation has long been considered to be good for a free programming language.  There are a number of reasons for this, the most important being the early commitment of Python's creator, Guido van Rossum, to providing documentation on the language and its libraries, and the continuing involvement of the user community in providing assistance for creating and maintaining documentation."
+msgstr ""
+
+msgid "The involvement of the community takes many forms, from authoring to bug reports to just plain complaining when the documentation could be more complete or easier to use."
+msgstr ""
+
+msgid "This document is aimed at authors and potential authors of documentation for Python.  More specifically, it is for people contributing to the standard documentation and developing additional documents using the same tools as the standard documents.  This guide will be less useful for authors using the Python documentation tools for topics other than Python, and less useful still for authors not using the tools at all."
+msgstr ""
+
+msgid "If your interest is in contributing to the Python documentation, but you don't have the time or inclination to learn reStructuredText and the markup structures documented here, there's a welcoming place for you among the Python contributors as well.  Any time you feel that you can clarify existing documentation or provide documentation that's missing, the existing documentation team will gladly work with you to integrate your text, dealing with the markup for you. Please don't let the material in this document stand between the documentation and your desire to help out!"
+msgstr ""
+
+msgid "Additional Markup Constructs"
+msgstr ""
+
+msgid "Sphinx adds a lot of new directives and interpreted text roles to standard reST markup.  This section contains the reference material for these facilities. Documentation for \"standard\" reST constructs is not included here, though they are used in the Python documentation."
+msgstr ""
+
+msgid "This is just an overview of Sphinx' extended markup capabilities; full coverage can be found in `its own documentation <http://sphinx.pocoo.org/contents.html>`_."
+msgstr ""
+
+msgid "Meta-information markup"
+msgstr ""
+
+msgid "Identifies the author of the current section.  The argument should include the author's name such that it can be used for presentation (though it isn't) and email address.  The domain name portion of the address should be lower case.  Example::"
+msgstr ""
+
+msgid ".. sectionauthor:: Guido van Rossum <guido@python.org>"
+msgstr ""
+
+msgid "Currently, this markup isn't reflected in the output in any way, but it helps keep track of contributions."
+msgstr ""
+
+msgid "Module-specific markup"
+msgstr ""
+
+msgid "The markup described in this section is used to provide information about a module being documented.  Each module should be documented in its own file. Normally this markup appears after the title heading of that file; a typical file might start like this::"
+msgstr ""
+
+msgid ":mod:`parrot` -- Dead parrot access ===================================  .. module:: parrot    :platform: Unix, Windows    :synopsis: Analyze and reanimate dead parrots. .. moduleauthor:: Eric Cleese <eric@python.invalid> .. moduleauthor:: John Idle <john@python.invalid>"
+msgstr ""
+
+msgid "As you can see, the module-specific markup consists of two directives, the ``module`` directive and the ``moduleauthor`` directive."
+msgstr ""
+
+msgid "This directive marks the beginning of the description of a module, package, or submodule. The name should be fully qualified (i.e. including the package name for submodules)."
+msgstr ""
+
+msgid "The ``platform`` option, if present, is a comma-separated list of the platforms on which the module is available (if it is available on all platforms, the option should be omitted).  The keys are short identifiers; examples that are in use include \"IRIX\", \"Mac\", \"Windows\", and \"Unix\".  It is important to use a key which has already been used when applicable."
+msgstr ""
+
+msgid "The ``synopsis`` option should consist of one sentence describing the module's purpose -- it is currently only used in the Global Module Index."
+msgstr ""
+
+msgid "The ``deprecated`` option can be given (with no value) to mark a module as deprecated; it will be designated as such in various locations then."
+msgstr ""
+
+msgid "The ``moduleauthor`` directive, which can appear multiple times, names the authors of the module code, just like ``sectionauthor`` names the author(s) of a piece of documentation.  It too does not result in any output currently."
+msgstr ""
+
+msgid "It is important to make the section title of a module-describing file meaningful since that value will be inserted in the table-of-contents trees in overview files."
+msgstr ""
+
+msgid "There are a number of directives used to describe specific features provided by modules.  Each directive requires one or more signatures to provide basic information about what is being described, and the content should be the description.  The basic version makes entries in the general index; if no index entry is desired, you can give the directive option flag ``:noindex:``.  The following example shows all of the features of this directive type::"
+msgstr ""
+
+msgid ".. function:: spam(eggs)               ham(eggs)    :noindex:     Spam or ham the foo."
+msgstr ""
+
+msgid "The signatures of object methods or data attributes should always include the type name (``.. method:: FileInput.input(...)``), even if it is obvious from the context which type they belong to; this is to enable consistent cross-references.  If you describe methods belonging to an abstract protocol, such as \"context managers\", include a (pseudo-)type name too to make the index entries more informative."
+msgstr ""
+
+msgid "The directives are:"
+msgstr ""
+
+msgid "Describes a C function. The signature should be given as in C, e.g.::"
+msgstr ""
+
+msgid ".. cfunction:: PyObject* PyType_GenericAlloc(PyTypeObject *type, Py_ssize_t nitems)"
+msgstr ""
+
+msgid "This is also used to describe function-like preprocessor macros.  The names of the arguments should be given so they may be used in the description."
+msgstr ""
+
+msgid "Note that you don't have to backslash-escape asterisks in the signature, as it is not parsed by the reST inliner."
+msgstr ""
+
+msgid "Describes a C struct member. Example signature::"
+msgstr ""
+
+msgid ".. cmember:: PyObject* PyTypeObject.tp_bases"
+msgstr ""
+
+msgid "The text of the description should include the range of values allowed, how the value should be interpreted, and whether the value can be changed. References to structure members in text should use the ``member`` role."
+msgstr ""
+
+msgid "Describes a \"simple\" C macro.  Simple macros are macros which are used for code expansion, but which do not take arguments so cannot be described as functions.  This is not to be used for simple constant definitions.  Examples of its use in the Python documentation include :cmacro:`PyObject_HEAD` and :cmacro:`Py_BEGIN_ALLOW_THREADS`."
+msgstr ""
+
+msgid "Describes a C type. The signature should just be the type name."
+msgstr ""
+
+msgid "Describes a global C variable.  The signature should include the type, such as::"
+msgstr ""
+
+msgid ".. cvar:: PyObject* PyClass_Type"
+msgstr ""
+
+msgid "Describes global data in a module, including both variables and values used as \"defined constants.\"  Class and object attributes are not documented using this environment."
+msgstr ""
+
+msgid "Describes an exception class.  The signature can, but need not include parentheses with constructor arguments."
+msgstr ""
+
+msgid "Describes a module-level function.  The signature should include the parameters, enclosing optional parameters in brackets.  Default values can be given if it enhances clarity.  For example::"
+msgstr ""
+
+msgid ".. function:: Timer.repeat([repeat=3[, number=1000000]])"
+msgstr ""
+
+msgid "Object methods are not documented using this directive. Bound object methods placed in the module namespace as part of the public interface of the module are documented using this, as they are equivalent to normal functions for most purposes."
+msgstr ""
+
+msgid "The description should include information about the parameters required and how they are used (especially whether mutable objects passed as parameters are modified), side effects, and possible exceptions.  A small example may be provided."
+msgstr ""
+
+msgid "Describes a class.  The signature can include parentheses with parameters which will be shown as the constructor arguments."
+msgstr ""
+
+msgid "Describes an object data attribute.  The description should include information about the type of the data to be expected and whether it may be changed directly."
+msgstr ""
+
+msgid "Describes an object method.  The parameters should not include the ``self`` parameter.  The description should include similar information to that described for ``function``."
+msgstr ""
+
+msgid "Describes a Python :term:`bytecode` instruction."
+msgstr ""
+
+msgid "Describes a command line option or switch.  Option argument names should be enclosed in angle brackets.  Example::"
+msgstr ""
+
+msgid ".. cmdoption:: -m <module>     Run a module as a script."
+msgstr ""
+
+msgid "Describes an environment variable that Python uses or defines."
+msgstr ""
+
+msgid "There is also a generic version of these directives:"
+msgstr ""
+
+msgid "This directive produces the same formatting as the specific ones explained above but does not create index entries or cross-referencing targets.  It is used, for example, to describe the directives in this document. Example::"
+msgstr ""
+
+msgid ".. describe:: opcode     Describes a Python bytecode instruction."
+msgstr ""
+
+msgid "Showing code examples"
+msgstr ""
+
+msgid "Examples of Python source code or interactive sessions are represented using standard reST literal blocks.  They are started by a ``::`` at the end of the preceding paragraph and delimited by indentation."
+msgstr ""
+
+msgid "Representing an interactive session requires including the prompts and output along with the Python code.  No special markup is required for interactive sessions.  After the last line of input or output presented, there should not be an \"unused\" primary prompt; this is an example of what *not* to do::"
+msgstr ""
+
+msgid ">>> 1 + 1 2 >>>"
+msgstr ""
+
+msgid "Syntax highlighting is handled in a smart way:"
+msgstr ""
+
+msgid "There is a \"highlighting language\" for each source file.  Per default, this is ``'python'`` as the majority of files will have to highlight Python snippets."
+msgstr ""
+
+msgid "Within Python highlighting mode, interactive sessions are recognized automatically and highlighted appropriately."
+msgstr ""
+
+msgid "The highlighting language can be changed using the ``highlightlang`` directive, used as follows::"
+msgstr ""
+
+msgid ".. highlightlang:: c"
+msgstr ""
+
+msgid "This language is used until the next ``highlightlang`` directive is encountered."
+msgstr ""
+
+msgid "The values normally used for the highlighting language are:"
+msgstr ""
+
+msgid "``python`` (the default)"
+msgstr ""
+
+msgid "``c``"
+msgstr ""
+
+msgid "``rest``"
+msgstr ""
+
+msgid "``none`` (no highlighting)"
+msgstr ""
+
+msgid "If highlighting with the current language fails, the block is not highlighted in any way."
+msgstr ""
+
+msgid "Longer displays of verbatim text may be included by storing the example text in an external file containing only plain text.  The file may be included using the ``literalinclude`` directive. [1]_ For example, to include the Python source file :file:`example.py`, use::"
+msgstr ""
+
+msgid ".. literalinclude:: example.py"
+msgstr ""
+
+msgid "The file name is relative to the current file's path.  Documentation-specific include files should be placed in the ``Doc/includes`` subdirectory."
+msgstr ""
+
+msgid "As said before, Sphinx uses interpreted text roles to insert semantic markup in documents."
+msgstr ""
+
+msgid "Names of local variables, such as function/method arguments, are an exception, they should be marked simply with ``*var*``."
+msgstr ""
+
+msgid "For all other roles, you have to write ``:rolename:`content```."
+msgstr ""
+
+msgid "There are some additional facilities that make cross-referencing roles more versatile:"
+msgstr ""
+
+msgid "You may supply an explicit title and reference target, like in reST direct hyperlinks: ``:role:`title <target>``` will refer to *target*, but the link text will be *title*."
+msgstr ""
+
+msgid "If you prefix the content with ``!``, no reference/hyperlink will be created."
+msgstr ""
+
+msgid "For the Python object roles, if you prefix the content with ``~``, the link text will only be the last component of the target.  For example, ``:meth:`~Queue.Queue.get``` will refer to ``Queue.Queue.get`` but only display ``get`` as the link text."
+msgstr ""
+
+msgid "In HTML output, the link's ``title`` attribute (that is e.g. shown as a tool-tip on mouse-hover) will always be the full target name."
+msgstr ""
+
+msgid "The following roles refer to objects in modules and are possibly hyperlinked if a matching identifier is found:"
+msgstr ""
+
+msgid "The name of a module; a dotted name may be used.  This should also be used for package names."
+msgstr ""
+
+msgid "The name of a Python function; dotted names may be used.  The role text should not include trailing parentheses to enhance readability.  The parentheses are stripped when searching for identifiers."
+msgstr ""
+
+msgid "The name of a module-level variable or constant."
+msgstr ""
+
+msgid "The name of a \"defined\" constant.  This may be a C-language ``#define`` or a Python variable that is not intended to be changed."
+msgstr ""
+
+msgid "A class name; a dotted name may be used."
+msgstr ""
+
+msgid "The name of a method of an object.  The role text should include the type name and the method name.  A dotted name may be used."
+msgstr ""
+
+msgid "The name of a data attribute of an object."
+msgstr ""
+
+msgid "The name of an exception. A dotted name may be used."
+msgstr ""
+
+msgid "The name enclosed in this markup can include a module name and/or a class name. For example, ``:func:`filter``` could refer to a function named ``filter`` in the current module, or the built-in function of that name.  In contrast, ``:func:`foo.filter``` clearly refers to the ``filter`` function in the ``foo`` module."
+msgstr ""
+
+msgid "Normally, names in these roles are searched first without any further qualification, then with the current module name prepended, then with the current module and class name (if any) prepended.  If you prefix the name with a dot, this order is reversed.  For example, in the documentation of the :mod:`codecs` module, ``:func:`open``` always refers to the built-in function, while ``:func:`.open``` refers to :func:`codecs.open`."
+msgstr ""
+
+msgid "A similar heuristic is used to determine whether the name is an attribute of the currently documented class."
+msgstr ""
+
+msgid "The following roles create cross-references to C-language constructs if they are defined in the API documentation:"
+msgstr ""
+
+msgid "The name of a C-language variable."
+msgstr ""
+
+msgid "The name of a C-language function. Should include trailing parentheses."
+msgstr ""
+
+msgid "The name of a \"simple\" C macro, as defined above."
+msgstr ""
+
+msgid "The name of a C-language type."
+msgstr ""
+
+msgid "The following role does possibly create a cross-reference, but does not refer to objects:"
+msgstr ""
+
+msgid "The name of a grammar token (used in the reference manual to create links between production displays)."
+msgstr ""
+
+msgid "The following role creates a cross-reference to the term in the glossary:"
+msgstr ""
+
+msgid "Reference to a term in the glossary.  The glossary is created using the ``glossary`` directive containing a definition list with terms and definitions.  It does not have to be in the same file as the ``term`` markup, in fact, by default the Python docs have one global glossary in the ``glossary.rst`` file."
+msgstr ""
+
+msgid "If you use a term that's not explained in a glossary, you'll get a warning during build."
+msgstr ""
+
+msgid "The following roles don't do anything special except formatting the text in a different style:"
+msgstr ""
+
+msgid "The name of an OS-level command, such as ``rm``."
+msgstr ""
+
+msgid "Mark the defining instance of a term in the text.  (No index entries are generated.)"
+msgstr ""
+
+msgid "An environment variable.  Index entries are generated."
+msgstr ""
+
+msgid "The name of a file or directory.  Within the contents, you can use curly braces to indicate a \"variable\" part, for example::"
+msgstr ""
+
+msgid "... is installed in :file:`/usr/lib/python2.{x}/site-packages` ..."
+msgstr ""
+
+msgid "In the built documentation, the ``x`` will be displayed differently to indicate that it is to be replaced by the Python minor version."
+msgstr ""
+
+msgid "Labels presented as part of an interactive user interface should be marked using ``guilabel``.  This includes labels from text-based interfaces such as those created using :mod:`curses` or other text-based libraries.  Any label used in the interface should be marked with this role, including button labels, window titles, field names, menu and menu selection names, and even values in selection lists."
+msgstr ""
+
+msgid "Mark a sequence of keystrokes.  What form the key sequence takes may depend on platform- or application-specific conventions.  When there are no relevant conventions, the names of modifier keys should be spelled out, to improve accessibility for new users and non-native speakers.  For example, an *xemacs* key sequence may be marked like ``:kbd:`C-x C-f```, but without reference to a specific application or platform, the same sequence should be marked as ``:kbd:`Control-x Control-f```."
+msgstr ""
+
+msgid "The name of a keyword in Python."
+msgstr ""
+
+msgid "The name of an RFC 822-style mail header.  This markup does not imply that the header is being used in an email message, but can be used to refer to any header of the same \"style.\"  This is also used for headers defined by the various MIME specifications.  The header name should be entered in the same way it would normally be found in practice, with the camel-casing conventions being preferred where there is more than one common usage. For example: ``:mailheader:`Content-Type```."
+msgstr ""
+
+msgid "The name of a :command:`make` variable."
+msgstr ""
+
+msgid "A reference to a Unix manual page including the section, e.g. ``:manpage:`ls(1)```."
+msgstr ""
+
+msgid "Menu selections should be marked using the ``menuselection`` role.  This is used to mark a complete sequence of menu selections, including selecting submenus and choosing a specific operation, or any subsequence of such a sequence.  The names of individual selections should be separated by ``-->``."
+msgstr ""
+
+msgid "For example, to mark the selection \"Start > Programs\", use this markup::"
+msgstr ""
+
+msgid ":menuselection:`Start --> Programs`"
+msgstr ""
+
+msgid "When including a selection that includes some trailing indicator, such as the ellipsis some operating systems use to indicate that the command opens a dialog, the indicator should be omitted from the selection name."
+msgstr ""
+
+msgid "The name of a MIME type, or a component of a MIME type (the major or minor portion, taken alone)."
+msgstr ""
+
+msgid "The name of a Usenet newsgroup."
+msgstr ""
+
+msgid "A command-line option to an executable program.  The leading hyphen(s) must be included."
+msgstr ""
+
+msgid "The name of an executable program.  This may differ from the file name for the executable for some platforms.  In particular, the ``.exe`` (or other) extension should be omitted for Windows programs."
+msgstr ""
+
+msgid "A regular expression. Quotes should not be included."
+msgstr ""
+
+msgid "A piece of literal text, such as code.  Within the contents, you can use curly braces to indicate a \"variable\" part, as in ``:file:``."
+msgstr ""
+
+msgid "If you don't need the \"variable part\" indication, use the standard ````code```` instead."
+msgstr ""
+
+msgid "A Python or C variable or parameter name."
+msgstr ""
+
+msgid "The following roles generate external links:"
+msgstr ""
+
+msgid "A reference to a Python Enhancement Proposal.  This generates appropriate index entries. The text \"PEP *number*\\ \" is generated; in the HTML output, this text is a hyperlink to an online copy of the specified PEP."
+msgstr ""
+
+msgid "A reference to an Internet Request for Comments.  This generates appropriate index entries. The text \"RFC *number*\\ \" is generated; in the HTML output, this text is a hyperlink to an online copy of the specified RFC."
+msgstr ""
+
+msgid "Note that there are no special roles for including hyperlinks as you can use the standard reST markup for that purpose."
+msgstr ""
+
+msgid "Cross-linking markup"
+msgstr ""
+
+msgid "To support cross-referencing to arbitrary sections in the documentation, the standard reST labels are \"abused\" a bit: Every label must precede a section title; and every label name must be unique throughout the entire documentation source."
+msgstr ""
+
+msgid "You can then reference to these sections using the ``:ref:`label-name``` role."
+msgstr ""
+
+msgid "Example::"
+msgstr ""
+
+msgid ".. _my-reference-label:  Section to cross-reference --------------------------  This is the text of the section.  It refers to the section itself, see :ref:`my-reference-label`."
+msgstr ""
+
+msgid "The ``:ref:`` invocation is replaced with the section title."
+msgstr ""
+
+msgid "Paragraph-level markup"
+msgstr ""
+
+msgid "These directives create short paragraphs and can be used inside information units as well as normal text:"
+msgstr ""
+
+msgid "An especially important bit of information about an API that a user should be aware of when using whatever bit of API the note pertains to.  The content of the directive should be written in complete sentences and include all appropriate punctuation."
+msgstr ""
+
+msgid ".. note::     This function is not suitable for sending spam e-mails."
+msgstr ""
+
+msgid "An important bit of information about an API that a user should be aware of when using whatever bit of API the warning pertains to.  The content of the directive should be written in complete sentences and include all appropriate punctuation.  In the interest of not scaring users away from pages filled with warnings, this directive should only be chosen over ``note`` for information regarding the possibility of crashes, data loss, or security implications."
+msgstr ""
+
+msgid "This directive documents the version of Python which added the described feature to the library or C API. When this applies to an entire module, it should be placed at the top of the module section before any prose."
+msgstr ""
+
+msgid "The first argument must be given and is the version in question; you can add a second argument consisting of a *brief* explanation of the change."
+msgstr ""
+
+msgid ".. versionadded:: 3.1    The *spam* parameter."
+msgstr ""
+
+msgid "Note that there must be no blank line between the directive head and the explanation; this is to make these blocks visually continuous in the markup."
+msgstr ""
+
+msgid "Similar to ``versionadded``, but describes when and what changed in the named feature in some way (new parameters, changed side effects, etc.)."
+msgstr ""
+
+msgid "This directive is used to mark CPython-specific information.  Use either with a block content or a single sentence as an argument, i.e. either ::"
+msgstr ""
+
+msgid ".. impl-detail::     This describes some implementation detail.     More explanation."
+msgstr ""
+
+msgid "or ::"
+msgstr ""
+
+msgid ".. impl-detail:: This shortly mentions an implementation detail."
+msgstr ""
+
+msgid "\"\\ **CPython implementation detail:**\\ \" is automatically prepended to the content."
+msgstr ""
+
+msgid "Many sections include a list of references to module documentation or external documents.  These lists are created using the ``seealso`` directive."
+msgstr ""
+
+msgid "The ``seealso`` directive is typically placed in a section just before any sub-sections.  For the HTML output, it is shown boxed off from the main flow of the text."
+msgstr ""
+
+msgid "The content of the ``seealso`` directive should be a reST definition list. Example::"
+msgstr ""
+
+msgid ".. seealso::     Module :mod:`zipfile`       Documentation of the :mod:`zipfile` standard module.     `GNU tar manual, Basic Tar Format <http://link>`_       Documentation for tar archive files, including GNU tar extensions."
+msgstr ""
+
+msgid "This directive creates a paragraph heading that is not used to create a table of contents node.  It is currently used for the \"Footnotes\" caption."
+msgstr ""
+
+msgid "This directive creates a centered boldfaced paragraph.  Use it as follows::"
+msgstr ""
+
+msgid ".. centered::     Paragraph contents."
+msgstr ""
+
+msgid "Table-of-contents markup"
+msgstr ""
+
+msgid "Since reST does not have facilities to interconnect several documents, or split documents into multiple output files, Sphinx uses a custom directive to add relations between the single files the documentation is made of, as well as tables of contents.  The ``toctree`` directive is the central element."
+msgstr ""
+
+msgid "This directive inserts a \"TOC tree\" at the current location, using the individual TOCs (including \"sub-TOC trees\") of the files given in the directive body.  A numeric ``maxdepth`` option may be given to indicate the depth of the tree; by default, all levels are included."
+msgstr ""
+
+msgid "Consider this example (taken from the library reference index)::"
+msgstr ""
+
+msgid ".. toctree::    :maxdepth: 2     intro    strings    datatypes    numeric    (many more files listed here)"
+msgstr ""
+
+msgid "This accomplishes two things:"
+msgstr ""
+
+msgid "Tables of contents from all those files are inserted, with a maximum depth of two, that means one nested heading.  ``toctree`` directives in those files are also taken into account."
+msgstr ""
+
+msgid "Sphinx knows that the relative order of the files ``intro``, ``strings`` and so forth, and it knows that they are children of the shown file, the library index.  From this information it generates \"next chapter\", \"previous chapter\" and \"parent chapter\" links."
+msgstr ""
+
+msgid "In the end, all files included in the build process must occur in one ``toctree`` directive; Sphinx will emit a warning if it finds a file that is not included, because that means that this file will not be reachable through standard navigation."
+msgstr ""
+
+msgid "The special file ``contents.rst`` at the root of the source directory is the \"root\" of the TOC tree hierarchy; from it the \"Contents\" page is generated."
+msgstr ""
+
+msgid "Index-generating markup"
+msgstr ""
+
+msgid "Sphinx automatically creates index entries from all information units (like functions, classes or attributes) like discussed before."
+msgstr ""
+
+msgid "However, there is also an explicit directive available, to make the index more comprehensive and enable index entries in documents where information is not mainly contained in information units, such as the language reference."
+msgstr ""
+
+msgid "The directive is ``index`` and contains one or more index entries.  Each entry consists of a type and a value, separated by a colon."
+msgstr ""
+
+msgid "For example::"
+msgstr ""
+
+msgid ".. index::    single: execution; context    module: __main__    module: sys    triple: module; search; path"
+msgstr ""
+
+msgid "This directive contains five entries, which will be converted to entries in the generated index which link to the exact location of the index statement (or, in case of offline media, the corresponding page number)."
+msgstr ""
+
+msgid "The possible entry types are:"
+msgstr ""
+
+msgid "Creates a single index entry.  Can be made a subentry by separating the subentry text with a semicolon (this notation is also used below to describe what entries are created)."
+msgstr ""
+
+msgid "``pair: loop; statement`` is a shortcut that creates two index entries, namely ``loop; statement`` and ``statement; loop``."
+msgstr ""
+
+msgid "Likewise, ``triple: module; search; path`` is a shortcut that creates three index entries, which are ``module; search path``, ``search; path, module`` and ``path; module search``."
+msgstr ""
+
+msgid "These all create two index entries.  For example, ``module: hashlib`` creates the entries ``module; hashlib`` and ``hashlib; module``."
+msgstr ""
+
+msgid "For index directives containing only \"single\" entries, there is a shorthand notation::"
+msgstr ""
+
+msgid ".. index:: BNF, grammar, syntax, notation"
+msgstr ""
+
+msgid "This creates four index entries."
+msgstr ""
+
+msgid "Grammar production displays"
+msgstr ""
+
+msgid "Special markup is available for displaying the productions of a formal grammar. The markup is simple and does not attempt to model all aspects of BNF (or any derived forms), but provides enough to allow context-free grammars to be displayed in a way that causes uses of a symbol to be rendered as hyperlinks to the definition of the symbol.  There is this directive:"
+msgstr ""
+
+msgid "This directive is used to enclose a group of productions.  Each production is given on a single line and consists of a name, separated by a colon from the following definition.  If the definition spans multiple lines, each continuation line must begin with a colon placed at the same column as in the first line."
+msgstr ""
+
+msgid "Blank lines are not allowed within ``productionlist`` directive arguments."
+msgstr ""
+
+msgid "The definition can contain token names which are marked as interpreted text (e.g. ``unaryneg ::= \"-\" `integer```) -- this generates cross-references to the productions of these tokens."
+msgstr ""
+
+msgid "Note that no further reST parsing is done in the production, so that you don't have to escape ``*`` or ``|`` characters."
+msgstr ""
+
+msgid "The following is an example taken from the Python Reference Manual::"
+msgstr ""
+
+msgid ".. productionlist::    try_stmt: try1_stmt | try2_stmt    try1_stmt: \"try\" \":\" `suite`             : (\"except\" [`expression` [\",\" `target`]] \":\" `suite`)+             : [\"else\" \":\" `suite`]             : [\"finally\" \":\" `suite`]    try2_stmt: \"try\" \":\" `suite`             : \"finally\" \":\" `suite`"
+msgstr ""
+
+msgid "Substitutions"
+msgstr ""
+
+msgid "The documentation system provides three substitutions that are defined by default. They are set in the build configuration file :file:`conf.py`."
+msgstr ""
+
+msgid "Replaced by the Python release the documentation refers to.  This is the full version string including alpha/beta/release candidate tags, e.g. ``2.5.2b3``."
+msgstr ""
+
+msgid "Replaced by the Python version the documentation refers to. This consists only of the major and minor version parts, e.g. ``2.5``, even for version 2.5.1."
+msgstr ""
+
+msgid "Replaced by either today's date, or the date set in the build configuration file.  Normally has the format ``April 14, 2007``."
+msgstr ""
+
+msgid "Footnotes"
+msgstr ""
+
+msgid "There is a standard ``.. include`` directive, but it raises errors if the file is not found.  This one only emits a warning."
+msgstr ""
+
+msgid "reStructuredText Primer"
+msgstr ""
+
+msgid "This section is a brief introduction to reStructuredText (reST) concepts and syntax, intended to provide authors with enough information to author documents productively.  Since reST was designed to be a simple, unobtrusive markup language, this will not take too long."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid "The authoritative `reStructuredText User Documentation <http://docutils.sourceforge.net/rst.html>`_."
+msgstr ""
+
+msgid "Paragraphs"
+msgstr ""
+
+msgid "The paragraph is the most basic block in a reST document.  Paragraphs are simply chunks of text separated by one or more blank lines.  As in Python, indentation is significant in reST, so all lines of the same paragraph must be left-aligned to the same level of indentation."
+msgstr ""
+
+msgid "The standard reST inline markup is quite simple: use"
+msgstr ""
+
+msgid "one asterisk: ``*text*`` for emphasis (italics),"
+msgstr ""
+
+msgid "two asterisks: ``**text**`` for strong emphasis (boldface), and"
+msgstr ""
+
+msgid "backquotes: ````text```` for code samples."
+msgstr ""
+
+msgid "If asterisks or backquotes appear in running text and could be confused with inline markup delimiters, they have to be escaped with a backslash."
+msgstr ""
+
+msgid "Be aware of some restrictions of this markup:"
+msgstr ""
+
+msgid "it may not be nested,"
+msgstr ""
+
+msgid "content may not start or end with whitespace: ``* text*`` is wrong,"
+msgstr ""
+
+msgid "it must be separated from surrounding text by non-word characters.  Use a backslash escaped space to work around that: ``thisis\\ *one*\\ word``."
+msgstr ""
+
+msgid "These restrictions may be lifted in future versions of the docutils."
+msgstr ""
+
+msgid "reST also allows for custom \"interpreted text roles\"', which signify that the enclosed text should be interpreted in a specific way.  Sphinx uses this to provide semantic markup and cross-referencing of identifiers, as described in the appropriate section.  The general syntax is ``:rolename:`content```."
+msgstr ""
+
+msgid "Lists and Quotes"
+msgstr ""
+
+msgid "List markup is natural: just place an asterisk at the start of a paragraph and indent properly.  The same goes for numbered lists; they can also be autonumbered using a ``#`` sign::"
+msgstr ""
+
+msgid "* This is a bulleted list. * It has two items, the second   item uses two lines.  1. This is a numbered list. 2. It has two items too.  #. This is a numbered list. #. It has two items too."
+msgstr ""
+
+msgid "Nested lists are possible, but be aware that they must be separated from the parent list items by blank lines::"
+msgstr ""
+
+msgid "* this is * a list    * with a nested list   * and some subitems  * and here the parent list continues"
+msgstr ""
+
+msgid "Definition lists are created as follows::"
+msgstr ""
+
+msgid "term (up to a line of text)    Definition of the term, which must be indented     and can even consist of multiple paragraphs  next term    Description."
+msgstr ""
+
+msgid "Paragraphs are quoted by just indenting them more than the surrounding paragraphs."
+msgstr ""
+
+msgid "Source Code"
+msgstr ""
+
+msgid "Literal code blocks are introduced by ending a paragraph with the special marker ``::``.  The literal block must be indented::"
+msgstr ""
+
+msgid "This is a normal text paragraph. The next paragraph is a code sample::     It is not processed in any way, except    that the indentation is removed.     It can span multiple lines.  This is a normal text paragraph again."
+msgstr ""
+
+msgid "The handling of the ``::`` marker is smart:"
+msgstr ""
+
+msgid "If it occurs as a paragraph of its own, that paragraph is completely left out of the document."
+msgstr ""
+
+msgid "If it is preceded by whitespace, the marker is removed."
+msgstr ""
+
+msgid "If it is preceded by non-whitespace, the marker is replaced by a single colon."
+msgstr ""
+
+msgid "That way, the second sentence in the above example's first paragraph would be rendered as \"The next paragraph is a code sample:\"."
+msgstr ""
+
+msgid "Hyperlinks"
+msgstr ""
+
+msgid "External links"
+msgstr ""
+
+msgid "Use ```Link text <http://target>`_`` for inline web links.  If the link text should be the web address, you don't need special markup at all, the parser finds links and mail addresses in ordinary text."
+msgstr ""
+
+msgid "Internal links"
+msgstr ""
+
+msgid "Internal linking is done via a special reST role, see the section on specific markup, :ref:`doc-ref-role`."
+msgstr ""
+
+msgid "Sections"
+msgstr ""
+
+msgid "Section headers are created by underlining (and optionally overlining) the section title with a punctuation character, at least as long as the text::"
+msgstr ""
+
+msgid "================= This is a heading ================="
+msgstr ""
+
+msgid "Normally, there are no heading levels assigned to certain characters as the structure is determined from the succession of headings.  However, for the Python documentation, we use this convention:"
+msgstr ""
+
+msgid "``#`` with overline, for parts"
+msgstr ""
+
+msgid "``*`` with overline, for chapters"
+msgstr ""
+
+msgid "``=``, for sections"
+msgstr ""
+
+msgid "``-``, for subsections"
+msgstr ""
+
+msgid "``^``, for subsubsections"
+msgstr ""
+
+msgid "``\"``, for paragraphs"
+msgstr ""
+
+msgid "Explicit Markup"
+msgstr ""
+
+msgid "\"Explicit markup\" is used in reST for most constructs that need special handling, such as footnotes, specially-highlighted paragraphs, comments, and generic directives."
+msgstr ""
+
+msgid "An explicit markup block begins with a line starting with ``..`` followed by whitespace and is terminated by the next paragraph at the same level of indentation.  (There needs to be a blank line between explicit markup and normal paragraphs.  This may all sound a bit complicated, but it is intuitive enough when you write it.)"
+msgstr ""
+
+msgid "Directives"
+msgstr ""
+
+msgid "A directive is a generic block of explicit markup.  Besides roles, it is one of the extension mechanisms of reST, and Sphinx makes heavy use of it."
+msgstr ""
+
+msgid "Basically, a directive consists of a name, arguments, options and content. (Keep this terminology in mind, it is used in the next chapter describing custom directives.)  Looking at this example, ::"
+msgstr ""
+
+msgid ".. function:: foo(x)               foo(y, z)    :bar: no     Return a line of text input from the user."
+msgstr ""
+
+msgid "``function`` is the directive name.  It is given two arguments here, the remainder of the first line and the second line, as well as one option ``bar`` (as you can see, options are given in the lines immediately following the arguments and indicated by the colons)."
+msgstr ""
+
+msgid "The directive content follows after a blank line and is indented relative to the directive start."
+msgstr ""
+
+msgid "For footnotes, use ``[#]_`` to mark the footnote location, and add the footnote body at the bottom of the document after a \"Footnotes\" rubric heading, like so::"
+msgstr ""
+
+msgid "Lorem ipsum [#]_ dolor sit amet ... [#]_  .. rubric:: Footnotes  .. [#] Text of the first footnote. .. [#] Text of the second footnote."
+msgstr ""
+
+msgid "You can also explicitly number the footnotes for better context."
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+msgid "Every explicit markup block which isn't a valid markup construct (like the footnotes above) is regarded as a comment."
+msgstr ""
+
+msgid "Source encoding"
+msgstr ""
+
+msgid "Since the easiest way to include special characters like em dashes or copyright signs in reST is to directly write them as Unicode characters, one has to specify an encoding:"
+msgstr ""
+
+msgid "All Python documentation source files must be in UTF-8 encoding, and the HTML documents written from them will be in that encoding as well."
+msgstr ""
+
+msgid "Gotchas"
+msgstr ""
+
+msgid "There are some problems one commonly runs into while authoring reST documents:"
+msgstr ""
+
+msgid "**Separation of inline markup:** As said above, inline markup spans must be separated from the surrounding text by non-word characters, you have to use an escaped space to get around that."
+msgstr ""
+
+msgid "Style Guide"
+msgstr ""
+
+msgid "The Python documentation should follow the `Apple Publications Style Guide`_ wherever possible. This particular style guide was selected mostly because it seems reasonable and is easy to get online."
+msgstr ""
+
+msgid "Topics which are not covered in Apple's style guide will be discussed in this document."
+msgstr ""
+
+msgid "All reST files use an indentation of 3 spaces.  The maximum line length is 80 characters for normal text, but tables, deeply indented code samples and long links may extend beyond that."
+msgstr ""
+
+msgid "Make generous use of blank lines where applicable; they help grouping things together."
+msgstr ""
+
+msgid "A sentence-ending period may be followed by one or two spaces; while reST ignores the second space, it is customarily put in by some users, for example to aid Emacs' auto-fill mode."
+msgstr ""
+
+msgid "Footnotes are generally discouraged, though they may be used when they are the best way to present specific information. When a footnote reference is added at the end of the sentence, it should follow the sentence-ending punctuation. The reST markup should appear something like this::"
+msgstr ""
+
+msgid "This sentence has a footnote reference. [#]_ This is the next sentence."
+msgstr ""
+
+msgid "Footnotes should be gathered at the end of a file, or if the file is very long, at the end of a section. The docutils will automatically create backlinks to the footnote reference."
+msgstr ""
+
+msgid "Footnotes may appear in the middle of sentences where appropriate."
+msgstr ""
+
+msgid "Many special names are used in the Python documentation, including the names of operating systems, programming languages, standards bodies, and the like. Most of these entities are not assigned any special markup, but the preferred spellings are given here to aid authors in maintaining the consistency of presentation in the Python documentation."
+msgstr ""
+
+msgid "Other terms and words deserve special mention as well; these conventions should be used to ensure consistency throughout the documentation:"
+msgstr ""
+
+msgid "For \"central processing unit.\" Many style guides say this should be spelled out on the first use (and if you must use it, do so!). For the Python documentation, this abbreviation should be avoided since there's no reasonable way to predict which occurrence will be the first seen by the reader. It is better to use the word \"processor\" instead."
+msgstr ""
+
+msgid "The name assigned to a particular group of standards. This is always uppercase."
+msgstr ""
+
+msgid "The name of our favorite programming language is always capitalized."
+msgstr ""
+
+msgid "The name of a character set and matching encoding. This is always written capitalized."
+msgstr ""
+
+msgid "The name of the operating system developed at AT&T Bell Labs in the early 1970s."
+msgstr ""
