@@ -3258,15 +3258,15 @@ msgstr ""
 
 #: ../src/Doc/tutorial/index.rst:5
 msgid "The Python Tutorial"
-msgstr ""
+msgstr "Le tutoriel python"
 
 #: ../src/Doc/tutorial/index.rst:7
 msgid "|version|"
-msgstr ""
+msgstr "|version|"
 
 #: ../src/Doc/tutorial/index.rst:8
 msgid "|today|"
-msgstr ""
+msgstr "|today|"
 
 #: ../src/Doc/tutorial/index.rst:10
 msgid ""
@@ -3276,6 +3276,12 @@ msgid ""
 "with its interpreted nature, make it an ideal language for scripting and "
 "rapid application development in many areas on most platforms."
 msgstr ""
+"Python est un langage de programmation puissant et facile à apprendre. Il "
+"dispose de structures de données et haut niveau et d'une approche de la "
+"programmation orientée objet simple mais efficace. Parce que sa syntaxe est "
+"élégante, que son typage est dynamique et qu'il est interprété, Python est un "
+"langage idéal pour l'écriture de scripts et le développement rapide "
+"d'applications dans de nombreux domaines et sur de nombreuses plateformes."
 
 #: ../src/Doc/tutorial/index.rst:16
 msgid ""
@@ -3285,6 +3291,12 @@ msgid ""
 "site also contains distributions of and pointers to many free third party "
 "Python modules, programs and tools, and additional documentation."
 msgstr ""
+"L'interpréteur Python et sa vaste bibliothèque standard sont disponible "
+"librement, sous forme de sources ou de binaires, pour toute les plateformes "
+"majeure, depuis le site Internet http://www.python.org/ et peuvent être "
+"librement redistribués. Le même site distribue et contient des liens vers des "
+"modules, des programmes et des outils tiers ainsi que vers de la "
+"documentation supplémentaire."
 
 #: ../src/Doc/tutorial/index.rst:22
 msgid ""
@@ -3292,6 +3304,10 @@ msgid ""
 "implemented in C or C++ (or other languages callable from C). Python is also "
 "suitable as an extension language for customizable applications."
 msgstr ""
+"L'interpréteur Python peut être facilement étendu par de nouvelles fonctions "
+"et types de données implémentés en C ou C++ (ou tout autre langage appelable "
+"depuis le C). Python est également adapté comme langage d'extension pour "
+"personnaliser des applications."
 
 #: ../src/Doc/tutorial/index.rst:26
 msgid ""
@@ -3300,6 +3316,11 @@ msgid ""
 "interpreter handy for hands-on experience, but all examples are self-"
 "contained, so the tutorial can be read off-line as well."
 msgstr ""
+"Ce tutoriel introduit au lecteur, de façon informelle, les concepts de base "
+"ainsi que les fonctionnalités du langage Python et de son écosystème. Il aide "
+"à prendre en main l'interpréteur Python pour une utilisation sur des cas "
+"pratiques. Les exemples étant indépendants, le tutoriel est adapté "
+"à une lecture hors ligne."
 
 #: ../src/Doc/tutorial/index.rst:31
 msgid ""
@@ -3308,6 +3329,11 @@ msgid ""
 "language.  To write extensions in C or C++, read :ref:`extending-index` and :"
 "ref:`c-api-index`. There are also several books covering Python in depth."
 msgstr ""
+"Pour une description des objets et modules de la bibliothèque standard, "
+"voyez :ref:`library-index`. :ref:`reference-index` présente une définition "
+"plus formelle du langage. Pour écrire des extensions en C ou en C++, lisez "
+":ref:`extending-index` et :ref:`c-api-index`. Des livres sont également "
+"disponibles qui couvrent Python dans le détail."
 
 #: ../src/Doc/tutorial/index.rst:36
 msgid ""
@@ -3318,10 +3344,17 @@ msgid ""
 "write Python modules and programs, and you will be ready to learn more about "
 "the various Python library modules described in :ref:`library-index`."
 msgstr ""
+"L'ambition de ce tutoriel n'est pas d'être exhaustif et de couvrir chaque "
+"fonctionnalités, ni même toutes les fonctionnalités les plus utilisées. Il "
+"cherche, par contre, à introduire plusieurs des fonctionnalités les plus "
+"notables et à vous donner une bonne idée de la saveur et du style du langage. "
+"Après l'avoir lu, vous serez capable de lire et d'écrire des modules et des "
+"programmes Python et vous serez prêts à en apprendre d'avantage sur les "
+"modules de la bibliothèque Python décrits dans :ref:`library-index`."
 
 #: ../src/Doc/tutorial/index.rst:43
 msgid "The :ref:`glossary` is also worth going through."
-msgstr ""
+msgstr "Pensez aussi à consulter le :ref:`glossary`."
 
 #: ../src/Doc/tutorial/inputoutput.rst:5
 msgid "Input and Output"
