@@ -3909,11 +3909,11 @@ msgstr ""
 
 #: ../src/Doc/tutorial/interpreter.rst:5
 msgid "Using the Python Interpreter"
-msgstr ""
+msgstr "Utiliser l'interpéteur Python"
 
 #: ../src/Doc/tutorial/interpreter.rst:11
 msgid "Invoking the Interpreter"
-msgstr ""
+msgstr "Invoquer l'interpréteur"
 
 # 1fe8d6c4d9b34bf591bf05002c64109c
 #: ../src/Doc/tutorial/interpreter.rst:13
@@ -3923,6 +3923,11 @@ msgid ""
 "your Unix shell's search path makes it possible to start it by typing the "
 "command ::"
 msgstr ""
+"L'interpréteur python est habituellement installé "
+":file:`/usr/local/bin/python` sur les machines où il est disponible. En "
+"mettant :file:`/usr/local/bin` dans les chemins de recherche de votre shell "
+"Unix, vous rendez possible de lancer l'interpréteur Python en tapant la "
+"commande ::"
 
 # e074012e6a55498fad926d939d5ce0f7
 #: ../src/Doc/tutorial/interpreter.rst:19
@@ -3932,6 +3937,10 @@ msgid ""
 "Python guru or system administrator.  (E.g., :file:`/usr/local/python` is a "
 "popular alternative location.)"
 msgstr ""
+"dans le shell. Le choix du répertoire où se trouve l'interpréteur étant une "
+"option d'installation, d'autres chemins sont possible; voyez avec votre guru "
+"Python local ou votre administrateur système. (E.g., "
+":file:`/usr/local/python` est une localisation courante.)"
 
 # 9d462e2928f341308d62bcd4963089f4
 #: ../src/Doc/tutorial/interpreter.rst:24
@@ -3941,6 +3950,11 @@ msgid ""
 "To add this directory to your path,  you can type the following command into "
 "the command prompt in a DOS box::"
 msgstr ""
+"Sur les omachines Windows, l'installation de Python se situe généralement "
+"dans :file:`C:\\\\Python27`, bien que vous puissiez changer cela lorsque "
+"vous lancer l'installateur. Pour ajouter ce chemin dans vos chemins de "
+"recherche, vous pouvez taper la commande suivante dans votre émulateur de "
+"terminal DOS ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:31
 msgid ""
@@ -3949,6 +3963,11 @@ msgid ""
 "exit status.  If that doesn't work, you can exit the interpreter by typing "
 "the following command: ``quit()``."
 msgstr ""
+"Taper un caractère de find e fichier (:kbd:`Control-D` sous Unix, "
+":kbd:`Control-Z` sous Windows) au début de l'invite de commande provoque la "
+"fermeture de l'interpréteur avec un statut d'erreur nul. Si cela ne "
+"fonctionne pas, vous pouver fermer l'interpréteur en tapant la commande "
+"``quit()``."
 
 #: ../src/Doc/tutorial/interpreter.rst:36
 msgid ""
@@ -3962,6 +3981,17 @@ msgid ""
 "or if ``^P`` is echoed, command line editing isn't available; you'll only be "
 "able to use backspace to remove characters from the current line."
 msgstr ""
+"Les possibilités d'édition de l'interpréteur ne sont généralement pas très "
+"sophistiquées. Sous Unix, quiconque a installé l'interpréteur est susceptible "
+"d'avoir la gestion de la bibliothèque GNU readline d'activé, ce qui ajoute "
+"une édition interactive plus élaborée et une fonctionnalité d'historique. Le "
+"moyen le plus rapide de tester si l'édition de la ligne de commande est gérée "
+"est peut-être de taper Ctrl-P suite au premier invite de commande que vous "
+"obtenez. Si cela beep, vous disposez de l'édition de la lgne de commande; "
+"voyez l'appendice :ref:`tut-interacting` pour une introduction aux touches. "
+"Si rien ne semble se produire ou si ``^P`` s'affiche, l'édition de la ligne "
+"de commande n'est pas disponible; vous ne serez en mesure que d'utiliser "
+"la touche retour arrière pour supprimer des caractères de la ligne courante."
 
 #: ../src/Doc/tutorial/interpreter.rst:46
 msgid ""
@@ -3970,6 +4000,11 @@ msgid ""
 "interactively; when called with a file name argument or with a file as "
 "standard input, it reads and executes a *script* from that file."
 msgstr ""
+"L'interpréteur opère de façon similaire au shell Unix : lorsqu'il est appelé "
+"avec l'intrée standard connectée à un périphérique tty; il lit et exécute les "
+"commandes de façon interactive; lorsqu'il est appelé avec un nom de fichier "
+"en argument ou avec un fichier comme entrée standard, il lit et exécute un "
+"*script* depuis ce fichier."
 
 #: ../src/Doc/tutorial/interpreter.rst:51
 msgid ""
@@ -3979,6 +4014,12 @@ msgid ""
 "characters that are special to the shell, it is usually advised to quote "
 "*command* in its entirety with single quotes."
 msgstr ""
+"Une autre façon de lancer l'interpréteur est "
+"``python -c commande [arg] ...``. Cela exécute les instructions dans "
+"*commande* de façon analogue à l'option :option:`-c` du shell. Parce que les "
+"instructions Python contiennent souvent des espaces et d'autres caractères "
+"spéciaux pour le shell, il est généralement conseillé de mettre *commande* "
+"entre guillemets simples."
 
 #: ../src/Doc/tutorial/interpreter.rst:57
 msgid ""
@@ -3986,6 +4027,10 @@ msgid ""
 "``python -m module [arg] ...``, which executes the source file for *module* "
 "as if you had spelled out its full name on the command line."
 msgstr ""
+"Certains modules Python sont aussi utiles en tant que scripts. Ils peuvent "
+"être appelé avec ``python -m module [arg] ...`` qui exécute le fichier source "
+"de *module* comme si vous aviez tapé son nom complet dans la ligne de "
+"commande."
 
 # 3cbdf83437db4943ba9c24f111feb698
 #: ../src/Doc/tutorial/interpreter.rst:61
@@ -3994,6 +4039,9 @@ msgid ""
 "script and enter interactive mode afterwards.  This can be done by passing :"
 "option:`-i` before the script."
 msgstr ""
+"Quand un fichier de script est utilisé, il est parfois utile de pouvoir "
+"lancer le script puis d'entrer dans le mode interactif après coup. Cela est "
+"possible en passant :option:`-i` avant le script."
 
 #: ../src/Doc/tutorial/interpreter.rst:69
 msgid "Argument Passing"
