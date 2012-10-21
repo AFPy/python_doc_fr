@@ -4112,11 +4112,11 @@ msgstr ""
 
 #: ../src/Doc/tutorial/interpreter.rst:114
 msgid "The Interpreter and Its Environment"
-msgstr ""
+msgstr "L'interpréteur et son environnement"
 
 #: ../src/Doc/tutorial/interpreter.rst:120
 msgid "Error Handling"
-msgstr ""
+msgstr "Gestion des erreurs"
 
 #: ../src/Doc/tutorial/interpreter.rst:122
 msgid ""
@@ -4130,6 +4130,17 @@ msgid ""
 "messages are written to the standard error stream; normal output from "
 "executed commands is written to standard output."
 msgstr ""
+"Quand une erreur se produit, l'interpréteur affiche un message d'erreur et "
+"le suivit de la pile. En mode interactif, il revient à l'invite de commande "
+"primaire; si l'entrée provient d'un fichier, l'interpréteur se termine avec "
+"un état de sortie non nul après avoir affiché le suivit de la pile. "
+"(Les exceptions gérées par une clase :keyword:`except` dans une instruction "
+":keyword:`try` ne sont pas des erreurs dans ce contexte.) Certaines erreurs "
+"sont inconditionnellement fatales et cause une sortie avec un état non nul; "
+"les incohérences internes et, dans certains cas, les pénuries de mémoires, "
+"sont traitées de la sorte. Tous les messages d'erreur sont écrits sur la "
+"sortie d'erreur standard; les sorties normales issues des commandes "
+"exécutées sont écrites sur la sortie standard."
 
 #: ../src/Doc/tutorial/interpreter.rst:132
 msgid ""
@@ -4139,16 +4150,23 @@ msgid ""
 "`KeyboardInterrupt` exception, which may be handled by a :keyword:`try` "
 "statement."
 msgstr ""
+"Taper le caractère d'interuption (généralement :kbd:`Ctrl+C` ou "
+":kbd:`Supprimer`) au niveau de l'invite de commande primaire annule l'entrée "
+"et revient à l'invite. [#]_ Saisir une interuption tandis qu'une commande "
+"s'exécute lève une exception :exc:`KeyboardInterrupt` qui peut être gérée "
+"par une instruction :keyword:`try`."
 
 #: ../src/Doc/tutorial/interpreter.rst:142
 msgid "Executable Python Scripts"
-msgstr ""
+msgstr "Script Python exécutable"
 
 #: ../src/Doc/tutorial/interpreter.rst:144
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, "
 "like shell scripts, by putting the line ::"
 msgstr ""
+"Sur les systèmes BSD et Unix, un script Python peut être rendu directement "
+"exécutable comme un scipt shell en ajoutant la ligne ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:149
 msgid ""
@@ -4159,12 +4177,20 @@ msgid ""
 "(``'\\r\\n'``) line ending.  Note that the hash, or pound, character, "
 "``'#'``, is used to start a comment in Python."
 msgstr ""
+"(en supposant que l'interpréteur est dans le :envvar:`PATH` de "
+"l'utilisateur) au début du script et en rendant le fichier exécutable. "
+"``#!`` doivent être les deux premier caractères du fichier. Sur certaines "
+"plateformes, cette première lige doit finir avec une fin de ligne de type "
+"Unix (``'\\n'``) et pas avec une de type Windows (``'\\r\\n'``). Notez que "
+"le caractère dièse, ``'#'``, est utilisé pour initier un commentaire en "
+"Python."
 
 #: ../src/Doc/tutorial/interpreter.rst:156
 msgid ""
 "The script can be given an executable mode, or permission, using the :"
 "program:`chmod` command::"
 msgstr ""
+"Un script peut être rendu utilisable en utilisant la commande `chmod` ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:161
 msgid ""
@@ -4174,10 +4200,15 @@ msgid ""
 "extension can also be ``.pyw``, in that case, the console window that "
 "normally appears is suppressed."
 msgstr ""
+"Sur les système windows il n'y a pas de \"mode executable\". L'installateur "
+"Python associe automatiquement les fichier en ``.py`` avec ``python.exe`` "
+"de telle sorte qu'un double clic sur un fichier Python le lance comme un "
+"script. L'extension peut aussi être ``.pyw``, dans ce cas, la console "
+"n'apparait pas."
 
 #: ../src/Doc/tutorial/interpreter.rst:171
 msgid "Source Code Encoding"
-msgstr ""
+msgstr "Encodage du code source"
 
 # 5b068a5d06ac42b8bf82ceb101a1e483
 #: ../src/Doc/tutorial/interpreter.rst:173
@@ -4186,6 +4217,10 @@ msgid ""
 "The best way to do it is to put one more special comment line right after "
 "the ``#!`` line to define the source file encoding::"
 msgstr ""
+"Il est possible d'utiliser un autre encodage que l'ASCII dans un fichier "
+"source Python. La meilleure façon de faire est de placer un commentaire "
+"spécial supplémentaire juste après le ``#!`` pour définir l'encodage du "
+"fichier source::"
 
 # 168d80cdf66a411d9af2e4d90f8b5fdf
 #: ../src/Doc/tutorial/interpreter.rst:180
@@ -4196,6 +4231,11 @@ msgid ""
 "encodings can be found in the Python Library Reference, in the section on :"
 "mod:`codecs`."
 msgstr ""
+"Avec cette déclaration, tous les caractères du fichier source sont traités "
+"comme étant dans l'encodage *encoding* et il est possible de d'écrire "
+"directement des litéraux de chaîne Unicode dans l'encodage choisi. La liste "
+"des encodages disponibles peut être tourvée dans la réference de la "
+"bibliothèque Python dans la partie à propos de :mod:`codecs`."
 
 # 136855779690415a8c5aac7ceb545218
 #: ../src/Doc/tutorial/interpreter.rst:186
@@ -4205,6 +4245,10 @@ msgid ""
 "ordinal value 164.  This script will print the value 8364 (the Unicode "
 "codepoint corresponding to the Euro symbol) and then exit::"
 msgstr ""
+"Par exemple, l'encodage ISO-8859-15 peut être utilisé pour écrire le "
+"litteral Unicode décrivant le symbol Euro, ce dernier portant la valeur "
+"ordinal 164 dans cet encodage. Ce script affiche la valeur 8364 "
+"(le point de code Unicode correspondant au symbol Euro) et se termine ::"
 
 # f6dd13cd8acb47b1b663b044df22ddf5
 #: ../src/Doc/tutorial/interpreter.rst:196
