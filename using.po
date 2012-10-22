@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2012-10-22 04:52\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -456,8 +456,8 @@ msgid ""
 "`sys.path`."
 msgstr "Ne pas ajouter le répertoire spécifique de l’utilisateur à sys.path"
 
-#: ../src/Doc/using/cmdline.rst:288 ../src/Doc/using/cmdline.rst:588
-#: ../src/Doc/using/cmdline.rst:602
+#: ../src/Doc/using/cmdline.rst:288 ../src/Doc/using/cmdline.rst:591
+#: ../src/Doc/using/cmdline.rst:605
 #, fuzzy
 msgid ":pep:`370` -- Per user site-packages directory"
 msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
@@ -729,12 +729,16 @@ msgstr ""
 msgid "Environment variables"
 msgstr "Variables d'environnement"
 
+# 19254a82e1564d93ab7b6e6863669d0a
 #: ../src/Doc/using/cmdline.rst:445
-#, fuzzy
-msgid "These environment variables influence Python's behavior."
-msgstr "Ces variables d'environnement influent sur le comportement de Python."
+msgid ""
+"These environment variables influence Python's behavior, they are processed "
+"before the command-line switches other than -E.  It is customary that "
+"command-line switches override environmental variables where there is a "
+"conflict."
+msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:449
+#: ../src/Doc/using/cmdline.rst:452
 msgid ""
 "Change the location of the standard Python libraries.  By default, the "
 "libraries are searched in :file:`{prefix}/lib/python{version}` and :file:`"
@@ -743,14 +747,14 @@ msgid ""
 "file:`/usr/local`."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:455
+#: ../src/Doc/using/cmdline.rst:458
 msgid ""
 "When :envvar:`PYTHONHOME` is set to a single directory, its value replaces "
 "both :file:`{prefix}` and :file:`{exec_prefix}`.  To specify different "
 "values for these, set :envvar:`PYTHONHOME` to :file:`{prefix}:{exec_prefix}`."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:462
+#: ../src/Doc/using/cmdline.rst:465
 msgid ""
 "Augment the default search path for module files.  The format is the same as "
 "the shell's :envvar:`PATH`: one or more directory pathnames separated by :"
@@ -758,21 +762,21 @@ msgid ""
 "existent directories are silently ignored."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:467
+#: ../src/Doc/using/cmdline.rst:470
 msgid ""
 "In addition to normal directories, individual :envvar:`PYTHONPATH` entries "
 "may refer to zipfiles containing pure Python modules (in either source or "
 "compiled form). Extension modules cannot be imported from zipfiles."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:471
+#: ../src/Doc/using/cmdline.rst:474
 msgid ""
 "The default search path is installation dependent, but generally begins "
 "with :file:`{prefix}/lib/python{version}` (see :envvar:`PYTHONHOME` above).  "
 "It is *always* appended to :envvar:`PYTHONPATH`."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:475
+#: ../src/Doc/using/cmdline.rst:478
 msgid ""
 "An additional directory will be inserted in the search path in front of :"
 "envvar:`PYTHONPATH` as described above under :ref:`using-on-interface-"
@@ -780,7 +784,7 @@ msgid ""
 "the variable :data:`sys.path`."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:483
+#: ../src/Doc/using/cmdline.rst:486
 msgid ""
 "If this is the name of a readable file, the Python commands in that file are "
 "executed before the first prompt is displayed in interactive mode.  The file "
@@ -790,7 +794,7 @@ msgid ""
 "and :data:`sys.ps2` in this file."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:493
+#: ../src/Doc/using/cmdline.rst:496
 msgid ""
 "Set this to a non-empty string to cause the :mod:`time` module to require "
 "dates specified as strings to include 4-digit years, otherwise 2-digit years "
@@ -798,39 +802,39 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:501
+#: ../src/Doc/using/cmdline.rst:504
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-O` option.  If set to an integer, it is equivalent to specifying :"
 "option:`-O` multiple times."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:508
+#: ../src/Doc/using/cmdline.rst:511
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-d` option.  If set to an integer, it is equivalent to specifying :"
 "option:`-d` multiple times."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:515
+#: ../src/Doc/using/cmdline.rst:518
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-i` option."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:518
+#: ../src/Doc/using/cmdline.rst:521
 msgid ""
 "This variable can also be modified by Python code using :data:`os.environ` "
 "to force inspect mode on program termination."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:524
+#: ../src/Doc/using/cmdline.rst:527
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-u` option."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:530
+#: ../src/Doc/using/cmdline.rst:533
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-v` option.  If set to an integer, it is equivalent to specifying :"
@@ -838,13 +842,13 @@ msgid ""
 msgstr ""
 
 # c2aaa1d2cdb84e188d6232c9a151305d
-#: ../src/Doc/using/cmdline.rst:537
+#: ../src/Doc/using/cmdline.rst:540
 msgid ""
 "If this is set, Python ignores case in :keyword:`import` statements.  This "
 "only works on Windows, OS X, OS/2, and RiscOS."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:543
+#: ../src/Doc/using/cmdline.rst:546
 #, fuzzy
 msgid ""
 "If this is set, Python won't try to write ``.pyc`` or ``.pyo`` files on the "
@@ -856,7 +860,7 @@ msgstr ""
 "`PYTHONDONTWRITEBYTECODE`."
 
 # 35d2f0e8b80e4fe5a1bbc71bbffeab84
-#: ../src/Doc/using/cmdline.rst:551
+#: ../src/Doc/using/cmdline.rst:554
 msgid ""
 "If this variable is set to ``random``, the effect is the same as specifying "
 "the :option:`-R` option: a random value is used to seed the hashes of str, "
@@ -864,7 +868,7 @@ msgid ""
 msgstr ""
 
 # 41745b6e056d4ab7a5181bd73b3cea2d
-#: ../src/Doc/using/cmdline.rst:555
+#: ../src/Doc/using/cmdline.rst:558
 msgid ""
 "If :envvar:`PYTHONHASHSEED` is set to an integer value, it is used as a "
 "fixed seed for generating the hash() of the types covered by the hash "
@@ -872,7 +876,7 @@ msgid ""
 msgstr ""
 
 # 1fda512382bc4de880e82cc4acec0819
-#: ../src/Doc/using/cmdline.rst:559
+#: ../src/Doc/using/cmdline.rst:562
 msgid ""
 "Its purpose is to allow repeatable hashing, such as for selftests for the "
 "interpreter itself, or to allow a cluster of python processes to share hash "
@@ -880,14 +884,14 @@ msgid ""
 msgstr ""
 
 # f8d510c44bf04e98a502e57ad8c83c67
-#: ../src/Doc/using/cmdline.rst:563
+#: ../src/Doc/using/cmdline.rst:566
 msgid ""
 "The integer must be a decimal number in the range [0,4294967295]. Specifying "
 "the value 0 will lead to the same hash values as when hash randomization is "
 "disabled."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:572
+#: ../src/Doc/using/cmdline.rst:575
 msgid ""
 "Overrides the encoding used for stdin/stdout/stderr, in the syntax "
 "``encodingname:errorhandler``.  The ``:errorhandler`` part is optional and "
@@ -895,14 +899,14 @@ msgid ""
 msgstr ""
 
 # 9dfcee31ea7649f08697696fc07c173c
-#: ../src/Doc/using/cmdline.rst:581
+#: ../src/Doc/using/cmdline.rst:584
 msgid ""
 "If this is set, Python won't add the :data:`user site-packages directory "
 "<site.USER_SITE>` to :data:`sys.path`."
 msgstr ""
 
 # 442082906a77463ea4e57b10f16f2123
-#: ../src/Doc/using/cmdline.rst:593
+#: ../src/Doc/using/cmdline.rst:596
 msgid ""
 "Defines the :data:`user base directory <site.USER_BASE>`, which is used to "
 "compute the path of the :data:`user site-packages directory <site."
@@ -910,41 +914,41 @@ msgid ""
 "for ``python setup.py install --user``."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:607
+#: ../src/Doc/using/cmdline.rst:610
 msgid ""
 "If this environment variable is set, ``sys.argv[0]`` will be set to its "
 "value instead of the value got through the C runtime.  Only works on Mac OS "
 "X."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:613
+#: ../src/Doc/using/cmdline.rst:616
 msgid ""
 "This is equivalent to the :option:`-W` option. If set to a comma separated "
 "string, it is equivalent to specifying :option:`-W` multiple times."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:619
+#: ../src/Doc/using/cmdline.rst:622
 msgid "Debug-mode variables"
 msgstr ""
 
 # 39751a2d43d442baa3c22af05ce21c61
-#: ../src/Doc/using/cmdline.rst:621
+#: ../src/Doc/using/cmdline.rst:624
 msgid ""
 "Setting these variables only has an effect in a debug build of Python, that "
 "is, if Python was configured with the ``--with-pydebug`` build option."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:626
+#: ../src/Doc/using/cmdline.rst:629
 msgid "If set, Python will print threading debug info."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:633
+#: ../src/Doc/using/cmdline.rst:636
 msgid ""
 "If set, Python will dump objects and reference counts still alive after "
 "shutting down the interpreter."
 msgstr ""
 
-#: ../src/Doc/using/cmdline.rst:639
+#: ../src/Doc/using/cmdline.rst:642
 msgid ""
 "If set, Python will print memory allocation statistics every time a new "
 "object arena is created, and on shutdown."
@@ -2061,6 +2065,11 @@ msgstr ""
 #: ../src/Doc/using/windows.rst:344
 msgid "by Amanda Birmingham, 2004"
 msgstr "par Amanda Birmingham, 2004"
+
+#, fuzzy
+#~ msgid "These environment variables influence Python's behavior."
+#~ msgstr ""
+#~ "Ces variables d'environnement influent sur le comportement de Python."
 
 #~ msgid ""
 #~ "python [-bBdEhiOsSuvVWx?] [-c command | -m module-name | script | - ] "

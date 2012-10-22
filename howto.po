@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2012-10-22 04:52\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9713,11 +9713,13 @@ msgstr ""
 msgid "1.03"
 msgstr ""
 
+# 6031f6ca8abd4bada350990c6475ba09
 #: ../src/Doc/howto/unicode.rst:7
 msgid ""
 "This HOWTO discusses Python 2.x's support for Unicode, and explains various "
 "problems that people commonly encounter when trying to work with Unicode.  "
-"(This HOWTO has not yet been updated to cover the 3.x versions of Python.)"
+"For the Python 3 version, see <http://docs.python.org/py3k/howto/unicode."
+"html>."
 msgstr ""
 
 #: ../src/Doc/howto/unicode.rst:13
