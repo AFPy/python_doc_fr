@@ -72,6 +72,6 @@ traduction de quelques termes techniques, rappelant ainsi les anglicismes
  * mangling => "décoration de nom" ?
  * abstract data type => type abstrait
  * statement => instruction
- * :keyword: clause => clause_ :keyword:
+ * \:keyword: clause => clause_ :keyword:
 
 .. _clause: http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=8396944
