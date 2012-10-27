@@ -826,6 +826,7 @@ msgstr "Les objets méthode"
 #: ../src/Doc/tutorial/classes.rst:302
 msgid "Usually, a method is called right after it is bound::"
 msgstr ""
+"Habituellement, une méthode est appelée immédiatement après avoir été liée::"
 
 #: ../src/Doc/tutorial/classes.rst:306
 #, fuzzy
@@ -1109,6 +1110,12 @@ msgid ""
 "searched, descending down the chain of base classes if necessary, and the "
 "method reference is valid if this yields a function object."
 msgstr ""
+"Il n'y à rien de spécial en ce qui concerne l’instanciation de "
+"classes dérivée: ``DerivedClassName()`` crée une instance de la "
+"classe. Les références de méthodes sont résolues comme suit: "
+"l'attribut de classe correspondant est recherché, en parcourant la "
+"chaîne de classes si nécessaire, la référence de méthode est valide si "
+"elle donne une fonction."
 
 #: ../src/Doc/tutorial/classes.rst:460
 msgid ""
@@ -1134,10 +1141,18 @@ msgid ""
 "well.  (Note that this only works if the base class is accessible as "
 "``BaseClassName`` in the global scope.)"
 msgstr ""
+"Une méthode en surchargeant une autre, de même nom, dans une classe "
+"dérivée peut vouloir étendre la méthode surchargée plutôt que la "
+"remplacer. Il existe un moyen simple d'appeler l'implémentation "
+"surchargée de la classe parente: en appelant "
+"``BaseClassName.methodname(self, arguments)``. This is occasionally "
+"useful to clients as well. (Notez que cela ne fonctionne que si la "
+"classe parente est accessible via ``BaseClassName`` dans le scope "
+"global.)"
 
 #: ../src/Doc/tutorial/classes.rst:473
 msgid "Python has two built-in functions that work with inheritance:"
-msgstr ""
+msgstr "Python a deux fonctions primitives qui fonctionnent avec l'héritage:"
 
 #: ../src/Doc/tutorial/classes.rst:475
 msgid ""
@@ -1145,6 +1160,9 @@ msgid ""
 "will be ``True`` only if ``obj.__class__`` is :class:`int` or some class "
 "derived from :class:`int`."
 msgstr ""
+"Utilisez :func:`isinstance` pour vérifier le type d'une instance: "
+"``isinstance(obj, int)`` sera ``True`` seulement si ``obj.__class__`` "
+"est :class:`int` ou toute classe dérivée de :class:`int`."
 
 # 9eda01c71f1b43b2a9f80582775b12b2
 #: ../src/Doc/tutorial/classes.rst:479
@@ -1155,6 +1173,12 @@ msgid ""
 "subclass of :class:`str` (they only share a common ancestor, :class:"
 "`basestring`)."
 msgstr ""
+"Utilisez :func:`issubclass` pour vérifier l'héritage d'une classe: "
+"``issubclass(bool, int)`` est ``True`` si :class:`bool` est une classe "
+"héritée de :class:`int`. Cependant, ``issubclass(unicode, str)`` est "
+"``False`` car :class:`unicode` n'est pas une classe héritée de "
+":class:`str` (ils partagent seulement un ancètre commun, "
+":class:`basestring`)."
 
 #: ../src/Doc/tutorial/classes.rst:490
 msgid "Multiple Inheritance"
@@ -1227,7 +1251,7 @@ msgstr ""
 # 0d63701d735e45d6b0ed3f46e2ff0bea
 #: ../src/Doc/tutorial/classes.rst:538
 msgid "Private Variables and Class-local References"
-msgstr ""
+msgstr "Variables Privées et références locales à une Classe"
 
 #: ../src/Doc/tutorial/classes.rst:540
 msgid ""
@@ -1238,6 +1262,14 @@ msgid ""
 "a function, a method or a data member).  It should be considered an "
 "implementation detail and subject to change without notice."
 msgstr ""
+
+"Les membres \"privés\", qui ne peuvent être accédés en dehors d'un "
+"objet, n'existent pas en Python. Cependant, il existe une convention "
+"respectée par la majorité du code en Python: un nom préfixé par un "
+"underscore (ex: ``_spam``) devrait être considéré comme une partie "
+"non publique d'une API (qu'il s'agisse d'une fonction, d'une "
+"méthode, ou d'une variable membre). Il doit être considéré comme "
+"spécifique à l'implémentation et sujet à des changement futurs sans préavis."
 
 #: ../src/Doc/tutorial/classes.rst:547
 msgid ""
@@ -1297,6 +1329,12 @@ msgid ""
 "`readline` that get the data from a string buffer instead, and pass it as an "
 "argument."
 msgstr ""
+"Du code Python qui a besoin de recevoir un objet de type particulier "
+"peut tout à fait recevoir une classe qui simule les méthodes de ce "
+"type. Par exemple si vous avez une fonction qui formatte des données "
+"depuis un objet fichier, vous pouvez définir une classe avec les "
+"méthodes :meth:`read` et :meth:`readline` récupérant les données "
+"depuis une chaîne de carractère, et lui donner."
 
 # 7ebc85600b7944a29e6e12ecc0f45219
 #: ../src/Doc/tutorial/classes.rst:620
@@ -1308,13 +1346,15 @@ msgstr ""
 
 #: ../src/Doc/tutorial/classes.rst:628
 msgid "Exceptions Are Classes Too"
-msgstr ""
+msgstr "Les Exceptions Sont Aussi Des Classes"
 
 #: ../src/Doc/tutorial/classes.rst:630
 msgid ""
 "User-defined exceptions are identified by classes as well.  Using this "
 "mechanism it is possible to create extensible hierarchies of exceptions."
 msgstr ""
+"Les exceptions définies par l'utilisateur sont aussi des classes. Ce "
+"mécanisme permet de créer des hierarchie extensibles d'exceptions."
 
 #: ../src/Doc/tutorial/classes.rst:633
 msgid ""
@@ -1327,6 +1367,9 @@ msgid ""
 "In the first form, ``instance`` must be an instance of :class:`Class` or of "
 "a class derived from it.  The second form is a shorthand for::"
 msgstr ""
+"Dans la première forme, ``instance`` doit être une instance de la "
+"classe :classe:`Class` ou d'une classe en héritant. La seconde forme "
+"est un raccourci pour::"
 
 #: ../src/Doc/tutorial/classes.rst:644
 msgid ""
@@ -1335,12 +1378,21 @@ msgid ""
 "an except clause listing a derived class is not compatible with a base "
 "class).  For example, the following code will print B, C, D in that order::"
 msgstr ""
+"Une classe dans une clause :keyword:`except` est compatible avec une "
+"exception s'il est de la même classe ou en est une classe de "
+"base. (Mais ce n'est pas compatible dans l'autre sens --- une clause "
+"except avec une classe dérivée n'est pas compatible avec une exception "
+"de classe parente). Par exemple, le code suivant affichera, "
+"respectiveent : B, C, D "
 
 #: ../src/Doc/tutorial/classes.rst:666
 msgid ""
 "Note that if the except clauses were reversed (with ``except B`` first), it "
 "would have printed B, B, B --- the first matching except clause is triggered."
 msgstr ""
+"Notez que si la clause except était inversée (Avec ``except B`` en "
+"premier), cela aurait affiché B, B, B --- la premiere clause except "
+"est lancée."
 
 #: ../src/Doc/tutorial/classes.rst:669
 msgid ""
@@ -1348,16 +1400,22 @@ msgid ""
 "class name is printed, then a colon and a space, and finally the instance "
 "converted to a string using the built-in function :func:`str`."
 msgstr ""
+"Lorsqu'une erreur d'une exception non TODO catchée est affichée, le "
+"nom de la classe de 'exception est affiché, puis une virgule, un "
+"espace, puis l'instance convertie en chaîne de caractère via la "
+"fonction primitive :func:`str`."
 
 #: ../src/Doc/tutorial/classes.rst:677
 msgid "Iterators"
-msgstr ""
+msgstr "Itérateurs"
 
 #: ../src/Doc/tutorial/classes.rst:679
 msgid ""
 "By now you have probably noticed that most container objects can be looped "
 "over using a :keyword:`for` statement::"
 msgstr ""
+"Jusque là vous avez probablement remarqué que la pluspart des objets "
+"conteneurs peuvent être itérés via l'instruction :keyword:`for`."
 
 # 6aba6be73fbf4173bdf405faaa3f4fbf
 #: ../src/Doc/tutorial/classes.rst:693
@@ -1370,6 +1428,15 @@ msgid ""
 "elements, :meth:`next` raises a :exc:`StopIteration` exception which tells "
 "the :keyword:`for` loop to terminate. This example shows how it all works::"
 msgstr ""
+"Cette méthode d'accès est claire, concise, et pratique. L'utilisation "
+"d'itęrateurs imprègne et unifie Python. En arrière plan, l'"
+"instruction :keyword:`for` appelle la fonction :func:`iter` sur l'objet "
+"conteneur. La fonction renvoie un objet itérateur qui défini la "
+"méthode :meth:`next` qui donne accès aux éléments d'un conteneur un "
+"par un. Lorsque plus aucun élément n'est disponnible, la méthode "
+":meth:`next` lance une exception :exc:`StopIteration` signifiant à la "
+"boucle :keyword:`for` de s'arrêter. Cet exemple montre comment tout "
+"cela fonctionne::"
 
 # 3b3fcc0b4bdf44b59d3a21fe85f65bae
 #: ../src/Doc/tutorial/classes.rst:717
@@ -1379,10 +1446,15 @@ msgid ""
 "returns an object with a :meth:`next` method.  If the class defines :meth:"
 "`next`, then :meth:`__iter__` can just return ``self``::"
 msgstr ""
+"Ayant comprit le mécanisme du protocol d'itération, il est facile "
+"d'ajouter ce comportement à vos classes. Définissez une méthode "
+":meth:`__iter__` qui renvoie un objet avec une méthode "
+":meth:`next`. Si votre classe définie :meth:`next` alors "
+":meth:`__iter__` peut, simplement, renvoyer ``self``::"
 
 #: ../src/Doc/tutorial/classes.rst:752
 msgid "Generators"
-msgstr ""
+msgstr "Générateurs"
 
 # b93a03d2e68d4a60aa58eb2165d2ff9d
 #: ../src/Doc/tutorial/classes.rst:754
@@ -1394,6 +1466,13 @@ msgid ""
 "values and which statement was last executed).  An example shows that "
 "generators can be trivially easy to create::"
 msgstr ""
+"La notion de :term:`Générateur` est un outil simple est puissant pour "
+"créer des itérateurs. Ils sont écrit comme de simples fonctions mais "
+"utilisent le mot clé :keyword:`yield` lorsqu'elles veulent renvoyer de "
+"la donnée. Chaque fois que :meth:`next` est appelé, le générateur "
+"reprend là où il s'était arrêté (il se souviens de toutes les "
+"variables et de la dernière instruction executée). Cet exemple montre "
+"à quel point il est simple de créer des générateurs::"
 
 # 3d70dcf3a7024e698039ee6bdaf21102
 #: ../src/Doc/tutorial/classes.rst:775
@@ -1403,6 +1482,11 @@ msgid ""
 "compact is that the :meth:`__iter__` and :meth:`next` methods are created "
 "automatically."
 msgstr ""
+"Tout ce qui peut être fait avec les générateurs peut aussi être fait "
+"avec des itérateurs sous forme de classes tel que décrits dans la "
+"section précédente. C'est le fait que les méthodes :meth:`__iter__` et "
+":meth:`next` sont crées automatiquement qui rendent les générateurs si "
+"courts."
 
 #: ../src/Doc/tutorial/classes.rst:780
 msgid ""
@@ -1411,6 +1495,10 @@ msgid ""
 "and much more clear than an approach using instance variables like ``self."
 "index`` and ``self.data``."
 msgstr ""
+"Une autre fonctionalité principale est que les variables locales et "
+"l'état sont automatiquement conservés entre les appels. Cela rend la "
+"fonction plus simple écrire, et plus claire qu'une approche utilisant "
+"des variables tel que ``self.index`` et ``self.data``."
 
 #: ../src/Doc/tutorial/classes.rst:785
 msgid ""
@@ -1419,6 +1507,11 @@ msgid ""
 "combination, these features make it easy to create iterators with no more "
 "effort than writing a regular function."
 msgstr ""
+"Au delà de générer automatiquement les méthodes nécessaires et de "
+"sauvegarder l'état du programme, lorsqu'un générateur à terminé il "
+"lance automatiquement une exception :exc:`StopIteration`. Ces "
+"fonctionalités combinées rendent simple la création d'itérateurs sans "
+"plus d'efforts que l'écriture d'une fonction simple."
 
 #: ../src/Doc/tutorial/classes.rst:794
 msgid "Generator Expressions"
