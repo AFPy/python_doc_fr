@@ -73,5 +73,6 @@ traduction de quelques termes techniques, rappelant ainsi les anglicismes
  * abstract data type => type abstrait
  * statement => instruction
  * \:keyword: clause => clause_ :keyword:
+ * interpreter => interpréteur (Présent dans "Le Petit Robert")
 
 .. _clause: http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=8396944
