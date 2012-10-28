@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2012-10-22 04:52\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1439,7 +1439,7 @@ msgid "Examples::"
 msgstr ""
 
 #: ../src/Doc/tutorial/classes.rst:827 ../src/Doc/tutorial/controlflow.rst:666
-#: ../src/Doc/tutorial/datastructures.rst:727
+#: ../src/Doc/tutorial/datastructures.rst:740
 #: ../src/Doc/tutorial/interactive.rst:166
 #: ../src/Doc/tutorial/interpreter.rst:268 ../src/Doc/tutorial/modules.rst:544
 msgid "Footnotes"
@@ -1499,13 +1499,13 @@ msgid ""
 "intended):"
 msgstr ""
 
+# 8161ee2d167d4d359706f1ee40a4eee8
 #: ../src/Doc/tutorial/controlflow.rst:70
 msgid ""
-"It is not safe to modify the sequence being iterated over in the loop (this "
-"can only happen for mutable sequence types, such as lists).  If you need to "
-"modify the list you are iterating over (for example, to duplicate selected "
-"items) you must iterate over a copy.  The slice notation makes this "
-"particularly convenient::"
+"If you need to modify the sequence you are iterating over while inside the "
+"loop (for example to duplicate selected items), it is recommended that you "
+"first make a copy.  Iterating over a sequence does not implicitly make a "
+"copy.  The slice notation makes this especially convenient::"
 msgstr ""
 
 #: ../src/Doc/tutorial/controlflow.rst:86
@@ -2538,17 +2538,26 @@ msgid ""
 "retrieved at the same time using the :meth:`iteritems` method. ::"
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:652
+# ce8381976b434e66b7c5471cd5d43209
+#: ../src/Doc/tutorial/datastructures.rst:648
+msgid ""
+"To change a sequence you are iterating over while inside the loop (for "
+"example to duplicate certain items), it is recommended that you first make a "
+"copy.  Looping over a sequence does not implicitly make a copy.  The slice "
+"notation makes this especially convenient::"
+msgstr ""
+
+#: ../src/Doc/tutorial/datastructures.rst:665
 msgid "More on Conditions"
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:654
+#: ../src/Doc/tutorial/datastructures.rst:667
 msgid ""
 "The conditions used in ``while`` and ``if`` statements can contain any "
 "operators, not just comparisons."
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:657
+#: ../src/Doc/tutorial/datastructures.rst:670
 msgid ""
 "The comparison operators ``in`` and ``not in`` check whether a value occurs "
 "(does not occur) in a sequence.  The operators ``is`` and ``is not`` compare "
@@ -2557,13 +2566,13 @@ msgid ""
 "priority, which is lower than that of all numerical operators."
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:663
+#: ../src/Doc/tutorial/datastructures.rst:676
 msgid ""
 "Comparisons can be chained.  For example, ``a < b == c`` tests whether ``a`` "
 "is less than ``b`` and moreover ``b`` equals ``c``."
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:666
+#: ../src/Doc/tutorial/datastructures.rst:679
 msgid ""
 "Comparisons may be combined using the Boolean operators ``and`` and ``or``, "
 "and the outcome of a comparison (or of any other Boolean expression) may be "
@@ -2573,7 +2582,7 @@ msgid ""
 "C``. As always, parentheses can be used to express the desired composition."
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:673
+#: ../src/Doc/tutorial/datastructures.rst:686
 msgid ""
 "The Boolean operators ``and`` and ``or`` are so-called *short-circuit* "
 "operators: their arguments are evaluated from left to right, and evaluation "
@@ -2583,13 +2592,13 @@ msgid ""
 "return value of a short-circuit operator is the last evaluated argument."
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:680
+#: ../src/Doc/tutorial/datastructures.rst:693
 msgid ""
 "It is possible to assign the result of a comparison or other Boolean "
 "expression to a variable.  For example, ::"
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:688
+#: ../src/Doc/tutorial/datastructures.rst:701
 msgid ""
 "Note that in Python, unlike C, assignment cannot occur inside expressions. C "
 "programmers may grumble about this, but it avoids a common class of problems "
@@ -2597,12 +2606,12 @@ msgid ""
 "intended."
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:697
+#: ../src/Doc/tutorial/datastructures.rst:710
 msgid "Comparing Sequences and Other Types"
 msgstr ""
 
 # 41977cc17fef443ea5ee4eb2acbc42b4
-#: ../src/Doc/tutorial/datastructures.rst:699
+#: ../src/Doc/tutorial/datastructures.rst:712
 msgid ""
 "Sequence objects may be compared to other objects with the same sequence "
 "type. The comparison uses *lexicographical* ordering: first the first two "
@@ -2619,7 +2628,7 @@ msgid ""
 msgstr ""
 
 # f6a8739089604c31b9a69729e466dbd3
-#: ../src/Doc/tutorial/datastructures.rst:719
+#: ../src/Doc/tutorial/datastructures.rst:732
 msgid ""
 "Note that comparing objects of different types is legal.  The outcome is "
 "deterministic but arbitrary: the types are ordered by their name. Thus, a "
@@ -2629,7 +2638,7 @@ msgid ""
 msgstr ""
 
 # 9443e810e7df404caf028d0caea7657d
-#: ../src/Doc/tutorial/datastructures.rst:728
+#: ../src/Doc/tutorial/datastructures.rst:741
 msgid ""
 "The rules for comparing objects of different types should not be relied "
 "upon; they may change in a future version of the language."
