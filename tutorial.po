@@ -1252,7 +1252,7 @@ msgstr ""
 "sous-classée sans affecter l'ordre d'héritage de ses parents). Prises ensemble, "
 "ces propriétés permettent de concevoir des classes de façon fiable et "
 "extensible dans un contexte d'héritage multiple. Pour plus de détail, consultez "
-"http://www.python.org/download/releases/2.3/mro/." 
+"http://www.python.org/download/releases/2.3/mro/."
 
 # 0d63701d735e45d6b0ed3f46e2ff0bea
 #: ../src/Doc/tutorial/classes.rst:538
