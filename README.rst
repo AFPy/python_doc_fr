@@ -21,7 +21,7 @@ façons suivantes:
 * s'il s'agit d'un éditeur conçu spécialement pour les .po (`poedit <http://www.poedit.net/>`_,
   gted, gtranslator, lokalize, betterpoeditor, vim/emacs avec un mode PO, etc...) vous n'avez plus qu'à vous occuper du texte en français ;
 * si vous utilisez un éditeur standard (**à éviter**), chaque bloc du fichier est
-  constitué d'une chaine en anglais (précédée de "msgid") suivi de son 
+  constitué d'une chaine en anglais (précédée de "msgid") suivi de son
   équivalent en français ou d'une chaine vite (précédé de "msgstr"). Ce sont
   des dernières qu'il faut remplir ou améliorer.
 
@@ -52,7 +52,26 @@ Aides à la traduction
 * Si vous hésitez sur un terme, demandez un avis sur la
   `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_.
 * Vous pouvez consulter le `glossaire traduc.org <http://glossaire.traduc.org>`_
-  qui contient des traductions consolidées de plusieur projets. 
+  qui contient des traductions consolidées de plusieur projets.
 * Consultez aussi le site de
   `traduc.org <http://traduc.org>`_
   qui contient de nombreuses informations pour les traducteurs.
+
+Uniformisation du vocabulaire
+-----------------------------
+
+Afin d'obtenir un document cohérent cette section propose une
+traduction de quelques termes techniques, rappelant ainsi les anglicismes
+à éviter :
+
+ * regular expression => expression rationelle
+ * library => bibliothèque
+ * bound => lier
+ * built-in => primitives
+ * underscore => "tiret bas" ?
+ * mangling => "décoration de nom" ?
+ * abstract data type => type abstrait
+ * statement => instruction
+ * \:keyword: clause => clause_ :keyword:
+
+.. _clause: http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=8396944

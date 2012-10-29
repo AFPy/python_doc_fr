@@ -89,6 +89,8 @@ msgid ""
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
+"De nombreuses personnes ont contribué au language Python, à sa librarie standard et à sa documentation. "
+"Consultez :source:`Misc/ACKS` dans les sources de la distribution Python pour avoir une liste partielle des contributeurs."
 
 #: ../src/Doc/about.rst:40
 msgid ""
