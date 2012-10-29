@@ -3167,12 +3167,20 @@ msgid ""
 "Python were to print the true decimal value of the binary approximation "
 "stored for 0.1, it would have to display ::"
 msgstr ""
+"Il est simple d'oublier que la valeur stockée est une approximation de "
+"la fraction décimale d'origine, dû à la manière dont les floats sont "
+"affichés sur l'interpréteur. Python n'affiche qu'une approximation "
+"décimale de la valeur stockée en binaire. Si Python devait afficher la "
+"vraie valeur décimale de l'approximation binaire stockée pour 0.1, il "
+"afficherait ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:71
 msgid ""
 "That is more digits than most people find useful, so Python keeps the number "
 "of digits manageable by displaying a rounded value instead ::"
 msgstr ""
+"C'est bien plus de décimale que nécessaire, donc Python affiche une "
+"valeur arrondie afin d'améliorer la lisibilité ::"
 
 # 5e4f51ce66ca42769953b535fc42cc18
 #: ../src/Doc/tutorial/floatingpoint.rst:77
@@ -3182,6 +3190,10 @@ msgid ""
 "*display* of the true machine value.  This fact becomes apparent as soon as "
 "you try to do arithmetic with these values ::"
 msgstr ""
+"Il est important de comprendre qu'en réalité c'est une illusion: la "
+"valeur stockée n'est pas exactement 1/10, c'est simplement à "
+"l'affichage que la valeur stockée est arrondie. Ceci devient évident "
+"en effectuant des opérations entre ces valeurs ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:85
 msgid ""
@@ -3191,6 +3203,13 @@ msgid ""
 "arithmetic (although some languages may not *display* the difference by "
 "default, or in all output modes)."
 msgstr ""
+"Ce comportement est inhérent au comportement des nombres à virgule "
+"flottante: ce n'est pas un bug dans Python, et ce n'est pas non plus "
+"un bug dans votre code. Vous verrez le même type de comportement dans "
+"tous les autres langages utilisant le support matériel pour le calcul "
+"nombres à virgules flottante (bien que certains langages ne rendent "
+"pas visible la différence par défaut, ou pas dans tous les modes "
+"d'affichage)."
 
 # e5c2f7d498224bb3b5219ca6b49574e9
 #: ../src/Doc/tutorial/floatingpoint.rst:91
@@ -3198,6 +3217,8 @@ msgid ""
 "Other surprises follow from this one.  For example, if you try to round the "
 "value 2.675 to two decimal places, you get this ::"
 msgstr ""
+"Une autre surprise est inhérente à celle ci. Par exemple, si vous "
+"tentez d'arrondir la valeur 2.675 à deux décimales, vous obtiendrez ::"
 
 # b6492664b1a14c72aa3e3152d4802419
 #: ../src/Doc/tutorial/floatingpoint.rst:97
@@ -3233,6 +3254,8 @@ msgid ""
 "Another consequence is that since 0.1 is not exactly 1/10, summing ten "
 "values of 0.1 may not yield exactly 1.0, either::"
 msgstr ""
+"Une autre conséquence du fait que 0.1 n'est pas exactement stocké 1/10 "
+"est que la somme de dix valeurs de 0.1 ne donne pas 1.0 non plus::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:128
 msgid ""
