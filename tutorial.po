@@ -279,7 +279,7 @@ msgstr ""
 "Comme avec Smalltalk, les classes elles-mêmes sont des objets. Il existe "
 "ainsi une sémantique pour les importer et les renommer. Au contraire de C++ "
 "et Modulo-3, les types de base peuvent être utilisés comme classes de base "
-"pour que l'utilisateur puisse les étendre. Enfin, comme en C++, la plupart "
+"pour que l'utilisateur puisse les étendre. Enfin, comme en C++, la pluspart "
 "des opérateurs de base avec une syntaxe spéciale (opérateurs arithmétiques, "
 "sous-indiçage, etc.) peuvent être redéfinis pour les instances de classes."
 
@@ -1252,7 +1252,7 @@ msgstr ""
 "sous-classée sans affecter l'ordre d'héritage de ses parents). Prises ensemble, "
 "ces propriétés permettent de concevoir des classes de façon fiable et "
 "extensible dans un contexte d'héritage multiple. Pour plus de détail, consultez "
-"http://www.python.org/download/releases/2.3/mro/." 
+"http://www.python.org/download/releases/2.3/mro/."
 
 # 0d63701d735e45d6b0ed3f46e2ff0bea
 #: ../src/Doc/tutorial/classes.rst:538
@@ -3128,18 +3128,23 @@ msgstr ""
 
 #: ../src/Doc/tutorial/floatingpoint.rst:5
 msgid "Floating Point Arithmetic:  Issues and Limitations"
-msgstr ""
+msgstr "Arithmétique en Nombre à Virgule Flottante: Problèmes et Limites"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:10
 msgid ""
 "Floating-point numbers are represented in computer hardware as base 2 "
 "(binary) fractions.  For example, the decimal fraction ::"
 msgstr ""
+"Les nombres à virgule flottante sont représentés, au niveau matériel, "
+"en fractions de nombres binaires (base 2). Par exemple, la fraction "
+"décimale ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:15
 msgid ""
 "has value 1/10 + 2/100 + 5/1000, and in the same way the binary fraction ::"
 msgstr ""
+"a la valeur 1/10 + 2/100 + 5/1000, et de la même manière, la fraction "
+"binaire ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:19
 msgid ""
@@ -3147,6 +3152,9 @@ msgid ""
 "only real difference being that the first is written in base 10 fractional "
 "notation, and the second in base 2."
 msgstr ""
+"a la valeur 0/2 + 0/4 + 1/8. Ces deux fractions ont une valeur "
+"identique, la seule différence est que la première est une fraction "
+"décimale, la seconde binaire."
 
 #: ../src/Doc/tutorial/floatingpoint.rst:23
 msgid ""
@@ -3155,17 +3163,24 @@ msgid ""
 "point numbers you enter are only approximated by the binary floating-point "
 "numbers actually stored in the machine."
 msgstr ""
+"Malheureusement, la pluspart des fractions décimales n'ont pas de "
+"représentation exacte en fractions binaires. Par conséquent, en "
+"général, les nombres à virgule flottante que vous donnez sont "
+"seulement approximés en fraction binaire pour être stocké dans la "
+"machine."
 
 #: ../src/Doc/tutorial/floatingpoint.rst:28
 msgid ""
 "The problem is easier to understand at first in base 10.  Consider the "
 "fraction 1/3.  You can approximate that as a base 10 fraction::"
 msgstr ""
+"Le problème est plus simple à aborder en base 10. Prenons par exemple, "
+"la fraction 1/3. Vous pouvez l'approximer en une fraction décimale::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:33
 #: ../src/Doc/tutorial/floatingpoint.rst:37
 msgid "or, better, ::"
-msgstr ""
+msgstr "ou, mieux, ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:41
 msgid ""
@@ -3173,6 +3188,9 @@ msgid ""
 "result will never be exactly 1/3, but will be an increasingly better "
 "approximation of 1/3."
 msgstr ""
+"etc... Peu importe le nombre de décimales que vous écrirez, le "
+"résultat ne sera jamais exactement 1/3, mais une estimation s'en "
+"approchant toujours mieux."
 
 #: ../src/Doc/tutorial/floatingpoint.rst:45
 msgid ""
@@ -3180,11 +3198,16 @@ msgid ""
 "decimal value 0.1 cannot be represented exactly as a base 2 fraction.  In "
 "base 2, 1/10 is the infinitely repeating fraction ::"
 msgstr ""
+"De la même manière, peu importe combien de décimales en base 2 vous "
+"utiliserez, la valeur décimale 0.1 ne peut être représentée exactement "
+"en fraction binaire. En base 2, 1/10 est le nombre périodique suivant ::"
 
 # 585f9afa498948edb520ddba73906b61
 #: ../src/Doc/tutorial/floatingpoint.rst:51
 msgid "Stop at any finite number of bits, and you get an approximation."
 msgstr ""
+"Arretez à n'importe quelle quantité finie de bits, et vous obtiendez une "
+"approximation."
 
 # a3e931a40eb6454aaf8258fe6dcc2c2a
 #: ../src/Doc/tutorial/floatingpoint.rst:53
@@ -3193,11 +3216,14 @@ msgid ""
 "available for a Python float, so the value stored internally when you enter "
 "the decimal number ``0.1`` is the binary fraction ::"
 msgstr ""
+"Pour Python, sur une machine typique, 53 bits sont utilisés pour la "
+"précision d'un float, donc la valeur stockée lorsque vous entrez le "
+"nombre décimal ``0.1`` est la fraction binaire ::"
 
 # b19de5faee084120b720b24ac015d415
 #: ../src/Doc/tutorial/floatingpoint.rst:59
 msgid "which is close to, but not exactly equal to, 1/10."
-msgstr ""
+msgstr "qui est proche, mais pas exactement égal à 1/10."
 
 # 8933cbcb05124de785ee6c7fe3365adb
 #: ../src/Doc/tutorial/floatingpoint.rst:61
@@ -3209,12 +3235,20 @@ msgid ""
 "Python were to print the true decimal value of the binary approximation "
 "stored for 0.1, it would have to display ::"
 msgstr ""
+"Il est simple d'oublier que la valeur stockée est une approximation de "
+"la fraction décimale d'origine, dû à la manière dont les floats sont "
+"affichés dans l'interpréteur. Python n'affiche qu'une approximation "
+"décimale de la valeur stockée en binaire. Si Python devait afficher la "
+"vraie valeur décimale de l'approximation binaire stockée pour 0.1, il "
+"afficherait ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:71
 msgid ""
 "That is more digits than most people find useful, so Python keeps the number "
 "of digits manageable by displaying a rounded value instead ::"
 msgstr ""
+"C'est bien plus de décimale que nécessaire, donc Python affiche une "
+"valeur arrondie afin d'améliorer la lisibilité ::"
 
 # 5e4f51ce66ca42769953b535fc42cc18
 #: ../src/Doc/tutorial/floatingpoint.rst:77
@@ -3224,6 +3258,10 @@ msgid ""
 "*display* of the true machine value.  This fact becomes apparent as soon as "
 "you try to do arithmetic with these values ::"
 msgstr ""
+"Il est important de comprendre qu'en réalité c'est une illusion: la "
+"valeur stockée n'est pas exactement 1/10, c'est simplement à "
+"l'affichage que la valeur stockée est arrondie. Ceci devient évident "
+"en effectuant des opérations entre ces valeurs ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:85
 msgid ""
@@ -3233,6 +3271,13 @@ msgid ""
 "arithmetic (although some languages may not *display* the difference by "
 "default, or in all output modes)."
 msgstr ""
+"Ce comportement est inhérent au comportement des nombres à virgule "
+"flottante: ce n'est pas un bug dans Python, et ce n'est pas non plus "
+"un bug dans votre code. Vous verrez le même type de comportement dans "
+"tous les autres langages utilisant le support matériel pour le calcul "
+"nombres à virgules flottante (bien que certains langages ne rendent "
+"pas visible la différence par défaut, ou pas dans tous les modes "
+"d'affichage)."
 
 # e5c2f7d498224bb3b5219ca6b49574e9
 #: ../src/Doc/tutorial/floatingpoint.rst:91
@@ -3240,6 +3285,8 @@ msgid ""
 "Other surprises follow from this one.  For example, if you try to round the "
 "value 2.675 to two decimal places, you get this ::"
 msgstr ""
+"Une autre surprise est inhérente à celle ci. Par exemple, si vous "
+"tentez d'arrondir la valeur 2.675 à deux décimales, vous obtiendrez ::"
 
 # b6492664b1a14c72aa3e3152d4802419
 #: ../src/Doc/tutorial/floatingpoint.rst:97
@@ -3252,6 +3299,13 @@ msgid ""
 "point number, it's again replaced with a binary approximation, whose exact "
 "value is ::"
 msgstr ""
+"La documentation de la primitive :func:`round` indique qu'elle arrondi "
+"à la valeur la plus proche en s'éloignant de zéro. Puisque la fraction "
+"décimale est exactement à mi-chemin entre 2.67 et 2.68, vous devriez "
+"vous attendre à obtenir (une approximation binaire de) 2.68. Ce n'est "
+"pourtant pas le cas, car lorsque la fraction décimale ``2.675`` est "
+"convertie en float, elle est stockée par une approximation dont la valeur "
+"exacte est ::"
 
 # b6ad3e1f39374a2492515e10f77134d6
 #: ../src/Doc/tutorial/floatingpoint.rst:106
@@ -3259,6 +3313,8 @@ msgid ""
 "Since this approximation is slightly closer to 2.67 than to 2.68, it's "
 "rounded down."
 msgstr ""
+"Puisque l'approximation est légèrement plus proche de 2.67 que 2.68, "
+"l'arrondi se fait vers le bas."
 
 # 3683a07c343348568f95d1964fd2a7b7
 #: ../src/Doc/tutorial/floatingpoint.rst:109
@@ -3268,6 +3324,11 @@ msgid ""
 "Incidentally, the :mod:`decimal` module also provides a nice way to \"see\" "
 "the exact value that's stored in any particular Python float ::"
 msgstr ""
+"Si vous êtes dans une situation où les arrondis de nombres décimaux à "
+"mi-chemin ont de l'importance, vous devriez utiliser le module "
+":mod:`decimal`. Soit dit en passant, le module :mod:`decimal` propose "
+"aussi un moyen pratique de \"voir\" la valeur exacte stockée pour "
+"n'importe quel float."
 
 # 41ea13ad53d44bb28b904415c1ea2417
 #: ../src/Doc/tutorial/floatingpoint.rst:118
@@ -3275,6 +3336,8 @@ msgid ""
 "Another consequence is that since 0.1 is not exactly 1/10, summing ten "
 "values of 0.1 may not yield exactly 1.0, either::"
 msgstr ""
+"Une autre conséquence du fait que 0.1 n'est pas exactement stocké 1/10 "
+"est que la somme de dix valeurs de 0.1 ne donne pas 1.0 non plus::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:128
 msgid ""
@@ -3284,6 +3347,12 @@ msgid ""
 "www.lahey.com/float.htm>`_ for a more complete account of other common "
 "surprises."
 msgstr ""
+"L'arithmétique des nombres binaires à virgule flottante réservent "
+"beaucoup de surprises de ce genre. Le problème avec \"0.1\" est "
+"expliqué en détails ci-desous, dans la section \"Représentation "
+"d'Erreur\". Voir `The Perils of Floating Point "
+"<http://www.lahey.com/float.htm>`_ pour une liste plus complète de ce "
+"genre de surprises."
 
 # 87e3aaf0e7e2477fb17072c49a0e5058
 #: ../src/Doc/tutorial/floatingpoint.rst:133
@@ -3296,6 +3365,15 @@ msgid ""
 "decimal arithmetic, and that every float operation can suffer a new rounding "
 "error."
 msgstr ""
+"Il est vrai qu'il n'existe pas de réponses simples, cependant ne vous "
+"méfiez pas trop des nombres à virtule flottante! Les erreurs, en "
+"Python, dans les opérations de nombres à virgule flottante sont dues "
+"au matériel sous-jacent, et sur la pluspart des machines ne sont pas "
+"plus importantes que 1 sur 2\\*\\*53 par opération. C'est plus que "
+"nécessaire pour la pluspart des tâches, mais vous devez garder à "
+"l'esprit que ce ne sont pas des opérations décimales, et que chaque "
+"opération sur des nombres à virgule flottante peut souffrir d'une "
+"nouvelle erreur.
 
 # 0d5b6ba08bee41ae81e33306aca23343
 #: ../src/Doc/tutorial/floatingpoint.rst:140
@@ -3306,6 +3384,12 @@ msgid ""
 "expect.  For fine control over how a float is displayed see the :meth:`str."
 "format` method's format specifiers in :ref:`formatstrings`."
 msgstr ""
+"Bien que des cas pathologiques existent, pour la pluspart des cas "
+"d'utilisations communs vous obtiendrez le résultat attendu à la fin en "
+"arrondissant simplement au nombre de décimals désirées à "
+"l'affichage. Pour un contrôle fin sur la manière dont les float sont "
+"affichés consultez les :ref:`formatstrings` de la méthode "
+":meth:`str.format`"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:150
 msgid "Representation Error"
