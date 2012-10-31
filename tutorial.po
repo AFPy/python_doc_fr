@@ -2313,7 +2313,7 @@ msgid ""
 "and adopting a nice coding style helps tremendously for that."
 msgstr ""
 "Maintenant que vous êtes prêt à écrire des programmes plus longs et plus "
-"complexes, il est de parler du *style de codage*. La plupart des langages "
+"complexes, il est temps de parler du *style de codage*. La plupart des langages "
 "peuvent être écrits (ou plutôt *formattés*) selon différents styles ; certains "
 "sont plus lisibles que d'autres. Rendre la lecture de votre code plus facile "
 "aux autres est toujours une bonne idée, et adopter un bon style de codage "
@@ -2349,7 +2349,7 @@ msgstr ""
 #: ../src/Doc/tutorial/controlflow.rst:641
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr ""
-"Faites de retour à la ligne, de telle sorte qu'elles n'excèdent pas 79 caractères."
+"Faites des retours à la ligne, de telle sorte qu'elles n'excèdent pas 79 caractères."
 
 #: ../src/Doc/tutorial/controlflow.rst:643
 msgid ""
