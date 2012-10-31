@@ -2312,6 +2312,12 @@ msgid ""
 "others. Making it easy for others to read your code is always a good idea, "
 "and adopting a nice coding style helps tremendously for that."
 msgstr ""
+"Maintenant que vous êtes prêt à écrire des programmes plus longs et plus "
+"complexes, il est de parler du *style de codage*. La plupart des langages "
+"peuvent être écrits (ou plutôt *formattés*) selon différents styles ; certains "
+"sont plus lisibles que d'autres. Rendre la lecture de votre code plus facile "
+"aux autres est toujours une bonne idée, et adopter un bon style de codage "
+"peut énormément vous y aider."
 
 #: ../src/Doc/tutorial/controlflow.rst:630
 msgid ""
@@ -2320,10 +2326,14 @@ msgid ""
 "Python developer should read it at some point; here are the most important "
 "points extracted for you:"
 msgstr ""
+"En Python, la :pep:`8` a émergé comme étant un guide auquel la plupart des "
+"projets adhèrent ; elle met en avant un style de codage très lisible et "
+"agréable à l'oeil. Chaque développeur Python devrait donc la lire et s'en "
+"inspirer autant que possible ; voici ses principaux points notables :"
 
 #: ../src/Doc/tutorial/controlflow.rst:635
 msgid "Use 4-space indentation, and no tabs."
-msgstr ""
+msgstr "Utilisez des indentations de 4 espaces, et pas de tabulation."
 
 #: ../src/Doc/tutorial/controlflow.rst:637
 msgid ""
@@ -2331,36 +2341,47 @@ msgid ""
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
 "confusion, and are best left out."
 msgstr ""
+"4 espaces constituent un bon compromis entre une indentation courte (qui "
+"permet une profondeur d'imbrication plus importante) et une longue (qui rend "
+"le code plus facile à lire). Les tabulations introduisent de la confusion, "
+"et doivent être proscrites autant que possible."
 
 #: ../src/Doc/tutorial/controlflow.rst:641
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr ""
+"Faites de retour à la ligne, de telle sorte qu'elles n'excèdent pas 79 caractères."
 
 #: ../src/Doc/tutorial/controlflow.rst:643
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
 msgstr ""
+"Ceci aide les utilisateurs ne disposant que de petits écrans, et permet sur de plus "
+"grands de disposer plusieurs fichiers côte à côte sans difficulté."
 
 #: ../src/Doc/tutorial/controlflow.rst:646
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code "
 "inside functions."
 msgstr ""
+"Utilisez des lignes vides pour séparer les fonctions et les classes, ou pour "
+"scinder de gros blocs de code à l'intérieur de fonctions."
 
 #: ../src/Doc/tutorial/controlflow.rst:649
 msgid "When possible, put comments on a line of their own."
-msgstr ""
+msgstr "Lorsque c'est possible, placez les commentaires sur leur propres lignes."
 
 #: ../src/Doc/tutorial/controlflow.rst:651
 msgid "Use docstrings."
-msgstr ""
+msgstr "Utilisez les chaînes de documentation"
 
 #: ../src/Doc/tutorial/controlflow.rst:653
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
 msgstr ""
+"Utilisez des espaces autour des opérateurs et après les virgules, mais "
+"pas directement à l'intérieur des parenthèses : ``a = f(1, 2) + g(3, 4)``."
 
 #: ../src/Doc/tutorial/controlflow.rst:656
 msgid ""
@@ -2369,6 +2390,11 @@ msgid ""
 "and methods.  Always use ``self`` as the name for the first method argument "
 "(see :ref:`tut-firstclasses` for more on classes and methods)."
 msgstr ""
+"Nommez toujours vos classes et fonctions de la même manière ; la convention "
+"est d'utiliser une notation ``CamelCase`` pour les classes, et "
+"``minuscules_avec_trait_bas`` pour les fonctions et méthodes. Utilisez "
+"toujours ``self`` comme nom du premier argument des méthodes (voyez "
+":ref:`tut-firstclasses` pour en savoir plus sur les classes et les méthodes)."
 
 # 82cc90f14beb4e74801836b553a5595f
 #: ../src/Doc/tutorial/controlflow.rst:661
@@ -2376,6 +2402,9 @@ msgid ""
 "Don't use fancy encodings if your code is meant to be used in international "
 "environments.  Plain ASCII works best in any case."
 msgstr ""
+"N'utilisez pas d'encodages exotiques dès lors que votre code est sensé être "
+"utilisé dans des environnements internationaux. L'ASCII est encore ce qui "
+"marche le mieux dans la plupart des cas."
 
 #: ../src/Doc/tutorial/controlflow.rst:667
 msgid ""
@@ -2383,6 +2412,10 @@ msgid ""
 "a mutable object is passed, the caller will see any changes the callee makes "
 "to it (items inserted into a list)."
 msgstr ""
+"En fait, *appels par référence d'objets* serait sans doute une desciption plus "
+"juste, dans la mesure où si un objet mutable est passé en argument, "
+"l'appelant verra toutes les modifications qui lui auront été apportées par "
+"l'appelé (insertion d'éléments dans une liste...)."
 
 #: ../src/Doc/tutorial/datastructures.rst:5
 msgid "Data Structures"
