@@ -3209,7 +3209,7 @@ msgid ""
 "It is possible to assign the result of a comparison or other Boolean "
 "expression to a variable.  For example, ::"
 msgstr ""
-"Il est possible d'affecter le résultat d'une comparaison ou d'autre autre "
+"Il est possible d'affecter le résultat d'une comparaison ou d'une autre "
 "expression booléenne à une variable. Par exemple ::"
 
 #: ../src/Doc/tutorial/datastructures.rst:701
