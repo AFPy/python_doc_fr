@@ -279,7 +279,7 @@ msgstr ""
 "Comme avec Smalltalk, les classes elles-mêmes sont des objets. Il existe "
 "ainsi une sémantique pour les importer et les renommer. Au contraire de C++ "
 "et Modulo-3, les types de base peuvent être utilisés comme classes de base "
-"pour que l'utilisateur puisse les étendre. Enfin, comme en C++, la plupart "
+"pour que l'utilisateur puisse les étendre. Enfin, comme en C++, la pluspart "
 "des opérateurs de base avec une syntaxe spéciale (opérateurs arithmétiques, "
 "sous-indiçage, etc.) peuvent être redéfinis pour les instances de classes."
 
@@ -1252,7 +1252,7 @@ msgstr ""
 "sous-classée sans affecter l'ordre d'héritage de ses parents). Prises ensemble, "
 "ces propriétés permettent de concevoir des classes de façon fiable et "
 "extensible dans un contexte d'héritage multiple. Pour plus de détail, consultez "
-"http://www.python.org/download/releases/2.3/mro/." 
+"http://www.python.org/download/releases/2.3/mro/."
 
 # 0d63701d735e45d6b0ed3f46e2ff0bea
 #: ../src/Doc/tutorial/classes.rst:538
@@ -3634,18 +3634,23 @@ msgstr ""
 
 #: ../src/Doc/tutorial/floatingpoint.rst:5
 msgid "Floating Point Arithmetic:  Issues and Limitations"
-msgstr ""
+msgstr "Arithmétique en Nombre à Virgule Flottante: Problèmes et Limites"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:10
 msgid ""
 "Floating-point numbers are represented in computer hardware as base 2 "
 "(binary) fractions.  For example, the decimal fraction ::"
 msgstr ""
+"Les nombres à virgule flottante sont représentés, au niveau matériel, "
+"en fractions de nombres binaires (base 2). Par exemple, la fraction "
+"décimale ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:15
 msgid ""
 "has value 1/10 + 2/100 + 5/1000, and in the same way the binary fraction ::"
 msgstr ""
+"a la valeur 1/10 + 2/100 + 5/1000, et de la même manière, la fraction "
+"binaire ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:19
 msgid ""
@@ -3653,6 +3658,9 @@ msgid ""
 "only real difference being that the first is written in base 10 fractional "
 "notation, and the second in base 2."
 msgstr ""
+"a la valeur 0/2 + 0/4 + 1/8. Ces deux fractions ont une valeur "
+"identique, la seule différence est que la première est une fraction "
+"décimale, la seconde binaire."
 
 #: ../src/Doc/tutorial/floatingpoint.rst:23
 msgid ""
@@ -3661,17 +3669,24 @@ msgid ""
 "point numbers you enter are only approximated by the binary floating-point "
 "numbers actually stored in the machine."
 msgstr ""
+"Malheureusement, la pluspart des fractions décimales n'ont pas de "
+"représentation exacte en fractions binaires. Par conséquent, en "
+"général, les nombres à virgule flottante que vous donnez sont "
+"seulement approximés en fraction binaire pour être stocké dans la "
+"machine."
 
 #: ../src/Doc/tutorial/floatingpoint.rst:28
 msgid ""
 "The problem is easier to understand at first in base 10.  Consider the "
 "fraction 1/3.  You can approximate that as a base 10 fraction::"
 msgstr ""
+"Le problème est plus simple à aborder en base 10. Prenons par exemple, "
+"la fraction 1/3. Vous pouvez l'approximer en une fraction décimale::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:33
 #: ../src/Doc/tutorial/floatingpoint.rst:37
 msgid "or, better, ::"
-msgstr ""
+msgstr "ou, mieux, ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:41
 msgid ""
@@ -3679,6 +3694,9 @@ msgid ""
 "result will never be exactly 1/3, but will be an increasingly better "
 "approximation of 1/3."
 msgstr ""
+"etc... Peu importe le nombre de décimales que vous écrirez, le "
+"résultat ne sera jamais exactement 1/3, mais une estimation s'en "
+"approchant toujours mieux."
 
 #: ../src/Doc/tutorial/floatingpoint.rst:45
 msgid ""
@@ -3686,11 +3704,16 @@ msgid ""
 "decimal value 0.1 cannot be represented exactly as a base 2 fraction.  In "
 "base 2, 1/10 is the infinitely repeating fraction ::"
 msgstr ""
+"De la même manière, peu importe combien de décimales en base 2 vous "
+"utiliserez, la valeur décimale 0.1 ne peut être représentée exactement "
+"en fraction binaire. En base 2, 1/10 est le nombre périodique suivant ::"
 
 # 585f9afa498948edb520ddba73906b61
 #: ../src/Doc/tutorial/floatingpoint.rst:51
 msgid "Stop at any finite number of bits, and you get an approximation."
 msgstr ""
+"Arretez à n'importe quelle quantité finie de bits, et vous obtiendez une "
+"approximation."
 
 # a3e931a40eb6454aaf8258fe6dcc2c2a
 #: ../src/Doc/tutorial/floatingpoint.rst:53
@@ -3699,11 +3722,14 @@ msgid ""
 "available for a Python float, so the value stored internally when you enter "
 "the decimal number ``0.1`` is the binary fraction ::"
 msgstr ""
+"Pour Python, sur une machine typique, 53 bits sont utilisés pour la "
+"précision d'un float, donc la valeur stockée lorsque vous entrez le "
+"nombre décimal ``0.1`` est la fraction binaire ::"
 
 # b19de5faee084120b720b24ac015d415
 #: ../src/Doc/tutorial/floatingpoint.rst:59
 msgid "which is close to, but not exactly equal to, 1/10."
-msgstr ""
+msgstr "qui est proche, mais pas exactement égal à 1/10."
 
 # 8933cbcb05124de785ee6c7fe3365adb
 #: ../src/Doc/tutorial/floatingpoint.rst:61
@@ -3715,12 +3741,20 @@ msgid ""
 "Python were to print the true decimal value of the binary approximation "
 "stored for 0.1, it would have to display ::"
 msgstr ""
+"Il est simple d'oublier que la valeur stockée est une approximation de "
+"la fraction décimale d'origine, dû à la manière dont les floats sont "
+"affichés dans l'interpréteur. Python n'affiche qu'une approximation "
+"décimale de la valeur stockée en binaire. Si Python devait afficher la "
+"vraie valeur décimale de l'approximation binaire stockée pour 0.1, il "
+"afficherait ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:71
 msgid ""
 "That is more digits than most people find useful, so Python keeps the number "
 "of digits manageable by displaying a rounded value instead ::"
 msgstr ""
+"C'est bien plus de décimale que nécessaire, donc Python affiche une "
+"valeur arrondie afin d'améliorer la lisibilité ::"
 
 # 5e4f51ce66ca42769953b535fc42cc18
 #: ../src/Doc/tutorial/floatingpoint.rst:77
@@ -3730,6 +3764,10 @@ msgid ""
 "*display* of the true machine value.  This fact becomes apparent as soon as "
 "you try to do arithmetic with these values ::"
 msgstr ""
+"Il est important de comprendre qu'en réalité c'est une illusion: la "
+"valeur stockée n'est pas exactement 1/10, c'est simplement à "
+"l'affichage que la valeur stockée est arrondie. Ceci devient évident "
+"en effectuant des opérations entre ces valeurs ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:85
 msgid ""
@@ -3739,6 +3777,13 @@ msgid ""
 "arithmetic (although some languages may not *display* the difference by "
 "default, or in all output modes)."
 msgstr ""
+"Ce comportement est inhérent au comportement des nombres à virgule "
+"flottante: ce n'est pas un bug dans Python, et ce n'est pas non plus "
+"un bug dans votre code. Vous verrez le même type de comportement dans "
+"tous les autres langages utilisant le support matériel pour le calcul "
+"nombres à virgules flottante (bien que certains langages ne rendent "
+"pas visible la différence par défaut, ou pas dans tous les modes "
+"d'affichage)."
 
 # e5c2f7d498224bb3b5219ca6b49574e9
 #: ../src/Doc/tutorial/floatingpoint.rst:91
@@ -3746,6 +3791,8 @@ msgid ""
 "Other surprises follow from this one.  For example, if you try to round the "
 "value 2.675 to two decimal places, you get this ::"
 msgstr ""
+"Une autre surprise est inhérente à celle ci. Par exemple, si vous "
+"tentez d'arrondir la valeur 2.675 à deux décimales, vous obtiendrez ::"
 
 # b6492664b1a14c72aa3e3152d4802419
 #: ../src/Doc/tutorial/floatingpoint.rst:97
@@ -3758,6 +3805,13 @@ msgid ""
 "point number, it's again replaced with a binary approximation, whose exact "
 "value is ::"
 msgstr ""
+"La documentation de la primitive :func:`round` indique qu'elle arrondi "
+"à la valeur la plus proche en s'éloignant de zéro. Puisque la fraction "
+"décimale est exactement à mi-chemin entre 2.67 et 2.68, vous devriez "
+"vous attendre à obtenir (une approximation binaire de) 2.68. Ce n'est "
+"pourtant pas le cas, car lorsque la fraction décimale ``2.675`` est "
+"convertie en float, elle est stockée par une approximation dont la valeur "
+"exacte est ::"
 
 # b6ad3e1f39374a2492515e10f77134d6
 #: ../src/Doc/tutorial/floatingpoint.rst:106
@@ -3765,6 +3819,8 @@ msgid ""
 "Since this approximation is slightly closer to 2.67 than to 2.68, it's "
 "rounded down."
 msgstr ""
+"Puisque l'approximation est légèrement plus proche de 2.67 que 2.68, "
+"l'arrondi se fait vers le bas."
 
 # 3683a07c343348568f95d1964fd2a7b7
 #: ../src/Doc/tutorial/floatingpoint.rst:109
@@ -3774,6 +3830,11 @@ msgid ""
 "Incidentally, the :mod:`decimal` module also provides a nice way to \"see\" "
 "the exact value that's stored in any particular Python float ::"
 msgstr ""
+"Si vous êtes dans une situation où les arrondis de nombres décimaux à "
+"mi-chemin ont de l'importance, vous devriez utiliser le module "
+":mod:`decimal`. Soit dit en passant, le module :mod:`decimal` propose "
+"aussi un moyen pratique de \"voir\" la valeur exacte stockée pour "
+"n'importe quel float."
 
 # 41ea13ad53d44bb28b904415c1ea2417
 #: ../src/Doc/tutorial/floatingpoint.rst:118
@@ -3781,6 +3842,8 @@ msgid ""
 "Another consequence is that since 0.1 is not exactly 1/10, summing ten "
 "values of 0.1 may not yield exactly 1.0, either::"
 msgstr ""
+"Une autre conséquence du fait que 0.1 n'est pas exactement stocké 1/10 "
+"est que la somme de dix valeurs de 0.1 ne donne pas 1.0 non plus::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:128
 msgid ""
@@ -3790,6 +3853,12 @@ msgid ""
 "www.lahey.com/float.htm>`_ for a more complete account of other common "
 "surprises."
 msgstr ""
+"L'arithmétique des nombres binaires à virgule flottante réservent "
+"beaucoup de surprises de ce genre. Le problème avec \"0.1\" est "
+"expliqué en détails ci-desous, dans la section \"Représentation "
+"d'Erreur\". Voir `The Perils of Floating Point "
+"<http://www.lahey.com/float.htm>`_ pour une liste plus complète de ce "
+"genre de surprises."
 
 # 87e3aaf0e7e2477fb17072c49a0e5058
 #: ../src/Doc/tutorial/floatingpoint.rst:133
@@ -3802,6 +3871,15 @@ msgid ""
 "decimal arithmetic, and that every float operation can suffer a new rounding "
 "error."
 msgstr ""
+"Il est vrai qu'il n'existe pas de réponses simples, cependant ne vous "
+"méfiez pas trop des nombres à virtule flottante! Les erreurs, en "
+"Python, dans les opérations de nombres à virgule flottante sont dues "
+"au matériel sous-jacent, et sur la pluspart des machines ne sont pas "
+"plus importantes que 1 sur 2\\*\\*53 par opération. C'est plus que "
+"nécessaire pour la pluspart des tâches, mais vous devez garder à "
+"l'esprit que ce ne sont pas des opérations décimales, et que chaque "
+"opération sur des nombres à virgule flottante peut souffrir d'une "
+"nouvelle erreur.
 
 # 0d5b6ba08bee41ae81e33306aca23343
 #: ../src/Doc/tutorial/floatingpoint.rst:140
@@ -3812,6 +3890,12 @@ msgid ""
 "expect.  For fine control over how a float is displayed see the :meth:`str."
 "format` method's format specifiers in :ref:`formatstrings`."
 msgstr ""
+"Bien que des cas pathologiques existent, pour la pluspart des cas "
+"d'utilisations communs vous obtiendrez le résultat attendu à la fin en "
+"arrondissant simplement au nombre de décimals désirées à "
+"l'affichage. Pour un contrôle fin sur la manière dont les float sont "
+"affichés consultez les :ref:`formatstrings` de la méthode "
+":meth:`str.format`"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:150
 msgid "Representation Error"
@@ -4561,11 +4645,11 @@ msgstr ""
 
 #: ../src/Doc/tutorial/interpreter.rst:5
 msgid "Using the Python Interpreter"
-msgstr ""
+msgstr "Utiliser l'interpréteur Python"
 
 #: ../src/Doc/tutorial/interpreter.rst:11
 msgid "Invoking the Interpreter"
-msgstr ""
+msgstr "Invoquer l'interpréteur"
 
 # 1fe8d6c4d9b34bf591bf05002c64109c
 #: ../src/Doc/tutorial/interpreter.rst:13
@@ -4575,6 +4659,11 @@ msgid ""
 "your Unix shell's search path makes it possible to start it by typing the "
 "command ::"
 msgstr ""
+"L'interpréteur python est habituellement installé "
+":file:`/usr/local/bin/python` sur les machines où il est disponible. En "
+"mettant :file:`/usr/local/bin` dans les chemins de recherche de votre shell "
+"Unix, vous permettez de lancer l'interpréteur Python en tapant la "
+"commande ::"
 
 # e074012e6a55498fad926d939d5ce0f7
 #: ../src/Doc/tutorial/interpreter.rst:19
@@ -4584,6 +4673,10 @@ msgid ""
 "Python guru or system administrator.  (E.g., :file:`/usr/local/python` is a "
 "popular alternative location.)"
 msgstr ""
+"dans le shell. Le choix du répertoire où se trouve l'interpréteur étant une "
+"option d'installation, d'autres chemins sont possibles; voyez avec votre guru "
+"Python local ou votre administrateur système. (Par exemple, "
+":file:`/usr/local/python` est une localisation courante.)"
 
 # 9d462e2928f341308d62bcd4963089f4
 #: ../src/Doc/tutorial/interpreter.rst:24
@@ -4593,6 +4686,11 @@ msgid ""
 "To add this directory to your path,  you can type the following command into "
 "the command prompt in a DOS box::"
 msgstr ""
+"Sur les machines Windows, l'installation de Python se situe généralement "
+"dans :file:`C:\\\\Python27`, bien que vous puissiez changer cela lorsque "
+"vous lancer l'installateur. Pour ajouter ce chemin dans vos chemins de "
+"recherche, vous pouvez taper la commande suivante dans votre émulateur de "
+"terminal DOS ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:31
 msgid ""
@@ -4601,6 +4699,11 @@ msgid ""
 "exit status.  If that doesn't work, you can exit the interpreter by typing "
 "the following command: ``quit()``."
 msgstr ""
+"Taper un caractère de fin de fichier (:kbd:`Ctrl-D` sous Unix, "
+":kbd:`Ctrl-Z` sous Windows) suive à une invite de commande primaire provoque "
+"la fermeture de l'interpréteur avec un statut d'erreur nul. Si cela ne "
+"fonctionne pas, vous pouvez fermer l'interpréteur en tapant la commande "
+"``quit()``."
 
 #: ../src/Doc/tutorial/interpreter.rst:36
 msgid ""
@@ -4614,6 +4717,18 @@ msgid ""
 "or if ``^P`` is echoed, command line editing isn't available; you'll only be "
 "able to use backspace to remove characters from the current line."
 msgstr ""
+"Les possibilités d'édition de l'interpréteur ne sont généralement pas très "
+"sophistiquées. Sous Unix, quiconque a installé l'interpréteur est susceptible "
+"d'avoir la gestion de la bibliothèque GNU readline d'activé, ce qui ajoute "
+"une édition interactive plus élaborée et une fonctionnalité d'historique. Le "
+"moyen le plus rapide de tester si l'édition de la ligne de commande est gérée "
+"est peut-être de taper :kbd:`Ctrl-P` suite au premier invite de commande que "
+"vous rencontrez. Si cela bip, vous disposez de l'édition de la ligne de "
+"commande; voyez l'appendice :ref:`tut-interacting` pour une introduction aux "
+"touches. Si rien ne semble se produire ou si ``^P`` s'affiche, l'édition de "
+"la ligne de commande n'est pas disponible; vous serez seulement en mesure "
+"d'utiliser la touche retour arrière pour supprimer des caractères de la ligne "
+"courante."
 
 #: ../src/Doc/tutorial/interpreter.rst:46
 msgid ""
@@ -4622,6 +4737,11 @@ msgid ""
 "interactively; when called with a file name argument or with a file as "
 "standard input, it reads and executes a *script* from that file."
 msgstr ""
+"L'interpréteur opère de façon similaire au shell Unix : lorsqu'il est appelé "
+"avec l'entrée standard connectée à un périphérique tty, il lit et exécute les "
+"commandes de façon interactive; lorsqu'il est appelé avec un nom de fichier "
+"en argument ou avec un fichier comme entrée standard, il lit et exécute un "
+"*script* depuis ce fichier."
 
 #: ../src/Doc/tutorial/interpreter.rst:51
 msgid ""
@@ -4631,6 +4751,12 @@ msgid ""
 "characters that are special to the shell, it is usually advised to quote "
 "*command* in its entirety with single quotes."
 msgstr ""
+"Une autre façon de lancer l'interpréteur est "
+"``python -c commande [arg] ...``. Cela exécute les instructions de "
+"*commande* de façon analogue à l'option :option:`-c` du shell. Parce que les "
+"instructions Python contiennent souvent des espaces et d'autres caractères "
+"spéciaux pour le shell, il est généralement conseillé de mettre *commande* "
+"entre guillemets simples."
 
 #: ../src/Doc/tutorial/interpreter.rst:57
 msgid ""
@@ -4638,6 +4764,10 @@ msgid ""
 "``python -m module [arg] ...``, which executes the source file for *module* "
 "as if you had spelled out its full name on the command line."
 msgstr ""
+"Certains modules Python sont aussi utiles en tant que scripts. Ils peuvent "
+"être appelé avec ``python -m module [arg] ...`` qui exécute le fichier source "
+"de *module* comme si vous aviez tapé son nom complet dans la ligne de "
+"commande."
 
 # 3cbdf83437db4943ba9c24f111feb698
 #: ../src/Doc/tutorial/interpreter.rst:61
@@ -4646,10 +4776,13 @@ msgid ""
 "script and enter interactive mode afterwards.  This can be done by passing :"
 "option:`-i` before the script."
 msgstr ""
+"Quand un fichier de script est utilisé, il est parfois utile de pouvoir "
+"lancer le script puis d'entrer dans le mode interactif après coup. Cela est "
+"possible en passant :option:`-i` avant le script."
 
 #: ../src/Doc/tutorial/interpreter.rst:69
 msgid "Argument Passing"
-msgstr ""
+msgstr "Passage d'arguments"
 
 # cf63c591cb9a4616a61a495bd06cf8af
 #: ../src/Doc/tutorial/interpreter.rst:71
@@ -4667,10 +4800,23 @@ msgid ""
 "interpreter's option processing but left in ``sys.argv`` for  the command or "
 "module to handle."
 msgstr ""
+"Lorsqu'ils sont connus de l'interpréteur, le nom du script et les arguments "
+"additionnels sont représentés sous forme d'une liste assignée à la variable "
+"``argv`` du module ``sys``. Vous pouvez y accéder en exécutant "
+"``import sys``. La liste contient au minimum un élément; quand aucun script "
+"ni aucun arguments ne sont donnés, ``sys.argv[0]`` est une chaine vide. "
+"Quand ``'-'`` (qui représente l'entrée standard) est passé comme nom de "
+"script, ``sys.argv[0]`` contient ``'-'``. Quand :option:`-c` *commande* est "
+"utilisé, ``sys.argv[0]`` contient ``'-c'``. Enfin, quand "
+":option:`-m` *module* est utilisé, le nom complet du module est assigné à "
+"``sys.argv[0]``. Les options trouvées après :option:`-c` *commande* ou "
+":option:`-m` *module* ne sont pas lues comme options de l'interpréteur "
+"Python mais laissées dans ``sys.argv`` pour être utilisée par le module "
+"ou la commande."
 
 #: ../src/Doc/tutorial/interpreter.rst:87
 msgid "Interactive Mode"
-msgstr ""
+msgstr "Mode interactif"
 
 #: ../src/Doc/tutorial/interpreter.rst:89
 msgid ""
@@ -4681,20 +4827,30 @@ msgid ""
 "dots (``...``). The interpreter prints a welcome message stating its version "
 "number and a copyright notice before printing the first prompt::"
 msgstr ""
+"Lorsque les commandes sont lues depuis un tty, l'interpréteur est dit *en "
+"mode interactif*. Dans ce mode, il attend la prochaine commande en affichant "
+"*l'invite de commande primaire*, généralement trois \"signes supérieur à\" "
+"(``>>>``); pour demander une ligne de continuation, l'interpréteur affiche "
+"*l'invite de commande secondaire*, par défaut trois points (``...``). "
+"L'interpréteur affiche un message de bienvenue indiquant son numéro de "
+"version et une mention de *copyright* avant d'afficher le premier invite de "
+"commande ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:101
 msgid ""
 "Continuation lines are needed when entering a multi-line construct. As an "
 "example, take a look at this :keyword:`if` statement::"
 msgstr ""
+"Les lignes de continuation sont nécessaires pour entrer une construction "
+"multi-lignes. Par exemple, regardez cette instruction :keyword:`if` ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:114
 msgid "The Interpreter and Its Environment"
-msgstr ""
+msgstr "L'interpréteur et son environnement"
 
 #: ../src/Doc/tutorial/interpreter.rst:120
 msgid "Error Handling"
-msgstr ""
+msgstr "Gestion des erreurs"
 
 #: ../src/Doc/tutorial/interpreter.rst:122
 msgid ""
@@ -4708,6 +4864,17 @@ msgid ""
 "messages are written to the standard error stream; normal output from "
 "executed commands is written to standard output."
 msgstr ""
+"Quand une erreur se produit, l'interpréteur affiche un message d'erreur et "
+"le suivit de la pile. En mode interactif, il revient à l'invite de commande "
+"primaire; si l'entrée provient d'un fichier, l'interpréteur se termine avec "
+"un état de sortie non nul après avoir affiché le suivit de la pile. "
+"(Les exceptions gérées par une clause :keyword:`except` dans une instruction "
+":keyword:`try` ne sont pas des erreurs dans ce contexte.) Certaines erreurs "
+"sont inconditionnellement fatales et cause une sortie avec un état non nul; "
+"les incohérences internes et, dans certains cas, les pénuries de mémoires, "
+"sont traitées de la sorte. Tous les messages d'erreur sont écrits sur la "
+"sortie d'erreur standard; les sorties normales issues des commandes "
+"exécutées sont écrites sur la sortie standard."
 
 #: ../src/Doc/tutorial/interpreter.rst:132
 msgid ""
@@ -4717,16 +4884,23 @@ msgid ""
 "`KeyboardInterrupt` exception, which may be handled by a :keyword:`try` "
 "statement."
 msgstr ""
+"Taper le caractère d'interruption (généralement :kbd:`Ctrl+C` ou "
+":kbd:`Supprimer`) au niveau de l'invite de commande primaire annule l'entrée "
+"et revient à l'invite. [#]_ Saisir une interruption tandis qu'une commande "
+"s'exécute lève une exception :exc:`KeyboardInterrupt` qui peut être gérée "
+"par une instruction :keyword:`try`."
 
 #: ../src/Doc/tutorial/interpreter.rst:142
 msgid "Executable Python Scripts"
-msgstr ""
+msgstr "Scripts Python exécutables"
 
 #: ../src/Doc/tutorial/interpreter.rst:144
 msgid ""
 "On BSD'ish Unix systems, Python scripts can be made directly executable, "
 "like shell scripts, by putting the line ::"
 msgstr ""
+"Sur les systèmes Unix, un script Python peut être rendu directement "
+"exécutable comme un scipt shell en ajoutant la ligne ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:149
 msgid ""
@@ -4737,12 +4911,20 @@ msgid ""
 "(``'\\r\\n'``) line ending.  Note that the hash, or pound, character, "
 "``'#'``, is used to start a comment in Python."
 msgstr ""
+"(en supposant que l'interpréteur est dans le :envvar:`PATH` de "
+"l'utilisateur) au début du script et en rendant le fichier exécutable. "
+"``#!`` doivent être les deux premiers caractères du fichier. Sur certaines "
+"plateformes, cette première ligne doit finir avec une fin de ligne de type "
+"Unix (``'\\n'``) et pas de type Windows (``'\\r\\n'``). Notez que "
+"le caractère dièse, ``'#'``, est utilisé pour initier un commentaire en "
+"Python."
 
 #: ../src/Doc/tutorial/interpreter.rst:156
 msgid ""
 "The script can be given an executable mode, or permission, using the :"
 "program:`chmod` command::"
 msgstr ""
+"Un script peut être rendu utilisable en utilisant la commande `chmod` ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:161
 msgid ""
@@ -4752,10 +4934,15 @@ msgid ""
 "extension can also be ``.pyw``, in that case, the console window that "
 "normally appears is suppressed."
 msgstr ""
+"Sur les système windows il n'y a pas de \"mode executable\". L'installateur "
+"Python associe automatiquement les fichier en ``.py`` avec ``python.exe`` "
+"de telle sorte qu'un double clic sur un fichier Python le lance comme un "
+"script. L'extension peut aussi être ``.pyw``, dans ce cas, la console "
+"n'apparait pas."
 
 #: ../src/Doc/tutorial/interpreter.rst:171
 msgid "Source Code Encoding"
-msgstr ""
+msgstr "Encodage du code source"
 
 # 5b068a5d06ac42b8bf82ceb101a1e483
 #: ../src/Doc/tutorial/interpreter.rst:173
@@ -4764,6 +4951,10 @@ msgid ""
 "The best way to do it is to put one more special comment line right after "
 "the ``#!`` line to define the source file encoding::"
 msgstr ""
+"Il est possible d'utiliser un autre encodage que l'ASCII dans un fichier "
+"source Python. La meilleure façon de faire est de placer un commentaire "
+"spécial supplémentaire juste après le ``#!`` pour définir l'encodage du "
+"fichier source::"
 
 # 168d80cdf66a411d9af2e4d90f8b5fdf
 #: ../src/Doc/tutorial/interpreter.rst:180
@@ -4774,6 +4965,11 @@ msgid ""
 "encodings can be found in the Python Library Reference, in the section on :"
 "mod:`codecs`."
 msgstr ""
+"Avec cette déclaration, tous les caractères du fichier source sont traités "
+"comme étant dans l'encodage *encoding* et il est possible de d'écrire "
+"directement des littéraux de chaîne Unicode dans l'encodage choisi. La liste "
+"des encodages disponibles peut être trouvée dans la référence de la "
+"bibliothèque Python dans la partie à propos de :mod:`codecs`."
 
 # 136855779690415a8c5aac7ceb545218
 #: ../src/Doc/tutorial/interpreter.rst:186
@@ -4783,6 +4979,10 @@ msgid ""
 "ordinal value 164.  This script will print the value 8364 (the Unicode "
 "codepoint corresponding to the Euro symbol) and then exit::"
 msgstr ""
+"Par exemple, l'encodage ISO-8859-15 peut être utilisé pour écrire le "
+"littéral Unicode décrivant le symbole Euro, ce dernier portant la valeur "
+"ordinal 164 dans cet encodage. Ce script affiche la valeur 8364 "
+"(le point de code Unicode correspondant au symbole Euro) et se termine ::"
 
 # f6dd13cd8acb47b1b663b044df22ddf5
 #: ../src/Doc/tutorial/interpreter.rst:196
