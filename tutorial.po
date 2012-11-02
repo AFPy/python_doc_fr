@@ -3802,7 +3802,7 @@ msgstr ""
 
 #: ../src/Doc/tutorial/floatingpoint.rst:5
 msgid "Floating Point Arithmetic:  Issues and Limitations"
-msgstr "Arithmétique en Nombre à Virgule Flottante: Problèmes et Limites"
+msgstr "Arithmétique en Nombre à Virgule Flottante : Problèmes et Limites"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:10
 msgid ""
@@ -3880,7 +3880,7 @@ msgstr ""
 #: ../src/Doc/tutorial/floatingpoint.rst:51
 msgid "Stop at any finite number of bits, and you get an approximation."
 msgstr ""
-"Arretez à n'importe quelle quantité finie de bits, et vous obtiendez une "
+"Arrêtez à n'importe quelle quantité finie de bits, et vous obtiendez une "
 "approximation."
 
 # a3e931a40eb6454aaf8258fe6dcc2c2a
@@ -3891,13 +3891,13 @@ msgid ""
 "the decimal number ``0.1`` is the binary fraction ::"
 msgstr ""
 "Pour Python, sur une machine typique, 53 bits sont utilisés pour la "
-"précision d'un float, donc la valeur stockée lorsque vous entrez le "
+"précision d'un flottant, donc la valeur stockée lorsque vous entrez le "
 "nombre décimal ``0.1`` est la fraction binaire ::"
 
 # b19de5faee084120b720b24ac015d415
 #: ../src/Doc/tutorial/floatingpoint.rst:59
 msgid "which is close to, but not exactly equal to, 1/10."
-msgstr "qui est proche, mais pas exactement égal à 1/10."
+msgstr "qui est proche, mais pas exactement égale, à 1/10."
 
 # 8933cbcb05124de785ee6c7fe3365adb
 #: ../src/Doc/tutorial/floatingpoint.rst:61
@@ -3909,8 +3909,8 @@ msgid ""
 "Python were to print the true decimal value of the binary approximation "
 "stored for 0.1, it would have to display ::"
 msgstr ""
-"Il est simple d'oublier que la valeur stockée est une approximation de "
-"la fraction décimale d'origine, dû à la manière dont les floats sont "
+"Il est facile d'oublier que la valeur stockée est une approximation de "
+"la fraction décimale d'origine, du fait de la manière dont les flottants sont "
 "affichés dans l'interpréteur. Python n'affiche qu'une approximation "
 "décimale de la valeur stockée en binaire. Si Python devait afficher la "
 "vraie valeur décimale de l'approximation binaire stockée pour 0.1, il "
@@ -3921,7 +3921,7 @@ msgid ""
 "That is more digits than most people find useful, so Python keeps the number "
 "of digits manageable by displaying a rounded value instead ::"
 msgstr ""
-"C'est bien plus de décimale que nécessaire, donc Python affiche une "
+"C'est bien plus de décimales que nécessaire, donc Python affiche une "
 "valeur arrondie afin d'améliorer la lisibilité ::"
 
 # 5e4f51ce66ca42769953b535fc42cc18
@@ -3932,10 +3932,10 @@ msgid ""
 "*display* of the true machine value.  This fact becomes apparent as soon as "
 "you try to do arithmetic with these values ::"
 msgstr ""
-"Il est important de comprendre qu'en réalité c'est une illusion: la "
+"Il est important de comprendre qu'en réalité, c'est une illusion : la "
 "valeur stockée n'est pas exactement 1/10, c'est simplement à "
-"l'affichage que la valeur stockée est arrondie. Ceci devient évident "
-"en effectuant des opérations entre ces valeurs ::"
+"*l'affichage* que la valeur stockée est arrondie. Ceci devient évident dès "
+"que vous effectuez des opérations arithmétiques avec ces valeurs ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:85
 msgid ""
@@ -3946,9 +3946,9 @@ msgid ""
 "default, or in all output modes)."
 msgstr ""
 "Ce comportement est inhérent au comportement des nombres à virgule "
-"flottante: ce n'est pas un bug dans Python, et ce n'est pas non plus "
+"flottante : ce n'est pas un bug dans Python, et ce n'est pas non plus "
 "un bug dans votre code. Vous verrez le même type de comportement dans "
-"tous les autres langages utilisant le support matériel pour le calcul "
+"tous les autres langages utilisant le support matériel pour le calcul des "
 "nombres à virgules flottante (bien que certains langages ne rendent "
 "pas visible la différence par défaut, ou pas dans tous les modes "
 "d'affichage)."
@@ -3959,7 +3959,7 @@ msgid ""
 "Other surprises follow from this one.  For example, if you try to round the "
 "value 2.675 to two decimal places, you get this ::"
 msgstr ""
-"Une autre surprise est inhérente à celle ci. Par exemple, si vous "
+"Une autre surprise est inhérente à celle-ci. Par exemple, si vous "
 "tentez d'arrondir la valeur 2.675 à deux décimales, vous obtiendrez ::"
 
 # b6492664b1a14c72aa3e3152d4802419
@@ -3973,12 +3973,12 @@ msgid ""
 "point number, it's again replaced with a binary approximation, whose exact "
 "value is ::"
 msgstr ""
-"La documentation de la primitive :func:`round` indique qu'elle arrondi "
+"La documentation de la primitive :func:`round` indique qu'elle arrondit "
 "à la valeur la plus proche en s'éloignant de zéro. Puisque la fraction "
 "décimale est exactement à mi-chemin entre 2.67 et 2.68, vous devriez "
 "vous attendre à obtenir (une approximation binaire de) 2.68. Ce n'est "
 "pourtant pas le cas, car lorsque la fraction décimale ``2.675`` est "
-"convertie en float, elle est stockée par une approximation dont la valeur "
+"convertie en flottant, elle est stockée par une approximation dont la valeur "
 "exacte est ::"
 
 # b6ad3e1f39374a2492515e10f77134d6
@@ -4002,7 +4002,7 @@ msgstr ""
 "mi-chemin ont de l'importance, vous devriez utiliser le module "
 ":mod:`decimal`. Soit dit en passant, le module :mod:`decimal` propose "
 "aussi un moyen pratique de \"voir\" la valeur exacte stockée pour "
-"n'importe quel float."
+"n'importe quel flottant."
 
 # 41ea13ad53d44bb28b904415c1ea2417
 #: ../src/Doc/tutorial/floatingpoint.rst:118
@@ -4011,7 +4011,7 @@ msgid ""
 "values of 0.1 may not yield exactly 1.0, either::"
 msgstr ""
 "Une autre conséquence du fait que 0.1 n'est pas exactement stocké 1/10 "
-"est que la somme de dix valeurs de 0.1 ne donne pas 1.0 non plus::"
+"est que la somme de dix valeurs de 0.1 ne donne pas 1.0 non plus ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:128
 msgid ""
@@ -4021,7 +4021,7 @@ msgid ""
 "www.lahey.com/float.htm>`_ for a more complete account of other common "
 "surprises."
 msgstr ""
-"L'arithmétique des nombres binaires à virgule flottante réservent "
+"L'arithmétique des nombres binaires à virgule flottante réserve "
 "beaucoup de surprises de ce genre. Le problème avec \"0.1\" est "
 "expliqué en détails ci-desous, dans la section \"Représentation "
 "d'Erreur\". Voir `The Perils of Floating Point "
@@ -4039,15 +4039,15 @@ msgid ""
 "decimal arithmetic, and that every float operation can suffer a new rounding "
 "error."
 msgstr ""
-"Il est vrai qu'il n'existe pas de réponses simples, cependant ne vous "
-"méfiez pas trop des nombres à virtule flottante! Les erreurs, en "
+"Il est vrai qu'il n'existe pas de réponse simple, cependant ne vous "
+"méfiez pas trop des nombres à virtule flottante ! Les erreurs, en "
 "Python, dans les opérations de nombres à virgule flottante sont dues "
 "au matériel sous-jacent, et sur la plupart des machines ne sont pas "
 "plus importantes que 1 sur 2\\*\\*53 par opération. C'est plus que "
 "nécessaire pour la plupart des tâches, mais vous devez garder à "
 "l'esprit que ce ne sont pas des opérations décimales, et que chaque "
 "opération sur des nombres à virgule flottante peut souffrir d'une "
-"nouvelle erreur.
+"nouvelle erreur."
 
 # 0d5b6ba08bee41ae81e33306aca23343
 #: ../src/Doc/tutorial/floatingpoint.rst:140
@@ -4059,15 +4059,15 @@ msgid ""
 "format` method's format specifiers in :ref:`formatstrings`."
 msgstr ""
 "Bien que des cas pathologiques existent, pour la plupart des cas "
-"d'utilisations communs vous obtiendrez le résultat attendu à la fin en "
-"arrondissant simplement au nombre de décimals désirées à "
-"l'affichage. Pour un contrôle fin sur la manière dont les float sont "
-"affichés consultez les :ref:`formatstrings` de la méthode "
-":meth:`str.format`"
+"d'utilisations courants vous obtiendrez le résultat attendu à la fin en "
+"arrondissant simplement au nombre de décimales désirées à "
+"l'affichage. Pour un contrôle fin sur la manière dont les flottants sont "
+"affichés, consultez dans :ref:`formatstrings` les spécifications de formattage "
+"de la méthode :meth:`str.format`"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:150
 msgid "Representation Error"
-msgstr ""
+msgstr "Erreurs de représentation"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:152
 msgid ""
@@ -4075,6 +4075,10 @@ msgid ""
 "perform an exact analysis of cases like this yourself.  Basic familiarity "
 "with binary floating-point representation is assumed."
 msgstr ""
+"Cette section explique en détail l'exemple du \"0.1\", et montre comment vous "
+"pouvez effectuer une analyse exacte de ce type de cas par vous-même. Il est "
+"supposé que vous êtes déjà familier de la représentation binaire des nombres "
+"flottants."
 
 # e9ea0a68b7bf4ca098eb417f0ed61ccb
 #: ../src/Doc/tutorial/floatingpoint.rst:156
