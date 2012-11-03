@@ -4266,7 +4266,7 @@ msgstr "Pensez aussi à consulter le :ref:`glossary`."
 
 #: ../src/Doc/tutorial/inputoutput.rst:5
 msgid "Input and Output"
-msgstr ""
+msgstr "Les entrées/sorties"
 
 #: ../src/Doc/tutorial/inputoutput.rst:7
 msgid ""
@@ -4274,10 +4274,14 @@ msgid ""
 "printed in a human-readable form, or written to a file for future use. This "
 "chapter will discuss some of the possibilities."
 msgstr ""
+"Il existe bien des moyens de présenter les sorties d'un programmes ; les "
+"données peuvent être imprimées sous une forme lisible par un être humain, "
+"ou sauvegardées dans un fichier pour une utilisation future. Ce chapitre "
+"présentera donc diverses possibilités."
 
 #: ../src/Doc/tutorial/inputoutput.rst:15
 msgid "Fancier Output Formatting"
-msgstr ""
+msgstr "Formatage de données"
 
 # 3028974fd106477a98b3edd53c6e934c
 #: ../src/Doc/tutorial/inputoutput.rst:17
@@ -4287,6 +4291,11 @@ msgid ""
 "method of file objects; the standard output file can be referenced as ``sys."
 "stdout``. See the Library Reference for more information on this.)"
 msgstr ""
+"Jusque là, nous avons rencontré deux moyens d'écrire des données : les "
+"*déclarations d'expressions* et l'instruction :keyword:`print`. (Une troisième "
+"méthode consiste à utiliser la méthode :meth:`write` des fichiers ; le fichier "
+"de sortie standard peut être référence en tant que ``sys.stdout``. Voyez le "
+"Guide de Référence de la Bibliothèque Standard pour en savoir plus.)"
 
 # 4f0a1c8e63414433ad1247d6a3397a54
 #: ../src/Doc/tutorial/inputoutput.rst:22
@@ -4299,6 +4308,15 @@ msgid ""
 "operations for padding strings to a given column width; these will be "
 "discussed shortly.  The second way is to use the :meth:`str.format` method."
 msgstr ""
+"Mais vous voudrez souvent avoir plus de contrôle sur le formatage de vos "
+"sorties que de simplement imprimer des valeurs séparées par des espaces. "
+"Il y a deux méthodes pour formater ces sorties ; la première est de gérer "
+"les chaînes de caractères par vous même ; en utilisant des tranches sur vos "
+"chaînes et des opérations de concaténation, vous pouvez créer n'importe "
+"quelle présentation imaginable. Mais les chaînes de caractères disposent "
+"également de méthodes qui facilitent, par exemple, les alignements de chaînes "
+"de caractères selon une certaines largeur de colonne, et qui seront présentées "
+"rapidement. La seconde méthode consiste à utiliser la méthode :meth:`format`."
 
 # ca5251e779794352a357fb6d45e792c4
 #: ../src/Doc/tutorial/inputoutput.rst:30
@@ -4306,6 +4324,9 @@ msgid ""
 "The :mod:`string` module contains a :class:`~string.Template` class which "
 "offers yet another way to substitute values into strings."
 msgstr ""
+"Le module :mod:`string` contient une classe :class:`~string.Template` qui "
+"offre encore une autre façon de remplacer des valeurs au sein de chaînes de "
+"caractères."
 
 #: ../src/Doc/tutorial/inputoutput.rst:33
 msgid ""
@@ -4313,6 +4334,9 @@ msgid ""
 "Luckily, Python has ways to convert any value to a string: pass it to the :"
 "func:`repr` or :func:`str` functions."
 msgstr ""
+"Mais une question demeure, bien sûr : comment convertir des valeurs en chaînes "
+"de caractères ? Heureusement, Python fournit plusieurs moyens de convertir "
+"n'importe quelle valeur en chaîne : les fonctions :func:`repr` et :func:`str`."
 
 # 588f2644f358422b905e034d7e0ef059
 #: ../src/Doc/tutorial/inputoutput.rst:37
@@ -4327,15 +4351,25 @@ msgid ""
 "either function.  Strings and floating point numbers, in particular, have "
 "two distinct representations."
 msgstr ""
+"La fonction :func:`str` est destinée à renvoyer des représentations de "
+"valeurs qui soient lisibles par un être humain, alors que la fonction "
+":func:`repr` est destinée à générer des représentations qui puissent être "
+"lues par l'interpréteur (ou forceront une :exc:`SyntaxError` s'il n'existe "
+"aucune syntaxe équivalente). Pour les objets qui n'ont pas de représentation "
+"humaine spécifique, :func:`str` renverra la même valeur que :func:`repr`. "
+"Beaucoup de valeurs, comme les nombres ou les structures telles que les listes "
+"ou les dictionnaires, ont la même représentation en utilisant les deux "
+"fonctions. Les chaînes de caractères et les nombres à virgule flottante, en "
+"revanche, ont deux représentations distinctes."
 
 #: ../src/Doc/tutorial/inputoutput.rst:46
 #: ../src/Doc/tutorial/introduction.rst:22
 msgid "Some examples::"
-msgstr ""
+msgstr "Quelques exemples ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:71
 msgid "Here are two ways to write a table of squares and cubes::"
-msgstr ""
+msgstr "Voici deux façons d'écrire une table de carrés et de cubes ::"
 
 # 0c685c72e1ab4135b590a4b3a75395dc
 #: ../src/Doc/tutorial/inputoutput.rst:103
@@ -4343,6 +4377,9 @@ msgid ""
 "(Note that in the first example, one space between each column was added by "
 "the way :keyword:`print` works: it always adds spaces between its arguments.)"
 msgstr ""
+"(Notez que dans ce premier exemple, un espace entre chaque colonne a été "
+"ajouté par la façon dont fonctionne :keyword:`print`, qui ajoute toujours des "
+"espaces entre ses arguments.)"
 
 # e9c272eb28c244f19113ee5315437b51
 #: ../src/Doc/tutorial/inputoutput.rst:106
@@ -4357,6 +4394,16 @@ msgid ""
 "(If you really want truncation you can always add a slice operation, as in "
 "``x.ljust(n)[:n]``.)"
 msgstr ""
+"Cet exemple démontre l'utilisation de la méthode :meth:`str.rjust` des chaînes "
+"de caractères, qui fait une justification à droite d'une chaîne dans un champ "
+"d'une largeur donnée en ajoutant des espaces sur la gauche. Il existe des "
+"méthodes similaires :meth:`str.ljust` et :meth:`str.center`. Ces méthodes "
+"n'écrivent rien, elles retournent simplement une nouvelle chaîne. Si la chaîne "
+"passée en paramètre est trop longue, elle n'est pas tronquée mais renvoyée "
+"sans modification ; ce qui peut déranger votre mise en page mais est souvent "
+"préférable à l'alternative, qui pourrait mentir sur une valeur (et si vous "
+"voulez vraiment tronquer vos valeurs, vous pouvez toujours utiliser une "
+"tranche, comme dans ``x.ljust(n)[:n]``)."
 
 # 89a84b85112846d4b95a173d0f535c99
 #: ../src/Doc/tutorial/inputoutput.rst:116
@@ -4364,10 +4411,13 @@ msgid ""
 "There is another method, :meth:`str.zfill`, which pads a numeric string on "
 "the left with zeros.  It understands about plus and minus signs::"
 msgstr ""
+"Il existe une autre méthode, :meth:`str.zfill`, qui comble une chaîne numérique "
+"à gauche avec des zéros. Elle comprend les signes plus et moins ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:126
 msgid "Basic usage of the :meth:`str.format` method looks like this::"
-msgstr ""
+msgstr "L'utilisation de base de la méthode :meth:`str.format` ressemble à "
+"cela ::"
 
 # 1e61c1b7493e41ea8ba7032cf978617c
 #: ../src/Doc/tutorial/inputoutput.rst:131
@@ -4377,6 +4427,10 @@ msgid ""
 "brackets refers to the position of the object passed into the :meth:`str."
 "format` method. ::"
 msgstr ""
+"Les crochets et les caractères qu'ils contiennent (appelés les champs de "
+"formatage) sont remplacés par les objets passés en paramètres à la méthode "
+":meth:`str.format`. Un nombre entre crochets se réfère à la position de "
+"l'objet passé à la méthode :meth:`str.format` ::"
 
 # 8aeeda4a340947aa83e9ec64db9a40f2
 #: ../src/Doc/tutorial/inputoutput.rst:141
@@ -4384,10 +4438,13 @@ msgid ""
 "If keyword arguments are used in the :meth:`str.format` method, their values "
 "are referred to by using the name of the argument. ::"
 msgstr ""
+"Si des arguments nommés sont utilisés dans la méthode :meth:`str.format`, "
+"leurs valeurs sont utilisées en se basant sur le nom des arguments ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:148
 msgid "Positional and keyword arguments can be arbitrarily combined::"
-msgstr ""
+msgstr "Les arguments positionnés et nommés peuvent être combinés "
+"arbitrairement ::"
 
 # d68785b3547d4ceea462a3cf386fdf0b
 #: ../src/Doc/tutorial/inputoutput.rst:154
@@ -4395,6 +4452,8 @@ msgid ""
 "``'!s'`` (apply :func:`str`) and ``'!r'`` (apply :func:`repr`) can be used "
 "to convert the value before it is formatted. ::"
 msgstr ""
+"``'!s'`` (appliquer :func:`str`) et ``'!r'`` (appliquer :func:`repr`) peuvent "
+"être utilisées pour convertir les valeurs avant leur formatage ::"
 
 # 5aaef826c29848228e82d92b68e3ed8c
 #: ../src/Doc/tutorial/inputoutput.rst:163
@@ -4403,12 +4462,17 @@ msgid ""
 "allows greater control over how the value is formatted.  The following "
 "example rounds Pi to three places after the decimal."
 msgstr ""
+"Des caractères ``':'`` suivis d'une spécification de formatage peuvent suivre "
+"le nom du champ. Ceci offre un niveau de contrôle plus fin sur la façon dont "
+"les valeurs sont formatées. L'exemple suivant arrondit Pi à trois décimales ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:171
 msgid ""
 "Passing an integer after the ``':'`` will cause that field to be a minimum "
 "number of characters wide.  This is useful for making tables pretty. ::"
 msgstr ""
+"Indiquer un entier après le ``':'`` indique la largeur minimale de ce champ "
+"en nombre de caractères. C'est utile pour faire de jolis tableaux ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:182
 msgid ""
@@ -4417,12 +4481,19 @@ msgid ""
 "instead of by position.  This can be done by simply passing the dict and "
 "using square brackets ``'[]'`` to access the keys ::"
 msgstr ""
+"Si vous avez vraiment une longue chaîne de formatage que vous ne voulez "
+"pas découper, ce serait bien de pouvoir référencer les variables à formater "
+"par leur nom plutôt que par leur position. Cela peut être fait simplement "
+"en passant un dictionnaire et en utilisant des crochets ``'[]'`` pour "
+"accéder aux clés ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:192
 msgid ""
 "This could also be done by passing the table as keyword arguments with the "
 "'**' notation. ::"
 msgstr ""
+"On pourrait également faire ça en passant le tableau comme des arguments "
+"nommés en utilisant la notation '**' ::"
 
 # c99b63c3b0fd4e268a3c7987e17a775c
 #: ../src/Doc/tutorial/inputoutput.rst:199
@@ -4430,16 +4501,20 @@ msgid ""
 "This is particularly useful in combination with the built-in function :func:"
 "`vars`, which returns a dictionary containing all local variables."
 msgstr ""
+"C'est particulièrement utile en combinaison avec la fonction native :func:"
+"`vars`, qui retourne un dictionnaire contenant toutes les variables locales."
 
 #: ../src/Doc/tutorial/inputoutput.rst:202
 msgid ""
 "For a complete overview of string formatting with :meth:`str.format`, see :"
 "ref:`formatstrings`."
 msgstr ""
+"Pour avoir une vue complète du formatage des chaînes de caractères avec la "
+"méthode :meth:`str.format`, voyez : :ref:`formatstrings`."
 
 #: ../src/Doc/tutorial/inputoutput.rst:207
 msgid "Old string formatting"
-msgstr ""
+msgstr "Anciennes méthodes de formatage de chaînes"
 
 # 5f6042e30fbb4813bd0d41dcf6ef2022
 #: ../src/Doc/tutorial/inputoutput.rst:209
@@ -4449,6 +4524,10 @@ msgid ""
 "applied to the right argument, and returns the string resulting from this "
 "formatting operation. For example::"
 msgstr ""
+"L'opérateur ``%`` peut aussi être utilisé pour formater des chaînes. Il "
+"interprète l'argument de gauche un peu comme une chaîne de formatage d'une "
+"fonction :c:func:`sprintf` à appliquer à l'argument de droite, et retourne "
+"la chaîne résultant de cette opération de formatage. Par exemple ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:218
 msgid ""
@@ -4456,21 +4535,28 @@ msgid ""
 "%`` operator. However, because this old style of formatting will eventually "
 "be removed from the language, :meth:`str.format` should generally be used."
 msgstr ""
+"Comme :meth:`str.format` est relativement récente, beaucoup de code Python "
+"utilise encore l'opérateur ``%``. Toutefois, dans la mesure où cet ancien "
+"style de formatage sera peut-être à terme supprimé du langage, il vaut "
+"mieux utiliser :meth:`str.format`."
 
 # a470a92caf504e9e9abdf08789ab9890
 #: ../src/Doc/tutorial/inputoutput.rst:222
 msgid "More information can be found in the :ref:`string-formatting` section."
-msgstr ""
+msgstr "Vous trouverez plus d'informations dans la section "
+":ref:`string-formatting`."
 
 #: ../src/Doc/tutorial/inputoutput.rst:228
 msgid "Reading and Writing Files"
-msgstr ""
+msgstr "Lecture et écriture de fichiers"
 
 #: ../src/Doc/tutorial/inputoutput.rst:234
 msgid ""
 ":func:`open` returns a file object, and is most commonly used with two "
 "arguments: ``open(filename, mode)``."
 msgstr ""
+":func:`open` retourne un objet fichier, et est le plus souvent utilisé avec "
+"deux arguments : ``open(filename, mode)``."
 
 #: ../src/Doc/tutorial/inputoutput.rst:243
 msgid ""
@@ -4483,6 +4569,14 @@ msgid ""
 "reading and writing. The *mode* argument is optional; ``'r'`` will be "
 "assumed if it's omitted."
 msgstr ""
+"Le premier argument est une chaîne contenant le nom du fichier. Le second "
+"argument est une autre chaîne contenant quelques caractères décrivant la "
+"façon dont le fichier sera utilisé. *mode* peut être ``'r'`` quand le fichier "
+"ne sera accédé qu'en lecture, ``'w'`` en écriture seulement (un fichier "
+"existant portant le même nom sera alors écrasé), et ``'a'`` ouvre le fichier "
+"en mode ajout (toute donnée écrite dans le fichier est automatiquement "
+"ajoutée à la fin). ``'r+'`` ouvre le fichier en mode lecture/écriture. "
+"L'argument *mode* est optionnel ; sa valeur par défaut est ``'r'``."
 
 # 9ff01378e50d4134a460523dad57e264
 #: ../src/Doc/tutorial/inputoutput.rst:252
@@ -4498,16 +4592,29 @@ msgid ""
 "``'b'`` to the mode, so you can use it platform-independently for all binary "
 "files."
 msgstr ""
+"Sous Windows, ``'b'`` ajouté au mode ouvre le fichier en mode binaire, et il "
+"existe donc des modes comme ``'rb'``, ``'wb'`` et ``'r+b'``. Python sous "
+"Windows fait effectivement une distinction entre fichiers texte et binaires ; "
+"le caractère de fin de ligne des fichiers texte est automatiquement modifié "
+"lorsqu'une donnée est lue ou écrite. Cette modification sous le manteau des "
+"données du fichier n'est pas un problème pour les fichiers textes en ASCII, "
+"mais elle peut corrompre les données binaires comme celles des fichiers "
+":file:`JPEG` ou :file:`EXE`. Soyez donc attentifs à toujours bien utiliser "
+"le mode binaire lorsque vous travaillez avec de tels fichiers. Sous Unix, "
+"le mode binaire n'a aucun effet mais vous pouvez l'utiliser pour tous les "
+"fichiers binaires pour que votre code soit indépendant de la plate-forme."
 
 #: ../src/Doc/tutorial/inputoutput.rst:266
 msgid "Methods of File Objects"
-msgstr ""
+msgstr "Méthodes des objets fichiers"
 
 #: ../src/Doc/tutorial/inputoutput.rst:268
 msgid ""
 "The rest of the examples in this section will assume that a file object "
 "called ``f`` has already been created."
 msgstr ""
+"Les derniers exemples de cette section supposeront qu'un objet fichier appelé "
+"``f`` a déjà été créé."
 
 # 2a8f9b43ebde48819bcb8e6362c55669
 #: ../src/Doc/tutorial/inputoutput.rst:271
@@ -4520,6 +4627,13 @@ msgid ""
 "returned.  If the end of the file has been reached, ``f.read()`` will return "
 "an empty string (``\"\"``). ::"
 msgstr ""
+"Pour lire le contenu d'un fichier, appelez ``f.read(size)``, qui lit une "
+"certaine quantité de données et les retourne sous la forme d'une chaîne de "
+"caractères. *size* est un argument numérique optionnel. Quand *size* est omis "
+"ou négatif, le contenu entier du fichier est lu et retourné ; c'est votre "
+"problème si le fichier est deux fois plus gros que la mémoire de votre "
+"machine. Sinon, au plus *size* octets sont lus et retournés. Lorsque la fin "
+"du fichier est atteinte, ``f.read()`` renvoie une chaîne vide (``\"\"``) ::"
 
 # 1e6e90d979e44728babc12e0982b6fc4
 #: ../src/Doc/tutorial/inputoutput.rst:284
@@ -4531,6 +4645,13 @@ msgid ""
 "end of the file has been reached, while a blank line is represented by "
 "``'\\n'``, a string containing only a single newline.   ::"
 msgstr ""
+"``f.readline()`` lit une seule ligne du fichier ; un caractère de fin de ligne "
+"(``\\n``) est laissé à la fin de la chaîne, et n'est omis que sur la dernière "
+"ligne du fichier si celui-ci ne se termine pas un caractère de fin de ligne. "
+"Ceci permet de rendre la valeur de retour non ambigüe : si ``f.readline()`` "
+"retourne une chaîne vide, c'est que la fin du fichier a été atteinte, alors "
+"qu'une ligne vide est représentée par ``'\\n'``, une chaîne de caractères "
+"ne contenant qu'une fin de ligne ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:298
 msgid ""
@@ -4541,12 +4662,22 @@ msgid ""
 "lines, but without having to load the entire file in memory.  Only complete "
 "lines will be returned. ::"
 msgstr ""
+"``f.readlines()`` retourne une liste contenant toutes les lignes "
+"du fichier. Si l'argument optionnel *sizehint* est fourni, la méthode lit "
+"autant d'octets que le nombre indiqué, plus la quantité juste nécessaire "
+"pour compléter une ligne, et retourne toutes les lignes lues. Ceci est "
+"souvent utilisé pour permettre une lecture efficace d'un gros fichier par "
+"lignes, mais sans avoir à charger tout le fichier en mémoire. Seules des "
+"lignes entières sont retournées. ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:308
 msgid ""
 "An alternative approach to reading lines is to loop over the file object. "
 "This is memory efficient, fast, and leads to simpler code::"
 msgstr ""
+"Une autre approche de lecture des lignes est de faire une boucle sur l'objet "
+"fichier. Cela est plus efficace en terme de gestion mémoire, plus rapide, "
+"et donne un code plus simple ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:317
 msgid ""
@@ -4554,6 +4685,9 @@ msgid ""
 "control.  Since the two approaches manage line buffering differently, they "
 "should not be mixed."
 msgstr ""
+"Cette autre méthode est plus simple mais ne permet pas d'avoir un contrôle "
+"très fin sur la lecture. Comme les deux approches gèrent la mise en mémoire "
+"tampon des lignes différemment, elle ne doivent pas être mélangées."
 
 # 0ead0c7ac8ca40f7bb963339561c47e9
 #: ../src/Doc/tutorial/inputoutput.rst:321
@@ -4561,12 +4695,16 @@ msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "``None``.   ::"
 msgstr ""
+"``f.write(string)`` écrit le contenu de *string* dans le fichier, et renvoie "
+"``None`` ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:326
 msgid ""
 "To write something other than a string, it needs to be converted to a string "
 "first::"
 msgstr ""
+"Pour écrire autre chose qu'une chaîne, il faut commencer par la convertir en "
+"chaîne ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:333
 msgid ""
@@ -4579,6 +4717,14 @@ msgid ""
 "the end of the file as the reference point.  *from_what* can be omitted and "
 "defaults to 0, using the beginning of the file as the reference point. ::"
 msgstr ""
+"``f.tell()`` retourne un entier indiquant la position actuelle dans le fichier, "
+"mesurée en octets à partir du début du fichier. Pour modifier la position dans "
+"le fichier, utilisez ``f.seek(offset, from_what)``. La position est calculée "
+"en ajoutant *offset* à un point de référence ; ce point de référence est "
+"sélectionné par l'argument *from_what* : 0 pour le début du fichier, 1 pour "
+"la position actuelle, et 2 pour la fin du fichier. *from_what* peut être omis "
+"et sa valeur par défaut est 0, utilisant le début du fichier comme point de "
+"référence ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:351
 msgid ""
@@ -4586,6 +4732,10 @@ msgid ""
 "system resources taken up by the open file.  After calling ``f.close()``, "
 "attempts to use the file object will automatically fail. ::"
 msgstr ""
+"Quand vous avez terminé d'utiliser un fichier, appeler ``f.close()`` pour le "
+"fermer et libérer toutes les ressources système qu'il a pu utiliser. Après "
+"l'appel de ``f.close()``, toute tentative d'utilisation de l'objet fichier "
+"échouera systématiquement ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:361
 msgid ""
@@ -4595,6 +4745,11 @@ msgid ""
 "much shorter than writing equivalent :keyword:`try`\\ -\\ :keyword:`finally` "
 "blocks::"
 msgstr ""
+"C'est une bonne pratique d'utiliser le mot-clé :keyword:`with` lorsque vous "
+"traitez des fichiers. Ceci procure l'avantage de toujours fermer correctement "
+"le fichier, même si une exception a été déclenchée. C'est aussi beaucoup plus "
+"court que d'utiliser l'équivalent avec des blocs :keyword:`try`\\ - \\ "
+":keyword:`finally` ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:371
 msgid ""
@@ -4602,10 +4757,14 @@ msgid ""
 "meth:`~file.truncate` which are less frequently used; consult the Library "
 "Reference for a complete guide to file objects."
 msgstr ""
+"Les fichiers disposent de méthodes supplémentaires, telles que "
+":meth:`~file.isatty` et :meth:`~file.truncate` qui sont moins souvent "
+"utilisées ; consultez la Référence de la Bibliothèque Standard pour avoir un "
+"guide complet des objets fichiers."
 
 #: ../src/Doc/tutorial/inputoutput.rst:379
 msgid "The :mod:`pickle` Module"
-msgstr ""
+msgstr "Le module :mod:`pickle`"
 
 #: ../src/Doc/tutorial/inputoutput.rst:383
 msgid ""
@@ -4616,6 +4775,13 @@ msgid ""
 "more complex data types like lists, dictionaries, or class instances, things "
 "get a lot more complicated."
 msgstr ""
+"Les chaînes de caractères peuvent facilement être écrites dans un fichier et "
+"relues. Les nombres nécessitent un peu plus d'efforts, car la méthode "
+":meth:`read` ne retourne que des chaînes, qui doivent donc être passées à une "
+"fonction comme :func:`int`, qui prend une chaîne comme ``'123'`` en entrée et "
+"retourne sa valeur numérique 123. Mais dès que vous voulez enregistrer des "
+"types de données plus complexes comme des listes, des dictionnaires ou des "
+"instances de classes, les choses se compliquent beaucoup plus."
 
 #: ../src/Doc/tutorial/inputoutput.rst:390
 msgid ""
@@ -4629,18 +4795,32 @@ msgid ""
 "stored in a file or data, or sent over a network connection to some distant "
 "machine."
 msgstr ""
+"Plutôt que de passer son temps à écrire et déboguer du code permettant de "
+"sauvegarder des types de données compliquées, Python fournit un module "
+"standard appelé :mod:`pickle`. C'est un module extraordinaire qui peut prendre "
+"à peu près n'importe quel objet Python (y compris certaines formes de code "
+"Python), et les représenter sous la forme de chaînes de caractères ; ce "
+"processus est appelé :dfn:`pickling`. La reconstruction des objets à partir de "
+"leur représentation sous forme de chaîne est appelée :dfn:`unpickling`. Entre "
+"ces deux phases, la chaîne représentant l'objet peut avoir été stockée dans "
+"un fichier ou envoyée via une connexion réseau vers une machine distante."
 
 #: ../src/Doc/tutorial/inputoutput.rst:399
 msgid ""
 "If you have an object ``x``, and a file object ``f`` that's been opened for "
 "writing, the simplest way to pickle the object takes only one line of code::"
 msgstr ""
+"Si vous avez un objet ``x``, et un objet fichier ``f`` qui a été ouvert en "
+"écriture, la méthode la plus simple d'écrire cet objet ne prend qu'une ligne "
+"de code ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:404
 msgid ""
 "To unpickle the object again, if ``f`` is a file object which has been "
 "opened for reading::"
 msgstr ""
+"Pour reconstruire l'objet, si ``f`` est cette fois un objet fichier ouvert en "
+"lecture ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:409
 msgid ""
@@ -4648,6 +4828,10 @@ msgid ""
 "you don't want to write the pickled data to a file; consult the complete "
 "documentation for :mod:`pickle` in the Python Library Reference.)"
 msgstr ""
+"(Il existe d'autres variantes, utilisées lorsque vous voulez enregistrer "
+"beaucoup d'objets ou lorsque vous ne voulez pas écrire les données dans un "
+"fichier ; consultez la documentation complète du module :mod:`pickle` dans le "
+"Guide de Référence de la Bibliothèque Standard.)"
 
 #: ../src/Doc/tutorial/inputoutput.rst:413
 msgid ""
@@ -4658,6 +4842,13 @@ msgid ""
 "care to ensure that new data types such as matrices can be properly pickled "
 "and unpickled."
 msgstr ""
+":mod:`pickle` est la façon standard pour enregistrer des objets Python pour "
+"les réutiliser dans d'autres programmes ou lors d'une autre invocation du "
+"même programme ; le terme technique pour cela est de rendre les objets "
+":dfn:`persistants`. Comme le module :mod:`pickle` est si largement utilisé, "
+"beaucoup d'auteurs qui écrivent des extensions Python prennent soin de "
+"s'assurer que les nouveaux types de données tels que les matrices peuvent "
+"être correctement sauvegardées et reconstruits au travers de ce module."
 
 #: ../src/Doc/tutorial/interactive.rst:5
 msgid "Interactive Input Editing and History Substitution"
