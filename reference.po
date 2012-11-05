@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2012-11-05 09:33\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5067,14 +5067,6 @@ msgid "The Python Language Reference"
 msgstr ""
 
 #: ../src/Doc/reference/index.rst:7
-msgid "|version|"
-msgstr ""
-
-#: ../src/Doc/reference/index.rst:8
-msgid "|today|"
-msgstr ""
-
-#: ../src/Doc/reference/index.rst:10
 msgid ""
 "This reference manual describes the syntax and \"core semantics\" of the "
 "language. It is terse, but attempts to be exact and complete. The semantics "
