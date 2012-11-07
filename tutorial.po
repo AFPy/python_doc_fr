@@ -5683,13 +5683,16 @@ msgstr ""
 
 #: ../src/Doc/tutorial/introduction.rst:162
 msgid "Strings"
-msgstr ""
+msgstr "Chaînes de caractères"
 
 #: ../src/Doc/tutorial/introduction.rst:164
 msgid ""
 "Besides numbers, Python can also manipulate strings, which can be expressed "
 "in several ways.  They can be enclosed in single quotes or double quotes::"
 msgstr ""
+"Au delà des nombres, Python peut aussi manipuler des chaînes de "
+"caractères, qui peuvent être exprimés de différentes manières. Elles "
+"peuvent être écrites entre apostrophes ou entre guillemets."
 
 # 9c733fd1348b4d048794c552b36f40fe
 #: ../src/Doc/tutorial/introduction.rst:180
@@ -5701,6 +5704,12 @@ msgid ""
 "double quotes, else it's enclosed in single quotes.  The :keyword:`print` "
 "statement produces a more readable output for such input strings."
 msgstr ""
+"L'interpréteur affiche les chaînes de caractères de la même manière "
+"qu'elles s'écrivent : entre guillemets et en protégant les "
+"guillemets et autres caractères spéciaux avec des antislash, afin "
+"d'afficher une représentation précise. La chaîne est affichée entre "
+"guillemets si elle contient un guillemet simple mais aucun guillemet, "
+"sinon elle est affichée entre guillemets simples."
 
 #: ../src/Doc/tutorial/introduction.rst:187
 msgid ""
