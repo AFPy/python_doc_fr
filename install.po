@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2012-11-05 09:33\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,16 +25,7 @@ msgstr "installation des modules python"
 msgid "Greg Ward"
 msgstr "Greg Ward"
 
-#: ../src/Doc/install/index.rst:10
-msgid "|version|"
-msgstr "|version|"
-
-# Don’t translate reST macros
-#: ../src/Doc/install/index.rst:11
-msgid "|today|"
-msgstr "|today|"
-
-#: ../src/Doc/install/index.rst:27
+#: ../src/Doc/install/index.rst:25
 msgid ""
 "This document describes the Python Distribution Utilities (\"Distutils\") "
 "from the end-user's point-of-view, describing how to extend the capabilities "
@@ -46,11 +37,11 @@ msgstr ""
 "capacités d'une installation standard de python en construisant et "
 "installant des modules python tiers et des extensions."
 
-#: ../src/Doc/install/index.rst:36
+#: ../src/Doc/install/index.rst:34
 msgid "Introduction"
 msgstr "introduction"
 
-#: ../src/Doc/install/index.rst:38
+#: ../src/Doc/install/index.rst:36
 msgid ""
 "Although Python's extensive standard library covers many programming needs, "
 "there often comes a time when you need to add some new functionality to your "
@@ -65,7 +56,7 @@ msgstr ""
 "pour prendre en charge une application écrite en Python que vous souhaitez "
 "utiliser."
 
-#: ../src/Doc/install/index.rst:44
+#: ../src/Doc/install/index.rst:42
 msgid ""
 "In the past, there has been little support for adding third-party modules to "
 "an existing Python installation.  With the introduction of the Python "
@@ -76,7 +67,7 @@ msgstr ""
 "distribution de Python (Distutils pour faire plus court) dans Python 2.0, "
 "ceci a changé."
 
-#: ../src/Doc/install/index.rst:48
+#: ../src/Doc/install/index.rst:46
 msgid ""
 "This document is aimed primarily at the people who need to install third-"
 "party Python modules: end-users and system administrators who just need to "
@@ -98,11 +89,11 @@ msgstr ""
 "distribuer vos propres modules Python afin que d'autres puissent les "
 "utiliser, allez voir le manuel de :ref:`distutils-index`."
 
-#: ../src/Doc/install/index.rst:61
+#: ../src/Doc/install/index.rst:59
 msgid "Best case: trivial installation"
 msgstr "Le meilleur des cas : l'installation simple"
 
-#: ../src/Doc/install/index.rst:63
+#: ../src/Doc/install/index.rst:61
 msgid ""
 "In the best case, someone will have prepared a special version of the module "
 "distribution you want to install that is targeted specifically at your "
@@ -123,7 +114,7 @@ msgstr ""
 "suite."
 
 # j'ai un doute sur le "les choses qui vous semble évidentes"...on conjuge comment "semble" ?
-#: ../src/Doc/install/index.rst:71
+#: ../src/Doc/install/index.rst:69
 #, fuzzy
 msgid ""
 "In that case, you would download the installer appropriate to your platform "
@@ -140,7 +131,7 @@ msgstr ""
 "devriez même pas avoir besoin de lire toutes les instructions (même si c'est "
 "toujours une bonne idée de le faire)."
 
-#: ../src/Doc/install/index.rst:77
+#: ../src/Doc/install/index.rst:75
 msgid ""
 "Of course, things will not always be that easy.  You might be interested in "
 "a module distribution that doesn't have an easy-to-use installer for your "
@@ -159,11 +150,11 @@ msgstr ""
 "standard. Le cœur de ce document explique comment configurer et installer "
 "des modules à partir des sources."
 
-#: ../src/Doc/install/index.rst:89
+#: ../src/Doc/install/index.rst:87
 msgid "The new standard: Distutils"
 msgstr "Le nouveau standard: Distutils"
 
-#: ../src/Doc/install/index.rst:91
+#: ../src/Doc/install/index.rst:89
 #, fuzzy
 msgid ""
 "If you download a module source distribution, you can tell pretty quickly if "
@@ -190,13 +181,13 @@ msgstr ""
 "simplement en exécutant ceci ::"
 
 # a54192a94c9c415da00ba9e040255920
-#: ../src/Doc/install/index.rst:104
+#: ../src/Doc/install/index.rst:102
 msgid ""
 "For Windows, this command should be run from a command prompt window (:"
 "menuselection:`Start --> Accessories`)::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:109
+#: ../src/Doc/install/index.rst:107
 msgid ""
 "If all these things are true, then you already know how to build and install "
 "the modules you've just downloaded:  Run the command above. Unless you need "
@@ -211,11 +202,11 @@ msgstr ""
 "construction, vous n'avez pas vraiment besoin de ce manuel. Ou plutôt, la "
 "commande ci-dessus est tout ce dont vous avez besoin de sortir de ce manuel."
 
-#: ../src/Doc/install/index.rst:119
+#: ../src/Doc/install/index.rst:117
 msgid "Standard Build and Install"
 msgstr "Construction standard et installation"
 
-#: ../src/Doc/install/index.rst:121
+#: ../src/Doc/install/index.rst:119
 #, fuzzy
 msgid ""
 "As described in section :ref:`inst-new-standard`, building and installing a "
@@ -226,11 +217,11 @@ msgstr ""
 "l'installation d'une distribution d'un module en utilisant Distutils est "
 "habituellement fait avec la commande ::"
 
-#: ../src/Doc/install/index.rst:131
+#: ../src/Doc/install/index.rst:129
 msgid "Platform variations"
 msgstr "Différences selon les plateformes"
 
-#: ../src/Doc/install/index.rst:133
+#: ../src/Doc/install/index.rst:131
 msgid ""
 "You should always run the setup command from the distribution root "
 "directory, i.e. the top-level subdirectory that the module source "
@@ -245,7 +236,7 @@ msgstr ""
 "module :file:`foo-1.0.tar.gz` sous un système Unix, la méthode normale "
 "consiste à faire ::"
 
-#: ../src/Doc/install/index.rst:142
+#: ../src/Doc/install/index.rst:140
 #, fuzzy
 msgid ""
 "On Windows, you'd probably download :file:`foo-1.0.zip`.  If you downloaded "
@@ -263,11 +254,11 @@ msgstr ""
 "`pkunzip`) pour décompresser l'archive. Ensuite, ouvrez une fenêtre d'invite "
 "de commandes (\"fenêtre DOS\") et exécutez ::"
 
-#: ../src/Doc/install/index.rst:156
+#: ../src/Doc/install/index.rst:154
 msgid "Splitting the job up"
 msgstr "Fractionnement du travail"
 
-#: ../src/Doc/install/index.rst:158
+#: ../src/Doc/install/index.rst:156
 msgid ""
 "Running ``setup.py install`` builds and installs all modules in one run.  If "
 "you prefer to work incrementally---especially useful if you want to "
@@ -289,7 +280,7 @@ msgstr ""
 "l'installation (ou le faire vous-même, avec les privilèges de super-"
 "utilisateur)."
 
-#: ../src/Doc/install/index.rst:166
+#: ../src/Doc/install/index.rst:164
 msgid ""
 "For example, you can build everything in one step, and then install "
 "everything in a second step, by invoking the setup script twice::"
@@ -298,7 +289,7 @@ msgstr ""
 "installer le tout dans une deuxième étape, en invoquant le script "
 "d'installation deux fois ::"
 
-#: ../src/Doc/install/index.rst:172
+#: ../src/Doc/install/index.rst:170
 msgid ""
 "If you do this, you will notice that running the :command:`install` command "
 "first runs the :command:`build` command, which---in this case---quickly "
@@ -310,7 +301,7 @@ msgstr ""
 "cas, s'aperçoit vite qu'il n'a rien à faire, puisque tout dans le dossier :"
 "file:`build` est à jour."
 
-#: ../src/Doc/install/index.rst:177
+#: ../src/Doc/install/index.rst:175
 msgid ""
 "You may not need this ability to break things down often if all you do is "
 "install modules downloaded off the 'net, but it's very handy for more "
@@ -324,11 +315,11 @@ msgstr ""
 "exécuter beaucoup de commandes individuelles de Distutils, indépendamment "
 "les unes des autres."
 
-#: ../src/Doc/install/index.rst:186
+#: ../src/Doc/install/index.rst:184
 msgid "How building works"
 msgstr "Comment fonctionne une construction"
 
-#: ../src/Doc/install/index.rst:188
+#: ../src/Doc/install/index.rst:186
 msgid ""
 "As implied above, the :command:`build` command is responsible for putting "
 "the files to install into a *build directory*.  By default, this is :file:"
@@ -343,7 +334,7 @@ msgstr ""
 "sources d'origine, vous pouvez changer le répertoire de construction avec "
 "l'option :option:`--build-base`. Par exemple ::"
 
-#: ../src/Doc/install/index.rst:196
+#: ../src/Doc/install/index.rst:194
 msgid ""
 "(Or you could do this permanently with a directive in your system or "
 "personal Distutils configuration file; see section :ref:`inst-config-"
@@ -353,13 +344,13 @@ msgstr ""
 "système ou dans le fichier de configuration personnelle de Distutils ; voir "
 "la section :ref:`inst-config-files`.) Normalement, ce n'est pas nécessaire."
 
-#: ../src/Doc/install/index.rst:200
+#: ../src/Doc/install/index.rst:198
 msgid "The default layout for the build tree is as follows::"
 msgstr ""
 "La mise en page par défaut pour l'arbre de compilation se présente comme "
 "suit ::"
 
-#: ../src/Doc/install/index.rst:207
+#: ../src/Doc/install/index.rst:205
 msgid ""
 "where ``<plat>`` expands to a brief description of the current OS/hardware "
 "platform and Python version.  The first form, with just a :file:`lib` "
@@ -384,7 +375,7 @@ msgstr ""
 "deux cas, le dossier :file:`lib` (ou :file:`lib.{plat}`) contient tous les "
 "modules Python (Python pur et extensions) qui seront installés."
 
-#: ../src/Doc/install/index.rst:217
+#: ../src/Doc/install/index.rst:215
 msgid ""
 "In the future, more directories will be added to handle Python scripts, "
 "documentation, binary executables, and whatever else is needed to handle the "
@@ -395,11 +386,11 @@ msgstr ""
 "nécessaire pour gérer le travail de l'installation de modules et "
 "d'applications Python."
 
-#: ../src/Doc/install/index.rst:225
+#: ../src/Doc/install/index.rst:223
 msgid "How installation works"
 msgstr "Comment fonctionne l'installation"
 
-#: ../src/Doc/install/index.rst:227
+#: ../src/Doc/install/index.rst:225
 msgid ""
 "After the :command:`build` command runs (whether you run it explicitly, or "
 "the :command:`install` command does it for you), the work of the :command:"
@@ -414,7 +405,7 @@ msgstr ""
 "file:`build/lib.{plat}`) dans le répertoire que vous avez choisi pour "
 "l'installation."
 
-#: ../src/Doc/install/index.rst:233
+#: ../src/Doc/install/index.rst:231
 msgid ""
 "If you don't choose an installation directory---i.e., if you just run "
 "``setup.py install``\\ ---then the :command:`install` command installs to "
@@ -433,71 +424,71 @@ msgstr ""
 "la distribution en cours d'installation est en pur Python ou contient des "
 "extensions (\"non-pur\"):"
 
-#: ../src/Doc/install/index.rst:241
+#: ../src/Doc/install/index.rst:239
 msgid "Platform"
 msgstr "Plateforme"
 
-#: ../src/Doc/install/index.rst:241
+#: ../src/Doc/install/index.rst:239
 msgid "Standard installation location"
 msgstr "Emplacement standard de l'installation"
 
-#: ../src/Doc/install/index.rst:241
+#: ../src/Doc/install/index.rst:239
 msgid "Default value"
 msgstr "Valeur par défaut"
 
-#: ../src/Doc/install/index.rst:241 ../src/Doc/install/index.rst:755
-#: ../src/Doc/install/index.rst:767
+#: ../src/Doc/install/index.rst:239 ../src/Doc/install/index.rst:753
+#: ../src/Doc/install/index.rst:765
 msgid "Notes"
 msgstr "Notes"
 
-#: ../src/Doc/install/index.rst:243
+#: ../src/Doc/install/index.rst:241
 msgid "Unix (pure)"
 msgstr "Unix (pur)"
 
-#: ../src/Doc/install/index.rst:243 ../src/Doc/install/index.rst:455
+#: ../src/Doc/install/index.rst:241 ../src/Doc/install/index.rst:453
 msgid ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-#: ../src/Doc/install/index.rst:243 ../src/Doc/install/index.rst:245
+#: ../src/Doc/install/index.rst:241 ../src/Doc/install/index.rst:243
 msgid ":file:`/usr/local/lib/python{X.Y}/site-packages`"
 msgstr ":file:`/usr/local/lib/python{X.Y}/site-packages`"
 
-#: ../src/Doc/install/index.rst:243 ../src/Doc/install/index.rst:245
-#: ../src/Doc/install/index.rst:757
+#: ../src/Doc/install/index.rst:241 ../src/Doc/install/index.rst:243
+#: ../src/Doc/install/index.rst:755
 msgid "\\(1)"
 msgstr "\\(1)"
 
-#: ../src/Doc/install/index.rst:245
+#: ../src/Doc/install/index.rst:243
 msgid "Unix (non-pure)"
 msgstr "Unix (non-pur)"
 
-#: ../src/Doc/install/index.rst:245 ../src/Doc/install/index.rst:456
+#: ../src/Doc/install/index.rst:243 ../src/Doc/install/index.rst:454
 msgid ":file:`{exec-prefix}/lib/python{X.Y}/site-packages`"
 msgstr ":file:`{exec-prefix}/lib/python{X.Y}/site-packages`"
 
-#: ../src/Doc/install/index.rst:247
+#: ../src/Doc/install/index.rst:245
 msgid "Windows"
 msgstr "Windows"
 
-#: ../src/Doc/install/index.rst:247 ../src/Doc/install/index.rst:507
+#: ../src/Doc/install/index.rst:245 ../src/Doc/install/index.rst:505
 #, fuzzy
 msgid ":file:`{prefix}\\\\Lib\\\\site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-#: ../src/Doc/install/index.rst:247
+#: ../src/Doc/install/index.rst:245
 #, fuzzy
 msgid ":file:`C:\\\\Python{XY}\\\\Lib\\\\site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-#: ../src/Doc/install/index.rst:247 ../src/Doc/install/index.rst:759
+#: ../src/Doc/install/index.rst:245 ../src/Doc/install/index.rst:757
 msgid "\\(2)"
 msgstr "\\(2)"
 
-#: ../src/Doc/install/index.rst:250 ../src/Doc/install/index.rst:779
+#: ../src/Doc/install/index.rst:248 ../src/Doc/install/index.rst:777
 msgid "Notes:"
 msgstr "Notes:"
 
-#: ../src/Doc/install/index.rst:253
+#: ../src/Doc/install/index.rst:251
 msgid ""
 "Most Linux distributions include Python as a standard part of the system, "
 "so :file:`{prefix}` and :file:`{exec-prefix}` are usually both :file:`/usr` "
@@ -512,7 +503,7 @@ msgstr ""
 "valeurs par défaut de : file: `{prefix}` et: ​​file: `{exec-prefix}` sont "
 "souvent : file: `/ usr /` locales."
 
-#: ../src/Doc/install/index.rst:259
+#: ../src/Doc/install/index.rst:257
 msgid ""
 "The default installation directory on Windows was :file:`C:\\\\Program Files"
 "\\\\Python` under Python 1.6a1, 1.5.2, and earlier."
@@ -520,7 +511,7 @@ msgstr ""
 "Sous Windows, le dossier d'installation par défaut était : :file:`C:"
 "\\Program Files\\Python` sous Python 1.6a1, 1.5.2 et avant."
 
-#: ../src/Doc/install/index.rst:262
+#: ../src/Doc/install/index.rst:260
 msgid ""
 ":file:`{prefix}` and :file:`{exec-prefix}` stand for the directories that "
 "Python is installed to, and where it finds its libraries at run-time.  They "
@@ -548,7 +539,7 @@ msgstr ""
 "pour trouver mes  :file:`{prefix}` et :file:`{exec-prefix}`::"
 
 # 5b6f132f2a2c44eabe95113d1db0aff9
-#: ../src/Doc/install/index.rst:282
+#: ../src/Doc/install/index.rst:280
 msgid ""
 "A few other placeholders are used in this document: :file:`{X.Y}` stands for "
 "the version of Python, for example ``2.7``; :file:`{distname}` will be "
@@ -557,7 +548,7 @@ msgid ""
 "``python2.7`` on UNIX will typically use ``Python27`` on Windows."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:288
+#: ../src/Doc/install/index.rst:286
 msgid ""
 "If you don't want to install modules to the standard location, or if you "
 "don't have permission to write there, then you need to read about alternate "
@@ -572,11 +563,11 @@ msgstr ""
 "d'installation plus fortement, allez voir la section ref: `inst-sur-install` "
 "sur les installations personnalisées."
 
-#: ../src/Doc/install/index.rst:298
+#: ../src/Doc/install/index.rst:296
 msgid "Alternate Installation"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:300
+#: ../src/Doc/install/index.rst:298
 msgid ""
 "Often, it is necessary or desirable to install modules to a location other "
 "than the standard location for third-party Python modules.  For example, on "
@@ -588,7 +579,7 @@ msgid ""
 "actually upgrading."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:308
+#: ../src/Doc/install/index.rst:306
 msgid ""
 "The Distutils :command:`install` command is designed to make installing "
 "module distributions to an alternate location simple and painless.  The "
@@ -600,7 +591,7 @@ msgid ""
 msgstr ""
 
 # 7506292a2ce64a38a0ea9f6c26fa8b5c
-#: ../src/Doc/install/index.rst:316
+#: ../src/Doc/install/index.rst:314
 msgid ""
 "Note that the various alternate installation schemes are mutually exclusive: "
 "you can pass ``--user``, or ``--home``, or ``--prefix`` and ``--exec-"
@@ -609,12 +600,12 @@ msgid ""
 msgstr ""
 
 # 40e5567d8fdc411c91fc7d89c0e99931
-#: ../src/Doc/install/index.rst:325
+#: ../src/Doc/install/index.rst:323
 msgid "Alternate installation: the user scheme"
 msgstr ""
 
 # ac94877f69944e94b0888cf2845c6d07
-#: ../src/Doc/install/index.rst:327
+#: ../src/Doc/install/index.rst:325
 msgid ""
 "This scheme is designed to be the most convenient solution for users that "
 "don't have write permission to the global site-packages directory or don't "
@@ -622,7 +613,7 @@ msgid ""
 msgstr ""
 
 # da5867d4d6cb47f6bcccbea71f7ef5d4
-#: ../src/Doc/install/index.rst:333
+#: ../src/Doc/install/index.rst:331
 msgid ""
 "Files will be installed into subdirectories of :data:`site.USER_BASE` "
 "(written as :file:`{userbase}` hereafter).  This scheme installs pure Python "
@@ -630,16 +621,16 @@ msgid ""
 "`site.USER_SITE`). Here are the values for UNIX, including Mac OS X:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:339 ../src/Doc/install/index.rst:350
-#: ../src/Doc/install/index.rst:401 ../src/Doc/install/index.rst:453
-#: ../src/Doc/install/index.rst:505 ../src/Doc/install/index.rst:530
-#: ../src/Doc/install/index.rst:755 ../src/Doc/install/index.rst:767
+#: ../src/Doc/install/index.rst:337 ../src/Doc/install/index.rst:348
+#: ../src/Doc/install/index.rst:399 ../src/Doc/install/index.rst:451
+#: ../src/Doc/install/index.rst:503 ../src/Doc/install/index.rst:528
+#: ../src/Doc/install/index.rst:753 ../src/Doc/install/index.rst:765
 msgid "Type of file"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:339 ../src/Doc/install/index.rst:350
-#: ../src/Doc/install/index.rst:401 ../src/Doc/install/index.rst:453
-#: ../src/Doc/install/index.rst:505
+#: ../src/Doc/install/index.rst:337 ../src/Doc/install/index.rst:348
+#: ../src/Doc/install/index.rst:399 ../src/Doc/install/index.rst:451
+#: ../src/Doc/install/index.rst:503
 #, fuzzy
 msgid "Installation directory"
 msgstr "Comment fonctionne l'installation"
@@ -648,34 +639,34 @@ msgstr "Comment fonctionne l'installation"
 # f5ee1578a76542ef876e524df4460b79
 # 260ab33dcfc24f7b9686d09491c9cb55
 # f3b03d4aecd9484887d1f7be4a212a84
-#: ../src/Doc/install/index.rst:341 ../src/Doc/install/index.rst:352
-#: ../src/Doc/install/index.rst:403 ../src/Doc/install/index.rst:507
+#: ../src/Doc/install/index.rst:339 ../src/Doc/install/index.rst:350
+#: ../src/Doc/install/index.rst:401 ../src/Doc/install/index.rst:505
 msgid "modules"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:341
+#: ../src/Doc/install/index.rst:339
 #, fuzzy
 msgid ":file:`{userbase}/lib/python{X.Y}/site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-#: ../src/Doc/install/index.rst:342 ../src/Doc/install/index.rst:353
-#: ../src/Doc/install/index.rst:404 ../src/Doc/install/index.rst:457
-#: ../src/Doc/install/index.rst:508 ../src/Doc/install/index.rst:535
+#: ../src/Doc/install/index.rst:340 ../src/Doc/install/index.rst:351
+#: ../src/Doc/install/index.rst:402 ../src/Doc/install/index.rst:455
+#: ../src/Doc/install/index.rst:506 ../src/Doc/install/index.rst:533
 msgid "scripts"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:342
+#: ../src/Doc/install/index.rst:340
 #, fuzzy
 msgid ":file:`{userbase}/bin`"
 msgstr ":file:`{prefix}`"
 
-#: ../src/Doc/install/index.rst:343 ../src/Doc/install/index.rst:354
-#: ../src/Doc/install/index.rst:405 ../src/Doc/install/index.rst:458
-#: ../src/Doc/install/index.rst:509 ../src/Doc/install/index.rst:536
+#: ../src/Doc/install/index.rst:341 ../src/Doc/install/index.rst:352
+#: ../src/Doc/install/index.rst:403 ../src/Doc/install/index.rst:456
+#: ../src/Doc/install/index.rst:507 ../src/Doc/install/index.rst:534
 msgid "data"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:343 ../src/Doc/install/index.rst:354
+#: ../src/Doc/install/index.rst:341 ../src/Doc/install/index.rst:352
 #, fuzzy
 msgid ":file:`{userbase}`"
 msgstr ":file:`{prefix}`"
@@ -686,39 +677,39 @@ msgstr ":file:`{prefix}`"
 # d9dd3ac0b3e241f0830a29eb9e7af2cf
 # 94b2b1c3891c4037965770d7989e02c9
 # 8542173e915c4120a50fb6d99b8934eb
-#: ../src/Doc/install/index.rst:344 ../src/Doc/install/index.rst:355
-#: ../src/Doc/install/index.rst:406 ../src/Doc/install/index.rst:459
-#: ../src/Doc/install/index.rst:510 ../src/Doc/install/index.rst:537
+#: ../src/Doc/install/index.rst:342 ../src/Doc/install/index.rst:353
+#: ../src/Doc/install/index.rst:404 ../src/Doc/install/index.rst:457
+#: ../src/Doc/install/index.rst:508 ../src/Doc/install/index.rst:535
 msgid "C headers"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:344
+#: ../src/Doc/install/index.rst:342
 #, fuzzy
 msgid ":file:`{userbase}/include/python{X.Y}/{distname}`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # 7420241ef1a746b09f23620a6d34a87b
-#: ../src/Doc/install/index.rst:347
+#: ../src/Doc/install/index.rst:345
 msgid "And here are the values used on Windows:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:352
+#: ../src/Doc/install/index.rst:350
 #, fuzzy
 msgid ":file:`{userbase}\\\\Python{XY}\\\\site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # 2051c21f883c42d88eb083a62f4088ae
-#: ../src/Doc/install/index.rst:353
+#: ../src/Doc/install/index.rst:351
 msgid ":file:`{userbase}\\\\Scripts`"
 msgstr ""
 
 # 0d0695c67f894b4c9f4d08db0f94c4bd
-#: ../src/Doc/install/index.rst:355
+#: ../src/Doc/install/index.rst:353
 msgid ":file:`{userbase}\\\\Python{XY}\\\\Include\\\\{distname}`"
 msgstr ""
 
 # 58fe3f2dfe20476f9a9f1dd49f7bd8c2
-#: ../src/Doc/install/index.rst:358
+#: ../src/Doc/install/index.rst:356
 msgid ""
 "The advantage of using this scheme compared to the other ones described "
 "below is that the user site-packages directory is under normal conditions "
@@ -728,7 +719,7 @@ msgid ""
 msgstr ""
 
 # 96c46f760b34452fb3e386c39abd6987
-#: ../src/Doc/install/index.rst:364
+#: ../src/Doc/install/index.rst:362
 msgid ""
 "The :command:`build_ext` command also has a ``--user`` option to add :file:`"
 "{userbase}/include` to the compiler search path for header files and :file:`"
@@ -736,12 +727,12 @@ msgid ""
 "runtime search path for shared C libraries (rpath)."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:373
+#: ../src/Doc/install/index.rst:371
 msgid "Alternate installation: the home scheme"
 msgstr ""
 
 # 654db38d5e864e0f86ad63308f69f9b8
-#: ../src/Doc/install/index.rst:375
+#: ../src/Doc/install/index.rst:373
 msgid ""
 "The idea behind the \"home scheme\" is that you build and maintain a "
 "personal stash of Python modules.  This scheme's name is derived from the "
@@ -751,11 +742,11 @@ msgid ""
 "operating system they are installing for."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:382
+#: ../src/Doc/install/index.rst:380
 msgid "Installing a new module distribution is as simple as ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:386
+#: ../src/Doc/install/index.rst:384
 msgid ""
 "where you can supply any directory you like for the :option:`--home` "
 "option.  On Unix, lazy typists can just type a tilde (``~``); the :command:"
@@ -763,7 +754,7 @@ msgid ""
 msgstr ""
 
 # bcdc4d6e75ba4b3599b9473b7026410d
-#: ../src/Doc/install/index.rst:392
+#: ../src/Doc/install/index.rst:390
 msgid ""
 "To make Python find the distributions installed with this scheme, you may "
 "have to :ref:`modify Python's search path <inst-search-path>` or edit :mod:"
@@ -771,42 +762,42 @@ msgid ""
 "data:`sys.path`."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:397
+#: ../src/Doc/install/index.rst:395
 msgid ""
 "The :option:`--home` option defines the installation base directory.  Files "
 "are installed to the following directories under the installation base as "
 "follows:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:403
+#: ../src/Doc/install/index.rst:401
 msgid ":file:`{home}/lib/python`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:404
+#: ../src/Doc/install/index.rst:402
 msgid ":file:`{home}/bin`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:405
+#: ../src/Doc/install/index.rst:403
 #, fuzzy
 msgid ":file:`{home}`"
 msgstr ":file:`{prefix}`"
 
 # c48418482c954f169cff9de2e515efe9
-#: ../src/Doc/install/index.rst:406
+#: ../src/Doc/install/index.rst:404
 msgid ":file:`{home}/include/python/{distname}`"
 msgstr ""
 
 # 6c5459b252a04253ad7335e076dcefb6
-#: ../src/Doc/install/index.rst:409
+#: ../src/Doc/install/index.rst:407
 msgid "(Mentally replace slashes with backslashes if you're on Windows.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:418
+#: ../src/Doc/install/index.rst:416
 msgid "Alternate installation: Unix (the prefix scheme)"
 msgstr ""
 
 # aebde3b1ca494bbe9d4f5859a9e97b9e
-#: ../src/Doc/install/index.rst:420
+#: ../src/Doc/install/index.rst:418
 msgid ""
 "The \"prefix scheme\" is useful when you wish to use one Python installation "
 "to perform the build/install (i.e., to run the setup script), but install "
@@ -817,7 +808,7 @@ msgid ""
 "where the prefix scheme will be useful."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:427
+#: ../src/Doc/install/index.rst:425
 msgid ""
 "First, consider that many Linux distributions put Python in :file:`/usr`, "
 "rather than the more traditional :file:`/usr/local`.  This is entirely "
@@ -827,7 +818,7 @@ msgid ""
 "rather than :file:`/usr/lib/python2.{X}`.  This can be done with ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:436
+#: ../src/Doc/install/index.rst:434
 msgid ""
 "Another possibility is a network filesystem where the name used to write to "
 "a remote directory is different from the name used to read it: for example, "
@@ -837,7 +828,7 @@ msgid ""
 "{X}`.  This could be done with ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:445
+#: ../src/Doc/install/index.rst:443
 msgid ""
 "In either case, the :option:`--prefix` option defines the installation base, "
 "and the :option:`--exec-prefix` option defines the platform-specific "
@@ -847,38 +838,38 @@ msgid ""
 "supplied, it defaults to :option:`--prefix`.  Files are installed as follows:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:455 ../src/Doc/install/index.rst:532
+#: ../src/Doc/install/index.rst:453 ../src/Doc/install/index.rst:530
 #, fuzzy
 msgid "Python modules"
 msgstr "installation des modules python"
 
 # 7c44bafb1d504e418278dcb7a7789d23
 # 9b4df557d25146c59b96f0c480baf7cd
-#: ../src/Doc/install/index.rst:456 ../src/Doc/install/index.rst:533
+#: ../src/Doc/install/index.rst:454 ../src/Doc/install/index.rst:531
 msgid "extension modules"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:457
+#: ../src/Doc/install/index.rst:455
 msgid ":file:`{prefix}/bin`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:458 ../src/Doc/install/index.rst:509
+#: ../src/Doc/install/index.rst:456 ../src/Doc/install/index.rst:507
 msgid ":file:`{prefix}`"
 msgstr ":file:`{prefix}`"
 
-#: ../src/Doc/install/index.rst:459
+#: ../src/Doc/install/index.rst:457
 #, fuzzy
 msgid ":file:`{prefix}/include/python{X.Y}/{distname}`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-#: ../src/Doc/install/index.rst:462
+#: ../src/Doc/install/index.rst:460
 msgid ""
 "There is no requirement that :option:`--prefix` or :option:`--exec-prefix` "
 "actually point to an alternate Python installation; if the directories "
 "listed above do not already exist, they are created at installation time."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:466
+#: ../src/Doc/install/index.rst:464
 msgid ""
 "Incidentally, the real reason the prefix scheme is important is simply that "
 "a standard Unix installation uses the prefix scheme, but with :option:`--"
@@ -888,7 +879,7 @@ msgid ""
 "without any other options, you're using it."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:473
+#: ../src/Doc/install/index.rst:471
 msgid ""
 "Note that installing extensions to an alternate Python installation has no "
 "effect on how those extensions are built: in particular, the Python header "
@@ -903,11 +894,11 @@ msgid ""
 "immaterial.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:488
+#: ../src/Doc/install/index.rst:486
 msgid "Alternate installation: Windows (the prefix scheme)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:490
+#: ../src/Doc/install/index.rst:488
 msgid ""
 "Windows has no concept of a user's home directory, and since the standard "
 "Python installation under Windows is simpler than under Unix, the :option:`--"
@@ -915,14 +906,14 @@ msgid ""
 "separate locations on Windows. ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:497
+#: ../src/Doc/install/index.rst:495
 msgid ""
 "to install modules to the :file:`\\\\Temp\\\\Python` directory on the "
 "current drive."
 msgstr ""
 
 # 5c7df528cb674ed0bbb3551ea1ece924
-#: ../src/Doc/install/index.rst:499
+#: ../src/Doc/install/index.rst:497
 msgid ""
 "The installation base is defined by the :option:`--prefix` option; the :"
 "option:`--exec-prefix` option is not supported under Windows, which means "
@@ -930,20 +921,20 @@ msgid ""
 "location. Files are installed as follows:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:508
+#: ../src/Doc/install/index.rst:506
 msgid ":file:`{prefix}\\\\Scripts`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:510
+#: ../src/Doc/install/index.rst:508
 #, fuzzy
 msgid ":file:`{prefix}\\\\Include\\\\{distname}`"
 msgstr ":file:`{prefix}`"
 
-#: ../src/Doc/install/index.rst:517
+#: ../src/Doc/install/index.rst:515
 msgid "Custom Installation"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:519
+#: ../src/Doc/install/index.rst:517
 msgid ""
 "Sometimes, the alternate installation schemes described in section :ref:"
 "`inst-alt-install` just don't do what you want.  You might want to tweak "
@@ -953,54 +944,54 @@ msgid ""
 msgstr ""
 
 # 003c4ceac9c748ca8cc55c0555a82b51
-#: ../src/Doc/install/index.rst:525
+#: ../src/Doc/install/index.rst:523
 msgid ""
 "To create a custom installation scheme, you start with one of the alternate "
 "schemes and override some of the installation directories used for the "
 "various types of files, using these options:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:530
+#: ../src/Doc/install/index.rst:528
 msgid "Override option"
 msgstr ""
 
 # e02e457232eb4502b4970ff77be64449
-#: ../src/Doc/install/index.rst:532
+#: ../src/Doc/install/index.rst:530
 msgid "``--install-purelib``"
 msgstr ""
 
 # d1b86d5cb7c84977be95b51cc118600a
-#: ../src/Doc/install/index.rst:533
+#: ../src/Doc/install/index.rst:531
 msgid "``--install-platlib``"
 msgstr ""
 
 # 11e3c926d2fe4e6ea633548f1b03f45c
-#: ../src/Doc/install/index.rst:534
+#: ../src/Doc/install/index.rst:532
 msgid "all modules"
 msgstr ""
 
 # 409ce2885b1d467ca8114553d28f1078
-#: ../src/Doc/install/index.rst:534
+#: ../src/Doc/install/index.rst:532
 msgid "``--install-lib``"
 msgstr ""
 
 # a984f6e1ade94ce1a754e72a66a461b9
-#: ../src/Doc/install/index.rst:535
+#: ../src/Doc/install/index.rst:533
 msgid "``--install-scripts``"
 msgstr ""
 
 # b2937443347b465ea601a23deb64771a
-#: ../src/Doc/install/index.rst:536
+#: ../src/Doc/install/index.rst:534
 msgid "``--install-data``"
 msgstr ""
 
 # cabca33a0e0d4f0d8a94e0ac01a704ee
-#: ../src/Doc/install/index.rst:537
+#: ../src/Doc/install/index.rst:535
 msgid "``--install-headers``"
 msgstr ""
 
 # 148694f30ca24f8396b5c98795333fbf
-#: ../src/Doc/install/index.rst:540
+#: ../src/Doc/install/index.rst:538
 msgid ""
 "These override options can be relative, absolute, or explicitly defined in "
 "terms of one of the installation base directories. (There are two "
@@ -1012,7 +1003,7 @@ msgid ""
 "between Python and extension modules.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:549
+#: ../src/Doc/install/index.rst:547
 msgid ""
 "For example, say you're installing a module distribution to your home "
 "directory under Unix---but you want scripts to go in :file:`~/scripts` "
@@ -1023,7 +1014,7 @@ msgid ""
 "case)::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:558
+#: ../src/Doc/install/index.rst:556
 msgid ""
 "Another Unix example: suppose your Python installation was built and "
 "installed with a prefix of :file:`/usr/local/python`, so under a standard  "
@@ -1032,7 +1023,7 @@ msgid ""
 "directory for the :option:`--install-scripts` option::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:566
+#: ../src/Doc/install/index.rst:564
 msgid ""
 "(This performs an installation using the \"prefix scheme,\" where the prefix "
 "is whatever your Python interpreter was installed with--- :file:`/usr/local/"
@@ -1040,7 +1031,7 @@ msgid ""
 msgstr ""
 
 # ae9d2a4cb0af4505afc433c5949ae3a3
-#: ../src/Doc/install/index.rst:570
+#: ../src/Doc/install/index.rst:568
 msgid ""
 "If you maintain Python on Windows, you might want third-party modules to "
 "live in a subdirectory of :file:`{prefix}`, rather than right in :file:`"
@@ -1051,7 +1042,7 @@ msgid ""
 msgstr ""
 
 # bff0458bdeaa4b8fa8a89d6a8048aeb8
-#: ../src/Doc/install/index.rst:579
+#: ../src/Doc/install/index.rst:577
 msgid ""
 "The specified installation directory is relative to :file:`{prefix}`.  Of "
 "course, you also have to ensure that this directory is in Python's module "
@@ -1060,7 +1051,7 @@ msgid ""
 "modify Python's search path."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:585
+#: ../src/Doc/install/index.rst:583
 msgid ""
 "If you want to define an entire installation scheme, you just have to supply "
 "all of the installation directory options.  The recommended way to do this "
@@ -1070,18 +1061,18 @@ msgid ""
 "from, you might define the following installation scheme::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:598 ../src/Doc/install/index.rst:621
+#: ../src/Doc/install/index.rst:596 ../src/Doc/install/index.rst:619
 msgid "or, equivalently, ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:606
+#: ../src/Doc/install/index.rst:604
 msgid ""
 "``$PLAT`` is not (necessarily) an environment variable---it will be expanded "
 "by the Distutils as it parses your command line options, just as it does "
 "when parsing your configuration file(s)."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:610
+#: ../src/Doc/install/index.rst:608
 msgid ""
 "Obviously, specifying the entire installation scheme every time you install "
 "a new module distribution would be very tedious.  Thus, you can put these "
@@ -1089,21 +1080,21 @@ msgid ""
 "files`)::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:630
+#: ../src/Doc/install/index.rst:628
 msgid ""
 "Note that these two are *not* equivalent if you supply a different "
 "installation base directory when you run the setup script.  For example, ::"
 msgstr ""
 
 # 4c8fc07f345f4a0e9bcdfcd32f69390e
-#: ../src/Doc/install/index.rst:635
+#: ../src/Doc/install/index.rst:633
 msgid ""
 "would install pure modules to :file:`/tmp/python/lib` in the first case, and "
 "to :file:`/tmp/lib` in the second case.  (For the second case, you probably "
 "want to supply an installation base of :file:`/tmp/python`.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:639
+#: ../src/Doc/install/index.rst:637
 msgid ""
 "You probably noticed the use of ``$HOME`` and ``$PLAT`` in the sample "
 "configuration file input.  These are Distutils configuration variables, "
@@ -1116,11 +1107,11 @@ msgid ""
 "section :ref:`inst-config-files` for details."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:658
+#: ../src/Doc/install/index.rst:656
 msgid "Modifying Python's Search Path"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:660
+#: ../src/Doc/install/index.rst:658
 msgid ""
 "When the Python interpreter executes an :keyword:`import` statement, it "
 "searches for both Python code and extension modules along a search path.  A "
@@ -1129,12 +1120,12 @@ msgid ""
 "module and printing the value of ``sys.path``.   ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:677
+#: ../src/Doc/install/index.rst:675
 msgid ""
 "The null string in ``sys.path`` represents the current working directory."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:679
+#: ../src/Doc/install/index.rst:677
 msgid ""
 "The expected convention for locally installed packages is to put them in "
 "the :file:`{...}/site-packages/` directory, but you may want to install "
@@ -1145,7 +1136,7 @@ msgid ""
 "There are several different ways to add the directory."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:687
+#: ../src/Doc/install/index.rst:685
 msgid ""
 "The most convenient way is to add a path configuration file to a directory "
 "that's already on Python's path, usually to the :file:`.../site-packages/` "
@@ -1156,14 +1147,14 @@ msgid ""
 "this mechanism for installing fixed versions of standard modules.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:695
+#: ../src/Doc/install/index.rst:693
 msgid ""
 "Paths can be absolute or relative, in which case they're relative to the "
 "directory containing the :file:`.pth` file.  See the documentation of the :"
 "mod:`site` module for more information."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:699
+#: ../src/Doc/install/index.rst:697
 msgid ""
 "A slightly less convenient way is to edit the :file:`site.py` file in "
 "Python's standard library, and modify ``sys.path``.  :file:`site.py` is "
@@ -1172,7 +1163,7 @@ msgid ""
 "simply edit :file:`site.py` and add two lines to it::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:708
+#: ../src/Doc/install/index.rst:706
 msgid ""
 "However, if you reinstall the same major version of Python (perhaps when "
 "upgrading from 2.2 to 2.2.2, for example) :file:`site.py` will be "
@@ -1180,7 +1171,7 @@ msgid ""
 "modified and save a copy before doing the installation."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:713
+#: ../src/Doc/install/index.rst:711
 msgid ""
 "There are two environment variables that can modify ``sys.path``. :envvar:"
 "`PYTHONHOME` sets an alternate value for the prefix of the Python "
@@ -1189,7 +1180,7 @@ msgid ""
 "Y/', '/www/python/lib/pythonX.Y/plat-linux2', ...]``."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:719
+#: ../src/Doc/install/index.rst:717
 msgid ""
 "The :envvar:`PYTHONPATH` variable can be set to a list of paths that will be "
 "added to the beginning of ``sys.path``.  For example, if :envvar:"
@@ -1199,17 +1190,17 @@ msgid ""
 "don't exist.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:726
+#: ../src/Doc/install/index.rst:724
 msgid ""
 "Finally, ``sys.path`` is just a regular Python list, so any Python "
 "application can modify it by adding or removing entries."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:733
+#: ../src/Doc/install/index.rst:731
 msgid "Distutils Configuration Files"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:735
+#: ../src/Doc/install/index.rst:733
 msgid ""
 "As mentioned above, you can use Distutils configuration files to record "
 "personal or site preferences for any Distutils options.  That is, any option "
@@ -1221,76 +1212,76 @@ msgid ""
 "files are overridden by \"later\" files."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:748
+#: ../src/Doc/install/index.rst:746
 msgid "Location and names of config files"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:750
+#: ../src/Doc/install/index.rst:748
 msgid ""
 "The names and locations of the configuration files vary slightly across "
 "platforms.  On Unix and Mac OS X, the three configuration files (in the "
 "order they are processed) are:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:755 ../src/Doc/install/index.rst:767
+#: ../src/Doc/install/index.rst:753 ../src/Doc/install/index.rst:765
 msgid "Location and filename"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:757 ../src/Doc/install/index.rst:769
+#: ../src/Doc/install/index.rst:755 ../src/Doc/install/index.rst:767
 msgid "system"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:757
+#: ../src/Doc/install/index.rst:755
 msgid ":file:`{prefix}/lib/python{ver}/distutils/distutils.cfg`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:759 ../src/Doc/install/index.rst:771
+#: ../src/Doc/install/index.rst:757 ../src/Doc/install/index.rst:769
 msgid "personal"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:759
+#: ../src/Doc/install/index.rst:757
 msgid ":file:`$HOME/.pydistutils.cfg`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:761 ../src/Doc/install/index.rst:773
+#: ../src/Doc/install/index.rst:759 ../src/Doc/install/index.rst:771
 msgid "local"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:761 ../src/Doc/install/index.rst:773
+#: ../src/Doc/install/index.rst:759 ../src/Doc/install/index.rst:771
 msgid ":file:`setup.cfg`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:761 ../src/Doc/install/index.rst:773
+#: ../src/Doc/install/index.rst:759 ../src/Doc/install/index.rst:771
 msgid "\\(3)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:764
+#: ../src/Doc/install/index.rst:762
 msgid "And on Windows, the configuration files are:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:769
+#: ../src/Doc/install/index.rst:767
 msgid ":file:`{prefix}\\\\Lib\\\\distutils\\\\distutils.cfg`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:769
+#: ../src/Doc/install/index.rst:767
 msgid "\\(4)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:771
+#: ../src/Doc/install/index.rst:769
 msgid ":file:`%HOME%\\\\pydistutils.cfg`"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:771
+#: ../src/Doc/install/index.rst:769
 msgid "\\(5)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:776
+#: ../src/Doc/install/index.rst:774
 msgid ""
 "On all platforms, the \"personal\" file can be temporarily disabled by "
 "passing the `--no-user-cfg` option."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:782
+#: ../src/Doc/install/index.rst:780
 msgid ""
 "Strictly speaking, the system-wide configuration file lives in the directory "
 "where the Distutils are installed; under Python 1.6 and later on Unix, this "
@@ -1299,7 +1290,7 @@ msgid ""
 "configuration file should be put there under Python 1.5.2."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:789
+#: ../src/Doc/install/index.rst:787
 msgid ""
 "On Unix, if the :envvar:`HOME` environment variable is not defined, the "
 "user's home directory will be determined with the :func:`getpwuid` function "
@@ -1307,12 +1298,12 @@ msgid ""
 "expanduser` function used by Distutils."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:795
+#: ../src/Doc/install/index.rst:793
 msgid ""
 "I.e., in the current directory (usually the location of the setup script)."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:798
+#: ../src/Doc/install/index.rst:796
 msgid ""
 "(See also note (1).)  Under Python 1.6 and later, Python's default "
 "\"installation prefix\" is :file:`C:\\\\Python`, so the system configuration "
@@ -1324,7 +1315,7 @@ msgid ""
 "Windows."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:807
+#: ../src/Doc/install/index.rst:805
 msgid ""
 "On Windows, if the :envvar:`HOME` environment variable is not defined, :"
 "envvar:`USERPROFILE` then :envvar:`HOMEDRIVE` and :envvar:`HOMEPATH` will be "
@@ -1332,11 +1323,11 @@ msgid ""
 "Distutils."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:816
+#: ../src/Doc/install/index.rst:814
 msgid "Syntax of config files"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:818
+#: ../src/Doc/install/index.rst:816
 msgid ""
 "The Distutils configuration files all have the same syntax.  The config "
 "files are grouped into sections.  There is one section for each Distutils "
@@ -1345,13 +1336,13 @@ msgid ""
 "``option=value``."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:823
+#: ../src/Doc/install/index.rst:821
 msgid ""
 "For example, the following is a complete config file that just forces all "
 "commands to run quietly by default::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:829
+#: ../src/Doc/install/index.rst:827
 msgid ""
 "If this is installed as the system config file, it will affect all "
 "processing of any Python module distribution by any user on the current "
@@ -1361,18 +1352,18 @@ msgid ""
 "distribution, it affects only that distribution."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:836
+#: ../src/Doc/install/index.rst:834
 msgid ""
 "You could override the default \"build base\" directory and make the :"
 "command:`build\\*` commands always forcibly rebuild all files with the "
 "following::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:844
+#: ../src/Doc/install/index.rst:842
 msgid "which corresponds to the command-line arguments ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:848
+#: ../src/Doc/install/index.rst:846
 msgid ""
 "except that including the :command:`build` command on the command-line means "
 "that command will be run.  Including a particular command in config files "
@@ -1381,29 +1372,29 @@ msgid ""
 "values from it are run, they will use the values in the config file.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:854
+#: ../src/Doc/install/index.rst:852
 msgid ""
 "You can find out the complete list of options for any command using the :"
 "option:`--help` option, e.g.::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:859
+#: ../src/Doc/install/index.rst:857
 msgid ""
 "and you can find out the complete list of global options by using :option:`--"
 "help` without a command::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:864
+#: ../src/Doc/install/index.rst:862
 msgid ""
 "See also the \"Reference\" section of the \"Distributing Python Modules\" "
 "manual."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:870
+#: ../src/Doc/install/index.rst:868
 msgid "Building Extensions: Tips and Tricks"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:872
+#: ../src/Doc/install/index.rst:870
 msgid ""
 "Whenever possible, the Distutils try to use the configuration information "
 "made available by the Python interpreter used to run the :file:`setup.py` "
@@ -1413,11 +1404,11 @@ msgid ""
 "section discusses how to override the usual Distutils behaviour."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:883
+#: ../src/Doc/install/index.rst:881
 msgid "Tweaking compiler/linker flags"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:885
+#: ../src/Doc/install/index.rst:883
 msgid ""
 "Compiling a Python extension written in C or C++ will sometimes require "
 "specifying custom flags for the compiler and linker in order to use a "
@@ -1426,7 +1417,7 @@ msgid ""
 "you're trying to cross-compile Python."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:891
+#: ../src/Doc/install/index.rst:889
 msgid ""
 "In the most general case, the extension author might have foreseen that "
 "compiling the extensions would be complicated, and provided a :file:`Setup` "
@@ -1435,18 +1426,18 @@ msgid ""
 "require elaborate sets of compiler flags in order to work."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:897
+#: ../src/Doc/install/index.rst:895
 msgid ""
 "A :file:`Setup` file, if present, is parsed in order to get a list of "
 "extensions to build.  Each line in a :file:`Setup` describes a single "
 "module.  Lines have the following structure::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:904
+#: ../src/Doc/install/index.rst:902
 msgid "Let's examine each of the fields in turn."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:906
+#: ../src/Doc/install/index.rst:904
 msgid ""
 "*module* is the name of the extension module to be built, and should be a "
 "valid Python identifier.  You can't just change this in order to rename a "
@@ -1454,7 +1445,7 @@ msgid ""
 "left alone."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:910
+#: ../src/Doc/install/index.rst:908
 msgid ""
 "*sourcefile* is anything that's likely to be a source code file, at least "
 "judging by the filename.  Filenames ending in :file:`.c` are assumed to be "
@@ -1463,38 +1454,38 @@ msgid ""
 "assumed to be in Objective C."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:916
+#: ../src/Doc/install/index.rst:914
 msgid ""
 "*cpparg* is an argument for the C preprocessor,  and is anything starting "
 "with :option:`-I`, :option:`-D`, :option:`-U` or :option:`-C`."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:919
+#: ../src/Doc/install/index.rst:917
 msgid ""
 "*library* is anything ending in :file:`.a` or beginning with :option:`-l` "
 "or :option:`-L`."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:922
+#: ../src/Doc/install/index.rst:920
 msgid ""
 "If a particular platform requires a special library on your platform, you "
 "can add it by editing the :file:`Setup` file and running ``python setup.py "
 "build``. For example, if the module defined by the line ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:928
+#: ../src/Doc/install/index.rst:926
 msgid ""
 "must be linked with the math library :file:`libm.a` on your platform, simply "
 "add :option:`-lm` to the line::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:933
+#: ../src/Doc/install/index.rst:931
 msgid ""
 "Arbitrary switches intended for the compiler or the linker can be supplied "
 "with the :option:`-Xcompiler` *arg* and :option:`-Xlinker` *arg* options::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:938
+#: ../src/Doc/install/index.rst:936
 msgid ""
 "The next option after :option:`-Xcompiler` and :option:`-Xlinker` will be "
 "appended to the proper command line, so in the above example the compiler "
@@ -1505,22 +1496,22 @@ msgid ""
 "++``."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:945
+#: ../src/Doc/install/index.rst:943
 msgid ""
 "Compiler flags can also be supplied through setting the :envvar:`CFLAGS` "
 "environment variable.  If set, the contents of :envvar:`CFLAGS` will be "
 "added to the compiler flags specified in the  :file:`Setup` file."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:953
+#: ../src/Doc/install/index.rst:951
 msgid "Using non-Microsoft compilers on Windows"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:960
+#: ../src/Doc/install/index.rst:958
 msgid "Borland/CodeGear C++"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:962
+#: ../src/Doc/install/index.rst:960
 msgid ""
 "This subsection describes the necessary steps to use Distutils with the "
 "Borland C++ compiler version 5.5.  First you have to know that Borland's "
@@ -1531,7 +1522,7 @@ msgid ""
 "`python25.lib` into the Borland format.  You can do this as follows:"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:977
+#: ../src/Doc/install/index.rst:975
 msgid ""
 "The :file:`coff2omf` program comes with the Borland compiler.  The file :"
 "file:`python25.lib` is in the :file:`Libs` directory of your Python "
@@ -1539,13 +1530,13 @@ msgid ""
 "to convert them too."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:982
+#: ../src/Doc/install/index.rst:980
 msgid ""
 "The converted files have to reside in the same directories as the normal "
 "libraries."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:985
+#: ../src/Doc/install/index.rst:983
 msgid ""
 "How does Distutils manage to use these libraries with their changed names?  "
 "If the extension needs a library (eg. :file:`foo`) Distutils checks first if "
@@ -1554,36 +1545,36 @@ msgid ""
 "it uses the default name (:file:`foo.lib`.) [#]_"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:991
+#: ../src/Doc/install/index.rst:989
 msgid ""
 "To let Distutils compile your extension with Borland C++ you now have to "
 "type::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:995
+#: ../src/Doc/install/index.rst:993
 msgid ""
 "If you want to use the Borland C++ compiler as the default, you could "
 "specify this in your personal or system-wide configuration file for "
 "Distutils (see section :ref:`inst-config-files`.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1003
+#: ../src/Doc/install/index.rst:1001
 msgid ""
 "Information about the free C++ compiler from Borland, including links to the "
 "download pages."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1007
+#: ../src/Doc/install/index.rst:1005
 msgid ""
 "Document describing how to use Borland's free command-line C++ compiler to "
 "build Python."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1012
+#: ../src/Doc/install/index.rst:1010
 msgid "GNU C / Cygwin / MinGW"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1014
+#: ../src/Doc/install/index.rst:1012
 msgid ""
 "This section describes the necessary steps to use Distutils with the GNU C/C+"
 "+ compilers in their Cygwin and MinGW distributions. [#]_ For a Python "
@@ -1592,7 +1583,7 @@ msgid ""
 msgstr ""
 
 # 490b1d959cfd49489752fa9f434c777a
-#: ../src/Doc/install/index.rst:1019
+#: ../src/Doc/install/index.rst:1017
 msgid ""
 "Not all extensions can be built with MinGW or Cygwin, but many can.  "
 "Extensions most likely to not work are those that use C++ or depend on "
@@ -1600,16 +1591,16 @@ msgid ""
 msgstr ""
 
 # 5f12c61d263e41eb8aec627175bafbe6
-#: ../src/Doc/install/index.rst:1023
+#: ../src/Doc/install/index.rst:1021
 msgid "To let Distutils compile your extension with Cygwin you have to type::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1027
+#: ../src/Doc/install/index.rst:1025
 msgid "and for Cygwin in no-cygwin mode [#]_ or for MinGW type::"
 msgstr ""
 
 # 3ca06e91732b4192850f3fbc184243e8
-#: ../src/Doc/install/index.rst:1031
+#: ../src/Doc/install/index.rst:1029
 msgid ""
 "If you want to use any of these options/compilers as default, you should "
 "consider writing it in your personal or system-wide configuration file for "
@@ -1617,12 +1608,12 @@ msgid ""
 msgstr ""
 
 # 874b1377e9db4edf9c789695f5fc0068
-#: ../src/Doc/install/index.rst:1036
+#: ../src/Doc/install/index.rst:1034
 msgid "Older Versions of Python and MinGW"
 msgstr ""
 
 # 2a9a8106da2e4218a0d342fdb226bdd1
-#: ../src/Doc/install/index.rst:1037
+#: ../src/Doc/install/index.rst:1035
 msgid ""
 "The following instructions only apply if you're using a version of Python "
 "inferior to 2.4.1 with a MinGW inferior to 3.0.0 (with "
@@ -1630,7 +1621,7 @@ msgid ""
 msgstr ""
 
 # 6ff303073be8449fa1ff889432a626ca
-#: ../src/Doc/install/index.rst:1041
+#: ../src/Doc/install/index.rst:1039
 msgid ""
 "These compilers require some special libraries.  This task is more complex "
 "than for Borland's C++, because there is no program to convert the library.  "
@@ -1639,7 +1630,7 @@ msgid ""
 "software/pexports-0.43/download_pexports.html)."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1054
+#: ../src/Doc/install/index.rst:1052
 msgid ""
 "The location of an installed :file:`python25.dll` will depend on the "
 "installation options and the version and language of Windows.  In a \"just "
@@ -1648,51 +1639,58 @@ msgid ""
 "directory."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1059
+#: ../src/Doc/install/index.rst:1057
 msgid ""
 "Then you can create from these information an import library for gcc. ::"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1063
+#: ../src/Doc/install/index.rst:1061
 msgid ""
 "The resulting library has to be placed in the same directory as :file:"
 "`python25.lib`. (Should be the :file:`libs` directory under your Python "
 "installation directory.)"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1067
+#: ../src/Doc/install/index.rst:1065
 msgid ""
 "If your extension uses other libraries (zlib,...) you might  have to convert "
 "them too. The converted files have to reside in the same directories as the "
 "normal libraries do."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1075
+#: ../src/Doc/install/index.rst:1073
 msgid ""
 "Information about building the required libraries for the MinGW environment."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1079
+#: ../src/Doc/install/index.rst:1077
 msgid "Footnotes"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1080
+#: ../src/Doc/install/index.rst:1078
 msgid ""
 "This also means you could replace all existing COFF-libraries with OMF-"
 "libraries of the same name."
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1083
+#: ../src/Doc/install/index.rst:1081
 msgid ""
 "Check http://sources.redhat.com/cygwin/ and http://www.mingw.org/ for more "
 "information"
 msgstr ""
 
-#: ../src/Doc/install/index.rst:1086
+#: ../src/Doc/install/index.rst:1084
 msgid ""
 "Then you have no POSIX emulation available, but you also don't need :file:"
 "`cygwin1.dll`."
 msgstr ""
+
+#~ msgid "|version|"
+#~ msgstr "|version|"
+
+# Don’t translate reST macros
+#~ msgid "|today|"
+#~ msgstr "|today|"
 
 #~ msgid "Author"
 #~ msgstr "auteur"

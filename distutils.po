@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2012-11-05 09:33\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3768,15 +3768,7 @@ msgstr ""
 msgid "distutils-sig@python.org"
 msgstr ""
 
-#: ../src/Doc/distutils/index.rst:9
-msgid "|version|"
-msgstr ""
-
 #: ../src/Doc/distutils/index.rst:10
-msgid "|today|"
-msgstr ""
-
-#: ../src/Doc/distutils/index.rst:12
 msgid ""
 "This document describes the Python Distribution Utilities (\"Distutils\") "
 "from the module developer's point of view, describing how to use the "
