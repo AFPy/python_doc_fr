@@ -5724,6 +5724,9 @@ msgid ""
 "the newline following the trailing backslash is discarded.  This example "
 "would print the following:"
 msgstr ""
+"Notez que les caractères de retour à la ligne sont toujours à écrire "
+"en utilisant ``\\n`` -- la fin de ligne précédée d'un antislash est "
+"ignorée. Cet exemple affichera :"
 
 #: ../src/Doc/tutorial/introduction.rst:208
 msgid ""
@@ -5731,10 +5734,14 @@ msgid ""
 "\"\"\"`` or ``'''``.  End of lines do not need to be escaped when using "
 "triple-quotes, but they will be included in the string. ::"
 msgstr ""
+"Aussi, les chaînes de caractères peuvent être entourées de trois "
+"guillemets ``" "\"\"\"`` ou ``'''``. Il n'est pas nécessaire de "
+"protéger avec un antislash les fins de lignes en utilisant les triple "
+"guillemets, mais il seront inclus dans la chaîne."
 
 #: ../src/Doc/tutorial/introduction.rst:218
 msgid "produces the following output:"
-msgstr ""
+msgstr "produit l'affichage suivant :"
 
 #: ../src/Doc/tutorial/introduction.rst:226
 msgid ""
@@ -5743,16 +5750,23 @@ msgid ""
 "newline character in the source, are both included in the string as data.  "
 "Thus, the example::"
 msgstr ""
+"En utilisant une chaîne de caractère brute, (\"raw\" string), les "
+"séquence d'échappement``\\n`` ne sont pas convertis en retour à la "
+"ligne, mais l'antislash en fin de ligne et le retour à la ligne "
+"présent dans le code source sont tous les deux inclus dans la chaîne "
+"de caractère. Par exemple::"
 
 #: ../src/Doc/tutorial/introduction.rst:235
 msgid "would print:"
-msgstr ""
+msgstr "affichera :"
 
 #: ../src/Doc/tutorial/introduction.rst:242
 msgid ""
 "Strings can be concatenated (glued together) with the ``+`` operator, and "
 "repeated with ``*``::"
 msgstr ""
+"Les chaines peuvent être concaténées (collées ensemble) avec "
+"l'opérateur ``+``, et répétées avec l'opérateur ``*``::"
 
 #: ../src/Doc/tutorial/introduction.rst:251
 msgid ""
