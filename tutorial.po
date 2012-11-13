@@ -4105,6 +4105,11 @@ msgid ""
 "Fortran, and many others) often won't display the exact decimal number you "
 "expect::"
 msgstr ""
+"Le terme :dfn:`Representation error` signifie que la plupart des "
+"fractions décimales ne peuvent être représentées exactement en "
+"binaire. C'est la principale raison pour laquelle Python (ou Perl, C, "
+"C++, Java, Fortran, et beuacoup d'autres) n'affiche habituellement pas "
+"le résultat exact en décimal::"
 
 # be0b2bc761654882a6612a05f3ceb463
 #: ../src/Doc/tutorial/floatingpoint.rst:164
@@ -4117,16 +4122,28 @@ msgid ""
 "*J*/2**\\ *N* where *J* is an integer containing exactly 53 bits.  "
 "Rewriting ::"
 msgstr ""
+"Pourquoi ? 1/10 et 2/10 ne sont pas représentable de manière exacte en "
+"fractions binaires. Cependant, toutes les machines d'aujourd'hui "
+"(Juillet 2010) suivent la norme IEEE-754 en ce qui concerne "
+"l'arithmétique des nombres à virgule flottante. et la plupart des "
+"plateformes utilisent un \"IEEE-754 double precision\" pour "
+"représenter les floats de Python. Les \"IEEE-754 double precision\" "
+"utilisent 53 bits de précision, donc a la lecture l'ordinateur essaie "
+"de convertir 0.1 dans la fraction la plus proche possible de la forme "
+"*J*/2**\\ *N* avec *J* un nombre entier d'exactement 53 bits. Réecrire ::"
+
 
 #: ../src/Doc/tutorial/floatingpoint.rst:173
 msgid "as ::"
-msgstr ""
+msgstr "en ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:177
 msgid ""
 "and recalling that *J* has exactly 53 bits (is ``>= 2**52`` but ``< "
 "2**53``), the best value for *N* is 56::"
 msgstr ""
+"en se rappelant que *J* fait exactement 53 bits (donc ``>= 2**52`` "
+"mais ``< 2**53``), la meilleur valeur possible pour *N* est 56::"
 
 # 2e98f1c2739a481cbe0243853a3217af
 #: ../src/Doc/tutorial/floatingpoint.rst:187
@@ -4134,12 +4151,17 @@ msgid ""
 "That is, 56 is the only value for *N* that leaves *J* with exactly 53 bits. "
 "The best possible value for *J* is then that quotient rounded::"
 msgstr ""
+"Donc 56 est la seule valeur possible pour *N* qui laisse exactement 53 "
+"bits pour *J*. La meilleure valeur possible pour *J* est donc ce "
+"quotient, arrondi::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:194
 msgid ""
 "Since the remainder is more than half of 10, the best approximation is "
 "obtained by rounding up::"
 msgstr ""
+"Puisque la retenue est plus grande que la moitié de 10, la meilleure "
+"approximation est obtenue en arrondissant par le haut:"
 
 # 2e0305eb55864b539f378f91726a0131
 #: ../src/Doc/tutorial/floatingpoint.rst:200
@@ -4147,6 +4169,8 @@ msgid ""
 "Therefore the best possible approximation to 1/10 in 754 double precision is "
 "that over 2\\*\\*56, or ::"
 msgstr ""
+"Par conséquent la meilleure approximation possible pour 1/10 en \"IEEE-754 "
+"double precision\" est cette au desus de 2\\*\\*56, soit ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:205
 msgid ""
@@ -4154,12 +4178,19 @@ msgid ""
 "1/10; if we had not rounded up, the quotient would have been a little bit "
 "smaller than 1/10.  But in no case can it be *exactly* 1/10!"
 msgstr ""
+"Notez que puisque l'arrondi a été fait vers le haut, le résultat est "
+"en réalité légèrement plus grand que 1/10; si nous n'avions pas "
+"arrondi par le haut, le quotient aurait été légèrement plus petit que "
+"1/10. Mais dans aucun cas il ne vaut *exactement* 1/10 !"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:209
 msgid ""
 "So the computer never \"sees\" 1/10:  what it sees is the exact fraction "
 "given above, the best 754 double approximation it can get::"
 msgstr ""
+"Donc l'ordinateur ne \"voit\" jamais 1/10: ce qu'il voit est la "
+"fraction exacte donnée ci-dessus, la meilleure approximation utilisant "
+"les nombres à virgule flottante double précision de l'\"IEEE-754\""
 
 # 387b544ab4cc483783898ef3a17eb2ff
 #: ../src/Doc/tutorial/floatingpoint.rst:215
@@ -4167,6 +4198,8 @@ msgid ""
 "If we multiply that fraction by 10\\*\\*30, we can see the (truncated) value "
 "of its 30 most significant decimal digits::"
 msgstr ""
+"Si on multiplie cette fraction par 10\\*\\*30, on peut observer les "
+"valeurs de ses 30 décimales de poid fort."
 
 # 956b2754e34c462ab54d636a54cbbda9
 #: ../src/Doc/tutorial/floatingpoint.rst:221
@@ -4178,6 +4211,15 @@ msgid ""
 "a value based on the shortest decimal fraction that rounds correctly back to "
 "the true binary value, resulting simply in '0.1'."
 msgstr ""
+"signifiant que la valeur exacte stockée dans l'ordinateur est "
+"approximativement évale à la valeur décimale "
+"0.100000000000000005551115123125. Dans les versions antérieurs à "
+"Python 2.7 et Python 3.1, Python arrondissait ces valeurs à 17 décimales "
+"significatives, affichant '0.10000000000000001'. Dans les versions "
+"actuelles de Python, la valeur affichée est la valeur dont la fraction "
+"est la plus courte possible tout en redonnant exactement la même "
+"représentation une fois reconverti en binaire, affichant simplement "
+"'0.1'."
 
 #: ../src/Doc/tutorial/index.rst:5
 msgid "The Python Tutorial"
@@ -5357,7 +5399,7 @@ msgid ""
 "like shell scripts, by putting the line ::"
 msgstr ""
 "Sur les systèmes Unix, un script Python peut être rendu directement "
-"exécutable comme un scipt shell en ajoutant la ligne ::"
+"exécutable comme un script shell en ajoutant la ligne ::"
 
 #: ../src/Doc/tutorial/interpreter.rst:149
 msgid ""
@@ -5641,13 +5683,16 @@ msgstr ""
 
 #: ../src/Doc/tutorial/introduction.rst:162
 msgid "Strings"
-msgstr ""
+msgstr "Chaînes de caractères"
 
 #: ../src/Doc/tutorial/introduction.rst:164
 msgid ""
 "Besides numbers, Python can also manipulate strings, which can be expressed "
 "in several ways.  They can be enclosed in single quotes or double quotes::"
 msgstr ""
+"Au delà des nombres, Python peut aussi manipuler des chaînes de "
+"caractères, qui peuvent être exprimés de différentes manières. Elles "
+"peuvent être écrites entre apostrophes ou entre guillemets."
 
 # 9c733fd1348b4d048794c552b36f40fe
 #: ../src/Doc/tutorial/introduction.rst:180
@@ -5659,6 +5704,12 @@ msgid ""
 "double quotes, else it's enclosed in single quotes.  The :keyword:`print` "
 "statement produces a more readable output for such input strings."
 msgstr ""
+"L'interpréteur affiche les chaînes de caractères de la même manière "
+"qu'elles s'écrivent : entre guillemets et en protégant les "
+"guillemets et autres caractères spéciaux avec des antislash, afin "
+"d'afficher une représentation précise. La chaîne est affichée entre "
+"guillemets si elle contient un guillemet simple mais aucun guillemet, "
+"sinon elle est affichée entre guillemets simples."
 
 #: ../src/Doc/tutorial/introduction.rst:187
 msgid ""
@@ -5673,6 +5724,9 @@ msgid ""
 "the newline following the trailing backslash is discarded.  This example "
 "would print the following:"
 msgstr ""
+"Notez que les caractères de retour à la ligne sont toujours à écrire "
+"en utilisant ``\\n`` -- la fin de ligne précédée d'un antislash est "
+"ignorée. Cet exemple affichera :"
 
 #: ../src/Doc/tutorial/introduction.rst:208
 msgid ""
@@ -5680,10 +5734,14 @@ msgid ""
 "\"\"\"`` or ``'''``.  End of lines do not need to be escaped when using "
 "triple-quotes, but they will be included in the string. ::"
 msgstr ""
+"Aussi, les chaînes de caractères peuvent être entourées de trois "
+"guillemets ``" "\"\"\"`` ou ``'''``. Il n'est pas nécessaire de "
+"protéger avec un antislash les fins de lignes en utilisant les triple "
+"guillemets, mais il seront inclus dans la chaîne."
 
 #: ../src/Doc/tutorial/introduction.rst:218
 msgid "produces the following output:"
-msgstr ""
+msgstr "produit l'affichage suivant :"
 
 #: ../src/Doc/tutorial/introduction.rst:226
 msgid ""
@@ -5692,16 +5750,23 @@ msgid ""
 "newline character in the source, are both included in the string as data.  "
 "Thus, the example::"
 msgstr ""
+"En utilisant une chaîne de caractère brute, (\"raw\" string), les "
+"séquence d'échappement``\\n`` ne sont pas convertis en retour à la "
+"ligne, mais l'antislash en fin de ligne et le retour à la ligne "
+"présent dans le code source sont tous les deux inclus dans la chaîne "
+"de caractère. Par exemple::"
 
 #: ../src/Doc/tutorial/introduction.rst:235
 msgid "would print:"
-msgstr ""
+msgstr "affichera :"
 
 #: ../src/Doc/tutorial/introduction.rst:242
 msgid ""
 "Strings can be concatenated (glued together) with the ``+`` operator, and "
 "repeated with ``*``::"
 msgstr ""
+"Les chaines peuvent être concaténées (collées ensemble) avec "
+"l'opérateur ``+``, et répétées avec l'opérateur ``*``::"
 
 #: ../src/Doc/tutorial/introduction.rst:251
 msgid ""

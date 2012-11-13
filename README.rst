@@ -68,7 +68,10 @@ traduction de quelques termes techniques, rappelant ainsi les anglicismes
  * library => bibliothèque
  * bound => lier
  * built-in => primitives
- * underscore => "tiret bas" ?
+ * underscore => "tiret bas"
+ * backslash => "antislash"
+ * double quote => guillemet
+ * simple quote => guillemet simple
  * mangling => "décoration de nom" ?
  * abstract data type => type abstrait
  * statement => instruction
