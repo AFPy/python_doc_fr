@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2012-11-05 09:33\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,11 +211,13 @@ msgid ""
 msgstr ""
 
 # a8a877d20c464cfd840409fbdeba8d65
-#: ../src/Doc/extending/embedding.rst:71
+#: ../src/Doc/extending/embedding.rst:72
 msgid ""
-"The above code first initializes the Python interpreter with :c:func:"
+"The :c:func:`Py_SetProgramName` function should be called before :c:func:"
+"`Py_Initialize` to inform the interpreter about paths to Python run-time "
+"libraries.  Next, the Python interpreter is initialized with :c:func:"
 "`Py_Initialize`, followed by the execution of a hard-coded Python script "
-"that print the date and time.  Afterwards, the :c:func:`Py_Finalize` call "
+"that prints the date and time.  Afterwards, the :c:func:`Py_Finalize` call "
 "shuts the interpreter down, followed by the end of the program.  In a real "
 "program, you may want to get the Python script from another source, perhaps "
 "a text-editor routine, a file, or a database.  Getting the Python code from "
@@ -224,11 +226,11 @@ msgid ""
 "contents."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:84
+#: ../src/Doc/extending/embedding.rst:87
 msgid "Beyond Very High Level Embedding: An overview"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:86
+#: ../src/Doc/extending/embedding.rst:89
 msgid ""
 "The high level interface gives you the ability to execute arbitrary pieces "
 "of Python code from your application, but exchanging data values is quite "
@@ -237,7 +239,7 @@ msgid ""
 "anything."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:91
+#: ../src/Doc/extending/embedding.rst:94
 msgid ""
 "It should be noted that extending Python and embedding Python is quite the "
 "same activity, despite the different intent. Most topics discussed in the "
@@ -245,37 +247,37 @@ msgid ""
 "code from Python to C really does:"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:96
+#: ../src/Doc/extending/embedding.rst:99
 msgid "Convert data values from Python to C,"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:98
+#: ../src/Doc/extending/embedding.rst:101
 msgid "Perform a function call to a C routine using the converted values, and"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:100
+#: ../src/Doc/extending/embedding.rst:103
 msgid "Convert the data values from the call from C to Python."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:102
+#: ../src/Doc/extending/embedding.rst:105
 msgid "When embedding Python, the interface code does:"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:104
+#: ../src/Doc/extending/embedding.rst:107
 msgid "Convert data values from C to Python,"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:106
+#: ../src/Doc/extending/embedding.rst:109
 msgid ""
 "Perform a function call to a Python interface routine using the converted "
 "values, and"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:109
+#: ../src/Doc/extending/embedding.rst:112
 msgid "Convert the data values from the call from Python to C."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:111
+#: ../src/Doc/extending/embedding.rst:114
 msgid ""
 "As you can see, the data conversion steps are simply swapped to accommodate "
 "the different direction of the cross-language transfer. The only difference "
@@ -283,7 +285,7 @@ msgid ""
 "you call a C routine, when embedding, you call a Python routine."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:116
+#: ../src/Doc/extending/embedding.rst:119
 msgid ""
 "This chapter will not discuss how to convert data from Python to C and vice "
 "versa.  Also, proper use of references and dealing with errors is assumed to "
@@ -291,11 +293,11 @@ msgid ""
 "interpreter, you can refer to earlier chapters for the required information."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:125
+#: ../src/Doc/extending/embedding.rst:128
 msgid "Pure Embedding"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:127
+#: ../src/Doc/extending/embedding.rst:130
 msgid ""
 "The first program aims to execute a function in a Python script. Like in the "
 "section about the very high level interface, the Python interpreter does not "
@@ -303,11 +305,11 @@ msgid ""
 "section)."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:132
+#: ../src/Doc/extending/embedding.rst:135
 msgid "The code to run a function defined in a Python script is:"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:137
+#: ../src/Doc/extending/embedding.rst:140
 msgid ""
 "This code loads a Python script using ``argv[1]``, and calls the function "
 "named in ``argv[2]``.  Its integer arguments are the other values of the "
@@ -316,11 +318,11 @@ msgid ""
 "such as::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:149
+#: ../src/Doc/extending/embedding.rst:152
 msgid "then the result should be::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:155
+#: ../src/Doc/extending/embedding.rst:158
 msgid ""
 "Although the program is quite large for its functionality, most of the code "
 "is for data conversion between Python and C, and for error reporting.  The "
@@ -328,7 +330,7 @@ msgid ""
 msgstr ""
 
 # dc2a9d1c15044827aafd426bf84b472a
-#: ../src/Doc/extending/embedding.rst:164
+#: ../src/Doc/extending/embedding.rst:167
 msgid ""
 "After initializing the interpreter, the script is loaded using :c:func:"
 "`PyImport_Import`.  This routine needs a Python string as its argument, "
@@ -337,7 +339,7 @@ msgid ""
 msgstr ""
 
 # 61325f6f158d4f3e93f341879b3d9276
-#: ../src/Doc/extending/embedding.rst:177
+#: ../src/Doc/extending/embedding.rst:180
 msgid ""
 "Once the script is loaded, the name we're looking for is retrieved using :c:"
 "func:`PyObject_GetAttrString`.  If the name exists, and the object returned "
@@ -346,18 +348,18 @@ msgid ""
 "Python function is then made with::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:185
+#: ../src/Doc/extending/embedding.rst:188
 msgid ""
 "Upon return of the function, ``pValue`` is either *NULL* or it contains a "
 "reference to the return value of the function.  Be sure to release the "
 "reference after examining the value."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:193
+#: ../src/Doc/extending/embedding.rst:196
 msgid "Extending Embedded Python"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:195
+#: ../src/Doc/extending/embedding.rst:198
 msgid ""
 "Until now, the embedded Python interpreter had no access to functionality "
 "from the application itself.  The Python API allows this by extending the "
@@ -370,30 +372,30 @@ msgid ""
 msgstr ""
 
 # e3a28dc7453b48aaa3152dbb130353ec
-#: ../src/Doc/extending/embedding.rst:221
+#: ../src/Doc/extending/embedding.rst:224
 msgid ""
 "Insert the above code just above the :c:func:`main` function. Also, insert "
 "the following two statements directly after :c:func:`Py_Initialize`::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:227
+#: ../src/Doc/extending/embedding.rst:230
 msgid ""
 "These two lines initialize the ``numargs`` variable, and make the :func:`emb."
 "numargs` function accessible to the embedded Python interpreter. With these "
 "extensions, the Python script can do things like ::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:234
+#: ../src/Doc/extending/embedding.rst:237
 msgid ""
 "In a real application, the methods will expose an API of the application to "
 "Python."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:244
+#: ../src/Doc/extending/embedding.rst:247
 msgid "Embedding Python in C++"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:246
+#: ../src/Doc/extending/embedding.rst:249
 msgid ""
 "It is also possible to embed Python in a C++ program; precisely how this is "
 "done will depend on the details of the C++ system used; in general you will "
@@ -402,11 +404,11 @@ msgid ""
 "+."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:255
+#: ../src/Doc/extending/embedding.rst:258
 msgid "Linking Requirements"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:257
+#: ../src/Doc/extending/embedding.rst:260
 msgid ""
 "While the :program:`configure` script shipped with the Python sources will "
 "correctly build Python to export the symbols needed by dynamically linked "
@@ -416,7 +418,7 @@ msgid ""
 "and needs to load dynamic extensions (implemented as :file:`.so` files)."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:264
+#: ../src/Doc/extending/embedding.rst:267
 msgid ""
 "The problem is that some entry points are defined by the Python runtime "
 "solely for extension modules to use.  If the embedding application does not "
@@ -425,7 +427,7 @@ msgid ""
 "needed to inform the linker not to remove these symbols."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:270
+#: ../src/Doc/extending/embedding.rst:273
 msgid ""
 "Determining the right options to use for any given platform can be quite "
 "difficult, but fortunately the Python configuration already has those "
@@ -433,7 +435,7 @@ msgid ""
 "interactive interpreter and have a short session like this::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:281
+#: ../src/Doc/extending/embedding.rst:284
 msgid ""
 "The contents of the string presented will be the options that should be "
 "used. If the string is empty, there's no need to add any additional "
@@ -1807,14 +1809,6 @@ msgid "Extending and Embedding the Python Interpreter"
 msgstr ""
 
 #: ../src/Doc/extending/index.rst:7
-msgid "|version|"
-msgstr ""
-
-#: ../src/Doc/extending/index.rst:8
-msgid "|today|"
-msgstr ""
-
-#: ../src/Doc/extending/index.rst:10
 msgid ""
 "This document describes how to write modules in C or C++ to extend the "
 "Python interpreter with new modules.  Those modules can define new functions "
@@ -1825,7 +1819,7 @@ msgid ""
 "interpreter, if the underlying operating system supports this feature."
 msgstr ""
 
-#: ../src/Doc/extending/index.rst:18
+#: ../src/Doc/extending/index.rst:15
 msgid ""
 "This document assumes basic knowledge about Python.  For an informal "
 "introduction to the language, see :ref:`tutorial-index`.  :ref:`reference-"
@@ -1834,7 +1828,7 @@ msgid ""
 "and written in Python) that give the language its wide application range."
 msgstr ""
 
-#: ../src/Doc/extending/index.rst:24
+#: ../src/Doc/extending/index.rst:21
 msgid ""
 "For a detailed description of the whole Python/C API, see the separate :ref:"
 "`c-api-index`."
