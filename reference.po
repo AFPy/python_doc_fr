@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-05 09:33\n"
+"POT-Creation-Date: 2012-11-20 04:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -398,6 +398,13 @@ msgid ""
 "2.6."
 msgstr ""
 
+# 3f31dae7ae0b457180c28ff386d8b377
+# b3c68401b311444e873812eb60267411
+#: ../src/Doc/reference/compound_stmts.rst:405
+#: ../src/Doc/reference/datamodel.rst:2383
+msgid ":pep:`0343` - The \"with\" statement"
+msgstr ""
+
 #: ../src/Doc/reference/compound_stmts.rst:406
 #: ../src/Doc/reference/datamodel.rst:2384
 msgid ""
@@ -717,12 +724,22 @@ msgid ""
 "future."
 msgstr ""
 
+# 6af85f376d8e4e15991b6e063789595d
+#: ../src/Doc/reference/datamodel.rst:138
+msgid "None"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:136
 msgid ""
 "This type has a single value.  There is a single object with this value. "
 "This object is accessed through the built-in name ``None``. It is used to "
 "signify the absence of a value in many situations, e.g., it is returned from "
 "functions that don't explicitly return anything. Its truth value is false."
+msgstr ""
+
+# 2dbd77a018804c8dae256820666e33f3
+#: ../src/Doc/reference/datamodel.rst:148
+msgid "NotImplemented"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:144
@@ -735,6 +752,11 @@ msgid ""
 "the operator.)  Its truth value is true."
 msgstr ""
 
+# 1617e5bfd452481c80c35729a58e1093
+#: ../src/Doc/reference/datamodel.rst:156
+msgid "Ellipsis"
+msgstr ""
+
 # d58c8f2d968441da9a21a0f495a6e149
 #: ../src/Doc/reference/datamodel.rst:154
 msgid ""
@@ -742,6 +764,11 @@ msgid ""
 "This object is accessed through the built-in name ``Ellipsis``. It is used "
 "to indicate the presence of the ``...`` syntax in a slice.  Its truth value "
 "is true."
+msgstr ""
+
+# b8af4e5c60fa44688d3d98b0d3fe7cea
+#: ../src/Doc/reference/datamodel.rst:248
+msgid ":class:`numbers.Number`"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:162
@@ -759,6 +786,11 @@ msgid ""
 "numbers:"
 msgstr ""
 
+# 349d03b8fbac4031b3bc30ab44e943d0
+#: ../src/Doc/reference/datamodel.rst:223
+msgid ":class:`numbers.Integral`"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:174
 msgid ""
 "These represent elements from the mathematical set of integers (positive and "
@@ -768,6 +800,11 @@ msgstr ""
 # 86240d1f7da14296bf3ab9cac3c0e24a
 #: ../src/Doc/reference/datamodel.rst:177
 msgid "There are three types of integers:"
+msgstr ""
+
+# 742ea09753804952b3d6e869f59ff560
+#: ../src/Doc/reference/datamodel.rst:191
+msgid "Plain integers"
 msgstr ""
 
 # 343ff6044dce47a8a0d2de4f77788bf8
@@ -783,6 +820,11 @@ msgid ""
 "4294967296 different bit patterns correspond to different values)."
 msgstr ""
 
+# f039b2d559d349aba644d3a491c2fa79
+#: ../src/Doc/reference/datamodel.rst:200
+msgid "Long integers"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:197
 msgid ""
 "These represent numbers in an unlimited range, subject to available "
@@ -790,6 +832,11 @@ msgid ""
 "binary representation is assumed, and negative numbers are represented in a "
 "variant of 2's complement which gives the illusion of an infinite string of "
 "sign bits extending to the left."
+msgstr ""
+
+# ea8f62f80180414dafdd52d46a48b236
+#: ../src/Doc/reference/datamodel.rst:213
+msgid "Booleans"
 msgstr ""
 
 # 6825dfac6e554a98a74bc8a0f23ad8e8
@@ -814,6 +861,11 @@ msgid ""
 "mixed operands.  The switch between domains is transparent to the programmer."
 msgstr ""
 
+# 3ce6f2d40b7f4510b323d1c9fdf9c34d
+#: ../src/Doc/reference/datamodel.rst:238
+msgid ":class:`numbers.Real` (:class:`float`)"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:233
 msgid ""
 "These represent machine-level double precision floating point numbers. You "
@@ -825,12 +877,22 @@ msgid ""
 "complicate the language with two kinds of floating point numbers."
 msgstr ""
 
+# ffddeabb35854d63ba4d860bad9e2139
+#: ../src/Doc/reference/datamodel.rst:248
+msgid ":class:`numbers.Complex`"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:246
 msgid ""
 "These represent complex numbers as a pair of machine-level double precision "
 "floating point numbers.  The same caveats apply as for floating point "
 "numbers. The real and imaginary parts of a complex number ``z`` can be "
 "retrieved through the read-only attributes ``z.real`` and ``z.imag``."
+msgstr ""
+
+# 3c601840a65349a1acf8fe090791a8e5
+#: ../src/Doc/reference/datamodel.rst:387
+msgid "Sequences"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:259
@@ -860,6 +922,11 @@ msgstr ""
 msgid "Sequences are distinguished according to their mutability:"
 msgstr ""
 
+# cd5bbb030fe14b09ae8240dcf8ad7d1f
+#: ../src/Doc/reference/datamodel.rst:351
+msgid "Immutable sequences"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:284
 msgid ""
 "An object of an immutable sequence type cannot change once it is created.  "
@@ -870,6 +937,11 @@ msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:289
 msgid "The following types are immutable sequences:"
+msgstr ""
+
+# caf3cd5ee98841eda871ef1e84af8f8f
+#: ../src/Doc/reference/datamodel.rst:318
+msgid "Strings"
 msgstr ""
 
 # fe98dae21e724498a7ef39fe727bcca2
@@ -895,6 +967,11 @@ msgid ""
 "better rule?)"
 msgstr ""
 
+# e31c400629384ba1803478767d5a3448
+#: ../src/Doc/reference/datamodel.rst:339
+msgid "Unicode"
+msgstr ""
+
 # cbe04095f79048da9273d47cfe3e7888
 #: ../src/Doc/reference/datamodel.rst:331
 msgid ""
@@ -910,6 +987,11 @@ msgid ""
 "the Unicode method :meth:`encode` and the built-in function :func:`unicode`."
 msgstr ""
 
+# 9d453b389c094952a60e1145c0159ae5
+#: ../src/Doc/reference/datamodel.rst:351
+msgid "Tuples"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:348
 msgid ""
 "The items of a tuple are arbitrary Python objects. Tuples of two or more "
@@ -918,6 +1000,11 @@ msgid ""
 "expression by itself does not create a tuple, since parentheses must be "
 "usable for grouping of expressions).  An empty tuple can be formed by an "
 "empty pair of parentheses."
+msgstr ""
+
+# 1ba7d42f927f4a22aed32ebd336c85b3
+#: ../src/Doc/reference/datamodel.rst:387
+msgid "Mutable sequences"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:364
@@ -931,11 +1018,21 @@ msgstr ""
 msgid "There are currently two intrinsic mutable sequence types:"
 msgstr ""
 
+# 1da278a6a29745b3b2a403b4084ebad7
+#: ../src/Doc/reference/datamodel.rst:374
+msgid "Lists"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:373
 msgid ""
 "The items of a list are arbitrary Python objects.  Lists are formed by "
 "placing a comma-separated list of expressions in square brackets. (Note that "
 "there are no special cases needed to form lists of length 0 or 1.)"
+msgstr ""
+
+# aefdd452318f4aaaadd0560e3ef41a5e
+#: ../src/Doc/reference/datamodel.rst:382
+msgid "Byte Arrays"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:380
@@ -951,6 +1048,11 @@ msgstr ""
 msgid ""
 "The extension module :mod:`array` provides an additional example of a "
 "mutable sequence type."
+msgstr ""
+
+# 2f7aab895c7d43858d878c1934cde388
+#: ../src/Doc/reference/datamodel.rst:421
+msgid "Set types"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:395
@@ -975,6 +1077,11 @@ msgstr ""
 msgid "There are currently two intrinsic set types:"
 msgstr ""
 
+# 2b181f2fd0c9482db2e1860b491fc739
+#: ../src/Doc/reference/datamodel.rst:413
+msgid "Sets"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:412
 msgid ""
 "These represent a mutable set. They are created by the built-in :func:`set` "
@@ -982,11 +1089,21 @@ msgid ""
 "`add`."
 msgstr ""
 
+# 046b68589a5c4c489295a463240770a6
+#: ../src/Doc/reference/datamodel.rst:421
+msgid "Frozen sets"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:419
 msgid ""
 "These represent an immutable set.  They are created by the built-in :func:"
 "`frozenset` constructor.  As a frozenset is immutable and :term:`hashable`, "
 "it can be used again as an element of another set, or as a dictionary key."
+msgstr ""
+
+# 50dff33f14f640d89869365269fc8008
+#: ../src/Doc/reference/datamodel.rst:458
+msgid "Mappings"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:430
@@ -1000,6 +1117,11 @@ msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:436
 msgid "There is currently a single intrinsic mapping type:"
+msgstr ""
+
+# 1401c1869aff43039fd8375bf7b3d11a
+#: ../src/Doc/reference/datamodel.rst:458
+msgid "Dictionaries"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:441
@@ -1027,10 +1149,20 @@ msgid ""
 "additional examples of mapping types."
 msgstr ""
 
+# 31c6b46636d245fea435cea46f7bd0e6
+#: ../src/Doc/reference/datamodel.rst:719
+msgid "Callable types"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:468
 msgid ""
 "These are the types to which the function call operation (see section :ref:"
 "`calls`) can be applied:"
+msgstr ""
+
+# 02e3d46b71774a2fb852c08a14010643
+#: ../src/Doc/reference/datamodel.rst:552
+msgid "User-defined functions"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:477
@@ -1188,6 +1320,11 @@ msgid ""
 "its code object; see the description of internal types below."
 msgstr ""
 
+# 0a77732349ac48739469393b02917003
+#: ../src/Doc/reference/datamodel.rst:651
+msgid "User-defined methods"
+msgstr ""
+
 # 7894140d93af4decb40ac32fcf4d12b9
 #: ../src/Doc/reference/datamodel.rst:561
 msgid ""
@@ -1298,6 +1435,11 @@ msgid ""
 "this *only* happens when the function is an attribute of the class."
 msgstr ""
 
+# d06649a933304a91bcc1fc562339b36d
+#: ../src/Doc/reference/datamodel.rst:666
+msgid "Generator functions"
+msgstr ""
+
 # a13d1397712747fe93b9730c936faedb
 #: ../src/Doc/reference/datamodel.rst:659
 msgid ""
@@ -1309,6 +1451,11 @@ msgid ""
 "statement.  When the function executes a :keyword:`return` statement or "
 "falls off the end, a :exc:`StopIteration` exception is raised and the "
 "iterator will have reached the end of the set of values to be returned."
+msgstr ""
+
+# a54e20b73e7249eb8e492e40fdc356bc
+#: ../src/Doc/reference/datamodel.rst:681
+msgid "Built-in functions"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:675
@@ -1323,6 +1470,11 @@ msgid ""
 "function was defined in or ``None`` if unavailable."
 msgstr ""
 
+# 403a08fff2014365a38ad5bc8b330666
+#: ../src/Doc/reference/datamodel.rst:693
+msgid "Built-in methods"
+msgstr ""
+
 # ae49a031018c4787909d7e961bbef93b
 #: ../src/Doc/reference/datamodel.rst:690
 msgid ""
@@ -1331,6 +1483,11 @@ msgid ""
 "argument.  An example of a built-in method is ``alist.append()``, assuming "
 "*alist* is a list object. In this case, the special read-only attribute :"
 "attr:`__self__` is set to the object denoted by *alist*."
+msgstr ""
+
+# de168ba2e8e149fe9d762f0a72a740d3
+#: ../src/Doc/reference/datamodel.rst:700
+msgid "Class Types"
 msgstr ""
 
 # 86793d02329d4e868c4ff68c7214f6dd
@@ -1343,6 +1500,11 @@ msgid ""
 "`__init__` to initialize the new instance."
 msgstr ""
 
+# 2baeb2ec4c724ec3957ef90216419266
+#: ../src/Doc/reference/datamodel.rst:714
+msgid "Classic Classes"
+msgstr ""
+
 # 0950f665b5734473a93d5a1fad374876
 #: ../src/Doc/reference/datamodel.rst:711
 msgid ""
@@ -1353,12 +1515,24 @@ msgid ""
 "`__init__` method, the class must be called without arguments."
 msgstr ""
 
+# 4c0a611441684ed4a65195c94fa46f0b
+# 38b0e10b8a7843cb9c991bea5683c384
+#: ../src/Doc/reference/datamodel.rst:719
+#: ../src/Doc/reference/datamodel.rst:871
+msgid "Class instances"
+msgstr ""
+
 # fe79bdcd47004b11ab561fc55e193f21
 #: ../src/Doc/reference/datamodel.rst:718
 msgid ""
 "Class instances are described below.  Class instances are callable only when "
 "the class has a :meth:`__call__` method; ``x(arguments)`` is a shorthand for "
 "``x.__call__(arguments)``."
+msgstr ""
+
+# 8b81f6145bc44987a6cbf4205bc1f0c8
+#: ../src/Doc/reference/datamodel.rst:762
+msgid "Modules"
 msgstr ""
 
 # 5baaa0830cfc4930a7247f13f0094926
@@ -1403,6 +1577,11 @@ msgid ""
 "attribute is not present for C modules that are statically linked into the "
 "interpreter; for extension modules loaded dynamically from a shared library, "
 "it is the pathname of the shared library file."
+msgstr ""
+
+# dec5c1bb2d844ee0a239a6b253cce479
+#: ../src/Doc/reference/datamodel.rst:825
+msgid "Classes"
 msgstr ""
 
 # ac345d309f4b4dbf8028e36209550b83
@@ -1506,6 +1685,11 @@ msgid ""
 "`__class__` is the instance's class."
 msgstr ""
 
+# d53dfe109d3847c79384b130cce072ac
+#: ../src/Doc/reference/datamodel.rst:894
+msgid "Files"
+msgstr ""
+
 # 1c5c6d93c4af49fcb206b8c914474046
 #: ../src/Doc/reference/datamodel.rst:888
 msgid ""
@@ -1519,11 +1703,21 @@ msgid ""
 "objects."
 msgstr ""
 
+# 55a3c6b48f574bdca1e6bc5ba9677fb5
+#: ../src/Doc/reference/datamodel.rst:1104
+msgid "Internal types"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:902
 msgid ""
 "A few types used internally by the interpreter are exposed to the user. "
 "Their definitions may change with future versions of the interpreter, but "
 "they are mentioned here for completeness."
+msgstr ""
+
+# eaee202b99024fc4a04d4a87446d8bd7
+#: ../src/Doc/reference/datamodel.rst:971
+msgid "Code objects"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:911
@@ -1587,6 +1781,11 @@ msgid ""
 "is the documentation string of the function, or ``None`` if undefined."
 msgstr ""
 
+# af1eff0271274124bb8f8853bc33107c
+#: ../src/Doc/reference/datamodel.rst:1013
+msgid "Frame objects"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:979
 msgid ""
 "Frame objects represent execution frames.  They may occur in traceback "
@@ -1620,6 +1819,11 @@ msgid ""
 "Statement) by writing to f_lineno."
 msgstr ""
 
+# 853b4e93f4b84e1aaf1b12f20a42c778
+#: ../src/Doc/reference/datamodel.rst:1055
+msgid "Traceback objects"
+msgstr ""
+
 # 4480717a47194341b885c64f9167dcc5
 #: ../src/Doc/reference/datamodel.rst:1029
 msgid ""
@@ -1647,6 +1851,11 @@ msgid ""
 "number and last instruction in the traceback may differ from the line number "
 "of its frame object if the exception occurred in a :keyword:`try` statement "
 "with no matching except clause or with a finally clause."
+msgstr ""
+
+# 99ac9d5a67cf40f69ef4429c229741ca
+#: ../src/Doc/reference/datamodel.rst:1086
+msgid "Slice objects"
 msgstr ""
 
 # 37355ce77bbf4a64b86bb16d8911e325
@@ -1680,6 +1889,11 @@ msgid ""
 "handled in a manner consistent with regular slices."
 msgstr ""
 
+# d896fb9f843b4e58b976e21917dbf786
+#: ../src/Doc/reference/datamodel.rst:1096
+msgid "Static method objects"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:1090
 msgid ""
 "Static method objects provide a way of defeating the transformation of "
@@ -1690,6 +1904,11 @@ msgid ""
 "any further transformation. Static method objects are not themselves "
 "callable, although the objects they wrap usually are. Static method objects "
 "are created by the built-in :func:`staticmethod` constructor."
+msgstr ""
+
+# 3546aa8801ef461cb18fb7ec7ee47246
+#: ../src/Doc/reference/datamodel.rst:1104
+msgid "Class method objects"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:1100
@@ -2242,10 +2461,20 @@ msgid ""
 "arguments are assembled depends on ``a``:"
 msgstr ""
 
+# 791962457fbc46a6819506356b104b7f
+#: ../src/Doc/reference/datamodel.rst:1598
+msgid "Direct Call"
+msgstr ""
+
 #: ../src/Doc/reference/datamodel.rst:1598
 msgid ""
 "The simplest and least common call is when user code directly invokes a "
 "descriptor method:    ``x.__get__(a)``."
+msgstr ""
+
+# 2d6801b131824abc9a483e3ba3917449
+#: ../src/Doc/reference/datamodel.rst:1602
+msgid "Instance Binding"
 msgstr ""
 
 # 8082ea1c639643539581d7682955af0c
@@ -2255,11 +2484,21 @@ msgid ""
 "call: ``type(a).__dict__['x'].__get__(a, type(a))``."
 msgstr ""
 
+# 8fb2e41704a64ccca3a54c789e8d01fd
+#: ../src/Doc/reference/datamodel.rst:1606
+msgid "Class Binding"
+msgstr ""
+
 # b11f2bbbebc04f8b9beef1693ea40218
 #: ../src/Doc/reference/datamodel.rst:1606
 msgid ""
 "If binding to a new-style class, ``A.x`` is transformed into the call: ``A."
 "__dict__['x'].__get__(None, A)``."
+msgstr ""
+
+# 4e5871e9a56d4456ae25aa9b04c80d74
+#: ../src/Doc/reference/datamodel.rst:1612
+msgid "Super Binding"
 msgstr ""
 
 # 415b17f3d1df4684bf21da7e6b531d23
@@ -2532,6 +2771,11 @@ msgid ""
 "They cannot be defined as class methods in the actual class.  This is "
 "consistent with the lookup of special methods that are called on instances, "
 "only in this case the instance is itself a class."
+msgstr ""
+
+# 5409455d49c44f6aa46db229145c95f8
+#: ../src/Doc/reference/datamodel.rst:1813
+msgid ":pep:`3119` - Introducing Abstract Base Classes"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:1811
@@ -3988,6 +4232,13 @@ msgid ""
 "generator functions::"
 msgstr ""
 
+# 20684de4a4514b71a25c128407069512
+# 28b0eb3a499e409f82cb9a6784ed0c24
+#: ../src/Doc/reference/expressions.rst:511
+#: ../src/Doc/reference/simple_stmts.rst:528
+msgid ":pep:`0342` - Coroutines via Enhanced Generators"
+msgstr ""
+
 #: ../src/Doc/reference/expressions.rst:512
 msgid ""
 "The proposal to enhance the API and syntax of generators, making them usable "
@@ -4250,6 +4501,11 @@ msgstr ""
 msgid "If it is---"
 msgstr ""
 
+# 15f21c6a233b4d27ba0f3496d0d69f26
+#: ../src/Doc/reference/expressions.rst:805
+msgid "a user-defined function:"
+msgstr ""
+
 #: ../src/Doc/reference/expressions.rst:802
 msgid ""
 "The code block for the function is executed, passing it the argument list.  "
@@ -4259,14 +4515,29 @@ msgid ""
 "value of the function call."
 msgstr ""
 
+# 6f370af1ee9a46a0bb983b3343a977fe
+#: ../src/Doc/reference/expressions.rst:819
+msgid "a built-in function or method:"
+msgstr ""
+
 #: ../src/Doc/reference/expressions.rst:819
 msgid ""
 "The result is up to the interpreter; see :ref:`built-in-funcs` for the "
 "descriptions of built-in functions and methods."
 msgstr ""
 
+# 1a16881c8d8849d6b4aff6723f82a272
+#: ../src/Doc/reference/expressions.rst:826
+msgid "a class object:"
+msgstr ""
+
 #: ../src/Doc/reference/expressions.rst:827
 msgid "A new instance of that class is returned."
+msgstr ""
+
+# fc8025f1c4794b858684291a624095e5
+#: ../src/Doc/reference/expressions.rst:836
+msgid "a class instance method:"
 msgstr ""
 
 #: ../src/Doc/reference/expressions.rst:835
@@ -4274,6 +4545,11 @@ msgid ""
 "The corresponding user-defined function is called, with an argument list "
 "that is one longer than the argument list of the call: the instance becomes "
 "the first argument."
+msgstr ""
+
+# 95e01195dc8540a7a960984d8e3372c1
+#: ../src/Doc/reference/expressions.rst:845
+msgid "a class instance:"
 msgstr ""
 
 #: ../src/Doc/reference/expressions.rst:844
@@ -5139,10 +5415,20 @@ msgstr ""
 msgid "Known implementations include:"
 msgstr ""
 
+# 77b83c95da9e480c8fdf9b1e550bc199
+#: ../src/Doc/reference/introduction.rst:49
+msgid "CPython"
+msgstr ""
+
 #: ../src/Doc/reference/introduction.rst:49
 msgid ""
 "This is the original and most-maintained implementation of Python, written "
 "in C. New language features generally appear here first."
+msgstr ""
+
+# a38ae54a5a0b4611aa173138c3c66940
+#: ../src/Doc/reference/introduction.rst:55
+msgid "Jython"
 msgstr ""
 
 #: ../src/Doc/reference/introduction.rst:53
@@ -5154,12 +5440,22 @@ msgid ""
 "jython.org/>`_."
 msgstr ""
 
+# 511d8df24d5546c099149e5c4151b455
+#: ../src/Doc/reference/introduction.rst:61
+msgid "Python for .NET"
+msgstr ""
+
 #: ../src/Doc/reference/introduction.rst:59
 msgid ""
 "This implementation actually uses the CPython implementation, but is a "
 "managed .NET application and makes .NET libraries available.  It was created "
 "by Brian Lloyd.  For more information, see the `Python for .NET home page "
 "<http://pythonnet.sourceforge.net>`_."
+msgstr ""
+
+# 462f86eff1d74618a1c16a2047179140
+#: ../src/Doc/reference/introduction.rst:67
+msgid "IronPython"
 msgstr ""
 
 # f84b9364bcfb4dbb90009df68237f8ef
@@ -5170,6 +5466,11 @@ msgid ""
 "assemblies.  It was created by Jim Hugunin, the original creator of Jython.  "
 "For more information, see `the IronPython website <http://www.ironpython.net/"
 ">`_."
+msgstr ""
+
+# fa8c8c5bea09451c980720c6c75809d8
+#: ../src/Doc/reference/introduction.rst:75
+msgid "PyPy"
 msgstr ""
 
 #: ../src/Doc/reference/introduction.rst:71
@@ -5580,6 +5881,11 @@ msgid ""
 "underscore characters:"
 msgstr ""
 
+# ffc2f0fe74f84a19bb74d52661a2cdd1
+#: ../src/Doc/reference/lexical_analysis.rst:385
+msgid "``_*``"
+msgstr ""
+
 # ea31b639c6b141e59ceea7a3878b33bf
 #: ../src/Doc/reference/lexical_analysis.rst:377
 msgid ""
@@ -5597,6 +5903,11 @@ msgid ""
 "this convention."
 msgstr ""
 
+# 826eeb36340146b79735de5584fdbd76
+#: ../src/Doc/reference/lexical_analysis.rst:393
+msgid "``__*__``"
+msgstr ""
+
 # 1d79d9c82a864c22974d73858a7d156c
 #: ../src/Doc/reference/lexical_analysis.rst:389
 msgid ""
@@ -5606,6 +5917,11 @@ msgid ""
 "likely be defined in future versions of Python.  *Any* use of ``__*__`` "
 "names, in any context, that does not follow explicitly documented use, is "
 "subject to breakage without warning."
+msgstr ""
+
+# 7957f5a31edf45909938e9243889694f
+#: ../src/Doc/reference/lexical_analysis.rst:400
+msgid "``__*``"
 msgstr ""
 
 #: ../src/Doc/reference/lexical_analysis.rst:397
@@ -6594,6 +6910,11 @@ msgid ""
 "statement was used to enable the feature::"
 msgstr ""
 
+# 46fe4373d01d4cc7a5900cc626613861
+#: ../src/Doc/reference/simple_stmts.rst:525
+msgid ":pep:`0255` - Simple Generators"
+msgstr ""
+
 #: ../src/Doc/reference/simple_stmts.rst:526
 msgid ""
 "The proposal for adding generators and the :keyword:`yield` statement to "
@@ -7021,6 +7342,11 @@ msgid ""
 "started with the :option:`-i` option, is passed a script name to execute, "
 "and the script includes a future statement, it will be in effect in the "
 "interactive session started after the script is executed."
+msgstr ""
+
+# ecb182bb1b3f42eea4bcc4de576bc240
+#: ../src/Doc/reference/simple_stmts.rst:918
+msgid ":pep:`236` - Back to the __future__"
 msgstr ""
 
 #: ../src/Doc/reference/simple_stmts.rst:920

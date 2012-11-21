@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-22 04:52\n"
+"POT-Creation-Date: 2012-11-20 04:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -387,9 +387,19 @@ msgstr ""
 msgid "Division control. The argument must be one of the following:"
 msgstr ""
 
+# 1e40126fc0494661ada9a27a891f3eb6
+#: ../src/Doc/using/cmdline.rst:238
+msgid "``old``"
+msgstr ""
+
 # 37484c1f109c4378b76e4e098b1e7367
 #: ../src/Doc/using/cmdline.rst:240
 msgid "division of int/int and long/long return an int or long (*default*)"
+msgstr ""
+
+# 3430acd23a75433cbef671ed2138bfd2
+#: ../src/Doc/using/cmdline.rst:241
+msgid "``new``"
 msgstr ""
 
 # a37c3c602a824895b51fe5daaddd064a
@@ -399,9 +409,19 @@ msgid ""
 "float"
 msgstr ""
 
+# 8dadd32ab56d4bfe845094df1dd83b7e
+#: ../src/Doc/using/cmdline.rst:243
+msgid "``warn``"
+msgstr ""
+
 # 7e2e6d7338a44ef498170057b98b4b60
 #: ../src/Doc/using/cmdline.rst:245
 msgid "old division semantics with a warning for int/int and long/long"
+msgstr ""
+
+# 54fa2cface2d440f864bb690a921b008
+#: ../src/Doc/using/cmdline.rst:246
+msgid "``warnall``"
 msgstr ""
 
 # 761a287edda34f5681035898c8a994ec
@@ -556,15 +576,30 @@ msgstr ""
 "La forme la plus simple de l'argument est l'une des chaînes d'action "
 "suivante (ou une abréviation unique):"
 
+# ef1c43473fcc4910b0ac780f07042fe6
+#: ../src/Doc/using/cmdline.rst:351
+msgid "``ignore``"
+msgstr ""
+
 #: ../src/Doc/using/cmdline.rst:353
 #, fuzzy
 msgid "Ignore all warnings."
 msgstr "Ignorer tous les avertissements."
 
+# 4765c4e6d8b541afac745383088c4dea
+#: ../src/Doc/using/cmdline.rst:354
+msgid "``default``"
+msgstr ""
+
 #: ../src/Doc/using/cmdline.rst:355
 msgid ""
 "Explicitly request the default behavior (printing each warning once per "
 "source line)."
+msgstr ""
+
+# 4571161d17224831afc7b0f01f901eb2
+#: ../src/Doc/using/cmdline.rst:358
+msgid "``all``"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:358
@@ -578,6 +613,11 @@ msgstr ""
 "beaucoup de messages si l'avertissement est déclenchée à plusieurs reprises "
 "pour la ligne du même source, comme à l'intérieur d'une boucle)."
 
+# a473fcb6ce434a39bba0cbdaf435fe16
+#: ../src/Doc/using/cmdline.rst:360
+msgid "``module``"
+msgstr ""
+
 #: ../src/Doc/using/cmdline.rst:362
 #, fuzzy
 msgid "Print each warning only the first time it occurs in each module."
@@ -585,12 +625,22 @@ msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
 "chaque module."
 
+# 7ec2df586e9d4113a28c445dbbc19f51
+#: ../src/Doc/using/cmdline.rst:362
+msgid "``once``"
+msgstr ""
+
 #: ../src/Doc/using/cmdline.rst:364
 #, fuzzy
 msgid "Print each warning only the first time it occurs in the program."
 msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
 "le programme."
+
+# 39c94bdc9cbf48548d087f2fc0098412
+#: ../src/Doc/using/cmdline.rst:365
+msgid "``error``"
+msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:366
 #, fuzzy
@@ -1299,16 +1349,38 @@ msgid ""
 "Have a look at the following links:"
 msgstr ""
 
+# 8f759981a33241a8856ff76020ae9fd3
+#: ../src/Doc/using/unix.rst:28
+msgid "http://www.debian.org/doc/manuals/maint-guide/first.en.html"
+msgstr ""
+
 #: ../src/Doc/using/unix.rst:30
 msgid "for Debian users"
+msgstr ""
+
+# ed3e2b8c6e0a4e0fb078b951bd2b631a
+#: ../src/Doc/using/unix.rst:30
+msgid "http://linuxmafia.com/pub/linux/suse-linux-internals/chapter35.html"
 msgstr ""
 
 #: ../src/Doc/using/unix.rst:32
 msgid "for OpenSuse users"
 msgstr ""
 
+# 591d73c27d224ba99486ee7e7eff14f1
+#: ../src/Doc/using/unix.rst:32
+msgid ""
+"http://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/"
+"RPM_Guide/ch-creating-rpms.html"
+msgstr ""
+
 #: ../src/Doc/using/unix.rst:34
 msgid "for Fedora users"
+msgstr ""
+
+# 0f86ca59fe284705b93f31065f103fb4
+#: ../src/Doc/using/unix.rst:34
+msgid "http://www.slackbook.org/html/package-management-making-packages.html"
 msgstr ""
 
 #: ../src/Doc/using/unix.rst:36
@@ -1567,8 +1639,22 @@ msgid ""
 ">`_ for detailed information about platforms with precompiled installers."
 msgstr ""
 
+# 67507a1f2fbb40689b4c2dc99ac45ea9
+#: ../src/Doc/using/windows.rst:47
+msgid ""
+"`Python on XP <http://www.richarddooling.com/index.php/2006/03/14/python-on-"
+"xp-7-minutes-to-hello-world/>`_"
+msgstr ""
+
 #: ../src/Doc/using/windows.rst:47
 msgid "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"
+msgstr ""
+
+# 72703789cf784960ab07fc2767093520
+#: ../src/Doc/using/windows.rst:53
+msgid ""
+"`Installing on Windows <http://diveintopython.net/installing_python/windows."
+"html>`_"
 msgstr ""
 
 # c939bd24a856462087e19ea1c23e5cae
@@ -1576,6 +1662,13 @@ msgstr ""
 msgid ""
 "in \"`Dive into Python: Python from novice to pro <http://diveintopython.net/"
 "index.html>`_\" by Mark Pilgrim, 2004, ISBN 1-59059-356-1"
+msgstr ""
+
+# 7271b6a4c8764a938881bf882991b354
+#: ../src/Doc/using/windows.rst:57
+msgid ""
+"`For Windows users <http://swaroopch.com/text/Byte_of_Python:"
+"Installing_Python#For_Windows_users>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:57
@@ -1595,8 +1688,19 @@ msgid ""
 "versions and their key features:"
 msgstr ""
 
+# 68d9b159c4954f639197a165a4a526ea
+#: ../src/Doc/using/windows.rst:69
+msgid "`ActivePython <http://www.activestate.com/Products/activepython/>`_"
+msgstr ""
+
 #: ../src/Doc/using/windows.rst:70
 msgid "Installer with multi-platform compatibility, documentation, PyWin32"
+msgstr ""
+
+# 9150e26b09ba46a5b15635a77720dd3e
+#: ../src/Doc/using/windows.rst:73
+msgid ""
+"`Enthought Python Distribution <http://www.enthought.com/products/epd.php>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:73
@@ -1673,13 +1777,28 @@ msgstr ""
 msgid "Consult :command:`set /?` for details on this behaviour."
 msgstr ""
 
+# f27a39988dce4915a7680111e321c4ad
+#: ../src/Doc/using/windows.rst:125
+msgid "http://support.microsoft.com/kb/100843"
+msgstr ""
+
 #: ../src/Doc/using/windows.rst:126
 msgid "Environment variables in Windows NT"
+msgstr ""
+
+# ceb27994c13f488496bdd49ee26e1403
+#: ../src/Doc/using/windows.rst:128
+msgid "http://support.microsoft.com/kb/310519"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:129
 msgid "How To Manage Environment Variables in Windows XP"
 msgstr "Comment gérer les variables d'environnement sous Windows XP"
+
+# 38b6a251eda149c990482bc41456e844
+#: ../src/Doc/using/windows.rst:130
+msgid "http://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
+msgstr ""
 
 #: ../src/Doc/using/windows.rst:132
 msgid "Setting Environment variables, Louis J. Farrugia"
@@ -1904,9 +2023,20 @@ msgstr ""
 "windows/pythonwin/>`_ est une exemple d'application MFC livrée avec PyWin32. "
 "Il s'agit d'un IDE embarqué avec débogueur intégré."
 
+# 100f9662fe0e4c64875ef88306b703ac
+#: ../src/Doc/using/windows.rst:261
+msgid ""
+"`Win32 How Do I...? <http://timgolden.me.uk/python/win32_how_do_i.html>`_"
+msgstr ""
+
 #: ../src/Doc/using/windows.rst:262
 msgid "by Tim Golden"
 msgstr "par Tim Golden"
+
+# 3560553e94c24696bccac62e239c4e0a
+#: ../src/Doc/using/windows.rst:263
+msgid "`Python and COM <http://www.boddie.org.uk/python/COM.html>`_"
+msgstr ""
 
 #: ../src/Doc/using/windows.rst:265
 msgid "by David and Paul Boddie"
@@ -2039,11 +2169,25 @@ msgstr ""
 msgid "For extension modules, consult :ref:`building-on-windows`."
 msgstr ""
 
+# f5c5256cfc284cc28938c292fdf5de56
+#: ../src/Doc/using/windows.rst:326
+msgid ""
+"`Python + Windows + distutils + SWIG + gcc MinGW <http://sebsauvage.net/"
+"python/mingw.html>`_"
+msgstr ""
+
 #: ../src/Doc/using/windows.rst:325
 msgid ""
 "or \"Creating Python extensions in C/C++ with SWIG and compiling them with "
 "MinGW gcc under Windows\" or \"Installing Python extension with distutils "
 "and without Microsoft Visual C++\" by Sébastien Sauvage, 2003"
+msgstr ""
+
+# 20de9169858245b3a25788a49de8a8a4
+#: ../src/Doc/using/windows.rst:328
+msgid ""
+"`MingW -- Python extensions <http://oldwiki.mingw.org/index.php/Python"
+"%20extensions>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:330
@@ -2054,6 +2198,12 @@ msgstr "par Trent Apted et al, 2007"
 msgid "Other resources"
 msgstr "Autres ressources"
 
+# b1f1f147609f488591b49a71a4e0e046
+#: ../src/Doc/using/windows.rst:340
+msgid ""
+"`Python Programming On Win32 <http://www.oreilly.com/catalog/pythonwin32/>`_"
+msgstr ""
+
 #: ../src/Doc/using/windows.rst:339
 msgid ""
 "\"Help for Windows Programmers\" by Mark Hammond and Andy Robinson, O'Reilly "
@@ -2061,6 +2211,13 @@ msgid ""
 msgstr ""
 "\"Help for Windows Programmers\" de Mark Hammond et Andy Robinson, O'Reilly "
 "Media, 2000, ISBN 1-56592-621-8"
+
+# 837cd4194e3b4c33b0b2e4009a23e3fb
+#: ../src/Doc/using/windows.rst:342
+msgid ""
+"`A Python for Windows Tutorial <http://www.imladris.com/Scripts/"
+"PythonForWindows.html>`_"
+msgstr ""
 
 #: ../src/Doc/using/windows.rst:344
 msgid "by Amanda Birmingham, 2004"

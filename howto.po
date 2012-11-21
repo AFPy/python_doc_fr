@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-22 04:52\n"
+"POT-Creation-Date: 2012-11-20 04:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -481,10 +481,20 @@ msgstr ""
 msgid "Useful Resources"
 msgstr ""
 
+# 0c355c2e444240b490dc68e3e88eb9d8
+#: ../src/Doc/howto/advocacy.rst:301
+msgid "http://www.pythonology.com/success"
+msgstr ""
+
 #: ../src/Doc/howto/advocacy.rst:301
 msgid ""
 "The Python Success Stories are a collection of stories from successful users "
 "of Python, with the emphasis on business and corporate users."
+msgstr ""
+
+# 1ce84338ae2047ee915297374678ceed
+#: ../src/Doc/howto/advocacy.rst:312
+msgid "http://www.tcl.tk/doc/scripting.html"
 msgstr ""
 
 #: ../src/Doc/howto/advocacy.rst:311
@@ -493,6 +503,11 @@ msgid ""
 "utility of scripting languages, though naturally enough, he emphasizes Tcl, "
 "the language he developed.  Most of the arguments would apply to any "
 "scripting language."
+msgstr ""
+
+# db043dbdedbb4c6d9b308fbaa1a45c05
+#: ../src/Doc/howto/advocacy.rst:327
+msgid "http://www.python.org/workshops/1997-10/proceedings/beazley.html"
 msgstr ""
 
 #: ../src/Doc/howto/advocacy.rst:316
@@ -513,11 +528,21 @@ msgid ""
 "development, debugging, deployment, and maintenance of scientific software."
 msgstr ""
 
+# 303ec1a745374737bbdf41d2402a4eef
+#: ../src/Doc/howto/advocacy.rst:332
+msgid "http://pythonjournal.cognizor.com/pyj1/Everitt-Feit_interview98-V1.html"
+msgstr ""
+
 #: ../src/Doc/howto/advocacy.rst:331
 msgid ""
 "This interview with Andy Feit, discussing Infoseek's use of Python, can be "
 "used to show that choosing Python didn't introduce any difficulties into a "
 "company's development process, and provided some substantial benefits."
+msgstr ""
+
+# 85da0ae411074e09a9801406b33960d1
+#: ../src/Doc/howto/advocacy.rst:340
+msgid "http://www.python.org/workshops/1997-10/proceedings/stein.ps"
 msgstr ""
 
 #: ../src/Doc/howto/advocacy.rst:340
@@ -527,12 +552,22 @@ msgid ""
 "Microsoft."
 msgstr ""
 
+# ca7293f34f614abfbfb97f023c77a33f
+#: ../src/Doc/howto/advocacy.rst:345
+msgid "http://www.opensource.org"
+msgstr ""
+
 #: ../src/Doc/howto/advocacy.rst:344
 msgid ""
 "Management may be doubtful of the reliability and usefulness of software "
 "that wasn't written commercially.  This site presents arguments that show "
 "how open source software can have considerable advantages over closed-source "
 "software."
+msgstr ""
+
+# 8304d23cb0f04ac48a6716d37824bfb0
+#: ../src/Doc/howto/advocacy.rst:353
+msgid "http://www.faqs.org/docs/Linux-mini/Advocacy.html"
 msgstr ""
 
 #: ../src/Doc/howto/advocacy.rst:349
@@ -5614,14 +5649,29 @@ msgid ""
 "won't take up any memory."
 msgstr ""
 
+# 8628ef1542db410698329976abb52ef5
+#: ../src/Doc/howto/logging.rst:1003
+msgid "Module :mod:`logging`"
+msgstr ""
+
 # 4d9db3afbb294a39a785a00688797682
 #: ../src/Doc/howto/logging.rst:1004
 msgid "API reference for the logging module."
 msgstr ""
 
+# fd51fd03eddd44749cf3bc8d5f114a72
+#: ../src/Doc/howto/logging.rst:1006
+msgid "Module :mod:`logging.config`"
+msgstr ""
+
 # 306c129ce0424b7b971f4a2100cb3501
 #: ../src/Doc/howto/logging.rst:1007
 msgid "Configuration API for the logging module."
+msgstr ""
+
+# f3590e6a19494f6d96ab1a5c60cebab7
+#: ../src/Doc/howto/logging.rst:1009
+msgid "Module :mod:`logging.handlers`"
 msgstr ""
 
 # 5553cb8d8a3e4597ad14c7fcbb14c6e4
@@ -7205,13 +7255,28 @@ msgid ""
 "of :ref:`Regular Expression Syntax <re-syntax>`."
 msgstr ""
 
+# 5c1e2667294f4772aad7eca567461998
+#: ../src/Doc/howto/regex.rst:120
+msgid "``\\d``"
+msgstr ""
+
 #: ../src/Doc/howto/regex.rst:121
 msgid "Matches any decimal digit; this is equivalent to the class ``[0-9]``."
+msgstr ""
+
+# 3279bdfdd76d45dcbf3f0cb72dfd2559
+#: ../src/Doc/howto/regex.rst:123
+msgid "``\\D``"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:124
 msgid ""
 "Matches any non-digit character; this is equivalent to the class ``[^0-9]``."
+msgstr ""
+
+# 452c0eb3f4624ff5a54602cf5d843274
+#: ../src/Doc/howto/regex.rst:127
+msgid "``\\s``"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:127
@@ -7220,16 +7285,31 @@ msgid ""
 "\\r\\f\\v]``."
 msgstr ""
 
+# fa8217a70bdd491f895d3415da38c6b0
+#: ../src/Doc/howto/regex.rst:131
+msgid "``\\S``"
+msgstr ""
+
 #: ../src/Doc/howto/regex.rst:131
 msgid ""
 "Matches any non-whitespace character; this is equivalent to the class ``[^ "
 "\\t\\n\\r\\f\\v]``."
 msgstr ""
 
+# 7e91aa755b5842cc816e4183fcdd929e
+#: ../src/Doc/howto/regex.rst:135
+msgid "``\\w``"
+msgstr ""
+
 #: ../src/Doc/howto/regex.rst:135
 msgid ""
 "Matches any alphanumeric character; this is equivalent to the class ``[a-zA-"
 "Z0-9_]``."
+msgstr ""
+
+# c7c443df2084432f9938aaaf39f93f88
+#: ../src/Doc/howto/regex.rst:139
+msgid "``\\W``"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:139
@@ -8013,6 +8093,11 @@ msgid ""
 "of times."
 msgstr ""
 
+# 5ec08fab486b4b859b146ac043f515a9
+#: ../src/Doc/howto/regex.rst:679
+msgid "``|``"
+msgstr ""
+
 #: ../src/Doc/howto/regex.rst:673
 msgid ""
 "Alternation, or the \"or\" operator.   If A and B are regular expressions, "
@@ -8026,6 +8111,11 @@ msgstr ""
 msgid ""
 "To match a literal ``'|'``, use ``\\|``, or enclose it inside a character "
 "class, as in ``[|]``."
+msgstr ""
+
+# 7c7f6b7877b8411c8f2e906d99ea9663
+#: ../src/Doc/howto/regex.rst:695
+msgid "``^``"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:683
@@ -8042,6 +8132,11 @@ msgid ""
 "a line, the RE to use is ``^From``. ::"
 msgstr ""
 
+# 6dd13735dce1481db2415e7305f152ac
+#: ../src/Doc/howto/regex.rst:709
+msgid "``$``"
+msgstr ""
+
 #: ../src/Doc/howto/regex.rst:699
 msgid ""
 "Matches at the end of a line, which is defined as either the end of the "
@@ -8054,6 +8149,11 @@ msgid ""
 "class, as in  ``[$]``."
 msgstr ""
 
+# 8355a4f6a25b405694a24af43ef0dfa1
+#: ../src/Doc/howto/regex.rst:715
+msgid "``\\A``"
+msgstr ""
+
 #: ../src/Doc/howto/regex.rst:713
 msgid ""
 "Matches only at the start of the string.  When not in :const:`MULTILINE` "
@@ -8063,8 +8163,18 @@ msgid ""
 "newline character."
 msgstr ""
 
+# 702918f54b794e869e82de9b667c1ce9
+#: ../src/Doc/howto/regex.rst:718
+msgid "``\\Z``"
+msgstr ""
+
 #: ../src/Doc/howto/regex.rst:719
 msgid "Matches only at the end of the string."
+msgstr ""
+
+# c8602ee0ca0b40e486f4490d57f31980
+#: ../src/Doc/howto/regex.rst:753
+msgid "``\\b``"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:722
@@ -8097,6 +8207,11 @@ msgid ""
 "Second, inside a character class, where there's no use for this assertion, ``"
 "\\b`` represents the backspace character, for compatibility with Python's "
 "string literals."
+msgstr ""
+
+# fbcb300e4fe542b1b2069f1bb4352898
+#: ../src/Doc/howto/regex.rst:758
+msgid "``\\B``"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:757
@@ -8320,6 +8435,11 @@ msgid ""
 "this:"
 msgstr ""
 
+# d9b3399647fd442d9bbf898c7385bc34
+#: ../src/Doc/howto/regex.rst:964
+msgid "``(?=...)``"
+msgstr ""
+
 #: ../src/Doc/howto/regex.rst:961
 msgid ""
 "Positive lookahead assertion.  This succeeds if the contained regular "
@@ -8327,6 +8447,11 @@ msgid ""
 "location, and fails otherwise. But, once the contained expression has been "
 "tried, the matching engine doesn't advance at all; the rest of the pattern "
 "is tried right where the assertion started."
+msgstr ""
+
+# 2933d119182340a49ce28e51fac5d737
+#: ../src/Doc/howto/regex.rst:969
+msgid "``(?!...)``"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:968

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2012-11-20 04:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,9 +165,21 @@ msgstr ""
 "org/dev/workflow/ pour une description détaillée du processus de traitement "
 "des problèmes."
 
+# 73cc2a40368a455f8974286eb299d4dc
+#: ../src/Doc/bugs.rst:65
+msgid "`Python Developer's Guide <http://docs.python.org/devguide/>`_"
+msgstr ""
+
 # 9caa1f62db654d4db171ffc4a8485f2c
 #: ../src/Doc/bugs.rst:66
 msgid "Detailed description of the issue workflow and developers tools."
+msgstr ""
+
+# 69a83a070002401aac0ef159d635dec6
+#: ../src/Doc/bugs.rst:69
+msgid ""
+"`How to Report Bugs Effectively <http://www.chiark.greenend.org.uk/~sgtatham/"
+"bugs.html>`_"
 msgstr ""
 
 #: ../src/Doc/bugs.rst:69
@@ -178,6 +190,13 @@ msgstr ""
 "Article qui entre dans les détails sur la manière de créer un rapport de "
 "bogue utile. Il décrit quel genre d'information est utile et pourquoi elle "
 "est utile."
+
+# 1542b2bc60b6414f829d737bddfd91f4
+#: ../src/Doc/bugs.rst:72
+msgid ""
+"`Bug Writing Guidelines <http://developer.mozilla.org/en/docs/"
+"Bug_writing_guidelines>`_"
+msgstr ""
 
 #: ../src/Doc/bugs.rst:73
 msgid ""

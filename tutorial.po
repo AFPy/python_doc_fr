@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-05 09:33\n"
+"POT-Creation-Date: 2012-11-20 04:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1574,10 +1574,10 @@ msgstr ""
 msgid "Examples::"
 msgstr "Exemples ::"
 
-#: ../src/Doc/tutorial/classes.rst:827 ../src/Doc/tutorial/controlflow.rst:666
-#: ../src/Doc/tutorial/datastructures.rst:740
+#: ../src/Doc/tutorial/classes.rst:827 ../src/Doc/tutorial/controlflow.rst:667
+#: ../src/Doc/tutorial/datastructures.rst:749
 #: ../src/Doc/tutorial/interactive.rst:166
-#: ../src/Doc/tutorial/interpreter.rst:268 ../src/Doc/tutorial/modules.rst:544
+#: ../src/Doc/tutorial/interpreter.rst:268 ../src/Doc/tutorial/modules.rst:551
 msgid "Footnotes"
 msgstr "Notes"
 
@@ -1787,11 +1787,11 @@ msgstr ""
 "L'instruction :keyword:`continue`, également empruntée au C, fait passer la "
 "boucle à son itération suivante ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:186
+#: ../src/Doc/tutorial/controlflow.rst:187
 msgid ":keyword:`pass` Statements"
 msgstr "L'instruction :keyword:`pass`"
 
-#: ../src/Doc/tutorial/controlflow.rst:188
+#: ../src/Doc/tutorial/controlflow.rst:189
 msgid ""
 "The :keyword:`pass` statement does nothing. It can be used when a statement "
 "is required syntactically but the program requires no action. For example::"
@@ -1800,12 +1800,12 @@ msgstr ""
 "lorsqu'une instruction est nécessaire pour fournir une syntaxe correcte, "
 "mais qu'aucune action ne doit être effectuée. Par exemple ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:195
+#: ../src/Doc/tutorial/controlflow.rst:196
 msgid "This is commonly used for creating minimal classes::"
 msgstr ""
 "On utilise couramment cette instruction pour créer des classes minimales ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:201
+#: ../src/Doc/tutorial/controlflow.rst:202
 msgid ""
 "Another place :keyword:`pass` can be used is as a place-holder for a "
 "function or conditional body when you are working on new code, allowing you "
@@ -1817,11 +1817,11 @@ msgstr ""
 "permettant ainsi de construire votre code à un niveau plus abstrait. "
 "L'instruction :keyword:`pass` est alors ignorée silencieusement ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:212
+#: ../src/Doc/tutorial/controlflow.rst:213
 msgid "Defining Functions"
 msgstr "Définir des fonctions"
 
-#: ../src/Doc/tutorial/controlflow.rst:214
+#: ../src/Doc/tutorial/controlflow.rst:215
 msgid ""
 "We can create a function that writes the Fibonacci series to an arbitrary "
 "boundary::"
@@ -1829,7 +1829,7 @@ msgstr ""
 "On peut créer une fonction qui écrit la suite de Fibonacci jusqu'à une "
 "limite imposée ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:233
+#: ../src/Doc/tutorial/controlflow.rst:234
 msgid ""
 "The keyword :keyword:`def` introduces a function *definition*.  It must be "
 "followed by the function name and the parenthesized list of formal "
@@ -1841,7 +1841,7 @@ msgstr ""
 "paramètres. L'instruction qui constitue le corps de la fonction débute à la "
 "ligne suivante, et doit être indentée."
 
-#: ../src/Doc/tutorial/controlflow.rst:238
+#: ../src/Doc/tutorial/controlflow.rst:239
 msgid ""
 "The first statement of the function body can optionally be a string literal; "
 "this string literal is the function's documentation string, or :dfn:"
@@ -1860,7 +1860,7 @@ msgstr ""
 "naviguer de façon interactive dans le code ; prenez-en l'habitude, c'est une "
 "bonne habitude que de documenter le code que vous écrivez !"
 
-#: ../src/Doc/tutorial/controlflow.rst:245
+#: ../src/Doc/tutorial/controlflow.rst:246
 msgid ""
 "The *execution* of a function introduces a new symbol table used for the "
 "local variables of the function.  More precisely, all variable assignments "
@@ -1882,7 +1882,7 @@ msgstr ""
 "(sauf en utilisant une instruction :keyword:`global`), bien qu'elles "
 "puissent être référencées."
 
-#: ../src/Doc/tutorial/controlflow.rst:254
+#: ../src/Doc/tutorial/controlflow.rst:255
 msgid ""
 "The actual parameters (arguments) to a function call are introduced in the "
 "local symbol table of the called function when it is called; thus, arguments "
@@ -1897,7 +1897,7 @@ msgstr ""
 "même. [#]_ Lorsqu'une fonction appelle une autre fonction, une nouvelle "
 "table de symboles locale est créée pour cet appel."
 
-#: ../src/Doc/tutorial/controlflow.rst:260
+#: ../src/Doc/tutorial/controlflow.rst:261
 msgid ""
 "A function definition introduces the function name in the current symbol "
 "table. The value of the function name has a type that is recognized by the "
@@ -1912,7 +1912,7 @@ msgstr ""
 "une fonction. Ceci fournit un mécanisme de renommage général ::"
 
 # d0c90ca9530a40adbb720f8a235bd80d
-#: ../src/Doc/tutorial/controlflow.rst:272
+#: ../src/Doc/tutorial/controlflow.rst:273
 msgid ""
 "Coming from other languages, you might object that ``fib`` is not a function "
 "but a procedure since it doesn't return a value.  In fact, even functions "
@@ -1930,7 +1930,7 @@ msgstr ""
 "l'interpréteur lorsqu'il s'agit de la seule value écrite. Vous pouvez le "
 "voir si vous y tenez vraiment en utilisant :keyword:`print` ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:283
+#: ../src/Doc/tutorial/controlflow.rst:284
 msgid ""
 "It is simple to write a function that returns a list of the numbers of the "
 "Fibonacci series, instead of printing it::"
@@ -1938,13 +1938,13 @@ msgstr ""
 "Il est facile d'écrire une fonction qui renvoie une liste de la série de "
 "Fibonacci au lieu de l'imprimer ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:299
+#: ../src/Doc/tutorial/controlflow.rst:300
 msgid "This example, as usual, demonstrates some new Python features:"
 msgstr ""
 "Cet exemple, comme d'habitude, illustre de nouvelles fonctionnalités de "
 "Python :"
 
-#: ../src/Doc/tutorial/controlflow.rst:301
+#: ../src/Doc/tutorial/controlflow.rst:302
 msgid ""
 "The :keyword:`return` statement returns with a value from a function. :"
 "keyword:`return` without an expression argument returns ``None``. Falling "
@@ -1955,7 +1955,7 @@ msgstr ""
 "``None``. Arriver à la fin d'une fonction sans instruction :keyword:`return` "
 "renvoie également ``None``."
 
-#: ../src/Doc/tutorial/controlflow.rst:305
+#: ../src/Doc/tutorial/controlflow.rst:306
 msgid ""
 "The statement ``result.append(a)`` calls a *method* of the list object "
 "``result``.  A method is a function that 'belongs' to an object and is named "
@@ -1981,11 +1981,11 @@ msgstr ""
 "cet exemple, elle est l'équivalent de ``result = result + [a]``, mais elle "
 "est plus efficace."
 
-#: ../src/Doc/tutorial/controlflow.rst:320
+#: ../src/Doc/tutorial/controlflow.rst:321
 msgid "More on Defining Functions"
 msgstr "D'avantage sur la définition des fonctions"
 
-#: ../src/Doc/tutorial/controlflow.rst:322
+#: ../src/Doc/tutorial/controlflow.rst:323
 msgid ""
 "It is also possible to define functions with a variable number of arguments. "
 "There are three forms, which can be combined."
@@ -1993,11 +1993,11 @@ msgstr ""
 "Il est également possible de définir des fonctions avec un nombre variable "
 "d'arguments. Trois syntaxes peuvent être utilisées, éventuellement combinées."
 
-#: ../src/Doc/tutorial/controlflow.rst:329
+#: ../src/Doc/tutorial/controlflow.rst:330
 msgid "Default Argument Values"
 msgstr "Valeur par défaut des arguments"
 
-#: ../src/Doc/tutorial/controlflow.rst:331
+#: ../src/Doc/tutorial/controlflow.rst:332
 msgid ""
 "The most useful form is to specify a default value for one or more "
 "arguments. This creates a function that can be called with fewer arguments "
@@ -2007,18 +2007,18 @@ msgstr ""
 "certains arguments. Ceci crée une fonction qui pourra être appelée avec "
 "moins d'arguments que ceux présents dans sa définition. Par exemple ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:347
+#: ../src/Doc/tutorial/controlflow.rst:348
 msgid "This function can be called in several ways:"
 msgstr "Cette fonction peut être appelée de plusieurs façons :"
 
-#: ../src/Doc/tutorial/controlflow.rst:349
+#: ../src/Doc/tutorial/controlflow.rst:350
 msgid ""
 "giving only the mandatory argument: ``ask_ok('Do you really want to quit?')``"
 msgstr ""
 "en ne fournissant que les arguments obligatoires : ``ask_ok('Voulez-vous "
 "vraiment quitter ?')``"
 
-#: ../src/Doc/tutorial/controlflow.rst:351
+#: ../src/Doc/tutorial/controlflow.rst:352
 msgid ""
 "giving one of the optional arguments: ``ask_ok('OK to overwrite the file?', "
 "2)``"
@@ -2026,7 +2026,7 @@ msgstr ""
 "en fournissant une partie des arguments facultatifs : ``ask_ok('OK pour "
 "écraser le fichier ?', 2)``"
 
-#: ../src/Doc/tutorial/controlflow.rst:353
+#: ../src/Doc/tutorial/controlflow.rst:354
 msgid ""
 "or even giving all arguments: ``ask_ok('OK to overwrite the file?', 2, 'Come "
 "on, only yes or no!')``"
@@ -2034,7 +2034,7 @@ msgstr ""
 "en fournissant tous les arguments : ``ask_ok('OK pour écraser le fichier ?', "
 "2, 'Allez, seulement oui ou non !')``"
 
-#: ../src/Doc/tutorial/controlflow.rst:356
+#: ../src/Doc/tutorial/controlflow.rst:357
 msgid ""
 "This example also introduces the :keyword:`in` keyword. This tests whether "
 "or not a sequence contains a certain value."
@@ -2042,7 +2042,7 @@ msgstr ""
 "Cet exemple présente également le mot-clé :keyword:`in`. Celui-ci permet de "
 "tester si une séquence contient une certaine valeur."
 
-#: ../src/Doc/tutorial/controlflow.rst:359
+#: ../src/Doc/tutorial/controlflow.rst:360
 msgid ""
 "The default values are evaluated at the point of function definition in the "
 "*defining* scope, so that ::"
@@ -2050,11 +2050,11 @@ msgstr ""
 "Les valeurs par défaut sont évaluées lors de la définition de la fonction "
 "dans la portée de *définition*, de telle sorte que ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:370
+#: ../src/Doc/tutorial/controlflow.rst:371
 msgid "will print ``5``."
 msgstr "imprimera ``5``."
 
-#: ../src/Doc/tutorial/controlflow.rst:372
+#: ../src/Doc/tutorial/controlflow.rst:373
 msgid ""
 "**Important warning:**  The default value is evaluated only once. This makes "
 "a difference when the default is a mutable object such as a list, "
@@ -2067,11 +2067,11 @@ msgstr ""
 "plupart des classes. Par exemple, la fonction suivante accumule les "
 "arguments qui lui sont passés au fil des appels successifs ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:385
+#: ../src/Doc/tutorial/controlflow.rst:386
 msgid "This will print ::"
 msgstr "Ceci imprimera ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:391
+#: ../src/Doc/tutorial/controlflow.rst:392
 msgid ""
 "If you don't want the default to be shared between subsequent calls, you can "
 "write the function like this instead::"
@@ -2079,12 +2079,12 @@ msgstr ""
 "Si vous ne voulez pas que cette valeur par défaut soit partagée entre des "
 "appels successifs, vous pouvez écrire la fonction de cette façon ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:404
+#: ../src/Doc/tutorial/controlflow.rst:405
 msgid "Keyword Arguments"
 msgstr "Les arguments nommés"
 
 # e2d74c8fda244844a959da21ed55e0ae
-#: ../src/Doc/tutorial/controlflow.rst:406
+#: ../src/Doc/tutorial/controlflow.rst:407
 msgid ""
 "Functions can also be called using :term:`keyword arguments <keyword "
 "argument>` of the form ``kwarg=value``.  For instance, the following "
@@ -2095,7 +2095,7 @@ msgstr ""
 "exemple, la fonction suivante ::"
 
 # c811328e6e694919804103594d1803a0
-#: ../src/Doc/tutorial/controlflow.rst:415
+#: ../src/Doc/tutorial/controlflow.rst:416
 msgid ""
 "accepts one required argument (``voltage``) and three optional arguments "
 "(``state``, ``action``, and ``type``).  This function can be called in any "
@@ -2106,12 +2106,12 @@ msgstr ""
 "n'importe laquelle des façons suivantes ::"
 
 # 6437527f4e804c17878478bff4cab807
-#: ../src/Doc/tutorial/controlflow.rst:426
+#: ../src/Doc/tutorial/controlflow.rst:427
 msgid "but all the following calls would be invalid::"
 msgstr "mais tous les appels qui suivent sont incorrects ::"
 
 # 5665e42f479a44bcbf868c659ab8d3f0
-#: ../src/Doc/tutorial/controlflow.rst:433
+#: ../src/Doc/tutorial/controlflow.rst:434
 msgid ""
 "In a function call, keyword arguments must follow positional arguments. All "
 "the keyword arguments passed must match one of the arguments accepted by the "
@@ -2130,7 +2130,7 @@ msgstr ""
 "valeur plus d'une fois, comme l'illustre cet exemple incorrect du fait de "
 "cette restriction ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:449
+#: ../src/Doc/tutorial/controlflow.rst:450
 msgid ""
 "When a final formal parameter of the form ``**name`` is present, it receives "
 "a dictionary (see :ref:`typesmapping`) containing all keyword arguments "
@@ -2149,15 +2149,15 @@ msgstr ""
 "présent avant ``**name``). Par exemple, si vous définissez une fonction "
 "comme ceci :"
 
-#: ../src/Doc/tutorial/controlflow.rst:467
+#: ../src/Doc/tutorial/controlflow.rst:468
 msgid "It could be called like this::"
 msgstr "Elle pourrait être appelée comme ceci ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:475
+#: ../src/Doc/tutorial/controlflow.rst:476
 msgid "and of course it would print::"
 msgstr "et imprimera alors ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:486
+#: ../src/Doc/tutorial/controlflow.rst:487
 msgid ""
 "Note that the list of keyword argument names is created by sorting the "
 "result of the keywords dictionary's ``keys()`` method before printing its "
@@ -2169,11 +2169,11 @@ msgstr ""
 "celà n'est pas fait, l'ordre dans lequel les arguments sont imprimée n'est "
 "pas défini."
 
-#: ../src/Doc/tutorial/controlflow.rst:493
+#: ../src/Doc/tutorial/controlflow.rst:494
 msgid "Arbitrary Argument Lists"
 msgstr "Listes d'arguments arbitraires"
 
-#: ../src/Doc/tutorial/controlflow.rst:498
+#: ../src/Doc/tutorial/controlflow.rst:499
 msgid ""
 "Finally, the least frequently used option is to specify that a function can "
 "be called with an arbitrary number of arguments.  These arguments will be "
@@ -2186,11 +2186,11 @@ msgstr ""
 "nombre variable d'arguments, zéro arguments normaux ou plus peuvent "
 "apparaître ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:510
+#: ../src/Doc/tutorial/controlflow.rst:511
 msgid "Unpacking Argument Lists"
 msgstr "Séparation des listes d'arguments"
 
-#: ../src/Doc/tutorial/controlflow.rst:512
+#: ../src/Doc/tutorial/controlflow.rst:513
 msgid ""
 "The reverse situation occurs when the arguments are already in a list or "
 "tuple but need to be unpacked for a function call requiring separate "
@@ -2207,7 +2207,7 @@ msgstr ""
 "l'opérateur ``*`` pour séparer les arguments présents dans une liste ou un "
 "tuple ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:528
+#: ../src/Doc/tutorial/controlflow.rst:529
 msgid ""
 "In the same fashion, dictionaries can deliver keyword arguments with the "
 "``**``\\ -operator::"
@@ -2215,11 +2215,11 @@ msgstr ""
 "De la même façon, les dictionnaires peuvent fournir des arguments nommés en "
 "utilisant l'opérateur ``**`` ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:544
+#: ../src/Doc/tutorial/controlflow.rst:545
 msgid "Lambda Forms"
 msgstr "Les fonctions lambda"
 
-#: ../src/Doc/tutorial/controlflow.rst:546
+#: ../src/Doc/tutorial/controlflow.rst:547
 msgid ""
 "By popular demand, a few features commonly found in functional programming "
 "languages like Lisp have been added to Python.  With the :keyword:`lambda` "
@@ -2240,12 +2240,12 @@ msgstr ""
 "définition de fonction normale. Comme les fonctions imbriquées, les "
 "fonctions lambda peuvent référencer des variables de la portée englobante ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:568
+#: ../src/Doc/tutorial/controlflow.rst:569
 msgid "Documentation Strings"
 msgstr "Chaînes de documentation"
 
 # 41dfd2967219444194cfcf734c8325c6
-#: ../src/Doc/tutorial/controlflow.rst:575
+#: ../src/Doc/tutorial/controlflow.rst:576
 msgid ""
 "There are emerging conventions about the content and formatting of "
 "documentation strings."
@@ -2253,7 +2253,7 @@ msgstr ""
 "Il existe des conventions émergeantes concernant le contenu et le format des "
 "chaînes de documentation."
 
-#: ../src/Doc/tutorial/controlflow.rst:578
+#: ../src/Doc/tutorial/controlflow.rst:579
 msgid ""
 "The first line should always be a short, concise summary of the object's "
 "purpose.  For brevity, it should not explicitly state the object's name or "
@@ -2267,7 +2267,7 @@ msgstr ""
 "nom est un verbe qui décrit une opération). Cette ligne devrait commencer "
 "avec une majuscule et se terminer par un point."
 
-#: ../src/Doc/tutorial/controlflow.rst:584
+#: ../src/Doc/tutorial/controlflow.rst:585
 msgid ""
 "If there are more lines in the documentation string, the second line should "
 "be blank, visually separating the summary from the rest of the description.  "
@@ -2279,7 +2279,7 @@ msgstr ""
 "Les autres lignes peuvent alors constituer un ou plusieurs paragraphes "
 "décrivant le mode d'utilisation de l'objet, ses effets de bord, etc."
 
-#: ../src/Doc/tutorial/controlflow.rst:589
+#: ../src/Doc/tutorial/controlflow.rst:590
 msgid ""
 "The Python parser does not strip indentation from multi-line string literals "
 "in Python, so tools that process documentation have to strip indentation if "
@@ -2307,15 +2307,15 @@ msgstr ""
 "début de ligne doivent être supprimés. L'équivalent des espaces doit être "
 "testé après expansion des tabulations (normalement remplacés par 4 espaces)."
 
-#: ../src/Doc/tutorial/controlflow.rst:601
+#: ../src/Doc/tutorial/controlflow.rst:602
 msgid "Here is an example of a multi-line docstring::"
 msgstr "Voici un exemple de chaîne de documentation multi-lignes ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:619
+#: ../src/Doc/tutorial/controlflow.rst:620
 msgid "Intermezzo: Coding Style"
 msgstr "Un style de codage : Intermezzo"
 
-#: ../src/Doc/tutorial/controlflow.rst:624
+#: ../src/Doc/tutorial/controlflow.rst:625
 msgid ""
 "Now that you are about to write longer, more complex pieces of Python, it is "
 "a good time to talk about *coding style*.  Most languages can be written (or "
@@ -2330,7 +2330,7 @@ msgstr ""
 "votre code plus facile aux autres est toujours une bonne idée, et adopter un "
 "bon style de codage peut énormément vous y aider."
 
-#: ../src/Doc/tutorial/controlflow.rst:630
+#: ../src/Doc/tutorial/controlflow.rst:631
 msgid ""
 "For Python, :pep:`8` has emerged as the style guide that most projects "
 "adhere to; it promotes a very readable and eye-pleasing coding style.  Every "
@@ -2342,11 +2342,11 @@ msgstr ""
 "agréable à l'oeil. Chaque développeur Python devrait donc la lire et s'en "
 "inspirer autant que possible ; voici ses principaux points notables :"
 
-#: ../src/Doc/tutorial/controlflow.rst:635
+#: ../src/Doc/tutorial/controlflow.rst:636
 msgid "Use 4-space indentation, and no tabs."
 msgstr "Utilisez des indentations de 4 espaces, et pas de tabulation."
 
-#: ../src/Doc/tutorial/controlflow.rst:637
+#: ../src/Doc/tutorial/controlflow.rst:638
 msgid ""
 "4 spaces are a good compromise between small indentation (allows greater "
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
@@ -2357,13 +2357,13 @@ msgstr ""
 "le code plus facile à lire). Les tabulations introduisent de la confusion, "
 "et doivent être proscrites autant que possible."
 
-#: ../src/Doc/tutorial/controlflow.rst:641
+#: ../src/Doc/tutorial/controlflow.rst:642
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr ""
 "Faites des retours à la ligne, de telle sorte qu'elles n'excèdent pas 79 "
 "caractères."
 
-#: ../src/Doc/tutorial/controlflow.rst:643
+#: ../src/Doc/tutorial/controlflow.rst:644
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
@@ -2371,7 +2371,7 @@ msgstr ""
 "Ceci aide les utilisateurs ne disposant que de petits écrans, et permet sur "
 "de plus grands de disposer plusieurs fichiers côte à côte sans difficulté."
 
-#: ../src/Doc/tutorial/controlflow.rst:646
+#: ../src/Doc/tutorial/controlflow.rst:647
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code "
 "inside functions."
@@ -2379,16 +2379,16 @@ msgstr ""
 "Utilisez des lignes vides pour séparer les fonctions et les classes, ou pour "
 "scinder de gros blocs de code à l'intérieur de fonctions."
 
-#: ../src/Doc/tutorial/controlflow.rst:649
+#: ../src/Doc/tutorial/controlflow.rst:650
 msgid "When possible, put comments on a line of their own."
 msgstr ""
 "Lorsque c'est possible, placez les commentaires sur leur propres lignes."
 
-#: ../src/Doc/tutorial/controlflow.rst:651
+#: ../src/Doc/tutorial/controlflow.rst:652
 msgid "Use docstrings."
 msgstr "Utilisez les chaînes de documentation"
 
-#: ../src/Doc/tutorial/controlflow.rst:653
+#: ../src/Doc/tutorial/controlflow.rst:654
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
@@ -2396,7 +2396,7 @@ msgstr ""
 "Utilisez des espaces autour des opérateurs et après les virgules, mais pas "
 "directement à l'intérieur des parenthèses : ``a = f(1, 2) + g(3, 4)``."
 
-#: ../src/Doc/tutorial/controlflow.rst:656
+#: ../src/Doc/tutorial/controlflow.rst:657
 msgid ""
 "Name your classes and functions consistently; the convention is to use "
 "``CamelCase`` for classes and ``lower_case_with_underscores`` for functions "
@@ -2410,7 +2410,7 @@ msgstr ""
 "`tut-firstclasses` pour en savoir plus sur les classes et les méthodes)."
 
 # 82cc90f14beb4e74801836b553a5595f
-#: ../src/Doc/tutorial/controlflow.rst:661
+#: ../src/Doc/tutorial/controlflow.rst:662
 msgid ""
 "Don't use fancy encodings if your code is meant to be used in international "
 "environments.  Plain ASCII works best in any case."
@@ -2419,7 +2419,7 @@ msgstr ""
 "utilisé dans des environnements internationaux. L'ASCII est encore ce qui "
 "marche le mieux dans la plupart des cas."
 
-#: ../src/Doc/tutorial/controlflow.rst:667
+#: ../src/Doc/tutorial/controlflow.rst:668
 msgid ""
 "Actually, *call by object reference* would be a better description, since if "
 "a mutable object is passed, the caller will see any changes the callee makes "
@@ -2675,12 +2675,12 @@ msgstr ""
 "des sommes de nombres est un besoin tellement courant qu'il existe une "
 "fonction native ``sum(sequence)`` qui fait exactement la même chose."
 
-#: ../src/Doc/tutorial/datastructures.rst:236
+#: ../src/Doc/tutorial/datastructures.rst:235
 msgid "List Comprehensions"
 msgstr "Compréhensions de listes"
 
 # bacb848669ad4fa9abb4a3d77791f4c2
-#: ../src/Doc/tutorial/datastructures.rst:238
+#: ../src/Doc/tutorial/datastructures.rst:237
 msgid ""
 "List comprehensions provide a concise way to create lists. Common "
 "applications are to make new lists where each element is the result of some "
@@ -2694,18 +2694,18 @@ msgstr ""
 "éléments satisfaisant une condition spécifique."
 
 # 037f4e076d664f8389360ada349255eb
-#: ../src/Doc/tutorial/datastructures.rst:243
+#: ../src/Doc/tutorial/datastructures.rst:242
 msgid "For example, assume we want to create a list of squares, like::"
 msgstr ""
 "Par exemple, supposons que l'on veuille créer une liste de carrés, comme ::"
 
 # f1ecaf420bcc491cb856a1f05ad37538
-#: ../src/Doc/tutorial/datastructures.rst:252
+#: ../src/Doc/tutorial/datastructures.rst:251
 msgid "We can obtain the same result with::"
 msgstr "On peut obtenir le même résultat avec ::"
 
 # d14333f8fdc241f09c158e509605a7f3
-#: ../src/Doc/tutorial/datastructures.rst:256
+#: ../src/Doc/tutorial/datastructures.rst:255
 msgid ""
 "This is also equivalent to ``squares = map(lambda x: x**2, range(10))``, but "
 "it's more concise and readable."
@@ -2714,7 +2714,7 @@ msgstr ""
 "``, mais en plus concis et plus lisible."
 
 # 3467ea01b37a4111a1dc155df11cf9f1
-#: ../src/Doc/tutorial/datastructures.rst:259
+#: ../src/Doc/tutorial/datastructures.rst:258
 msgid ""
 "A list comprehension consists of brackets containing an expression followed "
 "by a :keyword:`for` clause, then zero or more :keyword:`for` or :keyword:"
@@ -2731,12 +2731,12 @@ msgstr ""
 "combine les éléments de deux listes s'ils ne sont pas égaux ::"
 
 # d67d99a05bc540d09311203640400abd
-#: ../src/Doc/tutorial/datastructures.rst:269
+#: ../src/Doc/tutorial/datastructures.rst:268
 msgid "and it's equivalent to:"
 msgstr "et c'est équivaent à ::"
 
 # c6f54fd8b04e497dbf2f03edaa0abc9e
-#: ../src/Doc/tutorial/datastructures.rst:280
+#: ../src/Doc/tutorial/datastructures.rst:279
 msgid ""
 "Note how the order of the :keyword:`for` and :keyword:`if` statements is the "
 "same in both these snippets."
@@ -2745,7 +2745,7 @@ msgstr ""
 "même dans ces différents extraits de code."
 
 # d653b9fb2b45432d9e5e67ee70fbecd9
-#: ../src/Doc/tutorial/datastructures.rst:283
+#: ../src/Doc/tutorial/datastructures.rst:282
 msgid ""
 "If the expression is a tuple (e.g. the ``(x, y)`` in the previous example), "
 "it must be parenthesized. ::"
@@ -2754,19 +2754,19 @@ msgstr ""
 "elle doit être entourée par des parenthèses ::"
 
 # 6519493b0333463c9e8d314fd4c1af4c
-#: ../src/Doc/tutorial/datastructures.rst:314
+#: ../src/Doc/tutorial/datastructures.rst:313
 msgid ""
 "List comprehensions can contain complex expressions and nested functions::"
 msgstr ""
 "Les compréhensions de listes peuvent contenir des expressions complexes et "
 "des fonctions imbriquées ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:322
+#: ../src/Doc/tutorial/datastructures.rst:321
 msgid "Nested List Comprehensions"
 msgstr "Compréhensions de listes imbriquées"
 
 # 362a977414e741d3b6464df3bf5c11ce
-#: ../src/Doc/tutorial/datastructures.rst:324
+#: ../src/Doc/tutorial/datastructures.rst:323
 msgid ""
 "The initial expression in a list comprehension can be any arbitrary "
 "expression, including another list comprehension."
@@ -2775,7 +2775,7 @@ msgstr ""
 "quelle expression, y compris une autre compréhension de liste."
 
 # a88f2fa3f41144bfbd62a2693612ceb1
-#: ../src/Doc/tutorial/datastructures.rst:327
+#: ../src/Doc/tutorial/datastructures.rst:326
 msgid ""
 "Consider the following example of a 3x4 matrix implemented as a list of 3 "
 "lists of length 4::"
@@ -2784,13 +2784,13 @@ msgstr ""
 "listes de 4 éléments ::"
 
 # badd753c026841c9a79115aa2de84eab
-#: ../src/Doc/tutorial/datastructures.rst:336
+#: ../src/Doc/tutorial/datastructures.rst:335
 msgid "The following list comprehension will transpose rows and columns::"
 msgstr ""
 "Cette compréhension de liste va transposer les lignes et les colonnes ::"
 
 # 5661198254ed47449d72c22038e9f2b9
-#: ../src/Doc/tutorial/datastructures.rst:341
+#: ../src/Doc/tutorial/datastructures.rst:340
 msgid ""
 "As we saw in the previous section, the nested listcomp is evaluated in the "
 "context of the :keyword:`for` that follows it, so this example is equivalent "
@@ -2801,12 +2801,12 @@ msgstr ""
 "la suit, donc cet exemple est équivalent à ::"
 
 # 294e46c6a9bf43abbb25bdbab77ecfac
-#: ../src/Doc/tutorial/datastructures.rst:352
+#: ../src/Doc/tutorial/datastructures.rst:351
 msgid "which, in turn, is the same as::"
 msgstr "lequel à son tour est équivalent à ::"
 
 # 6eb39f5c7cee4c69bcdce5003c9dc1d9
-#: ../src/Doc/tutorial/datastructures.rst:366
+#: ../src/Doc/tutorial/datastructures.rst:365
 msgid ""
 "In the real world, you should prefer built-in functions to complex flow "
 "statements. The :func:`zip` function would do a great job for this use case::"
@@ -2815,17 +2815,17 @@ msgstr ""
 "natives plutôt que des instructions de contrôle de flux complexes. La "
 "fonction :func:`zip` ferait dans ce cas un excellent travail ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:372
+#: ../src/Doc/tutorial/datastructures.rst:371
 msgid ""
 "See :ref:`tut-unpacking-arguments` for details on the asterisk in this line."
 msgstr ""
 "Voyez :ref:`tut-unpacking-arguments` pour plus de détails sur cette ligne."
 
-#: ../src/Doc/tutorial/datastructures.rst:377
+#: ../src/Doc/tutorial/datastructures.rst:376
 msgid "The :keyword:`del` statement"
 msgstr "L'instruction :keyword:`del`"
 
-#: ../src/Doc/tutorial/datastructures.rst:379
+#: ../src/Doc/tutorial/datastructures.rst:378
 msgid ""
 "There is a way to remove an item from a list given its index instead of its "
 "value: the :keyword:`del` statement.  This differs from the :meth:`pop` "
@@ -2840,12 +2840,12 @@ msgstr ""
 "ou la vider complètement (ce que nous avions fait auparavent en affectant "
 "une liste vide à la tranche). Par exemple ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:396
+#: ../src/Doc/tutorial/datastructures.rst:395
 msgid ":keyword:`del` can also be used to delete entire variables::"
 msgstr ""
 ":keyword:`del` peut aussi être utilisée pour supprimer des variables ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:400
+#: ../src/Doc/tutorial/datastructures.rst:399
 msgid ""
 "Referencing the name ``a`` hereafter is an error (at least until another "
 "value is assigned to it).  We'll find other uses for :keyword:`del` later."
@@ -2854,11 +2854,11 @@ msgstr ""
 "qu'une autre valeur lui soit affectée). Vous trouverez d'autres utilisations "
 "de la fonction :keyword:`del` plus tard."
 
-#: ../src/Doc/tutorial/datastructures.rst:407
+#: ../src/Doc/tutorial/datastructures.rst:406
 msgid "Tuples and Sequences"
 msgstr "Tuples et séquences"
 
-#: ../src/Doc/tutorial/datastructures.rst:409
+#: ../src/Doc/tutorial/datastructures.rst:408
 msgid ""
 "We saw that lists and strings have many common properties, such as indexing "
 "and slicing operations.  They are two examples of *sequence* data types "
@@ -2873,7 +2873,7 @@ msgstr ""
 "être ajoutés. Il existe également un autre type standard de séquence : le "
 "*tuple*."
 
-#: ../src/Doc/tutorial/datastructures.rst:415
+#: ../src/Doc/tutorial/datastructures.rst:414
 msgid ""
 "A tuple consists of a number of values separated by commas, for instance::"
 msgstr ""
@@ -2881,7 +2881,7 @@ msgstr ""
 "par exemple ::"
 
 # a5badcce7c75451982575cc784cb15da
-#: ../src/Doc/tutorial/datastructures.rst:437
+#: ../src/Doc/tutorial/datastructures.rst:436
 msgid ""
 "As you see, on output tuples are always enclosed in parentheses, so that "
 "nested tuples are interpreted correctly; they may be input with or without "
@@ -2899,7 +2899,7 @@ msgstr ""
 "tuples contenant des objets mutables, comme des listes."
 
 # b6c3a9f8bf504d2383860d62b9823a5a
-#: ../src/Doc/tutorial/datastructures.rst:444
+#: ../src/Doc/tutorial/datastructures.rst:443
 msgid ""
 "Though tuples may seem similar to lists, they are often used in different "
 "situations and for different purposes. Tuples are :term:`immutable`, and "
@@ -2917,7 +2917,7 @@ msgstr ""
 "namedtuple>`). Les listes sont souvent :term:`mutables`, et contiennent des "
 "éléments homogènes qui sont accédés par itération sur la liste."
 
-#: ../src/Doc/tutorial/datastructures.rst:452
+#: ../src/Doc/tutorial/datastructures.rst:451
 msgid ""
 "A special problem is the construction of tuples containing 0 or 1 items: the "
 "syntax has some extra quirks to accommodate these.  Empty tuples are "
@@ -2932,7 +2932,7 @@ msgstr ""
 "valeur par une virgule (il n'est pas suffisant de placer cette valeur entre "
 "parenthèses). Pas très joli, mais efficace. Par exemple ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:467
+#: ../src/Doc/tutorial/datastructures.rst:466
 msgid ""
 "The statement ``t = 12345, 54321, 'hello!'`` is an example of *tuple "
 "packing*: the values ``12345``, ``54321`` and ``'hello!'`` are packed "
@@ -2943,7 +2943,7 @@ msgstr ""
 "ensemble dans un tuple. L'opération inverse est aussi possible ::"
 
 # bee7de83217d467eba7a079c65b7ad5d
-#: ../src/Doc/tutorial/datastructures.rst:473
+#: ../src/Doc/tutorial/datastructures.rst:472
 msgid ""
 "This is called, appropriately enough, *sequence unpacking* and works for any "
 "sequence on the right-hand side.  Sequence unpacking requires the list of "
@@ -2958,11 +2958,11 @@ msgstr ""
 "est juste une combinaison entre un emballage de tuple et un déballage de "
 "séquence."
 
-#: ../src/Doc/tutorial/datastructures.rst:483
+#: ../src/Doc/tutorial/datastructures.rst:482
 msgid "Sets"
 msgstr "Les ensembles"
 
-#: ../src/Doc/tutorial/datastructures.rst:485
+#: ../src/Doc/tutorial/datastructures.rst:484
 msgid ""
 "Python also includes a data type for *sets*.  A set is an unordered "
 "collection with no duplicate elements.  Basic uses include membership "
@@ -2976,15 +2976,31 @@ msgstr ""
 "de doublons. Les ensembles supportent également les opérations mathématiques "
 "comme les unions, intersections, différences et différences symétriques."
 
-#: ../src/Doc/tutorial/datastructures.rst:490
+# da01767b1479416bba017b6990483d52
+#: ../src/Doc/tutorial/datastructures.rst:489
+msgid ""
+"Curly braces or the :func:`set` function can be used to create sets.  Note: "
+"to create an empty set you have to use ``set()``, not ``{}``; the latter "
+"creates an empty dictionary, a data structure that we discuss in the next "
+"section."
+msgstr ""
+
+#: ../src/Doc/tutorial/datastructures.rst:493
 msgid "Here is a brief demonstration::"
 msgstr "Voici une brève démonstration ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:520
+# a95edf151888454c84702a1853e2ab22
+#: ../src/Doc/tutorial/datastructures.rst:519
+msgid ""
+"Similarly to :ref:`list comprehensions <tut-listcomps>`, set comprehensions "
+"are also supported::"
+msgstr ""
+
+#: ../src/Doc/tutorial/datastructures.rst:530
 msgid "Dictionaries"
 msgstr "Dictionnaires"
 
-#: ../src/Doc/tutorial/datastructures.rst:522
+#: ../src/Doc/tutorial/datastructures.rst:532
 msgid ""
 "Another useful data type built into Python is the *dictionary* (see :ref:"
 "`typesmapping`). Dictionaries are sometimes found in other languages as "
@@ -3011,7 +3027,7 @@ msgstr ""
 "affectations par position, par tranches ou via des méthodes comme :meth:"
 "`append` ou :meth:`extend`."
 
-#: ../src/Doc/tutorial/datastructures.rst:533
+#: ../src/Doc/tutorial/datastructures.rst:543
 msgid ""
 "It is best to think of a dictionary as an unordered set of *key: value* "
 "pairs, with the requirement that the keys are unique (within one "
@@ -3028,7 +3044,7 @@ msgstr ""
 "dictionnaire ; c'est également de cette façon que les dictionnaires sont "
 "affichés en sortie."
 
-#: ../src/Doc/tutorial/datastructures.rst:539
+#: ../src/Doc/tutorial/datastructures.rst:549
 msgid ""
 "The main operations on a dictionary are storing a value with some key and "
 "extracting the value given the key.  It is also possible to delete a key:"
@@ -3044,7 +3060,7 @@ msgstr ""
 "une valeur associée à une clé qui n'existe pas, une exception est levée."
 
 # a554aa7680394a23a6e1b29ad07b5253
-#: ../src/Doc/tutorial/datastructures.rst:545
+#: ../src/Doc/tutorial/datastructures.rst:555
 msgid ""
 "The :meth:`keys` method of a dictionary object returns a list of all the "
 "keys used in the dictionary, in arbitrary order (if you want it sorted, just "
@@ -3057,34 +3073,30 @@ msgstr ""
 "tester si une clé est dans le dictionnaire, utilisez le mot-clé :keyword:"
 "`in`."
 
-#: ../src/Doc/tutorial/datastructures.rst:550
+#: ../src/Doc/tutorial/datastructures.rst:560
 msgid "Here is a small example using a dictionary::"
 msgstr "Voici un petit exemple utilisant un dictionnaire ::"
 
 # da517bdab6f24e778cac08736d919390
-#: ../src/Doc/tutorial/datastructures.rst:567
+#: ../src/Doc/tutorial/datastructures.rst:577
+#, fuzzy
 msgid ""
-"The :func:`dict` constructor builds dictionaries directly from lists of key-"
-"value pairs stored as tuples.  When the pairs form a pattern, list "
-"comprehensions can compactly specify the key-value list. ::"
+"The :func:`dict` constructor builds dictionaries directly from sequences of "
+"key-value pairs::"
 msgstr ""
 "Le constructeur :func:`dict` fabrique un dictionnaire directement à partir "
 "d'une liste de paires clé-valeur stockées sous la forme de tuples. Lorsque "
 "les paires forment un motif, des compréhensions de listes permettent de "
 "fournir la liste des clés-valeurs sous une forme compacte ::"
 
-# c6ce45f20f7743deb76e188301a62651
-#: ../src/Doc/tutorial/datastructures.rst:576
+# 098a1063baa44926bfd63f941681c98f
+#: ../src/Doc/tutorial/datastructures.rst:583
 msgid ""
-"Later in the tutorial, we will learn about Generator Expressions which are "
-"even better suited for the task of supplying key-values pairs to the :func:"
-"`dict` constructor."
+"In addition, dict comprehensions can be used to create dictionaries from "
+"arbitrary key and value expressions::"
 msgstr ""
-"Plus loin dans ce tutoriel, vous en apprendez plus sur les générateurs qui "
-"sont encore plus adaptés à cette tâche consistant à fournir des paires de "
-"clés-valeurs au constructeur :func:`dict`."
 
-#: ../src/Doc/tutorial/datastructures.rst:580
+#: ../src/Doc/tutorial/datastructures.rst:589
 msgid ""
 "When the keys are simple strings, it is sometimes easier to specify pairs "
 "using keyword arguments::"
@@ -3092,11 +3104,11 @@ msgstr ""
 "Lorsque les clés sont de simples chaînes de caractères, il est parfois plus "
 "facile de spécifier les paires en utilisant des paramètres nommés ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:590
+#: ../src/Doc/tutorial/datastructures.rst:599
 msgid "Looping Techniques"
 msgstr "Techniques de boucles"
 
-#: ../src/Doc/tutorial/datastructures.rst:592
+#: ../src/Doc/tutorial/datastructures.rst:601
 msgid ""
 "When looping through a sequence, the position index and corresponding value "
 "can be retrieved at the same time using the :func:`enumerate` function. ::"
@@ -3105,7 +3117,7 @@ msgstr ""
 "correspondante peuvent être récupérées en même temps en utilisant la "
 "fonction :func:`enumerate`."
 
-#: ../src/Doc/tutorial/datastructures.rst:602
+#: ../src/Doc/tutorial/datastructures.rst:611
 msgid ""
 "To loop over two or more sequences at the same time, the entries can be "
 "paired with the :func:`zip` function. ::"
@@ -3113,7 +3125,7 @@ msgstr ""
 "Pour faire des boucles sur deux séquences ou plus en même temps, les "
 "éléments peuvent être associés par la fonction :func:`zip` ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:614
+#: ../src/Doc/tutorial/datastructures.rst:623
 msgid ""
 "To loop over a sequence in reverse, first specify the sequence in a forward "
 "direction and then call the :func:`reversed` function. ::"
@@ -3122,7 +3134,7 @@ msgstr ""
 "séquence dans son ordre normal, puis appliquez la fonction :func:"
 "`reversed` ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:626
+#: ../src/Doc/tutorial/datastructures.rst:635
 msgid ""
 "To loop over a sequence in sorted order, use the :func:`sorted` function "
 "which returns a new sorted list while leaving the source unaltered. ::"
@@ -3131,7 +3143,7 @@ msgstr ""
 "`sorted`, qui renvoie une nouvelle liste triée sans altérer la source ::"
 
 # a1e578bf4b954f29a28fc5bb96bfe66a
-#: ../src/Doc/tutorial/datastructures.rst:638
+#: ../src/Doc/tutorial/datastructures.rst:647
 msgid ""
 "When looping through dictionaries, the key and corresponding value can be "
 "retrieved at the same time using the :meth:`iteritems` method. ::"
@@ -3141,7 +3153,7 @@ msgstr ""
 "`iteritems` ::"
 
 # ce8381976b434e66b7c5471cd5d43209
-#: ../src/Doc/tutorial/datastructures.rst:648
+#: ../src/Doc/tutorial/datastructures.rst:657
 msgid ""
 "To change a sequence you are iterating over while inside the loop (for "
 "example to duplicate certain items), it is recommended that you first make a "
@@ -3154,11 +3166,11 @@ msgstr ""
 "implicite lorsque vous faites une boucle sur une séquence. La notation par "
 "tranches rend cette opération particulièrement pratique ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:665
+#: ../src/Doc/tutorial/datastructures.rst:674
 msgid "More on Conditions"
 msgstr "Plus d'informations sur les conditions"
 
-#: ../src/Doc/tutorial/datastructures.rst:667
+#: ../src/Doc/tutorial/datastructures.rst:676
 msgid ""
 "The conditions used in ``while`` and ``if`` statements can contain any "
 "operators, not just comparisons."
@@ -3166,7 +3178,7 @@ msgstr ""
 "Les conditions utilisées dans une instruction ``while`` ou ``if`` peuvent "
 "contenir n'importe quel opérateur, pas seulement des comparaisons."
 
-#: ../src/Doc/tutorial/datastructures.rst:670
+#: ../src/Doc/tutorial/datastructures.rst:679
 msgid ""
 "The comparison operators ``in`` and ``not in`` check whether a value occurs "
 "(does not occur) in a sequence.  The operators ``is`` and ``is not`` compare "
@@ -3181,7 +3193,7 @@ msgstr ""
 "comparaison ont la même priorité, qui est plus faible que celle des "
 "opérateurs numériques."
 
-#: ../src/Doc/tutorial/datastructures.rst:676
+#: ../src/Doc/tutorial/datastructures.rst:685
 msgid ""
 "Comparisons can be chained.  For example, ``a < b == c`` tests whether ``a`` "
 "is less than ``b`` and moreover ``b`` equals ``c``."
@@ -3190,7 +3202,7 @@ msgstr ""
 "si ``a`` est inférieur ou égal à ``b`` et par ailleurs si ``b`` est égal à "
 "``c``."
 
-#: ../src/Doc/tutorial/datastructures.rst:679
+#: ../src/Doc/tutorial/datastructures.rst:688
 msgid ""
 "Comparisons may be combined using the Boolean operators ``and`` and ``or``, "
 "and the outcome of a comparison (or of any other Boolean expression) may be "
@@ -3208,7 +3220,7 @@ msgstr ""
 "Comme toujours, des parenthèses peuvent être utilisées pour exprimer "
 "l'instruction désirée."
 
-#: ../src/Doc/tutorial/datastructures.rst:686
+#: ../src/Doc/tutorial/datastructures.rst:695
 msgid ""
 "The Boolean operators ``and`` and ``or`` are so-called *short-circuit* "
 "operators: their arguments are evaluated from left to right, and evaluation "
@@ -3225,7 +3237,7 @@ msgstr ""
 "tant que booléen, la valeur de retour d'un opérateur en circuit court est "
 "celle du dernier argument évalué."
 
-#: ../src/Doc/tutorial/datastructures.rst:693
+#: ../src/Doc/tutorial/datastructures.rst:702
 msgid ""
 "It is possible to assign the result of a comparison or other Boolean "
 "expression to a variable.  For example, ::"
@@ -3233,7 +3245,7 @@ msgstr ""
 "Il est possible d'affecter le résultat d'une comparaison ou d'une autre "
 "expression booléenne à une variable. Par exemple ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:701
+#: ../src/Doc/tutorial/datastructures.rst:710
 msgid ""
 "Note that in Python, unlike C, assignment cannot occur inside expressions. C "
 "programmers may grumble about this, but it avoids a common class of problems "
@@ -3246,12 +3258,12 @@ msgstr ""
 "en C, lorsque l'expression ``=`` est placée alors qu'une expression ``==`` "
 "était attendue."
 
-#: ../src/Doc/tutorial/datastructures.rst:710
+#: ../src/Doc/tutorial/datastructures.rst:719
 msgid "Comparing Sequences and Other Types"
 msgstr "Comparer des séquences avec d'autres types"
 
 # 41977cc17fef443ea5ee4eb2acbc42b4
-#: ../src/Doc/tutorial/datastructures.rst:712
+#: ../src/Doc/tutorial/datastructures.rst:721
 msgid ""
 "Sequence objects may be compared to other objects with the same sequence "
 "type. The comparison uses *lexicographical* ordering: first the first two "
@@ -3281,7 +3293,7 @@ msgstr ""
 "séquences de même type ::"
 
 # f6a8739089604c31b9a69729e466dbd3
-#: ../src/Doc/tutorial/datastructures.rst:732
+#: ../src/Doc/tutorial/datastructures.rst:741
 msgid ""
 "Note that comparing objects of different types is legal.  The outcome is "
 "deterministic but arbitrary: the types are ordered by their name. Thus, a "
@@ -3297,7 +3309,7 @@ msgstr ""
 "numérique, donc 0 est égal à 0.0, etc."
 
 # 9443e810e7df404caf028d0caea7657d
-#: ../src/Doc/tutorial/datastructures.rst:741
+#: ../src/Doc/tutorial/datastructures.rst:750
 msgid ""
 "The rules for comparing objects of different types should not be relied "
 "upon; they may change in a future version of the language."
@@ -4105,11 +4117,11 @@ msgid ""
 "Fortran, and many others) often won't display the exact decimal number you "
 "expect::"
 msgstr ""
-"Le terme :dfn:`Representation error` signifie que la plupart des "
-"fractions décimales ne peuvent être représentées exactement en "
-"binaire. C'est la principale raison pour laquelle Python (ou Perl, C, "
-"C++, Java, Fortran, et beuacoup d'autres) n'affiche habituellement pas "
-"le résultat exact en décimal::"
+"Le terme :dfn:`Representation error` signifie que la plupart des fractions "
+"décimales ne peuvent être représentées exactement en binaire. C'est la "
+"principale raison pour laquelle Python (ou Perl, C, C++, Java, Fortran, et "
+"beuacoup d'autres) n'affiche habituellement pas le résultat exact en "
+"décimal::"
 
 # be0b2bc761654882a6612a05f3ceb463
 #: ../src/Doc/tutorial/floatingpoint.rst:164
@@ -4123,15 +4135,14 @@ msgid ""
 "Rewriting ::"
 msgstr ""
 "Pourquoi ? 1/10 et 2/10 ne sont pas représentable de manière exacte en "
-"fractions binaires. Cependant, toutes les machines d'aujourd'hui "
-"(Juillet 2010) suivent la norme IEEE-754 en ce qui concerne "
-"l'arithmétique des nombres à virgule flottante. et la plupart des "
-"plateformes utilisent un \"IEEE-754 double precision\" pour "
-"représenter les floats de Python. Les \"IEEE-754 double precision\" "
-"utilisent 53 bits de précision, donc a la lecture l'ordinateur essaie "
-"de convertir 0.1 dans la fraction la plus proche possible de la forme "
-"*J*/2**\\ *N* avec *J* un nombre entier d'exactement 53 bits. Réecrire ::"
-
+"fractions binaires. Cependant, toutes les machines d'aujourd'hui (Juillet "
+"2010) suivent la norme IEEE-754 en ce qui concerne l'arithmétique des "
+"nombres à virgule flottante. et la plupart des plateformes utilisent un "
+"\"IEEE-754 double precision\" pour représenter les floats de Python. Les "
+"\"IEEE-754 double precision\" utilisent 53 bits de précision, donc a la "
+"lecture l'ordinateur essaie de convertir 0.1 dans la fraction la plus proche "
+"possible de la forme *J*/2**\\ *N* avec *J* un nombre entier d'exactement 53 "
+"bits. Réecrire ::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:173
 msgid "as ::"
@@ -4142,8 +4153,8 @@ msgid ""
 "and recalling that *J* has exactly 53 bits (is ``>= 2**52`` but ``< "
 "2**53``), the best value for *N* is 56::"
 msgstr ""
-"en se rappelant que *J* fait exactement 53 bits (donc ``>= 2**52`` "
-"mais ``< 2**53``), la meilleur valeur possible pour *N* est 56::"
+"en se rappelant que *J* fait exactement 53 bits (donc ``>= 2**52`` mais ``< "
+"2**53``), la meilleur valeur possible pour *N* est 56::"
 
 # 2e98f1c2739a481cbe0243853a3217af
 #: ../src/Doc/tutorial/floatingpoint.rst:187
@@ -4151,9 +4162,9 @@ msgid ""
 "That is, 56 is the only value for *N* that leaves *J* with exactly 53 bits. "
 "The best possible value for *J* is then that quotient rounded::"
 msgstr ""
-"Donc 56 est la seule valeur possible pour *N* qui laisse exactement 53 "
-"bits pour *J*. La meilleure valeur possible pour *J* est donc ce "
-"quotient, arrondi::"
+"Donc 56 est la seule valeur possible pour *N* qui laisse exactement 53 bits "
+"pour *J*. La meilleure valeur possible pour *J* est donc ce quotient, "
+"arrondi::"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:194
 msgid ""
@@ -4178,19 +4189,19 @@ msgid ""
 "1/10; if we had not rounded up, the quotient would have been a little bit "
 "smaller than 1/10.  But in no case can it be *exactly* 1/10!"
 msgstr ""
-"Notez que puisque l'arrondi a été fait vers le haut, le résultat est "
-"en réalité légèrement plus grand que 1/10; si nous n'avions pas "
-"arrondi par le haut, le quotient aurait été légèrement plus petit que "
-"1/10. Mais dans aucun cas il ne vaut *exactement* 1/10 !"
+"Notez que puisque l'arrondi a été fait vers le haut, le résultat est en "
+"réalité légèrement plus grand que 1/10; si nous n'avions pas arrondi par le "
+"haut, le quotient aurait été légèrement plus petit que 1/10. Mais dans aucun "
+"cas il ne vaut *exactement* 1/10 !"
 
 #: ../src/Doc/tutorial/floatingpoint.rst:209
 msgid ""
 "So the computer never \"sees\" 1/10:  what it sees is the exact fraction "
 "given above, the best 754 double approximation it can get::"
 msgstr ""
-"Donc l'ordinateur ne \"voit\" jamais 1/10: ce qu'il voit est la "
-"fraction exacte donnée ci-dessus, la meilleure approximation utilisant "
-"les nombres à virgule flottante double précision de l'\"IEEE-754\""
+"Donc l'ordinateur ne \"voit\" jamais 1/10: ce qu'il voit est la fraction "
+"exacte donnée ci-dessus, la meilleure approximation utilisant les nombres à "
+"virgule flottante double précision de l'\"IEEE-754\""
 
 # 387b544ab4cc483783898ef3a17eb2ff
 #: ../src/Doc/tutorial/floatingpoint.rst:215
@@ -4198,8 +4209,8 @@ msgid ""
 "If we multiply that fraction by 10\\*\\*30, we can see the (truncated) value "
 "of its 30 most significant decimal digits::"
 msgstr ""
-"Si on multiplie cette fraction par 10\\*\\*30, on peut observer les "
-"valeurs de ses 30 décimales de poid fort."
+"Si on multiplie cette fraction par 10\\*\\*30, on peut observer les valeurs "
+"de ses 30 décimales de poid fort."
 
 # 956b2754e34c462ab54d636a54cbbda9
 #: ../src/Doc/tutorial/floatingpoint.rst:221
@@ -4213,13 +4224,12 @@ msgid ""
 msgstr ""
 "signifiant que la valeur exacte stockée dans l'ordinateur est "
 "approximativement évale à la valeur décimale "
-"0.100000000000000005551115123125. Dans les versions antérieurs à "
-"Python 2.7 et Python 3.1, Python arrondissait ces valeurs à 17 décimales "
-"significatives, affichant '0.10000000000000001'. Dans les versions "
-"actuelles de Python, la valeur affichée est la valeur dont la fraction "
-"est la plus courte possible tout en redonnant exactement la même "
-"représentation une fois reconverti en binaire, affichant simplement "
-"'0.1'."
+"0.100000000000000005551115123125. Dans les versions antérieurs à Python 2.7 "
+"et Python 3.1, Python arrondissait ces valeurs à 17 décimales "
+"significatives, affichant '0.10000000000000001'. Dans les versions actuelles "
+"de Python, la valeur affichée est la valeur dont la fraction est la plus "
+"courte possible tout en redonnant exactement la même représentation une fois "
+"reconverti en binaire, affichant simplement '0.1'."
 
 #: ../src/Doc/tutorial/index.rst:5
 msgid "The Python Tutorial"
@@ -5737,9 +5747,9 @@ msgid ""
 "Besides numbers, Python can also manipulate strings, which can be expressed "
 "in several ways.  They can be enclosed in single quotes or double quotes::"
 msgstr ""
-"Au delà des nombres, Python peut aussi manipuler des chaînes de caractères, qui "
-"peuvent être exprimées de plusieurs façons. Elles peuvent être entourées par des "
-"apostrophes ou des guillemets ::"
+"Au delà des nombres, Python peut aussi manipuler des chaînes de caractères, "
+"qui peuvent être exprimés de différentes manières. Elles peuvent être "
+"écrites entre apostrophes ou entre guillemets."
 
 # 9c733fd1348b4d048794c552b36f40fe
 #: ../src/Doc/tutorial/introduction.rst:180
@@ -5751,12 +5761,12 @@ msgid ""
 "double quotes, else it's enclosed in single quotes.  The :keyword:`print` "
 "statement produces a more readable output for such input strings."
 msgstr ""
-"L'interpréteur affiche le résultat des opérations sur les chaînes de la même façon "
-"qu'elles sont saisies en entrée : entre des apostrophes, avec les apostrophes et "
-"autres caractères spéciaux protégés par des antislashs, pour indiquer la valeur "
-"précise. La chaîne de caractères est entourée de guillemets si elle contient une "
-"apostrophe et pas de guillemet, sinon elle est entourée d'apostrophes. L'instruction "
-":keyword:`print` produit une sortie plus lisible pour de telles chaînes."
+"L'interpréteur affiche les chaînes de caractères de la même manière qu'elles "
+"s'écrivent : entre guillemets et en protégant les guillemets et autres "
+"caractères spéciaux avec des antislash, afin d'afficher une représentation "
+"précise. La chaîne est affichée entre guillemets si elle contient un "
+"guillemet simple mais aucun guillemet, sinon elle est affichée entre "
+"guillemets simples."
 
 #: ../src/Doc/tutorial/introduction.rst:187
 msgid ""
@@ -5774,9 +5784,9 @@ msgid ""
 "the newline following the trailing backslash is discarded.  This example "
 "would print the following:"
 msgstr ""
-"Notez que les caractères de fin de ligne doivent faire partie de la chaîne en "
-"utilisant ``\\n`` -- le saut de ligne suivant le dernier antislash est écarté. Cet "
-"exemple imprimerait ce qui suit :"
+"Notez que les caractères de retour à la ligne sont toujours à écrire en "
+"utilisant ``\\n`` -- la fin de ligne précédée d'un antislash est ignorée. "
+"Cet exemple affichera :"
 
 #: ../src/Doc/tutorial/introduction.rst:208
 msgid ""
@@ -5784,10 +5794,10 @@ msgid ""
 "\"\"\"`` or ``'''``.  End of lines do not need to be escaped when using "
 "triple-quotes, but they will be included in the string. ::"
 msgstr ""
-"Les chaînes de caractères peuvent également être entourées de triples-apostrophes "
-"ou de triples-guillemets : ``'''`` or ``\"\"\"``. Les fins de lignes n'ont pas "
-"besoin d'être protégées lorsque vous utilisez des triples-guillemets, mais elles "
-"seront intégrées dans la chaîne ::"
+"Aussi, les chaînes de caractères peuvent être entourées de trois guillemets "
+"``\"\"\"`` ou ``'''``. Il n'est pas nécessaire de protéger avec un antislash "
+"les fins de lignes en utilisant les triple guillemets, mais il seront inclus "
+"dans la chaîne."
 
 #: ../src/Doc/tutorial/introduction.rst:218
 msgid "produces the following output:"
@@ -5800,11 +5810,10 @@ msgid ""
 "newline character in the source, are both included in the string as data.  "
 "Thus, the example::"
 msgstr ""
-"En utilisant une chaîne de caractère brute, (\"raw\" string), les "
-"séquence d'échappement``\\n`` ne sont pas convertis en retour à la "
-"ligne, mais l'antislash en fin de ligne et le retour à la ligne "
-"présent dans le code source sont tous les deux inclus dans la chaîne "
-"de caractère. Par exemple::"
+"En utilisant une chaîne de caractère brute, (\"raw\" string), les séquence "
+"d'échappement``\\n`` ne sont pas convertis en retour à la ligne, mais "
+"l'antislash en fin de ligne et le retour à la ligne présent dans le code "
+"source sont tous les deux inclus dans la chaîne de caractère. Par exemple::"
 
 #: ../src/Doc/tutorial/introduction.rst:235
 msgid "would print:"
@@ -5815,8 +5824,8 @@ msgid ""
 "Strings can be concatenated (glued together) with the ``+`` operator, and "
 "repeated with ``*``::"
 msgstr ""
-"Les chaines peuvent être concaténées (collées ensemble) avec "
-"l'opérateur ``+``, et répétées avec l'opérateur ``*``::"
+"Les chaines peuvent être concaténées (collées ensemble) avec l'opérateur ``"
+"+``, et répétées avec l'opérateur ``*``::"
 
 #: ../src/Doc/tutorial/introduction.rst:251
 msgid ""
@@ -5950,6 +5959,11 @@ msgstr ""
 msgid "The built-in function :func:`len` returns the length of a string::"
 msgstr "La fonction native :func:`len` renvoie la longue d'une chaîne ::"
 
+# 0eb2c14eac424a05af3c5dd19732a132
+#: ../src/Doc/tutorial/introduction.rst:381
+msgid ":ref:`typesseq`"
+msgstr ""
+
 # dc94a4264e3a4a0fa21b4f0848b59ea8
 #: ../src/Doc/tutorial/introduction.rst:380
 msgid ""
@@ -5961,6 +5975,11 @@ msgstr ""
 "section, sont des exemples de *types de séquences*, et supportent donc les "
 "opérations classiques prises en charge par ces types."
 
+# 33023ea434814001bef16f2efe37b113
+#: ../src/Doc/tutorial/introduction.rst:385
+msgid ":ref:`string-methods`"
+msgstr ""
+
 # 0e3c9c88390d40f8b435ceca2e3e5fa2
 #: ../src/Doc/tutorial/introduction.rst:385
 msgid ""
@@ -5971,11 +5990,21 @@ msgstr ""
 "large éventail de méthodes de transformations basiques et de recherche."
 
 #: ../src/Doc/tutorial/introduction.rst:389
+#, fuzzy
+msgid ":ref:`new-string-formatting`"
+msgstr "Anciennes méthodes de formatage de chaînes"
+
+#: ../src/Doc/tutorial/introduction.rst:389
 msgid ""
 "Information about string formatting with :meth:`str.format` is described "
 "here."
 msgstr ""
 "Le formatage des chaînes avec la méthode :meth:`str.format` est décrit ici."
+
+#: ../src/Doc/tutorial/introduction.rst:392
+#, fuzzy
+msgid ":ref:`string-formatting`"
+msgstr "Anciennes méthodes de formatage de chaînes"
 
 #: ../src/Doc/tutorial/introduction.rst:393
 msgid ""
@@ -6645,29 +6674,29 @@ msgid ""
 "defines.  It returns a sorted list of strings::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:297
+#: ../src/Doc/tutorial/modules.rst:302
 msgid ""
 "Without arguments, :func:`dir` lists the names you have defined currently::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:305
+#: ../src/Doc/tutorial/modules.rst:310
 msgid ""
 "Note that it lists all types of names: variables, modules, functions, etc."
 msgstr ""
 
 # 38ddad117ec74e9885481c252bed3daf
-#: ../src/Doc/tutorial/modules.rst:309
+#: ../src/Doc/tutorial/modules.rst:314
 msgid ""
 ":func:`dir` does not list the names of built-in functions and variables.  If "
 "you want a list of those, they are defined in the standard module :mod:"
 "`__builtin__`::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:344
+#: ../src/Doc/tutorial/modules.rst:351
 msgid "Packages"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:346
+#: ../src/Doc/tutorial/modules.rst:353
 msgid ""
 "Packages are a way of structuring Python's module namespace by using "
 "\"dotted module names\".  For example, the module name :mod:`A.B` designates "
@@ -6678,7 +6707,7 @@ msgid ""
 "from having to worry about each other's module names."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:354
+#: ../src/Doc/tutorial/modules.rst:361
 msgid ""
 "Suppose you want to design a collection of modules (a \"package\") for the "
 "uniform handling of sound files and sound data.  There are many different "
@@ -6693,13 +6722,13 @@ msgid ""
 "terms of a hierarchical filesystem)::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:389
+#: ../src/Doc/tutorial/modules.rst:396
 msgid ""
 "When importing the package, Python searches through the directories on ``sys."
 "path`` looking for the package subdirectory."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:392
+#: ../src/Doc/tutorial/modules.rst:399
 msgid ""
 "The :file:`__init__.py` files are required to make Python treat the "
 "directories as containing packages; this is done to prevent directories with "
@@ -6710,41 +6739,41 @@ msgid ""
 "described later."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:399
+#: ../src/Doc/tutorial/modules.rst:406
 msgid ""
 "Users of the package can import individual modules from the package, for "
 "example::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:404
+#: ../src/Doc/tutorial/modules.rst:411
 msgid ""
 "This loads the submodule :mod:`sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:409
+#: ../src/Doc/tutorial/modules.rst:416
 msgid "An alternative way of importing the submodule is::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:413
+#: ../src/Doc/tutorial/modules.rst:420
 msgid ""
 "This also loads the submodule :mod:`echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:418
+#: ../src/Doc/tutorial/modules.rst:425
 msgid ""
 "Yet another variation is to import the desired function or variable "
 "directly::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:422
+#: ../src/Doc/tutorial/modules.rst:429
 msgid ""
 "Again, this loads the submodule :mod:`echo`, but this makes its function :"
 "func:`echofilter` directly available::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:427
+#: ../src/Doc/tutorial/modules.rst:434
 msgid ""
 "Note that when using ``from package import item``, the item can be either a "
 "submodule (or subpackage) of the package, or some  other name defined in the "
@@ -6754,7 +6783,7 @@ msgid ""
 "`ImportError` exception is raised."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:434
+#: ../src/Doc/tutorial/modules.rst:441
 msgid ""
 "Contrarily, when using syntax like ``import item.subitem.subsubitem``, each "
 "item except for the last must be a package; the last item can be a module or "
@@ -6762,11 +6791,11 @@ msgid ""
 "previous item."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:443
+#: ../src/Doc/tutorial/modules.rst:450
 msgid "Importing \\* From a Package"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:447
+#: ../src/Doc/tutorial/modules.rst:454
 msgid ""
 "Now what happens when the user writes ``from sound.effects import *``?  "
 "Ideally, one would hope that this somehow goes out to the filesystem, finds "
@@ -6775,7 +6804,7 @@ msgid ""
 "effects that should only happen when the sub-module is explicitly imported."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:453
+#: ../src/Doc/tutorial/modules.rst:460
 msgid ""
 "The only solution is for the package author to provide an explicit index of "
 "the package.  The :keyword:`import` statement uses the following convention: "
@@ -6788,13 +6817,13 @@ msgid ""
 "effects/__init__.py` could contain the following code::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:465
+#: ../src/Doc/tutorial/modules.rst:472
 msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
 "named submodules of the :mod:`sound` package."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:468
+#: ../src/Doc/tutorial/modules.rst:475
 msgid ""
 "If ``__all__`` is not defined, the statement ``from sound.effects import *`` "
 "does *not* import all submodules from the package :mod:`sound.effects` into "
@@ -6807,7 +6836,7 @@ msgid ""
 "code::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:481
+#: ../src/Doc/tutorial/modules.rst:488
 msgid ""
 "In this example, the :mod:`echo` and :mod:`surround` modules are imported in "
 "the current namespace because they are defined in the :mod:`sound.effects` "
@@ -6815,14 +6844,14 @@ msgid ""
 "when ``__all__`` is defined.)"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:486
+#: ../src/Doc/tutorial/modules.rst:493
 msgid ""
 "Although certain modules are designed to export only names that follow "
 "certain patterns when you use ``import *``, it is still considered bad "
 "practise in production code."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:490
+#: ../src/Doc/tutorial/modules.rst:497
 msgid ""
 "Remember, there is nothing wrong with using ``from Package import "
 "specific_submodule``!  In fact, this is the recommended notation unless the "
@@ -6830,12 +6859,12 @@ msgid ""
 "packages."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:497
+#: ../src/Doc/tutorial/modules.rst:504
 msgid "Intra-package References"
 msgstr ""
 
 # 20ba5d3273454eefa50529336214baa5
-#: ../src/Doc/tutorial/modules.rst:499
+#: ../src/Doc/tutorial/modules.rst:506
 msgid ""
 "The submodules often need to refer to each other.  For example, the :mod:"
 "`surround` module might use the :mod:`echo` module.  In fact, such "
@@ -6848,7 +6877,7 @@ msgid ""
 "name."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:508
+#: ../src/Doc/tutorial/modules.rst:515
 msgid ""
 "When packages are structured into subpackages (as with the :mod:`sound` "
 "package in the example), you can use absolute imports to refer to submodules "
@@ -6858,7 +6887,7 @@ msgid ""
 msgstr ""
 
 # 82c84536e5f94eb8ad4f365cde80af40
-#: ../src/Doc/tutorial/modules.rst:514
+#: ../src/Doc/tutorial/modules.rst:521
 msgid ""
 "Starting with Python 2.5, in addition to the implicit relative imports "
 "described above, you can write explicit relative imports with the ``from "
@@ -6869,7 +6898,7 @@ msgid ""
 msgstr ""
 
 # 0a545e217ccb4074a3817733279c812b
-#: ../src/Doc/tutorial/modules.rst:524
+#: ../src/Doc/tutorial/modules.rst:531
 msgid ""
 "Note that both explicit and implicit relative imports are based on the name "
 "of the current module. Since the name of the main module is always ``"
@@ -6877,11 +6906,11 @@ msgid ""
 "application should always use absolute imports."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:531
+#: ../src/Doc/tutorial/modules.rst:538
 msgid "Packages in Multiple Directories"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:533
+#: ../src/Doc/tutorial/modules.rst:540
 msgid ""
 "Packages support one more special attribute, :attr:`__path__`.  This is "
 "initialized to be a list containing the name of the directory holding the "
@@ -6890,13 +6919,13 @@ msgid ""
 "and subpackages contained in the package."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:539
+#: ../src/Doc/tutorial/modules.rst:546
 msgid ""
 "While this feature is not often needed, it can be used to extend the set of "
 "modules found in a package."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:545
+#: ../src/Doc/tutorial/modules.rst:552
 msgid ""
 "In fact function definitions are also 'statements' that are 'executed'; the "
 "execution of a module-level function enters the function name in the "
@@ -7527,6 +7556,7 @@ msgid ""
 "Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 msgstr ""
 
+# fba35de8bfaa4de4990c57775317239c
 #: ../src/Doc/tutorial/whatnow.rst:51
 msgid ""
 "For Python-related questions and problem reports, you can post to the "
@@ -7535,13 +7565,22 @@ msgid ""
 "messages posted to one will automatically be forwarded to the other.  There "
 "are around 120 postings a day (with peaks up to several hundred), asking "
 "(and answering) questions, suggesting new features, and announcing new "
-"modules. Before posting, be sure to check the list of `Frequently Asked "
-"Questions <http://www.python.org/doc/faq/>`_ (also called the FAQ), or look "
-"for it in the :file:`Misc/` directory of the Python source distribution.  "
-"Mailing list archives are available at http://mail.python.org/pipermail/. "
-"The FAQ answers many of the questions that come up again and again, and may "
-"already contain the solution for your problem."
+"modules. Before posting, be sure to check the list of :ref:`Frequently Asked "
+"Questions <faq-index>` (also called the FAQ).  Mailing list archives are "
+"available at http://mail.python.org/pipermail/. The FAQ answers many of the "
+"questions that come up again and again, and may already contain the solution "
+"for your problem."
 msgstr ""
+
+# c6ce45f20f7743deb76e188301a62651
+#~ msgid ""
+#~ "Later in the tutorial, we will learn about Generator Expressions which "
+#~ "are even better suited for the task of supplying key-values pairs to the :"
+#~ "func:`dict` constructor."
+#~ msgstr ""
+#~ "Plus loin dans ce tutoriel, vous en apprendez plus sur les générateurs "
+#~ "qui sont encore plus adaptés à cette tâche consistant à fournir des "
+#~ "paires de clés-valeurs au constructeur :func:`dict`."
 
 #~ msgid "|version|"
 #~ msgstr "|version|"

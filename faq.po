@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-05 09:33\n"
+"POT-Creation-Date: 2012-11-20 04:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2743,7 +2743,7 @@ msgid ""
 "it (but not for labels; see the takefocus option)."
 msgstr ""
 
-#: ../src/Doc/faq/index.rst:3
+#: ../src/Doc/faq/index.rst:5
 msgid "Python Frequently Asked Questions"
 msgstr ""
 

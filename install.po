@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-05 09:33\n"
+"POT-Creation-Date: 2012-11-20 04:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1558,10 +1558,23 @@ msgid ""
 "Distutils (see section :ref:`inst-config-files`.)"
 msgstr ""
 
+# 2c9a68b75dc540cea7359efce94e2e08
+#: ../src/Doc/install/index.rst:1001
+msgid ""
+"`C++Builder Compiler <http://www.codegear.com/downloads/free/cppbuilder>`_"
+msgstr ""
+
 #: ../src/Doc/install/index.rst:1001
 msgid ""
 "Information about the free C++ compiler from Borland, including links to the "
 "download pages."
+msgstr ""
+
+# 0d82710261f94ebe8bd82a8a381ddec6
+#: ../src/Doc/install/index.rst:1004
+msgid ""
+"`Creating Python Extensions Using Borland's Free Compiler <http://www."
+"cyberus.ca/~g_will/pyExtenDL.shtml>`_"
 msgstr ""
 
 #: ../src/Doc/install/index.rst:1005
@@ -1656,6 +1669,13 @@ msgid ""
 "If your extension uses other libraries (zlib,...) you might  have to convert "
 "them too. The converted files have to reside in the same directories as the "
 "normal libraries do."
+msgstr ""
+
+# 35ae7e3fe6014a46bfd30d216592ddfc
+#: ../src/Doc/install/index.rst:1071
+msgid ""
+"`Building Python modules on MS Windows platform with MinGW <http://www.zope."
+"org/Members/als/tips/win32_mingw_modules>`_"
 msgstr ""
 
 #: ../src/Doc/install/index.rst:1073

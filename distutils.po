@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-05 09:33\n"
+"POT-Creation-Date: 2012-11-20 04:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3445,6 +3445,11 @@ msgid ""
 "string split across multiple lines for readability."
 msgstr ""
 
+# 2ca284a78b92452f8d215fd92d40afac
+#: ../src/Doc/distutils/configfile.rst:121
+msgid ":ref:`inst-config-syntax` in \"Installing Python Modules\""
+msgstr ""
+
 #: ../src/Doc/distutils/configfile.rst:122
 msgid ""
 "More information on the configuration files is available in the manual for "
@@ -3470,6 +3475,11 @@ msgid ""
 "This chapter provides a number of basic examples to help get started with "
 "distutils.  Additional information about using distutils can be found in the "
 "Distutils Cookbook."
+msgstr ""
+
+# 6d34bc9c3a1f4dd99ac6ed9c8f201b29
+#: ../src/Doc/distutils/examples.rst:13
+msgid "`Distutils Cookbook <http://wiki.python.org/moin/Distutils/Cookbook>`_"
 msgstr ""
 
 #: ../src/Doc/distutils/examples.rst:15
@@ -3979,11 +3989,21 @@ msgid ""
 "glossary of common Python terms:"
 msgstr ""
 
+#: ../src/Doc/distutils/introduction.rst:154
+#, fuzzy
+msgid "module"
+msgstr "*py_modules*"
+
 #: ../src/Doc/distutils/introduction.rst:153
 msgid ""
 "the basic unit of code reusability in Python: a block of code imported by "
 "some other code.  Three types of modules concern us here: pure Python "
 "modules, extension modules, and packages."
+msgstr ""
+
+# d9d285c22c5948ad976b061d21affbc1
+#: ../src/Doc/distutils/introduction.rst:159
+msgid "pure Python module"
 msgstr ""
 
 #: ../src/Doc/distutils/introduction.rst:158
@@ -3992,6 +4012,11 @@ msgid ""
 "possibly associated :file:`.pyc` and/or :file:`.pyo` files).  Sometimes "
 "referred to as a \"pure module.\""
 msgstr ""
+
+#: ../src/Doc/distutils/introduction.rst:167
+#, fuzzy
+msgid "extension module"
+msgstr "*ext_modules*"
 
 #: ../src/Doc/distutils/introduction.rst:163
 msgid ""
@@ -4004,12 +4029,22 @@ msgid ""
 "Python.)"
 msgstr ""
 
+#: ../src/Doc/distutils/introduction.rst:172
+#, fuzzy
+msgid "package"
+msgstr "*packages*"
+
 #: ../src/Doc/distutils/introduction.rst:171
 msgid ""
 "a module that contains other modules; typically contained in a directory in "
 "the filesystem and distinguished from other directories by the presence of a "
 "file :file:`__init__.py`."
 msgstr ""
+
+#: ../src/Doc/distutils/introduction.rst:182
+#, fuzzy
+msgid "root package"
+msgstr "*packages*"
 
 #: ../src/Doc/distutils/introduction.rst:176
 msgid ""
@@ -4032,6 +4067,11 @@ msgid ""
 "Python modules using the Distutils:"
 msgstr ""
 
+#: ../src/Doc/distutils/introduction.rst:198
+#, fuzzy
+msgid "module distribution"
+msgstr "description"
+
 #: ../src/Doc/distutils/introduction.rst:194
 msgid ""
 "a collection of Python modules distributed together as a single downloadable "
@@ -4042,16 +4082,31 @@ msgid ""
 "contain zero, one, or many Python packages.)"
 msgstr ""
 
+# 7267d0b36e23419bb39fe11267f84f40
+#: ../src/Doc/distutils/introduction.rst:202
+msgid "pure module distribution"
+msgstr ""
+
 #: ../src/Doc/distutils/introduction.rst:202
 msgid ""
 "a module distribution that contains only pure Python modules and packages. "
 "Sometimes referred to as a \"pure distribution.\""
 msgstr ""
 
+# f464f5fe8060490b8e8a9275ddbf7157
+#: ../src/Doc/distutils/introduction.rst:206
+msgid "non-pure module distribution"
+msgstr ""
+
 #: ../src/Doc/distutils/introduction.rst:206
 msgid ""
 "a module distribution that contains at least one extension module.  "
 "Sometimes referred to as a \"non-pure distribution.\""
+msgstr ""
+
+# 4b6971acca6b4943a8bd06190cdf1c5c
+#: ../src/Doc/distutils/introduction.rst:212
+msgid "distribution root"
 msgstr ""
 
 #: ../src/Doc/distutils/introduction.rst:210
@@ -4115,11 +4170,12 @@ msgid ""
 "designate other Owners or Maintainers."
 msgstr ""
 
+# 4e954f4ee11e48688a86ebedf65e1fd1
 #: ../src/Doc/distutils/packageindex.rst:46
 msgid ""
-"By default PyPI will list all versions of a given package. To hide certain "
-"versions, the Hidden property should be set to yes. This must be edited "
-"through the web interface."
+"By default PyPI displays only the newest version of a given package. The web "
+"interface lets one change this default behavior and manually select which "
+"versions to display and hide."
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:54
@@ -4140,12 +4196,22 @@ msgstr ""
 msgid "Each section describing a repository defines three variables:"
 msgstr ""
 
+# fbdb8f39e3794116834764205597ef1e
+#: ../src/Doc/distutils/packageindex.rst:71
+msgid "*repository*, that defines the url of the PyPI server. Defaults to"
+msgstr ""
+
 #: ../src/Doc/distutils/packageindex.rst:73
 msgid "``http://www.python.org/pypi``."
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:74
 msgid "*username*, which is the registered username on the PyPI server."
+msgstr ""
+
+# 5f905574e8ff42d4affadb2135f39b63
+#: ../src/Doc/distutils/packageindex.rst:75
+msgid "*password*, that will be used to authenticate. If omitted the user"
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:76
@@ -5015,15 +5081,30 @@ msgid ""
 "option which is deprecated but still acts as an alias for ``license``."
 msgstr ""
 
+#: ../src/Doc/distutils/setupscript.rst:619
+#, fuzzy
+msgid "'short string'"
+msgstr "une chaîne de caractères"
+
 #: ../src/Doc/distutils/setupscript.rst:620
 msgid "A single line of text, not more than 200 characters."
 msgstr ""
+
+#: ../src/Doc/distutils/setupscript.rst:623
+#, fuzzy
+msgid "'long string'"
+msgstr "une chaîne de caractères"
 
 #: ../src/Doc/distutils/setupscript.rst:623
 msgid ""
 "Multiple lines of plain text in reStructuredText format (see http://docutils."
 "sf.net/)."
 msgstr ""
+
+#: ../src/Doc/distutils/setupscript.rst:626
+#, fuzzy
+msgid "'list of strings'"
+msgstr "une liste de chaînes"
 
 #: ../src/Doc/distutils/setupscript.rst:627
 msgid "See below."
@@ -5049,8 +5130,18 @@ msgid ""
 "testing). Some examples:"
 msgstr ""
 
+# 0de9f3525ca64e98a6edf0bdd347d253
+#: ../src/Doc/distutils/setupscript.rst:642
+msgid "0.1.0"
+msgstr ""
+
 #: ../src/Doc/distutils/setupscript.rst:643
 msgid "the first, experimental release of a package"
+msgstr ""
+
+# fe4ed80664034b97a21415110d9ee93a
+#: ../src/Doc/distutils/setupscript.rst:645
+msgid "1.0.1a2"
 msgstr ""
 
 #: ../src/Doc/distutils/setupscript.rst:646
