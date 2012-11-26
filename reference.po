@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-20 04:15\n"
+"POT-Creation-Date: 2012-11-26 04:02\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -564,7 +564,7 @@ msgstr ""
 #: ../src/Doc/reference/executionmodel.rst:244
 #: ../src/Doc/reference/expressions.rst:1399
 #: ../src/Doc/reference/lexical_analysis.rst:762
-#: ../src/Doc/reference/simple_stmts.rst:1025
+#: ../src/Doc/reference/simple_stmts.rst:1032
 msgid "Footnotes"
 msgstr ""
 
@@ -7408,33 +7408,44 @@ msgstr ""
 #: ../src/Doc/reference/simple_stmts.rst:980
 msgid ""
 "This statement supports dynamic execution of Python code.  The first "
-"expression should evaluate to either a string, an open file object, or a "
-"code object.  If it is a string, the string is parsed as a suite of Python "
-"statements which is then executed (unless a syntax error occurs). [#]_  If "
-"it is an open file, the file is parsed until EOF and executed.  If it is a "
-"code object, it is simply executed.  In all cases, the code that's executed "
-"is expected to be valid as file input (see section :ref:`file-input`).  Be "
-"aware that the :keyword:`return` and :keyword:`yield` statements may not be "
-"used outside of function definitions even within the context of code passed "
-"to the :keyword:`exec` statement."
+"expression should evaluate to either a string, an open file object, a code "
+"object, or a tuple.  If it is a string, the string is parsed as a suite of "
+"Python statements which is then executed (unless a syntax error occurs). [#]"
+"_ If it is an open file, the file is parsed until EOF and executed.  If it "
+"is a code object, it is simply executed.  For the interpretation of a tuple, "
+"see below.  In all cases, the code that's executed is expected to be valid "
+"as file input (see section :ref:`file-input`).  Be aware that the :keyword:"
+"`return` and :keyword:`yield` statements may not be used outside of function "
+"definitions even within the context of code passed to the :keyword:`exec` "
+"statement."
 msgstr ""
 
 # f0828d0af701479fab300daddedd635d
 #: ../src/Doc/reference/simple_stmts.rst:991
 msgid ""
 "In all cases, if the optional parts are omitted, the code is executed in the "
-"current scope.  If only the first expression after :keyword:`in` is "
-"specified, it should be a dictionary, which will be used for both the global "
-"and the local variables.  If two expressions are given, they are used for "
-"the global and local variables, respectively. If provided, *locals* can be "
-"any mapping object. Remember that at module level, globals and locals are "
-"the same dictionary. If two separate objects are given as *globals* and "
-"*locals*, the code will be executed as if it were embedded in a class "
-"definition."
+"current scope.  If only the first expression after ``in`` is specified, it "
+"should be a dictionary, which will be used for both the global and the local "
+"variables.  If two expressions are given, they are used for the global and "
+"local variables, respectively. If provided, *locals* can be any mapping "
+"object. Remember that at module level, globals and locals are the same "
+"dictionary. If two separate objects are given as *globals* and *locals*, the "
+"code will be executed as if it were embedded in a class definition."
+msgstr ""
+
+# 1cff2ae708b0433a9a8044ce64b39161
+#: ../src/Doc/reference/simple_stmts.rst:1000
+msgid ""
+"The first expression may also be a tuple of length 2 or 3.  In this case, "
+"the optional parts must be omitted.  The form ``exec(expr, globals)`` is "
+"equivalent to ``exec expr in globals``, while the form ``exec(expr, globals, "
+"locals)`` is equivalent to ``exec expr in globals, locals``.  The tuple form "
+"of ``exec`` provides compatibility with Python 3, where ``exec`` is a "
+"function rather than a statement."
 msgstr ""
 
 # ebbde66720cc45048971fc5b8015c0e4
-#: ../src/Doc/reference/simple_stmts.rst:1007
+#: ../src/Doc/reference/simple_stmts.rst:1014
 msgid ""
 "As a side effect, an implementation may insert additional keys into the "
 "dictionaries given besides those corresponding to variable names set by the "
@@ -7444,7 +7455,7 @@ msgid ""
 msgstr ""
 
 # b456d3574ec64cf2be1ebe2020fb3965
-#: ../src/Doc/reference/simple_stmts.rst:1018
+#: ../src/Doc/reference/simple_stmts.rst:1025
 msgid ""
 "**Programmer's hints:** dynamic evaluation of expressions is supported by "
 "the built-in function :func:`eval`.  The built-in functions :func:`globals` "
@@ -7453,7 +7464,7 @@ msgid ""
 msgstr ""
 
 # 08f09bb71682460cb2234c2f7b4da781
-#: ../src/Doc/reference/simple_stmts.rst:1026
+#: ../src/Doc/reference/simple_stmts.rst:1033
 msgid ""
 "Note that the parser only accepts the Unix-style end of line convention. If "
 "you are reading the code from a file, make sure to use :term:`universal "
