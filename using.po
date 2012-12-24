@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-20 04:15\n"
+"POT-Creation-Date: 2012-12-24 04:26\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1724,11 +1724,11 @@ msgid ""
 "environment settings in Windows."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:88
+#: ../src/Doc/using/windows.rst:90
 msgid "Excursus: Setting environment variables"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:90
+#: ../src/Doc/using/windows.rst:92
 msgid ""
 "Windows has a built-in dialog for changing environment variables (following "
 "guide applies to XP classical view): Right-click the icon for your machine "
@@ -1737,79 +1737,79 @@ msgid ""
 "and click the :guilabel:`Environment Variables` button."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:96
+#: ../src/Doc/using/windows.rst:98
 msgid "In short, your path is:"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:98
+#: ../src/Doc/using/windows.rst:100
 msgid ""
 ":menuselection:`My Computer --> Properties --> Advanced --> Environment "
 "Variables`"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:103
+#: ../src/Doc/using/windows.rst:105
 msgid ""
 "In this dialog, you can add or modify User and System variables. To change "
 "System variables, you need non-restricted access to your machine (i.e. "
 "Administrator rights)."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:107
+#: ../src/Doc/using/windows.rst:109
 msgid ""
 "Another way of adding variables to your environment is using the :command:"
 "`set` command::"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:112
+#: ../src/Doc/using/windows.rst:114
 msgid ""
 "To make this setting permanent, you could add the corresponding command line "
 "to your :file:`autoexec.bat`. :program:`msconfig` is a graphical interface "
 "to this file."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:116
+#: ../src/Doc/using/windows.rst:118
 msgid ""
 "Viewing environment variables can also be done more straight-forward: The "
 "command prompt will expand strings wrapped into percent signs automatically::"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:121
+#: ../src/Doc/using/windows.rst:123
 msgid "Consult :command:`set /?` for details on this behaviour."
 msgstr ""
 
 # f27a39988dce4915a7680111e321c4ad
-#: ../src/Doc/using/windows.rst:125
+#: ../src/Doc/using/windows.rst:127
 msgid "http://support.microsoft.com/kb/100843"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:126
+#: ../src/Doc/using/windows.rst:128
 msgid "Environment variables in Windows NT"
 msgstr ""
 
 # ceb27994c13f488496bdd49ee26e1403
-#: ../src/Doc/using/windows.rst:128
+#: ../src/Doc/using/windows.rst:130
 msgid "http://support.microsoft.com/kb/310519"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:129
+#: ../src/Doc/using/windows.rst:131
 msgid "How To Manage Environment Variables in Windows XP"
 msgstr "Comment gérer les variables d'environnement sous Windows XP"
 
 # 38b6a251eda149c990482bc41456e844
-#: ../src/Doc/using/windows.rst:130
+#: ../src/Doc/using/windows.rst:132
 msgid "http://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:132
+#: ../src/Doc/using/windows.rst:134
 msgid "Setting Environment variables, Louis J. Farrugia"
 msgstr "Définir les variables d'environnement, Louis J. Farrugia"
 
-#: ../src/Doc/using/windows.rst:136
+#: ../src/Doc/using/windows.rst:138
 #, fuzzy
 msgid "Finding the Python executable"
 msgstr "Trouver l'exécutable Python"
 
-#: ../src/Doc/using/windows.rst:138
+#: ../src/Doc/using/windows.rst:140
 msgid ""
 "Besides using the automatically created start menu entry for the Python "
 "interpreter, you might want to start Python in the DOS prompt.  To make this "
@@ -1819,18 +1819,18 @@ msgid ""
 "two entries are Windows' default)::"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:147
+#: ../src/Doc/using/windows.rst:149
 msgid ""
 "Typing :command:`python` on your command prompt will now fire up the Python "
 "interpreter.  Thus, you can also execute your scripts with command line "
 "options, see :ref:`using-on-cmdline` documentation."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:153
+#: ../src/Doc/using/windows.rst:155
 msgid "Finding modules"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:155
+#: ../src/Doc/using/windows.rst:157
 msgid ""
 "Python usually stores its library (and thereby your site-packages folder) in "
 "the installation directory.  So, if you had installed Python to :file:`C:\\"
@@ -1840,19 +1840,19 @@ msgid ""
 msgstr ""
 
 # 5ce8cfccfd0f44bda111f684ac7327cc
-#: ../src/Doc/using/windows.rst:161
+#: ../src/Doc/using/windows.rst:163
 msgid "This is how :data:`sys.path` is populated on Windows:"
 msgstr ""
 
 # fe49b0aeeafb42278c433024490a1ffc
-#: ../src/Doc/using/windows.rst:163
+#: ../src/Doc/using/windows.rst:165
 msgid ""
 "An empty entry is added at the start, which corresponds to the current "
 "directory."
 msgstr ""
 
 # dbfbb2619a08466d9b20d9f2936f0856
-#: ../src/Doc/using/windows.rst:166
+#: ../src/Doc/using/windows.rst:168
 msgid ""
 "If the environment variable :envvar:`PYTHONPATH` exists, as described in :"
 "ref:`using-on-envvars`, its entries are added next.  Note that on Windows, "
@@ -1861,7 +1861,7 @@ msgid ""
 msgstr ""
 
 # 641ef8611f9a48b1a37c996e041969fe
-#: ../src/Doc/using/windows.rst:171
+#: ../src/Doc/using/windows.rst:173
 msgid ""
 "Additional \"application paths\" can be added in the registry as subkeys of :"
 "samp:`\\\\SOFTWARE\\\\Python\\\\PythonCore\\\\{version}\\\\PythonPath` under "
@@ -1872,7 +1872,7 @@ msgid ""
 msgstr ""
 
 # 3cac81246ad74a92839bfdef1f7b7fa8
-#: ../src/Doc/using/windows.rst:178
+#: ../src/Doc/using/windows.rst:180
 msgid ""
 "If the environment variable :envvar:`PYTHONHOME` is set, it is assumed as "
 "\"Python Home\".  Otherwise, the path of the main Python executable is used "
@@ -1884,7 +1884,7 @@ msgid ""
 msgstr ""
 
 # 1833a089d70047009f7f3796503b3633
-#: ../src/Doc/using/windows.rst:185
+#: ../src/Doc/using/windows.rst:187
 msgid ""
 "If the Python Home cannot be located, no :envvar:`PYTHONPATH` is specified "
 "in the environment, and no registry entries can be found, a default path "
@@ -1892,12 +1892,12 @@ msgid ""
 msgstr ""
 
 # 5476dc9169b24f9bb6eea71e72cfcbdd
-#: ../src/Doc/using/windows.rst:189
+#: ../src/Doc/using/windows.rst:191
 msgid "The end result of all this is:"
 msgstr ""
 
 # 4f0c01f99cf84cf5bc940b2a1722a183
-#: ../src/Doc/using/windows.rst:191
+#: ../src/Doc/using/windows.rst:193
 msgid ""
 "When running :file:`python.exe`, or any other .exe in the main Python "
 "directory (either an installed version, or directly from the PCbuild "
@@ -1906,7 +1906,7 @@ msgid ""
 msgstr ""
 
 # 50ea23f74be043c995a590392a2b3b05
-#: ../src/Doc/using/windows.rst:196
+#: ../src/Doc/using/windows.rst:198
 msgid ""
 "When Python is hosted in another .exe (different directory, embedded via "
 "COM, etc), the \"Python Home\" will not be deduced, so the core path from "
@@ -1915,18 +1915,18 @@ msgid ""
 msgstr ""
 
 # 8c6cd36c521d4271996308a41608b540
-#: ../src/Doc/using/windows.rst:200
+#: ../src/Doc/using/windows.rst:202
 msgid ""
 "If Python can't find its home and there is no registry (eg, frozen .exe, "
 "some very strange installation setup) you get a path with some default, but "
 "relative, paths."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:206
+#: ../src/Doc/using/windows.rst:208
 msgid "Executing scripts"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:208
+#: ../src/Doc/using/windows.rst:210
 msgid ""
 "Python scripts (files with the extension ``.py``) will be executed by :"
 "program:`python.exe` by default.  This executable opens a terminal, which "
@@ -1937,47 +1937,47 @@ msgid ""
 "the terminal window on startup."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:216
+#: ../src/Doc/using/windows.rst:218
 msgid ""
 "You can also make all ``.py`` scripts execute with :program:`pythonw.exe`, "
 "setting this through the usual facilities, for example (might require "
 "administrative rights):"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:220
+#: ../src/Doc/using/windows.rst:222
 msgid "Launch a command prompt."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:221
+#: ../src/Doc/using/windows.rst:223
 msgid "Associate the correct file group with ``.py`` scripts::"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:225
+#: ../src/Doc/using/windows.rst:227
 msgid "Redirect all Python files to the new executable::"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:231
+#: ../src/Doc/using/windows.rst:233
 msgid "Additional modules"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:233
+#: ../src/Doc/using/windows.rst:235
 msgid ""
 "Even though Python aims to be portable among all platforms, there are "
 "features that are unique to Windows.  A couple of modules, both in the "
 "standard library and external, and snippets exist to use these features."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:237
+#: ../src/Doc/using/windows.rst:239
 msgid ""
 "The Windows-specific standard modules are documented in :ref:`mswin-specific-"
 "services`."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:242
+#: ../src/Doc/using/windows.rst:244
 msgid "PyWin32"
 msgstr "PyWin32"
 
-#: ../src/Doc/using/windows.rst:244
+#: ../src/Doc/using/windows.rst:246
 msgid ""
 "The `PyWin32 <http://python.net/crew/mhammond/win32/>`_ module by Mark "
 "Hammond is a collection of modules for advanced Windows-specific support.  "
@@ -1987,25 +1987,25 @@ msgstr ""
 "Hammond est une collection de modules pour un support avancé spécifique à "
 "Windows.  Cela inclut les services pour :"
 
-#: ../src/Doc/using/windows.rst:248
+#: ../src/Doc/using/windows.rst:250
 msgid "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
 msgstr "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
 
-#: ../src/Doc/using/windows.rst:249
+#: ../src/Doc/using/windows.rst:251
 msgid "Win32 API calls"
 msgstr "Appels à l'API Win32"
 
-#: ../src/Doc/using/windows.rst:250
+#: ../src/Doc/using/windows.rst:252
 #, fuzzy
 msgid "Registry"
 msgstr "Registre"
 
-#: ../src/Doc/using/windows.rst:251
+#: ../src/Doc/using/windows.rst:253
 #, fuzzy
 msgid "Event log"
 msgstr "journal d'événement"
 
-#: ../src/Doc/using/windows.rst:252
+#: ../src/Doc/using/windows.rst:254
 msgid ""
 "`Microsoft Foundation Classes <http://msdn.microsoft.com/en-us/library/"
 "fe1cf721%28VS.80%29.aspx>`_ (MFC) user interfaces"
@@ -2013,7 +2013,7 @@ msgstr ""
 "`Microsoft Foundation Classes <http://msdn.microsoft.com/en-us/library/"
 "fe1cf721%28VS.80%29.aspx>`_ (MFC) interfaces utilisateur"
 
-#: ../src/Doc/using/windows.rst:255
+#: ../src/Doc/using/windows.rst:257
 msgid ""
 "`PythonWin <http://web.archive.org/web/20060524042422/ http://www.python.org/"
 "windows/pythonwin/>`_ is a sample MFC application shipped with PyWin32.  It "
@@ -2024,29 +2024,29 @@ msgstr ""
 "Il s'agit d'un IDE embarqué avec débogueur intégré."
 
 # 100f9662fe0e4c64875ef88306b703ac
-#: ../src/Doc/using/windows.rst:261
+#: ../src/Doc/using/windows.rst:263
 msgid ""
 "`Win32 How Do I...? <http://timgolden.me.uk/python/win32_how_do_i.html>`_"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:262
+#: ../src/Doc/using/windows.rst:264
 msgid "by Tim Golden"
 msgstr "par Tim Golden"
 
 # 3560553e94c24696bccac62e239c4e0a
-#: ../src/Doc/using/windows.rst:263
+#: ../src/Doc/using/windows.rst:265
 msgid "`Python and COM <http://www.boddie.org.uk/python/COM.html>`_"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:265
+#: ../src/Doc/using/windows.rst:267
 msgid "by David and Paul Boddie"
 msgstr "par David et Paul Boddie"
 
-#: ../src/Doc/using/windows.rst:269
+#: ../src/Doc/using/windows.rst:271
 msgid "Py2exe"
 msgstr "Py2exe"
 
-#: ../src/Doc/using/windows.rst:271
+#: ../src/Doc/using/windows.rst:273
 msgid ""
 "`Py2exe <http://www.py2exe.org/>`_ is a :mod:`distutils` extension (see :ref:"
 "`extending-distutils`) which wraps Python scripts into executable Windows "
@@ -2054,29 +2054,29 @@ msgid ""
 "distribute your application without requiring your users to install Python."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:278
+#: ../src/Doc/using/windows.rst:280
 msgid "WConio"
 msgstr "WConio"
 
-#: ../src/Doc/using/windows.rst:280
+#: ../src/Doc/using/windows.rst:282
 msgid ""
 "Since Python's advanced terminal handling layer, :mod:`curses`, is "
 "restricted to Unix-like systems, there is a library exclusive to Windows as "
 "well: Windows Console I/O for Python."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:284
+#: ../src/Doc/using/windows.rst:286
 msgid ""
 "`WConio <http://newcenturycomputers.net/projects/wconio.html>`_ is a wrapper "
 "for Turbo-C's :file:`CONIO.H`, used to create text user interfaces."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:290
+#: ../src/Doc/using/windows.rst:292
 msgid "Compiling Python on Windows"
 msgstr "Compiler Python sous Windows"
 
 # f47c443be75942f8bd6ee385b72616a0
-#: ../src/Doc/using/windows.rst:292
+#: ../src/Doc/using/windows.rst:294
 msgid ""
 "If you want to compile CPython yourself, first thing you should do is get "
 "the `source <http://python.org/download/source/>`_. You can download either "
@@ -2084,99 +2084,99 @@ msgid ""
 "python.org/devguide/setup#checking-out-the-code>`_."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:297
+#: ../src/Doc/using/windows.rst:299
 msgid ""
 "For Microsoft Visual C++, which is the compiler with which official Python "
 "releases are built, the source tree contains solutions/project files.  View "
 "the :file:`readme.txt` in their respective directories:"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:302
+#: ../src/Doc/using/windows.rst:304
 msgid "Directory"
 msgstr "Répertoire"
 
-#: ../src/Doc/using/windows.rst:302
+#: ../src/Doc/using/windows.rst:304
 msgid "MSVC version"
 msgstr "version de MSVC"
 
-#: ../src/Doc/using/windows.rst:302
+#: ../src/Doc/using/windows.rst:304
 msgid "Visual Studio version"
 msgstr "Version de Visual Studio"
 
-#: ../src/Doc/using/windows.rst:304
+#: ../src/Doc/using/windows.rst:306
 msgid ":file:`PC/VC6/`"
 msgstr ":file:`PC/VC6/`"
 
-#: ../src/Doc/using/windows.rst:304
+#: ../src/Doc/using/windows.rst:306
 msgid "6.0"
 msgstr "6.0"
 
-#: ../src/Doc/using/windows.rst:304
+#: ../src/Doc/using/windows.rst:306
 msgid "97"
 msgstr "97"
 
-#: ../src/Doc/using/windows.rst:306
+#: ../src/Doc/using/windows.rst:308
 msgid ":file:`PC/VS7.1/`"
 msgstr ":file:`PC/VS7.1/`"
 
-#: ../src/Doc/using/windows.rst:306
+#: ../src/Doc/using/windows.rst:308
 msgid "7.1"
 msgstr "7.1"
 
-#: ../src/Doc/using/windows.rst:306
+#: ../src/Doc/using/windows.rst:308
 msgid "2003"
 msgstr "2003"
 
-#: ../src/Doc/using/windows.rst:308
+#: ../src/Doc/using/windows.rst:310
 msgid ":file:`PC/VS8.0/`"
 msgstr ":file:`PC/VS8.0/`"
 
-#: ../src/Doc/using/windows.rst:308
+#: ../src/Doc/using/windows.rst:310
 msgid "8.0"
 msgstr "8.0"
 
-#: ../src/Doc/using/windows.rst:308
+#: ../src/Doc/using/windows.rst:310
 msgid "2005"
 msgstr "2005"
 
-#: ../src/Doc/using/windows.rst:310
+#: ../src/Doc/using/windows.rst:312
 msgid ":file:`PCbuild/`"
 msgstr ":file:`PCbuild/`"
 
-#: ../src/Doc/using/windows.rst:310
+#: ../src/Doc/using/windows.rst:312
 msgid "9.0"
 msgstr "9.0"
 
-#: ../src/Doc/using/windows.rst:310
+#: ../src/Doc/using/windows.rst:312
 msgid "2008"
 msgstr "2008"
 
-#: ../src/Doc/using/windows.rst:313
+#: ../src/Doc/using/windows.rst:315
 msgid ""
 "Note that not all of these build directories are fully supported.  Read the "
 "release notes to see which compiler version the official releases for your "
 "version are built with."
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:317
+#: ../src/Doc/using/windows.rst:319
 msgid ""
 "Check :file:`PC/readme.txt` for general information on the build process."
 msgstr ""
 "Vérifiez :file:`PC/readme.txt` pour des informations générales sur le "
 "processus de construction."
 
-#: ../src/Doc/using/windows.rst:320
+#: ../src/Doc/using/windows.rst:322
 msgid "For extension modules, consult :ref:`building-on-windows`."
 msgstr ""
 
 # f5c5256cfc284cc28938c292fdf5de56
-#: ../src/Doc/using/windows.rst:326
+#: ../src/Doc/using/windows.rst:328
 msgid ""
 "`Python + Windows + distutils + SWIG + gcc MinGW <http://sebsauvage.net/"
 "python/mingw.html>`_"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:325
+#: ../src/Doc/using/windows.rst:327
 msgid ""
 "or \"Creating Python extensions in C/C++ with SWIG and compiling them with "
 "MinGW gcc under Windows\" or \"Installing Python extension with distutils "
@@ -2184,27 +2184,27 @@ msgid ""
 msgstr ""
 
 # 20de9169858245b3a25788a49de8a8a4
-#: ../src/Doc/using/windows.rst:328
+#: ../src/Doc/using/windows.rst:330
 msgid ""
 "`MingW -- Python extensions <http://oldwiki.mingw.org/index.php/Python"
 "%20extensions>`_"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:330
+#: ../src/Doc/using/windows.rst:332
 msgid "by Trent Apted et al, 2007"
 msgstr "par Trent Apted et al, 2007"
 
-#: ../src/Doc/using/windows.rst:334
+#: ../src/Doc/using/windows.rst:336
 msgid "Other resources"
 msgstr "Autres ressources"
 
 # b1f1f147609f488591b49a71a4e0e046
-#: ../src/Doc/using/windows.rst:340
+#: ../src/Doc/using/windows.rst:342
 msgid ""
 "`Python Programming On Win32 <http://www.oreilly.com/catalog/pythonwin32/>`_"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:339
+#: ../src/Doc/using/windows.rst:341
 msgid ""
 "\"Help for Windows Programmers\" by Mark Hammond and Andy Robinson, O'Reilly "
 "Media, 2000, ISBN 1-56592-621-8"
@@ -2213,13 +2213,13 @@ msgstr ""
 "Media, 2000, ISBN 1-56592-621-8"
 
 # 837cd4194e3b4c33b0b2e4009a23e3fb
-#: ../src/Doc/using/windows.rst:342
+#: ../src/Doc/using/windows.rst:344
 msgid ""
 "`A Python for Windows Tutorial <http://www.imladris.com/Scripts/"
 "PythonForWindows.html>`_"
 msgstr ""
 
-#: ../src/Doc/using/windows.rst:344
+#: ../src/Doc/using/windows.rst:346
 msgid "by Amanda Birmingham, 2004"
 msgstr "par Amanda Birmingham, 2004"
 
