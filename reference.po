@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-26 04:02\n"
+"POT-Creation-Date: 2012-12-31 05:30\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -412,17 +412,17 @@ msgid ""
 "statement."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:414
+#: ../src/Doc/reference/compound_stmts.rst:417
 msgid "Function definitions"
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:424
+#: ../src/Doc/reference/compound_stmts.rst:427
 msgid ""
 "A function definition defines a user-defined function object (see section :"
 "ref:`types`):"
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:442
+#: ../src/Doc/reference/compound_stmts.rst:445
 msgid ""
 "A function definition is an executable statement.  Its execution binds the "
 "function name in the current local namespace to a function object (a wrapper "
@@ -431,14 +431,14 @@ msgid ""
 "used when the function is called."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:448
+#: ../src/Doc/reference/compound_stmts.rst:451
 msgid ""
 "The function definition does not execute the function body; this gets "
 "executed only when the function is called. [#]_"
 msgstr ""
 
 # 1f43dfddd48243458f87cb3817199d6f
-#: ../src/Doc/reference/compound_stmts.rst:454
+#: ../src/Doc/reference/compound_stmts.rst:457
 msgid ""
 "A function definition may be wrapped by one or more :term:`decorator` "
 "expressions. Decorator expressions are evaluated when the function is "
@@ -450,24 +450,24 @@ msgid ""
 msgstr ""
 
 # e71ea122ac6d4dff8b2ce186ddaed6c2
-#: ../src/Doc/reference/compound_stmts.rst:465
+#: ../src/Doc/reference/compound_stmts.rst:468
 msgid "is equivalent to::"
 msgstr ""
 
 # b3a9ccaa489e4af4bbb883711aff72db
-#: ../src/Doc/reference/compound_stmts.rst:472
+#: ../src/Doc/reference/compound_stmts.rst:477
 msgid ""
-"When one or more top-level parameters have the form *parameter* ``=`` "
-"*expression*, the function is said to have \"default parameter values.\"  "
-"For a parameter with a default value, the corresponding argument may be "
-"omitted from a call, in which case the parameter's default value is "
-"substituted.  If a parameter has a default value, all following parameters "
-"must also have a default value --- this is a syntactic restriction that is "
-"not expressed by the grammar."
+"When one or more top-level :term:`parameters <parameter>` have the form "
+"*parameter* ``=`` *expression*, the function is said to have \"default "
+"parameter values.\"  For a parameter with a default value, the "
+"corresponding :term:`argument` may be omitted from a call, in which case the "
+"parameter's default value is substituted.  If a parameter has a default "
+"value, all following parameters must also have a default value --- this is a "
+"syntactic restriction that is not expressed by the grammar."
 msgstr ""
 
 # d8b8c95478ea4a48a13221859fdb3cb8
-#: ../src/Doc/reference/compound_stmts.rst:479
+#: ../src/Doc/reference/compound_stmts.rst:485
 msgid ""
 "**Default parameter values are evaluated when the function definition is "
 "executed.**  This means that the expression is evaluated once, when the "
@@ -481,7 +481,7 @@ msgid ""
 msgstr ""
 
 # 66be6e0f405a4c6ca1c7f8e36fb0841e
-#: ../src/Doc/reference/compound_stmts.rst:498
+#: ../src/Doc/reference/compound_stmts.rst:504
 msgid ""
 "Function call semantics are described in more detail in section :ref:"
 "`calls`. A function call always assigns values to all parameters mentioned "
@@ -494,7 +494,7 @@ msgid ""
 msgstr ""
 
 # 29161efb87ee47c6888bd3d8c0c72e4c
-#: ../src/Doc/reference/compound_stmts.rst:508
+#: ../src/Doc/reference/compound_stmts.rst:514
 msgid ""
 "It is also possible to create anonymous functions (functions not bound to a "
 "name), for immediate use in expressions.  This uses lambda forms, described "
@@ -505,7 +505,7 @@ msgid ""
 "actually more powerful since it allows the execution of multiple statements."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:516
+#: ../src/Doc/reference/compound_stmts.rst:522
 msgid ""
 "**Programmer's note:** Functions are first-class objects.  A \"``def``\" "
 "form executed inside a function definition defines a local function that can "
@@ -514,15 +514,15 @@ msgid ""
 "section :ref:`naming` for details."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:526
+#: ../src/Doc/reference/compound_stmts.rst:532
 msgid "Class definitions"
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:538
+#: ../src/Doc/reference/compound_stmts.rst:544
 msgid "A class definition defines a class object (see section :ref:`types`):"
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:545
+#: ../src/Doc/reference/compound_stmts.rst:551
 msgid ""
 "A class definition is an executable statement.  It first evaluates the "
 "inheritance list, if present.  Each item in the inheritance list should "
@@ -538,7 +538,7 @@ msgid ""
 msgstr ""
 
 # b91d18ce49bf407d9a57a1b3a43ee422
-#: ../src/Doc/reference/compound_stmts.rst:556
+#: ../src/Doc/reference/compound_stmts.rst:562
 msgid ""
 "**Programmer's note:** Variables defined in the class definition are class "
 "variables; they are shared by all instances.  To create instance variables, "
@@ -551,7 +551,7 @@ msgid ""
 "variables with different implementation details."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:566
+#: ../src/Doc/reference/compound_stmts.rst:572
 msgid ""
 "Class definitions, like function definitions, may be wrapped by one or more :"
 "term:`decorator` expressions.  The evaluation rules for the decorator "
@@ -559,38 +559,38 @@ msgid ""
 "object, which is then bound to the class name."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:572
+#: ../src/Doc/reference/compound_stmts.rst:578
 #: ../src/Doc/reference/datamodel.rst:2492
 #: ../src/Doc/reference/executionmodel.rst:244
-#: ../src/Doc/reference/expressions.rst:1399
+#: ../src/Doc/reference/expressions.rst:1403
 #: ../src/Doc/reference/lexical_analysis.rst:762
 #: ../src/Doc/reference/simple_stmts.rst:1032
 msgid "Footnotes"
 msgstr ""
 
 # a93e0edf24f94b76b62618582bf50dc5
-#: ../src/Doc/reference/compound_stmts.rst:573
+#: ../src/Doc/reference/compound_stmts.rst:579
 msgid ""
 "The exception is propagated to the invocation stack unless there is a :"
 "keyword:`finally` clause which happens to raise another exception. That new "
 "exception causes the old one to be lost."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:577
+#: ../src/Doc/reference/compound_stmts.rst:583
 msgid ""
 "Currently, control \"flows off the end\" except in the case of an exception "
 "or the execution of a :keyword:`return`, :keyword:`continue`, or :keyword:"
 "`break` statement."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:581
+#: ../src/Doc/reference/compound_stmts.rst:587
 msgid ""
 "A string literal appearing as the first statement in the function body is "
 "transformed into the function's ``__doc__`` attribute and therefore the "
 "function's :term:`docstring`."
 msgstr ""
 
-#: ../src/Doc/reference/compound_stmts.rst:585
+#: ../src/Doc/reference/compound_stmts.rst:591
 msgid ""
 "A string literal appearing as the first statement in the class body is "
 "transformed into the namespace's ``__doc__`` item and therefore the class's :"
@@ -4368,34 +4368,35 @@ msgid ""
 "respectively, substituting ``None`` for missing expressions."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:673
+#: ../src/Doc/reference/expressions.rst:678
 msgid "Calls"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:679
+# 53eb6238970d4a56b1b199d855596e4a
+#: ../src/Doc/reference/expressions.rst:680
 msgid ""
-"A call calls a callable object (e.g., a function) with a possibly empty "
-"series of arguments:"
+"A call calls a callable object (e.g., a :term:`function`) with a possibly "
+"empty series of :term:`arguments <argument>`:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:696
+#: ../src/Doc/reference/expressions.rst:697
 msgid ""
 "A trailing comma may be present after the positional and keyword arguments "
 "but does not affect the semantics."
 msgstr ""
 
 # a813844f37c64c419d6cdf9dc1706d92
-#: ../src/Doc/reference/expressions.rst:699
+#: ../src/Doc/reference/expressions.rst:703
 msgid ""
 "The primary must evaluate to a callable object (user-defined functions, "
 "built-in functions, methods of built-in objects, class objects, methods of "
 "class instances, and certain class instances themselves are callable; "
 "extensions may define additional callable object types).  All argument "
 "expressions are evaluated before the call is attempted.  Please refer to "
-"section :ref:`function` for the syntax of formal parameter lists."
+"section :ref:`function` for the syntax of formal :term:`parameter` lists."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:706
+#: ../src/Doc/reference/expressions.rst:710
 msgid ""
 "If keyword arguments are present, they are first converted to positional "
 "arguments, as follows.  First, a list of unfilled slots is created for the "
@@ -4418,7 +4419,7 @@ msgid ""
 msgstr ""
 
 # 9982809b8b8b456fbe25cc9e3b8d6cd6
-#: ../src/Doc/reference/expressions.rst:726
+#: ../src/Doc/reference/expressions.rst:730
 msgid ""
 "An implementation may provide built-in functions whose positional parameters "
 "do not have names, even if they are 'named' for the purpose of "
@@ -4427,7 +4428,7 @@ msgid ""
 "`PyArg_ParseTuple` to parse their arguments."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:732
+#: ../src/Doc/reference/expressions.rst:736
 msgid ""
 "If there are more positional arguments than there are formal parameter "
 "slots, a :exc:`TypeError` exception is raised, unless a formal parameter "
@@ -4436,7 +4437,7 @@ msgid ""
 "empty tuple if there were no excess positional arguments)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:738
+#: ../src/Doc/reference/expressions.rst:742
 msgid ""
 "If any keyword argument does not correspond to a formal parameter name, a :"
 "exc:`TypeError` exception is raised, unless a formal parameter using the "
@@ -4447,7 +4448,7 @@ msgid ""
 msgstr ""
 
 # fec2deb16bac4cf8b5bf145485ca01c4
-#: ../src/Doc/reference/expressions.rst:748
+#: ../src/Doc/reference/expressions.rst:752
 msgid ""
 "If the syntax ``*expression`` appears in the function call, ``expression`` "
 "must evaluate to an iterable.  Elements from this iterable are treated as if "
@@ -4457,20 +4458,20 @@ msgid ""
 "*y1*, ..., *yM*."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:755
+#: ../src/Doc/reference/expressions.rst:759
 msgid ""
 "A consequence of this is that although the ``*expression`` syntax may appear "
 "*after* some keyword arguments, it is processed *before* the keyword "
 "arguments (and the ``**expression`` argument, if any -- see below).  So::"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:771
+#: ../src/Doc/reference/expressions.rst:775
 msgid ""
 "It is unusual for both keyword arguments and the ``*expression`` syntax to "
 "be used in the same call, so in practice this confusion does not arise."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:777
+#: ../src/Doc/reference/expressions.rst:781
 msgid ""
 "If the syntax ``**expression`` appears in the function call, ``expression`` "
 "must evaluate to a mapping, the contents of which are treated as additional "
@@ -4480,7 +4481,7 @@ msgid ""
 msgstr ""
 
 # 0aa56d3e89484a619e6db76d21ffc03f
-#: ../src/Doc/reference/expressions.rst:782
+#: ../src/Doc/reference/expressions.rst:786
 msgid ""
 "Formal parameters using the syntax ``*identifier`` or ``**identifier`` "
 "cannot be used as positional argument slots or as keyword argument names.  "
@@ -4490,23 +4491,23 @@ msgid ""
 "usual tuple assignment rules after all other parameter processing is done."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:789
+#: ../src/Doc/reference/expressions.rst:793
 msgid ""
 "A call always returns some value, possibly ``None``, unless it raises an "
 "exception.  How this value is computed depends on the type of the callable "
 "object."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:793
+#: ../src/Doc/reference/expressions.rst:797
 msgid "If it is---"
 msgstr ""
 
 # 15f21c6a233b4d27ba0f3496d0d69f26
-#: ../src/Doc/reference/expressions.rst:805
+#: ../src/Doc/reference/expressions.rst:809
 msgid "a user-defined function:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:802
+#: ../src/Doc/reference/expressions.rst:806
 msgid ""
 "The code block for the function is executed, passing it the argument list.  "
 "The first thing the code block will do is bind the formal parameters to the "
@@ -4516,31 +4517,31 @@ msgid ""
 msgstr ""
 
 # 6f370af1ee9a46a0bb983b3343a977fe
-#: ../src/Doc/reference/expressions.rst:819
+#: ../src/Doc/reference/expressions.rst:823
 msgid "a built-in function or method:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:819
+#: ../src/Doc/reference/expressions.rst:823
 msgid ""
 "The result is up to the interpreter; see :ref:`built-in-funcs` for the "
 "descriptions of built-in functions and methods."
 msgstr ""
 
 # 1a16881c8d8849d6b4aff6723f82a272
-#: ../src/Doc/reference/expressions.rst:826
+#: ../src/Doc/reference/expressions.rst:830
 msgid "a class object:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:827
+#: ../src/Doc/reference/expressions.rst:831
 msgid "A new instance of that class is returned."
 msgstr ""
 
 # fc8025f1c4794b858684291a624095e5
-#: ../src/Doc/reference/expressions.rst:836
+#: ../src/Doc/reference/expressions.rst:840
 msgid "a class instance method:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:835
+#: ../src/Doc/reference/expressions.rst:839
 msgid ""
 "The corresponding user-defined function is called, with an argument list "
 "that is one longer than the argument list of the call: the instance becomes "
@@ -4548,27 +4549,27 @@ msgid ""
 msgstr ""
 
 # 95e01195dc8540a7a960984d8e3372c1
-#: ../src/Doc/reference/expressions.rst:845
+#: ../src/Doc/reference/expressions.rst:849
 msgid "a class instance:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:844
+#: ../src/Doc/reference/expressions.rst:848
 msgid ""
 "The class must define a :meth:`__call__` method; the effect is then the same "
 "as if that method was called."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:851
+#: ../src/Doc/reference/expressions.rst:855
 msgid "The power operator"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:853
+#: ../src/Doc/reference/expressions.rst:857
 msgid ""
 "The power operator binds more tightly than unary operators on its left; it "
 "binds less tightly than unary operators on its right.  The syntax is:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:859
+#: ../src/Doc/reference/expressions.rst:863
 msgid ""
 "Thus, in an unparenthesized sequence of power and unary operators, the "
 "operators are evaluated from right to left (this does not constrain the "
@@ -4576,7 +4577,7 @@ msgid ""
 msgstr ""
 
 # b81e95a295054a1785b72be057f8c117
-#: ../src/Doc/reference/expressions.rst:863
+#: ../src/Doc/reference/expressions.rst:867
 msgid ""
 "The power operator has the same semantics as the built-in :func:`pow` "
 "function, when called with two arguments: it yields its left argument raised "
@@ -4586,7 +4587,7 @@ msgid ""
 msgstr ""
 
 # 482ffd086a414c7da955b3708d4d01a6
-#: ../src/Doc/reference/expressions.rst:868
+#: ../src/Doc/reference/expressions.rst:872
 msgid ""
 "With mixed operand types, the coercion rules for binary arithmetic operators "
 "apply. For int and long int operands, the result has the same type as the "
@@ -4599,49 +4600,49 @@ msgid ""
 msgstr ""
 
 # 3a1c84740fe64abaa7a64d9d7057a1fa
-#: ../src/Doc/reference/expressions.rst:877
+#: ../src/Doc/reference/expressions.rst:881
 msgid ""
 "Raising ``0.0`` to a negative power results in a :exc:`ZeroDivisionError`. "
 "Raising a negative number to a fractional power results in a :exc:"
 "`ValueError`."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:884
+#: ../src/Doc/reference/expressions.rst:888
 msgid "Unary arithmetic and bitwise operations"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:890
+#: ../src/Doc/reference/expressions.rst:894
 msgid "All unary arithmetic and bitwise operations have the same priority:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:899
+#: ../src/Doc/reference/expressions.rst:903
 msgid ""
 "The unary ``-`` (minus) operator yields the negation of its numeric argument."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:903
+#: ../src/Doc/reference/expressions.rst:907
 msgid "The unary ``+`` (plus) operator yields its numeric argument unchanged."
 msgstr ""
 
 # 8306f081357247d8add29f517bb5f5b1
-#: ../src/Doc/reference/expressions.rst:907
+#: ../src/Doc/reference/expressions.rst:911
 msgid ""
 "The unary ``~`` (invert) operator yields the bitwise inversion of its plain "
 "or long integer argument.  The bitwise inversion of ``x`` is defined as ``-(x"
 "+1)``.  It only applies to integral numbers."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:913
+#: ../src/Doc/reference/expressions.rst:917
 msgid ""
 "In all three cases, if the argument does not have the proper type, a :exc:"
 "`TypeError` exception is raised."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:920
+#: ../src/Doc/reference/expressions.rst:924
 msgid "Binary arithmetic operations"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:924
+#: ../src/Doc/reference/expressions.rst:928
 msgid ""
 "The binary arithmetic operations have the conventional priority levels.  "
 "Note that some of these operations also apply to certain non-numeric types.  "
@@ -4650,7 +4651,7 @@ msgid ""
 msgstr ""
 
 # 06ee5dad23f3493795e649a38d29649d
-#: ../src/Doc/reference/expressions.rst:936
+#: ../src/Doc/reference/expressions.rst:940
 msgid ""
 "The ``*`` (multiplication) operator yields the product of its arguments.  "
 "The arguments must either both be numbers, or one argument must be an "
@@ -4661,7 +4662,7 @@ msgid ""
 msgstr ""
 
 # 9f701f0990f54b1fae15d256820d2fd4
-#: ../src/Doc/reference/expressions.rst:947
+#: ../src/Doc/reference/expressions.rst:951
 msgid ""
 "The ``/`` (division) and ``//`` (floor division) operators yield the "
 "quotient of their arguments.  The numeric arguments are first converted to a "
@@ -4671,7 +4672,7 @@ msgid ""
 "exception."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:955
+#: ../src/Doc/reference/expressions.rst:959
 msgid ""
 "The ``%`` (modulo) operator yields the remainder from the division of the "
 "first argument by the second.  The numeric arguments are first converted to "
@@ -4684,7 +4685,7 @@ msgid ""
 msgstr ""
 
 # 1441d1af143e42c1bbd95ae13e8f8475
-#: ../src/Doc/reference/expressions.rst:964
+#: ../src/Doc/reference/expressions.rst:968
 msgid ""
 "The integer division and modulo operators are connected by the following "
 "identity: ``x == (x/y)*y + (x%y)``.  Integer division and modulo are also "
@@ -4695,7 +4696,7 @@ msgid ""
 msgstr ""
 
 # 1ccccdf8dba343bb82acec7b75c118bd
-#: ../src/Doc/reference/expressions.rst:971
+#: ../src/Doc/reference/expressions.rst:975
 msgid ""
 "In addition to performing the modulo operation on numbers, the ``%`` "
 "operator is also overloaded by string and unicode objects to perform string "
@@ -4705,7 +4706,7 @@ msgid ""
 msgstr ""
 
 # d3e04f640d19400f832e9dd135373c99
-#: ../src/Doc/reference/expressions.rst:983
+#: ../src/Doc/reference/expressions.rst:987
 msgid ""
 "The ``+`` (addition) operator yields the sum of its arguments. The arguments "
 "must either both be numbers or both sequences of the same type.  In the "
@@ -4713,23 +4714,23 @@ msgid ""
 "together.  In the latter case, the sequences are concatenated."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:990
+#: ../src/Doc/reference/expressions.rst:994
 msgid ""
 "The ``-`` (subtraction) operator yields the difference of its arguments.  "
 "The numeric arguments are first converted to a common type."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:997
+#: ../src/Doc/reference/expressions.rst:1001
 msgid "Shifting operations"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1001
+#: ../src/Doc/reference/expressions.rst:1005
 msgid ""
 "The shifting operations have lower priority than the arithmetic operations:"
 msgstr ""
 
 # 049f37f00f6d4b6abe25aadd939211bd
-#: ../src/Doc/reference/expressions.rst:1006
+#: ../src/Doc/reference/expressions.rst:1010
 msgid ""
 "These operators accept plain or long integers as arguments.  The arguments "
 "are converted to a common type.  They shift the first argument to the left "
@@ -4737,37 +4738,37 @@ msgid ""
 msgstr ""
 
 # 2ea8cbb8eeb64b8b99b8613a99e2d8ea
-#: ../src/Doc/reference/expressions.rst:1012
+#: ../src/Doc/reference/expressions.rst:1016
 msgid ""
 "A right shift by *n* bits is defined as division by ``pow(2, n)``.  A left "
 "shift by *n* bits is defined as multiplication with ``pow(2, n)``.  Negative "
 "shift counts raise a :exc:`ValueError` exception."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1018
+#: ../src/Doc/reference/expressions.rst:1022
 msgid ""
 "In the current implementation, the right-hand operand is required to be at "
 "most :attr:`sys.maxsize`.  If the right-hand operand is larger than :attr:"
 "`sys.maxsize` an :exc:`OverflowError` exception is raised."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1025
+#: ../src/Doc/reference/expressions.rst:1029
 msgid "Binary bitwise operations"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1029
+#: ../src/Doc/reference/expressions.rst:1033
 msgid "Each of the three bitwise operations has a different priority level:"
 msgstr ""
 
 # 44371a039a8b48c5b98a50b3376a7ab0
-#: ../src/Doc/reference/expressions.rst:1038
+#: ../src/Doc/reference/expressions.rst:1042
 msgid ""
 "The ``&`` operator yields the bitwise AND of its arguments, which must be "
 "plain or long integers.  The arguments are converted to a common type."
 msgstr ""
 
 # 424d390f37a0457fb826b9713d84f109
-#: ../src/Doc/reference/expressions.rst:1045
+#: ../src/Doc/reference/expressions.rst:1049
 msgid ""
 "The ``^`` operator yields the bitwise XOR (exclusive OR) of its arguments, "
 "which must be plain or long integers.  The arguments are converted to a "
@@ -4775,18 +4776,18 @@ msgid ""
 msgstr ""
 
 # 220631bc70e74155842ee5ca4e19f27f
-#: ../src/Doc/reference/expressions.rst:1052
+#: ../src/Doc/reference/expressions.rst:1056
 msgid ""
 "The ``|`` operator yields the bitwise (inclusive) OR of its arguments, which "
 "must be plain or long integers.  The arguments are converted to a common "
 "type."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1063
+#: ../src/Doc/reference/expressions.rst:1067
 msgid "Comparisons"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1069
+#: ../src/Doc/reference/expressions.rst:1073
 msgid ""
 "Unlike C, all comparison operations in Python have the same priority, which "
 "is lower than that of any arithmetic, shifting or bitwise operation.  Also "
@@ -4794,11 +4795,11 @@ msgid ""
 "conventional in mathematics:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1079
+#: ../src/Doc/reference/expressions.rst:1083
 msgid "Comparisons yield boolean values: ``True`` or ``False``."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1083
+#: ../src/Doc/reference/expressions.rst:1087
 msgid ""
 "Comparisons can be chained arbitrarily, e.g., ``x < y <= z`` is equivalent "
 "to ``x < y and y <= z``, except that ``y`` is evaluated only once (but in "
@@ -4806,7 +4807,7 @@ msgid ""
 "false)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1087
+#: ../src/Doc/reference/expressions.rst:1091
 msgid ""
 "Formally, if *a*, *b*, *c*, ..., *y*, *z* are expressions and *op1*, "
 "*op2*, ..., *opN* are comparison operators, then ``a op1 b op2 c ... y opN "
@@ -4814,7 +4815,7 @@ msgid ""
 "each expression is evaluated at most once."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1092
+#: ../src/Doc/reference/expressions.rst:1096
 msgid ""
 "Note that ``a op1 b op2 c`` doesn't imply any kind of comparison between *a* "
 "and *c*, so that, e.g., ``x < y > z`` is perfectly legal (though perhaps not "
@@ -4822,7 +4823,7 @@ msgid ""
 msgstr ""
 
 # a7fd5b6ca96441cd857aa859db5510b9
-#: ../src/Doc/reference/expressions.rst:1096
+#: ../src/Doc/reference/expressions.rst:1100
 msgid ""
 "The forms ``<>`` and ``!=`` are equivalent; for consistency with C, ``!=`` "
 "is preferred; where ``!=`` is mentioned below ``<>`` is also accepted.  The "
@@ -4830,7 +4831,7 @@ msgid ""
 msgstr ""
 
 # 6520859c7a364cc696c32cc22df12125
-#: ../src/Doc/reference/expressions.rst:1100
+#: ../src/Doc/reference/expressions.rst:1104
 msgid ""
 "The operators ``<``, ``>``, ``==``, ``>=``, ``<=``, and ``!=`` compare the "
 "values of two objects.  The objects need not have the same type. If both are "
@@ -4842,7 +4843,7 @@ msgid ""
 msgstr ""
 
 # 2c05852be671430db3a3c83df196aeab
-#: ../src/Doc/reference/expressions.rst:1108
+#: ../src/Doc/reference/expressions.rst:1112
 msgid ""
 "(This unusual definition of comparison was used to simplify the definition "
 "of operations like sorting and the :keyword:`in` and :keyword:`not in` "
@@ -4850,23 +4851,23 @@ msgid ""
 "types are likely to change.)"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1113
+#: ../src/Doc/reference/expressions.rst:1117
 msgid "Comparison of objects of the same type depends on the type:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1115
+#: ../src/Doc/reference/expressions.rst:1119
 msgid "Numbers are compared arithmetically."
 msgstr ""
 
 # 228417a71cd94ac09c53ac12c2cfdb91
-#: ../src/Doc/reference/expressions.rst:1117
+#: ../src/Doc/reference/expressions.rst:1121
 msgid ""
 "Strings are compared lexicographically using the numeric equivalents (the "
 "result of the built-in function :func:`ord`) of their characters.  Unicode "
 "and 8-bit strings are fully interoperable in this behavior. [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1121
+#: ../src/Doc/reference/expressions.rst:1125
 msgid ""
 "Tuples and lists are compared lexicographically using comparison of "
 "corresponding elements.  This means that to compare equal, each element must "
@@ -4875,7 +4876,7 @@ msgid ""
 msgstr ""
 
 # d595063581ec4699afc76b6a1691a8e4
-#: ../src/Doc/reference/expressions.rst:1126
+#: ../src/Doc/reference/expressions.rst:1130
 msgid ""
 "If not equal, the sequences are ordered the same as their first differing "
 "elements.  For example, ``cmp([1,2,x], [1,2,y])`` returns the same as ``cmp"
@@ -4884,14 +4885,14 @@ msgid ""
 msgstr ""
 
 # 7da25f9a15dd45058f5bbe25daab5ac7
-#: ../src/Doc/reference/expressions.rst:1131
+#: ../src/Doc/reference/expressions.rst:1135
 msgid ""
 "Mappings (dictionaries) compare equal if and only if their sorted (key, "
 "value) lists compare equal. [#]_ Outcomes other than equality are resolved "
 "consistently, but are not otherwise defined. [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1135
+#: ../src/Doc/reference/expressions.rst:1139
 msgid ""
 "Most other objects of built-in types compare unequal unless they are the "
 "same object; the choice whether one object is considered smaller or larger "
@@ -4900,7 +4901,7 @@ msgid ""
 msgstr ""
 
 # 82879f641bcb4c4481304b85f9a50a79
-#: ../src/Doc/reference/expressions.rst:1142
+#: ../src/Doc/reference/expressions.rst:1146
 msgid ""
 "The operators :keyword:`in` and :keyword:`not in` test for collection "
 "membership.  ``x in s`` evaluates to true if *x* is a member of the "
@@ -4914,14 +4915,14 @@ msgid ""
 msgstr ""
 
 # 17f3c1f97d5148ed990fb624099bef5c
-#: ../src/Doc/reference/expressions.rst:1151
+#: ../src/Doc/reference/expressions.rst:1155
 msgid ""
 "For the list and tuple types, ``x in y`` is true if and only if there exists "
 "an index *i* such that ``x == y[i]`` is true."
 msgstr ""
 
 # 2c66edd4662e4c7b9359aec5ffc48aff
-#: ../src/Doc/reference/expressions.rst:1154
+#: ../src/Doc/reference/expressions.rst:1158
 msgid ""
 "For the Unicode and string types, ``x in y`` is true if and only if *x* is a "
 "substring of *y*.  An equivalent test is ``y.find(x) != -1``.  Note, *x* and "
@@ -4930,13 +4931,13 @@ msgid ""
 "string, so ``\"\" in \"abc\"`` will return ``True``."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1163
+#: ../src/Doc/reference/expressions.rst:1167
 msgid ""
 "For user-defined classes which define the :meth:`__contains__` method, ``x "
 "in y`` is true if and only if ``y.__contains__(x)`` is true."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1166
+#: ../src/Doc/reference/expressions.rst:1170
 msgid ""
 "For user-defined classes which do not define :meth:`__contains__` but do "
 "define :meth:`__iter__`, ``x in y`` is true if some value ``z`` with ``x == "
@@ -4945,7 +4946,7 @@ msgid ""
 msgstr ""
 
 # c9710b8034f1494ca8a4f4ee49edadf8
-#: ../src/Doc/reference/expressions.rst:1171
+#: ../src/Doc/reference/expressions.rst:1175
 msgid ""
 "Lastly, the old-style iteration protocol is tried: if a class defines :meth:"
 "`__getitem__`, ``x in y`` is true if and only if there is a non-negative "
@@ -4954,25 +4955,25 @@ msgid ""
 "is as if :keyword:`in` raised that exception)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1183
+#: ../src/Doc/reference/expressions.rst:1187
 msgid ""
 "The operator :keyword:`not in` is defined to have the inverse true value of :"
 "keyword:`in`."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1191
+#: ../src/Doc/reference/expressions.rst:1195
 msgid ""
 "The operators :keyword:`is` and :keyword:`is not` test for object identity: "
 "``x is y`` is true if and only if *x* and *y* are the same object.  ``x is "
 "not y`` yields the inverse truth value. [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1202
+#: ../src/Doc/reference/expressions.rst:1206
 msgid "Boolean operations"
 msgstr ""
 
 # 57ab1712b46c4f8db1588584ceb5f69e
-#: ../src/Doc/reference/expressions.rst:1213
+#: ../src/Doc/reference/expressions.rst:1217
 msgid ""
 "In the context of Boolean operations, and also when expressions are used by "
 "control flow statements, the following values are interpreted as false: "
@@ -4982,26 +4983,26 @@ msgid ""
 "`~object.__nonzero__` special method for a way to change this.)"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1222
+#: ../src/Doc/reference/expressions.rst:1226
 msgid ""
 "The operator :keyword:`not` yields ``True`` if its argument is false, "
 "``False`` otherwise."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1227
+#: ../src/Doc/reference/expressions.rst:1231
 msgid ""
 "The expression ``x and y`` first evaluates *x*; if *x* is false, its value "
 "is returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1232
+#: ../src/Doc/reference/expressions.rst:1236
 msgid ""
 "The expression ``x or y`` first evaluates *x*; if *x* is true, its value is "
 "returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr ""
 
 # 3b2596cf486a4996b2a620d62e7ae571
-#: ../src/Doc/reference/expressions.rst:1235
+#: ../src/Doc/reference/expressions.rst:1239
 msgid ""
 "(Note that neither :keyword:`and` nor :keyword:`or` restrict the value and "
 "type they return to ``False`` and ``True``, but rather return the last "
@@ -5012,32 +5013,32 @@ msgid ""
 "as its argument, so e.g., ``not 'foo'`` yields ``False``, not ``''``.)"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1245
+#: ../src/Doc/reference/expressions.rst:1249
 msgid "Conditional Expressions"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1257
+#: ../src/Doc/reference/expressions.rst:1261
 msgid ""
 "Conditional expressions (sometimes called a \"ternary operator\") have the "
 "lowest priority of all Python operations."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1260
+#: ../src/Doc/reference/expressions.rst:1264
 msgid ""
 "The expression ``x if C else y`` first evaluates the condition, *C* (*not* "
 "*x*); if *C* is true, *x* is evaluated and its value is returned; otherwise, "
 "*y* is evaluated and its value is returned."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1264
+#: ../src/Doc/reference/expressions.rst:1268
 msgid "See :pep:`308` for more details about conditional expressions."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1271
+#: ../src/Doc/reference/expressions.rst:1275
 msgid "Lambdas"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1282
+#: ../src/Doc/reference/expressions.rst:1286
 msgid ""
 "Lambda forms (lambda expressions) have the same syntactic position as "
 "expressions.  They are a shorthand to create anonymous functions; the "
@@ -5046,24 +5047,24 @@ msgid ""
 msgstr ""
 
 # f355a597bf33479aa2062d92c58787dc
-#: ../src/Doc/reference/expressions.rst:1290
+#: ../src/Doc/reference/expressions.rst:1294
 msgid ""
 "See section :ref:`function` for the syntax of parameter lists.  Note that "
 "functions created with lambda forms cannot contain statements."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1297
+#: ../src/Doc/reference/expressions.rst:1301
 msgid "Expression lists"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1306
+#: ../src/Doc/reference/expressions.rst:1310
 msgid ""
 "An expression list containing at least one comma yields a tuple.  The length "
 "of the tuple is the number of expressions in the list.  The expressions are "
 "evaluated from left to right."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1312
+#: ../src/Doc/reference/expressions.rst:1316
 msgid ""
 "The trailing comma is required only to create a single tuple (a.k.a. a "
 "*singleton*); it is optional in all other cases.  A single expression "
@@ -5072,30 +5073,31 @@ msgid ""
 "parentheses: ``()``.)"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1322
+#: ../src/Doc/reference/expressions.rst:1326
 msgid "Evaluation order"
 msgstr ""
 
 # 82676faf892345019788544595afce26
-#: ../src/Doc/reference/expressions.rst:1326
+#: ../src/Doc/reference/expressions.rst:1330
 msgid ""
 "Python evaluates expressions from left to right. Notice that while "
 "evaluating an assignment, the right-hand side is evaluated before the left-"
 "hand side."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1329
+#: ../src/Doc/reference/expressions.rst:1333
 msgid ""
 "In the following lines, expressions will be evaluated in the arithmetic "
 "order of their suffixes::"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1343
-msgid "Summary"
+# 31afa1dd2ec046ebbeadf2a8a84cd4aa
+#: ../src/Doc/reference/expressions.rst:1347
+msgid "Operator precedence"
 msgstr ""
 
 # 6bbeab57bf6c4991b718465416feea13
-#: ../src/Doc/reference/expressions.rst:1347
+#: ../src/Doc/reference/expressions.rst:1351
 msgid ""
 "The following table summarizes the operator precedences in Python, from "
 "lowest precedence (least binding) to highest precedence (most binding). "
@@ -5106,153 +5108,154 @@ msgid ""
 "`comparisons` --- and exponentiation, which groups from right to left)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1356
+#: ../src/Doc/reference/expressions.rst:1360
 msgid "Operator"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1356
+#: ../src/Doc/reference/expressions.rst:1360
 msgid "Description"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1358
+#: ../src/Doc/reference/expressions.rst:1362
 msgid ":keyword:`lambda`"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1358
+#: ../src/Doc/reference/expressions.rst:1362
 msgid "Lambda expression"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1360
+#: ../src/Doc/reference/expressions.rst:1364
 msgid ":keyword:`if` -- :keyword:`else`"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1360
+#: ../src/Doc/reference/expressions.rst:1364
 msgid "Conditional expression"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1362
+#: ../src/Doc/reference/expressions.rst:1366
 msgid ":keyword:`or`"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1362
+#: ../src/Doc/reference/expressions.rst:1366
 msgid "Boolean OR"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1364
+#: ../src/Doc/reference/expressions.rst:1368
 msgid ":keyword:`and`"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1364
+#: ../src/Doc/reference/expressions.rst:1368
 msgid "Boolean AND"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1366
-msgid ":keyword:`not` *x*"
+# 9c83cf1334b94aac9f57eca5b8c0cf7f
+#: ../src/Doc/reference/expressions.rst:1370
+msgid ":keyword:`not` ``x``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1366
+#: ../src/Doc/reference/expressions.rst:1370
 msgid "Boolean NOT"
 msgstr ""
 
 # fc22b15cc119477f97fab09b420f4af1
-#: ../src/Doc/reference/expressions.rst:1368
+#: ../src/Doc/reference/expressions.rst:1372
 msgid ""
-":keyword:`in`, :keyword:`not` :keyword:`in`, :keyword:`is`, :keyword:`is "
-"not`, ``<``, ``<=``, ``>``, ``>=``, ``<>``, ``!=``, ``==``"
+":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, "
+"``<=``, ``>``, ``>=``, ``<>``, ``!=``, ``==``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1368
+#: ../src/Doc/reference/expressions.rst:1372
 msgid "Comparisons, including membership tests and identity tests,"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1372
+#: ../src/Doc/reference/expressions.rst:1376
 msgid "``|``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1372
+#: ../src/Doc/reference/expressions.rst:1376
 msgid "Bitwise OR"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1374
+#: ../src/Doc/reference/expressions.rst:1378
 msgid "``^``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1374
+#: ../src/Doc/reference/expressions.rst:1378
 msgid "Bitwise XOR"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1376
+#: ../src/Doc/reference/expressions.rst:1380
 msgid "``&``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1376
+#: ../src/Doc/reference/expressions.rst:1380
 msgid "Bitwise AND"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1378
+#: ../src/Doc/reference/expressions.rst:1382
 msgid "``<<``, ``>>``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1378
+#: ../src/Doc/reference/expressions.rst:1382
 msgid "Shifts"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1380
+#: ../src/Doc/reference/expressions.rst:1384
 msgid "``+``, ``-``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1380
+#: ../src/Doc/reference/expressions.rst:1384
 msgid "Addition and subtraction"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1382
+#: ../src/Doc/reference/expressions.rst:1386
 msgid "``*``, ``/``, ``//``, ``%``"
 msgstr ""
 
 # 4decff26a3a24609a6efd997d8b699c1
-#: ../src/Doc/reference/expressions.rst:1382
+#: ../src/Doc/reference/expressions.rst:1386
 msgid "Multiplication, division, remainder [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1385
+#: ../src/Doc/reference/expressions.rst:1389
 msgid "``+x``, ``-x``, ``~x``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1385
+#: ../src/Doc/reference/expressions.rst:1389
 msgid "Positive, negative, bitwise NOT"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1387
+#: ../src/Doc/reference/expressions.rst:1391
 msgid "``**``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1387
+#: ../src/Doc/reference/expressions.rst:1391
 msgid "Exponentiation [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1389
+#: ../src/Doc/reference/expressions.rst:1393
 msgid "``x[index]``, ``x[index:index]``, ``x(arguments...)``, ``x.attribute``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1389
+#: ../src/Doc/reference/expressions.rst:1393
 msgid "Subscription, slicing, call, attribute reference"
 msgstr ""
 
 # ae301a72fff947749418f4ffdab0099e
-#: ../src/Doc/reference/expressions.rst:1392
+#: ../src/Doc/reference/expressions.rst:1396
 msgid ""
-"``(expressions...)``, ``[expressions...]``, ``{key:datum...}``, "
+"``(expressions...)``, ``[expressions...]``, ``{key: value...}``, "
 "```expressions...```"
 msgstr ""
 
 # 1b1c179fc70141cfb8a8ad45acbdf57e
-#: ../src/Doc/reference/expressions.rst:1392
+#: ../src/Doc/reference/expressions.rst:1396
 msgid ""
 "Binding or tuple display, list display, dictionary display, string conversion"
 msgstr ""
 
 # d0a7a1ff8e3c40acb8b8feefac868ec6
-#: ../src/Doc/reference/expressions.rst:1400
+#: ../src/Doc/reference/expressions.rst:1404
 msgid ""
 "In Python 2.3 and later releases, a list comprehension \"leaks\" the control "
 "variables of each ``for`` it contains into the containing scope.  However, "
@@ -5260,7 +5263,7 @@ msgid ""
 msgstr ""
 
 # 148849a0d81841f684388564cdf7139e
-#: ../src/Doc/reference/expressions.rst:1404
+#: ../src/Doc/reference/expressions.rst:1408
 msgid ""
 "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be "
 "true numerically due to roundoff.  For example, and assuming a platform on "
@@ -5273,7 +5276,7 @@ msgid ""
 msgstr ""
 
 # 8f76793fd29f4a91b61768bc803baa41
-#: ../src/Doc/reference/expressions.rst:1413
+#: ../src/Doc/reference/expressions.rst:1417
 msgid ""
 "If x is very close to an exact integer multiple of y, it's possible for "
 "``floor(x/y)`` to be one larger than ``(x-x%y)/y`` due to rounding.  In such "
@@ -5282,7 +5285,7 @@ msgid ""
 msgstr ""
 
 # 40de22f4d78e4e7aa23a86ae5d7afd73
-#: ../src/Doc/reference/expressions.rst:1418
+#: ../src/Doc/reference/expressions.rst:1422
 msgid ""
 "While comparisons between unicode strings make sense at the byte level, they "
 "may be counter-intuitive to users. For example, the strings ``u\"\\u00C7\"`` "
@@ -5292,13 +5295,13 @@ msgid ""
 "`unicodedata.normalize`."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1425
+#: ../src/Doc/reference/expressions.rst:1429
 msgid ""
 "The implementation computes this efficiently, without constructing lists or "
 "sorting."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1428
+#: ../src/Doc/reference/expressions.rst:1432
 msgid ""
 "Earlier versions of Python used lexicographic comparison of the sorted (key, "
 "value) lists, but this was very expensive for the common case of comparing "
@@ -5307,7 +5310,7 @@ msgid ""
 "to test a dictionary for emptiness by comparing it to ``{}``."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1434
+#: ../src/Doc/reference/expressions.rst:1438
 msgid ""
 "Due to automatic garbage-collection, free lists, and the dynamic nature of "
 "descriptors, you may notice seemingly unusual behaviour in certain uses of "
@@ -5316,13 +5319,13 @@ msgid ""
 msgstr ""
 
 # 39f30010c83140ad91134fe4d37e0702
-#: ../src/Doc/reference/expressions.rst:1439
+#: ../src/Doc/reference/expressions.rst:1443
 msgid ""
 "The ``%`` operator is also used for string formatting; the same precedence "
 "applies."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1442
+#: ../src/Doc/reference/expressions.rst:1446
 msgid ""
 "The power operator ``**`` binds less tightly than an arithmetic or bitwise "
 "unary operator on its right, that is, ``2**-1`` is ``0.5``."
