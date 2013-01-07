@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-31 05:30\n"
+"POT-Creation-Date: 2013-01-07 05:40\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -588,7 +588,7 @@ msgstr ""
 
 # 200f6fc6f7394271a6276fcfe3273a09
 #: ../src/Doc/howto/argparse.rst:5
-msgid "Tshepang Lekhonkhobe <tshepang@gmail.com>"
+msgid "Tshepang Lekhonkhobe"
 msgstr ""
 
 # af25637af9a14581ae1d826fe381b879

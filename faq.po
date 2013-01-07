@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-31 05:30\n"
+"POT-Creation-Date: 2013-01-07 05:40\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -422,13 +422,14 @@ msgstr ""
 "list.index()) mais des fonctions pour d'autres (ex : len(list)) ?"
 
 #: ../src/Doc/faq/design.rst:224
+#, fuzzy
 msgid ""
 "The major reason is history. Functions were used for those operations that "
 "were generic for a group of types and which were intended to work even for "
 "objects that didn't have methods at all (e.g. tuples).  It is also "
 "convenient to have a function that can readily be applied to an amorphous "
 "collection of objects when you use the functional features of Python (``map()"
-"``, ``apply()`` et al)."
+"``, ``zip()`` et al)."
 msgstr ""
 "La raison principale est historique. Les fonctions étaient utilisées pour "
 "ces opérations qui étaient génériques pour un groupe de types et qui étaient "
@@ -633,20 +634,19 @@ msgid ""
 "requires thread support for C."
 msgstr ""
 
+# 90c31368a54d47e599f0c7a62ff060e5
 #: ../src/Doc/faq/design.rst:371
 msgid ""
 "Answer 2: Fortunately, there is `Stackless Python <http://www.stackless."
 "com>`_, which has a completely redesigned interpreter loop that avoids the C "
-"stack. It's still experimental but looks very promising.  Although it is "
-"binary compatible with standard Python, it's still unclear whether Stackless "
-"will make it into the core -- maybe it's just too revolutionary."
+"stack."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:379
+#: ../src/Doc/faq/design.rst:376
 msgid "Why can't lambda forms contain statements?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:381
+#: ../src/Doc/faq/design.rst:378
 msgid ""
 "Python lambda forms cannot contain statements because Python's syntactic "
 "framework can't handle statements nested inside expressions.  However, in "
@@ -655,7 +655,7 @@ msgid ""
 "notation if you're too lazy to define a function."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:387
+#: ../src/Doc/faq/design.rst:384
 msgid ""
 "Functions are already first class objects in Python, and can be declared in "
 "a local scope.  Therefore the only advantage of using a lambda form instead "
@@ -665,12 +665,12 @@ msgid ""
 "is assigned!"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:395
+#: ../src/Doc/faq/design.rst:392
 msgid "Can Python be compiled to machine code, C or some other language?"
 msgstr ""
 
 # 4de1ffd8c7e74c52acedce7311a5a494
-#: ../src/Doc/faq/design.rst:397
+#: ../src/Doc/faq/design.rst:394
 msgid ""
 "Not easily.  Python's high level data types, dynamic typing of objects and "
 "run-time invocation of the interpreter (using :func:`eval` or :keyword:"
@@ -679,7 +679,7 @@ msgid ""
 "simple operations like ``x+1``."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:403
+#: ../src/Doc/faq/design.rst:400
 msgid ""
 "Several projects described in the Python newsgroup or at past `Python "
 "conferences <http://python.org/community/workshops/>`_ have shown that this "
@@ -691,7 +691,7 @@ msgid ""
 "workshops/1997-10/proceedings/>`_ for more information.)"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:412
+#: ../src/Doc/faq/design.rst:409
 msgid ""
 "Internally, Python source code is always translated into a bytecode "
 "representation, and this bytecode is then executed by the Python virtual "
@@ -702,7 +702,7 @@ msgid ""
 "the .pyc file is rewritten."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:419
+#: ../src/Doc/faq/design.rst:416
 msgid ""
 "There is no performance difference once the .pyc file has been loaded, as "
 "the bytecode read from the .pyc file is exactly the same as the bytecode "
@@ -713,7 +713,7 @@ msgid ""
 "valid .pyc files for a given set of modules."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:427
+#: ../src/Doc/faq/design.rst:424
 msgid ""
 "Note that the main script executed by Python, even if its filename ends in ."
 "py, is not compiled to a .pyc file.  It is compiled to bytecode, but the "
@@ -721,7 +721,7 @@ msgid ""
 "this doesn't cost much speed."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:434
+#: ../src/Doc/faq/design.rst:431
 msgid ""
 "There are also several programs which make it easier to intermingle Python "
 "and C code in various ways to increase performance.  See, for example, "
@@ -731,11 +731,11 @@ msgid ""
 "<http://www.scipy.org/Weave>`_."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:444
+#: ../src/Doc/faq/design.rst:441
 msgid "How does Python manage memory?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:446
+#: ../src/Doc/faq/design.rst:443
 msgid ""
 "The details of Python memory management depend on the implementation.  The "
 "standard C implementation of Python uses reference counting to detect "
@@ -746,7 +746,7 @@ msgid ""
 "statistics, and tune the collector's parameters."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:454
+#: ../src/Doc/faq/design.rst:451
 msgid ""
 "Jython relies on the Java runtime so the JVM's garbage collector is used.  "
 "This difference can cause some subtle porting problems if your Python code "
@@ -754,14 +754,14 @@ msgid ""
 msgstr ""
 
 # 10bafb17f7824b78b845e7dbc318d8db
-#: ../src/Doc/faq/design.rst:460
+#: ../src/Doc/faq/design.rst:457
 msgid ""
 "Sometimes objects get stuck in tracebacks temporarily and hence are not "
 "deallocated when you might expect.  Clear the tracebacks with::"
 msgstr ""
 
 # 6f33da00d80d46bebfeb3ef2cf98b43a
-#: ../src/Doc/faq/design.rst:467
+#: ../src/Doc/faq/design.rst:464
 msgid ""
 "Tracebacks are used for reporting errors, implementing debuggers and related "
 "things.  They contain a portion of the program state extracted during the "
@@ -769,13 +769,13 @@ msgid ""
 msgstr ""
 
 # 3d80990eb0854adc91be5e05e67a9cc5
-#: ../src/Doc/faq/design.rst:471
+#: ../src/Doc/faq/design.rst:468
 msgid ""
 "In the absence of circularities and tracebacks, Python programs do not need "
 "to manage memory explicitly."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:474
+#: ../src/Doc/faq/design.rst:471
 msgid ""
 "Why doesn't Python use a more traditional garbage collection scheme?  For "
 "one thing, this is not a C standard feature and hence it's not portable.  "
@@ -785,7 +785,7 @@ msgid ""
 "Python to work with it.)"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:481
+#: ../src/Doc/faq/design.rst:478
 msgid ""
 "Traditional GC also becomes a problem when Python is embedded into other "
 "applications.  While in a standalone Python it's fine to replace the "
@@ -795,13 +795,13 @@ msgid ""
 "anything that implements malloc() and free() properly."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:488
+#: ../src/Doc/faq/design.rst:485
 msgid ""
 "In Jython, the following code (which is fine in CPython) will probably run "
 "out of file descriptors long before it runs out of memory::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:495
+#: ../src/Doc/faq/design.rst:492
 msgid ""
 "Using the current reference counting and destructor scheme, each new "
 "assignment to f closes the previous file.  Using GC, this is not "
@@ -810,11 +810,11 @@ msgid ""
 "`with` statement; this will work regardless of GC::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:507
+#: ../src/Doc/faq/design.rst:504
 msgid "Why isn't all memory freed when Python exits?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:509
+#: ../src/Doc/faq/design.rst:506
 msgid ""
 "Objects referenced from the global namespaces of Python modules are not "
 "always deallocated when Python exits.  This may happen if there are circular "
@@ -824,17 +824,17 @@ msgid ""
 "exit and does try to destroy every single object."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:516
+#: ../src/Doc/faq/design.rst:513
 msgid ""
 "If you want to force Python to delete certain things on deallocation use "
 "the :mod:`atexit` module to run a function that will force those deletions."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:521
+#: ../src/Doc/faq/design.rst:518
 msgid "Why are there separate tuple and list data types?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:523
+#: ../src/Doc/faq/design.rst:520
 msgid ""
 "Lists and tuples, while similar in many respects, are generally used in "
 "fundamentally different ways.  Tuples can be thought of as being similar to "
@@ -844,7 +844,7 @@ msgid ""
 "numbers."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:530
+#: ../src/Doc/faq/design.rst:527
 msgid ""
 "Lists, on the other hand, are more like arrays in other languages.  They "
 "tend to hold a varying number of objects all of which have the same type and "
@@ -854,7 +854,7 @@ msgid ""
 "added another file or two to the directory."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:537
+#: ../src/Doc/faq/design.rst:534
 msgid ""
 "Tuples are immutable, meaning that once a tuple has been created, you can't "
 "replace any of its elements with a new value.  Lists are mutable, meaning "
@@ -863,11 +863,11 @@ msgid ""
 "as keys."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:544
+#: ../src/Doc/faq/design.rst:541
 msgid "How are lists implemented?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:546
+#: ../src/Doc/faq/design.rst:543
 msgid ""
 "Python's lists are really variable-length arrays, not Lisp-style linked "
 "lists. The implementation uses a contiguous array of references to other "
@@ -875,13 +875,13 @@ msgid ""
 "head structure."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:550
+#: ../src/Doc/faq/design.rst:547
 msgid ""
 "This makes indexing a list ``a[i]`` an operation whose cost is independent "
 "of the size of the list or the value of the index."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:553
+#: ../src/Doc/faq/design.rst:550
 msgid ""
 "When items are appended or inserted, the array of references is resized.  "
 "Some cleverness is applied to improve the performance of appending items "
@@ -889,18 +889,18 @@ msgid ""
 "the next few times don't require an actual resize."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:560
+#: ../src/Doc/faq/design.rst:557
 msgid "How are dictionaries implemented?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:562
+#: ../src/Doc/faq/design.rst:559
 msgid ""
 "Python's dictionaries are implemented as resizable hash tables.  Compared to "
 "B-trees, this gives better performance for lookup (the most common operation "
 "by far) under most circumstances, and the implementation is simpler."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:566
+#: ../src/Doc/faq/design.rst:563
 msgid ""
 "Dictionaries work by computing a hash code for each key stored in the "
 "dictionary using the :func:`hash` built-in function.  The hash code varies "
@@ -915,11 +915,11 @@ msgid ""
 "dictionary's content in some arbitrary jumbled order."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:579
+#: ../src/Doc/faq/design.rst:576
 msgid "Why must dictionary keys be immutable?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:581
+#: ../src/Doc/faq/design.rst:578
 msgid ""
 "The hash table implementation of dictionaries uses a hash value calculated "
 "from the key value to find the key.  If the key were a mutable object, its "
@@ -932,7 +932,7 @@ msgid ""
 "would be different."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:590
+#: ../src/Doc/faq/design.rst:587
 msgid ""
 "If you want a dictionary indexed with a list, simply convert the list to a "
 "tuple first; the function ``tuple(L)`` creates a tuple with the same entries "
@@ -940,31 +940,31 @@ msgid ""
 "dictionary keys."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:594
+#: ../src/Doc/faq/design.rst:591
 msgid "Some unacceptable solutions that have been proposed:"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:596
+#: ../src/Doc/faq/design.rst:593
 msgid ""
 "Hash lists by their address (object ID).  This doesn't work because if you "
 "construct a new list with the same value it won't be found; e.g.::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:602
+#: ../src/Doc/faq/design.rst:599
 msgid ""
 "would raise a KeyError exception because the id of the ``[1, 2]`` used in "
 "the second line differs from that in the first line.  In other words, "
 "dictionary keys should be compared using ``==``, not using :keyword:`is`."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:606
+#: ../src/Doc/faq/design.rst:603
 msgid ""
 "Make a copy when using a list as a key.  This doesn't work because the list, "
 "being a mutable object, could contain a reference to itself, and then the "
 "copying code would run into an infinite loop."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:610
+#: ../src/Doc/faq/design.rst:607
 msgid ""
 "Allow lists as keys but tell the user not to modify them.  This would allow "
 "a class of hard-to-track bugs in programs when you forgot or modified a list "
@@ -972,7 +972,7 @@ msgid ""
 "every value in ``d.keys()`` is usable as a key of the dictionary."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:615
+#: ../src/Doc/faq/design.rst:612
 msgid ""
 "Mark lists as read-only once they are used as a dictionary key.  The problem "
 "is that it's not just the top-level object that could change its value; you "
@@ -982,7 +982,7 @@ msgid ""
 "loop."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:621
+#: ../src/Doc/faq/design.rst:618
 msgid ""
 "There is a trick to get around this if you need to, but use it at your own "
 "risk: You can wrap a mutable structure inside a class instance which has "
@@ -992,14 +992,14 @@ msgid ""
 "in the dictionary (or other structure). ::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:643
+#: ../src/Doc/faq/design.rst:640
 msgid ""
 "Note that the hash computation is complicated by the possibility that some "
 "members of the list may be unhashable and also by the possibility of "
 "arithmetic overflow."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:647
+#: ../src/Doc/faq/design.rst:644
 msgid ""
 "Furthermore it must always be the case that if ``o1 == o2`` (ie ``o1.__eq__"
 "(o2) is True``) then ``hash(o1) == hash(o2)`` (ie, ``o1.__hash__() == o2."
@@ -1008,7 +1008,7 @@ msgid ""
 "structures will misbehave."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:652
+#: ../src/Doc/faq/design.rst:649
 msgid ""
 "In the case of ListWrapper, whenever the wrapper object is in a dictionary "
 "the wrapped list must not change to avoid anomalies.  Don't do this unless "
@@ -1016,11 +1016,11 @@ msgid ""
 "of not meeting them correctly.  Consider yourself warned."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:659
+#: ../src/Doc/faq/design.rst:656
 msgid "Why doesn't list.sort() return the sorted list?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:661
+#: ../src/Doc/faq/design.rst:658
 msgid ""
 "In situations where performance matters, making a copy of the list just to "
 "sort it would be wasteful. Therefore, :meth:`list.sort` sorts the list in "
@@ -1030,7 +1030,7 @@ msgid ""
 "around."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:667
+#: ../src/Doc/faq/design.rst:664
 msgid ""
 "In Python 2.4 a new built-in function -- :func:`sorted` -- has been added. "
 "This function creates a new list from a provided iterable, sorts it and "
@@ -1038,11 +1038,11 @@ msgid ""
 "dictionary in sorted order::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:677
+#: ../src/Doc/faq/design.rst:674
 msgid "How do you specify and enforce an interface spec in Python?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:679
+#: ../src/Doc/faq/design.rst:676
 msgid ""
 "An interface specification for a module as provided by languages such as C++ "
 "and Java describes the prototypes for the methods and functions of the "
@@ -1051,7 +1051,7 @@ msgid ""
 msgstr ""
 
 # d2ba30372839470fb58835ecfbd8cfe3
-#: ../src/Doc/faq/design.rst:684
+#: ../src/Doc/faq/design.rst:681
 msgid ""
 "Python 2.6 adds an :mod:`abc` module that lets you define Abstract Base "
 "Classes (ABCs).  You can then use :func:`isinstance` and :func:`issubclass` "
@@ -1060,14 +1060,14 @@ msgid ""
 "`Iterable`, :class:`Container`, and :class:`MutableMapping`."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:690
+#: ../src/Doc/faq/design.rst:687
 msgid ""
 "For Python, many of the advantages of interface specifications can be "
 "obtained by an appropriate test discipline for components.  There is also a "
 "tool, PyChecker, which can be used to find problems due to subclassing."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:694
+#: ../src/Doc/faq/design.rst:691
 msgid ""
 "A good test suite for a module can both provide a regression test and serve "
 "as a module interface specification and a set of examples.  Many Python "
@@ -1079,7 +1079,7 @@ msgid ""
 "in a module."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:702
+#: ../src/Doc/faq/design.rst:699
 msgid ""
 "An appropriate testing discipline can help build large complex applications "
 "in Python as well as having interface specifications would.  In fact, it can "
@@ -1090,7 +1090,7 @@ msgid ""
 "correctly, but it's trivial to check this property in a test suite."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:710
+#: ../src/Doc/faq/design.rst:707
 msgid ""
 "Writing test suites is very helpful, and you might want to design your code "
 "with an eye to making it easily tested.  One increasingly popular technique, "
@@ -1099,24 +1099,24 @@ msgid ""
 "sloppy and not write test cases at all."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:718
+#: ../src/Doc/faq/design.rst:715
 msgid "Why are default values shared between objects?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:720
+#: ../src/Doc/faq/design.rst:717
 msgid ""
 "This type of bug commonly bites neophyte programmers.  Consider this "
 "function::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:727
+#: ../src/Doc/faq/design.rst:724
 msgid ""
 "The first time you call this function, ``mydict`` contains a single item.  "
 "The second time, ``mydict`` contains two items because when ``foo()`` begins "
 "executing, ``mydict`` starts out with an item already in it."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:731
+#: ../src/Doc/faq/design.rst:728
 msgid ""
 "It is often expected that a function call creates new objects for default "
 "values. This is not what happens. Default values are created exactly once, "
@@ -1125,14 +1125,14 @@ msgid ""
 "this changed object."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:736
+#: ../src/Doc/faq/design.rst:733
 msgid ""
 "By definition, immutable objects such as numbers, strings, tuples, and "
 "``None``, are safe from change. Changes to mutable objects such as "
 "dictionaries, lists, and class instances can lead to confusion."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:740
+#: ../src/Doc/faq/design.rst:737
 msgid ""
 "Because of this feature, it is good programming practice to not use mutable "
 "objects as default values.  Instead, use ``None`` as the default value and "
@@ -1140,11 +1140,11 @@ msgid ""
 "list/dictionary/whatever if it is.  For example, don't write::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:748
+#: ../src/Doc/faq/design.rst:745
 msgid "but::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:754
+#: ../src/Doc/faq/design.rst:751
 msgid ""
 "This feature can be useful.  When you have a function that's time-consuming "
 "to compute, a common technique is to cache the parameters and the resulting "
@@ -1153,17 +1153,17 @@ msgid ""
 "implemented like this::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:769
+#: ../src/Doc/faq/design.rst:766
 msgid ""
 "You could use a global variable containing a dictionary instead of the "
 "default value; it's a matter of taste."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:774
+#: ../src/Doc/faq/design.rst:771
 msgid "Why is there no goto?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:776
+#: ../src/Doc/faq/design.rst:773
 msgid ""
 "You can use exceptions to provide a \"structured goto\" that even works "
 "across function calls.  Many feel that exceptions can conveniently emulate "
@@ -1171,24 +1171,24 @@ msgid ""
 "other languages.  For example::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:791
+#: ../src/Doc/faq/design.rst:788
 msgid ""
 "This doesn't allow you to jump into the middle of a loop, but that's usually "
 "considered an abuse of goto anyway.  Use sparingly."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:796
+#: ../src/Doc/faq/design.rst:793
 msgid "Why can't raw strings (r-strings) end with a backslash?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:798
+#: ../src/Doc/faq/design.rst:795
 msgid ""
 "More precisely, they can't end with an odd number of backslashes: the "
 "unpaired backslash at the end escapes the closing quote character, leaving "
 "an unterminated string."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:802
+#: ../src/Doc/faq/design.rst:799
 msgid ""
 "Raw strings were designed to ease creating input for processors (chiefly "
 "regular expression engines) that want to do their own backslash escape "
@@ -1198,33 +1198,33 @@ msgid ""
 "rules work well when r-strings are used for their intended purpose."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:809
+#: ../src/Doc/faq/design.rst:806
 msgid ""
 "If you're trying to build Windows pathnames, note that all Windows system "
 "calls accept forward slashes too::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:814
+#: ../src/Doc/faq/design.rst:811
 msgid ""
 "If you're trying to build a pathname for a DOS command, try e.g. one of ::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:822
+#: ../src/Doc/faq/design.rst:819
 msgid "Why doesn't Python have a \"with\" statement for attribute assignments?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:824
+#: ../src/Doc/faq/design.rst:821
 msgid ""
 "Python has a 'with' statement that wraps the execution of a block, calling "
 "code on the entrance and exit from the block.  Some language have a "
 "construct that looks like this::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:832
+#: ../src/Doc/faq/design.rst:829
 msgid "In Python, such a construct would be ambiguous."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:834
+#: ../src/Doc/faq/design.rst:831
 msgid ""
 "Other languages, such as Object Pascal, Delphi, and C++, use static types, "
 "so it's possible to know, in an unambiguous way, what member is being "
@@ -1232,7 +1232,7 @@ msgid ""
 "*always* knows the scope of every variable at compile time."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:839
+#: ../src/Doc/faq/design.rst:836
 msgid ""
 "Python uses dynamic types. It is impossible to know in advance which "
 "attribute will be referenced at runtime. Member attributes may be added or "
@@ -1241,11 +1241,11 @@ msgid ""
 "one, or a member attribute?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:845
+#: ../src/Doc/faq/design.rst:842
 msgid "For instance, take the following incomplete snippet::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:851
+#: ../src/Doc/faq/design.rst:848
 msgid ""
 "The snippet assumes that \"a\" must have a member attribute called \"x\".  "
 "However, there is nothing in Python that tells the interpreter this. What "
@@ -1254,46 +1254,46 @@ msgid ""
 "the dynamic nature of Python makes such choices much harder."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:857
+#: ../src/Doc/faq/design.rst:854
 msgid ""
 "The primary benefit of \"with\" and similar language features (reduction of "
 "code volume) can, however, easily be achieved in Python by assignment.  "
 "Instead of::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:864
+#: ../src/Doc/faq/design.rst:861
 msgid "write this::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:871
+#: ../src/Doc/faq/design.rst:868
 msgid ""
 "This also has the side-effect of increasing execution speed because name "
 "bindings are resolved at run-time in Python, and the second version only "
 "needs to perform the resolution once."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:877
+#: ../src/Doc/faq/design.rst:874
 msgid "Why are colons required for the if/while/def/class statements?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:879
+#: ../src/Doc/faq/design.rst:876
 msgid ""
 "The colon is required primarily to enhance readability (one of the results "
 "of the experimental ABC language).  Consider this::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:885
+#: ../src/Doc/faq/design.rst:882
 msgid "versus ::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:890
+#: ../src/Doc/faq/design.rst:887
 msgid ""
 "Notice how the second one is slightly easier to read.  Notice further how a "
 "colon sets off the example in this FAQ answer; it's a standard usage in "
 "English."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:893
+#: ../src/Doc/faq/design.rst:890
 msgid ""
 "Another minor reason is that the colon makes it easier for editors with "
 "syntax highlighting; they can look for colons to decide when indentation "
@@ -1301,21 +1301,21 @@ msgid ""
 "the program text."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:899
+#: ../src/Doc/faq/design.rst:896
 msgid "Why does Python allow commas at the end of lists and tuples?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:901
+#: ../src/Doc/faq/design.rst:898
 msgid ""
 "Python lets you add a trailing comma at the end of lists, tuples, and "
 "dictionaries::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:912
+#: ../src/Doc/faq/design.rst:909
 msgid "There are several reasons to allow this."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:914
+#: ../src/Doc/faq/design.rst:911
 msgid ""
 "When you have a literal value for a list, tuple, or dictionary spread across "
 "multiple lines, it's easier to add more elements because you don't have to "
@@ -1323,20 +1323,20 @@ msgid ""
 "in your editor without creating a syntax error."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:919
+#: ../src/Doc/faq/design.rst:916
 msgid ""
 "Accidentally omitting the comma can lead to errors that are hard to "
 "diagnose. For example::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:929
+#: ../src/Doc/faq/design.rst:926
 msgid ""
 "This list looks like it has four elements, but it actually contains three: "
 "\"fee\", \"fiefoo\" and \"fum\".  Always adding the comma avoids this source "
 "of error."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:932
+#: ../src/Doc/faq/design.rst:929
 msgid ""
 "Allowing the trailing comma may also make programmatic code generation "
 "easier."
@@ -4255,11 +4255,68 @@ msgid ""
 "of the ``global`` declaration for identifying side-effects."
 msgstr ""
 
+# 924a0fb4c52d4d508ae61ede7c3f8fdf
 #: ../src/Doc/faq/programming.rst:356
+msgid ""
+"Why do lambdas defined in a loop with different values all return the same "
+"result?"
+msgstr ""
+
+# 6e3ea9d4df2642eb9d3e92eaa6a9968c
+#: ../src/Doc/faq/programming.rst:358
+msgid ""
+"Assume you use a for loop to define a few different lambdas (or even plain "
+"functions), e.g.::"
+msgstr ""
+
+# 13aa3d4bd1ba489385475d37babef0c0
+#: ../src/Doc/faq/programming.rst:365
+msgid ""
+"This gives you a list that contains 5 lambdas that calculate ``x**2``.  You "
+"might expect that, when called, they would return, respectively, ``0``, "
+"``1``, ``4``, ``9``, and ``16``.  However, when you actually try you will "
+"see that they all return ``16``::"
+msgstr ""
+
+# 05dae30e0a144c0297629c1951263f65
+#: ../src/Doc/faq/programming.rst:375
+msgid ""
+"This happens because ``x`` is not local to the lambdas, but is defined in "
+"the outer scope, and it is accessed when the lambda is called --- not when "
+"it is defined.  At the end of the loop, the value of ``x`` is ``4``, so all "
+"the functions now return ``4**2``, i.e. ``16``.  You can also verify this by "
+"changing the value of ``x`` and see how the results of the lambdas change::"
+msgstr ""
+
+# bdbfb8d8dc1247e98b41e0aff5680c34
+#: ../src/Doc/faq/programming.rst:385
+msgid ""
+"In order to avoid this, you need to save the values in variables local to "
+"the lambdas, so that they don't rely on the value of the global ``x``::"
+msgstr ""
+
+# 0d3f70faade14c55b8ed25080bd41a4e
+#: ../src/Doc/faq/programming.rst:392
+msgid ""
+"Here, ``n=x`` creates a new variable ``n`` local to the lambda and computed "
+"when the lambda is defined so that it has the same value that ``x`` had at "
+"that point in the loop.  This means that the value of ``n`` will be ``0`` in "
+"the first lambda, ``1`` in the second, ``2`` in the third, and so on. "
+"Therefore each lambda will now return the correct result::"
+msgstr ""
+
+# b620a634f93a46fca3caa69d6a8410d2
+#: ../src/Doc/faq/programming.rst:403
+msgid ""
+"Note that this behaviour is not peculiar to lambdas, but applies to regular "
+"functions too."
+msgstr ""
+
+#: ../src/Doc/faq/programming.rst:408
 msgid "How do I share global variables across modules?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:358
+#: ../src/Doc/faq/programming.rst:410
 msgid ""
 "The canonical way to share information across modules within a single "
 "program is to create a special module (often called config or cfg).  Just "
@@ -4269,30 +4326,30 @@ msgid ""
 "everywhere.  For example:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:364
+#: ../src/Doc/faq/programming.rst:416
 msgid "config.py::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:368
+#: ../src/Doc/faq/programming.rst:420
 msgid "mod.py::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:373
+#: ../src/Doc/faq/programming.rst:425
 msgid "main.py::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:379
+#: ../src/Doc/faq/programming.rst:431
 msgid ""
 "Note that using a module is also the basis for implementing the Singleton "
 "design pattern, for the same reason."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:384
+#: ../src/Doc/faq/programming.rst:436
 msgid "What are the \"best practices\" for using import in a module?"
 msgstr ""
 
 # fe8501e866514060acb58f1c1a7bbd23
-#: ../src/Doc/faq/programming.rst:386
+#: ../src/Doc/faq/programming.rst:438
 msgid ""
 "In general, don't use ``from modulename import *``.  Doing so clutters the "
 "importer's namespace.  Some people avoid this idiom even with the few "
@@ -4300,7 +4357,7 @@ msgid ""
 "in this manner include :mod:`Tkinter`, and :mod:`threading`."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:391
+#: ../src/Doc/faq/programming.rst:443
 msgid ""
 "Import modules at the top of a file.  Doing so makes it clear what other "
 "modules your code requires and avoids questions of whether the module name "
@@ -4308,26 +4365,26 @@ msgid ""
 "module imports, but using multiple imports per line uses less screen space."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:396
+#: ../src/Doc/faq/programming.rst:448
 msgid "It's good practice if you import modules in the following order:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:398
+#: ../src/Doc/faq/programming.rst:450
 msgid "standard library modules -- e.g. ``sys``, ``os``, ``getopt``, ``re``"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:399
+#: ../src/Doc/faq/programming.rst:451
 msgid ""
 "third-party library modules (anything installed in Python's site-packages "
 "directory) -- e.g. mx.DateTime, ZODB, PIL.Image, etc."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:401
+#: ../src/Doc/faq/programming.rst:453
 msgid "locally-developed modules"
 msgstr ""
 
 # 9f4cb04c4862498b986f121672a5251b
-#: ../src/Doc/faq/programming.rst:403
+#: ../src/Doc/faq/programming.rst:455
 msgid ""
 "Never use relative package imports.  If you're writing code that's in the "
 "``package.sub.m1`` module and want to import ``package.sub.m2``, do not just "
@@ -4336,13 +4393,13 @@ msgid ""
 "initialized twice, leading to confusing bugs.  See :pep:`328` for details."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:409
+#: ../src/Doc/faq/programming.rst:461
 msgid ""
 "It is sometimes necessary to move imports to a function or class to avoid "
 "problems with circular imports.  Gordon McMillan says:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:412
+#: ../src/Doc/faq/programming.rst:464
 msgid ""
 "Circular imports are fine where both modules use the \"import <module>\" "
 "form of import.  They fail when the 2nd module wants to grab a name out of "
@@ -4351,7 +4408,7 @@ msgid ""
 "module is busy importing the 2nd."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:418
+#: ../src/Doc/faq/programming.rst:470
 msgid ""
 "In this case, if the second module is only used in one function, then the "
 "import can easily be moved into that function.  By the time the import is "
@@ -4359,7 +4416,7 @@ msgid ""
 "module can do its import."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:423
+#: ../src/Doc/faq/programming.rst:475
 msgid ""
 "It may also be necessary to move imports out of the top level of code if "
 "some of the modules are platform-specific.  In that case, it may not even be "
@@ -4368,7 +4425,7 @@ msgid ""
 "a good option."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:428
+#: ../src/Doc/faq/programming.rst:480
 msgid ""
 "Only move imports into a local scope, such as inside a function definition, "
 "if it's necessary to solve a problem such as avoiding a circular import or "
@@ -4382,7 +4439,7 @@ msgid ""
 "of scope, the module is probably available in :data:`sys.modules`."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:439
+#: ../src/Doc/faq/programming.rst:491
 msgid ""
 "If only instances of a specific class use a module, then it is reasonable to "
 "import the module in the class's ``__init__`` method and then assign the "
@@ -4393,12 +4450,12 @@ msgid ""
 "causes the import to occur when the module is initialized."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:449
+#: ../src/Doc/faq/programming.rst:501
 msgid ""
 "How can I pass optional or keyword parameters from one function to another?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:451
+#: ../src/Doc/faq/programming.rst:503
 msgid ""
 "Collect the arguments using the ``*`` and ``**`` specifiers in the "
 "function's parameter list; this gives you the positional arguments as a "
@@ -4406,19 +4463,19 @@ msgid ""
 "arguments when calling another function by using ``*`` and ``**``::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:462
+#: ../src/Doc/faq/programming.rst:514
 msgid ""
 "In the unlikely case that you care about Python versions older than 2.0, "
 "use :func:`apply`::"
 msgstr ""
 
 # 96b5be5f561c4e388030863e5bbacca1
-#: ../src/Doc/faq/programming.rst:479
+#: ../src/Doc/faq/programming.rst:531
 msgid "What is the difference between arguments and parameters?"
 msgstr ""
 
 # a4cafc0bd37a4682bb11a96bcc193305
-#: ../src/Doc/faq/programming.rst:481
+#: ../src/Doc/faq/programming.rst:533
 msgid ""
 ":term:`Parameters <parameter>` are defined by the names that appear in a "
 "function definition, whereas :term:`arguments <argument>` are the values "
@@ -4428,22 +4485,22 @@ msgid ""
 msgstr ""
 
 # aebb59148b8f4b369dcddd620bda8acc
-#: ../src/Doc/faq/programming.rst:489
+#: ../src/Doc/faq/programming.rst:541
 msgid ""
 "*foo*, *bar* and *kwargs* are parameters of ``func``.  However, when calling "
 "``func``, for example::"
 msgstr ""
 
 # 786ad2fc6ac74da49f7655b754d46766
-#: ../src/Doc/faq/programming.rst:494
+#: ../src/Doc/faq/programming.rst:546
 msgid "the values ``42``, ``314``, and ``somevar`` are arguments."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:498
+#: ../src/Doc/faq/programming.rst:550
 msgid "How do I write a function with output parameters (call by reference)?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:500
+#: ../src/Doc/faq/programming.rst:552
 msgid ""
 "Remember that arguments are passed by assignment in Python.  Since "
 "assignment just creates references to objects, there's no alias between an "
@@ -4451,51 +4508,51 @@ msgid ""
 "You can achieve the desired effect in a number of ways."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:505
+#: ../src/Doc/faq/programming.rst:557
 msgid "By returning a tuple of the results::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:516
+#: ../src/Doc/faq/programming.rst:568
 msgid "This is almost always the clearest solution."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:518
+#: ../src/Doc/faq/programming.rst:570
 msgid ""
 "By using global variables.  This isn't thread-safe, and is not recommended."
 msgstr ""
 "En utilisant des variables globales. Ce qui n'est pas thread-safe, et n'est "
 "donc pas recommandé."
 
-#: ../src/Doc/faq/programming.rst:520
+#: ../src/Doc/faq/programming.rst:572
 msgid "By passing a mutable (changeable in-place) object::"
 msgstr "En passant un objet mutable (modifiable par remplacement)::"
 
-#: ../src/Doc/faq/programming.rst:530
+#: ../src/Doc/faq/programming.rst:582
 msgid "By passing in a dictionary that gets mutated::"
 msgstr "En utilisant un dictionnaire, qui est modifié (en place)."
 
-#: ../src/Doc/faq/programming.rst:540
+#: ../src/Doc/faq/programming.rst:592
 #, fuzzy
 msgid "Or bundle up values in a class instance::"
 msgstr "Ou regrouper les valeurs dans une instance de classe::"
 
-#: ../src/Doc/faq/programming.rst:556
+#: ../src/Doc/faq/programming.rst:608
 msgid "There's almost never a good reason to get this complicated."
 msgstr ""
 "Il n'y a pratiquement jamais de bonne raison de faire quelque chose d'aussi "
 "compliqué."
 
-#: ../src/Doc/faq/programming.rst:558
+#: ../src/Doc/faq/programming.rst:610
 msgid "Your best choice is to return a tuple containing the multiple results."
 msgstr ""
 "Votre meilleure option est de renvoyer un tuple contenant les résultats "
 "multiples."
 
-#: ../src/Doc/faq/programming.rst:562
+#: ../src/Doc/faq/programming.rst:614
 msgid "How do you make a higher order function in Python?"
 msgstr "Comment construire une fonction de grand ordre en Python?"
 
-#: ../src/Doc/faq/programming.rst:564
+#: ../src/Doc/faq/programming.rst:616
 msgid ""
 "You have two choices: you can use nested scopes or you can use callable "
 "objects. For example, suppose you wanted to define ``linear(a,b)`` which "
@@ -4507,19 +4564,19 @@ msgstr ""
 "vouliez définir ``lineare (a, b)`` qui retourne une fonction ``f (x)`` qui "
 "calcule la valeur ``a * x + b``. En utilisant les portées imbriquées::"
 
-#: ../src/Doc/faq/programming.rst:573
+#: ../src/Doc/faq/programming.rst:625
 msgid "Or using a callable object::"
 msgstr "Ou en utilisant un objet appelable."
 
-#: ../src/Doc/faq/programming.rst:583
+#: ../src/Doc/faq/programming.rst:635
 msgid "In both cases, ::"
 msgstr "dans les deux cas, ::"
 
-#: ../src/Doc/faq/programming.rst:587
+#: ../src/Doc/faq/programming.rst:639
 msgid "gives a callable object where ``taxes(10e6) == 0.3 * 10e6 + 2``."
 msgstr "retourne un objet appelable tel que ``taxes(10e6) == 0.3 * 10e6 + 2``."
 
-#: ../src/Doc/faq/programming.rst:589
+#: ../src/Doc/faq/programming.rst:641
 msgid ""
 "The callable object approach has the disadvantage that it is a bit slower "
 "and results in slightly longer code.  However, note that a collection of "
@@ -4530,12 +4587,12 @@ msgstr ""
 "qu'une collection d'objet appelables peuvent partager leur signatures par "
 "héritage::"
 
-#: ../src/Doc/faq/programming.rst:598
+#: ../src/Doc/faq/programming.rst:650
 #, fuzzy
 msgid "Object can encapsulate state for several methods::"
 msgstr "Les objets peuvent encapsuler un état pour plusieurs méthodes::"
 
-#: ../src/Doc/faq/programming.rst:616
+#: ../src/Doc/faq/programming.rst:668
 msgid ""
 "Here ``inc()``, ``dec()`` and ``reset()`` act like functions which share the "
 "same counting variable."
@@ -4543,11 +4600,11 @@ msgstr ""
 "Ici ``inc()``, ``dec()`` et ``reset`` agissent comme des fonctions "
 "partageant une même variable compteur."
 
-#: ../src/Doc/faq/programming.rst:621
+#: ../src/Doc/faq/programming.rst:673
 msgid "How do I copy an object in Python?"
 msgstr "Comment copier un objet en Python?"
 
-#: ../src/Doc/faq/programming.rst:623
+#: ../src/Doc/faq/programming.rst:675
 msgid ""
 "In general, try :func:`copy.copy` or :func:`copy.deepcopy` for the general "
 "case. Not all objects can be copied, but most can."
@@ -4555,7 +4612,7 @@ msgstr ""
 "En général, essayez :funct:`copy.copy` ou :func:`copy.deepcopy` pour le cas "
 "général. Tout les objets ne peuvent pas être copiés, mais la plupart peuvent."
 
-#: ../src/Doc/faq/programming.rst:626
+#: ../src/Doc/faq/programming.rst:678
 msgid ""
 "Some objects can be copied more easily.  Dictionaries have a :meth:`~dict."
 "copy` method::"
@@ -4563,15 +4620,15 @@ msgstr ""
 "Certains objects peuvent être copiés plus facilement. Les Dictionnaires ont "
 "une méthode :meth:`~dict.copy` ::"
 
-#: ../src/Doc/faq/programming.rst:631
+#: ../src/Doc/faq/programming.rst:683
 msgid "Sequences can be copied by slicing::"
 msgstr "Les séquences peuvent être copiées par tranches::"
 
-#: ../src/Doc/faq/programming.rst:637
+#: ../src/Doc/faq/programming.rst:689
 msgid "How can I find the methods or attributes of an object?"
 msgstr "Comment puis-je trouver les méthodes ou les attribues d'un objet?"
 
-#: ../src/Doc/faq/programming.rst:639
+#: ../src/Doc/faq/programming.rst:691
 msgid ""
 "For an instance x of a user-defined class, ``dir(x)`` returns an "
 "alphabetized list of the names containing the instance attributes and "
@@ -4581,11 +4638,11 @@ msgstr ""
 "renvoie une liste alphabétique des noms contenants les attributs de "
 "l'instance, et les attributs et méthodes définies par sa classe."
 
-#: ../src/Doc/faq/programming.rst:645
+#: ../src/Doc/faq/programming.rst:697
 msgid "How can my code discover the name of an object?"
 msgstr "Comment mon code peut il découvrir le nom d'un objet?"
 
-#: ../src/Doc/faq/programming.rst:647
+#: ../src/Doc/faq/programming.rst:699
 msgid ""
 "Generally speaking, it can't, because objects don't really have names. "
 "Essentially, assignment always binds a name to a value; The same is true of "
@@ -4597,7 +4654,7 @@ msgstr ""
 "valeur; C'est vrai aussi pour les mots clés ``def`` et ``class``, à la "
 "différence que la valeur est un objet appelable."
 
-#: ../src/Doc/faq/programming.rst:664
+#: ../src/Doc/faq/programming.rst:716
 msgid ""
 "Arguably the class has a name: even though it is bound to two names and "
 "invoked through the name B the created instance is still reported as an "
@@ -4609,7 +4666,7 @@ msgstr ""
 "une instance de la classe A. De même Il est impossible de dire si le nom de "
 "l'instance est a ou b, les deux noms sont attachés à la même valeur."
 
-#: ../src/Doc/faq/programming.rst:669
+#: ../src/Doc/faq/programming.rst:721
 msgid ""
 "Generally speaking it should not be necessary for your code to \"know the "
 "names\" of particular values. Unless you are deliberately writing "
@@ -4621,7 +4678,7 @@ msgstr ""
 "délibérément en train d'écrire un programme introspectif, c'est souvent une "
 "indication qu'un changement d'approche pourrait être bénéfique."
 
-#: ../src/Doc/faq/programming.rst:674
+#: ../src/Doc/faq/programming.rst:726
 msgid ""
 "In comp.lang.python, Fredrik Lundh once gave an excellent analogy in answer "
 "to this question:"
@@ -4629,7 +4686,7 @@ msgstr ""
 "Sur comp.lang.python, Fredrik Lundh a donné un jour une excellente analogie "
 "pour répondre à cette question:"
 
-#: ../src/Doc/faq/programming.rst:677
+#: ../src/Doc/faq/programming.rst:729
 msgid ""
 "The same way as you get the name of that cat you found on your porch: the "
 "cat (object) itself cannot tell you its name, and it doesn't really care -- "
@@ -4641,7 +4698,7 @@ msgstr ""
 "moque un peu -- alors le meilleur moyen de savoir comment il est appelé est "
 "de demander à tous vos voisins (namespaces) si c'est leur chat (object)…"
 
-#: ../src/Doc/faq/programming.rst:682
+#: ../src/Doc/faq/programming.rst:734
 msgid ""
 "....and don't be surprised if you'll find that it's known by many names, or "
 "no name at all!"
@@ -4649,16 +4706,16 @@ msgstr ""
 "…et ne soyez pas surpris si vous découvrez qu'il est connus sous plusieurs "
 "noms différents, ou pas de nom du tout!"
 
-#: ../src/Doc/faq/programming.rst:687
+#: ../src/Doc/faq/programming.rst:739
 msgid "What's up with the comma operator's precedence?"
 msgstr "Quel est le souci avec la précédente de l'opérateur virgule?"
 
-#: ../src/Doc/faq/programming.rst:689
+#: ../src/Doc/faq/programming.rst:741
 msgid "Comma is not an operator in Python.  Consider this session::"
 msgstr ""
 "Virgule n'est pas un opérateur en Python. Observez la session suivante::"
 
-#: ../src/Doc/faq/programming.rst:694
+#: ../src/Doc/faq/programming.rst:746
 msgid ""
 "Since the comma is not an operator, but a separator between expressions the "
 "above is evaluated as if you had entered::"
@@ -4667,11 +4724,11 @@ msgstr ""
 "expression, l'expression ci dessus, est évaluée de la même façon que si vous "
 "aviez écrit::"
 
-#: ../src/Doc/faq/programming.rst:699
+#: ../src/Doc/faq/programming.rst:751
 msgid "not::"
 msgstr "et non::"
 
-#: ../src/Doc/faq/programming.rst:703
+#: ../src/Doc/faq/programming.rst:755
 msgid ""
 "The same is true of the various assignment operators (``=``, ``+=`` etc).  "
 "They are not truly operators but syntactic delimiters in assignment "
@@ -4681,22 +4738,22 @@ msgstr ""
 "ne sont pas vraiment des opérateurs mais des délimiteurs syntaxiques dans "
 "les instructions d'assignation."
 
-#: ../src/Doc/faq/programming.rst:708
+#: ../src/Doc/faq/programming.rst:760
 msgid "Is there an equivalent of C's \"?:\" ternary operator?"
 msgstr "Existe-t'il un équivalent à l'opérateur \"?:\" ternaire du C?"
 
-#: ../src/Doc/faq/programming.rst:710
+#: ../src/Doc/faq/programming.rst:762
 msgid ""
 "Yes, this feature was added in Python 2.5. The syntax would be as follows::"
 msgstr ""
 "Oui, cette fonctionnalité à été ajouté à partir de Python 2.5. La syntaxe "
 "est la suivante::"
 
-#: ../src/Doc/faq/programming.rst:718
+#: ../src/Doc/faq/programming.rst:770
 msgid "For versions previous to 2.5 the answer would be 'No'."
 msgstr "Pour les versions précédentes de python la réponse serait \"Non\"."
 
-#: ../src/Doc/faq/programming.rst:722
+#: ../src/Doc/faq/programming.rst:774
 msgid ""
 "In many cases you can mimic ``a ? b : c`` with ``a and b or c``, but there's "
 "a flaw: if *b* is zero (or empty, or ``None`` -- anything that tests false) "
@@ -4711,7 +4768,7 @@ msgstr ""
 "du code (par exemple si *b* est une constante ou est d'un type ne pouvant "
 "être assimilé à False), mais dans le cas général cela peut être un problème."
 
-#: ../src/Doc/faq/programming.rst:728
+#: ../src/Doc/faq/programming.rst:780
 msgid ""
 "Tim Peters (who wishes it was Steve Majewski) suggested the following "
 "solution: ``(a and [b] or [c])[0]``.  Because ``[b]`` is a singleton list it "
@@ -4728,7 +4785,7 @@ msgstr ""
 "pour les rares cas où il est vraiment peu pratique de réécrire le code sur "
 "une base de ``if``."
 
-#: ../src/Doc/faq/programming.rst:735
+#: ../src/Doc/faq/programming.rst:787
 msgid ""
 "The best course is usually to write a simple ``if...else`` statement.  "
 "Another solution is to implement the ``?:`` operator as a function::"
@@ -4736,7 +4793,7 @@ msgstr ""
 "La meilleure solution est souvent d'écrire un simple ``if…else``. Une autre "
 "solution est d'implémenter l'opérateur ``?:`` comme une fonction::"
 
-#: ../src/Doc/faq/programming.rst:750
+#: ../src/Doc/faq/programming.rst:802
 msgid ""
 "In most cases you'll pass b and c directly: ``q(a, b, c)``.  To avoid "
 "evaluating b or c when they shouldn't be, encapsulate them within a lambda "
@@ -4746,7 +4803,7 @@ msgstr ""
 "``. Pour éviter d'évaluer b et c quand il ne faut pas, encapsulez les dans "
 "une fonction lambda, exemple:``q(a, lambda: b, lambda: c)``."
 
-#: ../src/Doc/faq/programming.rst:754
+#: ../src/Doc/faq/programming.rst:806
 msgid ""
 "It has been asked *why* Python has no if-then-else expression.  There are "
 "several answers: many languages do just fine without one; it can easily lead "
@@ -4763,7 +4820,7 @@ msgstr ""
 "d'endroit ou utiliser une expression if-then-else aurait rendu le code plus "
 "compréhensible."
 
-#: ../src/Doc/faq/programming.rst:760
+#: ../src/Doc/faq/programming.rst:812
 msgid ""
 "In 2002, :pep:`308` was written proposing several possible syntaxes and the "
 "community was asked to vote on the issue.  The vote was inconclusive.  Most "
@@ -4778,13 +4835,13 @@ msgstr ""
 "préféraient ne pas avoir d'opérateur ternaire que d'avoir une syntaxe qu'il "
 "détestent."
 
-#: ../src/Doc/faq/programming.rst:768
+#: ../src/Doc/faq/programming.rst:820
 msgid "Is it possible to write obfuscated one-liners in Python?"
 msgstr ""
 "Est-il possible d'écrire des programmes volontairement difficile à "
 "comprendre sur une seule ligne en Python?"
 
-#: ../src/Doc/faq/programming.rst:770
+#: ../src/Doc/faq/programming.rst:822
 msgid ""
 "Yes.  Usually this is done by nesting :keyword:`lambda` within :keyword:"
 "`lambda`.  See the following three examples, due to Ulf Bartelt::"
@@ -4793,19 +4850,19 @@ msgstr ""
 "uns dans les autres. Observez les trois exemples suivants, contribués par "
 "Ulf Bartelt::"
 
-#: ../src/Doc/faq/programming.rst:795
+#: ../src/Doc/faq/programming.rst:847
 msgid "Don't try this at home, kids!"
 msgstr "Les enfants, ne faîtes pas ça chez vous!"
 
-#: ../src/Doc/faq/programming.rst:799
+#: ../src/Doc/faq/programming.rst:851
 msgid "Numbers and strings"
 msgstr "Nombres et chaines de caractères"
 
-#: ../src/Doc/faq/programming.rst:802
+#: ../src/Doc/faq/programming.rst:854
 msgid "How do I specify hexadecimal and octal integers?"
 msgstr "Comment puis-je spécifier des entiers hexadécimaux ou octaux?"
 
-#: ../src/Doc/faq/programming.rst:804
+#: ../src/Doc/faq/programming.rst:856
 msgid ""
 "To specify an octal digit, precede the octal value with a zero, and then a "
 "lower or uppercase \"o\".  For example, to set the variable \"a\" to the "
@@ -4815,7 +4872,7 @@ msgstr ""
 "zéro, puis un \"o\" majuscule ou minuscule. Par exemple assigner la valeur "
 "octale \"10\" (8 en décimal) à \"a\", tapez::"
 
-#: ../src/Doc/faq/programming.rst:812
+#: ../src/Doc/faq/programming.rst:864
 msgid ""
 "Hexadecimal is just as easy.  Simply precede the hexadecimal number with a "
 "zero, and then a lower or uppercase \"x\".  Hexadecimal digits can be "
@@ -4826,11 +4883,11 @@ msgstr ""
 "peuvent être écrit en majuscules ou en minuscules. Par exemple, dans "
 "l'interpréteur Python::"
 
-#: ../src/Doc/faq/programming.rst:825
+#: ../src/Doc/faq/programming.rst:877
 msgid "Why does -22 // 10 return -3?"
 msgstr "Pourquoi -22//10 retourne-t'il -3?"
 
-#: ../src/Doc/faq/programming.rst:827
+#: ../src/Doc/faq/programming.rst:879
 msgid ""
 "It's primarily driven by the desire that ``i % j`` have the same sign as "
 "``j``. If you want that, and also want::"
@@ -4838,7 +4895,7 @@ msgstr ""
 "Cela est principalement due à la volonté que ``i % j`` ait le même signe que "
 "j. Si vous voulez cela, vous voulez aussi::"
 
-#: ../src/Doc/faq/programming.rst:832
+#: ../src/Doc/faq/programming.rst:884
 msgid ""
 "then integer division has to return the floor.  C also requires that "
 "identity to hold, and then compilers that truncate ``i // j`` need to make "
@@ -4848,7 +4905,7 @@ msgstr ""
 "aussi à ce que cette égalité soit vérifiée, et donc les compilateur qui "
 "tronquent ``i//j`` ont besoin que ``i % j`` ait le même signe que ``i``."
 
-#: ../src/Doc/faq/programming.rst:836
+#: ../src/Doc/faq/programming.rst:888
 msgid ""
 "There are few real use cases for ``i % j`` when ``j`` is negative.  When "
 "``j`` is positive, there are many, and in virtually all of them it's more "
@@ -4863,17 +4920,17 @@ msgstr ""
 "== -10`` est un bug qui attends pour mordre."
 
 # 947cdc04b21e4a4b946644f003e25388
-#: ../src/Doc/faq/programming.rst:844
+#: ../src/Doc/faq/programming.rst:896
 msgid ""
 "On Python 2, ``a / b`` returns the same as ``a // b`` if ``__future__."
 "division`` is not in effect.  This is also known as \"classic\" division."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:850
+#: ../src/Doc/faq/programming.rst:902
 msgid "How do I convert a string to a number?"
 msgstr "Comment puis-je convertir une chaine de caractère en nombre?"
 
-#: ../src/Doc/faq/programming.rst:852
+#: ../src/Doc/faq/programming.rst:904
 msgid ""
 "For integers, use the built-in :func:`int` type constructor, e.g. ``int"
 "('144') == 144``.  Similarly, :func:`float` converts to floating-point, e.g. "
@@ -4884,7 +4941,7 @@ msgstr ""
 "`float` convertit en valeur flottante, par exemple ``float('144')`` == "
 "144.0``."
 
-#: ../src/Doc/faq/programming.rst:856
+#: ../src/Doc/faq/programming.rst:908
 msgid ""
 "By default, these interpret the number as decimal, so that ``int('0144') == "
 "144`` and ``int('0x144')`` raises :exc:`ValueError`. ``int(string, base)`` "
@@ -4900,7 +4957,7 @@ msgstr ""
 "324``. Si la base donnée est 0, le nombre est interprété selon les règles "
 "Python: un '0' en tête indique octal, et '0x' indique un hexadécimal."
 
-#: ../src/Doc/faq/programming.rst:862
+#: ../src/Doc/faq/programming.rst:914
 msgid ""
 "Do not use the built-in function :func:`eval` if all you need is to convert "
 "strings to numbers.  :func:`eval` will be significantly slower and it "
@@ -4917,7 +4974,7 @@ msgstr ""
 "system(\"rm -rf $HOME\")`` ce qui aurait pour effet d'effacer votre "
 "répertoire personnel."
 
-#: ../src/Doc/faq/programming.rst:869
+#: ../src/Doc/faq/programming.rst:921
 #, fuzzy
 msgid ""
 ":func:`eval` also has the effect of interpreting numbers as Python "
@@ -4929,12 +4986,12 @@ msgstr ""
 "que Python ne permet pas les '0' en tête d'un nombre décimal (à l'exception "
 "du nombre '0')."
 
-#: ../src/Doc/faq/programming.rst:875
+#: ../src/Doc/faq/programming.rst:927
 msgid "How do I convert a number to a string?"
 msgstr "Comment convertir un nombre en chaine de caractère?"
 
 # faut il traduire la référence?
-#: ../src/Doc/faq/programming.rst:877
+#: ../src/Doc/faq/programming.rst:929
 #, fuzzy
 msgid ""
 "To convert, e.g., the number 144 to the string '144', use the built-in type "
@@ -4952,11 +5009,11 @@ msgstr ""
 "`string-formating`, par exemple, ``\"{:04d) \".format (144)`` renvoit "
 "``'0144'`` et ``\"{:.3f)\".format (1 / 3) donne ``'0,333' ``."
 
-#: ../src/Doc/faq/programming.rst:887
+#: ../src/Doc/faq/programming.rst:939
 msgid "How do I modify a string in place?"
 msgstr "Comment modifier une chaine de caractère \"en place\"?"
 
-#: ../src/Doc/faq/programming.rst:889
+#: ../src/Doc/faq/programming.rst:941
 msgid ""
 "You can't, because strings are immutable.  If you need an object with this "
 "ability, try converting the string to a list or use the array module::"
@@ -4965,17 +5022,17 @@ msgstr ""
 "vous avez besoin d'un objet ayant une telle capacité, essayez de convertir "
 "la chaine en liste, ou utilisez le module array::"
 
-#: ../src/Doc/faq/programming.rst:911
+#: ../src/Doc/faq/programming.rst:963
 msgid "How do I use strings to call functions/methods?"
 msgstr ""
 "Comment utiliser des chaines de caractères pour appeler des fonctions/"
 "méthodes?"
 
-#: ../src/Doc/faq/programming.rst:913
+#: ../src/Doc/faq/programming.rst:965
 msgid "There are various techniques."
 msgstr "Il y a différentes techniques."
 
-#: ../src/Doc/faq/programming.rst:915
+#: ../src/Doc/faq/programming.rst:967
 msgid ""
 "The best is to use a dictionary that maps strings to functions.  The primary "
 "advantage of this technique is that the strings do not need to match the "
@@ -4988,11 +5045,11 @@ msgstr ""
 "fonctions. C'est aussi la principale façon d'imiter la construction \"case"
 "\"::"
 
-#: ../src/Doc/faq/programming.rst:930
+#: ../src/Doc/faq/programming.rst:982
 msgid "Use the built-in function :func:`getattr`::"
 msgstr "Utiliser la fonction :func:`getattr`::"
 
-#: ../src/Doc/faq/programming.rst:935
+#: ../src/Doc/faq/programming.rst:987
 msgid ""
 "Note that :func:`getattr` works on any object, including classes, class "
 "instances, modules, and so on."
@@ -5000,18 +5057,18 @@ msgstr ""
 "Notez que :func:`getattr` marche sur n'importe quel objet, ceci inclue les "
 "classes, les instances de classes, les modules et ainsi de suite."
 
-#: ../src/Doc/faq/programming.rst:938
+#: ../src/Doc/faq/programming.rst:990
 msgid "This is used in several places in the standard library, like this::"
 msgstr ""
 "Ceci est utilisé dans plusieurs endroit de la bibliothèque standard, de "
 "cette façon::"
 
-#: ../src/Doc/faq/programming.rst:951
+#: ../src/Doc/faq/programming.rst:1003
 msgid "Use :func:`locals` or :func:`eval` to resolve the function name::"
 msgstr ""
 "Utilisez :func:`locals` ou :func:`eval` pour résoudre le nom de fonction::"
 
-#: ../src/Doc/faq/programming.rst:964
+#: ../src/Doc/faq/programming.rst:1016
 msgid ""
 "Note: Using :func:`eval` is slow and dangerous.  If you don't have absolute "
 "control over the contents of the string, someone could pass a string that "
@@ -5022,7 +5079,7 @@ msgstr ""
 "passer une chaine de caractère pouvant résulter en l'exécution de code "
 "arbitraire."
 
-#: ../src/Doc/faq/programming.rst:969
+#: ../src/Doc/faq/programming.rst:1021
 msgid ""
 "Is there an equivalent to Perl's chomp() for removing trailing newlines from "
 "strings?"
@@ -5030,7 +5087,7 @@ msgstr ""
 "Existe-t'il un équivalent à la fonction chomp() de Perl, pour retirer les "
 "caractères de fin de ligne d'une chaine de caractère?"
 
-#: ../src/Doc/faq/programming.rst:971
+#: ../src/Doc/faq/programming.rst:1023
 #, fuzzy
 msgid ""
 "Starting with Python 2.2, you can use ``S.rstrip(\"\\r\\n\")`` to remove all "
@@ -5045,7 +5102,7 @@ msgstr ""
 "ligne. Si la chaine ``S`` représente plus d'une ligne, avec plusieurs lignes "
 "vides, les terminateurs de lignes de toutes les lignes vides seront retirés::"
 
-#: ../src/Doc/faq/programming.rst:983
+#: ../src/Doc/faq/programming.rst:1035
 msgid ""
 "Since this is typically only desired when reading text one line at a time, "
 "using ``S.rstrip()`` this way works well."
@@ -5053,13 +5110,13 @@ msgstr ""
 "Du fait que ce soit principalement utile en lisant un texte ligne à ligne, "
 "utiliser ``S.rstrip()`` devrait marcher correctement."
 
-#: ../src/Doc/faq/programming.rst:986
+#: ../src/Doc/faq/programming.rst:1038
 msgid "For older versions of Python, there are two partial substitutes:"
 msgstr ""
 "Pour les versions plus anciennes de python, il y a deux substituts partiels "
 "disponibles."
 
-#: ../src/Doc/faq/programming.rst:988
+#: ../src/Doc/faq/programming.rst:1040
 msgid ""
 "If you want to remove all trailing whitespace, use the ``rstrip()`` method "
 "of string objects.  This removes all trailing whitespace, not just a single "
@@ -5069,7 +5126,7 @@ msgstr ""
 "``rstrip()`` des chaines de caractères. Cela retire tous les espaces de fin "
 "de ligne, pas seulement le caractère de fin de ligne."
 
-#: ../src/Doc/faq/programming.rst:992
+#: ../src/Doc/faq/programming.rst:1044
 msgid ""
 "Otherwise, if there is only one line in the string ``S``, use ``S.splitlines"
 "()[0]``."
@@ -5077,15 +5134,15 @@ msgstr ""
 "Sinon, s'il y a seulement une ligne dans la chaine ``S``, utilisez ``S."
 "splitlines()``[0]."
 
-#: ../src/Doc/faq/programming.rst:997
+#: ../src/Doc/faq/programming.rst:1049
 msgid "Is there a scanf() or sscanf() equivalent?"
 msgstr "Existe-t'il un équivalent à scanf() ou sscanf()?"
 
-#: ../src/Doc/faq/programming.rst:999
+#: ../src/Doc/faq/programming.rst:1051
 msgid "Not as such."
 msgstr "Pas exactement."
 
-#: ../src/Doc/faq/programming.rst:1001
+#: ../src/Doc/faq/programming.rst:1053
 msgid ""
 "For simple input parsing, the easiest approach is usually to split the line "
 "into whitespace-delimited words using the :meth:`~str.split` method of "
@@ -5102,7 +5159,7 @@ msgstr ""
 "paramètre optionnel \"sep\" qui est utile si la ligne utilise autre chose "
 "que des espaces comme séparateur."
 
-#: ../src/Doc/faq/programming.rst:1007
+#: ../src/Doc/faq/programming.rst:1059
 #, fuzzy
 msgid ""
 "For more complicated input parsing, regular expressions are more powerful "
@@ -5111,7 +5168,7 @@ msgstr ""
 "Pour les analyses plus compliquées, les expressions rationnelles sont plus "
 "puissantes que la fonction `sscanf` de C et mieux adaptées à la tâche."
 
-#: ../src/Doc/faq/programming.rst:1012
+#: ../src/Doc/faq/programming.rst:1064
 #, fuzzy
 msgid ""
 "What does 'UnicodeError: ASCII [decoding,encoding] error: ordinal not in "
@@ -5120,14 +5177,14 @@ msgstr ""
 "Que signifient les erreurs  'UnicodeDecodeError' ou 'UnicodeEncodeError'?"
 
 # d32100f5f3e241519f579f93e95f5a43
-#: ../src/Doc/faq/programming.rst:1014
+#: ../src/Doc/faq/programming.rst:1066
 msgid ""
 "This error indicates that your Python installation can handle only 7-bit "
 "ASCII strings.  There are a couple ways to fix or work around the problem."
 msgstr ""
 
 # 1c12ed114b5d49e19257a764fd59e9ef
-#: ../src/Doc/faq/programming.rst:1017
+#: ../src/Doc/faq/programming.rst:1069
 msgid ""
 "If your programs must handle data in arbitrary character set encodings, the "
 "environment the application runs in will generally identify the encoding of "
@@ -5139,14 +5196,14 @@ msgid ""
 msgstr ""
 
 # 0a0a8bd0d96c44e98289983f8156d4cc
-#: ../src/Doc/faq/programming.rst:1027
+#: ../src/Doc/faq/programming.rst:1079
 msgid ""
 "will return a Unicode object.  If the data is not correctly encoded as "
 "UTF-8, the above call will raise a :exc:`UnicodeError` exception."
 msgstr ""
 
 # c23fedd940ec4113a5408e1bd9df81a8
-#: ../src/Doc/faq/programming.rst:1030
+#: ../src/Doc/faq/programming.rst:1082
 msgid ""
 "If you only want strings converted to Unicode which have non-ASCII data, you "
 "can try converting them first assuming an ASCII encoding, and then generate "
@@ -5154,7 +5211,7 @@ msgid ""
 msgstr ""
 
 # 44c53b389d894ef996a351e4c5469ce3
-#: ../src/Doc/faq/programming.rst:1042
+#: ../src/Doc/faq/programming.rst:1094
 msgid ""
 "It's possible to set a default encoding in a file called ``sitecustomize."
 "py`` that's part of the Python library.  However, this isn't recommended "
@@ -5163,22 +5220,22 @@ msgid ""
 msgstr ""
 
 # b60213029b4c4e27a28d9f82396f65dc
-#: ../src/Doc/faq/programming.rst:1047
+#: ../src/Doc/faq/programming.rst:1099
 msgid ""
 "Note that on Windows, there is an encoding known as \"mbcs\", which uses an "
 "encoding specific to your current locale.  In many cases, and particularly "
 "when working with COM, this may be an appropriate default encoding to use."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1053
+#: ../src/Doc/faq/programming.rst:1105
 msgid "Sequences (Tuples/Lists)"
 msgstr "Sequences (Tuples/Lists)"
 
-#: ../src/Doc/faq/programming.rst:1056
+#: ../src/Doc/faq/programming.rst:1108
 msgid "How do I convert between tuples and lists?"
 msgstr "Comment convertir les listes en tuples et inversement?"
 
-#: ../src/Doc/faq/programming.rst:1058
+#: ../src/Doc/faq/programming.rst:1110
 msgid ""
 "The type constructor ``tuple(seq)`` converts any sequence (actually, any "
 "iterable) into a tuple with the same items in the same order."
@@ -5186,7 +5243,7 @@ msgstr ""
 "Le constructeur de type ``tuple(seq)`` convertit toute séquence (en fait "
 "tout itérable) en un tuple avec les mêmes éléments dans le même ordre…"
 
-#: ../src/Doc/faq/programming.rst:1061
+#: ../src/Doc/faq/programming.rst:1113
 msgid ""
 "For example, ``tuple([1, 2, 3])`` yields ``(1, 2, 3)`` and ``tuple('abc')`` "
 "yields ``('a', 'b', 'c')``.  If the argument is a tuple, it does not make a "
@@ -5198,7 +5255,7 @@ msgstr ""
 "copie, mais renvoi le même objet, ce qui en fait un fonction économique à "
 "appeler quand vous ne savez pas si votre objet est déjà un tulpe."
 
-#: ../src/Doc/faq/programming.rst:1066
+#: ../src/Doc/faq/programming.rst:1118
 msgid ""
 "The type constructor ``list(seq)`` converts any sequence or iterable into a "
 "list with the same items in the same order.  For example, ``list((1, 2, 3))"
@@ -5211,11 +5268,11 @@ msgstr ""
 "``. Si l'argument est une liste, il retourne une copie, de la même façon que "
 "``seq[:]``."
 
-#: ../src/Doc/faq/programming.rst:1073
+#: ../src/Doc/faq/programming.rst:1125
 msgid "What's a negative index?"
 msgstr "Qu'est-ce qu'un indexe négatif?"
 
-#: ../src/Doc/faq/programming.rst:1075
+#: ../src/Doc/faq/programming.rst:1127
 msgid ""
 "Python sequences are indexed with positive numbers and negative numbers.  "
 "For positive numbers 0 is the first index 1 is the second index and so "
@@ -5229,7 +5286,7 @@ msgstr ""
 "index, -2 est le pénultième (avant dernier), et ainsi de suite. On peut "
 "aussi dire que ``seq[-n]`` est équivalent à ``seq[len(seq)-n]``."
 
-#: ../src/Doc/faq/programming.rst:1080
+#: ../src/Doc/faq/programming.rst:1132
 msgid ""
 "Using negative indices can be very convenient.  For example ``S[:-1]`` is "
 "all of the string except for its last character, which is useful for "
@@ -5239,18 +5296,18 @@ msgstr ""
 "`` indique la chaine entière a l'exception du dernier caractère, ce qui est "
 "pratique pour retirer un caractère de fin de ligne en fin d'une chaine."
 
-#: ../src/Doc/faq/programming.rst:1086
+#: ../src/Doc/faq/programming.rst:1138
 msgid "How do I iterate over a sequence in reverse order?"
 msgstr "Comment itérer à rebours sur une séquence?"
 
-#: ../src/Doc/faq/programming.rst:1088
+#: ../src/Doc/faq/programming.rst:1140
 msgid ""
 "Use the :func:`reversed` built-in function, which is new in Python 2.4::"
 msgstr ""
 "Utilisez la fonction embarquée :func:`reversed`, qui est apparue en Python "
 "2.4::"
 
-#: ../src/Doc/faq/programming.rst:1093
+#: ../src/Doc/faq/programming.rst:1145
 msgid ""
 "This won't touch your original sequence, but build a new copy with reversed "
 "order to iterate over."
@@ -5258,25 +5315,25 @@ msgstr ""
 "Cela ne modifiera pas votre séquence initiale, mais construira à la place "
 "une copie en ordre inverse pour itérer dessus."
 
-#: ../src/Doc/faq/programming.rst:1096
+#: ../src/Doc/faq/programming.rst:1148
 msgid "With Python 2.3, you can use an extended slice syntax::"
 msgstr "Avec Python 2.3 vous pouvez utiliser la syntaxe étendue de tranches::"
 
-#: ../src/Doc/faq/programming.rst:1103
+#: ../src/Doc/faq/programming.rst:1155
 msgid "How do you remove duplicates from a list?"
 msgstr "Comment retirer les doublons d'une liste?"
 
-#: ../src/Doc/faq/programming.rst:1105
+#: ../src/Doc/faq/programming.rst:1157
 msgid "See the Python Cookbook for a long discussion of many ways to do this:"
 msgstr ""
 "Lisez le Python Cookbook pour trouver une longue discussion sur les "
 "nombreuses façons de faire cela:"
 
-#: ../src/Doc/faq/programming.rst:1107
+#: ../src/Doc/faq/programming.rst:1159
 msgid "http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/52560"
 msgstr "http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/52560"
 
-#: ../src/Doc/faq/programming.rst:1109
+#: ../src/Doc/faq/programming.rst:1161
 msgid ""
 "If you don't mind reordering the list, sort it and then scan from the end of "
 "the list, deleting duplicates as you go::"
@@ -5285,7 +5342,7 @@ msgstr ""
 "celle ci, puis parcourez la d'un bout à l'autre, en supprimant les doublons "
 "trouvés en chemin::"
 
-#: ../src/Doc/faq/programming.rst:1121
+#: ../src/Doc/faq/programming.rst:1173
 msgid ""
 "If all elements of the list may be used as dictionary keys (i.e. they are "
 "all hashable) this is often faster ::"
@@ -5294,11 +5351,11 @@ msgstr ""
 "dictionnaire (cad, elles sont toutes hashables) ceci est souvent plus "
 "rapide::"
 
-#: ../src/Doc/faq/programming.rst:1129
+#: ../src/Doc/faq/programming.rst:1181
 msgid "In Python 2.5 and later, the following is possible instead::"
 msgstr "En Python 2.5 et suivant, la forme suivante est possible à la place::"
 
-#: ../src/Doc/faq/programming.rst:1133
+#: ../src/Doc/faq/programming.rst:1185
 msgid ""
 "This converts the list into a set, thereby removing duplicates, and then "
 "back into a list."
@@ -5306,15 +5363,15 @@ msgstr ""
 "Ceci convertis la liste en un ensemble, ce qui supprime automatiquement les "
 "doublons, puis la transforme à nouveau en liste."
 
-#: ../src/Doc/faq/programming.rst:1138
+#: ../src/Doc/faq/programming.rst:1190
 msgid "How do you make an array in Python?"
 msgstr "Comment construire un tableau en Python?"
 
-#: ../src/Doc/faq/programming.rst:1140
+#: ../src/Doc/faq/programming.rst:1192
 msgid "Use a list::"
 msgstr "Utilisez une liste::"
 
-#: ../src/Doc/faq/programming.rst:1144
+#: ../src/Doc/faq/programming.rst:1196
 msgid ""
 "Lists are equivalent to C or Pascal arrays in their time complexity; the "
 "primary difference is that a Python list can contain objects of many "
@@ -5324,7 +5381,7 @@ msgstr ""
 "principale différence est qu'une liste Python peut contenir des objets de "
 "différents types."
 
-#: ../src/Doc/faq/programming.rst:1147
+#: ../src/Doc/faq/programming.rst:1199
 msgid ""
 "The ``array`` module also provides methods for creating arrays of fixed "
 "types with compact representations, but they are slower to index than "
@@ -5337,14 +5394,14 @@ msgstr ""
 "fournissent différentes structures de types tableaux, avec des "
 "caractéristiques différentes."
 
-#: ../src/Doc/faq/programming.rst:1152
+#: ../src/Doc/faq/programming.rst:1204
 msgid ""
 "To get Lisp-style linked lists, you can emulate cons cells using tuples::"
 msgstr ""
 "Pour obtenir des listes chainées de type Lisp, vous pouvez émuler les \"cons "
 "cells\" en utilisant des tuples::"
 
-#: ../src/Doc/faq/programming.rst:1156
+#: ../src/Doc/faq/programming.rst:1208
 msgid ""
 "If mutability is desired, you could use lists instead of tuples.  Here the "
 "analogue of lisp car is ``lisp_list[0]`` and the analogue of cdr is "
@@ -5357,26 +5414,26 @@ msgstr ""
 "êtes réellement sûr d'en avoir besoin, cette méthode est en générale bien "
 "plus lente que les listes Python."
 
-#: ../src/Doc/faq/programming.rst:1163
+#: ../src/Doc/faq/programming.rst:1215
 msgid "How do I create a multidimensional list?"
 msgstr "Comment puis-je créer une liste à plusieurs dimensions?"
 
-#: ../src/Doc/faq/programming.rst:1165
+#: ../src/Doc/faq/programming.rst:1217
 msgid "You probably tried to make a multidimensional array like this::"
 msgstr ""
 "Vous avez probablement essayé de créer une liste à plusieurs dimensions de "
 "cette façon::"
 
-#: ../src/Doc/faq/programming.rst:1169
+#: ../src/Doc/faq/programming.rst:1221
 msgid "This looks correct if you print it::"
 msgstr "Cela semble correct quand vous essayer de l'afficher::"
 
-#: ../src/Doc/faq/programming.rst:1174
+#: ../src/Doc/faq/programming.rst:1226
 msgid "But when you assign a value, it shows up in multiple places:"
 msgstr ""
 "Mais quand vous assignez une valeur, elle apparait en de multiples endroits::"
 
-#: ../src/Doc/faq/programming.rst:1180
+#: ../src/Doc/faq/programming.rst:1232
 msgid ""
 "The reason is that replicating a list with ``*`` doesn't create copies, it "
 "only creates references to the existing objects.  The ``*3`` creates a list "
@@ -5389,7 +5446,7 @@ msgstr ""
 "Un changement dans une colonne apparaîtra donc dans toutes les colonnes. Ce "
 "qui n'est de façon quasi certaine, pas ce que vous souhaitez."
 
-#: ../src/Doc/faq/programming.rst:1185
+#: ../src/Doc/faq/programming.rst:1237
 msgid ""
 "The suggested approach is to create a list of the desired length first and "
 "then fill in each element with a newly created list::"
@@ -5397,7 +5454,7 @@ msgstr ""
 "L'approche suggérée est de créer une liste de la longueur désiré d'abords, "
 "puis de remplir tous les éléments avec une chaîne nouvellement créée."
 
-#: ../src/Doc/faq/programming.rst:1192
+#: ../src/Doc/faq/programming.rst:1244
 msgid ""
 "This generates a list containing 3 different lists of length two.  You can "
 "also use a list comprehension::"
@@ -5405,7 +5462,7 @@ msgstr ""
 "Cette liste générée contient trois listes différentes de longueur deux. Vous "
 "pouvez aussi utilisez la notation de compréhension de listes."
 
-#: ../src/Doc/faq/programming.rst:1198
+#: ../src/Doc/faq/programming.rst:1250
 msgid ""
 "Or, you can use an extension that provides a matrix datatype; `Numeric "
 "Python <http://numpy.scipy.org/>`_ is the best known."
@@ -5413,30 +5470,30 @@ msgstr ""
 "Ou, vous pouvez utiliser une extension qui fournis un type de donnée de type "
 "matrice; `Numeric Python <http://numpy.scipy.org/>`_ étant le plus connu."
 
-#: ../src/Doc/faq/programming.rst:1203
+#: ../src/Doc/faq/programming.rst:1255
 msgid "How do I apply a method to a sequence of objects?"
 msgstr "Comment appliquer une méthode à une séquence d'objets?"
 
-#: ../src/Doc/faq/programming.rst:1205
+#: ../src/Doc/faq/programming.rst:1257
 msgid "Use a list comprehension::"
 msgstr "Utilisez une compréhension de liste::"
 
 # b9679b4f562b436b813e6240782d1e63
-#: ../src/Doc/faq/programming.rst:1209
+#: ../src/Doc/faq/programming.rst:1261
 msgid "More generically, you can try the following function::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1219
+#: ../src/Doc/faq/programming.rst:1271
 msgid "Dictionaries"
 msgstr "Dictionnaires"
 
-#: ../src/Doc/faq/programming.rst:1222
+#: ../src/Doc/faq/programming.rst:1274
 msgid "How can I get a dictionary to display its keys in a consistent order?"
 msgstr ""
 "Comment puis-je faire afficher les éléments d'un dictionnaire dans un ordre "
 "consistant?"
 
-#: ../src/Doc/faq/programming.rst:1224
+#: ../src/Doc/faq/programming.rst:1276
 msgid ""
 "You can't.  Dictionaries store their keys in an unpredictable order, so the "
 "display order of a dictionary's elements will be similarly unpredictable."
@@ -5445,7 +5502,7 @@ msgstr ""
 "non prévisible, l'ordre d'affichage des éléments d'un dictionnaire sera donc "
 "de la même façon imprévisible."
 
-#: ../src/Doc/faq/programming.rst:1227
+#: ../src/Doc/faq/programming.rst:1279
 msgid ""
 "This can be frustrating if you want to save a printable version to a file, "
 "make some changes and then compare it with some other printed dictionary.  "
@@ -5458,7 +5515,7 @@ msgstr ""
 "afficher joliement le dictionnaire; les éléments seront présentés triés par "
 "clés."
 
-#: ../src/Doc/faq/programming.rst:1232
+#: ../src/Doc/faq/programming.rst:1284
 msgid ""
 "A more complicated solution is to subclass ``dict`` to create a "
 "``SortedDict`` class that prints itself in a predictable order.  Here's one "
@@ -5468,7 +5525,7 @@ msgstr ""
 "classe``SorterDict`` qui s'affiche de façon prévisible. Voici une "
 "implémentation simple d'une telle classe::"
 
-#: ../src/Doc/faq/programming.rst:1244
+#: ../src/Doc/faq/programming.rst:1296
 msgid ""
 "This will work for many common situations you might encounter, though it's "
 "far from a perfect solution. The largest flaw is that if some values in the "
@@ -5481,7 +5538,7 @@ msgstr ""
 "des dictionnaire, alors elles ne seront pas présentées dans un ordre "
 "particulier."
 
-#: ../src/Doc/faq/programming.rst:1251
+#: ../src/Doc/faq/programming.rst:1303
 msgid ""
 "I want to do a complicated sort: can you do a Schwartzian Transform in "
 "Python?"
@@ -5489,7 +5546,7 @@ msgstr ""
 "Je souhaite faire un tri compliqué: peut on faire une transformation de "
 "Schwartz en Python?"
 
-#: ../src/Doc/faq/programming.rst:1253
+#: ../src/Doc/faq/programming.rst:1305
 msgid ""
 "The technique, attributed to Randal Schwartz of the Perl community, sorts "
 "the elements of a list by a metric which maps each element to its \"sort "
@@ -5500,7 +5557,7 @@ msgstr ""
 "une \"valeur de tri\". En Python, utilisez simplement l'argument ``key`` de "
 "la méthode ``sort``::"
 
-#: ../src/Doc/faq/programming.rst:1260
+#: ../src/Doc/faq/programming.rst:1312
 msgid ""
 "The ``key`` argument is new in Python 2.4, for older versions this kind of "
 "sorting is quite simple to do with list comprehensions.  To sort a list of "
@@ -5511,7 +5568,7 @@ msgstr ""
 "compréhensions de liste. Pour trier une liste de chaines par leur valeur en "
 "majuscule on peut faire::"
 
-#: ../src/Doc/faq/programming.rst:1268
+#: ../src/Doc/faq/programming.rst:1320
 msgid ""
 "To sort by the integer value of a subfield extending from positions 10-15 in "
 "each string::"
@@ -5519,13 +5576,13 @@ msgstr ""
 "Pour trier par la valeur d'un sous-champ allant des index 10 à 15 dans "
 "chaque chaine chaine::"
 
-#: ../src/Doc/faq/programming.rst:1275
+#: ../src/Doc/faq/programming.rst:1327
 #, fuzzy
 msgid "Note that Isorted may also be computed by ::"
 msgstr ""
 "Pour les versions antérieures à 3.0, Isorted peut également être calculé par:"
 
-#: ../src/Doc/faq/programming.rst:1286
+#: ../src/Doc/faq/programming.rst:1338
 msgid ""
 "but since this method calls ``intfield()`` many times for each element of L, "
 "it is slower than the Schwartzian Transform."
@@ -5533,12 +5590,12 @@ msgstr ""
 "mais du fait que cette méthode appelle `` intfield () `` plusieurs fois pour "
 "chaque élément de L, elle est plus lente que la transformée de Schwartz."
 
-#: ../src/Doc/faq/programming.rst:1291
+#: ../src/Doc/faq/programming.rst:1343
 msgid "How can I sort one list by values from another list?"
 msgstr ""
 "Comment puis-je trier une liste en fonction des valeurs d'une autre liste?"
 
-#: ../src/Doc/faq/programming.rst:1293
+#: ../src/Doc/faq/programming.rst:1345
 #, fuzzy
 msgid ""
 "Merge them into a single list of tuples, sort the resulting list, and then "
@@ -5547,12 +5604,12 @@ msgstr ""
 "Fusionnez les dans un itérateur de tuples, trier la liste obtenue, puis "
 "choisissez l'élément que vous voulez. ::"
 
-#: ../src/Doc/faq/programming.rst:1306
+#: ../src/Doc/faq/programming.rst:1358
 #, fuzzy
 msgid "An alternative for the last step is::"
 msgstr "Une alternative pour la dernière étape est la suivante::"
 
-#: ../src/Doc/faq/programming.rst:1311
+#: ../src/Doc/faq/programming.rst:1363
 msgid ""
 "If you find this more legible, you might prefer to use this instead of the "
 "final list comprehension.  However, it is almost twice as slow for long "
@@ -5571,15 +5628,15 @@ msgstr ""
 "exige une recherche d'attribut supplémentaire, et enfin, tous ces appels de "
 "fonction impactent la vitesse d'exécution."
 
-#: ../src/Doc/faq/programming.rst:1321
+#: ../src/Doc/faq/programming.rst:1373
 msgid "Objects"
 msgstr "Objets"
 
-#: ../src/Doc/faq/programming.rst:1324
+#: ../src/Doc/faq/programming.rst:1376
 msgid "What is a class?"
 msgstr "Qu'est-ce qu'une classe?"
 
-#: ../src/Doc/faq/programming.rst:1326
+#: ../src/Doc/faq/programming.rst:1378
 msgid ""
 "A class is the particular object type created by executing a class "
 "statement. Class objects are used as templates to create instance objects, "
@@ -5591,7 +5648,7 @@ msgstr ""
 "créer des objets, qui incarnent à la fois les données (attributs) et le code "
 "(méthodes) spécifiques à un type de données."
 
-#: ../src/Doc/faq/programming.rst:1330
+#: ../src/Doc/faq/programming.rst:1382
 msgid ""
 "A class can be based on one or more other classes, called its base class"
 "(es). It then inherits the attributes and methods of its base classes. This "
@@ -5608,11 +5665,11 @@ msgstr ""
 "classes telles que ``MboxMailbox``, ``MaildirMailbox``, ``OutlookMailbox`` "
 "qui gèrent les différents formats de boîtes aux lettres spécifiques."
 
-#: ../src/Doc/faq/programming.rst:1339
+#: ../src/Doc/faq/programming.rst:1391
 msgid "What is a method?"
 msgstr "Qu'est-ce qu'une méthode?"
 
-#: ../src/Doc/faq/programming.rst:1341
+#: ../src/Doc/faq/programming.rst:1393
 msgid ""
 "A method is a function on some object ``x`` that you normally call as ``x."
 "name(arguments...)``.  Methods are defined as functions inside the class "
@@ -5622,11 +5679,11 @@ msgstr ""
 "``x.name(arguments…)``. Les méthodes sont définies comme des fonctions à "
 "l'intérieur de la définition de classe::"
 
-#: ../src/Doc/faq/programming.rst:1351
+#: ../src/Doc/faq/programming.rst:1403
 msgid "What is self?"
 msgstr "Qu'est-ce que self?"
 
-#: ../src/Doc/faq/programming.rst:1353
+#: ../src/Doc/faq/programming.rst:1405
 msgid ""
 "Self is merely a conventional name for the first argument of a method.  A "
 "method defined as ``meth(self, a, b, c)`` should be called as ``x.meth(a, b, "
@@ -5639,11 +5696,11 @@ msgstr ""
 "laquelle elle est définie, la méthode appelée considérera qu'elle est "
 "appelée ``meth(x, a, b, c)``."
 
-#: ../src/Doc/faq/programming.rst:1358
+#: ../src/Doc/faq/programming.rst:1410
 msgid "See also :ref:`why-self`."
 msgstr "Voir aussi: ref:`why-self`."
 
-#: ../src/Doc/faq/programming.rst:1362
+#: ../src/Doc/faq/programming.rst:1414
 msgid ""
 "How do I check if an object is an instance of a given class or of a subclass "
 "of it?"
@@ -5651,7 +5708,7 @@ msgstr ""
 "Comment puis-je vérifier si un objet est une instance d'une classe donnée ou "
 "d'une sous-classe de celui-ci?"
 
-#: ../src/Doc/faq/programming.rst:1364
+#: ../src/Doc/faq/programming.rst:1416
 #, fuzzy
 msgid ""
 "Use the built-in function ``isinstance(obj, cls)``.  You can check if an "
@@ -5667,7 +5724,7 @@ msgstr ""
 "un objet est l'un des types intégrés à Python, par exemple, ``IsInstance "
 "(obj, str) isInstance`` ou ``(obj, (int, float, complexes ))``."
 
-#: ../src/Doc/faq/programming.rst:1370
+#: ../src/Doc/faq/programming.rst:1422
 msgid ""
 "Note that most programs do not use :func:`isinstance` on user-defined "
 "classes very often.  If you are developing the classes yourself, a more "
@@ -5684,7 +5741,7 @@ msgstr ""
 "chose de différent en fonction de sa classe. Par exemple, si vous avez une "
 "fonction qui fait quelque chose::"
 
-#: ../src/Doc/faq/programming.rst:1384
+#: ../src/Doc/faq/programming.rst:1436
 msgid ""
 "A better approach is to define a ``search()`` method on all the classes and "
 "just call it::"
@@ -5692,11 +5749,11 @@ msgstr ""
 "Une meilleure approche est de définir une méthode ``search()`` sur toutes "
 "les classes et qu'il suffit d'appeler::"
 
-#: ../src/Doc/faq/programming.rst:1399
+#: ../src/Doc/faq/programming.rst:1451
 msgid "What is delegation?"
 msgstr "Qu'est-ce que la délégation?"
 
-#: ../src/Doc/faq/programming.rst:1401
+#: ../src/Doc/faq/programming.rst:1453
 msgid ""
 "Delegation is an object oriented technique (also called a design pattern). "
 "Let's say you have an object ``x`` and want to change the behaviour of just "
@@ -5711,7 +5768,7 @@ msgstr ""
 "vous intéresse dans l'évolution et les délégués de toutes les autres "
 "méthodes la méthode correspondante de ``x``."
 
-#: ../src/Doc/faq/programming.rst:1407
+#: ../src/Doc/faq/programming.rst:1459
 msgid ""
 "Python programmers can easily implement delegation.  For example, the "
 "following class implements a class that behaves like a file but converts all "
@@ -5721,7 +5778,7 @@ msgstr ""
 "Par exemple, la classe suivante implémente une classe qui se comporte comme "
 "un fichier, mais convertit toutes les données écrites en majuscules:"
 
-#: ../src/Doc/faq/programming.rst:1422
+#: ../src/Doc/faq/programming.rst:1474
 msgid ""
 "Here the ``UpperOut`` class redefines the ``write()`` method to convert the "
 "argument string to uppercase before calling the underlying ``self.__outfile."
@@ -5737,7 +5794,7 @@ msgstr ""
 "``__getattr__``, consulter: ref:`the language reference <attribute-access>` "
 "pour plus d'informations sur le contrôle d'accès d'attribut."
 
-#: ../src/Doc/faq/programming.rst:1429
+#: ../src/Doc/faq/programming.rst:1481
 msgid ""
 "Note that for more general cases delegation can get trickier. When "
 "attributes must be set as well as retrieved, the class must define a :meth:"
@@ -5751,7 +5808,7 @@ msgstr ""
 "aussi, et il doit le faire avec soin. La mise en œuvre basique de la "
 "méthode :meth:``__setattr__`` est à peu près équivalent à ce qui suit:"
 
-#: ../src/Doc/faq/programming.rst:1440
+#: ../src/Doc/faq/programming.rst:1492
 msgid ""
 "Most :meth:`__setattr__` implementations must modify ``self.__dict__`` to "
 "store local state for self without causing an infinite recursion."
@@ -5760,7 +5817,7 @@ msgstr ""
 "``self.__dict__`` pour stocker l'état locale de self sans provoquer une "
 "récursion infinie."
 
-#: ../src/Doc/faq/programming.rst:1445
+#: ../src/Doc/faq/programming.rst:1497
 msgid ""
 "How do I call a method defined in a base class from a derived class that "
 "overrides it?"
@@ -5768,13 +5825,13 @@ msgstr ""
 "Comment appeler une méthode définie dans une classe de base depuis une "
 "classe dérivée qui la surcharge?"
 
-#: ../src/Doc/faq/programming.rst:1447
+#: ../src/Doc/faq/programming.rst:1499
 #, fuzzy
 msgid ""
 "If you're using new-style classes, use the built-in :func:`super` function::"
 msgstr "Utilisez la fonction built-in :func:``super``::"
 
-#: ../src/Doc/faq/programming.rst:1453
+#: ../src/Doc/faq/programming.rst:1505
 #, fuzzy
 msgid ""
 "If you're using classic classes: For a class definition such as ``class "
@@ -5790,13 +5847,13 @@ msgstr ""
 "Ici, ``Base.meth`` est une méthode non liée, vous devez donc fournir "
 "l'argument ``self``."
 
-#: ../src/Doc/faq/programming.rst:1461
+#: ../src/Doc/faq/programming.rst:1513
 msgid "How can I organize my code to make it easier to change the base class?"
 msgstr ""
 "Comment puis-je organiser mon code pour permettre de changer la classe de "
 "base plus facilement?"
 
-#: ../src/Doc/faq/programming.rst:1463
+#: ../src/Doc/faq/programming.rst:1515
 msgid ""
 "You could define an alias for the base class, assign the real base class to "
 "it before your class definition, and use the alias throughout your class.  "
@@ -5812,13 +5869,13 @@ msgstr ""
 "voulez décider dynamiquement (par exemple en fonction de la disponibilité "
 "des ressources) la classe de base à utiliser. Exemple::"
 
-#: ../src/Doc/faq/programming.rst:1478
+#: ../src/Doc/faq/programming.rst:1530
 msgid "How do I create static class data and static class methods?"
 msgstr ""
 "Comment puis-je créer des données statiques de classe et des méthodes "
 "statiques de classe?"
 
-#: ../src/Doc/faq/programming.rst:1480
+#: ../src/Doc/faq/programming.rst:1532
 msgid ""
 "Both static data and static methods (in the sense of C++ or Java) are "
 "supported in Python."
@@ -5826,7 +5883,7 @@ msgstr ""
 "Tant les données statiques que les méthodes statiques (dans le sens de C + + "
 "ou Java) sont pris en charge en Python."
 
-#: ../src/Doc/faq/programming.rst:1483
+#: ../src/Doc/faq/programming.rst:1535
 msgid ""
 "For static data, simply define a class attribute.  To assign a new value to "
 "the attribute, you have to explicitly use the class name in the assignment::"
@@ -5835,7 +5892,7 @@ msgstr ""
 "attribuer une nouvelle valeur à l'attribut, vous devez explicitement "
 "utiliser le nom de classe dans l'affectation:"
 
-#: ../src/Doc/faq/programming.rst:1495
+#: ../src/Doc/faq/programming.rst:1547
 msgid ""
 "``c.count`` also refers to ``C.count`` for any ``c`` such that ``isinstance"
 "(c, C)`` holds, unless overridden by ``c`` itself or by some class on the "
@@ -5846,7 +5903,7 @@ msgstr ""
 "une classe sur le chemin de recherche de classe de base de ``c.__class__`` "
 "jusqu'à ``C``."
 
-#: ../src/Doc/faq/programming.rst:1499
+#: ../src/Doc/faq/programming.rst:1551
 msgid ""
 "Caution: within a method of C, an assignment like ``self.count = 42`` "
 "creates a new and unrelated instance named \"count\" in ``self``'s own "
@@ -5859,15 +5916,15 @@ msgstr ""
 "statique de classe doit toujours spécifier la classe que l'on soit à "
 "l'intérieur d'une méthode ou non:"
 
-#: ../src/Doc/faq/programming.rst:1506
+#: ../src/Doc/faq/programming.rst:1558
 msgid "Static methods are possible since Python 2.2::"
 msgstr "Les méthodes statiques sont possibles depuis Python 2.2::"
 
-#: ../src/Doc/faq/programming.rst:1514
+#: ../src/Doc/faq/programming.rst:1566
 msgid "With Python 2.4's decorators, this can also be written as ::"
 msgstr "Avec les décorateurs de Python 2.4, cela peut aussi s'écrire:"
 
-#: ../src/Doc/faq/programming.rst:1522
+#: ../src/Doc/faq/programming.rst:1574
 msgid ""
 "However, a far more straightforward way to get the effect of a static method "
 "is via a simple module-level function::"
@@ -5875,7 +5932,7 @@ msgstr ""
 "Cependant, d'une manière beaucoup plus simple pour obtenir l'effet d'une "
 "méthode statique se fait par une simple fonction au niveau du module::"
 
-#: ../src/Doc/faq/programming.rst:1528
+#: ../src/Doc/faq/programming.rst:1580
 msgid ""
 "If your code is structured so as to define one class (or tightly related "
 "class hierarchy) per module, this supplies the desired encapsulation."
@@ -5884,11 +5941,11 @@ msgstr ""
 "hiérarchie des classes connexes) par module, ceci fournira l'encapsulation "
 "souhaitée."
 
-#: ../src/Doc/faq/programming.rst:1533
+#: ../src/Doc/faq/programming.rst:1585
 msgid "How can I overload constructors (or methods) in Python?"
 msgstr "Comment puis-je surcharger les constructeurs (ou méthodes) en Python?"
 
-#: ../src/Doc/faq/programming.rst:1535
+#: ../src/Doc/faq/programming.rst:1587
 msgid ""
 "This answer actually applies to all methods, but the question usually comes "
 "up first in the context of constructors."
@@ -5896,11 +5953,11 @@ msgstr ""
 "Cette réponse s'applique en fait à toutes les méthodes, mais la question "
 "vient généralement en premier dans le contexte des constructeurs."
 
-#: ../src/Doc/faq/programming.rst:1538
+#: ../src/Doc/faq/programming.rst:1590
 msgid "In C++ you'd write"
 msgstr "In C++ you'd write"
 
-#: ../src/Doc/faq/programming.rst:1547
+#: ../src/Doc/faq/programming.rst:1599
 msgid ""
 "In Python you have to write a single constructor that catches all cases "
 "using default arguments.  For example::"
@@ -5908,29 +5965,29 @@ msgstr ""
 "En Python, vous devez écrire un constructeur unique qui considère tous les "
 "cas en utilisant des arguments par défaut. Par exemple::"
 
-#: ../src/Doc/faq/programming.rst:1557
+#: ../src/Doc/faq/programming.rst:1609
 msgid "This is not entirely equivalent, but close enough in practice."
 msgstr ""
 "Ce n'est pas tout à fait équivalent, mais suffisamment proche dans la "
 "pratique."
 
-#: ../src/Doc/faq/programming.rst:1559
+#: ../src/Doc/faq/programming.rst:1611
 msgid "You could also try a variable-length argument list, e.g. ::"
 msgstr ""
 "Vous pouvez aussi utiliser une liste d'arguments de longueur variable, par "
 "exemple ::"
 
-#: ../src/Doc/faq/programming.rst:1564
+#: ../src/Doc/faq/programming.rst:1616
 msgid "The same approach works for all method definitions."
 msgstr "La même approche fonctionne pour toutes les définitions de méthode."
 
-#: ../src/Doc/faq/programming.rst:1568
+#: ../src/Doc/faq/programming.rst:1620
 msgid "I try to use __spam and I get an error about _SomeClassName__spam."
 msgstr ""
 "J'essaie d'utiliser __spam et j'obtiens une erreur à propos de "
 "_SomeClassName__spam."
 
-#: ../src/Doc/faq/programming.rst:1570
+#: ../src/Doc/faq/programming.rst:1622
 msgid ""
 "Variable names with double leading underscores are \"mangled\" to provide a "
 "simple but effective way to define class private variables.  Any identifier "
@@ -5946,7 +6003,7 @@ msgstr ""
 "remplacé par ``_classname__spam``, où ``classname`` est le nom de la classe "
 "en cours avec les traits de soulignement dépouillés."
 
-#: ../src/Doc/faq/programming.rst:1576
+#: ../src/Doc/faq/programming.rst:1628
 msgid ""
 "This doesn't guarantee privacy: an outside user can still deliberately "
 "access the \"_classname__spam\" attribute, and private values are visible in "
@@ -5959,17 +6016,17 @@ msgstr ""
 "programmeurs Python ne prennent jamais la peine d'utiliser des noms de "
 "variable privée."
 
-#: ../src/Doc/faq/programming.rst:1583
+#: ../src/Doc/faq/programming.rst:1635
 msgid "My class defines __del__ but it is not called when I delete the object."
 msgstr ""
 "Ma classe définit __del__ mais il n'est pas appelé lorsque je supprime "
 "l'objet."
 
-#: ../src/Doc/faq/programming.rst:1585
+#: ../src/Doc/faq/programming.rst:1637
 msgid "There are several possible reasons for this."
 msgstr "Il y a plusieurs raisons possibles pour cela."
 
-#: ../src/Doc/faq/programming.rst:1587
+#: ../src/Doc/faq/programming.rst:1639
 msgid ""
 "The del statement does not necessarily call :meth:`__del__` -- it simply "
 "decrements the object's reference count, and if this reaches zero :meth:"
@@ -5979,7 +6036,7 @@ msgstr ""
 "simplement le compteur de références de l'objet, et si celui ci arrive à "
 "zéro: meth: `__del__` est appelée."
 
-#: ../src/Doc/faq/programming.rst:1591
+#: ../src/Doc/faq/programming.rst:1643
 msgid ""
 "If your data structures contain circular links (e.g. a tree where each child "
 "has a parent reference and each parent has a list of children) the reference "
@@ -5993,7 +6050,7 @@ msgid ""
 "cases where objects will never be collected."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1602
+#: ../src/Doc/faq/programming.rst:1654
 msgid ""
 "Despite the cycle collector, it's still a good idea to define an explicit "
 "``close()`` method on objects to be called whenever you're done with them.  "
@@ -6003,7 +6060,7 @@ msgid ""
 "the same object."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1609
+#: ../src/Doc/faq/programming.rst:1661
 msgid ""
 "Another way to avoid cyclical references is to use the :mod:`weakref` "
 "module, which allows you to point to objects without incrementing their "
@@ -6012,7 +6069,7 @@ msgid ""
 msgstr ""
 
 # b4b0759b65604b06bde8e32f69de4d3b
-#: ../src/Doc/faq/programming.rst:1614
+#: ../src/Doc/faq/programming.rst:1666
 msgid ""
 "If the object has ever been a local variable in a function that caught an "
 "expression in an except clause, chances are that a reference to the object "
@@ -6021,39 +6078,39 @@ msgid ""
 "the last recorded exception."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1620
+#: ../src/Doc/faq/programming.rst:1672
 msgid ""
 "Finally, if your :meth:`__del__` method raises an exception, a warning "
 "message is printed to :data:`sys.stderr`."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1625
+#: ../src/Doc/faq/programming.rst:1677
 msgid "How do I get a list of all instances of a given class?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1627
+#: ../src/Doc/faq/programming.rst:1679
 msgid ""
 "Python does not keep track of all instances of a class (or of a built-in "
 "type). You can program the class's constructor to keep track of all "
 "instances by keeping a list of weak references to each instance."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1633
+#: ../src/Doc/faq/programming.rst:1685
 msgid "Modules"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1636
+#: ../src/Doc/faq/programming.rst:1688
 msgid "How do I create a .pyc file?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1638
+#: ../src/Doc/faq/programming.rst:1690
 msgid ""
 "When a module is imported for the first time (or when the source is more "
 "recent than the current compiled file) a ``.pyc`` file containing the "
 "compiled code should be created in the same directory as the ``.py`` file."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1642
+#: ../src/Doc/faq/programming.rst:1694
 msgid ""
 "One reason that a ``.pyc`` file may not be created is permissions problems "
 "with the directory. This can happen, for example, if you develop as one user "
@@ -6063,7 +6120,7 @@ msgid ""
 "to the directory."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1649
+#: ../src/Doc/faq/programming.rst:1701
 msgid ""
 "Running Python on a top level script is not considered an import and no ``."
 "pyc`` will be created.  For example, if you have a top-level module ``abc."
@@ -6072,26 +6129,26 @@ msgid ""
 "created since ``abc.py`` isn't being imported."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1655
+#: ../src/Doc/faq/programming.rst:1707
 msgid ""
 "If you need to create abc.pyc -- that is, to create a .pyc file for a module "
 "that is not imported -- you can, using the :mod:`py_compile` and :mod:"
 "`compileall` modules."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1659
+#: ../src/Doc/faq/programming.rst:1711
 msgid ""
 "The :mod:`py_compile` module can manually compile any module.  One way is to "
 "use the ``compile()`` function in that module interactively::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1665
+#: ../src/Doc/faq/programming.rst:1717
 msgid ""
 "This will write the ``.pyc`` to the same location as ``abc.py`` (or you can "
 "override that with the optional parameter ``cfile``)."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1668
+#: ../src/Doc/faq/programming.rst:1720
 msgid ""
 "You can also automatically compile all files in a directory or directories "
 "using the :mod:`compileall` module.  You can do it from the shell prompt by "
@@ -6099,11 +6156,11 @@ msgid ""
 "Python files to compile::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1677
+#: ../src/Doc/faq/programming.rst:1729
 msgid "How do I find the current module name?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1679
+#: ../src/Doc/faq/programming.rst:1731
 msgid ""
 "A module can find out its own module name by looking at the predefined "
 "global variable ``__name__``.  If this has the value ``'__main__'``, the "
@@ -6112,76 +6169,76 @@ msgid ""
 "only execute this code after checking ``__name__``::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1694
+#: ../src/Doc/faq/programming.rst:1746
 msgid "How can I have modules that mutually import each other?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1696
+#: ../src/Doc/faq/programming.rst:1748
 msgid "Suppose you have the following modules:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1698
+#: ../src/Doc/faq/programming.rst:1750
 msgid "foo.py::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1703
+#: ../src/Doc/faq/programming.rst:1755
 msgid "bar.py::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1708
+#: ../src/Doc/faq/programming.rst:1760
 msgid "The problem is that the interpreter will perform the following steps:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1710
+#: ../src/Doc/faq/programming.rst:1762
 msgid "main imports foo"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1711
+#: ../src/Doc/faq/programming.rst:1763
 msgid "Empty globals for foo are created"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1712
+#: ../src/Doc/faq/programming.rst:1764
 msgid "foo is compiled and starts executing"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1713
+#: ../src/Doc/faq/programming.rst:1765
 msgid "foo imports bar"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1714
+#: ../src/Doc/faq/programming.rst:1766
 msgid "Empty globals for bar are created"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1715
+#: ../src/Doc/faq/programming.rst:1767
 msgid "bar is compiled and starts executing"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1716
+#: ../src/Doc/faq/programming.rst:1768
 msgid ""
 "bar imports foo (which is a no-op since there already is a module named foo)"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1717
+#: ../src/Doc/faq/programming.rst:1769
 msgid "bar.foo_var = foo.foo_var"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1719
+#: ../src/Doc/faq/programming.rst:1771
 msgid ""
 "The last step fails, because Python isn't done with interpreting ``foo`` yet "
 "and the global symbol dictionary for ``foo`` is still empty."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1722
+#: ../src/Doc/faq/programming.rst:1774
 msgid ""
 "The same thing happens when you use ``import foo``, and then try to access "
 "``foo.foo_var`` in global code."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1725
+#: ../src/Doc/faq/programming.rst:1777
 msgid "There are (at least) three possible workarounds for this problem."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1727
+#: ../src/Doc/faq/programming.rst:1779
 msgid ""
 "Guido van Rossum recommends avoiding all uses of ``from <module> import ..."
 "``, and placing all code inside functions.  Initializations of global "
@@ -6190,67 +6247,67 @@ msgid ""
 "``<module>.<name>``."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1732
+#: ../src/Doc/faq/programming.rst:1784
 msgid ""
 "Jim Roskind suggests performing steps in the following order in each module:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1734
+#: ../src/Doc/faq/programming.rst:1786
 msgid ""
 "exports (globals, functions, and classes that don't need imported base "
 "classes)"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1736
+#: ../src/Doc/faq/programming.rst:1788
 msgid "``import`` statements"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1737
+#: ../src/Doc/faq/programming.rst:1789
 msgid ""
 "active code (including globals that are initialized from imported values)."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1739
+#: ../src/Doc/faq/programming.rst:1791
 msgid ""
 "van Rossum doesn't like this approach much because the imports appear in a "
 "strange place, but it does work."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1742
+#: ../src/Doc/faq/programming.rst:1794
 msgid ""
 "Matthias Urlichs recommends restructuring your code so that the recursive "
 "import is not necessary in the first place."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1745
+#: ../src/Doc/faq/programming.rst:1797
 msgid "These solutions are not mutually exclusive."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1749
+#: ../src/Doc/faq/programming.rst:1801
 msgid "__import__('x.y.z') returns <module 'x'>; how do I get z?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1751
+#: ../src/Doc/faq/programming.rst:1803
 msgid "Try::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1755
+#: ../src/Doc/faq/programming.rst:1807
 msgid "For more realistic situations, you may have to do something like ::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1761
+#: ../src/Doc/faq/programming.rst:1813
 msgid ""
 "See :mod:`importlib` for a convenience function called :func:`~importlib."
 "import_module`."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1767
+#: ../src/Doc/faq/programming.rst:1819
 msgid ""
 "When I edit an imported module and reimport it, the changes don't show up.  "
 "Why does this happen?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1769
+#: ../src/Doc/faq/programming.rst:1821
 msgid ""
 "For reasons of efficiency as well as consistency, Python only reads the "
 "module file on the first time a module is imported.  If it didn't, in a "
@@ -6259,13 +6316,13 @@ msgid ""
 "rereading of a changed module, do this::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1778
+#: ../src/Doc/faq/programming.rst:1830
 msgid ""
 "Warning: this technique is not 100% fool-proof.  In particular, modules "
 "containing statements like ::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1783
+#: ../src/Doc/faq/programming.rst:1835
 msgid ""
 "will continue to work with the old version of the imported objects.  If the "
 "module contains class definitions, existing class instances will *not* be "
@@ -6274,7 +6331,7 @@ msgid ""
 msgstr ""
 
 # 702dbe1732aa493f8a0b6bb56cb2522c
-#: ../src/Doc/faq/programming.rst:1795
+#: ../src/Doc/faq/programming.rst:1847
 msgid ""
 "The nature of the problem is made clear if you print out the class objects:"
 msgstr ""
