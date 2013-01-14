@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-10 05:16\n"
+"POT-Creation-Date: 2013-01-14 04:38\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5644,32 +5644,33 @@ msgid ""
 "to store a clear text password in the :file:`$HOME/.pypirc` file."
 msgstr ""
 
+# 540f8b75cd2e40fa9f71ecdfdd9ae092
 #: ../src/Doc/distutils/uploading.rst:30
 msgid ""
-"You can specify another PyPI server with the :option:`--repository=*url*` "
-"option::"
+"You can specify another PyPI server with the ``--repository=url`` option::"
 msgstr ""
 
 #: ../src/Doc/distutils/uploading.rst:34
 msgid "See section :ref:`pypirc` for more on defining several servers."
 msgstr ""
 
+# 5c3eae18bce84390acdf072458579aba
 #: ../src/Doc/distutils/uploading.rst:36
 msgid ""
-"You can use the :option:`--sign` option to tell :command:`upload` to sign "
-"each uploaded file using GPG (GNU Privacy Guard).  The  :program:`gpg` "
-"program must be available for execution on the system :envvar:`PATH`.  You "
-"can also specify which key to use for signing using the :option:`--"
-"identity=*name*` option."
+"You can use the ``--sign`` option to tell :command:`upload` to sign each "
+"uploaded file using GPG (GNU Privacy Guard).  The  :program:`gpg` program "
+"must be available for execution on the system :envvar:`PATH`.  You can also "
+"specify which key to use for signing using the ``--identity=name`` option."
 msgstr ""
 
+# 6bd23c13b1524e709a5a2beb99c83022
 #: ../src/Doc/distutils/uploading.rst:41
 msgid ""
-"Other :command:`upload` options include :option:`--repository=<url>` or :"
-"option:`--repository=<section>` where *url* is the url of the server and "
-"*section* the name of the section in :file:`$HOME/.pypirc`, and :option:`--"
-"show-response` (which displays the full response text from the PyPI server "
-"for help in debugging upload problems)."
+"Other :command:`upload` options include ``--repository=url`` or ``--"
+"repository=section`` where *url* is the url of the server and *section* the "
+"name of the section in :file:`$HOME/.pypirc`, and ``--show-response`` (which "
+"displays the full response text from the PyPI server for help in debugging "
+"upload problems)."
 msgstr ""
 
 #: ../src/Doc/distutils/uploading.rst:48
