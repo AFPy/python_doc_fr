@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-14 04:38\n"
+"POT-Creation-Date: 2013-01-21 04:37\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1218,20 +1218,12 @@ msgid ""
 "their ``PyLong_*`` equivalents."
 msgstr ""
 
-# 5e368a2d2d194184b440d071c05903c1
-#: ../src/Doc/howto/cporting.rst:103
-msgid ""
-"The best course of action here is using the ``PyInt_*`` functions aliased to "
-"``PyLong_*`` found in :file:`intobject.h`.  The abstract ``PyNumber_*`` APIs "
-"can also be used in some cases. ::"
-msgstr ""
-
-#: ../src/Doc/howto/cporting.rst:124
+#: ../src/Doc/howto/cporting.rst:105
 msgid "Module initialization and state"
 msgstr ""
 
 # 0926a05def714bc6be7470c21a597de2
-#: ../src/Doc/howto/cporting.rst:126
+#: ../src/Doc/howto/cporting.rst:107
 msgid ""
 "Python 3 has a revamped extension module initialization system.  (See :pep:"
 "`3121`.)  Instead of storing module state in globals, they should be stored "
@@ -1241,12 +1233,12 @@ msgid ""
 msgstr ""
 
 # 2b2b820305204eb98416dbc169903c6a
-#: ../src/Doc/howto/cporting.rst:217
+#: ../src/Doc/howto/cporting.rst:198
 msgid "CObject replaced with Capsule"
 msgstr ""
 
 # e40a24473fd74f3183273bf061bd0ae1
-#: ../src/Doc/howto/cporting.rst:219
+#: ../src/Doc/howto/cporting.rst:200
 msgid ""
 "The :c:type:`Capsule` object was introduced in Python 3.1 and 2.7 to "
 "replace :c:type:`CObject`.  CObjects were useful, but the :c:type:`CObject` "
@@ -1257,7 +1249,7 @@ msgid ""
 msgstr ""
 
 # 74ae9cf398894df4b60b8564bb3748df
-#: ../src/Doc/howto/cporting.rst:226
+#: ../src/Doc/howto/cporting.rst:207
 msgid ""
 "If you're currently using CObjects, and you want to migrate to 3.1 or newer, "
 "you'll need to switch to Capsules. :c:type:`CObject` was deprecated in 3.1 "
@@ -1269,7 +1261,7 @@ msgid ""
 msgstr ""
 
 # 2b7e3a305e1f464991a47c4c4d58c9e0
-#: ../src/Doc/howto/cporting.rst:236
+#: ../src/Doc/howto/cporting.rst:217
 msgid ""
 "The following example header file :file:`capsulethunk.h` may solve the "
 "problem for you.  Simply write your code against the :c:type:`Capsule` API "
@@ -1279,7 +1271,7 @@ msgid ""
 msgstr ""
 
 # 8b1240e394814c219739b84896bc630a
-#: ../src/Doc/howto/cporting.rst:243
+#: ../src/Doc/howto/cporting.rst:224
 msgid ""
 ":file:`capsulethunk.h` simulates Capsules using CObjects.  However, :c:type:"
 "`CObject` provides no place to store the capsule's \"name\".  As a result "
@@ -1288,12 +1280,12 @@ msgid ""
 msgstr ""
 
 # 691c2900ef5e425cbe070f2624ae02a5
-#: ../src/Doc/howto/cporting.rst:248
+#: ../src/Doc/howto/cporting.rst:229
 msgid "The name parameter passed in to :c:func:`PyCapsule_New` is ignored."
 msgstr ""
 
 # a6ed5310b58f4270b84746b90266e4c5
-#: ../src/Doc/howto/cporting.rst:250
+#: ../src/Doc/howto/cporting.rst:231
 msgid ""
 "The name parameter passed in to :c:func:`PyCapsule_IsValid` and :c:func:"
 "`PyCapsule_GetPointer` is ignored, and no error checking of the name is "
@@ -1301,12 +1293,12 @@ msgid ""
 msgstr ""
 
 # 223109969e9a4a6c943bd1f206d9ff8c
-#: ../src/Doc/howto/cporting.rst:254
+#: ../src/Doc/howto/cporting.rst:235
 msgid ":c:func:`PyCapsule_GetName` always returns NULL."
 msgstr ""
 
 # 94468e8bbf364d05820aeca035f9f767
-#: ../src/Doc/howto/cporting.rst:256
+#: ../src/Doc/howto/cporting.rst:237
 msgid ""
 ":c:func:`PyCapsule_SetName` always raises an exception and returns failure.  "
 "(Since there's no way to store a name in a CObject, noisy failure of :c:func:"
@@ -1315,19 +1307,19 @@ msgid ""
 msgstr ""
 
 # 7d9b3aa9994a47948fb61ddc42eaa6be
-#: ../src/Doc/howto/cporting.rst:263
+#: ../src/Doc/howto/cporting.rst:244
 msgid ""
 "You can find :file:`capsulethunk.h` in the Python source distribution as :"
 "source:`Doc/includes/capsulethunk.h`.  We also include it here for your "
 "convenience:"
 msgstr ""
 
-#: ../src/Doc/howto/cporting.rst:272
+#: ../src/Doc/howto/cporting.rst:253
 msgid "Other options"
 msgstr ""
 
 # efe92c9f2c7f4d2ba14c533d6d0d159d
-#: ../src/Doc/howto/cporting.rst:274
+#: ../src/Doc/howto/cporting.rst:255
 msgid ""
 "If you are writing a new extension module, you might consider `Cython "
 "<http://www.cython.org>`_.  It translates a Python-like language to C.  The "
