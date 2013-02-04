@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-24 04:26\n"
+"POT-Creation-Date: 2013-02-04 04:08\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1284,41 +1284,24 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/using/mac.rst:181
-msgid "Application Scripting"
-msgstr ""
-
-#: ../src/Doc/using/mac.rst:183
-msgid ""
-"Python can also be used to script other Mac applications via Apple's Open "
-"Scripting Architecture (OSA); see http://appscript.sourceforge.net. "
-"Appscript is a high-level, user-friendly Apple event bridge that allows you "
-"to control scriptable Mac OS X applications using ordinary Python scripts. "
-"Appscript makes Python a serious alternative to Apple's own *AppleScript* "
-"language for automating your Mac. A related package, *PyOSA*, is an OSA "
-"language component for the Python scripting language, allowing Python code "
-"to be executed by any OSA-enabled application (Script Editor, Mail, iTunes, "
-"etc.). PyOSA makes Python a full peer to AppleScript."
-msgstr ""
-
-#: ../src/Doc/using/mac.rst:195
 msgid "Other Resources"
 msgstr ""
 
-#: ../src/Doc/using/mac.rst:197
+#: ../src/Doc/using/mac.rst:183
 msgid ""
 "The MacPython mailing list is an excellent support resource for Python users "
 "and developers on the Mac:"
 msgstr ""
 
-#: ../src/Doc/using/mac.rst:200
+#: ../src/Doc/using/mac.rst:186
 msgid "http://www.python.org/community/sigs/current/pythonmac-sig/"
 msgstr ""
 
-#: ../src/Doc/using/mac.rst:202
+#: ../src/Doc/using/mac.rst:188
 msgid "Another useful resource is the MacPython wiki:"
 msgstr ""
 
-#: ../src/Doc/using/mac.rst:204
+#: ../src/Doc/using/mac.rst:190
 msgid "http://wiki.python.org/moin/MacPython"
 msgstr ""
 
