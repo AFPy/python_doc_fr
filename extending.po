@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-20 04:15\n"
+"POT-Creation-Date: 2013-02-25 07:29\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -314,20 +314,21 @@ msgstr ""
 msgid "The code to run a function defined in a Python script is:"
 msgstr ""
 
+# 24a8b07191e34a9490bd8474e32e3d67
 #: ../src/Doc/extending/embedding.rst:140
 msgid ""
 "This code loads a Python script using ``argv[1]``, and calls the function "
 "named in ``argv[2]``.  Its integer arguments are the other values of the "
 "``argv`` array.  If you compile and link this program (let's call the "
 "finished executable :program:`call`), and use it to execute a Python script, "
-"such as::"
+"such as:"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:152
+#: ../src/Doc/extending/embedding.rst:154
 msgid "then the result should be::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:158
+#: ../src/Doc/extending/embedding.rst:160
 msgid ""
 "Although the program is quite large for its functionality, most of the code "
 "is for data conversion between Python and C, and for error reporting.  The "
@@ -335,7 +336,7 @@ msgid ""
 msgstr ""
 
 # dc2a9d1c15044827aafd426bf84b472a
-#: ../src/Doc/extending/embedding.rst:167
+#: ../src/Doc/extending/embedding.rst:169
 msgid ""
 "After initializing the interpreter, the script is loaded using :c:func:"
 "`PyImport_Import`.  This routine needs a Python string as its argument, "
@@ -344,7 +345,7 @@ msgid ""
 msgstr ""
 
 # 61325f6f158d4f3e93f341879b3d9276
-#: ../src/Doc/extending/embedding.rst:180
+#: ../src/Doc/extending/embedding.rst:182
 msgid ""
 "Once the script is loaded, the name we're looking for is retrieved using :c:"
 "func:`PyObject_GetAttrString`.  If the name exists, and the object returned "
@@ -353,18 +354,18 @@ msgid ""
 "Python function is then made with::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:188
+#: ../src/Doc/extending/embedding.rst:190
 msgid ""
 "Upon return of the function, ``pValue`` is either *NULL* or it contains a "
 "reference to the return value of the function.  Be sure to release the "
 "reference after examining the value."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:196
+#: ../src/Doc/extending/embedding.rst:198
 msgid "Extending Embedded Python"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:198
+#: ../src/Doc/extending/embedding.rst:200
 msgid ""
 "Until now, the embedded Python interpreter had no access to functionality "
 "from the application itself.  The Python API allows this by extending the "
@@ -377,30 +378,31 @@ msgid ""
 msgstr ""
 
 # e3a28dc7453b48aaa3152dbb130353ec
-#: ../src/Doc/extending/embedding.rst:224
+#: ../src/Doc/extending/embedding.rst:226
 msgid ""
 "Insert the above code just above the :c:func:`main` function. Also, insert "
 "the following two statements directly after :c:func:`Py_Initialize`::"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:230
+# e374af9b79d6490f99a2a9e490eb45d5
+#: ../src/Doc/extending/embedding.rst:232
 msgid ""
 "These two lines initialize the ``numargs`` variable, and make the :func:`emb."
 "numargs` function accessible to the embedded Python interpreter. With these "
-"extensions, the Python script can do things like ::"
+"extensions, the Python script can do things like"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:237
+#: ../src/Doc/extending/embedding.rst:241
 msgid ""
 "In a real application, the methods will expose an API of the application to "
 "Python."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:247
+#: ../src/Doc/extending/embedding.rst:251
 msgid "Embedding Python in C++"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:249
+#: ../src/Doc/extending/embedding.rst:253
 msgid ""
 "It is also possible to embed Python in a C++ program; precisely how this is "
 "done will depend on the details of the C++ system used; in general you will "
@@ -409,11 +411,11 @@ msgid ""
 "+."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:258
+#: ../src/Doc/extending/embedding.rst:262
 msgid "Linking Requirements"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:260
+#: ../src/Doc/extending/embedding.rst:264
 msgid ""
 "While the :program:`configure` script shipped with the Python sources will "
 "correctly build Python to export the symbols needed by dynamically linked "
@@ -423,7 +425,7 @@ msgid ""
 "and needs to load dynamic extensions (implemented as :file:`.so` files)."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:267
+#: ../src/Doc/extending/embedding.rst:271
 msgid ""
 "The problem is that some entry points are defined by the Python runtime "
 "solely for extension modules to use.  If the embedding application does not "
@@ -432,15 +434,16 @@ msgid ""
 "needed to inform the linker not to remove these symbols."
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:273
+# a3ac169f7caf44298a7d3c8dea784910
+#: ../src/Doc/extending/embedding.rst:277
 msgid ""
 "Determining the right options to use for any given platform can be quite "
 "difficult, but fortunately the Python configuration already has those "
 "values. To retrieve them from an installed Python interpreter, start an "
-"interactive interpreter and have a short session like this::"
+"interactive interpreter and have a short session like this"
 msgstr ""
 
-#: ../src/Doc/extending/embedding.rst:284
+#: ../src/Doc/extending/embedding.rst:290
 msgid ""
 "The contents of the string presented will be the options that should be "
 "used. If the string is empty, there's no need to add any additional "
