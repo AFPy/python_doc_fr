@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-25 07:29\n"
+"POT-Creation-Date: 2013-03-04 04:04\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4120,29 +4120,54 @@ msgid ""
 "be run from this directory."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:5
-msgid "Registering with the Package Index"
+# 6b99a7bfa8f4420b8db5fd71046fb854
+#: ../src/Doc/distutils/packageindex.rst:9
+msgid "The Python Package Index (PyPI)"
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:7
+# 914fcf14fd664318bca9542ac3779371
+#: ../src/Doc/distutils/packageindex.rst:11
 msgid ""
-"The Python Package Index (PyPI) holds meta-data describing distributions "
-"packaged with distutils. The distutils command :command:`register` is used "
-"to submit your distribution's meta-data to the index. It is invoked as "
-"follows::"
+"The `Python Package Index (PyPI)`_ holds :ref:`meta-data <meta-data>` "
+"describing distributions packaged with distutils, as well as package data "
+"like distribution files if the package author wishes."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:13
+# 2f53fb60fe8b4e5d97e888cda1c2c722
+#: ../src/Doc/distutils/packageindex.rst:15
+msgid ""
+"Distutils exposes two commands for submitting package data to PyPI: the :ref:"
+"`register <package-register>` command for submitting meta-data to PyPI and "
+"the :ref:`upload <package-upload>` command for submitting distribution "
+"files.  Both commands read configuration data from a special file called "
+"the :ref:`.pypirc file <pypirc>`.  PyPI :ref:`displays a home page <package-"
+"display>` for each package created from the ``long_description`` submitted "
+"by the :command:`register` command."
+msgstr ""
+
+# db380e25a7654d38a45378d701855fb8
+#: ../src/Doc/distutils/packageindex.rst:27
+msgid "Registering Packages"
+msgstr ""
+
+# 914fcf14fd664318bca9542ac3779371
+#: ../src/Doc/distutils/packageindex.rst:29
+msgid ""
+"The distutils command :command:`register` is used to submit your "
+"distribution's meta-data to the index. It is invoked as follows::"
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:34
 msgid "Distutils will respond with the following prompt::"
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:23
+#: ../src/Doc/distutils/packageindex.rst:44
 msgid ""
 "Note: if your username and password are saved locally, you will not see this "
 "menu."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:26
+#: ../src/Doc/distutils/packageindex.rst:47
 msgid ""
 "If you have not registered with PyPI, then you will need to do so now. You "
 "should choose option 2, and enter your details as required. Soon after "
@@ -4150,21 +4175,21 @@ msgid ""
 "confirm your registration."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:31
+#: ../src/Doc/distutils/packageindex.rst:52
 msgid ""
 "Once you are registered, you may choose option 1 from the menu. You will be "
 "prompted for your PyPI username and password, and :command:`register` will "
 "then submit your meta-data to the index."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:35
+#: ../src/Doc/distutils/packageindex.rst:56
 msgid ""
 "You may submit any number of versions of your distribution to the index. If "
 "you alter the meta-data for a particular version, you may submit it again "
 "and the index will be updated."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:39
+#: ../src/Doc/distutils/packageindex.rst:60
 msgid ""
 "PyPI holds a record for each (name, version) combination submitted. The "
 "first user to submit information for a given name is designated the Owner of "
@@ -4175,69 +4200,181 @@ msgid ""
 msgstr ""
 
 # 4e954f4ee11e48688a86ebedf65e1fd1
-#: ../src/Doc/distutils/packageindex.rst:46
+#: ../src/Doc/distutils/packageindex.rst:67
 msgid ""
 "By default PyPI displays only the newest version of a given package. The web "
 "interface lets one change this default behavior and manually select which "
 "versions to display and hide."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:54
+# ceb67cc41cfc45bfab4079ae7332aba1
+#: ../src/Doc/distutils/packageindex.rst:75
+msgid "Uploading Packages"
+msgstr ""
+
+# 2abc16d12645454ba4c9ed172c50fcce
+#: ../src/Doc/distutils/packageindex.rst:79
+msgid ""
+"The distutils command :command:`upload` pushes the distribution files to "
+"PyPI."
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:81
+msgid ""
+"The command is invoked immediately after building one or more distribution "
+"files.  For example, the command ::"
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:86
+msgid ""
+"will cause the source distribution and the Windows installer to be uploaded "
+"to PyPI.  Note that these will be uploaded even if they are built using an "
+"earlier invocation of :file:`setup.py`, but that only distributions named on "
+"the command line for the invocation including the :command:`upload` command "
+"are uploaded."
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:91
+msgid ""
+"The :command:`upload` command uses the username, password, and repository "
+"URL from the :file:`$HOME/.pypirc` file (see section :ref:`pypirc` for more "
+"on this file). If a :command:`register` command was previously called in the "
+"same command, and if the password was entered in the prompt, :command:"
+"`upload` will reuse the entered password. This is useful if you do not want "
+"to store a clear text password in the :file:`$HOME/.pypirc` file."
+msgstr ""
+
+# 540f8b75cd2e40fa9f71ecdfdd9ae092
+#: ../src/Doc/distutils/packageindex.rst:98
+msgid ""
+"You can specify another PyPI server with the ``--repository=url`` option::"
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:102
+msgid "See section :ref:`pypirc` for more on defining several servers."
+msgstr ""
+
+# 5c3eae18bce84390acdf072458579aba
+#: ../src/Doc/distutils/packageindex.rst:104
+msgid ""
+"You can use the ``--sign`` option to tell :command:`upload` to sign each "
+"uploaded file using GPG (GNU Privacy Guard).  The  :program:`gpg` program "
+"must be available for execution on the system :envvar:`PATH`.  You can also "
+"specify which key to use for signing using the ``--identity=name`` option."
+msgstr ""
+
+# 6bd23c13b1524e709a5a2beb99c83022
+#: ../src/Doc/distutils/packageindex.rst:109
+msgid ""
+"Other :command:`upload` options include ``--repository=url`` or ``--"
+"repository=section`` where *url* is the url of the server and *section* the "
+"name of the section in :file:`$HOME/.pypirc`, and ``--show-response`` (which "
+"displays the full response text from the PyPI server for help in debugging "
+"upload problems)."
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:123
 msgid "The .pypirc file"
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:56
+#: ../src/Doc/distutils/packageindex.rst:125
 msgid "The format of the :file:`.pypirc` file is as follows::"
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:67
+#: ../src/Doc/distutils/packageindex.rst:136
 msgid ""
 "The *distutils* section defines a *index-servers* variable that lists the "
 "name of all sections describing a repository."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:70
+#: ../src/Doc/distutils/packageindex.rst:139
 msgid "Each section describing a repository defines three variables:"
 msgstr ""
 
 # fbdb8f39e3794116834764205597ef1e
-#: ../src/Doc/distutils/packageindex.rst:71
+#: ../src/Doc/distutils/packageindex.rst:140
 msgid "*repository*, that defines the url of the PyPI server. Defaults to"
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:73
+#: ../src/Doc/distutils/packageindex.rst:142
 msgid "``http://www.python.org/pypi``."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:74
+#: ../src/Doc/distutils/packageindex.rst:143
 msgid "*username*, which is the registered username on the PyPI server."
 msgstr ""
 
 # 5f905574e8ff42d4affadb2135f39b63
-#: ../src/Doc/distutils/packageindex.rst:75
+#: ../src/Doc/distutils/packageindex.rst:144
 msgid "*password*, that will be used to authenticate. If omitted the user"
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:76
+#: ../src/Doc/distutils/packageindex.rst:145
 msgid "will be prompt to type it when needed."
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:78
+#: ../src/Doc/distutils/packageindex.rst:147
 msgid ""
 "If you want to define another server a new section can be created and listed "
 "in the *index-servers* variable::"
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:96
+#: ../src/Doc/distutils/packageindex.rst:165
 msgid ""
 ":command:`register` can then be called with the -r option to point the "
 "repository to work with::"
 msgstr ""
 
-#: ../src/Doc/distutils/packageindex.rst:101
+#: ../src/Doc/distutils/packageindex.rst:170
 msgid ""
 "For convenience, the name of the section that describes the repository may "
 "also be used::"
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:179
+msgid "PyPI package display"
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:181
+msgid ""
+"The ``long_description`` field plays a special role at PyPI. It is used by "
+"the server to display a home page for the registered package."
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:184
+msgid ""
+"If you use the `reStructuredText <http://docutils.sourceforge.net/rst."
+"html>`_ syntax for this field, PyPI will parse it and display an HTML output "
+"for the package home page."
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:188
+msgid ""
+"The ``long_description`` field can be attached to a text file located in the "
+"package::"
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:199
+msgid ""
+"In that case, :file:`README.txt` is a regular reStructuredText text file "
+"located in the root of the package besides :file:`setup.py`."
+msgstr ""
+
+#: ../src/Doc/distutils/packageindex.rst:202
+msgid ""
+"To prevent registering broken reStructuredText content, you can use the :"
+"program:`rst2html` program that is provided by the :mod:`docutils` package "
+"and check the ``long_description`` from the command line::"
+msgstr ""
+
+# e8472c0041af419c8b9c106ce479c9ab
+#: ../src/Doc/distutils/packageindex.rst:208
+msgid ""
+":mod:`docutils` will display a warning if there's something wrong with your "
+"syntax.  Because PyPI applies additional checks (e.g. by passing ``--no-"
+"raw`` to ``rst2html.py`` in the command above), being able to run the "
+"command above without warnings does not guarantee that PyPI will convert the "
+"content successfully."
 msgstr ""
 
 #: ../src/Doc/distutils/setupscript.rst:5
@@ -5074,13 +5211,15 @@ msgid ""
 "website <http://pypi.python.org/pypi>`_."
 msgstr ""
 
+# fc9bbbad33fe40e0bae202e4d4a27184
 #: ../src/Doc/distutils/setupscript.rst:610
 msgid ""
-"The ``long_description`` field is used by PyPI when you are registering a "
-"package, to build its home page."
+"The ``long_description`` field is used by PyPI when you are :ref:"
+"`registering <package-register>` a package, to :ref:`build its home page "
+"<package-display>`."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:614
+#: ../src/Doc/distutils/setupscript.rst:615
 msgid ""
 "The ``license`` field is a text indicating the license covering the package "
 "where the license is not a selection from the \"License\" Trove classifiers. "
@@ -5088,41 +5227,41 @@ msgid ""
 "option which is deprecated but still acts as an alias for ``license``."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:620
+#: ../src/Doc/distutils/setupscript.rst:621
 #, fuzzy
 msgid "'short string'"
 msgstr "une chaîne de caractères"
 
-#: ../src/Doc/distutils/setupscript.rst:621
+#: ../src/Doc/distutils/setupscript.rst:622
 msgid "A single line of text, not more than 200 characters."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:624
+#: ../src/Doc/distutils/setupscript.rst:625
 #, fuzzy
 msgid "'long string'"
 msgstr "une chaîne de caractères"
 
-#: ../src/Doc/distutils/setupscript.rst:624
+#: ../src/Doc/distutils/setupscript.rst:625
 msgid ""
 "Multiple lines of plain text in reStructuredText format (see http://docutils."
 "sf.net/)."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:627
+#: ../src/Doc/distutils/setupscript.rst:628
 #, fuzzy
 msgid "'list of strings'"
 msgstr "une liste de chaînes"
 
-#: ../src/Doc/distutils/setupscript.rst:628
+#: ../src/Doc/distutils/setupscript.rst:629
 msgid "See below."
 msgstr ""
 
 # 7c1862acdfce4c5d9ef4d14f8ebc9f36
-#: ../src/Doc/distutils/setupscript.rst:630
+#: ../src/Doc/distutils/setupscript.rst:631
 msgid "None of the string values may be Unicode."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:632
+#: ../src/Doc/distutils/setupscript.rst:633
 msgid ""
 "Encoding the version information is an art in itself. Python packages "
 "generally adhere to the version format *major.minor[.patch][sub]*. The major "
@@ -5138,28 +5277,28 @@ msgid ""
 msgstr ""
 
 # 0de9f3525ca64e98a6edf0bdd347d253
-#: ../src/Doc/distutils/setupscript.rst:643
+#: ../src/Doc/distutils/setupscript.rst:644
 msgid "0.1.0"
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:644
+#: ../src/Doc/distutils/setupscript.rst:645
 msgid "the first, experimental release of a package"
 msgstr ""
 
 # fe4ed80664034b97a21415110d9ee93a
-#: ../src/Doc/distutils/setupscript.rst:646
+#: ../src/Doc/distutils/setupscript.rst:647
 msgid "1.0.1a2"
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:647
+#: ../src/Doc/distutils/setupscript.rst:648
 msgid "the second alpha release of the first patch version of 1.0"
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:649
+#: ../src/Doc/distutils/setupscript.rst:650
 msgid ":option:`classifiers` are specified in a Python list::"
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:670
+#: ../src/Doc/distutils/setupscript.rst:671
 msgid ""
 "If you wish to include classifiers in your :file:`setup.py` file and also "
 "wish to remain backwards-compatible with Python releases prior to 2.2.3, "
@@ -5167,17 +5306,17 @@ msgid ""
 "before the :func:`setup` call. ::"
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:685
+#: ../src/Doc/distutils/setupscript.rst:686
 msgid "Debugging the setup script"
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:687
+#: ../src/Doc/distutils/setupscript.rst:688
 msgid ""
 "Sometimes things go wrong, and the setup script doesn't do what the "
 "developer wants."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:690
+#: ../src/Doc/distutils/setupscript.rst:691
 msgid ""
 "Distutils catches any exceptions when running the setup script, and print a "
 "simple error message before the script is terminated.  The motivation for "
@@ -5188,7 +5327,7 @@ msgid ""
 "down to the bottom and see that it's a permission problem."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:698
+#: ../src/Doc/distutils/setupscript.rst:699
 msgid ""
 "On the other hand, this doesn't help the developer to find the cause of the "
 "failure. For this purpose, the DISTUTILS_DEBUG environment variable can be "
@@ -5619,111 +5758,10 @@ msgstr ""
 msgid "Uploading Packages to the Package Index"
 msgstr ""
 
-#: ../src/Doc/distutils/uploading.rst:9
+# e6c00eaa31234866b03c24495d9fb3f9
+#: ../src/Doc/distutils/uploading.rst:7
 msgid ""
-"The Python Package Index (PyPI) not only stores the package info, but also  "
-"the package data if the author of the package wishes to. The distutils "
-"command :command:`upload` pushes the distribution files to PyPI."
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:13
-msgid ""
-"The command is invoked immediately after building one or more distribution "
-"files.  For example, the command ::"
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:18
-msgid ""
-"will cause the source distribution and the Windows installer to be uploaded "
-"to PyPI.  Note that these will be uploaded even if they are built using an "
-"earlier invocation of :file:`setup.py`, but that only distributions named on "
-"the command line for the invocation including the :command:`upload` command "
-"are uploaded."
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:23
-msgid ""
-"The :command:`upload` command uses the username, password, and repository "
-"URL from the :file:`$HOME/.pypirc` file (see section :ref:`pypirc` for more "
-"on this file). If a :command:`register` command was previously called in the "
-"same command, and if the password was entered in the prompt, :command:"
-"`upload` will reuse the entered password. This is useful if you do not want "
-"to store a clear text password in the :file:`$HOME/.pypirc` file."
-msgstr ""
-
-# 540f8b75cd2e40fa9f71ecdfdd9ae092
-#: ../src/Doc/distutils/uploading.rst:30
-msgid ""
-"You can specify another PyPI server with the ``--repository=url`` option::"
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:34
-msgid "See section :ref:`pypirc` for more on defining several servers."
-msgstr ""
-
-# 5c3eae18bce84390acdf072458579aba
-#: ../src/Doc/distutils/uploading.rst:36
-msgid ""
-"You can use the ``--sign`` option to tell :command:`upload` to sign each "
-"uploaded file using GPG (GNU Privacy Guard).  The  :program:`gpg` program "
-"must be available for execution on the system :envvar:`PATH`.  You can also "
-"specify which key to use for signing using the ``--identity=name`` option."
-msgstr ""
-
-# 6bd23c13b1524e709a5a2beb99c83022
-#: ../src/Doc/distutils/uploading.rst:41
-msgid ""
-"Other :command:`upload` options include ``--repository=url`` or ``--"
-"repository=section`` where *url* is the url of the server and *section* the "
-"name of the section in :file:`$HOME/.pypirc`, and ``--show-response`` (which "
-"displays the full response text from the PyPI server for help in debugging "
-"upload problems)."
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:48
-msgid "PyPI package display"
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:50
-msgid ""
-"The ``long_description`` field plays a special role at PyPI. It is used by "
-"the server to display a home page for the registered package."
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:53
-msgid ""
-"If you use the `reStructuredText <http://docutils.sourceforge.net/rst."
-"html>`_ syntax for this field, PyPI will parse it and display an HTML output "
-"for the package home page."
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:57
-msgid ""
-"The ``long_description`` field can be attached to a text file located in the "
-"package::"
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:68
-msgid ""
-"In that case, :file:`README.txt` is a regular reStructuredText text file "
-"located in the root of the package besides :file:`setup.py`."
-msgstr ""
-
-#: ../src/Doc/distutils/uploading.rst:71
-msgid ""
-"To prevent registering broken reStructuredText content, you can use the :"
-"program:`rst2html` program that is provided by the :mod:`docutils` package "
-"and check the ``long_description`` from the command line::"
-msgstr ""
-
-# e8472c0041af419c8b9c106ce479c9ab
-#: ../src/Doc/distutils/uploading.rst:77
-msgid ""
-":mod:`docutils` will display a warning if there's something wrong with your "
-"syntax.  Because PyPI applies additional checks (e.g. by passing ``--no-"
-"raw`` to ``rst2html.py`` in the command above), being able to run the "
-"command above without warnings does not guarantee that PyPI will convert the "
-"content successfully."
+"The contents of this page have moved to the section :ref:`package-index`."
 msgstr ""
 
 #~ msgid "The name of the current maintainer, if different from the author"
