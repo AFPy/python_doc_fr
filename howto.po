@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-04 04:08\n"
+"POT-Creation-Date: 2013-03-11 10:07\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2214,14 +2214,14 @@ msgid ""
 "protocol, here is a pure Python equivalent::"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:240
+#: ../src/Doc/howto/descriptor.rst:251
 msgid ""
 "The :func:`property` builtin helps whenever a user interface has granted "
 "attribute access and then subsequent changes require the intervention of a "
 "method."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:244
+#: ../src/Doc/howto/descriptor.rst:255
 msgid ""
 "For instance, a spreadsheet class may grant access to a cell value through "
 "``Cell('b10').value``. Subsequent improvements to the program require the "
@@ -2231,17 +2231,17 @@ msgid ""
 "descriptor::"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:260
+#: ../src/Doc/howto/descriptor.rst:271
 msgid "Functions and Methods"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:262
+#: ../src/Doc/howto/descriptor.rst:273
 msgid ""
 "Python's object oriented features are built upon a function based "
 "environment. Using non-data descriptors, the two are merged seamlessly."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:265
+#: ../src/Doc/howto/descriptor.rst:276
 msgid ""
 "Class dictionaries store methods as functions.  In a class definition, "
 "methods are written using :keyword:`def` and :keyword:`lambda`, the usual "
@@ -2251,7 +2251,7 @@ msgid ""
 "or any other variable name."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:272
+#: ../src/Doc/howto/descriptor.rst:283
 msgid ""
 "To support method calls, functions include the :meth:`__get__` method for "
 "binding methods during attribute access.  This means that all functions are "
@@ -2260,13 +2260,13 @@ msgid ""
 "this::"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:284
+#: ../src/Doc/howto/descriptor.rst:295
 msgid ""
 "Running the interpreter shows how the function descriptor works in practice::"
 msgstr ""
 
 # e4e859d3b5db442a8691474caa6bfcd8
-#: ../src/Doc/howto/descriptor.rst:298
+#: ../src/Doc/howto/descriptor.rst:309
 msgid ""
 "The output suggests that bound and unbound methods are two different types. "
 "While they could have been implemented that way, the actual C implementation "
@@ -2276,7 +2276,7 @@ msgid ""
 "field is set or is *NULL* (the C equivalent of *None*)."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:305
+#: ../src/Doc/howto/descriptor.rst:316
 msgid ""
 "Likewise, the effects of calling a method object depend on the :attr:"
 "`im_self` field. If set (meaning bound), the original function (stored in "
@@ -2287,17 +2287,17 @@ msgid ""
 "some type checking."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:314
+#: ../src/Doc/howto/descriptor.rst:325
 msgid "Static Methods and Class Methods"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:316
+#: ../src/Doc/howto/descriptor.rst:327
 msgid ""
 "Non-data descriptors provide a simple mechanism for variations on the usual "
 "patterns of binding functions into methods."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:319
+#: ../src/Doc/howto/descriptor.rst:330
 msgid ""
 "To recap, functions have a :meth:`__get__` method so that they can be "
 "converted to a method when accessed as attributes.  The non-data descriptor "
@@ -2305,51 +2305,51 @@ msgid ""
 "(*args)`` becomes ``f(*args)``."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:324
+#: ../src/Doc/howto/descriptor.rst:335
 msgid "This chart summarizes the binding and its two most useful variants:"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:327
+#: ../src/Doc/howto/descriptor.rst:338
 msgid "Transformation"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:327
+#: ../src/Doc/howto/descriptor.rst:338
 msgid "Called from an Object"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:327
+#: ../src/Doc/howto/descriptor.rst:338
 msgid "Called from a Class"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:330
+#: ../src/Doc/howto/descriptor.rst:341
 msgid "function"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:330
+#: ../src/Doc/howto/descriptor.rst:341
 msgid "f(obj, \\*args)"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:330 ../src/Doc/howto/descriptor.rst:332
+#: ../src/Doc/howto/descriptor.rst:341 ../src/Doc/howto/descriptor.rst:343
 msgid "f(\\*args)"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:332
+#: ../src/Doc/howto/descriptor.rst:343
 msgid "staticmethod"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:334
+#: ../src/Doc/howto/descriptor.rst:345
 msgid "classmethod"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:334
+#: ../src/Doc/howto/descriptor.rst:345
 msgid "f(type(obj), \\*args)"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:334
+#: ../src/Doc/howto/descriptor.rst:345
 msgid "f(klass, \\*args)"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:337
+#: ../src/Doc/howto/descriptor.rst:348
 msgid ""
 "Static methods return the underlying function without changes.  Calling "
 "either ``c.f`` or ``C.f`` is the equivalent of a direct lookup into ``object."
@@ -2358,13 +2358,13 @@ msgid ""
 "a class."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:343
+#: ../src/Doc/howto/descriptor.rst:354
 msgid ""
 "Good candidates for static methods are methods that do not reference the "
 "``self`` variable."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:346
+#: ../src/Doc/howto/descriptor.rst:357
 msgid ""
 "For instance, a statistics package may include a container class for "
 "experimental data.  The class provides normal methods for computing the "
@@ -2376,26 +2376,26 @@ msgid ""
 "``s.erf(1.5) --> .9332`` or ``Sample.erf(1.5) --> .9332``."
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:355
+#: ../src/Doc/howto/descriptor.rst:366
 msgid ""
 "Since staticmethods return the underlying function with no changes, the "
 "example calls are unexciting::"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:368
+#: ../src/Doc/howto/descriptor.rst:379
 msgid ""
 "Using the non-data descriptor protocol, a pure Python version of :func:"
 "`staticmethod` would look like this::"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:380
+#: ../src/Doc/howto/descriptor.rst:391
 msgid ""
 "Unlike static methods, class methods prepend the class reference to the "
 "argument list before calling the function.  This format is the same for "
 "whether the caller is an object or a class::"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:395
+#: ../src/Doc/howto/descriptor.rst:406
 msgid ""
 "This behavior is useful whenever the function only needs to have a class "
 "reference and does not care about any underlying data.  One use for "
@@ -2404,11 +2404,11 @@ msgid ""
 "keys.  The pure Python equivalent is::"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:411
+#: ../src/Doc/howto/descriptor.rst:422
 msgid "Now a new dictionary of unique keys can be constructed like this::"
 msgstr ""
 
-#: ../src/Doc/howto/descriptor.rst:416
+#: ../src/Doc/howto/descriptor.rst:427
 msgid ""
 "Using the non-data descriptor protocol, a pure Python version of :func:"
 "`classmethod` would look like this::"
