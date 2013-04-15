@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-01 06:26\n"
+"POT-Creation-Date: 2013-04-15 06:40\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -401,12 +401,12 @@ msgstr ""
 # 3f31dae7ae0b457180c28ff386d8b377
 # b3c68401b311444e873812eb60267411
 #: ../src/Doc/reference/compound_stmts.rst:405
-#: ../src/Doc/reference/datamodel.rst:2385
+#: ../src/Doc/reference/datamodel.rst:2384
 msgid ":pep:`0343` - The \"with\" statement"
 msgstr ""
 
 #: ../src/Doc/reference/compound_stmts.rst:406
-#: ../src/Doc/reference/datamodel.rst:2386
+#: ../src/Doc/reference/datamodel.rst:2385
 msgid ""
 "The specification, background, and examples for the Python :keyword:`with` "
 "statement."
@@ -560,9 +560,9 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/compound_stmts.rst:578
-#: ../src/Doc/reference/datamodel.rst:2494
+#: ../src/Doc/reference/datamodel.rst:2493
 #: ../src/Doc/reference/executionmodel.rst:244
-#: ../src/Doc/reference/expressions.rst:1403
+#: ../src/Doc/reference/expressions.rst:1402
 #: ../src/Doc/reference/lexical_analysis.rst:762
 #: ../src/Doc/reference/simple_stmts.rst:1032
 msgid "Footnotes"
@@ -1150,7 +1150,7 @@ msgid ""
 msgstr ""
 
 # 31c6b46636d245fea435cea46f7bd0e6
-#: ../src/Doc/reference/datamodel.rst:721
+#: ../src/Doc/reference/datamodel.rst:720
 msgid "Callable types"
 msgstr ""
 
@@ -1321,7 +1321,7 @@ msgid ""
 msgstr ""
 
 # 0a77732349ac48739469393b02917003
-#: ../src/Doc/reference/datamodel.rst:653
+#: ../src/Doc/reference/datamodel.rst:652
 msgid "User-defined methods"
 msgstr ""
 
@@ -1389,12 +1389,12 @@ msgstr ""
 msgid ""
 "When a user-defined method object is created by retrieving a class method "
 "object from a class or instance, its :attr:`im_self` attribute is the class "
-"itself (the same as the :attr:`im_class` attribute), and its :attr:`im_func` "
-"attribute is the function object underlying the class method."
+"itself, and its :attr:`im_func` attribute is the function object underlying "
+"the class method."
 msgstr ""
 
 # 4e2966656be4459a9472551f6f609c5a
-#: ../src/Doc/reference/datamodel.rst:630
+#: ../src/Doc/reference/datamodel.rst:629
 msgid ""
 "When an unbound user-defined method object is called, the underlying "
 "function (:attr:`im_func`) is called, with the restriction that the first "
@@ -1403,7 +1403,7 @@ msgid ""
 msgstr ""
 
 # 9a08ebbdcdd148a29beaf3a7e91226db
-#: ../src/Doc/reference/datamodel.rst:635
+#: ../src/Doc/reference/datamodel.rst:634
 msgid ""
 "When a bound user-defined method object is called, the underlying function (:"
 "attr:`im_func`) is called, inserting the class instance (:attr:`im_self`) in "
@@ -1413,7 +1413,7 @@ msgid ""
 msgstr ""
 
 # ab564412158d4273ae9cf14ccd3be8d3
-#: ../src/Doc/reference/datamodel.rst:641
+#: ../src/Doc/reference/datamodel.rst:640
 msgid ""
 "When a user-defined method object is derived from a class method object, the "
 "\"class instance\" stored in :attr:`im_self` will actually be the class "
@@ -1422,7 +1422,7 @@ msgid ""
 msgstr ""
 
 # c48e11f7c2e14d2998136a64150bbae6
-#: ../src/Doc/reference/datamodel.rst:646
+#: ../src/Doc/reference/datamodel.rst:645
 msgid ""
 "Note that the transformation from function object to (unbound or bound) "
 "method object happens each time the attribute is retrieved from the class or "
@@ -1436,12 +1436,12 @@ msgid ""
 msgstr ""
 
 # d06649a933304a91bcc1fc562339b36d
-#: ../src/Doc/reference/datamodel.rst:668
+#: ../src/Doc/reference/datamodel.rst:667
 msgid "Generator functions"
 msgstr ""
 
 # a13d1397712747fe93b9730c936faedb
-#: ../src/Doc/reference/datamodel.rst:661
+#: ../src/Doc/reference/datamodel.rst:660
 msgid ""
 "A function or method which uses the :keyword:`yield` statement (see section :"
 "ref:`yield`) is called a :dfn:`generator function`.  Such a function, when "
@@ -1454,11 +1454,11 @@ msgid ""
 msgstr ""
 
 # a54e20b73e7249eb8e492e40fdc356bc
-#: ../src/Doc/reference/datamodel.rst:683
+#: ../src/Doc/reference/datamodel.rst:682
 msgid "Built-in functions"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:677
+#: ../src/Doc/reference/datamodel.rst:676
 msgid ""
 "A built-in function object is a wrapper around a C function.  Examples of "
 "built-in functions are :func:`len` and :func:`math.sin` (:mod:`math` is a "
@@ -1471,12 +1471,12 @@ msgid ""
 msgstr ""
 
 # 403a08fff2014365a38ad5bc8b330666
-#: ../src/Doc/reference/datamodel.rst:695
+#: ../src/Doc/reference/datamodel.rst:694
 msgid "Built-in methods"
 msgstr ""
 
 # ae49a031018c4787909d7e961bbef93b
-#: ../src/Doc/reference/datamodel.rst:692
+#: ../src/Doc/reference/datamodel.rst:691
 msgid ""
 "This is really a different disguise of a built-in function, this time "
 "containing an object passed to the C function as an implicit extra "
@@ -1486,12 +1486,12 @@ msgid ""
 msgstr ""
 
 # de168ba2e8e149fe9d762f0a72a740d3
-#: ../src/Doc/reference/datamodel.rst:702
+#: ../src/Doc/reference/datamodel.rst:701
 msgid "Class Types"
 msgstr ""
 
 # 86793d02329d4e868c4ff68c7214f6dd
-#: ../src/Doc/reference/datamodel.rst:699
+#: ../src/Doc/reference/datamodel.rst:698
 msgid ""
 "Class types, or \"new-style classes,\" are callable.  These objects normally "
 "act as factories for new instances of themselves, but variations are "
@@ -1501,12 +1501,12 @@ msgid ""
 msgstr ""
 
 # 2baeb2ec4c724ec3957ef90216419266
-#: ../src/Doc/reference/datamodel.rst:716
+#: ../src/Doc/reference/datamodel.rst:715
 msgid "Classic Classes"
 msgstr ""
 
 # 0950f665b5734473a93d5a1fad374876
-#: ../src/Doc/reference/datamodel.rst:713
+#: ../src/Doc/reference/datamodel.rst:712
 msgid ""
 "Class objects are described below.  When a class object is called, a new "
 "class instance (also described below) is created and returned.  This implies "
@@ -1517,13 +1517,13 @@ msgstr ""
 
 # 4c0a611441684ed4a65195c94fa46f0b
 # 38b0e10b8a7843cb9c991bea5683c384
-#: ../src/Doc/reference/datamodel.rst:721
-#: ../src/Doc/reference/datamodel.rst:873
+#: ../src/Doc/reference/datamodel.rst:720
+#: ../src/Doc/reference/datamodel.rst:872
 msgid "Class instances"
 msgstr ""
 
 # fe79bdcd47004b11ab561fc55e193f21
-#: ../src/Doc/reference/datamodel.rst:720
+#: ../src/Doc/reference/datamodel.rst:719
 msgid ""
 "Class instances are described below.  Class instances are callable only when "
 "the class has a :meth:`__call__` method; ``x(arguments)`` is a shorthand for "
@@ -1531,12 +1531,12 @@ msgid ""
 msgstr ""
 
 # 8b81f6145bc44987a6cbf4205bc1f0c8
-#: ../src/Doc/reference/datamodel.rst:764
+#: ../src/Doc/reference/datamodel.rst:763
 msgid "Modules"
 msgstr ""
 
 # 5baaa0830cfc4930a7247f13f0094926
-#: ../src/Doc/reference/datamodel.rst:729
+#: ../src/Doc/reference/datamodel.rst:728
 msgid ""
 "Modules are imported by the :keyword:`import` statement (see section :ref:"
 "`import`). A module object has a namespace implemented by a dictionary "
@@ -1547,20 +1547,20 @@ msgid ""
 "the module (since it isn't needed once the initialization is done)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:738
+#: ../src/Doc/reference/datamodel.rst:737
 msgid ""
 "Attribute assignment updates the module's namespace dictionary, e.g., ``m.x "
 "= 1`` is equivalent to ``m.__dict__[\"x\"] = 1``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:743
+#: ../src/Doc/reference/datamodel.rst:742
 msgid ""
 "Special read-only attribute: :attr:`__dict__` is the module's namespace as a "
 "dictionary object."
 msgstr ""
 
 # 9535f61b76ba466986a636c5e38fd388
-#: ../src/Doc/reference/datamodel.rst:748
+#: ../src/Doc/reference/datamodel.rst:747
 msgid ""
 "Because of the way CPython clears module dictionaries, the module dictionary "
 "will be cleared when the module falls out of scope even if the dictionary "
@@ -1568,7 +1568,7 @@ msgid ""
 "module around while using its dictionary directly."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:759
+#: ../src/Doc/reference/datamodel.rst:758
 msgid ""
 "Predefined (writable) attributes: :attr:`__name__` is the module's name; :"
 "attr:`__doc__` is the module's documentation string, or ``None`` if "
@@ -1580,12 +1580,12 @@ msgid ""
 msgstr ""
 
 # dec5c1bb2d844ee0a239a6b253cce479
-#: ../src/Doc/reference/datamodel.rst:827
+#: ../src/Doc/reference/datamodel.rst:826
 msgid "Classes"
 msgstr ""
 
 # ac345d309f4b4dbf8028e36209550b83
-#: ../src/Doc/reference/datamodel.rst:768
+#: ../src/Doc/reference/datamodel.rst:767
 msgid ""
 "Both class types (new-style classes) and class objects (old-style/classic "
 "classes) are typically created by class definitions (see section :ref:"
@@ -1605,7 +1605,7 @@ msgid ""
 msgstr ""
 
 # cebd236ce29f4d20abb89b837d6296dc
-#: ../src/Doc/reference/datamodel.rst:795
+#: ../src/Doc/reference/datamodel.rst:794
 msgid ""
 "When a class attribute reference (for class :class:`C`, say) would yield a "
 "user-defined function object or an unbound user-defined method object whose "
@@ -1613,27 +1613,26 @@ msgid ""
 "transformed into an unbound user-defined method object whose :attr:"
 "`im_class` attribute is :class:`C`. When it would yield a class method "
 "object, it is transformed into a bound user-defined method object whose :"
-"attr:`im_class` and :attr:`im_self` attributes are both :class:`C`.  When it "
-"would yield a static method object, it is transformed into the object "
-"wrapped by the static method object. See section :ref:`descriptors` for "
-"another way in which attributes retrieved from a class may differ from those "
-"actually contained in its :attr:`__dict__` (note that only new-style classes "
-"support descriptors)."
+"attr:`im_self` attribute is :class:`C`.  When it would yield a static method "
+"object, it is transformed into the object wrapped by the static method "
+"object. See section :ref:`descriptors` for another way in which attributes "
+"retrieved from a class may differ from those actually contained in its :attr:"
+"`__dict__` (note that only new-style classes support descriptors)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:809
+#: ../src/Doc/reference/datamodel.rst:808
 msgid ""
 "Class attribute assignments update the class's dictionary, never the "
 "dictionary of a base class."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:814
+#: ../src/Doc/reference/datamodel.rst:813
 msgid ""
 "A class object can be called (see above) to yield a class instance (see "
 "below)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:823
+#: ../src/Doc/reference/datamodel.rst:822
 msgid ""
 "Special attributes: :attr:`__name__` is the class name; :attr:`__module__` "
 "is the module name in which the class was defined; :attr:`__dict__` is the "
@@ -1644,7 +1643,7 @@ msgid ""
 msgstr ""
 
 # 01b8b00399824946950b6e0a4ee21b92
-#: ../src/Doc/reference/datamodel.rst:837
+#: ../src/Doc/reference/datamodel.rst:836
 msgid ""
 "A class instance is created by calling a class object (see above). A class "
 "instance has a namespace implemented as a dictionary which is the first "
@@ -1665,7 +1664,7 @@ msgid ""
 "that is called to satisfy the lookup."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:856
+#: ../src/Doc/reference/datamodel.rst:855
 msgid ""
 "Attribute assignments and deletions update the instance's dictionary, never "
 "a class's dictionary.  If the class has a :meth:`__setattr__` or :meth:"
@@ -1673,25 +1672,25 @@ msgid ""
 "dictionary directly."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:866
+#: ../src/Doc/reference/datamodel.rst:865
 msgid ""
 "Class instances can pretend to be numbers, sequences, or mappings if they "
 "have methods with certain special names.  See section :ref:`specialnames`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:873
+#: ../src/Doc/reference/datamodel.rst:872
 msgid ""
 "Special attributes: :attr:`__dict__` is the attribute dictionary; :attr:"
 "`__class__` is the instance's class."
 msgstr ""
 
 # d53dfe109d3847c79384b130cce072ac
-#: ../src/Doc/reference/datamodel.rst:896
+#: ../src/Doc/reference/datamodel.rst:895
 msgid "Files"
 msgstr ""
 
 # 1c5c6d93c4af49fcb206b8c914474046
-#: ../src/Doc/reference/datamodel.rst:890
+#: ../src/Doc/reference/datamodel.rst:889
 msgid ""
 "A file object represents an open file.  File objects are created by the :"
 "func:`open` built-in function, and also by :func:`os.popen`, :func:`os."
@@ -1704,11 +1703,11 @@ msgid ""
 msgstr ""
 
 # 55a3c6b48f574bdca1e6bc5ba9677fb5
-#: ../src/Doc/reference/datamodel.rst:1106
+#: ../src/Doc/reference/datamodel.rst:1105
 msgid "Internal types"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:904
+#: ../src/Doc/reference/datamodel.rst:903
 msgid ""
 "A few types used internally by the interpreter are exposed to the user. "
 "Their definitions may change with future versions of the interpreter, but "
@@ -1716,11 +1715,11 @@ msgid ""
 msgstr ""
 
 # eaee202b99024fc4a04d4a87446d8bd7
-#: ../src/Doc/reference/datamodel.rst:973
+#: ../src/Doc/reference/datamodel.rst:972
 msgid "Code objects"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:913
+#: ../src/Doc/reference/datamodel.rst:912
 msgid ""
 "Code objects represent *byte-compiled* executable Python code, or :term:"
 "`bytecode`. The difference between a code object and a function object is "
@@ -1732,7 +1731,7 @@ msgid ""
 "no references (directly or indirectly) to mutable objects."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:938
+#: ../src/Doc/reference/datamodel.rst:937
 msgid ""
 "Special read-only attributes: :attr:`co_name` gives the function name; :attr:"
 "`co_argcount` is the number of positional arguments (including arguments "
@@ -1753,7 +1752,7 @@ msgid ""
 "number of flags for the interpreter."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:957
+#: ../src/Doc/reference/datamodel.rst:956
 msgid ""
 "The following flag bits are defined for :attr:`co_flags`: bit ``0x04`` is "
 "set if the function uses the ``*arguments`` syntax to accept an arbitrary "
@@ -1762,7 +1761,7 @@ msgid ""
 "set if the function is a generator."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:963
+#: ../src/Doc/reference/datamodel.rst:962
 msgid ""
 "Future feature declarations (``from __future__ import division``) also use "
 "bits in :attr:`co_flags` to indicate whether a code object was compiled with "
@@ -1771,29 +1770,29 @@ msgid ""
 "used in earlier versions of Python."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:969
+#: ../src/Doc/reference/datamodel.rst:968
 msgid "Other bits in :attr:`co_flags` are reserved for internal use."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:973
+#: ../src/Doc/reference/datamodel.rst:972
 msgid ""
 "If a code object represents a function, the first item in :attr:`co_consts` "
 "is the documentation string of the function, or ``None`` if undefined."
 msgstr ""
 
 # af1eff0271274124bb8f8853bc33107c
-#: ../src/Doc/reference/datamodel.rst:1015
+#: ../src/Doc/reference/datamodel.rst:1014
 msgid "Frame objects"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:981
+#: ../src/Doc/reference/datamodel.rst:980
 msgid ""
 "Frame objects represent execution frames.  They may occur in traceback "
 "objects (see below)."
 msgstr ""
 
 # be3d2a34f33247e4856f1714b2905d00
-#: ../src/Doc/reference/datamodel.rst:993
+#: ../src/Doc/reference/datamodel.rst:992
 msgid ""
 "Special read-only attributes: :attr:`f_back` is to the previous stack frame "
 "(towards the caller), or ``None`` if this is the bottom stack frame; :attr:"
@@ -1806,7 +1805,7 @@ msgid ""
 msgstr ""
 
 # c041e16dc50343de99def05fb2c579f7
-#: ../src/Doc/reference/datamodel.rst:1009
+#: ../src/Doc/reference/datamodel.rst:1008
 msgid ""
 "Special writable attributes: :attr:`f_trace`, if not ``None``, is a function "
 "called at the start of each source code line (this is used by the "
@@ -1820,12 +1819,12 @@ msgid ""
 msgstr ""
 
 # 853b4e93f4b84e1aaf1b12f20a42c778
-#: ../src/Doc/reference/datamodel.rst:1057
+#: ../src/Doc/reference/datamodel.rst:1056
 msgid "Traceback objects"
 msgstr ""
 
 # 4480717a47194341b885c64f9167dcc5
-#: ../src/Doc/reference/datamodel.rst:1031
+#: ../src/Doc/reference/datamodel.rst:1030
 msgid ""
 "Traceback objects represent a stack trace of an exception.  A traceback "
 "object is created when an exception occurs.  When the search for an "
@@ -1841,7 +1840,7 @@ msgid ""
 "made available to the user as ``sys.last_traceback``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1051
+#: ../src/Doc/reference/datamodel.rst:1050
 msgid ""
 "Special read-only attributes: :attr:`tb_next` is the next level in the stack "
 "trace (towards the frame where the exception occurred), or ``None`` if there "
@@ -1854,12 +1853,12 @@ msgid ""
 msgstr ""
 
 # 99ac9d5a67cf40f69ef4429c229741ca
-#: ../src/Doc/reference/datamodel.rst:1088
+#: ../src/Doc/reference/datamodel.rst:1087
 msgid "Slice objects"
 msgstr ""
 
 # 37355ce77bbf4a64b86bb16d8911e325
-#: ../src/Doc/reference/datamodel.rst:1063
+#: ../src/Doc/reference/datamodel.rst:1062
 msgid ""
 "Slice objects are used to represent slices when *extended slice syntax* is "
 "used. This is a slice using two colons, or multiple slices or ellipses "
@@ -1867,19 +1866,19 @@ msgid ""
 "``.  They are also created by the built-in :func:`slice` function."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1073
+#: ../src/Doc/reference/datamodel.rst:1072
 msgid ""
 "Special read-only attributes: :attr:`start` is the lower bound; :attr:`stop` "
 "is the upper bound; :attr:`step` is the step value; each is ``None`` if "
 "omitted. These attributes can have any type."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1077
+#: ../src/Doc/reference/datamodel.rst:1076
 msgid "Slice objects support one method:"
 msgstr ""
 
 # 839309f9c5e04f518c1d21ce111d19ce
-#: ../src/Doc/reference/datamodel.rst:1082
+#: ../src/Doc/reference/datamodel.rst:1081
 msgid ""
 "This method takes a single integer argument *length* and computes "
 "information about the extended slice that the slice object would describe if "
@@ -1890,11 +1889,11 @@ msgid ""
 msgstr ""
 
 # d896fb9f843b4e58b976e21917dbf786
-#: ../src/Doc/reference/datamodel.rst:1098
+#: ../src/Doc/reference/datamodel.rst:1097
 msgid "Static method objects"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1092
+#: ../src/Doc/reference/datamodel.rst:1091
 msgid ""
 "Static method objects provide a way of defeating the transformation of "
 "function objects to method objects described above. A static method object "
@@ -1907,11 +1906,11 @@ msgid ""
 msgstr ""
 
 # 3546aa8801ef461cb18fb7ec7ee47246
-#: ../src/Doc/reference/datamodel.rst:1106
+#: ../src/Doc/reference/datamodel.rst:1105
 msgid "Class method objects"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1102
+#: ../src/Doc/reference/datamodel.rst:1101
 msgid ""
 "A class method object, like a static method object, is a wrapper around "
 "another object that alters the way in which that object is retrieved from "
@@ -1921,19 +1920,19 @@ msgid ""
 msgstr ""
 
 # 2d2e9e0a92f44302a9d55f5d3a4fbd7f
-#: ../src/Doc/reference/datamodel.rst:1112
+#: ../src/Doc/reference/datamodel.rst:1111
 msgid "New-style and classic classes"
 msgstr ""
 
 # 464aba22ef074c8684326a27026dcac7
-#: ../src/Doc/reference/datamodel.rst:1114
+#: ../src/Doc/reference/datamodel.rst:1113
 msgid ""
 "Classes and instances come in two flavors: old-style (or classic) and new-"
 "style."
 msgstr ""
 
 # ead43b87c3984ef0ade47c214f401004
-#: ../src/Doc/reference/datamodel.rst:1116
+#: ../src/Doc/reference/datamodel.rst:1115
 msgid ""
 "Up to Python 2.1, old-style classes were the only flavour available to the "
 "user. The concept of (old-style) class is unrelated to the concept of type: "
@@ -1944,7 +1943,7 @@ msgid ""
 msgstr ""
 
 # 49857d7c8a474500a3ad2e3ff9b174b1
-#: ../src/Doc/reference/datamodel.rst:1123
+#: ../src/Doc/reference/datamodel.rst:1122
 msgid ""
 "New-style classes were introduced in Python 2.2 to unify classes and types.  "
 "A new-style class is neither more nor less than a user-defined type.  If *x* "
@@ -1954,7 +1953,7 @@ msgid ""
 msgstr ""
 
 # b504ee6568ec4e45aaad7cacb029e7a2
-#: ../src/Doc/reference/datamodel.rst:1129
+#: ../src/Doc/reference/datamodel.rst:1128
 msgid ""
 "The major motivation for introducing new-style classes is to provide a "
 "unified object model with a full meta-model.  It also has a number of "
@@ -1963,7 +1962,7 @@ msgid ""
 msgstr ""
 
 # 62d422c0126f4b14a04d4730365e20ee
-#: ../src/Doc/reference/datamodel.rst:1134
+#: ../src/Doc/reference/datamodel.rst:1133
 msgid ""
 "For compatibility reasons, classes are still old-style by default.  New-"
 "style classes are created by specifying another new-style class (i.e. a "
@@ -1977,7 +1976,7 @@ msgid ""
 msgstr ""
 
 # 6e31a88eccdf42e6ae9956dc7f04d91f
-#: ../src/Doc/reference/datamodel.rst:1144
+#: ../src/Doc/reference/datamodel.rst:1143
 msgid ""
 "While this manual aims to provide comprehensive coverage of Python's class "
 "mechanics, it may still be lacking in some areas when it comes to its "
@@ -1986,18 +1985,18 @@ msgid ""
 msgstr ""
 
 # ec4f36f5eda64e72ab32717f37fe29ca
-#: ../src/Doc/reference/datamodel.rst:1154
+#: ../src/Doc/reference/datamodel.rst:1153
 msgid ""
 "Old-style classes are removed in Python 3, leaving only the semantics of new-"
 "style classes."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1161
+#: ../src/Doc/reference/datamodel.rst:1160
 msgid "Special method names"
 msgstr ""
 
 # 741683aa1b024c12be5e353b012f20f8
-#: ../src/Doc/reference/datamodel.rst:1167
+#: ../src/Doc/reference/datamodel.rst:1166
 msgid ""
 "A class can implement certain operations that are invoked by special syntax "
 "(such as arithmetic operations or subscripting and slicing) by defining "
@@ -2011,7 +2010,7 @@ msgid ""
 "method is defined (typically :exc:`AttributeError` or :exc:`TypeError`)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1178
+#: ../src/Doc/reference/datamodel.rst:1177
 msgid ""
 "When implementing a class that emulates any built-in type, it is important "
 "that the emulation only be implemented to the degree that it makes sense for "
@@ -2021,11 +2020,11 @@ msgid ""
 "Document Object Model.)"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1188
+#: ../src/Doc/reference/datamodel.rst:1187
 msgid "Basic customization"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1194
+#: ../src/Doc/reference/datamodel.rst:1193
 msgid ""
 "Called to create a new instance of class *cls*.  :meth:`__new__` is a static "
 "method (special-cased so you need not declare it as such) that takes the "
@@ -2035,7 +2034,7 @@ msgid ""
 "new object instance (usually an instance of *cls*)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1201
+#: ../src/Doc/reference/datamodel.rst:1200
 msgid ""
 "Typical implementations create a new instance of the class by invoking the "
 "superclass's :meth:`__new__` method using ``super(currentclass, cls).__new__"
@@ -2043,7 +2042,7 @@ msgid ""
 "created instance as necessary before returning it."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1206
+#: ../src/Doc/reference/datamodel.rst:1205
 msgid ""
 "If :meth:`__new__` returns an instance of *cls*, then the new instance's :"
 "meth:`__init__` method will be invoked like ``__init__(self[, ...])``, where "
@@ -2051,13 +2050,13 @@ msgid ""
 "passed to :meth:`__new__`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1211
+#: ../src/Doc/reference/datamodel.rst:1210
 msgid ""
 "If :meth:`__new__` does not return an instance of *cls*, then the new "
 "instance's :meth:`__init__` method will not be invoked."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1214
+#: ../src/Doc/reference/datamodel.rst:1213
 msgid ""
 ":meth:`__new__` is intended mainly to allow subclasses of immutable types "
 "(like int, str, or tuple) to customize instance creation.  It is also "
@@ -2065,7 +2064,7 @@ msgid ""
 "creation."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1223
+#: ../src/Doc/reference/datamodel.rst:1222
 msgid ""
 "Called when the instance is created.  The arguments are those passed to the "
 "class constructor expression.  If a base class has an :meth:`__init__` "
@@ -2076,7 +2075,7 @@ msgid ""
 "cause a :exc:`TypeError` to be raised at runtime."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1238
+#: ../src/Doc/reference/datamodel.rst:1237
 msgid ""
 "Called when the instance is about to be destroyed.  This is also called a "
 "destructor.  If a base class has a :meth:`__del__` method, the derived "
@@ -2090,7 +2089,7 @@ msgid ""
 msgstr ""
 
 # 51d154152b194ba79f78ed5891f9d132
-#: ../src/Doc/reference/datamodel.rst:1250
+#: ../src/Doc/reference/datamodel.rst:1249
 msgid ""
 "``del x`` doesn't directly call ``x.__del__()`` --- the former decrements "
 "the reference count for ``x`` by one, and the latter is only called when "
@@ -2112,7 +2111,7 @@ msgid ""
 "the cycle detector, particularly the description of the ``garbage`` value."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1272
+#: ../src/Doc/reference/datamodel.rst:1271
 msgid ""
 "Due to the precarious circumstances under which :meth:`__del__` methods are "
 "invoked, exceptions that occur during their execution are ignored, and a "
@@ -2130,12 +2129,12 @@ msgid ""
 msgstr ""
 
 # c3c48e91fc5447d88d17c444df592578
-#: ../src/Doc/reference/datamodel.rst:1287
+#: ../src/Doc/reference/datamodel.rst:1286
 msgid "See also the :option:`-R` command-line option."
 msgstr ""
 
 # 184b540d42cd46a3a91e7d7f231cb67c
-#: ../src/Doc/reference/datamodel.rst:1294
+#: ../src/Doc/reference/datamodel.rst:1293
 msgid ""
 "Called by the :func:`repr` built-in function and by string conversions "
 "(reverse quotes) to compute the \"official\" string representation of an "
@@ -2148,14 +2147,14 @@ msgid ""
 "representation of instances of that class is required."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1310
+#: ../src/Doc/reference/datamodel.rst:1309
 msgid ""
 "This is typically used for debugging, so it is important that the "
 "representation is information-rich and unambiguous."
 msgstr ""
 
 # ffe2d0a7f02c443aaffd0551d40ce3ac
-#: ../src/Doc/reference/datamodel.rst:1320
+#: ../src/Doc/reference/datamodel.rst:1319
 msgid ""
 "Called by the :func:`str` built-in function and by the :keyword:`print` "
 "statement to compute the \"informal\" string representation of an object.  "
@@ -2165,7 +2164,7 @@ msgid ""
 msgstr ""
 
 # 4bad9fb0d17042bfb16b0b321dd77382
-#: ../src/Doc/reference/datamodel.rst:1339
+#: ../src/Doc/reference/datamodel.rst:1338
 msgid ""
 "These are the so-called \"rich comparison\" methods, and are called for "
 "comparison operators in preference to :meth:`__cmp__` below. The "
@@ -2175,7 +2174,7 @@ msgid ""
 "calls ``x.__gt__(y)``, and ``x>=y`` calls ``x.__ge__(y)``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1346
+#: ../src/Doc/reference/datamodel.rst:1345
 msgid ""
 "A rich comparison method may return the singleton ``NotImplemented`` if it "
 "does not implement the operation for a given pair of arguments. By "
@@ -2186,7 +2185,7 @@ msgid ""
 "result is true or false."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1353
+#: ../src/Doc/reference/datamodel.rst:1352
 msgid ""
 "There are no implied relationships among the comparison operators. The truth "
 "of ``x==y`` does not imply that ``x!=y`` is false.  Accordingly, when "
@@ -2196,7 +2195,7 @@ msgid ""
 "custom comparison operations and are usable as dictionary keys."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1360
+#: ../src/Doc/reference/datamodel.rst:1359
 msgid ""
 "There are no swapped-argument versions of these methods (to be used when the "
 "left argument does not support the operation but the right argument does); "
@@ -2205,18 +2204,18 @@ msgid ""
 "and :meth:`__ne__` are their own reflection."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1366
+#: ../src/Doc/reference/datamodel.rst:1365
 msgid "Arguments to rich comparison methods are never coerced."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1368
+#: ../src/Doc/reference/datamodel.rst:1367
 msgid ""
 "To automatically generate ordering operations from a single root operation, "
 "see :func:`functools.total_ordering`."
 msgstr ""
 
 # 89078098bce54694bfcfbf6ac65d0e04
-#: ../src/Doc/reference/datamodel.rst:1377
+#: ../src/Doc/reference/datamodel.rst:1376
 msgid ""
 "Called by comparison operations if rich comparison (see above) is not "
 "defined.  Should return a negative integer if ``self < other``, zero if "
@@ -2229,7 +2228,7 @@ msgid ""
 "propagated by :meth:`__cmp__` has been removed since Python 1.5.)"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1400
+#: ../src/Doc/reference/datamodel.rst:1399
 msgid ""
 "Called by built-in function :func:`hash` and for operations on members of "
 "hashed collections including :class:`set`, :class:`frozenset`, and :class:"
@@ -2241,7 +2240,7 @@ msgid ""
 msgstr ""
 
 # d279f990175f44fa81bc90bededd5ed8
-#: ../src/Doc/reference/datamodel.rst:1407
+#: ../src/Doc/reference/datamodel.rst:1406
 msgid ""
 "If a class does not define a :meth:`__cmp__` or :meth:`__eq__` method it "
 "should not define a :meth:`__hash__` operation either; if it defines :meth:"
@@ -2254,7 +2253,7 @@ msgid ""
 msgstr ""
 
 # 9956494f7d97416c938d995853e1df01
-#: ../src/Doc/reference/datamodel.rst:1416
+#: ../src/Doc/reference/datamodel.rst:1415
 msgid ""
 "User-defined classes have :meth:`__cmp__` and :meth:`__hash__` methods by "
 "default; with them, all objects compare unequal (except with themselves) and "
@@ -2262,7 +2261,7 @@ msgid ""
 msgstr ""
 
 # 4e1764779537414985c4e7369b110972
-#: ../src/Doc/reference/datamodel.rst:1420
+#: ../src/Doc/reference/datamodel.rst:1419
 msgid ""
 "Classes which inherit a :meth:`__hash__` method from a parent class but "
 "change the meaning of :meth:`__cmp__` or :meth:`__eq__` such that the hash "
@@ -2278,7 +2277,7 @@ msgid ""
 msgstr ""
 
 # e7970cc3bcb44b09a3a5b2f791734cce
-#: ../src/Doc/reference/datamodel.rst:1445
+#: ../src/Doc/reference/datamodel.rst:1444
 msgid ""
 "Called to implement truth value testing and the built-in operation ``bool()"
 "``; should return ``False`` or ``True``, or their integer equivalents ``0`` "
@@ -2289,7 +2288,7 @@ msgid ""
 msgstr ""
 
 # 7620a0bd20a64f1fa12acb5ef0a09752
-#: ../src/Doc/reference/datamodel.rst:1457
+#: ../src/Doc/reference/datamodel.rst:1456
 msgid ""
 "Called to implement :func:`unicode` built-in; should return a Unicode "
 "object. When this method is not defined, string conversion is attempted, and "
@@ -2297,18 +2296,18 @@ msgid ""
 "default encoding."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1465
+#: ../src/Doc/reference/datamodel.rst:1464
 msgid "Customizing attribute access"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1467
+#: ../src/Doc/reference/datamodel.rst:1466
 msgid ""
 "The following methods can be defined to customize the meaning of attribute "
 "access (use of, assignment to, or deletion of ``x.name``) for class "
 "instances."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1473
+#: ../src/Doc/reference/datamodel.rst:1472
 msgid ""
 "Called when an attribute lookup has not found the attribute in the usual "
 "places (i.e. it is not an instance attribute nor is it found in the class "
@@ -2318,7 +2317,7 @@ msgid ""
 msgstr ""
 
 # 4317cc06ea1f41ef9f5df61a5bb32a25
-#: ../src/Doc/reference/datamodel.rst:1480
+#: ../src/Doc/reference/datamodel.rst:1479
 msgid ""
 "Note that if the attribute is found through the normal mechanism, :meth:"
 "`__getattr__` is not called.  (This is an intentional asymmetry between :"
@@ -2332,7 +2331,7 @@ msgid ""
 msgstr ""
 
 # 08444342fb2b481886c4ed12e29ee22c
-#: ../src/Doc/reference/datamodel.rst:1493
+#: ../src/Doc/reference/datamodel.rst:1492
 msgid ""
 "Called when an attribute assignment is attempted.  This is called instead of "
 "the normal mechanism (i.e. store the value in the instance dictionary).  "
@@ -2340,7 +2339,7 @@ msgid ""
 msgstr ""
 
 # a7ac1fb9524845e390c4e023e61efbfb
-#: ../src/Doc/reference/datamodel.rst:1499
+#: ../src/Doc/reference/datamodel.rst:1498
 msgid ""
 "If :meth:`__setattr__` wants to assign to an instance attribute, it should "
 "not simply execute ``self.name = value`` --- this would cause a recursive "
@@ -2351,7 +2350,7 @@ msgid ""
 "(self, name, value)``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1510
+#: ../src/Doc/reference/datamodel.rst:1509
 msgid ""
 "Like :meth:`__setattr__` but for attribute deletion instead of assignment.  "
 "This should only be implemented if ``del obj.name`` is meaningful for the "
@@ -2359,16 +2358,16 @@ msgid ""
 msgstr ""
 
 # 1236f1cae41b42d9927bef9fd00ee0b5
-#: ../src/Doc/reference/datamodel.rst:1517
+#: ../src/Doc/reference/datamodel.rst:1516
 msgid "More attribute access for new-style classes"
 msgstr ""
 
 # 0c64105a26fb462ea3a388b6ee2490b0
-#: ../src/Doc/reference/datamodel.rst:1519
+#: ../src/Doc/reference/datamodel.rst:1518
 msgid "The following methods only apply to new-style classes."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1524
+#: ../src/Doc/reference/datamodel.rst:1523
 msgid ""
 "Called unconditionally to implement attribute accesses for instances of the "
 "class. If the class also defines :meth:`__getattr__`, the latter will not be "
@@ -2381,19 +2380,19 @@ msgid ""
 msgstr ""
 
 # eb73142efe63406faa42d8f574bece66
-#: ../src/Doc/reference/datamodel.rst:1535
+#: ../src/Doc/reference/datamodel.rst:1534
 msgid ""
 "This method may still be bypassed when looking up special methods as the "
 "result of implicit invocation via language syntax or built-in functions. "
 "See :ref:`new-style-special-lookup`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1543
+#: ../src/Doc/reference/datamodel.rst:1542
 msgid "Implementing Descriptors"
 msgstr ""
 
 # 6cc1116071a2463390cee6cb14744300
-#: ../src/Doc/reference/datamodel.rst:1545
+#: ../src/Doc/reference/datamodel.rst:1544
 msgid ""
 "The following methods only apply when an instance of the class containing "
 "the method (a so-called *descriptor* class) appears in an *owner* class (the "
@@ -2403,7 +2402,7 @@ msgid ""
 "owner class' :attr:`__dict__`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1555
+#: ../src/Doc/reference/datamodel.rst:1554
 msgid ""
 "Called to get the attribute of the owner class (class attribute access) or "
 "of an instance of that class (instance attribute access). *owner* is always "
@@ -2413,22 +2412,22 @@ msgid ""
 "an :exc:`AttributeError` exception."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1565
+#: ../src/Doc/reference/datamodel.rst:1564
 msgid ""
 "Called to set the attribute on an instance *instance* of the owner class to "
 "a new value, *value*."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1571
+#: ../src/Doc/reference/datamodel.rst:1570
 msgid ""
 "Called to delete the attribute on an instance *instance* of the owner class."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1577
+#: ../src/Doc/reference/datamodel.rst:1576
 msgid "Invoking Descriptors"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1579
+#: ../src/Doc/reference/datamodel.rst:1578
 msgid ""
 "In general, a descriptor is an object attribute with \"binding behavior\", "
 "one whose attribute access has been overridden by methods in the descriptor "
@@ -2436,7 +2435,7 @@ msgid ""
 "of those methods are defined for an object, it is said to be a descriptor."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1584
+#: ../src/Doc/reference/datamodel.rst:1583
 msgid ""
 "The default behavior for attribute access is to get, set, or delete the "
 "attribute from an object's dictionary. For instance, ``a.x`` has a lookup "
@@ -2445,7 +2444,7 @@ msgid ""
 msgstr ""
 
 # 39dc5fdc1a1e401a8af3aa324764053c
-#: ../src/Doc/reference/datamodel.rst:1589
+#: ../src/Doc/reference/datamodel.rst:1588
 msgid ""
 "However, if the looked-up value is an object defining one of the descriptor "
 "methods, then Python may override the default behavior and invoke the "
@@ -2455,54 +2454,54 @@ msgid ""
 "(ones that subclass :class:`object()` or :class:`type()`)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1596
+#: ../src/Doc/reference/datamodel.rst:1595
 msgid ""
 "The starting point for descriptor invocation is a binding, ``a.x``. How the "
 "arguments are assembled depends on ``a``:"
 msgstr ""
 
 # 791962457fbc46a6819506356b104b7f
-#: ../src/Doc/reference/datamodel.rst:1600
+#: ../src/Doc/reference/datamodel.rst:1599
 msgid "Direct Call"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1600
+#: ../src/Doc/reference/datamodel.rst:1599
 msgid ""
 "The simplest and least common call is when user code directly invokes a "
 "descriptor method:    ``x.__get__(a)``."
 msgstr ""
 
 # 2d6801b131824abc9a483e3ba3917449
-#: ../src/Doc/reference/datamodel.rst:1604
+#: ../src/Doc/reference/datamodel.rst:1603
 msgid "Instance Binding"
 msgstr ""
 
 # 8082ea1c639643539581d7682955af0c
-#: ../src/Doc/reference/datamodel.rst:1604
+#: ../src/Doc/reference/datamodel.rst:1603
 msgid ""
 "If binding to a new-style object instance, ``a.x`` is transformed into the "
 "call: ``type(a).__dict__['x'].__get__(a, type(a))``."
 msgstr ""
 
 # 8fb2e41704a64ccca3a54c789e8d01fd
-#: ../src/Doc/reference/datamodel.rst:1608
+#: ../src/Doc/reference/datamodel.rst:1607
 msgid "Class Binding"
 msgstr ""
 
 # b11f2bbbebc04f8b9beef1693ea40218
-#: ../src/Doc/reference/datamodel.rst:1608
+#: ../src/Doc/reference/datamodel.rst:1607
 msgid ""
 "If binding to a new-style class, ``A.x`` is transformed into the call: ``A."
 "__dict__['x'].__get__(None, A)``."
 msgstr ""
 
 # 4e5871e9a56d4456ae25aa9b04c80d74
-#: ../src/Doc/reference/datamodel.rst:1614
+#: ../src/Doc/reference/datamodel.rst:1613
 msgid "Super Binding"
 msgstr ""
 
 # 415b17f3d1df4684bf21da7e6b531d23
-#: ../src/Doc/reference/datamodel.rst:1612
+#: ../src/Doc/reference/datamodel.rst:1611
 msgid ""
 "If ``a`` is an instance of :class:`super`, then the binding ``super(B, obj).m"
 "()`` searches ``obj.__class__.__mro__`` for the base class ``A`` immediately "
@@ -2510,7 +2509,7 @@ msgid ""
 "['m'].__get__(obj, obj.__class__)``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1617
+#: ../src/Doc/reference/datamodel.rst:1616
 msgid ""
 "For instance bindings, the precedence of descriptor invocation depends on "
 "the which descriptor methods are defined.  A descriptor can define any "
@@ -2526,7 +2525,7 @@ msgid ""
 "contrast, non-data descriptors can be overridden by instances."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1630
+#: ../src/Doc/reference/datamodel.rst:1629
 msgid ""
 "Python methods (including :func:`staticmethod` and :func:`classmethod`) are "
 "implemented as non-data descriptors.  Accordingly, instances can redefine "
@@ -2534,18 +2533,18 @@ msgid ""
 "that differ from other instances of the same class."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1635
+#: ../src/Doc/reference/datamodel.rst:1634
 msgid ""
 "The :func:`property` function is implemented as a data descriptor. "
 "Accordingly, instances cannot override the behavior of a property."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1642
+#: ../src/Doc/reference/datamodel.rst:1641
 msgid "__slots__"
 msgstr ""
 
 # fb9ddb1439534e77970246e402c44d8e
-#: ../src/Doc/reference/datamodel.rst:1644
+#: ../src/Doc/reference/datamodel.rst:1643
 msgid ""
 "By default, instances of both old and new-style classes have a dictionary "
 "for attribute storage.  This wastes space for objects having very few "
@@ -2554,7 +2553,7 @@ msgid ""
 msgstr ""
 
 # 16e1e403d60642ceb263bf8e828a0ed9
-#: ../src/Doc/reference/datamodel.rst:1649
+#: ../src/Doc/reference/datamodel.rst:1648
 msgid ""
 "The default can be overridden by defining *__slots__* in a new-style class "
 "definition.  The *__slots__* declaration takes a sequence of instance "
@@ -2564,7 +2563,7 @@ msgid ""
 msgstr ""
 
 # f55365329de84904aa093e85b18f19aa
-#: ../src/Doc/reference/datamodel.rst:1657
+#: ../src/Doc/reference/datamodel.rst:1656
 msgid ""
 "This class variable can be assigned a string, iterable, or sequence of "
 "strings with variable names used by instances.  If defined in a new-style "
@@ -2572,18 +2571,18 @@ msgid ""
 "the automatic creation of *__dict__* and *__weakref__* for each instance."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1664
+#: ../src/Doc/reference/datamodel.rst:1663
 msgid "Notes on using *__slots__*"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1666
+#: ../src/Doc/reference/datamodel.rst:1665
 msgid ""
 "When inheriting from a class without *__slots__*, the *__dict__* attribute "
 "of that class will always be accessible, so a *__slots__* definition in the "
 "subclass is meaningless."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1670
+#: ../src/Doc/reference/datamodel.rst:1669
 msgid ""
 "Without a *__dict__* variable, instances cannot be assigned new variables "
 "not listed in the *__slots__* definition.  Attempts to assign to an unlisted "
@@ -2592,7 +2591,7 @@ msgid ""
 "the *__slots__* declaration."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1681
+#: ../src/Doc/reference/datamodel.rst:1680
 msgid ""
 "Without a *__weakref__* variable for each instance, classes defining "
 "*__slots__* do not support weak references to its instances. If weak "
@@ -2600,7 +2599,7 @@ msgid ""
 "strings in the *__slots__* declaration."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1690
+#: ../src/Doc/reference/datamodel.rst:1689
 msgid ""
 "*__slots__* are implemented at the class level by creating descriptors (:ref:"
 "`descriptors`) for each variable name.  As a result, class attributes cannot "
@@ -2608,14 +2607,14 @@ msgid ""
 "otherwise, the class attribute would overwrite the descriptor assignment."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1696
+#: ../src/Doc/reference/datamodel.rst:1695
 msgid ""
 "The action of a *__slots__* declaration is limited to the class where it is "
 "defined.  As a result, subclasses will have a *__dict__* unless they also "
 "define *__slots__* (which must only contain names of any *additional* slots)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1700
+#: ../src/Doc/reference/datamodel.rst:1699
 msgid ""
 "If a class defines a slot also defined in a base class, the instance "
 "variable defined by the base class slot is inaccessible (except by "
@@ -2625,30 +2624,30 @@ msgid ""
 msgstr ""
 
 # dc7b4dd05bab4cd69a788db1d00215f2
-#: ../src/Doc/reference/datamodel.rst:1705
+#: ../src/Doc/reference/datamodel.rst:1704
 msgid ""
 "Nonempty *__slots__* does not work for classes derived from \"variable-length"
 "\" built-in types such as :class:`long`, :class:`str` and :class:`tuple`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1708
+#: ../src/Doc/reference/datamodel.rst:1707
 msgid ""
 "Any non-string iterable may be assigned to *__slots__*. Mappings may also be "
 "used; however, in the future, special meaning may be assigned to the values "
 "corresponding to each key."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1712
+#: ../src/Doc/reference/datamodel.rst:1711
 msgid ""
 "*__class__* assignment works only if both classes have the same *__slots__*."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1722
+#: ../src/Doc/reference/datamodel.rst:1721
 msgid "Customizing class creation"
 msgstr ""
 
 # 8a59853150d2463aa3944ddabf46ae56
-#: ../src/Doc/reference/datamodel.rst:1724
+#: ../src/Doc/reference/datamodel.rst:1723
 msgid ""
 "By default, new-style classes are constructed using :func:`type`. A class "
 "definition is read into a separate namespace and the value of class name is "
@@ -2656,7 +2655,7 @@ msgid ""
 msgstr ""
 
 # aebc8a2a583f40c485a11857ab0ad224
-#: ../src/Doc/reference/datamodel.rst:1728
+#: ../src/Doc/reference/datamodel.rst:1727
 msgid ""
 "When the class definition is read, if *__metaclass__* is defined then the "
 "callable assigned to it will be called instead of :func:`type`. This allows "
@@ -2664,17 +2663,17 @@ msgid ""
 "process:"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1733
+#: ../src/Doc/reference/datamodel.rst:1732
 msgid "Modifying the class dictionary prior to the class being created."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1735
+#: ../src/Doc/reference/datamodel.rst:1734
 msgid ""
 "Returning an instance of another class -- essentially performing the role of "
 "a factory function."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1738
+#: ../src/Doc/reference/datamodel.rst:1737
 msgid ""
 "These steps will have to be performed in the metaclass's :meth:`__new__` "
 "method -- :meth:`type.__new__` can then be called from this method to create "
@@ -2682,7 +2681,7 @@ msgid ""
 "class dictionary before creating the class::"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1748
+#: ../src/Doc/reference/datamodel.rst:1747
 msgid ""
 "You can of course also override other class methods (or add new methods); "
 "for example defining a custom :meth:`__call__` method in the metaclass "
@@ -2691,41 +2690,41 @@ msgid ""
 msgstr ""
 
 # 5ee8452a0afe426199b5a089007e2f82
-#: ../src/Doc/reference/datamodel.rst:1755
+#: ../src/Doc/reference/datamodel.rst:1754
 msgid ""
 "This variable can be any callable accepting arguments for ``name``, "
 "``bases``, and ``dict``.  Upon class creation, the callable is used instead "
 "of the built-in :func:`type`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1761
+#: ../src/Doc/reference/datamodel.rst:1760
 msgid ""
 "The appropriate metaclass is determined by the following precedence rules:"
 msgstr ""
 
 # 34368dacf4ab4ef1a8a3b6f9c6d3a634
-#: ../src/Doc/reference/datamodel.rst:1763
+#: ../src/Doc/reference/datamodel.rst:1762
 msgid "If ``dict['__metaclass__']`` exists, it is used."
 msgstr ""
 
 # 5068274d573149b9a7d35afd4931deb6
-#: ../src/Doc/reference/datamodel.rst:1765
+#: ../src/Doc/reference/datamodel.rst:1764
 msgid ""
 "Otherwise, if there is at least one base class, its metaclass is used (this "
 "looks for a *__class__* attribute first and if not found, uses its type)."
 msgstr ""
 
 # ba3069311ce94dddb2bb1a5fe9169524
-#: ../src/Doc/reference/datamodel.rst:1768
+#: ../src/Doc/reference/datamodel.rst:1767
 msgid "Otherwise, if a global variable named __metaclass__ exists, it is used."
 msgstr ""
 
 # f728531b488a461ca86e4e6fca2c2739
-#: ../src/Doc/reference/datamodel.rst:1770
+#: ../src/Doc/reference/datamodel.rst:1769
 msgid "Otherwise, the old-style, classic metaclass (types.ClassType) is used."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1772
+#: ../src/Doc/reference/datamodel.rst:1771
 msgid ""
 "The potential uses for metaclasses are boundless. Some ideas that have been "
 "explored including logging, interface checking, automatic delegation, "
@@ -2733,17 +2732,17 @@ msgid ""
 "locking/synchronization."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1779
+#: ../src/Doc/reference/datamodel.rst:1778
 msgid "Customizing instance and subclass checks"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1783
+#: ../src/Doc/reference/datamodel.rst:1782
 msgid ""
 "The following methods are used to override the default behavior of the :func:"
 "`isinstance` and :func:`issubclass` built-in functions."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1786
+#: ../src/Doc/reference/datamodel.rst:1785
 msgid ""
 "In particular, the metaclass :class:`abc.ABCMeta` implements these methods "
 "in order to allow the addition of Abstract Base Classes (ABCs) as \"virtual "
@@ -2751,21 +2750,21 @@ msgid ""
 "other ABCs."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1793
+#: ../src/Doc/reference/datamodel.rst:1792
 msgid ""
 "Return true if *instance* should be considered a (direct or indirect) "
 "instance of *class*. If defined, called to implement ``isinstance(instance, "
 "class)``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1800
+#: ../src/Doc/reference/datamodel.rst:1799
 msgid ""
 "Return true if *subclass* should be considered a (direct or indirect) "
 "subclass of *class*.  If defined, called to implement ``issubclass(subclass, "
 "class)``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1805
+#: ../src/Doc/reference/datamodel.rst:1804
 msgid ""
 "Note that these methods are looked up on the type (metaclass) of a class.  "
 "They cannot be defined as class methods in the actual class.  This is "
@@ -2774,11 +2773,11 @@ msgid ""
 msgstr ""
 
 # 5409455d49c44f6aa46db229145c95f8
-#: ../src/Doc/reference/datamodel.rst:1815
+#: ../src/Doc/reference/datamodel.rst:1814
 msgid ":pep:`3119` - Introducing Abstract Base Classes"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1813
+#: ../src/Doc/reference/datamodel.rst:1812
 msgid ""
 "Includes the specification for customizing :func:`isinstance` and :func:"
 "`issubclass` behavior through :meth:`__instancecheck__` and :meth:"
@@ -2786,23 +2785,23 @@ msgid ""
 "of adding Abstract Base Classes (see the :mod:`abc` module) to the language."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1823
+#: ../src/Doc/reference/datamodel.rst:1822
 msgid "Emulating callable objects"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1830
+#: ../src/Doc/reference/datamodel.rst:1829
 msgid ""
 "Called when the instance is \"called\" as a function; if this method is "
 "defined, ``x(arg1, arg2, ...)`` is a shorthand for ``x.__call__(arg1, "
 "arg2, ...)``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1837
+#: ../src/Doc/reference/datamodel.rst:1836
 msgid "Emulating container types"
 msgstr ""
 
 # 5c9c13b8b36c4566ae602ddb14bb511a
-#: ../src/Doc/reference/datamodel.rst:1839
+#: ../src/Doc/reference/datamodel.rst:1838
 msgid ""
 "The following methods can be defined to implement container objects.  "
 "Containers usually are sequences (such as lists or tuples) or mappings (like "
@@ -2839,7 +2838,7 @@ msgid ""
 msgstr ""
 
 # 58d0aa48446e415fabdb2b9bab54c733
-#: ../src/Doc/reference/datamodel.rst:1877
+#: ../src/Doc/reference/datamodel.rst:1876
 msgid ""
 "Called to implement the built-in function :func:`len`.  Should return the "
 "length of the object, an integer ``>=`` 0.  Also, an object that doesn't "
@@ -2847,7 +2846,7 @@ msgid ""
 "zero is considered to be false in a Boolean context."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1887
+#: ../src/Doc/reference/datamodel.rst:1886
 msgid ""
 "Called to implement evaluation of ``self[key]``. For sequence types, the "
 "accepted keys should be integers and slice objects.  Note that the special "
@@ -2859,13 +2858,13 @@ msgid ""
 "*key* is missing (not in the container), :exc:`KeyError` should be raised."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1898
+#: ../src/Doc/reference/datamodel.rst:1897
 msgid ""
 ":keyword:`for` loops expect that an :exc:`IndexError` will be raised for "
 "illegal indexes to allow proper detection of the end of the sequence."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1904
+#: ../src/Doc/reference/datamodel.rst:1903
 msgid ""
 "Called to implement assignment to ``self[key]``.  Same note as for :meth:"
 "`__getitem__`.  This should only be implemented for mappings if the objects "
@@ -2874,7 +2873,7 @@ msgid ""
 "for improper *key* values as for the :meth:`__getitem__` method."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1913
+#: ../src/Doc/reference/datamodel.rst:1912
 msgid ""
 "Called to implement deletion of ``self[key]``.  Same note as for :meth:"
 "`__getitem__`.  This should only be implemented for mappings if the objects "
@@ -2884,7 +2883,7 @@ msgid ""
 msgstr ""
 
 # d776a23300384e969681d261a917d66c
-#: ../src/Doc/reference/datamodel.rst:1922
+#: ../src/Doc/reference/datamodel.rst:1921
 msgid ""
 "This method is called when an iterator is required for a container. This "
 "method should return a new iterator object that can iterate over all the "
@@ -2893,21 +2892,21 @@ msgid ""
 "`iterkeys`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1927
+#: ../src/Doc/reference/datamodel.rst:1926
 msgid ""
 "Iterator objects also need to implement this method; they are required to "
 "return themselves.  For more information on iterator objects, see :ref:"
 "`typeiter`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1933
+#: ../src/Doc/reference/datamodel.rst:1932
 msgid ""
 "Called (if present) by the :func:`reversed` built-in to implement reverse "
 "iteration.  It should return a new iterator object that iterates over all "
 "the objects in the container in reverse order."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1937
+#: ../src/Doc/reference/datamodel.rst:1936
 msgid ""
 "If the :meth:`__reversed__` method is not provided, the :func:`reversed` "
 "built-in will fall back to using the sequence protocol (:meth:`__len__` and :"
@@ -2916,7 +2915,7 @@ msgid ""
 "more efficient than the one provided by :func:`reversed`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1946
+#: ../src/Doc/reference/datamodel.rst:1945
 msgid ""
 "The membership test operators (:keyword:`in` and :keyword:`not in`) are "
 "normally implemented as an iteration through a sequence.  However, container "
@@ -2924,14 +2923,14 @@ msgid ""
 "implementation, which also does not require the object be a sequence."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1953
+#: ../src/Doc/reference/datamodel.rst:1952
 msgid ""
 "Called to implement membership test operators.  Should return true if *item* "
 "is in *self*, false otherwise.  For mapping objects, this should consider "
 "the keys of the mapping rather than the values or the key-item pairs."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:1957
+#: ../src/Doc/reference/datamodel.rst:1956
 msgid ""
 "For objects that don't define :meth:`__contains__`, the membership test "
 "first tries iteration via :meth:`__iter__`, then the old sequence iteration "
@@ -2940,12 +2939,12 @@ msgid ""
 msgstr ""
 
 # 3d7fa5f8988d43cc930418ddbad65e61
-#: ../src/Doc/reference/datamodel.rst:1966
+#: ../src/Doc/reference/datamodel.rst:1965
 msgid "Additional methods for emulation of sequence types"
 msgstr ""
 
 # 9414f18204834e50985ff13a2eee94dd
-#: ../src/Doc/reference/datamodel.rst:1968
+#: ../src/Doc/reference/datamodel.rst:1967
 msgid ""
 "The following optional methods can be defined to further emulate sequence "
 "objects.  Immutable sequences methods should at most only define :meth:"
@@ -2953,7 +2952,7 @@ msgid ""
 msgstr ""
 
 # 628f9f9d8fb145fcbad0b145c0032c88
-#: ../src/Doc/reference/datamodel.rst:1981
+#: ../src/Doc/reference/datamodel.rst:1980
 msgid ""
 "Called to implement evaluation of ``self[i:j]``. The returned object should "
 "be of the same type as *self*.  Note that missing *i* or *j* in the slice "
@@ -2968,14 +2967,14 @@ msgid ""
 msgstr ""
 
 # 5dc969ce612f462d86bced1d7f91f5f9
-#: ../src/Doc/reference/datamodel.rst:1994
+#: ../src/Doc/reference/datamodel.rst:1993
 msgid ""
 "Called to implement assignment to ``self[i:j]``. Same notes for *i* and *j* "
 "as for :meth:`__getslice__`."
 msgstr ""
 
 # 2ceac16d45764d3db00e8b5a93dd2a23
-#: ../src/Doc/reference/datamodel.rst:1997
+#: ../src/Doc/reference/datamodel.rst:1996
 msgid ""
 "This method is deprecated. If no :meth:`__setslice__` is found, or for "
 "extended slicing of the form ``self[i:j:k]``, a slice object is created, and "
@@ -2983,7 +2982,7 @@ msgid ""
 msgstr ""
 
 # 539063f8e39c468b916f9e35318c9eee
-#: ../src/Doc/reference/datamodel.rst:2004
+#: ../src/Doc/reference/datamodel.rst:2003
 msgid ""
 "Called to implement deletion of ``self[i:j]``. Same notes for *i* and *j* as "
 "for :meth:`__getslice__`. This method is deprecated. If no :meth:"
@@ -2993,7 +2992,7 @@ msgid ""
 msgstr ""
 
 # 6501ab8964524d77bdbdd0ad77e05882
-#: ../src/Doc/reference/datamodel.rst:2010
+#: ../src/Doc/reference/datamodel.rst:2009
 msgid ""
 "Notice that these methods are only invoked when a single slice with a single "
 "colon is used, and the slice method is available.  For slice operations "
@@ -3003,7 +3002,7 @@ msgid ""
 msgstr ""
 
 # baff99a67aca41c087c9fa9c5a223377
-#: ../src/Doc/reference/datamodel.rst:2016
+#: ../src/Doc/reference/datamodel.rst:2015
 msgid ""
 "The following example demonstrate how to make your program or module "
 "compatible with earlier versions of Python (assuming that methods :meth:"
@@ -3012,7 +3011,7 @@ msgid ""
 msgstr ""
 
 # 00323b6bef59471c9ccf83f4275743f7
-#: ../src/Doc/reference/datamodel.rst:2041
+#: ../src/Doc/reference/datamodel.rst:2040
 msgid ""
 "Note the calls to :func:`max`; these are necessary because of the handling "
 "of negative indices before the :meth:`__\\*slice__` methods are called.  "
@@ -3028,11 +3027,11 @@ msgid ""
 "``max(0, i)`` conveniently returns the proper value."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2058
+#: ../src/Doc/reference/datamodel.rst:2057
 msgid "Emulating numeric types"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2060
+#: ../src/Doc/reference/datamodel.rst:2059
 msgid ""
 "The following methods can be defined to emulate numeric objects. Methods "
 "corresponding to operations that are not supported by the particular kind of "
@@ -3041,7 +3040,7 @@ msgid ""
 msgstr ""
 
 # 4265f19c2e9f44a48f87944096ee370b
-#: ../src/Doc/reference/datamodel.rst:2084
+#: ../src/Doc/reference/datamodel.rst:2083
 msgid ""
 "These methods are called to implement the binary arithmetic operations (``"
 "+``, ``-``, ``*``, ``//``, ``%``, :func:`divmod`, :func:`pow`, ``**``, "
@@ -3055,14 +3054,14 @@ msgid ""
 "supported."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2094
+#: ../src/Doc/reference/datamodel.rst:2093
 msgid ""
 "If one of those methods does not support the operation with the supplied "
 "arguments, it should return ``NotImplemented``."
 msgstr ""
 
 # 44c82acc98d34e6d841a52b50acf8b8f
-#: ../src/Doc/reference/datamodel.rst:2101
+#: ../src/Doc/reference/datamodel.rst:2100
 msgid ""
 "The division operator (``/``) is implemented by these methods.  The :meth:"
 "`__truediv__` method is used when ``__future__.division`` is in effect, "
@@ -3072,7 +3071,7 @@ msgid ""
 msgstr ""
 
 # 05791f7a331649bb85b95596fad9c68e
-#: ../src/Doc/reference/datamodel.rst:2127
+#: ../src/Doc/reference/datamodel.rst:2126
 msgid ""
 "These methods are called to implement the binary arithmetic operations (``"
 "+``, ``-``, ``*``, ``/``, ``%``, :func:`divmod`, :func:`pow`, ``**``, "
@@ -3084,13 +3083,13 @@ msgid ""
 "``x.__sub__(y)`` returns *NotImplemented*."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2138
+#: ../src/Doc/reference/datamodel.rst:2137
 msgid ""
 "Note that ternary :func:`pow` will not try calling :meth:`__rpow__` (the "
 "coercion rules would become too complicated)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2143
+#: ../src/Doc/reference/datamodel.rst:2142
 msgid ""
 "If the right operand's type is a subclass of the left operand's type and "
 "that subclass provides the reflected method for the operation, this method "
@@ -3098,7 +3097,7 @@ msgid ""
 "behavior allows subclasses to override their ancestors' operations."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2163
+#: ../src/Doc/reference/datamodel.rst:2162
 msgid ""
 "These methods are called to implement the augmented arithmetic assignments "
 "(``+=``, ``-=``, ``*=``, ``/=``, ``//=``, ``%=``, ``**=``, ``<<=``, ``>>=``, "
@@ -3112,14 +3111,14 @@ msgid ""
 "``y.__radd__(x)`` are considered, as with the evaluation of ``x + y``."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2182
+#: ../src/Doc/reference/datamodel.rst:2181
 msgid ""
 "Called to implement the unary arithmetic operations (``-``, ``+``, :func:"
 "`abs` and ``~``)."
 msgstr ""
 
 # 8ebc9f0008e8478caaceec22e237d883
-#: ../src/Doc/reference/datamodel.rst:2197
+#: ../src/Doc/reference/datamodel.rst:2196
 msgid ""
 "Called to implement the built-in functions :func:`complex`, :func:`int`, :"
 "func:`long`, and :func:`float`.  Should return a value of the appropriate "
@@ -3127,14 +3126,14 @@ msgid ""
 msgstr ""
 
 # 9654d41c62b340698df01b836c95ca87
-#: ../src/Doc/reference/datamodel.rst:2208
+#: ../src/Doc/reference/datamodel.rst:2207
 msgid ""
 "Called to implement the built-in functions :func:`oct` and :func:`hex`.  "
 "Should return a string value."
 msgstr ""
 
 # 16f0e452531f40ef826b5652187c80bd
-#: ../src/Doc/reference/datamodel.rst:2214
+#: ../src/Doc/reference/datamodel.rst:2213
 msgid ""
 "Called to implement :func:`operator.index`.  Also called whenever Python "
 "needs an integer object (such as in slicing).  Must return an integer (int "
@@ -3142,7 +3141,7 @@ msgid ""
 msgstr ""
 
 # 0407a397fd9141d6ad6e574c5111a8c9
-#: ../src/Doc/reference/datamodel.rst:2222
+#: ../src/Doc/reference/datamodel.rst:2221
 msgid ""
 "Called to implement \"mixed-mode\" numeric arithmetic.  Should either return "
 "a 2-tuple containing *self* and *other* converted to a common numeric type, "
@@ -3155,12 +3154,12 @@ msgid ""
 msgstr ""
 
 # a92f5776ccdc4dafbf7e804397d127bb
-#: ../src/Doc/reference/datamodel.rst:2235
+#: ../src/Doc/reference/datamodel.rst:2234
 msgid "Coercion rules"
 msgstr ""
 
 # f8c556de1a1e4b00b582dfc467d0fb0c
-#: ../src/Doc/reference/datamodel.rst:2237
+#: ../src/Doc/reference/datamodel.rst:2236
 msgid ""
 "This section used to document the rules for coercion.  As the language has "
 "evolved, the coercion rules have become hard to document precisely; "
@@ -3170,14 +3169,14 @@ msgid ""
 msgstr ""
 
 # a97baf0a668f458685ca63b223d11c16
-#: ../src/Doc/reference/datamodel.rst:2245
+#: ../src/Doc/reference/datamodel.rst:2244
 msgid ""
 "If the left operand of a % operator is a string or Unicode object, no "
 "coercion takes place and the string formatting operation is invoked instead."
 msgstr ""
 
 # 97af11f293c142adaa05c7ef10070394
-#: ../src/Doc/reference/datamodel.rst:2250
+#: ../src/Doc/reference/datamodel.rst:2249
 msgid ""
 "It is no longer recommended to define a coercion operation. Mixed-mode "
 "operations on types that don't define coercion pass the original arguments "
@@ -3185,7 +3184,7 @@ msgid ""
 msgstr ""
 
 # 17c58a26ab4a4587bc8ad82757becbf8
-#: ../src/Doc/reference/datamodel.rst:2256
+#: ../src/Doc/reference/datamodel.rst:2255
 msgid ""
 "New-style classes (those derived from :class:`object`) never invoke the :"
 "meth:`__coerce__` method in response to a binary operator; the only time :"
@@ -3194,14 +3193,14 @@ msgid ""
 msgstr ""
 
 # d05bfdfd62ef4e7d87c05840551ae552
-#: ../src/Doc/reference/datamodel.rst:2263
+#: ../src/Doc/reference/datamodel.rst:2262
 msgid ""
 "For most intents and purposes, an operator that returns ``NotImplemented`` "
 "is treated the same as one that is not implemented at all."
 msgstr ""
 
 # ce20b72493b84e9d927eae25e0bbc9a0
-#: ../src/Doc/reference/datamodel.rst:2268
+#: ../src/Doc/reference/datamodel.rst:2267
 msgid ""
 "Below, :meth:`__op__` and :meth:`__rop__` are used to signify the generic "
 "method names corresponding to an operator; :meth:`__iop__` is used for the "
@@ -3211,7 +3210,7 @@ msgid ""
 msgstr ""
 
 # b84d21055ea64520951c713d188cb7ff
-#: ../src/Doc/reference/datamodel.rst:2276
+#: ../src/Doc/reference/datamodel.rst:2275
 msgid ""
 "For objects *x* and *y*, first ``x.__op__(y)`` is tried.  If this is not "
 "implemented or returns ``NotImplemented``, ``y.__rop__(x)`` is tried.  If "
@@ -3220,7 +3219,7 @@ msgid ""
 msgstr ""
 
 # 0de15c1e7dea4ebeb56f95c2bb6b19e8
-#: ../src/Doc/reference/datamodel.rst:2283
+#: ../src/Doc/reference/datamodel.rst:2282
 msgid ""
 "Exception to the previous item: if the left operand is an instance of a "
 "built-in type or a new-style class, and the right operand is an instance of "
@@ -3230,7 +3229,7 @@ msgid ""
 msgstr ""
 
 # cd5ec3fb61e549d4b2abd43e3569e80e
-#: ../src/Doc/reference/datamodel.rst:2289
+#: ../src/Doc/reference/datamodel.rst:2288
 msgid ""
 "This is done so that a subclass can completely override binary operators. "
 "Otherwise, the left operand's :meth:`__op__` method would always accept the "
@@ -3239,7 +3238,7 @@ msgid ""
 msgstr ""
 
 # 6a2b90363c554de59ebb6a0d2d708475
-#: ../src/Doc/reference/datamodel.rst:2296
+#: ../src/Doc/reference/datamodel.rst:2295
 msgid ""
 "When either operand type defines a coercion, this coercion is called before "
 "that type's :meth:`__op__` or :meth:`__rop__` method is called, but no "
@@ -3249,7 +3248,7 @@ msgid ""
 msgstr ""
 
 # 4e54e239271247129b335391b8e537f7
-#: ../src/Doc/reference/datamodel.rst:2303
+#: ../src/Doc/reference/datamodel.rst:2302
 msgid ""
 "When an in-place operator (like '``+=``') is used, if the left operand "
 "implements :meth:`__iop__`, it is invoked without any coercion.  When the "
@@ -3258,14 +3257,14 @@ msgid ""
 msgstr ""
 
 # 77caaacbd18948928d4383fead02cae5
-#: ../src/Doc/reference/datamodel.rst:2310
+#: ../src/Doc/reference/datamodel.rst:2309
 msgid ""
 "In ``x + y``, if *x* is a sequence that implements sequence concatenation, "
 "sequence concatenation is invoked."
 msgstr ""
 
 # 1df27958a51b42a3a913854470eed516
-#: ../src/Doc/reference/datamodel.rst:2315
+#: ../src/Doc/reference/datamodel.rst:2314
 msgid ""
 "In ``x * y``, if one operand is a sequence that implements sequence "
 "repetition, and the other is an integer (:class:`int` or :class:`long`), "
@@ -3273,7 +3272,7 @@ msgid ""
 msgstr ""
 
 # dbc39f871be5428a8f3e0a0c2a9ce179
-#: ../src/Doc/reference/datamodel.rst:2321
+#: ../src/Doc/reference/datamodel.rst:2320
 msgid ""
 "Rich comparisons (implemented by methods :meth:`__eq__` and so on) never use "
 "coercion.  Three-way comparison (implemented by :meth:`__cmp__`) does use "
@@ -3281,7 +3280,7 @@ msgid ""
 msgstr ""
 
 # 65631189edb64f578e237ea1fe351615
-#: ../src/Doc/reference/datamodel.rst:2327
+#: ../src/Doc/reference/datamodel.rst:2326
 msgid ""
 "In the current implementation, the built-in numeric types :class:`int`, :"
 "class:`long`, :class:`float`, and :class:`complex` do not use coercion. All "
@@ -3289,11 +3288,11 @@ msgid ""
 "func:`coerce` function."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2341
+#: ../src/Doc/reference/datamodel.rst:2340
 msgid "With Statement Context Managers"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2345
+#: ../src/Doc/reference/datamodel.rst:2344
 msgid ""
 "A :dfn:`context manager` is an object that defines the runtime context to be "
 "established when executing a :keyword:`with` statement. The context manager "
@@ -3303,32 +3302,32 @@ msgid ""
 "can also be used by directly invoking their methods."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2356
+#: ../src/Doc/reference/datamodel.rst:2355
 msgid ""
 "Typical uses of context managers include saving and restoring various kinds "
 "of global state, locking and unlocking resources, closing opened files, etc."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2359
+#: ../src/Doc/reference/datamodel.rst:2358
 msgid ""
 "For more information on context managers, see :ref:`typecontextmanager`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2364
+#: ../src/Doc/reference/datamodel.rst:2363
 msgid ""
 "Enter the runtime context related to this object. The :keyword:`with` "
 "statement will bind this method's return value to the target(s) specified in "
 "the :keyword:`as` clause of the statement, if any."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2371
+#: ../src/Doc/reference/datamodel.rst:2370
 msgid ""
 "Exit the runtime context related to this object. The parameters describe the "
 "exception that caused the context to be exited. If the context was exited "
 "without an exception, all three arguments will be :const:`None`."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2375
+#: ../src/Doc/reference/datamodel.rst:2374
 msgid ""
 "If an exception is supplied, and the method wishes to suppress the exception "
 "(i.e., prevent it from being propagated), it should return a true value. "
@@ -3336,19 +3335,19 @@ msgid ""
 "method."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2379
+#: ../src/Doc/reference/datamodel.rst:2378
 msgid ""
 "Note that :meth:`__exit__` methods should not reraise the passed-in "
 "exception; this is the caller's responsibility."
 msgstr ""
 
 # 692b1a3a88b54eb18ceb185f0e907d31
-#: ../src/Doc/reference/datamodel.rst:2393
+#: ../src/Doc/reference/datamodel.rst:2392
 msgid "Special method lookup for old-style classes"
 msgstr ""
 
 # d0fddf834c964e51b96ca8af880a273b
-#: ../src/Doc/reference/datamodel.rst:2395
+#: ../src/Doc/reference/datamodel.rst:2394
 msgid ""
 "For old-style classes, special methods are always looked up in exactly the "
 "same way as any other method or attribute. This is the case regardless of "
@@ -3357,7 +3356,7 @@ msgid ""
 msgstr ""
 
 # 05100636e81d41ed8e80f9eb97377b23
-#: ../src/Doc/reference/datamodel.rst:2400
+#: ../src/Doc/reference/datamodel.rst:2399
 msgid ""
 "This behaviour means that special methods may exhibit different behaviour "
 "for different instances of a single old-style class if the appropriate "
@@ -3365,12 +3364,12 @@ msgid ""
 msgstr ""
 
 # 876ddc85b1ef4bbf8e40b4613a1a3c67
-#: ../src/Doc/reference/datamodel.rst:2420
+#: ../src/Doc/reference/datamodel.rst:2419
 msgid "Special method lookup for new-style classes"
 msgstr ""
 
 # ded1504e42af4a3caa8b906da81b44a0
-#: ../src/Doc/reference/datamodel.rst:2422
+#: ../src/Doc/reference/datamodel.rst:2421
 msgid ""
 "For new-style classes, implicit invocations of special methods are only "
 "guaranteed to work correctly if defined on an object's type, not in the "
@@ -3379,7 +3378,7 @@ msgid ""
 "style classes)::"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2437
+#: ../src/Doc/reference/datamodel.rst:2436
 msgid ""
 "The rationale behind this behaviour lies with a number of special methods "
 "such as :meth:`__hash__` and :meth:`__repr__` that are implemented by all "
@@ -3388,21 +3387,21 @@ msgid ""
 "type object itself::"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2450
+#: ../src/Doc/reference/datamodel.rst:2449
 msgid ""
 "Incorrectly attempting to invoke an unbound method of a class in this way is "
 "sometimes referred to as 'metaclass confusion', and is avoided by bypassing "
 "the instance when looking up special methods::"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2459
+#: ../src/Doc/reference/datamodel.rst:2458
 msgid ""
 "In addition to bypassing any instance attributes in the interest of "
 "correctness, implicit special method lookup generally also bypasses the :"
 "meth:`__getattribute__` method even of the object's metaclass::"
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2486
+#: ../src/Doc/reference/datamodel.rst:2485
 msgid ""
 "Bypassing the :meth:`__getattribute__` machinery in this fashion provides "
 "significant scope for speed optimisations within the interpreter, at the "
@@ -3411,14 +3410,14 @@ msgid ""
 "invoked by the interpreter)."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2495
+#: ../src/Doc/reference/datamodel.rst:2494
 msgid ""
 "It *is* possible in some cases to change an object's type, under certain "
 "controlled conditions. It generally isn't a good idea though, since it can "
 "lead to some very strange behaviour if it is handled incorrectly."
 msgstr ""
 
-#: ../src/Doc/reference/datamodel.rst:2499
+#: ../src/Doc/reference/datamodel.rst:2498
 msgid ""
 "For operands of the same type, it is assumed that if the non-reflected "
 "method (such as :meth:`__add__`) fails the operation is not supported, which "
@@ -3821,34 +3820,35 @@ msgid ""
 "`NameError` exception."
 msgstr ""
 
+# 3ccc4d78527a4706bad4729092614920
 #: ../src/Doc/reference/expressions.rst:95
 msgid ""
 "**Private name mangling:** When an identifier that textually occurs in a "
 "class definition begins with two or more underscore characters and does not "
 "end in two or more underscores, it is considered a :dfn:`private name` of "
 "that class. Private names are transformed to a longer form before code is "
-"generated for them.  The transformation inserts the class name in front of "
-"the name, with leading underscores removed, and a single underscore inserted "
-"in front of the class name.  For example, the identifier ``__spam`` "
-"occurring in a class named ``Ham`` will be transformed to ``_Ham__spam``.  "
-"This transformation is independent of the syntactical context in which the "
-"identifier is used.  If the transformed name is extremely long (longer than "
-"255 characters), implementation defined truncation may happen.  If the class "
-"name consists only of underscores, no transformation is done."
+"generated for them.  The transformation inserts the class name, with leading "
+"underscores removed and a single underscore inserted, in front of the name.  "
+"For example, the identifier ``__spam`` occurring in a class named ``Ham`` "
+"will be transformed to ``_Ham__spam``.  This transformation is independent "
+"of the syntactical context in which the identifier is used.  If the "
+"transformed name is extremely long (longer than 255 characters), "
+"implementation defined truncation may happen. If the class name consists "
+"only of underscores, no transformation is done."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:113
+#: ../src/Doc/reference/expressions.rst:112
 #: ../src/Doc/reference/lexical_analysis.rst:406
 msgid "Literals"
 msgstr ""
 
 # 6f11d57089434d6ea9dac7a0c4042b0f
-#: ../src/Doc/reference/expressions.rst:117
+#: ../src/Doc/reference/expressions.rst:116
 msgid "Python supports string literals and various numeric literals:"
 msgstr ""
 
 # 325dcab25dd3492aa7536e4f7b8d2c48
-#: ../src/Doc/reference/expressions.rst:123
+#: ../src/Doc/reference/expressions.rst:122
 msgid ""
 "Evaluation of a literal yields an object of the given type (string, integer, "
 "long integer, floating point number, complex number) with the given value.  "
@@ -3857,7 +3857,7 @@ msgid ""
 msgstr ""
 
 # b36e60895e204cf699e4a948e5ca1095
-#: ../src/Doc/reference/expressions.rst:132
+#: ../src/Doc/reference/expressions.rst:131
 msgid ""
 "All literals correspond to immutable data types, and hence the object's "
 "identity is less important than its value.  Multiple evaluations of literals "
@@ -3866,30 +3866,30 @@ msgid ""
 "the same value."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:142
+#: ../src/Doc/reference/expressions.rst:141
 msgid "Parenthesized forms"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:146
+#: ../src/Doc/reference/expressions.rst:145
 msgid ""
 "A parenthesized form is an optional expression list enclosed in parentheses:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:151
+#: ../src/Doc/reference/expressions.rst:150
 msgid ""
 "A parenthesized expression list yields whatever that expression list yields: "
 "if the list contains at least one comma, it yields a tuple; otherwise, it "
 "yields the single expression that makes up the expression list."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:157
+#: ../src/Doc/reference/expressions.rst:156
 msgid ""
 "An empty pair of parentheses yields an empty tuple object.  Since tuples are "
 "immutable, the rules for literals apply (i.e., two occurrences of the empty "
 "tuple may or may not yield the same object)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:165
+#: ../src/Doc/reference/expressions.rst:164
 msgid ""
 "Note that tuples are not formed by the parentheses, but rather by use of the "
 "comma operator.  The exception is the empty tuple, for which parentheses "
@@ -3897,18 +3897,18 @@ msgid ""
 "cause ambiguities and allow common typos to pass uncaught."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:174
+#: ../src/Doc/reference/expressions.rst:173
 msgid "List displays"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:180
+#: ../src/Doc/reference/expressions.rst:179
 msgid ""
 "A list display is a possibly empty series of expressions enclosed in square "
 "brackets:"
 msgstr ""
 
 # 84a73ce884474a4180b3ef89c48471a3
-#: ../src/Doc/reference/expressions.rst:197
+#: ../src/Doc/reference/expressions.rst:196
 msgid ""
 "A list display yields a new list object.  Its contents are specified by "
 "providing either a list of expressions or a list comprehension.  When a "
@@ -3924,32 +3924,32 @@ msgid ""
 msgstr ""
 
 # bdebbbb51b0e4f0ca2024296866fa1a8
-#: ../src/Doc/reference/expressions.rst:212
+#: ../src/Doc/reference/expressions.rst:211
 msgid "Displays for sets and dictionaries"
 msgstr ""
 
 # 51fadfc53a0c45aa803b29228ca65696
-#: ../src/Doc/reference/expressions.rst:214
+#: ../src/Doc/reference/expressions.rst:213
 msgid ""
 "For constructing a set or a dictionary Python provides special syntax called "
 "\"displays\", each of them in two flavors:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:217
+#: ../src/Doc/reference/expressions.rst:216
 msgid "either the container contents are listed explicitly, or"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:219
+#: ../src/Doc/reference/expressions.rst:218
 msgid ""
 "they are computed via a set of looping and filtering instructions, called a :"
 "dfn:`comprehension`."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:222
+#: ../src/Doc/reference/expressions.rst:221
 msgid "Common syntax elements for comprehensions are:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:230
+#: ../src/Doc/reference/expressions.rst:229
 msgid ""
 "The comprehension consists of a single expression followed by at least one :"
 "keyword:`for` clause and zero or more :keyword:`for` or :keyword:`if` "
@@ -3959,28 +3959,28 @@ msgid ""
 "to produce an element each time the innermost block is reached."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:237
+#: ../src/Doc/reference/expressions.rst:236
 msgid ""
 "Note that the comprehension is executed in a separate scope, so names "
 "assigned to in the target list don't \"leak\" in the enclosing scope."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:244
+#: ../src/Doc/reference/expressions.rst:243
 msgid "Generator expressions"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:249
+#: ../src/Doc/reference/expressions.rst:248
 msgid "A generator expression is a compact generator notation in parentheses:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:254
+#: ../src/Doc/reference/expressions.rst:253
 msgid ""
 "A generator expression yields a new generator object.  Its syntax is the "
 "same as for comprehensions, except that it is enclosed in parentheses "
 "instead of brackets or curly braces."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:258
+#: ../src/Doc/reference/expressions.rst:257
 msgid ""
 "Variables used in the generator expression are evaluated lazily when the :"
 "meth:`__next__` method is called for generator object (in the same fashion "
@@ -3992,27 +3992,27 @@ msgid ""
 "range(10) for y in bar(x))``."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:267
+#: ../src/Doc/reference/expressions.rst:266
 msgid ""
 "The parentheses can be omitted on calls with only one argument.  See "
 "section :ref:`calls` for the detail."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:273
+#: ../src/Doc/reference/expressions.rst:272
 msgid "Dictionary displays"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:279
+#: ../src/Doc/reference/expressions.rst:278
 msgid ""
 "A dictionary display is a possibly empty series of key/datum pairs enclosed "
 "in curly braces:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:288
+#: ../src/Doc/reference/expressions.rst:287
 msgid "A dictionary display yields a new dictionary object."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:290
+#: ../src/Doc/reference/expressions.rst:289
 msgid ""
 "If a comma-separated sequence of key/datum pairs is given, they are "
 "evaluated from left to right to define the entries of the dictionary: each "
@@ -4022,7 +4022,7 @@ msgid ""
 "last one given."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:296
+#: ../src/Doc/reference/expressions.rst:295
 msgid ""
 "A dict comprehension, in contrast to list and set comprehensions, needs two "
 "expressions separated with a colon followed by the usual \"for\" and \"if\" "
@@ -4030,7 +4030,7 @@ msgid ""
 "are inserted in the new dictionary in the order they are produced."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:304
+#: ../src/Doc/reference/expressions.rst:303
 msgid ""
 "Restrictions on the types of the key values are listed earlier in section :"
 "ref:`types`.  (To summarize, the key type should be :term:`hashable`, which "
@@ -4039,17 +4039,17 @@ msgid ""
 "given key value prevails."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:314
+#: ../src/Doc/reference/expressions.rst:313
 msgid "Set displays"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:319
+#: ../src/Doc/reference/expressions.rst:318
 msgid ""
 "A set display is denoted by curly braces and distinguishable from dictionary "
 "displays by the lack of colons separating keys and values:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:325
+#: ../src/Doc/reference/expressions.rst:324
 msgid ""
 "A set display yields a new mutable set object, the contents being specified "
 "by either a sequence of expressions or a comprehension.  When a comma-"
@@ -4059,33 +4059,33 @@ msgid ""
 "comprehension."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:331
+#: ../src/Doc/reference/expressions.rst:330
 msgid ""
 "An empty set cannot be constructed with ``{}``; this literal constructs an "
 "empty dictionary."
 msgstr ""
 
 # d9d2d52a1cbf497192d6999fab29911b
-#: ../src/Doc/reference/expressions.rst:338
+#: ../src/Doc/reference/expressions.rst:337
 msgid "String conversions"
 msgstr ""
 
 # e3a9bac9989f41578be6e0ea26affb38
-#: ../src/Doc/reference/expressions.rst:346
+#: ../src/Doc/reference/expressions.rst:345
 msgid ""
 "A string conversion is an expression list enclosed in reverse (a.k.a. "
 "backward) quotes:"
 msgstr ""
 
 # d59e379d54b64b6093043c870bf7dc90
-#: ../src/Doc/reference/expressions.rst:352
+#: ../src/Doc/reference/expressions.rst:351
 msgid ""
 "A string conversion evaluates the contained expression list and converts the "
 "resulting object into a string according to rules specific to its type."
 msgstr ""
 
 # 929c11b839b44f95b6ce1370c67f5eba
-#: ../src/Doc/reference/expressions.rst:355
+#: ../src/Doc/reference/expressions.rst:354
 msgid ""
 "If the object is a string, a number, ``None``, or a tuple, list or "
 "dictionary containing only objects whose type is one of these, the resulting "
@@ -4095,14 +4095,14 @@ msgid ""
 msgstr ""
 
 # 99bdcf6d0cd44dea9c6cbc7850efbd8a
-#: ../src/Doc/reference/expressions.rst:361
+#: ../src/Doc/reference/expressions.rst:360
 msgid ""
 "(In particular, converting a string adds quotes around it and converts "
 "\"funny\" characters to escape sequences that are safe to print.)"
 msgstr ""
 
 # 47507d705e54438ca03bbfd8177f6018
-#: ../src/Doc/reference/expressions.rst:366
+#: ../src/Doc/reference/expressions.rst:365
 msgid ""
 "Recursive objects (for example, lists or dictionaries that contain a "
 "reference to themselves, directly or indirectly) use ``...`` to indicate a "
@@ -4111,7 +4111,7 @@ msgid ""
 msgstr ""
 
 # faf9fb71858e43d79029e95b39dbac56
-#: ../src/Doc/reference/expressions.rst:375
+#: ../src/Doc/reference/expressions.rst:374
 msgid ""
 "The built-in function :func:`repr` performs exactly the same conversion in "
 "its argument as enclosing it in parentheses and reverse quotes does.  The "
@@ -4119,12 +4119,12 @@ msgid ""
 "conversion."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:383
+#: ../src/Doc/reference/expressions.rst:382
 msgid "Yield expressions"
 msgstr ""
 
 # 8274776417fb4a5b9c915fbfe4d781e7
-#: ../src/Doc/reference/expressions.rst:396
+#: ../src/Doc/reference/expressions.rst:395
 msgid ""
 "The :keyword:`yield` expression is only used when defining a generator "
 "function, and can only be used in the body of a function definition. Using "
@@ -4134,7 +4134,7 @@ msgid ""
 msgstr ""
 
 # a14936cb7de843878fb8847cc1851641
-#: ../src/Doc/reference/expressions.rst:401
+#: ../src/Doc/reference/expressions.rst:400
 msgid ""
 "When a generator function is called, it returns an iterator known as a "
 "generator.  That generator then controls the execution of a generator "
@@ -4151,7 +4151,7 @@ msgid ""
 msgstr ""
 
 # 97715ddd9b414a9d8467685774e3e57e
-#: ../src/Doc/reference/expressions.rst:416
+#: ../src/Doc/reference/expressions.rst:415
 msgid ""
 "All of this makes generator functions quite similar to coroutines; they "
 "yield multiple times, they have more than one entry point and their "
@@ -4161,26 +4161,26 @@ msgid ""
 msgstr ""
 
 # f7e403a1fdfc4774aea8ef5bccd791f5
-#: ../src/Doc/reference/expressions.rst:426
+#: ../src/Doc/reference/expressions.rst:425
 msgid "Generator-iterator methods"
 msgstr ""
 
 # 58d143f990024d358fc30a950510d75f
-#: ../src/Doc/reference/expressions.rst:428
+#: ../src/Doc/reference/expressions.rst:427
 msgid ""
 "This subsection describes the methods of a generator iterator.  They can be "
 "used to control the execution of a generator function."
 msgstr ""
 
 # c091bbb4768b4aed8523c84c4a4432f4
-#: ../src/Doc/reference/expressions.rst:431
+#: ../src/Doc/reference/expressions.rst:430
 msgid ""
 "Note that calling any of the generator methods below when the generator is "
 "already executing raises a :exc:`ValueError` exception."
 msgstr ""
 
 # 301fe5977e7f4174809c2fceae4497ee
-#: ../src/Doc/reference/expressions.rst:439
+#: ../src/Doc/reference/expressions.rst:438
 msgid ""
 "Starts the execution of a generator function or resumes it at the last "
 "executed :keyword:`yield` expression.  When a generator function is resumed "
@@ -4193,7 +4193,7 @@ msgid ""
 msgstr ""
 
 # d94de07bc9384a5a8f04f4205c40d644
-#: ../src/Doc/reference/expressions.rst:451
+#: ../src/Doc/reference/expressions.rst:450
 msgid ""
 "Resumes the execution and \"sends\" a value into the generator function.  "
 "The ``value`` argument becomes the result of the current :keyword:`yield` "
@@ -4204,7 +4204,7 @@ msgid ""
 "keyword:`yield` expression that could receive the value."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:462
+#: ../src/Doc/reference/expressions.rst:461
 msgid ""
 "Raises an exception of type ``type`` at the point where generator was "
 "paused, and returns the next value yielded by the generator function.  If "
@@ -4214,7 +4214,7 @@ msgid ""
 "to the caller."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:473
+#: ../src/Doc/reference/expressions.rst:472
 msgid ""
 "Raises a :exc:`GeneratorExit` at the point where the generator function was "
 "paused.  If the generator function then raises :exc:`StopIteration` (by "
@@ -4226,7 +4226,7 @@ msgid ""
 "normal exit."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:481
+#: ../src/Doc/reference/expressions.rst:480
 msgid ""
 "Here is a simple example that demonstrates the behavior of generators and "
 "generator functions::"
@@ -4234,37 +4234,37 @@ msgstr ""
 
 # 20684de4a4514b71a25c128407069512
 # 28b0eb3a499e409f82cb9a6784ed0c24
-#: ../src/Doc/reference/expressions.rst:511
+#: ../src/Doc/reference/expressions.rst:510
 #: ../src/Doc/reference/simple_stmts.rst:528
 msgid ":pep:`0342` - Coroutines via Enhanced Generators"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:512
+#: ../src/Doc/reference/expressions.rst:511
 msgid ""
 "The proposal to enhance the API and syntax of generators, making them usable "
 "as simple coroutines."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:519
+#: ../src/Doc/reference/expressions.rst:518
 msgid "Primaries"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:523
+#: ../src/Doc/reference/expressions.rst:522
 msgid ""
 "Primaries represent the most tightly bound operations of the language. Their "
 "syntax is:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:533
+#: ../src/Doc/reference/expressions.rst:532
 msgid "Attribute references"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:537
+#: ../src/Doc/reference/expressions.rst:536
 msgid "An attribute reference is a primary followed by a period and a name:"
 msgstr ""
 
 # 03c5b9dfb0f14097bafffbd66792a1f5
-#: ../src/Doc/reference/expressions.rst:547
+#: ../src/Doc/reference/expressions.rst:546
 msgid ""
 "The primary must evaluate to an object of a type that supports attribute "
 "references, e.g., a module, list, or an instance.  This object is then asked "
@@ -4274,22 +4274,22 @@ msgid ""
 "evaluations of the same attribute reference may yield different objects."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:558
+#: ../src/Doc/reference/expressions.rst:557
 msgid "Subscriptions"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:571
+#: ../src/Doc/reference/expressions.rst:570
 msgid ""
 "A subscription selects an item of a sequence (string, tuple or list) or "
 "mapping (dictionary) object:"
 msgstr ""
 
 # c4ddc614a53347649ef51fcd48e85460
-#: ../src/Doc/reference/expressions.rst:577
+#: ../src/Doc/reference/expressions.rst:576
 msgid "The primary must evaluate to an object of a sequence or mapping type."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:579
+#: ../src/Doc/reference/expressions.rst:578
 msgid ""
 "If the primary is a mapping, the expression list must evaluate to an object "
 "whose value is one of the keys of the mapping, and the subscription selects "
@@ -4298,7 +4298,7 @@ msgid ""
 msgstr ""
 
 # cbef82ccd55049a8bc7a40e30b48e420
-#: ../src/Doc/reference/expressions.rst:584
+#: ../src/Doc/reference/expressions.rst:583
 msgid ""
 "If the primary is a sequence, the expression (list) must evaluate to a plain "
 "integer.  If this value is negative, the length of the sequence is added to "
@@ -4308,17 +4308,17 @@ msgid ""
 "(counting from zero)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:595
+#: ../src/Doc/reference/expressions.rst:594
 msgid ""
 "A string's items are characters.  A character is not a separate data type "
 "but a string of exactly one character."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:602
+#: ../src/Doc/reference/expressions.rst:601
 msgid "Slicings"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:614
+#: ../src/Doc/reference/expressions.rst:613
 msgid ""
 "A slicing selects a range of items in a sequence object (e.g., a string, "
 "tuple or list).  Slicings may be used as expressions or as targets in "
@@ -4326,7 +4326,7 @@ msgid ""
 msgstr ""
 
 # 7889acbef05948c6b4130453c66639a6
-#: ../src/Doc/reference/expressions.rst:634
+#: ../src/Doc/reference/expressions.rst:633
 msgid ""
 "There is ambiguity in the formal syntax here: anything that looks like an "
 "expression list also looks like a slice list, so any subscription can be "
@@ -4340,7 +4340,7 @@ msgid ""
 msgstr ""
 
 # 2edce4df31534a04a071667be001d586
-#: ../src/Doc/reference/expressions.rst:643
+#: ../src/Doc/reference/expressions.rst:642
 msgid ""
 "The semantics for a simple slicing are as follows.  The primary must "
 "evaluate to a sequence object.  The lower and upper bound expressions, if "
@@ -4353,7 +4353,7 @@ msgid ""
 msgstr ""
 
 # f6242d8b3ca044edb12f2d1e9c640a7e
-#: ../src/Doc/reference/expressions.rst:657
+#: ../src/Doc/reference/expressions.rst:656
 msgid ""
 "The semantics for an extended slicing are as follows.  The primary must "
 "evaluate to a mapping object, and it is indexed with a key that is "
@@ -4368,25 +4368,25 @@ msgid ""
 "respectively, substituting ``None`` for missing expressions."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:678
+#: ../src/Doc/reference/expressions.rst:677
 msgid "Calls"
 msgstr ""
 
 # 53eb6238970d4a56b1b199d855596e4a
-#: ../src/Doc/reference/expressions.rst:680
+#: ../src/Doc/reference/expressions.rst:679
 msgid ""
 "A call calls a callable object (e.g., a :term:`function`) with a possibly "
 "empty series of :term:`arguments <argument>`:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:697
+#: ../src/Doc/reference/expressions.rst:696
 msgid ""
 "A trailing comma may be present after the positional and keyword arguments "
 "but does not affect the semantics."
 msgstr ""
 
 # a813844f37c64c419d6cdf9dc1706d92
-#: ../src/Doc/reference/expressions.rst:703
+#: ../src/Doc/reference/expressions.rst:702
 msgid ""
 "The primary must evaluate to a callable object (user-defined functions, "
 "built-in functions, methods of built-in objects, class objects, methods of "
@@ -4396,7 +4396,7 @@ msgid ""
 "section :ref:`function` for the syntax of formal :term:`parameter` lists."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:710
+#: ../src/Doc/reference/expressions.rst:709
 msgid ""
 "If keyword arguments are present, they are first converted to positional "
 "arguments, as follows.  First, a list of unfilled slots is created for the "
@@ -4419,7 +4419,7 @@ msgid ""
 msgstr ""
 
 # 9982809b8b8b456fbe25cc9e3b8d6cd6
-#: ../src/Doc/reference/expressions.rst:730
+#: ../src/Doc/reference/expressions.rst:729
 msgid ""
 "An implementation may provide built-in functions whose positional parameters "
 "do not have names, even if they are 'named' for the purpose of "
@@ -4428,7 +4428,7 @@ msgid ""
 "`PyArg_ParseTuple` to parse their arguments."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:736
+#: ../src/Doc/reference/expressions.rst:735
 msgid ""
 "If there are more positional arguments than there are formal parameter "
 "slots, a :exc:`TypeError` exception is raised, unless a formal parameter "
@@ -4437,7 +4437,7 @@ msgid ""
 "empty tuple if there were no excess positional arguments)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:742
+#: ../src/Doc/reference/expressions.rst:741
 msgid ""
 "If any keyword argument does not correspond to a formal parameter name, a :"
 "exc:`TypeError` exception is raised, unless a formal parameter using the "
@@ -4448,7 +4448,7 @@ msgid ""
 msgstr ""
 
 # fec2deb16bac4cf8b5bf145485ca01c4
-#: ../src/Doc/reference/expressions.rst:752
+#: ../src/Doc/reference/expressions.rst:751
 msgid ""
 "If the syntax ``*expression`` appears in the function call, ``expression`` "
 "must evaluate to an iterable.  Elements from this iterable are treated as if "
@@ -4458,20 +4458,20 @@ msgid ""
 "*y1*, ..., *yM*."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:759
+#: ../src/Doc/reference/expressions.rst:758
 msgid ""
 "A consequence of this is that although the ``*expression`` syntax may appear "
 "*after* some keyword arguments, it is processed *before* the keyword "
 "arguments (and the ``**expression`` argument, if any -- see below).  So::"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:775
+#: ../src/Doc/reference/expressions.rst:774
 msgid ""
 "It is unusual for both keyword arguments and the ``*expression`` syntax to "
 "be used in the same call, so in practice this confusion does not arise."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:781
+#: ../src/Doc/reference/expressions.rst:780
 msgid ""
 "If the syntax ``**expression`` appears in the function call, ``expression`` "
 "must evaluate to a mapping, the contents of which are treated as additional "
@@ -4481,7 +4481,7 @@ msgid ""
 msgstr ""
 
 # 0aa56d3e89484a619e6db76d21ffc03f
-#: ../src/Doc/reference/expressions.rst:786
+#: ../src/Doc/reference/expressions.rst:785
 msgid ""
 "Formal parameters using the syntax ``*identifier`` or ``**identifier`` "
 "cannot be used as positional argument slots or as keyword argument names.  "
@@ -4491,23 +4491,23 @@ msgid ""
 "usual tuple assignment rules after all other parameter processing is done."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:793
+#: ../src/Doc/reference/expressions.rst:792
 msgid ""
 "A call always returns some value, possibly ``None``, unless it raises an "
 "exception.  How this value is computed depends on the type of the callable "
 "object."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:797
+#: ../src/Doc/reference/expressions.rst:796
 msgid "If it is---"
 msgstr ""
 
 # 15f21c6a233b4d27ba0f3496d0d69f26
-#: ../src/Doc/reference/expressions.rst:809
+#: ../src/Doc/reference/expressions.rst:808
 msgid "a user-defined function:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:806
+#: ../src/Doc/reference/expressions.rst:805
 msgid ""
 "The code block for the function is executed, passing it the argument list.  "
 "The first thing the code block will do is bind the formal parameters to the "
@@ -4517,31 +4517,31 @@ msgid ""
 msgstr ""
 
 # 6f370af1ee9a46a0bb983b3343a977fe
-#: ../src/Doc/reference/expressions.rst:823
+#: ../src/Doc/reference/expressions.rst:822
 msgid "a built-in function or method:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:823
+#: ../src/Doc/reference/expressions.rst:822
 msgid ""
 "The result is up to the interpreter; see :ref:`built-in-funcs` for the "
 "descriptions of built-in functions and methods."
 msgstr ""
 
 # 1a16881c8d8849d6b4aff6723f82a272
-#: ../src/Doc/reference/expressions.rst:830
+#: ../src/Doc/reference/expressions.rst:829
 msgid "a class object:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:831
+#: ../src/Doc/reference/expressions.rst:830
 msgid "A new instance of that class is returned."
 msgstr ""
 
 # fc8025f1c4794b858684291a624095e5
-#: ../src/Doc/reference/expressions.rst:840
+#: ../src/Doc/reference/expressions.rst:839
 msgid "a class instance method:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:839
+#: ../src/Doc/reference/expressions.rst:838
 msgid ""
 "The corresponding user-defined function is called, with an argument list "
 "that is one longer than the argument list of the call: the instance becomes "
@@ -4549,27 +4549,27 @@ msgid ""
 msgstr ""
 
 # 95e01195dc8540a7a960984d8e3372c1
-#: ../src/Doc/reference/expressions.rst:849
+#: ../src/Doc/reference/expressions.rst:848
 msgid "a class instance:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:848
+#: ../src/Doc/reference/expressions.rst:847
 msgid ""
 "The class must define a :meth:`__call__` method; the effect is then the same "
 "as if that method was called."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:855
+#: ../src/Doc/reference/expressions.rst:854
 msgid "The power operator"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:857
+#: ../src/Doc/reference/expressions.rst:856
 msgid ""
 "The power operator binds more tightly than unary operators on its left; it "
 "binds less tightly than unary operators on its right.  The syntax is:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:863
+#: ../src/Doc/reference/expressions.rst:862
 msgid ""
 "Thus, in an unparenthesized sequence of power and unary operators, the "
 "operators are evaluated from right to left (this does not constrain the "
@@ -4577,7 +4577,7 @@ msgid ""
 msgstr ""
 
 # b81e95a295054a1785b72be057f8c117
-#: ../src/Doc/reference/expressions.rst:867
+#: ../src/Doc/reference/expressions.rst:866
 msgid ""
 "The power operator has the same semantics as the built-in :func:`pow` "
 "function, when called with two arguments: it yields its left argument raised "
@@ -4587,7 +4587,7 @@ msgid ""
 msgstr ""
 
 # 482ffd086a414c7da955b3708d4d01a6
-#: ../src/Doc/reference/expressions.rst:872
+#: ../src/Doc/reference/expressions.rst:871
 msgid ""
 "With mixed operand types, the coercion rules for binary arithmetic operators "
 "apply. For int and long int operands, the result has the same type as the "
@@ -4600,49 +4600,49 @@ msgid ""
 msgstr ""
 
 # 3a1c84740fe64abaa7a64d9d7057a1fa
-#: ../src/Doc/reference/expressions.rst:881
+#: ../src/Doc/reference/expressions.rst:880
 msgid ""
 "Raising ``0.0`` to a negative power results in a :exc:`ZeroDivisionError`. "
 "Raising a negative number to a fractional power results in a :exc:"
 "`ValueError`."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:888
+#: ../src/Doc/reference/expressions.rst:887
 msgid "Unary arithmetic and bitwise operations"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:894
+#: ../src/Doc/reference/expressions.rst:893
 msgid "All unary arithmetic and bitwise operations have the same priority:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:903
+#: ../src/Doc/reference/expressions.rst:902
 msgid ""
 "The unary ``-`` (minus) operator yields the negation of its numeric argument."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:907
+#: ../src/Doc/reference/expressions.rst:906
 msgid "The unary ``+`` (plus) operator yields its numeric argument unchanged."
 msgstr ""
 
 # 8306f081357247d8add29f517bb5f5b1
-#: ../src/Doc/reference/expressions.rst:911
+#: ../src/Doc/reference/expressions.rst:910
 msgid ""
 "The unary ``~`` (invert) operator yields the bitwise inversion of its plain "
 "or long integer argument.  The bitwise inversion of ``x`` is defined as ``-(x"
 "+1)``.  It only applies to integral numbers."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:917
+#: ../src/Doc/reference/expressions.rst:916
 msgid ""
 "In all three cases, if the argument does not have the proper type, a :exc:"
 "`TypeError` exception is raised."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:924
+#: ../src/Doc/reference/expressions.rst:923
 msgid "Binary arithmetic operations"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:928
+#: ../src/Doc/reference/expressions.rst:927
 msgid ""
 "The binary arithmetic operations have the conventional priority levels.  "
 "Note that some of these operations also apply to certain non-numeric types.  "
@@ -4651,7 +4651,7 @@ msgid ""
 msgstr ""
 
 # 06ee5dad23f3493795e649a38d29649d
-#: ../src/Doc/reference/expressions.rst:940
+#: ../src/Doc/reference/expressions.rst:939
 msgid ""
 "The ``*`` (multiplication) operator yields the product of its arguments.  "
 "The arguments must either both be numbers, or one argument must be an "
@@ -4662,7 +4662,7 @@ msgid ""
 msgstr ""
 
 # 9f701f0990f54b1fae15d256820d2fd4
-#: ../src/Doc/reference/expressions.rst:951
+#: ../src/Doc/reference/expressions.rst:950
 msgid ""
 "The ``/`` (division) and ``//`` (floor division) operators yield the "
 "quotient of their arguments.  The numeric arguments are first converted to a "
@@ -4672,7 +4672,7 @@ msgid ""
 "exception."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:959
+#: ../src/Doc/reference/expressions.rst:958
 msgid ""
 "The ``%`` (modulo) operator yields the remainder from the division of the "
 "first argument by the second.  The numeric arguments are first converted to "
@@ -4685,7 +4685,7 @@ msgid ""
 msgstr ""
 
 # 1441d1af143e42c1bbd95ae13e8f8475
-#: ../src/Doc/reference/expressions.rst:968
+#: ../src/Doc/reference/expressions.rst:967
 msgid ""
 "The integer division and modulo operators are connected by the following "
 "identity: ``x == (x/y)*y + (x%y)``.  Integer division and modulo are also "
@@ -4696,7 +4696,7 @@ msgid ""
 msgstr ""
 
 # 1ccccdf8dba343bb82acec7b75c118bd
-#: ../src/Doc/reference/expressions.rst:975
+#: ../src/Doc/reference/expressions.rst:974
 msgid ""
 "In addition to performing the modulo operation on numbers, the ``%`` "
 "operator is also overloaded by string and unicode objects to perform string "
@@ -4706,7 +4706,7 @@ msgid ""
 msgstr ""
 
 # d3e04f640d19400f832e9dd135373c99
-#: ../src/Doc/reference/expressions.rst:987
+#: ../src/Doc/reference/expressions.rst:986
 msgid ""
 "The ``+`` (addition) operator yields the sum of its arguments. The arguments "
 "must either both be numbers or both sequences of the same type.  In the "
@@ -4714,23 +4714,23 @@ msgid ""
 "together.  In the latter case, the sequences are concatenated."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:994
+#: ../src/Doc/reference/expressions.rst:993
 msgid ""
 "The ``-`` (subtraction) operator yields the difference of its arguments.  "
 "The numeric arguments are first converted to a common type."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1001
+#: ../src/Doc/reference/expressions.rst:1000
 msgid "Shifting operations"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1005
+#: ../src/Doc/reference/expressions.rst:1004
 msgid ""
 "The shifting operations have lower priority than the arithmetic operations:"
 msgstr ""
 
 # 049f37f00f6d4b6abe25aadd939211bd
-#: ../src/Doc/reference/expressions.rst:1010
+#: ../src/Doc/reference/expressions.rst:1009
 msgid ""
 "These operators accept plain or long integers as arguments.  The arguments "
 "are converted to a common type.  They shift the first argument to the left "
@@ -4738,37 +4738,37 @@ msgid ""
 msgstr ""
 
 # 2ea8cbb8eeb64b8b99b8613a99e2d8ea
-#: ../src/Doc/reference/expressions.rst:1016
+#: ../src/Doc/reference/expressions.rst:1015
 msgid ""
 "A right shift by *n* bits is defined as division by ``pow(2, n)``.  A left "
 "shift by *n* bits is defined as multiplication with ``pow(2, n)``.  Negative "
 "shift counts raise a :exc:`ValueError` exception."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1022
+#: ../src/Doc/reference/expressions.rst:1021
 msgid ""
 "In the current implementation, the right-hand operand is required to be at "
 "most :attr:`sys.maxsize`.  If the right-hand operand is larger than :attr:"
 "`sys.maxsize` an :exc:`OverflowError` exception is raised."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1029
+#: ../src/Doc/reference/expressions.rst:1028
 msgid "Binary bitwise operations"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1033
+#: ../src/Doc/reference/expressions.rst:1032
 msgid "Each of the three bitwise operations has a different priority level:"
 msgstr ""
 
 # 44371a039a8b48c5b98a50b3376a7ab0
-#: ../src/Doc/reference/expressions.rst:1042
+#: ../src/Doc/reference/expressions.rst:1041
 msgid ""
 "The ``&`` operator yields the bitwise AND of its arguments, which must be "
 "plain or long integers.  The arguments are converted to a common type."
 msgstr ""
 
 # 424d390f37a0457fb826b9713d84f109
-#: ../src/Doc/reference/expressions.rst:1049
+#: ../src/Doc/reference/expressions.rst:1048
 msgid ""
 "The ``^`` operator yields the bitwise XOR (exclusive OR) of its arguments, "
 "which must be plain or long integers.  The arguments are converted to a "
@@ -4776,18 +4776,18 @@ msgid ""
 msgstr ""
 
 # 220631bc70e74155842ee5ca4e19f27f
-#: ../src/Doc/reference/expressions.rst:1056
+#: ../src/Doc/reference/expressions.rst:1055
 msgid ""
 "The ``|`` operator yields the bitwise (inclusive) OR of its arguments, which "
 "must be plain or long integers.  The arguments are converted to a common "
 "type."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1067
+#: ../src/Doc/reference/expressions.rst:1066
 msgid "Comparisons"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1073
+#: ../src/Doc/reference/expressions.rst:1072
 msgid ""
 "Unlike C, all comparison operations in Python have the same priority, which "
 "is lower than that of any arithmetic, shifting or bitwise operation.  Also "
@@ -4795,11 +4795,11 @@ msgid ""
 "conventional in mathematics:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1083
+#: ../src/Doc/reference/expressions.rst:1082
 msgid "Comparisons yield boolean values: ``True`` or ``False``."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1087
+#: ../src/Doc/reference/expressions.rst:1086
 msgid ""
 "Comparisons can be chained arbitrarily, e.g., ``x < y <= z`` is equivalent "
 "to ``x < y and y <= z``, except that ``y`` is evaluated only once (but in "
@@ -4807,7 +4807,7 @@ msgid ""
 "false)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1091
+#: ../src/Doc/reference/expressions.rst:1090
 msgid ""
 "Formally, if *a*, *b*, *c*, ..., *y*, *z* are expressions and *op1*, "
 "*op2*, ..., *opN* are comparison operators, then ``a op1 b op2 c ... y opN "
@@ -4815,7 +4815,7 @@ msgid ""
 "each expression is evaluated at most once."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1096
+#: ../src/Doc/reference/expressions.rst:1095
 msgid ""
 "Note that ``a op1 b op2 c`` doesn't imply any kind of comparison between *a* "
 "and *c*, so that, e.g., ``x < y > z`` is perfectly legal (though perhaps not "
@@ -4823,7 +4823,7 @@ msgid ""
 msgstr ""
 
 # a7fd5b6ca96441cd857aa859db5510b9
-#: ../src/Doc/reference/expressions.rst:1100
+#: ../src/Doc/reference/expressions.rst:1099
 msgid ""
 "The forms ``<>`` and ``!=`` are equivalent; for consistency with C, ``!=`` "
 "is preferred; where ``!=`` is mentioned below ``<>`` is also accepted.  The "
@@ -4831,7 +4831,7 @@ msgid ""
 msgstr ""
 
 # 6520859c7a364cc696c32cc22df12125
-#: ../src/Doc/reference/expressions.rst:1104
+#: ../src/Doc/reference/expressions.rst:1103
 msgid ""
 "The operators ``<``, ``>``, ``==``, ``>=``, ``<=``, and ``!=`` compare the "
 "values of two objects.  The objects need not have the same type. If both are "
@@ -4843,7 +4843,7 @@ msgid ""
 msgstr ""
 
 # 2c05852be671430db3a3c83df196aeab
-#: ../src/Doc/reference/expressions.rst:1112
+#: ../src/Doc/reference/expressions.rst:1111
 msgid ""
 "(This unusual definition of comparison was used to simplify the definition "
 "of operations like sorting and the :keyword:`in` and :keyword:`not in` "
@@ -4851,23 +4851,23 @@ msgid ""
 "types are likely to change.)"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1117
+#: ../src/Doc/reference/expressions.rst:1116
 msgid "Comparison of objects of the same type depends on the type:"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1119
+#: ../src/Doc/reference/expressions.rst:1118
 msgid "Numbers are compared arithmetically."
 msgstr ""
 
 # 228417a71cd94ac09c53ac12c2cfdb91
-#: ../src/Doc/reference/expressions.rst:1121
+#: ../src/Doc/reference/expressions.rst:1120
 msgid ""
 "Strings are compared lexicographically using the numeric equivalents (the "
 "result of the built-in function :func:`ord`) of their characters.  Unicode "
 "and 8-bit strings are fully interoperable in this behavior. [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1125
+#: ../src/Doc/reference/expressions.rst:1124
 msgid ""
 "Tuples and lists are compared lexicographically using comparison of "
 "corresponding elements.  This means that to compare equal, each element must "
@@ -4876,7 +4876,7 @@ msgid ""
 msgstr ""
 
 # d595063581ec4699afc76b6a1691a8e4
-#: ../src/Doc/reference/expressions.rst:1130
+#: ../src/Doc/reference/expressions.rst:1129
 msgid ""
 "If not equal, the sequences are ordered the same as their first differing "
 "elements.  For example, ``cmp([1,2,x], [1,2,y])`` returns the same as ``cmp"
@@ -4885,14 +4885,14 @@ msgid ""
 msgstr ""
 
 # 7da25f9a15dd45058f5bbe25daab5ac7
-#: ../src/Doc/reference/expressions.rst:1135
+#: ../src/Doc/reference/expressions.rst:1134
 msgid ""
 "Mappings (dictionaries) compare equal if and only if their sorted (key, "
 "value) lists compare equal. [#]_ Outcomes other than equality are resolved "
 "consistently, but are not otherwise defined. [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1139
+#: ../src/Doc/reference/expressions.rst:1138
 msgid ""
 "Most other objects of built-in types compare unequal unless they are the "
 "same object; the choice whether one object is considered smaller or larger "
@@ -4901,7 +4901,7 @@ msgid ""
 msgstr ""
 
 # 82879f641bcb4c4481304b85f9a50a79
-#: ../src/Doc/reference/expressions.rst:1146
+#: ../src/Doc/reference/expressions.rst:1145
 msgid ""
 "The operators :keyword:`in` and :keyword:`not in` test for collection "
 "membership.  ``x in s`` evaluates to true if *x* is a member of the "
@@ -4915,14 +4915,14 @@ msgid ""
 msgstr ""
 
 # 17f3c1f97d5148ed990fb624099bef5c
-#: ../src/Doc/reference/expressions.rst:1155
+#: ../src/Doc/reference/expressions.rst:1154
 msgid ""
 "For the list and tuple types, ``x in y`` is true if and only if there exists "
 "an index *i* such that ``x == y[i]`` is true."
 msgstr ""
 
 # 2c66edd4662e4c7b9359aec5ffc48aff
-#: ../src/Doc/reference/expressions.rst:1158
+#: ../src/Doc/reference/expressions.rst:1157
 msgid ""
 "For the Unicode and string types, ``x in y`` is true if and only if *x* is a "
 "substring of *y*.  An equivalent test is ``y.find(x) != -1``.  Note, *x* and "
@@ -4931,13 +4931,13 @@ msgid ""
 "string, so ``\"\" in \"abc\"`` will return ``True``."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1167
+#: ../src/Doc/reference/expressions.rst:1166
 msgid ""
 "For user-defined classes which define the :meth:`__contains__` method, ``x "
 "in y`` is true if and only if ``y.__contains__(x)`` is true."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1170
+#: ../src/Doc/reference/expressions.rst:1169
 msgid ""
 "For user-defined classes which do not define :meth:`__contains__` but do "
 "define :meth:`__iter__`, ``x in y`` is true if some value ``z`` with ``x == "
@@ -4946,7 +4946,7 @@ msgid ""
 msgstr ""
 
 # c9710b8034f1494ca8a4f4ee49edadf8
-#: ../src/Doc/reference/expressions.rst:1175
+#: ../src/Doc/reference/expressions.rst:1174
 msgid ""
 "Lastly, the old-style iteration protocol is tried: if a class defines :meth:"
 "`__getitem__`, ``x in y`` is true if and only if there is a non-negative "
@@ -4955,25 +4955,25 @@ msgid ""
 "is as if :keyword:`in` raised that exception)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1187
+#: ../src/Doc/reference/expressions.rst:1186
 msgid ""
 "The operator :keyword:`not in` is defined to have the inverse true value of :"
 "keyword:`in`."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1195
+#: ../src/Doc/reference/expressions.rst:1194
 msgid ""
 "The operators :keyword:`is` and :keyword:`is not` test for object identity: "
 "``x is y`` is true if and only if *x* and *y* are the same object.  ``x is "
 "not y`` yields the inverse truth value. [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1206
+#: ../src/Doc/reference/expressions.rst:1205
 msgid "Boolean operations"
 msgstr ""
 
 # 57ab1712b46c4f8db1588584ceb5f69e
-#: ../src/Doc/reference/expressions.rst:1217
+#: ../src/Doc/reference/expressions.rst:1216
 msgid ""
 "In the context of Boolean operations, and also when expressions are used by "
 "control flow statements, the following values are interpreted as false: "
@@ -4983,26 +4983,26 @@ msgid ""
 "`~object.__nonzero__` special method for a way to change this.)"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1226
+#: ../src/Doc/reference/expressions.rst:1225
 msgid ""
 "The operator :keyword:`not` yields ``True`` if its argument is false, "
 "``False`` otherwise."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1231
+#: ../src/Doc/reference/expressions.rst:1230
 msgid ""
 "The expression ``x and y`` first evaluates *x*; if *x* is false, its value "
 "is returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1236
+#: ../src/Doc/reference/expressions.rst:1235
 msgid ""
 "The expression ``x or y`` first evaluates *x*; if *x* is true, its value is "
 "returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr ""
 
 # 3b2596cf486a4996b2a620d62e7ae571
-#: ../src/Doc/reference/expressions.rst:1239
+#: ../src/Doc/reference/expressions.rst:1238
 msgid ""
 "(Note that neither :keyword:`and` nor :keyword:`or` restrict the value and "
 "type they return to ``False`` and ``True``, but rather return the last "
@@ -5013,32 +5013,32 @@ msgid ""
 "as its argument, so e.g., ``not 'foo'`` yields ``False``, not ``''``.)"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1249
+#: ../src/Doc/reference/expressions.rst:1248
 msgid "Conditional Expressions"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1261
+#: ../src/Doc/reference/expressions.rst:1260
 msgid ""
 "Conditional expressions (sometimes called a \"ternary operator\") have the "
 "lowest priority of all Python operations."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1264
+#: ../src/Doc/reference/expressions.rst:1263
 msgid ""
 "The expression ``x if C else y`` first evaluates the condition, *C* (*not* "
 "*x*); if *C* is true, *x* is evaluated and its value is returned; otherwise, "
 "*y* is evaluated and its value is returned."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1268
+#: ../src/Doc/reference/expressions.rst:1267
 msgid "See :pep:`308` for more details about conditional expressions."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1275
+#: ../src/Doc/reference/expressions.rst:1274
 msgid "Lambdas"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1286
+#: ../src/Doc/reference/expressions.rst:1285
 msgid ""
 "Lambda forms (lambda expressions) have the same syntactic position as "
 "expressions.  They are a shorthand to create anonymous functions; the "
@@ -5047,24 +5047,24 @@ msgid ""
 msgstr ""
 
 # f355a597bf33479aa2062d92c58787dc
-#: ../src/Doc/reference/expressions.rst:1294
+#: ../src/Doc/reference/expressions.rst:1293
 msgid ""
 "See section :ref:`function` for the syntax of parameter lists.  Note that "
 "functions created with lambda forms cannot contain statements."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1301
+#: ../src/Doc/reference/expressions.rst:1300
 msgid "Expression lists"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1310
+#: ../src/Doc/reference/expressions.rst:1309
 msgid ""
 "An expression list containing at least one comma yields a tuple.  The length "
 "of the tuple is the number of expressions in the list.  The expressions are "
 "evaluated from left to right."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1316
+#: ../src/Doc/reference/expressions.rst:1315
 msgid ""
 "The trailing comma is required only to create a single tuple (a.k.a. a "
 "*singleton*); it is optional in all other cases.  A single expression "
@@ -5073,31 +5073,31 @@ msgid ""
 "parentheses: ``()``.)"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1326
+#: ../src/Doc/reference/expressions.rst:1325
 msgid "Evaluation order"
 msgstr ""
 
 # 82676faf892345019788544595afce26
-#: ../src/Doc/reference/expressions.rst:1330
+#: ../src/Doc/reference/expressions.rst:1329
 msgid ""
 "Python evaluates expressions from left to right. Notice that while "
 "evaluating an assignment, the right-hand side is evaluated before the left-"
 "hand side."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1333
+#: ../src/Doc/reference/expressions.rst:1332
 msgid ""
 "In the following lines, expressions will be evaluated in the arithmetic "
 "order of their suffixes::"
 msgstr ""
 
 # 31afa1dd2ec046ebbeadf2a8a84cd4aa
-#: ../src/Doc/reference/expressions.rst:1347
+#: ../src/Doc/reference/expressions.rst:1346
 msgid "Operator precedence"
 msgstr ""
 
 # 6bbeab57bf6c4991b718465416feea13
-#: ../src/Doc/reference/expressions.rst:1351
+#: ../src/Doc/reference/expressions.rst:1350
 msgid ""
 "The following table summarizes the operator precedences in Python, from "
 "lowest precedence (least binding) to highest precedence (most binding). "
@@ -5108,155 +5108,155 @@ msgid ""
 "`comparisons` --- and exponentiation, which groups from right to left)."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1360
+#: ../src/Doc/reference/expressions.rst:1359
 msgid "Operator"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1360
+#: ../src/Doc/reference/expressions.rst:1359
 msgid "Description"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1362
+#: ../src/Doc/reference/expressions.rst:1361
 msgid ":keyword:`lambda`"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1362
+#: ../src/Doc/reference/expressions.rst:1361
 msgid "Lambda expression"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1364
+#: ../src/Doc/reference/expressions.rst:1363
 msgid ":keyword:`if` -- :keyword:`else`"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1364
+#: ../src/Doc/reference/expressions.rst:1363
 msgid "Conditional expression"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1366
+#: ../src/Doc/reference/expressions.rst:1365
 msgid ":keyword:`or`"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1366
+#: ../src/Doc/reference/expressions.rst:1365
 msgid "Boolean OR"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1368
+#: ../src/Doc/reference/expressions.rst:1367
 msgid ":keyword:`and`"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1368
+#: ../src/Doc/reference/expressions.rst:1367
 msgid "Boolean AND"
 msgstr ""
 
 # 9c83cf1334b94aac9f57eca5b8c0cf7f
-#: ../src/Doc/reference/expressions.rst:1370
+#: ../src/Doc/reference/expressions.rst:1369
 msgid ":keyword:`not` ``x``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1370
+#: ../src/Doc/reference/expressions.rst:1369
 msgid "Boolean NOT"
 msgstr ""
 
 # fc22b15cc119477f97fab09b420f4af1
-#: ../src/Doc/reference/expressions.rst:1372
+#: ../src/Doc/reference/expressions.rst:1371
 msgid ""
 ":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, "
 "``<=``, ``>``, ``>=``, ``<>``, ``!=``, ``==``"
 msgstr ""
 
 # 408ef4c5c7e544c8a73e0e559638448e
-#: ../src/Doc/reference/expressions.rst:1372
+#: ../src/Doc/reference/expressions.rst:1371
 msgid "Comparisons, including membership tests and identity tests"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1376
+#: ../src/Doc/reference/expressions.rst:1375
 msgid "``|``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1376
+#: ../src/Doc/reference/expressions.rst:1375
 msgid "Bitwise OR"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1378
+#: ../src/Doc/reference/expressions.rst:1377
 msgid "``^``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1378
+#: ../src/Doc/reference/expressions.rst:1377
 msgid "Bitwise XOR"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1380
+#: ../src/Doc/reference/expressions.rst:1379
 msgid "``&``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1380
+#: ../src/Doc/reference/expressions.rst:1379
 msgid "Bitwise AND"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1382
+#: ../src/Doc/reference/expressions.rst:1381
 msgid "``<<``, ``>>``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1382
+#: ../src/Doc/reference/expressions.rst:1381
 msgid "Shifts"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1384
+#: ../src/Doc/reference/expressions.rst:1383
 msgid "``+``, ``-``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1384
+#: ../src/Doc/reference/expressions.rst:1383
 msgid "Addition and subtraction"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1386
+#: ../src/Doc/reference/expressions.rst:1385
 msgid "``*``, ``/``, ``//``, ``%``"
 msgstr ""
 
 # 4decff26a3a24609a6efd997d8b699c1
-#: ../src/Doc/reference/expressions.rst:1386
+#: ../src/Doc/reference/expressions.rst:1385
 msgid "Multiplication, division, remainder [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1389
+#: ../src/Doc/reference/expressions.rst:1388
 msgid "``+x``, ``-x``, ``~x``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1389
+#: ../src/Doc/reference/expressions.rst:1388
 msgid "Positive, negative, bitwise NOT"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1391
+#: ../src/Doc/reference/expressions.rst:1390
 msgid "``**``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1391
+#: ../src/Doc/reference/expressions.rst:1390
 msgid "Exponentiation [#]_"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1393
+#: ../src/Doc/reference/expressions.rst:1392
 msgid "``x[index]``, ``x[index:index]``, ``x(arguments...)``, ``x.attribute``"
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1393
+#: ../src/Doc/reference/expressions.rst:1392
 msgid "Subscription, slicing, call, attribute reference"
 msgstr ""
 
 # ae301a72fff947749418f4ffdab0099e
-#: ../src/Doc/reference/expressions.rst:1396
+#: ../src/Doc/reference/expressions.rst:1395
 msgid ""
 "``(expressions...)``, ``[expressions...]``, ``{key: value...}``, "
 "```expressions...```"
 msgstr ""
 
 # 1b1c179fc70141cfb8a8ad45acbdf57e
-#: ../src/Doc/reference/expressions.rst:1396
+#: ../src/Doc/reference/expressions.rst:1395
 msgid ""
 "Binding or tuple display, list display, dictionary display, string conversion"
 msgstr ""
 
 # d0a7a1ff8e3c40acb8b8feefac868ec6
-#: ../src/Doc/reference/expressions.rst:1404
+#: ../src/Doc/reference/expressions.rst:1403
 msgid ""
 "In Python 2.3 and later releases, a list comprehension \"leaks\" the control "
 "variables of each ``for`` it contains into the containing scope.  However, "
@@ -5264,7 +5264,7 @@ msgid ""
 msgstr ""
 
 # 148849a0d81841f684388564cdf7139e
-#: ../src/Doc/reference/expressions.rst:1408
+#: ../src/Doc/reference/expressions.rst:1407
 msgid ""
 "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be "
 "true numerically due to roundoff.  For example, and assuming a platform on "
@@ -5277,7 +5277,7 @@ msgid ""
 msgstr ""
 
 # 8f76793fd29f4a91b61768bc803baa41
-#: ../src/Doc/reference/expressions.rst:1417
+#: ../src/Doc/reference/expressions.rst:1416
 msgid ""
 "If x is very close to an exact integer multiple of y, it's possible for "
 "``floor(x/y)`` to be one larger than ``(x-x%y)/y`` due to rounding.  In such "
@@ -5286,7 +5286,7 @@ msgid ""
 msgstr ""
 
 # 40de22f4d78e4e7aa23a86ae5d7afd73
-#: ../src/Doc/reference/expressions.rst:1422
+#: ../src/Doc/reference/expressions.rst:1421
 msgid ""
 "While comparisons between unicode strings make sense at the byte level, they "
 "may be counter-intuitive to users. For example, the strings ``u\"\\u00C7\"`` "
@@ -5296,13 +5296,13 @@ msgid ""
 "`unicodedata.normalize`."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1429
+#: ../src/Doc/reference/expressions.rst:1428
 msgid ""
 "The implementation computes this efficiently, without constructing lists or "
 "sorting."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1432
+#: ../src/Doc/reference/expressions.rst:1431
 msgid ""
 "Earlier versions of Python used lexicographic comparison of the sorted (key, "
 "value) lists, but this was very expensive for the common case of comparing "
@@ -5311,7 +5311,7 @@ msgid ""
 "to test a dictionary for emptiness by comparing it to ``{}``."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1438
+#: ../src/Doc/reference/expressions.rst:1437
 msgid ""
 "Due to automatic garbage-collection, free lists, and the dynamic nature of "
 "descriptors, you may notice seemingly unusual behaviour in certain uses of "
@@ -5320,13 +5320,13 @@ msgid ""
 msgstr ""
 
 # 39f30010c83140ad91134fe4d37e0702
-#: ../src/Doc/reference/expressions.rst:1443
+#: ../src/Doc/reference/expressions.rst:1442
 msgid ""
 "The ``%`` operator is also used for string formatting; the same precedence "
 "applies."
 msgstr ""
 
-#: ../src/Doc/reference/expressions.rst:1446
+#: ../src/Doc/reference/expressions.rst:1445
 msgid ""
 "The power operator ``**`` binds less tightly than an arithmetic or bitwise "
 "unary operator on its right, that is, ``2**-1`` is ``0.5``."

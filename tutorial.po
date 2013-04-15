@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-25 04:07\n"
+"POT-Creation-Date: 2013-04-15 06:40\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6933,11 +6933,12 @@ msgid ""
 "modules found in a package."
 msgstr ""
 
+# 718bdfb2db00454588feb7477e850abf
 #: ../src/Doc/tutorial/modules.rst:552
 msgid ""
 "In fact function definitions are also 'statements' that are 'executed'; the "
-"execution of a module-level function enters the function name in the "
-"module's global symbol table."
+"execution of a module-level function definition enters the function name in "
+"the module's global symbol table."
 msgstr ""
 
 #: ../src/Doc/tutorial/stdlib.rst:5

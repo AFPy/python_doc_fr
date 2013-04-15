@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-01 06:26\n"
+"POT-Creation-Date: 2013-04-15 06:40\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1315,12 +1315,13 @@ msgstr ""
 msgid "There are several reasons to allow this."
 msgstr ""
 
+# 298742dc20444d93965e2fca2825408f
 #: ../src/Doc/faq/design.rst:911
 msgid ""
 "When you have a literal value for a list, tuple, or dictionary spread across "
 "multiple lines, it's easier to add more elements because you don't have to "
-"remember to add a comma to the previous line.  The lines can also be sorted "
-"in your editor without creating a syntax error."
+"remember to add a comma to the previous line.  The lines can also be "
+"reordered without creating a syntax error."
 msgstr ""
 
 #: ../src/Doc/faq/design.rst:916
