@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-15 06:40\n"
+"POT-Creation-Date: 2013-04-22 06:20\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1577,7 +1577,7 @@ msgstr "Exemples ::"
 #: ../src/Doc/tutorial/classes.rst:827 ../src/Doc/tutorial/controlflow.rst:667
 #: ../src/Doc/tutorial/datastructures.rst:749
 #: ../src/Doc/tutorial/interactive.rst:166
-#: ../src/Doc/tutorial/interpreter.rst:268 ../src/Doc/tutorial/modules.rst:551
+#: ../src/Doc/tutorial/interpreter.rst:268 ../src/Doc/tutorial/modules.rst:552
 msgid "Footnotes"
 msgstr "Notes"
 
@@ -4719,43 +4719,24 @@ msgstr ""
 "de caractères ne contenant qu'une fin de ligne ::"
 
 #: ../src/Doc/tutorial/inputoutput.rst:298
+#, fuzzy
 msgid ""
-"``f.readlines()`` returns a list containing all the lines of data in the "
-"file. If given an optional parameter *sizehint*, it reads that many bytes "
-"from the file and enough more to complete a line, and returns the lines from "
-"that.  This is often used to allow efficient reading of a large file by "
-"lines, but without having to load the entire file in memory.  Only complete "
-"lines will be returned. ::"
-msgstr ""
-"``f.readlines()`` retourne une liste contenant toutes les lignes du fichier. "
-"Si l'argument optionnel *sizehint* est fourni, la méthode lit autant "
-"d'octets que le nombre indiqué, plus la quantité juste nécessaire pour "
-"compléter une ligne, et retourne toutes les lignes lues. Ceci est souvent "
-"utilisé pour permettre une lecture efficace d'un gros fichier par lignes, "
-"mais sans avoir à charger tout le fichier en mémoire. Seules des lignes "
-"entières sont retournées. ::"
-
-#: ../src/Doc/tutorial/inputoutput.rst:308
-msgid ""
-"An alternative approach to reading lines is to loop over the file object. "
-"This is memory efficient, fast, and leads to simpler code::"
+"For reading lines from a file, you can loop over the file object. This is "
+"memory efficient, fast, and leads to simple code::"
 msgstr ""
 "Une autre approche de lecture des lignes est de faire une boucle sur l'objet "
 "fichier. Cela est plus efficace en terme de gestion mémoire, plus rapide, et "
 "donne un code plus simple ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:317
+# c9d2cb570f624080832cb1c22091174a
+#: ../src/Doc/tutorial/inputoutput.rst:307
 msgid ""
-"The alternative approach is simpler but does not provide as fine-grained "
-"control.  Since the two approaches manage line buffering differently, they "
-"should not be mixed."
+"If you want to read all the lines of a file in a list you can also use ``list"
+"(f)`` or ``f.readlines()``."
 msgstr ""
-"Cette autre méthode est plus simple mais ne permet pas d'avoir un contrôle "
-"très fin sur la lecture. Comme les deux approches gèrent la mise en mémoire "
-"tampon des lignes différemment, elle ne doivent pas être mélangées."
 
 # 0ead0c7ac8ca40f7bb963339561c47e9
-#: ../src/Doc/tutorial/inputoutput.rst:321
+#: ../src/Doc/tutorial/inputoutput.rst:310
 msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "``None``.   ::"
@@ -4763,7 +4744,7 @@ msgstr ""
 "``f.write(string)`` écrit le contenu de *string* dans le fichier, et renvoie "
 "``None`` ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:326
+#: ../src/Doc/tutorial/inputoutput.rst:315
 msgid ""
 "To write something other than a string, it needs to be converted to a string "
 "first::"
@@ -4771,7 +4752,7 @@ msgstr ""
 "Pour écrire autre chose qu'une chaîne, il faut commencer par la convertir en "
 "chaîne ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:333
+#: ../src/Doc/tutorial/inputoutput.rst:322
 msgid ""
 "``f.tell()`` returns an integer giving the file object's current position in "
 "the file, measured in bytes from the beginning of the file.  To change the "
@@ -4791,7 +4772,7 @@ msgstr ""
 "*from_what* peut être omis et sa valeur par défaut est 0, utilisant le début "
 "du fichier comme point de référence ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:351
+#: ../src/Doc/tutorial/inputoutput.rst:340
 msgid ""
 "When you're done with a file, call ``f.close()`` to close it and free up any "
 "system resources taken up by the open file.  After calling ``f.close()``, "
@@ -4802,7 +4783,7 @@ msgstr ""
 "l'appel de ``f.close()``, toute tentative d'utilisation de l'objet fichier "
 "échouera systématiquement ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:361
+#: ../src/Doc/tutorial/inputoutput.rst:350
 msgid ""
 "It is good practice to use the :keyword:`with` keyword when dealing with "
 "file objects.  This has the advantage that the file is properly closed after "
@@ -4816,7 +4797,7 @@ msgstr ""
 "beaucoup plus court que d'utiliser l'équivalent avec des blocs :keyword:`try`"
 "\\ - \\ :keyword:`finally` ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:371
+#: ../src/Doc/tutorial/inputoutput.rst:360
 msgid ""
 "File objects have some additional methods, such as :meth:`~file.isatty` and :"
 "meth:`~file.truncate` which are less frequently used; consult the Library "
@@ -4827,11 +4808,11 @@ msgstr ""
 "consultez la Référence de la Bibliothèque Standard pour avoir un guide "
 "complet des objets fichiers."
 
-#: ../src/Doc/tutorial/inputoutput.rst:379
+#: ../src/Doc/tutorial/inputoutput.rst:368
 msgid "The :mod:`pickle` Module"
 msgstr "Le module :mod:`pickle`"
 
-#: ../src/Doc/tutorial/inputoutput.rst:383
+#: ../src/Doc/tutorial/inputoutput.rst:372
 msgid ""
 "Strings can easily be written to and read from a file. Numbers take a bit "
 "more effort, since the :meth:`read` method only returns strings, which will "
@@ -4848,7 +4829,7 @@ msgstr ""
 "des types de données plus complexes comme des listes, des dictionnaires ou "
 "des instances de classes, les choses se compliquent beaucoup plus."
 
-#: ../src/Doc/tutorial/inputoutput.rst:390
+#: ../src/Doc/tutorial/inputoutput.rst:379
 msgid ""
 "Rather than have users be constantly writing and debugging code to save "
 "complicated data types, Python provides a standard module called :mod:"
@@ -4871,7 +4852,7 @@ msgstr ""
 "avoir été stockée dans un fichier ou envoyée via une connexion réseau vers "
 "une machine distante."
 
-#: ../src/Doc/tutorial/inputoutput.rst:399
+#: ../src/Doc/tutorial/inputoutput.rst:388
 msgid ""
 "If you have an object ``x``, and a file object ``f`` that's been opened for "
 "writing, the simplest way to pickle the object takes only one line of code::"
@@ -4880,7 +4861,7 @@ msgstr ""
 "écriture, la méthode la plus simple d'écrire cet objet ne prend qu'une ligne "
 "de code ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:404
+#: ../src/Doc/tutorial/inputoutput.rst:393
 msgid ""
 "To unpickle the object again, if ``f`` is a file object which has been "
 "opened for reading::"
@@ -4888,7 +4869,7 @@ msgstr ""
 "Pour reconstruire l'objet, si ``f`` est cette fois un objet fichier ouvert "
 "en lecture ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:409
+#: ../src/Doc/tutorial/inputoutput.rst:398
 msgid ""
 "(There are other variants of this, used when pickling many objects or when "
 "you don't want to write the pickled data to a file; consult the complete "
@@ -4899,7 +4880,7 @@ msgstr ""
 "fichier ; consultez la documentation complète du module :mod:`pickle` dans "
 "le Guide de Référence de la Bibliothèque Standard.)"
 
-#: ../src/Doc/tutorial/inputoutput.rst:413
+#: ../src/Doc/tutorial/inputoutput.rst:402
 msgid ""
 ":mod:`pickle` is the standard way to make Python objects which can be stored "
 "and reused by other programs or by a future invocation of the same program; "
@@ -6417,14 +6398,16 @@ msgstr ""
 msgid "More on Modules"
 msgstr ""
 
+# 68120fe1cf1e43d2b26b0e1e3af197bb
 #: ../src/Doc/tutorial/modules.rst:72
 msgid ""
 "A module can contain executable statements as well as function definitions. "
 "These statements are intended to initialize the module. They are executed "
-"only the *first* time the module is imported somewhere. [#]_"
+"only the *first* time the module name is encountered in an import statement. "
+"[#]_ (They are also run if the file is executed as a script.)"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:76
+#: ../src/Doc/tutorial/modules.rst:77
 msgid ""
 "Each module has its own private symbol table, which is used as the global "
 "symbol table by all functions defined in the module. Thus, the author of a "
@@ -6434,7 +6417,7 @@ msgid ""
 "same notation used to refer to its functions, ``modname.itemname``."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:83
+#: ../src/Doc/tutorial/modules.rst:84
 msgid ""
 "Modules can import other modules.  It is customary but not required to place "
 "all :keyword:`import` statements at the beginning of a module (or script, "
@@ -6442,30 +6425,30 @@ msgid ""
 "module's global symbol table."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:88
+#: ../src/Doc/tutorial/modules.rst:89
 msgid ""
 "There is a variant of the :keyword:`import` statement that imports names "
 "from a module directly into the importing module's symbol table.  For "
 "example::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:95
+#: ../src/Doc/tutorial/modules.rst:96
 msgid ""
 "This does not introduce the module name from which the imports are taken in "
 "the local symbol table (so in the example, ``fibo`` is not defined)."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:98
+#: ../src/Doc/tutorial/modules.rst:99
 msgid "There is even a variant to import all names that a module defines::"
 msgstr ""
 
 # a576f929fa4b4f03a5ecc568fbc39da4
-#: ../src/Doc/tutorial/modules.rst:104
+#: ../src/Doc/tutorial/modules.rst:105
 msgid ""
 "This imports all names except those beginning with an underscore (``_``)."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:106
+#: ../src/Doc/tutorial/modules.rst:107
 msgid ""
 "Note that in general the practice of importing ``*`` from a module or "
 "package is frowned upon, since it often causes poorly readable code. "
@@ -6473,7 +6456,7 @@ msgid ""
 msgstr ""
 
 # 43ceb255506f40879d48e04284318f2b
-#: ../src/Doc/tutorial/modules.rst:112
+#: ../src/Doc/tutorial/modules.rst:113
 msgid ""
 "For efficiency reasons, each module is only imported once per interpreter "
 "session.  Therefore, if you change your modules, you must restart the "
@@ -6481,45 +6464,45 @@ msgid ""
 "use :func:`reload`, e.g. ``reload(modulename)``."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:121
+#: ../src/Doc/tutorial/modules.rst:122
 msgid "Executing modules as scripts"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:123
+#: ../src/Doc/tutorial/modules.rst:124
 msgid "When you run a Python module with ::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:127
+#: ../src/Doc/tutorial/modules.rst:128
 msgid ""
 "the code in the module will be executed, just as if you imported it, but "
 "with the ``__name__`` set to ``\"__main__\"``.  That means that by adding "
 "this code at the end of your module::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:135
+#: ../src/Doc/tutorial/modules.rst:136
 msgid ""
 "you can make the file usable as a script as well as an importable module, "
 "because the code that parses the command line only runs if the module is "
 "executed as the \"main\" file::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:142
+#: ../src/Doc/tutorial/modules.rst:143
 msgid "If the module is imported, the code is not run::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:147
+#: ../src/Doc/tutorial/modules.rst:148
 msgid ""
 "This is often used either to provide a convenient user interface to a "
 "module, or for testing purposes (running the module as a script executes a "
 "test suite)."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:154
+#: ../src/Doc/tutorial/modules.rst:155
 msgid "The Module Search Path"
 msgstr ""
 
 # 7eb1de98727b457bb47241fe0f9a3c7a
-#: ../src/Doc/tutorial/modules.rst:158
+#: ../src/Doc/tutorial/modules.rst:159
 msgid ""
 "When a module named :mod:`spam` is imported, the interpreter first searches "
 "for a built-in module with that name. If not found, it then searches for a "
@@ -6528,24 +6511,24 @@ msgid ""
 msgstr ""
 
 # 2cfb18e596454d35aba4942f36ffb217
-#: ../src/Doc/tutorial/modules.rst:163
+#: ../src/Doc/tutorial/modules.rst:164
 msgid "the directory containing the input script (or the current directory)."
 msgstr ""
 
 # 92b653933f904f2ba5db5eeb5106e97d
-#: ../src/Doc/tutorial/modules.rst:164
+#: ../src/Doc/tutorial/modules.rst:165
 msgid ""
 ":envvar:`PYTHONPATH` (a list of directory names, with the same syntax as the "
 "shell variable :envvar:`PATH`)."
 msgstr ""
 
 # 5f64433feec849c99a5c0234fbe44b86
-#: ../src/Doc/tutorial/modules.rst:166
+#: ../src/Doc/tutorial/modules.rst:167
 msgid "the installation-dependent default."
 msgstr ""
 
 # 06804f6bce114936a931a03ac145ec9a
-#: ../src/Doc/tutorial/modules.rst:168
+#: ../src/Doc/tutorial/modules.rst:169
 msgid ""
 "After initialization, Python programs can modify :data:`sys.path`.  The "
 "directory containing the script being run is placed at the beginning of the "
@@ -6555,11 +6538,11 @@ msgid ""
 "section :ref:`tut-standardmodules` for more information."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:177
+#: ../src/Doc/tutorial/modules.rst:178
 msgid "\"Compiled\" Python files"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:179
+#: ../src/Doc/tutorial/modules.rst:180
 msgid ""
 "As an important speed-up of the start-up time for short programs that use a "
 "lot of standard modules, if a file called :file:`spam.pyc` exists in the "
@@ -6570,7 +6553,7 @@ msgid ""
 "ignored if these don't match."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:186
+#: ../src/Doc/tutorial/modules.rst:187
 msgid ""
 "Normally, you don't need to do anything to create the :file:`spam.pyc` file. "
 "Whenever :file:`spam.py` is successfully compiled, an attempt is made to "
@@ -6582,11 +6565,11 @@ msgid ""
 "different architectures."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:194
+#: ../src/Doc/tutorial/modules.rst:195
 msgid "Some tips for experts:"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:196
+#: ../src/Doc/tutorial/modules.rst:197
 msgid ""
 "When the Python interpreter is invoked with the :option:`-O` flag, optimized "
 "code is generated and stored in :file:`.pyo` files.  The optimizer currently "
@@ -6595,7 +6578,7 @@ msgid ""
 "ignored and ``.py`` files are compiled to optimized bytecode."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:202
+#: ../src/Doc/tutorial/modules.rst:203
 msgid ""
 "Passing two :option:`-O` flags to the Python interpreter (:option:`-OO`) "
 "will cause the bytecode compiler to perform optimizations that could in some "
@@ -6605,7 +6588,7 @@ msgid ""
 "should only use this option if you know what you're doing."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:209
+#: ../src/Doc/tutorial/modules.rst:210
 msgid ""
 "A program doesn't run any faster when it is read from a :file:`.pyc` or :"
 "file:`.pyo` file than when it is read from a :file:`.py` file; the only "
@@ -6613,7 +6596,7 @@ msgid ""
 "with which they are loaded."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:214
+#: ../src/Doc/tutorial/modules.rst:215
 msgid ""
 "When a script is run by giving its name on the command line, the bytecode "
 "for the script is never written to a :file:`.pyc` or :file:`.pyo` file.  "
@@ -6623,7 +6606,7 @@ msgid ""
 "the command line."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:221
+#: ../src/Doc/tutorial/modules.rst:222
 msgid ""
 "It is possible to have a file called :file:`spam.pyc` (or :file:`spam.pyo` "
 "when :option:`-O` is used) without a file :file:`spam.py` for the same "
@@ -6631,18 +6614,18 @@ msgid ""
 "that is moderately hard to reverse engineer."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:228
+#: ../src/Doc/tutorial/modules.rst:229
 msgid ""
 "The module :mod:`compileall` can create :file:`.pyc` files (or :file:`.pyo` "
 "files when :option:`-O` is used) for all modules in a directory."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:235
+#: ../src/Doc/tutorial/modules.rst:236
 msgid "Standard Modules"
 msgstr ""
 
 # 0572f328979e445b8f24801a89a1e2b0
-#: ../src/Doc/tutorial/modules.rst:239
+#: ../src/Doc/tutorial/modules.rst:240
 msgid ""
 "Python comes with a library of standard modules, described in a separate "
 "document, the Python Library Reference (\"Library Reference\" hereafter).  "
@@ -6657,13 +6640,13 @@ msgid ""
 "define the strings used as primary and secondary prompts::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:262
+#: ../src/Doc/tutorial/modules.rst:263
 msgid ""
 "These two variables are only defined if the interpreter is in interactive "
 "mode."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:264
+#: ../src/Doc/tutorial/modules.rst:265
 msgid ""
 "The variable ``sys.path`` is a list of strings that determines the "
 "interpreter's search path for modules. It is initialized to a default path "
@@ -6672,39 +6655,39 @@ msgid ""
 "standard list operations::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:277
+#: ../src/Doc/tutorial/modules.rst:278
 msgid "The :func:`dir` Function"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:279
+#: ../src/Doc/tutorial/modules.rst:280
 msgid ""
 "The built-in function :func:`dir` is used to find out which names a module "
 "defines.  It returns a sorted list of strings::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:302
+#: ../src/Doc/tutorial/modules.rst:303
 msgid ""
 "Without arguments, :func:`dir` lists the names you have defined currently::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:310
+#: ../src/Doc/tutorial/modules.rst:311
 msgid ""
 "Note that it lists all types of names: variables, modules, functions, etc."
 msgstr ""
 
 # 38ddad117ec74e9885481c252bed3daf
-#: ../src/Doc/tutorial/modules.rst:314
+#: ../src/Doc/tutorial/modules.rst:315
 msgid ""
 ":func:`dir` does not list the names of built-in functions and variables.  If "
 "you want a list of those, they are defined in the standard module :mod:"
 "`__builtin__`::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:351
+#: ../src/Doc/tutorial/modules.rst:352
 msgid "Packages"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:353
+#: ../src/Doc/tutorial/modules.rst:354
 msgid ""
 "Packages are a way of structuring Python's module namespace by using "
 "\"dotted module names\".  For example, the module name :mod:`A.B` designates "
@@ -6715,7 +6698,7 @@ msgid ""
 "from having to worry about each other's module names."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:361
+#: ../src/Doc/tutorial/modules.rst:362
 msgid ""
 "Suppose you want to design a collection of modules (a \"package\") for the "
 "uniform handling of sound files and sound data.  There are many different "
@@ -6730,13 +6713,13 @@ msgid ""
 "terms of a hierarchical filesystem)::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:396
+#: ../src/Doc/tutorial/modules.rst:397
 msgid ""
 "When importing the package, Python searches through the directories on ``sys."
 "path`` looking for the package subdirectory."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:399
+#: ../src/Doc/tutorial/modules.rst:400
 msgid ""
 "The :file:`__init__.py` files are required to make Python treat the "
 "directories as containing packages; this is done to prevent directories with "
@@ -6747,41 +6730,41 @@ msgid ""
 "described later."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:406
+#: ../src/Doc/tutorial/modules.rst:407
 msgid ""
 "Users of the package can import individual modules from the package, for "
 "example::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:411
+#: ../src/Doc/tutorial/modules.rst:412
 msgid ""
 "This loads the submodule :mod:`sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:416
+#: ../src/Doc/tutorial/modules.rst:417
 msgid "An alternative way of importing the submodule is::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:420
+#: ../src/Doc/tutorial/modules.rst:421
 msgid ""
 "This also loads the submodule :mod:`echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:425
+#: ../src/Doc/tutorial/modules.rst:426
 msgid ""
 "Yet another variation is to import the desired function or variable "
 "directly::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:429
+#: ../src/Doc/tutorial/modules.rst:430
 msgid ""
 "Again, this loads the submodule :mod:`echo`, but this makes its function :"
 "func:`echofilter` directly available::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:434
+#: ../src/Doc/tutorial/modules.rst:435
 msgid ""
 "Note that when using ``from package import item``, the item can be either a "
 "submodule (or subpackage) of the package, or some  other name defined in the "
@@ -6791,7 +6774,7 @@ msgid ""
 "`ImportError` exception is raised."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:441
+#: ../src/Doc/tutorial/modules.rst:442
 msgid ""
 "Contrarily, when using syntax like ``import item.subitem.subsubitem``, each "
 "item except for the last must be a package; the last item can be a module or "
@@ -6799,11 +6782,11 @@ msgid ""
 "previous item."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:450
+#: ../src/Doc/tutorial/modules.rst:451
 msgid "Importing \\* From a Package"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:454
+#: ../src/Doc/tutorial/modules.rst:455
 msgid ""
 "Now what happens when the user writes ``from sound.effects import *``?  "
 "Ideally, one would hope that this somehow goes out to the filesystem, finds "
@@ -6812,7 +6795,7 @@ msgid ""
 "effects that should only happen when the sub-module is explicitly imported."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:460
+#: ../src/Doc/tutorial/modules.rst:461
 msgid ""
 "The only solution is for the package author to provide an explicit index of "
 "the package.  The :keyword:`import` statement uses the following convention: "
@@ -6825,13 +6808,13 @@ msgid ""
 "effects/__init__.py` could contain the following code::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:472
+#: ../src/Doc/tutorial/modules.rst:473
 msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
 "named submodules of the :mod:`sound` package."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:475
+#: ../src/Doc/tutorial/modules.rst:476
 msgid ""
 "If ``__all__`` is not defined, the statement ``from sound.effects import *`` "
 "does *not* import all submodules from the package :mod:`sound.effects` into "
@@ -6844,7 +6827,7 @@ msgid ""
 "code::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:488
+#: ../src/Doc/tutorial/modules.rst:489
 msgid ""
 "In this example, the :mod:`echo` and :mod:`surround` modules are imported in "
 "the current namespace because they are defined in the :mod:`sound.effects` "
@@ -6852,14 +6835,14 @@ msgid ""
 "when ``__all__`` is defined.)"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:493
+#: ../src/Doc/tutorial/modules.rst:494
 msgid ""
 "Although certain modules are designed to export only names that follow "
 "certain patterns when you use ``import *``, it is still considered bad "
 "practise in production code."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:497
+#: ../src/Doc/tutorial/modules.rst:498
 msgid ""
 "Remember, there is nothing wrong with using ``from Package import "
 "specific_submodule``!  In fact, this is the recommended notation unless the "
@@ -6867,12 +6850,12 @@ msgid ""
 "packages."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:504
+#: ../src/Doc/tutorial/modules.rst:505
 msgid "Intra-package References"
 msgstr ""
 
 # 20ba5d3273454eefa50529336214baa5
-#: ../src/Doc/tutorial/modules.rst:506
+#: ../src/Doc/tutorial/modules.rst:507
 msgid ""
 "The submodules often need to refer to each other.  For example, the :mod:"
 "`surround` module might use the :mod:`echo` module.  In fact, such "
@@ -6885,7 +6868,7 @@ msgid ""
 "name."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:515
+#: ../src/Doc/tutorial/modules.rst:516
 msgid ""
 "When packages are structured into subpackages (as with the :mod:`sound` "
 "package in the example), you can use absolute imports to refer to submodules "
@@ -6895,7 +6878,7 @@ msgid ""
 msgstr ""
 
 # 82c84536e5f94eb8ad4f365cde80af40
-#: ../src/Doc/tutorial/modules.rst:521
+#: ../src/Doc/tutorial/modules.rst:522
 msgid ""
 "Starting with Python 2.5, in addition to the implicit relative imports "
 "described above, you can write explicit relative imports with the ``from "
@@ -6906,7 +6889,7 @@ msgid ""
 msgstr ""
 
 # 0a545e217ccb4074a3817733279c812b
-#: ../src/Doc/tutorial/modules.rst:531
+#: ../src/Doc/tutorial/modules.rst:532
 msgid ""
 "Note that both explicit and implicit relative imports are based on the name "
 "of the current module. Since the name of the main module is always ``"
@@ -6914,11 +6897,11 @@ msgid ""
 "application should always use absolute imports."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:538
+#: ../src/Doc/tutorial/modules.rst:539
 msgid "Packages in Multiple Directories"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:540
+#: ../src/Doc/tutorial/modules.rst:541
 msgid ""
 "Packages support one more special attribute, :attr:`__path__`.  This is "
 "initialized to be a list containing the name of the directory holding the "
@@ -6927,14 +6910,14 @@ msgid ""
 "and subpackages contained in the package."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:546
+#: ../src/Doc/tutorial/modules.rst:547
 msgid ""
 "While this feature is not often needed, it can be used to extend the set of "
 "modules found in a package."
 msgstr ""
 
 # 718bdfb2db00454588feb7477e850abf
-#: ../src/Doc/tutorial/modules.rst:552
+#: ../src/Doc/tutorial/modules.rst:553
 msgid ""
 "In fact function definitions are also 'statements' that are 'executed'; the "
 "execution of a module-level function definition enters the function name in "
@@ -7580,6 +7563,32 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
+
+#~ msgid ""
+#~ "``f.readlines()`` returns a list containing all the lines of data in the "
+#~ "file. If given an optional parameter *sizehint*, it reads that many bytes "
+#~ "from the file and enough more to complete a line, and returns the lines "
+#~ "from that.  This is often used to allow efficient reading of a large file "
+#~ "by lines, but without having to load the entire file in memory.  Only "
+#~ "complete lines will be returned. ::"
+#~ msgstr ""
+#~ "``f.readlines()`` retourne une liste contenant toutes les lignes du "
+#~ "fichier. Si l'argument optionnel *sizehint* est fourni, la méthode lit "
+#~ "autant d'octets que le nombre indiqué, plus la quantité juste nécessaire "
+#~ "pour compléter une ligne, et retourne toutes les lignes lues. Ceci est "
+#~ "souvent utilisé pour permettre une lecture efficace d'un gros fichier par "
+#~ "lignes, mais sans avoir à charger tout le fichier en mémoire. Seules des "
+#~ "lignes entières sont retournées. ::"
+
+#~ msgid ""
+#~ "The alternative approach is simpler but does not provide as fine-grained "
+#~ "control.  Since the two approaches manage line buffering differently, "
+#~ "they should not be mixed."
+#~ msgstr ""
+#~ "Cette autre méthode est plus simple mais ne permet pas d'avoir un "
+#~ "contrôle très fin sur la lecture. Comme les deux approches gèrent la mise "
+#~ "en mémoire tampon des lignes différemment, elle ne doivent pas être "
+#~ "mélangées."
 
 # c6ce45f20f7743deb76e188301a62651
 #~ msgid ""
