@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-22 06:20\n"
+"POT-Creation-Date: 2013-05-27 05:25\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4593,28 +4593,17 @@ msgstr ""
 "fonction :c:func:`sprintf` à appliquer à l'argument de droite, et retourne "
 "la chaîne résultant de cette opération de formatage. Par exemple ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:218
-msgid ""
-"Since :meth:`str.format` is quite new, a lot of Python code still uses the ``"
-"%`` operator. However, because this old style of formatting will eventually "
-"be removed from the language, :meth:`str.format` should generally be used."
-msgstr ""
-"Comme :meth:`str.format` est relativement récente, beaucoup de code Python "
-"utilise encore l'opérateur ``%``. Toutefois, dans la mesure où cet ancien "
-"style de formatage sera peut-être à terme supprimé du langage, il vaut mieux "
-"utiliser :meth:`str.format`."
-
 # a470a92caf504e9e9abdf08789ab9890
-#: ../src/Doc/tutorial/inputoutput.rst:222
+#: ../src/Doc/tutorial/inputoutput.rst:218
 msgid "More information can be found in the :ref:`string-formatting` section."
 msgstr ""
 "Vous trouverez plus d'informations dans la section :ref:`string-formatting`."
 
-#: ../src/Doc/tutorial/inputoutput.rst:228
+#: ../src/Doc/tutorial/inputoutput.rst:224
 msgid "Reading and Writing Files"
 msgstr "Lecture et écriture de fichiers"
 
-#: ../src/Doc/tutorial/inputoutput.rst:234
+#: ../src/Doc/tutorial/inputoutput.rst:230
 msgid ""
 ":func:`open` returns a file object, and is most commonly used with two "
 "arguments: ``open(filename, mode)``."
@@ -4622,7 +4611,7 @@ msgstr ""
 ":func:`open` retourne un objet fichier, et est le plus souvent utilisé avec "
 "deux arguments : ``open(filename, mode)``."
 
-#: ../src/Doc/tutorial/inputoutput.rst:243
+#: ../src/Doc/tutorial/inputoutput.rst:239
 msgid ""
 "The first argument is a string containing the filename.  The second argument "
 "is another string containing a few characters describing the way in which "
@@ -4643,7 +4632,7 @@ msgstr ""
 "écriture. L'argument *mode* est optionnel ; sa valeur par défaut est ``'r'``."
 
 # 9ff01378e50d4134a460523dad57e264
-#: ../src/Doc/tutorial/inputoutput.rst:252
+#: ../src/Doc/tutorial/inputoutput.rst:248
 msgid ""
 "On Windows, ``'b'`` appended to the mode opens the file in binary mode, so "
 "there are also modes like ``'rb'``, ``'wb'``, and ``'r+b'``.  Python on "
@@ -4669,11 +4658,11 @@ msgstr ""
 "pouvez l'utiliser pour tous les fichiers binaires pour que votre code soit "
 "indépendant de la plate-forme."
 
-#: ../src/Doc/tutorial/inputoutput.rst:266
+#: ../src/Doc/tutorial/inputoutput.rst:262
 msgid "Methods of File Objects"
 msgstr "Méthodes des objets fichiers"
 
-#: ../src/Doc/tutorial/inputoutput.rst:268
+#: ../src/Doc/tutorial/inputoutput.rst:264
 msgid ""
 "The rest of the examples in this section will assume that a file object "
 "called ``f`` has already been created."
@@ -4682,7 +4671,7 @@ msgstr ""
 "appelé ``f`` a déjà été créé."
 
 # 2a8f9b43ebde48819bcb8e6362c55669
-#: ../src/Doc/tutorial/inputoutput.rst:271
+#: ../src/Doc/tutorial/inputoutput.rst:267
 msgid ""
 "To read a file's contents, call ``f.read(size)``, which reads some quantity "
 "of data and returns it as a string.  *size* is an optional numeric "
@@ -4701,7 +4690,7 @@ msgstr ""
 "du fichier est atteinte, ``f.read()`` renvoie une chaîne vide (``\"\"``) ::"
 
 # 1e6e90d979e44728babc12e0982b6fc4
-#: ../src/Doc/tutorial/inputoutput.rst:284
+#: ../src/Doc/tutorial/inputoutput.rst:280
 msgid ""
 "``f.readline()`` reads a single line from the file; a newline character (``"
 "\\n``) is left at the end of the string, and is only omitted on the last "
@@ -4718,7 +4707,7 @@ msgstr ""
 "atteinte, alors qu'une ligne vide est représentée par ``'\\n'``, une chaîne "
 "de caractères ne contenant qu'une fin de ligne ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:298
+#: ../src/Doc/tutorial/inputoutput.rst:294
 #, fuzzy
 msgid ""
 "For reading lines from a file, you can loop over the file object. This is "
@@ -4729,14 +4718,14 @@ msgstr ""
 "donne un code plus simple ::"
 
 # c9d2cb570f624080832cb1c22091174a
-#: ../src/Doc/tutorial/inputoutput.rst:307
+#: ../src/Doc/tutorial/inputoutput.rst:303
 msgid ""
 "If you want to read all the lines of a file in a list you can also use ``list"
 "(f)`` or ``f.readlines()``."
 msgstr ""
 
 # 0ead0c7ac8ca40f7bb963339561c47e9
-#: ../src/Doc/tutorial/inputoutput.rst:310
+#: ../src/Doc/tutorial/inputoutput.rst:306
 msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "``None``.   ::"
@@ -4744,7 +4733,7 @@ msgstr ""
 "``f.write(string)`` écrit le contenu de *string* dans le fichier, et renvoie "
 "``None`` ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:315
+#: ../src/Doc/tutorial/inputoutput.rst:311
 msgid ""
 "To write something other than a string, it needs to be converted to a string "
 "first::"
@@ -4752,7 +4741,7 @@ msgstr ""
 "Pour écrire autre chose qu'une chaîne, il faut commencer par la convertir en "
 "chaîne ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:322
+#: ../src/Doc/tutorial/inputoutput.rst:318
 msgid ""
 "``f.tell()`` returns an integer giving the file object's current position in "
 "the file, measured in bytes from the beginning of the file.  To change the "
@@ -4772,7 +4761,7 @@ msgstr ""
 "*from_what* peut être omis et sa valeur par défaut est 0, utilisant le début "
 "du fichier comme point de référence ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:340
+#: ../src/Doc/tutorial/inputoutput.rst:336
 msgid ""
 "When you're done with a file, call ``f.close()`` to close it and free up any "
 "system resources taken up by the open file.  After calling ``f.close()``, "
@@ -4783,7 +4772,7 @@ msgstr ""
 "l'appel de ``f.close()``, toute tentative d'utilisation de l'objet fichier "
 "échouera systématiquement ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:350
+#: ../src/Doc/tutorial/inputoutput.rst:346
 msgid ""
 "It is good practice to use the :keyword:`with` keyword when dealing with "
 "file objects.  This has the advantage that the file is properly closed after "
@@ -4797,7 +4786,7 @@ msgstr ""
 "beaucoup plus court que d'utiliser l'équivalent avec des blocs :keyword:`try`"
 "\\ - \\ :keyword:`finally` ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:360
+#: ../src/Doc/tutorial/inputoutput.rst:356
 msgid ""
 "File objects have some additional methods, such as :meth:`~file.isatty` and :"
 "meth:`~file.truncate` which are less frequently used; consult the Library "
@@ -4808,11 +4797,11 @@ msgstr ""
 "consultez la Référence de la Bibliothèque Standard pour avoir un guide "
 "complet des objets fichiers."
 
-#: ../src/Doc/tutorial/inputoutput.rst:368
+#: ../src/Doc/tutorial/inputoutput.rst:364
 msgid "The :mod:`pickle` Module"
 msgstr "Le module :mod:`pickle`"
 
-#: ../src/Doc/tutorial/inputoutput.rst:372
+#: ../src/Doc/tutorial/inputoutput.rst:368
 msgid ""
 "Strings can easily be written to and read from a file. Numbers take a bit "
 "more effort, since the :meth:`read` method only returns strings, which will "
@@ -4829,7 +4818,7 @@ msgstr ""
 "des types de données plus complexes comme des listes, des dictionnaires ou "
 "des instances de classes, les choses se compliquent beaucoup plus."
 
-#: ../src/Doc/tutorial/inputoutput.rst:379
+#: ../src/Doc/tutorial/inputoutput.rst:375
 msgid ""
 "Rather than have users be constantly writing and debugging code to save "
 "complicated data types, Python provides a standard module called :mod:"
@@ -4852,7 +4841,7 @@ msgstr ""
 "avoir été stockée dans un fichier ou envoyée via une connexion réseau vers "
 "une machine distante."
 
-#: ../src/Doc/tutorial/inputoutput.rst:388
+#: ../src/Doc/tutorial/inputoutput.rst:384
 msgid ""
 "If you have an object ``x``, and a file object ``f`` that's been opened for "
 "writing, the simplest way to pickle the object takes only one line of code::"
@@ -4861,7 +4850,7 @@ msgstr ""
 "écriture, la méthode la plus simple d'écrire cet objet ne prend qu'une ligne "
 "de code ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:393
+#: ../src/Doc/tutorial/inputoutput.rst:389
 msgid ""
 "To unpickle the object again, if ``f`` is a file object which has been "
 "opened for reading::"
@@ -4869,7 +4858,7 @@ msgstr ""
 "Pour reconstruire l'objet, si ``f`` est cette fois un objet fichier ouvert "
 "en lecture ::"
 
-#: ../src/Doc/tutorial/inputoutput.rst:398
+#: ../src/Doc/tutorial/inputoutput.rst:394
 msgid ""
 "(There are other variants of this, used when pickling many objects or when "
 "you don't want to write the pickled data to a file; consult the complete "
@@ -4880,7 +4869,7 @@ msgstr ""
 "fichier ; consultez la documentation complète du module :mod:`pickle` dans "
 "le Guide de Référence de la Bibliothèque Standard.)"
 
-#: ../src/Doc/tutorial/inputoutput.rst:402
+#: ../src/Doc/tutorial/inputoutput.rst:398
 msgid ""
 ":mod:`pickle` is the standard way to make Python objects which can be stored "
 "and reused by other programs or by a future invocation of the same program; "
@@ -7563,6 +7552,17 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
+
+#~ msgid ""
+#~ "Since :meth:`str.format` is quite new, a lot of Python code still uses "
+#~ "the ``%`` operator. However, because this old style of formatting will "
+#~ "eventually be removed from the language, :meth:`str.format` should "
+#~ "generally be used."
+#~ msgstr ""
+#~ "Comme :meth:`str.format` est relativement récente, beaucoup de code "
+#~ "Python utilise encore l'opérateur ``%``. Toutefois, dans la mesure où cet "
+#~ "ancien style de formatage sera peut-être à terme supprimé du langage, il "
+#~ "vaut mieux utiliser :meth:`str.format`."
 
 #~ msgid ""
 #~ "``f.readlines()`` returns a list containing all the lines of data in the "
