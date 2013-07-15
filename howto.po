@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-30 04:01\n"
+"POT-Creation-Date: 2013-07-15 04:01\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -391,7 +391,7 @@ msgstr ""
 #: ../src/Doc/howto/argparse.rst:470
 msgid ""
 "We have introduced another action, \"count\", to count the number of "
-"occurences of a specific optional arguments:"
+"occurrences of a specific optional arguments:"
 msgstr ""
 
 # da62432192934a6cbd3ce0fdc3fd852c
