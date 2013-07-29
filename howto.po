@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-15 04:01\n"
+"POT-Creation-Date: 2013-07-29 04:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5374,23 +5374,43 @@ msgid ""
 "about the keys of the dict-like object. If you need a different method, e.g. "
 "if you want to prepend or append the contextual information to the message "
 "string, you just need to subclass :class:`LoggerAdapter` and override :meth:"
-"`process` to do what you need. Here's an example script which uses this "
-"class, which also illustrates what dict-like behaviour is needed from an "
-"arbitrary 'dict-like' object for use in the constructor::"
+"`process` to do what you need. Here is a simple example::"
 msgstr ""
 
-# 1048197b22d34920b2b87af36908e51a
-#: ../src/Doc/howto/logging-cookbook.rst:512
-msgid "When this script is run, the output should look something like this::"
+# 9316b95afbff4553bb1455ac8a2b4c01
+#: ../src/Doc/howto/logging-cookbook.rst:473
+msgid "which you can use like this::"
+msgstr ""
+
+# 23bc71e9663347a6988ee8708f96350d
+#: ../src/Doc/howto/logging-cookbook.rst:478
+msgid ""
+"Then any events that you log to the adapter will have the value of "
+"``some_conn_id`` prepended to the log messages."
 msgstr ""
 
 # b7ab13928f994f7fb1e00f2e1ac655b6
-#: ../src/Doc/howto/logging-cookbook.rst:531
+#: ../src/Doc/howto/logging-cookbook.rst:482
+msgid "Using objects other than dicts to pass contextual information"
+msgstr ""
+
+# e81d1bef160145c2a5a1af939bc62037
+#: ../src/Doc/howto/logging-cookbook.rst:484
+msgid ""
+"You don't need to pass an actual dict to a :class:`LoggerAdapter` - you "
+"could pass an instance of a class which implements ``__getitem__`` and "
+"``__iter__`` so that it looks like a dict to logging. This would be useful "
+"if you want to generate values dynamically (whereas the values in a dict "
+"would be constant)."
+msgstr ""
+
+# b7ab13928f994f7fb1e00f2e1ac655b6
+#: ../src/Doc/howto/logging-cookbook.rst:493
 msgid "Using Filters to impart contextual information"
 msgstr ""
 
 # d2afe8ebb2704ca39c5993e9b9aa8ce8
-#: ../src/Doc/howto/logging-cookbook.rst:533
+#: ../src/Doc/howto/logging-cookbook.rst:495
 msgid ""
 "You can also add contextual information to log output using a user-defined :"
 "class:`Filter`. ``Filter`` instances are allowed to modify the "
@@ -5400,7 +5420,7 @@ msgid ""
 msgstr ""
 
 # a5967f54c5a6401e8a0a73f3da93d47e
-#: ../src/Doc/howto/logging-cookbook.rst:538
+#: ../src/Doc/howto/logging-cookbook.rst:500
 msgid ""
 "For example in a web application, the request being processed (or at least, "
 "the interesting parts of it) can be stored in a threadlocal (:class:"
@@ -5413,17 +5433,17 @@ msgid ""
 msgstr ""
 
 # 9316b95afbff4553bb1455ac8a2b4c01
-#: ../src/Doc/howto/logging-cookbook.rst:584
+#: ../src/Doc/howto/logging-cookbook.rst:546
 msgid "which, when run, produces something like::"
 msgstr ""
 
 # 4dba03e90f9e4ef1835d31b361d4947a
-#: ../src/Doc/howto/logging-cookbook.rst:603
+#: ../src/Doc/howto/logging-cookbook.rst:565
 msgid "Logging to a single file from multiple processes"
 msgstr ""
 
 # 37465a7d39014454b6a67ffb1ddf9d93
-#: ../src/Doc/howto/logging-cookbook.rst:605
+#: ../src/Doc/howto/logging-cookbook.rst:567
 msgid ""
 "Although logging is thread-safe, and logging to a single file from multiple "
 "threads in a single process *is* supported, logging to a single file from "
@@ -5440,7 +5460,7 @@ msgid ""
 msgstr ""
 
 # 6c93640a937f4825b71d902736677003
-#: ../src/Doc/howto/logging-cookbook.rst:618
+#: ../src/Doc/howto/logging-cookbook.rst:580
 msgid ""
 "If you are using a recent version of Python which includes the :mod:"
 "`multiprocessing` module, you could write your own handler which uses the :"
@@ -5453,12 +5473,12 @@ msgid ""
 msgstr ""
 
 # 148f7bd8dfc74335a2ba74848ddbf233
-#: ../src/Doc/howto/logging-cookbook.rst:631
+#: ../src/Doc/howto/logging-cookbook.rst:593
 msgid "Using file rotation"
 msgstr ""
 
 # 735c7d997b6441e189640ed352f6e9c7
-#: ../src/Doc/howto/logging-cookbook.rst:636
+#: ../src/Doc/howto/logging-cookbook.rst:598
 msgid ""
 "Sometimes you want to let a log file grow to a certain size, then open a new "
 "file and log to that. You may want to keep a certain number of these files, "
@@ -5468,14 +5488,14 @@ msgid ""
 msgstr ""
 
 # 3f25aaca339c4b03b5e93093dfd51cd7
-#: ../src/Doc/howto/logging-cookbook.rst:668
+#: ../src/Doc/howto/logging-cookbook.rst:630
 msgid ""
 "The result should be 6 separate files, each with part of the log history for "
 "the application::"
 msgstr ""
 
 # dcde1ba2e5a84247819f964678e9948c
-#: ../src/Doc/howto/logging-cookbook.rst:678
+#: ../src/Doc/howto/logging-cookbook.rst:640
 msgid ""
 "The most current file is always :file:`logging_rotatingfile_example.out`, "
 "and each time it reaches the size limit it is renamed with the suffix "
@@ -5484,19 +5504,19 @@ msgid ""
 msgstr ""
 
 # 7233ec1669a44294a05ce2061985a22a
-#: ../src/Doc/howto/logging-cookbook.rst:683
+#: ../src/Doc/howto/logging-cookbook.rst:645
 msgid ""
 "Obviously this example sets the log length much too small as an extreme "
 "example.  You would want to set *maxBytes* to an appropriate value."
 msgstr ""
 
 # 0a6c71c9fbdc42c6b076ace75960a935
-#: ../src/Doc/howto/logging-cookbook.rst:687
+#: ../src/Doc/howto/logging-cookbook.rst:649
 msgid "An example dictionary-based configuration"
 msgstr ""
 
 # 98716e710eee4013b7f910bdcc805a2f
-#: ../src/Doc/howto/logging-cookbook.rst:689
+#: ../src/Doc/howto/logging-cookbook.rst:651
 msgid ""
 "Below is an example of a logging configuration dictionary - it's taken from "
 "the `documentation on the Django project <https://docs.djangoproject.com/"
@@ -5505,7 +5525,7 @@ msgid ""
 msgstr ""
 
 # d6557a9605484f1db1163ee13b579a07
-#: ../src/Doc/howto/logging-cookbook.rst:745
+#: ../src/Doc/howto/logging-cookbook.rst:707
 msgid ""
 "For more information about this configuration, you can see the `relevant "
 "section <https://docs.djangoproject.com/en/1.3/topics/logging/#configuring-"
@@ -5513,12 +5533,12 @@ msgid ""
 msgstr ""
 
 # 8e06eb031f914417b9cc192f019908b0
-#: ../src/Doc/howto/logging-cookbook.rst:750
+#: ../src/Doc/howto/logging-cookbook.rst:712
 msgid "Inserting a BOM into messages sent to a SysLogHandler"
 msgstr ""
 
 # 9005d64c4e514f45907665af78dd4e3c
-#: ../src/Doc/howto/logging-cookbook.rst:752
+#: ../src/Doc/howto/logging-cookbook.rst:714
 msgid ""
 "`RFC 5424 <http://tools.ietf.org/html/rfc5424>`_ requires that a Unicode "
 "message be sent to a syslog daemon as a set of bytes which have the "
@@ -5529,7 +5549,7 @@ msgid ""
 msgstr ""
 
 # bc7217561a084ee2be1f776e926b809b
-#: ../src/Doc/howto/logging-cookbook.rst:758
+#: ../src/Doc/howto/logging-cookbook.rst:720
 msgid ""
 "In Python 2.6 and 2.7, code was added to :class:`~logging.handlers."
 "SysLogHandler` to insert a BOM into the message, but unfortunately, it was "
@@ -5538,7 +5558,7 @@ msgid ""
 msgstr ""
 
 # 45afc2aaa85d4baaab52e127881f5de2
-#: ../src/Doc/howto/logging-cookbook.rst:764
+#: ../src/Doc/howto/logging-cookbook.rst:726
 msgid ""
 "As this behaviour is broken, the incorrect BOM insertion code is being "
 "removed from Python 2.7.4 and later. However, it is not being replaced, and "
@@ -5548,21 +5568,21 @@ msgid ""
 msgstr ""
 
 # 01bc166a6b9e4f9dafd3630988f930f4
-#: ../src/Doc/howto/logging-cookbook.rst:770
+#: ../src/Doc/howto/logging-cookbook.rst:732
 msgid ""
 "Attach a :class:`~logging.Formatter` instance to your :class:`~logging."
 "handlers.SysLogHandler` instance, with a format string such as::"
 msgstr ""
 
 # 0b13247194d7497096e313fa273bb8f9
-#: ../src/Doc/howto/logging-cookbook.rst:776
+#: ../src/Doc/howto/logging-cookbook.rst:738
 msgid ""
 "The Unicode code point ``u'\\ufeff'``, when encoded using UTF-8, will be "
 "encoded as a UTF-8 BOM -- the byte-string ``'\\xef\\xbb\\xbf'``."
 msgstr ""
 
 # 1baa721b6f894e18924bb49539aece78
-#: ../src/Doc/howto/logging-cookbook.rst:779
+#: ../src/Doc/howto/logging-cookbook.rst:741
 msgid ""
 "Replace the ASCII section with whatever placeholders you like, but make sure "
 "that the data that appears in there after substitution is always ASCII (that "
@@ -5570,7 +5590,7 @@ msgid ""
 msgstr ""
 
 # 39da5b688cb34daa8d2724e58a163924
-#: ../src/Doc/howto/logging-cookbook.rst:783
+#: ../src/Doc/howto/logging-cookbook.rst:745
 msgid ""
 "Replace the Unicode section with whatever placeholders you like; if the data "
 "which appears there after substitution contains characters outside the ASCII "
@@ -5578,7 +5598,7 @@ msgid ""
 msgstr ""
 
 # 563aa68eaa3844419e017beec419601c
-#: ../src/Doc/howto/logging-cookbook.rst:787
+#: ../src/Doc/howto/logging-cookbook.rst:749
 msgid ""
 "If the formatted message is Unicode, it *will* be encoded using UTF-8 "
 "encoding by ``SysLogHandler``. If you follow the above rules, you should be "
@@ -5588,12 +5608,12 @@ msgid ""
 msgstr ""
 
 # 0d8560d1498f4c6ca61453cad525e91b
-#: ../src/Doc/howto/logging-cookbook.rst:795
+#: ../src/Doc/howto/logging-cookbook.rst:757
 msgid "Implementing structured logging"
 msgstr ""
 
 # 62bce27fb80a44d484ad24911feda140
-#: ../src/Doc/howto/logging-cookbook.rst:797
+#: ../src/Doc/howto/logging-cookbook.rst:759
 msgid ""
 "Although most logging messages are intended for reading by humans, and thus "
 "not readily machine-parseable, there might be cirumstances where you want to "
@@ -5606,28 +5626,28 @@ msgid ""
 msgstr ""
 
 # d8e16a2c93764297b5221734eb03d6ea
-#: ../src/Doc/howto/logging-cookbook.rst:821
+#: ../src/Doc/howto/logging-cookbook.rst:783
 msgid "If the above script is run, it prints::"
 msgstr ""
 
 # f20b3a7bba7c4657972e45a86bbc4b45
 # 9e6574c13a474001a7b68b02043c52d5
-#: ../src/Doc/howto/logging-cookbook.rst:825
-#: ../src/Doc/howto/logging-cookbook.rst:872
+#: ../src/Doc/howto/logging-cookbook.rst:787
+#: ../src/Doc/howto/logging-cookbook.rst:834
 msgid ""
 "Note that the order of items might be different according to the version of "
 "Python used."
 msgstr ""
 
 # 4dff3c2a5e2044c6ac210738690ac934
-#: ../src/Doc/howto/logging-cookbook.rst:828
+#: ../src/Doc/howto/logging-cookbook.rst:790
 msgid ""
 "If you need more specialised processing, you can use a custom JSON encoder, "
 "as in the following complete example::"
 msgstr ""
 
 # 1a7bdf84caba47cebdbefa1ffa3c403f
-#: ../src/Doc/howto/logging-cookbook.rst:868
+#: ../src/Doc/howto/logging-cookbook.rst:830
 msgid "When the above script is run, it prints::"
 msgstr ""
 
@@ -8464,16 +8484,6 @@ msgstr ""
 
 #: ../src/Doc/howto/sockets.rst:22
 msgid ""
-"Sockets are used nearly everywhere, but are one of the most severely "
-"misunderstood technologies around. This is a 10,000 foot overview of "
-"sockets. It's not really a tutorial - you'll still have work to do in "
-"getting things working. It doesn't cover the fine points (and there are a "
-"lot of them), but I hope it will give you enough background to begin using "
-"them decently."
-msgstr ""
-
-#: ../src/Doc/howto/sockets.rst:28
-msgid ""
 "I'm only going to talk about INET sockets, but they account for at least 99% "
 "of the sockets in use. And I'll only talk about STREAM sockets - unless you "
 "really know what you're doing (in which case this HOWTO isn't for you!), "
@@ -8484,7 +8494,7 @@ msgid ""
 "they work before dealing with non-blocking sockets."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:37
+#: ../src/Doc/howto/sockets.rst:31
 msgid ""
 "Part of the trouble with understanding these things is that \"socket\" can "
 "mean a number of subtly different things, depending on context. So first, "
@@ -8495,12 +8505,12 @@ msgid ""
 "sockets and \"client\" sockets."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:46
+#: ../src/Doc/howto/sockets.rst:40
 msgid "History"
 msgstr ""
 
 # e7871668004045188ed6c94e54d4efbe
-#: ../src/Doc/howto/sockets.rst:48
+#: ../src/Doc/howto/sockets.rst:42
 msgid ""
 "Of the various forms of :abbr:`IPC (Inter Process Communication)`, sockets "
 "are by far the most popular.  On any given platform, there are likely to be "
@@ -8508,7 +8518,7 @@ msgid ""
 "sockets are about the only game in town."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:53
+#: ../src/Doc/howto/sockets.rst:47
 msgid ""
 "They were invented in Berkeley as part of the BSD flavor of Unix. They "
 "spread like wildfire with the Internet. With good reason --- the combination "
@@ -8516,18 +8526,18 @@ msgid ""
 "unbelievably easy (at least compared to other schemes)."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:60
+#: ../src/Doc/howto/sockets.rst:54
 msgid "Creating a Socket"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:62
+#: ../src/Doc/howto/sockets.rst:56
 msgid ""
 "Roughly speaking, when you clicked on the link that brought you to this "
 "page, your browser did something like the following::"
 msgstr ""
 
 # 3905ece01e6441f8afc1e6c38e889cb8
-#: ../src/Doc/howto/sockets.rst:72
+#: ../src/Doc/howto/sockets.rst:66
 msgid ""
 "When the ``connect`` completes, the socket ``s`` can be used to send in a "
 "request for the text of the page. The same socket will read the reply, and "
@@ -8536,14 +8546,14 @@ msgid ""
 msgstr ""
 
 # ecb0daa4451d445a931574c5b45b359a
-#: ../src/Doc/howto/sockets.rst:78
+#: ../src/Doc/howto/sockets.rst:72
 msgid ""
 "What happens in the web server is a bit more complex. First, the web server "
 "creates a \"server socket\"::"
 msgstr ""
 
 # db84be2f300245108ba171f533a0cff2
-#: ../src/Doc/howto/sockets.rst:90
+#: ../src/Doc/howto/sockets.rst:84
 msgid ""
 "A couple things to notice: we used ``socket.gethostname()`` so that the "
 "socket would be visible to the outside world.  If we had used ``s.bind"
@@ -8553,14 +8563,14 @@ msgid ""
 "the machine happens to have."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:97
+#: ../src/Doc/howto/sockets.rst:91
 msgid ""
 "A second thing to note: low number ports are usually reserved for \"well "
 "known\" services (HTTP, SNMP etc). If you're playing around, use a nice high "
 "number (4 digits)."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:101
+#: ../src/Doc/howto/sockets.rst:95
 msgid ""
 "Finally, the argument to ``listen`` tells the socket library that we want it "
 "to queue up as many as 5 connect requests (the normal max) before refusing "
@@ -8569,13 +8579,13 @@ msgid ""
 msgstr ""
 
 # e55626a58ce64ac2ac88801517904a73
-#: ../src/Doc/howto/sockets.rst:105
+#: ../src/Doc/howto/sockets.rst:99
 msgid ""
 "Now that we have a \"server\" socket, listening on port 80, we can enter the "
 "mainloop of the web server::"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:116
+#: ../src/Doc/howto/sockets.rst:110
 msgid ""
 "There's actually 3 general ways in which this loop could work - dispatching "
 "a thread to handle ``clientsocket``, create a new process to handle "
@@ -8591,11 +8601,11 @@ msgid ""
 "allocated port which will be recycled when the conversation ends."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:131
+#: ../src/Doc/howto/sockets.rst:125
 msgid "IPC"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:133
+#: ../src/Doc/howto/sockets.rst:127
 msgid ""
 "If you need fast IPC between two processes on one machine, you should look "
 "into whatever form of shared memory the platform offers. A simple protocol "
@@ -8603,18 +8613,18 @@ msgid ""
 "technique."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:137
+#: ../src/Doc/howto/sockets.rst:131
 msgid ""
 "If you do decide to use sockets, bind the \"server\" socket to "
 "``'localhost'``. On most platforms, this will take a shortcut around a "
 "couple of layers of network code and be quite a bit faster."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:143
+#: ../src/Doc/howto/sockets.rst:137
 msgid "Using a Socket"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:145
+#: ../src/Doc/howto/sockets.rst:139
 msgid ""
 "The first thing to note, is that the web browser's \"client\" socket and the "
 "web server's \"client\" socket are identical beasts. That is, this is a "
@@ -8626,7 +8636,7 @@ msgid ""
 msgstr ""
 
 # 729d651ca80e4c2d8717cbcad950867e
-#: ../src/Doc/howto/sockets.rst:152
+#: ../src/Doc/howto/sockets.rst:146
 msgid ""
 "Now there are two sets of verbs to use for communication. You can use "
 "``send`` and ``recv``, or you can transform your client socket into a file-"
@@ -8639,7 +8649,7 @@ msgid ""
 msgstr ""
 
 # dae25367caed44448f8e02023b0bbd6e
-#: ../src/Doc/howto/sockets.rst:161
+#: ../src/Doc/howto/sockets.rst:155
 msgid ""
 "Now we come to the major stumbling block of sockets - ``send`` and ``recv`` "
 "operate on the network buffers. They do not necessarily handle all the bytes "
@@ -8651,7 +8661,7 @@ msgid ""
 msgstr ""
 
 # dfdbac43752945419feccf97f87cc592
-#: ../src/Doc/howto/sockets.rst:169
+#: ../src/Doc/howto/sockets.rst:163
 msgid ""
 "When a ``recv`` returns 0 bytes, it means the other side has closed (or is "
 "in the process of closing) the connection.  You will not receive any more "
@@ -8660,7 +8670,7 @@ msgid ""
 msgstr ""
 
 # 3c37b186079d4ecd88dfc56883717ae4
-#: ../src/Doc/howto/sockets.rst:174
+#: ../src/Doc/howto/sockets.rst:168
 msgid ""
 "A protocol like HTTP uses a socket for only one transfer. The client sends a "
 "request, then reads a reply.  That's it. The socket is discarded. This means "
@@ -8668,7 +8678,7 @@ msgid ""
 msgstr ""
 
 # 47de6a40b8db48a0a0cf1df2e33902a3
-#: ../src/Doc/howto/sockets.rst:178
+#: ../src/Doc/howto/sockets.rst:172
 msgid ""
 "But if you plan to reuse your socket for further transfers, you need to "
 "realize that *there is no* :abbr:`EOT (End of Transfer)` *on a socket.* I "
@@ -8682,13 +8692,13 @@ msgid ""
 "choice is entirely yours, (but some ways are righter than others)."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:189
+#: ../src/Doc/howto/sockets.rst:183
 msgid ""
 "Assuming you don't want to end the connection, the simplest solution is a "
 "fixed length message::"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:224
+#: ../src/Doc/howto/sockets.rst:218
 msgid ""
 "The sending code here is usable for almost any messaging scheme - in Python "
 "you send strings, and you can use ``len()`` to determine its length (even if "
@@ -8697,7 +8707,7 @@ msgid ""
 "``strlen`` if the message has embedded ``\\0``\\ s.)"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:230
+#: ../src/Doc/howto/sockets.rst:224
 msgid ""
 "The easiest enhancement is to make the first character of the message an "
 "indicator of message type, and have the type determine the length. Now you "
@@ -8708,7 +8718,7 @@ msgid ""
 "sizes), and scanning what you've received for a delimiter."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:238
+#: ../src/Doc/howto/sockets.rst:232
 msgid ""
 "One complication to be aware of: if your conversational protocol allows "
 "multiple messages to be sent back to back (without some kind of reply), and "
@@ -8717,7 +8727,7 @@ msgid ""
 "until it's needed."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:244
+#: ../src/Doc/howto/sockets.rst:238
 msgid ""
 "Prefixing the message with it's length (say, as 5 numeric characters) gets "
 "more complex, because (believe it or not), you may not get all 5 characters "
@@ -8729,18 +8739,18 @@ msgid ""
 "read this, you will eventually get bit by it!"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:253
+#: ../src/Doc/howto/sockets.rst:247
 msgid ""
 "In the interests of space, building your character, (and preserving my "
 "competitive position), these enhancements are left as an exercise for the "
 "reader. Lets move on to cleaning up."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:259
+#: ../src/Doc/howto/sockets.rst:253
 msgid "Binary Data"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:261
+#: ../src/Doc/howto/sockets.rst:255
 msgid ""
 "It is perfectly possible to send binary data over a socket. The major "
 "problem is that not all machines use the same formats for binary data. For "
@@ -8753,7 +8763,7 @@ msgid ""
 "reversed, these swap the bytes around appropriately."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:271
+#: ../src/Doc/howto/sockets.rst:265
 msgid ""
 "In these days of 32 bit machines, the ascii representation of binary data is "
 "frequently smaller than the binary representation. That's because a "
@@ -8762,11 +8772,11 @@ msgid ""
 "doesn't fit well with fixed-length messages. Decisions, decisions."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:279
+#: ../src/Doc/howto/sockets.rst:273
 msgid "Disconnecting"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:281
+#: ../src/Doc/howto/sockets.rst:275
 msgid ""
 "Strictly speaking, you're supposed to use ``shutdown`` on a socket before "
 "you ``close`` it.  The ``shutdown`` is an advisory to the socket at the "
@@ -8778,7 +8788,7 @@ msgid ""
 "``shutdown`` is not needed."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:289
+#: ../src/Doc/howto/sockets.rst:283
 msgid ""
 "One way to use ``shutdown`` effectively is in an HTTP-like exchange. The "
 "client sends a request and then does a ``shutdown(1)``. This tells the "
@@ -8788,7 +8798,7 @@ msgid ""
 "successfully then, indeed, the client was still receiving."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:296
+#: ../src/Doc/howto/sockets.rst:290
 msgid ""
 "Python takes the automatic shutdown a step further, and says that when a "
 "socket is garbage collected, it will automatically do a ``close`` if it's "
@@ -8798,11 +8808,11 @@ msgid ""
 "sockets when you're done."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:304
+#: ../src/Doc/howto/sockets.rst:298
 msgid "When Sockets Die"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:306
+#: ../src/Doc/howto/sockets.rst:300
 msgid ""
 "Probably the worst thing about using blocking sockets is what happens when "
 "the other side comes down hard (without doing a ``close``). Your socket is "
@@ -8817,12 +8827,12 @@ msgid ""
 "to kill the thread, your whole process is likely to be screwed up."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:320
+#: ../src/Doc/howto/sockets.rst:314
 msgid "Non-blocking Sockets"
 msgstr ""
 
 # 9eef3c101097417da3a048634c989364
-#: ../src/Doc/howto/sockets.rst:322
+#: ../src/Doc/howto/sockets.rst:316
 msgid ""
 "If you've understood the preceding, you already know most of what you need "
 "to know about the mechanics of using sockets. You'll still use the same "
@@ -8830,7 +8840,7 @@ msgid ""
 "will be almost inside-out."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:327
+#: ../src/Doc/howto/sockets.rst:321
 msgid ""
 "In Python, you use ``socket.setblocking(0)`` to make it non-blocking. In C, "
 "it's more complex, (for one thing, you'll need to choose between the BSD "
@@ -8840,7 +8850,7 @@ msgid ""
 "it. (Actually, if you're nuts, you can switch back and forth.)"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:334
+#: ../src/Doc/howto/sockets.rst:328
 msgid ""
 "The major mechanical difference is that ``send``, ``recv``, ``connect`` and "
 "``accept`` can return without having done anything. You have (of course) a "
@@ -8850,19 +8860,19 @@ msgid ""
 "and do it right."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:341
+#: ../src/Doc/howto/sockets.rst:335
 msgid "Use ``select``."
 msgstr ""
 
 # 7793785b92b841b587d2381b06c5d5d8
-#: ../src/Doc/howto/sockets.rst:343
+#: ../src/Doc/howto/sockets.rst:337
 msgid ""
 "In C, coding ``select`` is fairly complex. In Python, it's a piece of cake, "
 "but it's close enough to the C version that if you understand ``select`` in "
 "Python, you'll have little trouble with it in C::"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:354
+#: ../src/Doc/howto/sockets.rst:348
 msgid ""
 "You pass ``select`` three lists: the first contains all sockets that you "
 "might want to try reading; the second all the sockets you might want to try "
@@ -8874,14 +8884,14 @@ msgid ""
 msgstr ""
 
 # a343bae8dd47414082af0aefab04f924
-#: ../src/Doc/howto/sockets.rst:362
+#: ../src/Doc/howto/sockets.rst:356
 msgid ""
 "In return, you will get three lists. They contain the sockets that are "
 "actually readable, writable and in error. Each of these lists is a subset "
 "(possibly empty) of the corresponding list you passed in."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:366
+#: ../src/Doc/howto/sockets.rst:360
 msgid ""
 "If a socket is in the output readable list, you can be as-close-to-certain-"
 "as-we-ever-get-in-this-business that a ``recv`` on that socket will return "
@@ -8891,7 +8901,7 @@ msgid ""
 "it just means outbound network buffer space is available.)"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:373
+#: ../src/Doc/howto/sockets.rst:367
 msgid ""
 "If you have a \"server\" socket, put it in the potential_readers list. If it "
 "comes out in the readable list, your ``accept`` will (almost certainly) "
@@ -8900,7 +8910,7 @@ msgid ""
 "have a decent chance that it has connected."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:379
+#: ../src/Doc/howto/sockets.rst:373
 msgid ""
 "One very nasty problem with ``select``: if somewhere in those input lists of "
 "sockets is one which has died a nasty death, the ``select`` will fail. You "
@@ -8909,7 +8919,7 @@ msgid ""
 "means it won't take long, but it's ugly."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:385
+#: ../src/Doc/howto/sockets.rst:379
 msgid ""
 "Actually, ``select`` can be handy even with blocking sockets. It's one way "
 "of determining whether you will block - the socket returns as readable when "
@@ -8918,7 +8928,7 @@ msgid ""
 "something else."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:390
+#: ../src/Doc/howto/sockets.rst:384
 msgid ""
 "**Portability alert**: On Unix, ``select`` works both with the sockets and "
 "files. Don't try this on Windows. On Windows, ``select`` works with sockets "
@@ -8928,11 +8938,11 @@ msgid ""
 "performance, your code will look very different on Windows than on Unix."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:399
+#: ../src/Doc/howto/sockets.rst:393
 msgid "Performance"
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:401
+#: ../src/Doc/howto/sockets.rst:395
 msgid ""
 "There's no question that the fastest sockets code uses non-blocking sockets "
 "and select to multiplex them. You can put together something that will "
@@ -8941,7 +8951,7 @@ msgid ""
 "be ready to shuffle bytes around at all times."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:407
+#: ../src/Doc/howto/sockets.rst:401
 msgid ""
 "Assuming that your app is actually supposed to do something more than that, "
 "threading is the optimal solution, (and using non-blocking sockets will be "
@@ -8954,7 +8964,7 @@ msgid ""
 "memory and semaphores, to communicate between the parent and child processes."
 msgstr ""
 
-#: ../src/Doc/howto/sockets.rst:417
+#: ../src/Doc/howto/sockets.rst:411
 msgid ""
 "Finally, remember that even though blocking sockets are somewhat slower than "
 "non-blocking, in many cases they are the \"right\" solution. After all, if "

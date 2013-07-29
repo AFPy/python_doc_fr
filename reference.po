@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-13 04:20\n"
+"POT-Creation-Date: 2013-07-29 04:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -563,7 +563,7 @@ msgstr ""
 #: ../src/Doc/reference/datamodel.rst:2493
 #: ../src/Doc/reference/executionmodel.rst:244
 #: ../src/Doc/reference/expressions.rst:1402
-#: ../src/Doc/reference/lexical_analysis.rst:762
+#: ../src/Doc/reference/lexical_analysis.rst:761
 #: ../src/Doc/reference/simple_stmts.rst:1035
 msgid "Footnotes"
 msgstr ""
@@ -6170,21 +6170,19 @@ msgstr ""
 msgid ""
 "Any Unicode character can be encoded this way, but characters outside the "
 "Basic Multilingual Plane (BMP) will be encoded using a surrogate pair if "
-"Python is compiled to use 16-bit code units (the default).  Individual code "
-"units which form parts of a surrogate pair can be encoded using this escape "
-"sequence."
+"Python is compiled to use 16-bit code units (the default)."
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:536
+#: ../src/Doc/reference/lexical_analysis.rst:535
 msgid "As in Standard C, up to three octal digits are accepted."
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:539
+#: ../src/Doc/reference/lexical_analysis.rst:538
 msgid "Unlike in Standard C, exactly two hex digits are required."
 msgstr ""
 
 # c562272031604ce7846cfaa72b57e53d
-#: ../src/Doc/reference/lexical_analysis.rst:542
+#: ../src/Doc/reference/lexical_analysis.rst:541
 msgid ""
 "In a string literal, hexadecimal and octal escapes denote the byte with the "
 "given value; it is not necessary that the byte encodes a character in the "
@@ -6193,7 +6191,7 @@ msgid ""
 msgstr ""
 
 # 37834ad46b5b4ee59f30a42aa000e431
-#: ../src/Doc/reference/lexical_analysis.rst:549
+#: ../src/Doc/reference/lexical_analysis.rst:548
 msgid ""
 "Unlike Standard C, all unrecognized escape sequences are left in the string "
 "unchanged, i.e., *the backslash is left in the string*.  (This behavior is "
@@ -6205,7 +6203,7 @@ msgid ""
 msgstr ""
 
 # 9a687abe55404e9db2254e908f8297d5
-#: ../src/Doc/reference/lexical_analysis.rst:556
+#: ../src/Doc/reference/lexical_analysis.rst:555
 msgid ""
 "When an ``'r'`` or ``'R'`` prefix is present, a character following a "
 "backslash is included in the string without change, and *all backslashes are "
@@ -6222,7 +6220,7 @@ msgid ""
 msgstr ""
 
 # 85b7b6ec93944e388e05375ffc261670
-#: ../src/Doc/reference/lexical_analysis.rst:569
+#: ../src/Doc/reference/lexical_analysis.rst:568
 msgid ""
 "When an ``'r'`` or ``'R'`` prefix is used in conjunction with a ``'u'`` or "
 "``'U'`` prefix, then the ``\\uXXXX`` and ``\\UXXXXXXXX`` escape sequences "
@@ -6234,12 +6232,12 @@ msgid ""
 "only recognized when there are an odd number of backslashes."
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:582
+#: ../src/Doc/reference/lexical_analysis.rst:581
 msgid "String literal concatenation"
 msgstr ""
 
 # 8f4fe024a66c4ff38450b2af60534fac
-#: ../src/Doc/reference/lexical_analysis.rst:584
+#: ../src/Doc/reference/lexical_analysis.rst:583
 msgid ""
 "Multiple adjacent string literals (delimited by whitespace), possibly using "
 "different quoting conventions, are allowed, and their meaning is the same as "
@@ -6249,7 +6247,7 @@ msgid ""
 "even to add comments to parts of strings, for example::"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:595
+#: ../src/Doc/reference/lexical_analysis.rst:594
 msgid ""
 "Note that this feature is defined at the syntactical level, but implemented "
 "at compile time.  The '+' operator must be used to concatenate string "
@@ -6258,12 +6256,12 @@ msgid ""
 "triple quoted strings)."
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:604
+#: ../src/Doc/reference/lexical_analysis.rst:603
 msgid "Numeric literals"
 msgstr ""
 
 # b1ca99ce19b44661ac2c1fa9336cf51f
-#: ../src/Doc/reference/lexical_analysis.rst:620
+#: ../src/Doc/reference/lexical_analysis.rst:619
 msgid ""
 "There are four types of numeric literals: plain integers, long integers, "
 "floating point numbers, and imaginary numbers.  There are no complex "
@@ -6271,7 +6269,7 @@ msgid ""
 "imaginary number)."
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:624
+#: ../src/Doc/reference/lexical_analysis.rst:623
 msgid ""
 "Note that numeric literals do not include a sign; a phrase like ``-1`` is "
 "actually an expression composed of the unary operator '``-``' and the "
@@ -6279,19 +6277,19 @@ msgid ""
 msgstr ""
 
 # 2630a70d118e4304882901ea0b40dc70
-#: ../src/Doc/reference/lexical_analysis.rst:632
+#: ../src/Doc/reference/lexical_analysis.rst:631
 msgid "Integer and long integer literals"
 msgstr ""
 
 # d63a46fd72e646feb3ecac87055de7a8
-#: ../src/Doc/reference/lexical_analysis.rst:634
+#: ../src/Doc/reference/lexical_analysis.rst:633
 msgid ""
 "Integer and long integer literals are described by the following lexical "
 "definitions:"
 msgstr ""
 
 # 207bd3c36bf2442e8b8cef52ca85be2d
-#: ../src/Doc/reference/lexical_analysis.rst:649
+#: ../src/Doc/reference/lexical_analysis.rst:648
 msgid ""
 "Although both lower case ``'l'`` and upper case ``'L'`` are allowed as "
 "suffix for long integers, it is strongly recommended to always use ``'L'``, "
@@ -6299,7 +6297,7 @@ msgid ""
 msgstr ""
 
 # db00372895a94badbde0a7e05eb8a465
-#: ../src/Doc/reference/lexical_analysis.rst:653
+#: ../src/Doc/reference/lexical_analysis.rst:652
 msgid ""
 "Plain integer literals that are above the largest representable plain "
 "integer (e.g., 2147483647 when using 32-bit arithmetic) are accepted as if "
@@ -6308,23 +6306,23 @@ msgid ""
 msgstr ""
 
 # c74f962ce1d847efabe2c3becb1afab5
-#: ../src/Doc/reference/lexical_analysis.rst:658
+#: ../src/Doc/reference/lexical_analysis.rst:657
 msgid ""
 "Some examples of plain integer literals (first row) and long integer "
 "literals (second and third rows)::"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:669
+#: ../src/Doc/reference/lexical_analysis.rst:668
 msgid "Floating point literals"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:671
+#: ../src/Doc/reference/lexical_analysis.rst:670
 msgid ""
 "Floating point literals are described by the following lexical definitions:"
 msgstr ""
 
 # 5484f9ee6bde46f991385b6c7fe70e70
-#: ../src/Doc/reference/lexical_analysis.rst:681
+#: ../src/Doc/reference/lexical_analysis.rst:680
 msgid ""
 "Note that the integer and exponent parts of floating point numbers can look "
 "like octal integers, but are interpreted using radix 10.  For example, "
@@ -6333,22 +6331,22 @@ msgid ""
 "of floating point literals::"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:689
+#: ../src/Doc/reference/lexical_analysis.rst:688
 msgid ""
 "Note that numeric literals do not include a sign; a phrase like ``-1`` is "
 "actually an expression composed of the unary operator ``-`` and the literal "
 "``1``."
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:697
+#: ../src/Doc/reference/lexical_analysis.rst:696
 msgid "Imaginary literals"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:699
+#: ../src/Doc/reference/lexical_analysis.rst:698
 msgid "Imaginary literals are described by the following lexical definitions:"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:704
+#: ../src/Doc/reference/lexical_analysis.rst:703
 msgid ""
 "An imaginary literal yields a complex number with a real part of 0.0.  "
 "Complex numbers are represented as a pair of floating point numbers and have "
@@ -6357,31 +6355,31 @@ msgid ""
 "Some examples of imaginary literals::"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:716
+#: ../src/Doc/reference/lexical_analysis.rst:715
 msgid "Operators"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:720
+#: ../src/Doc/reference/lexical_analysis.rst:719
 msgid "The following tokens are operators::"
 msgstr ""
 
 # 057b9f62aeca41fcb31bf75e65a03a93
-#: ../src/Doc/reference/lexical_analysis.rst:726
+#: ../src/Doc/reference/lexical_analysis.rst:725
 msgid ""
 "The comparison operators ``<>`` and ``!=`` are alternate spellings of the "
 "same operator.  ``!=`` is the preferred spelling; ``<>`` is obsolescent."
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:733
+#: ../src/Doc/reference/lexical_analysis.rst:732
 msgid "Delimiters"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:737
+#: ../src/Doc/reference/lexical_analysis.rst:736
 msgid "The following tokens serve as delimiters in the grammar::"
 msgstr ""
 
 # 30485b65400b4fd786a9a4cf3ba3f038
-#: ../src/Doc/reference/lexical_analysis.rst:744
+#: ../src/Doc/reference/lexical_analysis.rst:743
 msgid ""
 "The period can also occur in floating-point and imaginary literals.  A "
 "sequence of three periods has a special meaning as an ellipsis in slices. "
@@ -6389,20 +6387,20 @@ msgid ""
 "lexically as delimiters, but also perform an operation."
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:749
+#: ../src/Doc/reference/lexical_analysis.rst:748
 msgid ""
 "The following printing ASCII characters have special meaning as part of "
 "other tokens or are otherwise significant to the lexical analyzer::"
 msgstr ""
 
-#: ../src/Doc/reference/lexical_analysis.rst:756
+#: ../src/Doc/reference/lexical_analysis.rst:755
 msgid ""
 "The following printing ASCII characters are not used in Python.  Their "
 "occurrence outside string literals and comments is an unconditional error::"
 msgstr ""
 
 # d6a8ef39a0874fe79851fe442b5c962c
-#: ../src/Doc/reference/lexical_analysis.rst:763
+#: ../src/Doc/reference/lexical_analysis.rst:762
 msgid ""
 "In versions of Python prior to 2.4, octal and hexadecimal literals in the "
 "range just above the largest representable plain integer but below the "
