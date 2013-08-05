@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-20 04:15\n"
+"POT-Creation-Date: 2013-08-05 04:44\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3036,14 +3036,16 @@ msgid ""
 "object *C* until it returns *sentinel* to signal that the iterator is done."
 msgstr ""
 
+# 7b7989094d354beeab0ba4a3515646f3
 #: ../src/Doc/whatsnew/2.2.rst:450
 msgid ""
 "Python classes can define an :meth:`__iter__` method, which should create "
 "and return a new iterator for the object; if the object is its own iterator, "
 "this method can just return ``self``.  In particular, iterators will usually "
-"be their own iterators.  Extension types implemented in C can implement a :"
-"attr:`tp_iter` function in order to return an iterator, and extension types "
-"that want to behave as iterators can define a :attr:`tp_iternext` function."
+"be their own iterators.  Extension types implemented in C can implement a :c:"
+"member:`~PyTypeObject.tp_iter` function in order to return an iterator, and "
+"extension types that want to behave as iterators can define a :c:member:"
+"`~PyTypeObject.tp_iternext` function."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:457
@@ -3054,15 +3056,17 @@ msgid ""
 "raise the :exc:`StopIteration` exception. ::"
 msgstr ""
 
+# 04854cb943c9489e981393c6c0503d83
 #: ../src/Doc/whatsnew/2.2.rst:478
 msgid ""
 "In 2.2, Python's :keyword:`for` statement no longer expects a sequence; it "
 "expects something for which :func:`iter` will return an iterator. For "
 "backward compatibility and convenience, an iterator is automatically "
-"constructed for sequences that don't implement :meth:`__iter__` or a :attr:"
-"`tp_iter` slot, so ``for i in [1,2,3]`` will still work.  Wherever the "
-"Python interpreter loops over a sequence, it's been changed to use the "
-"iterator protocol.  This means you can do things like this::"
+"constructed for sequences that don't implement :meth:`__iter__` or a :c:"
+"member:`~PyTypeObject.tp_iter` slot, so ``for i in [1,2,3]`` will still "
+"work.  Wherever the Python interpreter loops over a sequence, it's been "
+"changed to use the iterator protocol.  This means you can do things like "
+"this::"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:492

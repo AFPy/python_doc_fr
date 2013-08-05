@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-15 06:40\n"
+"POT-Creation-Date: 2013-08-05 04:44\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,8 +74,8 @@ msgid ""
 "Allocate a new Python object using the C structure type *TYPE* and the "
 "Python type object *type*.  Fields not defined by the Python object header "
 "are not initialized; the object's reference count will be one.  The size of "
-"the memory allocation is determined from the :attr:`tp_basicsize` field of "
-"the type object."
+"the memory allocation is determined from the :c:member:`~PyTypeObject."
+"tp_basicsize` field of the type object."
 msgstr ""
 
 # fb7d11b064e6492e9cacc2759e2cf73c
@@ -84,20 +84,21 @@ msgid ""
 "Allocate a new Python object using the C structure type *TYPE* and the "
 "Python type object *type*.  Fields not defined by the Python object header "
 "are not initialized.  The allocated memory allows for the *TYPE* structure "
-"plus *size* fields of the size given by the :attr:`tp_itemsize` field of "
-"*type*.  This is useful for implementing objects like tuples, which are able "
-"to determine their size at construction time.  Embedding the array of fields "
-"into the same allocation decreases the number of allocations, improving the "
-"memory management efficiency."
+"plus *size* fields of the size given by the :c:member:`~PyTypeObject."
+"tp_itemsize` field of *type*.  This is useful for implementing objects like "
+"tuples, which are able to determine their size at construction time.  "
+"Embedding the array of fields into the same allocation decreases the number "
+"of allocations, improving the memory management efficiency."
 msgstr ""
 
 # 203fabdbc207494185117fc38ddf1fa1
 #: ../src/Doc/c-api/allocation.rst:68
 msgid ""
 "Releases memory allocated to an object using :c:func:`PyObject_New` or :c:"
-"func:`PyObject_NewVar`.  This is normally called from the :attr:`tp_dealloc` "
-"handler specified in the object's type.  The fields of the object should not "
-"be accessed after this call as the memory is no longer a valid Python object."
+"func:`PyObject_NewVar`.  This is normally called from the :c:member:"
+"`~PyTypeObject.tp_dealloc` handler specified in the object's type.  The "
+"fields of the object should not be accessed after this call as the memory is "
+"no longer a valid Python object."
 msgstr ""
 
 # cfe90294645e4c309b47f76cd0091ed8
@@ -5057,12 +5058,14 @@ msgid ""
 "for garbage collection."
 msgstr ""
 
+# 1edfa2df4afd476c9f491817647d1547
 #: ../src/Doc/c-api/gcsupport.rst:18
 msgid ""
-"To create a container type, the :attr:`tp_flags` field of the type object "
-"must include the :const:`Py_TPFLAGS_HAVE_GC` and provide an implementation "
-"of the :attr:`tp_traverse` handler.  If instances of the type are mutable, "
-"a :attr:`tp_clear` implementation must also be provided."
+"To create a container type, the :c:member:`~PyTypeObject.tp_flags` field of "
+"the type object must include the :const:`Py_TPFLAGS_HAVE_GC` and provide an "
+"implementation of the :c:member:`~PyTypeObject.tp_traverse` handler.  If "
+"instances of the type are mutable, a :c:member:`~PyTypeObject.tp_clear` "
+"implementation must also be provided."
 msgstr ""
 
 #: ../src/Doc/c-api/gcsupport.rst:27
@@ -5117,8 +5120,8 @@ msgid ""
 "Adds the object *op* to the set of container objects tracked by the "
 "collector.  The collector can run at unexpected times so objects must be "
 "valid while being tracked.  This should be called once all the fields "
-"followed by the :attr:`tp_traverse` handler become valid, usually near the "
-"end of the constructor."
+"followed by the :c:member:`~PyTypeObject.tp_traverse` handler become valid, "
+"usually near the end of the constructor."
 msgstr ""
 
 # 463de6236e2a438f99df9962ea5c29f0
@@ -5160,8 +5163,9 @@ msgid ""
 "Remove the object *op* from the set of container objects tracked by the "
 "collector.  Note that :c:func:`PyObject_GC_Track` can be called again on "
 "this object to add it back to the set of tracked objects.  The deallocator (:"
-"attr:`tp_dealloc` handler) should call this for the object before any of the "
-"fields used by the :attr:`tp_traverse` handler become invalid."
+"c:member:`~PyTypeObject.tp_dealloc` handler) should call this for the object "
+"before any of the fields used by the :c:member:`~PyTypeObject.tp_traverse` "
+"handler become invalid."
 msgstr ""
 
 # 9aa66b523fd7496bb2516d90a6faebff
@@ -5171,23 +5175,29 @@ msgid ""
 "extension modules."
 msgstr ""
 
+# 56cc59f0697d4af7ac54d409e6d4589b
 #: ../src/Doc/c-api/gcsupport.rst:109
 msgid ""
-"The :attr:`tp_traverse` handler accepts a function parameter of this type:"
+"The :c:member:`~PyTypeObject.tp_traverse` handler accepts a function "
+"parameter of this type:"
 msgstr ""
 
 # ec4e7c76955848c38c822508f655e344
 #: ../src/Doc/c-api/gcsupport.rst:114
 msgid ""
-"Type of the visitor function passed to the :attr:`tp_traverse` handler. The "
-"function should be called with an object to traverse as *object* and the "
-"third parameter to the :attr:`tp_traverse` handler as *arg*.  The Python "
-"core uses several visitor functions to implement cyclic garbage detection; "
-"it's not expected that users will need to write their own visitor functions."
+"Type of the visitor function passed to the :c:member:`~PyTypeObject."
+"tp_traverse` handler. The function should be called with an object to "
+"traverse as *object* and the third parameter to the :c:member:`~PyTypeObject."
+"tp_traverse` handler as *arg*.  The Python core uses several visitor "
+"functions to implement cyclic garbage detection; it's not expected that "
+"users will need to write their own visitor functions."
 msgstr ""
 
+# 4577b81c7750441695dc6dd92b0330ff
 #: ../src/Doc/c-api/gcsupport.rst:121
-msgid "The :attr:`tp_traverse` handler must have the following type:"
+msgid ""
+"The :c:member:`~PyTypeObject.tp_traverse` handler must have the following "
+"type:"
 msgstr ""
 
 # b75ca9dec8064d55bf2c94c76f287770
@@ -5204,24 +5214,25 @@ msgstr ""
 # 5f9da0be74594dd2952f02ec24f0c906
 #: ../src/Doc/c-api/gcsupport.rst:133
 msgid ""
-"To simplify writing :attr:`tp_traverse` handlers, a :c:func:`Py_VISIT` macro "
-"is provided.  In order to use this macro, the :attr:`tp_traverse` "
-"implementation must name its arguments exactly *visit* and *arg*:"
+"To simplify writing :c:member:`~PyTypeObject.tp_traverse` handlers, a :c:"
+"func:`Py_VISIT` macro is provided.  In order to use this macro, the :c:"
+"member:`~PyTypeObject.tp_traverse` implementation must name its arguments "
+"exactly *visit* and *arg*:"
 msgstr ""
 
 # fdbcdbd60fff489fb8ab51ade52ad6c6
 #: ../src/Doc/c-api/gcsupport.rst:140
 msgid ""
 "Call the *visit* callback, with arguments *o* and *arg*. If *visit* returns "
-"a non-zero value, then return it.  Using this macro, :attr:`tp_traverse` "
-"handlers look like::"
+"a non-zero value, then return it.  Using this macro, :c:member:"
+"`~PyTypeObject.tp_traverse` handlers look like::"
 msgstr ""
 
 # 59157513a429409fb210a6097f6bbf04
 #: ../src/Doc/c-api/gcsupport.rst:154
 msgid ""
-"The :attr:`tp_clear` handler must be of the :c:type:`inquiry` type, or "
-"*NULL* if the object is immutable."
+"The :c:member:`~PyTypeObject.tp_clear` handler must be of the :c:type:"
+"`inquiry` type, or *NULL* if the object is immutable."
 msgstr ""
 
 # 48c6e050579f4969897f49d820d28d77
@@ -11223,9 +11234,9 @@ msgstr ""
 #: ../src/Doc/c-api/structures.rst:295
 msgid ""
 "Return a bound method object for an extension type implemented in C.  This "
-"can be useful in the implementation of a :attr:`tp_getattro` or :attr:"
-"`tp_getattr` handler that does not use the :c:func:`PyObject_GenericGetAttr` "
-"function."
+"can be useful in the implementation of a :c:member:`~PyTypeObject."
+"tp_getattro` or :c:member:`~PyTypeObject.tp_getattr` handler that does not "
+"use the :c:func:`PyObject_GenericGetAttr` function."
 msgstr ""
 
 #: ../src/Doc/c-api/sys.rst:6
@@ -11626,8 +11637,9 @@ msgid ""
 "The type object structure extends the :c:type:`PyVarObject` structure. The :"
 "attr:`ob_size` field is used for dynamic types (created by  :func:"
 "`type_new`, usually called from a class statement). Note that :c:data:"
-"`PyType_Type` (the metatype) initializes :attr:`tp_itemsize`, which means "
-"that its instances (i.e. type objects) *must* have the :attr:`ob_size` field."
+"`PyType_Type` (the metatype) initializes :c:member:`~PyTypeObject."
+"tp_itemsize`, which means that its instances (i.e. type objects) *must* have "
+"the :attr:`ob_size` field."
 msgstr ""
 
 # 2b91ac0c471a43b09359d34116148383
@@ -11713,8 +11725,8 @@ msgid ""
 "types, it should be just the type name.  If the module is a submodule of a "
 "package, the full package name is part of the full module name.  For "
 "example, a type named :class:`T` defined in module :mod:`M` in subpackage :"
-"mod:`Q` in package :mod:`P` should have the :attr:`tp_name` initializer ``"
-"\"P.Q.M.T\"``."
+"mod:`Q` in package :mod:`P` should have the :c:member:`~PyTypeObject."
+"tp_name` initializer ``\"P.Q.M.T\"``."
 msgstr ""
 
 # 820e82f7a0e44f3088f63298409ad428
@@ -11737,10 +11749,11 @@ msgstr ""
 # a3fd6c2d0a814a94b878baa54d3d4706
 #: ../src/Doc/c-api/typeobj.rst:122
 msgid ""
-"If no dot is present, the entire :attr:`tp_name` field is made accessible as "
-"the :attr:`__name__` attribute, and the :attr:`__module__` attribute is "
-"undefined (unless explicitly set in the dictionary, as explained above).  "
-"This means your type will be impossible to pickle."
+"If no dot is present, the entire :c:member:`~PyTypeObject.tp_name` field is "
+"made accessible as the :attr:`__name__` attribute, and the :attr:"
+"`__module__` attribute is undefined (unless explicitly set in the "
+"dictionary, as explained above).  This means your type will be impossible to "
+"pickle."
 msgstr ""
 
 # 885c6c4bd127418ca87fadfb399918dd
@@ -11753,24 +11766,25 @@ msgstr ""
 #: ../src/Doc/c-api/typeobj.rst:135
 msgid ""
 "There are two kinds of types: types with fixed-length instances have a zero :"
-"attr:`tp_itemsize` field, types with variable-length instances have a non-"
-"zero :attr:`tp_itemsize` field.  For a type with fixed-length instances, all "
-"instances have the same size, given in :attr:`tp_basicsize`."
+"c:member:`~PyTypeObject.tp_itemsize` field, types with variable-length "
+"instances have a non-zero :c:member:`~PyTypeObject.tp_itemsize` field.  For "
+"a type with fixed-length instances, all instances have the same size, given "
+"in :c:member:`~PyTypeObject.tp_basicsize`."
 msgstr ""
 
 # 2f90d4a58dbf48259414219a8955945c
 #: ../src/Doc/c-api/typeobj.rst:140
 msgid ""
 "For a type with variable-length instances, the instances must have an :attr:"
-"`ob_size` field, and the instance size is :attr:`tp_basicsize` plus N times :"
-"attr:`tp_itemsize`, where N is the \"length\" of the object.  The value of N "
-"is typically stored in the instance's :attr:`ob_size` field.  There are "
-"exceptions:  for example, long ints use a negative :attr:`ob_size` to "
-"indicate a negative number, and N is ``abs(ob_size)`` there.  Also, the "
-"presence of an :attr:`ob_size` field in the instance layout doesn't mean "
-"that the instance structure is variable-length (for example, the structure "
-"for the list type has fixed-length instances, yet those instances have a "
-"meaningful :attr:`ob_size` field)."
+"`ob_size` field, and the instance size is :c:member:`~PyTypeObject."
+"tp_basicsize` plus N times :c:member:`~PyTypeObject.tp_itemsize`, where N is "
+"the \"length\" of the object.  The value of N is typically stored in the "
+"instance's :attr:`ob_size` field.  There are exceptions:  for example, long "
+"ints use a negative :attr:`ob_size` to indicate a negative number, and N is "
+"``abs(ob_size)`` there.  Also, the presence of an :attr:`ob_size` field in "
+"the instance layout doesn't mean that the instance structure is variable-"
+"length (for example, the structure for the list type has fixed-length "
+"instances, yet those instances have a meaningful :attr:`ob_size` field)."
 msgstr ""
 
 # 8eb8f0e4d3f14243b360216b7fd746ff
@@ -11780,30 +11794,32 @@ msgid ""
 "macro:`PyObject_HEAD` or :c:macro:`PyObject_VAR_HEAD` (whichever is used to "
 "declare the instance struct) and this in turn includes the :attr:`_ob_prev` "
 "and :attr:`_ob_next` fields if they are present.  This means that the only "
-"correct way to get an initializer for the :attr:`tp_basicsize` is to use the "
-"``sizeof`` operator on the struct used to declare the instance layout. The "
-"basic size does not include the GC header size (this is new in Python 2.2; "
-"in 2.1 and 2.0, the GC header size was included in :attr:`tp_basicsize`)."
+"correct way to get an initializer for the :c:member:`~PyTypeObject."
+"tp_basicsize` is to use the ``sizeof`` operator on the struct used to "
+"declare the instance layout. The basic size does not include the GC header "
+"size (this is new in Python 2.2; in 2.1 and 2.0, the GC header size was "
+"included in :c:member:`~PyTypeObject.tp_basicsize`)."
 msgstr ""
 
 # 0a39390337064d218d4e1dbac476decb
 #: ../src/Doc/c-api/typeobj.rst:160
 msgid ""
 "These fields are inherited separately by subtypes.  If the base type has a "
-"non-zero :attr:`tp_itemsize`, it is generally not safe to set :attr:"
-"`tp_itemsize` to a different non-zero value in a subtype (though this "
-"depends on the implementation of the base type)."
+"non-zero :c:member:`~PyTypeObject.tp_itemsize`, it is generally not safe to "
+"set :c:member:`~PyTypeObject.tp_itemsize` to a different non-zero value in a "
+"subtype (though this depends on the implementation of the base type)."
 msgstr ""
 
 # 965d91dffe4243dcb7dafbe7b98496e4
 #: ../src/Doc/c-api/typeobj.rst:165
 msgid ""
 "A note about alignment: if the variable items require a particular "
-"alignment, this should be taken care of by the value of :attr:"
-"`tp_basicsize`.  Example: suppose a type implements an array of ``double``. :"
-"attr:`tp_itemsize` is ``sizeof(double)``. It is the programmer's "
-"responsibility that :attr:`tp_basicsize` is a multiple of ``sizeof(double)`` "
-"(assuming this is the alignment requirement for ``double``)."
+"alignment, this should be taken care of by the value of :c:member:"
+"`~PyTypeObject.tp_basicsize`.  Example: suppose a type implements an array "
+"of ``double``. :c:member:`~PyTypeObject.tp_itemsize` is ``sizeof(double)``. "
+"It is the programmer's responsibility that :c:member:`~PyTypeObject."
+"tp_basicsize` is a multiple of ``sizeof(double)`` (assuming this is the "
+"alignment requirement for ``double``)."
 msgstr ""
 
 # 02bbd63629ac43dab5c47d00a8c49ac7
@@ -11823,14 +11839,15 @@ msgid ""
 "destructor function should free all references which the instance owns, free "
 "all memory buffers owned by the instance (using the freeing function "
 "corresponding to the allocation function used to allocate the buffer), and "
-"finally (as its last action) call the type's :attr:`tp_free` function.  If "
-"the type is not subtypable (doesn't have the :const:`Py_TPFLAGS_BASETYPE` "
-"flag bit set), it is permissible to call the object deallocator directly "
-"instead of via :attr:`tp_free`.  The object deallocator should be the one "
-"used to allocate the instance; this is normally :c:func:`PyObject_Del` if "
-"the instance was allocated using :c:func:`PyObject_New` or :c:func:"
-"`PyObject_VarNew`, or :c:func:`PyObject_GC_Del` if the instance was "
-"allocated using :c:func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar`."
+"finally (as its last action) call the type's :c:member:`~PyTypeObject."
+"tp_free` function.  If the type is not subtypable (doesn't have the :const:"
+"`Py_TPFLAGS_BASETYPE` flag bit set), it is permissible to call the object "
+"deallocator directly instead of via :c:member:`~PyTypeObject.tp_free`.  The "
+"object deallocator should be the one used to allocate the instance; this is "
+"normally :c:func:`PyObject_Del` if the instance was allocated using :c:func:"
+"`PyObject_New` or :c:func:`PyObject_VarNew`, or :c:func:`PyObject_GC_Del` if "
+"the instance was allocated using :c:func:`PyObject_GC_New` or :c:func:"
+"`PyObject_GC_NewVar`."
 msgstr ""
 
 # 67fcbc9460cd42f4ac97148cce8777e2
@@ -11861,11 +11878,12 @@ msgstr ""
 msgid ""
 "The print function is only called when the instance is printed to a *real* "
 "file; when it is printed to a pseudo-file (like a :class:`StringIO` "
-"instance), the instance's :attr:`tp_repr` or :attr:`tp_str` function is "
-"called to convert it to a string.  These are also called when the type's :"
-"attr:`tp_print` field is *NULL*.  A type should never implement :attr:"
-"`tp_print` in a way that produces different output than :attr:`tp_repr` or :"
-"attr:`tp_str` would."
+"instance), the instance's :c:member:`~PyTypeObject.tp_repr` or :c:member:"
+"`~PyTypeObject.tp_str` function is called to convert it to a string.  These "
+"are also called when the type's :c:member:`~PyTypeObject.tp_print` field is "
+"*NULL*.  A type should never implement :c:member:`~PyTypeObject.tp_print` in "
+"a way that produces different output than :c:member:`~PyTypeObject.tp_repr` "
+"or :c:member:`~PyTypeObject.tp_str` would."
 msgstr ""
 
 # 51962a6e9b87439993381eaca9a1fae3
@@ -11877,18 +11895,20 @@ msgid ""
 "the stdio file to which it is to be printed.  The *flags* argument is "
 "composed of flag bits. The only flag bit currently defined is :const:"
 "`Py_PRINT_RAW`. When the :const:`Py_PRINT_RAW` flag bit is set, the instance "
-"should be printed the same way as :attr:`tp_str` would format it; when the :"
-"const:`Py_PRINT_RAW` flag bit is clear, the instance should be printed the "
-"same was as :attr:`tp_repr` would format it. It should return ``-1`` and set "
-"an exception condition when an error occurred during the comparison."
+"should be printed the same way as :c:member:`~PyTypeObject.tp_str` would "
+"format it; when the :const:`Py_PRINT_RAW` flag bit is clear, the instance "
+"should be printed the same was as :c:member:`~PyTypeObject.tp_repr` would "
+"format it. It should return ``-1`` and set an exception condition when an "
+"error occurred during the comparison."
 msgstr ""
 
 # ce7a9d7c08bb4852a41e53828d0777e3
 #: ../src/Doc/c-api/typeobj.rst:219
 msgid ""
-"It is possible that the :attr:`tp_print` field will be deprecated. In any "
-"case, it is recommended not to define :attr:`tp_print`, but instead to rely "
-"on :attr:`tp_repr` and :attr:`tp_str` for printing."
+"It is possible that the :c:member:`~PyTypeObject.tp_print` field will be "
+"deprecated. In any case, it is recommended not to define :c:member:"
+"`~PyTypeObject.tp_print`, but instead to rely on :c:member:`~PyTypeObject."
+"tp_repr` and :c:member:`~PyTypeObject.tp_str` for printing."
 msgstr ""
 
 # 48a583440e4440fdb17c5d07c6b44804
@@ -11900,18 +11920,20 @@ msgstr ""
 #: ../src/Doc/c-api/typeobj.rst:230
 msgid ""
 "This field is deprecated.  When it is defined, it should point to a function "
-"that acts the same as the :attr:`tp_getattro` function, but taking a C "
-"string instead of a Python string object to give the attribute name.  The "
-"signature is the same as for :c:func:`PyObject_GetAttrString`."
+"that acts the same as the :c:member:`~PyTypeObject.tp_getattro` function, "
+"but taking a C string instead of a Python string object to give the "
+"attribute name.  The signature is the same as for :c:func:"
+"`PyObject_GetAttrString`."
 msgstr ""
 
 # 8879c6a98af84535bdb99563b3d7173b
 #: ../src/Doc/c-api/typeobj.rst:235
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_getattro`: a "
-"subtype inherits both :attr:`tp_getattr` and :attr:`tp_getattro` from its "
-"base type when the subtype's :attr:`tp_getattr` and :attr:`tp_getattro` are "
-"both *NULL*."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_getattro`: a subtype inherits both :c:member:`~PyTypeObject.tp_getattr` "
+"and :c:member:`~PyTypeObject.tp_getattro` from its base type when the "
+"subtype's :c:member:`~PyTypeObject.tp_getattr` and :c:member:`~PyTypeObject."
+"tp_getattro` are both *NULL*."
 msgstr ""
 
 # e71ee36a0ec14f10bf88a0bff25ceccd
@@ -11923,18 +11945,20 @@ msgstr ""
 #: ../src/Doc/c-api/typeobj.rst:244
 msgid ""
 "This field is deprecated.  When it is defined, it should point to a function "
-"that acts the same as the :attr:`tp_setattro` function, but taking a C "
-"string instead of a Python string object to give the attribute name.  The "
-"signature is the same as for :c:func:`PyObject_SetAttrString`."
+"that acts the same as the :c:member:`~PyTypeObject.tp_setattro` function, "
+"but taking a C string instead of a Python string object to give the "
+"attribute name.  The signature is the same as for :c:func:"
+"`PyObject_SetAttrString`."
 msgstr ""
 
 # 6d818199419a49129c1c7ead3579ac44
 #: ../src/Doc/c-api/typeobj.rst:249
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_setattro`: a "
-"subtype inherits both :attr:`tp_setattr` and :attr:`tp_setattro` from its "
-"base type when the subtype's :attr:`tp_setattr` and :attr:`tp_setattro` are "
-"both *NULL*."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_setattro`: a subtype inherits both :c:member:`~PyTypeObject.tp_setattr` "
+"and :c:member:`~PyTypeObject.tp_setattro` from its base type when the "
+"subtype's :c:member:`~PyTypeObject.tp_setattr` and :c:member:`~PyTypeObject."
+"tp_setattro` are both *NULL*."
 msgstr ""
 
 # e047d38962b247c1a42460c1d4611dbd
@@ -11954,10 +11978,12 @@ msgstr ""
 # 3caa9f41d6a44952ae011ecef4070c80
 #: ../src/Doc/c-api/typeobj.rst:263
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_richcompare` "
-"and :attr:`tp_hash`: a subtypes inherits all three of :attr:`tp_compare`, :"
-"attr:`tp_richcompare`, and :attr:`tp_hash` when the subtype's :attr:"
-"`tp_compare`, :attr:`tp_richcompare`, and :attr:`tp_hash` are all *NULL*."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_richcompare` and :c:member:`~PyTypeObject.tp_hash`: a subtypes inherits "
+"all three of :c:member:`~PyTypeObject.tp_compare`, :c:member:`~PyTypeObject."
+"tp_richcompare`, and :c:member:`~PyTypeObject.tp_hash` when the subtype's :c:"
+"member:`~PyTypeObject.tp_compare`, :c:member:`~PyTypeObject.tp_richcompare`, "
+"and :c:member:`~PyTypeObject.tp_hash` are all *NULL*."
 msgstr ""
 
 # ba37fe5e689d491d9b05d88fd4720268
@@ -11997,8 +12023,8 @@ msgstr ""
 # be0986b0fa6e4c619e003b9f157888f4
 #: ../src/Doc/c-api/typeobj.rst:295
 msgid ""
-"The :attr:`tp_as_number` field is not inherited, but the contained fields "
-"are inherited individually."
+"The :c:member:`~PyTypeObject.tp_as_number` field is not inherited, but the "
+"contained fields are inherited individually."
 msgstr ""
 
 # 8bfe1899a6a446b2b8f4040a2e91fc0e
@@ -12012,8 +12038,8 @@ msgstr ""
 # 9768a000e2d042929fa4ab21b5f6fc24
 #: ../src/Doc/c-api/typeobj.rst:305
 msgid ""
-"The :attr:`tp_as_sequence` field is not inherited, but the contained fields "
-"are inherited individually."
+"The :c:member:`~PyTypeObject.tp_as_sequence` field is not inherited, but the "
+"contained fields are inherited individually."
 msgstr ""
 
 # 73edcfc48d8c42a7abb072d8b531bd19
@@ -12027,8 +12053,8 @@ msgstr ""
 # c014e4d524c649e6b6a7e24d4dc1bba5
 #: ../src/Doc/c-api/typeobj.rst:315
 msgid ""
-"The :attr:`tp_as_mapping` field is not inherited, but the contained fields "
-"are inherited individually."
+"The :c:member:`~PyTypeObject.tp_as_mapping` field is not inherited, but the "
+"contained fields are inherited individually."
 msgstr ""
 
 # 0f6e4f5d828a48e0aecbd7a8f78b9770
@@ -12062,20 +12088,21 @@ msgstr ""
 # 24f467d3b8854057afbd313f8e30ad1d
 #: ../src/Doc/c-api/typeobj.rst:339
 msgid ""
-"When this field is not set, two possibilities exist: if the :attr:"
-"`tp_compare` and :attr:`tp_richcompare` fields are both *NULL*, a default "
-"hash value based on the object's address is returned; otherwise, a :exc:"
-"`TypeError` is raised."
+"When this field is not set, two possibilities exist: if the :c:member:"
+"`~PyTypeObject.tp_compare` and :c:member:`~PyTypeObject.tp_richcompare` "
+"fields are both *NULL*, a default hash value based on the object's address "
+"is returned; otherwise, a :exc:`TypeError` is raised."
 msgstr ""
 
 # 1053253ea6434055a7d8e8c7d6dd3b6c
 #: ../src/Doc/c-api/typeobj.rst:343
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_richcompare` "
-"and :attr:`tp_compare`: a subtypes inherits all three of :attr:"
-"`tp_compare`, :attr:`tp_richcompare`, and :attr:`tp_hash`, when the "
-"subtype's :attr:`tp_compare`, :attr:`tp_richcompare` and :attr:`tp_hash` are "
-"all *NULL*."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_richcompare` and :c:member:`~PyTypeObject.tp_compare`: a subtypes "
+"inherits all three of :c:member:`~PyTypeObject.tp_compare`, :c:member:"
+"`~PyTypeObject.tp_richcompare`, and :c:member:`~PyTypeObject.tp_hash`, when "
+"the subtype's :c:member:`~PyTypeObject.tp_compare`, :c:member:`~PyTypeObject."
+"tp_richcompare` and :c:member:`~PyTypeObject.tp_hash` are all *NULL*."
 msgstr ""
 
 # 0bb27deb9af04ec28465ebfb2ff7ee1b
@@ -12128,10 +12155,11 @@ msgstr ""
 # 91a8ba9c29b044e980972a1906db1f36
 #: ../src/Doc/c-api/typeobj.rst:384
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_getattr`: a "
-"subtype inherits both :attr:`tp_getattr` and :attr:`tp_getattro` from its "
-"base type when the subtype's :attr:`tp_getattr` and :attr:`tp_getattro` are "
-"both *NULL*."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_getattr`: a subtype inherits both :c:member:`~PyTypeObject.tp_getattr` "
+"and :c:member:`~PyTypeObject.tp_getattro` from its base type when the "
+"subtype's :c:member:`~PyTypeObject.tp_getattr` and :c:member:`~PyTypeObject."
+"tp_getattro` are both *NULL*."
 msgstr ""
 
 # 109d3c906b244ebc88e081abc5d2562d
@@ -12150,10 +12178,11 @@ msgstr ""
 # 81a1a4605e204d6882d1e0b10a3a78ce
 #: ../src/Doc/c-api/typeobj.rst:397
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_setattr`: a "
-"subtype inherits both :attr:`tp_setattr` and :attr:`tp_setattro` from its "
-"base type when the subtype's :attr:`tp_setattr` and :attr:`tp_setattro` are "
-"both *NULL*."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_setattr`: a subtype inherits both :c:member:`~PyTypeObject.tp_setattr` "
+"and :c:member:`~PyTypeObject.tp_setattro` from its base type when the "
+"subtype's :c:member:`~PyTypeObject.tp_setattr` and :c:member:`~PyTypeObject."
+"tp_setattro` are both *NULL*."
 msgstr ""
 
 # c0803890d1384ef8a1c1723c6d80d962
@@ -12167,8 +12196,8 @@ msgstr ""
 # 83c10dc1c97548bcb5f3a3896101db70
 #: ../src/Doc/c-api/typeobj.rst:408
 msgid ""
-"The :attr:`tp_as_buffer` field is not inherited, but the contained fields "
-"are inherited individually."
+"The :c:member:`~PyTypeObject.tp_as_buffer` field is not inherited, but the "
+"contained fields are inherited individually."
 msgstr ""
 
 # 256ab99cdd1f4bc2a9f18552e34abe73
@@ -12176,11 +12205,12 @@ msgstr ""
 msgid ""
 "This field is a bit mask of various flags.  Some flags indicate variant "
 "semantics for certain situations; others are used to indicate that certain "
-"fields in the type object (or in the extension structures referenced via :"
-"attr:`tp_as_number`, :attr:`tp_as_sequence`, :attr:`tp_as_mapping`, and :"
-"attr:`tp_as_buffer`) that were historically not always present are valid; if "
-"such a flag bit is clear, the type fields it guards must not be accessed and "
-"must be considered to have a zero or *NULL* value instead."
+"fields in the type object (or in the extension structures referenced via :c:"
+"member:`~PyTypeObject.tp_as_number`, :c:member:`~PyTypeObject."
+"tp_as_sequence`, :c:member:`~PyTypeObject.tp_as_mapping`, and :c:member:"
+"`~PyTypeObject.tp_as_buffer`) that were historically not always present are "
+"valid; if such a flag bit is clear, the type fields it guards must not be "
+"accessed and must be considered to have a zero or *NULL* value instead."
 msgstr ""
 
 # 0d7139de9d5b44a2bdcfc685f74c5ecd
@@ -12192,34 +12222,36 @@ msgid ""
 "strictly inherited if the extension structure is inherited, i.e. the base "
 "type's value of the flag bit is copied into the subtype together with a "
 "pointer to the extension structure.  The :const:`Py_TPFLAGS_HAVE_GC` flag "
-"bit is inherited together with the :attr:`tp_traverse` and :attr:`tp_clear` "
-"fields, i.e. if the :const:`Py_TPFLAGS_HAVE_GC` flag bit is clear in the "
-"subtype and the :attr:`tp_traverse` and :attr:`tp_clear` fields in the "
-"subtype exist (as indicated by the :const:`Py_TPFLAGS_HAVE_RICHCOMPARE` flag "
-"bit) and have *NULL* values."
+"bit is inherited together with the :c:member:`~PyTypeObject.tp_traverse` "
+"and :c:member:`~PyTypeObject.tp_clear` fields, i.e. if the :const:"
+"`Py_TPFLAGS_HAVE_GC` flag bit is clear in the subtype and the :c:member:"
+"`~PyTypeObject.tp_traverse` and :c:member:`~PyTypeObject.tp_clear` fields in "
+"the subtype exist (as indicated by the :const:`Py_TPFLAGS_HAVE_RICHCOMPARE` "
+"flag bit) and have *NULL* values."
 msgstr ""
 
 # b35a98b2704a4b25a2402b5ed1e8d0f5
 #: ../src/Doc/c-api/typeobj.rst:434
 msgid ""
 "The following bit masks are currently defined; these can be ORed together "
-"using the ``|`` operator to form the value of the :attr:`tp_flags` field.  "
-"The macro :c:func:`PyType_HasFeature` takes a type and a flags value, *tp* "
-"and *f*, and checks whether ``tp->tp_flags & f`` is non-zero."
+"using the ``|`` operator to form the value of the :c:member:`~PyTypeObject."
+"tp_flags` field.  The macro :c:func:`PyType_HasFeature` takes a type and a "
+"flags value, *tp* and *f*, and checks whether ``tp->tp_flags & f`` is non-"
+"zero."
 msgstr ""
 
 # c5cfd9bae80c4298a2a2cc4e04f4007c
 #: ../src/Doc/c-api/typeobj.rst:442
 msgid ""
-"If this bit is set, the :c:type:`PyBufferProcs` struct referenced by :attr:"
-"`tp_as_buffer` has the :attr:`bf_getcharbuffer` field."
+"If this bit is set, the :c:type:`PyBufferProcs` struct referenced by :c:"
+"member:`~PyTypeObject.tp_as_buffer` has the :attr:`bf_getcharbuffer` field."
 msgstr ""
 
 # 99c9a0513052447d9e7768a94f6dc1e7
 #: ../src/Doc/c-api/typeobj.rst:448
 msgid ""
-"If this bit is set, the :c:type:`PySequenceMethods` struct referenced by :"
-"attr:`tp_as_sequence` has the :attr:`sq_contains` field."
+"If this bit is set, the :c:type:`PySequenceMethods` struct referenced by :c:"
+"member:`~PyTypeObject.tp_as_sequence` has the :attr:`sq_contains` field."
 msgstr ""
 
 # e40cab43776942f88b03c3b981c860aa
@@ -12232,29 +12264,29 @@ msgstr ""
 # 39b65657f488479987a9050192df9134
 #: ../src/Doc/c-api/typeobj.rst:460
 msgid ""
-"If this bit is set, the :c:type:`PySequenceMethods` struct referenced by :"
-"attr:`tp_as_sequence` and the :c:type:`PyNumberMethods` structure referenced "
-"by :attr:`tp_as_number` contain the fields for in-place operators. In "
-"particular, this means that the :c:type:`PyNumberMethods` structure has the "
-"fields :attr:`nb_inplace_add`, :attr:`nb_inplace_subtract`, :attr:"
-"`nb_inplace_multiply`, :attr:`nb_inplace_divide`, :attr:"
-"`nb_inplace_remainder`, :attr:`nb_inplace_power`, :attr:"
-"`nb_inplace_lshift`, :attr:`nb_inplace_rshift`, :attr:`nb_inplace_and`, :"
-"attr:`nb_inplace_xor`, and :attr:`nb_inplace_or`; and the :c:type:"
-"`PySequenceMethods` struct has the fields :attr:`sq_inplace_concat` and :"
-"attr:`sq_inplace_repeat`."
+"If this bit is set, the :c:type:`PySequenceMethods` struct referenced by :c:"
+"member:`~PyTypeObject.tp_as_sequence` and the :c:type:`PyNumberMethods` "
+"structure referenced by :c:member:`~PyTypeObject.tp_as_number` contain the "
+"fields for in-place operators. In particular, this means that the :c:type:"
+"`PyNumberMethods` structure has the fields :attr:`nb_inplace_add`, :attr:"
+"`nb_inplace_subtract`, :attr:`nb_inplace_multiply`, :attr:"
+"`nb_inplace_divide`, :attr:`nb_inplace_remainder`, :attr:"
+"`nb_inplace_power`, :attr:`nb_inplace_lshift`, :attr:`nb_inplace_rshift`, :"
+"attr:`nb_inplace_and`, :attr:`nb_inplace_xor`, and :attr:`nb_inplace_or`; "
+"and the :c:type:`PySequenceMethods` struct has the fields :attr:"
+"`sq_inplace_concat` and :attr:`sq_inplace_repeat`."
 msgstr ""
 
 # 6251e3e4ca7c4dfab63efe6dc63415c6
 #: ../src/Doc/c-api/typeobj.rst:475
 msgid ""
 "If this bit is set, the binary and ternary operations in the :c:type:"
-"`PyNumberMethods` structure referenced by :attr:`tp_as_number` accept "
-"arguments of arbitrary object types, and do their own type conversions if "
-"needed.  If this bit is clear, those operations require that all arguments "
-"have the current type as their type, and the caller is supposed to perform a "
-"coercion operation first.  This applies to :attr:`nb_add`, :attr:"
-"`nb_subtract`, :attr:`nb_multiply`, :attr:`nb_divide`, :attr:"
+"`PyNumberMethods` structure referenced by :c:member:`~PyTypeObject."
+"tp_as_number` accept arguments of arbitrary object types, and do their own "
+"type conversions if needed.  If this bit is clear, those operations require "
+"that all arguments have the current type as their type, and the caller is "
+"supposed to perform a coercion operation first.  This applies to :attr:"
+"`nb_add`, :attr:`nb_subtract`, :attr:`nb_multiply`, :attr:`nb_divide`, :attr:"
 "`nb_remainder`, :attr:`nb_divmod`, :attr:`nb_power`, :attr:`nb_lshift`, :"
 "attr:`nb_rshift`, :attr:`nb_and`, :attr:`nb_xor`, and :attr:`nb_or`."
 msgstr ""
@@ -12262,34 +12294,40 @@ msgstr ""
 # 07a974351a024241906cf2642ff2dfe5
 #: ../src/Doc/c-api/typeobj.rst:488
 msgid ""
-"If this bit is set, the type object has the :attr:`tp_richcompare` field, as "
-"well as the :attr:`tp_traverse` and the :attr:`tp_clear` fields."
+"If this bit is set, the type object has the :c:member:`~PyTypeObject."
+"tp_richcompare` field, as well as the :c:member:`~PyTypeObject.tp_traverse` "
+"and the :c:member:`~PyTypeObject.tp_clear` fields."
 msgstr ""
 
 # f2eb1011689b488a99895dc6dc9704ae
 #: ../src/Doc/c-api/typeobj.rst:494
 msgid ""
-"If this bit is set, the :attr:`tp_weaklistoffset` field is defined.  "
-"Instances of a type are weakly referenceable if the type's :attr:"
-"`tp_weaklistoffset` field has a value greater than zero."
+"If this bit is set, the :c:member:`~PyTypeObject.tp_weaklistoffset` field is "
+"defined.  Instances of a type are weakly referenceable if the type's :c:"
+"member:`~PyTypeObject.tp_weaklistoffset` field has a value greater than zero."
 msgstr ""
 
 # 49793033458d47b7ace86e5f5a87a619
 #: ../src/Doc/c-api/typeobj.rst:501
 msgid ""
-"If this bit is set, the type object has the :attr:`tp_iter` and :attr:"
-"`tp_iternext` fields."
+"If this bit is set, the type object has the :c:member:`~PyTypeObject."
+"tp_iter` and :c:member:`~PyTypeObject.tp_iternext` fields."
 msgstr ""
 
-# 76d28ea9252348c3985da864e9f8605e
+# 689887298e9e4a45ae2e84c45cfe1cf6
 #: ../src/Doc/c-api/typeobj.rst:507
 msgid ""
 "If this bit is set, the type object has several new fields defined starting "
-"in Python 2.2: :attr:`tp_methods`, :attr:`tp_members`, :attr:`tp_getset`, :"
-"attr:`tp_base`, :attr:`tp_dict`, :attr:`tp_descr_get`, :attr:"
-"`tp_descr_set`, :attr:`tp_dictoffset`, :attr:`tp_init`, :attr:`tp_alloc`, :"
-"attr:`tp_new`, :attr:`tp_free`, :attr:`tp_is_gc`, :attr:`tp_bases`, :attr:"
-"`tp_mro`, :attr:`tp_cache`, :attr:`tp_subclasses`, and :attr:`tp_weaklist`."
+"in Python 2.2: :c:member:`~PyTypeObject.tp_methods`, :c:member:"
+"`~PyTypeObject.tp_members`, :c:member:`~PyTypeObject.tp_getset`, :c:member:"
+"`~PyTypeObject.tp_base`, :c:member:`~PyTypeObject.tp_dict`, :c:member:"
+"`~PyTypeObject.tp_descr_get`, :c:member:`~PyTypeObject.tp_descr_set`, :c:"
+"member:`~PyTypeObject.tp_dictoffset`, :c:member:`~PyTypeObject.tp_init`, :c:"
+"member:`~PyTypeObject.tp_alloc`, :c:member:`~PyTypeObject.tp_new`, :c:member:"
+"`~PyTypeObject.tp_free`, :c:member:`~PyTypeObject.tp_is_gc`, :c:member:"
+"`~PyTypeObject.tp_bases`, :c:member:`~PyTypeObject.tp_mro`, :c:member:"
+"`~PyTypeObject.tp_cache`, :c:member:`~PyTypeObject.tp_subclasses`, and :c:"
+"member:`~PyTypeObject.tp_weaklist`."
 msgstr ""
 
 # 45056ddfd61248e4bbfb0cc7faec4d81
@@ -12332,9 +12370,10 @@ msgid ""
 "set, instances must be created using :c:func:`PyObject_GC_New` and destroyed "
 "using :c:func:`PyObject_GC_Del`.  More information in section :ref:"
 "`supporting-cycle-detection`.  This bit also implies that the GC-related "
-"fields :attr:`tp_traverse` and :attr:`tp_clear` are present in the type "
-"object; but those fields also exist when :const:`Py_TPFLAGS_HAVE_GC` is "
-"clear but :const:`Py_TPFLAGS_HAVE_RICHCOMPARE` is set."
+"fields :c:member:`~PyTypeObject.tp_traverse` and :c:member:`~PyTypeObject."
+"tp_clear` are present in the type object; but those fields also exist when :"
+"const:`Py_TPFLAGS_HAVE_GC` is clear but :const:`Py_TPFLAGS_HAVE_RICHCOMPARE` "
+"is set."
 msgstr ""
 
 # 5321bf6cd5df47b9836e5ceca196cfdf
@@ -12380,11 +12419,12 @@ msgstr ""
 # e89539d806da4ccfa3e0f3aa08cd868f
 #: ../src/Doc/c-api/typeobj.rst:585
 msgid ""
-"The :attr:`tp_traverse` pointer is used by the garbage collector to detect "
-"reference cycles. A typical implementation of a :attr:`tp_traverse` function "
-"simply calls :c:func:`Py_VISIT` on each of the instance's members that are "
-"Python objects.  For example, this is function :c:func:`local_traverse` from "
-"the :mod:`thread` extension module::"
+"The :c:member:`~PyTypeObject.tp_traverse` pointer is used by the garbage "
+"collector to detect reference cycles. A typical implementation of a :c:"
+"member:`~PyTypeObject.tp_traverse` function simply calls :c:func:`Py_VISIT` "
+"on each of the instance's members that are Python objects.  For example, "
+"this is function :c:func:`local_traverse` from the :mod:`thread` extension "
+"module::"
 msgstr ""
 
 # fd9351c5e076415ea47310eb089258d6
@@ -12415,11 +12455,11 @@ msgstr ""
 # 0bcd3a3ec3ac4f3bbcb81790581b05d1
 #: ../src/Doc/c-api/typeobj.rst:612
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_clear` and the :"
-"const:`Py_TPFLAGS_HAVE_GC` flag bit: the flag bit, :attr:`tp_traverse`, and :"
-"attr:`tp_clear` are all inherited from the base type if they are all zero in "
-"the subtype *and* the subtype has the :const:`Py_TPFLAGS_HAVE_RICHCOMPARE` "
-"flag bit set."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_clear` and the :const:`Py_TPFLAGS_HAVE_GC` flag bit: the flag bit, :c:"
+"member:`~PyTypeObject.tp_traverse`, and :c:member:`~PyTypeObject.tp_clear` "
+"are all inherited from the base type if they are all zero in the subtype "
+"*and* the subtype has the :const:`Py_TPFLAGS_HAVE_RICHCOMPARE` flag bit set."
 msgstr ""
 
 # 6530210d227344fe8585bb209753cbd0
@@ -12432,24 +12472,26 @@ msgstr ""
 # b115349d3e94435e8f293bd142e739de
 #: ../src/Doc/c-api/typeobj.rst:624
 msgid ""
-"The :attr:`tp_clear` member function is used to break reference cycles in "
-"cyclic garbage detected by the garbage collector.  Taken together, all :attr:"
-"`tp_clear` functions in the system must combine to break all reference "
-"cycles.  This is subtle, and if in any doubt supply a :attr:`tp_clear` "
-"function.  For example, the tuple type does not implement a :attr:`tp_clear` "
+"The :c:member:`~PyTypeObject.tp_clear` member function is used to break "
+"reference cycles in cyclic garbage detected by the garbage collector.  Taken "
+"together, all :c:member:`~PyTypeObject.tp_clear` functions in the system "
+"must combine to break all reference cycles.  This is subtle, and if in any "
+"doubt supply a :c:member:`~PyTypeObject.tp_clear` function.  For example, "
+"the tuple type does not implement a :c:member:`~PyTypeObject.tp_clear` "
 "function, because it's possible to prove that no reference cycle can be "
-"composed entirely of tuples. Therefore the :attr:`tp_clear` functions of "
-"other types must be sufficient to break any cycle containing a tuple.  This "
-"isn't immediately obvious, and there's rarely a good reason to avoid "
-"implementing :attr:`tp_clear`."
+"composed entirely of tuples. Therefore the :c:member:`~PyTypeObject."
+"tp_clear` functions of other types must be sufficient to break any cycle "
+"containing a tuple.  This isn't immediately obvious, and there's rarely a "
+"good reason to avoid implementing :c:member:`~PyTypeObject.tp_clear`."
 msgstr ""
 
 # f4c7f42cb74540d7b0ca31ee168a2ce4
 #: ../src/Doc/c-api/typeobj.rst:634
 msgid ""
-"Implementations of :attr:`tp_clear` should drop the instance's references to "
-"those of its members that may be Python objects, and set its pointers to "
-"those members to *NULL*, as in the following example::"
+"Implementations of :c:member:`~PyTypeObject.tp_clear` should drop the "
+"instance's references to those of its members that may be Python objects, "
+"and set its pointers to those members to *NULL*, as in the following "
+"example::"
 msgstr ""
 
 # a8370cf855eb4268a9df9860eb796416
@@ -12471,11 +12513,12 @@ msgstr ""
 # 4fabca3e05cf4d33a37e7b1d2f980de0
 #: ../src/Doc/c-api/typeobj.rst:659
 msgid ""
-"Because the goal of :attr:`tp_clear` functions is to break reference cycles, "
-"it's not necessary to clear contained objects like Python strings or Python "
-"integers, which can't participate in reference cycles. On the other hand, it "
-"may be convenient to clear all contained Python objects, and write the "
-"type's :attr:`tp_dealloc` function to invoke :attr:`tp_clear`."
+"Because the goal of :c:member:`~PyTypeObject.tp_clear` functions is to break "
+"reference cycles, it's not necessary to clear contained objects like Python "
+"strings or Python integers, which can't participate in reference cycles. On "
+"the other hand, it may be convenient to clear all contained Python objects, "
+"and write the type's :c:member:`~PyTypeObject.tp_dealloc` function to "
+"invoke :c:member:`~PyTypeObject.tp_clear`."
 msgstr ""
 
 # 0b3b77ef1b3745298dc0d5968dfdaa8c
@@ -12488,11 +12531,11 @@ msgstr ""
 # d3b3a00c07fe47fa82d1e2c84f200837
 #: ../src/Doc/c-api/typeobj.rst:668
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_traverse` and "
-"the :const:`Py_TPFLAGS_HAVE_GC` flag bit: the flag bit, :attr:`tp_traverse`, "
-"and :attr:`tp_clear` are all inherited from the base type if they are all "
-"zero in the subtype *and* the subtype has the :const:"
-"`Py_TPFLAGS_HAVE_RICHCOMPARE` flag bit set."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_traverse` and the :const:`Py_TPFLAGS_HAVE_GC` flag bit: the flag bit, :c:"
+"member:`~PyTypeObject.tp_traverse`, and :c:member:`~PyTypeObject.tp_clear` "
+"are all inherited from the base type if they are all zero in the subtype "
+"*and* the subtype has the :const:`Py_TPFLAGS_HAVE_RICHCOMPARE` flag bit set."
 msgstr ""
 
 # 3b3d3245044647beb74ff1b66a8fa3c2
@@ -12522,17 +12565,19 @@ msgstr ""
 # 909c0c70f933444db985f93842c38b80
 #: ../src/Doc/c-api/typeobj.rst:691
 msgid ""
-"This field is inherited by subtypes together with :attr:`tp_compare` and :"
-"attr:`tp_hash`: a subtype inherits all three of :attr:`tp_compare`, :attr:"
-"`tp_richcompare`, and :attr:`tp_hash`, when the subtype's :attr:"
-"`tp_compare`, :attr:`tp_richcompare`, and :attr:`tp_hash` are all *NULL*."
+"This field is inherited by subtypes together with :c:member:`~PyTypeObject."
+"tp_compare` and :c:member:`~PyTypeObject.tp_hash`: a subtype inherits all "
+"three of :c:member:`~PyTypeObject.tp_compare`, :c:member:`~PyTypeObject."
+"tp_richcompare`, and :c:member:`~PyTypeObject.tp_hash`, when the subtype's :"
+"c:member:`~PyTypeObject.tp_compare`, :c:member:`~PyTypeObject."
+"tp_richcompare`, and :c:member:`~PyTypeObject.tp_hash` are all *NULL*."
 msgstr ""
 
 # 8f3d39dbb67b4c47ae55b89cf2b86786
 #: ../src/Doc/c-api/typeobj.rst:696
 msgid ""
-"The following constants are defined to be used as the third argument for :"
-"attr:`tp_richcompare` and for :c:func:`PyObject_RichCompare`:"
+"The following constants are defined to be used as the third argument for :c:"
+"member:`~PyTypeObject.tp_richcompare` and for :c:func:`PyObject_RichCompare`:"
 msgstr ""
 
 # 57b0a40115b54597b579794bc4db77af
@@ -12626,8 +12671,8 @@ msgstr ""
 # dc33a14bd8e94879a20781199f16f58d
 #: ../src/Doc/c-api/typeobj.rst:728
 msgid ""
-"Do not confuse this field with :attr:`tp_weaklist`; that is the list head "
-"for weak references to the type object itself."
+"Do not confuse this field with :c:member:`~PyTypeObject.tp_weaklist`; that "
+"is the list head for weak references to the type object itself."
 msgstr ""
 
 # a01f93cb6c0146429335f524f8f5eff0
@@ -12636,7 +12681,8 @@ msgid ""
 "This field is inherited by subtypes, but see the rules listed below. A "
 "subtype may override this offset; this means that the subtype uses a "
 "different weak reference list head than the base type.  Since the list head "
-"is always found via :attr:`tp_weaklistoffset`, this should not be a problem."
+"is always found via :c:member:`~PyTypeObject.tp_weaklistoffset`, this should "
+"not be a problem."
 msgstr ""
 
 # d35b812b6951476e9bdd6730d6ac59b1
@@ -12645,8 +12691,8 @@ msgid ""
 "When a type defined by a class statement has no :attr:`__slots__` "
 "declaration, and none of its base types are weakly referenceable, the type "
 "is made weakly referenceable by adding a weak reference list head slot to "
-"the instance layout and setting the :attr:`tp_weaklistoffset` of that slot's "
-"offset."
+"the instance layout and setting the :c:member:`~PyTypeObject."
+"tp_weaklistoffset` of that slot's offset."
 msgstr ""
 
 # fdfb7aff7bfb4a59b7b2fc9f97b1eec9
@@ -12654,16 +12700,16 @@ msgstr ""
 msgid ""
 "When a type's :attr:`__slots__` declaration contains a slot named :attr:"
 "`__weakref__`, that slot becomes the weak reference list head for instances "
-"of the type, and the slot's offset is stored in the type's :attr:"
-"`tp_weaklistoffset`."
+"of the type, and the slot's offset is stored in the type's :c:member:"
+"`~PyTypeObject.tp_weaklistoffset`."
 msgstr ""
 
 # be6c48d60af647529b7afd9d5539a696
 #: ../src/Doc/c-api/typeobj.rst:746
 msgid ""
 "When a type's :attr:`__slots__` declaration does not contain a slot named :"
-"attr:`__weakref__`, the type inherits its :attr:`tp_weaklistoffset` from its "
-"base type."
+"attr:`__weakref__`, the type inherits its :c:member:`~PyTypeObject."
+"tp_weaklistoffset` from its base type."
 msgstr ""
 
 # 2033ed52b2ad462f84091e1f2052e2e9
@@ -12702,9 +12748,9 @@ msgstr ""
 # 3c9264470fdf47bc87e1af23cc727957
 #: ../src/Doc/c-api/typeobj.rst:775
 msgid ""
-"Iterator types should also define the :attr:`tp_iter` function, and that "
-"function should return the iterator instance itself (not a new iterator "
-"instance)."
+"Iterator types should also define the :c:member:`~PyTypeObject.tp_iter` "
+"function, and that function should return the iterator instance itself (not "
+"a new iterator instance)."
 msgstr ""
 
 # f07dcfa8c1154cbf9637c205a1cb8239
@@ -12715,8 +12761,8 @@ msgstr ""
 # e3ce13245ed74f7297b733ed9259043c
 #: ../src/Doc/c-api/typeobj.rst:783
 msgid ""
-"The next fields, up to and including :attr:`tp_weaklist`, only exist if the :"
-"const:`Py_TPFLAGS_HAVE_CLASS` flag bit is set."
+"The next fields, up to and including :c:member:`~PyTypeObject.tp_weaklist`, "
+"only exist if the :const:`Py_TPFLAGS_HAVE_CLASS` flag bit is set."
 msgstr ""
 
 # 8974ec691d594ff396493c9095b495a9
@@ -12730,7 +12776,7 @@ msgstr ""
 #: ../src/Doc/c-api/typeobj.rst:792
 msgid ""
 "For each entry in the array, an entry is added to the type's dictionary "
-"(see :attr:`tp_dict` below) containing a method descriptor."
+"(see :c:member:`~PyTypeObject.tp_dict` below) containing a method descriptor."
 msgstr ""
 
 # 8f0f0315e8f04a3494d2789d603b9051
@@ -12752,7 +12798,7 @@ msgstr ""
 #: ../src/Doc/c-api/typeobj.rst:805
 msgid ""
 "For each entry in the array, an entry is added to the type's dictionary "
-"(see :attr:`tp_dict` below) containing a member descriptor."
+"(see :c:member:`~PyTypeObject.tp_dict` below) containing a member descriptor."
 msgstr ""
 
 # 9e3e6a0fea094e8ca123bb9ce807e942
@@ -12774,7 +12820,7 @@ msgstr ""
 #: ../src/Doc/c-api/typeobj.rst:817
 msgid ""
 "For each entry in the array, an entry is added to the type's dictionary "
-"(see :attr:`tp_dict` below) containing a getset descriptor."
+"(see :c:member:`~PyTypeObject.tp_dict` below) containing a getset descriptor."
 msgstr ""
 
 # 9c9c9687536f4c77901eea8f2d2a7a5d
@@ -12861,8 +12907,8 @@ msgstr ""
 # 5dacb3ea301d4732b59fb76377007023
 #: ../src/Doc/c-api/typeobj.rst:897
 msgid ""
-"Do not confuse this field with :attr:`tp_dict`; that is the dictionary for "
-"attributes of the type object itself."
+"Do not confuse this field with :c:member:`~PyTypeObject.tp_dict`; that is "
+"the dictionary for attributes of the type object itself."
 msgstr ""
 
 # 006a8d4013504ade8d5cb6bc13490190
@@ -12874,29 +12920,30 @@ msgid ""
 "negative offset is more expensive to use, and should only be used when the "
 "instance structure contains a variable-length part.  This is used for "
 "example to add an instance variable dictionary to subtypes of :class:`str` "
-"or :class:`tuple`. Note that the :attr:`tp_basicsize` field should account "
-"for the dictionary added to the end in that case, even though the dictionary "
-"is not included in the basic object layout.  On a system with a pointer size "
-"of 4 bytes, :attr:`tp_dictoffset` should be set to ``-4`` to indicate that "
-"the dictionary is at the very end of the structure."
+"or :class:`tuple`. Note that the :c:member:`~PyTypeObject.tp_basicsize` "
+"field should account for the dictionary added to the end in that case, even "
+"though the dictionary is not included in the basic object layout.  On a "
+"system with a pointer size of 4 bytes, :c:member:`~PyTypeObject."
+"tp_dictoffset` should be set to ``-4`` to indicate that the dictionary is at "
+"the very end of the structure."
 msgstr ""
 
 # 9832d68943774028af1645dcdf86c3a9
 #: ../src/Doc/c-api/typeobj.rst:912
 msgid ""
-"The real dictionary offset in an instance can be computed from a negative :"
-"attr:`tp_dictoffset` as follows::"
+"The real dictionary offset in an instance can be computed from a negative :c:"
+"member:`~PyTypeObject.tp_dictoffset` as follows::"
 msgstr ""
 
 # 2c1f7ce025954a6883e126e91c229c67
 #: ../src/Doc/c-api/typeobj.rst:919
 msgid ""
-"where :attr:`tp_basicsize`, :attr:`tp_itemsize` and :attr:`tp_dictoffset` "
-"are taken from the type object, and :attr:`ob_size` is taken from the "
-"instance.  The absolute value is taken because long ints use the sign of :"
-"attr:`ob_size` to store the sign of the number.  (There's never a need to do "
-"this calculation yourself; it is done for you by :c:func:"
-"`_PyObject_GetDictPtr`.)"
+"where :c:member:`~PyTypeObject.tp_basicsize`, :c:member:`~PyTypeObject."
+"tp_itemsize` and :c:member:`~PyTypeObject.tp_dictoffset` are taken from the "
+"type object, and :attr:`ob_size` is taken from the instance.  The absolute "
+"value is taken because long ints use the sign of :attr:`ob_size` to store "
+"the sign of the number.  (There's never a need to do this calculation "
+"yourself; it is done for you by :c:func:`_PyObject_GetDictPtr`.)"
 msgstr ""
 
 # 3b963fce8f9741a6888d1bc117b0dfa1
@@ -12905,8 +12952,8 @@ msgid ""
 "This field is inherited by subtypes, but see the rules listed below. A "
 "subtype may override this offset; this means that the subtype instances "
 "store the dictionary at a difference offset than the base type.  Since the "
-"dictionary is always found via :attr:`tp_dictoffset`, this should not be a "
-"problem."
+"dictionary is always found via :c:member:`~PyTypeObject.tp_dictoffset`, this "
+"should not be a problem."
 msgstr ""
 
 # c0ec7b04561d4bada30103c391d8750e
@@ -12914,15 +12961,16 @@ msgstr ""
 msgid ""
 "When a type defined by a class statement has no :attr:`__slots__` "
 "declaration, and none of its base types has an instance variable dictionary, "
-"a dictionary slot is added to the instance layout and the :attr:"
-"`tp_dictoffset` is set to that slot's offset."
+"a dictionary slot is added to the instance layout and the :c:member:"
+"`~PyTypeObject.tp_dictoffset` is set to that slot's offset."
 msgstr ""
 
 # c1db668077d648df9c3eddc994c33038
 #: ../src/Doc/c-api/typeobj.rst:935
 msgid ""
 "When a type defined by a class statement has a :attr:`__slots__` "
-"declaration, the type inherits its :attr:`tp_dictoffset` from its base type."
+"declaration, the type inherits its :c:member:`~PyTypeObject.tp_dictoffset` "
+"from its base type."
 msgstr ""
 
 # 6c084aca2bb14be285599b898dae2d4e
@@ -12958,15 +13006,18 @@ msgstr ""
 # 87e8f18be13845d39ab17f9498c80d5c
 #: ../src/Doc/c-api/typeobj.rst:960
 msgid ""
-"The :attr:`tp_init` function, if not *NULL*, is called when an instance is "
-"created normally by calling its type, after the type's :attr:`tp_new` "
-"function has returned an instance of the type.  If the :attr:`tp_new` "
-"function returns an instance of some other type that is not a subtype of the "
-"original type, no :attr:`tp_init` function is called; if :attr:`tp_new` "
-"returns an instance of a subtype of the original type, the subtype's :attr:"
-"`tp_init` is called.  (VERSION NOTE: described here is what is implemented "
-"in Python 2.2.1 and later.  In Python 2.2, the :attr:`tp_init` of the type "
-"of the object returned by :attr:`tp_new` was always called, if not *NULL*.)"
+"The :c:member:`~PyTypeObject.tp_init` function, if not *NULL*, is called "
+"when an instance is created normally by calling its type, after the type's :"
+"c:member:`~PyTypeObject.tp_new` function has returned an instance of the "
+"type.  If the :c:member:`~PyTypeObject.tp_new` function returns an instance "
+"of some other type that is not a subtype of the original type, no :c:member:"
+"`~PyTypeObject.tp_init` function is called; if :c:member:`~PyTypeObject."
+"tp_new` returns an instance of a subtype of the original type, the "
+"subtype's :c:member:`~PyTypeObject.tp_init` is called.  (VERSION NOTE: "
+"described here is what is implemented in Python 2.2.1 and later.  In Python "
+"2.2, the :c:member:`~PyTypeObject.tp_init` of the type of the object "
+"returned by :c:member:`~PyTypeObject.tp_new` was always called, if not "
+"*NULL*.)"
 msgstr ""
 
 # 4e6510a97335400db10a55608bbbf5a7
@@ -12981,18 +13032,20 @@ msgid ""
 "initialization.  It should return a pointer to a block of memory of adequate "
 "length for the instance, suitably aligned, and initialized to zeros, but "
 "with :attr:`ob_refcnt` set to ``1`` and :attr:`ob_type` set to the type "
-"argument.  If the type's :attr:`tp_itemsize` is non-zero, the object's :attr:"
-"`ob_size` field should be initialized to *nitems* and the length of the "
-"allocated memory block should be ``tp_basicsize + nitems*tp_itemsize``, "
-"rounded up to a multiple of ``sizeof(void*)``; otherwise, *nitems* is not "
-"used and the length of the block should be :attr:`tp_basicsize`."
+"argument.  If the type's :c:member:`~PyTypeObject.tp_itemsize` is non-zero, "
+"the object's :attr:`ob_size` field should be initialized to *nitems* and the "
+"length of the allocated memory block should be ``tp_basicsize + "
+"nitems*tp_itemsize``, rounded up to a multiple of ``sizeof(void*)``; "
+"otherwise, *nitems* is not used and the length of the block should be :c:"
+"member:`~PyTypeObject.tp_basicsize`."
 msgstr ""
 
 # 476b0e93f24549bfa50dc47594b741a1
 #: ../src/Doc/c-api/typeobj.rst:991
 msgid ""
 "Do not use this function to do any other instance initialization, not even "
-"to allocate additional memory; that should be done by :attr:`tp_new`."
+"to allocate additional memory; that should be done by :c:member:"
+"`~PyTypeObject.tp_new`."
 msgstr ""
 
 # f4ad5ddcdd894f87b446e0406c225500
@@ -13022,30 +13075,31 @@ msgstr ""
 msgid ""
 "The subtype argument is the type of the object being created; the *args* and "
 "*kwds* arguments represent positional and keyword arguments of the call to "
-"the type.  Note that subtype doesn't have to equal the type whose :attr:"
-"`tp_new` function is called; it may be a subtype of that type (but not an "
-"unrelated type)."
+"the type.  Note that subtype doesn't have to equal the type whose :c:member:"
+"`~PyTypeObject.tp_new` function is called; it may be a subtype of that type "
+"(but not an unrelated type)."
 msgstr ""
 
 # b8ac377a43b746b3b91972a85496c9fb
 #: ../src/Doc/c-api/typeobj.rst:1018
 msgid ""
-"The :attr:`tp_new` function should call ``subtype->tp_alloc(subtype, nitems)"
-"`` to allocate space for the object, and then do only as much further "
-"initialization as is absolutely necessary.  Initialization that can safely "
-"be ignored or repeated should be placed in the :attr:`tp_init` handler.  A "
-"good rule of thumb is that for immutable types, all initialization should "
-"take place in :attr:`tp_new`, while for mutable types, most initialization "
-"should be deferred to :attr:`tp_init`."
+"The :c:member:`~PyTypeObject.tp_new` function should call ``subtype->tp_alloc"
+"(subtype, nitems)`` to allocate space for the object, and then do only as "
+"much further initialization as is absolutely necessary.  Initialization that "
+"can safely be ignored or repeated should be placed in the :c:member:"
+"`~PyTypeObject.tp_init` handler.  A good rule of thumb is that for immutable "
+"types, all initialization should take place in :c:member:`~PyTypeObject."
+"tp_new`, while for mutable types, most initialization should be deferred to :"
+"c:member:`~PyTypeObject.tp_init`."
 msgstr ""
 
 # 7b346010c14a4606b5bf1505208af791
 #: ../src/Doc/c-api/typeobj.rst:1026
 msgid ""
 "This field is inherited by subtypes, except it is not inherited by static "
-"types whose :attr:`tp_base` is *NULL* or ``&PyBaseObject_Type``.  The latter "
-"exception is a precaution so that old extension types don't become callable "
-"simply by being linked with Python 2.2."
+"types whose :c:member:`~PyTypeObject.tp_base` is *NULL* or "
+"``&PyBaseObject_Type``.  The latter exception is a precaution so that old "
+"extension types don't become callable simply by being linked with Python 2.2."
 msgstr ""
 
 # 0b797f1b56494800bafd7ac1f0c0e4c3
@@ -13091,12 +13145,12 @@ msgstr ""
 msgid ""
 "The garbage collector needs to know whether a particular object is "
 "collectible or not.  Normally, it is sufficient to look at the object's "
-"type's :attr:`tp_flags` field, and check the :const:`Py_TPFLAGS_HAVE_GC` "
-"flag bit.  But some types have a mixture of statically and dynamically "
-"allocated instances, and the statically allocated instances are not "
-"collectible.  Such types should define this function; it should return ``1`` "
-"for a collectible instance, and ``0`` for a non-collectible instance. The "
-"signature is ::"
+"type's :c:member:`~PyTypeObject.tp_flags` field, and check the :const:"
+"`Py_TPFLAGS_HAVE_GC` flag bit.  But some types have a mixture of statically "
+"and dynamically allocated instances, and the statically allocated instances "
+"are not collectible.  Such types should define this function; it should "
+"return ``1`` for a collectible instance, and ``0`` for a non-collectible "
+"instance. The signature is ::"
 msgstr ""
 
 # 4e39715a59fe4b74a7fe35a94675ad09
@@ -13189,7 +13243,8 @@ msgstr ""
 # 2a9e3210e268460f992738dc5cc0dc22
 #: ../src/Doc/c-api/typeobj.rst:1132
 msgid ""
-"Pointer to the next type object with a non-zero :attr:`tp_allocs` field."
+"Pointer to the next type object with a non-zero :c:member:`~PyTypeObject."
+"tp_allocs` field."
 msgstr ""
 
 #: ../src/Doc/c-api/typeobj.rst:1134
@@ -13325,7 +13380,7 @@ msgstr ""
 msgid ""
 "This function is used by :c:func:`PySequence_Concat` and has the same "
 "signature.  It is also used by the ``+`` operator, after trying the numeric "
-"addition via the :attr:`tp_as_number.nb_add` slot."
+"addition via the :c:member:`~PyTypeObject.tp_as_number.nb_add` slot."
 msgstr ""
 
 # fd8b060d5df34c47a4a97acf759c7f6d
@@ -13333,7 +13388,7 @@ msgstr ""
 msgid ""
 "This function is used by :c:func:`PySequence_Repeat` and has the same "
 "signature.  It is also used by the ``*`` operator, after trying numeric "
-"multiplication via the :attr:`tp_as_number.nb_mul` slot."
+"multiplication via the :c:member:`~PyTypeObject.tp_as_number.nb_mul` slot."
 msgstr ""
 
 # d006104ebadb47b89bb930aca716c43e
@@ -13399,21 +13454,22 @@ msgstr ""
 # d38acbfb91a4439c9afb4d1c429ad6a7
 #: ../src/Doc/c-api/typeobj.rst:1351
 msgid ""
-"If an object does not export the buffer interface, then its :attr:"
-"`tp_as_buffer` member in the :c:type:`PyTypeObject` structure should be "
-"*NULL*.  Otherwise, the :attr:`tp_as_buffer` will point to a :c:type:"
-"`PyBufferProcs` structure."
+"If an object does not export the buffer interface, then its :c:member:"
+"`~PyTypeObject.tp_as_buffer` member in the :c:type:`PyTypeObject` structure "
+"should be *NULL*.  Otherwise, the :c:member:`~PyTypeObject.tp_as_buffer` "
+"will point to a :c:type:`PyBufferProcs` structure."
 msgstr ""
 
 # 4a7a955088294682af36fafeaf902457
 #: ../src/Doc/c-api/typeobj.rst:1357
 msgid ""
 "It is very important that your :c:type:`PyTypeObject` structure uses :const:"
-"`Py_TPFLAGS_DEFAULT` for the value of the :attr:`tp_flags` member rather "
-"than ``0``.  This tells the Python runtime that your :c:type:`PyBufferProcs` "
-"structure contains the :attr:`bf_getcharbuffer` slot. Older versions of "
-"Python did not have this member, so a new Python interpreter using an old "
-"extension needs to be able to test for its presence before using it."
+"`Py_TPFLAGS_DEFAULT` for the value of the :c:member:`~PyTypeObject.tp_flags` "
+"member rather than ``0``.  This tells the Python runtime that your :c:type:"
+"`PyBufferProcs` structure contains the :attr:`bf_getcharbuffer` slot. Older "
+"versions of Python did not have this member, so a new Python interpreter "
+"using an old extension needs to be able to test for its presence before "
+"using it."
 msgstr ""
 
 # 671ce8453a204c60abe634933c17f1ab
@@ -13456,11 +13512,11 @@ msgstr ""
 msgid ""
 "The last slot is :attr:`bf_getcharbuffer`, of type :c:type:"
 "`getcharbufferproc`. This slot will only be present if the :const:"
-"`Py_TPFLAGS_HAVE_GETCHARBUFFER` flag is present in the :attr:`tp_flags` "
-"field of the object's :c:type:`PyTypeObject`. Before using this slot, the "
-"caller should test whether it is present by using the :c:func:"
-"`PyType_HasFeature` function.  If the flag is present, :attr:"
-"`bf_getcharbuffer` may be *NULL*, indicating that the object's contents "
+"`Py_TPFLAGS_HAVE_GETCHARBUFFER` flag is present in the :c:member:"
+"`~PyTypeObject.tp_flags` field of the object's :c:type:`PyTypeObject`. "
+"Before using this slot, the caller should test whether it is present by "
+"using the :c:func:`PyType_HasFeature` function.  If the flag is present, :"
+"attr:`bf_getcharbuffer` may be *NULL*, indicating that the object's contents "
 "cannot be used as *8-bit characters*. The slot function may also raise an "
 "error if the object's contents cannot be interpreted as 8-bit characters. "
 "For example, if the object is an array which is configured to hold floating "
