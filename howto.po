@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-29 04:17\n"
+"POT-Creation-Date: 2013-08-19 04:59\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3716,7 +3716,7 @@ msgstr ""
 
 # f3c8e2c9cdee4d1bb3f0b16138b5a226
 # dd3d23b35360438b92570155d5210b61
-#: ../src/Doc/howto/logging.rst:69 ../src/Doc/howto/logging.rst:791
+#: ../src/Doc/howto/logging.rst:69 ../src/Doc/howto/logging.rst:793
 msgid "Level"
 msgstr ""
 
@@ -3727,7 +3727,7 @@ msgstr ""
 
 # 8ae4dcb4fe2b43708fad71d7bca1343a
 # 6268a642e9b241f988db1fb0ff24ed97
-#: ../src/Doc/howto/logging.rst:71 ../src/Doc/howto/logging.rst:801
+#: ../src/Doc/howto/logging.rst:71 ../src/Doc/howto/logging.rst:803
 msgid "``DEBUG``"
 msgstr ""
 
@@ -3739,7 +3739,7 @@ msgstr ""
 
 # a665da04a6854416b5d2767cb2eb0468
 # 9beadc188b264b65b9bc85843f5e8770
-#: ../src/Doc/howto/logging.rst:74 ../src/Doc/howto/logging.rst:799
+#: ../src/Doc/howto/logging.rst:74 ../src/Doc/howto/logging.rst:801
 msgid "``INFO``"
 msgstr ""
 
@@ -3750,7 +3750,7 @@ msgstr ""
 
 # c9d7d51ce00d4705964bac5f01e3ca25
 # 63a390ce620d4a40a04707824b431428
-#: ../src/Doc/howto/logging.rst:77 ../src/Doc/howto/logging.rst:797
+#: ../src/Doc/howto/logging.rst:77 ../src/Doc/howto/logging.rst:799
 msgid "``WARNING``"
 msgstr ""
 
@@ -3764,7 +3764,7 @@ msgstr ""
 
 # 8d4ef2d1497d4eb5a5781ea52bfa897a
 # 825ee3b82e454c7584172f05f3e01f04
-#: ../src/Doc/howto/logging.rst:82 ../src/Doc/howto/logging.rst:795
+#: ../src/Doc/howto/logging.rst:82 ../src/Doc/howto/logging.rst:797
 msgid "``ERROR``"
 msgstr ""
 
@@ -3777,7 +3777,7 @@ msgstr ""
 
 # 930288483e494a9f9fc69c30e8842795
 # 489e9c9dc08b4f37bbde0ad825687f8c
-#: ../src/Doc/howto/logging.rst:85 ../src/Doc/howto/logging.rst:793
+#: ../src/Doc/howto/logging.rst:85 ../src/Doc/howto/logging.rst:795
 msgid "``CRITICAL``"
 msgstr ""
 
@@ -4332,17 +4332,17 @@ msgstr ""
 msgid ""
 ":class:`~logging.Handler` objects are responsible for dispatching the "
 "appropriate log messages (based on the log messages' severity) to the "
-"handler's specified destination.  Logger objects can add zero or more "
-"handler objects to themselves with an :func:`addHandler` method.  As an "
-"example scenario, an application may want to send all log messages to a log "
-"file, all log messages of error or higher to stdout, and all messages of "
-"critical to an email address. This scenario requires three individual "
-"handlers where each handler is responsible for sending messages of a "
-"specific severity to a specific location."
+"handler's specified destination.  :class:`Logger` objects can add zero or "
+"more handler objects to themselves with an :meth:`~Logger.addHandler` "
+"method.  As an example scenario, an application may want to send all log "
+"messages to a log file, all log messages of error or higher to stdout, and "
+"all messages of critical to an email address. This scenario requires three "
+"individual handlers where each handler is responsible for sending messages "
+"of a specific severity to a specific location."
 msgstr ""
 
 # beadeeb8c003417bbd66fa66c7d7cf47
-#: ../src/Doc/howto/logging.rst:479
+#: ../src/Doc/howto/logging.rst:480
 msgid ""
 "The standard library includes quite a few handler types (see :ref:`useful-"
 "handlers`); the tutorials use mainly :class:`StreamHandler` and :class:"
@@ -4350,7 +4350,7 @@ msgid ""
 msgstr ""
 
 # 417032447e714133ab5d15bd8bc01139
-#: ../src/Doc/howto/logging.rst:483
+#: ../src/Doc/howto/logging.rst:484
 msgid ""
 "There are very few methods in a handler for application developers to "
 "concern themselves with.  The only handler methods that seem relevant for "
@@ -4359,9 +4359,9 @@ msgid ""
 msgstr ""
 
 # a4cc7add80f747cbb0b328faeb6a2faa
-#: ../src/Doc/howto/logging.rst:488
+#: ../src/Doc/howto/logging.rst:489
 msgid ""
-"The :meth:`Handler.setLevel` method, just as in logger objects, specifies "
+"The :meth:`~Handler.setLevel` method, just as in logger objects, specifies "
 "the lowest severity that will be dispatched to the appropriate destination.  "
 "Why are there two :func:`setLevel` methods?  The level set in the logger "
 "determines which severity of messages it will pass to its handlers.  The "
@@ -4370,20 +4370,21 @@ msgid ""
 msgstr ""
 
 # f1a5188ca6b0405ba011f57b33e0da3b
-#: ../src/Doc/howto/logging.rst:494
+#: ../src/Doc/howto/logging.rst:495
 msgid ""
-":func:`setFormatter` selects a Formatter object for this handler to use."
+":meth:`~Handler.setFormatter` selects a Formatter object for this handler to "
+"use."
 msgstr ""
 
 # f5812dbd070540fb82efcbaf7c988ccd
-#: ../src/Doc/howto/logging.rst:496
+#: ../src/Doc/howto/logging.rst:498
 msgid ""
-":func:`addFilter` and :func:`removeFilter` respectively configure and "
-"deconfigure filter objects on handlers."
+":meth:`~Handler.addFilter` and :meth:`~Handler.removeFilter` respectively "
+"configure and deconfigure filter objects on handlers."
 msgstr ""
 
 # d7ebe8f4cc534e77878aaa467a54c0f7
-#: ../src/Doc/howto/logging.rst:499
+#: ../src/Doc/howto/logging.rst:501
 msgid ""
 "Application code should not directly instantiate and use instances of :class:"
 "`Handler`.  Instead, the :class:`Handler` class is a base class that defines "
@@ -4392,12 +4393,12 @@ msgid ""
 msgstr ""
 
 # 68e5e8f13d2546a6839d11180a915044
-#: ../src/Doc/howto/logging.rst:506
+#: ../src/Doc/howto/logging.rst:508
 msgid "Formatters"
 msgstr ""
 
 # ca68e914ef9a4e8e9af968d993e6f8ea
-#: ../src/Doc/howto/logging.rst:508
+#: ../src/Doc/howto/logging.rst:510
 msgid ""
 "Formatter objects configure the final order, structure, and contents of the "
 "log message.  Unlike the base :class:`logging.Handler` class, application "
@@ -4408,19 +4409,19 @@ msgid ""
 msgstr ""
 
 # e22b9dbedd574d4d9fc2d18591b5b1d2
-#: ../src/Doc/howto/logging.rst:516
+#: ../src/Doc/howto/logging.rst:518
 msgid ""
 "If there is no message format string, the default is to use the raw "
 "message.  If there is no date format string, the default date format is::"
 msgstr ""
 
 # 05ba9e4f4d684ac6a432500b44a42a2a
-#: ../src/Doc/howto/logging.rst:521
+#: ../src/Doc/howto/logging.rst:523
 msgid "with the milliseconds tacked on at the end."
 msgstr ""
 
 # 595451cc7a32465b8036658f16569914
-#: ../src/Doc/howto/logging.rst:523
+#: ../src/Doc/howto/logging.rst:525
 msgid ""
 "The message format string uses ``%(<dictionary key>)s`` styled string "
 "substitution; the possible keys are documented in :ref:`logrecord-"
@@ -4428,7 +4429,7 @@ msgid ""
 msgstr ""
 
 # fcfa086632304d85b9fda552b79e19c9
-#: ../src/Doc/howto/logging.rst:526
+#: ../src/Doc/howto/logging.rst:528
 msgid ""
 "The following message format string will log the time in a human-readable "
 "format, the severity of the message, and the contents of the message, in "
@@ -4436,7 +4437,7 @@ msgid ""
 msgstr ""
 
 # f801d948dc5f4239855788479d748a5d
-#: ../src/Doc/howto/logging.rst:532
+#: ../src/Doc/howto/logging.rst:534
 msgid ""
 "Formatters use a user-configurable function to convert the creation time of "
 "a record to a tuple. By default, :func:`time.localtime` is used; to change "
@@ -4448,38 +4449,38 @@ msgid ""
 msgstr ""
 
 # 01bb0a8c8d274e569ece1f7110ccd1dc
-#: ../src/Doc/howto/logging.rst:542
+#: ../src/Doc/howto/logging.rst:544
 msgid "Configuring Logging"
 msgstr ""
 
 # d17331fddb69471b9ed96e15ee5e9a32
-#: ../src/Doc/howto/logging.rst:546
+#: ../src/Doc/howto/logging.rst:548
 msgid "Programmers can configure logging in three ways:"
 msgstr ""
 
 # 65a9a34640ee4290a9ba79d48d8d4481
-#: ../src/Doc/howto/logging.rst:548
+#: ../src/Doc/howto/logging.rst:550
 msgid ""
 "Creating loggers, handlers, and formatters explicitly using Python code that "
 "calls the configuration methods listed above."
 msgstr ""
 
 # d4d780f19ea14d1b9a34a2cb071163be
-#: ../src/Doc/howto/logging.rst:550
+#: ../src/Doc/howto/logging.rst:552
 msgid ""
 "Creating a logging config file and reading it using the :func:`fileConfig` "
 "function."
 msgstr ""
 
 # ebcd354b464d40d784cbcdadef28df6c
-#: ../src/Doc/howto/logging.rst:552
+#: ../src/Doc/howto/logging.rst:554
 msgid ""
 "Creating a dictionary of configuration information and passing it to the :"
 "func:`dictConfig` function."
 msgstr ""
 
 # 3d203274869b4bfb868209681006940f
-#: ../src/Doc/howto/logging.rst:555
+#: ../src/Doc/howto/logging.rst:557
 msgid ""
 "For the reference documentation on the last two options, see :ref:`logging-"
 "config-api`.  The following example configures a very simple logger, a "
@@ -4487,13 +4488,13 @@ msgid ""
 msgstr ""
 
 # aa7aa865612d4d99bd3e53629c42b300
-#: ../src/Doc/howto/logging.rst:585
+#: ../src/Doc/howto/logging.rst:587
 msgid ""
 "Running this module from the command line produces the following output::"
 msgstr ""
 
 # 1ad0db31d640485a9eb16f5a4c66926b
-#: ../src/Doc/howto/logging.rst:594
+#: ../src/Doc/howto/logging.rst:596
 msgid ""
 "The following Python module creates a logger, handler, and formatter nearly "
 "identical to those in the example listed above, with the only difference "
@@ -4501,18 +4502,18 @@ msgid ""
 msgstr ""
 
 # 5a25cd5854a64a7d94f8fe1f2b29a936
-#: ../src/Doc/howto/logging.rst:613
+#: ../src/Doc/howto/logging.rst:615
 msgid "Here is the logging.conf file::"
 msgstr ""
 
 # 8c60a062160d45109bfef70ffeb7ef87
-#: ../src/Doc/howto/logging.rst:644
+#: ../src/Doc/howto/logging.rst:646
 msgid ""
 "The output is nearly identical to that of the non-config-file-based example::"
 msgstr ""
 
 # da2ed4ced3784612a7715d90da7f69c6
-#: ../src/Doc/howto/logging.rst:653
+#: ../src/Doc/howto/logging.rst:655
 msgid ""
 "You can see that the config file approach has a few advantages over the "
 "Python code approach, mainly separation of configuration and code and the "
@@ -4520,7 +4521,7 @@ msgid ""
 msgstr ""
 
 # 2a5947a51ff5489ab33a5f5d4ab85e55
-#: ../src/Doc/howto/logging.rst:657
+#: ../src/Doc/howto/logging.rst:659
 msgid ""
 "The :func:`fileConfig` function takes a default parameter, "
 "``disable_existing_loggers``, which defaults to ``True`` for reasons of "
@@ -4532,7 +4533,7 @@ msgid ""
 msgstr ""
 
 # 632f34cf6eb64963bc5193711482c45a
-#: ../src/Doc/howto/logging.rst:665
+#: ../src/Doc/howto/logging.rst:667
 msgid ""
 "The dictionary passed to :func:`dictConfig` can also specify a Boolean value "
 "with key ``disable_existing_loggers``, which if not specified explicitly in "
@@ -4542,7 +4543,7 @@ msgid ""
 msgstr ""
 
 # d231c449986242808916b5b0bfc2706e
-#: ../src/Doc/howto/logging.rst:674
+#: ../src/Doc/howto/logging.rst:676
 msgid ""
 "Note that the class names referenced in config files need to be either "
 "relative to the logging module, or absolute values which can be resolved "
@@ -4554,7 +4555,7 @@ msgid ""
 msgstr ""
 
 # 0de18de43e6c4292a5e0e75971f202cc
-#: ../src/Doc/howto/logging.rst:682
+#: ../src/Doc/howto/logging.rst:684
 msgid ""
 "In Python 2.7, a new means of configuring logging has been introduced, using "
 "dictionaries to hold configuration information. This provides a superset of "
@@ -4570,26 +4571,26 @@ msgid ""
 msgstr ""
 
 # 611a1fc047d84d41a9eba48f0692337b
-#: ../src/Doc/howto/logging.rst:694
+#: ../src/Doc/howto/logging.rst:696
 msgid ""
 "Here's an example of the same configuration as above, in YAML format for the "
 "new dictionary-based approach::"
 msgstr ""
 
 # f80e52a5059f4c1cb300cc0455ce3a8d
-#: ../src/Doc/howto/logging.rst:716
+#: ../src/Doc/howto/logging.rst:718
 msgid ""
 "For more information about logging using a dictionary, see :ref:`logging-"
 "config-api`."
 msgstr ""
 
 # 0b65c9e4dd744699968a09936f52dd8f
-#: ../src/Doc/howto/logging.rst:720
+#: ../src/Doc/howto/logging.rst:722
 msgid "What happens if no configuration is provided"
 msgstr ""
 
 # ef691d17244549bbb7faa4e116bb044a
-#: ../src/Doc/howto/logging.rst:722
+#: ../src/Doc/howto/logging.rst:724
 msgid ""
 "If no logging configuration is provided, it is possible to have a situation "
 "where a logging event needs to be output, but no handlers can be found to "
@@ -4598,31 +4599,31 @@ msgid ""
 msgstr ""
 
 # 90643e9147bd40749feae5415b38691b
-#: ../src/Doc/howto/logging.rst:727
+#: ../src/Doc/howto/logging.rst:729
 msgid "For Python 2.x, the behaviour is as follows:"
 msgstr ""
 
 # d478b740cadd45e98bea736455936be1
-#: ../src/Doc/howto/logging.rst:729
+#: ../src/Doc/howto/logging.rst:731
 msgid ""
 "If *logging.raiseExceptions* is *False* (production mode), the event is "
 "silently dropped."
 msgstr ""
 
 # 6447007e63ee4bff9b70357ce2092fa9
-#: ../src/Doc/howto/logging.rst:732
+#: ../src/Doc/howto/logging.rst:734
 msgid ""
 "If *logging.raiseExceptions* is *True* (development mode), a message 'No "
 "handlers could be found for logger X.Y.Z' is printed once."
 msgstr ""
 
 # 276825f5926a40e2959cb6eabaf974cd
-#: ../src/Doc/howto/logging.rst:738
+#: ../src/Doc/howto/logging.rst:740
 msgid "Configuring Logging for a Library"
 msgstr ""
 
 # d9986a2b242b491ba1827a8858da67b6
-#: ../src/Doc/howto/logging.rst:740
+#: ../src/Doc/howto/logging.rst:742
 msgid ""
 "When developing a library which uses logging, you should take care to "
 "document how the library uses logging - for example, the names of loggers "
@@ -4633,7 +4634,7 @@ msgid ""
 msgstr ""
 
 # e476d82bbafe488a9ebbd197f95cdb5f
-#: ../src/Doc/howto/logging.rst:747
+#: ../src/Doc/howto/logging.rst:749
 msgid ""
 "If for some reason you *don't* want this message printed in the absence of "
 "any logging configuration, you can attach a do-nothing handler to the top-"
@@ -4646,7 +4647,7 @@ msgid ""
 msgstr ""
 
 # c0ab6555c911477798674b1c6f6155f4
-#: ../src/Doc/howto/logging.rst:756
+#: ../src/Doc/howto/logging.rst:758
 msgid ""
 "A do-nothing handler is included in the logging package: :class:`~logging."
 "NullHandler` (since Python 2.7). An instance of this handler could be added "
@@ -4657,7 +4658,7 @@ msgid ""
 msgstr ""
 
 # b61833135b6b45548f10d8d75ea61796
-#: ../src/Doc/howto/logging.rst:767
+#: ../src/Doc/howto/logging.rst:769
 msgid ""
 "should have the desired effect. If an organisation produces a number of "
 "libraries, then the logger name specified can be 'orgname.foo' rather than "
@@ -4665,7 +4666,7 @@ msgid ""
 msgstr ""
 
 # b529d53e602645c48908513a4f81acbe
-#: ../src/Doc/howto/logging.rst:771
+#: ../src/Doc/howto/logging.rst:773
 msgid ""
 "It is strongly advised that you *do not add any handlers other than* :class:"
 "`~logging.NullHandler` *to your library's loggers*. This is because the "
@@ -4677,12 +4678,12 @@ msgid ""
 msgstr ""
 
 # b8adf0835beb484aba0b9c2da2a82f2e
-#: ../src/Doc/howto/logging.rst:782
+#: ../src/Doc/howto/logging.rst:784
 msgid "Logging Levels"
 msgstr ""
 
 # 5eb39eb60e0243469f227c6ec95f87f7
-#: ../src/Doc/howto/logging.rst:784
+#: ../src/Doc/howto/logging.rst:786
 msgid ""
 "The numeric values of logging levels are given in the following table. These "
 "are primarily of interest if you want to define your own levels, and need "
@@ -4692,47 +4693,47 @@ msgid ""
 msgstr ""
 
 # 834fbc8785c5464c838fd17ed4d0b81a
-#: ../src/Doc/howto/logging.rst:791
+#: ../src/Doc/howto/logging.rst:793
 msgid "Numeric value"
 msgstr ""
 
 # dcb6b28fe8d94c1dab83c0edbd5499be
-#: ../src/Doc/howto/logging.rst:793
+#: ../src/Doc/howto/logging.rst:795
 msgid "50"
 msgstr ""
 
 # 0f41caccf66145658c1de947166b75fc
-#: ../src/Doc/howto/logging.rst:795
+#: ../src/Doc/howto/logging.rst:797
 msgid "40"
 msgstr ""
 
 # c6cd1e2b60ff454b99bef1482ce9e795
-#: ../src/Doc/howto/logging.rst:797
+#: ../src/Doc/howto/logging.rst:799
 msgid "30"
 msgstr ""
 
 # 9917c837650f4f4e916edf762c564cfd
-#: ../src/Doc/howto/logging.rst:799
+#: ../src/Doc/howto/logging.rst:801
 msgid "20"
 msgstr ""
 
 # c84fff79e6d04a518bc33786fefec845
-#: ../src/Doc/howto/logging.rst:801
+#: ../src/Doc/howto/logging.rst:803
 msgid "10"
 msgstr ""
 
 # 0b2fa9c4feb74c92a2deee5583527d15
-#: ../src/Doc/howto/logging.rst:803
+#: ../src/Doc/howto/logging.rst:805
 msgid "``NOTSET``"
 msgstr ""
 
 # eeb56da8d74c422582ee50f90cb9d538
-#: ../src/Doc/howto/logging.rst:803
+#: ../src/Doc/howto/logging.rst:805
 msgid "0"
 msgstr ""
 
 # 964423eac13943698a2bf905d02fe654
-#: ../src/Doc/howto/logging.rst:806
+#: ../src/Doc/howto/logging.rst:808
 msgid ""
 "Levels can also be associated with loggers, being set either by the "
 "developer or through loading a saved logging configuration. When a logging "
@@ -4743,7 +4744,7 @@ msgid ""
 msgstr ""
 
 # 0cbc321734bb43808c50e72407bfb0ea
-#: ../src/Doc/howto/logging.rst:813
+#: ../src/Doc/howto/logging.rst:815
 msgid ""
 "Logging messages are encoded as instances of the :class:`~logging.LogRecord` "
 "class. When a logger decides to actually log an event, a :class:`~logging."
@@ -4751,7 +4752,7 @@ msgid ""
 msgstr ""
 
 # 2d2e60bc2e07463cb2cb3e89f4ac106b
-#: ../src/Doc/howto/logging.rst:817
+#: ../src/Doc/howto/logging.rst:819
 msgid ""
 "Logging messages are subjected to a dispatch mechanism through the use of :"
 "dfn:`handlers`, which are instances of subclasses of the :class:`Handler` "
@@ -4769,7 +4770,7 @@ msgid ""
 msgstr ""
 
 # af9b56f127a14d5492a0fdb672725c60
-#: ../src/Doc/howto/logging.rst:831
+#: ../src/Doc/howto/logging.rst:833
 msgid ""
 "Just as for loggers, handlers can have levels associated with them. A "
 "handler's level acts as a filter in the same way as a logger's level does. "
@@ -4780,12 +4781,12 @@ msgid ""
 msgstr ""
 
 # f723492ad04941f2a6f069afd02c32ca
-#: ../src/Doc/howto/logging.rst:840
+#: ../src/Doc/howto/logging.rst:842
 msgid "Custom Levels"
 msgstr ""
 
 # b7cd42e472df4fb892fedfa9a2a83ae5
-#: ../src/Doc/howto/logging.rst:842
+#: ../src/Doc/howto/logging.rst:844
 msgid ""
 "Defining your own levels is possible, but should not be necessary, as the "
 "existing levels have been chosen on the basis of practical experience. "
@@ -4799,31 +4800,31 @@ msgid ""
 msgstr ""
 
 # 69d69c10ec4e445baf2aea6bc503fc7e
-#: ../src/Doc/howto/logging.rst:855
+#: ../src/Doc/howto/logging.rst:857
 msgid "Useful Handlers"
 msgstr ""
 
 # 2fd00f12710b466e81af49cbc9c4515d
-#: ../src/Doc/howto/logging.rst:857
+#: ../src/Doc/howto/logging.rst:859
 msgid ""
 "In addition to the base :class:`Handler` class, many useful subclasses are "
 "provided:"
 msgstr ""
 
 # a228b422f5154a1499398d1896f80198
-#: ../src/Doc/howto/logging.rst:860
+#: ../src/Doc/howto/logging.rst:862
 msgid ""
 ":class:`StreamHandler` instances send messages to streams (file-like "
 "objects)."
 msgstr ""
 
 # 532f9dd537654e2f9c4f657a71953787
-#: ../src/Doc/howto/logging.rst:863
+#: ../src/Doc/howto/logging.rst:865
 msgid ":class:`FileHandler` instances send messages to disk files."
 msgstr ""
 
 # 8d728fda551849c3b406669e42f3b9af
-#: ../src/Doc/howto/logging.rst:865
+#: ../src/Doc/howto/logging.rst:867
 msgid ""
 ":class:`~handlers.BaseRotatingHandler` is the base class for handlers that "
 "rotate log files at a certain point. It is not meant to be  instantiated "
@@ -4832,68 +4833,68 @@ msgid ""
 msgstr ""
 
 # 938eeba90f504caba5d5cfeb23069370
-#: ../src/Doc/howto/logging.rst:870
+#: ../src/Doc/howto/logging.rst:872
 msgid ""
 ":class:`~handlers.RotatingFileHandler` instances send messages to disk "
 "files, with support for maximum log file sizes and log file rotation."
 msgstr ""
 
 # 94d03d7628d3450f965bd18b20bee489
-#: ../src/Doc/howto/logging.rst:873
+#: ../src/Doc/howto/logging.rst:875
 msgid ""
 ":class:`~handlers.TimedRotatingFileHandler` instances send messages to disk "
 "files, rotating the log file at certain timed intervals."
 msgstr ""
 
 # 06aff85bf6b446d78fcfff67d28ab84b
-#: ../src/Doc/howto/logging.rst:876
+#: ../src/Doc/howto/logging.rst:878
 msgid ""
 ":class:`~handlers.SocketHandler` instances send messages to TCP/IP sockets."
 msgstr ""
 
 # b9c789d471764eee9c9d388a188d1795
-#: ../src/Doc/howto/logging.rst:879
+#: ../src/Doc/howto/logging.rst:881
 msgid ""
 ":class:`~handlers.DatagramHandler` instances send messages to UDP sockets."
 msgstr ""
 
 # 1d02f34b43ff43eeaea86bf5eff2456b
-#: ../src/Doc/howto/logging.rst:882
+#: ../src/Doc/howto/logging.rst:884
 msgid ""
 ":class:`~handlers.SMTPHandler` instances send messages to a designated email "
 "address."
 msgstr ""
 
 # 19b0df4142434452819618b44832cf47
-#: ../src/Doc/howto/logging.rst:885
+#: ../src/Doc/howto/logging.rst:887
 msgid ""
 ":class:`~handlers.SysLogHandler` instances send messages to a Unix syslog "
 "daemon, possibly on a remote machine."
 msgstr ""
 
 # f6b69717f7d14ebc815bcb96def03cf6
-#: ../src/Doc/howto/logging.rst:888
+#: ../src/Doc/howto/logging.rst:890
 msgid ""
 ":class:`~handlers.NTEventLogHandler` instances send messages to a Windows "
 "NT/2000/XP event log."
 msgstr ""
 
 # 7b86de6284574674b0d14bb239988582
-#: ../src/Doc/howto/logging.rst:891
+#: ../src/Doc/howto/logging.rst:893
 msgid ""
 ":class:`~handlers.MemoryHandler` instances send messages to a buffer in "
 "memory, which is flushed whenever specific criteria are met."
 msgstr ""
 
 # 404e0b6b8c95495d8909f2eecfc13f84
-#: ../src/Doc/howto/logging.rst:894
+#: ../src/Doc/howto/logging.rst:896
 msgid ""
 ":class:`~handlers.HTTPHandler` instances send messages to an HTTP server "
 "using either ``GET`` or ``POST`` semantics."
 msgstr ""
 
 # 488be080510b4761a23e0460199a794a
-#: ../src/Doc/howto/logging.rst:897
+#: ../src/Doc/howto/logging.rst:899
 msgid ""
 ":class:`~handlers.WatchedFileHandler` instances watch the file they are "
 "logging to. If the file changes, it is closed and reopened using the file "
@@ -4902,7 +4903,7 @@ msgid ""
 msgstr ""
 
 # 698dbe7569db49dab44898fd3c0a001c
-#: ../src/Doc/howto/logging.rst:902
+#: ../src/Doc/howto/logging.rst:904
 msgid ""
 ":class:`NullHandler` instances do nothing with error messages. They are used "
 "by library developers who want to use logging, but want to avoid the 'No "
@@ -4912,7 +4913,7 @@ msgid ""
 msgstr ""
 
 # 31223c19657c48c6aa032b232e0e4e12
-#: ../src/Doc/howto/logging.rst:911
+#: ../src/Doc/howto/logging.rst:913
 msgid ""
 "The :class:`NullHandler`, :class:`StreamHandler` and :class:`FileHandler` "
 "classes are defined in the core logging package. The other handlers are "
@@ -4921,7 +4922,7 @@ msgid ""
 msgstr ""
 
 # 0dc46f8f9e8341de8dd0718d1c86c6a2
-#: ../src/Doc/howto/logging.rst:916
+#: ../src/Doc/howto/logging.rst:918
 msgid ""
 "Logged messages are formatted for presentation through instances of the :"
 "class:`Formatter` class. They are initialized with a format string suitable "
@@ -4929,27 +4930,27 @@ msgid ""
 msgstr ""
 
 # bfa11ebc83904d19ac649f128391f80a
-#: ../src/Doc/howto/logging.rst:920
+#: ../src/Doc/howto/logging.rst:922
 msgid ""
-"For formatting multiple messages in a batch, instances of :class:"
-"`BufferingFormatter` can be used. In addition to the format string (which is "
+"For formatting multiple messages in a batch, instances of :class:`~handlers."
+"BufferingFormatter` can be used. In addition to the format string (which is "
 "applied to each message in the batch), there is provision for header and "
 "trailer format strings."
 msgstr ""
 
 # 1bdebeebd5384715847dcc87e40b06b3
-#: ../src/Doc/howto/logging.rst:925
+#: ../src/Doc/howto/logging.rst:927
 msgid ""
 "When filtering based on logger level and/or handler level is not enough, "
 "instances of :class:`Filter` can be added to both :class:`Logger` and :class:"
-"`Handler` instances (through their :meth:`addFilter` method). Before "
-"deciding to process a message further, both loggers and handlers consult all "
-"their filters for permission. If any filter returns a false value, the "
-"message is not processed further."
+"`Handler` instances (through their :meth:`~Handler.addFilter` method). "
+"Before deciding to process a message further, both loggers and handlers "
+"consult all their filters for permission. If any filter returns a false "
+"value, the message is not processed further."
 msgstr ""
 
 # b0ec99179aad43e79f5aa34fa7a978d3
-#: ../src/Doc/howto/logging.rst:932
+#: ../src/Doc/howto/logging.rst:934
 msgid ""
 "The basic :class:`Filter` functionality allows filtering by specific logger "
 "name. If this feature is used, messages sent to the named logger and its "
@@ -4957,12 +4958,12 @@ msgid ""
 msgstr ""
 
 # 2a2d09c53a134db8af4f6d72ee8d28b7
-#: ../src/Doc/howto/logging.rst:940
+#: ../src/Doc/howto/logging.rst:942
 msgid "Exceptions raised during logging"
 msgstr ""
 
 # a35b95c61d7143b6bdbd578259deb261
-#: ../src/Doc/howto/logging.rst:942
+#: ../src/Doc/howto/logging.rst:944
 msgid ""
 "The logging package is designed to swallow exceptions which occur while "
 "logging in production. This is so that errors which occur while handling "
@@ -4971,24 +4972,25 @@ msgid ""
 msgstr ""
 
 # 0ca364320d534ad88313b9c198ce71b0
-#: ../src/Doc/howto/logging.rst:947
+#: ../src/Doc/howto/logging.rst:949
 msgid ""
 ":class:`SystemExit` and :class:`KeyboardInterrupt` exceptions are never "
-"swallowed. Other exceptions which occur during the :meth:`emit` method of a :"
-"class:`Handler` subclass are passed to its :meth:`handleError` method."
+"swallowed. Other exceptions which occur during the :meth:`~Handler.emit` "
+"method of a :class:`Handler` subclass are passed to its :meth:`~Handler."
+"handleError` method."
 msgstr ""
 
 # b680fbe9a6b54b2e88886debc97638af
-#: ../src/Doc/howto/logging.rst:951
+#: ../src/Doc/howto/logging.rst:954
 msgid ""
-"The default implementation of :meth:`handleError` in :class:`Handler` checks "
-"to see if a module-level variable, :data:`raiseExceptions`, is set. If set, "
-"a traceback is printed to :data:`sys.stderr`. If not set, the exception is "
-"swallowed."
+"The default implementation of :meth:`~Handler.handleError` in :class:"
+"`Handler` checks to see if a module-level variable, :data:`raiseExceptions`, "
+"is set. If set, a traceback is printed to :data:`sys.stderr`. If not set, "
+"the exception is swallowed."
 msgstr ""
 
 # 82fb811028564341ac673e0ee9cbb55c
-#: ../src/Doc/howto/logging.rst:955
+#: ../src/Doc/howto/logging.rst:959
 msgid ""
 "The default value of :data:`raiseExceptions` is ``True``. This is because "
 "during development, you typically want to be notified of any exceptions that "
@@ -4997,47 +4999,49 @@ msgid ""
 msgstr ""
 
 # 6224921983d34cf6b85470aa38d9e650
-#: ../src/Doc/howto/logging.rst:965
+#: ../src/Doc/howto/logging.rst:968
 msgid "Using arbitrary objects as messages"
 msgstr ""
 
 # 0b6faff4c6524c19a9b2684e088d8396
-#: ../src/Doc/howto/logging.rst:967
+#: ../src/Doc/howto/logging.rst:970
 msgid ""
 "In the preceding sections and examples, it has been assumed that the message "
 "passed when logging the event is a string. However, this is not the only "
 "possibility. You can pass an arbitrary object as a message, and its :meth:"
-"`__str__` method will be called when the logging system needs to convert it "
-"to a string representation. In fact, if you want to, you can avoid computing "
-"a string representation altogether - for example, the :class:`SocketHandler` "
-"emits an event by pickling it and sending it over the wire."
+"`~object.__str__` method will be called when the logging system needs to "
+"convert it to a string representation. In fact, if you want to, you can "
+"avoid computing a string representation altogether - for example, the :class:"
+"`~handlers.SocketHandler` emits an event by pickling it and sending it over "
+"the wire."
 msgstr ""
 
 # d0a7780ff5e449d5a2800545b0f26245
-#: ../src/Doc/howto/logging.rst:978
+#: ../src/Doc/howto/logging.rst:981
 msgid "Optimization"
 msgstr ""
 
 # de53b3d3c3944ed0b75fda9a512ae253
-#: ../src/Doc/howto/logging.rst:980
+#: ../src/Doc/howto/logging.rst:983
 msgid ""
 "Formatting of message arguments is deferred until it cannot be avoided. "
 "However, computing the arguments passed to the logging method can also be "
 "expensive, and you may want to avoid doing it if the logger will just throw "
-"away your event. To decide what to do, you can call the :meth:`isEnabledFor` "
-"method which takes a level argument and returns true if the event would be "
-"created by the Logger for that level of call. You can write code like this::"
+"away your event. To decide what to do, you can call the :meth:`~Logger."
+"isEnabledFor` method which takes a level argument and returns true if the "
+"event would be created by the Logger for that level of call. You can write "
+"code like this::"
 msgstr ""
 
 # a1b9f95340994142b159d89a7cab4161
-#: ../src/Doc/howto/logging.rst:991
+#: ../src/Doc/howto/logging.rst:995
 msgid ""
 "so that if the logger's threshold is set above ``DEBUG``, the calls to :func:"
 "`expensive_func1` and :func:`expensive_func2` are never made."
 msgstr ""
 
 # 3257dacf4c96460da8c0925e42a393fa
-#: ../src/Doc/howto/logging.rst:994
+#: ../src/Doc/howto/logging.rst:998
 msgid ""
 "There are other optimizations which can be made for specific applications "
 "which need more precise control over what logging information is collected. "
@@ -5046,47 +5050,47 @@ msgid ""
 msgstr ""
 
 # 6927c1ffb0bd42a9af7069601d10d897
-#: ../src/Doc/howto/logging.rst:1000
+#: ../src/Doc/howto/logging.rst:1004
 msgid "What you don't want to collect"
 msgstr ""
 
 # feb4503a01104538b685a43d6af1549c
-#: ../src/Doc/howto/logging.rst:1000
+#: ../src/Doc/howto/logging.rst:1004
 msgid "How to avoid collecting it"
 msgstr ""
 
 # 212afa8e03c14f918f496827a5b7fa41
-#: ../src/Doc/howto/logging.rst:1002
+#: ../src/Doc/howto/logging.rst:1006
 msgid "Information about where calls were made from."
 msgstr ""
 
 # 4f1aaefa77034f17ba80987812489c40
-#: ../src/Doc/howto/logging.rst:1002
+#: ../src/Doc/howto/logging.rst:1006
 msgid "Set ``logging._srcfile`` to ``None``."
 msgstr ""
 
 # 2bf0b3f20078478484040c88fb5e0c9f
-#: ../src/Doc/howto/logging.rst:1004
+#: ../src/Doc/howto/logging.rst:1008
 msgid "Threading information."
 msgstr ""
 
 # 38df13e6f6904874b224a52c41106e44
-#: ../src/Doc/howto/logging.rst:1004
+#: ../src/Doc/howto/logging.rst:1008
 msgid "Set ``logging.logThreads`` to ``0``."
 msgstr ""
 
 # 15383c565c3f4acf82a5bfcf68f6f05d
-#: ../src/Doc/howto/logging.rst:1006
+#: ../src/Doc/howto/logging.rst:1010
 msgid "Process information."
 msgstr ""
 
 # d35805b7261b4ca0a6b55f46f6786b9a
-#: ../src/Doc/howto/logging.rst:1006
+#: ../src/Doc/howto/logging.rst:1010
 msgid "Set ``logging.logProcesses`` to ``0``."
 msgstr ""
 
 # 9ade541d83cc4d3d9a90b84faefe671c
-#: ../src/Doc/howto/logging.rst:1009
+#: ../src/Doc/howto/logging.rst:1013
 msgid ""
 "Also note that the core logging module only includes the basic handlers. If "
 "you don't import :mod:`logging.handlers` and :mod:`logging.config`, they "
@@ -5094,37 +5098,37 @@ msgid ""
 msgstr ""
 
 # 8628ef1542db410698329976abb52ef5
-#: ../src/Doc/howto/logging.rst:1015
+#: ../src/Doc/howto/logging.rst:1019
 msgid "Module :mod:`logging`"
 msgstr ""
 
 # 4d9db3afbb294a39a785a00688797682
-#: ../src/Doc/howto/logging.rst:1016
+#: ../src/Doc/howto/logging.rst:1020
 msgid "API reference for the logging module."
 msgstr ""
 
 # fd51fd03eddd44749cf3bc8d5f114a72
-#: ../src/Doc/howto/logging.rst:1018
+#: ../src/Doc/howto/logging.rst:1022
 msgid "Module :mod:`logging.config`"
 msgstr ""
 
 # 306c129ce0424b7b971f4a2100cb3501
-#: ../src/Doc/howto/logging.rst:1019
+#: ../src/Doc/howto/logging.rst:1023
 msgid "Configuration API for the logging module."
 msgstr ""
 
 # f3590e6a19494f6d96ab1a5c60cebab7
-#: ../src/Doc/howto/logging.rst:1021
+#: ../src/Doc/howto/logging.rst:1025
 msgid "Module :mod:`logging.handlers`"
 msgstr ""
 
 # 5553cb8d8a3e4597ad14c7fcbb14c6e4
-#: ../src/Doc/howto/logging.rst:1022
+#: ../src/Doc/howto/logging.rst:1026
 msgid "Useful handlers included with the logging module."
 msgstr ""
 
 # b89c4135f79c4a45b7542b2c6387c19c
-#: ../src/Doc/howto/logging.rst:1024
+#: ../src/Doc/howto/logging.rst:1028
 msgid ":ref:`A logging cookbook <logging-cookbook>`"
 msgstr ""
 
@@ -5176,11 +5180,11 @@ msgstr ""
 # 8e98f60b1c3c4a9f9f76545901e21e67
 #: ../src/Doc/howto/logging-cookbook.rst:100
 msgid ""
-"Loggers are plain Python objects.  The :func:`addHandler` method has no "
-"minimum or maximum quota for the number of handlers you may add.  Sometimes "
-"it will be beneficial for an application to log all messages of all "
-"severities to a text file while simultaneously logging errors or above to "
-"the console.  To set this up, simply configure the appropriate handlers.  "
+"Loggers are plain Python objects.  The :meth:`~Logger.addHandler` method has "
+"no minimum or maximum quota for the number of handlers you may add.  "
+"Sometimes it will be beneficial for an application to log all messages of "
+"all severities to a text file while simultaneously logging errors or above "
+"to the console.  To set this up, simply configure the appropriate handlers.  "
 "The logging calls in the application code will remain unchanged.  Here is a "
 "slight modification to the previous simple module-based configuration "
 "example::"
@@ -5296,18 +5300,18 @@ msgstr ""
 msgid ""
 "Note that there are some security issues with pickle in some scenarios. If "
 "these affect you, you can use an alternative serialization scheme by "
-"overriding the :meth:`makePickle` method and implementing your alternative "
-"there, as well as adapting the above script to use your alternative "
-"serialization."
+"overriding the :meth:`~handlers.SocketHandler.makePickle` method and "
+"implementing your alternative there, as well as adapting the above script to "
+"use your alternative serialization."
 msgstr ""
 
 # 0689a8aeb6c6492388316da1cf903b3c
-#: ../src/Doc/howto/logging-cookbook.rst:405
+#: ../src/Doc/howto/logging-cookbook.rst:406
 msgid "Adding contextual information to your logging output"
 msgstr ""
 
 # c64019d055454a31a89a2b0614d09f71
-#: ../src/Doc/howto/logging-cookbook.rst:407
+#: ../src/Doc/howto/logging-cookbook.rst:410
 msgid ""
 "Sometimes you want logging output to contain contextual information in "
 "addition to the parameters passed to the logging call. For example, in a "
@@ -5324,12 +5328,12 @@ msgid ""
 msgstr ""
 
 # d0c48a121ad7479eb9f0cb55e0bf66e4
-#: ../src/Doc/howto/logging-cookbook.rst:422
+#: ../src/Doc/howto/logging-cookbook.rst:425
 msgid "Using LoggerAdapters to impart contextual information"
 msgstr ""
 
 # 113373d919594bd09aac8b4ec00abe8d
-#: ../src/Doc/howto/logging-cookbook.rst:424
+#: ../src/Doc/howto/logging-cookbook.rst:427
 msgid ""
 "An easy way in which you can pass contextual information to be output along "
 "with logging event information is to use the :class:`LoggerAdapter` class. "
@@ -5341,7 +5345,7 @@ msgid ""
 msgstr ""
 
 # e2bedc4b1f784a439d61fcff704a768b
-#: ../src/Doc/howto/logging-cookbook.rst:432
+#: ../src/Doc/howto/logging-cookbook.rst:435
 msgid ""
 "When you create an instance of :class:`LoggerAdapter`, you pass it a :class:"
 "`Logger` instance and a dict-like object which contains your contextual "
@@ -5353,20 +5357,21 @@ msgid ""
 msgstr ""
 
 # 89ba6e4de18a48cd904d42f92b745531
-#: ../src/Doc/howto/logging-cookbook.rst:448
+#: ../src/Doc/howto/logging-cookbook.rst:451
 msgid ""
-"The :meth:`process` method of :class:`LoggerAdapter` is where the contextual "
-"information is added to the logging output. It's passed the message and "
-"keyword arguments of the logging call, and it passes back (potentially) "
-"modified versions of these to use in the call to the underlying logger. The "
-"default implementation of this method leaves the message alone, but inserts "
-"an 'extra' key in the keyword argument whose value is the dict-like object "
-"passed to the constructor. Of course, if you had passed an 'extra' keyword "
-"argument in the call to the adapter, it will be silently overwritten."
+"The :meth:`~LoggerAdapter.process` method of :class:`LoggerAdapter` is where "
+"the contextual information is added to the logging output. It's passed the "
+"message and keyword arguments of the logging call, and it passes back "
+"(potentially) modified versions of these to use in the call to the "
+"underlying logger. The default implementation of this method leaves the "
+"message alone, but inserts an 'extra' key in the keyword argument whose "
+"value is the dict-like object passed to the constructor. Of course, if you "
+"had passed an 'extra' keyword argument in the call to the adapter, it will "
+"be silently overwritten."
 msgstr ""
 
 # 5a612b2bcaf6472890b84ebaef1bc93a
-#: ../src/Doc/howto/logging-cookbook.rst:457
+#: ../src/Doc/howto/logging-cookbook.rst:460
 msgid ""
 "The advantage of using 'extra' is that the values in the dict-like object "
 "are merged into the :class:`LogRecord` instance's __dict__, allowing you to "
@@ -5374,28 +5379,28 @@ msgid ""
 "about the keys of the dict-like object. If you need a different method, e.g. "
 "if you want to prepend or append the contextual information to the message "
 "string, you just need to subclass :class:`LoggerAdapter` and override :meth:"
-"`process` to do what you need. Here is a simple example::"
+"`~LoggerAdapter.process` to do what you need. Here is a simple example::"
 msgstr ""
 
 # 9316b95afbff4553bb1455ac8a2b4c01
-#: ../src/Doc/howto/logging-cookbook.rst:473
+#: ../src/Doc/howto/logging-cookbook.rst:476
 msgid "which you can use like this::"
 msgstr ""
 
 # 23bc71e9663347a6988ee8708f96350d
-#: ../src/Doc/howto/logging-cookbook.rst:478
+#: ../src/Doc/howto/logging-cookbook.rst:481
 msgid ""
 "Then any events that you log to the adapter will have the value of "
 "``some_conn_id`` prepended to the log messages."
 msgstr ""
 
 # b7ab13928f994f7fb1e00f2e1ac655b6
-#: ../src/Doc/howto/logging-cookbook.rst:482
+#: ../src/Doc/howto/logging-cookbook.rst:485
 msgid "Using objects other than dicts to pass contextual information"
 msgstr ""
 
 # e81d1bef160145c2a5a1af939bc62037
-#: ../src/Doc/howto/logging-cookbook.rst:484
+#: ../src/Doc/howto/logging-cookbook.rst:487
 msgid ""
 "You don't need to pass an actual dict to a :class:`LoggerAdapter` - you "
 "could pass an instance of a class which implements ``__getitem__`` and "
@@ -5405,12 +5410,12 @@ msgid ""
 msgstr ""
 
 # b7ab13928f994f7fb1e00f2e1ac655b6
-#: ../src/Doc/howto/logging-cookbook.rst:493
+#: ../src/Doc/howto/logging-cookbook.rst:496
 msgid "Using Filters to impart contextual information"
 msgstr ""
 
 # d2afe8ebb2704ca39c5993e9b9aa8ce8
-#: ../src/Doc/howto/logging-cookbook.rst:495
+#: ../src/Doc/howto/logging-cookbook.rst:498
 msgid ""
 "You can also add contextual information to log output using a user-defined :"
 "class:`Filter`. ``Filter`` instances are allowed to modify the "
@@ -5420,7 +5425,7 @@ msgid ""
 msgstr ""
 
 # a5967f54c5a6401e8a0a73f3da93d47e
-#: ../src/Doc/howto/logging-cookbook.rst:500
+#: ../src/Doc/howto/logging-cookbook.rst:503
 msgid ""
 "For example in a web application, the request being processed (or at least, "
 "the interesting parts of it) can be stored in a threadlocal (:class:"
@@ -5433,69 +5438,70 @@ msgid ""
 msgstr ""
 
 # 9316b95afbff4553bb1455ac8a2b4c01
-#: ../src/Doc/howto/logging-cookbook.rst:546
+#: ../src/Doc/howto/logging-cookbook.rst:549
 msgid "which, when run, produces something like::"
 msgstr ""
 
 # 4dba03e90f9e4ef1835d31b361d4947a
-#: ../src/Doc/howto/logging-cookbook.rst:565
+#: ../src/Doc/howto/logging-cookbook.rst:568
 msgid "Logging to a single file from multiple processes"
 msgstr ""
 
 # 37465a7d39014454b6a67ffb1ddf9d93
-#: ../src/Doc/howto/logging-cookbook.rst:567
+#: ../src/Doc/howto/logging-cookbook.rst:570
 msgid ""
 "Although logging is thread-safe, and logging to a single file from multiple "
 "threads in a single process *is* supported, logging to a single file from "
 "*multiple processes* is *not* supported, because there is no standard way to "
 "serialize access to a single file across multiple processes in Python. If "
 "you need to log to a single file from multiple processes, one way of doing "
-"this is to have all the processes log to a :class:`SocketHandler`, and have "
-"a separate process which implements a socket server which reads from the "
-"socket and logs to file. (If you prefer, you can dedicate one thread in one "
-"of the existing processes to perform this function.) :ref:`This section "
-"<network-logging>` documents this approach in more detail and includes a "
-"working socket receiver which can be used as a starting point for you to "
-"adapt in your own applications."
+"this is to have all the processes log to a :class:`~handlers.SocketHandler`, "
+"and have a separate process which implements a socket server which reads "
+"from the socket and logs to file. (If you prefer, you can dedicate one "
+"thread in one of the existing processes to perform this function.) :ref:"
+"`This section <network-logging>` documents this approach in more detail and "
+"includes a working socket receiver which can be used as a starting point for "
+"you to adapt in your own applications."
 msgstr ""
 
 # 6c93640a937f4825b71d902736677003
-#: ../src/Doc/howto/logging-cookbook.rst:580
+#: ../src/Doc/howto/logging-cookbook.rst:583
 msgid ""
 "If you are using a recent version of Python which includes the :mod:"
 "`multiprocessing` module, you could write your own handler which uses the :"
-"class:`Lock` class from this module to serialize access to the file from "
-"your processes. The existing :class:`FileHandler` and subclasses do not make "
-"use of :mod:`multiprocessing` at present, though they may do so in the "
-"future. Note that at present, the :mod:`multiprocessing` module does not "
-"provide working lock functionality on all platforms (see http://bugs.python."
-"org/issue3770)."
+"class:`~multiprocessing.Lock` class from this module to serialize access to "
+"the file from your processes. The existing :class:`FileHandler` and "
+"subclasses do not make use of :mod:`multiprocessing` at present, though they "
+"may do so in the future. Note that at present, the :mod:`multiprocessing` "
+"module does not provide working lock functionality on all platforms (see "
+"http://bugs.python.org/issue3770)."
 msgstr ""
 
 # 148f7bd8dfc74335a2ba74848ddbf233
-#: ../src/Doc/howto/logging-cookbook.rst:593
+#: ../src/Doc/howto/logging-cookbook.rst:594
 msgid "Using file rotation"
 msgstr ""
 
 # 735c7d997b6441e189640ed352f6e9c7
-#: ../src/Doc/howto/logging-cookbook.rst:598
+#: ../src/Doc/howto/logging-cookbook.rst:599
 msgid ""
 "Sometimes you want to let a log file grow to a certain size, then open a new "
 "file and log to that. You may want to keep a certain number of these files, "
 "and when that many files have been created, rotate the files so that the "
 "number of files and the size of the files both remain bounded. For this "
-"usage pattern, the logging package provides a :class:`RotatingFileHandler`::"
+"usage pattern, the logging package provides a :class:`~handlers."
+"RotatingFileHandler`::"
 msgstr ""
 
 # 3f25aaca339c4b03b5e93093dfd51cd7
-#: ../src/Doc/howto/logging-cookbook.rst:630
+#: ../src/Doc/howto/logging-cookbook.rst:631
 msgid ""
 "The result should be 6 separate files, each with part of the log history for "
 "the application::"
 msgstr ""
 
 # dcde1ba2e5a84247819f964678e9948c
-#: ../src/Doc/howto/logging-cookbook.rst:640
+#: ../src/Doc/howto/logging-cookbook.rst:641
 msgid ""
 "The most current file is always :file:`logging_rotatingfile_example.out`, "
 "and each time it reaches the size limit it is renamed with the suffix "
@@ -5504,28 +5510,28 @@ msgid ""
 msgstr ""
 
 # 7233ec1669a44294a05ce2061985a22a
-#: ../src/Doc/howto/logging-cookbook.rst:645
+#: ../src/Doc/howto/logging-cookbook.rst:646
 msgid ""
 "Obviously this example sets the log length much too small as an extreme "
 "example.  You would want to set *maxBytes* to an appropriate value."
 msgstr ""
 
 # 0a6c71c9fbdc42c6b076ace75960a935
-#: ../src/Doc/howto/logging-cookbook.rst:649
+#: ../src/Doc/howto/logging-cookbook.rst:650
 msgid "An example dictionary-based configuration"
 msgstr ""
 
 # 98716e710eee4013b7f910bdcc805a2f
-#: ../src/Doc/howto/logging-cookbook.rst:651
+#: ../src/Doc/howto/logging-cookbook.rst:652
 msgid ""
 "Below is an example of a logging configuration dictionary - it's taken from "
 "the `documentation on the Django project <https://docs.djangoproject.com/"
 "en/1.3/topics/logging/#configuring-logging>`_. This dictionary is passed to :"
-"func:`~logging.config.dictConfig` to put the configuration into effect::"
+"func:`~config.dictConfig` to put the configuration into effect::"
 msgstr ""
 
 # d6557a9605484f1db1163ee13b579a07
-#: ../src/Doc/howto/logging-cookbook.rst:707
+#: ../src/Doc/howto/logging-cookbook.rst:708
 msgid ""
 "For more information about this configuration, you can see the `relevant "
 "section <https://docs.djangoproject.com/en/1.3/topics/logging/#configuring-"
@@ -5533,12 +5539,12 @@ msgid ""
 msgstr ""
 
 # 8e06eb031f914417b9cc192f019908b0
-#: ../src/Doc/howto/logging-cookbook.rst:712
+#: ../src/Doc/howto/logging-cookbook.rst:713
 msgid "Inserting a BOM into messages sent to a SysLogHandler"
 msgstr ""
 
 # 9005d64c4e514f45907665af78dd4e3c
-#: ../src/Doc/howto/logging-cookbook.rst:714
+#: ../src/Doc/howto/logging-cookbook.rst:715
 msgid ""
 "`RFC 5424 <http://tools.ietf.org/html/rfc5424>`_ requires that a Unicode "
 "message be sent to a syslog daemon as a set of bytes which have the "
@@ -5549,7 +5555,7 @@ msgid ""
 msgstr ""
 
 # bc7217561a084ee2be1f776e926b809b
-#: ../src/Doc/howto/logging-cookbook.rst:720
+#: ../src/Doc/howto/logging-cookbook.rst:721
 msgid ""
 "In Python 2.6 and 2.7, code was added to :class:`~logging.handlers."
 "SysLogHandler` to insert a BOM into the message, but unfortunately, it was "
@@ -5558,7 +5564,7 @@ msgid ""
 msgstr ""
 
 # 45afc2aaa85d4baaab52e127881f5de2
-#: ../src/Doc/howto/logging-cookbook.rst:726
+#: ../src/Doc/howto/logging-cookbook.rst:727
 msgid ""
 "As this behaviour is broken, the incorrect BOM insertion code is being "
 "removed from Python 2.7.4 and later. However, it is not being replaced, and "
@@ -5568,21 +5574,21 @@ msgid ""
 msgstr ""
 
 # 01bc166a6b9e4f9dafd3630988f930f4
-#: ../src/Doc/howto/logging-cookbook.rst:732
+#: ../src/Doc/howto/logging-cookbook.rst:733
 msgid ""
 "Attach a :class:`~logging.Formatter` instance to your :class:`~logging."
 "handlers.SysLogHandler` instance, with a format string such as::"
 msgstr ""
 
 # 0b13247194d7497096e313fa273bb8f9
-#: ../src/Doc/howto/logging-cookbook.rst:738
+#: ../src/Doc/howto/logging-cookbook.rst:739
 msgid ""
 "The Unicode code point ``u'\\ufeff'``, when encoded using UTF-8, will be "
 "encoded as a UTF-8 BOM -- the byte-string ``'\\xef\\xbb\\xbf'``."
 msgstr ""
 
 # 1baa721b6f894e18924bb49539aece78
-#: ../src/Doc/howto/logging-cookbook.rst:741
+#: ../src/Doc/howto/logging-cookbook.rst:742
 msgid ""
 "Replace the ASCII section with whatever placeholders you like, but make sure "
 "that the data that appears in there after substitution is always ASCII (that "
@@ -5590,7 +5596,7 @@ msgid ""
 msgstr ""
 
 # 39da5b688cb34daa8d2724e58a163924
-#: ../src/Doc/howto/logging-cookbook.rst:745
+#: ../src/Doc/howto/logging-cookbook.rst:746
 msgid ""
 "Replace the Unicode section with whatever placeholders you like; if the data "
 "which appears there after substitution contains characters outside the ASCII "
@@ -5598,7 +5604,7 @@ msgid ""
 msgstr ""
 
 # 563aa68eaa3844419e017beec419601c
-#: ../src/Doc/howto/logging-cookbook.rst:749
+#: ../src/Doc/howto/logging-cookbook.rst:750
 msgid ""
 "If the formatted message is Unicode, it *will* be encoded using UTF-8 "
 "encoding by ``SysLogHandler``. If you follow the above rules, you should be "
@@ -5608,12 +5614,12 @@ msgid ""
 msgstr ""
 
 # 0d8560d1498f4c6ca61453cad525e91b
-#: ../src/Doc/howto/logging-cookbook.rst:757
+#: ../src/Doc/howto/logging-cookbook.rst:758
 msgid "Implementing structured logging"
 msgstr ""
 
 # 62bce27fb80a44d484ad24911feda140
-#: ../src/Doc/howto/logging-cookbook.rst:759
+#: ../src/Doc/howto/logging-cookbook.rst:760
 msgid ""
 "Although most logging messages are intended for reading by humans, and thus "
 "not readily machine-parseable, there might be cirumstances where you want to "
@@ -5626,28 +5632,28 @@ msgid ""
 msgstr ""
 
 # d8e16a2c93764297b5221734eb03d6ea
-#: ../src/Doc/howto/logging-cookbook.rst:783
+#: ../src/Doc/howto/logging-cookbook.rst:784
 msgid "If the above script is run, it prints::"
 msgstr ""
 
 # f20b3a7bba7c4657972e45a86bbc4b45
 # 9e6574c13a474001a7b68b02043c52d5
-#: ../src/Doc/howto/logging-cookbook.rst:787
-#: ../src/Doc/howto/logging-cookbook.rst:834
+#: ../src/Doc/howto/logging-cookbook.rst:788
+#: ../src/Doc/howto/logging-cookbook.rst:835
 msgid ""
 "Note that the order of items might be different according to the version of "
 "Python used."
 msgstr ""
 
 # 4dff3c2a5e2044c6ac210738690ac934
-#: ../src/Doc/howto/logging-cookbook.rst:790
+#: ../src/Doc/howto/logging-cookbook.rst:791
 msgid ""
 "If you need more specialised processing, you can use a custom JSON encoder, "
 "as in the following complete example::"
 msgstr ""
 
 # 1a7bdf84caba47cebdbefa1ffa3c403f
-#: ../src/Doc/howto/logging-cookbook.rst:830
+#: ../src/Doc/howto/logging-cookbook.rst:831
 msgid "When the above script is run, it prints::"
 msgstr ""
 
