@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-29 04:17\n"
+"POT-Creation-Date: 2013-09-02 06:29\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -564,7 +564,7 @@ msgstr ""
 #: ../src/Doc/reference/executionmodel.rst:244
 #: ../src/Doc/reference/expressions.rst:1402
 #: ../src/Doc/reference/lexical_analysis.rst:761
-#: ../src/Doc/reference/simple_stmts.rst:1035
+#: ../src/Doc/reference/simple_stmts.rst:1036
 msgid "Footnotes"
 msgstr ""
 
@@ -7417,20 +7417,20 @@ msgstr ""
 #: ../src/Doc/reference/simple_stmts.rst:983
 msgid ""
 "This statement supports dynamic execution of Python code.  The first "
-"expression should evaluate to either a string, an open file object, a code "
-"object, or a tuple.  If it is a string, the string is parsed as a suite of "
-"Python statements which is then executed (unless a syntax error occurs). [#]"
-"_ If it is an open file, the file is parsed until EOF and executed.  If it "
-"is a code object, it is simply executed.  For the interpretation of a tuple, "
-"see below.  In all cases, the code that's executed is expected to be valid "
-"as file input (see section :ref:`file-input`).  Be aware that the :keyword:"
-"`return` and :keyword:`yield` statements may not be used outside of function "
-"definitions even within the context of code passed to the :keyword:`exec` "
-"statement."
+"expression should evaluate to either a Unicode string, a *Latin-1* encoded "
+"string, an open file object, a code object, or a tuple.  If it is a string, "
+"the string is parsed as a suite of Python statements which is then executed "
+"(unless a syntax error occurs). [#]_ If it is an open file, the file is "
+"parsed until EOF and executed. If it is a code object, it is simply "
+"executed.  For the interpretation of a tuple, see below.  In all cases, the "
+"code that's executed is expected to be valid as file input (see section :ref:"
+"`file-input`).  Be aware that the :keyword:`return` and :keyword:`yield` "
+"statements may not be used outside of function definitions even within the "
+"context of code passed to the :keyword:`exec` statement."
 msgstr ""
 
 # f0828d0af701479fab300daddedd635d
-#: ../src/Doc/reference/simple_stmts.rst:994
+#: ../src/Doc/reference/simple_stmts.rst:995
 msgid ""
 "In all cases, if the optional parts are omitted, the code is executed in the "
 "current scope.  If only the first expression after ``in`` is specified, it "
@@ -7443,7 +7443,7 @@ msgid ""
 msgstr ""
 
 # 1cff2ae708b0433a9a8044ce64b39161
-#: ../src/Doc/reference/simple_stmts.rst:1003
+#: ../src/Doc/reference/simple_stmts.rst:1004
 msgid ""
 "The first expression may also be a tuple of length 2 or 3.  In this case, "
 "the optional parts must be omitted.  The form ``exec(expr, globals)`` is "
@@ -7454,7 +7454,7 @@ msgid ""
 msgstr ""
 
 # ebbde66720cc45048971fc5b8015c0e4
-#: ../src/Doc/reference/simple_stmts.rst:1017
+#: ../src/Doc/reference/simple_stmts.rst:1018
 msgid ""
 "As a side effect, an implementation may insert additional keys into the "
 "dictionaries given besides those corresponding to variable names set by the "
@@ -7464,7 +7464,7 @@ msgid ""
 msgstr ""
 
 # b456d3574ec64cf2be1ebe2020fb3965
-#: ../src/Doc/reference/simple_stmts.rst:1028
+#: ../src/Doc/reference/simple_stmts.rst:1029
 msgid ""
 "**Programmer's hints:** dynamic evaluation of expressions is supported by "
 "the built-in function :func:`eval`.  The built-in functions :func:`globals` "
@@ -7473,7 +7473,7 @@ msgid ""
 msgstr ""
 
 # 08f09bb71682460cb2234c2f7b4da781
-#: ../src/Doc/reference/simple_stmts.rst:1036
+#: ../src/Doc/reference/simple_stmts.rst:1037
 msgid ""
 "Note that the parser only accepts the Unix-style end of line convention. If "
 "you are reading the code from a file, make sure to use :term:`universal "
