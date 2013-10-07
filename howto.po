@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-19 04:59\n"
+"POT-Creation-Date: 2013-10-07 06:53\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -996,7 +996,7 @@ msgid ""
 "will be displayed.   ::"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:193
+#: ../src/Doc/howto/curses.rst:195
 msgid ""
 "The :func:`refresh` call displays a section of the pad in the rectangle "
 "extending from coordinate (5,5) to coordinate (20,75) on the screen; the "
@@ -1005,7 +1005,7 @@ msgid ""
 "the same methods."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:199
+#: ../src/Doc/howto/curses.rst:201
 msgid ""
 "If you have multiple windows and pads on screen there is a more efficient "
 "way to go, which will prevent annoying screen flicker at refresh time.  Use "
@@ -1016,11 +1016,11 @@ msgid ""
 "last act."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:208
+#: ../src/Doc/howto/curses.rst:210
 msgid "Displaying Text"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:210
+#: ../src/Doc/howto/curses.rst:212
 msgid ""
 "From a C programmer's point of view, curses may sometimes look like a twisty "
 "maze of functions, all subtly different.  For example, :func:`addstr` "
@@ -1031,65 +1031,65 @@ msgid ""
 "func:`mvwaddstr` follows similarly."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:218
+#: ../src/Doc/howto/curses.rst:220
 msgid ""
 "Fortunately the Python interface hides all these details; ``stdscr`` is a "
 "window object like any other, and methods like :func:`addstr` accept "
 "multiple argument forms.  Usually there are four different forms."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:223
+#: ../src/Doc/howto/curses.rst:225
 msgid "Form"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:223 ../src/Doc/howto/curses.rst:281
+#: ../src/Doc/howto/curses.rst:225 ../src/Doc/howto/curses.rst:283
 msgid "Description"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:225
+#: ../src/Doc/howto/curses.rst:227
 msgid "*str* or *ch*"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:225
+#: ../src/Doc/howto/curses.rst:227
 msgid "Display the string *str* or character *ch* at the current position"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:228
+#: ../src/Doc/howto/curses.rst:230
 msgid "*str* or *ch*, *attr*"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:228
+#: ../src/Doc/howto/curses.rst:230
 msgid ""
 "Display the string *str* or character *ch*, using attribute *attr* at the "
 "current position"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:232
+#: ../src/Doc/howto/curses.rst:234
 msgid "*y*, *x*, *str* or *ch*"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:232
+#: ../src/Doc/howto/curses.rst:234
 msgid "Move to position *y,x* within the window, and display *str* or *ch*"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:235
+#: ../src/Doc/howto/curses.rst:237
 msgid "*y*, *x*, *str* or *ch*, *attr*"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:235
+#: ../src/Doc/howto/curses.rst:237
 msgid ""
 "Move to position *y,x* within the window, and display *str* or *ch*, using "
 "attribute *attr*"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:239
+#: ../src/Doc/howto/curses.rst:241
 msgid ""
 "Attributes allow displaying text in highlighted forms, such as in boldface, "
 "underline, reverse code, or in color.  They'll be explained in more detail "
 "in the next subsection."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:243
+#: ../src/Doc/howto/curses.rst:245
 msgid ""
 "The :func:`addstr` function takes a Python string as the value to be "
 "displayed, while the :func:`addch` functions take a character, which can be "
@@ -1100,7 +1100,7 @@ msgid ""
 "`ACS_ULCORNER` is the upper left corner of a box (handy for drawing borders)."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:251
+#: ../src/Doc/howto/curses.rst:253
 msgid ""
 "Windows remember where the cursor was left after the last operation, so if "
 "you leave out the *y,x* coordinates, the string or character will be "
@@ -1111,7 +1111,7 @@ msgid ""
 "cursor blinking at some apparently random location."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:259
+#: ../src/Doc/howto/curses.rst:261
 msgid ""
 "If your application doesn't need a blinking cursor at all, you can call "
 "``curs_set(0)`` to make it invisible.  Equivalently, and for compatibility "
@@ -1120,11 +1120,11 @@ msgid ""
 "cursor, and you won't need to worry about leaving it in odd locations."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:267
+#: ../src/Doc/howto/curses.rst:269
 msgid "Attributes and Color"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:269
+#: ../src/Doc/howto/curses.rst:271
 msgid ""
 "Characters can be displayed in different ways.  Status lines in a text-based "
 "application are commonly shown in reverse video; a text viewer may need to "
@@ -1133,7 +1133,7 @@ msgid ""
 msgstr ""
 
 # d4ee7abe0a9845bab9d70653090828fa
-#: ../src/Doc/howto/curses.rst:274
+#: ../src/Doc/howto/curses.rst:276
 msgid ""
 "An attribute is an integer, each bit representing a different attribute.  "
 "You can try to display text with multiple attribute bits set, but curses "
@@ -1143,73 +1143,73 @@ msgid ""
 "attributes, listed here."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:281
+#: ../src/Doc/howto/curses.rst:283
 msgid "Attribute"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:283
+#: ../src/Doc/howto/curses.rst:285
 msgid ":const:`A_BLINK`"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:283
+#: ../src/Doc/howto/curses.rst:285
 msgid "Blinking text"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:285
+#: ../src/Doc/howto/curses.rst:287
 msgid ":const:`A_BOLD`"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:285
+#: ../src/Doc/howto/curses.rst:287
 msgid "Extra bright or bold text"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:287
+#: ../src/Doc/howto/curses.rst:289
 msgid ":const:`A_DIM`"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:287
+#: ../src/Doc/howto/curses.rst:289
 msgid "Half bright text"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:289
+#: ../src/Doc/howto/curses.rst:291
 msgid ":const:`A_REVERSE`"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:289
+#: ../src/Doc/howto/curses.rst:291
 msgid "Reverse-video text"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:291
+#: ../src/Doc/howto/curses.rst:293
 msgid ":const:`A_STANDOUT`"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:291
+#: ../src/Doc/howto/curses.rst:293
 msgid "The best highlighting mode available"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:293
+#: ../src/Doc/howto/curses.rst:295
 msgid ":const:`A_UNDERLINE`"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:293
+#: ../src/Doc/howto/curses.rst:295
 msgid "Underlined text"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:296
+#: ../src/Doc/howto/curses.rst:298
 msgid ""
 "So, to display a reverse-video status line on the top line of the screen, "
 "you could code::"
 msgstr ""
 
 # 410250bff4f14d3188d601724053c1f6
-#: ../src/Doc/howto/curses.rst:303
+#: ../src/Doc/howto/curses.rst:305
 msgid ""
 "The curses library also supports color on those terminals that provide it. "
 "The most common such terminal is probably the Linux console, followed by "
 "color xterms."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:307
+#: ../src/Doc/howto/curses.rst:309
 msgid ""
 "To use color, you must call the :func:`start_color` function soon after "
 "calling :func:`initscr`, to initialize the default color set (the :func:"
@@ -1221,7 +1221,7 @@ msgid ""
 "for the sake of these functions.)"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:316
+#: ../src/Doc/howto/curses.rst:318
 msgid ""
 "The curses library maintains a finite number of color pairs, containing a "
 "foreground (or text) color and a background color.  You can get the "
@@ -1231,11 +1231,11 @@ msgid ""
 "terminals."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:322
+#: ../src/Doc/howto/curses.rst:324
 msgid "An example, which displays a line of text using color pair 1::"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:327
+#: ../src/Doc/howto/curses.rst:329
 msgid ""
 "As I said before, a color pair consists of a foreground and background "
 "color. :func:`start_color` initializes 8 basic colors when it activates "
@@ -1245,27 +1245,27 @@ msgid ""
 "forth."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:333
+#: ../src/Doc/howto/curses.rst:335
 msgid ""
 "The ``init_pair(n, f, b)`` function changes the definition of color pair "
 "*n*, to foreground color f and background color b.  Color pair 0 is hard-"
 "wired to white on black, and cannot be changed."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:337
+#: ../src/Doc/howto/curses.rst:339
 msgid ""
 "Let's put all this together. To change color 1 to red text on a white "
 "background, you would call::"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:342
+#: ../src/Doc/howto/curses.rst:344
 msgid ""
 "When you change a color pair, any text already displayed using that color "
 "pair will change to the new colors.  You can also display new text in this "
 "color with::"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:348
+#: ../src/Doc/howto/curses.rst:350
 msgid ""
 "Very fancy terminals can change the definitions of the actual colors to a "
 "given RGB value.  This lets you change color 1, which is usually red, to "
@@ -1277,17 +1277,17 @@ msgid ""
 "man pages for more information."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:358
+#: ../src/Doc/howto/curses.rst:360
 msgid "User Input"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:360
+#: ../src/Doc/howto/curses.rst:362
 msgid ""
 "The curses library itself offers only very simple input mechanisms. Python's "
 "support adds a text-input widget that makes up some of the lack."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:363
+#: ../src/Doc/howto/curses.rst:365
 msgid ""
 "The most common way to get input to a window is to use its :meth:`getch` "
 "method. :meth:`getch` pauses and waits for the user to hit a key, displaying "
@@ -1295,7 +1295,7 @@ msgid ""
 "coordinate to which the cursor should be moved before pausing."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:368
+#: ../src/Doc/howto/curses.rst:370
 msgid ""
 "It's possible to change this behavior with the method :meth:`nodelay`. After "
 "``nodelay(1)``, :meth:`getch` for the window becomes non-blocking and "
@@ -1305,7 +1305,7 @@ msgid ""
 "delay (measured in tenths of a second), curses raises an exception."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:375
+#: ../src/Doc/howto/curses.rst:377
 msgid ""
 "The :meth:`getch` method returns an integer; if it's between 0 and 255, it "
 "represents the ASCII code of the key pressed.  Values greater than 255 are "
@@ -1315,7 +1315,7 @@ msgid ""
 "your program will look something like this::"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:388
+#: ../src/Doc/howto/curses.rst:393
 msgid ""
 "The :mod:`curses.ascii` module supplies ASCII class membership functions "
 "that take either integer or 1-character-string arguments; these may be "
@@ -1325,7 +1325,7 @@ msgid ""
 "ctrl` returns the control character corresponding to its argument."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:395
+#: ../src/Doc/howto/curses.rst:400
 msgid ""
 "There's also a method to retrieve an entire string, :const:`getstr()`.  It "
 "isn't used very often, because its functionality is quite limited; the only "
@@ -1334,7 +1334,7 @@ msgid ""
 "characters. ::"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:405
+#: ../src/Doc/howto/curses.rst:410
 msgid ""
 "The Python :mod:`curses.textpad` module supplies something better. With it, "
 "you can turn a window into a text box that supports an Emacs-like set of "
@@ -1344,18 +1344,18 @@ msgid ""
 "for the details."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:414
+#: ../src/Doc/howto/curses.rst:419
 msgid "For More Information"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:416
+#: ../src/Doc/howto/curses.rst:421
 msgid ""
 "This HOWTO didn't cover some advanced topics, such as screen-scraping or "
 "capturing mouse events from an xterm instance.  But the Python library page "
 "for the curses modules is now pretty complete.  You should browse it next."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:420
+#: ../src/Doc/howto/curses.rst:425
 msgid ""
 "If you're in doubt about the detailed behavior of any of the ncurses entry "
 "points, consult the manual pages for your curses implementation, whether "
@@ -1364,7 +1364,7 @@ msgid ""
 "and :const:`ACS_\\*` characters available to you."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:426
+#: ../src/Doc/howto/curses.rst:431
 msgid ""
 "Because the curses API is so large, some functions aren't supported in the "
 "Python interface, not because they're difficult to implement, but because no "
@@ -1373,13 +1373,13 @@ msgid ""
 "ncurses; feel free to add that."
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:432
+#: ../src/Doc/howto/curses.rst:437
 msgid ""
 "If you write an interesting little program, feel free to contribute it as "
 "another demo.  We can always use more of them!"
 msgstr ""
 
-#: ../src/Doc/howto/curses.rst:435
+#: ../src/Doc/howto/curses.rst:440
 msgid "The ncurses FAQ: http://invisible-island.net/ncurses/ncurses.faq.html"
 msgstr ""
 

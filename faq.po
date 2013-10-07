@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-24 04:06\n"
+"POT-Creation-Date: 2013-10-07 06:53\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -642,26 +642,29 @@ msgid ""
 "stack."
 msgstr ""
 
+# 9d39032c5cef4182b90f76f54e892445
 #: ../src/Doc/faq/design.rst:376
-msgid "Why can't lambda forms contain statements?"
+msgid "Why can't lambda expressions contain statements?"
 msgstr ""
 
+# 2ad3f5f006c2486191151cca91d654d6
 #: ../src/Doc/faq/design.rst:378
 msgid ""
-"Python lambda forms cannot contain statements because Python's syntactic "
-"framework can't handle statements nested inside expressions.  However, in "
-"Python, this is not a serious problem.  Unlike lambda forms in other "
-"languages, where they add functionality, Python lambdas are only a shorthand "
-"notation if you're too lazy to define a function."
+"Python lambda expressions cannot contain statements because Python's "
+"syntactic framework can't handle statements nested inside expressions.  "
+"However, in Python, this is not a serious problem.  Unlike lambda forms in "
+"other languages, where they add functionality, Python lambdas are only a "
+"shorthand notation if you're too lazy to define a function."
 msgstr ""
 
+# 159c73c109504f54bc8287595f3e3650
 #: ../src/Doc/faq/design.rst:384
 msgid ""
 "Functions are already first class objects in Python, and can be declared in "
-"a local scope.  Therefore the only advantage of using a lambda form instead "
-"of a locally-defined function is that you don't need to invent a name for "
-"the function -- but that's just a local variable to which the function "
-"object (which is exactly the same type of object that a lambda form yields) "
+"a local scope.  Therefore the only advantage of using a lambda instead of a "
+"locally-defined function is that you don't need to invent a name for the "
+"function -- but that's just a local variable to which the function object "
+"(which is exactly the same type of object that a lambda expression yields) "
 "is assigned!"
 msgstr ""
 
@@ -2575,106 +2578,113 @@ msgstr ""
 msgid "Qt"
 msgstr ""
 
+# 2e5cdcfa960a4522b7ce1e4d3b0d2d6f
 #: ../src/Doc/faq/gui.rst:50
 msgid ""
-"There are bindings available for the Qt toolkit (`PyQt <http://www."
-"riverbankcomputing.co.uk/software/pyqt/>`_) and for KDE (`PyKDE <http://www."
-"riverbankcomputing.co.uk/software/pykde/intro>`__).  If you're writing open "
-"source software, you don't need to pay for PyQt, but if you want to write "
-"proprietary applications, you must buy a PyQt license from `Riverbank "
-"Computing <http://www.riverbankcomputing.co.uk>`_ and (up to Qt 4.4; Qt 4.5 "
-"upwards is licensed under the LGPL license) a Qt license from `Trolltech "
-"<http://www.trolltech.com>`_."
+"There are bindings available for the Qt toolkit (using either `PyQt <http://"
+"www.riverbankcomputing.co.uk/software/pyqt/>`_ or `PySide <http://www.pyside."
+"org/>`_) and for KDE (`PyKDE <http://www.riverbankcomputing.co.uk/software/"
+"pykde/intro>`_). PyQt is currently more mature than PySide, but you must buy "
+"a PyQt license from `Riverbank Computing <http://www.riverbankcomputing.co."
+"uk/software/pyqt/license>`_ if you want to write proprietary applications.  "
+"PySide is free for all applications."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:59
-msgid "Gtk+"
+# bfe2898e8b9949bb84794a0777ebf205
+#: ../src/Doc/faq/gui.rst:57
+msgid ""
+"Qt 4.5 upwards is licensed under the LGPL license; also, commercial licenses "
+"are available from `Nokia <http://qt.nokia.com/>`_."
 msgstr ""
 
 #: ../src/Doc/faq/gui.rst:61
+msgid "Gtk+"
+msgstr ""
+
+#: ../src/Doc/faq/gui.rst:63
 msgid ""
 "PyGtk bindings for the `Gtk+ toolkit <http://www.gtk.org>`_ have been "
 "implemented by James Henstridge; see <http://www.pygtk.org>."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:65
+#: ../src/Doc/faq/gui.rst:67
 msgid "FLTK"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:67
+#: ../src/Doc/faq/gui.rst:69
 msgid ""
 "Python bindings for `the FLTK toolkit <http://www.fltk.org>`_, a simple yet "
 "powerful and mature cross-platform windowing system, are available from `the "
 "PyFLTK project <http://pyfltk.sourceforge.net>`_."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:73
+#: ../src/Doc/faq/gui.rst:75
 msgid "FOX"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:75
+#: ../src/Doc/faq/gui.rst:77
 msgid ""
 "A wrapper for `the FOX toolkit <http://www.fox-toolkit.org/>`_ called `FXpy "
 "<http://fxpy.sourceforge.net/>`_ is available.  FOX supports both Unix "
 "variants and Windows."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:81
+#: ../src/Doc/faq/gui.rst:83
 msgid "OpenGL"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:83
+#: ../src/Doc/faq/gui.rst:85
 msgid "For OpenGL bindings, see `PyOpenGL <http://pyopengl.sourceforge.net>`_."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:87
+#: ../src/Doc/faq/gui.rst:89
 msgid "What platform-specific GUI toolkits exist for Python?"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:89
+#: ../src/Doc/faq/gui.rst:91
 msgid ""
 "`The Mac port <http://python.org/download/mac>`_ by Jack Jansen has a rich "
 "and ever-growing set of modules that support the native Mac toolbox calls.  "
 "The port supports MacOS X's Carbon libraries."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:93
+#: ../src/Doc/faq/gui.rst:95
 msgid ""
 "By installing the `PyObjc Objective-C bridge <http://pyobjc.sourceforge."
 "net>`_, Python programs can use MacOS X's Cocoa libraries. See the "
 "documentation that comes with the Mac port."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:97
+#: ../src/Doc/faq/gui.rst:99
 msgid ""
 ":ref:`Pythonwin <windows-faq>` by Mark Hammond includes an interface to the "
 "Microsoft Foundation Classes and a Python programming environment that's "
 "written mostly in Python using the MFC classes."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:103
+#: ../src/Doc/faq/gui.rst:105
 msgid "Tkinter questions"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:106
+#: ../src/Doc/faq/gui.rst:108
 msgid "How do I freeze Tkinter applications?"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:108
+#: ../src/Doc/faq/gui.rst:110
 msgid ""
 "Freeze is a tool to create stand-alone applications.  When freezing Tkinter "
 "applications, the applications will not be truly stand-alone, as the "
 "application will still need the Tcl and Tk libraries."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:112
+#: ../src/Doc/faq/gui.rst:114
 msgid ""
 "One solution is to ship the application with the Tcl and Tk libraries, and "
 "point to them at run-time using the :envvar:`TCL_LIBRARY` and :envvar:"
 "`TK_LIBRARY` environment variables."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:116
+#: ../src/Doc/faq/gui.rst:118
 msgid ""
 "To get truly stand-alone applications, the Tcl scripts that form the library "
 "have to be integrated into the application as well. One tool supporting that "
@@ -2683,19 +2693,19 @@ msgid ""
 msgstr ""
 
 # 305a161b8df040a5977ca7cfe21f949b
-#: ../src/Doc/faq/gui.rst:121
+#: ../src/Doc/faq/gui.rst:123
 msgid ""
 "Build Tix with SAM enabled, perform the appropriate call to :c:func:"
 "`Tclsam_init`, etc. inside Python's :file:`Modules/tkappinit.c`, and link "
 "with libtclsam and libtksam (you might include the Tix libraries as well)."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:128
+#: ../src/Doc/faq/gui.rst:130
 msgid "Can I have Tk events handled while waiting for I/O?"
 msgstr ""
 
 # 29d3a0c48fc8439492bc34338ead5dbd
-#: ../src/Doc/faq/gui.rst:130
+#: ../src/Doc/faq/gui.rst:132
 msgid ""
 "Yes, and you don't even need threads!  But you'll have to restructure your I/"
 "O code a bit.  Tk has the equivalent of Xt's :c:func:`XtAddInput()` call, "
@@ -2704,7 +2714,7 @@ msgid ""
 "need::"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:138
+#: ../src/Doc/faq/gui.rst:140
 msgid ""
 "The file may be a Python file or socket object (actually, anything with a "
 "fileno() method), or an integer file descriptor.  The mask is one of the "
@@ -2712,11 +2722,11 @@ msgid ""
 "follows::"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:145
+#: ../src/Doc/faq/gui.rst:147
 msgid "You must unregister the callback when you're done, using ::"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:149
+#: ../src/Doc/faq/gui.rst:151
 msgid ""
 "Note: since you don't know *how many bytes* are available for reading, you "
 "can't use the Python file object's read or readline methods, since these "
@@ -2725,18 +2735,18 @@ msgid ""
 "read(file.fileno(), maxbytecount)``."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:157
+#: ../src/Doc/faq/gui.rst:159
 msgid "I can't get key bindings to work in Tkinter: why?"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:159
+#: ../src/Doc/faq/gui.rst:161
 msgid ""
 "An often-heard complaint is that event handlers bound to events with the :"
 "meth:`bind` method don't get handled even when the appropriate key is "
 "pressed."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:162
+#: ../src/Doc/faq/gui.rst:164
 msgid ""
 "The most common cause is that the widget to which the binding applies "
 "doesn't have \"keyboard focus\".  Check out the Tk documentation for the "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-27 05:25\n"
+"POT-Creation-Date: 2013-10-07 06:53\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1574,10 +1574,10 @@ msgstr ""
 msgid "Examples::"
 msgstr "Exemples ::"
 
-#: ../src/Doc/tutorial/classes.rst:827 ../src/Doc/tutorial/controlflow.rst:667
+#: ../src/Doc/tutorial/classes.rst:827 ../src/Doc/tutorial/controlflow.rst:674
 #: ../src/Doc/tutorial/datastructures.rst:749
 #: ../src/Doc/tutorial/interactive.rst:166
-#: ../src/Doc/tutorial/interpreter.rst:268 ../src/Doc/tutorial/modules.rst:552
+#: ../src/Doc/tutorial/interpreter.rst:268 ../src/Doc/tutorial/modules.rst:554
 msgid "Footnotes"
 msgstr "Notes"
 
@@ -2216,19 +2216,20 @@ msgstr ""
 "utilisant l'opérateur ``**`` ::"
 
 #: ../src/Doc/tutorial/controlflow.rst:545
-msgid "Lambda Forms"
-msgstr "Les fonctions lambda"
+#, fuzzy
+msgid "Lambda Expressions"
+msgstr "Expressions et générateurs"
 
 #: ../src/Doc/tutorial/controlflow.rst:547
+#, fuzzy
 msgid ""
-"By popular demand, a few features commonly found in functional programming "
-"languages like Lisp have been added to Python.  With the :keyword:`lambda` "
-"keyword, small anonymous functions can be created. Here's a function that "
-"returns the sum of its two arguments: ``lambda a, b: a+b``.  Lambda forms "
-"can be used wherever function objects are required.  They are syntactically "
-"restricted to a single expression.  Semantically, they are just syntactic "
-"sugar for a normal function definition.  Like nested function definitions, "
-"lambda forms can reference variables from the containing scope::"
+"Small anonymous functions can be created with the :keyword:`lambda` keyword. "
+"This function returns the sum of its two arguments: ``lambda a, b: a+b``. "
+"Lambda functions can be used wherever function objects are required.  They "
+"are syntactically restricted to a single expression.  Semantically, they are "
+"just syntactic sugar for a normal function definition.  Like nested function "
+"definitions, lambda functions can reference variables from the containing "
+"scope::"
 msgstr ""
 "À la demande générale, quelques fonctionnalités que l'on trouve souvent dans "
 "les langages fonctionnels comme Lisp ont été ajoutées à Python. Avec le mot-"
@@ -2240,12 +2241,19 @@ msgstr ""
 "définition de fonction normale. Comme les fonctions imbriquées, les "
 "fonctions lambda peuvent référencer des variables de la portée englobante ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:569
+# 0a4906b6ec174baa951d833f5937c01b
+#: ../src/Doc/tutorial/controlflow.rst:564
+msgid ""
+"The above example uses a lambda expression to return a function.  Another "
+"use is to pass a small function as an argument::"
+msgstr ""
+
+#: ../src/Doc/tutorial/controlflow.rst:576
 msgid "Documentation Strings"
 msgstr "Chaînes de documentation"
 
 # 41dfd2967219444194cfcf734c8325c6
-#: ../src/Doc/tutorial/controlflow.rst:576
+#: ../src/Doc/tutorial/controlflow.rst:583
 msgid ""
 "There are emerging conventions about the content and formatting of "
 "documentation strings."
@@ -2253,7 +2261,7 @@ msgstr ""
 "Il existe des conventions émergeantes concernant le contenu et le format des "
 "chaînes de documentation."
 
-#: ../src/Doc/tutorial/controlflow.rst:579
+#: ../src/Doc/tutorial/controlflow.rst:586
 msgid ""
 "The first line should always be a short, concise summary of the object's "
 "purpose.  For brevity, it should not explicitly state the object's name or "
@@ -2267,7 +2275,7 @@ msgstr ""
 "nom est un verbe qui décrit une opération). Cette ligne devrait commencer "
 "avec une majuscule et se terminer par un point."
 
-#: ../src/Doc/tutorial/controlflow.rst:585
+#: ../src/Doc/tutorial/controlflow.rst:592
 msgid ""
 "If there are more lines in the documentation string, the second line should "
 "be blank, visually separating the summary from the rest of the description.  "
@@ -2279,7 +2287,7 @@ msgstr ""
 "Les autres lignes peuvent alors constituer un ou plusieurs paragraphes "
 "décrivant le mode d'utilisation de l'objet, ses effets de bord, etc."
 
-#: ../src/Doc/tutorial/controlflow.rst:590
+#: ../src/Doc/tutorial/controlflow.rst:597
 msgid ""
 "The Python parser does not strip indentation from multi-line string literals "
 "in Python, so tools that process documentation have to strip indentation if "
@@ -2307,15 +2315,15 @@ msgstr ""
 "début de ligne doivent être supprimés. L'équivalent des espaces doit être "
 "testé après expansion des tabulations (normalement remplacés par 4 espaces)."
 
-#: ../src/Doc/tutorial/controlflow.rst:602
+#: ../src/Doc/tutorial/controlflow.rst:609
 msgid "Here is an example of a multi-line docstring::"
 msgstr "Voici un exemple de chaîne de documentation multi-lignes ::"
 
-#: ../src/Doc/tutorial/controlflow.rst:620
+#: ../src/Doc/tutorial/controlflow.rst:627
 msgid "Intermezzo: Coding Style"
 msgstr "Un style de codage : Intermezzo"
 
-#: ../src/Doc/tutorial/controlflow.rst:625
+#: ../src/Doc/tutorial/controlflow.rst:632
 msgid ""
 "Now that you are about to write longer, more complex pieces of Python, it is "
 "a good time to talk about *coding style*.  Most languages can be written (or "
@@ -2330,7 +2338,7 @@ msgstr ""
 "votre code plus facile aux autres est toujours une bonne idée, et adopter un "
 "bon style de codage peut énormément vous y aider."
 
-#: ../src/Doc/tutorial/controlflow.rst:631
+#: ../src/Doc/tutorial/controlflow.rst:638
 msgid ""
 "For Python, :pep:`8` has emerged as the style guide that most projects "
 "adhere to; it promotes a very readable and eye-pleasing coding style.  Every "
@@ -2342,11 +2350,11 @@ msgstr ""
 "agréable à l'oeil. Chaque développeur Python devrait donc la lire et s'en "
 "inspirer autant que possible ; voici ses principaux points notables :"
 
-#: ../src/Doc/tutorial/controlflow.rst:636
+#: ../src/Doc/tutorial/controlflow.rst:643
 msgid "Use 4-space indentation, and no tabs."
 msgstr "Utilisez des indentations de 4 espaces, et pas de tabulation."
 
-#: ../src/Doc/tutorial/controlflow.rst:638
+#: ../src/Doc/tutorial/controlflow.rst:645
 msgid ""
 "4 spaces are a good compromise between small indentation (allows greater "
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
@@ -2357,13 +2365,13 @@ msgstr ""
 "le code plus facile à lire). Les tabulations introduisent de la confusion, "
 "et doivent être proscrites autant que possible."
 
-#: ../src/Doc/tutorial/controlflow.rst:642
+#: ../src/Doc/tutorial/controlflow.rst:649
 msgid "Wrap lines so that they don't exceed 79 characters."
 msgstr ""
 "Faites des retours à la ligne, de telle sorte qu'elles n'excèdent pas 79 "
 "caractères."
 
-#: ../src/Doc/tutorial/controlflow.rst:644
+#: ../src/Doc/tutorial/controlflow.rst:651
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
@@ -2371,7 +2379,7 @@ msgstr ""
 "Ceci aide les utilisateurs ne disposant que de petits écrans, et permet sur "
 "de plus grands de disposer plusieurs fichiers côte à côte sans difficulté."
 
-#: ../src/Doc/tutorial/controlflow.rst:647
+#: ../src/Doc/tutorial/controlflow.rst:654
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code "
 "inside functions."
@@ -2379,16 +2387,16 @@ msgstr ""
 "Utilisez des lignes vides pour séparer les fonctions et les classes, ou pour "
 "scinder de gros blocs de code à l'intérieur de fonctions."
 
-#: ../src/Doc/tutorial/controlflow.rst:650
+#: ../src/Doc/tutorial/controlflow.rst:657
 msgid "When possible, put comments on a line of their own."
 msgstr ""
 "Lorsque c'est possible, placez les commentaires sur leur propres lignes."
 
-#: ../src/Doc/tutorial/controlflow.rst:652
+#: ../src/Doc/tutorial/controlflow.rst:659
 msgid "Use docstrings."
 msgstr "Utilisez les chaînes de documentation"
 
-#: ../src/Doc/tutorial/controlflow.rst:654
+#: ../src/Doc/tutorial/controlflow.rst:661
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
@@ -2396,7 +2404,7 @@ msgstr ""
 "Utilisez des espaces autour des opérateurs et après les virgules, mais pas "
 "directement à l'intérieur des parenthèses : ``a = f(1, 2) + g(3, 4)``."
 
-#: ../src/Doc/tutorial/controlflow.rst:657
+#: ../src/Doc/tutorial/controlflow.rst:664
 msgid ""
 "Name your classes and functions consistently; the convention is to use "
 "``CamelCase`` for classes and ``lower_case_with_underscores`` for functions "
@@ -2410,7 +2418,7 @@ msgstr ""
 "`tut-firstclasses` pour en savoir plus sur les classes et les méthodes)."
 
 # 82cc90f14beb4e74801836b553a5595f
-#: ../src/Doc/tutorial/controlflow.rst:662
+#: ../src/Doc/tutorial/controlflow.rst:669
 msgid ""
 "Don't use fancy encodings if your code is meant to be used in international "
 "environments.  Plain ASCII works best in any case."
@@ -2419,7 +2427,7 @@ msgstr ""
 "utilisé dans des environnements internationaux. L'ASCII est encore ce qui "
 "marche le mieux dans la plupart des cas."
 
-#: ../src/Doc/tutorial/controlflow.rst:668
+#: ../src/Doc/tutorial/controlflow.rst:675
 msgid ""
 "Actually, *call by object reference* would be a better description, since if "
 "a mutable object is passed, the caller will see any changes the callee makes "
@@ -2590,12 +2598,13 @@ msgstr ""
 
 # bd57b7606e0443a0ab47c23c055f820e
 #: ../src/Doc/tutorial/datastructures.rst:170
+#, fuzzy
 msgid ""
 "``filter(function, sequence)`` returns a sequence consisting of those items "
 "from the sequence for which ``function(item)`` is true. If *sequence* is a :"
 "class:`string` or :class:`tuple`, the result will be of the same type; "
 "otherwise, it is always a :class:`list`. For example, to compute a sequence "
-"of numbers not divisible by 2 and 3::"
+"of numbers not divisible by 2 or 3::"
 msgstr ""
 "``filter(function, sequence)`` retourne une séquence composée des éléments "
 "de la séquence initiale pour lesquels la fonction ``function(item)`` est "
@@ -5451,11 +5460,13 @@ msgstr ""
 
 # 136855779690415a8c5aac7ceb545218
 #: ../src/Doc/tutorial/interpreter.rst:186
+#, fuzzy
 msgid ""
 "For example, to write Unicode literals including the Euro currency symbol, "
 "the ISO-8859-15 encoding can be used, with the Euro symbol having the "
-"ordinal value 164.  This script will print the value 8364 (the Unicode "
-"codepoint corresponding to the Euro symbol) and then exit::"
+"ordinal value 164.  This script, when saved in the ISO-8859-15 encoding, "
+"will print the value 8364 (the Unicode codepoint corresponding to the Euro "
+"symbol) and then exit::"
 msgstr ""
 "Par exemple, l'encodage ISO-8859-15 peut être utilisé pour écrire le "
 "littéral Unicode décrivant le symbole Euro, ce dernier portant la valeur "
@@ -6687,6 +6698,7 @@ msgid ""
 "from having to worry about each other's module names."
 msgstr ""
 
+# 0c3e2b19ba7c46b3a367e0649f5bcace
 #: ../src/Doc/tutorial/modules.rst:362
 msgid ""
 "Suppose you want to design a collection of modules (a \"package\") for the "
@@ -6699,16 +6711,16 @@ msgid ""
 "equalizer function, creating an artificial stereo effect), so in addition "
 "you will be writing a never-ending stream of modules to perform these "
 "operations.  Here's a possible structure for your package (expressed in "
-"terms of a hierarchical filesystem)::"
+"terms of a hierarchical filesystem):"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:397
+#: ../src/Doc/tutorial/modules.rst:399
 msgid ""
 "When importing the package, Python searches through the directories on ``sys."
 "path`` looking for the package subdirectory."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:400
+#: ../src/Doc/tutorial/modules.rst:402
 msgid ""
 "The :file:`__init__.py` files are required to make Python treat the "
 "directories as containing packages; this is done to prevent directories with "
@@ -6719,41 +6731,41 @@ msgid ""
 "described later."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:407
+#: ../src/Doc/tutorial/modules.rst:409
 msgid ""
 "Users of the package can import individual modules from the package, for "
 "example::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:412
+#: ../src/Doc/tutorial/modules.rst:414
 msgid ""
 "This loads the submodule :mod:`sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:417
+#: ../src/Doc/tutorial/modules.rst:419
 msgid "An alternative way of importing the submodule is::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:421
+#: ../src/Doc/tutorial/modules.rst:423
 msgid ""
 "This also loads the submodule :mod:`echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:426
+#: ../src/Doc/tutorial/modules.rst:428
 msgid ""
 "Yet another variation is to import the desired function or variable "
 "directly::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:430
+#: ../src/Doc/tutorial/modules.rst:432
 msgid ""
 "Again, this loads the submodule :mod:`echo`, but this makes its function :"
 "func:`echofilter` directly available::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:435
+#: ../src/Doc/tutorial/modules.rst:437
 msgid ""
 "Note that when using ``from package import item``, the item can be either a "
 "submodule (or subpackage) of the package, or some  other name defined in the "
@@ -6763,7 +6775,7 @@ msgid ""
 "`ImportError` exception is raised."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:442
+#: ../src/Doc/tutorial/modules.rst:444
 msgid ""
 "Contrarily, when using syntax like ``import item.subitem.subsubitem``, each "
 "item except for the last must be a package; the last item can be a module or "
@@ -6771,11 +6783,11 @@ msgid ""
 "previous item."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:451
+#: ../src/Doc/tutorial/modules.rst:453
 msgid "Importing \\* From a Package"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:455
+#: ../src/Doc/tutorial/modules.rst:457
 msgid ""
 "Now what happens when the user writes ``from sound.effects import *``?  "
 "Ideally, one would hope that this somehow goes out to the filesystem, finds "
@@ -6784,7 +6796,8 @@ msgid ""
 "effects that should only happen when the sub-module is explicitly imported."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:461
+# 8f1258abef7b47319a5ab764ae9e7512
+#: ../src/Doc/tutorial/modules.rst:463
 msgid ""
 "The only solution is for the package author to provide an explicit index of "
 "the package.  The :keyword:`import` statement uses the following convention: "
@@ -6793,17 +6806,17 @@ msgid ""
 "package import *`` is encountered.  It is up to the package author to keep "
 "this list up-to-date when a new version of the package is released.  Package "
 "authors may also decide not to support it, if they don't see a use for "
-"importing \\* from their package.  For example, the file :file:`sounds/"
+"importing \\* from their package.  For example, the file :file:`sound/"
 "effects/__init__.py` could contain the following code::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:473
+#: ../src/Doc/tutorial/modules.rst:475
 msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
 "named submodules of the :mod:`sound` package."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:476
+#: ../src/Doc/tutorial/modules.rst:478
 msgid ""
 "If ``__all__`` is not defined, the statement ``from sound.effects import *`` "
 "does *not* import all submodules from the package :mod:`sound.effects` into "
@@ -6816,7 +6829,7 @@ msgid ""
 "code::"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:489
+#: ../src/Doc/tutorial/modules.rst:491
 msgid ""
 "In this example, the :mod:`echo` and :mod:`surround` modules are imported in "
 "the current namespace because they are defined in the :mod:`sound.effects` "
@@ -6824,14 +6837,14 @@ msgid ""
 "when ``__all__`` is defined.)"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:494
+#: ../src/Doc/tutorial/modules.rst:496
 msgid ""
 "Although certain modules are designed to export only names that follow "
 "certain patterns when you use ``import *``, it is still considered bad "
 "practise in production code."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:498
+#: ../src/Doc/tutorial/modules.rst:500
 msgid ""
 "Remember, there is nothing wrong with using ``from Package import "
 "specific_submodule``!  In fact, this is the recommended notation unless the "
@@ -6839,12 +6852,12 @@ msgid ""
 "packages."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:505
+#: ../src/Doc/tutorial/modules.rst:507
 msgid "Intra-package References"
 msgstr ""
 
 # 20ba5d3273454eefa50529336214baa5
-#: ../src/Doc/tutorial/modules.rst:507
+#: ../src/Doc/tutorial/modules.rst:509
 msgid ""
 "The submodules often need to refer to each other.  For example, the :mod:"
 "`surround` module might use the :mod:`echo` module.  In fact, such "
@@ -6857,7 +6870,7 @@ msgid ""
 "name."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:516
+#: ../src/Doc/tutorial/modules.rst:518
 msgid ""
 "When packages are structured into subpackages (as with the :mod:`sound` "
 "package in the example), you can use absolute imports to refer to submodules "
@@ -6867,7 +6880,7 @@ msgid ""
 msgstr ""
 
 # 82c84536e5f94eb8ad4f365cde80af40
-#: ../src/Doc/tutorial/modules.rst:522
+#: ../src/Doc/tutorial/modules.rst:524
 msgid ""
 "Starting with Python 2.5, in addition to the implicit relative imports "
 "described above, you can write explicit relative imports with the ``from "
@@ -6878,7 +6891,7 @@ msgid ""
 msgstr ""
 
 # 0a545e217ccb4074a3817733279c812b
-#: ../src/Doc/tutorial/modules.rst:532
+#: ../src/Doc/tutorial/modules.rst:534
 msgid ""
 "Note that both explicit and implicit relative imports are based on the name "
 "of the current module. Since the name of the main module is always ``"
@@ -6886,11 +6899,11 @@ msgid ""
 "application should always use absolute imports."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:539
+#: ../src/Doc/tutorial/modules.rst:541
 msgid "Packages in Multiple Directories"
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:541
+#: ../src/Doc/tutorial/modules.rst:543
 msgid ""
 "Packages support one more special attribute, :attr:`__path__`.  This is "
 "initialized to be a list containing the name of the directory holding the "
@@ -6899,14 +6912,14 @@ msgid ""
 "and subpackages contained in the package."
 msgstr ""
 
-#: ../src/Doc/tutorial/modules.rst:547
+#: ../src/Doc/tutorial/modules.rst:549
 msgid ""
 "While this feature is not often needed, it can be used to extend the set of "
 "modules found in a package."
 msgstr ""
 
 # 718bdfb2db00454588feb7477e850abf
-#: ../src/Doc/tutorial/modules.rst:553
+#: ../src/Doc/tutorial/modules.rst:555
 msgid ""
 "In fact function definitions are also 'statements' that are 'executed'; the "
 "execution of a module-level function definition enters the function name in "
@@ -7552,6 +7565,9 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
+
+#~ msgid "Lambda Forms"
+#~ msgstr "Les fonctions lambda"
 
 #~ msgid ""
 #~ "Since :meth:`str.format` is quite new, a lot of Python code still uses "
