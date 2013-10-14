@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-07 06:53\n"
+"POT-Creation-Date: 2013-10-14 16:19\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -569,13 +569,20 @@ msgid ""
 "operator.  See also :term:`__future__`."
 msgstr ""
 
+# cd4670bfe278475e82214853bcf255cc
 #: ../src/Doc/glossary.rst:369
+msgid ""
+"The process by which Python code in one module is made available to Python "
+"code in another module."
+msgstr ""
+
+#: ../src/Doc/glossary.rst:373
 msgid ""
 "An object that both finds and loads a module; both a :term:`finder` and :"
 "term:`loader` object."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:373
+#: ../src/Doc/glossary.rst:377
 msgid ""
 "Python has an interactive interpreter which means you can enter statements "
 "and expressions at the interpreter prompt, immediately execute them and see "
@@ -584,7 +591,7 @@ msgid ""
 "test out new ideas or inspect modules and packages (remember ``help(x)``)."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:381
+#: ../src/Doc/glossary.rst:385
 msgid ""
 "Python is an interpreted language, as opposed to a compiled one, though the "
 "distinction can be blurry because of the presence of the bytecode compiler.  "
@@ -595,7 +602,7 @@ msgid ""
 msgstr ""
 
 # 1766e991d3794bfcbd0f64236d91bdcd
-#: ../src/Doc/glossary.rst:390
+#: ../src/Doc/glossary.rst:394
 msgid ""
 "An object capable of returning its members one at a time. Examples of "
 "iterables include all sequence types (such as :class:`list`, :class:`str`, "
@@ -614,7 +621,7 @@ msgid ""
 msgstr ""
 
 # f2537fc05b464913b2c4dbc25adaf0bc
-#: ../src/Doc/glossary.rst:406
+#: ../src/Doc/glossary.rst:410
 msgid ""
 "An object representing a stream of data.  Repeated calls to the iterator's :"
 "meth:`next` method return successive items in the stream.  When no more data "
@@ -631,12 +638,12 @@ msgid ""
 "previous iteration pass, making it appear like an empty container."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:420
+#: ../src/Doc/glossary.rst:424
 msgid "More information can be found in :ref:`typeiter`."
 msgstr ""
 
 # 4407f4d5ddab4943aa8b95ea3e95d087
-#: ../src/Doc/glossary.rst:423
+#: ../src/Doc/glossary.rst:427
 msgid ""
 "A key function or collation function is a callable that returns a value used "
 "for sorting or ordering.  For example, :func:`locale.strxfrm` is used to "
@@ -644,7 +651,7 @@ msgid ""
 msgstr ""
 
 # b687dec848ca4394a8c48b2990d87905
-#: ../src/Doc/glossary.rst:428
+#: ../src/Doc/glossary.rst:432
 msgid ""
 "A number of tools in Python accept key functions to control how elements are "
 "ordered or grouped.  They include :func:`min`, :func:`max`, :func:`sorted`, :"
@@ -653,7 +660,7 @@ msgid ""
 msgstr ""
 
 # 41316a1c618c4d59ba353c58c75e89fe
-#: ../src/Doc/glossary.rst:433
+#: ../src/Doc/glossary.rst:437
 msgid ""
 "There are several ways to create a key function.  For example. the :meth:"
 "`str.lower` method can serve as a key function for case insensitive sorts.  "
@@ -667,18 +674,18 @@ msgstr ""
 
 # 65d6c99a0f6941f6ac90cc3867107f42
 # 0f29d18d80d44155bda6e138e96bd1ce
-#: ../src/Doc/glossary.rst:443 ../src/Doc/glossary.rst:604
+#: ../src/Doc/glossary.rst:447 ../src/Doc/glossary.rst:620
 msgid "See :term:`argument`."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:446
+#: ../src/Doc/glossary.rst:450
 msgid ""
 "An anonymous inline function consisting of a single :term:`expression` which "
 "is evaluated when the function is called.  The syntax to create a lambda "
 "function is ``lambda [arguments]: expression``"
 msgstr ""
 
-#: ../src/Doc/glossary.rst:451
+#: ../src/Doc/glossary.rst:455
 msgid ""
 "Look before you leap.  This coding style explicitly tests for pre-conditions "
 "before making calls or lookups.  This style contrasts with the :term:`EAFP` "
@@ -687,7 +694,7 @@ msgid ""
 msgstr ""
 
 # 0dc5595fdc784d8f9afbc265a54ccb9e
-#: ../src/Doc/glossary.rst:456
+#: ../src/Doc/glossary.rst:460
 msgid ""
 "In a multi-threaded environment, the LBYL approach can risk introducing a "
 "race condition between \"the looking\" and \"the leaping\".  For example, "
@@ -696,7 +703,7 @@ msgid ""
 "This issue can be solved with locks or by using the EAFP approach."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:463
+#: ../src/Doc/glossary.rst:467
 msgid ""
 "A built-in Python :term:`sequence`.  Despite its name it is more akin to an "
 "array in other languages than to a linked list since access to elements are O"
@@ -704,7 +711,7 @@ msgid ""
 msgstr ""
 
 # 0a233eff49d24efe9903158ed9a8fc7a
-#: ../src/Doc/glossary.rst:468
+#: ../src/Doc/glossary.rst:472
 msgid ""
 "A compact way to process all or part of the elements in a sequence and "
 "return a list with the results.  ``result = [\"0x%02x\" % x for x in range"
@@ -714,7 +721,7 @@ msgid ""
 msgstr ""
 
 # f1f8f4cd6f1a4ae8850b0676e879f413
-#: ../src/Doc/glossary.rst:476
+#: ../src/Doc/glossary.rst:480
 msgid ""
 "An object that loads a module. It must define a method named :meth:"
 "`load_module`. A loader is typically returned by a :term:`finder`. See :pep:"
@@ -722,7 +729,7 @@ msgid ""
 msgstr ""
 
 # dd0ae5035bfa49fc9bd134314d09bfcd
-#: ../src/Doc/glossary.rst:481
+#: ../src/Doc/glossary.rst:485
 msgid ""
 "A container object that supports arbitrary key lookups and implements the "
 "methods specified in the :class:`~collections.Mapping` or :class:"
@@ -732,7 +739,7 @@ msgid ""
 "`collections.Counter`."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:489
+#: ../src/Doc/glossary.rst:493
 msgid ""
 "The class of a class.  Class definitions create a class name, a class "
 "dictionary, and a list of base classes.  The metaclass is responsible for "
@@ -745,11 +752,11 @@ msgid ""
 "singletons, and many other tasks."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:499
+#: ../src/Doc/glossary.rst:503
 msgid "More information can be found in :ref:`metaclasses`."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:502
+#: ../src/Doc/glossary.rst:506
 msgid ""
 "A function which is defined inside a class body.  If called as an attribute "
 "of an instance of that class, the method will get the instance object as its "
@@ -758,25 +765,38 @@ msgid ""
 msgstr ""
 
 # d91abe76105e44df9313330cad54ad2d
-#: ../src/Doc/glossary.rst:508
+#: ../src/Doc/glossary.rst:512
 msgid ""
 "Method Resolution Order is the order in which base classes are searched for "
 "a member during lookup. See `The Python 2.3 Method Resolution Order <http://"
 "www.python.org/download/releases/2.3/mro/>`_."
 msgstr ""
 
+# ad7a03faeea844749c0307592277e63f
+#: ../src/Doc/glossary.rst:517
+msgid ""
+"An object that serves as an organizational unit of Python code.  Modules "
+"have a namespace containing arbitrary Python objects.  Modules are loaded "
+"into Python by the process of :term:`importing`."
+msgstr ""
+
+# 65d6c99a0f6941f6ac90cc3867107f42
+#: ../src/Doc/glossary.rst:521
+msgid "See also :term:`package`."
+msgstr ""
+
 # c6741e9b5b1d47d7b0cf92e63d7437b1
-#: ../src/Doc/glossary.rst:513
+#: ../src/Doc/glossary.rst:524
 msgid "See :term:`method resolution order`."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:516
+#: ../src/Doc/glossary.rst:527
 msgid ""
 "Mutable objects can change their value but keep their :func:`id`.  See also :"
 "term:`immutable`."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:520
+#: ../src/Doc/glossary.rst:531
 msgid ""
 "Any tuple-like class whose indexable elements are also accessible using "
 "named attributes (for example, :func:`time.localtime` returns a tuple-like "
@@ -784,7 +804,7 @@ msgid ""
 "or with a named attribute like ``t.tm_year``)."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:525
+#: ../src/Doc/glossary.rst:536
 msgid ""
 "A named tuple can be a built-in type such as :class:`time.struct_time`, or "
 "it can be created with a regular class definition.  A full featured named "
@@ -795,7 +815,7 @@ msgid ""
 msgstr ""
 
 # 34a3f673792842659e93f26a12de05e7
-#: ../src/Doc/glossary.rst:533
+#: ../src/Doc/glossary.rst:544
 msgid ""
 "The place where a variable is stored.  Namespaces are implemented as "
 "dictionaries.  There are the local, global and built-in namespaces as well "
@@ -810,7 +830,7 @@ msgid ""
 msgstr ""
 
 # 02211faabe3a4da0a7c887c874c296b1
-#: ../src/Doc/glossary.rst:545
+#: ../src/Doc/glossary.rst:556
 msgid ""
 "The ability to refer to a variable in an enclosing definition.  For "
 "instance, a function defined inside another function can refer to variables "
@@ -821,27 +841,35 @@ msgid ""
 msgstr ""
 
 # c773104e69fe4899b0b7464f24f6b490
-#: ../src/Doc/glossary.rst:553
+#: ../src/Doc/glossary.rst:564
 msgid ""
 "Any class which inherits from :class:`object`.  This includes all built-in "
 "types like :class:`list` and :class:`dict`.  Only new-style classes can use "
-"Python's newer, versatile features like :attr:`__slots__`, descriptors, "
-"properties, and :meth:`__getattribute__`."
+"Python's newer, versatile features like :attr:`~object.__slots__`, "
+"descriptors, properties, and :meth:`__getattribute__`."
 msgstr ""
 
 # df747d6666004ea28dff736f8724ebfd
-#: ../src/Doc/glossary.rst:558
+#: ../src/Doc/glossary.rst:569
 msgid "More information can be found in :ref:`newstyle`."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:561
+#: ../src/Doc/glossary.rst:572
 msgid ""
 "Any data with state (attributes or value) and defined behavior (methods).  "
 "Also the ultimate base class of any :term:`new-style class`."
 msgstr ""
 
+# f0589e9db9374de0a7c664556ace1d7b
+#: ../src/Doc/glossary.rst:577
+msgid ""
+"A Python :term:`module` which can contain submodules or recursively, "
+"subpackages.  Technically, a package is a Python module with an ``__path__`` "
+"attribute."
+msgstr ""
+
 # 3a948869abbf40c68bcddf7bc9e01238
-#: ../src/Doc/glossary.rst:566
+#: ../src/Doc/glossary.rst:582
 msgid ""
 "A named entity in a :term:`function` (or method) definition that specifies "
 "an :term:`argument` (or in some cases, arguments) that the function can "
@@ -849,7 +877,7 @@ msgid ""
 msgstr ""
 
 # 88cbbf8a9c094e96972c9a4bae674b54
-#: ../src/Doc/glossary.rst:570
+#: ../src/Doc/glossary.rst:586
 msgid ""
 ":dfn:`positional-or-keyword`: specifies an argument that can be passed "
 "either :term:`positionally <argument>` or as a :term:`keyword argument "
@@ -858,7 +886,7 @@ msgid ""
 msgstr ""
 
 # 5d344aa1c2c14f41bdde1b3c739e316b
-#: ../src/Doc/glossary.rst:577
+#: ../src/Doc/glossary.rst:593
 msgid ""
 ":dfn:`positional-only`: specifies an argument that can be supplied only by "
 "position.  Python has no syntax for defining positional-only parameters.  "
@@ -867,7 +895,7 @@ msgid ""
 msgstr ""
 
 # df1910817a5e46739941e5d42e94a364
-#: ../src/Doc/glossary.rst:582
+#: ../src/Doc/glossary.rst:598
 msgid ""
 ":dfn:`var-positional`: specifies that an arbitrary sequence of positional "
 "arguments can be provided (in addition to any positional arguments already "
@@ -877,7 +905,7 @@ msgid ""
 msgstr ""
 
 # 8dd7e79a1566402e9e9ad95b604afeb4
-#: ../src/Doc/glossary.rst:590
+#: ../src/Doc/glossary.rst:606
 msgid ""
 ":dfn:`var-keyword`: specifies that arbitrarily many keyword arguments can be "
 "provided (in addition to any keyword arguments already accepted by other "
@@ -886,28 +914,28 @@ msgid ""
 msgstr ""
 
 # bf3e82954a6648efbe51ffdf2066bd51
-#: ../src/Doc/glossary.rst:596
+#: ../src/Doc/glossary.rst:612
 msgid ""
 "Parameters can specify both optional and required arguments, as well as "
 "default values for some optional arguments."
 msgstr ""
 
 # 323d0e983e70456d9d14856846fe4e3b
-#: ../src/Doc/glossary.rst:599
+#: ../src/Doc/glossary.rst:615
 msgid ""
 "See also the :term:`argument` glossary entry, the FAQ question on :ref:`the "
 "difference between arguments and parameters <faq-argument-vs-parameter>`, "
 "and the :ref:`function` section."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:607
+#: ../src/Doc/glossary.rst:623
 msgid ""
 "Nickname for the Python 3.x release line (coined long ago when the release "
 "of version 3 was something in the distant future.)  This is also abbreviated "
 "\"Py3k\"."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:612
+#: ../src/Doc/glossary.rst:628
 msgid ""
 "An idea or piece of code which closely follows the most common idioms of the "
 "Python language, rather than implementing code using concepts common to "
@@ -917,11 +945,11 @@ msgid ""
 "Python sometimes use a numerical counter instead::"
 msgstr ""
 
-#: ../src/Doc/glossary.rst:622
+#: ../src/Doc/glossary.rst:638
 msgid "As opposed to the cleaner, Pythonic method::"
 msgstr ""
 
-#: ../src/Doc/glossary.rst:628
+#: ../src/Doc/glossary.rst:644
 msgid ""
 "The number of references to an object.  When the reference count of an "
 "object drops to zero, it is deallocated.  Reference counting is generally "
@@ -932,7 +960,7 @@ msgid ""
 msgstr ""
 
 # 945a9d86a5f1422c9b37edd8e6f4f9cf
-#: ../src/Doc/glossary.rst:636
+#: ../src/Doc/glossary.rst:652
 msgid ""
 "A declaration inside a :term:`new-style class` that saves memory by pre-"
 "declaring space for instance attributes and eliminating instance "
@@ -942,7 +970,7 @@ msgid ""
 msgstr ""
 
 # e226f945a29143b097289a7b551d25ec
-#: ../src/Doc/glossary.rst:643
+#: ../src/Doc/glossary.rst:659
 msgid ""
 "An :term:`iterable` which supports efficient element access using integer "
 "indices via the :meth:`__getitem__` special method and defines a :meth:`len` "
@@ -954,7 +982,7 @@ msgid ""
 msgstr ""
 
 # 4785e95d3a154c2da121c0542a04ee79
-#: ../src/Doc/glossary.rst:653
+#: ../src/Doc/glossary.rst:669
 msgid ""
 "An object usually containing a portion of a :term:`sequence`.  A slice is "
 "created using the subscript notation, ``[]`` with colons between numbers "
@@ -963,7 +991,7 @@ msgid ""
 "versions, :meth:`__getslice__` and :meth:`__setslice__`)."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:660
+#: ../src/Doc/glossary.rst:676
 msgid ""
 "A method that is called implicitly by Python to execute a certain operation "
 "on a type, such as addition.  Such methods have names starting and ending "
@@ -972,7 +1000,7 @@ msgid ""
 msgstr ""
 
 # ed4604b8fb634111bdfe9c8e6f2f5387
-#: ../src/Doc/glossary.rst:666
+#: ../src/Doc/glossary.rst:682
 msgid ""
 "A statement is part of a suite (a \"block\" of code).  A statement is either "
 "an :term:`expression` or one of several constructs with a keyword, such as :"
@@ -980,7 +1008,7 @@ msgid ""
 msgstr ""
 
 # 0c18843752e242b5bd5eaf59c9d9e380
-#: ../src/Doc/glossary.rst:671
+#: ../src/Doc/glossary.rst:687
 msgid ""
 "A tuple with named elements. Struct sequences expose an interface similiar "
 "to :term:`named tuple` in that elements can either be accessed either by "
@@ -990,7 +1018,7 @@ msgid ""
 "data:`sys.float_info` and the return value of :func:`os.stat`."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:679
+#: ../src/Doc/glossary.rst:695
 msgid ""
 "A string which is bound by three instances of either a quotation mark (\") "
 "or an apostrophe (').  While they don't provide any functionality not "
@@ -1001,15 +1029,16 @@ msgid ""
 "docstrings."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:688
+# 4ceb47bcd8704e648862b6bc1b5311fe
+#: ../src/Doc/glossary.rst:704
 msgid ""
 "The type of a Python object determines what kind of object it is; every "
-"object has a type.  An object's type is accessible as its :attr:`__class__` "
-"attribute or can be retrieved with ``type(obj)``."
+"object has a type.  An object's type is accessible as its :attr:`~instance."
+"__class__` attribute or can be retrieved with ``type(obj)``."
 msgstr ""
 
 # 45af0b22127142d898e66ebfd0567b9b
-#: ../src/Doc/glossary.rst:693
+#: ../src/Doc/glossary.rst:710
 msgid ""
 "A manner of interpreting text streams in which all of the following are "
 "recognized as ending a line: the Unix end-of-line convention ``'\\n'``, the "
@@ -1019,7 +1048,7 @@ msgid ""
 msgstr ""
 
 # a32b4dd14aa647d8ad51034682f0c23b
-#: ../src/Doc/glossary.rst:700
+#: ../src/Doc/glossary.rst:717
 msgid ""
 "The objects returned from :meth:`dict.viewkeys`, :meth:`dict.viewvalues`, "
 "and :meth:`dict.viewitems` are called dictionary views.  They are lazy "
@@ -1028,13 +1057,13 @@ msgid ""
 "`dict-views`."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:707
+#: ../src/Doc/glossary.rst:724
 msgid ""
 "A computer defined entirely in software.  Python's virtual machine executes "
 "the :term:`bytecode` emitted by the bytecode compiler."
 msgstr ""
 
-#: ../src/Doc/glossary.rst:711
+#: ../src/Doc/glossary.rst:728
 msgid ""
 "Listing of Python design principles and philosophies that are helpful in "
 "understanding and using the language.  The listing can be found by typing "

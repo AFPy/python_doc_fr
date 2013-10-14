@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-07 06:53\n"
+"POT-Creation-Date: 2013-10-14 16:19\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1060,17 +1060,18 @@ msgid ""
 "Classes (ABCs).  You can then use :func:`isinstance` and :func:`issubclass` "
 "to check whether an instance or a class implements a particular ABC.  The :"
 "mod:`collections` module defines a set of useful ABCs such as :class:"
-"`Iterable`, :class:`Container`, and :class:`MutableMapping`."
+"`~collections.Iterable`, :class:`~collections.Container`, and :class:"
+"`~collections.MutableMapping`."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:687
+#: ../src/Doc/faq/design.rst:688
 msgid ""
 "For Python, many of the advantages of interface specifications can be "
 "obtained by an appropriate test discipline for components.  There is also a "
 "tool, PyChecker, which can be used to find problems due to subclassing."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:691
+#: ../src/Doc/faq/design.rst:692
 msgid ""
 "A good test suite for a module can both provide a regression test and serve "
 "as a module interface specification and a set of examples.  Many Python "
@@ -1082,7 +1083,7 @@ msgid ""
 "in a module."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:699
+#: ../src/Doc/faq/design.rst:700
 msgid ""
 "An appropriate testing discipline can help build large complex applications "
 "in Python as well as having interface specifications would.  In fact, it can "
@@ -1093,7 +1094,7 @@ msgid ""
 "correctly, but it's trivial to check this property in a test suite."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:707
+#: ../src/Doc/faq/design.rst:708
 msgid ""
 "Writing test suites is very helpful, and you might want to design your code "
 "with an eye to making it easily tested.  One increasingly popular technique, "
@@ -1102,24 +1103,24 @@ msgid ""
 "sloppy and not write test cases at all."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:715
+#: ../src/Doc/faq/design.rst:716
 msgid "Why are default values shared between objects?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:717
+#: ../src/Doc/faq/design.rst:718
 msgid ""
 "This type of bug commonly bites neophyte programmers.  Consider this "
 "function::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:724
+#: ../src/Doc/faq/design.rst:725
 msgid ""
 "The first time you call this function, ``mydict`` contains a single item.  "
 "The second time, ``mydict`` contains two items because when ``foo()`` begins "
 "executing, ``mydict`` starts out with an item already in it."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:728
+#: ../src/Doc/faq/design.rst:729
 msgid ""
 "It is often expected that a function call creates new objects for default "
 "values. This is not what happens. Default values are created exactly once, "
@@ -1128,14 +1129,14 @@ msgid ""
 "this changed object."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:733
+#: ../src/Doc/faq/design.rst:734
 msgid ""
 "By definition, immutable objects such as numbers, strings, tuples, and "
 "``None``, are safe from change. Changes to mutable objects such as "
 "dictionaries, lists, and class instances can lead to confusion."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:737
+#: ../src/Doc/faq/design.rst:738
 msgid ""
 "Because of this feature, it is good programming practice to not use mutable "
 "objects as default values.  Instead, use ``None`` as the default value and "
@@ -1143,11 +1144,11 @@ msgid ""
 "list/dictionary/whatever if it is.  For example, don't write::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:745
+#: ../src/Doc/faq/design.rst:746
 msgid "but::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:751
+#: ../src/Doc/faq/design.rst:752
 msgid ""
 "This feature can be useful.  When you have a function that's time-consuming "
 "to compute, a common technique is to cache the parameters and the resulting "
@@ -1156,17 +1157,17 @@ msgid ""
 "implemented like this::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:766
+#: ../src/Doc/faq/design.rst:767
 msgid ""
 "You could use a global variable containing a dictionary instead of the "
 "default value; it's a matter of taste."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:771
+#: ../src/Doc/faq/design.rst:772
 msgid "Why is there no goto?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:773
+#: ../src/Doc/faq/design.rst:774
 msgid ""
 "You can use exceptions to provide a \"structured goto\" that even works "
 "across function calls.  Many feel that exceptions can conveniently emulate "
@@ -1174,24 +1175,24 @@ msgid ""
 "other languages.  For example::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:788
+#: ../src/Doc/faq/design.rst:789
 msgid ""
 "This doesn't allow you to jump into the middle of a loop, but that's usually "
 "considered an abuse of goto anyway.  Use sparingly."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:793
+#: ../src/Doc/faq/design.rst:794
 msgid "Why can't raw strings (r-strings) end with a backslash?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:795
+#: ../src/Doc/faq/design.rst:796
 msgid ""
 "More precisely, they can't end with an odd number of backslashes: the "
 "unpaired backslash at the end escapes the closing quote character, leaving "
 "an unterminated string."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:799
+#: ../src/Doc/faq/design.rst:800
 msgid ""
 "Raw strings were designed to ease creating input for processors (chiefly "
 "regular expression engines) that want to do their own backslash escape "
@@ -1201,33 +1202,33 @@ msgid ""
 "rules work well when r-strings are used for their intended purpose."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:806
+#: ../src/Doc/faq/design.rst:807
 msgid ""
 "If you're trying to build Windows pathnames, note that all Windows system "
 "calls accept forward slashes too::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:811
+#: ../src/Doc/faq/design.rst:812
 msgid ""
 "If you're trying to build a pathname for a DOS command, try e.g. one of ::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:819
+#: ../src/Doc/faq/design.rst:820
 msgid "Why doesn't Python have a \"with\" statement for attribute assignments?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:821
+#: ../src/Doc/faq/design.rst:822
 msgid ""
 "Python has a 'with' statement that wraps the execution of a block, calling "
 "code on the entrance and exit from the block.  Some language have a "
 "construct that looks like this::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:829
+#: ../src/Doc/faq/design.rst:830
 msgid "In Python, such a construct would be ambiguous."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:831
+#: ../src/Doc/faq/design.rst:832
 msgid ""
 "Other languages, such as Object Pascal, Delphi, and C++, use static types, "
 "so it's possible to know, in an unambiguous way, what member is being "
@@ -1235,7 +1236,7 @@ msgid ""
 "*always* knows the scope of every variable at compile time."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:836
+#: ../src/Doc/faq/design.rst:837
 msgid ""
 "Python uses dynamic types. It is impossible to know in advance which "
 "attribute will be referenced at runtime. Member attributes may be added or "
@@ -1244,11 +1245,11 @@ msgid ""
 "one, or a member attribute?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:842
+#: ../src/Doc/faq/design.rst:843
 msgid "For instance, take the following incomplete snippet::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:848
+#: ../src/Doc/faq/design.rst:849
 msgid ""
 "The snippet assumes that \"a\" must have a member attribute called \"x\".  "
 "However, there is nothing in Python that tells the interpreter this. What "
@@ -1257,46 +1258,46 @@ msgid ""
 "the dynamic nature of Python makes such choices much harder."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:854
+#: ../src/Doc/faq/design.rst:855
 msgid ""
 "The primary benefit of \"with\" and similar language features (reduction of "
 "code volume) can, however, easily be achieved in Python by assignment.  "
 "Instead of::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:861
+#: ../src/Doc/faq/design.rst:862
 msgid "write this::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:868
+#: ../src/Doc/faq/design.rst:869
 msgid ""
 "This also has the side-effect of increasing execution speed because name "
 "bindings are resolved at run-time in Python, and the second version only "
 "needs to perform the resolution once."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:874
+#: ../src/Doc/faq/design.rst:875
 msgid "Why are colons required for the if/while/def/class statements?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:876
+#: ../src/Doc/faq/design.rst:877
 msgid ""
 "The colon is required primarily to enhance readability (one of the results "
 "of the experimental ABC language).  Consider this::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:882
+#: ../src/Doc/faq/design.rst:883
 msgid "versus ::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:887
+#: ../src/Doc/faq/design.rst:888
 msgid ""
 "Notice how the second one is slightly easier to read.  Notice further how a "
 "colon sets off the example in this FAQ answer; it's a standard usage in "
 "English."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:890
+#: ../src/Doc/faq/design.rst:891
 msgid ""
 "Another minor reason is that the colon makes it easier for editors with "
 "syntax highlighting; they can look for colons to decide when indentation "
@@ -1304,22 +1305,22 @@ msgid ""
 "the program text."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:896
+#: ../src/Doc/faq/design.rst:897
 msgid "Why does Python allow commas at the end of lists and tuples?"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:898
+#: ../src/Doc/faq/design.rst:899
 msgid ""
 "Python lets you add a trailing comma at the end of lists, tuples, and "
 "dictionaries::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:909
+#: ../src/Doc/faq/design.rst:910
 msgid "There are several reasons to allow this."
 msgstr ""
 
 # 298742dc20444d93965e2fca2825408f
-#: ../src/Doc/faq/design.rst:911
+#: ../src/Doc/faq/design.rst:912
 msgid ""
 "When you have a literal value for a list, tuple, or dictionary spread across "
 "multiple lines, it's easier to add more elements because you don't have to "
@@ -1327,20 +1328,20 @@ msgid ""
 "reordered without creating a syntax error."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:916
+#: ../src/Doc/faq/design.rst:917
 msgid ""
 "Accidentally omitting the comma can lead to errors that are hard to "
 "diagnose. For example::"
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:926
+#: ../src/Doc/faq/design.rst:927
 msgid ""
 "This list looks like it has four elements, but it actually contains three: "
 "\"fee\", \"fiefoo\" and \"fum\".  Always adding the comma avoids this source "
 "of error."
 msgstr ""
 
-#: ../src/Doc/faq/design.rst:929
+#: ../src/Doc/faq/design.rst:930
 msgid ""
 "Allowing the trailing comma may also make programmatic code generation "
 "easier."
@@ -6127,22 +6128,46 @@ msgid ""
 "instances by keeping a list of weak references to each instance."
 msgstr ""
 
+# cf90e9f3b4064c549dfbec4909638712
 #: ../src/Doc/faq/programming.rst:1728
+msgid "Why does the result of ``id()`` appear to be not unique?"
+msgstr ""
+
+# f61b99b4126f49fe955ab0fa86ba17b4
+#: ../src/Doc/faq/programming.rst:1730
+msgid ""
+"The :func:`id` builtin returns an integer that is guaranteed to be unique "
+"during the lifetime of the object.  Since in CPython, this is the object's "
+"memory address, it happens frequently that after an object is deleted from "
+"memory, the next freshly created object is allocated at the same position in "
+"memory.  This is illustrated by this example:"
+msgstr ""
+
+# b3a195c4502f46088e88298fe469109c
+#: ../src/Doc/faq/programming.rst:1741
+msgid ""
+"The two ids belong to different integer objects that are created before, and "
+"deleted immediately after execution of the ``id()`` call.  To be sure that "
+"objects whose id you want to examine are still alive, create another "
+"reference to the object:"
+msgstr ""
+
+#: ../src/Doc/faq/programming.rst:1754
 msgid "Modules"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1731
+#: ../src/Doc/faq/programming.rst:1757
 msgid "How do I create a .pyc file?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1733
+#: ../src/Doc/faq/programming.rst:1759
 msgid ""
 "When a module is imported for the first time (or when the source is more "
 "recent than the current compiled file) a ``.pyc`` file containing the "
 "compiled code should be created in the same directory as the ``.py`` file."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1737
+#: ../src/Doc/faq/programming.rst:1763
 msgid ""
 "One reason that a ``.pyc`` file may not be created is permissions problems "
 "with the directory. This can happen, for example, if you develop as one user "
@@ -6153,7 +6178,7 @@ msgid ""
 msgstr ""
 
 # 03d92f68c7e349ccabb520f05c0d88d4
-#: ../src/Doc/faq/programming.rst:1744
+#: ../src/Doc/faq/programming.rst:1770
 msgid ""
 "Running Python on a top level script is not considered an import and no ``."
 "pyc`` will be created.  For example, if you have a top-level module ``foo."
@@ -6163,27 +6188,27 @@ msgid ""
 msgstr ""
 
 # 8b7c0689fc08464b8f5080f3fc41c75b
-#: ../src/Doc/faq/programming.rst:1750
+#: ../src/Doc/faq/programming.rst:1776
 msgid ""
 "If you need to create ``foo.pyc`` -- that is, to create a ``.pyc`` file for "
 "a module that is not imported -- you can, using the :mod:`py_compile` and :"
 "mod:`compileall` modules."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1754
+#: ../src/Doc/faq/programming.rst:1780
 msgid ""
 "The :mod:`py_compile` module can manually compile any module.  One way is to "
 "use the ``compile()`` function in that module interactively::"
 msgstr ""
 
 # 6d7165204d3741dfa3edb6045c2e4ab9
-#: ../src/Doc/faq/programming.rst:1760
+#: ../src/Doc/faq/programming.rst:1786
 msgid ""
 "This will write the ``.pyc`` to the same location as ``foo.py`` (or you can "
 "override that with the optional parameter ``cfile``)."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1763
+#: ../src/Doc/faq/programming.rst:1789
 msgid ""
 "You can also automatically compile all files in a directory or directories "
 "using the :mod:`compileall` module.  You can do it from the shell prompt by "
@@ -6191,11 +6216,11 @@ msgid ""
 "Python files to compile::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1772
+#: ../src/Doc/faq/programming.rst:1798
 msgid "How do I find the current module name?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1774
+#: ../src/Doc/faq/programming.rst:1800
 msgid ""
 "A module can find out its own module name by looking at the predefined "
 "global variable ``__name__``.  If this has the value ``'__main__'``, the "
@@ -6204,76 +6229,76 @@ msgid ""
 "only execute this code after checking ``__name__``::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1789
+#: ../src/Doc/faq/programming.rst:1815
 msgid "How can I have modules that mutually import each other?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1791
+#: ../src/Doc/faq/programming.rst:1817
 msgid "Suppose you have the following modules:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1793
+#: ../src/Doc/faq/programming.rst:1819
 msgid "foo.py::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1798
+#: ../src/Doc/faq/programming.rst:1824
 msgid "bar.py::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1803
+#: ../src/Doc/faq/programming.rst:1829
 msgid "The problem is that the interpreter will perform the following steps:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1805
+#: ../src/Doc/faq/programming.rst:1831
 msgid "main imports foo"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1806
+#: ../src/Doc/faq/programming.rst:1832
 msgid "Empty globals for foo are created"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1807
+#: ../src/Doc/faq/programming.rst:1833
 msgid "foo is compiled and starts executing"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1808
+#: ../src/Doc/faq/programming.rst:1834
 msgid "foo imports bar"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1809
+#: ../src/Doc/faq/programming.rst:1835
 msgid "Empty globals for bar are created"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1810
+#: ../src/Doc/faq/programming.rst:1836
 msgid "bar is compiled and starts executing"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1811
+#: ../src/Doc/faq/programming.rst:1837
 msgid ""
 "bar imports foo (which is a no-op since there already is a module named foo)"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1812
+#: ../src/Doc/faq/programming.rst:1838
 msgid "bar.foo_var = foo.foo_var"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1814
+#: ../src/Doc/faq/programming.rst:1840
 msgid ""
 "The last step fails, because Python isn't done with interpreting ``foo`` yet "
 "and the global symbol dictionary for ``foo`` is still empty."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1817
+#: ../src/Doc/faq/programming.rst:1843
 msgid ""
 "The same thing happens when you use ``import foo``, and then try to access "
 "``foo.foo_var`` in global code."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1820
+#: ../src/Doc/faq/programming.rst:1846
 msgid "There are (at least) three possible workarounds for this problem."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1822
+#: ../src/Doc/faq/programming.rst:1848
 msgid ""
 "Guido van Rossum recommends avoiding all uses of ``from <module> import ..."
 "``, and placing all code inside functions.  Initializations of global "
@@ -6282,67 +6307,67 @@ msgid ""
 "``<module>.<name>``."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1827
+#: ../src/Doc/faq/programming.rst:1853
 msgid ""
 "Jim Roskind suggests performing steps in the following order in each module:"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1829
+#: ../src/Doc/faq/programming.rst:1855
 msgid ""
 "exports (globals, functions, and classes that don't need imported base "
 "classes)"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1831
+#: ../src/Doc/faq/programming.rst:1857
 msgid "``import`` statements"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1832
+#: ../src/Doc/faq/programming.rst:1858
 msgid ""
 "active code (including globals that are initialized from imported values)."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1834
+#: ../src/Doc/faq/programming.rst:1860
 msgid ""
 "van Rossum doesn't like this approach much because the imports appear in a "
 "strange place, but it does work."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1837
+#: ../src/Doc/faq/programming.rst:1863
 msgid ""
 "Matthias Urlichs recommends restructuring your code so that the recursive "
 "import is not necessary in the first place."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1840
+#: ../src/Doc/faq/programming.rst:1866
 msgid "These solutions are not mutually exclusive."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1844
+#: ../src/Doc/faq/programming.rst:1870
 msgid "__import__('x.y.z') returns <module 'x'>; how do I get z?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1846
+#: ../src/Doc/faq/programming.rst:1872
 msgid "Try::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1850
+#: ../src/Doc/faq/programming.rst:1876
 msgid "For more realistic situations, you may have to do something like ::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1856
+#: ../src/Doc/faq/programming.rst:1882
 msgid ""
 "See :mod:`importlib` for a convenience function called :func:`~importlib."
 "import_module`."
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1862
+#: ../src/Doc/faq/programming.rst:1888
 msgid ""
 "When I edit an imported module and reimport it, the changes don't show up.  "
 "Why does this happen?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1864
+#: ../src/Doc/faq/programming.rst:1890
 msgid ""
 "For reasons of efficiency as well as consistency, Python only reads the "
 "module file on the first time a module is imported.  If it didn't, in a "
@@ -6351,13 +6376,13 @@ msgid ""
 "rereading of a changed module, do this::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1873
+#: ../src/Doc/faq/programming.rst:1899
 msgid ""
 "Warning: this technique is not 100% fool-proof.  In particular, modules "
 "containing statements like ::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1878
+#: ../src/Doc/faq/programming.rst:1904
 msgid ""
 "will continue to work with the old version of the imported objects.  If the "
 "module contains class definitions, existing class instances will *not* be "
@@ -6366,7 +6391,7 @@ msgid ""
 msgstr ""
 
 # 702dbe1732aa493f8a0b6bb56cb2522c
-#: ../src/Doc/faq/programming.rst:1890
+#: ../src/Doc/faq/programming.rst:1916
 msgid ""
 "The nature of the problem is made clear if you print out the class objects:"
 msgstr ""

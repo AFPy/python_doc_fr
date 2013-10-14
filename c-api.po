@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-07 06:53\n"
+"POT-Creation-Date: 2013-10-14 16:19\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2760,22 +2760,28 @@ msgstr ""
 
 # 8b4487ca9e10485d9dd501c3769f298d
 #: ../src/Doc/c-api/codec.rst:55
-msgid "Get an :class:`IncrementalEncoder` object for the given *encoding*."
+msgid ""
+"Get an :class:`~codecs.IncrementalEncoder` object for the given *encoding*."
 msgstr ""
 
 # ab082947e89a4b42ad13ad21de175d7a
 #: ../src/Doc/c-api/codec.rst:59
-msgid "Get an :class:`IncrementalDecoder` object for the given *encoding*."
+msgid ""
+"Get an :class:`~codecs.IncrementalDecoder` object for the given *encoding*."
 msgstr ""
 
 # bd43a746545f4f21978029aafddc1143
 #: ../src/Doc/c-api/codec.rst:63
-msgid "Get a :class:`StreamReader` factory function for the given *encoding*."
+msgid ""
+"Get a :class:`~codecs.StreamReader` factory function for the given "
+"*encoding*."
 msgstr ""
 
 # 526e189189c944e1aec0e60804f58466
 #: ../src/Doc/c-api/codec.rst:67
-msgid "Get a :class:`StreamWriter` factory function for the given *encoding*."
+msgid ""
+"Get a :class:`~codecs.StreamWriter` factory function for the given "
+"*encoding*."
 msgstr ""
 
 # f26dcd8310564d6ab16be5a4d1962a52
@@ -4774,43 +4780,44 @@ msgstr ""
 #: ../src/Doc/c-api/file.rst:113
 msgid ""
 "Equivalent to ``p.readline([n])``, this function reads one line from the "
-"object *p*.  *p* may be a file object or any object with a :meth:`readline` "
-"method.  If *n* is ``0``, exactly one line is read, regardless of the length "
-"of the line.  If *n* is greater than ``0``, no more than *n* bytes will be "
-"read from the file; a partial line can be returned.  In both cases, an empty "
-"string is returned if the end of the file is reached immediately.  If *n* is "
-"less than ``0``, however, one line is read regardless of length, but :exc:"
-"`EOFError` is raised if the end of the file is reached immediately."
+"object *p*.  *p* may be a file object or any object with a :meth:`~io.IOBase."
+"readline` method.  If *n* is ``0``, exactly one line is read, regardless of "
+"the length of the line.  If *n* is greater than ``0``, no more than *n* "
+"bytes will be read from the file; a partial line can be returned.  In both "
+"cases, an empty string is returned if the end of the file is reached "
+"immediately.  If *n* is less than ``0``, however, one line is read "
+"regardless of length, but :exc:`EOFError` is raised if the end of the file "
+"is reached immediately."
 msgstr ""
 
 # 1bef0003fae341838f361176039f4bf6
-#: ../src/Doc/c-api/file.rst:125
+#: ../src/Doc/c-api/file.rst:126
 msgid "Return the name of the file specified by *p* as a string object."
 msgstr ""
 
 # f6b57a642018412cb393efb4d85f8c21
-#: ../src/Doc/c-api/file.rst:132
+#: ../src/Doc/c-api/file.rst:133
 msgid ""
 "Available on systems with :c:func:`setvbuf` only.  This should only be "
 "called immediately after file object creation."
 msgstr ""
 
 # 0810bc095aa44245bf50741420508fb5
-#: ../src/Doc/c-api/file.rst:138
+#: ../src/Doc/c-api/file.rst:139
 msgid ""
 "Set the file's encoding for Unicode output to *enc*. Return 1 on success and "
 "0 on failure."
 msgstr ""
 
 # 1d8dd1f31e7a49809c5e9b7aadfed146
-#: ../src/Doc/c-api/file.rst:146
+#: ../src/Doc/c-api/file.rst:147
 msgid ""
 "Set the file's encoding for Unicode output to *enc*, and its error mode to "
 "*err*. Return 1 on success and 0 on failure."
 msgstr ""
 
 # df36519e6af84411b18d55d9ed49bc37
-#: ../src/Doc/c-api/file.rst:156
+#: ../src/Doc/c-api/file.rst:157
 msgid ""
 "This function exists for internal use by the interpreter.  Set the :attr:"
 "`softspace` attribute of *p* to *newflag* and return the previous value. *p* "
@@ -4823,7 +4830,7 @@ msgid ""
 msgstr ""
 
 # 69cefba0f77e43ca90410f62056e5580
-#: ../src/Doc/c-api/file.rst:170
+#: ../src/Doc/c-api/file.rst:171
 msgid ""
 "Write object *obj* to file object *p*.  The only supported flag for *flags* "
 "is :const:`Py_PRINT_RAW`; if given, the :func:`str` of the object is written "
@@ -4832,7 +4839,7 @@ msgid ""
 msgstr ""
 
 # 4551ee45b5a04e5c9a65ec5087efe225
-#: ../src/Doc/c-api/file.rst:178
+#: ../src/Doc/c-api/file.rst:179
 msgid ""
 "Write string *s* to file object *p*.  Return ``0`` on success or ``-1`` on "
 "failure; the appropriate exception will be set."
@@ -7781,9 +7788,9 @@ msgstr ""
 msgid "Iterator Protocol"
 msgstr ""
 
+# 667bd7505afb4278ac173450b5819a7c
 #: ../src/Doc/c-api/iter.rst:10
-msgid ""
-"There are only a couple of functions specifically for working with iterators."
+msgid "There are two functions specifically for working with iterators."
 msgstr ""
 
 # 210df15ee0ff49b495c118b77c082de6
@@ -7794,14 +7801,13 @@ msgstr ""
 # 27a4835b46c54981aaf9cda004e7ce68
 #: ../src/Doc/c-api/iter.rst:20
 msgid ""
-"Return the next value from the iteration *o*.  If the object is an iterator, "
-"this retrieves the next value from the iteration, and returns *NULL* with no "
-"exception set if there are no remaining items.  If the object is not an "
-"iterator, :exc:`TypeError` is raised, or if there is an error in retrieving "
-"the item, returns *NULL* and passes along the exception."
+"Return the next value from the iteration *o*.  The object must be an "
+"iterator (it is up to the caller to check this).  If there are no remaining "
+"values, returns *NULL* with no exception set.  If an error occurs while "
+"retrieving the item, returns *NULL* and passes along the exception."
 msgstr ""
 
-#: ../src/Doc/c-api/iter.rst:26
+#: ../src/Doc/c-api/iter.rst:25
 msgid ""
 "To write a loop which iterates over an iterator, the C code should look "
 "something like this::"
@@ -9260,7 +9266,7 @@ msgid ""
 "Generic attribute getter function that is meant to be put into a type "
 "object's ``tp_getattro`` slot.  It looks for a descriptor in the dictionary "
 "of classes in the object's MRO as well as an attribute in the object's :attr:"
-"`__dict__` (if present).  As outlined in :ref:`descriptors`, data "
+"`~object.__dict__` (if present).  As outlined in :ref:`descriptors`, data "
 "descriptors take preference over instance attributes, while non-data "
 "descriptors don't.  Otherwise, an :exc:`AttributeError` is raised."
 msgstr ""
@@ -9281,8 +9287,8 @@ msgid ""
 "object's ``tp_setattro`` slot.  It looks for a data descriptor in the "
 "dictionary of classes in the object's MRO, and if found it takes preference "
 "over setting the attribute in the instance dictionary. Otherwise, the "
-"attribute is set in the object's :attr:`__dict__` (if present).  Otherwise, "
-"an :exc:`AttributeError` is raised and ``-1`` is returned."
+"attribute is set in the object's :attr:`~object.__dict__` (if present). "
+"Otherwise, an :exc:`AttributeError` is raised and ``-1`` is returned."
 msgstr ""
 
 # ff9584e04f0044cba077385ba14fa6ea
@@ -9387,8 +9393,8 @@ msgid ""
 "a tuple, the check will be done against every entry in *cls*. The result "
 "will be ``1`` when at least one of the checks returns ``1``, otherwise it "
 "will be ``0``. If *inst* is not a class instance and *cls* is neither a type "
-"object, nor a class object, nor a tuple, *inst* must have a :attr:"
-"`__class__` attribute --- the class relationship of the value of that "
+"object, nor a class object, nor a tuple, *inst* must have a :attr:`~instance."
+"__class__` attribute --- the class relationship of the value of that "
 "attribute with *cls* will be used to determine the result of this function."
 msgstr ""
 
@@ -9402,10 +9408,10 @@ msgid ""
 "indirectly.  If either is not a class object, a more general mechanism is "
 "used to determine the class relationship of the two objects.  When testing "
 "if *B* is a subclass of *A*, if *A* is *B*, :c:func:`PyObject_IsSubclass` "
-"returns true.  If *A* and *B* are different objects, *B*'s :attr:`__bases__` "
-"attribute is searched in a depth-first fashion for *A* --- the presence of "
-"the :attr:`__bases__` attribute is considered sufficient for this "
-"determination."
+"returns true.  If *A* and *B* are different objects, *B*'s :attr:`~class."
+"__bases__` attribute is searched in a depth-first fashion for *A* --- the "
+"presence of the :attr:`~class.__bases__` attribute is considered sufficient "
+"for this determination."
 msgstr ""
 
 # 1e765d90e8b94a49919fa15b7d9b513a
@@ -10094,7 +10100,7 @@ msgid ""
 "Return 1 if found and removed, 0 if not found (no action taken), and -1 if "
 "an error is encountered.  Does not raise :exc:`KeyError` for missing keys.  "
 "Raise a :exc:`TypeError` if the *key* is unhashable.  Unlike the Python :"
-"meth:`discard` method, this function does not automatically convert "
+"meth:`~set.discard` method, this function does not automatically convert "
 "unhashable sets into temporary frozensets. Raise :exc:`PyExc_SystemError` if "
 "*set* is an not an instance of :class:`set` or its subtype."
 msgstr ""
@@ -12458,7 +12464,7 @@ msgstr ""
 msgid ""
 "On the other hand, even if you know a member can never be part of a cycle, "
 "as a debugging aid you may want to visit it anyway just so the :mod:`gc` "
-"module's :func:`get_referents` function will include it."
+"module's :func:`~gc.get_referents` function will include it."
 msgstr ""
 
 # 561c167210fd4e2f9c5905a36b22033e
@@ -12705,7 +12711,7 @@ msgstr ""
 # d35b812b6951476e9bdd6730d6ac59b1
 #: ../src/Doc/c-api/typeobj.rst:736
 msgid ""
-"When a type defined by a class statement has no :attr:`__slots__` "
+"When a type defined by a class statement has no :attr:`~object.__slots__` "
 "declaration, and none of its base types are weakly referenceable, the type "
 "is made weakly referenceable by adding a weak reference list head slot to "
 "the instance layout and setting the :c:member:`~PyTypeObject."
@@ -12976,7 +12982,7 @@ msgstr ""
 # c0ec7b04561d4bada30103c391d8750e
 #: ../src/Doc/c-api/typeobj.rst:930
 msgid ""
-"When a type defined by a class statement has no :attr:`__slots__` "
+"When a type defined by a class statement has no :attr:`~object.__slots__` "
 "declaration, and none of its base types has an instance variable dictionary, "
 "a dictionary slot is added to the instance layout and the :c:member:"
 "`~PyTypeObject.tp_dictoffset` is set to that slot's offset."
@@ -12993,9 +12999,10 @@ msgstr ""
 # 6c084aca2bb14be285599b898dae2d4e
 #: ../src/Doc/c-api/typeobj.rst:938
 msgid ""
-"(Adding a slot named :attr:`__dict__` to the :attr:`__slots__` declaration "
-"does not have the expected effect, it just causes confusion.  Maybe this "
-"should be added as a feature just like :attr:`__weakref__` though.)"
+"(Adding a slot named :attr:`~object.__dict__` to the :attr:`__slots__` "
+"declaration does not have the expected effect, it just causes confusion.  "
+"Maybe this should be added as a feature just like :attr:`__weakref__` "
+"though.)"
 msgstr ""
 
 # 2761425bf2af4ac8aeb75c2cbcfa485f
@@ -14065,9 +14072,9 @@ msgstr ""
 msgid ""
 "Encode the :c:type:`Py_UNICODE` buffer *s* of the given *size* and return a "
 "Python string object.  *encoding* and *errors* have the same meaning as the "
-"parameters of the same name in the Unicode :meth:`encode` method.  The codec "
-"to be used is looked up using the Python codec registry.  Return *NULL* if "
-"an exception was raised by the codec."
+"parameters of the same name in the Unicode :meth:`~unicode.encode` method.  "
+"The codec to be used is looked up using the Python codec registry.  Return "
+"*NULL* if an exception was raised by the codec."
 msgstr ""
 
 # 9910721668434016bbd6ae863dcae1f1
@@ -15093,7 +15100,7 @@ msgid ""
 "frame *f* is executed, interpreting bytecode and executing calls as needed. "
 "The additional *throwflag* parameter can mostly be ignored - if true, then "
 "it causes an exception to immediately be thrown; this is used for the :meth:"
-"`throw` methods of generator objects."
+"`~generator.throw` methods of generator objects."
 msgstr ""
 
 # 80e719939c1045cbb8e923aef2840268

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-07 06:53\n"
+"POT-Creation-Date: 2013-10-14 16:19\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,24 +71,25 @@ msgid ""
 "features of distutils; this section explains building extension modules only."
 msgstr ""
 
+# 342c94075a924cd39ff6f35da35ee836
 #: ../src/Doc/extending/building.rst:58
 msgid ""
 "It is common to pre-compute arguments to :func:`setup`, to better structure "
 "the driver script. In the example above, the\\ ``ext_modules`` argument to :"
 "func:`setup` is a list of extension modules, each of which is an instance of "
-"the :class:`Extension`. In the example, the instance defines an extension "
-"named ``demo`` which is build by compiling a single source file, :file:`demo."
-"c`."
+"the :class:`~distutils.extension.Extension`. In the example, the instance "
+"defines an extension named ``demo`` which is build by compiling a single "
+"source file, :file:`demo.c`."
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:64
+#: ../src/Doc/extending/building.rst:65
 msgid ""
 "In many cases, building an extension is more complex, since additional "
 "preprocessor defines and libraries may be needed. This is demonstrated in "
 "the example below. ::"
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:90
+#: ../src/Doc/extending/building.rst:91
 msgid ""
 "In this example, :func:`setup` is called with additional meta-information, "
 "which is recommended when distribution packages have to be built. For the "
@@ -98,40 +99,40 @@ msgid ""
 "Unix, this may result in the compilation commands ::"
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:101
+#: ../src/Doc/extending/building.rst:102
 msgid ""
 "These lines are for demonstration purposes only; distutils users should "
 "trust that distutils gets the invocations right."
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:108
+#: ../src/Doc/extending/building.rst:109
 msgid "Distributing your extension modules"
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:110
+#: ../src/Doc/extending/building.rst:111
 msgid ""
 "When an extension has been successfully build, there are three ways to use "
 "it."
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:112
+#: ../src/Doc/extending/building.rst:113
 msgid ""
 "End-users will typically want to install the module, they do so by running ::"
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:116
+#: ../src/Doc/extending/building.rst:117
 msgid ""
 "Module maintainers should produce source packages; to do so, they run ::"
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:120
+#: ../src/Doc/extending/building.rst:121
 msgid ""
 "In some cases, additional files need to be included in a source "
 "distribution; this is done through a :file:`MANIFEST.in` file; see the "
 "distutils documentation for details."
 msgstr ""
 
-#: ../src/Doc/extending/building.rst:124
+#: ../src/Doc/extending/building.rst:125
 msgid ""
 "If the source distribution has been build successfully, maintainers can also "
 "create binary distributions. Depending on the platform, one of the following "
@@ -1330,10 +1331,10 @@ msgid ""
 "The cycle detector is able to detect garbage cycles and can reclaim them so "
 "long as there are no finalizers implemented in Python (:meth:`__del__` "
 "methods). When there are such finalizers, the detector exposes the cycles "
-"through the :mod:`gc` module (specifically, the ``garbage`` variable in that "
-"module).  The :mod:`gc` module also exposes a way to run the detector (the :"
-"func:`collect` function), as well as configuration interfaces and the "
-"ability to disable the detector at runtime.  The cycle detector is "
+"through the :mod:`gc` module (specifically, the :attr:`~gc.garbage` variable "
+"in that module). The :mod:`gc` module also exposes a way to run the detector "
+"(the :func:`~gc.collect` function), as well as configuration interfaces and "
+"the ability to disable the detector at runtime.  The cycle detector is "
 "considered an optional component; though it is included by default, it can "
 "be disabled at build time using the :option:`--without-cycle-gc` option to "
 "the :program:`configure` script on Unix platforms (including Mac OS X) or by "
@@ -2016,13 +2017,13 @@ msgid ""
 "If you want your type to be subclassable from Python, and your type has the "
 "same :c:member:`~PyTypeObject.tp_basicsize` as its base type, you may have "
 "problems with multiple inheritance.  A Python subclass of your type will "
-"have to list your type first in its :attr:`__bases__`, or else it will not "
-"be able to call your type's :meth:`__new__` method without getting an "
-"error.  You can avoid this problem by ensuring that your type has a larger "
-"value for :c:member:`~PyTypeObject.tp_basicsize` than its base type does.  "
-"Most of the time, this will be true anyway, because either your base type "
-"will be :class:`object`, or else you will be adding data members to your "
-"base type, and therefore increasing its size."
+"have to list your type first in its :attr:`~class.__bases__`, or else it "
+"will not be able to call your type's :meth:`__new__` method without getting "
+"an error.  You can avoid this problem by ensuring that your type has a "
+"larger value for :c:member:`~PyTypeObject.tp_basicsize` than its base type "
+"does.  Most of the time, this will be true anyway, because either your base "
+"type will be :class:`object`, or else you will be adding data members to "
+"your base type, and therefore increasing its size."
 msgstr ""
 
 #: ../src/Doc/extending/newtypes.rst:166
