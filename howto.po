@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-21 04:17\n"
+"POT-Creation-Date: 2013-12-02 12:34\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3046,11 +3046,12 @@ msgid ""
 "the Python wiki at http://wiki.python.org/moin/HowTo/Sorting.)"
 msgstr ""
 
+# c4d9ef84666c4a6a89abb857a22d2658
 #: ../src/Doc/howto/functional.rst:745
 msgid ""
 "The ``any(iter)`` and ``all(iter)`` built-ins look at the truth values of an "
-"iterable's contents.  :func:`any` returns True if any element in the "
-"iterable is a true value, and :func:`all` returns True if all of the "
+"iterable's contents.  :func:`any` returns ``True`` if any element in the "
+"iterable is a true value, and :func:`all` returns ``True`` if all of the "
 "elements are true values:"
 msgstr ""
 
