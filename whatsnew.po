@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-05 04:44\n"
+"POT-Creation-Date: 2013-12-30 04:19\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7176,10 +7176,11 @@ msgid ""
 "For example, the above case-insensitive sort is best written as::"
 msgstr ""
 
+# bec815d9eb0c4495ad414f09eb42fa3e
 #: ../src/Doc/whatsnew/2.4.rst:848
 msgid ""
 "Finally, the *reverse* parameter takes a Boolean value.  If the value is "
-"true, the list will be sorted into reverse order. Instead of ``L.sort() ; L."
+"true, the list will be sorted into reverse order. Instead of ``L.sort(); L."
 "reverse()``, you can now write ``L.sort(reverse=True)``."
 msgstr ""
 
@@ -8312,6 +8313,7 @@ msgid ""
 "mod:`pkg.main` module's namespace."
 msgstr ""
 
+# 3a91520103784786acd1a36e83f77dbc
 #: ../src/Doc/whatsnew/2.5.rst:284
 msgid ""
 "That's fine if :mod:`pkg.string` was what you wanted.  But what if you "
@@ -8319,7 +8321,7 @@ msgid ""
 "ignore :mod:`pkg.string` and look for the standard module; generally you had "
 "to look at the contents of ``sys.modules``, which is slightly unclean.    "
 "Holger Krekel's :mod:`py.std` package provides a tidier way to perform "
-"imports from the standard library, ``import py ; py.std.string.join()``, but "
+"imports from the standard library, ``import py; py.std.string.join()``, but "
 "that package isn't available on all Python installations."
 msgstr ""
 

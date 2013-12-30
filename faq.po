@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-14 16:19\n"
+"POT-Creation-Date: 2013-12-30 04:19\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3567,10 +3567,11 @@ msgid ""
 "side and client-side web systems."
 msgstr ""
 
+# faca0f8973914815a8d319155ae0de0c
 #: ../src/Doc/faq/library.rst:642
 msgid ""
 "A summary of available frameworks is maintained by Paul Boddie at http://"
-"wiki.python.org/moin/WebProgramming ."
+"wiki.python.org/moin/WebProgramming\\ ."
 msgstr ""
 
 #: ../src/Doc/faq/library.rst:645
