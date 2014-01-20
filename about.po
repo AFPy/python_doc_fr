@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-20 04:01\n"
+"POT-Creation-Date: 2014-01-20 04:02\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,22 +30,20 @@ msgstr ""
 "`Sphinx`_, un analyseur de documents spécialement conçu pour la "
 "documentation Python."
 
+# dbe8e0821bcc407986691560c0eddcd9
 #: ../src/Doc/about.rst:15
 msgid ""
-"Development of the documentation and its toolchain takes place on the "
-"docs@python.org mailing list.  We're always looking for volunteers wanting "
-"to help with the docs, so feel free to send a mail there!"
+"Development of the documentation and its toolchain is an entirely volunteer "
+"effort, just like Python itself.  If you want to contribute, please take a "
+"look at the :ref:`reporting-bugs` page for information on how to do so.  New "
+"volunteers are always welcome!"
 msgstr ""
-"Le développement de la documentation et de ses outils se passe sur la liste "
-"de diffusion docs@python.org. Nous sommes toujours à la recherche de "
-"volontaires souhaitant aider avec les documentations, alors n'hésitez pas à "
-"envoyer un mail !"
 
-#: ../src/Doc/about.rst:19
+#: ../src/Doc/about.rst:20
 msgid "Many thanks go to:"
 msgstr "Merci beaucoup à :"
 
-#: ../src/Doc/about.rst:21
+#: ../src/Doc/about.rst:22
 msgid ""
 "Fred L. Drake, Jr., the creator of the original Python documentation toolset "
 "and writer of much of the content;"
@@ -53,7 +51,7 @@ msgstr ""
 "Fred L. Drake, Jr., créateur des outils originaux de la documentation Python "
 "et rédacteur de la plupart de son contenu ;"
 
-#: ../src/Doc/about.rst:23
+#: ../src/Doc/about.rst:24
 msgid ""
 "the `Docutils <http://docutils.sf.net/>`_ project for creating "
 "reStructuredText and the Docutils suite;"
@@ -62,7 +60,7 @@ msgstr ""
 "reStructuredText et la suite d'outils Docutils ;"
 
 # sphix a pris des idées *du* projet `Alternative Python Reference
-#: ../src/Doc/about.rst:25
+#: ../src/Doc/about.rst:26
 msgid ""
 "Fredrik Lundh for his `Alternative Python Reference <http://effbot.org/zone/"
 "pyref.htm>`_ project from which Sphinx got many good ideas."
@@ -70,35 +68,46 @@ msgstr ""
 "Fredrik Lundh pour son projet `Alternative Python Reference <http://effbot."
 "org/zone/pyref.htm>`_, dont Sphinx a pris beaucoup de bonnes idées."
 
-#: ../src/Doc/about.rst:29
-msgid ""
-"See :ref:`reporting-bugs` for information how to report bugs in this "
-"documentation, or Python itself."
-msgstr ""
-"Veuillez consulter :ref:`reporting-bugs` pour savoir comment signaler des "
-"bugs dans cette documentation ou dans Python lui-même."
-
-#: ../src/Doc/about.rst:34
+#: ../src/Doc/about.rst:32
 msgid "Contributors to the Python Documentation"
 msgstr "Contributeurs de la documentation Python"
 
 # 7b2b34485a32441f8841d39f8b363468
-#: ../src/Doc/about.rst:36
+#: ../src/Doc/about.rst:34
 msgid ""
 "Many people have contributed to the Python language, the Python standard "
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
-"De nombreuses personnes ont contribué au language Python, à sa librarie standard et à sa documentation. "
-"Consultez :source:`Misc/ACKS` dans les sources de la distribution Python pour avoir une liste partielle des contributeurs."
+"De nombreuses personnes ont contribué au language Python, à sa librarie "
+"standard et à sa documentation. Consultez :source:`Misc/ACKS` dans les "
+"sources de la distribution Python pour avoir une liste partielle des "
+"contributeurs."
 
-#: ../src/Doc/about.rst:40
+#: ../src/Doc/about.rst:38
 msgid ""
 "It is only with the input and contributions of the Python community that "
 "Python has such wonderful documentation -- Thank You!"
 msgstr ""
 "Ce n'est que grâce aux suggestions et contributions de la communauté Python "
 "que Python a une documentation si merveilleuse -- Merci !"
+
+#~ msgid ""
+#~ "Development of the documentation and its toolchain takes place on the "
+#~ "docs@python.org mailing list.  We're always looking for volunteers "
+#~ "wanting to help with the docs, so feel free to send a mail there!"
+#~ msgstr ""
+#~ "Le développement de la documentation et de ses outils se passe sur la "
+#~ "liste de diffusion docs@python.org. Nous sommes toujours à la recherche "
+#~ "de volontaires souhaitant aider avec les documentations, alors n'hésitez "
+#~ "pas à envoyer un mail !"
+
+#~ msgid ""
+#~ "See :ref:`reporting-bugs` for information how to report bugs in this "
+#~ "documentation, or Python itself."
+#~ msgstr ""
+#~ "Veuillez consulter :ref:`reporting-bugs` pour savoir comment signaler des "
+#~ "bugs dans cette documentation ou dans Python lui-même."
 
 #~ msgid ""
 #~ "This section lists people who have contributed in some way to the Python "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-20 04:15\n"
+"POT-Creation-Date: 2014-01-20 04:02\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,11 +36,11 @@ msgid "Documentation bugs"
 msgstr "Bogues de documentation"
 
 #: ../src/Doc/bugs.rst:15
+#, fuzzy
 msgid ""
 "If you find a bug in this documentation or would like to propose an "
-"improvement, please send an e-mail to docs@python.org describing the bug and "
-"where you found it.  If you have a suggestion how to fix it, include that as "
-"well."
+"improvement, please submit a bug report on the :ref:`tracker <using-the-"
+"tracker>`.  If you have a suggestion how to fix it, include that as well."
 msgstr ""
 "Si vous trouvez un bogue dans cette documentation ou si vous désirez "
 "proposer une amélioration, envoyez un e-mail à docs@python.org décrivant le "
@@ -48,27 +48,21 @@ msgstr ""
 "merci de l'inclure également."
 
 #: ../src/Doc/bugs.rst:19
+#, fuzzy
 msgid ""
-"docs@python.org is a mailing list run by volunteers; your request will be "
-"noticed, even if it takes a while to be processed."
+"If you're short on time, you can also email your bug report to docs@python."
+"org. 'docs@' is a mailing list run by volunteers; your request will be "
+"noticed, though it may take a while to be processed."
 msgstr ""
 "docs@python.org est une liste de diffusion tenue par des bénévoles ; votre "
 "demande sera prise en compte, même si sa prise en charge prend du temps."
 
-#: ../src/Doc/bugs.rst:22
-msgid ""
-"Of course, if you want a more persistent record of your issue, you can use "
-"the issue tracker for documentation bugs as well."
-msgstr ""
-"Bien sûr, si vous voulez un suivi plus persistant de votre problème, vous "
-"pouvez aussi utiliser le tracker pour les bugs de documentation."
-
-#: ../src/Doc/bugs.rst:27
+#: ../src/Doc/bugs.rst:29
 msgid "Using the Python issue tracker"
 msgstr "Utilisation du tracker Python"
 
 # aconrad: "traqueur de bogues" ? Comment traduire ça ?
-#: ../src/Doc/bugs.rst:29
+#: ../src/Doc/bugs.rst:31
 msgid ""
 "Bug reports for Python itself should be submitted via the Python Bug Tracker "
 "(http://bugs.python.org/).  The bug tracker offers a Web form which allows "
@@ -79,7 +73,7 @@ msgstr ""
 "formulaire Web permettant de saisir des informations pertinentes à soumettre "
 "aux développeurs."
 
-#: ../src/Doc/bugs.rst:33
+#: ../src/Doc/bugs.rst:35
 msgid ""
 "The first step in filing a report is to determine whether the problem has "
 "already been reported.  The advantage in doing so, aside from saving the "
@@ -97,7 +91,7 @@ msgstr ""
 "contribution est la bienvenue !). Pour ce faire, cherchez dans la base de "
 "données de bogues grâce à la boîte de recherche en haut de la page."
 
-#: ../src/Doc/bugs.rst:40
+#: ../src/Doc/bugs.rst:42
 msgid ""
 "If the problem you're reporting is not already in the bug tracker, go back "
 "to the Python Bug Tracker and log in.  If you don't already have a tracker "
@@ -117,7 +111,7 @@ msgstr ""
 # aconrad: je ne sais pas si l'interface est traduite, mais je pense qu'à terme tout sera traduit, même le bug tracker. Je pense que nous pouvons dors-et-déjà traduire les boutons. Nous nous adressons à une communauté parlant généralement un minimum l'anglais et je pense qu'ils ne seront pas perdus.
 # 
 # aconrad: j'aurais tendance à remplacer "identifié" par "connecté".
-#: ../src/Doc/bugs.rst:45
+#: ../src/Doc/bugs.rst:47
 msgid ""
 "Being now logged in, you can submit a bug.  Select the \"Create New\" link "
 "in the sidebar to open the bug reporting form."
@@ -126,7 +120,7 @@ msgstr ""
 "\"Create New\" dans la barre latérale pour ouvrir un nouveau formulaire de "
 "rapport de bogue."
 
-#: ../src/Doc/bugs.rst:48
+#: ../src/Doc/bugs.rst:50
 msgid ""
 "The submission form has a number of fields.  For the \"Title\" field, enter "
 "a *very* short description of the problem; less than ten words is good.  In "
@@ -139,7 +133,7 @@ msgstr ""
 "problème ; sélectionnez aussi \"Composant\" et \"Versions\" en rapport avec "
 "le bogue."
 
-#: ../src/Doc/bugs.rst:53
+#: ../src/Doc/bugs.rst:55
 msgid ""
 "In the \"Comment\" field, describe the problem in detail, including what you "
 "expected to happen and what did happen.  Be sure to include whether any "
@@ -152,7 +146,7 @@ msgstr ""
 "plateforme matérielle et logicielle vous utilisiez (en incluant les "
 "informations de versions)."
 
-#: ../src/Doc/bugs.rst:58
+#: ../src/Doc/bugs.rst:60
 #, fuzzy
 msgid ""
 "Each bug report will be assigned to a developer who will determine what "
@@ -165,24 +159,14 @@ msgstr ""
 "org/dev/workflow/ pour une description détaillée du processus de traitement "
 "des problèmes."
 
-# 73cc2a40368a455f8974286eb299d4dc
-#: ../src/Doc/bugs.rst:65
-msgid "`Python Developer's Guide <http://docs.python.org/devguide/>`_"
-msgstr ""
-
-# 9caa1f62db654d4db171ffc4a8485f2c
-#: ../src/Doc/bugs.rst:66
-msgid "Detailed description of the issue workflow and developers tools."
-msgstr ""
-
 # 69a83a070002401aac0ef159d635dec6
-#: ../src/Doc/bugs.rst:69
+#: ../src/Doc/bugs.rst:68
 msgid ""
 "`How to Report Bugs Effectively <http://www.chiark.greenend.org.uk/~sgtatham/"
 "bugs.html>`_"
 msgstr ""
 
-#: ../src/Doc/bugs.rst:69
+#: ../src/Doc/bugs.rst:68
 msgid ""
 "Article which goes into some detail about how to create a useful bug report. "
 "This describes what kind of information is useful and why it is useful."
@@ -192,19 +176,41 @@ msgstr ""
 "est utile."
 
 # 1542b2bc60b6414f829d737bddfd91f4
-#: ../src/Doc/bugs.rst:72
+#: ../src/Doc/bugs.rst:71
 msgid ""
 "`Bug Writing Guidelines <http://developer.mozilla.org/en/docs/"
 "Bug_writing_guidelines>`_"
 msgstr ""
 
-#: ../src/Doc/bugs.rst:73
+#: ../src/Doc/bugs.rst:72
 msgid ""
 "Information about writing a good bug report.  Some of this is specific to "
 "the Mozilla project, but describes general good practices."
 msgstr ""
 "Conseils pour écrire un bon rapport de bogue. Certains sont spécifiques au "
 "projet Mozilla mais présentent des bonnes pratiques générales."
+
+# 9c7f8b3b87054431a436607c10a61840
+#: ../src/Doc/bugs.rst:77
+msgid "Getting started contributing to Python yourself"
+msgstr ""
+
+# 7b966de34a774a329b09560666a10777
+#: ../src/Doc/bugs.rst:79
+msgid ""
+"Beyond just reporting bugs that you find, you are also welcome to submit "
+"patches to fix them.  You can find more information on how to get started "
+"patching Python in the `Python Developer's Guide`_.  If you have questions, "
+"the `core-mentorship mailing list`_ is a friendly place to get answers to "
+"any and all questions pertaining to the process of fixing issues in Python."
+msgstr ""
+
+#~ msgid ""
+#~ "Of course, if you want a more persistent record of your issue, you can "
+#~ "use the issue tracker for documentation bugs as well."
+#~ msgstr ""
+#~ "Bien sûr, si vous voulez un suivi plus persistant de votre problème, vous "
+#~ "pouvez aussi utiliser le tracker pour les bugs de documentation."
 
 #~ msgid "See also"
 #~ msgstr "Voir aussi"
