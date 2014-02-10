@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-30 04:19\n"
+"POT-Creation-Date: 2014-02-10 04:18\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5659,6 +5659,149 @@ msgstr ""
 # 1a7bdf84caba47cebdbefa1ffa3c403f
 #: ../src/Doc/howto/logging-cookbook.rst:831
 msgid "When the above script is run, it prints::"
+msgstr ""
+
+# 6e3fdd33d9a34c10940b48131ca922f1
+#: ../src/Doc/howto/logging-cookbook.rst:844
+msgid "Customizing handlers with :func:`dictConfig`"
+msgstr ""
+
+# 609142a705684ef887b9188935200181
+#: ../src/Doc/howto/logging-cookbook.rst:846
+msgid ""
+"There are times when you want to customize logging handlers in particular "
+"ways, and if you use :func:`dictConfig` you may be able to do this without "
+"subclassing. As an example, consider that you may want to set the ownership "
+"of a log file. On POSIX, this is easily done using :func:`shutil.chown`, but "
+"the file handlers in the stdlib don't offer built-in support. You can "
+"customize handler creation using a plain function such as::"
+msgstr ""
+
+# 4d47d67f619645d1950fc10b4f1dc91f
+#: ../src/Doc/howto/logging-cookbook.rst:860
+msgid ""
+"You can then specify, in a logging configuration passed to :func:"
+"`dictConfig`, that a logging handler be created by calling this function::"
+msgstr ""
+
+# 8c06e5cb9a48412fb00d1f1317f0077d
+#: ../src/Doc/howto/logging-cookbook.rst:893
+msgid ""
+"In this example I am setting the ownership using the ``pulse`` user and "
+"group, just for the purposes of illustration. Putting it together into a "
+"working script, ``chowntest.py``::"
+msgstr ""
+
+# 8e3572b8a76c4f63891e3c656ade99f9
+#: ../src/Doc/howto/logging-cookbook.rst:940
+msgid "To run this, you will probably need to run as ``root``::"
+msgstr ""
+
+# 2ba20e9beb6d43e0a98da6e04a5fe42b
+#: ../src/Doc/howto/logging-cookbook.rst:948
+msgid ""
+"Note that this example uses Python 3.3 because that's where :func:`shutil."
+"chown` makes an appearance. This approach should work with any Python "
+"version that supports :func:`dictConfig` - namely, Python 2.7, 3.2 or later. "
+"With pre-3.3 versions, you would need to implement the actual ownership "
+"change using e.g. :func:`os.chown`."
+msgstr ""
+
+# 873509a8c6204c27a0af43b25beecfe2
+#: ../src/Doc/howto/logging-cookbook.rst:954
+msgid ""
+"In practice, the handler-creating function may be in a utility module "
+"somewhere in your project. Instead of the line in the configuration::"
+msgstr ""
+
+# 4e48ec9d6a6840c697af9e9831a64aa0
+#: ../src/Doc/howto/logging-cookbook.rst:959
+msgid "you could use e.g.::"
+msgstr ""
+
+# 3a82194747ae4b23b1ad1aa66af528a0
+#: ../src/Doc/howto/logging-cookbook.rst:963
+msgid ""
+"where ``project.util`` can be replaced with the actual name of the package "
+"where the function resides. In the above working script, using ``'ext://"
+"__main__.owned_file_handler'`` should work. Here, the actual callable is "
+"resolved by :func:`dictConfig` from the ``ext://`` specification."
+msgstr ""
+
+# 4b2d94be597545978078af2b12d62c14
+#: ../src/Doc/howto/logging-cookbook.rst:968
+msgid ""
+"This example hopefully also points the way to how you could implement other "
+"types of file change - e.g. setting specific POSIX permission bits - in the "
+"same way, using :func:`os.chmod`."
+msgstr ""
+
+# 08e469fef83a4330926f828d88e9ebe6
+#: ../src/Doc/howto/logging-cookbook.rst:972
+msgid ""
+"Of course, the approach could also be extended to types of handler other "
+"than a :class:`~logging.FileHandler` - for example, one of the rotating file "
+"handlers, or a different type of handler altogether."
+msgstr ""
+
+# 02c540aa3e87419d8a2437011c57f47b
+#: ../src/Doc/howto/logging-cookbook.rst:980
+msgid "Configuring filters with :func:`dictConfig`"
+msgstr ""
+
+# a83e5f5b18094a7d9ce8f4cf4254b949
+#: ../src/Doc/howto/logging-cookbook.rst:982
+msgid ""
+"You *can* configure filters using :func:`~logging.config.dictConfig`, though "
+"it might not be obvious at first glance how to do it (hence this recipe). "
+"Since :class:`~logging.Filter` is the only filter class included in the "
+"standard library, and it is unlikely to cater to many requirements (it's "
+"only there as a base class), you will typically need to define your own :"
+"class:`~logging.Filter` subclass with an overridden :meth:`~logging.Filter."
+"filter` method. To do this, specify the ``()`` key in the configuration "
+"dictionary for the filter, specifying a callable which will be used to "
+"create the filter (a class is the most obvious, but you can provide any "
+"callable which returns a :class:`~logging.Filter` instance). Here is a "
+"complete example::"
+msgstr ""
+
+# 5d668e33f96f4efb95e8de2334a7e93d
+#: ../src/Doc/howto/logging-cookbook.rst:1035
+msgid ""
+"This example shows how you can pass configuration data to the callable which "
+"constructs the instance, in the form of keyword parameters. When run, the "
+"above script will print::"
+msgstr ""
+
+# fbcf9986f4da445ab27f946a5bf59dcf
+#: ../src/Doc/howto/logging-cookbook.rst:1041
+msgid "which shows that the filter is working as configured."
+msgstr ""
+
+# ca7822bd3451451eb53c76bb8ef104cd
+#: ../src/Doc/howto/logging-cookbook.rst:1043
+msgid "A couple of extra points to note:"
+msgstr ""
+
+# 16fa4de733634057985a4b3495555a47
+#: ../src/Doc/howto/logging-cookbook.rst:1045
+msgid ""
+"If you can't refer to the callable directly in the configuration (e.g. if it "
+"lives in a different module, and you can't import it directly where the "
+"configuration dictionary is), you can use the form ``ext://...`` as "
+"described in :ref:`logging-config-dict-externalobj`. For example, you could "
+"have used the text ``'ext://__main__.MyFilter'`` instead of ``MyFilter`` in "
+"the above example."
+msgstr ""
+
+# 9438e5f8a9ea4fa199092485ad386ee4
+#: ../src/Doc/howto/logging-cookbook.rst:1052
+msgid ""
+"As well as for filters, this technique can also be used to configure custom "
+"handlers and formatters. See :ref:`logging-config-dict-userdef` for more "
+"information on how logging supports using user-defined objects in its "
+"configuration, and see the other cookbook recipe :ref:`custom-handlers` "
+"above."
 msgstr ""
 
 # e836dbe15866465da83f3801b4809e39
