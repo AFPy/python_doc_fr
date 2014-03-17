@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 04:18\n"
+"POT-Creation-Date: 2014-03-17 06:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5819,345 +5819,377 @@ msgstr ""
 msgid ""
 "With Python 3 being the future of Python while Python 2 is still in active "
 "use, it is good to have your project available for both major releases of "
-"Python. This guide is meant to help you choose which strategy works best for "
-"your project to support both Python 2 & 3 along with how to execute that "
-"strategy."
+"Python. This guide is meant to help you figure out how best to support both "
+"Python 2 & 3 simultaneously."
 msgstr ""
 
 # ae071a7dbe9c4bd2a9276020dffb59e5
-#: ../src/Doc/howto/pyporting.rst:17
+#: ../src/Doc/howto/pyporting.rst:16
 msgid ""
 "If you are looking to port an extension module instead of pure Python code, "
 "please see :ref:`cporting-howto`."
 msgstr ""
 
-# 665663191d274d82aed6cfbe1313713a
-#: ../src/Doc/howto/pyporting.rst:22
-msgid "Choosing a Strategy"
+# 73cb2b9e2b534b9ea89579783b6a07a7
+#: ../src/Doc/howto/pyporting.rst:19
+msgid ""
+"If you would like to read one core Python developer's take on why Python 3 "
+"came into existence, you can read Nick Coghlan's `Python 3 Q & A`_."
 msgstr ""
 
-# 498ddaa52a584e73843fec3bba3121e1
-#: ../src/Doc/howto/pyporting.rst:24
+# d2e8d2742a014dda97511dde79ee49d9
+#: ../src/Doc/howto/pyporting.rst:22
 msgid ""
-"When a project makes the decision that it's time to support both Python 2 & "
-"3, a decision needs to be made as to how to go about accomplishing that "
-"goal. The chosen strategy will depend on how large the project's existing "
-"codebase is and how much divergence you want from your Python 2 codebase "
-"from your Python 3 one (e.g., starting a new version with Python 3)."
+"If you prefer to read a (free) book on porting a project to Python 3, "
+"consider reading `Porting to Python 3`_ by Lennart Regebro which should "
+"cover much of what is discussed in this HOWTO."
+msgstr ""
+
+# 5f37e14e84c14dbbafd338935c691f7a
+#: ../src/Doc/howto/pyporting.rst:26
+msgid ""
+"For help with porting, you can email the python-porting_ mailing list with "
+"questions."
+msgstr ""
+
+# 9a20b89edd7943e1a8602563008f8378
+#: ../src/Doc/howto/pyporting.rst:30
+msgid "The Short Version"
+msgstr ""
+
+# 285da7ae4c3b48148cddf61741ea59c4
+#: ../src/Doc/howto/pyporting.rst:32
+msgid ""
+"Decide what's the oldest version of Python 2 you want to support (if at all)"
+msgstr ""
+
+# b4846c5532134f50815fa7f947894f5d
+#: ../src/Doc/howto/pyporting.rst:33
+msgid ""
+"Make sure you have a thorough test suite and use continuous integration "
+"testing to make sure you stay compatible with the versions of Python you "
+"care about"
+msgstr ""
+
+# e4fe3362859047d0895051e3e52a22a2
+#: ../src/Doc/howto/pyporting.rst:36
+msgid ""
+"If you have dependencies, check their Python 3 status using caniusepython3 "
+"(`command-line tool <https://pypi.python.org/pypi/caniusepython3>`__, `web "
+"app <https://caniusepython3.com/>`__)"
+msgstr ""
+
+# 5407e7f6dd0e42978c07989ca030075b
+#: ../src/Doc/howto/pyporting.rst:40
+msgid "With that done, your options are:"
+msgstr ""
+
+# 51f5e59aa2194c7597a6e3da783612e4
+#: ../src/Doc/howto/pyporting.rst:42
+msgid "If you are dropping Python 2 support, use 2to3_ to port to Python 3"
+msgstr ""
+
+# b9d3e51f64894b4db110d5d5f378b11c
+#: ../src/Doc/howto/pyporting.rst:43
+msgid ""
+"If you are keeping Python 2 support, then start writing Python 2/3-"
+"compatible code starting **TODAY**"
+msgstr ""
+
+# 319d8d9a69a646abbde7e125f6f32d70
+#: ../src/Doc/howto/pyporting.rst:46
+msgid ""
+"If you have dependencies that have not been ported, reach out to them to "
+"port their project while working to make your code compatible with Python 3 "
+"so you're ready when your dependencies are all ported"
+msgstr ""
+
+# 6b6330340c974bab9420bc7286499a0b
+#: ../src/Doc/howto/pyporting.rst:49
+msgid ""
+"If all your dependencies have been ported (or you have none), go ahead and "
+"port to Python 3"
 msgstr ""
 
 # 59e8f9f7a3934f71a6a6e38aa7e0818d
-#: ../src/Doc/howto/pyporting.rst:30
-msgid ""
-"If your project is brand-new or does not have a large codebase, then you may "
-"want to consider writing/porting :ref:`all of your code for Python 3 and use "
-"3to2 <use_3to2>` to port your code for Python 2."
-msgstr ""
-
-# bf3f4e10eb05448ea675c5fa6b75b220
-#: ../src/Doc/howto/pyporting.rst:34
-msgid ""
-"If you would prefer to maintain a codebase which is semantically **and** "
-"syntactically compatible with Python 2 & 3 simultaneously, you can write :"
-"ref:`use_same_source`. While this tends to lead to somewhat non-idiomatic "
-"code, it does mean you keep a rapid development process for you, the "
-"developer."
-msgstr ""
-
-# 61dcb94315c447dc9225d3fd157cc1ed
-#: ../src/Doc/howto/pyporting.rst:39
-msgid ""
-"Finally, you do have the option of :ref:`using 2to3 <use_2to3>` to translate "
-"Python 2 code into Python 3 code (with some manual help). This can take the "
-"form of branching your code and using 2to3 to start a Python 3 branch. You "
-"can also have users perform the translation at installation time "
-"automatically so that you only have to maintain a Python 2 codebase."
-msgstr ""
-
-# 2ae74350b4ba489d807ce0ebb69b70d5
-#: ../src/Doc/howto/pyporting.rst:45
-msgid ""
-"Regardless of which approach you choose, porting is not as hard or time-"
-"consuming as you might initially think. You can also tackle the problem "
-"piece-meal as a good portion of porting is simply updating your code to "
-"follow current best practices in a Python 2/3 compatible way."
-msgstr ""
-
-# a757e719b8f540029a87121b253d34a9
 #: ../src/Doc/howto/pyporting.rst:52
-msgid "Universal Bits of Advice"
-msgstr ""
-
-# f043e91c37254cfd921eee3b4a1839e4
-#: ../src/Doc/howto/pyporting.rst:54
 msgid ""
-"Regardless of what strategy you pick, there are a few things you should "
-"consider."
+"If you are creating a new project that wants to have 2/3 compatibility, code "
+"in Python 3 and then backport to Python 2"
 msgstr ""
 
-# 8cd5ad0de1ae40e3bdce4a6b9f666cfc
+# cf359e67f99f47c98ffd55f73df3b547
 #: ../src/Doc/howto/pyporting.rst:57
-msgid ""
-"One is make sure you have a robust test suite. You need to make sure "
-"everything continues to work, just like when you support a new minor version "
-"of Python. This means making sure your test suite is thorough and is ported "
-"properly between Python 2 & 3. You will also most likely want to use "
-"something like tox_ to automate testing between both a Python 2 and Python 3 "
-"VM."
+msgid "Before You Begin"
 msgstr ""
 
-# d4933d03cc7849969a11aa0e6ffaf977
-#: ../src/Doc/howto/pyporting.rst:63
+# b585dc57f9ad48cca1da8d40562eab72
+#: ../src/Doc/howto/pyporting.rst:59
 msgid ""
-"Two, once your project has Python 3 support, make sure to add the proper "
-"classifier on the Cheeseshop_ (PyPI_). To have your project listed as Python "
-"3 compatible it must have the `Python 3 classifier <http://pypi.python.org/"
-"pypi?:action=browse&c=533>`_ (from http://techspot.zzzeek.org/2011/01/24/"
-"zzzeek-s-guide-to-python-3-porting/)::"
+"If your project is on the Cheeseshop_/PyPI_, make sure it has the proper "
+"`trove classifiers`_ to signify what versions of Python it **currently** "
+"supports. At minimum you should specify the major version(s), e.g. "
+"``Programming Language :: Python :: 2`` if your project currently only "
+"supports Python 2. It is preferrable that you be as specific as possible by "
+"listing every major/minor version of Python that you support, e.g. if your "
+"project supports Python 2.6 and 2.7, then you want the classifiers of::"
 msgstr ""
 
-# ba93f08ec5ee4fba98367754bb01731f
-#: ../src/Doc/howto/pyporting.rst:86
+# 38f0ff77e0174dfbb1a443e115ebd7d0
+#: ../src/Doc/howto/pyporting.rst:71
 msgid ""
-"Doing so will cause your project to show up in the `Python 3 packages list "
-"<http://pypi.python.org/pypi?:action=browse&c=533&show=all>`_. You will know "
-"you set the classifier properly as visiting your project page on the "
-"Cheeseshop will show a Python 3 logo in the upper-left corner of the page."
+"Once your project supports Python 3 you will want to go back and add the "
+"appropriate classifiers for Python 3 as well. This is important as setting "
+"the ``Programming Language :: Python :: 3`` classifier will lead to your "
+"project being listed under the `Python 3 Packages`_ section of PyPI."
 msgstr ""
 
-# 74d66df55c2e455cbb426328c0cbf9cb
-#: ../src/Doc/howto/pyporting.rst:92
+# affaf1a2cc0f471abc51dbe3030b80a3
+#: ../src/Doc/howto/pyporting.rst:76
 msgid ""
-"Three, the six_ project provides a library which helps iron out differences "
-"between Python 2 & 3. If you find there is a sticky point that is a "
-"continual point of contention in your translation or maintenance of code, "
-"consider using a source-compatible solution relying on six. If you have to "
-"create your own Python 2/3 compatible solution, you can use ``sys."
-"version_info[0] >= 3`` as a guard."
-msgstr ""
-
-# e8d7628fb66240eca25e4b601eae538b
-#: ../src/Doc/howto/pyporting.rst:99
-msgid ""
-"Four, read all the approaches. Just because some bit of advice applies to "
-"one approach more than another doesn't mean that some advice doesn't apply "
-"to other strategies."
+"Make sure you have a robust test suite. You need to make sure everything "
+"continues to work, just like when you support a new minor/feature release of "
+"Python. This means making sure your test suite is thorough and is ported "
+"properly between Python 2 & 3 (consider using coverage_ to measure that you "
+"have effective test coverage). You will also most likely want to use "
+"something like tox_ to automate testing between all of your supported "
+"versions of Python. You will also want to **port your tests first** so that "
+"you can make sure that you detect breakage during the transition. Tests also "
+"tend to be simpler than the code they are testing so it gives you an idea of "
+"how easy it can be to port code."
 msgstr ""
 
 # 5effd53c2aef4e0aab8b9d929505073f
-#: ../src/Doc/howto/pyporting.rst:103
+#: ../src/Doc/howto/pyporting.rst:87
 msgid ""
-"Five, drop support for older Python versions if possible. `Python 2.5`_ "
-"introduced a lot of useful syntax and libraries which have become idiomatic "
-"in Python 3. `Python 2.6`_ introduced future statements which makes "
-"compatibility much easier if you are going from Python 2 to 3. `Python 2.7`_ "
-"continues the trend in the stdlib. So choose the newest version of Python "
-"which you believe can be your minimum support version and work from there."
+"Drop support for older Python versions if possible. `Python 2.5`_ introduced "
+"a lot of useful syntax and libraries which have become idiomatic in Python "
+"3. `Python 2.6`_ introduced future statements which makes compatibility much "
+"easier if you are going from Python 2 to 3. `Python 2.7`_ continues the "
+"trend in the stdlib. Choose the newest version of Python which you believe "
+"can be your minimum support version and work from there."
 msgstr ""
 
-# bc5b205a202345aa9ff7a4b92fd4e5be
-#: ../src/Doc/howto/pyporting.rst:127
-msgid "Python 3 and 3to2"
-msgstr ""
-
-# 13b6890553b0465d9ebe2405c0ab1246
-#: ../src/Doc/howto/pyporting.rst:129
+# 0a81a69232c744c8bddfdb39e9dee724
+#: ../src/Doc/howto/pyporting.rst:95
 msgid ""
-"If you are starting a new project or your codebase is small enough, you may "
-"want to consider writing your code for Python 3 and backporting to Python 2 "
-"using 3to2_. Thanks to Python 3 being more strict about things than Python 2 "
-"(e.g., bytes vs. strings), the source translation can be easier and more "
-"straightforward than from Python 2 to 3. Plus it gives you more direct "
-"experience developing in Python 3 which, since it is the future of Python, "
-"is a good thing long-term."
+"Target the newest version of Python 3 that you can. Beyond just the usual "
+"bugfixes, compatibility has continued to improve between Python 2 and 3 as "
+"time has passed. E.g. Python 3.3 added back the ``u`` prefix for strings, "
+"making source-compatible Python code easier to write."
 msgstr ""
 
-# 5896ca3a158b424cad77cace2c451baa
-#: ../src/Doc/howto/pyporting.rst:137
+# 5df91ba38d274da78f22e256b624e640
+#: ../src/Doc/howto/pyporting.rst:102
+msgid "Writing Source-Compatible Python 2/3 Code"
+msgstr ""
+
+# b384fa25c3e345f8b0ca45ee37745924
+#: ../src/Doc/howto/pyporting.rst:104
 msgid ""
-"A drawback of this approach is that 3to2 is a third-party project. This "
-"means that the Python core developers (and thus this guide) can make no "
-"promises about how well 3to2 works at any time. There is nothing to suggest, "
-"though, that 3to2 is not a high-quality project."
+"Over the years the Python community has discovered that the easiest way to "
+"support both Python 2 and 3 in parallel is to write Python code that works "
+"in either version. While this might sound counter-intuitive at first, it "
+"actually is not difficult and typically only requires following some select "
+"(non-idiomatic) practices and using some key projects to help make bridging "
+"between Python 2 and 3 easier."
 msgstr ""
 
-# b27fe4d35c264afcb79c8942bb2ac5e5
-#: ../src/Doc/howto/pyporting.rst:149
-msgid "Python 2 and 2to3"
+# e37ea88df3114b16bbbd343df032925a
+#: ../src/Doc/howto/pyporting.rst:112
+msgid "Projects to Consider"
 msgstr ""
 
-# 278223ff8c1143d8b470e8b8fa505075
-#: ../src/Doc/howto/pyporting.rst:151
+# d786edc5e71649b4a381fc625b01e595
+#: ../src/Doc/howto/pyporting.rst:114
 msgid ""
-"Included with Python since 2.6, the 2to3_ tool (and :mod:`lib2to3` module) "
-"helps with porting Python 2 to Python 3 by performing various source "
-"translations. This is a perfect solution for projects which wish to branch "
-"their Python 3 code from their Python 2 codebase and maintain them as "
-"independent codebases. You can even begin preparing to use this approach "
-"today by writing future-compatible Python code which works cleanly in Python "
-"2 in conjunction with 2to3; all steps outlined below will work with Python 2 "
-"code up to the point when the actual use of 2to3 occurs."
+"The lowest level library for supporting Python 2 & 3 simultaneously is six_. "
+"Reading through its documentation will give you an idea of where exactly the "
+"Python language changed between versions 2 & 3 and thus what you will want "
+"the library to help you continue to support."
 msgstr ""
 
-# 3b2abb760b26429b900613c9a3ff62c2
-#: ../src/Doc/howto/pyporting.rst:160
+# 0cb34f83b81346bd8e2945291e23f36d
+#: ../src/Doc/howto/pyporting.rst:119
 msgid ""
-"Use of 2to3 as an on-demand translation step at install time is also "
-"possible, preventing the need to maintain a separate Python 3 codebase, but "
-"this approach does come with some drawbacks. While users will only have to "
-"pay the translation cost once at installation, you as a developer will need "
-"to pay the cost regularly during development. If your codebase is "
-"sufficiently large enough then the translation step ends up acting like a "
-"compilation step, robbing you of the rapid development process you are used "
-"to with Python. Obviously the time required to translate a project will "
-"vary, so do an experimental translation just to see how long it takes to "
-"evaluate whether you prefer this approach compared to using :ref:"
-"`use_same_source` or simply keeping a separate Python 3 codebase."
+"To help automate porting your code over to using six, you can use "
+"modernize_. This project will attempt to rewrite your code to be as modern "
+"as possible while using six to smooth out any differences between Python 2 & "
+"3."
 msgstr ""
 
-# 9d9dce80311f4177920bf038712d6804
-#: ../src/Doc/howto/pyporting.rst:172
+# d77300995d5546c891a7d7b9f0dfd4fe
+#: ../src/Doc/howto/pyporting.rst:123
 msgid ""
-"Below are the typical steps taken by a project which uses a 2to3-based "
-"approach to supporting Python 2 & 3."
+"If you want to write your compatible code to feel more like Python 3 there "
+"is the future_ project. It tries to provide backports of objects from Python "
+"3 so that you can use them from Python 2-compatible code, e.g. replacing the "
+"``bytes`` type from Python 2 with the one from Python 3. It also provides a "
+"translation script like modernize (its translation code is actually "
+"partially based on it) to help start working with a pre-existing code base. "
+"It is also unique in that its translation script will also port Python 3 "
+"code backwards as well as Python 2 code forwards."
+msgstr ""
+
+# 7978c3bcde614790b21ec2f6b3d1a13f
+#: ../src/Doc/howto/pyporting.rst:134
+msgid "Tips & Tricks"
+msgstr ""
+
+# f36bf80c4a9c4e3c806fbc8f4fc8f1a9
+#: ../src/Doc/howto/pyporting.rst:136
+msgid ""
+"To help with writing source-compatible code using one of the projects "
+"mentioned in `Projects to Consider`_, consider following the below "
+"suggestions. Some of them are handled by the suggested projects, so if you "
+"do use one of them then read their documentation first to see which "
+"suggestions below will taken care of for you."
 msgstr ""
 
 # 0052bcd6b2e2478c814287f60a3ae01a
-#: ../src/Doc/howto/pyporting.rst:177
+#: ../src/Doc/howto/pyporting.rst:143
 msgid "Support Python 2.7"
 msgstr ""
 
 # 985a47117ed94be5bb5fa2a533228a63
-#: ../src/Doc/howto/pyporting.rst:179
+#: ../src/Doc/howto/pyporting.rst:145
 msgid ""
 "As a first step, make sure that your project is compatible with `Python "
 "2.7`_. This is just good to do as Python 2.7 is the last release of Python 2 "
 "and thus will be used for a rather long time. It also allows for use of the "
-"``-3`` flag to Python to help discover places in your code which 2to3 cannot "
-"handle but are known to cause issues."
+"``-3`` flag to Python to help discover places in your code where "
+"compatibility might be an issue (the ``-3`` flag is in Python 2.6 but Python "
+"2.7 adds more warnings)."
 msgstr ""
 
 # c325727b35694b8abd54f7a8e47a57d5
-#: ../src/Doc/howto/pyporting.rst:186
+#: ../src/Doc/howto/pyporting.rst:152
 msgid "Try to Support `Python 2.6`_ and Newer Only"
 msgstr ""
 
 # b74674991a424c7c8bf5da770d9ff79c
-#: ../src/Doc/howto/pyporting.rst:188
+#: ../src/Doc/howto/pyporting.rst:154
 msgid ""
 "While not possible for all projects, if you can support `Python 2.6`_ and "
 "newer **only**, your life will be much easier. Various future statements, "
 "stdlib additions, etc. exist only in Python 2.6 and later which greatly "
-"assist in porting to Python 3. But if you project must keep support for "
-"`Python 2.5`_ (or even `Python 2.4`_) then it is still possible to port to "
-"Python 3."
+"assist in supporting Python 3. But if you project must keep support for "
+"`Python 2.5`_ then it is still possible to simultaneously support Python 3."
 msgstr ""
 
 # 612c0ab302284a8f816f83128df1c249
-#: ../src/Doc/howto/pyporting.rst:194
+#: ../src/Doc/howto/pyporting.rst:160
 msgid ""
 "Below are the benefits you gain if you only have to support Python 2.6 and "
 "newer. Some of these options are personal choice while others are "
 "**strongly** recommended (the ones that are more for personal choice are "
 "labeled as such).  If you continue to support older versions of Python then "
-"you at least need to watch out for situations that these solutions fix."
+"you at least need to watch out for situations that these solutions fix and "
+"handle them appropriately (which is where library help from e.g. six_ comes "
+"in handy)."
 msgstr ""
 
 # 9c73d37a434e4173a419bcc1c03ff471
-#: ../src/Doc/howto/pyporting.rst:202
+#: ../src/Doc/howto/pyporting.rst:169
 msgid "``from __future__ import print_function``"
 msgstr ""
 
-# 863e40de9c4c45a2b8c1010681c1ea5b
-#: ../src/Doc/howto/pyporting.rst:204
+# 1b9862a9864c42d497839c3ae6365fe2
+#: ../src/Doc/howto/pyporting.rst:171
 msgid ""
-"This is a personal choice. 2to3 handles the translation from the print "
-"statement to the print function rather well so this is an optional step. "
-"This future statement does help, though, with getting used to typing ``print"
-"('Hello, World')`` instead of ``print 'Hello, World'``."
+"It will not only get you used to typing ``print()`` as a function instead of "
+"a statement, but it will also give you the various benefits the function has "
+"over the Python 2 statement (six_ provides a function if you support Python "
+"2.5 or older)."
 msgstr ""
 
 # 655bfeeac62a4176bc66faf79a729b4c
-#: ../src/Doc/howto/pyporting.rst:211
+#: ../src/Doc/howto/pyporting.rst:178
 msgid "``from __future__ import unicode_literals``"
 msgstr ""
 
-# 4a18d89ec191418d878b3896b7af3dd8
-#: ../src/Doc/howto/pyporting.rst:213
+# e75ceeece51240beb2111386c53d52a0
+#: ../src/Doc/howto/pyporting.rst:180
 msgid ""
-"Another personal choice. You can always mark what you want to be a (unicode) "
-"string with a ``u`` prefix to get the same effect. But regardless of whether "
-"you use this future statement or not, you **must** make sure you know "
-"exactly which Python 2 strings you want to be bytes, and which are to be "
-"strings. This means you should, **at minimum** mark all strings that are "
-"meant to be text strings with a ``u`` prefix if you do not use this future "
-"statement."
+"If you choose to use this future statement then all string literals in "
+"Python 2 will be assumed to be Unicode (as is already the case in Python 3). "
+"If you choose not to use this future statement then you should mark all of "
+"your text strings with a ``u`` prefix and only support Python 3.3 or newer. "
+"But you are **strongly** advised to do one or the other (six_ provides a "
+"function in case you don't want to use the future statement **and** you want "
+"to support Python 3.2 or older)."
 msgstr ""
 
 # 74a892ff88f3483bbcf3f580e9038c29
-#: ../src/Doc/howto/pyporting.rst:222
-msgid "Bytes literals"
+#: ../src/Doc/howto/pyporting.rst:190
+msgid "Bytes/string literals"
 msgstr ""
 
 # c58a4daad8c4424f942f4131e351c034
-#: ../src/Doc/howto/pyporting.rst:224
+#: ../src/Doc/howto/pyporting.rst:192
 msgid ""
-"This is a **very** important one. The ability to prefix Python 2 strings "
-"that are meant to contain bytes with a ``b`` prefix help to very clearly "
-"delineate what is and is not a Python 3 string. When you run 2to3 on code, "
-"all Python 2 strings become Python 3 strings **unless** they are prefixed "
-"with ``b``."
+"This is a **very** important one. Prefix Python 2 strings that are meant to "
+"contain bytes with a ``b`` prefix to very clearly delineate what is and is "
+"not a Python 3 text string (six_ provides a function to use for Python 2.5 "
+"compatibility)."
+msgstr ""
+
+# f5b8ec2c0c11493ea67b1ccc2991d340
+#: ../src/Doc/howto/pyporting.rst:197
+msgid ""
+"This point cannot be stressed enough: make sure you know what all of your "
+"string literals in Python 2 are meant to be in Python 3. Any string literal "
+"that should be treated as bytes should have the ``b`` prefix. Any string "
+"literal that should be Unicode/text in Python 2 should either have the ``u`` "
+"literal (supported, but ignored, in Python 3.3 and later) or you should have "
+"``from __future__ import unicode_literals`` at the top of the file. But the "
+"key point is you should know how Python 3 will treat every one one of your "
+"string literals and you should mark them as appropriate."
 msgstr ""
 
 # 94bbf631e2e7423bbad1b31e7b45b1d9
-#: ../src/Doc/howto/pyporting.rst:229
+#: ../src/Doc/howto/pyporting.rst:206
 msgid ""
 "There are some differences between byte literals in Python 2 and those in "
 "Python 3 thanks to the bytes type just being an alias to ``str`` in Python "
-"2. Probably the biggest \"gotcha\" is that indexing results in different "
-"values. In Python 2, the value of ``b'py'[1]`` is ``'y'``, while in Python 3 "
-"it's ``121``. You can avoid this disparity by always slicing at the size of "
-"a single element: ``b'py'[1:2]`` is ``'y'`` in Python 2 and ``b'y'`` in "
-"Python 3 (i.e., close enough)."
+"2. See the `Handle Common \"Gotchas\"`_ section for what to watch out for."
 msgstr ""
 
-# c9daf2d0df85495fb9ba7a639153cdda
-#: ../src/Doc/howto/pyporting.rst:237
+# 0ced37ed743b44f5817b10e2f7d93168
+#: ../src/Doc/howto/pyporting.rst:211 ../src/Doc/howto/pyporting.rst:224
+msgid "``from __future__ import absolute_import``"
+msgstr ""
+
+# d796146776074d7e98730beb73fd4ba0
+#: ../src/Doc/howto/pyporting.rst:212
 msgid ""
-"You cannot concatenate bytes and strings in Python 3. But since Python 2 has "
-"bytes aliased to ``str``, it will succeed: ``b'a' + u'b'`` works in Python "
-"2, but ``b'a' + 'b'`` in Python 3 is a :exc:`TypeError`. A similar issue "
-"also comes about when doing comparisons between bytes and strings."
+"Discussed in more detail below, but you should use this future statement to "
+"prevent yourself from accidentally using implicit relative imports."
 msgstr ""
 
 # 79593443c762481eb192d92e23f3fdfd
-#: ../src/Doc/howto/pyporting.rst:244
+#: ../src/Doc/howto/pyporting.rst:217
 msgid "Supporting `Python 2.5`_ and Newer Only"
 msgstr ""
 
 # 51f5e59aa2194c7597a6e3da783612e4
-#: ../src/Doc/howto/pyporting.rst:246
+#: ../src/Doc/howto/pyporting.rst:219
 msgid ""
 "If you are supporting `Python 2.5`_ and newer there are still some features "
 "of Python that you can utilize."
 msgstr ""
 
-# 0ced37ed743b44f5817b10e2f7d93168
-#: ../src/Doc/howto/pyporting.rst:251
-msgid "``from __future__ import absolute_import``"
-msgstr ""
-
 # 0dc36d774cc5479490e53c76800eb360
-#: ../src/Doc/howto/pyporting.rst:253
+#: ../src/Doc/howto/pyporting.rst:226
 msgid ""
 "Implicit relative imports (e.g., importing ``spam.bacon`` from within ``spam."
-"eggs`` with the statement ``import bacon``) does not work in Python 3. This "
+"eggs`` with the statement ``import bacon``) do not work in Python 3. This "
 "future statement moves away from that and allows the use of explicit "
 "relative imports (e.g., ``from . import bacon``)."
 msgstr ""
 
 # b3304c22b27b4d119b67447aedc3f60c
-#: ../src/Doc/howto/pyporting.rst:258
+#: ../src/Doc/howto/pyporting.rst:231
 msgid ""
 "In `Python 2.5`_ you must use the __future__ statement to get to use "
 "explicit relative imports and prevent implicit ones. In `Python 2.6`_ "
@@ -6165,29 +6197,96 @@ msgid ""
 "want the __future__ statement to prevent implicit relative imports. In "
 "`Python 2.7`_ the __future__ statement is not needed. In other words, unless "
 "you are only supporting Python 2.7 or a version earlier than Python 2.5, use "
-"the __future__ statement."
+"this __future__ statement."
+msgstr ""
+
+# 8974b6ce3fad41d2ab1b6b57db2feb86
+#: ../src/Doc/howto/pyporting.rst:241
+msgid "Mark all Unicode strings with a ``u`` prefix"
+msgstr ""
+
+# 05431ce1a29d4c67b174c103cecca755
+#: ../src/Doc/howto/pyporting.rst:243
+msgid ""
+"While Python 2.6 has a ``__future__`` statement to automatically cause "
+"Python 2 to treat all string literals as Unicode, Python 2.5 does not have "
+"that shortcut. This means you should go through and mark all string literals "
+"with a ``u`` prefix to turn them explicitly into text strings where "
+"appropriate and only support Python 3.3 or newer. Otherwise use a project "
+"like six_ which provides a function to pass all text string literals through."
+msgstr ""
+
+# 32a99b7cbf164be4ad3367e48a71cd4b
+#: ../src/Doc/howto/pyporting.rst:252
+msgid "Capturing the Currently Raised Exception"
+msgstr ""
+
+# 6ffae18c38384a09ab36f80f1be22f37
+#: ../src/Doc/howto/pyporting.rst:254
+msgid ""
+"In Python 2.5 and earlier the syntax to access the current exception is::"
+msgstr ""
+
+# 4ea5928ecf4b48fd9a76a7518a445cb3
+#: ../src/Doc/howto/pyporting.rst:262
+msgid ""
+"This syntax changed in Python 3 (and backported to `Python 2.6`_ and later) "
+"to::"
+msgstr ""
+
+# 6ffae18c38384a09ab36f80f1be22f37
+#: ../src/Doc/howto/pyporting.rst:272
+msgid ""
+"Because of this syntax change you must change how you capture the current "
+"exception in Python 2.5 and earlier to::"
+msgstr ""
+
+# 9135a918d99846b6b2f07acb4481dfe2
+#: ../src/Doc/howto/pyporting.rst:283
+msgid ""
+"You can get more information about the raised exception from :func:`sys."
+"exc_info` than simply the current exception instance, but you most likely "
+"don't need it."
+msgstr ""
+
+# 8808a5e91dc24b4e941fb94ce386d32a
+#: ../src/Doc/howto/pyporting.rst:288
+msgid ""
+"In Python 3, the traceback is attached to the exception instance through the "
+"``__traceback__`` attribute. If the instance is saved in a local variable "
+"that persists outside of the ``except`` block, the traceback will create a "
+"reference cycle with the current frame and its dictionary of local "
+"variables.  This will delay reclaiming dead resources until the next cyclic :"
+"term:`garbage collection` pass."
+msgstr ""
+
+# d4505a6c83924f2989209021f7aaa4fe
+#: ../src/Doc/howto/pyporting.rst:295
+msgid ""
+"In Python 2, this problem only occurs if you save the traceback itself (e.g. "
+"the third element of the tuple returned by :func:`sys.exc_info`) in a "
+"variable."
 msgstr ""
 
 # 4cd3379c765e492f8d8250e3e9f903a3
-#: ../src/Doc/howto/pyporting.rst:269
+#: ../src/Doc/howto/pyporting.rst:301
 msgid "Handle Common \"Gotchas\""
 msgstr ""
 
-# cd831a1f346149eb89e13d2eb8f11c7c
-#: ../src/Doc/howto/pyporting.rst:271
+# f53c6990a50b4eebb1d40264e83fe9c7
+#: ../src/Doc/howto/pyporting.rst:303
 msgid ""
-"There are a few things that just consistently come up as sticking points for "
-"people which 2to3 cannot handle automatically or can easily be done in "
-"Python 2 to help modernize your code."
+"These are things to watch out for no matter what version of Python 2 you are "
+"supporting which are not syntactic considerations."
 msgstr ""
 
 # ab3034ec5e5e4661aa6de68ce95d5078
-#: ../src/Doc/howto/pyporting.rst:277
+#: ../src/Doc/howto/pyporting.rst:308
 msgid "``from __future__ import division``"
 msgstr ""
 
 # df60a68b4f7f40b6b7f104d17e5580c7
-#: ../src/Doc/howto/pyporting.rst:279
+#: ../src/Doc/howto/pyporting.rst:310
 msgid ""
 "While the exact same outcome can be had by using the ``-Qnew`` argument to "
 "Python, using this future statement lifts the requirement that your users "
@@ -6196,12 +6295,12 @@ msgid ""
 msgstr ""
 
 # e46aa5d4215a4df48231102107237eca
-#: ../src/Doc/howto/pyporting.rst:287
+#: ../src/Doc/howto/pyporting.rst:318
 msgid "Specify when opening a file as binary"
 msgstr ""
 
 # 4f4aa2633f3f4b6aad2be8d04871966e
-#: ../src/Doc/howto/pyporting.rst:289
+#: ../src/Doc/howto/pyporting.rst:320
 msgid ""
 "Unless you have been working on Windows, there is a chance you have not "
 "always bothered to add the ``b`` mode when opening a binary file (e.g., "
@@ -6213,12 +6312,12 @@ msgid ""
 msgstr ""
 
 # b9a34cc2e1e046f6b406152ab3d19b72
-#: ../src/Doc/howto/pyporting.rst:298
+#: ../src/Doc/howto/pyporting.rst:329
 msgid "Text files"
 msgstr ""
 
 # e6361ba1d9af424e8db34faac2b9d9c9
-#: ../src/Doc/howto/pyporting.rst:300
+#: ../src/Doc/howto/pyporting.rst:331
 msgid ""
 "Text files created using ``open()`` under Python 2 return byte strings, "
 "while under Python 3 they return unicode strings.  Depending on your porting "
@@ -6226,14 +6325,14 @@ msgid ""
 msgstr ""
 
 # b34c508e7d0442749c5e4a8b88d1fb75
-#: ../src/Doc/howto/pyporting.rst:304
+#: ../src/Doc/howto/pyporting.rst:335
 msgid ""
 "If you want text files to return unicode strings in Python 2, you have two "
 "possibilities:"
 msgstr ""
 
 # fcf0d560b43f481daa22ceda2edd9d35
-#: ../src/Doc/howto/pyporting.rst:307
+#: ../src/Doc/howto/pyporting.rst:338
 msgid ""
 "Under Python 2.6 and higher, use :func:`io.open`.  Since :func:`io.open` is "
 "essentially the same function in both Python 2 and Python 3, it will help "
@@ -6241,19 +6340,19 @@ msgid ""
 msgstr ""
 
 # 97c9151f55c44cc581dec6e8f5f66307
-#: ../src/Doc/howto/pyporting.rst:311
+#: ../src/Doc/howto/pyporting.rst:342
 msgid ""
 "If pre-2.6 compatibility is needed, then you should use :func:`codecs.open` "
 "instead.  This will make sure that you get back unicode strings in Python 2."
 msgstr ""
 
 # 67ef437384224cfd950b9e37f12550f9
-#: ../src/Doc/howto/pyporting.rst:315
+#: ../src/Doc/howto/pyporting.rst:346
 msgid "Subclass ``object``"
 msgstr ""
 
 # fb4d1cff09334961b99df7bfb1560b12
-#: ../src/Doc/howto/pyporting.rst:317
+#: ../src/Doc/howto/pyporting.rst:348
 msgid ""
 "New-style classes have been around since `Python 2.2`_. You need to make "
 "sure you are subclassing from ``object`` to avoid odd edge cases involving "
@@ -6262,32 +6361,32 @@ msgid ""
 msgstr ""
 
 # 13de8b799eb24005bd09daddfa10bbc9
-#: ../src/Doc/howto/pyporting.rst:324
+#: ../src/Doc/howto/pyporting.rst:355
 msgid "Deal With the Bytes/String Dichotomy"
 msgstr ""
 
 # 191015c1e13e4492b79d44cfb05f2ea9
-#: ../src/Doc/howto/pyporting.rst:326
+#: ../src/Doc/howto/pyporting.rst:357
 msgid ""
 "One of the biggest issues people have when porting code to Python 3 is "
 "handling the bytes/string dichotomy. Because Python 2 allowed the ``str`` "
 "type to hold textual data, people have over the years been rather loose in "
 "their delineation of what ``str`` instances held text compared to bytes. In "
 "Python 3 you cannot be so care-free anymore and need to properly handle the "
-"difference. The key handling this issue is to make sure that **every** "
-"string literal in your Python 2 code is either syntactically of functionally "
+"difference. The key to handling this issue is to make sure that **every** "
+"string literal in your Python 2 code is either syntactically or functionally "
 "marked as either bytes or text data. After this is done you then need to "
 "make sure your APIs are designed to either handle a specific type or made to "
 "be properly polymorphic."
 msgstr ""
 
 # 33a55a2846b649d0a5d4ba31885156c1
-#: ../src/Doc/howto/pyporting.rst:338
+#: ../src/Doc/howto/pyporting.rst:369
 msgid "Mark Up Python 2 String Literals"
 msgstr ""
 
 # 99d1b07e9b704affb160beb8889d7536
-#: ../src/Doc/howto/pyporting.rst:340
+#: ../src/Doc/howto/pyporting.rst:371
 msgid ""
 "First thing you must do is designate every single string literal in Python 2 "
 "as either textual or bytes data. If you are only supporting Python 2.6 or "
@@ -6297,7 +6396,7 @@ msgid ""
 msgstr ""
 
 # 942e68067a7248a197ebb9316b94751c
-#: ../src/Doc/howto/pyporting.rst:346
+#: ../src/Doc/howto/pyporting.rst:377
 msgid ""
 "If your project supports versions of Python predating 2.6, then you should "
 "use the six_ project and its ``b()`` function to denote bytes literals. For "
@@ -6306,12 +6405,12 @@ msgid ""
 msgstr ""
 
 # 210012be5cb54681b011ae64027b2287
-#: ../src/Doc/howto/pyporting.rst:352
+#: ../src/Doc/howto/pyporting.rst:383
 msgid "Decide what APIs Will Accept"
 msgstr ""
 
 # 994241dfdfcf40848a5e9da2800ca105
-#: ../src/Doc/howto/pyporting.rst:354
+#: ../src/Doc/howto/pyporting.rst:385
 msgid ""
 "In Python 2 it was very easy to accidentally create an API that accepted "
 "both bytes and textual data. But in Python 3, thanks to the more strict "
@@ -6320,7 +6419,7 @@ msgid ""
 msgstr ""
 
 # 7f4384ba7a6d4c618c062ec6194867fd
-#: ../src/Doc/howto/pyporting.rst:358
+#: ../src/Doc/howto/pyporting.rst:389
 msgid ""
 "Take the dict ``{b'a': 'bytes', u'a': 'text'}`` in Python 2.6. It creates "
 "the dict ``{u'a': 'text'}`` since ``b'a' == u'a'``. But in Python 3 the "
@@ -6330,19 +6429,19 @@ msgid ""
 msgstr ""
 
 # af331f899ccf451db1b01b2a83b5b6f1
-#: ../src/Doc/howto/pyporting.rst:363
+#: ../src/Doc/howto/pyporting.rst:394
 msgid ""
 "This means you need to choose what an API is going to accept and create and "
 "consistently stick to that API in both Python 2 and 3."
 msgstr ""
 
 # 0d339def3215422fa9f8c0ff8e20da62
-#: ../src/Doc/howto/pyporting.rst:368
+#: ../src/Doc/howto/pyporting.rst:399
 msgid "Bytes / Unicode Comparison"
 msgstr ""
 
 # af8b53a10767414ea892732f5d7e394f
-#: ../src/Doc/howto/pyporting.rst:370
+#: ../src/Doc/howto/pyporting.rst:401
 msgid ""
 "In Python 3, mixing bytes and unicode is forbidden in most situations; it "
 "will raise a :class:`TypeError` where Python 2 would have attempted an "
@@ -6351,7 +6450,7 @@ msgid ""
 msgstr ""
 
 # f4117ff439c74fd4805675c5f516e1ae
-#: ../src/Doc/howto/pyporting.rst:378
+#: ../src/Doc/howto/pyporting.rst:409
 msgid ""
 "This is because an equality comparison is required by the language to always "
 "succeed (and return ``False`` for incompatible types).  However, this also "
@@ -6361,24 +6460,24 @@ msgid ""
 msgstr ""
 
 # 7dd10ede04f64754ac4bc90ca6e1e864
-#: ../src/Doc/howto/pyporting.rst:389
+#: ../src/Doc/howto/pyporting.rst:420
 msgid "To turn the warning into an exception, use the ``-bb`` flag instead::"
 msgstr ""
 
 # cbfbb174ee164217935dc50ca49a64d5
-#: ../src/Doc/howto/pyporting.rst:399
+#: ../src/Doc/howto/pyporting.rst:430
 msgid "Indexing bytes objects"
 msgstr ""
 
 # 073990d932f441d4ad77df12577cff82
-#: ../src/Doc/howto/pyporting.rst:401
+#: ../src/Doc/howto/pyporting.rst:432
 msgid ""
 "Another potentially surprising change is the indexing behaviour of bytes "
 "objects in Python 3::"
 msgstr ""
 
 # ab390883aefd413e87f5a68abfbbbe38
-#: ../src/Doc/howto/pyporting.rst:407
+#: ../src/Doc/howto/pyporting.rst:438
 msgid ""
 "Indeed, Python 3 bytes objects (as well as :class:`bytearray` objects) are "
 "sequences of integers.  But code converted from Python 2 will often assume "
@@ -6387,19 +6486,19 @@ msgid ""
 msgstr ""
 
 # 44b2eb374c5a4a82a8ba4bbf3cbe4d9a
-#: ../src/Doc/howto/pyporting.rst:418
+#: ../src/Doc/howto/pyporting.rst:449
 msgid ""
 "The only remaining gotcha is that an out-of-bounds slice returns an empty "
 "bytes object instead of raising ``IndexError``:"
 msgstr ""
 
 # aaa226ca491249469d358a77d231d0ae
-#: ../src/Doc/howto/pyporting.rst:430
+#: ../src/Doc/howto/pyporting.rst:461
 msgid "``__str__()``/``__unicode__()``"
 msgstr ""
 
 # c9111443666d4689975684fdc8cdd9e4
-#: ../src/Doc/howto/pyporting.rst:432
+#: ../src/Doc/howto/pyporting.rst:463
 msgid ""
 "In Python 2, objects can specify both a string and unicode representation of "
 "themselves. In Python 3, though, there is only a string representation. This "
@@ -6409,38 +6508,27 @@ msgid ""
 "``__str__()`` method)."
 msgstr ""
 
-# c0d642a9f59842c696cbf06551165642
-#: ../src/Doc/howto/pyporting.rst:439
-msgid ""
-"There are two ways to solve this issue. One is to use a custom 2to3 fixer. "
-"The blog post at http://lucumr.pocoo.org/2011/1/22/forwards-compatible-"
-"python/ specifies how to do this. That will allow 2to3 to change all "
-"instances of ``def __unicode(self): ...`` to ``def __str__(self): ...``. "
-"This does require that you define your ``__str__()`` method in Python 2 "
-"before your ``__unicode__()`` method."
-msgstr ""
-
 # d16d61b49c8841f4934c8ece3fc7b2c6
-#: ../src/Doc/howto/pyporting.rst:446
+#: ../src/Doc/howto/pyporting.rst:470
 msgid ""
-"The other option is to use a mixin class. This allows you to only define a "
-"``__unicode__()`` method for your class and let the mixin derive ``__str__()"
-"`` for you (code from http://lucumr.pocoo.org/2011/1/22/forwards-compatible-"
-"python/)::"
+"You can use a mixin class to work around this. This allows you to only "
+"define a ``__unicode__()`` method for your class and let the mixin derive "
+"``__str__()`` for you (code from http://lucumr.pocoo.org/2011/1/22/forwards-"
+"compatible-python/)::"
 msgstr ""
 
 # c3ac65b738b748fe8c0e5213bda611e8
-#: ../src/Doc/howto/pyporting.rst:473
+#: ../src/Doc/howto/pyporting.rst:497
 msgid "Don't Index on Exceptions"
 msgstr ""
 
 # 2c607128d18c42958bf810f4e4a5c972
-#: ../src/Doc/howto/pyporting.rst:475
+#: ../src/Doc/howto/pyporting.rst:499
 msgid "In Python 2, the following worked::"
 msgstr ""
 
 # faa974825eb34be3bb9b4ed2d0bd2bef
-#: ../src/Doc/howto/pyporting.rst:483
+#: ../src/Doc/howto/pyporting.rst:507
 msgid ""
 "But in Python 3, indexing directly on an exception is an error. You need to "
 "make sure to only index on the :attr:`BaseException.args` attribute which is "
@@ -6448,17 +6536,17 @@ msgid ""
 msgstr ""
 
 # 9adee86971bc42bbb34c2f8e72ed6648
-#: ../src/Doc/howto/pyporting.rst:487
+#: ../src/Doc/howto/pyporting.rst:511
 msgid "Even better is to use the documented attributes the exception provides."
 msgstr ""
 
 # 5702d4995aa743f2a385918b5e8e4272
-#: ../src/Doc/howto/pyporting.rst:490
+#: ../src/Doc/howto/pyporting.rst:515
 msgid "Don't use ``__getslice__`` & Friends"
 msgstr ""
 
 # 627edb2d8eea4c0bac4d069d06a4e91b
-#: ../src/Doc/howto/pyporting.rst:492
+#: ../src/Doc/howto/pyporting.rst:517
 msgid ""
 "Been deprecated for a while, but Python 3 finally drops support for "
 "``__getslice__()``, etc. Move completely over to :meth:`__getitem__` and "
@@ -6466,296 +6554,160 @@ msgid ""
 msgstr ""
 
 # 450a06164a3444c9bf70aabcbd3e858b
-#: ../src/Doc/howto/pyporting.rst:498
+#: ../src/Doc/howto/pyporting.rst:523
 msgid "Updating doctests"
 msgstr ""
 
 # 615328515a964a6cb279596b93b8f86d
-#: ../src/Doc/howto/pyporting.rst:500
+#: ../src/Doc/howto/pyporting.rst:525
 msgid ""
-"2to3_ will attempt to generate fixes for doctests that it comes across. It's "
-"not perfect, though. If you wrote a monolithic set of doctests (e.g., a "
-"single docstring containing all of your doctests), you should at least "
-"consider breaking the doctests up into smaller pieces to make it more "
-"manageable to fix. Otherwise it might very well be worth your time and "
-"effort to port your tests to :mod:`unittest`."
+"Don't forget to make them Python 2/3 compatible as well. If you wrote a "
+"monolithic set of doctests (e.g., a single docstring containing all of your "
+"doctests), you should at least consider breaking the doctests up into "
+"smaller pieces to make it more manageable to fix. Otherwise it might very "
+"well be worth your time and effort to port your tests to :mod:`unittest`."
+msgstr ""
+
+# 9499659a065a4586a941a8e82d2bd6e6
+#: ../src/Doc/howto/pyporting.rst:533
+msgid "Update ``map`` for imbalanced input sequences"
+msgstr ""
+
+# 3bd8bf9c76a04ac9a52a38e3d4ccf522
+#: ../src/Doc/howto/pyporting.rst:535
+msgid ""
+"With Python 2, when ``map`` was given more than one input sequence it would "
+"pad the shorter sequences with `None` values, returning a sequence as long "
+"as the longest input sequence."
+msgstr ""
+
+# 670b1756521f4df18011f44916cb36fb
+#: ../src/Doc/howto/pyporting.rst:539
+msgid ""
+"With Python 3, if the input sequences to ``map`` are of unequal length, "
+"``map`` will stop at the termination of the shortest of the sequences. For "
+"full compatibility with ``map`` from Python 2.x, wrap the sequence arguments "
+"in :func:`itertools.zip_longest`, e.g. ``map(func, *sequences)`` becomes "
+"``list(map(func, itertools.zip_longest(*sequences)))``."
 msgstr ""
 
 # b7ad2dfc09b946febf0368a4396b6e9e
-#: ../src/Doc/howto/pyporting.rst:509
+#: ../src/Doc/howto/pyporting.rst:546
 msgid "Eliminate ``-3`` Warnings"
 msgstr ""
 
 # e582ca87c66549e9b12b2ddd4c770c3d
-#: ../src/Doc/howto/pyporting.rst:511
+#: ../src/Doc/howto/pyporting.rst:548
 msgid ""
 "When you run your application's test suite, run it using the ``-3`` flag "
 "passed to Python. This will cause various warnings to be raised during "
-"execution about things that 2to3 cannot handle automatically (e.g., modules "
-"that have been removed). Try to eliminate those warnings to make your code "
-"even more portable to Python 3."
+"execution about things that are semantic changes between Python 2 and 3. Try "
+"to eliminate those warnings to make your code even more portable to Python 3."
 msgstr ""
 
-# 277560d395184089a74988d82372541a
-#: ../src/Doc/howto/pyporting.rst:519
-msgid "Run 2to3"
+# d09b14bd9c8b44958479a0bb9f05edca
+#: ../src/Doc/howto/pyporting.rst:555
+msgid "Alternative Approaches"
 msgstr ""
 
-# d10b40f0b38d426ba1050ed25b7c1a8b
-#: ../src/Doc/howto/pyporting.rst:521
+# dc892403cd044103ae82edb543c6a460
+#: ../src/Doc/howto/pyporting.rst:557
 msgid ""
-"Once you have made your Python 2 code future-compatible with Python 3, it's "
-"time to use 2to3_ to actually port your code."
+"While supporting Python 2 & 3 simultaneously is typically the preferred "
+"choice by people so that they can continue to improve code and have it work "
+"for the most number of users, your life may be easier if you only have to "
+"support one major version of Python going forward."
 msgstr ""
 
-# f825a3f5295e4402b938a10de89e5698
-#: ../src/Doc/howto/pyporting.rst:526
-msgid "Manually"
+# 0d0556a0631c48be938d2d8c2c9cc1df
+#: ../src/Doc/howto/pyporting.rst:563
+msgid "Supporting Only Python 3 Going Forward From Python 2 Code"
 msgstr ""
 
-# f314dcdb1d73481895821bfe49355109
-#: ../src/Doc/howto/pyporting.rst:528
-msgid ""
-"To manually convert source code using 2to3_, you use the ``2to3`` script "
-"that is installed with Python 2.6 and later.::"
-msgstr ""
-
-# dee6e2d1fb8d4aedb14851ae9d5ae2d3
-#: ../src/Doc/howto/pyporting.rst:533
-msgid ""
-"This will cause 2to3 to write out a diff with all of the fixers applied for "
-"the converted source code. If you would like 2to3 to go ahead and apply the "
-"changes you can pass it the ``-w`` flag::"
-msgstr ""
-
-# 8552f5ce14034cc1aef7c3f91761517e
-#: ../src/Doc/howto/pyporting.rst:539
-msgid ""
-"There are other flags available to control exactly which fixers are applied, "
-"etc."
-msgstr ""
-
-# 25e53655a8d8495b9c42625fb0dd09b9
-#: ../src/Doc/howto/pyporting.rst:544
-msgid "During Installation"
-msgstr ""
-
-# 12af78f9a8ee4801a05e938489803881
-#: ../src/Doc/howto/pyporting.rst:546
-msgid ""
-"When a user installs your project for Python 3, you can have either :mod:"
-"`distutils` or Distribute_ run 2to3_ on your behalf. For distutils, use the "
-"following idiom::"
-msgstr ""
-
-# a6e8aabaf8ff415d81653f3bc9f45334
-#: ../src/Doc/howto/pyporting.rst:559
-msgid "For Distribute::"
-msgstr ""
-
-# 4e31d1bc35bf406daa5d307851aa992b
+# 6d6fec7e753d4057b96c5a3d6d4178a9
 #: ../src/Doc/howto/pyporting.rst:565
 msgid ""
-"This will allow you to not have to distribute a separate Python 3 version of "
-"your project. It does require, though, that when you perform development "
-"that you at least build your project and use the built Python 3 source for "
-"testing."
+"If you have Python 2 code but going forward only want to improve it as "
+"Python 3 code, then you can use 2to3_ to translate your Python 2 code to "
+"Python 3 code. This is only recommended, though, if your current version of "
+"your project is going into maintenance mode and you want all new features to "
+"be exclusive to Python 3."
 msgstr ""
 
-# 45ae44f599984c12999718ea8be3f023
-#: ../src/Doc/howto/pyporting.rst:571
-msgid "Verify & Test"
-msgstr ""
-
-# 4a9ef6a2605e44b0b12f8a02f4efb95c
+# a1a6ce0d6c02428eb912de02e38671d2
 #: ../src/Doc/howto/pyporting.rst:573
+msgid "Backporting Python 3 code to Python 2"
+msgstr ""
+
+# 53d0bbf2f18e405093b1768fe6759141
+#: ../src/Doc/howto/pyporting.rst:575
 msgid ""
-"At this point you should (hopefully) have your project converted in such a "
-"way that it works in Python 3. Verify it by running your unit tests and "
-"making sure nothing has gone awry. If you miss something then figure out how "
-"to fix it in Python 3, backport to your Python 2 code, and run your code "
-"through 2to3 again to verify the fix transforms properly."
-msgstr ""
-
-# 2f47fb8b9c9d4ea6bf460fe4e4998dd6
-#: ../src/Doc/howto/pyporting.rst:587
-msgid "Python 2/3 Compatible Source"
-msgstr ""
-
-# 6baf442088944379a38c679804cb9a77
-#: ../src/Doc/howto/pyporting.rst:589
-msgid ""
-"While it may seem counter-intuitive, you can write Python code which is "
-"source-compatible between Python 2 & 3. It does lead to code that is not "
-"entirely idiomatic Python (e.g., having to extract the currently raised "
-"exception from ``sys.exc_info()[1]``), but it can be run under Python 2 "
-"**and** Python 3 without using 2to3_ as a translation step (although the "
-"tool should be used to help find potential portability problems). This "
-"allows you to continue to have a rapid development process regardless of "
-"whether you are developing under Python 2 or Python 3. Whether this approach "
-"or using :ref:`use_2to3` works best for you will be a per-project decision."
-msgstr ""
-
-# 36c0da7b4a2444f1beb958ec91bb1091
-#: ../src/Doc/howto/pyporting.rst:599
-msgid ""
-"To get a complete idea of what issues you will need to deal with, see the "
-"`What's New in Python 3.0`_. Others have reorganized the data in other "
-"formats such as http://docs.pythonsprints.com/python3_porting/py-porting.html"
-"\\ ."
-msgstr ""
-
-# ec724f36344d44ca9301b1270eb3d440
-#: ../src/Doc/howto/pyporting.rst:603
-msgid ""
-"The following are some steps to take to try to support both Python 2 & 3 "
-"from the same source code."
-msgstr ""
-
-# 260fd89cd583421d87945374fdd6b9c7
-#: ../src/Doc/howto/pyporting.rst:611
-msgid "Follow The Steps for Using 2to3_"
-msgstr ""
-
-# e16658f212a648ccb7d1a1d76a0dbf72
-#: ../src/Doc/howto/pyporting.rst:613
-msgid ""
-"All of the steps outlined in how to :ref:`port Python 2 code with 2to3 "
-"<use_2to3>` apply to creating a Python 2/3 codebase. This includes trying "
-"only support Python 2.6 or newer (the :mod:`__future__` statements work in "
-"Python 3 without issue), eliminating warnings that are triggered by ``-3``, "
-"etc."
-msgstr ""
-
-# 5fc2b12f5ecf4728aa2e71ddccf75056
-#: ../src/Doc/howto/pyporting.rst:619
-msgid ""
-"You should even consider running 2to3_ over your code (without committing "
-"the changes). This will let you know where potential pain points are within "
-"your code so that you can fix them properly before they become an issue."
-msgstr ""
-
-# e76d4eb216e447cf8d76b2a9d584bcd3
-#: ../src/Doc/howto/pyporting.rst:625
-msgid "Use six_"
-msgstr ""
-
-# 8068d4fc5e1c426481395d5033831d56
-#: ../src/Doc/howto/pyporting.rst:627
-msgid ""
-"The six_ project contains many things to help you write portable Python "
-"code. You should make sure to read its documentation from beginning to end "
-"and use any and all features it provides. That way you will minimize any "
-"mistakes you might make in writing cross-version code."
-msgstr ""
-
-# 32a99b7cbf164be4ad3367e48a71cd4b
-#: ../src/Doc/howto/pyporting.rst:634
-msgid "Capturing the Currently Raised Exception"
-msgstr ""
-
-# 33a455e118194185a36d2064bab6d42d
-#: ../src/Doc/howto/pyporting.rst:636
-msgid ""
-"One change between Python 2 and 3 that will require changing how you code "
-"(if you support `Python 2.5`_ and earlier) is accessing the currently raised "
-"exception.  In Python 2.5 and earlier the syntax to access the current "
-"exception is::"
-msgstr ""
-
-# 4ea5928ecf4b48fd9a76a7518a445cb3
-#: ../src/Doc/howto/pyporting.rst:647
-msgid ""
-"This syntax changed in Python 3 (and backported to `Python 2.6`_ and later) "
-"to::"
-msgstr ""
-
-# 6ffae18c38384a09ab36f80f1be22f37
-#: ../src/Doc/howto/pyporting.rst:657
-msgid ""
-"Because of this syntax change you must change to capturing the current "
-"exception to::"
-msgstr ""
-
-# 9135a918d99846b6b2f07acb4481dfe2
-#: ../src/Doc/howto/pyporting.rst:668
-msgid ""
-"You can get more information about the raised exception from :func:`sys."
-"exc_info` than simply the current exception instance, but you most likely "
-"don't need it."
-msgstr ""
-
-# 8808a5e91dc24b4e941fb94ce386d32a
-#: ../src/Doc/howto/pyporting.rst:673
-msgid ""
-"In Python 3, the traceback is attached to the exception instance through the "
-"``__traceback__`` attribute. If the instance is saved in a local variable "
-"that persists outside of the ``except`` block, the traceback will create a "
-"reference cycle with the current frame and its dictionary of local "
-"variables.  This will delay reclaiming dead resources until the next cyclic :"
-"term:`garbage collection` pass."
-msgstr ""
-
-# d4505a6c83924f2989209021f7aaa4fe
-#: ../src/Doc/howto/pyporting.rst:680
-msgid ""
-"In Python 2, this problem only occurs if you save the traceback itself (e.g. "
-"the third element of the tuple returned by :func:`sys.exc_info`) in a "
-"variable."
+"If you have Python 3 code and have little interest in supporting Python 2 "
+"you can use 3to2_ to translate from Python 3 code to Python 2 code. This is "
+"only recommended if you don't plan to heavily support Python 2 users. "
+"Otherwise write your code for Python 3 and then backport as far back as you "
+"want. This is typically easier than going from Python 2 to 3 as you will "
+"have worked out any difficulties with e.g. bytes/strings, etc."
 msgstr ""
 
 # 4cceebf107a046e2850ba987f30e3b95
-#: ../src/Doc/howto/pyporting.rst:686
+#: ../src/Doc/howto/pyporting.rst:584
 msgid "Other Resources"
 msgstr ""
 
 # 6655928ffc2e4042a658bb55194bf3a0
-#: ../src/Doc/howto/pyporting.rst:688
+#: ../src/Doc/howto/pyporting.rst:586
 msgid ""
 "The authors of the following blog posts, wiki pages, and books deserve "
 "special thanks for making public their tips for porting Python 2 code to "
-"Python 3 (and thus helping provide information for this document):"
+"Python 3 (and thus helping provide information for this document and its "
+"various revisions over the years):"
+msgstr ""
+
+# 9db73da4a9584ab2981fa6d70077380b
+#: ../src/Doc/howto/pyporting.rst:591
+msgid "http://wiki.python.org/moin/PortingPythonToPy3k"
 msgstr ""
 
 # 2ac7fa2afb1243a8b7cb24b692af8bbf
-#: ../src/Doc/howto/pyporting.rst:692
+#: ../src/Doc/howto/pyporting.rst:592
 msgid "http://python3porting.com/"
 msgstr ""
 
 # fa3f5ab95f6340099a39df758243df01
-#: ../src/Doc/howto/pyporting.rst:693
+#: ../src/Doc/howto/pyporting.rst:593
 msgid "http://docs.pythonsprints.com/python3_porting/py-porting.html"
 msgstr ""
 
 # 7398b09a284d4dd983d7b2114154be6a
-#: ../src/Doc/howto/pyporting.rst:694
+#: ../src/Doc/howto/pyporting.rst:594
 msgid ""
 "http://techspot.zzzeek.org/2011/01/24/zzzeek-s-guide-to-python-3-porting/"
 msgstr ""
 
 # ea7e371504e541e2b1514f85d1cb0fa1
-#: ../src/Doc/howto/pyporting.rst:695
+#: ../src/Doc/howto/pyporting.rst:595
 msgid ""
 "http://dabeaz.blogspot.com/2011/01/porting-py65-and-my-superboard-to.html"
 msgstr ""
 
 # 3e267d8b581943ada40d1a90d620285a
-#: ../src/Doc/howto/pyporting.rst:696
+#: ../src/Doc/howto/pyporting.rst:596
 msgid "http://lucumr.pocoo.org/2011/1/22/forwards-compatible-python/"
 msgstr ""
 
 # 15e7c37ed1ae499b9ccdc23e45de02d3
-#: ../src/Doc/howto/pyporting.rst:697
+#: ../src/Doc/howto/pyporting.rst:597
 msgid "http://lucumr.pocoo.org/2010/2/11/porting-to-python-3-a-guide/"
 msgstr ""
 
-# 9db73da4a9584ab2981fa6d70077380b
-#: ../src/Doc/howto/pyporting.rst:698
-msgid "http://wiki.python.org/moin/PortingPythonToPy3k"
+# 16f120124a3f4b0db197cf510f10c05b
+#: ../src/Doc/howto/pyporting.rst:598
+msgid "https://wiki.ubuntu.com/Python/3"
 msgstr ""
 
 # 7cbcdce375074e9f8895d6fb39c1dbbf
-#: ../src/Doc/howto/pyporting.rst:700
+#: ../src/Doc/howto/pyporting.rst:600
 msgid ""
 "If you feel there is something missing from this document that should be "
 "added, please email the python-porting_ mailing list."

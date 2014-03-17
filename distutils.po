@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-16 04:44\n"
+"POT-Creation-Date: 2014-03-17 06:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -353,7 +353,7 @@ msgid ""
 msgstr "*stop_after* dit à :func:`setup` quand s'arrêter; valeurs possibles:"
 
 #: ../src/Doc/distutils/apiref.rst:133 ../src/Doc/distutils/apiref.rst:537
-#: ../src/Doc/distutils/apiref.rst:1569
+#: ../src/Doc/distutils/apiref.rst:1560
 msgid "description"
 msgstr "description"
 
@@ -1667,18 +1667,7 @@ msgid ""
 "an underscore. No { } or ( ) style quoting is available."
 msgstr ""
 
-# bf164bd717bc411aabf58e77c73d1b56
-#: ../src/Doc/distutils/apiref.rst:1172
-msgid ""
-"Generate a useful error message from an :exc:`EnvironmentError`  (:exc:"
-"`IOError` or :exc:`OSError`) exception object.   Handles Python 1.5.1 and "
-"later styles, and does what it can to deal with  exception objects that "
-"don't have a filename (which happens when the error  is due to a two-file "
-"operation, such as :func:`~os.rename` or  :func:`~os.link`).  Returns the "
-"error message as a string prefixed  with *prefix*."
-msgstr ""
-
-#: ../src/Doc/distutils/apiref.rst:1182
+#: ../src/Doc/distutils/apiref.rst:1173
 msgid ""
 "Split a string up according to Unix shell-like rules for quotes and "
 "backslashes. In short: words are delimited by spaces, as long as those "
@@ -1689,7 +1678,7 @@ msgid ""
 "any quoted string.  Returns a list of words."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1195
+#: ../src/Doc/distutils/apiref.rst:1186
 msgid ""
 "Perform some action that affects the outside world (for instance, writing to "
 "the filesystem).  Such actions are special because they are disabled by the "
@@ -1699,18 +1688,18 @@ msgid ""
 "message to print."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1204
+#: ../src/Doc/distutils/apiref.rst:1195
 msgid "Convert a string representation of truth to true (1) or false (0)."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1206
+#: ../src/Doc/distutils/apiref.rst:1197
 msgid ""
 "True values are ``y``, ``yes``, ``t``, ``true``, ``on``  and ``1``; false "
 "values are ``n``, ``no``, ``f``, ``false``,  ``off`` and ``0``.  Raises :exc:"
 "`ValueError` if *val*  is anything else."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1213
+#: ../src/Doc/distutils/apiref.rst:1204
 msgid ""
 "Byte-compile a collection of Python source files to either :file:`.pyc` or :"
 "file:`.pyo` files in the same directory.  *py_files* is a list of files to "
@@ -1718,23 +1707,23 @@ msgid ""
 "*optimize* must be one of the following:"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1218
+#: ../src/Doc/distutils/apiref.rst:1209
 msgid "``0`` - don't optimize (generate :file:`.pyc`)"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1219
+#: ../src/Doc/distutils/apiref.rst:1210
 msgid "``1`` - normal optimization (like ``python -O``)"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1220
+#: ../src/Doc/distutils/apiref.rst:1211
 msgid "``2`` - extra optimization (like ``python -OO``)"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1222
+#: ../src/Doc/distutils/apiref.rst:1213
 msgid "If *force* is true, all files are recompiled regardless of timestamps."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1224
+#: ../src/Doc/distutils/apiref.rst:1215
 msgid ""
 "The source filename encoded in each :term:`bytecode` file defaults to the "
 "filenames listed in *py_files*; you can modify these with *prefix* and "
@@ -1744,13 +1733,13 @@ msgid ""
 "*prefix* and *base_dir*, as you wish."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1231
+#: ../src/Doc/distutils/apiref.rst:1222
 msgid ""
 "If *dry_run* is true, doesn't actually do anything that would affect the "
 "filesystem."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1234
+#: ../src/Doc/distutils/apiref.rst:1225
 msgid ""
 "Byte-compilation is either done directly in this interpreter process with "
 "the standard :mod:`py_compile` module, or indirectly by writing a temporary "
@@ -1760,47 +1749,47 @@ msgid ""
 "you know what you're doing, leave it set to ``None``."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1244
+#: ../src/Doc/distutils/apiref.rst:1235
 msgid ""
 "Return a version of *header* escaped for inclusion in an :rfc:`822` header, "
 "by ensuring there are 8 spaces space after each newline. Note that it does "
 "no other modification of the string."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1254
+#: ../src/Doc/distutils/apiref.rst:1245
 msgid ":mod:`distutils.dist` --- The Distribution class"
 msgstr ""
 
 # b95f09e99826456bb362f08f97c50894
-#: ../src/Doc/distutils/apiref.rst:1261
+#: ../src/Doc/distutils/apiref.rst:1252
 msgid ""
 "This module provides the :class:`~distutils.core.Distribution` class, which "
 "represents the module distribution being built/installed/distributed."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1266
+#: ../src/Doc/distutils/apiref.rst:1257
 msgid ":mod:`distutils.extension` --- The Extension class"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1273
+#: ../src/Doc/distutils/apiref.rst:1264
 msgid ""
 "This module provides the :class:`Extension` class, used to describe C/C++ "
 "extension modules in setup scripts."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1281
+#: ../src/Doc/distutils/apiref.rst:1272
 msgid ":mod:`distutils.debug` --- Distutils debug mode"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1287
+#: ../src/Doc/distutils/apiref.rst:1278
 msgid "This module provides the DEBUG flag."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1291
+#: ../src/Doc/distutils/apiref.rst:1282
 msgid ":mod:`distutils.errors` --- Distutils exceptions"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1297
+#: ../src/Doc/distutils/apiref.rst:1288
 msgid ""
 "Provides exceptions used by the Distutils modules.  Note that Distutils "
 "modules may raise standard exceptions; in particular, SystemExit is usually "
@@ -1808,45 +1797,45 @@ msgid ""
 "line arguments)."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1301
+#: ../src/Doc/distutils/apiref.rst:1292
 msgid ""
 "This module is safe to use in ``from ... import *`` mode; it only exports "
 "symbols whose names start with ``Distutils`` and end with ``Error``."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1306
+#: ../src/Doc/distutils/apiref.rst:1297
 msgid ""
 ":mod:`distutils.fancy_getopt` --- Wrapper around the standard getopt module"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1312
+#: ../src/Doc/distutils/apiref.rst:1303
 msgid ""
 "This module provides a wrapper around the standard :mod:`getopt`  module "
 "that provides the following additional features:"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1315
+#: ../src/Doc/distutils/apiref.rst:1306
 msgid "short and long options are tied together"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1317
+#: ../src/Doc/distutils/apiref.rst:1308
 msgid ""
 "options have help strings, so :func:`fancy_getopt` could potentially  create "
 "a complete usage summary"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1320
+#: ../src/Doc/distutils/apiref.rst:1311
 msgid "options set attributes of a passed-in object"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1322
+#: ../src/Doc/distutils/apiref.rst:1313
 msgid ""
 "boolean options can have \"negative aliases\" --- eg. if :option:`--quiet` "
 "is the \"negative alias\" of :option:`--verbose`, then :option:`--quiet` on "
 "the command line sets *verbose* to false."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1329
+#: ../src/Doc/distutils/apiref.rst:1320
 msgid ""
 "Wrapper function. *options* is a list of ``(long_option, short_option, "
 "help_string)`` 3-tuples as described in the constructor for :class:"
@@ -1857,17 +1846,17 @@ msgid ""
 "list. Will use ``sys.argv[1:]`` if you  pass ``None`` as *args*."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1340
+#: ../src/Doc/distutils/apiref.rst:1331
 msgid "Wraps *text* to less than *width* wide."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1346
+#: ../src/Doc/distutils/apiref.rst:1337
 msgid ""
 "The option_table is a list of 3-tuples: ``(long_option, short_option, "
 "help_string)``"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1349
+#: ../src/Doc/distutils/apiref.rst:1340
 msgid ""
 "If an option takes an argument, its *long_option* should have ``'='`` "
 "appended; *short_option* should just be a single character, no ``':'`` in "
@@ -1875,15 +1864,15 @@ msgid ""
 "a corresponding *short_option*. All option tuples must have long options."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1354
+#: ../src/Doc/distutils/apiref.rst:1345
 msgid "The :class:`FancyGetopt` class provides the following methods:"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1359
+#: ../src/Doc/distutils/apiref.rst:1350
 msgid "Parse command-line options in args. Store as attributes on *object*."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1361
+#: ../src/Doc/distutils/apiref.rst:1352
 msgid ""
 "If *args* is ``None`` or not supplied, uses ``sys.argv[1:]``.  If *object* "
 "is ``None`` or not supplied, creates a new :class:`OptionDummy` instance, "
@@ -1893,42 +1882,42 @@ msgid ""
 "passed-in *args* list, which is left untouched."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1373
+#: ../src/Doc/distutils/apiref.rst:1364
 msgid ""
 "Returns the list of ``(option, value)`` tuples processed by the previous run "
 "of :meth:`getopt`  Raises :exc:`RuntimeError` if :meth:`getopt` hasn't been "
 "called yet."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1380
+#: ../src/Doc/distutils/apiref.rst:1371
 msgid ""
 "Generate help text (a list of strings, one per suggested line of output) "
 "from the option table for this :class:`FancyGetopt` object."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1383
+#: ../src/Doc/distutils/apiref.rst:1374
 msgid "If supplied, prints the supplied *header* at the top of the help."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1387
+#: ../src/Doc/distutils/apiref.rst:1378
 msgid ":mod:`distutils.filelist` --- The FileList class"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1394
+#: ../src/Doc/distutils/apiref.rst:1385
 msgid ""
 "This module provides the :class:`FileList` class, used for poking about the "
 "filesystem and building lists of files."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1399
+#: ../src/Doc/distutils/apiref.rst:1390
 msgid ":mod:`distutils.log` --- Simple PEP 282-style logging"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1406
+#: ../src/Doc/distutils/apiref.rst:1397
 msgid ":mod:`distutils.spawn` --- Spawn a sub-process"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1412
+#: ../src/Doc/distutils/apiref.rst:1403
 msgid ""
 "This module provides the :func:`spawn` function, a front-end to  various "
 "platform-specific functions for launching another program in a  sub-process. "
@@ -1936,11 +1925,11 @@ msgid ""
 "executable name."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1419
+#: ../src/Doc/distutils/apiref.rst:1410
 msgid ":mod:`distutils.sysconfig` --- System configuration information"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1428
+#: ../src/Doc/distutils/apiref.rst:1419
 msgid ""
 "The :mod:`distutils.sysconfig` module provides access to Python's low-level "
 "configuration information.  The specific configuration variables available "
@@ -1952,27 +1941,27 @@ msgid ""
 "and :file:`config.h` for earlier versions of Python."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1437
+#: ../src/Doc/distutils/apiref.rst:1428
 msgid ""
 "Some additional functions are provided which perform some useful "
 "manipulations for other parts of the :mod:`distutils` package."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1443
+#: ../src/Doc/distutils/apiref.rst:1434
 msgid "The result of ``os.path.normpath(sys.prefix)``."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1448
+#: ../src/Doc/distutils/apiref.rst:1439
 msgid "The result of ``os.path.normpath(sys.exec_prefix)``."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1453
+#: ../src/Doc/distutils/apiref.rst:1444
 msgid ""
 "Return the value of a single variable.  This is equivalent to "
 "``get_config_vars().get(name)``."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1459
+#: ../src/Doc/distutils/apiref.rst:1450
 msgid ""
 "Return a set of variable definitions.  If there are no arguments, this "
 "returns a dictionary mapping names of configuration variables to values.  If "
@@ -1981,7 +1970,7 @@ msgid ""
 "corresponding value, ``None`` will be included for that variable."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1468
+#: ../src/Doc/distutils/apiref.rst:1459
 msgid ""
 "Return the full path name of the configuration header.  For Unix, this will "
 "be the header generated by the :program:`configure` script; for other "
@@ -1989,7 +1978,7 @@ msgid ""
 "distribution.  The file is a platform-specific text file."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1476
+#: ../src/Doc/distutils/apiref.rst:1467
 msgid ""
 "Return the full path name of the :file:`Makefile` used to build Python.  For "
 "Unix, this will be a file generated by the :program:`configure` script; the "
@@ -1997,7 +1986,7 @@ msgid ""
 "file, if it exists. This function is only useful on POSIX platforms."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1484
+#: ../src/Doc/distutils/apiref.rst:1475
 msgid ""
 "Return the directory for either the general or platform-dependent C include "
 "files.  If *plat_specific* is true, the platform-dependent include directory "
@@ -2007,7 +1996,7 @@ msgid ""
 "*plat_specific* is true."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1494
+#: ../src/Doc/distutils/apiref.rst:1485
 msgid ""
 "Return the directory for either the general or platform-dependent library "
 "installation.  If *plat_specific* is true, the platform-dependent include "
@@ -2019,19 +2008,19 @@ msgid ""
 "the installation of third-party extensions."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1503
+#: ../src/Doc/distutils/apiref.rst:1494
 msgid ""
 "The following function is only intended for use within the :mod:`distutils` "
 "package."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1509
+#: ../src/Doc/distutils/apiref.rst:1500
 msgid ""
 "Do any platform-specific customization of a :class:`distutils.ccompiler."
 "CCompiler` instance."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1512
+#: ../src/Doc/distutils/apiref.rst:1503
 msgid ""
 "This function is only needed on Unix at this time, but should be called "
 "consistently to support forward-compatibility.  It inserts the information "
@@ -2040,13 +2029,13 @@ msgid ""
 "options, and the extension used by the linker for shared objects."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1518
+#: ../src/Doc/distutils/apiref.rst:1509
 msgid ""
 "This function is even more special-purpose, and should only be used from "
 "Python's own build procedures."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1524
+#: ../src/Doc/distutils/apiref.rst:1515
 msgid ""
 "Inform the :mod:`distutils.sysconfig` module that it is being used as part "
 "of the build process for Python.  This changes a lot of relative locations "
@@ -2054,18 +2043,18 @@ msgid ""
 "installed Python."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1531
+#: ../src/Doc/distutils/apiref.rst:1522
 msgid ":mod:`distutils.text_file` --- The TextFile class"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1537
+#: ../src/Doc/distutils/apiref.rst:1528
 msgid ""
 "This module provides the :class:`TextFile` class, which gives an interface  "
 "to text files that (optionally) takes care of stripping comments, ignoring  "
 "blank lines, and joining lines with backslashes."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1544
+#: ../src/Doc/distutils/apiref.rst:1535
 msgid ""
 "This class provides a file-like object that takes care of all  the things "
 "you commonly want to do when processing a text file  that has some line-by-"
@@ -2075,7 +2064,7 @@ msgid ""
 "optional and independently controllable."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1551
+#: ../src/Doc/distutils/apiref.rst:1542
 msgid ""
 "The class provides a :meth:`warn` method so you can generate  warning "
 "messages that report physical line number, even if the  logical line in "
@@ -2083,7 +2072,7 @@ msgid ""
 "for implementing line-at-a-time lookahead."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1556
+#: ../src/Doc/distutils/apiref.rst:1547
 msgid ""
 ":class:`TextFile` instances are create with either *filename*, *file*, or "
 "both. :exc:`RuntimeError` is raised if both are ``None``. *filename* should "
@@ -2094,63 +2083,63 @@ msgid ""
 "using the :func:`open` built-in function."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1564
+#: ../src/Doc/distutils/apiref.rst:1555
 msgid ""
 "The options are all boolean, and affect the values returned by :meth:"
 "`readline`"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1569
+#: ../src/Doc/distutils/apiref.rst:1560
 msgid "option name"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1569
+#: ../src/Doc/distutils/apiref.rst:1560
 msgid "default"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1571
+#: ../src/Doc/distutils/apiref.rst:1562
 msgid "*strip_comments*"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1571
+#: ../src/Doc/distutils/apiref.rst:1562
 msgid ""
 "strip from ``'#'`` to end-of- line, as well as any whitespace leading up to "
 "the ``'#'``\\ ---unless it is escaped by a backslash"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1571 ../src/Doc/distutils/apiref.rst:1580
-#: ../src/Doc/distutils/apiref.rst:1585
+#: ../src/Doc/distutils/apiref.rst:1562 ../src/Doc/distutils/apiref.rst:1571
+#: ../src/Doc/distutils/apiref.rst:1576
 msgid "true"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1577
+#: ../src/Doc/distutils/apiref.rst:1568
 msgid "*lstrip_ws*"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1577
+#: ../src/Doc/distutils/apiref.rst:1568
 msgid "strip leading whitespace from each line before returning it"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1577 ../src/Doc/distutils/apiref.rst:1595
-#: ../src/Doc/distutils/apiref.rst:1606
+#: ../src/Doc/distutils/apiref.rst:1568 ../src/Doc/distutils/apiref.rst:1586
+#: ../src/Doc/distutils/apiref.rst:1597
 msgid "false"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1580
+#: ../src/Doc/distutils/apiref.rst:1571
 msgid "*rstrip_ws*"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1580
+#: ../src/Doc/distutils/apiref.rst:1571
 msgid ""
 "strip trailing whitespace (including line terminator!) from each line before "
 "returning it."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1585
+#: ../src/Doc/distutils/apiref.rst:1576
 msgid "*skip_blanks*"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1585
+#: ../src/Doc/distutils/apiref.rst:1576
 msgid ""
 "skip lines that are empty \\*after\\* stripping comments and whitespace.  "
 "(If both lstrip_ws and rstrip_ws are false, then some lines may consist of "
@@ -2158,11 +2147,11 @@ msgid ""
 "true.)"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1595
+#: ../src/Doc/distutils/apiref.rst:1586
 msgid "*join_lines*"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1595
+#: ../src/Doc/distutils/apiref.rst:1586
 msgid ""
 "if a backslash is the last non-newline character on a line after stripping "
 "comments and whitespace, join the following line to it to form one logical "
@@ -2170,17 +2159,17 @@ msgid ""
 "will be joined to form one logical line."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1606
+#: ../src/Doc/distutils/apiref.rst:1597
 msgid "*collapse_join*"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1606
+#: ../src/Doc/distutils/apiref.rst:1597
 msgid ""
 "strip leading whitespace from lines that are joined to their predecessor; "
 "only matters if ``(join_lines and not lstrip_ws)``"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1613
+#: ../src/Doc/distutils/apiref.rst:1604
 msgid ""
 "Note that since *rstrip_ws* can strip the trailing newline, the semantics "
 "of :meth:`readline` must differ from those of the built-in file object's :"
@@ -2189,19 +2178,19 @@ msgid ""
 "whitespace line), if *rstrip_ws* is true  but *skip_blanks* is not."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1622
+#: ../src/Doc/distutils/apiref.rst:1613
 msgid ""
 "Open a new file *filename*.  This overrides any *file* or *filename* "
 "constructor arguments."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1628
+#: ../src/Doc/distutils/apiref.rst:1619
 msgid ""
 "Close the current file and forget everything we know about it (including the "
 "filename and the current line number)."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1634
+#: ../src/Doc/distutils/apiref.rst:1625
 msgid ""
 "Print (to stderr) a warning message tied to the current logical line in the "
 "current file.  If the current logical line in the file spans multiple "
@@ -2211,7 +2200,7 @@ msgid ""
 "for a  single physical line."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1644
+#: ../src/Doc/distutils/apiref.rst:1635
 msgid ""
 "Read and return a single logical line from the current file (or from an "
 "internal buffer if lines have previously been \"unread\" with :meth:"
@@ -2223,13 +2212,13 @@ msgid ""
 "*strip_blanks* is not."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1655
+#: ../src/Doc/distutils/apiref.rst:1646
 msgid ""
 "Read and return the list of all logical lines remaining in the current file. "
 "This updates the current line number to the last line of the file."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1661
+#: ../src/Doc/distutils/apiref.rst:1652
 msgid ""
 "Push *line* (a string) onto an internal buffer that will be checked by "
 "future :meth:`readline` calls.  Handy for implementing a parser with line-at-"
@@ -2240,20 +2229,20 @@ msgid ""
 "returned most in most recent first order."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1670
+#: ../src/Doc/distutils/apiref.rst:1661
 msgid ":mod:`distutils.version` --- Version number classes"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1685
+#: ../src/Doc/distutils/apiref.rst:1676
 msgid ":mod:`distutils.cmd` --- Abstract base class for Distutils commands"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1692
+#: ../src/Doc/distutils/apiref.rst:1683
 msgid "This module supplies the abstract base class :class:`Command`."
 msgstr ""
 
 # a836cab6006e4200b0a815ae1b558a75
-#: ../src/Doc/distutils/apiref.rst:1697
+#: ../src/Doc/distutils/apiref.rst:1688
 msgid ""
 "Abstract base class for defining command classes, the \"worker bees\" of the "
 "Distutils.  A useful analogy for command classes is to think of them as "
@@ -2269,23 +2258,23 @@ msgid ""
 "command class."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1710
+#: ../src/Doc/distutils/apiref.rst:1701
 #, fuzzy
 msgid ""
 "The class constructor takes a single argument *dist*, a :class:`~distutils."
 "core.Distribution` instance."
 msgstr "Une sous classe de :class:`distutils.core.Distribution`"
 
-#: ../src/Doc/distutils/apiref.rst:1715
+#: ../src/Doc/distutils/apiref.rst:1706
 msgid "Creating a new Distutils command"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1717
+#: ../src/Doc/distutils/apiref.rst:1708
 msgid "This section outlines the steps to create a new Distutils command."
 msgstr ""
 
 # 56aebd00420f4ba08b4c961e8560019c
-#: ../src/Doc/distutils/apiref.rst:1719
+#: ../src/Doc/distutils/apiref.rst:1710
 msgid ""
 "A new command lives in a module in the :mod:`distutils.command` package. "
 "There is a sample template in that directory called :file:"
@@ -2298,11 +2287,11 @@ msgid ""
 "class:`peel_banana`, a subclass of :class:`distutils.cmd.Command`."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1729
+#: ../src/Doc/distutils/apiref.rst:1720
 msgid "Subclasses of :class:`Command` must define the following methods."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1733
+#: ../src/Doc/distutils/apiref.rst:1724
 msgid ""
 "Set default values for all the options that this command supports.  Note "
 "that these defaults may be overridden by other commands, by the setup "
@@ -2313,7 +2302,7 @@ msgid ""
 msgstr ""
 
 # 25cda4c256594beab16954960e29ad6b
-#: ../src/Doc/distutils/apiref.rst:1742
+#: ../src/Doc/distutils/apiref.rst:1733
 msgid ""
 "Set final values for all the options that this command supports. This is "
 "always called as late as possible, ie.  after any option assignments from "
@@ -2323,7 +2312,7 @@ msgid ""
 "was assigned in :meth:`initialize_options`."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1752
+#: ../src/Doc/distutils/apiref.rst:1743
 msgid ""
 "A command's raison d'etre: carry out the action it exists to perform, "
 "controlled by the options initialized in :meth:`initialize_options`, "
@@ -2333,7 +2322,7 @@ msgid ""
 msgstr ""
 
 # e69694bcecd14c478c77eee92006da2e
-#: ../src/Doc/distutils/apiref.rst:1761
+#: ../src/Doc/distutils/apiref.rst:1752
 msgid ""
 "*sub_commands* formalizes the notion of a \"family\" of commands, e.g. "
 "``install`` as the parent with sub-commands ``install_lib``, "
@@ -2348,41 +2337,41 @@ msgid ""
 msgstr ""
 
 # bb576a6a44e34a89b80c4cf87f2a80fe
-#: ../src/Doc/distutils/apiref.rst:1772
+#: ../src/Doc/distutils/apiref.rst:1763
 msgid ""
 "*sub_commands* is usually defined at the *end* of a class, because "
 "predicates can be methods of the class, so they must already have been "
 "defined.  The canonical example is the :command:`install` command."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1778
+#: ../src/Doc/distutils/apiref.rst:1769
 msgid ":mod:`distutils.command` --- Individual Distutils commands"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1789
+#: ../src/Doc/distutils/apiref.rst:1780
 msgid ":mod:`distutils.command.bdist` --- Build a binary installer"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1799
+#: ../src/Doc/distutils/apiref.rst:1790
 msgid ""
 ":mod:`distutils.command.bdist_packager` --- Abstract base class for packagers"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1809
+#: ../src/Doc/distutils/apiref.rst:1800
 msgid ":mod:`distutils.command.bdist_dumb` --- Build a \"dumb\" installer"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1819
+#: ../src/Doc/distutils/apiref.rst:1810
 msgid ""
 ":mod:`distutils.command.bdist_msi` --- Build a Microsoft Installer binary "
 "package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1826
+#: ../src/Doc/distutils/apiref.rst:1817
 msgid "Builds a `Windows Installer`_ (.msi) binary package."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1830
+#: ../src/Doc/distutils/apiref.rst:1821
 msgid ""
 "In most cases, the ``bdist_msi`` installer is a better choice than the "
 "``bdist_wininst`` installer, because it provides better support for Win64 "
@@ -2390,97 +2379,112 @@ msgid ""
 "and allows installation through group policies."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1837
+#: ../src/Doc/distutils/apiref.rst:1828
 msgid ""
 ":mod:`distutils.command.bdist_rpm` --- Build a binary distribution as a "
 "Redhat RPM and SRPM"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1847
+#: ../src/Doc/distutils/apiref.rst:1838
 msgid ":mod:`distutils.command.bdist_wininst` --- Build a Windows installer"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1857
+#: ../src/Doc/distutils/apiref.rst:1848
 msgid ":mod:`distutils.command.sdist` --- Build a source distribution"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1867
+#: ../src/Doc/distutils/apiref.rst:1858
 msgid ":mod:`distutils.command.build` --- Build all files of a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1877
+#: ../src/Doc/distutils/apiref.rst:1868
 msgid ""
 ":mod:`distutils.command.build_clib` --- Build any C libraries in a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1887
+#: ../src/Doc/distutils/apiref.rst:1878
 msgid ""
 ":mod:`distutils.command.build_ext` --- Build any extensions in a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1897
+#: ../src/Doc/distutils/apiref.rst:1888
 msgid ""
 ":mod:`distutils.command.build_py` --- Build the .py/.pyc files of a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1904
+#: ../src/Doc/distutils/apiref.rst:1895
 msgid ""
 ":mod:`distutils.command.build_scripts` --- Build the scripts of a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1914
+#: ../src/Doc/distutils/apiref.rst:1905
 msgid ":mod:`distutils.command.clean` --- Clean a package build area"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1924
+# eef3fa12623745ea9916bb310ca2b530
+#: ../src/Doc/distutils/apiref.rst:1910
+msgid ""
+"This command removes the temporary files created by :command:`build` and its "
+"subcommands, like intermediary compiled object files.  With the ``--all`` "
+"option, the complete build directory will be removed."
+msgstr ""
+
+# b33f97c69c8e4b64817fa64052b3be30
+#: ../src/Doc/distutils/apiref.rst:1914
+msgid ""
+"Extension modules built :ref:`in place <distutils-build-ext-inplace>` will "
+"not be cleaned, as they are not in the build directory."
+msgstr ""
+
+#: ../src/Doc/distutils/apiref.rst:1919
 msgid ":mod:`distutils.command.config` --- Perform package configuration"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1934
+#: ../src/Doc/distutils/apiref.rst:1929
 msgid ":mod:`distutils.command.install` --- Install a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1944
+#: ../src/Doc/distutils/apiref.rst:1939
 msgid ""
 ":mod:`distutils.command.install_data` --- Install data files from a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1954
+#: ../src/Doc/distutils/apiref.rst:1949
 msgid ""
 ":mod:`distutils.command.install_headers` --- Install C/C++ header files from "
 "a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1964
+#: ../src/Doc/distutils/apiref.rst:1959
 msgid ""
 ":mod:`distutils.command.install_lib` --- Install library files from a package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1974
+#: ../src/Doc/distutils/apiref.rst:1969
 msgid ""
 ":mod:`distutils.command.install_scripts` --- Install script files from a "
 "package"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1984
+#: ../src/Doc/distutils/apiref.rst:1979
 msgid ""
 ":mod:`distutils.command.register` --- Register a module with the Python "
 "Package Index"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1990
+#: ../src/Doc/distutils/apiref.rst:1985
 msgid ""
 "The ``register`` command registers the package with the Python Package  "
 "Index. This is described in more detail in :pep:`301`."
 msgstr ""
 
 # 863294624cdf45099fc9e56d5597240a
-#: ../src/Doc/distutils/apiref.rst:1997
+#: ../src/Doc/distutils/apiref.rst:1992
 msgid ":mod:`distutils.command.check` --- Check the meta-data of a package"
 msgstr ""
 
 # 35e66c2ad8ff4914b8aed6d74335e78d
-#: ../src/Doc/distutils/apiref.rst:2003
+#: ../src/Doc/distutils/apiref.rst:1998
 msgid ""
 "The ``check`` command performs some tests on the meta-data of a package. For "
 "example, it verifies that all required meta-data are provided as the "
@@ -3403,7 +3407,7 @@ msgid ""
 "spelled :option:`foo_bar` in configuration files."
 msgstr ""
 
-#: ../src/Doc/distutils/configfile.rst:72
+#: ../src/Doc/distutils/configfile.rst:74
 msgid ""
 "For example, say you want your extensions to be built \"in-place\"---that "
 "is, you have an extension :mod:`pkg.ext`, and you want the compiled "
@@ -3413,7 +3417,7 @@ msgid ""
 "ensure this::"
 msgstr ""
 
-#: ../src/Doc/distutils/configfile.rst:80
+#: ../src/Doc/distutils/configfile.rst:82
 msgid ""
 "But this requires that you always specify the :command:`build_ext` command "
 "explicitly, and remember to provide :option:`--inplace`. An easier way is to "
@@ -3421,7 +3425,7 @@ msgid ""
 "configuration file for this distribution::"
 msgstr ""
 
-#: ../src/Doc/distutils/configfile.rst:88
+#: ../src/Doc/distutils/configfile.rst:90
 msgid ""
 "This will affect all builds of this module distribution, whether or not you "
 "explicitly specify :command:`build_ext`.  If you include :file:`setup.cfg` "
@@ -3434,7 +3438,7 @@ msgid ""
 "always a bad idea, though.)"
 msgstr ""
 
-#: ../src/Doc/distutils/configfile.rst:97
+#: ../src/Doc/distutils/configfile.rst:99
 msgid ""
 "Another example: certain commands take a lot of options that don't change "
 "from run to run; for example, :command:`bdist_rpm` needs to know everything "
@@ -3446,28 +3450,28 @@ msgid ""
 "snippet from the Distutils' own :file:`setup.cfg`::"
 msgstr ""
 
-#: ../src/Doc/distutils/configfile.rst:115
+#: ../src/Doc/distutils/configfile.rst:117
 msgid ""
 "Note that the :option:`doc_files` option is simply a whitespace-separated "
 "string split across multiple lines for readability."
 msgstr ""
 
 # 2ca284a78b92452f8d215fd92d40afac
-#: ../src/Doc/distutils/configfile.rst:121
+#: ../src/Doc/distutils/configfile.rst:123
 msgid ":ref:`inst-config-syntax` in \"Installing Python Modules\""
 msgstr ""
 
-#: ../src/Doc/distutils/configfile.rst:122
+#: ../src/Doc/distutils/configfile.rst:124
 msgid ""
 "More information on the configuration files is available in the manual for "
 "system administrators."
 msgstr ""
 
-#: ../src/Doc/distutils/configfile.rst:127
+#: ../src/Doc/distutils/configfile.rst:129
 msgid "Footnotes"
 msgstr ""
 
-#: ../src/Doc/distutils/configfile.rst:128
+#: ../src/Doc/distutils/configfile.rst:130
 msgid ""
 "This ideal probably won't be achieved until auto-configuration is fully "
 "supported by the Distutils."
@@ -5326,17 +5330,17 @@ msgid ""
 "before the :func:`setup` call. ::"
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:688
+#: ../src/Doc/distutils/setupscript.rst:690
 msgid "Debugging the setup script"
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:690
+#: ../src/Doc/distutils/setupscript.rst:692
 msgid ""
 "Sometimes things go wrong, and the setup script doesn't do what the "
 "developer wants."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:693
+#: ../src/Doc/distutils/setupscript.rst:695
 msgid ""
 "Distutils catches any exceptions when running the setup script, and print a "
 "simple error message before the script is terminated.  The motivation for "
@@ -5347,13 +5351,15 @@ msgid ""
 "down to the bottom and see that it's a permission problem."
 msgstr ""
 
-#: ../src/Doc/distutils/setupscript.rst:701
+# 4908a4fdcf674ca18faa86c9909ab247
+#: ../src/Doc/distutils/setupscript.rst:703
 msgid ""
 "On the other hand, this doesn't help the developer to find the cause of the "
-"failure. For this purpose, the DISTUTILS_DEBUG environment variable can be "
-"set to anything except an empty string, and distutils will now print "
-"detailed information what it is doing, and prints the full traceback in case "
-"an exception occurs."
+"failure. For this purpose, the :envvar:`DISTUTILS_DEBUG` environment "
+"variable can be set to anything except an empty string, and distutils will "
+"now print detailed information about what it is doing, dump the full "
+"traceback when an exception occurs, and print the whole command line when an "
+"external program (like a C compiler) fails."
 msgstr ""
 
 #: ../src/Doc/distutils/sourcedist.rst:5

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-27 04:57\n"
+"POT-Creation-Date: 2014-03-17 06:15\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2467,6 +2467,7 @@ msgid ""
 "programming."
 msgstr ""
 
+# f94af7923ed745f58ebf8abde3518df3
 #: ../src/Doc/faq/general.rst:469
 msgid ""
 "There are also good IDEs for Python.  IDLE is a cross-platform IDE for "
@@ -2474,26 +2475,26 @@ msgid ""
 "specific IDE. Emacs users will be happy to know that there is a very good "
 "Python mode for Emacs.  All of these programming environments provide syntax "
 "highlighting, auto-indenting, and access to the interactive interpreter "
-"while coding.  Consult http://www.python.org/editors/ for a full list of "
-"Python editing environments."
+"while coding.  Consult `the Python wiki <https://wiki.python.org/moin/"
+"PythonEditors>`_ for a full list of Python editing environments."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:476
+#: ../src/Doc/faq/general.rst:477
 msgid ""
 "If you want to discuss Python's use in education, you may be interested in "
 "joining `the edu-sig mailing list <http://python.org/community/sigs/current/"
 "edu-sig>`_."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:482
+#: ../src/Doc/faq/general.rst:483
 msgid "Upgrading Python"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:485
+#: ../src/Doc/faq/general.rst:486
 msgid "What is this bsddb185 module my application keeps complaining about?"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:489
+#: ../src/Doc/faq/general.rst:490
 msgid ""
 "Starting with Python2.3, the distribution includes the `PyBSDDB package "
 "<http://pybsddb.sf.net/>` as a replacement for the old bsddb module.  It "
@@ -2503,7 +2504,7 @@ msgid ""
 "be opened directly using the new module."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:496
+#: ../src/Doc/faq/general.rst:497
 msgid ""
 "Using your old version of Python and a pair of scripts which are part of "
 "Python 2.3 (db2pickle.py and pickle2db.py, in the Tools/scripts directory) "
@@ -2511,15 +2512,15 @@ msgid ""
 "Python version, run the db2pickle.py script to convert it to a pickle, e.g.::"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:503
+#: ../src/Doc/faq/general.rst:504
 msgid "Rename your database file::"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:507
+#: ../src/Doc/faq/general.rst:508
 msgid "Now convert the pickle file to a new format database::"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:511
+#: ../src/Doc/faq/general.rst:512
 msgid ""
 "The precise commands you use will vary depending on the particulars of your "
 "installation.  For full details about operation of these two scripts check "
