@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 06:15\n"
+"POT-Creation-Date: 2014-03-31 04:33\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3739,15 +3739,18 @@ msgid ""
 "or ``-1`` if an exception was raised."
 msgstr ""
 
-# d00539d1c8b5434d94c45f341db7790b
+# 4539c6848bbd4673a06a40e2d0a1be0e
 #: ../src/Doc/c-api/dict.rst:213
 msgid ""
-"This is the same as ``PyDict_Merge(a, b, 1)`` in C, or ``a.update(b)`` in "
-"Python.  Return ``0`` on success or ``-1`` if an exception was raised."
+"This is the same as ``PyDict_Merge(a, b, 1)`` in C, and is similar to ``a."
+"update(b)`` in Python except that :c:func:`PyDict_Update` doesn't fall back "
+"to the iterating over a sequence of key value pairs if the second argument "
+"has no \"keys\" attribute.  Return ``0`` on success or ``-1`` if an "
+"exception was raised."
 msgstr ""
 
 # 82157ba989f749cda605945f8ac8906f
-#: ../src/Doc/c-api/dict.rst:221
+#: ../src/Doc/c-api/dict.rst:224
 msgid ""
 "Update or merge into dictionary *a*, from the key-value pairs in *seq2*. "
 "*seq2* must be an iterable object producing iterable objects of length 2, "
