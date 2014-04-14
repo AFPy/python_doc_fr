@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 06:15\n"
+"POT-Creation-Date: 2014-04-14 05:36\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2543,24 +2543,26 @@ msgstr ""
 msgid "Tkinter"
 msgstr ""
 
+# 69a9b8750ffc4acfb580f6a4a9dd3038
 #: ../src/Doc/faq/gui.rst:21
 msgid ""
 "Standard builds of Python include an object-oriented interface to the Tcl/Tk "
 "widget set, called Tkinter.  This is probably the easiest to install and "
 "use. For more info about Tk, including pointers to the source, see the Tcl/"
-"Tk home page at http://www.tcl.tk.  Tcl/Tk is fully portable to the MacOS, "
-"Windows, and Unix platforms."
+"Tk home page at http://www.tcl.tk.  Tcl/Tk is fully portable to the Mac OS "
+"X, Windows, and Unix platforms."
 msgstr ""
 
 #: ../src/Doc/faq/gui.rst:28
 msgid "wxWidgets"
 msgstr ""
 
+# 954a564ac8da44b99a250d54e9dc373f
 #: ../src/Doc/faq/gui.rst:30
 msgid ""
 "wxWidgets (http://www.wxwidgets.org) is a free, portable GUI class library "
 "written in C++ that provides a native look and feel on a number of "
-"platforms, with Windows, MacOS X, GTK, X11, all listed as current stable "
+"platforms, with Windows, Mac OS X, GTK, X11, all listed as current stable "
 "targets.  Language bindings are available for a number of languages "
 "including Python, Perl, Ruby, etc."
 msgstr ""
@@ -2648,50 +2650,43 @@ msgstr ""
 msgid "What platform-specific GUI toolkits exist for Python?"
 msgstr ""
 
+# 7690fb7f0f05419fb4ae7082c765219c
 #: ../src/Doc/faq/gui.rst:91
 msgid ""
-"`The Mac port <http://python.org/download/mac>`_ by Jack Jansen has a rich "
-"and ever-growing set of modules that support the native Mac toolbox calls.  "
-"The port supports MacOS X's Carbon libraries."
+"By installing the `PyObjc Objective-C bridge <http://pyobjc.sourceforge."
+"net>`_, Python programs can use Mac OS X's Cocoa libraries."
 msgstr ""
 
 #: ../src/Doc/faq/gui.rst:95
-msgid ""
-"By installing the `PyObjc Objective-C bridge <http://pyobjc.sourceforge."
-"net>`_, Python programs can use MacOS X's Cocoa libraries. See the "
-"documentation that comes with the Mac port."
-msgstr ""
-
-#: ../src/Doc/faq/gui.rst:99
 msgid ""
 ":ref:`Pythonwin <windows-faq>` by Mark Hammond includes an interface to the "
 "Microsoft Foundation Classes and a Python programming environment that's "
 "written mostly in Python using the MFC classes."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:105
+#: ../src/Doc/faq/gui.rst:101
 msgid "Tkinter questions"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:108
+#: ../src/Doc/faq/gui.rst:104
 msgid "How do I freeze Tkinter applications?"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:110
+#: ../src/Doc/faq/gui.rst:106
 msgid ""
 "Freeze is a tool to create stand-alone applications.  When freezing Tkinter "
 "applications, the applications will not be truly stand-alone, as the "
 "application will still need the Tcl and Tk libraries."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:114
+#: ../src/Doc/faq/gui.rst:110
 msgid ""
 "One solution is to ship the application with the Tcl and Tk libraries, and "
 "point to them at run-time using the :envvar:`TCL_LIBRARY` and :envvar:"
 "`TK_LIBRARY` environment variables."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:118
+#: ../src/Doc/faq/gui.rst:114
 msgid ""
 "To get truly stand-alone applications, the Tcl scripts that form the library "
 "have to be integrated into the application as well. One tool supporting that "
@@ -2700,19 +2695,19 @@ msgid ""
 msgstr ""
 
 # 305a161b8df040a5977ca7cfe21f949b
-#: ../src/Doc/faq/gui.rst:123
+#: ../src/Doc/faq/gui.rst:119
 msgid ""
 "Build Tix with SAM enabled, perform the appropriate call to :c:func:"
 "`Tclsam_init`, etc. inside Python's :file:`Modules/tkappinit.c`, and link "
 "with libtclsam and libtksam (you might include the Tix libraries as well)."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:130
+#: ../src/Doc/faq/gui.rst:126
 msgid "Can I have Tk events handled while waiting for I/O?"
 msgstr ""
 
 # 29d3a0c48fc8439492bc34338ead5dbd
-#: ../src/Doc/faq/gui.rst:132
+#: ../src/Doc/faq/gui.rst:128
 msgid ""
 "Yes, and you don't even need threads!  But you'll have to restructure your I/"
 "O code a bit.  Tk has the equivalent of Xt's :c:func:`XtAddInput()` call, "
@@ -2721,7 +2716,7 @@ msgid ""
 "need::"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:140
+#: ../src/Doc/faq/gui.rst:136
 msgid ""
 "The file may be a Python file or socket object (actually, anything with a "
 "fileno() method), or an integer file descriptor.  The mask is one of the "
@@ -2729,11 +2724,11 @@ msgid ""
 "follows::"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:147
+#: ../src/Doc/faq/gui.rst:143
 msgid "You must unregister the callback when you're done, using ::"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:151
+#: ../src/Doc/faq/gui.rst:147
 msgid ""
 "Note: since you don't know *how many bytes* are available for reading, you "
 "can't use the Python file object's read or readline methods, since these "
@@ -2742,18 +2737,18 @@ msgid ""
 "read(file.fileno(), maxbytecount)``."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:159
+#: ../src/Doc/faq/gui.rst:155
 msgid "I can't get key bindings to work in Tkinter: why?"
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:161
+#: ../src/Doc/faq/gui.rst:157
 msgid ""
 "An often-heard complaint is that event handlers bound to events with the :"
 "meth:`bind` method don't get handled even when the appropriate key is "
 "pressed."
 msgstr ""
 
-#: ../src/Doc/faq/gui.rst:164
+#: ../src/Doc/faq/gui.rst:160
 msgid ""
 "The most common cause is that the widget to which the binding applies "
 "doesn't have \"keyboard focus\".  Check out the Tk documentation for the "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-31 04:33\n"
+"POT-Creation-Date: 2014-04-14 05:36\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9899,8 +9899,8 @@ msgstr ""
 # 2bc02774d1cd4033956870e72edffb13
 #: ../src/Doc/c-api/sequence.rst:170
 msgid ""
-"Returns the sequence *o* as a tuple, unless it is already a tuple or list, "
-"in which case *o* is returned.  Use :c:func:`PySequence_Fast_GET_ITEM` to "
+"Return the sequence *o* as a list, unless it is already a tuple or list, in "
+"which case *o* is returned.  Use :c:func:`PySequence_Fast_GET_ITEM` to "
 "access the members of the result.  Returns *NULL* on failure.  If the object "
 "is not a sequence, raises :exc:`TypeError` with *m* as the message text."
 msgstr ""
@@ -13415,11 +13415,12 @@ msgstr ""
 msgid ""
 "This function is used by :c:func:`PySequence_Repeat` and has the same "
 "signature.  It is also used by the ``*`` operator, after trying numeric "
-"multiplication via the :c:member:`~PyTypeObject.tp_as_number.nb_mul` slot."
+"multiplication via the :c:member:`~PyTypeObject.tp_as_number.nb_multiply` "
+"slot."
 msgstr ""
 
 # d006104ebadb47b89bb930aca716c43e
-#: ../src/Doc/c-api/typeobj.rst:1302
+#: ../src/Doc/c-api/typeobj.rst:1303
 msgid ""
 "This function is used by :c:func:`PySequence_GetItem` and has the same "
 "signature.  This slot must be filled for the :c:func:`PySequence_Check` "
@@ -13427,7 +13428,7 @@ msgid ""
 msgstr ""
 
 # 60a2dd7b2f764e4b98c1a152bd240de8
-#: ../src/Doc/c-api/typeobj.rst:1306
+#: ../src/Doc/c-api/typeobj.rst:1307
 msgid ""
 "Negative indexes are handled as follows: if the :attr:`sq_length` slot is "
 "filled, it is called and the sequence length is used to compute a positive "
@@ -13436,7 +13437,7 @@ msgid ""
 msgstr ""
 
 # 479b2f978f484c5bac2f1c796a7d07cd
-#: ../src/Doc/c-api/typeobj.rst:1313
+#: ../src/Doc/c-api/typeobj.rst:1314
 msgid ""
 "This function is used by :c:func:`PySequence_SetItem` and has the same "
 "signature.  This slot may be left to *NULL* if the object does not support "
@@ -13444,7 +13445,7 @@ msgid ""
 msgstr ""
 
 # b735c44dc3bb4d979788aa8a8b7d8eff
-#: ../src/Doc/c-api/typeobj.rst:1319
+#: ../src/Doc/c-api/typeobj.rst:1320
 msgid ""
 "This function may be used by :c:func:`PySequence_Contains` and has the same "
 "signature.  This slot may be left to *NULL*, in this case :c:func:"
@@ -13452,25 +13453,25 @@ msgid ""
 msgstr ""
 
 # e3ae6b1436cf4672a247ea6102d4f052
-#: ../src/Doc/c-api/typeobj.rst:1326
+#: ../src/Doc/c-api/typeobj.rst:1327
 msgid ""
 "This function is used by :c:func:`PySequence_InPlaceConcat` and has the same "
 "signature.  It should modify its first operand, and return it."
 msgstr ""
 
 # b9263946d151403a98dbc88b3226198d
-#: ../src/Doc/c-api/typeobj.rst:1331
+#: ../src/Doc/c-api/typeobj.rst:1332
 msgid ""
 "This function is used by :c:func:`PySequence_InPlaceRepeat` and has the same "
 "signature.  It should modify its first operand, and return it."
 msgstr ""
 
-#: ../src/Doc/c-api/typeobj.rst:1341
+#: ../src/Doc/c-api/typeobj.rst:1342
 msgid "Buffer Object Structures"
 msgstr ""
 
 # 018c6a81a0b64e1cacf56dfcb450d764
-#: ../src/Doc/c-api/typeobj.rst:1346
+#: ../src/Doc/c-api/typeobj.rst:1347
 msgid ""
 "The buffer interface exports a model where an object can expose its internal "
 "data as a set of chunks of data, where each chunk is specified as a pointer/"
@@ -13479,7 +13480,7 @@ msgid ""
 msgstr ""
 
 # d38acbfb91a4439c9afb4d1c429ad6a7
-#: ../src/Doc/c-api/typeobj.rst:1351
+#: ../src/Doc/c-api/typeobj.rst:1352
 msgid ""
 "If an object does not export the buffer interface, then its :c:member:"
 "`~PyTypeObject.tp_as_buffer` member in the :c:type:`PyTypeObject` structure "
@@ -13488,7 +13489,7 @@ msgid ""
 msgstr ""
 
 # 4a7a955088294682af36fafeaf902457
-#: ../src/Doc/c-api/typeobj.rst:1357
+#: ../src/Doc/c-api/typeobj.rst:1358
 msgid ""
 "It is very important that your :c:type:`PyTypeObject` structure uses :const:"
 "`Py_TPFLAGS_DEFAULT` for the value of the :c:member:`~PyTypeObject.tp_flags` "
@@ -13500,14 +13501,14 @@ msgid ""
 msgstr ""
 
 # 671ce8453a204c60abe634933c17f1ab
-#: ../src/Doc/c-api/typeobj.rst:1367
+#: ../src/Doc/c-api/typeobj.rst:1368
 msgid ""
 "Structure used to hold the function pointers which define an implementation "
 "of the buffer protocol."
 msgstr ""
 
 # 6255e02c907e4011bada70cdea40b1c1
-#: ../src/Doc/c-api/typeobj.rst:1370
+#: ../src/Doc/c-api/typeobj.rst:1371
 msgid ""
 "The first slot is :attr:`bf_getreadbuffer`, of type :c:type:"
 "`getreadbufferproc`. If this slot is *NULL*, then the object does not "
@@ -13517,7 +13518,7 @@ msgid ""
 msgstr ""
 
 # 77ed07828db14e608f59fac4ee8eb180
-#: ../src/Doc/c-api/typeobj.rst:1375
+#: ../src/Doc/c-api/typeobj.rst:1376
 msgid ""
 "The next slot is :attr:`bf_getwritebuffer` having type :c:type:"
 "`getwritebufferproc`.  This slot may be *NULL* if the object does not allow "
@@ -13525,7 +13526,7 @@ msgid ""
 msgstr ""
 
 # 2b1d079f5e024e40b8a8b8a6ab444bcd
-#: ../src/Doc/c-api/typeobj.rst:1379
+#: ../src/Doc/c-api/typeobj.rst:1380
 msgid ""
 "The third slot is :attr:`bf_getsegcount`, with type :c:type:"
 "`getsegcountproc`. This slot must not be *NULL* and is used to inform the "
@@ -13535,7 +13536,7 @@ msgid ""
 msgstr ""
 
 # 8794eca3e0064cf7ae81e22176c471f8
-#: ../src/Doc/c-api/typeobj.rst:1386
+#: ../src/Doc/c-api/typeobj.rst:1387
 msgid ""
 "The last slot is :attr:`bf_getcharbuffer`, of type :c:type:"
 "`getcharbufferproc`. This slot will only be present if the :const:"
@@ -13555,7 +13556,7 @@ msgid ""
 msgstr ""
 
 # 4907e90a96384b3994474fff78dbc2c9
-#: ../src/Doc/c-api/typeobj.rst:1402
+#: ../src/Doc/c-api/typeobj.rst:1403
 msgid ""
 "The current policy seems to state that these characters may be multi-byte "
 "characters. This implies that a buffer size of *N* does not mean there are "
@@ -13563,7 +13564,7 @@ msgid ""
 msgstr ""
 
 # 9d058a1e83144869a868f7abd46ec1e6
-#: ../src/Doc/c-api/typeobj.rst:1409
+#: ../src/Doc/c-api/typeobj.rst:1410
 msgid ""
 "Flag bit set in the type structure to indicate that the :attr:"
 "`bf_getcharbuffer` slot is known.  This being set does not indicate that the "
@@ -13572,7 +13573,7 @@ msgid ""
 msgstr ""
 
 # 4d760c4c58184b4e8e44e5292908bc44
-#: ../src/Doc/c-api/typeobj.rst:1416
+#: ../src/Doc/c-api/typeobj.rst:1417
 msgid ""
 "Return a pointer to a readable segment of the buffer in ``*ptrptr``.  This "
 "function is allowed to raise an exception, in which case it must return "
@@ -13583,7 +13584,7 @@ msgid ""
 msgstr ""
 
 # 55402f93a81d4562b692916f49616255
-#: ../src/Doc/c-api/typeobj.rst:1426
+#: ../src/Doc/c-api/typeobj.rst:1427
 msgid ""
 "Return a pointer to a writable memory buffer in ``*ptrptr``, and the length "
 "of that segment as the function return value.  The memory buffer must "
@@ -13594,7 +13595,7 @@ msgid ""
 msgstr ""
 
 # 67e94400d9954cf8af568088001d5f83
-#: ../src/Doc/c-api/typeobj.rst:1440
+#: ../src/Doc/c-api/typeobj.rst:1441
 msgid ""
 "Return the number of memory segments which comprise the buffer.  If *lenp* "
 "is not *NULL*, the implementation must report the sum of the sizes (in "
@@ -13602,7 +13603,7 @@ msgid ""
 msgstr ""
 
 # c5bdd37aeb9d48cc9bee21477d2ae458
-#: ../src/Doc/c-api/typeobj.rst:1447
+#: ../src/Doc/c-api/typeobj.rst:1448
 msgid ""
 "Return the size of the segment *segment* that *ptrptr*  is set to.  "
 "``*ptrptr`` is set to the memory buffer. Returns ``-1`` on error."
