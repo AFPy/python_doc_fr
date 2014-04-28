@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-31 04:33\n"
+"POT-Creation-Date: 2014-04-28 04:07\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9514,11 +9514,12 @@ msgid ""
 "that were invented by one company or another and managed to catch on."
 msgstr ""
 
+# 0ea94b9291bd4774b3398829a5b7384a
 #: ../src/Doc/howto/unicode.rst:50
 msgid ""
 "255 characters aren't very many.  For example, you can't fit both the "
 "accented characters used in Western Europe and the Cyrillic alphabet used "
-"for Russian into the 128-255 range because there are more than 127 such "
+"for Russian into the 128-255 range because there are more than 128 such "
 "characters."
 msgstr ""
 
