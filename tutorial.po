@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-26 04:18\n"
+"POT-Creation-Date: 2014-06-02 04:19\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1578,7 +1578,7 @@ msgid "Examples::"
 msgstr "Exemples ::"
 
 #: ../src/Doc/tutorial/classes.rst:828 ../src/Doc/tutorial/controlflow.rst:674
-#: ../src/Doc/tutorial/datastructures.rst:758
+#: ../src/Doc/tutorial/datastructures.rst:759
 #: ../src/Doc/tutorial/interactive.rst:166
 #: ../src/Doc/tutorial/interpreter.rst:268 ../src/Doc/tutorial/modules.rst:554
 msgid "Footnotes"
@@ -2525,20 +2525,23 @@ msgstr ""
 msgid "Return the number of times *x* appears in the list."
 msgstr "Retourne le nombre d'éléments ayant la valeur *x* dans la liste."
 
+# 6dc59ed94c2c47c3962f20b08b0eaf50
 #: ../src/Doc/tutorial/datastructures.rst:74
-msgid "Sort the items of the list, in place."
-msgstr "Trie les éléments de la liste, en place."
+msgid ""
+"Sort the items of the list in place (the arguments can be used for sort "
+"customization, see :func:`sorted` for their explanation)."
+msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:80
+#: ../src/Doc/tutorial/datastructures.rst:81
 msgid "Reverse the elements of the list, in place."
 msgstr "Inverse l'ordre des éléments de la liste, en place."
 
-#: ../src/Doc/tutorial/datastructures.rst:82
+#: ../src/Doc/tutorial/datastructures.rst:83
 msgid "An example that uses most of the list methods::"
 msgstr "L'exemple suivant utilise la plupart des méthodes des listes ::"
 
 # 9cff5f781f524707b2580a69eb21e165
-#: ../src/Doc/tutorial/datastructures.rst:107
+#: ../src/Doc/tutorial/datastructures.rst:108
 msgid ""
 "You might have noticed that methods like ``insert``, ``remove`` or ``sort`` "
 "that only modify the list have no return value printed -- they return the "
@@ -2546,11 +2549,11 @@ msgid ""
 "structures in Python."
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:116
+#: ../src/Doc/tutorial/datastructures.rst:117
 msgid "Using Lists as Stacks"
 msgstr "Utiliser les listes comme des piles"
 
-#: ../src/Doc/tutorial/datastructures.rst:121
+#: ../src/Doc/tutorial/datastructures.rst:122
 msgid ""
 "The list methods make it very easy to use a list as a stack, where the last "
 "element added is the first element retrieved (\"last-in, first-out\").  To "
@@ -2565,11 +2568,11 @@ msgstr ""
 "l'objet au sommet de la pile, utilisez la méthode :meth:`pop`, sans "
 "indicateur de position. Par exemple ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:146
+#: ../src/Doc/tutorial/datastructures.rst:147
 msgid "Using Lists as Queues"
 msgstr "Utiliser les listes comme des files"
 
-#: ../src/Doc/tutorial/datastructures.rst:150
+#: ../src/Doc/tutorial/datastructures.rst:151
 msgid ""
 "It is also possible to use a list as a queue, where the first element added "
 "is the first element retrieved (\"first-in, first-out\"); however, lists are "
@@ -2585,7 +2588,7 @@ msgstr ""
 "début de liste sont lentes (car tous les autres éléments doivent être "
 "décalés d'une position)."
 
-#: ../src/Doc/tutorial/datastructures.rst:156
+#: ../src/Doc/tutorial/datastructures.rst:157
 msgid ""
 "To implement a queue, use :class:`collections.deque` which was designed to "
 "have fast appends and pops from both ends.  For example::"
@@ -2595,12 +2598,12 @@ msgstr ""
 "rapides aux deux extrémités. Par exemple ::"
 
 # f37a954339024319a4a38dcc87019274
-#: ../src/Doc/tutorial/datastructures.rst:174
+#: ../src/Doc/tutorial/datastructures.rst:175
 msgid "Functional Programming Tools"
 msgstr "Outils de programmation fonctionnelle"
 
 # 8ec920989c304fb3b1e7bc3ba16cc69d
-#: ../src/Doc/tutorial/datastructures.rst:176
+#: ../src/Doc/tutorial/datastructures.rst:177
 msgid ""
 "There are three built-in functions that are very useful when used with "
 "lists: :func:`filter`, :func:`map`, and :func:`reduce`."
@@ -2609,7 +2612,7 @@ msgstr ""
 "utilisées avec des listes : :func:`filter`, :func:`map` et :func:`reduce`."
 
 # bd57b7606e0443a0ab47c23c055f820e
-#: ../src/Doc/tutorial/datastructures.rst:179
+#: ../src/Doc/tutorial/datastructures.rst:180
 #, fuzzy
 msgid ""
 "``filter(function, sequence)`` returns a sequence consisting of those items "
@@ -2626,7 +2629,7 @@ msgstr ""
 "par 3 ::"
 
 # 5f5a7fc45a614c2891bf0573e3d5c5e9
-#: ../src/Doc/tutorial/datastructures.rst:190
+#: ../src/Doc/tutorial/datastructures.rst:191
 msgid ""
 "``map(function, sequence)`` calls ``function(item)`` for each of the "
 "sequence's items and returns a list of the return values.  For example, to "
@@ -2637,7 +2640,7 @@ msgstr ""
 "exemple, pour calculer des cubes ::"
 
 # c1de3d96a00b489784f899a7fc376b1f
-#: ../src/Doc/tutorial/datastructures.rst:199
+#: ../src/Doc/tutorial/datastructures.rst:200
 msgid ""
 "More than one sequence may be passed; the function must then have as many "
 "arguments as there are sequences and is called with the corresponding item "
@@ -2650,7 +2653,7 @@ msgstr ""
 "séquences sont plus courtes que d'autres)."
 
 # 8240028754784e7a84b5be66fa08f0ba
-#: ../src/Doc/tutorial/datastructures.rst:210
+#: ../src/Doc/tutorial/datastructures.rst:211
 msgid ""
 "``reduce(function, sequence)`` returns a single value constructed by calling "
 "the binary function *function* on the first two items of the sequence, then "
@@ -2663,7 +2666,7 @@ msgstr ""
 "ainsi de suite. Par exemple, pour calculer la somme des nombres de 1 à 10 ::"
 
 # cb31dca23a5d44aa970a94dab6c09da5
-#: ../src/Doc/tutorial/datastructures.rst:220
+#: ../src/Doc/tutorial/datastructures.rst:221
 msgid ""
 "If there's only one item in the sequence, its value is returned; if the "
 "sequence is empty, an exception is raised."
@@ -2672,7 +2675,7 @@ msgstr ""
 "la séquence est vide, une exception est levée."
 
 # 67aeb633f3264986a2f5c0fad841946c
-#: ../src/Doc/tutorial/datastructures.rst:223
+#: ../src/Doc/tutorial/datastructures.rst:224
 msgid ""
 "A third argument can be passed to indicate the starting value.  In this case "
 "the starting value is returned for an empty sequence, and the function is "
@@ -2686,7 +2689,7 @@ msgstr ""
 "l'élément suivant, et ainsi de suite. Par exemple ::"
 
 # 4c945638e9fd442d8f09748ac20cbc27
-#: ../src/Doc/tutorial/datastructures.rst:237
+#: ../src/Doc/tutorial/datastructures.rst:238
 msgid ""
 "Don't use this example's definition of :func:`sum`: since summing numbers is "
 "such a common need, a built-in function ``sum(sequence)`` is already "
@@ -2696,12 +2699,12 @@ msgstr ""
 "des sommes de nombres est un besoin tellement courant qu'il existe une "
 "fonction native ``sum(sequence)`` qui fait exactement la même chose."
 
-#: ../src/Doc/tutorial/datastructures.rst:244
+#: ../src/Doc/tutorial/datastructures.rst:245
 msgid "List Comprehensions"
 msgstr "Compréhensions de listes"
 
 # bacb848669ad4fa9abb4a3d77791f4c2
-#: ../src/Doc/tutorial/datastructures.rst:246
+#: ../src/Doc/tutorial/datastructures.rst:247
 msgid ""
 "List comprehensions provide a concise way to create lists. Common "
 "applications are to make new lists where each element is the result of some "
@@ -2715,18 +2718,18 @@ msgstr ""
 "éléments satisfaisant une condition spécifique."
 
 # 037f4e076d664f8389360ada349255eb
-#: ../src/Doc/tutorial/datastructures.rst:251
+#: ../src/Doc/tutorial/datastructures.rst:252
 msgid "For example, assume we want to create a list of squares, like::"
 msgstr ""
 "Par exemple, supposons que l'on veuille créer une liste de carrés, comme ::"
 
 # f1ecaf420bcc491cb856a1f05ad37538
-#: ../src/Doc/tutorial/datastructures.rst:260
+#: ../src/Doc/tutorial/datastructures.rst:261
 msgid "We can obtain the same result with::"
 msgstr "On peut obtenir le même résultat avec ::"
 
 # d14333f8fdc241f09c158e509605a7f3
-#: ../src/Doc/tutorial/datastructures.rst:264
+#: ../src/Doc/tutorial/datastructures.rst:265
 msgid ""
 "This is also equivalent to ``squares = map(lambda x: x**2, range(10))``, but "
 "it's more concise and readable."
@@ -2735,7 +2738,7 @@ msgstr ""
 "``, mais en plus concis et plus lisible."
 
 # 3467ea01b37a4111a1dc155df11cf9f1
-#: ../src/Doc/tutorial/datastructures.rst:267
+#: ../src/Doc/tutorial/datastructures.rst:268
 msgid ""
 "A list comprehension consists of brackets containing an expression followed "
 "by a :keyword:`for` clause, then zero or more :keyword:`for` or :keyword:"
@@ -2752,12 +2755,12 @@ msgstr ""
 "combine les éléments de deux listes s'ils ne sont pas égaux ::"
 
 # d67d99a05bc540d09311203640400abd
-#: ../src/Doc/tutorial/datastructures.rst:277
+#: ../src/Doc/tutorial/datastructures.rst:278
 msgid "and it's equivalent to:"
 msgstr "et c'est équivaent à ::"
 
 # c6f54fd8b04e497dbf2f03edaa0abc9e
-#: ../src/Doc/tutorial/datastructures.rst:288
+#: ../src/Doc/tutorial/datastructures.rst:289
 msgid ""
 "Note how the order of the :keyword:`for` and :keyword:`if` statements is the "
 "same in both these snippets."
@@ -2766,7 +2769,7 @@ msgstr ""
 "même dans ces différents extraits de code."
 
 # d653b9fb2b45432d9e5e67ee70fbecd9
-#: ../src/Doc/tutorial/datastructures.rst:291
+#: ../src/Doc/tutorial/datastructures.rst:292
 msgid ""
 "If the expression is a tuple (e.g. the ``(x, y)`` in the previous example), "
 "it must be parenthesized. ::"
@@ -2775,19 +2778,19 @@ msgstr ""
 "elle doit être entourée par des parenthèses ::"
 
 # 6519493b0333463c9e8d314fd4c1af4c
-#: ../src/Doc/tutorial/datastructures.rst:322
+#: ../src/Doc/tutorial/datastructures.rst:323
 msgid ""
 "List comprehensions can contain complex expressions and nested functions::"
 msgstr ""
 "Les compréhensions de listes peuvent contenir des expressions complexes et "
 "des fonctions imbriquées ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:330
+#: ../src/Doc/tutorial/datastructures.rst:331
 msgid "Nested List Comprehensions"
 msgstr "Compréhensions de listes imbriquées"
 
 # 362a977414e741d3b6464df3bf5c11ce
-#: ../src/Doc/tutorial/datastructures.rst:332
+#: ../src/Doc/tutorial/datastructures.rst:333
 msgid ""
 "The initial expression in a list comprehension can be any arbitrary "
 "expression, including another list comprehension."
@@ -2796,7 +2799,7 @@ msgstr ""
 "quelle expression, y compris une autre compréhension de liste."
 
 # a88f2fa3f41144bfbd62a2693612ceb1
-#: ../src/Doc/tutorial/datastructures.rst:335
+#: ../src/Doc/tutorial/datastructures.rst:336
 msgid ""
 "Consider the following example of a 3x4 matrix implemented as a list of 3 "
 "lists of length 4::"
@@ -2805,13 +2808,13 @@ msgstr ""
 "listes de 4 éléments ::"
 
 # badd753c026841c9a79115aa2de84eab
-#: ../src/Doc/tutorial/datastructures.rst:344
+#: ../src/Doc/tutorial/datastructures.rst:345
 msgid "The following list comprehension will transpose rows and columns::"
 msgstr ""
 "Cette compréhension de liste va transposer les lignes et les colonnes ::"
 
 # 5661198254ed47449d72c22038e9f2b9
-#: ../src/Doc/tutorial/datastructures.rst:349
+#: ../src/Doc/tutorial/datastructures.rst:350
 msgid ""
 "As we saw in the previous section, the nested listcomp is evaluated in the "
 "context of the :keyword:`for` that follows it, so this example is equivalent "
@@ -2822,12 +2825,12 @@ msgstr ""
 "la suit, donc cet exemple est équivalent à ::"
 
 # 294e46c6a9bf43abbb25bdbab77ecfac
-#: ../src/Doc/tutorial/datastructures.rst:360
+#: ../src/Doc/tutorial/datastructures.rst:361
 msgid "which, in turn, is the same as::"
 msgstr "lequel à son tour est équivalent à ::"
 
 # 6eb39f5c7cee4c69bcdce5003c9dc1d9
-#: ../src/Doc/tutorial/datastructures.rst:374
+#: ../src/Doc/tutorial/datastructures.rst:375
 msgid ""
 "In the real world, you should prefer built-in functions to complex flow "
 "statements. The :func:`zip` function would do a great job for this use case::"
@@ -2836,17 +2839,17 @@ msgstr ""
 "natives plutôt que des instructions de contrôle de flux complexes. La "
 "fonction :func:`zip` ferait dans ce cas un excellent travail ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:380
+#: ../src/Doc/tutorial/datastructures.rst:381
 msgid ""
 "See :ref:`tut-unpacking-arguments` for details on the asterisk in this line."
 msgstr ""
 "Voyez :ref:`tut-unpacking-arguments` pour plus de détails sur cette ligne."
 
-#: ../src/Doc/tutorial/datastructures.rst:385
+#: ../src/Doc/tutorial/datastructures.rst:386
 msgid "The :keyword:`del` statement"
 msgstr "L'instruction :keyword:`del`"
 
-#: ../src/Doc/tutorial/datastructures.rst:387
+#: ../src/Doc/tutorial/datastructures.rst:388
 msgid ""
 "There is a way to remove an item from a list given its index instead of its "
 "value: the :keyword:`del` statement.  This differs from the :meth:`pop` "
@@ -2861,12 +2864,12 @@ msgstr ""
 "ou la vider complètement (ce que nous avions fait auparavent en affectant "
 "une liste vide à la tranche). Par exemple ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:404
+#: ../src/Doc/tutorial/datastructures.rst:405
 msgid ":keyword:`del` can also be used to delete entire variables::"
 msgstr ""
 ":keyword:`del` peut aussi être utilisée pour supprimer des variables ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:408
+#: ../src/Doc/tutorial/datastructures.rst:409
 msgid ""
 "Referencing the name ``a`` hereafter is an error (at least until another "
 "value is assigned to it).  We'll find other uses for :keyword:`del` later."
@@ -2875,11 +2878,11 @@ msgstr ""
 "qu'une autre valeur lui soit affectée). Vous trouverez d'autres utilisations "
 "de la fonction :keyword:`del` plus tard."
 
-#: ../src/Doc/tutorial/datastructures.rst:415
+#: ../src/Doc/tutorial/datastructures.rst:416
 msgid "Tuples and Sequences"
 msgstr "Tuples et séquences"
 
-#: ../src/Doc/tutorial/datastructures.rst:417
+#: ../src/Doc/tutorial/datastructures.rst:418
 msgid ""
 "We saw that lists and strings have many common properties, such as indexing "
 "and slicing operations.  They are two examples of *sequence* data types "
@@ -2894,7 +2897,7 @@ msgstr ""
 "être ajoutés. Il existe également un autre type standard de séquence : le "
 "*tuple*."
 
-#: ../src/Doc/tutorial/datastructures.rst:423
+#: ../src/Doc/tutorial/datastructures.rst:424
 msgid ""
 "A tuple consists of a number of values separated by commas, for instance::"
 msgstr ""
@@ -2902,7 +2905,7 @@ msgstr ""
 "par exemple ::"
 
 # a5badcce7c75451982575cc784cb15da
-#: ../src/Doc/tutorial/datastructures.rst:445
+#: ../src/Doc/tutorial/datastructures.rst:446
 msgid ""
 "As you see, on output tuples are always enclosed in parentheses, so that "
 "nested tuples are interpreted correctly; they may be input with or without "
@@ -2920,7 +2923,7 @@ msgstr ""
 "tuples contenant des objets mutables, comme des listes."
 
 # b6c3a9f8bf504d2383860d62b9823a5a
-#: ../src/Doc/tutorial/datastructures.rst:452
+#: ../src/Doc/tutorial/datastructures.rst:453
 msgid ""
 "Though tuples may seem similar to lists, they are often used in different "
 "situations and for different purposes. Tuples are :term:`immutable`, and "
@@ -2938,7 +2941,7 @@ msgstr ""
 "namedtuple>`). Les listes sont souvent :term:`mutables`, et contiennent des "
 "éléments homogènes qui sont accédés par itération sur la liste."
 
-#: ../src/Doc/tutorial/datastructures.rst:460
+#: ../src/Doc/tutorial/datastructures.rst:461
 msgid ""
 "A special problem is the construction of tuples containing 0 or 1 items: the "
 "syntax has some extra quirks to accommodate these.  Empty tuples are "
@@ -2953,7 +2956,7 @@ msgstr ""
 "valeur par une virgule (il n'est pas suffisant de placer cette valeur entre "
 "parenthèses). Pas très joli, mais efficace. Par exemple ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:475
+#: ../src/Doc/tutorial/datastructures.rst:476
 msgid ""
 "The statement ``t = 12345, 54321, 'hello!'`` is an example of *tuple "
 "packing*: the values ``12345``, ``54321`` and ``'hello!'`` are packed "
@@ -2964,7 +2967,7 @@ msgstr ""
 "ensemble dans un tuple. L'opération inverse est aussi possible ::"
 
 # bee7de83217d467eba7a079c65b7ad5d
-#: ../src/Doc/tutorial/datastructures.rst:481
+#: ../src/Doc/tutorial/datastructures.rst:482
 msgid ""
 "This is called, appropriately enough, *sequence unpacking* and works for any "
 "sequence on the right-hand side.  Sequence unpacking requires the list of "
@@ -2979,11 +2982,11 @@ msgstr ""
 "est juste une combinaison entre un emballage de tuple et un déballage de "
 "séquence."
 
-#: ../src/Doc/tutorial/datastructures.rst:491
+#: ../src/Doc/tutorial/datastructures.rst:492
 msgid "Sets"
 msgstr "Les ensembles"
 
-#: ../src/Doc/tutorial/datastructures.rst:493
+#: ../src/Doc/tutorial/datastructures.rst:494
 msgid ""
 "Python also includes a data type for *sets*.  A set is an unordered "
 "collection with no duplicate elements.  Basic uses include membership "
@@ -2998,7 +3001,7 @@ msgstr ""
 "comme les unions, intersections, différences et différences symétriques."
 
 # da01767b1479416bba017b6990483d52
-#: ../src/Doc/tutorial/datastructures.rst:498
+#: ../src/Doc/tutorial/datastructures.rst:499
 msgid ""
 "Curly braces or the :func:`set` function can be used to create sets.  Note: "
 "to create an empty set you have to use ``set()``, not ``{}``; the latter "
@@ -3006,22 +3009,22 @@ msgid ""
 "section."
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:502
+#: ../src/Doc/tutorial/datastructures.rst:503
 msgid "Here is a brief demonstration::"
 msgstr "Voici une brève démonstration ::"
 
 # a95edf151888454c84702a1853e2ab22
-#: ../src/Doc/tutorial/datastructures.rst:528
+#: ../src/Doc/tutorial/datastructures.rst:529
 msgid ""
 "Similarly to :ref:`list comprehensions <tut-listcomps>`, set comprehensions "
 "are also supported::"
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:539
+#: ../src/Doc/tutorial/datastructures.rst:540
 msgid "Dictionaries"
 msgstr "Dictionnaires"
 
-#: ../src/Doc/tutorial/datastructures.rst:541
+#: ../src/Doc/tutorial/datastructures.rst:542
 msgid ""
 "Another useful data type built into Python is the *dictionary* (see :ref:"
 "`typesmapping`). Dictionaries are sometimes found in other languages as "
@@ -3048,7 +3051,7 @@ msgstr ""
 "affectations par position, par tranches ou via des méthodes comme :meth:"
 "`append` ou :meth:`extend`."
 
-#: ../src/Doc/tutorial/datastructures.rst:552
+#: ../src/Doc/tutorial/datastructures.rst:553
 msgid ""
 "It is best to think of a dictionary as an unordered set of *key: value* "
 "pairs, with the requirement that the keys are unique (within one "
@@ -3065,7 +3068,7 @@ msgstr ""
 "dictionnaire ; c'est également de cette façon que les dictionnaires sont "
 "affichés en sortie."
 
-#: ../src/Doc/tutorial/datastructures.rst:558
+#: ../src/Doc/tutorial/datastructures.rst:559
 msgid ""
 "The main operations on a dictionary are storing a value with some key and "
 "extracting the value given the key.  It is also possible to delete a key:"
@@ -3081,7 +3084,7 @@ msgstr ""
 "une valeur associée à une clé qui n'existe pas, une exception est levée."
 
 # a554aa7680394a23a6e1b29ad07b5253
-#: ../src/Doc/tutorial/datastructures.rst:564
+#: ../src/Doc/tutorial/datastructures.rst:565
 msgid ""
 "The :meth:`keys` method of a dictionary object returns a list of all the "
 "keys used in the dictionary, in arbitrary order (if you want it sorted, just "
@@ -3094,12 +3097,12 @@ msgstr ""
 "tester si une clé est dans le dictionnaire, utilisez le mot-clé :keyword:"
 "`in`."
 
-#: ../src/Doc/tutorial/datastructures.rst:569
+#: ../src/Doc/tutorial/datastructures.rst:570
 msgid "Here is a small example using a dictionary::"
 msgstr "Voici un petit exemple utilisant un dictionnaire ::"
 
 # da517bdab6f24e778cac08736d919390
-#: ../src/Doc/tutorial/datastructures.rst:586
+#: ../src/Doc/tutorial/datastructures.rst:587
 #, fuzzy
 msgid ""
 "The :func:`dict` constructor builds dictionaries directly from sequences of "
@@ -3111,13 +3114,13 @@ msgstr ""
 "fournir la liste des clés-valeurs sous une forme compacte ::"
 
 # 098a1063baa44926bfd63f941681c98f
-#: ../src/Doc/tutorial/datastructures.rst:592
+#: ../src/Doc/tutorial/datastructures.rst:593
 msgid ""
 "In addition, dict comprehensions can be used to create dictionaries from "
 "arbitrary key and value expressions::"
 msgstr ""
 
-#: ../src/Doc/tutorial/datastructures.rst:598
+#: ../src/Doc/tutorial/datastructures.rst:599
 msgid ""
 "When the keys are simple strings, it is sometimes easier to specify pairs "
 "using keyword arguments::"
@@ -3125,11 +3128,11 @@ msgstr ""
 "Lorsque les clés sont de simples chaînes de caractères, il est parfois plus "
 "facile de spécifier les paires en utilisant des paramètres nommés ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:608
+#: ../src/Doc/tutorial/datastructures.rst:609
 msgid "Looping Techniques"
 msgstr "Techniques de boucles"
 
-#: ../src/Doc/tutorial/datastructures.rst:610
+#: ../src/Doc/tutorial/datastructures.rst:611
 msgid ""
 "When looping through a sequence, the position index and corresponding value "
 "can be retrieved at the same time using the :func:`enumerate` function. ::"
@@ -3138,7 +3141,7 @@ msgstr ""
 "correspondante peuvent être récupérées en même temps en utilisant la "
 "fonction :func:`enumerate`."
 
-#: ../src/Doc/tutorial/datastructures.rst:620
+#: ../src/Doc/tutorial/datastructures.rst:621
 msgid ""
 "To loop over two or more sequences at the same time, the entries can be "
 "paired with the :func:`zip` function. ::"
@@ -3146,7 +3149,7 @@ msgstr ""
 "Pour faire des boucles sur deux séquences ou plus en même temps, les "
 "éléments peuvent être associés par la fonction :func:`zip` ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:632
+#: ../src/Doc/tutorial/datastructures.rst:633
 msgid ""
 "To loop over a sequence in reverse, first specify the sequence in a forward "
 "direction and then call the :func:`reversed` function. ::"
@@ -3155,7 +3158,7 @@ msgstr ""
 "séquence dans son ordre normal, puis appliquez la fonction :func:"
 "`reversed` ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:644
+#: ../src/Doc/tutorial/datastructures.rst:645
 msgid ""
 "To loop over a sequence in sorted order, use the :func:`sorted` function "
 "which returns a new sorted list while leaving the source unaltered. ::"
@@ -3164,7 +3167,7 @@ msgstr ""
 "`sorted`, qui renvoie une nouvelle liste triée sans altérer la source ::"
 
 # a1e578bf4b954f29a28fc5bb96bfe66a
-#: ../src/Doc/tutorial/datastructures.rst:656
+#: ../src/Doc/tutorial/datastructures.rst:657
 msgid ""
 "When looping through dictionaries, the key and corresponding value can be "
 "retrieved at the same time using the :meth:`iteritems` method. ::"
@@ -3174,7 +3177,7 @@ msgstr ""
 "`iteritems` ::"
 
 # ce8381976b434e66b7c5471cd5d43209
-#: ../src/Doc/tutorial/datastructures.rst:666
+#: ../src/Doc/tutorial/datastructures.rst:667
 msgid ""
 "To change a sequence you are iterating over while inside the loop (for "
 "example to duplicate certain items), it is recommended that you first make a "
@@ -3187,11 +3190,11 @@ msgstr ""
 "implicite lorsque vous faites une boucle sur une séquence. La notation par "
 "tranches rend cette opération particulièrement pratique ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:683
+#: ../src/Doc/tutorial/datastructures.rst:684
 msgid "More on Conditions"
 msgstr "Plus d'informations sur les conditions"
 
-#: ../src/Doc/tutorial/datastructures.rst:685
+#: ../src/Doc/tutorial/datastructures.rst:686
 msgid ""
 "The conditions used in ``while`` and ``if`` statements can contain any "
 "operators, not just comparisons."
@@ -3199,7 +3202,7 @@ msgstr ""
 "Les conditions utilisées dans une instruction ``while`` ou ``if`` peuvent "
 "contenir n'importe quel opérateur, pas seulement des comparaisons."
 
-#: ../src/Doc/tutorial/datastructures.rst:688
+#: ../src/Doc/tutorial/datastructures.rst:689
 msgid ""
 "The comparison operators ``in`` and ``not in`` check whether a value occurs "
 "(does not occur) in a sequence.  The operators ``is`` and ``is not`` compare "
@@ -3214,7 +3217,7 @@ msgstr ""
 "comparaison ont la même priorité, qui est plus faible que celle des "
 "opérateurs numériques."
 
-#: ../src/Doc/tutorial/datastructures.rst:694
+#: ../src/Doc/tutorial/datastructures.rst:695
 msgid ""
 "Comparisons can be chained.  For example, ``a < b == c`` tests whether ``a`` "
 "is less than ``b`` and moreover ``b`` equals ``c``."
@@ -3223,7 +3226,7 @@ msgstr ""
 "si ``a`` est inférieur ou égal à ``b`` et par ailleurs si ``b`` est égal à "
 "``c``."
 
-#: ../src/Doc/tutorial/datastructures.rst:697
+#: ../src/Doc/tutorial/datastructures.rst:698
 msgid ""
 "Comparisons may be combined using the Boolean operators ``and`` and ``or``, "
 "and the outcome of a comparison (or of any other Boolean expression) may be "
@@ -3241,7 +3244,7 @@ msgstr ""
 "Comme toujours, des parenthèses peuvent être utilisées pour exprimer "
 "l'instruction désirée."
 
-#: ../src/Doc/tutorial/datastructures.rst:704
+#: ../src/Doc/tutorial/datastructures.rst:705
 msgid ""
 "The Boolean operators ``and`` and ``or`` are so-called *short-circuit* "
 "operators: their arguments are evaluated from left to right, and evaluation "
@@ -3258,7 +3261,7 @@ msgstr ""
 "tant que booléen, la valeur de retour d'un opérateur en circuit court est "
 "celle du dernier argument évalué."
 
-#: ../src/Doc/tutorial/datastructures.rst:711
+#: ../src/Doc/tutorial/datastructures.rst:712
 msgid ""
 "It is possible to assign the result of a comparison or other Boolean "
 "expression to a variable.  For example, ::"
@@ -3266,7 +3269,7 @@ msgstr ""
 "Il est possible d'affecter le résultat d'une comparaison ou d'une autre "
 "expression booléenne à une variable. Par exemple ::"
 
-#: ../src/Doc/tutorial/datastructures.rst:719
+#: ../src/Doc/tutorial/datastructures.rst:720
 msgid ""
 "Note that in Python, unlike C, assignment cannot occur inside expressions. C "
 "programmers may grumble about this, but it avoids a common class of problems "
@@ -3279,12 +3282,12 @@ msgstr ""
 "en C, lorsque l'expression ``=`` est placée alors qu'une expression ``==`` "
 "était attendue."
 
-#: ../src/Doc/tutorial/datastructures.rst:728
+#: ../src/Doc/tutorial/datastructures.rst:729
 msgid "Comparing Sequences and Other Types"
 msgstr "Comparer des séquences avec d'autres types"
 
 # 41977cc17fef443ea5ee4eb2acbc42b4
-#: ../src/Doc/tutorial/datastructures.rst:730
+#: ../src/Doc/tutorial/datastructures.rst:731
 msgid ""
 "Sequence objects may be compared to other objects with the same sequence "
 "type. The comparison uses *lexicographical* ordering: first the first two "
@@ -3314,7 +3317,7 @@ msgstr ""
 "séquences de même type ::"
 
 # f6a8739089604c31b9a69729e466dbd3
-#: ../src/Doc/tutorial/datastructures.rst:750
+#: ../src/Doc/tutorial/datastructures.rst:751
 msgid ""
 "Note that comparing objects of different types is legal.  The outcome is "
 "deterministic but arbitrary: the types are ordered by their name. Thus, a "
@@ -3330,7 +3333,7 @@ msgstr ""
 "numérique, donc 0 est égal à 0.0, etc."
 
 # 9443e810e7df404caf028d0caea7657d
-#: ../src/Doc/tutorial/datastructures.rst:759
+#: ../src/Doc/tutorial/datastructures.rst:760
 msgid ""
 "The rules for comparing objects of different types should not be relied "
 "upon; they may change in a future version of the language."
@@ -7606,6 +7609,9 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
+
+#~ msgid "Sort the items of the list, in place."
+#~ msgstr "Trie les éléments de la liste, en place."
 
 #~ msgid ""
 #~ "(There are other variants of this, used when pickling many objects or "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-19 04:52\n"
+"POT-Creation-Date: 2014-06-02 04:19\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5044,8 +5044,21 @@ msgid ""
 "`expensive_func1` and :func:`expensive_func2` are never made."
 msgstr ""
 
-# 3257dacf4c96460da8c0925e42a393fa
+# a2728227de8e47dfa96337245382d9cc
 #: ../src/Doc/howto/logging.rst:999
+msgid ""
+"In some cases, :meth:`~Logger.isEnabledFor` can iself be more expensive than "
+"you'd like (e.g. for deeply nested loggers where an explicit level is only "
+"set high up in the logger hierarchy). In such cases (or if you want to avoid "
+"calling a method in tight loops), you can cache the result of a call to :"
+"meth:`~Logger.isEnabledFor` in a local or instance variable, and use that "
+"instead of calling the method each time. Such a cached value would only need "
+"to be recomputed when the logging configuration changes dynamically while "
+"the application is running (which is not all that common)."
+msgstr ""
+
+# 3257dacf4c96460da8c0925e42a393fa
+#: ../src/Doc/howto/logging.rst:1008
 msgid ""
 "There are other optimizations which can be made for specific applications "
 "which need more precise control over what logging information is collected. "
@@ -5054,47 +5067,50 @@ msgid ""
 msgstr ""
 
 # 6927c1ffb0bd42a9af7069601d10d897
-#: ../src/Doc/howto/logging.rst:1005
+#: ../src/Doc/howto/logging.rst:1014
 msgid "What you don't want to collect"
 msgstr ""
 
 # feb4503a01104538b685a43d6af1549c
-#: ../src/Doc/howto/logging.rst:1005
+#: ../src/Doc/howto/logging.rst:1014
 msgid "How to avoid collecting it"
 msgstr ""
 
 # 212afa8e03c14f918f496827a5b7fa41
-#: ../src/Doc/howto/logging.rst:1007
+#: ../src/Doc/howto/logging.rst:1016
 msgid "Information about where calls were made from."
 msgstr ""
 
-# 4f1aaefa77034f17ba80987812489c40
-#: ../src/Doc/howto/logging.rst:1007
-msgid "Set ``logging._srcfile`` to ``None``."
+# 11539a1b2315485da96c7f77ce7708bf
+#: ../src/Doc/howto/logging.rst:1016
+msgid ""
+"Set ``logging._srcfile`` to ``None``. This avoids calling :func:`sys."
+"_getframe`, which may help to speed up your code in environments like PyPy "
+"(which can't speed up code that uses :func:`sys._getframe`)."
 msgstr ""
 
 # 2bf0b3f20078478484040c88fb5e0c9f
-#: ../src/Doc/howto/logging.rst:1009
+#: ../src/Doc/howto/logging.rst:1023
 msgid "Threading information."
 msgstr ""
 
 # 38df13e6f6904874b224a52c41106e44
-#: ../src/Doc/howto/logging.rst:1009
+#: ../src/Doc/howto/logging.rst:1023
 msgid "Set ``logging.logThreads`` to ``0``."
 msgstr ""
 
 # 15383c565c3f4acf82a5bfcf68f6f05d
-#: ../src/Doc/howto/logging.rst:1011
+#: ../src/Doc/howto/logging.rst:1025
 msgid "Process information."
 msgstr ""
 
 # d35805b7261b4ca0a6b55f46f6786b9a
-#: ../src/Doc/howto/logging.rst:1011
+#: ../src/Doc/howto/logging.rst:1025
 msgid "Set ``logging.logProcesses`` to ``0``."
 msgstr ""
 
 # 9ade541d83cc4d3d9a90b84faefe671c
-#: ../src/Doc/howto/logging.rst:1014
+#: ../src/Doc/howto/logging.rst:1028
 msgid ""
 "Also note that the core logging module only includes the basic handlers. If "
 "you don't import :mod:`logging.handlers` and :mod:`logging.config`, they "
@@ -5102,37 +5118,37 @@ msgid ""
 msgstr ""
 
 # 8628ef1542db410698329976abb52ef5
-#: ../src/Doc/howto/logging.rst:1020
+#: ../src/Doc/howto/logging.rst:1034
 msgid "Module :mod:`logging`"
 msgstr ""
 
 # 4d9db3afbb294a39a785a00688797682
-#: ../src/Doc/howto/logging.rst:1021
+#: ../src/Doc/howto/logging.rst:1035
 msgid "API reference for the logging module."
 msgstr ""
 
 # fd51fd03eddd44749cf3bc8d5f114a72
-#: ../src/Doc/howto/logging.rst:1023
+#: ../src/Doc/howto/logging.rst:1037
 msgid "Module :mod:`logging.config`"
 msgstr ""
 
 # 306c129ce0424b7b971f4a2100cb3501
-#: ../src/Doc/howto/logging.rst:1024
+#: ../src/Doc/howto/logging.rst:1038
 msgid "Configuration API for the logging module."
 msgstr ""
 
 # f3590e6a19494f6d96ab1a5c60cebab7
-#: ../src/Doc/howto/logging.rst:1026
+#: ../src/Doc/howto/logging.rst:1040
 msgid "Module :mod:`logging.handlers`"
 msgstr ""
 
 # 5553cb8d8a3e4597ad14c7fcbb14c6e4
-#: ../src/Doc/howto/logging.rst:1027
+#: ../src/Doc/howto/logging.rst:1041
 msgid "Useful handlers included with the logging module."
 msgstr ""
 
 # b89c4135f79c4a45b7542b2c6387c19c
-#: ../src/Doc/howto/logging.rst:1029
+#: ../src/Doc/howto/logging.rst:1043
 msgid ":ref:`A logging cookbook <logging-cookbook>`"
 msgstr ""
 
