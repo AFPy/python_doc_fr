@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 06:15\n"
+"POT-Creation-Date: 2014-06-16 04:20\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3637,17 +3637,11 @@ msgstr ""
 msgid "then the corresponding setup script would be  ::"
 msgstr ""
 
-#: ../src/Doc/distutils/examples.rst:196
-msgid ""
-"(Again, the empty string in :option:`package_dir` stands for the current "
-"directory.)"
-msgstr ""
-
-#: ../src/Doc/distutils/examples.rst:203
+#: ../src/Doc/distutils/examples.rst:200
 msgid "Single extension module"
 msgstr ""
 
-#: ../src/Doc/distutils/examples.rst:205
+#: ../src/Doc/distutils/examples.rst:202
 msgid ""
 "Extension modules are specified using the :option:`ext_modules` option. :"
 "option:`package_dir` has no effect on where extension source files are "
@@ -3655,17 +3649,17 @@ msgid ""
 "case, a single extension module in a single C source file, is::"
 msgstr ""
 
-#: ../src/Doc/distutils/examples.rst:214
+#: ../src/Doc/distutils/examples.rst:211
 msgid ""
 "If the :mod:`foo` extension belongs in the root package, the setup script "
 "for this could be  ::"
 msgstr ""
 
-#: ../src/Doc/distutils/examples.rst:224
+#: ../src/Doc/distutils/examples.rst:221
 msgid "If the extension actually belongs in a package, say :mod:`foopkg`, then"
 msgstr ""
 
-#: ../src/Doc/distutils/examples.rst:226
+#: ../src/Doc/distutils/examples.rst:223
 msgid ""
 "With exactly the same source tree layout, this extension can be put in the :"
 "mod:`foopkg` package simply by changing the name of the extension::"

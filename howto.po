@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-02 04:19\n"
+"POT-Creation-Date: 2014-06-16 04:20\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11818,12 +11818,13 @@ msgid ""
 "which is a good starting point."
 msgstr ""
 
+# af4bd541aec84ab8be1a19f8b414c72a
 #: ../src/Doc/howto/webservers.rst:691
 msgid ""
 "The newest version of TurboGears, version 2.0, moves even further in "
 "direction of WSGI support and a component-based architecture.  TurboGears 2 "
 "is based on the WSGI stack of another popular component-based web framework, "
-"`Pylons <http://pylonshq.com/>`_."
+"`Pylons <http://www.pylonsproject.org/>`_."
 msgstr ""
 
 #: ../src/Doc/howto/webservers.rst:698
