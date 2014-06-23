@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 05:36\n"
+"POT-Creation-Date: 2014-06-23 04:23\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4052,10 +4052,11 @@ msgid ""
 "org/moin/PythonSpeed/PerformanceTips>`_."
 msgstr ""
 
+# 13d2e0a3cc5b49d3afa3db3b84eeeece
 #: ../src/Doc/faq/programming.rst:151
 msgid ""
 "Guido van Rossum has written up an anecdote related to optimization at "
-"http://www.python.org/doc/essays/list2str.html."
+"http://www.python.org/doc/essays/list2str."
 msgstr ""
 
 #: ../src/Doc/faq/programming.rst:154
