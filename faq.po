@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 06:10\n"
+"POT-Creation-Date: 2014-08-11 04:26\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6350,27 +6350,20 @@ msgstr ""
 msgid "__import__('x.y.z') returns <module 'x'>; how do I get z?"
 msgstr ""
 
+# e48fce842ecb4de4838850cae5fbd306
 #: ../src/Doc/faq/programming.rst:1928
-msgid "Try::"
-msgstr ""
-
-#: ../src/Doc/faq/programming.rst:1932
-msgid "For more realistic situations, you may have to do something like ::"
-msgstr ""
-
-#: ../src/Doc/faq/programming.rst:1938
 msgid ""
-"See :mod:`importlib` for a convenience function called :func:`~importlib."
-"import_module`."
+"Consider using the convenience function :func:`~importlib.import_module` "
+"from :mod:`importlib` instead::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1944
+#: ../src/Doc/faq/programming.rst:1935
 msgid ""
 "When I edit an imported module and reimport it, the changes don't show up.  "
 "Why does this happen?"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1946
+#: ../src/Doc/faq/programming.rst:1937
 msgid ""
 "For reasons of efficiency as well as consistency, Python only reads the "
 "module file on the first time a module is imported.  If it didn't, in a "
@@ -6379,13 +6372,13 @@ msgid ""
 "rereading of a changed module, do this::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1955
+#: ../src/Doc/faq/programming.rst:1946
 msgid ""
 "Warning: this technique is not 100% fool-proof.  In particular, modules "
 "containing statements like ::"
 msgstr ""
 
-#: ../src/Doc/faq/programming.rst:1960
+#: ../src/Doc/faq/programming.rst:1951
 msgid ""
 "will continue to work with the old version of the imported objects.  If the "
 "module contains class definitions, existing class instances will *not* be "
@@ -6394,7 +6387,7 @@ msgid ""
 msgstr ""
 
 # 702dbe1732aa493f8a0b6bb56cb2522c
-#: ../src/Doc/faq/programming.rst:1972
+#: ../src/Doc/faq/programming.rst:1963
 msgid ""
 "The nature of the problem is made clear if you print out the class objects:"
 msgstr ""
