@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-07 06:10\n"
+"POT-Creation-Date: 2014-09-08 05:04\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1507,11 +1507,13 @@ msgstr ""
 
 # 3b3fcc0b4bdf44b59d3a21fe85f65bae
 #: ../src/Doc/tutorial/classes.rst:789
+#, fuzzy
 msgid ""
 "Having seen the mechanics behind the iterator protocol, it is easy to add "
 "iterator behavior to your classes.  Define an :meth:`__iter__` method which "
-"returns an object with a :meth:`next` method.  If the class defines :meth:"
-"`next`, then :meth:`__iter__` can just return ``self``::"
+"returns an object with a :meth:`~iterator.next` method.  If the class "
+"defines :meth:`~iterator.next`, then :meth:`__iter__` can just return "
+"``self``::"
 msgstr ""
 "Une fois compris les mécanismes de gestion des itérateurs, il est simple "
 "d'ajouter ce comportement à vos classes. Définissez une méthode :meth:"
@@ -1525,12 +1527,13 @@ msgstr "Générateurs"
 
 # b93a03d2e68d4a60aa58eb2165d2ff9d
 #: ../src/Doc/tutorial/classes.rst:826
+#, fuzzy
 msgid ""
 ":term:`Generator`\\s are a simple and powerful tool for creating iterators.  "
 "They are written like regular functions but use the :keyword:`yield` "
-"statement whenever they want to return data.  Each time :meth:`next` is "
-"called, the generator resumes where it left-off (it remembers all the data "
-"values and which statement was last executed).  An example shows that "
+"statement whenever they want to return data.  Each time :func:`next` is "
+"called on it, the generator resumes where it left-off (it remembers all the "
+"data values and which statement was last executed).  An example shows that "
 "generators can be trivially easy to create::"
 msgstr ""
 "Les :term:`Générateurs` sont des outils simples et puissants pour créer des "
@@ -1543,11 +1546,12 @@ msgstr ""
 
 # 3d70dcf3a7024e698039ee6bdaf21102
 #: ../src/Doc/tutorial/classes.rst:847
+#, fuzzy
 msgid ""
 "Anything that can be done with generators can also be done with class based "
 "iterators as described in the previous section.  What makes generators so "
-"compact is that the :meth:`__iter__` and :meth:`next` methods are created "
-"automatically."
+"compact is that the :meth:`__iter__` and :meth:`~generator.next` methods are "
+"created automatically."
 msgstr ""
 "Tout ce qui peut être fait avec des générateurs peut également être fait "
 "avec des itérateurs basés sur des classes, comme décrit dans le paragraphe "
