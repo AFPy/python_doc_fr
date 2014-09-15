@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-08 05:04\n"
+"POT-Creation-Date: 2014-09-15 04:13\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2295,68 +2295,15 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/faq/general.rst:381
-msgid "Is Python Y2K (Year 2000) Compliant?"
-msgstr ""
-
-#: ../src/Doc/faq/general.rst:385
-msgid ""
-"As of August, 2003 no major problems have been reported and Y2K compliance "
-"seems to be a non-issue."
-msgstr ""
-
-#: ../src/Doc/faq/general.rst:388
-msgid ""
-"Python does very few date calculations and for those it does perform relies "
-"on the C library functions.  Python generally represents times either as "
-"seconds since 1970 or as a ``(year, month, day, ...)`` tuple where the year "
-"is expressed with four digits, which makes Y2K bugs unlikely.  So as long as "
-"your C library is okay, Python should be okay.  Of course, it's possible "
-"that a particular application written in Python makes assumptions about 2-"
-"digit years."
-msgstr ""
-
-#: ../src/Doc/faq/general.rst:395
-msgid ""
-"Because Python is available free of charge, there are no absolute "
-"guarantees. If there *are* unforeseen problems, liability is the user's "
-"problem rather than the developers', and there is nobody you can sue for "
-"damages.  The Python copyright notice contains the following disclaimer:"
-msgstr ""
-
-#: ../src/Doc/faq/general.rst:400
-msgid ""
-"4. PSF is making Python 2.3 available to Licensee on an \"AS IS\" basis.  "
-"PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF "
-"EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION "
-"OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT "
-"THE USE OF PYTHON 2.3 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS."
-msgstr ""
-
-#: ../src/Doc/faq/general.rst:407
-msgid ""
-"5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 2.3 FOR "
-"ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF "
-"MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 2.3, OR ANY DERIVATIVE "
-"THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF."
-msgstr ""
-
-#: ../src/Doc/faq/general.rst:412
-msgid ""
-"The good news is that *if* you encounter a problem, you have full source "
-"available to track it down and fix it.  This is one advantage of an open "
-"source programming environment."
-msgstr ""
-
-#: ../src/Doc/faq/general.rst:418
 msgid "Is Python a good language for beginning programmers?"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:420 ../src/Doc/faq/library.rst:764
+#: ../src/Doc/faq/general.rst:383 ../src/Doc/faq/library.rst:764
 #: ../src/Doc/faq/programming.rst:17 ../src/Doc/faq/programming.rst:60
 msgid "Yes."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:422
+#: ../src/Doc/faq/general.rst:385
 msgid ""
 "It is still common to start students with a procedural and statically typed "
 "language such as Pascal, C, or a subset of C++ or Java.  Students may be "
@@ -2369,7 +2316,7 @@ msgid ""
 "with user-defined objects in their very first course."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:432
+#: ../src/Doc/faq/general.rst:395
 msgid ""
 "For a student who has never programmed before, using a statically typed "
 "language seems unnatural.  It presents additional complexity that the "
@@ -2381,7 +2328,7 @@ msgid ""
 "course."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:440
+#: ../src/Doc/faq/general.rst:403
 msgid ""
 "Many other aspects of Python make it a good first language.  Like Java, "
 "Python has a large standard library so that students can be assigned "
@@ -2394,7 +2341,7 @@ msgid ""
 "helpful in extending the students' reach."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:449
+#: ../src/Doc/faq/general.rst:412
 msgid ""
 "Python's interactive interpreter enables students to test language features "
 "while they're programming.  They can keep a window with the interpreter "
@@ -2402,14 +2349,14 @@ msgid ""
 "can't remember the methods for a list, they can do something like this::"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:467
+#: ../src/Doc/faq/general.rst:430
 msgid ""
 "With the interpreter, documentation is never far from the student as he's "
 "programming."
 msgstr ""
 
 # f94af7923ed745f58ebf8abde3518df3
-#: ../src/Doc/faq/general.rst:470
+#: ../src/Doc/faq/general.rst:433
 msgid ""
 "There are also good IDEs for Python.  IDLE is a cross-platform IDE for "
 "Python that is written in Python using Tkinter.  PythonWin is a Windows-"
@@ -2420,22 +2367,22 @@ msgid ""
 "PythonEditors>`_ for a full list of Python editing environments."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:478
+#: ../src/Doc/faq/general.rst:441
 msgid ""
 "If you want to discuss Python's use in education, you may be interested in "
 "joining `the edu-sig mailing list <http://python.org/community/sigs/current/"
 "edu-sig>`_."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:484
+#: ../src/Doc/faq/general.rst:447
 msgid "Upgrading Python"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:487
+#: ../src/Doc/faq/general.rst:450
 msgid "What is this bsddb185 module my application keeps complaining about?"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:491
+#: ../src/Doc/faq/general.rst:454
 msgid ""
 "Starting with Python2.3, the distribution includes the `PyBSDDB package "
 "<http://pybsddb.sf.net/>` as a replacement for the old bsddb module.  It "
@@ -2445,7 +2392,7 @@ msgid ""
 "be opened directly using the new module."
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:498
+#: ../src/Doc/faq/general.rst:461
 msgid ""
 "Using your old version of Python and a pair of scripts which are part of "
 "Python 2.3 (db2pickle.py and pickle2db.py, in the Tools/scripts directory) "
@@ -2453,15 +2400,15 @@ msgid ""
 "Python version, run the db2pickle.py script to convert it to a pickle, e.g.::"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:505
+#: ../src/Doc/faq/general.rst:468
 msgid "Rename your database file::"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:509
+#: ../src/Doc/faq/general.rst:472
 msgid "Now convert the pickle file to a new format database::"
 msgstr ""
 
-#: ../src/Doc/faq/general.rst:513
+#: ../src/Doc/faq/general.rst:476
 msgid ""
 "The precise commands you use will vary depending on the particulars of your "
 "installation.  For full details about operation of these two scripts check "
