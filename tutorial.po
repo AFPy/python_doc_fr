@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-08 05:04\n"
+"POT-Creation-Date: 2014-09-22 04:34\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,186 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.7.0\n"
+
+# 3056ef50444249728d9f473af9927a6b
+#: ../src/Doc/tutorial/appendix.rst:5
+msgid "Appendix"
+msgstr ""
+
+#: ../src/Doc/tutorial/appendix.rst:11 ../src/Doc/tutorial/interpreter.rst:87
+msgid "Interactive Mode"
+msgstr "Mode interactif"
+
+#: ../src/Doc/tutorial/appendix.rst:16
+msgid "Error Handling"
+msgstr "Gestion des erreurs"
+
+#: ../src/Doc/tutorial/appendix.rst:18
+msgid ""
+"When an error occurs, the interpreter prints an error message and a stack "
+"trace. In interactive mode, it then returns to the primary prompt; when "
+"input came from a file, it exits with a nonzero exit status after printing "
+"the stack trace. (Exceptions handled by an :keyword:`except` clause in a :"
+"keyword:`try` statement are not errors in this context.)  Some errors are "
+"unconditionally fatal and cause an exit with a nonzero exit; this applies to "
+"internal inconsistencies and some cases of running out of memory.  All error "
+"messages are written to the standard error stream; normal output from "
+"executed commands is written to standard output."
+msgstr ""
+"Quand une erreur se produit, l'interpréteur affiche un message d'erreur et "
+"le suivit de la pile. En mode interactif, il revient à l'invite de commande "
+"primaire; si l'entrée provient d'un fichier, l'interpréteur se termine avec "
+"un état de sortie non nul après avoir affiché le suivit de la pile. (Les "
+"exceptions gérées par une clause :keyword:`except` dans une instruction :"
+"keyword:`try` ne sont pas des erreurs dans ce contexte.) Certaines erreurs "
+"sont inconditionnellement fatales et cause une sortie avec un état non nul; "
+"les incohérences internes et, dans certains cas, les pénuries de mémoires, "
+"sont traitées de la sorte. Tous les messages d'erreur sont écrits sur la "
+"sortie d'erreur standard; les sorties normales issues des commandes "
+"exécutées sont écrites sur la sortie standard."
+
+#: ../src/Doc/tutorial/appendix.rst:28
+msgid ""
+"Typing the interrupt character (usually Control-C or DEL) to the primary or "
+"secondary prompt cancels the input and returns to the primary prompt. [#]_ "
+"Typing an interrupt while a command is executing raises the :exc:"
+"`KeyboardInterrupt` exception, which may be handled by a :keyword:`try` "
+"statement."
+msgstr ""
+"Taper le caractère d'interruption (généralement :kbd:`Ctrl+C` ou :kbd:"
+"`Supprimer`) au niveau de l'invite de commande primaire annule l'entrée et "
+"revient à l'invite. [#]_ Saisir une interruption tandis qu'une commande "
+"s'exécute lève une exception :exc:`KeyboardInterrupt` qui peut être gérée "
+"par une instruction :keyword:`try`."
+
+#: ../src/Doc/tutorial/appendix.rst:38
+msgid "Executable Python Scripts"
+msgstr "Scripts Python exécutables"
+
+#: ../src/Doc/tutorial/appendix.rst:40
+msgid ""
+"On BSD'ish Unix systems, Python scripts can be made directly executable, "
+"like shell scripts, by putting the line ::"
+msgstr ""
+"Sur les systèmes Unix, un script Python peut être rendu directement "
+"exécutable comme un script shell en ajoutant la ligne ::"
+
+#: ../src/Doc/tutorial/appendix.rst:45
+msgid ""
+"(assuming that the interpreter is on the user's :envvar:`PATH`) at the "
+"beginning of the script and giving the file an executable mode.  The ``#!`` "
+"must be the first two characters of the file.  On some platforms, this first "
+"line must end with a Unix-style line ending (``'\\n'``), not a Windows "
+"(``'\\r\\n'``) line ending.  Note that the hash, or pound, character, "
+"``'#'``, is used to start a comment in Python."
+msgstr ""
+"(en supposant que l'interpréteur est dans le :envvar:`PATH` de "
+"l'utilisateur) au début du script et en rendant le fichier exécutable. ``#!"
+"`` doivent être les deux premiers caractères du fichier. Sur certaines "
+"plateformes, cette première ligne doit finir avec une fin de ligne de type "
+"Unix (``'\\n'``) et pas de type Windows (``'\\r\\n'``). Notez que le "
+"caractère dièse, ``'#'``, est utilisé pour initier un commentaire en Python."
+
+#: ../src/Doc/tutorial/appendix.rst:52
+#, fuzzy
+msgid ""
+"The script can be given an executable mode, or permission, using the :"
+"program:`chmod` command."
+msgstr ""
+"Un script peut être rendu utilisable en utilisant la commande `chmod` ::"
+
+#: ../src/Doc/tutorial/appendix.rst:59
+msgid ""
+"On Windows systems, there is no notion of an \"executable mode\".  The "
+"Python installer automatically associates ``.py`` files with ``python.exe`` "
+"so that a double-click on a Python file will run it as a script.  The "
+"extension can also be ``.pyw``, in that case, the console window that "
+"normally appears is suppressed."
+msgstr ""
+"Sur les système windows il n'y a pas de \"mode executable\". L'installateur "
+"Python associe automatiquement les fichier en ``.py`` avec ``python.exe`` de "
+"telle sorte qu'un double clic sur un fichier Python le lance comme un "
+"script. L'extension peut aussi être ``.pyw``, dans ce cas, la console "
+"n'apparait pas."
+
+#: ../src/Doc/tutorial/appendix.rst:69
+msgid "The Interactive Startup File"
+msgstr ""
+
+#: ../src/Doc/tutorial/appendix.rst:71
+msgid ""
+"When you use Python interactively, it is frequently handy to have some "
+"standard commands executed every time the interpreter is started.  You can "
+"do this by setting an environment variable named :envvar:`PYTHONSTARTUP` to "
+"the name of a file containing your start-up commands.  This is similar to "
+"the :file:`.profile` feature of the Unix shells."
+msgstr ""
+
+#: ../src/Doc/tutorial/appendix.rst:77
+msgid ""
+"This file is only read in interactive sessions, not when Python reads "
+"commands from a script, and not when :file:`/dev/tty` is given as the "
+"explicit source of commands (which otherwise behaves like an interactive "
+"session).  It is executed in the same namespace where interactive commands "
+"are executed, so that objects that it defines or imports can be used without "
+"qualification in the interactive session. You can also change the prompts "
+"``sys.ps1`` and ``sys.ps2`` in this file."
+msgstr ""
+
+# 15ff626517a34a5aaf58d2f6f7b8b373
+#: ../src/Doc/tutorial/appendix.rst:85
+msgid ""
+"If you want to read an additional start-up file from the current directory, "
+"you can program this in the global start-up file using code like ``if os."
+"path.isfile('.pythonrc.py'): exec(open('.pythonrc.py').read())``. If you "
+"want to use the startup file in a script, you must do this explicitly in the "
+"script::"
+msgstr ""
+
+# d6945345e3fe4669981e2966a757ef2f
+#: ../src/Doc/tutorial/appendix.rst:102
+msgid "The Customization Modules"
+msgstr ""
+
+# 5758a6756cb943b0aabe08600151d751
+#: ../src/Doc/tutorial/appendix.rst:104
+msgid ""
+"Python provides two hooks to let you customize it: :mod:`sitecustomize` and :"
+"mod:`usercustomize`.  To see how it works, you need first to find the "
+"location of your user site-packages directory.  Start Python and run this "
+"code::"
+msgstr ""
+
+# 07d2ef1091ac4086815e9ea6e57edd26
+#: ../src/Doc/tutorial/appendix.rst:112
+msgid ""
+"Now you can create a file named :file:`usercustomize.py` in that directory "
+"and put anything you want in it.  It will affect every invocation of Python, "
+"unless it is started with the :option:`-s` option to disable the automatic "
+"import."
+msgstr ""
+
+# 83a462362bb84a31bd2553bd13c41e2e
+#: ../src/Doc/tutorial/appendix.rst:116
+msgid ""
+":mod:`sitecustomize` works in the same way, but is typically created by an "
+"administrator of the computer in the global site-packages directory, and is "
+"imported before :mod:`usercustomize`.  See the documentation of the :mod:"
+"`site` module for more details."
+msgstr ""
+
+#: ../src/Doc/tutorial/appendix.rst:123 ../src/Doc/tutorial/classes.rst:899
+#: ../src/Doc/tutorial/controlflow.rst:674
+#: ../src/Doc/tutorial/datastructures.rst:759
+#: ../src/Doc/tutorial/interactive.rst:166
+#: ../src/Doc/tutorial/introduction.rst:630
+#: ../src/Doc/tutorial/modules.rst:554
+msgid "Footnotes"
+msgstr "Notes"
+
+#: ../src/Doc/tutorial/appendix.rst:124
+msgid "A problem with the GNU Readline package may prevent this."
+msgstr ""
 
 #: ../src/Doc/tutorial/appetite.rst:5
 msgid "Whetting Your Appetite"
@@ -1608,15 +1788,6 @@ msgstr ""
 #: ../src/Doc/tutorial/classes.rst:875
 msgid "Examples::"
 msgstr "Exemples ::"
-
-#: ../src/Doc/tutorial/classes.rst:899 ../src/Doc/tutorial/controlflow.rst:674
-#: ../src/Doc/tutorial/datastructures.rst:759
-#: ../src/Doc/tutorial/interactive.rst:166
-#: ../src/Doc/tutorial/interpreter.rst:268
-#: ../src/Doc/tutorial/introduction.rst:630
-#: ../src/Doc/tutorial/modules.rst:554
-msgid "Footnotes"
-msgstr "Notes"
 
 #: ../src/Doc/tutorial/classes.rst:900
 msgid ""
@@ -5369,10 +5540,6 @@ msgstr ""
 "comme options de l'interpréteur Python mais laissées dans ``sys.argv`` pour "
 "être utilisée par le module ou la commande."
 
-#: ../src/Doc/tutorial/interpreter.rst:87
-msgid "Interactive Mode"
-msgstr "Mode interactif"
-
 #: ../src/Doc/tutorial/interpreter.rst:89
 msgid ""
 "When commands are read from a tty, the interpreter is said to be in "
@@ -5399,107 +5566,21 @@ msgstr ""
 "Les lignes de continuation sont nécessaires pour entrer une construction "
 "multi-lignes. Par exemple, regardez cette instruction :keyword:`if` ::"
 
-#: ../src/Doc/tutorial/interpreter.rst:114
+# 1d814a4f499e49cd906e688ac4990345
+#: ../src/Doc/tutorial/interpreter.rst:111
+msgid "For more on interactive mode, see :ref:`tut-interac`."
+msgstr ""
+
+#: ../src/Doc/tutorial/interpreter.rst:117
 msgid "The Interpreter and Its Environment"
 msgstr "L'interpréteur et son environnement"
 
-#: ../src/Doc/tutorial/interpreter.rst:120
-msgid "Error Handling"
-msgstr "Gestion des erreurs"
-
-#: ../src/Doc/tutorial/interpreter.rst:122
-msgid ""
-"When an error occurs, the interpreter prints an error message and a stack "
-"trace. In interactive mode, it then returns to the primary prompt; when "
-"input came from a file, it exits with a nonzero exit status after printing "
-"the stack trace. (Exceptions handled by an :keyword:`except` clause in a :"
-"keyword:`try` statement are not errors in this context.)  Some errors are "
-"unconditionally fatal and cause an exit with a nonzero exit; this applies to "
-"internal inconsistencies and some cases of running out of memory.  All error "
-"messages are written to the standard error stream; normal output from "
-"executed commands is written to standard output."
-msgstr ""
-"Quand une erreur se produit, l'interpréteur affiche un message d'erreur et "
-"le suivit de la pile. En mode interactif, il revient à l'invite de commande "
-"primaire; si l'entrée provient d'un fichier, l'interpréteur se termine avec "
-"un état de sortie non nul après avoir affiché le suivit de la pile. (Les "
-"exceptions gérées par une clause :keyword:`except` dans une instruction :"
-"keyword:`try` ne sont pas des erreurs dans ce contexte.) Certaines erreurs "
-"sont inconditionnellement fatales et cause une sortie avec un état non nul; "
-"les incohérences internes et, dans certains cas, les pénuries de mémoires, "
-"sont traitées de la sorte. Tous les messages d'erreur sont écrits sur la "
-"sortie d'erreur standard; les sorties normales issues des commandes "
-"exécutées sont écrites sur la sortie standard."
-
-#: ../src/Doc/tutorial/interpreter.rst:132
-msgid ""
-"Typing the interrupt character (usually Control-C or DEL) to the primary or "
-"secondary prompt cancels the input and returns to the primary prompt. [#]_ "
-"Typing an interrupt while a command is executing raises the :exc:"
-"`KeyboardInterrupt` exception, which may be handled by a :keyword:`try` "
-"statement."
-msgstr ""
-"Taper le caractère d'interruption (généralement :kbd:`Ctrl+C` ou :kbd:"
-"`Supprimer`) au niveau de l'invite de commande primaire annule l'entrée et "
-"revient à l'invite. [#]_ Saisir une interruption tandis qu'une commande "
-"s'exécute lève une exception :exc:`KeyboardInterrupt` qui peut être gérée "
-"par une instruction :keyword:`try`."
-
-#: ../src/Doc/tutorial/interpreter.rst:142
-msgid "Executable Python Scripts"
-msgstr "Scripts Python exécutables"
-
-#: ../src/Doc/tutorial/interpreter.rst:144
-msgid ""
-"On BSD'ish Unix systems, Python scripts can be made directly executable, "
-"like shell scripts, by putting the line ::"
-msgstr ""
-"Sur les systèmes Unix, un script Python peut être rendu directement "
-"exécutable comme un script shell en ajoutant la ligne ::"
-
-#: ../src/Doc/tutorial/interpreter.rst:149
-msgid ""
-"(assuming that the interpreter is on the user's :envvar:`PATH`) at the "
-"beginning of the script and giving the file an executable mode.  The ``#!`` "
-"must be the first two characters of the file.  On some platforms, this first "
-"line must end with a Unix-style line ending (``'\\n'``), not a Windows "
-"(``'\\r\\n'``) line ending.  Note that the hash, or pound, character, "
-"``'#'``, is used to start a comment in Python."
-msgstr ""
-"(en supposant que l'interpréteur est dans le :envvar:`PATH` de "
-"l'utilisateur) au début du script et en rendant le fichier exécutable. ``#!"
-"`` doivent être les deux premiers caractères du fichier. Sur certaines "
-"plateformes, cette première ligne doit finir avec une fin de ligne de type "
-"Unix (``'\\n'``) et pas de type Windows (``'\\r\\n'``). Notez que le "
-"caractère dièse, ``'#'``, est utilisé pour initier un commentaire en Python."
-
-#: ../src/Doc/tutorial/interpreter.rst:156
-msgid ""
-"The script can be given an executable mode, or permission, using the :"
-"program:`chmod` command::"
-msgstr ""
-"Un script peut être rendu utilisable en utilisant la commande `chmod` ::"
-
-#: ../src/Doc/tutorial/interpreter.rst:161
-msgid ""
-"On Windows systems, there is no notion of an \"executable mode\".  The "
-"Python installer automatically associates ``.py`` files with ``python.exe`` "
-"so that a double-click on a Python file will run it as a script.  The "
-"extension can also be ``.pyw``, in that case, the console window that "
-"normally appears is suppressed."
-msgstr ""
-"Sur les système windows il n'y a pas de \"mode executable\". L'installateur "
-"Python associe automatiquement les fichier en ``.py`` avec ``python.exe`` de "
-"telle sorte qu'un double clic sur un fichier Python le lance comme un "
-"script. L'extension peut aussi être ``.pyw``, dans ce cas, la console "
-"n'apparait pas."
-
-#: ../src/Doc/tutorial/interpreter.rst:171
+#: ../src/Doc/tutorial/interpreter.rst:123
 msgid "Source Code Encoding"
 msgstr "Encodage du code source"
 
 # 5b068a5d06ac42b8bf82ceb101a1e483
-#: ../src/Doc/tutorial/interpreter.rst:173
+#: ../src/Doc/tutorial/interpreter.rst:125
 msgid ""
 "It is possible to use encodings different than ASCII in Python source files. "
 "The best way to do it is to put one more special comment line right after "
@@ -5511,7 +5592,7 @@ msgstr ""
 "fichier source::"
 
 # 168d80cdf66a411d9af2e4d90f8b5fdf
-#: ../src/Doc/tutorial/interpreter.rst:180
+#: ../src/Doc/tutorial/interpreter.rst:132
 msgid ""
 "With that declaration, all characters in the source file will be treated as "
 "having the encoding *encoding*, and it will be possible to directly write "
@@ -5526,7 +5607,7 @@ msgstr ""
 "bibliothèque Python dans la partie à propos de :mod:`codecs`."
 
 # 136855779690415a8c5aac7ceb545218
-#: ../src/Doc/tutorial/interpreter.rst:186
+#: ../src/Doc/tutorial/interpreter.rst:138
 #, fuzzy
 msgid ""
 "For example, to write Unicode literals including the Euro currency symbol, "
@@ -5541,7 +5622,7 @@ msgstr ""
 "code Unicode correspondant au symbole Euro) et se termine ::"
 
 # f6dd13cd8acb47b1b663b044df22ddf5
-#: ../src/Doc/tutorial/interpreter.rst:196
+#: ../src/Doc/tutorial/interpreter.rst:148
 msgid ""
 "If your editor supports saving files as ``UTF-8`` with a UTF-8 *byte order "
 "mark* (aka BOM), you can use that instead of an encoding declaration. IDLE "
@@ -5552,7 +5633,7 @@ msgid ""
 msgstr ""
 
 # 54d62eeac9bc4555818501cd2d0d843d
-#: ../src/Doc/tutorial/interpreter.rst:203
+#: ../src/Doc/tutorial/interpreter.rst:155
 msgid ""
 "By using UTF-8 (either through the signature or an encoding declaration), "
 "characters of most languages in the world can be used simultaneously in "
@@ -5560,75 +5641,6 @@ msgid ""
 "not supported. To display all these characters properly, your editor must "
 "recognize that the file is UTF-8, and it must use a font that supports all "
 "the characters in the file."
-msgstr ""
-
-#: ../src/Doc/tutorial/interpreter.rst:214
-msgid "The Interactive Startup File"
-msgstr ""
-
-#: ../src/Doc/tutorial/interpreter.rst:216
-msgid ""
-"When you use Python interactively, it is frequently handy to have some "
-"standard commands executed every time the interpreter is started.  You can "
-"do this by setting an environment variable named :envvar:`PYTHONSTARTUP` to "
-"the name of a file containing your start-up commands.  This is similar to "
-"the :file:`.profile` feature of the Unix shells."
-msgstr ""
-
-#: ../src/Doc/tutorial/interpreter.rst:225
-msgid ""
-"This file is only read in interactive sessions, not when Python reads "
-"commands from a script, and not when :file:`/dev/tty` is given as the "
-"explicit source of commands (which otherwise behaves like an interactive "
-"session).  It is executed in the same namespace where interactive commands "
-"are executed, so that objects that it defines or imports can be used without "
-"qualification in the interactive session. You can also change the prompts "
-"``sys.ps1`` and ``sys.ps2`` in this file."
-msgstr ""
-
-# 4995ff5bd0b54d7e9c48f735d36b160a
-#: ../src/Doc/tutorial/interpreter.rst:233
-msgid ""
-"If you want to read an additional start-up file from the current directory, "
-"you can program this in the global start-up file using code like ``if os."
-"path.isfile('.pythonrc.py'): execfile('.pythonrc.py')``.  If you want to use "
-"the startup file in a script, you must do this explicitly in the script::"
-msgstr ""
-
-# d6945345e3fe4669981e2966a757ef2f
-#: ../src/Doc/tutorial/interpreter.rst:247
-msgid "The Customization Modules"
-msgstr ""
-
-# c1488b1ad1f1415399201ea7a41b8649
-#: ../src/Doc/tutorial/interpreter.rst:249
-msgid ""
-"Python provides two hooks to let you customize it: :mod:`sitecustomize` and :"
-"mod:`usercustomize`.  To see how it works, you need first to find the "
-"location of your user site-packages directory.  Start Python and run this "
-"code:"
-msgstr ""
-
-# 07d2ef1091ac4086815e9ea6e57edd26
-#: ../src/Doc/tutorial/interpreter.rst:257
-msgid ""
-"Now you can create a file named :file:`usercustomize.py` in that directory "
-"and put anything you want in it.  It will affect every invocation of Python, "
-"unless it is started with the :option:`-s` option to disable the automatic "
-"import."
-msgstr ""
-
-# 83a462362bb84a31bd2553bd13c41e2e
-#: ../src/Doc/tutorial/interpreter.rst:261
-msgid ""
-":mod:`sitecustomize` works in the same way, but is typically created by an "
-"administrator of the computer in the global site-packages directory, and is "
-"imported before :mod:`usercustomize`.  See the documentation of the :mod:"
-"`site` module for more details."
-msgstr ""
-
-#: ../src/Doc/tutorial/interpreter.rst:269
-msgid "A problem with the GNU Readline package may prevent this."
 msgstr ""
 
 #: ../src/Doc/tutorial/introduction.rst:5
