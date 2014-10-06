@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-08 05:04\n"
+"POT-Creation-Date: 2014-10-06 06:32\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -8087,37 +8087,29 @@ msgid ""
 "*NULL* on failure."
 msgstr ""
 
-# 45cb2c7762be43cfa67ff44b5b6890db
-# e1f8b7fef15c44a6b53579e5155f6dc5
-#: ../src/Doc/c-api/long.rst:70 ../src/Doc/c-api/long.rst:78
-msgid ""
-"Return a new :c:type:`PyLongObject` object with a value of *v*, or *NULL* on "
-"failure."
-msgstr ""
-
 # bb589fa886f5478f8fff9ed170148b5a
-#: ../src/Doc/c-api/long.rst:86
+#: ../src/Doc/c-api/long.rst:70
 msgid ""
 "Return a new :c:type:`PyLongObject` object from a C :c:type:`long long`, or "
 "*NULL* on failure."
 msgstr ""
 
 # 98f177674b234a9992c6a218a7826c9f
-#: ../src/Doc/c-api/long.rst:92
+#: ../src/Doc/c-api/long.rst:76
 msgid ""
 "Return a new :c:type:`PyLongObject` object from a C :c:type:`unsigned long "
 "long`, or *NULL* on failure."
 msgstr ""
 
 # b51d2ac612724361818d685c6b666d45
-#: ../src/Doc/c-api/long.rst:98
+#: ../src/Doc/c-api/long.rst:82
 msgid ""
 "Return a new :c:type:`PyLongObject` object from the integer part of *v*, or "
 "*NULL* on failure."
 msgstr ""
 
 # 0dafe331119341ff9891dca394527a85
-#: ../src/Doc/c-api/long.rst:104
+#: ../src/Doc/c-api/long.rst:88
 msgid ""
 "Return a new :c:type:`PyLongObject` based on the string value in *str*, "
 "which is interpreted according to the radix in *base*.  If *pend* is non-"
@@ -8131,7 +8123,7 @@ msgid ""
 msgstr ""
 
 # ad9e2203296e4079bf78cf9aa4ed2dae
-#: ../src/Doc/c-api/long.rst:117
+#: ../src/Doc/c-api/long.rst:101
 msgid ""
 "Convert a sequence of Unicode digits to a Python long integer value.  The "
 "first parameter, *u*, points to the first character of the Unicode string, "
@@ -8141,7 +8133,7 @@ msgid ""
 msgstr ""
 
 # 0d7298e3043d4723b5a449b9e7c8b120
-#: ../src/Doc/c-api/long.rst:132
+#: ../src/Doc/c-api/long.rst:116
 msgid ""
 "Create a Python integer or long integer from the pointer *p*. The pointer "
 "value can be retrieved from the resulting value using :c:func:"
@@ -8149,7 +8141,7 @@ msgid ""
 msgstr ""
 
 # af34f3f689234422a526d3b46dd6c323
-#: ../src/Doc/c-api/long.rst:147
+#: ../src/Doc/c-api/long.rst:131
 msgid ""
 "Return a C :c:type:`long` representation of the contents of *pylong*.  If "
 "*pylong* is greater than :const:`LONG_MAX`, an :exc:`OverflowError` is "
@@ -8157,7 +8149,7 @@ msgid ""
 msgstr ""
 
 # adb5330a6dd34ff0bf1a93c2cb6283a8
-#: ../src/Doc/c-api/long.rst:154
+#: ../src/Doc/c-api/long.rst:138
 msgid ""
 "Return a C :c:type:`long` representation of the contents of *pylong*.  If "
 "*pylong* is greater than :const:`LONG_MAX` or less than :const:`LONG_MIN`, "
@@ -8168,7 +8160,7 @@ msgid ""
 msgstr ""
 
 # 8cef90a92bf940cbb689aab81439ab38
-#: ../src/Doc/c-api/long.rst:167
+#: ../src/Doc/c-api/long.rst:151
 msgid ""
 "Return a C :c:type:`long long` representation of the contents of *pylong*.  "
 "If *pylong* is greater than :const:`PY_LLONG_MAX` or less than :const:"
@@ -8179,7 +8171,7 @@ msgid ""
 msgstr ""
 
 # 4a7ae713f5ce48179432175d536c7cfe
-#: ../src/Doc/c-api/long.rst:184
+#: ../src/Doc/c-api/long.rst:168
 msgid ""
 "Return a C :c:type:`Py_ssize_t` representation of the contents of *pylong*.  "
 "If *pylong* is greater than :const:`PY_SSIZE_T_MAX`, an :exc:`OverflowError` "
@@ -8187,23 +8179,15 @@ msgid ""
 msgstr ""
 
 # a3844fe9ee284618834a2feca60e9b5e
-#: ../src/Doc/c-api/long.rst:197
+#: ../src/Doc/c-api/long.rst:181
 msgid ""
 "Return a C :c:type:`unsigned long` representation of the contents of "
 "*pylong*. If *pylong* is greater than :const:`ULONG_MAX`, an :exc:"
 "`OverflowError` is raised."
 msgstr ""
 
-# 98fba6930ca942de95215b8491384013
-#: ../src/Doc/c-api/long.rst:207
-msgid ""
-"Return a :c:type:`Py_ssize_t` representation of the contents of *pylong*.  "
-"If *pylong* is greater than :const:`PY_SSIZE_T_MAX`, an :exc:`OverflowError` "
-"is raised."
-msgstr ""
-
 # 585460f9052f43658c46275c47f750a4
-#: ../src/Doc/c-api/long.rst:219
+#: ../src/Doc/c-api/long.rst:191
 msgid ""
 "Return a C :c:type:`long long` from a Python long integer.  If *pylong* "
 "cannot be represented as a :c:type:`long long`, an :exc:`OverflowError` is "
@@ -8211,7 +8195,7 @@ msgid ""
 msgstr ""
 
 # f245c23a0ce54bfc9079dabe23228d93
-#: ../src/Doc/c-api/long.rst:231
+#: ../src/Doc/c-api/long.rst:203
 msgid ""
 "Return a C :c:type:`unsigned long long` from a Python long integer. If "
 "*pylong* cannot be represented as an :c:type:`unsigned long long`, an :exc:"
@@ -8219,21 +8203,21 @@ msgid ""
 msgstr ""
 
 # af0283245e2f4248b76d3f670656334e
-#: ../src/Doc/c-api/long.rst:245
+#: ../src/Doc/c-api/long.rst:217
 msgid ""
 "Return a C :c:type:`unsigned long` from a Python long integer, without "
 "checking for overflow."
 msgstr ""
 
 # da0bae17eac840d28eca0418294fb013
-#: ../src/Doc/c-api/long.rst:253
+#: ../src/Doc/c-api/long.rst:225
 msgid ""
 "Return a C :c:type:`unsigned long long` from a Python long integer, without "
 "checking for overflow."
 msgstr ""
 
 # e5516ae3d0b1415594878cb43fbdbda3
-#: ../src/Doc/c-api/long.rst:261
+#: ../src/Doc/c-api/long.rst:233
 msgid ""
 "Return a C :c:type:`double` representation of the contents of *pylong*.  If "
 "*pylong* cannot be approximately represented as a :c:type:`double`, an :exc:"
@@ -8241,7 +8225,7 @@ msgid ""
 msgstr ""
 
 # 31566cacbc304c17b2223d0cf8245b9d
-#: ../src/Doc/c-api/long.rst:268
+#: ../src/Doc/c-api/long.rst:240
 msgid ""
 "Convert a Python integer or long integer *pylong* to a C :c:type:`void` "
 "pointer. If *pylong* cannot be converted, an :exc:`OverflowError` will be "
