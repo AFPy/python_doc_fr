@@ -1,29 +1,35 @@
 Traduction française de docs.python.org
 =======================================
-Ce projet vise à mettre à disposition sur le site de l'afpy
-une `traduction en français <http://www.afpy.org/doc/python/2.7/>`_ d'une partie de la documentation officielle de
-Python, pour les curieux désirant découvrir Python mais n'ayant pas la capacité
-de lire le texte en anglais.
 
-Votre aide est la bienvenue que ce soit pour maintenir les traductions à jour,
-les relire, les améliorer ou traduire de nouveaux blocs.
+Ce projet vise à mettre à disposition sur le site de l'afpy une
+`traduction en français <http://www.afpy.org/doc/python/2.7/>`_ d'une
+partie de la documentation officielle de Python, pour les curieux
+désirant découvrir Python mais n'ayant pas la capacité de lire le
+texte en anglais.
+
+Votre aide est la bienvenue que ce soit pour maintenir les traductions
+à jour, les relire, les améliorer ou traduire de nouveaux blocs.
 
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
-Pour cela récupérez les fichiers .po de la partie qui vous intéresse, d'une des
-façons suivantes:
+
+Pour cela récupérez les fichiers .po de la partie qui vous intéresse,
+d'une des façons suivantes:
 
 * forkez ce dépôt ;
 * ou cliquez sur l'icone "ZIP".
 
 Éditer les fichiers avec l'éditeur de votre choix:
 
-* s'il s'agit d'un éditeur conçu spécialement pour les .po (`poedit <http://www.poedit.net/>`_,
-  gted, gtranslator, lokalize, betterpoeditor, vim/emacs avec un mode PO, etc...) vous n'avez plus qu'à vous occuper du texte en français ;
-* si vous utilisez un éditeur standard (**à éviter**), chaque bloc du fichier est
-  constitué d'une chaine en anglais (précédée de "msgid") suivi de son
-  équivalent en français ou d'une chaine vite (précédé de "msgstr"). Ce sont
-  des dernières qu'il faut remplir ou améliorer.
+* S'il s'agit d'un éditeur conçu spécialement pour les .po (`poedit
+  <http://www.poedit.net/>`_, gted, gtranslator, lokalize,
+  betterpoeditor, vim/emacs avec un mode PO, etc...) vous n'avez plus
+  qu'à vous occuper du texte en français ;
+
+* Si vous utilisez un éditeur standard, chaque bloc du
+  fichier est constitué d'une chaine en anglais (précédée de "msgid")
+  suivi de son équivalent en français ou d'une chaine vite (précédé de
+  "msgstr"). Ce sont des dernières qu'il faut remplir ou améliorer.
 
 Une fois votre contribution écrite, transmettez-la nous :
 
