@@ -752,9 +752,9 @@ msgstr ""
 #: ../src/Doc/using/cmdline.rst:443
 msgid ""
 "Change the location of the standard Python libraries.  By default, the "
-"libraries are searched in :file:`{prefix}/lib/python{version}` and :file:`"
-"{exec_prefix}/lib/python{version}`, where :file:`{prefix}` and :file:`"
-"{exec_prefix}` are installation-dependent directories, both defaulting to :"
+"libraries are searched in :file:`{prefix}/lib/python{version}` and :file:"
+"`{exec_prefix}/lib/python{version}`, where :file:`{prefix}` and :file:"
+"`{exec_prefix}` are installation-dependent directories, both defaulting to :"
 "file:`/usr/local`."
 msgstr ""
 
@@ -1428,8 +1428,8 @@ msgstr ""
 
 #: ../src/Doc/using/unix.rst:104
 msgid ""
-":file:`{prefix}/lib/python{version}`, :file:`{exec_prefix}/lib/python"
-"{version}`"
+":file:`{prefix}/lib/python{version}`, :file:`{exec_prefix}/lib/"
+"python{version}`"
 msgstr ""
 
 #: ../src/Doc/using/unix.rst:104
@@ -1439,8 +1439,8 @@ msgstr ""
 
 #: ../src/Doc/using/unix.rst:107
 msgid ""
-":file:`{prefix}/include/python{version}`, :file:`{exec_prefix}/include/python"
-"{version}`"
+":file:`{prefix}/include/python{version}`, :file:`{exec_prefix}/include/"
+"python{version}`"
 msgstr ""
 
 #: ../src/Doc/using/unix.rst:107

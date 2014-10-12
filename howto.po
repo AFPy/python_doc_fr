@@ -1738,8 +1738,8 @@ msgstr ""
 msgid ""
 "To recap, functions have a :meth:`__get__` method so that they can be "
 "converted to a method when accessed as attributes.  The non-data descriptor "
-"transforms a ``obj.f(*args)`` call into ``f(obj, *args)``.  Calling ``klass.f"
-"(*args)`` becomes ``f(*args)``."
+"transforms a ``obj.f(*args)`` call into ``f(obj, *args)``.  Calling ``klass."
+"f(*args)`` becomes ``f(*args)``."
 msgstr ""
 
 #: ../src/Doc/howto/descriptor.rst:335
@@ -2516,10 +2516,10 @@ msgid ""
 "An iterator is an object representing a stream of data; this object returns "
 "the data one element at a time.  A Python iterator must support a method "
 "called ``next()`` that takes no arguments and always returns the next "
-"element of the stream.  If there are no more elements in the stream, ``next()"
-"`` must raise the ``StopIteration`` exception.  Iterators don't have to be "
-"finite, though; it's perfectly reasonable to write an iterator that produces "
-"an infinite stream of data."
+"element of the stream.  If there are no more elements in the stream, "
+"``next()`` must raise the ``StopIteration`` exception.  Iterators don't have "
+"to be finite, though; it's perfectly reasonable to write an iterator that "
+"produces an infinite stream of data."
 msgstr ""
 
 #: ../src/Doc/howto/functional.rst:189
@@ -2953,8 +2953,8 @@ msgstr ""
 # ccd98d828be7454b9d7c8680999c584e
 #: ../src/Doc/howto/functional.rst:627
 msgid ""
-"``map(f, iterA, iterB, ...)`` returns a list containing ``f(iterA[0], iterB"
-"[0]), f(iterA[1], iterB[1]), f(iterA[2], iterB[2]), ...``."
+"``map(f, iterA, iterB, ...)`` returns a list containing ``f(iterA[0], "
+"iterB[0]), f(iterA[1], iterB[1]), f(iterA[2], iterB[2]), ...``."
 msgstr ""
 
 # a50c24b2bf454f8fb65d97ad4832ad0c
@@ -3284,16 +3284,18 @@ msgstr ""
 # 0759bbd996f7403fb911682ff3ec88bb
 #: ../src/Doc/howto/functional.rst:956
 msgid ""
-"``itertools.imap(f, iterA, iterB, ...)`` returns a stream containing ``f"
-"(iterA[0], iterB[0]), f(iterA[1], iterB[1]), f(iterA[2], iterB[2]), ...``::"
+"``itertools.imap(f, iterA, iterB, ...)`` returns a stream containing "
+"``f(iterA[0], iterB[0]), f(iterA[1], iterB[1]), f(iterA[2], iterB[2]), ..."
+"``::"
 msgstr ""
 
 #: ../src/Doc/howto/functional.rst:962
 msgid ""
 "The ``operator`` module contains a set of functions corresponding to "
 "Python's operators.  Some examples are ``operator.add(a, b)`` (adds two "
-"values), ``operator.ne(a, b)`` (same as ``a!=b``), and ``operator.attrgetter"
-"('id')`` (returns a callable that fetches the ``\"id\"`` attribute)."
+"values), ``operator.ne(a, b)`` (same as ``a!=b``), and ``operator."
+"attrgetter('id')`` (returns a callable that fetches the ``\"id\"`` "
+"attribute)."
 msgstr ""
 
 #: ../src/Doc/howto/functional.rst:967
@@ -6519,10 +6521,10 @@ msgstr ""
 msgid ""
 "In Python 2, objects can specify both a string and unicode representation of "
 "themselves. In Python 3, though, there is only a string representation. This "
-"becomes an issue as people can inadvertently do things in their ``__str__()"
-"`` methods which have unpredictable results (e.g., infinite recursion if you "
-"happen to use the ``unicode(self).encode('utf8')`` idiom as the body of your "
-"``__str__()`` method)."
+"becomes an issue as people can inadvertently do things in their "
+"``__str__()`` methods which have unpredictable results (e.g., infinite "
+"recursion if you happen to use the ``unicode(self).encode('utf8')`` idiom as "
+"the body of your ``__str__()`` method)."
 msgstr ""
 
 # d16d61b49c8841f4934c8ece3fc7b2c6
@@ -6944,15 +6946,15 @@ msgstr ""
 
 #: ../src/Doc/howto/regex.rst:139
 msgid ""
-"Matches any non-alphanumeric character; this is equivalent to the class ``"
-"[^a-zA-Z0-9_]``."
+"Matches any non-alphanumeric character; this is equivalent to the class "
+"``[^a-zA-Z0-9_]``."
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:142
 msgid ""
-"These sequences can be included inside a character class.  For example, ``"
-"[\\s,.]`` is a character class that will match any whitespace character, or "
-"``','`` or ``'.'``."
+"These sequences can be included inside a character class.  For example, "
+"``[\\s,.]`` is a character class that will match any whitespace character, "
+"or ``','`` or ``'.'``."
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:146
@@ -7151,8 +7153,8 @@ msgstr ""
 #: ../src/Doc/howto/regex.rst:243
 msgid ""
 "Readers of a reductionist bent may notice that the three other qualifiers "
-"can all be expressed using this notation.  ``{0,}`` is the same as ``*``, ``"
-"{1,}`` is equivalent to ``+``, and ``{0,1}`` is the same as ``?``.  It's "
+"can all be expressed using this notation.  ``{0,}`` is the same as ``*``, "
+"``{1,}`` is equivalent to ``+``, and ``{0,1}`` is the same as ``?``.  It's "
 "better to use ``*``, ``+``, or ``?`` when you can, simply because they're "
 "shorter and easier to read."
 msgstr ""
@@ -8337,8 +8339,8 @@ msgstr ""
 
 #: ../src/Doc/howto/regex.rst:1158
 msgid ""
-"This example matches the word ``section`` followed by a string enclosed in ``"
-"{``, ``}``, and changes ``section`` to ``subsection``::"
+"This example matches the word ``section`` followed by a string enclosed in "
+"``{``, ``}``, and changes ``section`` to ``subsection``::"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:1165
@@ -8678,11 +8680,11 @@ msgstr ""
 #: ../src/Doc/howto/sockets.rst:84
 msgid ""
 "A couple things to notice: we used ``socket.gethostname()`` so that the "
-"socket would be visible to the outside world.  If we had used ``s.bind"
-"(('localhost', 80))`` or ``s.bind(('127.0.0.1', 80))`` we would still have a "
-"\"server\" socket, but one that was only visible within the same machine.  "
-"``s.bind(('', 80))`` specifies that the socket is reachable by any address "
-"the machine happens to have."
+"socket would be visible to the outside world.  If we had used ``s."
+"bind(('localhost', 80))`` or ``s.bind(('127.0.0.1', 80))`` we would still "
+"have a \"server\" socket, but one that was only visible within the same "
+"machine.  ``s.bind(('', 80))`` specifies that the socket is reachable by any "
+"address the machine happens to have."
 msgstr ""
 
 #: ../src/Doc/howto/sockets.rst:91
@@ -9257,8 +9259,8 @@ msgstr ""
 # 4ebcb6dd76e24f8ba237c6ff71194b8f
 #: ../src/Doc/howto/sorting.rst:147
 msgid ""
-"Notice how the two records for *blue* retain their original order so that ``"
-"('blue', 1)`` is guaranteed to precede ``('blue', 2)``."
+"Notice how the two records for *blue* retain their original order so that "
+"``('blue', 1)`` is guaranteed to precede ``('blue', 2)``."
 msgstr ""
 
 # b1b08e6444b944a6b1025f9dff000ee7
@@ -9827,10 +9829,10 @@ msgid ""
 "Unicode strings are expressed as instances of the :class:`unicode` type, one "
 "of Python's repertoire of built-in types.  It derives from an abstract type "
 "called :class:`basestring`, which is also an ancestor of the :class:`str` "
-"type; you can therefore check if a value is a string type with ``isinstance"
-"(value, basestring)``.  Under the hood, Python represents Unicode strings as "
-"either 16- or 32-bit integers, depending on how the Python interpreter was "
-"compiled."
+"type; you can therefore check if a value is a string type with "
+"``isinstance(value, basestring)``.  Under the hood, Python represents "
+"Unicode strings as either 16- or 32-bit integers, depending on how the "
+"Python interpreter was compiled."
 msgstr ""
 
 # 06830998a1d645369f452933d329fe7b
@@ -10132,14 +10134,15 @@ msgstr ""
 msgid ""
 "The function's parameters are ``open(filename, mode='rb', encoding=None, "
 "errors='strict', buffering=1)``.  ``mode`` can be ``'r'``, ``'w'``, or "
-"``'a'``, just like the corresponding parameter to the regular built-in ``open"
-"()`` function; add a ``'+'`` to update the file.  ``buffering`` is similarly "
-"parallel to the standard function's parameter.  ``encoding`` is a string "
-"giving the encoding to use; if it's left as ``None``, a regular Python file "
-"object that accepts 8-bit strings is returned.  Otherwise, a wrapper object "
-"is returned, and data written to or read from the wrapper object will be "
-"converted as needed. ``errors`` specifies the action for encoding errors and "
-"can be one of the usual values of 'strict', 'ignore', and 'replace'."
+"``'a'``, just like the corresponding parameter to the regular built-in "
+"``open()`` function; add a ``'+'`` to update the file.  ``buffering`` is "
+"similarly parallel to the standard function's parameter.  ``encoding`` is a "
+"string giving the encoding to use; if it's left as ``None``, a regular "
+"Python file object that accepts 8-bit strings is returned.  Otherwise, a "
+"wrapper object is returned, and data written to or read from the wrapper "
+"object will be converted as needed. ``errors`` specifies the action for "
+"encoding errors and can be one of the usual values of 'strict', 'ignore', "
+"and 'replace'."
 msgstr ""
 
 #: ../src/Doc/howto/unicode.rst:553
