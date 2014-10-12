@@ -26,16 +26,36 @@ d'une des façons suivantes:
   betterpoeditor, vim/emacs avec un mode PO, etc...) vous n'avez plus
   qu'à vous occuper du texte en français ;
 
-* Si vous utilisez un éditeur standard, chaque bloc du
-  fichier est constitué d'une chaine en anglais (précédée de "msgid")
-  suivi de son équivalent en français ou d'une chaine vite (précédé de
+* Si vous utilisez un éditeur standard, chaque bloc du fichier est
+  constitué d'une chaine en anglais (précédée de "msgid") suivi de son
+  équivalent en français ou d'une chaine vite (précédé de
   "msgstr"). Ce sont des dernières qu'il faut remplir ou améliorer.
+  Consultez la section "Norme" puisque votre éditeur ne l'appliquera
+  forcément pas pour vous.
 
 Une fois votre contribution écrite, transmettez-la nous :
 
 * soit par un pull-request (si vous avez fait un fork) ;
 * soit en la joignant à un ticket ;
 * soit par mail à la `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_
+
+Norme
+-----
+
+Afin de ne pas générer des diff illisibles remplis de plus de
+différences de norme que de différences de texte, autremment dit, afin
+d'obtenir un historique git lisible, et des merge façiles, nous
+devrions tous utiliser strictement la même norme.
+
+Ainsi, si vous utilisez un éditeur de texte pour faire vos
+traductions, ce n'est peut être pas évident d'appliquer strictement
+une norme à la main, vous pouvez donc utiliser:
+
+for po in *.po; do echo $po; tac $po | tac | msgcat - -o $po; done
+
+autremment dit, utiliser msgcat pour réecrire proprement votre fichier
+après avoir mis les mains dedans. (l'astuce tac|tac c'est pour lire
+entièrement le fichier avant de l'écrire).
 
 Quelles sont les priorités ?
 ----------------------------
