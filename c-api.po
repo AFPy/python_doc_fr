@@ -3101,8 +3101,8 @@ msgstr ""
 #: ../src/Doc/c-api/conversion.rst:13
 msgid ""
 "Output not more than *size* bytes to *str* according to the format string "
-"*format* and the extra arguments. See the Unix man page :manpage:`snprintf(2)"
-"`."
+"*format* and the extra arguments. See the Unix man page :manpage:"
+"`snprintf(2)`."
 msgstr ""
 
 # b016633066cd4ffdbf30b7e52f094224
@@ -3640,8 +3640,8 @@ msgstr ""
 #: ../src/Doc/c-api/dict.rst:90
 msgid ""
 "Insert *value* into the dictionary *p* using *key* as a key. *key* should be "
-"a :c:type:`char\\*`.  The key object is created using ``PyString_FromString"
-"(key)``.  Return ``0`` on success or ``-1`` on failure."
+"a :c:type:`char\\*`.  The key object is created using "
+"``PyString_FromString(key)``.  Return ``0`` on success or ``-1`` on failure."
 msgstr ""
 
 # a410f6b62c3b4e27a33b24a2333136c0
@@ -3697,8 +3697,8 @@ msgstr ""
 # 2cfe674c9c384f86851a8ea435d8f44f
 #: ../src/Doc/c-api/dict.rst:143
 msgid ""
-"Return the number of items in the dictionary.  This is equivalent to ``len(p)"
-"`` on a dictionary."
+"Return the number of items in the dictionary.  This is equivalent to "
+"``len(p)`` on a dictionary."
 msgstr ""
 
 # 931a6ce4bcc2440581bcbcc6d80ad0f8
@@ -5310,11 +5310,11 @@ msgid ""
 "This is a simplified interface to :c:func:`PyImport_ImportModuleEx` below, "
 "leaving the *globals* and *locals* arguments set to *NULL* and *level* set "
 "to 0.  When the *name* argument contains a dot (when it specifies a "
-"submodule of a package), the *fromlist* argument is set to the list ``['*']"
-"`` so that the return value is the named module rather than the top-level "
-"package containing it as would otherwise be the case.  (Unfortunately, this "
-"has an additional side effect when *name* in fact specifies a subpackage "
-"instead of a submodule: the submodules specified in the package's "
+"submodule of a package), the *fromlist* argument is set to the list "
+"``['*']`` so that the return value is the named module rather than the top-"
+"level package containing it as would otherwise be the case.  (Unfortunately, "
+"this has an additional side effect when *name* in fact specifies a "
+"subpackage instead of a submodule: the submodules specified in the package's "
 "``__all__`` variable are  loaded.)  Return a new reference to the imported "
 "module, or *NULL* with an exception set on failure.  Before Python 2.4, the "
 "module may still be created in the failure case --- examine ``sys.modules`` "
@@ -7661,13 +7661,13 @@ msgstr ""
 # 6ff2dbf18a0e4545bda75bc276d81a78
 #: ../src/Doc/c-api/intro.rst:561
 msgid ""
-"The embedding application can steer the search by calling ``Py_SetProgramName"
-"(file)`` *before* calling  :c:func:`Py_Initialize`.  Note that :envvar:"
-"`PYTHONHOME` still overrides this and :envvar:`PYTHONPATH` is still inserted "
-"in front of the standard path.  An application that requires total control "
-"has to provide its own implementation of :c:func:`Py_GetPath`, :c:func:"
-"`Py_GetPrefix`, :c:func:`Py_GetExecPrefix`, and :c:func:"
-"`Py_GetProgramFullPath` (all defined in :file:`Modules/getpath.c`)."
+"The embedding application can steer the search by calling "
+"``Py_SetProgramName(file)`` *before* calling  :c:func:`Py_Initialize`.  Note "
+"that :envvar:`PYTHONHOME` still overrides this and :envvar:`PYTHONPATH` is "
+"still inserted in front of the standard path.  An application that requires "
+"total control has to provide its own implementation of :c:func:"
+"`Py_GetPath`, :c:func:`Py_GetPrefix`, :c:func:`Py_GetExecPrefix`, and :c:"
+"func:`Py_GetProgramFullPath` (all defined in :file:`Modules/getpath.c`)."
 msgstr ""
 
 # a71717c958634237a91857399a2ad37c
@@ -7920,8 +7920,8 @@ msgstr ""
 # 0f10a685c298435397ed20f079bf3275
 #: ../src/Doc/c-api/list.rst:59
 msgid ""
-"Return the length of the list object in *list*; this is equivalent to ``len"
-"(list)`` on a list object."
+"Return the length of the list object in *list*; this is equivalent to "
+"``len(list)`` on a list object."
 msgstr ""
 
 # e4220c15cb2f436fbf6dc4eecb8bd401
@@ -9543,8 +9543,8 @@ msgstr ""
 msgid ""
 "Return the length of object *o*.  If the object *o* provides either the "
 "sequence and mapping protocols, the sequence length is returned.  On error, "
-"``-1`` is returned.  This is the equivalent to the Python expression ``len(o)"
-"``."
+"``-1`` is returned.  This is the equivalent to the Python expression "
+"``len(o)``."
 msgstr ""
 
 # 31d2fa180d714d94a2f277cbe5a0fd22
@@ -10520,9 +10520,9 @@ msgstr ""
 # 8f7dff10a1014aa1bd1abd8f9a6bc09e
 #: ../src/Doc/c-api/string.rst:126 ../src/Doc/c-api/unicode.rst:292
 msgid ""
-"The hex representation of a C pointer. Mostly equivalent to ``printf(\"%p\")"
-"`` except that it is guaranteed to start with the literal ``0x`` regardless "
-"of what the platform's ``printf`` yields."
+"The hex representation of a C pointer. Mostly equivalent to ``printf(\"%p"
+"\")`` except that it is guaranteed to start with the literal ``0x`` "
+"regardless of what the platform's ``printf`` yields."
 msgstr ""
 
 # 172ca83681c6498baed2e23834b6adaf
@@ -11259,10 +11259,11 @@ msgstr ""
 #: ../src/Doc/c-api/sys.rst:11
 msgid ""
 "Return true (nonzero) if the standard I/O file *fp* with name *filename* is "
-"deemed interactive.  This is the case for files for which ``isatty(fileno"
-"(fp))`` is true.  If the global flag :c:data:`Py_InteractiveFlag` is true, "
-"this function also returns true if the *filename* pointer is *NULL* or if "
-"the name is equal to one of the strings ``'<stdin>'`` or ``'???'``."
+"deemed interactive.  This is the case for files for which "
+"``isatty(fileno(fp))`` is true.  If the global flag :c:data:"
+"`Py_InteractiveFlag` is true, this function also returns true if the "
+"*filename* pointer is *NULL* or if the name is equal to one of the strings "
+"``'<stdin>'`` or ``'???'``."
 msgstr ""
 
 # 073311ebea7c494ab0d76851e1295d29
@@ -11461,8 +11462,8 @@ msgstr ""
 msgid ""
 "Return a new tuple object of size *n*, or *NULL* on failure. The tuple "
 "values are initialized to the subsequent *n* C arguments pointing to Python "
-"objects. ``PyTuple_Pack(2, a, b)`` is equivalent to ``Py_BuildValue"
-"(\"(OO)\", a, b)``."
+"objects. ``PyTuple_Pack(2, a, b)`` is equivalent to "
+"``Py_BuildValue(\"(OO)\", a, b)``."
 msgstr ""
 
 # bfb98296769741b882909718d16871cc
@@ -13096,14 +13097,14 @@ msgstr ""
 # b8ac377a43b746b3b91972a85496c9fb
 #: ../src/Doc/c-api/typeobj.rst:1018
 msgid ""
-"The :c:member:`~PyTypeObject.tp_new` function should call ``subtype->tp_alloc"
-"(subtype, nitems)`` to allocate space for the object, and then do only as "
-"much further initialization as is absolutely necessary.  Initialization that "
-"can safely be ignored or repeated should be placed in the :c:member:"
-"`~PyTypeObject.tp_init` handler.  A good rule of thumb is that for immutable "
-"types, all initialization should take place in :c:member:`~PyTypeObject."
-"tp_new`, while for mutable types, most initialization should be deferred to :"
-"c:member:`~PyTypeObject.tp_init`."
+"The :c:member:`~PyTypeObject.tp_new` function should call ``subtype-"
+">tp_alloc(subtype, nitems)`` to allocate space for the object, and then do "
+"only as much further initialization as is absolutely necessary.  "
+"Initialization that can safely be ignored or repeated should be placed in "
+"the :c:member:`~PyTypeObject.tp_init` handler.  A good rule of thumb is that "
+"for immutable types, all initialization should take place in :c:member:"
+"`~PyTypeObject.tp_new`, while for mutable types, most initialization should "
+"be deferred to :c:member:`~PyTypeObject.tp_init`."
 msgstr ""
 
 # 7b346010c14a4606b5bf1505208af791
