@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-06 06:32\n"
+"POT-Creation-Date: 2014-10-13 09:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11595,8 +11595,16 @@ msgstr ""
 msgid "Return true if *a* is a subtype of *b*."
 msgstr ""
 
+# e010249857db442d825dd1a9e5865d77
+#: ../src/Doc/c-api/type.rst:74
+msgid ""
+"This function only checks for actual subtypes, which means that :meth:"
+"`~class.__subclasscheck__` is not called on *b*.  Call :c:func:"
+"`PyObject_IsSubclass` to do the same check that :func:`issubclass` would do."
+msgstr ""
+
 # 4b03ec023c3a45b5ac059a73301167e2
-#: ../src/Doc/c-api/type.rst:91
+#: ../src/Doc/c-api/type.rst:96
 msgid ""
 "Finalize a type object.  This should be called on all type objects to finish "
 "their initialization.  This function is responsible for adding inherited "
