@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-20 04:02\n"
+"POT-Creation-Date: 2014-10-20 04:16\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,9 +63,10 @@ msgstr "Utilisation du tracker Python"
 
 # aconrad: "traqueur de bogues" ? Comment traduire ça ?
 #: ../src/Doc/bugs.rst:31
+#, fuzzy
 msgid ""
 "Bug reports for Python itself should be submitted via the Python Bug Tracker "
-"(http://bugs.python.org/).  The bug tracker offers a Web form which allows "
+"(https://bugs.python.org/).  The bug tracker offers a Web form which allows "
 "pertinent information to be entered and submitted to the developers."
 msgstr ""
 "Les rapports de bugs pour Python lui-même devraient être soumis via le Bug "

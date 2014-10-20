@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-13 09:45\n"
+"POT-Creation-Date: 2014-10-20 04:16\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -574,7 +574,7 @@ msgstr ""
 #: ../src/Doc/reference/executionmodel.rst:244
 #: ../src/Doc/reference/expressions.rst:1402
 #: ../src/Doc/reference/lexical_analysis.rst:759
-#: ../src/Doc/reference/simple_stmts.rst:1050
+#: ../src/Doc/reference/simple_stmts.rst:1048
 msgid "Footnotes"
 msgstr ""
 
@@ -7069,6 +7069,7 @@ msgid ""
 "(1) once, and then performs step (2) repeatedly."
 msgstr ""
 
+# a475df7b032a43829b40176011e04fdd
 #: ../src/Doc/reference/simple_stmts.rst:693
 msgid ""
 "To understand how step (1) occurs, one must first understand how Python "
@@ -7076,13 +7077,11 @@ msgid ""
 "a hierarchy in naming, Python has a concept of packages. A package can "
 "contain other packages and modules while modules cannot contain other "
 "modules or packages. From a file system perspective, packages are "
-"directories and modules are files. The original `specification for packages "
-"<http://www.python.org/doc/essays/packages.html>`_ is still available to "
-"read, although minor details have changed since the writing of that document."
+"directories and modules are files."
 msgstr ""
 
 # a7595c8eeae14dd89312f8aa13ba019c
-#: ../src/Doc/reference/simple_stmts.rst:705
+#: ../src/Doc/reference/simple_stmts.rst:703
 msgid ""
 "Once the name of the module is known (unless otherwise specified, the term "
 "\"module\" will refer to both packages and modules), searching for the "
@@ -7092,7 +7091,7 @@ msgid ""
 msgstr ""
 
 # 9201e02028e94f5d8a5f8e2a8eb04e87
-#: ../src/Doc/reference/simple_stmts.rst:717
+#: ../src/Doc/reference/simple_stmts.rst:715
 msgid ""
 "If the module is not found in the cache, then :data:`sys.meta_path` is "
 "searched (the specification for :data:`sys.meta_path` can be found in :pep:"
@@ -7106,7 +7105,7 @@ msgid ""
 "the module it returns a :term:`loader` (discussed later) or returns ``None``."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:733
+#: ../src/Doc/reference/simple_stmts.rst:731
 msgid ""
 "If none of the finders on :data:`sys.meta_path` are able to find the module "
 "then some implicitly defined finders are queried. Implementations of Python "
@@ -7115,7 +7114,7 @@ msgid ""
 "path_importer_cache`, and :data:`sys.path`."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:739
+#: ../src/Doc/reference/simple_stmts.rst:737
 msgid ""
 "The implicit finder searches for the requested module in the \"paths\" "
 "specified in one of two places (\"paths\" do not have to be file system "
@@ -7127,7 +7126,7 @@ msgid ""
 msgstr ""
 
 # 1c9325d8c6884032b46582044e7bea0b
-#: ../src/Doc/reference/simple_stmts.rst:746
+#: ../src/Doc/reference/simple_stmts.rst:744
 msgid ""
 "Once the source of paths is chosen it is iterated over to find a finder that "
 "can handle that path. The dict at :data:`sys.path_importer_cache` caches "
@@ -7143,7 +7142,7 @@ msgid ""
 "``None`` is placed in the cache for the path."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:764
+#: ../src/Doc/reference/simple_stmts.rst:762
 msgid ""
 "If no finder can find the module then :exc:`ImportError` is raised. "
 "Otherwise some finder returned a loader whose :meth:`load_module` method is "
@@ -7159,7 +7158,7 @@ msgid ""
 "in :data:`sys.modules` it is left in the dict."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:784
+#: ../src/Doc/reference/simple_stmts.rst:782
 msgid ""
 "The loader must set several attributes on the module. :data:`__name__` is to "
 "be set to the name of the module. :data:`__file__` is to be the \"path\" to "
@@ -7174,19 +7173,19 @@ msgid ""
 "module."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:799
+#: ../src/Doc/reference/simple_stmts.rst:797
 msgid ""
 "If an error occurs during loading then the loader raises :exc:`ImportError` "
 "if some other exception is not already being propagated. Otherwise the "
 "loader returns the module that was loaded and initialized."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:803
+#: ../src/Doc/reference/simple_stmts.rst:801
 msgid ""
 "When step (1) finishes without raising an exception, step (2) can begin."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:805
+#: ../src/Doc/reference/simple_stmts.rst:803
 msgid ""
 "The first form of :keyword:`import` statement binds the module name in the "
 "local namespace to the module object, and then goes on to import the next "
@@ -7194,7 +7193,7 @@ msgid ""
 "name following :keyword:`as` is used as the local name for the module."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:814
+#: ../src/Doc/reference/simple_stmts.rst:812
 msgid ""
 "The :keyword:`from` form does not bind the module name: it goes through the "
 "list of identifiers, looks each one of them up in the module found in step "
@@ -7206,7 +7205,7 @@ msgid ""
 "local namespace of the :keyword:`import` statement.."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:825
+#: ../src/Doc/reference/simple_stmts.rst:823
 msgid ""
 "The *public names* defined by a module are determined by checking the "
 "module's namespace for a variable named ``__all__``; if defined, it must be "
@@ -7220,7 +7219,7 @@ msgid ""
 msgstr ""
 
 # b49e2185a01a4c45959c9d367d4ce25f
-#: ../src/Doc/reference/simple_stmts.rst:835
+#: ../src/Doc/reference/simple_stmts.rst:833
 msgid ""
 "The :keyword:`from` form with ``*`` may only occur in a module scope.  If "
 "the wild card form of import --- ``import *`` --- is used in a function and "
@@ -7229,7 +7228,7 @@ msgid ""
 msgstr ""
 
 # b949da19675841da823c36c880259d5b
-#: ../src/Doc/reference/simple_stmts.rst:843
+#: ../src/Doc/reference/simple_stmts.rst:841
 msgid ""
 "When specifying what module to import you do not have to specify the "
 "absolute name of the module. When a module or package is contained within "
@@ -7246,17 +7245,17 @@ msgid ""
 "within :pep:`328`."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:856
+#: ../src/Doc/reference/simple_stmts.rst:854
 msgid ""
 ":func:`importlib.import_module` is provided to support applications that "
 "determine which modules need to be loaded dynamically."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:863
+#: ../src/Doc/reference/simple_stmts.rst:861
 msgid "Future statements"
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:867
+#: ../src/Doc/reference/simple_stmts.rst:865
 msgid ""
 "A :dfn:`future statement` is a directive to the compiler that a particular "
 "module should be compiled using syntax or semantics that will be available "
@@ -7266,30 +7265,30 @@ msgid ""
 "basis before the release in which the feature becomes standard."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:882
+#: ../src/Doc/reference/simple_stmts.rst:880
 msgid ""
 "A future statement must appear near the top of the module.  The only lines "
 "that can appear before a future statement are:"
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:885
+#: ../src/Doc/reference/simple_stmts.rst:883
 msgid "the module docstring (if any),"
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:886
+#: ../src/Doc/reference/simple_stmts.rst:884
 msgid "comments,"
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:887
+#: ../src/Doc/reference/simple_stmts.rst:885
 msgid "blank lines, and"
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:888
+#: ../src/Doc/reference/simple_stmts.rst:886
 msgid "other future statements."
 msgstr ""
 
 # dca93962c9a54490bf61e9f347fd31a8
-#: ../src/Doc/reference/simple_stmts.rst:890
+#: ../src/Doc/reference/simple_stmts.rst:888
 msgid ""
 "The features recognized by Python 2.6 are ``unicode_literals``, "
 "``print_function``, ``absolute_import``, ``division``, ``generators``, "
@@ -7298,7 +7297,7 @@ msgid ""
 "and above because they are always enabled."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:896
+#: ../src/Doc/reference/simple_stmts.rst:894
 msgid ""
 "A future statement is recognized and treated specially at compile time: "
 "Changes to the semantics of core constructs are often implemented by "
@@ -7308,38 +7307,38 @@ msgid ""
 "cannot be pushed off until runtime."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:903
+#: ../src/Doc/reference/simple_stmts.rst:901
 msgid ""
 "For any given release, the compiler knows which feature names have been "
 "defined, and raises a compile-time error if a future statement contains a "
 "feature not known to it."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:907
+#: ../src/Doc/reference/simple_stmts.rst:905
 msgid ""
 "The direct runtime semantics are the same as for any import statement: there "
 "is a standard module :mod:`__future__`, described later, and it will be "
 "imported in the usual way at the time the future statement is executed."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:911
+#: ../src/Doc/reference/simple_stmts.rst:909
 msgid ""
 "The interesting runtime semantics depend on the specific feature enabled by "
 "the future statement."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:914
+#: ../src/Doc/reference/simple_stmts.rst:912
 msgid "Note that there is nothing special about the statement::"
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:918
+#: ../src/Doc/reference/simple_stmts.rst:916
 msgid ""
 "That is not a future statement; it's an ordinary import statement with no "
 "special semantics or syntax restrictions."
 msgstr ""
 
 # 9a2cb21deb6a4b1bb51f9fc9de8d4fc5
-#: ../src/Doc/reference/simple_stmts.rst:921
+#: ../src/Doc/reference/simple_stmts.rst:919
 msgid ""
 "Code compiled by an :keyword:`exec` statement or calls to the built-in "
 "functions :func:`compile` and :func:`execfile` that occur in a module :mod:"
@@ -7349,7 +7348,7 @@ msgid ""
 "the documentation of that function for details."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:928
+#: ../src/Doc/reference/simple_stmts.rst:926
 msgid ""
 "A future statement typed at an interactive interpreter prompt will take "
 "effect for the rest of the interpreter session.  If an interpreter is "
@@ -7359,19 +7358,19 @@ msgid ""
 msgstr ""
 
 # ecb182bb1b3f42eea4bcc4de576bc240
-#: ../src/Doc/reference/simple_stmts.rst:935
+#: ../src/Doc/reference/simple_stmts.rst:933
 msgid ":pep:`236` - Back to the __future__"
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:937
+#: ../src/Doc/reference/simple_stmts.rst:935
 msgid "The original proposal for the __future__ mechanism."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:943
+#: ../src/Doc/reference/simple_stmts.rst:941
 msgid "The :keyword:`global` statement"
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:952
+#: ../src/Doc/reference/simple_stmts.rst:950
 msgid ""
 "The :keyword:`global` statement is a declaration which holds for the entire "
 "current code block.  It means that the listed identifiers are to be "
@@ -7380,20 +7379,20 @@ msgid ""
 "globals without being declared global."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:958
+#: ../src/Doc/reference/simple_stmts.rst:956
 msgid ""
 "Names listed in a :keyword:`global` statement must not be used in the same "
 "code block textually preceding that :keyword:`global` statement."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:961
+#: ../src/Doc/reference/simple_stmts.rst:959
 msgid ""
 "Names listed in a :keyword:`global` statement must not be defined as formal "
 "parameters or in a :keyword:`for` loop control target, :keyword:`class` "
 "definition, function definition, or :keyword:`import` statement."
 msgstr ""
 
-#: ../src/Doc/reference/simple_stmts.rst:967
+#: ../src/Doc/reference/simple_stmts.rst:965
 msgid ""
 "The current implementation does not enforce the latter two restrictions, but "
 "programs should not abuse this freedom, as future implementations may "
@@ -7401,7 +7400,7 @@ msgid ""
 msgstr ""
 
 # cfa7adcf3b084e9e911d894bc8570fe6
-#: ../src/Doc/reference/simple_stmts.rst:977
+#: ../src/Doc/reference/simple_stmts.rst:975
 msgid ""
 "**Programmer's note:** the :keyword:`global` is a directive to the parser.  "
 "It applies only to code parsed at the same time as the :keyword:`global` "
@@ -7414,12 +7413,12 @@ msgid ""
 msgstr ""
 
 # ce19ec2baee441e5a0e930b941c75ad3
-#: ../src/Doc/reference/simple_stmts.rst:990
+#: ../src/Doc/reference/simple_stmts.rst:988
 msgid "The :keyword:`exec` statement"
 msgstr ""
 
 # 3b8f81ac47ac4f0cb303096984c6c5d3
-#: ../src/Doc/reference/simple_stmts.rst:997
+#: ../src/Doc/reference/simple_stmts.rst:995
 msgid ""
 "This statement supports dynamic execution of Python code.  The first "
 "expression should evaluate to either a Unicode string, a *Latin-1* encoded "
@@ -7435,7 +7434,7 @@ msgid ""
 msgstr ""
 
 # f0828d0af701479fab300daddedd635d
-#: ../src/Doc/reference/simple_stmts.rst:1009
+#: ../src/Doc/reference/simple_stmts.rst:1007
 msgid ""
 "In all cases, if the optional parts are omitted, the code is executed in the "
 "current scope.  If only the first expression after ``in`` is specified, it "
@@ -7448,7 +7447,7 @@ msgid ""
 msgstr ""
 
 # 1cff2ae708b0433a9a8044ce64b39161
-#: ../src/Doc/reference/simple_stmts.rst:1018
+#: ../src/Doc/reference/simple_stmts.rst:1016
 msgid ""
 "The first expression may also be a tuple of length 2 or 3.  In this case, "
 "the optional parts must be omitted.  The form ``exec(expr, globals)`` is "
@@ -7459,7 +7458,7 @@ msgid ""
 msgstr ""
 
 # ebbde66720cc45048971fc5b8015c0e4
-#: ../src/Doc/reference/simple_stmts.rst:1032
+#: ../src/Doc/reference/simple_stmts.rst:1030
 msgid ""
 "As a side effect, an implementation may insert additional keys into the "
 "dictionaries given besides those corresponding to variable names set by the "
@@ -7469,7 +7468,7 @@ msgid ""
 msgstr ""
 
 # b456d3574ec64cf2be1ebe2020fb3965
-#: ../src/Doc/reference/simple_stmts.rst:1043
+#: ../src/Doc/reference/simple_stmts.rst:1041
 msgid ""
 "**Programmer's hints:** dynamic evaluation of expressions is supported by "
 "the built-in function :func:`eval`.  The built-in functions :func:`globals` "
@@ -7478,7 +7477,7 @@ msgid ""
 msgstr ""
 
 # 08f09bb71682460cb2234c2f7b4da781
-#: ../src/Doc/reference/simple_stmts.rst:1051
+#: ../src/Doc/reference/simple_stmts.rst:1049
 msgid ""
 "Note that the parser only accepts the Unix-style end of line convention. If "
 "you are reading the code from a file, make sure to use :term:`universal "
