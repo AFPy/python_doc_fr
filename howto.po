@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-13 09:45\n"
+"POT-Creation-Date: 2014-10-27 05:26\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,15 +27,17 @@ msgstr ""
 msgid "Tshepang Lekhonkhobe"
 msgstr ""
 
-# af25637af9a14581ae1d826fe381b879
+# ba2cf8e6c4b74afb8275761f1289aadd
 #: ../src/Doc/howto/argparse.rst:9
 msgid ""
 "This tutorial is intended to be a gentle introduction to :mod:`argparse`, "
-"the recommended command-line parsing module in the Python standard library."
+"the recommended command-line parsing module in the Python standard library. "
+"This was written for argparse in Python 3. A few details are different in 2."
+"x, especially some exception messages, which were improved in 3.x."
 msgstr ""
 
 # f2d820d7fe834fab909de32872122abb
-#: ../src/Doc/howto/argparse.rst:14
+#: ../src/Doc/howto/argparse.rst:16
 msgid ""
 "There are two other modules that fulfill the same task, namely :mod:`getopt` "
 "(an equivalent for :c:func:`getopt` from the C language) and the deprecated :"
@@ -44,31 +46,31 @@ msgid ""
 msgstr ""
 
 # cdd8e2525f924b3c83d4fc2d745f8899
-#: ../src/Doc/howto/argparse.rst:22
+#: ../src/Doc/howto/argparse.rst:24
 msgid "Concepts"
 msgstr ""
 
 # cc9e2f360c8340a886f8cd1db172ee5f
-#: ../src/Doc/howto/argparse.rst:24
+#: ../src/Doc/howto/argparse.rst:26
 msgid ""
 "Let's show the sort of functionality that we are going to explore in this "
 "introductory tutorial by making use of the :command:`ls` command:"
 msgstr ""
 
 # eb49ba3d308a43faaa0347a709943ba2
-#: ../src/Doc/howto/argparse.rst:46
+#: ../src/Doc/howto/argparse.rst:48
 msgid "A few concepts we can learn from the four commands:"
 msgstr ""
 
 # 6b94ff97d73d4563ac5123ad6c91023c
-#: ../src/Doc/howto/argparse.rst:48
+#: ../src/Doc/howto/argparse.rst:50
 msgid ""
 "The :command:`ls` command is useful when run without any options at all. It "
 "defaults to displaying the contents of the current directory."
 msgstr ""
 
 # 1f144116a2784cf28d243ca6b6b14428
-#: ../src/Doc/howto/argparse.rst:51
+#: ../src/Doc/howto/argparse.rst:53
 msgid ""
 "If we want beyond what it provides by default, we tell it a bit more. In "
 "this case, we want it to display a different directory, ``pypy``. What we "
@@ -81,7 +83,7 @@ msgid ""
 msgstr ""
 
 # 36848d976f3d4b99a3abb07b95fbbe1c
-#: ../src/Doc/howto/argparse.rst:60
+#: ../src/Doc/howto/argparse.rst:62
 msgid ""
 "Now, say we want to change behaviour of the program. In our example, we "
 "display more info for each file instead of just showing the file names. The "
@@ -89,7 +91,7 @@ msgid ""
 msgstr ""
 
 # abd627ea53d84e85b84e52561db2def4
-#: ../src/Doc/howto/argparse.rst:64
+#: ../src/Doc/howto/argparse.rst:66
 msgid ""
 "That's a snippet of the help text. It's very useful in that you can come "
 "across a program you have never used before, and can figure out how it works "
@@ -97,47 +99,47 @@ msgid ""
 msgstr ""
 
 # 901705678aaf47479af169a18c5488fb
-#: ../src/Doc/howto/argparse.rst:70
+#: ../src/Doc/howto/argparse.rst:72
 msgid "The basics"
 msgstr ""
 
 # 3acacfd395f949fba581ad8df478272d
-#: ../src/Doc/howto/argparse.rst:72
+#: ../src/Doc/howto/argparse.rst:74
 msgid "Let us start with a very simple example which does (almost) nothing::"
 msgstr ""
 
 # 19ce897f3a4a40e98a8ec81d8261611d
 # cd314c6b22c5443082c3216a5acde0d7
 # 20795628a4c2456aaf50b95a8155628f
-#: ../src/Doc/howto/argparse.rst:78 ../src/Doc/howto/argparse.rst:186
-#: ../src/Doc/howto/argparse.rst:207
+#: ../src/Doc/howto/argparse.rst:80 ../src/Doc/howto/argparse.rst:188
+#: ../src/Doc/howto/argparse.rst:209
 msgid "Following is a result of running the code:"
 msgstr ""
 
 # a69cbfdeb027402b8dae8442c9e32543
 # d080102a0371487b8e7a9df31cb291e2
 # d8adb9677e8c4bcaabb70a21f6706841
-#: ../src/Doc/howto/argparse.rst:95 ../src/Doc/howto/argparse.rst:252
-#: ../src/Doc/howto/argparse.rst:296
+#: ../src/Doc/howto/argparse.rst:97 ../src/Doc/howto/argparse.rst:254
+#: ../src/Doc/howto/argparse.rst:298
 msgid "Here is what is happening:"
 msgstr ""
 
 # 809de0b225f34682b32b0924855549f4
-#: ../src/Doc/howto/argparse.rst:97
+#: ../src/Doc/howto/argparse.rst:99
 msgid ""
 "Running the script without any options results in nothing displayed to "
 "stdout. Not so useful."
 msgstr ""
 
 # 88a835298220492886c8c6b03ba14291
-#: ../src/Doc/howto/argparse.rst:100
+#: ../src/Doc/howto/argparse.rst:102
 msgid ""
 "The second one starts to display the usefulness of the :mod:`argparse` "
 "module. We have done almost nothing, but already we get a nice help message."
 msgstr ""
 
 # a83aa58673aa4ffd844d4f8710e0f5b8
-#: ../src/Doc/howto/argparse.rst:103
+#: ../src/Doc/howto/argparse.rst:105
 msgid ""
 "The ``--help`` option, which can also be shortened to ``-h``, is the only "
 "option we get for free (i.e. no need to specify it). Specifying anything "
@@ -146,27 +148,27 @@ msgid ""
 msgstr ""
 
 # 36c8a64da160473f83961e770fd19e86
-#: ../src/Doc/howto/argparse.rst:110
+#: ../src/Doc/howto/argparse.rst:112
 msgid "Introducing Positional arguments"
 msgstr ""
 
 # 89702f55bf604b84ba7bf50eaa18381c
-#: ../src/Doc/howto/argparse.rst:112
+#: ../src/Doc/howto/argparse.rst:114
 msgid "An example::"
 msgstr ""
 
 # 2152c6282c354a45ae084c6484959db0
-#: ../src/Doc/howto/argparse.rst:120
+#: ../src/Doc/howto/argparse.rst:122
 msgid "And running the code:"
 msgstr ""
 
 # 8ac679fe46d74f6686f40d8b373e62cd
-#: ../src/Doc/howto/argparse.rst:138
+#: ../src/Doc/howto/argparse.rst:140
 msgid "Here is what's happening:"
 msgstr ""
 
 # e90c4bc43e8d4916928a09c382e57b8f
-#: ../src/Doc/howto/argparse.rst:140
+#: ../src/Doc/howto/argparse.rst:142
 msgid ""
 "We've added the :meth:`add_argument` method, which is what we use to specify "
 "which command-line options the program is willing to accept. In this case, "
@@ -174,19 +176,19 @@ msgid ""
 msgstr ""
 
 # 20f8cd7161e04fbf8a3ef30fa9a0fd43
-#: ../src/Doc/howto/argparse.rst:144
+#: ../src/Doc/howto/argparse.rst:146
 msgid "Calling our program now requires us to specify an option."
 msgstr ""
 
 # b31954419bb2477ba18be150cc9a904b
-#: ../src/Doc/howto/argparse.rst:146
+#: ../src/Doc/howto/argparse.rst:148
 msgid ""
 "The :meth:`parse_args` method actually returns some data from the options "
 "specified, in this case, ``echo``."
 msgstr ""
 
 # 94be1fc6c9a64555bf332d4b5273a8c8
-#: ../src/Doc/howto/argparse.rst:149
+#: ../src/Doc/howto/argparse.rst:151
 msgid ""
 "The variable is some form of 'magic' that :mod:`argparse` performs for free "
 "(i.e. no need to specify which variable that value is stored in). You will "
@@ -195,7 +197,7 @@ msgid ""
 msgstr ""
 
 # e737368bf84b4f14a1078f6b4d0834ce
-#: ../src/Doc/howto/argparse.rst:154
+#: ../src/Doc/howto/argparse.rst:156
 msgid ""
 "Note however that, although the help display looks nice and all, it "
 "currently is not as helpful as it can be. For example we see that we got "
@@ -205,17 +207,17 @@ msgid ""
 msgstr ""
 
 # 5ca6e3a3b28541a49f5313e2ca7540f3
-#: ../src/Doc/howto/argparse.rst:165
+#: ../src/Doc/howto/argparse.rst:167
 msgid "And we get:"
 msgstr ""
 
 # b4d1a84b95ec4463bf094ab4f5dc7e3e
-#: ../src/Doc/howto/argparse.rst:178
+#: ../src/Doc/howto/argparse.rst:180
 msgid "Now, how about doing something even more useful::"
 msgstr ""
 
 # eb4a5fbc93d74af6b741ea5ba889eac1
-#: ../src/Doc/howto/argparse.rst:196
+#: ../src/Doc/howto/argparse.rst:198
 msgid ""
 "That didn't go so well. That's because :mod:`argparse` treats the options we "
 "give it as strings, unless we tell it otherwise. So, let's tell :mod:"
@@ -223,19 +225,19 @@ msgid ""
 msgstr ""
 
 # 5fa0dae59b9441928901fc1d2309d5f3
-#: ../src/Doc/howto/argparse.rst:217
+#: ../src/Doc/howto/argparse.rst:219
 msgid ""
 "That went well. The program now even helpfully quits on bad illegal input "
 "before proceeding."
 msgstr ""
 
 # 9fe6344ec9a64053b877930edda99baa
-#: ../src/Doc/howto/argparse.rst:222
+#: ../src/Doc/howto/argparse.rst:224
 msgid "Introducing Optional arguments"
 msgstr ""
 
 # cf9e5e7cce1a427e9bada5bf3316df89
-#: ../src/Doc/howto/argparse.rst:224
+#: ../src/Doc/howto/argparse.rst:226
 msgid ""
 "So far we, have been playing with positional arguments. Let us have a look "
 "on how to add optional ones::"
@@ -245,20 +247,20 @@ msgstr ""
 # 4d444bec24e448f7bd620043cb4b2a02
 # 0465703176a9478ea74459722925cd49
 # 0d4b42c07c1441edbf6eb1aa357bfb97
-#: ../src/Doc/howto/argparse.rst:234 ../src/Doc/howto/argparse.rst:280
-#: ../src/Doc/howto/argparse.rst:396 ../src/Doc/howto/argparse.rst:430
+#: ../src/Doc/howto/argparse.rst:236 ../src/Doc/howto/argparse.rst:282
+#: ../src/Doc/howto/argparse.rst:398 ../src/Doc/howto/argparse.rst:432
 msgid "And the output:"
 msgstr ""
 
 # a2d6900fd2ef4799a4956eaf46ad548f
-#: ../src/Doc/howto/argparse.rst:254
+#: ../src/Doc/howto/argparse.rst:256
 msgid ""
 "The program is written so as to display something when ``--verbosity`` is "
 "specified and display nothing when not."
 msgstr ""
 
 # 48bf3a47c73d4df685831895d45cd3bc
-#: ../src/Doc/howto/argparse.rst:257
+#: ../src/Doc/howto/argparse.rst:259
 msgid ""
 "To show that the option is actually optional, there is no error when running "
 "the program without it. Note that by default, if an optional argument isn't "
@@ -268,19 +270,19 @@ msgid ""
 msgstr ""
 
 # ea474839c84441e5b4fed6a6985d0fc0
-#: ../src/Doc/howto/argparse.rst:263
+#: ../src/Doc/howto/argparse.rst:265
 msgid "The help message is a bit different."
 msgstr ""
 
 # 3f1265e224bb4577a68debe9c23c6c06
-#: ../src/Doc/howto/argparse.rst:265
+#: ../src/Doc/howto/argparse.rst:267
 msgid ""
 "When using the ``--verbosity`` option, one must also specify some value, any "
 "value."
 msgstr ""
 
 # 88ce273a61e742b8b58e5c944a371e5d
-#: ../src/Doc/howto/argparse.rst:268
+#: ../src/Doc/howto/argparse.rst:270
 msgid ""
 "The above example accepts arbitrary integer values for ``--verbosity``, but "
 "for our simple program, only two values are actually useful, ``True`` or "
@@ -288,7 +290,7 @@ msgid ""
 msgstr ""
 
 # c452465e05644cab83d1960866f0b729
-#: ../src/Doc/howto/argparse.rst:298
+#: ../src/Doc/howto/argparse.rst:300
 msgid ""
 "The option is now more of a flag than something that requires a value. We "
 "even changed the name of the option to match that idea. Note that we now "
@@ -298,24 +300,24 @@ msgid ""
 msgstr ""
 
 # bc5a61890db841fc9e59a1330a9ea38c
-#: ../src/Doc/howto/argparse.rst:305
+#: ../src/Doc/howto/argparse.rst:307
 msgid ""
 "It complains when you specify a value, in true spirit of what flags actually "
 "are."
 msgstr ""
 
 # d17e2b1f198348c0b15f28b624143b03
-#: ../src/Doc/howto/argparse.rst:308
+#: ../src/Doc/howto/argparse.rst:310
 msgid "Notice the different help text."
 msgstr ""
 
 # 749d899bef604512a359ff88a7e64be6
-#: ../src/Doc/howto/argparse.rst:312
+#: ../src/Doc/howto/argparse.rst:314
 msgid "Short options"
 msgstr ""
 
 # bdaf1ceb126644a09bb3ead44969c30e
-#: ../src/Doc/howto/argparse.rst:314
+#: ../src/Doc/howto/argparse.rst:316
 msgid ""
 "If you are familiar with command line usage, you will notice that I haven't "
 "yet touched on the topic of short versions of the options. It's quite "
@@ -323,49 +325,49 @@ msgid ""
 msgstr ""
 
 # 0e5ba7c902f843a0a7a204d3a67fdf6d
-#: ../src/Doc/howto/argparse.rst:326
+#: ../src/Doc/howto/argparse.rst:328
 msgid "And here goes:"
 msgstr ""
 
 # 6ab46d6fde2c417b8fd1b41c4588634d
-#: ../src/Doc/howto/argparse.rst:339
+#: ../src/Doc/howto/argparse.rst:341
 msgid "Note that the new ability is also reflected in the help text."
 msgstr ""
 
 # 9cd03436de014d769ef7c75a564576d6
-#: ../src/Doc/howto/argparse.rst:343
+#: ../src/Doc/howto/argparse.rst:345
 msgid "Combining Positional and Optional arguments"
 msgstr ""
 
 # af0aa9f8016a49e0a56448f2368714d8
-#: ../src/Doc/howto/argparse.rst:345
+#: ../src/Doc/howto/argparse.rst:347
 msgid "Our program keeps growing in complexity::"
 msgstr ""
 
 # 7a2171285e0d4947af63b2e13836bf88
-#: ../src/Doc/howto/argparse.rst:360
+#: ../src/Doc/howto/argparse.rst:362
 msgid "And now the output:"
 msgstr ""
 
 # 95f3c6e1f6ff407295cd42881bc8b685
-#: ../src/Doc/howto/argparse.rst:374
+#: ../src/Doc/howto/argparse.rst:376
 msgid "We've brought back a positional argument, hence the complaint."
 msgstr ""
 
 # 14c74304cae3408bbee542d20599aa77
-#: ../src/Doc/howto/argparse.rst:376
+#: ../src/Doc/howto/argparse.rst:378
 msgid "Note that the order does not matter."
 msgstr ""
 
 # b1997585bd4e4bdfa81eb2674454962e
-#: ../src/Doc/howto/argparse.rst:378
+#: ../src/Doc/howto/argparse.rst:380
 msgid ""
 "How about we give this program of ours back the ability to have multiple "
 "verbosity values, and actually get to use them::"
 msgstr ""
 
 # a3e67eade5ea48aa971ac7fdbfadba1d
-#: ../src/Doc/howto/argparse.rst:412
+#: ../src/Doc/howto/argparse.rst:414
 msgid ""
 "These all look good except the last one, which exposes a bug in our program. "
 "Let's fix it by restricting the values the ``--verbosity`` option can "
@@ -373,14 +375,14 @@ msgid ""
 msgstr ""
 
 # ff50803d09054f7fb826f0207b9870b0
-#: ../src/Doc/howto/argparse.rst:448
+#: ../src/Doc/howto/argparse.rst:450
 msgid ""
 "Note that the change also reflects both in the error message as well as the "
 "help string."
 msgstr ""
 
 # 36dc67e241e1421c81469dd3c1215ebd
-#: ../src/Doc/howto/argparse.rst:451
+#: ../src/Doc/howto/argparse.rst:453
 msgid ""
 "Now, let's use a different approach of playing with verbosity, which is "
 "pretty common. It also matches the way the CPython executable handles its "
@@ -388,47 +390,47 @@ msgid ""
 msgstr ""
 
 # 8546c388b9ba46e4a33e106bf56b4c46
-#: ../src/Doc/howto/argparse.rst:470
+#: ../src/Doc/howto/argparse.rst:472
 msgid ""
 "We have introduced another action, \"count\", to count the number of "
 "occurrences of a specific optional arguments:"
 msgstr ""
 
 # da62432192934a6cbd3ce0fdc3fd852c
-#: ../src/Doc/howto/argparse.rst:498
+#: ../src/Doc/howto/argparse.rst:500
 msgid ""
 "Yes, it's now more of a flag (similar to ``action=\"store_true\"``) in the "
 "previous version of our script. That should explain the complaint."
 msgstr ""
 
 # 238e2227b86048c78eebfa3a92615746
-#: ../src/Doc/howto/argparse.rst:501
+#: ../src/Doc/howto/argparse.rst:503
 msgid "It also behaves similar to \"store_true\" action."
 msgstr ""
 
 # 96349d6535594b17a600ad840e547332
-#: ../src/Doc/howto/argparse.rst:503
+#: ../src/Doc/howto/argparse.rst:505
 msgid ""
 "Now here's a demonstration of what the \"count\" action gives. You've "
 "probably seen this sort of usage before."
 msgstr ""
 
 # 3df4bafd899e4101baa9cf065eb8d1cb
-#: ../src/Doc/howto/argparse.rst:506
+#: ../src/Doc/howto/argparse.rst:508
 msgid ""
 "And, just like the \"store_true\" action, if you don't specify the ``-v`` "
 "flag, that flag is considered to have ``None`` value."
 msgstr ""
 
 # a15ad8b69c5c4d0f8ade8df1655f564c
-#: ../src/Doc/howto/argparse.rst:509
+#: ../src/Doc/howto/argparse.rst:511
 msgid ""
 "As should be expected, specifying the long form of the flag, we should get "
 "the same output."
 msgstr ""
 
 # bba2cb9134de4a1ba8266001ce32e227
-#: ../src/Doc/howto/argparse.rst:512
+#: ../src/Doc/howto/argparse.rst:514
 msgid ""
 "Sadly, our help output isn't very informative on the new ability our script "
 "has acquired, but that can always be fixed by improving the documentation "
@@ -436,39 +438,39 @@ msgid ""
 msgstr ""
 
 # 7c3baa4d38a04921bbb34db75f40191f
-#: ../src/Doc/howto/argparse.rst:516
+#: ../src/Doc/howto/argparse.rst:518
 msgid "That last output exposes a bug in our program."
 msgstr ""
 
 # ede443f12b194bf08b8af2cc84de72c7
-#: ../src/Doc/howto/argparse.rst:519
+#: ../src/Doc/howto/argparse.rst:521
 msgid "Let's fix::"
 msgstr ""
 
 # 42d9f54500cb4fe7a3f7f04764af02a7
-#: ../src/Doc/howto/argparse.rst:538
+#: ../src/Doc/howto/argparse.rst:540
 msgid "And this is what it gives:"
 msgstr ""
 
 # e06d6df0f277456c898c83b64e6e07fd
-#: ../src/Doc/howto/argparse.rst:552
+#: ../src/Doc/howto/argparse.rst:554
 msgid ""
 "First output went well, and fixes the bug we had before. That is, we want "
 "any value >= 2 to be as verbose as possible."
 msgstr ""
 
 # a83746c6d4f84a3ab4f17a816ad8d27e
-#: ../src/Doc/howto/argparse.rst:555
+#: ../src/Doc/howto/argparse.rst:557
 msgid "Third output not so good."
 msgstr ""
 
 # fc17fe3866c44c2c865e2ade4f0cf235
-#: ../src/Doc/howto/argparse.rst:557
+#: ../src/Doc/howto/argparse.rst:559
 msgid "Let's fix that bug::"
 msgstr ""
 
 # fc49dd9b000d4a2e9bd86f5c87ae7611
-#: ../src/Doc/howto/argparse.rst:574
+#: ../src/Doc/howto/argparse.rst:576
 msgid ""
 "We've just introduced yet another keyword, ``default``. We've set it to "
 "``0`` in order to make it comparable to the other int values. Remember that "
@@ -478,12 +480,12 @@ msgid ""
 msgstr ""
 
 # f7b5161d927440aa913b318a3cb63e3a
-#: ../src/Doc/howto/argparse.rst:581
+#: ../src/Doc/howto/argparse.rst:583
 msgid "And:"
 msgstr ""
 
 # 48d847a95afe4972a90685bb5dfa27e7
-#: ../src/Doc/howto/argparse.rst:588
+#: ../src/Doc/howto/argparse.rst:590
 msgid ""
 "You can go quite far just with what we've learned so far, and we have only "
 "scratched the surface. The :mod:`argparse` module is very powerful, and "
@@ -491,12 +493,12 @@ msgid ""
 msgstr ""
 
 # 9ef1eb9b41ba423a92ddd13d4b708fce
-#: ../src/Doc/howto/argparse.rst:595
+#: ../src/Doc/howto/argparse.rst:597
 msgid "Getting a little more advanced"
 msgstr ""
 
 # 2dadf9c3eab740f4b7570152a47b84c9
-#: ../src/Doc/howto/argparse.rst:597
+#: ../src/Doc/howto/argparse.rst:599
 msgid ""
 "What if we wanted to expand our tiny program to perform other powers, not "
 "just squares::"
@@ -504,12 +506,12 @@ msgstr ""
 
 # f3bf44877bc64c0aa86abae6e2f0acc6
 # e4e884a3fc7347999e313d0b14998905
-#: ../src/Doc/howto/argparse.rst:614 ../src/Doc/howto/argparse.rst:652
+#: ../src/Doc/howto/argparse.rst:616 ../src/Doc/howto/argparse.rst:654
 msgid "Output:"
 msgstr ""
 
 # ec32d3f0faf6456687bc1073526ec4bb
-#: ../src/Doc/howto/argparse.rst:635
+#: ../src/Doc/howto/argparse.rst:637
 msgid ""
 "Notice that so far we've been using verbosity level to *change* the text "
 "that gets displayed. The following example instead uses verbosity level to "
@@ -517,12 +519,12 @@ msgid ""
 msgstr ""
 
 # f8ffc56259fe4a6ca816aaae8589db93
-#: ../src/Doc/howto/argparse.rst:666
+#: ../src/Doc/howto/argparse.rst:668
 msgid "Conflicting options"
 msgstr ""
 
 # 676c05799d414eddb22479972d2b480e
-#: ../src/Doc/howto/argparse.rst:668
+#: ../src/Doc/howto/argparse.rst:670
 msgid ""
 "So far, we have been working with two methods of an :class:`argparse."
 "ArgumentParser` instance. Let's introduce a third one, :meth:"
@@ -533,14 +535,14 @@ msgid ""
 msgstr ""
 
 # 713077aa2c824297950aa968d2444dcd
-#: ../src/Doc/howto/argparse.rst:694
+#: ../src/Doc/howto/argparse.rst:696
 msgid ""
 "Our program is now simpler, and we've lost some functionality for the sake "
 "of demonstration. Anyways, here's the output:"
 msgstr ""
 
 # 45d600c444b441928858bfedbb823c46
-#: ../src/Doc/howto/argparse.rst:712
+#: ../src/Doc/howto/argparse.rst:714
 msgid ""
 "That should be easy to follow. I've added that last output so you can see "
 "the sort of flexibility you get, i.e. mixing long form options with short "
@@ -548,14 +550,14 @@ msgid ""
 msgstr ""
 
 # 73f555c6fd084854a2d62f34e6ef4553
-#: ../src/Doc/howto/argparse.rst:716
+#: ../src/Doc/howto/argparse.rst:718
 msgid ""
 "Before we conclude, you probably want to tell your users the main purpose of "
 "your program, just in case they don't know::"
 msgstr ""
 
 # 927f5f87a382492ab7a3926dda0d4bbc
-#: ../src/Doc/howto/argparse.rst:737
+#: ../src/Doc/howto/argparse.rst:739
 msgid ""
 "Note that slight difference in the usage text. Note the ``[-v | -q]``, which "
 "tells us that we can either use ``-v`` or ``-q``, but not both at the same "
@@ -563,12 +565,12 @@ msgid ""
 msgstr ""
 
 # 1b05b0b91b544885bf48160c113f9998
-#: ../src/Doc/howto/argparse.rst:759
+#: ../src/Doc/howto/argparse.rst:761
 msgid "Conclusion"
 msgstr ""
 
 # f791bef919cf4cf5bdeaa83a63b11948
-#: ../src/Doc/howto/argparse.rst:761
+#: ../src/Doc/howto/argparse.rst:763
 msgid ""
 "The :mod:`argparse` module offers a lot more than shown here. Its docs are "
 "quite detailed and thorough, and full of examples. Having gone through this "
@@ -5685,20 +5687,20 @@ msgid ""
 "There are times when you want to customize logging handlers in particular "
 "ways, and if you use :func:`dictConfig` you may be able to do this without "
 "subclassing. As an example, consider that you may want to set the ownership "
-"of a log file. On POSIX, this is easily done using :func:`shutil.chown`, but "
-"the file handlers in the stdlib don't offer built-in support. You can "
-"customize handler creation using a plain function such as::"
+"of a log file. On POSIX, this is easily done using :func:`os.chown`, but the "
+"file handlers in the stdlib don't offer built-in support. You can customize "
+"handler creation using a plain function such as::"
 msgstr ""
 
 # 4d47d67f619645d1950fc10b4f1dc91f
-#: ../src/Doc/howto/logging-cookbook.rst:860
+#: ../src/Doc/howto/logging-cookbook.rst:865
 msgid ""
 "You can then specify, in a logging configuration passed to :func:"
 "`dictConfig`, that a logging handler be created by calling this function::"
 msgstr ""
 
 # 8c06e5cb9a48412fb00d1f1317f0077d
-#: ../src/Doc/howto/logging-cookbook.rst:893
+#: ../src/Doc/howto/logging-cookbook.rst:898
 msgid ""
 "In this example I am setting the ownership using the ``pulse`` user and "
 "group, just for the purposes of illustration. Putting it together into a "
@@ -5706,12 +5708,12 @@ msgid ""
 msgstr ""
 
 # 8e3572b8a76c4f63891e3c656ade99f9
-#: ../src/Doc/howto/logging-cookbook.rst:940
+#: ../src/Doc/howto/logging-cookbook.rst:945
 msgid "To run this, you will probably need to run as ``root``::"
 msgstr ""
 
 # 2ba20e9beb6d43e0a98da6e04a5fe42b
-#: ../src/Doc/howto/logging-cookbook.rst:948
+#: ../src/Doc/howto/logging-cookbook.rst:953
 msgid ""
 "Note that this example uses Python 3.3 because that's where :func:`shutil."
 "chown` makes an appearance. This approach should work with any Python "
@@ -5721,19 +5723,19 @@ msgid ""
 msgstr ""
 
 # 873509a8c6204c27a0af43b25beecfe2
-#: ../src/Doc/howto/logging-cookbook.rst:954
+#: ../src/Doc/howto/logging-cookbook.rst:959
 msgid ""
 "In practice, the handler-creating function may be in a utility module "
 "somewhere in your project. Instead of the line in the configuration::"
 msgstr ""
 
 # 4e48ec9d6a6840c697af9e9831a64aa0
-#: ../src/Doc/howto/logging-cookbook.rst:959
+#: ../src/Doc/howto/logging-cookbook.rst:964
 msgid "you could use e.g.::"
 msgstr ""
 
 # 3a82194747ae4b23b1ad1aa66af528a0
-#: ../src/Doc/howto/logging-cookbook.rst:963
+#: ../src/Doc/howto/logging-cookbook.rst:968
 msgid ""
 "where ``project.util`` can be replaced with the actual name of the package "
 "where the function resides. In the above working script, using ``'ext://"
@@ -5742,7 +5744,7 @@ msgid ""
 msgstr ""
 
 # 4b2d94be597545978078af2b12d62c14
-#: ../src/Doc/howto/logging-cookbook.rst:968
+#: ../src/Doc/howto/logging-cookbook.rst:973
 msgid ""
 "This example hopefully also points the way to how you could implement other "
 "types of file change - e.g. setting specific POSIX permission bits - in the "
@@ -5750,7 +5752,7 @@ msgid ""
 msgstr ""
 
 # 08e469fef83a4330926f828d88e9ebe6
-#: ../src/Doc/howto/logging-cookbook.rst:972
+#: ../src/Doc/howto/logging-cookbook.rst:977
 msgid ""
 "Of course, the approach could also be extended to types of handler other "
 "than a :class:`~logging.FileHandler` - for example, one of the rotating file "
@@ -5758,12 +5760,12 @@ msgid ""
 msgstr ""
 
 # 02c540aa3e87419d8a2437011c57f47b
-#: ../src/Doc/howto/logging-cookbook.rst:980
+#: ../src/Doc/howto/logging-cookbook.rst:985
 msgid "Configuring filters with :func:`dictConfig`"
 msgstr ""
 
 # a83e5f5b18094a7d9ce8f4cf4254b949
-#: ../src/Doc/howto/logging-cookbook.rst:982
+#: ../src/Doc/howto/logging-cookbook.rst:987
 msgid ""
 "You *can* configure filters using :func:`~logging.config.dictConfig`, though "
 "it might not be obvious at first glance how to do it (hence this recipe). "
@@ -5779,7 +5781,7 @@ msgid ""
 msgstr ""
 
 # 5d668e33f96f4efb95e8de2334a7e93d
-#: ../src/Doc/howto/logging-cookbook.rst:1035
+#: ../src/Doc/howto/logging-cookbook.rst:1040
 msgid ""
 "This example shows how you can pass configuration data to the callable which "
 "constructs the instance, in the form of keyword parameters. When run, the "
@@ -5787,17 +5789,17 @@ msgid ""
 msgstr ""
 
 # fbcf9986f4da445ab27f946a5bf59dcf
-#: ../src/Doc/howto/logging-cookbook.rst:1041
+#: ../src/Doc/howto/logging-cookbook.rst:1046
 msgid "which shows that the filter is working as configured."
 msgstr ""
 
 # ca7822bd3451451eb53c76bb8ef104cd
-#: ../src/Doc/howto/logging-cookbook.rst:1043
+#: ../src/Doc/howto/logging-cookbook.rst:1048
 msgid "A couple of extra points to note:"
 msgstr ""
 
 # 16fa4de733634057985a4b3495555a47
-#: ../src/Doc/howto/logging-cookbook.rst:1045
+#: ../src/Doc/howto/logging-cookbook.rst:1050
 msgid ""
 "If you can't refer to the callable directly in the configuration (e.g. if it "
 "lives in a different module, and you can't import it directly where the "
@@ -5808,7 +5810,7 @@ msgid ""
 msgstr ""
 
 # 9438e5f8a9ea4fa199092485ad386ee4
-#: ../src/Doc/howto/logging-cookbook.rst:1052
+#: ../src/Doc/howto/logging-cookbook.rst:1057
 msgid ""
 "As well as for filters, this technique can also be used to configure custom "
 "handlers and formatters. See :ref:`logging-config-dict-userdef` for more "
