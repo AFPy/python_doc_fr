@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-27 05:26\n"
+"POT-Creation-Date: 2014-11-03 09:23\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -629,26 +629,27 @@ msgid "str/unicode Unification"
 msgstr ""
 
 # a9f354480a3642a9a9e475e80b310aee
-#: ../src/Doc/howto/cporting.rst:47
+#: ../src/Doc/howto/cporting.rst:46
 msgid ""
-"Python 3's :func:`str` (``PyString_*`` functions in C) type is equivalent to "
-"Python 2's :func:`unicode` (``PyUnicode_*``).  The old 8-bit string type has "
-"become :func:`bytes`.  Python 2.6 and later provide a compatibility header, :"
-"file:`bytesobject.h`, mapping ``PyBytes`` names to ``PyString`` ones.  For "
-"best compatibility with Python 3, :c:type:`PyUnicode` should be used for "
-"textual data and :c:type:`PyBytes` for binary data.  It's also important to "
-"remember that :c:type:`PyBytes` and :c:type:`PyUnicode` in Python 3 are not "
-"interchangeable like :c:type:`PyString` and :c:type:`PyUnicode` are in "
-"Python 2.  The following example shows best practices with regards to :c:"
-"type:`PyUnicode`, :c:type:`PyString`, and :c:type:`PyBytes`. ::"
+"Python 3's :func:`str` type is equivalent to Python 2's :func:`unicode`; the "
+"C functions are called ``PyUnicode_*`` for both.  The old 8-bit string type "
+"has become :func:`bytes`, with C functions called ``PyBytes_*``.  Python 2.6 "
+"and later provide a compatibility header, :file:`bytesobject.h`, mapping "
+"``PyBytes`` names to ``PyString`` ones.  For best compatibility with Python "
+"3, :c:type:`PyUnicode` should be used for textual data and :c:type:`PyBytes` "
+"for binary data.  It's also important to remember that :c:type:`PyBytes` "
+"and :c:type:`PyUnicode` in Python 3 are not interchangeable like :c:type:"
+"`PyString` and :c:type:`PyUnicode` are in Python 2.  The following example "
+"shows best practices with regards to :c:type:`PyUnicode`, :c:type:"
+"`PyString`, and :c:type:`PyBytes`. ::"
 msgstr ""
 
-#: ../src/Doc/howto/cporting.rst:96
+#: ../src/Doc/howto/cporting.rst:95
 msgid "long/int Unification"
 msgstr ""
 
 # 3767f985b0b640ab86b6e4fcac418764
-#: ../src/Doc/howto/cporting.rst:98
+#: ../src/Doc/howto/cporting.rst:97
 msgid ""
 "Python 3 has only one integer type, :func:`int`.  But it actually "
 "corresponds to Python 2's :func:`long` type--the :func:`int` type used in "
@@ -656,12 +657,12 @@ msgid ""
 "their ``PyLong_*`` equivalents."
 msgstr ""
 
-#: ../src/Doc/howto/cporting.rst:105
+#: ../src/Doc/howto/cporting.rst:104
 msgid "Module initialization and state"
 msgstr ""
 
 # 0926a05def714bc6be7470c21a597de2
-#: ../src/Doc/howto/cporting.rst:107
+#: ../src/Doc/howto/cporting.rst:106
 msgid ""
 "Python 3 has a revamped extension module initialization system.  (See :pep:"
 "`3121`.)  Instead of storing module state in globals, they should be stored "
@@ -671,12 +672,12 @@ msgid ""
 msgstr ""
 
 # 2b2b820305204eb98416dbc169903c6a
-#: ../src/Doc/howto/cporting.rst:198
+#: ../src/Doc/howto/cporting.rst:197
 msgid "CObject replaced with Capsule"
 msgstr ""
 
 # e40a24473fd74f3183273bf061bd0ae1
-#: ../src/Doc/howto/cporting.rst:200
+#: ../src/Doc/howto/cporting.rst:199
 msgid ""
 "The :c:type:`Capsule` object was introduced in Python 3.1 and 2.7 to "
 "replace :c:type:`CObject`.  CObjects were useful, but the :c:type:`CObject` "
@@ -687,7 +688,7 @@ msgid ""
 msgstr ""
 
 # 74ae9cf398894df4b60b8564bb3748df
-#: ../src/Doc/howto/cporting.rst:207
+#: ../src/Doc/howto/cporting.rst:206
 msgid ""
 "If you're currently using CObjects, and you want to migrate to 3.1 or newer, "
 "you'll need to switch to Capsules. :c:type:`CObject` was deprecated in 3.1 "
@@ -699,7 +700,7 @@ msgid ""
 msgstr ""
 
 # 2b7e3a305e1f464991a47c4c4d58c9e0
-#: ../src/Doc/howto/cporting.rst:217
+#: ../src/Doc/howto/cporting.rst:216
 msgid ""
 "The following example header file :file:`capsulethunk.h` may solve the "
 "problem for you.  Simply write your code against the :c:type:`Capsule` API "
@@ -709,7 +710,7 @@ msgid ""
 msgstr ""
 
 # 8b1240e394814c219739b84896bc630a
-#: ../src/Doc/howto/cporting.rst:224
+#: ../src/Doc/howto/cporting.rst:223
 msgid ""
 ":file:`capsulethunk.h` simulates Capsules using CObjects.  However, :c:type:"
 "`CObject` provides no place to store the capsule's \"name\".  As a result "
@@ -718,12 +719,12 @@ msgid ""
 msgstr ""
 
 # 691c2900ef5e425cbe070f2624ae02a5
-#: ../src/Doc/howto/cporting.rst:229
+#: ../src/Doc/howto/cporting.rst:228
 msgid "The name parameter passed in to :c:func:`PyCapsule_New` is ignored."
 msgstr ""
 
 # a6ed5310b58f4270b84746b90266e4c5
-#: ../src/Doc/howto/cporting.rst:231
+#: ../src/Doc/howto/cporting.rst:230
 msgid ""
 "The name parameter passed in to :c:func:`PyCapsule_IsValid` and :c:func:"
 "`PyCapsule_GetPointer` is ignored, and no error checking of the name is "
@@ -731,12 +732,12 @@ msgid ""
 msgstr ""
 
 # 223109969e9a4a6c943bd1f206d9ff8c
-#: ../src/Doc/howto/cporting.rst:235
+#: ../src/Doc/howto/cporting.rst:234
 msgid ":c:func:`PyCapsule_GetName` always returns NULL."
 msgstr ""
 
 # 94468e8bbf364d05820aeca035f9f767
-#: ../src/Doc/howto/cporting.rst:237
+#: ../src/Doc/howto/cporting.rst:236
 msgid ""
 ":c:func:`PyCapsule_SetName` always raises an exception and returns failure.  "
 "(Since there's no way to store a name in a CObject, noisy failure of :c:func:"
@@ -745,22 +746,22 @@ msgid ""
 msgstr ""
 
 # 7d9b3aa9994a47948fb61ddc42eaa6be
-#: ../src/Doc/howto/cporting.rst:244
+#: ../src/Doc/howto/cporting.rst:243
 msgid ""
 "You can find :file:`capsulethunk.h` in the Python source distribution as :"
 "source:`Doc/includes/capsulethunk.h`.  We also include it here for your "
 "convenience:"
 msgstr ""
 
-#: ../src/Doc/howto/cporting.rst:253
+#: ../src/Doc/howto/cporting.rst:252
 msgid "Other options"
 msgstr ""
 
 # efe92c9f2c7f4d2ba14c533d6d0d159d
-#: ../src/Doc/howto/cporting.rst:255
+#: ../src/Doc/howto/cporting.rst:254
 msgid ""
 "If you are writing a new extension module, you might consider `Cython "
-"<http://www.cython.org>`_.  It translates a Python-like language to C.  The "
+"<http://cython.org/>`_.  It translates a Python-like language to C.  The "
 "extension modules it creates are compatible with Python 3 and Python 2."
 msgstr ""
 
@@ -3039,10 +3040,11 @@ msgid ""
 "through to the constructed list's ``.sort()`` method. ::"
 msgstr ""
 
+# 40b61bab800c418d9af70280f48db5e5
 #: ../src/Doc/howto/functional.rst:743
 msgid ""
 "(For a more detailed discussion of sorting, see the Sorting mini-HOWTO in "
-"the Python wiki at http://wiki.python.org/moin/HowTo/Sorting.)"
+"the Python wiki at https://wiki.python.org/moin/HowTo/Sorting.)"
 msgstr ""
 
 # c4d9ef84666c4a6a89abb857a22d2658
@@ -5493,7 +5495,7 @@ msgid ""
 "subclasses do not make use of :mod:`multiprocessing` at present, though they "
 "may do so in the future. Note that at present, the :mod:`multiprocessing` "
 "module does not provide working lock functionality on all platforms (see "
-"http://bugs.python.org/issue3770)."
+"https://bugs.python.org/issue3770)."
 msgstr ""
 
 # 148f7bd8dfc74335a2ba74848ddbf233
@@ -5901,18 +5903,20 @@ msgstr ""
 
 # 51f5e59aa2194c7597a6e3da783612e4
 #: ../src/Doc/howto/pyporting.rst:42
-msgid "If you are dropping Python 2 support, use 2to3_ to port to Python 3"
+msgid ""
+"If you are dropping Python 2 support, use :ref:`2to3 <2to3-reference>` to "
+"port to Python 3"
 msgstr ""
 
 # b9d3e51f64894b4db110d5d5f378b11c
-#: ../src/Doc/howto/pyporting.rst:43
+#: ../src/Doc/howto/pyporting.rst:45
 msgid ""
 "If you are keeping Python 2 support, then start writing Python 2/3-"
 "compatible code starting **TODAY**"
 msgstr ""
 
 # 319d8d9a69a646abbde7e125f6f32d70
-#: ../src/Doc/howto/pyporting.rst:46
+#: ../src/Doc/howto/pyporting.rst:48
 msgid ""
 "If you have dependencies that have not been ported, reach out to them to "
 "port their project while working to make your code compatible with Python 3 "
@@ -5920,26 +5924,26 @@ msgid ""
 msgstr ""
 
 # 6b6330340c974bab9420bc7286499a0b
-#: ../src/Doc/howto/pyporting.rst:49
+#: ../src/Doc/howto/pyporting.rst:51
 msgid ""
 "If all your dependencies have been ported (or you have none), go ahead and "
 "port to Python 3"
 msgstr ""
 
 # 59e8f9f7a3934f71a6a6e38aa7e0818d
-#: ../src/Doc/howto/pyporting.rst:52
+#: ../src/Doc/howto/pyporting.rst:54
 msgid ""
 "If you are creating a new project that wants to have 2/3 compatibility, code "
 "in Python 3 and then backport to Python 2"
 msgstr ""
 
 # cf359e67f99f47c98ffd55f73df3b547
-#: ../src/Doc/howto/pyporting.rst:57
+#: ../src/Doc/howto/pyporting.rst:59
 msgid "Before You Begin"
 msgstr ""
 
 # b585dc57f9ad48cca1da8d40562eab72
-#: ../src/Doc/howto/pyporting.rst:59
+#: ../src/Doc/howto/pyporting.rst:61
 msgid ""
 "If your project is on the Cheeseshop_/PyPI_, make sure it has the proper "
 "`trove classifiers`_ to signify what versions of Python it **currently** "
@@ -5951,7 +5955,7 @@ msgid ""
 msgstr ""
 
 # 38f0ff77e0174dfbb1a443e115ebd7d0
-#: ../src/Doc/howto/pyporting.rst:71
+#: ../src/Doc/howto/pyporting.rst:73
 msgid ""
 "Once your project supports Python 3 you will want to go back and add the "
 "appropriate classifiers for Python 3 as well. This is important as setting "
@@ -5960,7 +5964,7 @@ msgid ""
 msgstr ""
 
 # affaf1a2cc0f471abc51dbe3030b80a3
-#: ../src/Doc/howto/pyporting.rst:76
+#: ../src/Doc/howto/pyporting.rst:78
 msgid ""
 "Make sure you have a robust test suite. You need to make sure everything "
 "continues to work, just like when you support a new minor/feature release of "
@@ -5975,18 +5979,18 @@ msgid ""
 msgstr ""
 
 # 5effd53c2aef4e0aab8b9d929505073f
-#: ../src/Doc/howto/pyporting.rst:87
+#: ../src/Doc/howto/pyporting.rst:89
 msgid ""
-"Drop support for older Python versions if possible. `Python 2.5`_ introduced "
-"a lot of useful syntax and libraries which have become idiomatic in Python "
-"3. `Python 2.6`_ introduced future statements which makes compatibility much "
-"easier if you are going from Python 2 to 3. `Python 2.7`_ continues the "
-"trend in the stdlib. Choose the newest version of Python which you believe "
-"can be your minimum support version and work from there."
+"Drop support for older Python versions if possible. Python 2.5 introduced a "
+"lot of useful syntax and libraries which have become idiomatic in Python 3. "
+"Python 2.6 introduced future statements which makes compatibility much "
+"easier if you are going from Python 2 to 3. Python 2.7 continues the trend "
+"in the stdlib. Choose the newest version of Python which you believe can be "
+"your minimum support version and work from there."
 msgstr ""
 
 # 0a81a69232c744c8bddfdb39e9dee724
-#: ../src/Doc/howto/pyporting.rst:95
+#: ../src/Doc/howto/pyporting.rst:97
 msgid ""
 "Target the newest version of Python 3 that you can. Beyond just the usual "
 "bugfixes, compatibility has continued to improve between Python 2 and 3 as "
@@ -5995,12 +5999,12 @@ msgid ""
 msgstr ""
 
 # 5df91ba38d274da78f22e256b624e640
-#: ../src/Doc/howto/pyporting.rst:102
+#: ../src/Doc/howto/pyporting.rst:104
 msgid "Writing Source-Compatible Python 2/3 Code"
 msgstr ""
 
 # b384fa25c3e345f8b0ca45ee37745924
-#: ../src/Doc/howto/pyporting.rst:104
+#: ../src/Doc/howto/pyporting.rst:106
 msgid ""
 "Over the years the Python community has discovered that the easiest way to "
 "support both Python 2 and 3 in parallel is to write Python code that works "
@@ -6011,12 +6015,12 @@ msgid ""
 msgstr ""
 
 # e37ea88df3114b16bbbd343df032925a
-#: ../src/Doc/howto/pyporting.rst:112
+#: ../src/Doc/howto/pyporting.rst:114
 msgid "Projects to Consider"
 msgstr ""
 
 # d786edc5e71649b4a381fc625b01e595
-#: ../src/Doc/howto/pyporting.rst:114
+#: ../src/Doc/howto/pyporting.rst:116
 msgid ""
 "The lowest level library for supporting Python 2 & 3 simultaneously is six_. "
 "Reading through its documentation will give you an idea of where exactly the "
@@ -6025,7 +6029,7 @@ msgid ""
 msgstr ""
 
 # 0cb34f83b81346bd8e2945291e23f36d
-#: ../src/Doc/howto/pyporting.rst:119
+#: ../src/Doc/howto/pyporting.rst:121
 msgid ""
 "To help automate porting your code over to using six, you can use "
 "modernize_. This project will attempt to rewrite your code to be as modern "
@@ -6034,7 +6038,7 @@ msgid ""
 msgstr ""
 
 # d77300995d5546c891a7d7b9f0dfd4fe
-#: ../src/Doc/howto/pyporting.rst:123
+#: ../src/Doc/howto/pyporting.rst:125
 msgid ""
 "If you want to write your compatible code to feel more like Python 3 there "
 "is the future_ project. It tries to provide backports of objects from Python "
@@ -6047,12 +6051,12 @@ msgid ""
 msgstr ""
 
 # 7978c3bcde614790b21ec2f6b3d1a13f
-#: ../src/Doc/howto/pyporting.rst:134
+#: ../src/Doc/howto/pyporting.rst:136
 msgid "Tips & Tricks"
 msgstr ""
 
 # f36bf80c4a9c4e3c806fbc8f4fc8f1a9
-#: ../src/Doc/howto/pyporting.rst:136
+#: ../src/Doc/howto/pyporting.rst:138
 msgid ""
 "To help with writing source-compatible code using one of the projects "
 "mentioned in `Projects to Consider`_, consider following the below "
@@ -6062,38 +6066,38 @@ msgid ""
 msgstr ""
 
 # 0052bcd6b2e2478c814287f60a3ae01a
-#: ../src/Doc/howto/pyporting.rst:143
+#: ../src/Doc/howto/pyporting.rst:145
 msgid "Support Python 2.7"
 msgstr ""
 
 # 985a47117ed94be5bb5fa2a533228a63
-#: ../src/Doc/howto/pyporting.rst:145
+#: ../src/Doc/howto/pyporting.rst:147
 msgid ""
-"As a first step, make sure that your project is compatible with `Python "
-"2.7`_. This is just good to do as Python 2.7 is the last release of Python 2 "
-"and thus will be used for a rather long time. It also allows for use of the "
+"As a first step, make sure that your project is compatible with Python 2.7. "
+"This is just good to do as Python 2.7 is the last release of Python 2 and "
+"thus will be used for a rather long time. It also allows for use of the "
 "``-3`` flag to Python to help discover places in your code where "
 "compatibility might be an issue (the ``-3`` flag is in Python 2.6 but Python "
 "2.7 adds more warnings)."
 msgstr ""
 
 # c325727b35694b8abd54f7a8e47a57d5
-#: ../src/Doc/howto/pyporting.rst:152
-msgid "Try to Support `Python 2.6`_ and Newer Only"
+#: ../src/Doc/howto/pyporting.rst:154
+msgid "Try to Support Python 2.6 and Newer Only"
 msgstr ""
 
 # b74674991a424c7c8bf5da770d9ff79c
-#: ../src/Doc/howto/pyporting.rst:154
+#: ../src/Doc/howto/pyporting.rst:156
 msgid ""
-"While not possible for all projects, if you can support `Python 2.6`_ and "
-"newer **only**, your life will be much easier. Various future statements, "
-"stdlib additions, etc. exist only in Python 2.6 and later which greatly "
-"assist in supporting Python 3. But if you project must keep support for "
-"`Python 2.5`_ then it is still possible to simultaneously support Python 3."
+"While not possible for all projects, if you can support Python 2.6 and newer "
+"**only**, your life will be much easier. Various future statements, stdlib "
+"additions, etc. exist only in Python 2.6 and later which greatly assist in "
+"supporting Python 3. But if you project must keep support for Python 2.5 "
+"then it is still possible to simultaneously support Python 3."
 msgstr ""
 
 # 612c0ab302284a8f816f83128df1c249
-#: ../src/Doc/howto/pyporting.rst:160
+#: ../src/Doc/howto/pyporting.rst:162
 msgid ""
 "Below are the benefits you gain if you only have to support Python 2.6 and "
 "newer. Some of these options are personal choice while others are "
@@ -6105,12 +6109,12 @@ msgid ""
 msgstr ""
 
 # 9c73d37a434e4173a419bcc1c03ff471
-#: ../src/Doc/howto/pyporting.rst:169
+#: ../src/Doc/howto/pyporting.rst:171
 msgid "``from __future__ import print_function``"
 msgstr ""
 
 # 1b9862a9864c42d497839c3ae6365fe2
-#: ../src/Doc/howto/pyporting.rst:171
+#: ../src/Doc/howto/pyporting.rst:173
 msgid ""
 "It will not only get you used to typing ``print()`` as a function instead of "
 "a statement, but it will also give you the various benefits the function has "
@@ -6119,12 +6123,12 @@ msgid ""
 msgstr ""
 
 # 655bfeeac62a4176bc66faf79a729b4c
-#: ../src/Doc/howto/pyporting.rst:178
+#: ../src/Doc/howto/pyporting.rst:180
 msgid "``from __future__ import unicode_literals``"
 msgstr ""
 
 # e75ceeece51240beb2111386c53d52a0
-#: ../src/Doc/howto/pyporting.rst:180
+#: ../src/Doc/howto/pyporting.rst:182
 msgid ""
 "If you choose to use this future statement then all string literals in "
 "Python 2 will be assumed to be Unicode (as is already the case in Python 3). "
@@ -6136,12 +6140,12 @@ msgid ""
 msgstr ""
 
 # 74a892ff88f3483bbcf3f580e9038c29
-#: ../src/Doc/howto/pyporting.rst:190
+#: ../src/Doc/howto/pyporting.rst:192
 msgid "Bytes/string literals"
 msgstr ""
 
 # c58a4daad8c4424f942f4131e351c034
-#: ../src/Doc/howto/pyporting.rst:192
+#: ../src/Doc/howto/pyporting.rst:194
 msgid ""
 "This is a **very** important one. Prefix Python 2 strings that are meant to "
 "contain bytes with a ``b`` prefix to very clearly delineate what is and is "
@@ -6150,7 +6154,7 @@ msgid ""
 msgstr ""
 
 # f5b8ec2c0c11493ea67b1ccc2991d340
-#: ../src/Doc/howto/pyporting.rst:197
+#: ../src/Doc/howto/pyporting.rst:199
 msgid ""
 "This point cannot be stressed enough: make sure you know what all of your "
 "string literals in Python 2 are meant to be in Python 3. Any string literal "
@@ -6163,7 +6167,7 @@ msgid ""
 msgstr ""
 
 # 94bbf631e2e7423bbad1b31e7b45b1d9
-#: ../src/Doc/howto/pyporting.rst:206
+#: ../src/Doc/howto/pyporting.rst:208
 msgid ""
 "There are some differences between byte literals in Python 2 and those in "
 "Python 3 thanks to the bytes type just being an alias to ``str`` in Python "
@@ -6171,31 +6175,31 @@ msgid ""
 msgstr ""
 
 # 0ced37ed743b44f5817b10e2f7d93168
-#: ../src/Doc/howto/pyporting.rst:211 ../src/Doc/howto/pyporting.rst:224
+#: ../src/Doc/howto/pyporting.rst:213 ../src/Doc/howto/pyporting.rst:226
 msgid "``from __future__ import absolute_import``"
 msgstr ""
 
 # d796146776074d7e98730beb73fd4ba0
-#: ../src/Doc/howto/pyporting.rst:212
+#: ../src/Doc/howto/pyporting.rst:214
 msgid ""
 "Discussed in more detail below, but you should use this future statement to "
 "prevent yourself from accidentally using implicit relative imports."
 msgstr ""
 
 # 79593443c762481eb192d92e23f3fdfd
-#: ../src/Doc/howto/pyporting.rst:217
-msgid "Supporting `Python 2.5`_ and Newer Only"
+#: ../src/Doc/howto/pyporting.rst:219
+msgid "Supporting Python 2.5 and Newer Only"
 msgstr ""
 
 # 51f5e59aa2194c7597a6e3da783612e4
-#: ../src/Doc/howto/pyporting.rst:219
+#: ../src/Doc/howto/pyporting.rst:221
 msgid ""
-"If you are supporting `Python 2.5`_ and newer there are still some features "
-"of Python that you can utilize."
+"If you are supporting Python 2.5 and newer there are still some features of "
+"Python that you can utilize."
 msgstr ""
 
 # 0dc36d774cc5479490e53c76800eb360
-#: ../src/Doc/howto/pyporting.rst:226
+#: ../src/Doc/howto/pyporting.rst:228
 msgid ""
 "Implicit relative imports (e.g., importing ``spam.bacon`` from within ``spam."
 "eggs`` with the statement ``import bacon``) do not work in Python 3. This "
@@ -6204,24 +6208,24 @@ msgid ""
 msgstr ""
 
 # b3304c22b27b4d119b67447aedc3f60c
-#: ../src/Doc/howto/pyporting.rst:231
+#: ../src/Doc/howto/pyporting.rst:233
 msgid ""
-"In `Python 2.5`_ you must use the __future__ statement to get to use "
-"explicit relative imports and prevent implicit ones. In `Python 2.6`_ "
-"explicit relative imports are available without the statement, but you still "
-"want the __future__ statement to prevent implicit relative imports. In "
-"`Python 2.7`_ the __future__ statement is not needed. In other words, unless "
-"you are only supporting Python 2.7 or a version earlier than Python 2.5, use "
-"this __future__ statement."
+"In Python 2.5 you must use the __future__ statement to get to use explicit "
+"relative imports and prevent implicit ones. In Python 2.6 explicit relative "
+"imports are available without the statement, but you still want the "
+"__future__ statement to prevent implicit relative imports. In Python 2.7 the "
+"__future__ statement is not needed. In other words, unless you are only "
+"supporting Python 2.7 or a version earlier than Python 2.5, use this "
+"__future__ statement."
 msgstr ""
 
 # 8974b6ce3fad41d2ab1b6b57db2feb86
-#: ../src/Doc/howto/pyporting.rst:241
+#: ../src/Doc/howto/pyporting.rst:243
 msgid "Mark all Unicode strings with a ``u`` prefix"
 msgstr ""
 
 # 05431ce1a29d4c67b174c103cecca755
-#: ../src/Doc/howto/pyporting.rst:243
+#: ../src/Doc/howto/pyporting.rst:245
 msgid ""
 "While Python 2.6 has a ``__future__`` statement to automatically cause "
 "Python 2 to treat all string literals as Unicode, Python 2.5 does not have "
@@ -6232,32 +6236,31 @@ msgid ""
 msgstr ""
 
 # 32a99b7cbf164be4ad3367e48a71cd4b
-#: ../src/Doc/howto/pyporting.rst:252
+#: ../src/Doc/howto/pyporting.rst:254
 msgid "Capturing the Currently Raised Exception"
 msgstr ""
 
 # 6ffae18c38384a09ab36f80f1be22f37
-#: ../src/Doc/howto/pyporting.rst:254
+#: ../src/Doc/howto/pyporting.rst:256
 msgid ""
 "In Python 2.5 and earlier the syntax to access the current exception is::"
 msgstr ""
 
 # 4ea5928ecf4b48fd9a76a7518a445cb3
-#: ../src/Doc/howto/pyporting.rst:262
+#: ../src/Doc/howto/pyporting.rst:264
 msgid ""
-"This syntax changed in Python 3 (and backported to `Python 2.6`_ and later) "
-"to::"
+"This syntax changed in Python 3 (and backported to Python 2.6 and later) to::"
 msgstr ""
 
 # 6ffae18c38384a09ab36f80f1be22f37
-#: ../src/Doc/howto/pyporting.rst:272
+#: ../src/Doc/howto/pyporting.rst:274
 msgid ""
 "Because of this syntax change you must change how you capture the current "
 "exception in Python 2.5 and earlier to::"
 msgstr ""
 
 # 9135a918d99846b6b2f07acb4481dfe2
-#: ../src/Doc/howto/pyporting.rst:283
+#: ../src/Doc/howto/pyporting.rst:285
 msgid ""
 "You can get more information about the raised exception from :func:`sys."
 "exc_info` than simply the current exception instance, but you most likely "
@@ -6265,7 +6268,7 @@ msgid ""
 msgstr ""
 
 # 8808a5e91dc24b4e941fb94ce386d32a
-#: ../src/Doc/howto/pyporting.rst:288
+#: ../src/Doc/howto/pyporting.rst:290
 msgid ""
 "In Python 3, the traceback is attached to the exception instance through the "
 "``__traceback__`` attribute. If the instance is saved in a local variable "
@@ -6276,7 +6279,7 @@ msgid ""
 msgstr ""
 
 # d4505a6c83924f2989209021f7aaa4fe
-#: ../src/Doc/howto/pyporting.rst:295
+#: ../src/Doc/howto/pyporting.rst:297
 msgid ""
 "In Python 2, this problem only occurs if you save the traceback itself (e.g. "
 "the third element of the tuple returned by :func:`sys.exc_info`) in a "
@@ -6284,24 +6287,24 @@ msgid ""
 msgstr ""
 
 # 4cd3379c765e492f8d8250e3e9f903a3
-#: ../src/Doc/howto/pyporting.rst:301
+#: ../src/Doc/howto/pyporting.rst:303
 msgid "Handle Common \"Gotchas\""
 msgstr ""
 
 # f53c6990a50b4eebb1d40264e83fe9c7
-#: ../src/Doc/howto/pyporting.rst:303
+#: ../src/Doc/howto/pyporting.rst:305
 msgid ""
 "These are things to watch out for no matter what version of Python 2 you are "
 "supporting which are not syntactic considerations."
 msgstr ""
 
 # ab3034ec5e5e4661aa6de68ce95d5078
-#: ../src/Doc/howto/pyporting.rst:308
+#: ../src/Doc/howto/pyporting.rst:310
 msgid "``from __future__ import division``"
 msgstr ""
 
 # df60a68b4f7f40b6b7f104d17e5580c7
-#: ../src/Doc/howto/pyporting.rst:310
+#: ../src/Doc/howto/pyporting.rst:312
 msgid ""
 "While the exact same outcome can be had by using the ``-Qnew`` argument to "
 "Python, using this future statement lifts the requirement that your users "
@@ -6310,12 +6313,12 @@ msgid ""
 msgstr ""
 
 # e46aa5d4215a4df48231102107237eca
-#: ../src/Doc/howto/pyporting.rst:318
+#: ../src/Doc/howto/pyporting.rst:320
 msgid "Specify when opening a file as binary"
 msgstr ""
 
 # 4f4aa2633f3f4b6aad2be8d04871966e
-#: ../src/Doc/howto/pyporting.rst:320
+#: ../src/Doc/howto/pyporting.rst:322
 msgid ""
 "Unless you have been working on Windows, there is a chance you have not "
 "always bothered to add the ``b`` mode when opening a binary file (e.g., "
@@ -6327,12 +6330,12 @@ msgid ""
 msgstr ""
 
 # b9a34cc2e1e046f6b406152ab3d19b72
-#: ../src/Doc/howto/pyporting.rst:329
+#: ../src/Doc/howto/pyporting.rst:331
 msgid "Text files"
 msgstr ""
 
 # e6361ba1d9af424e8db34faac2b9d9c9
-#: ../src/Doc/howto/pyporting.rst:331
+#: ../src/Doc/howto/pyporting.rst:333
 msgid ""
 "Text files created using ``open()`` under Python 2 return byte strings, "
 "while under Python 3 they return unicode strings.  Depending on your porting "
@@ -6340,14 +6343,14 @@ msgid ""
 msgstr ""
 
 # b34c508e7d0442749c5e4a8b88d1fb75
-#: ../src/Doc/howto/pyporting.rst:335
+#: ../src/Doc/howto/pyporting.rst:337
 msgid ""
 "If you want text files to return unicode strings in Python 2, you have two "
 "possibilities:"
 msgstr ""
 
 # fcf0d560b43f481daa22ceda2edd9d35
-#: ../src/Doc/howto/pyporting.rst:338
+#: ../src/Doc/howto/pyporting.rst:340
 msgid ""
 "Under Python 2.6 and higher, use :func:`io.open`.  Since :func:`io.open` is "
 "essentially the same function in both Python 2 and Python 3, it will help "
@@ -6355,33 +6358,33 @@ msgid ""
 msgstr ""
 
 # 97c9151f55c44cc581dec6e8f5f66307
-#: ../src/Doc/howto/pyporting.rst:342
+#: ../src/Doc/howto/pyporting.rst:344
 msgid ""
 "If pre-2.6 compatibility is needed, then you should use :func:`codecs.open` "
 "instead.  This will make sure that you get back unicode strings in Python 2."
 msgstr ""
 
 # 67ef437384224cfd950b9e37f12550f9
-#: ../src/Doc/howto/pyporting.rst:346
+#: ../src/Doc/howto/pyporting.rst:348
 msgid "Subclass ``object``"
 msgstr ""
 
 # fb4d1cff09334961b99df7bfb1560b12
-#: ../src/Doc/howto/pyporting.rst:348
+#: ../src/Doc/howto/pyporting.rst:350
 msgid ""
-"New-style classes have been around since `Python 2.2`_. You need to make "
-"sure you are subclassing from ``object`` to avoid odd edge cases involving "
-"method resolution order, etc. This continues to be totally valid in Python 3 "
+"New-style classes have been around since Python 2.2. You need to make sure "
+"you are subclassing from ``object`` to avoid odd edge cases involving method "
+"resolution order, etc. This continues to be totally valid in Python 3 "
 "(although unneeded as all classes implicitly inherit from ``object``)."
 msgstr ""
 
 # 13de8b799eb24005bd09daddfa10bbc9
-#: ../src/Doc/howto/pyporting.rst:355
+#: ../src/Doc/howto/pyporting.rst:357
 msgid "Deal With the Bytes/String Dichotomy"
 msgstr ""
 
 # 191015c1e13e4492b79d44cfb05f2ea9
-#: ../src/Doc/howto/pyporting.rst:357
+#: ../src/Doc/howto/pyporting.rst:359
 msgid ""
 "One of the biggest issues people have when porting code to Python 3 is "
 "handling the bytes/string dichotomy. Because Python 2 allowed the ``str`` "
@@ -6396,12 +6399,12 @@ msgid ""
 msgstr ""
 
 # 33a55a2846b649d0a5d4ba31885156c1
-#: ../src/Doc/howto/pyporting.rst:369
+#: ../src/Doc/howto/pyporting.rst:371
 msgid "Mark Up Python 2 String Literals"
 msgstr ""
 
 # 99d1b07e9b704affb160beb8889d7536
-#: ../src/Doc/howto/pyporting.rst:371
+#: ../src/Doc/howto/pyporting.rst:373
 msgid ""
 "First thing you must do is designate every single string literal in Python 2 "
 "as either textual or bytes data. If you are only supporting Python 2.6 or "
@@ -6411,7 +6414,7 @@ msgid ""
 msgstr ""
 
 # 942e68067a7248a197ebb9316b94751c
-#: ../src/Doc/howto/pyporting.rst:377
+#: ../src/Doc/howto/pyporting.rst:379
 msgid ""
 "If your project supports versions of Python predating 2.6, then you should "
 "use the six_ project and its ``b()`` function to denote bytes literals. For "
@@ -6420,12 +6423,12 @@ msgid ""
 msgstr ""
 
 # 210012be5cb54681b011ae64027b2287
-#: ../src/Doc/howto/pyporting.rst:383
+#: ../src/Doc/howto/pyporting.rst:385
 msgid "Decide what APIs Will Accept"
 msgstr ""
 
 # 994241dfdfcf40848a5e9da2800ca105
-#: ../src/Doc/howto/pyporting.rst:385
+#: ../src/Doc/howto/pyporting.rst:387
 msgid ""
 "In Python 2 it was very easy to accidentally create an API that accepted "
 "both bytes and textual data. But in Python 3, thanks to the more strict "
@@ -6434,7 +6437,7 @@ msgid ""
 msgstr ""
 
 # 7f4384ba7a6d4c618c062ec6194867fd
-#: ../src/Doc/howto/pyporting.rst:389
+#: ../src/Doc/howto/pyporting.rst:391
 msgid ""
 "Take the dict ``{b'a': 'bytes', u'a': 'text'}`` in Python 2.6. It creates "
 "the dict ``{u'a': 'text'}`` since ``b'a' == u'a'``. But in Python 3 the "
@@ -6444,19 +6447,19 @@ msgid ""
 msgstr ""
 
 # af331f899ccf451db1b01b2a83b5b6f1
-#: ../src/Doc/howto/pyporting.rst:394
+#: ../src/Doc/howto/pyporting.rst:396
 msgid ""
 "This means you need to choose what an API is going to accept and create and "
 "consistently stick to that API in both Python 2 and 3."
 msgstr ""
 
 # 0d339def3215422fa9f8c0ff8e20da62
-#: ../src/Doc/howto/pyporting.rst:399
+#: ../src/Doc/howto/pyporting.rst:401
 msgid "Bytes / Unicode Comparison"
 msgstr ""
 
 # af8b53a10767414ea892732f5d7e394f
-#: ../src/Doc/howto/pyporting.rst:401
+#: ../src/Doc/howto/pyporting.rst:403
 msgid ""
 "In Python 3, mixing bytes and unicode is forbidden in most situations; it "
 "will raise a :class:`TypeError` where Python 2 would have attempted an "
@@ -6465,7 +6468,7 @@ msgid ""
 msgstr ""
 
 # f4117ff439c74fd4805675c5f516e1ae
-#: ../src/Doc/howto/pyporting.rst:409
+#: ../src/Doc/howto/pyporting.rst:411
 msgid ""
 "This is because an equality comparison is required by the language to always "
 "succeed (and return ``False`` for incompatible types).  However, this also "
@@ -6475,24 +6478,24 @@ msgid ""
 msgstr ""
 
 # 7dd10ede04f64754ac4bc90ca6e1e864
-#: ../src/Doc/howto/pyporting.rst:420
+#: ../src/Doc/howto/pyporting.rst:422
 msgid "To turn the warning into an exception, use the ``-bb`` flag instead::"
 msgstr ""
 
 # cbfbb174ee164217935dc50ca49a64d5
-#: ../src/Doc/howto/pyporting.rst:430
+#: ../src/Doc/howto/pyporting.rst:432
 msgid "Indexing bytes objects"
 msgstr ""
 
 # 073990d932f441d4ad77df12577cff82
-#: ../src/Doc/howto/pyporting.rst:432
+#: ../src/Doc/howto/pyporting.rst:434
 msgid ""
 "Another potentially surprising change is the indexing behaviour of bytes "
 "objects in Python 3::"
 msgstr ""
 
 # ab390883aefd413e87f5a68abfbbbe38
-#: ../src/Doc/howto/pyporting.rst:438
+#: ../src/Doc/howto/pyporting.rst:440
 msgid ""
 "Indeed, Python 3 bytes objects (as well as :class:`bytearray` objects) are "
 "sequences of integers.  But code converted from Python 2 will often assume "
@@ -6501,19 +6504,19 @@ msgid ""
 msgstr ""
 
 # 44b2eb374c5a4a82a8ba4bbf3cbe4d9a
-#: ../src/Doc/howto/pyporting.rst:449
+#: ../src/Doc/howto/pyporting.rst:451
 msgid ""
 "The only remaining gotcha is that an out-of-bounds slice returns an empty "
 "bytes object instead of raising ``IndexError``:"
 msgstr ""
 
 # aaa226ca491249469d358a77d231d0ae
-#: ../src/Doc/howto/pyporting.rst:461
+#: ../src/Doc/howto/pyporting.rst:463
 msgid "``__str__()``/``__unicode__()``"
 msgstr ""
 
 # c9111443666d4689975684fdc8cdd9e4
-#: ../src/Doc/howto/pyporting.rst:463
+#: ../src/Doc/howto/pyporting.rst:465
 msgid ""
 "In Python 2, objects can specify both a string and unicode representation of "
 "themselves. In Python 3, though, there is only a string representation. This "
@@ -6524,7 +6527,7 @@ msgid ""
 msgstr ""
 
 # d16d61b49c8841f4934c8ece3fc7b2c6
-#: ../src/Doc/howto/pyporting.rst:470
+#: ../src/Doc/howto/pyporting.rst:472
 msgid ""
 "You can use a mixin class to work around this. This allows you to only "
 "define a ``__unicode__()`` method for your class and let the mixin derive "
@@ -6533,17 +6536,17 @@ msgid ""
 msgstr ""
 
 # c3ac65b738b748fe8c0e5213bda611e8
-#: ../src/Doc/howto/pyporting.rst:497
+#: ../src/Doc/howto/pyporting.rst:499
 msgid "Don't Index on Exceptions"
 msgstr ""
 
 # 2c607128d18c42958bf810f4e4a5c972
-#: ../src/Doc/howto/pyporting.rst:499
+#: ../src/Doc/howto/pyporting.rst:501
 msgid "In Python 2, the following worked::"
 msgstr ""
 
 # faa974825eb34be3bb9b4ed2d0bd2bef
-#: ../src/Doc/howto/pyporting.rst:507
+#: ../src/Doc/howto/pyporting.rst:509
 msgid ""
 "But in Python 3, indexing directly on an exception is an error. You need to "
 "make sure to only index on the :attr:`BaseException.args` attribute which is "
@@ -6551,17 +6554,17 @@ msgid ""
 msgstr ""
 
 # 9adee86971bc42bbb34c2f8e72ed6648
-#: ../src/Doc/howto/pyporting.rst:511
+#: ../src/Doc/howto/pyporting.rst:513
 msgid "Even better is to use the documented attributes the exception provides."
 msgstr ""
 
 # 5702d4995aa743f2a385918b5e8e4272
-#: ../src/Doc/howto/pyporting.rst:515
+#: ../src/Doc/howto/pyporting.rst:517
 msgid "Don't use ``__getslice__`` & Friends"
 msgstr ""
 
 # 627edb2d8eea4c0bac4d069d06a4e91b
-#: ../src/Doc/howto/pyporting.rst:517
+#: ../src/Doc/howto/pyporting.rst:519
 msgid ""
 "Been deprecated for a while, but Python 3 finally drops support for "
 "``__getslice__()``, etc. Move completely over to :meth:`__getitem__` and "
@@ -6569,12 +6572,12 @@ msgid ""
 msgstr ""
 
 # 450a06164a3444c9bf70aabcbd3e858b
-#: ../src/Doc/howto/pyporting.rst:523
+#: ../src/Doc/howto/pyporting.rst:525
 msgid "Updating doctests"
 msgstr ""
 
 # 615328515a964a6cb279596b93b8f86d
-#: ../src/Doc/howto/pyporting.rst:525
+#: ../src/Doc/howto/pyporting.rst:527
 msgid ""
 "Don't forget to make them Python 2/3 compatible as well. If you wrote a "
 "monolithic set of doctests (e.g., a single docstring containing all of your "
@@ -6584,20 +6587,20 @@ msgid ""
 msgstr ""
 
 # 9499659a065a4586a941a8e82d2bd6e6
-#: ../src/Doc/howto/pyporting.rst:533
+#: ../src/Doc/howto/pyporting.rst:535
 msgid "Update ``map`` for imbalanced input sequences"
 msgstr ""
 
 # 3bd8bf9c76a04ac9a52a38e3d4ccf522
-#: ../src/Doc/howto/pyporting.rst:535
+#: ../src/Doc/howto/pyporting.rst:537
 msgid ""
 "With Python 2, when ``map`` was given more than one input sequence it would "
-"pad the shorter sequences with `None` values, returning a sequence as long "
+"pad the shorter sequences with ``None`` values, returning a sequence as long "
 "as the longest input sequence."
 msgstr ""
 
 # 670b1756521f4df18011f44916cb36fb
-#: ../src/Doc/howto/pyporting.rst:539
+#: ../src/Doc/howto/pyporting.rst:541
 msgid ""
 "With Python 3, if the input sequences to ``map`` are of unequal length, "
 "``map`` will stop at the termination of the shortest of the sequences. For "
@@ -6607,12 +6610,12 @@ msgid ""
 msgstr ""
 
 # b7ad2dfc09b946febf0368a4396b6e9e
-#: ../src/Doc/howto/pyporting.rst:546
+#: ../src/Doc/howto/pyporting.rst:548
 msgid "Eliminate ``-3`` Warnings"
 msgstr ""
 
 # e582ca87c66549e9b12b2ddd4c770c3d
-#: ../src/Doc/howto/pyporting.rst:548
+#: ../src/Doc/howto/pyporting.rst:550
 msgid ""
 "When you run your application's test suite, run it using the ``-3`` flag "
 "passed to Python. This will cause various warnings to be raised during "
@@ -6621,12 +6624,12 @@ msgid ""
 msgstr ""
 
 # d09b14bd9c8b44958479a0bb9f05edca
-#: ../src/Doc/howto/pyporting.rst:555
+#: ../src/Doc/howto/pyporting.rst:557
 msgid "Alternative Approaches"
 msgstr ""
 
 # dc892403cd044103ae82edb543c6a460
-#: ../src/Doc/howto/pyporting.rst:557
+#: ../src/Doc/howto/pyporting.rst:559
 msgid ""
 "While supporting Python 2 & 3 simultaneously is typically the preferred "
 "choice by people so that they can continue to improve code and have it work "
@@ -6635,12 +6638,12 @@ msgid ""
 msgstr ""
 
 # 0d0556a0631c48be938d2d8c2c9cc1df
-#: ../src/Doc/howto/pyporting.rst:563
+#: ../src/Doc/howto/pyporting.rst:565
 msgid "Supporting Only Python 3 Going Forward From Python 2 Code"
 msgstr ""
 
 # 6d6fec7e753d4057b96c5a3d6d4178a9
-#: ../src/Doc/howto/pyporting.rst:565
+#: ../src/Doc/howto/pyporting.rst:567
 msgid ""
 "If you have Python 2 code but going forward only want to improve it as "
 "Python 3 code, then you can use 2to3_ to translate your Python 2 code to "
@@ -6650,12 +6653,12 @@ msgid ""
 msgstr ""
 
 # a1a6ce0d6c02428eb912de02e38671d2
-#: ../src/Doc/howto/pyporting.rst:573
+#: ../src/Doc/howto/pyporting.rst:575
 msgid "Backporting Python 3 code to Python 2"
 msgstr ""
 
 # 53d0bbf2f18e405093b1768fe6759141
-#: ../src/Doc/howto/pyporting.rst:575
+#: ../src/Doc/howto/pyporting.rst:577
 msgid ""
 "If you have Python 3 code and have little interest in supporting Python 2 "
 "you can use 3to2_ to translate from Python 3 code to Python 2 code. This is "
@@ -6666,12 +6669,12 @@ msgid ""
 msgstr ""
 
 # 4cceebf107a046e2850ba987f30e3b95
-#: ../src/Doc/howto/pyporting.rst:584
+#: ../src/Doc/howto/pyporting.rst:586
 msgid "Other Resources"
 msgstr ""
 
 # 6655928ffc2e4042a658bb55194bf3a0
-#: ../src/Doc/howto/pyporting.rst:586
+#: ../src/Doc/howto/pyporting.rst:588
 msgid ""
 "The authors of the following blog posts, wiki pages, and books deserve "
 "special thanks for making public their tips for porting Python 2 code to "
@@ -6680,49 +6683,49 @@ msgid ""
 msgstr ""
 
 # 9db73da4a9584ab2981fa6d70077380b
-#: ../src/Doc/howto/pyporting.rst:591
-msgid "http://wiki.python.org/moin/PortingPythonToPy3k"
+#: ../src/Doc/howto/pyporting.rst:593
+msgid "https://wiki.python.org/moin/PortingPythonToPy3k"
 msgstr ""
 
 # 2ac7fa2afb1243a8b7cb24b692af8bbf
-#: ../src/Doc/howto/pyporting.rst:592
+#: ../src/Doc/howto/pyporting.rst:594
 msgid "http://python3porting.com/"
 msgstr ""
 
 # fa3f5ab95f6340099a39df758243df01
-#: ../src/Doc/howto/pyporting.rst:593
+#: ../src/Doc/howto/pyporting.rst:595
 msgid "http://docs.pythonsprints.com/python3_porting/py-porting.html"
 msgstr ""
 
 # 7398b09a284d4dd983d7b2114154be6a
-#: ../src/Doc/howto/pyporting.rst:594
+#: ../src/Doc/howto/pyporting.rst:596
 msgid ""
 "http://techspot.zzzeek.org/2011/01/24/zzzeek-s-guide-to-python-3-porting/"
 msgstr ""
 
 # ea7e371504e541e2b1514f85d1cb0fa1
-#: ../src/Doc/howto/pyporting.rst:595
+#: ../src/Doc/howto/pyporting.rst:597
 msgid ""
 "http://dabeaz.blogspot.com/2011/01/porting-py65-and-my-superboard-to.html"
 msgstr ""
 
 # 3e267d8b581943ada40d1a90d620285a
-#: ../src/Doc/howto/pyporting.rst:596
+#: ../src/Doc/howto/pyporting.rst:598
 msgid "http://lucumr.pocoo.org/2011/1/22/forwards-compatible-python/"
 msgstr ""
 
 # 15e7c37ed1ae499b9ccdc23e45de02d3
-#: ../src/Doc/howto/pyporting.rst:597
+#: ../src/Doc/howto/pyporting.rst:599
 msgid "http://lucumr.pocoo.org/2010/2/11/porting-to-python-3-a-guide/"
 msgstr ""
 
 # 16f120124a3f4b0db197cf510f10c05b
-#: ../src/Doc/howto/pyporting.rst:598
+#: ../src/Doc/howto/pyporting.rst:600
 msgid "https://wiki.ubuntu.com/Python/3"
 msgstr ""
 
 # 7cbcdce375074e9f8895d6fb39c1dbbf
-#: ../src/Doc/howto/pyporting.rst:600
+#: ../src/Doc/howto/pyporting.rst:602
 msgid ""
 "If you feel there is something missing from this document that should be "
 "added, please email the python-porting_ mailing list."
@@ -9474,8 +9477,7 @@ msgstr ""
 msgid ""
 "This HOWTO discusses Python 2.x's support for Unicode, and explains various "
 "problems that people commonly encounter when trying to work with Unicode.  "
-"For the Python 3 version, see <http://docs.python.org/py3k/howto/unicode."
-"html>."
+"For the Python 3 version, see <https://docs.python.org/3/howto/unicode.html>."
 msgstr ""
 
 #: ../src/Doc/howto/unicode.rst:13
@@ -10066,7 +10068,7 @@ msgstr ""
 #: ../src/Doc/howto/unicode.rst:501
 msgid ""
 "Marc-André Lemburg gave a presentation at EuroPython 2002 titled \"Python "
-"and Unicode\".  A PDF version of his slides is available at <http://"
+"and Unicode\".  A PDF version of his slides is available at <https://"
 "downloads.egenix.com/python/Unicode-EPC2002-Talk.pdf>, and is an excellent "
 "overview of the design of Python's Unicode features."
 msgstr ""
@@ -10293,10 +10295,11 @@ msgid ""
 "resulting decoded form."
 msgstr ""
 
+# ab5c90b2c2974f19b4e2a6b7c26ebb61
 #: ../src/Doc/howto/unicode.rst:688
 msgid ""
 "The PDF slides for Marc-André Lemburg's presentation \"Writing Unicode-aware "
-"Applications in Python\" are available at <http://downloads.egenix.com/"
+"Applications in Python\" are available at <https://downloads.egenix.com/"
 "python/LSM2005-Developing-Unicode-aware-applications-in-Python.pdf> and "
 "discuss questions of character encodings as well as how to internationalize "
 "and localize an application."
@@ -10367,12 +10370,12 @@ msgstr ""
 # f32bd4d9d7b347e9b240b3060e6ed1d6
 #: ../src/Doc/howto/urllib2.rst:27
 msgid ""
-"**urllib2** is a `Python <http://www.python.org>`_ module for fetching URLs "
-"(Uniform Resource Locators). It offers a very simple interface, in the form "
-"of the *urlopen* function. This is capable of fetching URLs using a variety "
-"of different protocols. It also offers a slightly more complex interface for "
-"handling common situations - like basic authentication, cookies, proxies and "
-"so on. These are provided by objects called handlers and openers."
+"**urllib2** is a Python module for fetching URLs (Uniform Resource "
+"Locators). It offers a very simple interface, in the form of the *urlopen* "
+"function. This is capable of fetching URLs using a variety of different "
+"protocols. It also offers a slightly more complex interface for handling "
+"common situations - like basic authentication, cookies, proxies and so on. "
+"These are provided by objects called handlers and openers."
 msgstr ""
 
 # 18f5db69f47a400a84f93efb6f771cf9
@@ -10854,35 +10857,34 @@ msgid ""
 "html>`_."
 msgstr ""
 
+# 885c869c7df740f8b915b13fba3ce070
 #: ../src/Doc/howto/urllib2.rst:562
 msgid ""
 "Like Google for example. The *proper* way to use google from a program is to "
-"use `PyGoogle <http://pygoogle.sourceforge.net>`_ of course. See `Voidspace "
-"Google <http://www.voidspace.org.uk/python/recipebook.shtml#google>`_ for "
-"some examples of using the Google API."
+"use `PyGoogle <http://pygoogle.sourceforge.net>`_ of course."
 msgstr ""
 
-#: ../src/Doc/howto/urllib2.rst:566
+#: ../src/Doc/howto/urllib2.rst:564
 msgid ""
 "Browser sniffing is a very bad practise for website design - building sites "
 "using web standards is much more sensible. Unfortunately a lot of sites "
 "still send different versions to different browsers."
 msgstr ""
 
-#: ../src/Doc/howto/urllib2.rst:569
+#: ../src/Doc/howto/urllib2.rst:567
 msgid ""
 "The user agent for MSIE 6 is *'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT "
 "5.1; SV1; .NET CLR 1.1.4322)'*"
 msgstr ""
 
-#: ../src/Doc/howto/urllib2.rst:571
+#: ../src/Doc/howto/urllib2.rst:569
 msgid ""
 "For details of more HTTP request headers, see `Quick Reference to HTTP "
 "Headers`_."
 msgstr ""
 
 # 5d228402a5104663b6c4dc5842307541
-#: ../src/Doc/howto/urllib2.rst:573
+#: ../src/Doc/howto/urllib2.rst:571
 msgid ""
 "In my case I have to use a proxy to access the internet at work. If you "
 "attempt to fetch *localhost* URLs through this proxy it blocks them. IE is "
@@ -10891,10 +10893,10 @@ msgid ""
 msgstr ""
 
 # b1baf60a72034136bf1db086e6a9a99e
-#: ../src/Doc/howto/urllib2.rst:578
+#: ../src/Doc/howto/urllib2.rst:576
 msgid ""
 "urllib2 opener for SSL proxy (CONNECT method): `ASPN Cookbook Recipe <http://"
-"aspn.activestate.com/ASPN/Cookbook/Python/Recipe/456195>`_."
+"code.activestate.com/recipes/456195/>`_."
 msgstr ""
 
 #: ../src/Doc/howto/webservers.rst:3
@@ -10925,12 +10927,13 @@ msgid ""
 "short overview of the most popular libraries is provided."
 msgstr ""
 
+# 9b6eb4bd2e8b41919d5a554c0663036a
 #: ../src/Doc/howto/webservers.rst:26
 msgid ""
 "While this HOWTO tries to give an overview of Python in the web, it cannot "
 "always be as up to date as desired.  Web development in Python is rapidly "
-"moving forward, so the wiki page on `Web Programming <http://wiki.python.org/"
-"moin/WebProgramming>`_ may be more in sync with recent development."
+"moving forward, so the wiki page on `Web Programming <https://wiki.python."
+"org/moin/WebProgramming>`_ may be more in sync with recent development."
 msgstr ""
 
 #: ../src/Doc/howto/webservers.rst:34
@@ -11018,10 +11021,11 @@ msgid ""
 "applications, instead of presenting a \"500 Internal Server Error\" message"
 msgstr ""
 
+# 24a5193d701f40b58c257244970fee65
 #: ../src/Doc/howto/webservers.rst:88
 msgid ""
-"The Python wiki features a page on `CGI scripts <http://wiki.python.org/moin/"
-"CgiScripts>`_ with some additional information about CGI in Python."
+"The Python wiki features a page on `CGI scripts <https://wiki.python.org/"
+"moin/CgiScripts>`_ with some additional information about CGI in Python."
 msgstr ""
 
 #: ../src/Doc/howto/webservers.rst:94
@@ -11086,10 +11090,11 @@ msgid ""
 "tutorial also describes the most common gotchas that might arise."
 msgstr ""
 
+# 60997289570c43509daf0ed08881da82
 #: ../src/Doc/howto/webservers.rst:148
 msgid ""
 "On lighttpd you need to use the `CGI module <http://redmine.lighttpd.net/"
-"wiki/lighttpd/Docs:ModCGI>`_\\ , which can be configured in a "
+"projects/lighttpd/wiki/Docs_ModCGI>`_\\ , which can be configured in a "
 "straightforward way.  It boils down to setting ``cgi.assign`` properly."
 msgstr ""
 
@@ -11176,12 +11181,13 @@ msgstr ""
 msgid "mod_python"
 msgstr "mod_python"
 
+# 5e8b17673bd84a4887bbc10218a01eeb
 #: ../src/Doc/howto/webservers.rst:212
 msgid ""
 "People coming from PHP often find it hard to grasp how to use Python in the "
-"web. Their first thought is mostly `mod_python <http://www.modpython.org/>`_"
-"\\ , because they think that this is the equivalent to ``mod_php``.  "
-"Actually, there are many differences.  What ``mod_python`` does is embed the "
+"web. Their first thought is mostly `mod_python <http://modpython.org/>`_\\ , "
+"because they think that this is the equivalent to ``mod_php``.  Actually, "
+"there are many differences.  What ``mod_python`` does is embed the "
 "interpreter into the Apache process, thus speeding up requests by not having "
 "to start a Python interpreter for each request.  On the other hand, it is "
 "not \"Python intermixed with HTML\" in the way that PHP is often intermixed "
@@ -11246,25 +11252,16 @@ msgid ""
 "only used for the deployment of WSGI applications."
 msgstr ""
 
-# 9d12f3beffbc41eaac3b3b95a3a9d07d
 #: ../src/Doc/howto/webservers.rst:265
-msgid ""
-"`FastCGI, SCGI, and Apache: Background and Future <http://www.vmunix.com/"
-"mark/blog/archives/2006/01/02/fastcgi-scgi-and-apache-background-and-future/"
-">`_ is a discussion on why the concept of FastCGI and SCGI is better than "
-"that of mod_python."
-msgstr ""
-
-#: ../src/Doc/howto/webservers.rst:272
 msgid "Setting up FastCGI"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:274
+#: ../src/Doc/howto/webservers.rst:267
 msgid "Each web server requires a specific module."
 msgstr ""
 
 # 31d3a58613b2473ab67ec0c40162146b
-#: ../src/Doc/howto/webservers.rst:276
+#: ../src/Doc/howto/webservers.rst:269
 msgid ""
 "Apache has both `mod_fastcgi <http://www.fastcgi.com/drupal/>`_ and "
 "`mod_fcgid <http://httpd.apache.org/mod_fcgid/>`_.  ``mod_fastcgi`` is the "
@@ -11273,46 +11270,49 @@ msgid ""
 "One of these modules needs to be loaded by Apache."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:282
+# 5d114d0b485c4eeb93c1488203ba552c
+#: ../src/Doc/howto/webservers.rst:275
 msgid ""
-"lighttpd ships its own `FastCGI module <http://redmine.lighttpd.net/wiki/"
-"lighttpd/Docs:ModFastCGI>`_ as well as an `SCGI module <http://redmine."
-"lighttpd.net/wiki/lighttpd/Docs:ModSCGI>`_."
+"lighttpd ships its own `FastCGI module <http://redmine.lighttpd.net/projects/"
+"lighttpd/wiki/Docs_ModFastCGI>`_ as well as an `SCGI module <http://redmine."
+"lighttpd.net/projects/lighttpd/wiki/Docs_ModSCGI>`_."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:286
+#: ../src/Doc/howto/webservers.rst:279
 msgid ""
 "`nginx <http://nginx.org/>`_ also supports `FastCGI <http://wiki.nginx.org/"
 "NginxSimplePythonFCGI>`_."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:289
+#: ../src/Doc/howto/webservers.rst:282
 msgid ""
 "Once you have installed and configured the module, you can test it with the "
 "following WSGI-application::"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:310
+# a57cb42d937140709d0a05581462253a
+#: ../src/Doc/howto/webservers.rst:303
 msgid ""
-"This is a simple WSGI application, but you need to install `flup <http://"
+"This is a simple WSGI application, but you need to install `flup <https://"
 "pypi.python.org/pypi/flup/1.0>`_ first, as flup handles the low level "
 "FastCGI access."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:316
+# 281193186bff42e893d6465dafb25cb7
+#: ../src/Doc/howto/webservers.rst:309
 msgid ""
-"There is some documentation on `setting up Django with FastCGI <http://docs."
+"There is some documentation on `setting up Django with FastCGI <https://docs."
 "djangoproject.com/en/dev/howto/deployment/fastcgi/>`_, most of which can be "
 "reused for other WSGI-compliant frameworks and libraries. Only the ``manage."
 "py`` part has to be changed, the example used here can be used instead.  "
 "Django does more or less the exact same thing."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:324
+#: ../src/Doc/howto/webservers.rst:317
 msgid "mod_wsgi"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:326
+#: ../src/Doc/howto/webservers.rst:319
 msgid ""
 "`mod_wsgi <http://code.google.com/p/modwsgi/>`_ is an attempt to get rid of "
 "the low level gateways.  Given that FastCGI, SCGI, and mod_python are mostly "
@@ -11325,7 +11325,7 @@ msgid ""
 "mod_wsgi."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:335
+#: ../src/Doc/howto/webservers.rst:328
 msgid ""
 "mod_wsgi supports two modes: embedded mode, in which it integrates with the "
 "Apache process, and daemon mode, which is more FastCGI-like.  Unlike "
@@ -11333,17 +11333,17 @@ msgid ""
 "administration easier."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:344
+#: ../src/Doc/howto/webservers.rst:337
 msgid "Step back: WSGI"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:346
+#: ../src/Doc/howto/webservers.rst:339
 msgid ""
 "WSGI has already been mentioned several times, so it has to be something "
 "important.  In fact it really is, and now it is time to explain it."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:349
+#: ../src/Doc/howto/webservers.rst:342
 msgid ""
 "The *Web Server Gateway Interface*,  or WSGI for short, is defined in :pep:"
 "`333` and is currently the best way to do Python web programming.  While it "
@@ -11352,7 +11352,7 @@ msgid ""
 "development it is a good idea to choose one which supports WSGI."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:355
+#: ../src/Doc/howto/webservers.rst:348
 msgid ""
 "The big benefit of WSGI is the unification of the application programming "
 "interface.  When your program is compatible with WSGI -- which at the outer "
@@ -11366,7 +11366,7 @@ msgid ""
 msgstr ""
 
 # 7cc3b099af6345369e4e70cf8ab96afb
-#: ../src/Doc/howto/webservers.rst:365
+#: ../src/Doc/howto/webservers.rst:358
 msgid ""
 "A really great WSGI feature is middleware.  Middleware is a layer around "
 "your program which can add various functionality to it.  There is quite a "
@@ -11381,18 +11381,18 @@ msgid ""
 "another a problem easily solved using existing middleware."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:377
+#: ../src/Doc/howto/webservers.rst:370
 msgid ""
 "Although WSGI may seem complex, the initial phase of learning can be very "
 "rewarding because WSGI and the associated middleware already have solutions "
 "to many problems that might arise while developing web sites."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:383
+#: ../src/Doc/howto/webservers.rst:376
 msgid "WSGI Servers"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:385
+#: ../src/Doc/howto/webservers.rst:378
 msgid ""
 "The code that is used to connect to various low level gateways like CGI or "
 "mod_python is called a *WSGI server*.  One of these servers is ``flup``, "
@@ -11402,7 +11402,7 @@ msgid ""
 "be used as drop-in replacements."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:392
+#: ../src/Doc/howto/webservers.rst:385
 msgid ""
 "There are many servers already available, so a Python web application can be "
 "deployed nearly anywhere.  This is one big advantage that Python has "
@@ -11410,7 +11410,7 @@ msgid ""
 msgstr ""
 
 # 3bae285171d94873a63ee8c88ce45f7f
-#: ../src/Doc/howto/webservers.rst:398
+#: ../src/Doc/howto/webservers.rst:391
 msgid ""
 "A good overview of WSGI-related code can be found in the `WSGI homepage "
 "<http://www.wsgi.org/en/latest/index.html>`_, which contains an extensive "
@@ -11418,28 +11418,28 @@ msgid ""
 "can be used by *any* application supporting WSGI."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:403
+#: ../src/Doc/howto/webservers.rst:396
 msgid ""
 "You might be interested in some WSGI-supporting modules already contained in "
 "the standard library, namely:"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:406
+#: ../src/Doc/howto/webservers.rst:399
 msgid ":mod:`wsgiref` -- some tiny utilities and servers for WSGI"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:410
+#: ../src/Doc/howto/webservers.rst:403
 msgid "Case study: MoinMoin"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:412
+#: ../src/Doc/howto/webservers.rst:405
 msgid ""
 "What does WSGI give the web application developer?  Let's take a look at an "
 "application that's been around for a while, which was written in Python "
 "without using WSGI."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:416
+#: ../src/Doc/howto/webservers.rst:409
 msgid ""
 "One of the most widely used wiki software packages is `MoinMoin <http://"
 "moinmo.in/>`_.  It was created in 2000, so it predates WSGI by about three "
@@ -11447,7 +11447,7 @@ msgid ""
 "FastCGI and standalone."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:421
+#: ../src/Doc/howto/webservers.rst:414
 msgid ""
 "It now includes support for WSGI.  Using WSGI, it is possible to deploy "
 "MoinMoin on any WSGI compliant server, with no additional glue code. Unlike "
@@ -11455,11 +11455,11 @@ msgid ""
 "MoinMoin know nothing about."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:428
+#: ../src/Doc/howto/webservers.rst:421
 msgid "Model-View-Controller"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:430
+#: ../src/Doc/howto/webservers.rst:423
 msgid ""
 "The term *MVC* is often encountered in statements such as \"framework *foo* "
 "supports MVC\".  MVC is more about the overall organization of code, rather "
@@ -11471,24 +11471,24 @@ msgid ""
 "given that they are already familiar with the MVC structure."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:439
+#: ../src/Doc/howto/webservers.rst:432
 msgid "MVC stands for three components:"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:441
+#: ../src/Doc/howto/webservers.rst:434
 msgid ""
 "The *model*.  This is the data that will be displayed and modified.  In "
 "Python frameworks, this component is often represented by the classes used "
 "by an object-relational mapper."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:445
+#: ../src/Doc/howto/webservers.rst:438
 msgid ""
 "The *view*.  This component's job is to display the data of the model to the "
 "user.  Typically this component is implemented via templates."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:448
+#: ../src/Doc/howto/webservers.rst:441
 msgid ""
 "The *controller*.  This is the layer between the user and the model.  The "
 "controller reacts to user actions (like opening some specific URL), tells "
@@ -11496,14 +11496,14 @@ msgid ""
 "display,"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:453
+#: ../src/Doc/howto/webservers.rst:446
 msgid ""
 "While one might think that MVC is a complex design pattern, in fact it is "
 "not. It is used in Python because it has turned out to be useful for "
 "creating clean, maintainable web sites."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:459
+#: ../src/Doc/howto/webservers.rst:452
 msgid ""
 "While not all Python frameworks explicitly support MVC, it is often trivial "
 "to create a web site which uses the MVC pattern by separating the data logic "
@@ -11513,18 +11513,18 @@ msgid ""
 "chaos in the code base, making it harder to understand and modify."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:468
+#: ../src/Doc/howto/webservers.rst:461
 msgid ""
 "The English Wikipedia has an article about the `Model-View-Controller "
 "pattern <http://en.wikipedia.org/wiki/Model-view-controller>`_.  It includes "
 "a long list of web frameworks for various programming languages."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:474
+#: ../src/Doc/howto/webservers.rst:467
 msgid "Ingredients for Websites"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:476
+#: ../src/Doc/howto/webservers.rst:469
 msgid ""
 "Websites are complex constructs, so tools have been created to help web "
 "developers make their code easier to write and more maintainable.  Tools "
@@ -11534,18 +11534,19 @@ msgid ""
 "the process of developing a web site."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:486
+# 0b70426b273842c7aeb0d13d84d59533
+#: ../src/Doc/howto/webservers.rst:479
 msgid ""
 "There are far more components than can be presented here.  The Python wiki "
-"has a page about these components, called `Web Components <http://wiki."
+"has a page about these components, called `Web Components <https://wiki."
 "python.org/moin/WebComponents>`_."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:492
+#: ../src/Doc/howto/webservers.rst:485
 msgid "Templates"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:494
+#: ../src/Doc/howto/webservers.rst:487
 msgid ""
 "Mixing of HTML and Python code is made possible by a few libraries.  While "
 "convenient at first, it leads to horribly unmaintainable code.  That's why "
@@ -11555,18 +11556,18 @@ msgid ""
 msgstr ""
 
 # f28155ec1cbe47cc88eb8d6a2d1af868
-#: ../src/Doc/howto/webservers.rst:500
+#: ../src/Doc/howto/webservers.rst:493
 msgid "Python already includes two ways to build simple templates::"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:511
+#: ../src/Doc/howto/webservers.rst:504
 msgid ""
 "To generate complex HTML based on non-trivial model data, conditional and "
 "looping constructs like Python's *for* and *if* are generally needed. "
 "*Template engines* support templates of this complexity."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:515
+#: ../src/Doc/howto/webservers.rst:508
 msgid ""
 "There are a lot of template engines available for Python which can be used "
 "with or without a `framework`_.  Some of these define a plain-text "
@@ -11575,44 +11576,45 @@ msgid ""
 "valid XML.  There are many other variations."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:521
+#: ../src/Doc/howto/webservers.rst:514
 msgid ""
 "Some `frameworks`_ ship their own template engine or recommend one in "
 "particular.  In the absence of a reason to use a different template engine, "
 "using the one provided by or recommended by the framework is a good idea."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:525
+#: ../src/Doc/howto/webservers.rst:518
 msgid "Popular template engines include:"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:527
+#: ../src/Doc/howto/webservers.rst:520
 msgid "`Mako <http://www.makotemplates.org/>`_"
 msgstr "`Mako <http://www.makotemplates.org/>`_"
 
-#: ../src/Doc/howto/webservers.rst:528
+#: ../src/Doc/howto/webservers.rst:521
 msgid "`Genshi <http://genshi.edgewall.org/>`_"
 msgstr "`Genshi <http://genshi.edgewall.org/>`_"
 
-#: ../src/Doc/howto/webservers.rst:529
-msgid "`Jinja <http://jinja.pocoo.org/2/>`_"
+#: ../src/Doc/howto/webservers.rst:522
+#, fuzzy
+msgid "`Jinja <http://jinja.pocoo.org/>`_"
 msgstr "`Jinja <http://jinja.pocoo.org/2/>`_"
 
 # 6645ceeebd304a038727a8fdc0649eda
-#: ../src/Doc/howto/webservers.rst:533
+#: ../src/Doc/howto/webservers.rst:526
 msgid ""
 "There are many template engines competing for attention, because it is "
-"pretty easy to create them in Python.  The page `Templating <http://wiki."
+"pretty easy to create them in Python.  The page `Templating <https://wiki."
 "python.org/moin/Templating>`_ in the wiki lists a big, ever-growing number "
 "of these.  The three listed above are considered \"second generation\" "
 "template engines and are a good place to start."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:541
+#: ../src/Doc/howto/webservers.rst:534
 msgid "Data persistence"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:543
+#: ../src/Doc/howto/webservers.rst:536
 msgid ""
 "*Data persistence*, while sounding very complicated, is just about storing "
 "data. This data might be the text of blog entries, the postings on a "
@@ -11620,7 +11622,7 @@ msgid ""
 "of different ways to store information on a web server."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:548
+#: ../src/Doc/howto/webservers.rst:541
 msgid ""
 "Often, relational database engines like `MySQL <http://www.mysql.com/>`_ or "
 "`PostgreSQL <http://www.postgresql.org/>`_ are used because of their good "
@@ -11631,7 +11633,7 @@ msgid ""
 "sites SQLite is just enough."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:556
+#: ../src/Doc/howto/webservers.rst:549
 msgid ""
 "Relational databases are *queried* using a language called `SQL <http://en."
 "wikipedia.org/wiki/SQL>`_.  Python programmers in general do not like SQL "
@@ -11643,7 +11645,7 @@ msgid ""
 "use ORMs, and it works quite well."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:565
+#: ../src/Doc/howto/webservers.rst:558
 msgid ""
 "A second possibility is storing data in normal, plain text files (some times "
 "called \"flat files\").  This is very easy for simple sites, but can be "
@@ -11651,7 +11653,7 @@ msgid ""
 "stored data."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:570
+#: ../src/Doc/howto/webservers.rst:563
 msgid ""
 "A third possibility are object oriented databases (also called \"object "
 "databases\").  These databases store the object data in a form that closely "
@@ -11662,7 +11664,7 @@ msgid ""
 "unlike in relational databases where some objects are very hard to represent."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:578
+#: ../src/Doc/howto/webservers.rst:571
 msgid ""
 "`Frameworks`_ often give hints on which data storage method to choose.  It "
 "is usually a good idea to stick to the data store recommended by the "
@@ -11670,41 +11672,43 @@ msgid ""
 "by an alternate storage mechanism."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:585
+# b32960c4248544d4989eb91da5dd2faf
+#: ../src/Doc/howto/webservers.rst:578
 msgid ""
-"`Persistence Tools <http://wiki.python.org/moin/PersistenceTools>`_ lists "
+"`Persistence Tools <https://wiki.python.org/moin/PersistenceTools>`_ lists "
 "possibilities on how to save data in the file system.  Some of these modules "
 "are part of the standard library"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:589
+# b9b6ac249fc14aa9997f3ba4bab579ce
+#: ../src/Doc/howto/webservers.rst:582
 msgid ""
-"`Database Programming <http://wiki.python.org/moin/DatabaseProgramming>`_ "
+"`Database Programming <https://wiki.python.org/moin/DatabaseProgramming>`_ "
 "helps with choosing a method for saving data"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:592
+#: ../src/Doc/howto/webservers.rst:585
 msgid ""
 "`SQLAlchemy <http://www.sqlalchemy.org/>`_, the most powerful OR-Mapper for "
 "Python, and `Elixir <http://elixir.ematia.de/>`_, which makes SQLAlchemy "
 "easier to use"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:596
+#: ../src/Doc/howto/webservers.rst:589
 msgid "`SQLObject <http://www.sqlobject.org/>`_, another popular OR-Mapper"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:598
+#: ../src/Doc/howto/webservers.rst:591
 msgid ""
 "`ZODB <https://launchpad.net/zodb>`_ and `Durus <http://www.mems-exchange."
 "org/software/durus/>`_, two object oriented databases"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:606
+#: ../src/Doc/howto/webservers.rst:599
 msgid "Frameworks"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:608
+#: ../src/Doc/howto/webservers.rst:601
 msgid ""
 "The process of creating code to run web sites involves writing code to "
 "provide various services.  The code to provide a particular service often "
@@ -11716,7 +11720,7 @@ msgid ""
 "from Rails, but many existed a long time before Rails."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:617
+#: ../src/Doc/howto/webservers.rst:610
 msgid ""
 "Originally Python web frameworks tended to incorporate all of the services "
 "needed to develop web sites as a giant, integrated set of tools.  No two web "
@@ -11730,7 +11734,7 @@ msgid ""
 "used interchangeably."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:628
+#: ../src/Doc/howto/webservers.rst:621
 msgid ""
 "Since the advent of WSGI, the Python web framework world has been evolving "
 "toward interoperability based on the WSGI standard.  Now many web "
@@ -11740,7 +11744,7 @@ msgid ""
 "than one framework."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:635
+#: ../src/Doc/howto/webservers.rst:628
 msgid ""
 "The majority of users will probably want to select a \"full stack\" "
 "framework that has an active community.  These frameworks tend to be well "
@@ -11748,23 +11752,24 @@ msgid ""
 "site in minimal time."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:642
+#: ../src/Doc/howto/webservers.rst:635
 msgid "Some notable frameworks"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:644
+#: ../src/Doc/howto/webservers.rst:637
 msgid ""
 "There are an incredible number of frameworks, so they cannot all be covered "
 "here.  Instead we will briefly touch on some of the most popular."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:649
+#: ../src/Doc/howto/webservers.rst:642
 msgid "Django"
 msgstr "Django"
 
-#: ../src/Doc/howto/webservers.rst:651
+# f21816ade0d647668a38054f6f2aa0f3
+#: ../src/Doc/howto/webservers.rst:644
 msgid ""
-"`Django <http://www.djangoproject.com/>`_ is a framework consisting of "
+"`Django <https://www.djangoproject.com/>`_ is a framework consisting of "
 "several tightly coupled elements which were written from scratch and work "
 "together very well.  It includes an ORM which is quite powerful while being "
 "simple to use, and has a great online administration interface which makes "
@@ -11776,29 +11781,31 @@ msgid ""
 "sites almost without writing any Python code."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:661
+# 51774238daa345ccb0572ecd7ba5129a
+#: ../src/Doc/howto/webservers.rst:654
 msgid ""
 "It has a big, international community, the members of which have created "
 "many web sites.  There are also a lot of add-on projects which extend "
 "Django's normal functionality.  This is partly due to Django's well written "
-"`online documentation <http://docs.djangoproject.com/>`_ and the `Django "
+"`online documentation <https://docs.djangoproject.com/>`_ and the `Django "
 "book <http://www.djangobook.com/>`_."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:670
+# 4808cbb303f34a088363b19e6180eded
+#: ../src/Doc/howto/webservers.rst:663
 msgid ""
 "Although Django is an MVC-style framework, it names the elements "
-"differently, which is described in the `Django FAQ <http://docs."
+"differently, which is described in the `Django FAQ <https://docs."
 "djangoproject.com/en/dev/faq/general/#django-appears-to-be-a-mvc-framework-"
 "but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-"
 "don-t-use-the-standard-names>`_."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:676
+#: ../src/Doc/howto/webservers.rst:669
 msgid "TurboGears"
 msgstr "TurboGears"
 
-#: ../src/Doc/howto/webservers.rst:678
+#: ../src/Doc/howto/webservers.rst:671
 msgid ""
 "Another popular web framework for Python is `TurboGears <http://www."
 "turbogears.org/>`_.  TurboGears takes the approach of using already existing "
@@ -11808,7 +11815,7 @@ msgid ""
 "different from those used by default."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:685
+#: ../src/Doc/howto/webservers.rst:678
 msgid ""
 "The documentation can be found in the `TurboGears wiki <http://docs."
 "turbogears.org/>`_, where links to screencasts can be found. TurboGears has "
@@ -11818,7 +11825,7 @@ msgid ""
 msgstr ""
 
 # af4bd541aec84ab8be1a19f8b414c72a
-#: ../src/Doc/howto/webservers.rst:691
+#: ../src/Doc/howto/webservers.rst:684
 msgid ""
 "The newest version of TurboGears, version 2.0, moves even further in "
 "direction of WSGI support and a component-based architecture.  TurboGears 2 "
@@ -11826,11 +11833,11 @@ msgid ""
 "`Pylons <http://www.pylonsproject.org/>`_."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:698
+#: ../src/Doc/howto/webservers.rst:691
 msgid "Zope"
 msgstr "Zope"
 
-#: ../src/Doc/howto/webservers.rst:700
+#: ../src/Doc/howto/webservers.rst:693
 msgid ""
 "The Zope framework is one of the \"old original\" frameworks.  Its current "
 "incarnation in Zope2 is a tightly integrated full-stack framework.  One of "
@@ -11848,24 +11855,25 @@ msgid ""
 "`Grok <http://grok.zope.org/>`_."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:715
+# 3d48b3d82e154f6ab37bb1041e751122
+#: ../src/Doc/howto/webservers.rst:708
 msgid ""
-"Zope is also the infrastructure used by the `Plone <http://plone.org/>`_ "
+"Zope is also the infrastructure used by the `Plone <https://plone.org/>`_ "
 "content management system, one of the most powerful and popular content "
 "management systems available."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:721
+#: ../src/Doc/howto/webservers.rst:714
 msgid "Other notable frameworks"
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:723
+#: ../src/Doc/howto/webservers.rst:716
 msgid ""
 "Of course these are not the only frameworks that are available.  There are "
 "many other frameworks worth mentioning."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:726
+#: ../src/Doc/howto/webservers.rst:719
 msgid ""
 "Another framework that's already been mentioned is `Pylons`_.  Pylons is "
 "much like TurboGears, but with an even stronger emphasis on flexibility, "
@@ -11876,23 +11884,25 @@ msgid ""
 "which are handy for WSGI."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:733
+#: ../src/Doc/howto/webservers.rst:726
 msgid ""
 "And that's still not everything.  The most up-to-date information can always "
 "be found in the Python wiki."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:738
+# 842b2f2a42f941a3974843f2dbe6bf31
+#: ../src/Doc/howto/webservers.rst:731
 msgid ""
-"The Python wiki contains an extensive list of `web frameworks <http://wiki."
+"The Python wiki contains an extensive list of `web frameworks <https://wiki."
 "python.org/moin/WebFrameworks>`_."
 msgstr ""
 
-#: ../src/Doc/howto/webservers.rst:741
+# fd0de91d1f44499cad218f757a4e274f
+#: ../src/Doc/howto/webservers.rst:734
 msgid ""
 "Most frameworks also have their own mailing lists and IRC channels, look out "
 "for these on the projects' web sites.  There is also a general \"Python in "
-"the Web\" IRC channel on freenode called `#python.web <http://wiki.python."
+"the Web\" IRC channel on freenode called `#python.web <https://wiki.python."
 "org/moin/PoundPythonWeb>`_."
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-20 04:16\n"
+"POT-Creation-Date: 2014-11-03 09:23\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,10 +176,10 @@ msgstr ""
 "bogue utile. Il décrit quel genre d'information est utile et pourquoi elle "
 "est utile."
 
-# 1542b2bc60b6414f829d737bddfd91f4
+# aa32446fe7ba4bac95cb44ce54e51ae8
 #: ../src/Doc/bugs.rst:71
 msgid ""
-"`Bug Writing Guidelines <http://developer.mozilla.org/en/docs/"
+"`Bug Writing Guidelines <https://developer.mozilla.org/en-US/docs/Mozilla/QA/"
 "Bug_writing_guidelines>`_"
 msgstr ""
 

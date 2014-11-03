@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-22 04:34\n"
+"POT-Creation-Date: 2014-11-03 09:23\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,13 +190,14 @@ msgid ""
 "building consensus within the community and documenting dissenting opinions."
 msgstr ""
 
+# 705ef47c2c6e4331b49fb92b63efc6bd
 #: ../src/Doc/whatsnew/2.0.rst:130
 msgid ""
 "Read the rest of PEP 1 for the details of the PEP editorial process, style, "
 "and format.  PEPs are kept in the Python CVS tree on SourceForge, though "
 "they're not part of the Python 2.0 distribution, and are also available in "
-"HTML form from http://www.python.org/peps/.  As of September 2000, there are "
-"25 PEPS, ranging from PEP 201, \"Lockstep Iteration\", to PEP 225, "
+"HTML form from https://www.python.org/peps/.  As of September 2000, there "
+"are 25 PEPS, ranging from PEP 201, \"Lockstep Iteration\", to PEP 225, "
 "\"Elementwise/Objectwise Operators\"."
 msgstr ""
 
@@ -1216,14 +1217,15 @@ msgstr ""
 msgid "Relationship to PyXML"
 msgstr ""
 
+# 0a379dc17e784e2a8ec0eac510412cb9
 #: ../src/Doc/whatsnew/2.0.rst:1004
 msgid ""
 "The XML Special Interest Group has been working on XML-related Python code "
 "for a while.  Its code distribution, called PyXML, is available from the "
-"SIG's Web pages at http://www.python.org/sigs/xml-sig/. The PyXML "
-"distribution also used the package name ``xml``.  If you've written programs "
-"that used PyXML, you're probably wondering about its compatibility with the "
-"2.0 :mod:`xml` package."
+"SIG's Web pages at https://www.python.org/community/sigs/current/xml-sig. "
+"The PyXML distribution also used the package name ``xml``.  If you've "
+"written programs that used PyXML, you're probably wondering about its "
+"compatibility with the 2.0 :mod:`xml` package."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.0.rst:1010
@@ -2225,13 +2227,14 @@ msgid ""
 "would automatically upload your package to a catalog server."
 msgstr ""
 
+# 73c046415e98401db54db638886142aa
 #: ../src/Doc/whatsnew/2.1.rst:561
 msgid ""
 "You can start creating packages containing :file:`PKG-INFO` even if you're "
 "not using Python 2.1, since a new release of the Distutils will be made for "
 "users of earlier Python versions.  Version 1.0.2 of the Distutils includes "
 "the changes described in PEP 241, as well as various bugfixes and "
-"enhancements.  It will be available from  the Distutils SIG at http://www."
+"enhancements.  It will be available from  the Distutils SIG at https://www."
 "python.org/sigs/distutils-sig/."
 msgstr ""
 
@@ -2447,10 +2450,11 @@ msgid ""
 "`readlines` method does. You'd use it like this::"
 msgstr ""
 
+# 83d76a307b8b41fd8673f3d85dbce5ed
 #: ../src/Doc/whatsnew/2.1.rst:733
 msgid ""
 "For a fuller discussion of the line I/O changes, see the python-dev summary "
-"for January 1-15, 2001 at http://www.python.org/dev/summary/2001-01-1/."
+"for January 1-15, 2001 at https://www.python.org/dev/summary/2001-01-1/."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:736
@@ -2553,15 +2557,16 @@ msgid ""
 "at cleaning up irregularities and dark corners of the language design."
 msgstr ""
 
+# 1b3eb52a0f6e47c792cc53894116a12e
 #: ../src/Doc/whatsnew/2.2.rst:24
 msgid ""
 "This article doesn't attempt to provide a complete specification of the new "
 "features, but instead provides a convenient overview.  For full details, you "
 "should refer to the documentation for Python 2.2, such as the `Python "
-"Library Reference <http://www.python.org/doc/2.2/lib/lib.html>`_ and the "
-"`Python Reference Manual <http://www.python.org/doc/2.2/ref/ref.html>`_.  If "
-"you want to understand the complete implementation and design rationale for "
-"a change, refer to the PEP for a particular new feature."
+"Library Reference <https://www.python.org/doc/2.2/lib/lib.html>`_ and the "
+"`Python Reference Manual <https://www.python.org/doc/2.2/ref/ref.html>`_.  "
+"If you want to understand the complete implementation and design rationale "
+"for a change, refer to the PEP for a particular new feature."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:43
@@ -2967,13 +2972,14 @@ msgid ""
 "picture?"
 msgstr ""
 
+# a6511ea8abed4ddbbda273708c468661
 #: ../src/Doc/whatsnew/2.2.rst:398
 msgid ""
-"http://www.python.org/2.2/descrintro.html is a lengthy tutorial introduction "
-"to the descriptor features, written by Guido van Rossum. If my description "
-"has whetted your appetite, go read this tutorial next, because it goes into "
-"much more detail about the new features while still remaining quite easy to "
-"read."
+"https://www.python.org/2.2/descrintro.html is a lengthy tutorial "
+"introduction to the descriptor features, written by Guido van Rossum. If my "
+"description has whetted your appetite, go read this tutorial next, because "
+"it goes into much more detail about the new features while still remaining "
+"quite easy to read."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:403
@@ -4574,13 +4580,14 @@ msgid ""
 "2.3."
 msgstr ""
 
+# a0506e84af164b049d52c35bd7d12336
 #: ../src/Doc/whatsnew/2.3.rst:656
 msgid ""
 "The heart of the catalog is the new Distutils :command:`register` command. "
 "Running ``python setup.py register`` will collect the metadata describing a "
 "package, such as its name, version, maintainer, description, &c., and send "
 "it to a central catalog server.  The resulting catalog is available from "
-"http://www.python.org/pypi."
+"https://pypi.python.org/pypi."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:662
@@ -5018,6 +5025,7 @@ msgid ""
 "automatically  converted to bytes using the given encoding."
 msgstr ""
 
+# 43036fa0ad6a4af28c7cf3818513db8a
 #: ../src/Doc/whatsnew/2.3.rst:1078
 msgid ""
 "The method resolution order used by new-style classes has changed, though "
@@ -5028,10 +5036,10 @@ msgid ""
 "Superclass Linearization for Dylan\" <http://www.webcom.com/haahr/dylan/"
 "linearization-oopsla96.html>`_. To understand the motivation for this "
 "change,  read Michele Simionato's article `\"Python 2.3 Method Resolution "
-"Order\" <http://www.python.org/2.3/mro.html>`_, or read the thread on python-"
-"dev starting with the message at http://mail.python.org/pipermail/python-"
-"dev/2002-October/029035.html. Samuele Pedroni first pointed out the problem "
-"and also implemented the fix by coding the C3 algorithm."
+"Order\" <https://www.python.org/2.3/mro.html>`_, or read the thread on "
+"python-dev starting with the message at https://mail.python.org/pipermail/"
+"python-dev/2002-October/029035.html. Samuele Pedroni first pointed out the "
+"problem and also implemented the fix by coding the C3 algorithm."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:1091
@@ -5327,14 +5335,15 @@ msgstr ""
 msgid "(Contributed by Kevin O'Connor.)"
 msgstr ""
 
+# 2a01baddc34c4e20a502a5f67bb1cce0
 #: ../src/Doc/whatsnew/2.3.rst:1332
 msgid ""
 "The IDLE integrated development environment has been updated using the code "
-"from the IDLEfork project (http://idlefork.sf.net).  The most notable "
-"feature is that the code being developed is now executed in a subprocess, "
-"meaning that there's no longer any need for manual ``reload()`` operations. "
-"IDLE's core code has been incorporated into the standard library as the :mod:"
-"`idlelib` package."
+"from the IDLEfork project (http://idlefork.sourceforge.net).  The most "
+"notable feature is that the code being developed is now executed in a "
+"subprocess, meaning that there's no longer any need for manual ``reload()`` "
+"operations. IDLE's core code has been incorporated into the standard library "
+"as the :mod:`idlelib` package."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:1338
@@ -5603,6 +5612,7 @@ msgid ""
 "current version of the Tix package."
 msgstr ""
 
+# e796ed197479444a834a668530a4c907
 #: ../src/Doc/whatsnew/2.3.rst:1559
 msgid ""
 "The :mod:`Tkinter` module now works with a thread-enabled  version of Tcl. "
@@ -5613,7 +5623,7 @@ msgid ""
 "a command, passing it to the correct thread, and waiting for the results.  "
 "Other interfaces can't be handled automatically but :mod:`Tkinter` will now "
 "raise an exception on such an access so that you can at least find out about "
-"the problem.  See http://mail.python.org/pipermail/python-dev/2002-"
+"the problem.  See https://mail.python.org/pipermail/python-dev/2002-"
 "December/031107.html for a more detailed explanation of this change.  "
 "(Implemented by Martin von Löwis.)"
 msgstr ""
@@ -5928,9 +5938,9 @@ msgid ""
 "distribution and bundle it with the source of your extension."
 msgstr ""
 
-# fc26d9e404954c3db3d15c1caf1b8455
+# b82b80b147a145d4bb3e9a6eb7eee76c
 #: ../src/Doc/whatsnew/2.3.rst:1862
-msgid "http://svn.python.org/view/python/trunk/Objects/obmalloc.c"
+msgid "https://svn.python.org/view/python/trunk/Objects/obmalloc.c"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:1862
@@ -6572,9 +6582,9 @@ msgid ""
 "actually checked in was patch #979728, written by Mark Russell."
 msgstr ""
 
-# bf74fcd35c9b4e26b0e6fd66010a5064
+# e8f01f28d2db4e48ae8d613d93ade250
 #: ../src/Doc/whatsnew/2.4.rst:339
-msgid "http://www.python.org/moin/PythonDecoratorLibrary"
+msgid "https://www.python.org/moin/PythonDecoratorLibrary"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:341
@@ -8049,12 +8059,13 @@ msgid ""
 "Python 2.4 and 2.5.  (Both figures are likely to be underestimates.)"
 msgstr ""
 
+# 3d655397a96646ad9c5ebe79795dc4da
 #: ../src/Doc/whatsnew/2.5.rst:39
 msgid ""
 "This article doesn't try to be a complete specification of the new features; "
 "instead changes are briefly introduced using helpful examples.  For full "
 "details, you should always refer to the documentation for Python 2.5 at "
-"http://docs.python.org. If you want to understand the complete "
+"https://docs.python.org. If you want to understand the complete "
 "implementation and design rationale, refer to the PEP for a particular new "
 "feature."
 msgstr ""
@@ -8243,11 +8254,12 @@ msgid ""
 "download the required packages. ::"
 msgstr ""
 
+# 4f73b69675e440e9891cd4b9921e5bc6
 #: ../src/Doc/whatsnew/2.5.rst:231
 msgid ""
-"Another new enhancement to the Python package index at http://cheeseshop."
-"python.org is storing source and binary archives for a package.  The new :"
-"command:`upload` Distutils command will upload a package to the repository."
+"Another new enhancement to the Python package index at https://pypi.python."
+"org is storing source and binary archives for a package.  The new :command:"
+"`upload` Distutils command will upload a package to the repository."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:236
@@ -10869,10 +10881,11 @@ msgid ""
 "volunteers to administer it and a server to host it."
 msgstr ""
 
+# 5d3b5e5e4f0644e99aa2dc801015f475
 #: ../src/Doc/whatsnew/2.6.rst:164
 msgid ""
 "After posting a call for volunteers, a new Roundup installation was set up "
-"at http://bugs.python.org.  One installation of Roundup can host multiple "
+"at https://bugs.python.org.  One installation of Roundup can host multiple "
 "trackers, and this server now also hosts issue trackers for Jython and for "
 "the Python web site.  It will surely find other uses in the future.  Where "
 "possible, this edition of \"What's New in Python\" links to the bug/patch "
@@ -10889,9 +10902,9 @@ msgid ""
 "move from SourceForge to Roundup."
 msgstr ""
 
-# b0ebb541a83c4b649523837626396d42
+# eab68856fd3c449dac2be43770897fc3
 #: ../src/Doc/whatsnew/2.6.rst:182
-msgid "http://bugs.python.org"
+msgid "https://bugs.python.org"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:183
@@ -10966,35 +10979,36 @@ msgid ""
 "extensions and directives that is commonly used in the Python community."
 msgstr ""
 
+# abd8b71b55244f43be28272c7109c5cb
 #: ../src/Doc/whatsnew/2.6.rst:226
 msgid ""
 "Sphinx is a standalone package that can be used for writing, and almost two "
-"dozen other projects (`listed on the Sphinx web site <http://sphinx.pocoo."
-"org/examples.html>`__) have adopted Sphinx as their documentation tool."
+"dozen other projects (`listed on the Sphinx web site <http://sphinx-doc.org/"
+"examples.html>`__) have adopted Sphinx as their documentation tool."
 msgstr ""
 
-# 6b8be13630b24e5b8269cd71bdabc077
+# d0af77b8e20b48b5b1283ba07b12d040
 #: ../src/Doc/whatsnew/2.6.rst:233
 msgid ""
-"`Documenting Python <http://docs.python.org/devguide/documenting.html>`__"
+"`Documenting Python <https://docs.python.org/devguide/documenting.html>`__"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:234
 msgid "Describes how to write for Python's documentation."
 msgstr ""
 
-# 37c3e70369a64ae185a5feca37e2cf92
+# fb491a6bc2b7466c93968451ed450809
 #: ../src/Doc/whatsnew/2.6.rst:236
-msgid "`Sphinx <http://sphinx.pocoo.org/>`__"
+msgid "`Sphinx <http://sphinx-doc.org/>`__"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:237
 msgid "Documentation and code for the Sphinx toolchain."
 msgstr ""
 
-# a084439d060a4677ae6f4697bc8c08e0
+# a7c0dc5d5c194ed487dc221ca847d717
 #: ../src/Doc/whatsnew/2.6.rst:238
-msgid "`Docutils <http://docutils.sf.net>`__"
+msgid "`Docutils <http://docutils.sourceforge.net>`__"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:240
@@ -13169,10 +13183,11 @@ msgid ""
 "itself.  (Patch contributed by Bill Fenner; :issue:`829951`.)"
 msgstr ""
 
+# 1865ce388a63489fabeedeb71416c2d6
 #: ../src/Doc/whatsnew/2.6.rst:2362
 msgid ""
-"The :mod:`socket` module now supports TIPC (http://tipc.sf.net), a high-"
-"performance non-IP-based protocol designed for use in clustered "
+"The :mod:`socket` module now supports TIPC (http://tipc.sourceforge.net/), a "
+"high-performance non-IP-based protocol designed for use in clustered "
 "environments.  TIPC addresses are 4- or 5-tuples. (Contributed by Alberto "
 "Bertogli; :issue:`1646`.)"
 msgstr ""
@@ -14246,13 +14261,14 @@ msgid ""
 "3, several new features from the Python 3.x series have been included in 2.7."
 msgstr ""
 
+# 76f16953e73340d5bd2a09a6e63f461d
 #: ../src/Doc/whatsnew/2.7.rst:68
 msgid ""
 "This article doesn't attempt to provide a complete specification of the new "
 "features, but instead provides a convenient overview.  For full details, you "
-"should refer to the documentation for Python 2.7 at http://docs.python.org. "
+"should refer to the documentation for Python 2.7 at https://docs.python.org. "
 "If you want to understand the rationale for the design and implementation, "
-"refer to the PEP for a particular new feature or the issue on http://bugs."
+"refer to the PEP for a particular new feature or the issue on https://bugs."
 "python.org in which a change was discussed.  Whenever possible, \"What's New "
 "in Python\" links to the bug/patch item for each change."
 msgstr ""
@@ -14939,9 +14955,10 @@ msgid ""
 "it's no longer necessary and has been deprecated."
 msgstr ""
 
+# f242a9b2f2a34208805e30eb054164e3
 #: ../src/Doc/whatsnew/2.7.rst:711
 msgid ""
-"(Proposed in http://codereview.appspot.com/53094; implemented by Georg "
+"(Proposed in https://codereview.appspot.com/53094; implemented by Georg "
 "Brandl.)"
 msgstr ""
 
@@ -16228,11 +16245,12 @@ msgid ""
 "complete list of functions."
 msgstr ""
 
+# 6f9330d8425b4260b43dbb83ddde891c
 #: ../src/Doc/whatsnew/2.7.rst:1768
 msgid ""
 "The Distutils package and :mod:`sysconfig` are now maintained by Tarek "
 "Ziadé, who has also started a Distutils2 package (source repository at "
-"http://hg.python.org/distutils2/) for developing a next-generation version "
+"https://hg.python.org/distutils2/) for developing a next-generation version "
 "of Distutils."
 msgstr ""
 
@@ -16270,13 +16288,14 @@ msgstr ""
 msgid "Updated module: unittest"
 msgstr ""
 
+# 861b7f15d5774f78803f4e043bb8b371
 #: ../src/Doc/whatsnew/2.7.rst:1802
 msgid ""
 "The :mod:`unittest` module was greatly enhanced; many new features were "
 "added.  Most of these features were implemented by Michael Foord, unless "
 "otherwise noted.  The enhanced version of the module is downloadable "
 "separately for use with Python versions 2.4 to 2.6, packaged as the :mod:"
-"`unittest2` package, from http://pypi.python.org/pypi/unittest2."
+"`unittest2` package, from https://pypi.python.org/pypi/unittest2."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:1809

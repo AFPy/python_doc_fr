@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 06:15\n"
+"POT-Creation-Date: 2014-11-03 09:23\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1570,10 +1570,9 @@ msgid ""
 "Distutils (see section :ref:`inst-config-files`.)"
 msgstr ""
 
-# 2c9a68b75dc540cea7359efce94e2e08
+# 59a30694c572445eac53fc45d60dd7a9
 #: ../src/Doc/install/index.rst:1013
-msgid ""
-"`C++Builder Compiler <http://www.codegear.com/downloads/free/cppbuilder>`_"
+msgid "`C++Builder Compiler <http://www.embarcadero.com/downloads>`_"
 msgstr ""
 
 #: ../src/Doc/install/index.rst:1013
@@ -1683,10 +1682,10 @@ msgid ""
 "normal libraries do."
 msgstr ""
 
-# 35ae7e3fe6014a46bfd30d216592ddfc
+# c4a1647f246a41e0b75d7b7f7d8b094c
 #: ../src/Doc/install/index.rst:1083
 msgid ""
-"`Building Python modules on MS Windows platform with MinGW <http://www.zope."
+"`Building Python modules on MS Windows platform with MinGW <http://old.zope."
 "org/Members/als/tips/win32_mingw_modules>`_"
 msgstr ""
 
@@ -1705,9 +1704,10 @@ msgid ""
 "libraries of the same name."
 msgstr ""
 
+# 0400267d88c04bf394dfdc349b915af3
 #: ../src/Doc/install/index.rst:1093
 msgid ""
-"Check http://sources.redhat.com/cygwin/ and http://www.mingw.org/ for more "
+"Check http://www.sourceware.org/cygwin/ and http://www.mingw.org/ for more "
 "information"
 msgstr ""
 

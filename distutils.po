@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-13 09:45\n"
+"POT-Creation-Date: 2014-11-03 09:23\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,8 +223,8 @@ msgstr "Une liste de catégories pour le paquet"
 #: ../src/Doc/distutils/apiref.rst:80
 #, fuzzy
 msgid ""
-"a list of strings; valid classifiers are listed on `PyPI <http://pypi.python."
-"org/pypi?:action=list_classifiers>`_."
+"a list of strings; valid classifiers are listed on `PyPI <https://pypi."
+"python.org/pypi?:action=list_classifiers>`_."
 msgstr ""
 "La liste des catégorisations est disponibles sur http://pypi.python.org/"
 "pypi?:action=list_classifiers."
@@ -3508,9 +3508,9 @@ msgid ""
 "Distutils Cookbook."
 msgstr ""
 
-# 6d34bc9c3a1f4dd99ac6ed9c8f201b29
+# cc804942c5a8454ebbcda212bb887ea7
 #: ../src/Doc/distutils/examples.rst:13
-msgid "`Distutils Cookbook <http://wiki.python.org/moin/Distutils/Cookbook>`_"
+msgid "`Distutils Cookbook <https://wiki.python.org/moin/Distutils/Cookbook>`_"
 msgstr ""
 
 #: ../src/Doc/distutils/examples.rst:15
@@ -5305,11 +5305,12 @@ msgid ""
 "provided, distutils lists it as the author in :file:`PKG-INFO`."
 msgstr ""
 
+# f17e0ec23453447698c850a7e3abbbd1
 #: ../src/Doc/distutils/setupscript.rst:607
 msgid ""
 "These fields should not be used if your package is to be compatible with "
 "Python versions prior to 2.2.3 or 2.3.  The list is available from the `PyPI "
-"website <http://pypi.python.org/pypi>`_."
+"website <https://pypi.python.org/pypi>`_."
 msgstr ""
 
 # fc9bbbad33fe40e0bae202e4d4a27184
@@ -5342,10 +5343,11 @@ msgstr ""
 msgid "'long string'"
 msgstr "une chaîne de caractères"
 
+# 8861cdcde56848018f368272eb97256c
 #: ../src/Doc/distutils/setupscript.rst:627
 msgid ""
 "Multiple lines of plain text in reStructuredText format (see http://docutils."
-"sf.net/)."
+"sourceforge.net/)."
 msgstr ""
 
 #: ../src/Doc/distutils/setupscript.rst:630

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-22 04:34\n"
+"POT-Creation-Date: 2014-11-03 09:23\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1434,6 +1434,7 @@ msgstr ""
 
 # d37280ea9d7743f686abf8f1e1859425
 #: ../src/Doc/tutorial/classes.rst:591
+#, fuzzy
 msgid ""
 "With new-style classes, dynamic ordering is necessary because all  cases of "
 "multiple inheritance exhibit one or more diamond relationships (where at "
@@ -1446,7 +1447,7 @@ msgid ""
 "calls each parent only once, and that is monotonic (meaning that a class can "
 "be subclassed without affecting the precedence order of its parents).  Taken "
 "together, these properties make it possible to design reliable and "
-"extensible classes with multiple inheritance.  For more detail, see http://"
+"extensible classes with multiple inheritance.  For more detail, see https://"
 "www.python.org/download/releases/2.3/mro/."
 msgstr ""
 "Avec les nouvelles classes, l'ordre défini dynamiquement est nécessaire car "
@@ -1712,7 +1713,7 @@ msgid ""
 ":term:`Generator`\\s are a simple and powerful tool for creating iterators.  "
 "They are written like regular functions but use the :keyword:`yield` "
 "statement whenever they want to return data.  Each time :func:`next` is "
-"called on it, the generator resumes where it left-off (it remembers all the "
+"called on it, the generator resumes where it left off (it remembers all the "
 "data values and which statement was last executed).  An example shows that "
 "generators can be trivially easy to create::"
 msgstr ""
@@ -1728,7 +1729,7 @@ msgstr ""
 #: ../src/Doc/tutorial/classes.rst:847
 #, fuzzy
 msgid ""
-"Anything that can be done with generators can also be done with class based "
+"Anything that can be done with generators can also be done with class-based "
 "iterators as described in the previous section.  What makes generators so "
 "compact is that the :meth:`__iter__` and :meth:`~generator.next` methods are "
 "created automatically."
@@ -4480,10 +4481,11 @@ msgstr ""
 "d'applications dans de nombreux domaines et sur de nombreuses plateformes."
 
 #: ../src/Doc/tutorial/index.rst:13
+#, fuzzy
 msgid ""
 "The Python interpreter and the extensive standard library are freely "
 "available in source or binary form for all major platforms from the Python "
-"Web site, http://www.python.org/, and may be freely distributed. The same "
+"Web site, https://www.python.org/, and may be freely distributed. The same "
 "site also contains distributions of and pointers to many free third party "
 "Python modules, programs and tools, and additional documentation."
 msgstr ""
@@ -7622,30 +7624,34 @@ msgstr ""
 msgid "More Python resources:"
 msgstr ""
 
+# d10cebd2bc97492488f5f335751d7f9f
 #: ../src/Doc/tutorial/whatnow.rst:33
 msgid ""
-"http://www.python.org:  The major Python Web site.  It contains code, "
+"https://www.python.org:  The major Python Web site.  It contains code, "
 "documentation, and pointers to Python-related pages around the Web.  This "
 "Web site is mirrored in various places around the world, such as Europe, "
 "Japan, and Australia; a mirror may be faster than the main site, depending "
 "on your geographical location."
 msgstr ""
 
+# ef4dce91b88f4be895ce894dae4c3ac1
 #: ../src/Doc/tutorial/whatnow.rst:39
-msgid "http://docs.python.org:  Fast access to Python's  documentation."
+msgid "https://docs.python.org:  Fast access to Python's  documentation."
 msgstr ""
 
+# 1bc5b0b2722b4b73a301218b55c823a9
 #: ../src/Doc/tutorial/whatnow.rst:41
 msgid ""
-"http://pypi.python.org: The Python Package Index, previously also nicknamed "
-"the Cheese Shop, is an index of user-created Python modules that are "
-"available for download.  Once you begin releasing code, you can register it "
-"here so that others can find it."
+"https://pypi.python.org/pypi: The Python Package Index, previously also "
+"nicknamed the Cheese Shop, is an index of user-created Python modules that "
+"are available for download.  Once you begin releasing code, you can register "
+"it here so that others can find it."
 msgstr ""
 
+# c5c8fa10010b4c049a4cc8e3ef708395
 #: ../src/Doc/tutorial/whatnow.rst:46
 msgid ""
-"http://aspn.activestate.com/ASPN/Python/Cookbook/: The Python Cookbook is a "
+"http://code.activestate.com/recipes/langs/python/: The Python Cookbook is a "
 "sizable collection of code examples, larger modules, and useful scripts. "
 "Particularly notable contributions are collected in a book also titled "
 "Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
@@ -7662,7 +7668,7 @@ msgid ""
 "(and answering) questions, suggesting new features, and announcing new "
 "modules. Before posting, be sure to check the list of :ref:`Frequently Asked "
 "Questions <faq-index>` (also called the FAQ).  Mailing list archives are "
-"available at http://mail.python.org/pipermail/. The FAQ answers many of the "
+"available at https://mail.python.org/pipermail/. The FAQ answers many of the "
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
