@@ -1,2 +1,6 @@
 *~
 *.sw[a-z]
+src/
+pot/
+mo/
+build/
