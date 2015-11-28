@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-06 04:03\n"
+"POT-Creation-Date: 2015-11-19 00:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "Python et cette documentation sont :"
 
 #: ../src/Doc/copyright.rst:7
 #, fuzzy
-msgid "Copyright © 2001-2014 Python Software Foundation. All rights reserved."
+msgid "Copyright © 2001-2015 Python Software Foundation. All rights reserved."
 msgstr ""
 "Copyright © 2001-2010 Python Software Foundation. Tous droits réservés."
 

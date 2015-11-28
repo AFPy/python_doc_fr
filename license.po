@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-06 04:03\n"
+"POT-Creation-Date: 2015-11-19 00:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,11 +49,12 @@ msgstr ""
 "en Viriginie, d'où il diffusa plusieurs versions du logiciel."
 
 #: ../src/Doc/license.rst:22
+#, fuzzy
 msgid ""
 "In May 2000, Guido and the Python core development team moved to BeOpen.com "
 "to form the BeOpen PythonLabs team.  In October of the same year, the "
 "PythonLabs team moved to Digital Creations (now Zope Corporation; see http://"
-"www.zope.com/).  In 2001, the Python Software Foundation (PSF, see http://"
+"www.zope.com/).  In 2001, the Python Software Foundation (PSF, see https://"
 "www.python.org/psf/) was formed, a non-profit organization created "
 "specifically to own Python-related Intellectual Property.  Zope Corporation "
 "is a sponsoring member of the PSF."
@@ -67,11 +68,11 @@ msgstr ""
 "propriété intellectuelle de Python. Zope Corporation en est un sponsor."
 
 #: ../src/Doc/license.rst:30
+#, fuzzy
 msgid ""
-"All Python releases are Open Source (see http://www.opensource.org/ for the "
-"Open Source Definition). Historically, most, but not all, Python releases "
-"have also been GPL-compatible; the table below summarizes the various "
-"releases."
+"All Python releases are Open Source (see http://opensource.org/ for the Open "
+"Source Definition). Historically, most, but not all, Python releases have "
+"also been GPL-compatible; the table below summarizes the various releases."
 msgstr ""
 "Toutes les versions de Python sont Open Source (voir http://www.opensource."
 "org/ pour la définition d'Open Source). Historiquement, la plupart, mais pas "
@@ -263,7 +264,6 @@ msgid ""
 "documentation."
 msgstr ""
 
-# 5a36a2ec1b2f43d4ad43db690702496e
 #: ../src/Doc/license.rst:82
 msgid ""
 "Subject to the terms and conditions of this License Agreement, PSF hereby "
@@ -271,7 +271,7 @@ msgid ""
 "reproduce, analyze, test, perform and/or display publicly, prepare "
 "derivative works, distribute, and otherwise use Python |release| alone or in "
 "any derivative version, provided, however, that PSF's License Agreement and "
-"PSF's notice of copyright, i.e., \"Copyright © 2001-2014 Python Software "
+"PSF's notice of copyright, i.e., \"Copyright © 2001-2015 Python Software "
 "Foundation; All Rights Reserved\" are retained in Python |release| alone or "
 "in any derivative version prepared by Licensee."
 msgstr ""
@@ -529,84 +529,81 @@ msgstr ""
 msgid "The source for the :mod:`fpectl` module includes the following notice::"
 msgstr ""
 
-# e126b6593e3346cdbd89fc77888c00df
 #: ../src/Doc/license.rst:387
-msgid "MD5 message digest algorithm"
-msgstr ""
-
-# 9f484bd7cb294985b3fb849f3b53fbb4
-#: ../src/Doc/license.rst:389
-msgid ""
-"The source code for the :mod:`md5` module contains the following notice::"
-msgstr ""
-
-#: ../src/Doc/license.rst:437
 msgid "Asynchronous socket services"
 msgstr ""
 
-#: ../src/Doc/license.rst:439
+#: ../src/Doc/license.rst:389
 msgid ""
 "The :mod:`asynchat` and :mod:`asyncore` modules contain the following "
 "notice::"
 msgstr ""
 
-#: ../src/Doc/license.rst:464
+#: ../src/Doc/license.rst:414
 msgid "Cookie management"
 msgstr ""
 
-# dc73cc23af584fc4b693e2d68143e152
-#: ../src/Doc/license.rst:466
-msgid "The :mod:`Cookie` module contains the following notice::"
+#: ../src/Doc/license.rst:416
+msgid "The :mod:`http.cookies` module contains the following notice::"
 msgstr ""
 
-#: ../src/Doc/license.rst:492
+#: ../src/Doc/license.rst:442
 msgid "Execution tracing"
 msgstr ""
 
-#: ../src/Doc/license.rst:494
+#: ../src/Doc/license.rst:444
 msgid "The :mod:`trace` module contains the following notice::"
 msgstr ""
 
-#: ../src/Doc/license.rst:525
+#: ../src/Doc/license.rst:475
 msgid "UUencode and UUdecode functions"
 msgstr ""
 
-#: ../src/Doc/license.rst:527
+#: ../src/Doc/license.rst:477
 msgid "The :mod:`uu` module contains the following notice::"
 msgstr ""
 
-#: ../src/Doc/license.rst:555
+#: ../src/Doc/license.rst:505
 msgid "XML Remote Procedure Calls"
 msgstr ""
 
-# 908bfa552b92416b9ab4a7b264f95e2a
-#: ../src/Doc/license.rst:557
-msgid "The :mod:`xmlrpclib` module contains the following notice::"
+#: ../src/Doc/license.rst:507
+msgid "The :mod:`xmlrpc.client` module contains the following notice::"
 msgstr ""
 
-#: ../src/Doc/license.rst:588
+#: ../src/Doc/license.rst:538
 msgid "test_epoll"
 msgstr ""
 
-#: ../src/Doc/license.rst:590
+#: ../src/Doc/license.rst:540
 msgid "The :mod:`test_epoll` contains the following notice::"
 msgstr ""
 
-#: ../src/Doc/license.rst:614
+#: ../src/Doc/license.rst:564
 msgid "Select kqueue"
 msgstr ""
 
-#: ../src/Doc/license.rst:616
+#: ../src/Doc/license.rst:566
 msgid ""
 "The :mod:`select` and contains the following notice for the kqueue "
 "interface::"
 msgstr ""
 
-#: ../src/Doc/license.rst:644
+#: ../src/Doc/license.rst:594
+msgid "SipHash24"
+msgstr ""
+
+#: ../src/Doc/license.rst:596
+msgid ""
+"The file :file:`Python/pyhash.c` contains Marek Majkowski' implementation of "
+"Dan Bernstein's SipHash24 algorithm. The contains the following note::"
+msgstr ""
+
+#: ../src/Doc/license.rst:623
 msgid "strtod and dtoa"
 msgstr ""
 
-#: ../src/Doc/license.rst:646
+#: ../src/Doc/license.rst:625
 msgid ""
 "The file :file:`Python/dtoa.c`, which supplies C functions dtoa and strtod "
 "for conversion of C doubles to and from strings, is derived from the file of "
@@ -616,54 +613,74 @@ msgid ""
 msgstr ""
 
 # 4f91680c5c404807ac02dc81ed5deacc
-#: ../src/Doc/license.rst:674
+#: ../src/Doc/license.rst:653
 msgid "OpenSSL"
 msgstr ""
 
-# a4e3cf98978041caa59e6de7f727d44c
-#: ../src/Doc/license.rst:676
+#: ../src/Doc/license.rst:655
 msgid ""
 "The modules :mod:`hashlib`, :mod:`posix`, :mod:`ssl`, :mod:`crypt` use the "
 "OpenSSL library for added performance if made available by the operating "
-"system. Additionally, the Windows installers for Python include a copy of "
-"the OpenSSL libraries, so we include a copy of the OpenSSL license here::"
+"system. Additionally, the Windows and Mac OS X installers for Python may "
+"include a copy of the OpenSSL libraries, so we include a copy of the OpenSSL "
+"license here::"
 msgstr ""
 
 # fdecf041f968424da39c4c6b2b3b4d17
-#: ../src/Doc/license.rst:811
+#: ../src/Doc/license.rst:790
 msgid "expat"
 msgstr ""
 
 # 8f3a1d98481d418793e13b4474663183
-#: ../src/Doc/license.rst:813
+#: ../src/Doc/license.rst:792
 msgid ""
 "The :mod:`pyexpat` extension is built using an included copy of the expat "
 "sources unless the build is configured ``--with-system-expat``::"
 msgstr ""
 
 # 27816b870dc442f69a442faea64ec20e
-#: ../src/Doc/license.rst:840
+#: ../src/Doc/license.rst:819
 msgid "libffi"
 msgstr ""
 
 # d39fb47aa8654d46a47d4b4c19674b86
-#: ../src/Doc/license.rst:842
+#: ../src/Doc/license.rst:821
 msgid ""
 "The :mod:`_ctypes` extension is built using an included copy of the libffi "
 "sources unless the build is configured ``--with-system-libffi``::"
 msgstr ""
 
 # ef8cccf48fcc4f289d27db572ddbbd59
-#: ../src/Doc/license.rst:869
+#: ../src/Doc/license.rst:848
 msgid "zlib"
 msgstr ""
 
 # a8f256df65284ce1b73f7db0a287d3ae
-#: ../src/Doc/license.rst:871
+#: ../src/Doc/license.rst:850
 msgid ""
 "The :mod:`zlib` extension is built using an included copy of the zlib "
 "sources if the zlib version found on the system is too old to be used for "
 "the build::"
+msgstr ""
+
+#: ../src/Doc/license.rst:879
+msgid "cfuhash"
+msgstr ""
+
+#: ../src/Doc/license.rst:881
+msgid ""
+"The implementation of the hash table used by the :mod:`tracemalloc` is based "
+"on the cfuhash project::"
+msgstr ""
+
+#: ../src/Doc/license.rst:920
+msgid "libmpdec"
+msgstr ""
+
+#: ../src/Doc/license.rst:922
+msgid ""
+"The :mod:`_decimal` Module is built using an included copy of the libmpdec "
+"library unless the build is configured ``--with-system-libmpdec``::"
 msgstr ""
 
 #~ msgid "2.2"

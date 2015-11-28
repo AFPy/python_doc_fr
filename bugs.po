@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-20 04:02\n"
+"POT-Creation-Date: 2015-11-19 00:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,15 +57,21 @@ msgstr ""
 "docs@python.org est une liste de diffusion tenue par des bénévoles ; votre "
 "demande sera prise en compte, même si sa prise en charge prend du temps."
 
+#: ../src/Doc/bugs.rst:24
+#, fuzzy
+msgid "`Documentation bugs`_ on the Python issue tracker"
+msgstr "Utilisation du tracker Python"
+
 #: ../src/Doc/bugs.rst:29
 msgid "Using the Python issue tracker"
 msgstr "Utilisation du tracker Python"
 
 # aconrad: "traqueur de bogues" ? Comment traduire ça ?
 #: ../src/Doc/bugs.rst:31
+#, fuzzy
 msgid ""
 "Bug reports for Python itself should be submitted via the Python Bug Tracker "
-"(http://bugs.python.org/).  The bug tracker offers a Web form which allows "
+"(https://bugs.python.org/).  The bug tracker offers a Web form which allows "
 "pertinent information to be entered and submitted to the developers."
 msgstr ""
 "Les rapports de bugs pour Python lui-même devraient être soumis via le Bug "
@@ -160,7 +166,7 @@ msgstr ""
 "des problèmes."
 
 # 69a83a070002401aac0ef159d635dec6
-#: ../src/Doc/bugs.rst:68
+#: ../src/Doc/bugs.rst:69
 msgid ""
 "`How to Report Bugs Effectively <http://www.chiark.greenend.org.uk/~sgtatham/"
 "bugs.html>`_"
@@ -175,10 +181,9 @@ msgstr ""
 "bogue utile. Il décrit quel genre d'information est utile et pourquoi elle "
 "est utile."
 
-# 1542b2bc60b6414f829d737bddfd91f4
-#: ../src/Doc/bugs.rst:71
+#: ../src/Doc/bugs.rst:72
 msgid ""
-"`Bug Writing Guidelines <http://developer.mozilla.org/en/docs/"
+"`Bug Writing Guidelines <https://developer.mozilla.org/en-US/docs/Mozilla/QA/"
 "Bug_writing_guidelines>`_"
 msgstr ""
 
