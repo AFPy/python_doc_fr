@@ -90,18 +90,21 @@ Afin d'obtenir un document cohérent cette section propose une
 traduction de quelques termes techniques, rappelant ainsi les anglicismes
 à éviter :
 
- * regular expression => expression rationelle
- * library => bibliothèque
+ * abstract data type => type abstrait
+ * backslash => antislash
  * bound => lier
  * built-in => primitives
- * underscore => "tiret bas"
- * backslash => "antislash"
  * double quote => guillemet
+ * identifier => identifiant
+ * immutable => immuable
+ * interpreter => interpréteur
+ * library => bibliothèque
+ * list compréhension => compréhension de liste
+ * mutable => variable
+ * prompt => invite
+ * regular expression => expression rationelle
  * simple quote => guillemet simple
- * mangling => "décoration de nom" ?
- * abstract data type => type abstrait
  * statement => instruction
- * \:keyword: clause => clause_ :keyword:
- * interpreter => interpréteur (Présent dans "Le Petit Robert")
+ * underscore => tiret bas
 
 .. _clause: http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=8396944
