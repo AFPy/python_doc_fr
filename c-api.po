@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-19 00:36+0100\n"
+"POT-Creation-Date: 2015-11-28 16:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,9 +142,8 @@ msgstr ""
 
 # 3ff274f9cc304312be45136155b1492e
 # ed754c1426244a70a16d9a487bb8bc01
-#: ../src/Doc/c-api/apiabiversion.rst:16
-#: ../src/Doc/c-api/memory.rst:219 ../src/Doc/c-api/memory.rst:309
-#: ../src/Doc/c-api/structures.rst:129
+#: ../src/Doc/c-api/apiabiversion.rst:16 ../src/Doc/c-api/memory.rst:219
+#: ../src/Doc/c-api/memory.rst:309 ../src/Doc/c-api/structures.rst:129
 #: ../src/Doc/c-api/structures.rst:241 ../src/Doc/c-api/tuple.rst:145
 #: ../src/Doc/c-api/tuple.rst:168
 msgid "Meaning"
@@ -1096,11 +1095,11 @@ msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:325
 msgid ""
-"Tests the value passed in for truth (a boolean **p**\\redicate) and converts "
-"the result to its equivalent C true/false integer value. Sets the int to 1 "
-"if the expression was true and 0 if it was false. This accepts any valid "
-"Python value.  See :ref:`truth` for more information about how Python tests "
-"values for truth."
+"Tests the value passed in for truth (a boolean **p**\\ redicate) and "
+"converts the result to its equivalent C true/false integer value. Sets the "
+"int to 1 if the expression was true and 0 if it was false. This accepts any "
+"valid Python value.  See :ref:`truth` for more information about how Python "
+"tests values for truth."
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:336 ../src/Doc/c-api/arg.rst:626
@@ -2589,12 +2588,10 @@ msgstr ""
 # afd0be3ddc6c4f5da6a275c1b704c6a3
 #: ../src/Doc/c-api/bytes.rst:72 ../src/Doc/c-api/bytes.rst:75
 #: ../src/Doc/c-api/bytes.rst:93 ../src/Doc/c-api/bytes.rst:96
-#: ../src/Doc/c-api/structures.rst:136
-#: ../src/Doc/c-api/structures.rst:245
-#: ../src/Doc/c-api/structures.rst:252
-#: ../src/Doc/c-api/structures.rst:268 ../src/Doc/c-api/unicode.rst:452
-#: ../src/Doc/c-api/unicode.rst:455 ../src/Doc/c-api/unicode.rst:488
-#: ../src/Doc/c-api/unicode.rst:491
+#: ../src/Doc/c-api/structures.rst:136 ../src/Doc/c-api/structures.rst:245
+#: ../src/Doc/c-api/structures.rst:252 ../src/Doc/c-api/structures.rst:268
+#: ../src/Doc/c-api/unicode.rst:452 ../src/Doc/c-api/unicode.rst:455
+#: ../src/Doc/c-api/unicode.rst:488 ../src/Doc/c-api/unicode.rst:491
 msgid "int"
 msgstr ""
 
@@ -5038,8 +5035,7 @@ msgid ""
 "are all the variables:"
 msgstr ""
 
-#: ../src/Doc/c-api/exceptions.rst:686
-#: ../src/Doc/c-api/exceptions.rst:783
+#: ../src/Doc/c-api/exceptions.rst:686 ../src/Doc/c-api/exceptions.rst:783
 msgid "C Name"
 msgstr "Nom C"
 
@@ -5047,8 +5043,7 @@ msgstr "Nom C"
 msgid "Python Name"
 msgstr "Nom Python"
 
-#: ../src/Doc/c-api/exceptions.rst:686
-#: ../src/Doc/c-api/exceptions.rst:783
+#: ../src/Doc/c-api/exceptions.rst:686 ../src/Doc/c-api/exceptions.rst:783
 msgid "Notes"
 msgstr "Notes"
 
@@ -5061,10 +5056,8 @@ msgstr ":cdata:`PyExc_BaseException`"
 msgid ":exc:`BaseException`"
 msgstr ":exc:`BaseException`"
 
-#: ../src/Doc/c-api/exceptions.rst:688
-#: ../src/Doc/c-api/exceptions.rst:690
-#: ../src/Doc/c-api/exceptions.rst:692
-#: ../src/Doc/c-api/exceptions.rst:694
+#: ../src/Doc/c-api/exceptions.rst:688 ../src/Doc/c-api/exceptions.rst:690
+#: ../src/Doc/c-api/exceptions.rst:692 ../src/Doc/c-api/exceptions.rst:694
 #: ../src/Doc/c-api/exceptions.rst:742
 msgid "\\(1)"
 msgstr "\\(1)"
@@ -9428,9 +9421,8 @@ msgstr ""
 # c84d9893aa734db7b932f88f477c42f9
 # 7d43d8c80da84d1e84f0e846ca738618
 #: ../src/Doc/c-api/memory.rst:219 ../src/Doc/c-api/memory.rst:309
-#: ../src/Doc/c-api/structures.rst:129
-#: ../src/Doc/c-api/structures.rst:241 ../src/Doc/c-api/tuple.rst:145
-#: ../src/Doc/c-api/tuple.rst:168
+#: ../src/Doc/c-api/structures.rst:129 ../src/Doc/c-api/structures.rst:241
+#: ../src/Doc/c-api/tuple.rst:145 ../src/Doc/c-api/tuple.rst:168
 msgid "Field"
 msgstr ""
 
@@ -11616,9 +11608,8 @@ msgstr ""
 
 # e05db405917b4f1ca1559fb2ba69042e
 # 66cdb5c56a0b42ab8d1366d8001dbf87
-#: ../src/Doc/c-api/structures.rst:129
-#: ../src/Doc/c-api/structures.rst:241 ../src/Doc/c-api/tuple.rst:145
-#: ../src/Doc/c-api/tuple.rst:168
+#: ../src/Doc/c-api/structures.rst:129 ../src/Doc/c-api/structures.rst:241
+#: ../src/Doc/c-api/tuple.rst:145 ../src/Doc/c-api/tuple.rst:168
 msgid "C Type"
 msgstr ""
 
@@ -11632,10 +11623,8 @@ msgstr ""
 # 8c33d008c80441cebcf4835031d83a12
 # 5a5d5d025cd14696bc96bdfc322c70ce
 # 7cbf4c7aa1a64cc6b1229af80e46773c
-#: ../src/Doc/c-api/structures.rst:131
-#: ../src/Doc/c-api/structures.rst:139
-#: ../src/Doc/c-api/structures.rst:243
-#: ../src/Doc/c-api/structures.rst:256
+#: ../src/Doc/c-api/structures.rst:131 ../src/Doc/c-api/structures.rst:139
+#: ../src/Doc/c-api/structures.rst:243 ../src/Doc/c-api/structures.rst:256
 #: ../src/Doc/c-api/structures.rst:272
 msgid "char \\*"
 msgstr ""
@@ -11677,8 +11666,7 @@ msgstr ""
 
 # 6e56fb65167d4cfbb2795b596cadc0f5
 # ebaf5da23eb94109910a6df70f136b75
-#: ../src/Doc/c-api/structures.rst:139
-#: ../src/Doc/c-api/structures.rst:256
+#: ../src/Doc/c-api/structures.rst:139 ../src/Doc/c-api/structures.rst:256
 msgid "points to the contents of the docstring"
 msgstr ""
 
@@ -11906,8 +11894,7 @@ msgstr ""
 
 # c8f9601cf49a479d8f04e7e05efb7f07
 # ff7499c004e94262a34e4fea69758896
-#: ../src/Doc/c-api/structures.rst:273
-#: ../src/Doc/c-api/structures.rst:274
+#: ../src/Doc/c-api/structures.rst:273 ../src/Doc/c-api/structures.rst:274
 msgid "PyObject \\*"
 msgstr ""
 
@@ -11924,8 +11911,7 @@ msgstr ""
 # 081cdc6e199d43418dbcca89007d19c1
 # d60b61cc8aed448ebcc8643000ca0140
 # d44d8b4e05f245fc9f2563cb48a83d74
-#: ../src/Doc/c-api/structures.rst:275
-#: ../src/Doc/c-api/structures.rst:276
+#: ../src/Doc/c-api/structures.rst:275 ../src/Doc/c-api/structures.rst:276
 #: ../src/Doc/c-api/structures.rst:281
 msgid "char"
 msgstr ""
