@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Vé 0.1.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # 3056ef50444249728d9f473af9927a6b
@@ -4249,6 +4249,12 @@ msgid ""
 "values share the same approximation, any one of them could be displayed "
 "while still preserving the invariant ``eval(repr(x)) == x``."
 msgstr ""
+"Il existe beaucoup de nombres décimaux qui partagent une même approximation "
+"en fraction binaire. Par exemple, ``0.1``, ``0.10000000000000001``, et "
+"``0.1000000000000000055511151231257827021181583404541015625``ont tous pour "
+"approximation ``3602879701896397 / 2 ** 55``. Puisques toutes ces valeurs "
+"décimales partagent la même approximation, chacune peut être affichée tout "
+"en respectant ``eval(repr(x)) == x``."
 
 #: ../src/Doc/tutorial/floatingpoint.rst:84
 msgid ""
@@ -5999,9 +6005,8 @@ msgstr ""
 
 # 2396721f786f406abc44eac947210655
 #: ../src/Doc/tutorial/introduction.rst:258
-#, fuzzy
 msgid "Note that since -0 is the same as 0, negative indices start from -1."
-msgstr "Notez que puisque -0 égal 0, les index négatifs commencent par -1."
+msgstr "Notez que puisque -0 égal 0, les indices négatifs commencent par -1."
 
 #: ../src/Doc/tutorial/introduction.rst:260
 msgid ""
@@ -6009,6 +6014,9 @@ msgid ""
 "used to obtain individual characters, *slicing* allows you to obtain "
 "substring::"
 msgstr ""
+"En plus d'accéder à un élément par son indice, il est aussi possible de "
+"*trancher* une liste. Accéder à une chaîne par un indice permet d'obtenir un "
+"caractère, alors que la *trancher* permet d'obtenir une sous-chaïne ::"
 
 # b7c539be3f7b473d81fc2321525dd5e7
 #: ../src/Doc/tutorial/introduction.rst:268
