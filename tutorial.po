@@ -7,14 +7,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 00:36+0100\n"
-"PO-Revision-Date: 2015-12-01 09:52+0100\n"
+"PO-Revision-Date: 2015-12-01 19:12+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Vé 0.1.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # 3056ef50444249728d9f473af9927a6b
@@ -6543,11 +6543,11 @@ msgstr ""
 
 #: ../src/Doc/tutorial/modules.rst:126
 msgid "Executing modules as scripts"
-msgstr ""
+msgstr "Exécuter des modules comme des scripts"
 
 #: ../src/Doc/tutorial/modules.rst:128
 msgid "When you run a Python module with ::"
-msgstr ""
+msgstr "Lorsque vous exécutez un module Python avec ::"
 
 #: ../src/Doc/tutorial/modules.rst:132
 msgid ""
@@ -6555,6 +6555,9 @@ msgid ""
 "with the ``__name__`` set to ``\"__main__\"``.  That means that by adding "
 "this code at the end of your module::"
 msgstr ""
+"le code du module sera exécuté comme si vous l'aviez importé, mais son "
+"``__name__`` vaudra ``\"__main__\"``. Donc en ajoutant ces lignes à la fin "
+"du module ::"
 
 #: ../src/Doc/tutorial/modules.rst:140
 msgid ""
@@ -6562,10 +6565,13 @@ msgid ""
 "because the code that parses the command line only runs if the module is "
 "executed as the \"main\" file::"
 msgstr ""
+"vous pouvez rendre le fichier utilisable comme un script ou importable en "
+"temps que module, puisque le code qui lis les paramètres de la ligne de "
+"commande n'est exécuté que si le module est le fichier principal ::"
 
 #: ../src/Doc/tutorial/modules.rst:147
 msgid "If the module is imported, the code is not run::"
-msgstr ""
+msgstr "Si le fichier est importé, le code n'est pas exécuté ::"
 
 #: ../src/Doc/tutorial/modules.rst:152
 msgid ""
@@ -6573,10 +6579,13 @@ msgid ""
 "module, or for testing purposes (running the module as a script executes a "
 "test suite)."
 msgstr ""
+"C'est typiquement utilisé soit pour proposer une interface utilisateur pour "
+"un module, soit pour lancer les tests sur le module (où exécuter le module "
+"en temps que script lance les tests)."
 
 #: ../src/Doc/tutorial/modules.rst:159
 msgid "The Module Search Path"
-msgstr ""
+msgstr "Les dossiers de recherche de modules"
 
 # 7eb1de98727b457bb47241fe0f9a3c7a
 #: ../src/Doc/tutorial/modules.rst:163
@@ -6586,12 +6595,19 @@ msgid ""
 "file named :file:`spam.py` in a list of directories given by the variable :"
 "data:`sys.path`.  :data:`sys.path` is initialized from these locations:"
 msgstr ""
+"Lorsqu'un module nommé par exemple :mod:`spam` est importé, il est d'abord "
+"recherché parmis les modules natifs, puis s'il n'y est pas trouvé, "
+"l'interpréteur va chercher un fichier nommé :file:`spam.py` dans une liste "
+"de dossiers donnés par la variable :data:`sys.path` initialisée par défaut "
+"à ::"
 
 #: ../src/Doc/tutorial/modules.rst:168
 msgid ""
 "The directory containing the input script (or the current directory when no "
 "file is specified)."
 msgstr ""
+"Le dossier contenant le script courant (ou le dossier courant si aucun "
+"script n'est donné)."
 
 # 92b653933f904f2ba5db5eeb5106e97d
 #: ../src/Doc/tutorial/modules.rst:170
@@ -6599,10 +6615,12 @@ msgid ""
 ":envvar:`PYTHONPATH` (a list of directory names, with the same syntax as the "
 "shell variable :envvar:`PATH`)."
 msgstr ""
+":envvar:`PYTHONPATH` (une liste de dossiers, utilisant la même syntaxe que "
+"la variable shell :envvar:`PATH`)."
 
 #: ../src/Doc/tutorial/modules.rst:172
 msgid "The installation-dependent default."
-msgstr ""
+msgstr "La valeur par défaut, dépendante de l'installation."
 
 #: ../src/Doc/tutorial/modules.rst:175
 msgid ""
@@ -6610,6 +6628,10 @@ msgid ""
 "script is calculated after the symlink is followed. In other words the "
 "directory containing the symlink is **not** added to the module search path."
 msgstr ""
+"Sur les systèmes qui gèrent les liens symboliques, le dossier contenant le "
+"script courant est résolu après avoir suivi le lien sublimer du script. "
+"Autrement dit le dossier contenant le lien symbolique n'est **pas** ajouté "
+"au dossiers de recherche de modules."
 
 # 06804f6bce114936a931a03ac145ec9a
 #: ../src/Doc/tutorial/modules.rst:179
@@ -6621,10 +6643,16 @@ msgid ""
 "library directory. This is an error unless the replacement is intended.  See "
 "section :ref:`tut-standardmodules` for more information."
 msgstr ""
+"Après leur initialisation, les programmes Python peuvent modifier leur :data:"
+"`sys.path`. Le dossier contenant le script courant est placé au début de la "
+"liste des dossiers à rechercher, avant les dossiers de bibliothèques, Cela "
+"signifie qu'un module dans ce dossier, ayant le même nom qu'un module, sera "
+"chargé à sa place. C'est une erreur typique, à moins que ce soit voulu. "
+"Voir :ref:`tut-standardmodules` pour plus d'informations."
 
 #: ../src/Doc/tutorial/modules.rst:190
 msgid "\"Compiled\" Python files"
-msgstr ""
+msgstr "Fichiers Python \"compilés\""
 
 #: ../src/Doc/tutorial/modules.rst:192
 msgid ""
@@ -6636,6 +6664,13 @@ msgid ""
 "spam.cpython-33.pyc``.  This naming convention allows compiled modules from "
 "different releases and different versions of Python to coexist."
 msgstr ""
+"Pour accélérer le chargement des modules, Python cache une version compilée "
+"de chaque module, dans un fichier nommé :file:`module(version).pyc` (ou "
+"*version* représente le format du fichier compilé, typiquement une version "
+"de Python) dans le dossier ``__pycache__``. Par exemple avec CPython 3.3 la "
+"version compilée de spam.py serait ``__pycache__/spam.cpython-33.pyc``. "
+"Cette règle de nommage permet à des versions compilées par des versions de "
+"Python différentes de coexister."
 
 #: ../src/Doc/tutorial/modules.rst:200
 msgid ""
@@ -6645,8 +6680,14 @@ msgid ""
 "independent, so the same library can be shared among systems with different "
 "architectures."
 msgstr ""
+"Python compare les dates de modification du fichier source et de sa version "
+"compilée pour voir si le module doit être recompilé. Ce processus est "
+"entièrement automatique, et les versions compilées sont indépendantes de la "
+"plateforme, et peuvent donc être partagées entre des systèmes d'architecture "
+"différente."
 
 #: ../src/Doc/tutorial/modules.rst:205
+#, fuzzy
 msgid ""
 "Python does not check the cache in two circumstances.  First, it always "
 "recompiles and does not store the result for the module that's loaded "
@@ -6655,6 +6696,8 @@ msgid ""
 "distribution, the compiled module must be in the source directory, and there "
 "must not be a source module."
 msgstr ""
+"Il existe deux circonstances pour lesquelles Python ne vérifie pas le "
+"cache : d'abord"
 
 #: ../src/Doc/tutorial/modules.rst:212
 msgid "Some tips for experts:"
