@@ -1,0 +1,5 @@
+# Usefull with:
+# git config diff.podiff.textconv scripts/podiff
+
+*.po diff=podiff
+*.pot diff=podiff
