@@ -4,17 +4,17 @@
 # Julien Palard <julien@palard.fr>, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 00:36+0100\n"
-"PO-Revision-Date: 2015-12-01 19:12+0100\n"
+"PO-Revision-Date: 2015-12-03 23:28+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Vé 0.1.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # 3056ef50444249728d9f473af9927a6b
@@ -1176,7 +1176,7 @@ msgid ""
 "not be used as a class variable because just a single list would be shared "
 "by all *Dog* instances::"
 msgstr ""
-"Comme vu dans :réf:`tut-object`, les données partagées modifiables (tel que "
+"Comme vu dans :ref:`tut-object`, les données partagées modifiables (tel que "
 "les listes, dictionnaires, etc...) peuvent avoir des effets surprenants. "
 "Part exemple, la liste *tricks* dans le code suivant ne devrait pas être une "
 "variable de classe, car jiate une seule liste serait partagées par toutes "
@@ -5996,7 +5996,6 @@ msgstr ""
 "simplement une chaîne de longueur 1 ::"
 
 #: ../src/Doc/tutorial/introduction.rst:249
-#, fuzzy
 msgid ""
 "Indices may also be negative numbers, to start counting from the right::"
 msgstr ""
@@ -6527,6 +6526,10 @@ msgid ""
 "package is frowned upon, since it often causes poorly readable code. "
 "However, it is okay to use it to save typing in interactive sessions."
 msgstr ""
+"Notez qu'en général, importer ``*`` d'un module ou d'un paquet est "
+"déconseillé, en général ça engendre du code difficilement lisible. "
+"Cependant, c'est acceptable de l'utiliser pour gagner quelques secondes en "
+"mode interactif."
 
 #: ../src/Doc/tutorial/modules.rst:117
 msgid ""
@@ -6687,7 +6690,6 @@ msgstr ""
 "différente."
 
 #: ../src/Doc/tutorial/modules.rst:205
-#, fuzzy
 msgid ""
 "Python does not check the cache in two circumstances.  First, it always "
 "recompiles and does not store the result for the module that's loaded "
@@ -6697,11 +6699,16 @@ msgid ""
 "must not be a source module."
 msgstr ""
 "Il existe deux circonstances pour lesquelles Python ne vérifie pas le "
-"cache : d'abord"
+"cache : Le premier cas lorsque le module est donné par la ligne de commande "
+"(cas où le module est toujours recompilé, sans même cacher sa version "
+"compilée), le second cas est lorsque le module n'a pas de source dans ce cas "
+"Python n'essaye pas de charger la version compilée. Pour gérer un module "
+"sans source (seulement compilé) le module compilé doit être dans le dossier "
+"source et sa source ne doit pas être présente."
 
 #: ../src/Doc/tutorial/modules.rst:212
 msgid "Some tips for experts:"
-msgstr ""
+msgstr "Astuces pour les experts :"
 
 #: ../src/Doc/tutorial/modules.rst:214
 msgid ""
@@ -6713,6 +6720,14 @@ msgid ""
 "have a .pyo rather than a .pyc suffix and are usually smaller.  Future "
 "releases may change the effects of optimization."
 msgstr ""
+"Vous pouvez utiliser les paramètres :option:`-O` ou :option : `-OO` lors de "
+"l'invocation de Python pour réduire la taille des fichiers compilés. "
+"L'option ``-O`` supprime les appels à ``assert``, et ``-OO`` supprime aussi "
+"les chaînes de documentation ``__doc__``. Puisque certains programmes "
+"s'attendent à les avoir, n'utilisez cette option que si vous savez ce que "
+"vous faites. Les modules \"optimisés\" sont stockés dans des fichiers .pyo "
+"plutôt que .pyc. Des versions de Python futures pourraient changer les "
+"effets des optimisations."
 
 #: ../src/Doc/tutorial/modules.rst:222
 msgid ""
@@ -6720,22 +6735,30 @@ msgid ""
 "file than when it is read from a ``.py`` file; the only thing that's faster "
 "about ``.pyc`` or ``.pyo`` files is the speed with which they are loaded."
 msgstr ""
+"Un programme ne fonctionne pas plus rapidement lorsqu'il est chargé depuis "
+"un ``.pyc`` ou ``.pyo`` plutôt qu'être charge depuis le ``.py``. La seule "
+"chose plus rapide avec les versions compilées est la vitesse à laquelle ils "
+"sont chargés."
 
 #: ../src/Doc/tutorial/modules.rst:226
 msgid ""
 "The module :mod:`compileall` can create .pyc files (or .pyo files when :"
 "option:`-O` is used) for all modules in a directory."
 msgstr ""
+"Le module :mod:`compileall` permet de compiler tous les modules d'un dossier "
+"(et accepte aussi le paramètre :option:`-O`)."
 
 #: ../src/Doc/tutorial/modules.rst:229
 msgid ""
 "There is more detail on this process, including a flow chart of the "
 "decisions, in PEP 3147."
 msgstr ""
+"Voilà plus de détails sur le processus, ainsi qu'un organigramme des "
+"decisions, dans la PEP 3147."
 
 #: ../src/Doc/tutorial/modules.rst:236
 msgid "Standard Modules"
-msgstr ""
+msgstr "Modules standards"
 
 # 0572f328979e445b8f24801a89a1e2b0
 #: ../src/Doc/tutorial/modules.rst:240
@@ -6752,12 +6775,25 @@ msgid ""
 "into every Python interpreter.  The variables ``sys.ps1`` and ``sys.ps2`` "
 "define the strings used as primary and secondary prompts::"
 msgstr ""
+"Python est accompagné d'une bibliothèque de modules standards, décrits dans "
+"la documentation de la Bibliothèque Python, plus loin. Certains modules sont "
+"intégrés dans l'interpréteur, ils exposent des outils qui ne font pas partie "
+"du langage, mais qui font tout de même partie de l'interpréteur, soit pour "
+"le côté pratique, soit pour exposer des outils essentiels tels que l'accès "
+"aux appels systems. La composition de ces modules est configurable à la "
+"compilation, et dépend aussi de la plateforme ciblée. Par exemple, le "
+"module :mod:`winreg` n'est proposé que sur les systèmes Windows. Un module "
+"mérite une attention particulière, le module :mod:`sys`, qui est présent "
+"dans tous les interpréteurs Python. Les variables ``sys.ps1`` et ``sys.ps2`` "
+"définissent les chaînes d'invites principales et secondaires ::"
 
 #: ../src/Doc/tutorial/modules.rst:263
 msgid ""
 "These two variables are only defined if the interpreter is in interactive "
 "mode."
 msgstr ""
+"Ces deux variables ne sont définies que si l'interpréteur est en mode "
+"interactif."
 
 #: ../src/Doc/tutorial/modules.rst:265
 msgid ""
@@ -6767,26 +6803,36 @@ msgid ""
 "default if :envvar:`PYTHONPATH` is not set.  You can modify it using "
 "standard list operations::"
 msgstr ""
+"La variable ``sys.path`` est une liste de chaînes qui détermine les chemins "
+"de recherche de modules pour l'interpréteur. Il est initialisé à un chemin "
+"par défaut pris de la variable d'environnement :envvar:`PYTHONPATH`, ou "
+"d'une valeur par défaut interne si :envvar:`PYTHONPATH` n'est pas définie. "
+"``sys.path`` est modifiable en utilisant les opérations habituelles des "
+"listes ::"
 
 #: ../src/Doc/tutorial/modules.rst:278
 msgid "The :func:`dir` Function"
-msgstr ""
+msgstr "La fonction :func:`dir`"
 
 #: ../src/Doc/tutorial/modules.rst:280
 msgid ""
 "The built-in function :func:`dir` is used to find out which names a module "
 "defines.  It returns a sorted list of strings::"
 msgstr ""
+"La fonction interne :func:`dir` est utilisée pour trouver quels noms sont "
+"définies par un module. Elle donne une liste triée de chaînes :;"
 
 #: ../src/Doc/tutorial/modules.rst:305
 msgid ""
 "Without arguments, :func:`dir` lists the names you have defined currently::"
-msgstr ""
+msgstr "Sans paramètres, :func:`dir` listes les noms actuellement définis ::"
 
 #: ../src/Doc/tutorial/modules.rst:313
 msgid ""
 "Note that it lists all types of names: variables, modules, functions, etc."
 msgstr ""
+"Notez qu'elle liste tout types de noms : les variables, fonctions, modules, "
+"etc."
 
 #: ../src/Doc/tutorial/modules.rst:317
 msgid ""
@@ -6794,10 +6840,12 @@ msgid ""
 "you want a list of those, they are defined in the standard module :mod:"
 "`builtins`::"
 msgstr ""
+":func:`dir` ne liste ni les fonctions primitives ni les variables internes. "
+"Si vous voulez les lister, ils sont définis dans le module :mod:`builtins` ::"
 
 #: ../src/Doc/tutorial/modules.rst:356
 msgid "Packages"
-msgstr ""
+msgstr "Les paquets"
 
 #: ../src/Doc/tutorial/modules.rst:358
 msgid ""
@@ -6809,6 +6857,14 @@ msgid ""
 "authors of multi-module packages like NumPy or the Python Imaging Library "
 "from having to worry about each other's module names."
 msgstr ""
+"Les paquets sont un moyen de structurer les espaces de noms des modules "
+"Python en utilisant une notations \"pointée\". Par exemple, le nom de "
+"module :mod:`A.B` désigne le sous-module ``B`` du paquet ``A``. De la même "
+"manière que l'utilisation des modules évite aux auteurs de différents "
+"modules d'avoir à se soucier des noms de variables globales des autres, "
+"l'utilisation des noms de modules avec des points évite aux auteurs de "
+"paquets contenant plusieurs modules tel que NumPy ou \"Python Image Library"
+"\" d'avoir à se soucier des noms des modules des autres."
 
 # 0c3e2b19ba7c46b3a367e0649f5bcace
 #: ../src/Doc/tutorial/modules.rst:366
@@ -6825,12 +6881,26 @@ msgid ""
 "operations.  Here's a possible structure for your package (expressed in "
 "terms of a hierarchical filesystem):"
 msgstr ""
+"Imaginez que vous voulez constuire une collections de modules (un \"paquet"
+"\") pour gérer uniformément les fichiers contenant du son et des données "
+"sonores. Il existe un grand nombre de formats de fichiers pour stocker du "
+"son (généralement repérés par leur extension, par exemple :file:`.wav`, :"
+"file:`.aiff`, :file:`.au`), vous aurez donc envie de créer et maintenir un "
+"nombre croissant de modules pour gérer la conversion entre tous ces formats. "
+"Il existe aussi tout une floppée d'opérations que vous voudriez pouvoir "
+"faire sur du son (mixer, ajouter de l'écho, égaliser, ajouter un effet "
+"stéréo articifiel), donc, en plus des modules de conversion, vous allez "
+"écrire un nombre illimité de modules permettant d'effectuer ces opérations. "
+"Voici une structure possible pour votre paquet (exprimée comme un système de "
+"fichier, hierarchiquement) :"
 
 #: ../src/Doc/tutorial/modules.rst:403
 msgid ""
 "When importing the package, Python searches through the directories on ``sys."
 "path`` looking for the package subdirectory."
 msgstr ""
+"Lorsqu'il importe des paquets, Python cherche dans chaque dossiers de ``sys."
+"path``, à la recherche du dossier du paquet."
 
 #: ../src/Doc/tutorial/modules.rst:406
 msgid ""
@@ -6848,34 +6918,44 @@ msgid ""
 "Users of the package can import individual modules from the package, for "
 "example::"
 msgstr ""
+"Les utilisateurs d'un module peuvent importer ses modules individuellement, "
+"par exemple ::"
 
 #: ../src/Doc/tutorial/modules.rst:418
 msgid ""
 "This loads the submodule :mod:`sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
 msgstr ""
+"Chargera le sous-module :mod:`sound.effects.echo`. Il dit être référencé par "
+"son nom complet. ::"
 
 #: ../src/Doc/tutorial/modules.rst:423
 msgid "An alternative way of importing the submodule is::"
-msgstr ""
+msgstr "Une autre manière d'importer des sous-modules est ::"
 
 #: ../src/Doc/tutorial/modules.rst:427
 msgid ""
 "This also loads the submodule :mod:`echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
 msgstr ""
+"Chargera aussi le sous-module :mod:`echo`, et le rendra disponible dans le "
+"préfixe du paquet, il peut donc être utilisé comme ça ::"
 
 #: ../src/Doc/tutorial/modules.rst:432
 msgid ""
 "Yet another variation is to import the desired function or variable "
 "directly::"
 msgstr ""
+"Une autre méthode consisterait à importer la fonction ou variable désirée "
+"directement ::"
 
 #: ../src/Doc/tutorial/modules.rst:436
 msgid ""
 "Again, this loads the submodule :mod:`echo`, but this makes its function :"
 "func:`echofilter` directly available::"
 msgstr ""
+"Le sous-module :mod:`echo` est toujours chargé, mais ici la fonction :func:"
+"`echofilter` est disponible directement ::"
 
 #: ../src/Doc/tutorial/modules.rst:441
 msgid ""
@@ -6894,10 +6974,14 @@ msgid ""
 "a package but can't be a class or function or variable defined in the "
 "previous item."
 msgstr ""
+"Au contraire, en utilisant la syntaxe ``import item.item.subitement."
+"subsubitem``, chaque ``item`` sauf le dernier doivent être des paquets. Le "
+"dernier ``item`` peut être un module ou un paquet, mais ne peut être ni une "
+"fonction, ni une classe, ni une variable défini dans l'élément précédent."
 
 #: ../src/Doc/tutorial/modules.rst:457
 msgid "Importing \\* From a Package"
-msgstr ""
+msgstr "Importer \\* depuis un paquet"
 
 #: ../src/Doc/tutorial/modules.rst:461
 msgid ""
@@ -6927,6 +7011,8 @@ msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
 "named submodules of the :mod:`sound` package."
 msgstr ""
+"Cela signifierai que ``from sound.effects import *`` importait les trois "
+"sous-modules du paquet :mod:`sound`."
 
 #: ../src/Doc/tutorial/modules.rst:482
 msgid ""
@@ -6948,6 +7034,10 @@ msgid ""
 "package when the ``from...import`` statement is executed.  (This also works "
 "when ``__all__`` is defined.)"
 msgstr ""
+"Dans cet exemple, les modules :mod:`echo` et :mod:`surround` sont importés "
+"dans l'espace de noms courant lorsque ``from...import`` est exécuté, parce "
+"qu'ils sont définis dans le paquet :mod:`sound.effects`. (Cela fonctionne "
+"lorsque ``__all__`` est défini.)"
 
 #: ../src/Doc/tutorial/modules.rst:500
 msgid ""
@@ -6955,6 +7045,9 @@ msgid ""
 "certain patterns when you use ``import *``, it is still considered bad "
 "practise in production code."
 msgstr ""
+"Bien que certains modules ont été pensés pour n'exporter que les noms "
+"respectant une certaine structure lorsque ``import *`` est utilisé, ``import "
+"*`` reste considéré comme une mauvaise pratique."
 
 #: ../src/Doc/tutorial/modules.rst:504
 msgid ""
@@ -6963,10 +7056,14 @@ msgid ""
 "importing module needs to use submodules with the same name from different "
 "packages."
 msgstr ""
+"Rappelez-vous qu'il n'y a rien de mauvais à utiliser ``from Package import "
+"specific_submodule`` ! C'est d'ailleurs la manière recommandée à moins que "
+"le module qui fait les imports ai besoin de sous-modules ayant le même nom "
+"mais provenant se paquets différents."
 
 #: ../src/Doc/tutorial/modules.rst:511
 msgid "Intra-package References"
-msgstr ""
+msgstr "Références internes dans un paquet"
 
 #: ../src/Doc/tutorial/modules.rst:513
 msgid ""
@@ -6976,6 +7073,11 @@ msgid ""
 "vocoder` needs to use the :mod:`echo` module in the :mod:`sound.effects` "
 "package, it can use ``from sound.effects import echo``."
 msgstr ""
+"Lorsque les paquets sont organisés en sous-paquets (comme le paquet :mod:"
+"`sound` par exemple), vous pouvez utiliser des imports absolus pour cibler "
+"des paquets voisins. Par exemple, si le module :mod:`sound.filters.vocoder` "
+"a besoin du module :mod:`echo` du paquet :mod:`sound.effects`, il peut "
+"utiliser ``from sound.effects import echo``."
 
 #: ../src/Doc/tutorial/modules.rst:519
 msgid ""
@@ -6995,7 +7097,7 @@ msgstr ""
 
 #: ../src/Doc/tutorial/modules.rst:534
 msgid "Packages in Multiple Directories"
-msgstr ""
+msgstr "Paquets dans plusieurs dossiers"
 
 #: ../src/Doc/tutorial/modules.rst:536
 msgid ""
