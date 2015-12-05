@@ -7,14 +7,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 00:36+0100\n"
-"PO-Revision-Date: 2015-12-04 09:29+0100\n"
+"PO-Revision-Date: 2015-12-05 11:56+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Vé 0.1.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # 3056ef50444249728d9f473af9927a6b
@@ -7231,12 +7231,15 @@ msgstr ""
 "depuis la ligne de commande ::"
 
 #: ../src/Doc/tutorial/stdlib.rst:75
-#, fuzzy
 msgid ""
 "The :mod:`getopt` module processes *sys.argv* using the conventions of the "
 "Unix :func:`getopt` function.  More powerful and flexible command line "
 "processing is provided by the :mod:`argparse` module."
-msgstr "Le module :mod:`getopt`"
+msgstr ""
+"Le module :mod:`getopt`comprend *sys.argv* en utilisant les conventions "
+"habituelles de la fonction Unix :func:`getopt`. Des outils de compréhension "
+"des paramètres de la ligne de commande plus flexibles et avancés sont "
+"disponibles dnas le module :mod:`argparse`."
 
 #: ../src/Doc/tutorial/stdlib.rst:83
 msgid "Error Output Redirection and Program Termination"
@@ -7973,7 +7976,7 @@ msgstr ""
 
 #: ../src/Doc/tutorial/whatnow.rst:31
 msgid "More Python resources:"
-msgstr ""
+msgstr "D'autres ressources:"
 
 #: ../src/Doc/tutorial/whatnow.rst:33
 msgid ""
@@ -7983,10 +7986,19 @@ msgid ""
 "Japan, and Australia; a mirror may be faster than the main site, depending "
 "on your geographical location."
 msgstr ""
+"https://www.python.org: C'est le site principal pour Python, il y contient "
+"du code, de la documentation, des liens vers d'autres sites à propos de "
+"Python tout autour d'internet. Il est répliqué dans différents endroits "
+"autours du globe, comme en Europe, au Japon, et en Australie, ces répliques "
+"peuvent dans certains cas être plus rapides que le site principal, tout "
+"dépend d'où vous vous situez."
 
 #: ../src/Doc/tutorial/whatnow.rst:39
 msgid "https://docs.python.org:  Fast access to Python's  documentation."
 msgstr ""
+"https://docs.python.org:  Un accès rapide à la documentation de Python en "
+"anglais. (La traduction en français, vous y êtes, est ici: http://www.afpy."
+"org/doc/python)"
 
 #: ../src/Doc/tutorial/whatnow.rst:41
 msgid ""
@@ -7995,6 +8007,12 @@ msgid ""
 "are available for download.  Once you begin releasing code, you can register "
 "it here so that others can find it."
 msgstr ""
+"https://pypi.python.org/pypi: \"The Python Package Index\", (Le Répertoire "
+"des Paquets Python), ou auparavant surnommé \"The Cheese Shop\" (La "
+"Fromagerie), est un catalogue de modules Python disponibles au "
+"téléchargement, construit par les utilisateurs. Lorsque vous commencez à "
+"distribuer du code, vous pouvez l'inscrire ici afin que les autres puissent "
+"le trouver."
 
 #: ../src/Doc/tutorial/whatnow.rst:46
 msgid ""
@@ -8003,12 +8021,18 @@ msgid ""
 "Particularly notable contributions are collected in a book also titled "
 "Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 msgstr ""
+"http://code.activestate.com/recipes/langs/python/: \"The Python Cookbook\" "
+"est un recueil assez important d'exemples de code, de modules, et de "
+"scripts. Les contributions les plus remarquables y sont regroupées dans un "
+"livre appelé \"Python Cookbook\" (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 
 #: ../src/Doc/tutorial/whatnow.rst:51
 msgid ""
 "http://www.pyvideo.org collects links to Python-related videos from "
 "conferences and user-group meetings."
 msgstr ""
+"http://www.pyvideo.org regroupe des liens vers des vidéos relatives à "
+"Python, de conférences ou de réunions de groupes d'utilisateurs."
 
 #: ../src/Doc/tutorial/whatnow.rst:54
 msgid ""
@@ -8017,6 +8041,11 @@ msgid ""
 "as linear algebra, Fourier transforms, non-linear solvers, random number "
 "distributions, statistical analysis and the like."
 msgstr ""
+"http://scipy.org: Le projet \"The Scientific Python\" inclu des modules pour "
+"manipuler et effectuer des calculs efficients sur des listes. Le projet "
+"héberge aussi des paquets divers pour manipuler entre autre l'algèbre "
+"linéaire, les transformées de Fourier, des résolveurs non-linéaires, la "
+"distributions de nombres aléatoires, l'analyse statistique, etc."
 
 #: ../src/Doc/tutorial/whatnow.rst:59
 msgid ""
@@ -8028,6 +8057,14 @@ msgid ""
 "new features, and announcing new modules. Mailing list archives are "
 "available at https://mail.python.org/pipermail/."
 msgstr ""
+"Pour poser des questions ou rapporter des problèmes liés à Python, vous "
+"pouvez écrire sur le forum :newsgroup:`comp.lang.python`, ou les envoyer à "
+"la liste de diffusion à python-list@python.org. Le forum et la liste de "
+"diffusion sont liées, un message publié sur l'un sera automatiquement "
+"transféré sur l'autre. Il y sont publiés des centaines de messages par jour, "
+"demandant (ou répondant) à des questions, suggérant des nouvelles "
+"fonctionalités, et annoncant des nouveaux modules. Les archives sont "
+"disponibles à https://mail.python.org/pipermail/."
 
 #: ../src/Doc/tutorial/whatnow.rst:67
 msgid ""
@@ -8036,6 +8073,9 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
+"Avant de poster, assurez vous d'avoir lu la liste de la :ref:`Foire Aux "
+"Questions <faq-index>` (aussi appelée FAQ). La FAQ répond à beaucoup de "
+"questions fréquentes, et contient probablement une solution à votre problème."
 
 #~ msgid ""
 #~ "(To some people breadth first --- searching :class:`Base2` and :class:"
