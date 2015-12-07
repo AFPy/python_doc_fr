@@ -7005,11 +7005,11 @@ msgid ""
 "effects that should only happen when the sub-module is explicitly imported."
 msgstr ""
 "Qu'arrive-il lorsqu'un utilisateur écrit ``from sound.effects import *`` ? "
-"Dans l'idéal on pourrait espére imaginer que ça irait chercher tous les sous-"
-"modules du paquet sur le système de fichiers, et qu'ils seraient tous "
-"importés. Ça pourrait être long, et importer certains sous-modules pourrait "
-"avoir des effets secondaires indésirables, du moins, désirés seulement "
-"lorsque le sous module est importé explicitement."
+"Dans l'idéal on pourrait espérer que ça irait chercher tous les sous-modules "
+"du paquet sur le système de fichiers, et qu'ils seraient tous importés. Ça "
+"pourrait être long, et importer certains sous-modules pourrait avoir des "
+"effets secondaires indésirables, du moins, désirés seulement lorsque le sous "
+"module est importé explicitement."
 
 # 8f1258abef7b47319a5ab764ae9e7512
 #: ../src/Doc/tutorial/modules.rst:467
