@@ -2,7 +2,7 @@ Traduction française de docs.python.org
 =======================================
 
 Ce projet vise à mettre à disposition sur le site de l'afpy une
-`traduction en français <http://www.afpy.org/doc/python/2.7/>`_ d'une
+`traduction en français <http://www.afpy.org/doc/python/>`_ d'une
 partie de la documentation officielle de Python, pour les curieux
 désirant découvrir Python mais n'ayant pas la capacité de lire le
 texte en anglais.
@@ -23,8 +23,8 @@ d'une des façons suivantes:
 
 * S'il s'agit d'un éditeur conçu spécialement pour les .po (`poedit
   <http://www.poedit.net/>`_, gted, gtranslator, lokalize,
-  betterpoeditor, vim/emacs avec un mode PO, etc...) vous n'avez plus
-  qu'à vous occuper du texte en français ;
+  betterpoeditor, vim/emacs avec un mode PO, Vé sur Android, etc...)
+  vous n'avez plus qu'à vous occuper du texte en français ;
 
 * Si vous utilisez un éditeur standard, chaque bloc du fichier est
   constitué d'une chaine en anglais (précédée de "msgid") suivi de son
@@ -36,7 +36,7 @@ d'une des façons suivantes:
 Une fois votre contribution écrite, transmettez-la nous :
 
 * soit par un pull-request (si vous avez fait un fork) ;
-* soit en la joignant à un ticket ;
+* soit en la joignant à un `ticket github<https://github.com/AFPy/python_doc_fr/issues>` ;
 * soit par mail à la `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_
 
 Norme
@@ -44,14 +44,14 @@ Norme
 
 Afin de ne pas générer des diff illisibles remplis de plus de
 différences de norme que de différences de texte, autremment dit, afin
-d'obtenir un historique git lisible, et des merge façiles, nous
+d'obtenir un historique git lisible, et des merge faciles, nous
 devrions tous utiliser strictement la même norme.
 
 Ainsi, si vous utilisez un éditeur de texte pour faire vos
 traductions, ce n'est peut être pas évident d'appliquer strictement
 une norme à la main, vous pouvez donc utiliser:
 
-for po in *.po; do echo $po; tac $po | tac | msgcat - -o $po; done
+    for po in *.po; do echo $po; tac $po | tac | msgcat - -o $po; done
 
 autremment dit, utiliser msgcat pour réecrire proprement votre fichier
 après avoir mis les mains dedans. (l'astuce tac|tac c'est pour lire
@@ -79,21 +79,22 @@ Aides à la traduction
   `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_.
 * Vous pouvez consulter le `glossaire traduc.org <http://glossaire.traduc.org>`_
   qui contient des traductions consolidées de plusieur projets.
-* Consultez aussi le site de
-  `traduc.org <http://traduc.org>`_
+* Consultez aussi le site de `traduc.org <http://traduc.org>`_
   qui contient de nombreuses informations pour les traducteurs.
+* `Le grand dictionnaire terminologique` <http://gdt.oqlf.gouv.qc.ca/>`_
 
 Uniformisation du vocabulaire
 -----------------------------
 
 Afin d'obtenir un document cohérent cette section propose une
-traduction de quelques termes techniques, rappelant ainsi les anglicismes
-à éviter :
+traduction de quelques termes techniques, rappelant ainsi les
+anglicismes à éviter, ce n'est qu'une proposition discutable (ouvrez
+un ticket si vous n'êtes pas d'acord) :
 
  * abstract data type => type abstrait
  * backslash => antislash
  * bound => lier
- * built-in => primitives
+ * built-in => primitives, interne
  * double quote => guillemet
  * identifier => identifiant
  * immutable => immuable
