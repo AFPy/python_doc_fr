@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 00:36+0100\n"
-"PO-Revision-Date: 2015-12-07 23:27+0100\n"
+"PO-Revision-Date: 2015-12-10 23:09+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
 "Language: fr\n"
@@ -7592,10 +7592,13 @@ msgid ""
 "formats. The grouping attribute of locale's format function provides a "
 "direct way of formatting numbers with group separators::"
 msgstr ""
+"Le module :mod:`locale` offre une base de donnée de formats de donnée "
+"spécifique à chaque région. L'attribut ``grouping`` de la fonction de "
+"formattage permet de formater directement des nombres avec un séparateur ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:72
 msgid "Templating"
-msgstr ""
+msgstr "Gabarits (Templates)"
 
 # dc541a6f18e54caaa2101a76a6b5d13e
 #: ../src/Doc/tutorial/stdlib2.rst:74
@@ -7605,6 +7608,11 @@ msgid ""
 "allows users to customize their applications without having to alter the "
 "application."
 msgstr ""
+"Le module :mod:`string`  contiens une classe fort polyvalente : :class:"
+"`~string.Template` permettant d'écrire des gabarits (dits \"templates\") "
+"avec une syntaxe simple, si simple qu'elle est compréhensible par des non-"
+"développeurs. Cela permet donc à vous utilisateurs de personnaliser leur "
+"application sans la modifier."
 
 #: ../src/Doc/tutorial/stdlib2.rst:78
 msgid ""
@@ -7614,6 +7622,11 @@ msgid ""
 "letters with no intervening spaces.  Writing ``$$`` creates a single escaped "
 "``$``::"
 msgstr ""
+"Le format est constitué de marqueurs formés d'un ``$`` suivi d'un "
+"identifiant Python valide (caractères alphanumériques et tirets-bas). "
+"Entourer le marqueur d'accolades permet de lui coller d'autres caractères "
+"alphanumériques sans intercaler un espace. Écrire ``$$`` créé un simple ``"
+"$``."
 
 # 0f345ca7b4ad4fcfbe5c7bc89e145880
 #: ../src/Doc/tutorial/stdlib2.rst:88
@@ -7624,6 +7637,12 @@ msgid ""
 "meth:`~string.Template.safe_substitute` method may be more appropriate --- "
 "it will leave placeholders unchanged if data is missing::"
 msgstr ""
+"La méthode :meth:`~string.Template.substitute` lève une exception :exc:"
+"`KeyError` lorsqu'un marqueur n'a pas été fourni, ni dans un dictionnaire, "
+"ni sous forme d'un paramètre nommé. Dans certains cas, lorsque la donnée à "
+"appliquer n'est connur que partiellement, la méthode :meth:`~string.Template."
+"safe_substitute` est plus appropriée car elle laissera tel quel les "
+"marqueurs manquants ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:103
 msgid ""
@@ -7632,6 +7651,10 @@ msgid ""
 "placeholders such as the current date, image sequence number, or file "
 "format::"
 msgstr ""
+"Les classes filles de ``Template`` peuvent définir leur propre délimiteur. "
+"Typiquement, un script de renommage de photos par lots peut choisir le "
+"symbole pourcent comme marqueur pour, par exemple, la date actuelle, le "
+"numéro de l'image, ou son format ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:125
 msgid ""
@@ -7639,10 +7662,13 @@ msgid ""
 "details of multiple output formats.  This makes it possible to substitute "
 "custom templates for XML files, plain text reports, and HTML web reports."
 msgstr ""
+"Un autre usage des templates est de séparer la logique métier dub côté et "
+"les détails spécifiques à chaque format de sortie. Il est possible de "
+"générer de cette manière des fichiers XML, texte, HTML, ..."
 
 #: ../src/Doc/tutorial/stdlib2.rst:133
 msgid "Working with Binary Data Record Layouts"
-msgstr ""
+msgstr "Travailler avec des données binaires"
 
 # ecdb9e781e96479390eae1e533a9729e
 #: ../src/Doc/tutorial/stdlib2.rst:135
@@ -7654,10 +7680,17 @@ msgid ""
 "\"`` represent two and four byte unsigned numbers respectively.  The ``\"<"
 "\"`` indicates that they are standard size and in little-endian byte order::"
 msgstr ""
+"Le module :mod:`struct` expose les fonctions :func:`~struct.pack` et :func:"
+"`~struct.unpack` permettant de travailler avec des données binaires. "
+"L'exemple suivant montre comment parcourir une entête de fichier ZIP sans "
+"recourir au module :mod:`zipfile`. Les marqueurs ``\"H\"`` et ``\"I\"`` "
+"représentent des nombres entiers non signés, stockés respectivement sur deux "
+"et quatre octets. Le ``\"<\"`` indique qu'ils ont une taille standard et "
+"dans le style petit-boutiste."
 
 #: ../src/Doc/tutorial/stdlib2.rst:166
 msgid "Multi-threading"
-msgstr ""
+msgstr "Threads"
 
 #: ../src/Doc/tutorial/stdlib2.rst:168
 msgid ""
@@ -7667,12 +7700,21 @@ msgid ""
 "background.  A related use case is running I/O in parallel with computations "
 "in another thread."
 msgstr ""
+"Des tâches indépendantes peuvent être exécutées simultanément (on parle de "
+"concourrance), en utilisant des threads.Les threads peuvent améliorer la "
+"réactivité d'une application qui accepterait d'interagir avec l'utilisateur "
+"pendant que d'autres traitements sont exécutés en arrière plan. Un autre "
+"usage typique est de séparer sur deux threads distincts les I/O (entrées / "
+"sorties) et le calcul."
 
 #: ../src/Doc/tutorial/stdlib2.rst:173
 msgid ""
 "The following code shows how the high level :mod:`threading` module can run "
 "tasks in background while the main program continues to run::"
 msgstr ""
+"Le code suivant donne un exemple d'usage du module :mod:`threading` "
+"exécutant des tâches en arrière plan pendant que le programme principal "
+"continue de s'exécuter ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:196
 msgid ""
@@ -7681,6 +7723,11 @@ msgid ""
 "module provides a number of synchronization primitives including locks, "
 "events, condition variables, and semaphores."
 msgstr ""
+"Le challenge principal des applications multi tâches est la coordination "
+"entre les threads qui partagent des données ou des ressources. Pour ce "
+"faire, lemodule :mod:`threading` expose quelques outils dédiés à la "
+"synchronisation comme les verrous (locks), événement (events), variables "
+"conditionnelles (condition variables), et les sémaphores."
 
 #: ../src/Doc/tutorial/stdlib2.rst:201
 msgid ""
@@ -7692,10 +7739,17 @@ msgid ""
 "thread communication and coordination are easier to design, more readable, "
 "and more reliable."
 msgstr ""
+"Bien que ces outils soient puissants, des erreurs de conceptions peuvent "
+"engendrer des problèmes difficiles à reproduire. Donc, l'approche favorite "
+"pour coordonner des tâches est de restreindre l'accès d'une ressource à un "
+"seul thread, et d'utiliser le module :mod:`queue` pour alimenter ce thread "
+"de requêtes venant d'autres threads. Les applications utilisant des :class:"
+"`~queue.Queue` pour leurs communication et coordination entre threads sont "
+"plus simples à concevoir, plus lisible, et plus fiables."
 
 #: ../src/Doc/tutorial/stdlib2.rst:212
 msgid "Logging"
-msgstr ""
+msgstr "Journalisation"
 
 #: ../src/Doc/tutorial/stdlib2.rst:214
 msgid ""
@@ -7703,11 +7757,14 @@ msgid ""
 "system. At its simplest, log messages are sent to a file or to ``sys."
 "stderr``::"
 msgstr ""
+"Le module :mod:`logging` est un système de journalisation complet. Dans son "
+"utilisation la plus élémentaire, les messages sont simplement envoyés dans "
+"un fichier ou sur ``sys.stderr`` ::"
 
 # 5d44183c6fb0489091fbd795f42c8dab
 #: ../src/Doc/tutorial/stdlib2.rst:224
 msgid "This produces the following output:"
-msgstr ""
+msgstr "Produisant l'affichage suivant :"
 
 # 4451a96b39044ca9a34bfc37d5e15a2d
 #: ../src/Doc/tutorial/stdlib2.rst:232
@@ -7719,6 +7776,13 @@ msgid ""
 "`~logging.DEBUG`, :const:`~logging.INFO`, :const:`~logging.WARNING`, :const:"
 "`~logging.ERROR`, and :const:`~logging.CRITICAL`."
 msgstr ""
+"Par défaut, les messages d'information et de débogage sont ignorés, les "
+"autres écrites sur la sortie standard. Il est aussi possible d'envoyer les "
+"messages par email, datagrammes, sur des sockets, ou postés sur un serveur "
+"HTTP. Les nouveaux filtres permettent d'utiliser des sorties différentes en "
+"fonction de la priorité du message : :const:`~logging.DEBUG`,:const:"
+"`~logging.INFO`, :const:`~logging.WARNING`, :const:`~logging.ERROR`, et :"
+"const:`~logging.CRITICAL`."
 
 #: ../src/Doc/tutorial/stdlib2.rst:239
 msgid ""
@@ -7726,10 +7790,12 @@ msgid ""
 "from a user editable configuration file for customized logging without "
 "altering the application."
 msgstr ""
+"depuis un fichier de configuration, permettant de personnaliser le log sans "
+"modifier l'application."
 
 #: ../src/Doc/tutorial/stdlib2.rst:247
 msgid "Weak References"
-msgstr ""
+msgstr "Références faibles"
 
 #: ../src/Doc/tutorial/stdlib2.rst:249
 msgid ""
@@ -7737,6 +7803,10 @@ msgid ""
 "and :term:`garbage collection` to eliminate cycles).  The memory is freed "
 "shortly after the last reference to it has been eliminated."
 msgstr ""
+"Python gère lui même la mémoire (par comptage de référence pour la majorité "
+"des objets, et en utilisant un :term:`ramasse-miettes` (garbage collector) "
+"pour éliminer les cycles). La mémoire est libérée rapidement lorsque sa "
+"dernière référence est perdue."
 
 #: ../src/Doc/tutorial/stdlib2.rst:253
 msgid ""
@@ -7749,10 +7819,19 @@ msgid ""
 "weakref objects.  Typical applications include caching objects that are "
 "expensive to create::"
 msgstr ""
+"Cette approche fonctionne bien pour la majorité des applications, mais, "
+"parfois, il est nécessaire de surveiller un objet seulement durant son "
+"utilisation par quelque chose d'autre. Malheureusement, le simple fait de le "
+"suivre crée une référence, qui rend l'objet permanent. Le module :mod:"
+"`weakref` expose des outils pour suivre les objets sans pour autant créer "
+"une référence. Lorsqu'un objet n'est pas utilisé, il est automatiquement "
+"supprimé du tableau des références faibles, et une fonction de rappel "
+"(callback) est appelée. Un exemple typique est le cache d'objets coûteux à "
+"créer ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:288
 msgid "Tools for Working with Lists"
-msgstr ""
+msgstr "Outils pour travailler avec des listes"
 
 #: ../src/Doc/tutorial/stdlib2.rst:290
 msgid ""
@@ -7760,6 +7839,9 @@ msgid ""
 "sometimes there is a need for alternative implementations with different "
 "performance trade-offs."
 msgstr ""
+"Beaucoup de structures de données peuvent être représentés avec des listes "
+"natives. Cependant, parfois, d'autres besoins émergent, pour des structures "
+"ayant des caractéristiques différentes, typiquement en terme de performance."
 
 # 8151b144d69d4e5b923a9b04e58f445a
 #: ../src/Doc/tutorial/stdlib2.rst:294
@@ -7770,6 +7852,11 @@ msgid ""
 "binary numbers (typecode ``\"H\"``) rather than the usual 16 bytes per entry "
 "for regular lists of Python int objects::"
 msgstr ""
+"Le module :mod:`array` fournit un objet :class:`~array.array()`, ne "
+"permettant de stocker que des listes homogènes, mais d'une manière plus "
+"compacte. L'exemple suivant montre une liste de nombres, stockés chacun sur "
+"deux octets non signés (marqueur ``\"H\"``) plutôt que d'utiliser 16 octets "
+"comme l'aurais fait une liste classique ::"
 
 # 88ac3346818c4236a3a4fcd5b0a7f3b0
 #: ../src/Doc/tutorial/stdlib2.rst:307
@@ -7779,6 +7866,11 @@ msgid ""
 "but slower lookups in the middle. These objects are well suited for "
 "implementing queues and breadth first tree searches::"
 msgstr ""
+"Le module :mod:`collections` fournit la classe :class:`~collections."
+"deque()`, qui ressemble à une liste, mais plus rapide à insérer ou sortir "
+"des éléments par la gauche, et plus lente pour accéder aux éléments du "
+"milieu. C'est objets sont particulièrement adaptés pour construire des "
+"queues ou des algorithme de parcours d'arbre en largeur ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:328
 msgid ""
@@ -7786,6 +7878,9 @@ msgid ""
 "other tools such as the :mod:`bisect` module with functions for manipulating "
 "sorted lists::"
 msgstr ""
+"Au delà de fournir des implémentations de listes alternatives, la "
+"bibliothèque fournit des outils tels que :mod:`bisect`, un module contenant "
+"des fonctions de manipulation de listes triées ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:338
 msgid ""
@@ -7794,10 +7889,14 @@ msgid ""
 "This is useful for applications which repeatedly access the smallest element "
 "but do not want to run a full list sort::"
 msgstr ""
+"Le module :mod:`heapq`, permettant d'implémenter des tas (heaps) à partir de "
+"simple listes. La valeur la plus faible est toujours à la première position "
+"(indice 0). C'est utile dans les cas où l'application souvent besoin de "
+"trouver l'élément le plus petit sans trier entièrement la liste ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:354
 msgid "Decimal Floating Point Arithmetic"
-msgstr ""
+msgstr "Arithmétique décimale à Virgule Flottante"
 
 # 1310d96aa0b3487a80a410ced6503e4e
 #: ../src/Doc/tutorial/stdlib2.rst:356
@@ -7806,30 +7905,40 @@ msgid ""
 "decimal floating point arithmetic.  Compared to the built-in :class:`float` "
 "implementation of binary floating point, the class is especially helpful for"
 msgstr ""
+"Le module :mod:`decimal` expose la classe :class:`~decimal.Decimal`, "
+"spécialisée dans le calcul de nombres décimaux représentés en virgule "
+"flottante. Par rapport à la classe native :class:`float`, elle est "
+"particulièrement utile pour"
 
 #: ../src/Doc/tutorial/stdlib2.rst:360
 msgid ""
 "financial applications and other uses which require exact decimal "
 "representation,"
 msgstr ""
+"les application traitant de finance est autres usages nécessitant une "
+"représentation décimale exacte,"
 
 #: ../src/Doc/tutorial/stdlib2.rst:362
 msgid "control over precision,"
-msgstr ""
+msgstr "contrôle sur la précision, "
 
 #: ../src/Doc/tutorial/stdlib2.rst:363
 msgid "control over rounding to meet legal or regulatory requirements,"
 msgstr ""
+"contrôle sur les arrondis pour correspondre aux obligations légales ou du "
+"régulateur,"
 
 #: ../src/Doc/tutorial/stdlib2.rst:364
 msgid "tracking of significant decimal places, or"
-msgstr ""
+msgstr "suivre les décimales significatives, ou"
 
 #: ../src/Doc/tutorial/stdlib2.rst:365
 msgid ""
 "applications where the user expects the results to match calculations done "
 "by hand."
 msgstr ""
+"les applications avec lesquelles l'utilisateur attend des résultats "
+"identiques aux calculs faits à la main."
 
 #: ../src/Doc/tutorial/stdlib2.rst:368
 msgid ""
@@ -7837,6 +7946,10 @@ msgid ""
 "results in decimal floating point and binary floating point. The difference "
 "becomes significant if the results are rounded to the nearest cent::"
 msgstr ""
+"Par exemple, calculer 5% de taxe sur une facture de 70 centimes donne un "
+"résultat différent en nombre a virgule flottantes binaires et décimales. La "
+"différence devient significative lorsqu'on arrondit le résultat au centime "
+"près ::"
 
 # ef886201e784491dbacb38684b1c056d
 #: ../src/Doc/tutorial/stdlib2.rst:378
@@ -7847,6 +7960,13 @@ msgid ""
 "issues that can arise when binary floating point cannot exactly represent "
 "decimal quantities."
 msgstr ""
+"Le résultat d'un calcul donné par :class:`~decimal.Decimal` conserve les "
+"zéro non-significatifs. La classe conserve automatiquement quatre décimales "
+"significatives pour des opérandes à deux décimales significatives. La classe "
+"``Decimal`` imite les mathématiques tels qu'elles pourraient être effectuées "
+"à la main, évitant les problèmes typique de l'arithmétique binaire à virgule "
+"flottante qui n'est pas capable de représenter exactement certaines "
+"quantités décimales."
 
 # c19c2c8bbcf94f47b5e5b98d181ffbcf
 #: ../src/Doc/tutorial/stdlib2.rst:384
@@ -7855,20 +7975,25 @@ msgid ""
 "modulo calculations and equality tests that are unsuitable for binary "
 "floating point::"
 msgstr ""
+"La représentation exacte de la classe :class:`~decimal.Decimal`lui permet de "
+"faire des calculs du modulo ou des tests d'égalité qui ne seraient pas "
+"possibles avec des virgules flottantes binaires ::"
 
 #: ../src/Doc/tutorial/stdlib2.rst:398
 msgid ""
 "The :mod:`decimal` module provides arithmetic with as much precision as "
 "needed::"
 msgstr ""
+"Le module :mod:`decimal` permet de faire des calculs avec autant de "
+"précision que nécessaire ::"
 
 #: ../src/Doc/tutorial/venv.rst:6
 msgid "Virtual Environments and Packages"
-msgstr ""
+msgstr "Environnements virtuels et Paquets"
 
 #: ../src/Doc/tutorial/venv.rst:9
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: ../src/Doc/tutorial/venv.rst:11
 msgid ""
@@ -7878,6 +8003,11 @@ msgid ""
 "bug has been fixed or the application may be written using an obsolete "
 "version of the library's interface."
 msgstr ""
+"Les programmes Python utilisent souvent des paquets et modules qui ne font "
+"pas partie de la bibliothèque standard. Ils nécessitent aussi, parfois, une "
+"version spécifique de la bibliothèque, nécessitant par exemple qu'un certain "
+"bug ai été corrigé, ou encore que le programme à été implémenté en utilisant "
+"une version obsolète de l'interface de la bibliothèque."
 
 #: ../src/Doc/tutorial/venv.rst:17
 msgid ""
@@ -7887,6 +8017,12 @@ msgid ""
 "are in conflict and installing either version 1.0 or 2.0 will leave one "
 "application unable to run."
 msgstr ""
+"Cela signifie qu'il n'est pas forcément possible, pour une installation de "
+"Python, de couvrir tous les besoins de toutes les applications. Basiquement, "
+"si une application A dépend de la version 1.0 d'un module et qu'une "
+"application B dépend de la version 2.0, il y a conflit, et installer la "
+"version 1.0 ou 2.0 laissera une des deux application incapable de "
+"fonctionner."
 
 #: ../src/Doc/tutorial/venv.rst:23
 msgid ""
@@ -7895,6 +8031,10 @@ msgid ""
 "contains a Python installation for a particular version of Python, plus a "
 "number of additional packages."
 msgstr ""
+"La solution à ce problème est de créer un :term:`environnement virtuel` "
+"(souvent aérienne appelé \"virtualenv\"), une arborescence de dossiers "
+"contenant une installation de Python autonome, d'une certaine version de "
+"Python, avec des paquets additionnels."
 
 #: ../src/Doc/tutorial/venv.rst:28
 msgid ""
@@ -7905,10 +8045,17 @@ msgid ""
 "requires a library be upgraded to version 3.0, this will not affect "
 "application A's environment."
 msgstr ""
+"Différents programmes peuvent utiliser différents environnements virtuels. "
+"Pour résoudre le conflit précédent (des dépendances conflictuelles) "
+"l'application A peut avoir son propre environnement virtuel, avec la version "
+"1.0 du module installée, pendant que l'application B à un autre "
+"environnement virtuel avec la version 2.0. Si l'application B nécessite une "
+"mise à jour de la bibliothèque en version 3.0, ça n'affectera toujours pas "
+"l'application A."
 
 #: ../src/Doc/tutorial/venv.rst:37
 msgid "Creating Virtual Environments"
-msgstr ""
+msgstr "Création d'Environnements Virtuels"
 
 #: ../src/Doc/tutorial/venv.rst:39
 msgid ""
@@ -7919,12 +8066,19 @@ msgid ""
 "select a specific Python version by running ``pyvenv-3.4`` or whichever "
 "version you want."
 msgstr ""
+"Le script utilisé pour créer et gérer des environnements virtuels est "
+"appelé :program:`pyvenv`. :program:`pyvenv` installe habituellement la "
+"version la plus récente de Python. Il existe aussi suffixé d'un numéro de "
+"version, de manière à pourvoir choisir la version de :program:`pyvenv` ex "
+"exécutant par exemple ``pyvenv-3.4`` (ou n'importe quelle autre version)."
 
 #: ../src/Doc/tutorial/venv.rst:46
 msgid ""
 "To create a virtualenv, decide upon a directory where you want to place it "
 "and run :program:`pyvenv` with the directory path::"
 msgstr ""
+"Pour créer un virtualenv, appelez le programme :program:`pyvenv` avec en "
+"paramètre le nom du dossier dans lequel vous voulez l'installer ::"
 
 #: ../src/Doc/tutorial/venv.rst:52
 msgid ""
@@ -7932,18 +8086,21 @@ msgid ""
 "also create directories inside it containing a copy of the Python "
 "interpreter, the standard library, and various supporting files."
 msgstr ""
+"Cela créera le dossier ``tutorial-env`` (s'il n'existe pas) et des sous "
+"dossiers contenant une copie de l'interpréteur Python, de la bibliothèque "
+"standard, et quelques autres fichiers utiles."
 
 #: ../src/Doc/tutorial/venv.rst:56
 msgid "Once you've created a virtual environment, you need to activate it."
-msgstr ""
+msgstr "Une fois le virtualenv créé, vous devez l'activer."
 
 #: ../src/Doc/tutorial/venv.rst:59
 msgid "On Windows, run::"
-msgstr ""
+msgstr "Sur windows, lancez ::"
 
 #: ../src/Doc/tutorial/venv.rst:63
 msgid "On Unix or MacOS, run::"
-msgstr ""
+msgstr "Sur Unix et MacOS, lancez ::"
 
 #: ../src/Doc/tutorial/venv.rst:67
 msgid ""
@@ -7951,6 +8108,9 @@ msgid ""
 "or :program:`fish` shells, there are alternate ``activate.csh`` and "
 "``activate.fish`` scripts you should use instead.)"
 msgstr ""
+"(Ce script est écrit pour le shell :program:`bash`, si vous utilisez :"
+"program:`csh` ou :program:`fish`, utilisez les variantes ``activate.csh`` ou "
+"``activate.fish``.)"
 
 #: ../src/Doc/tutorial/venv.rst:72
 msgid ""
@@ -7959,10 +8119,14 @@ msgid ""
 "``python`` will get you that particular version and installation of Python.  "
 "For example::"
 msgstr ""
+"Activer un virtualenv change votre invite shell pour vous indiquer quel "
+"virtualenv vous utilisez, et change votre environnement de manière à ce "
+"qu'en lançant ``python``, votre shell trouve le Python de votre virtualenv. "
+"Par exemple ::"
 
 #: ../src/Doc/tutorial/venv.rst:89
 msgid "Managing Packages with pip"
-msgstr ""
+msgstr "Gérer les Paquets avec pip"
 
 #: ../src/Doc/tutorial/venv.rst:91
 msgid ""
@@ -7972,6 +8136,12 @@ msgid ""
 "org/pypi>.  You can browse the Python Package Index by going to it in your "
 "web browser, or you can use ``pip``'s limited search feature::"
 msgstr ""
+"Une fois un virtualenv activé, vous pouvez installer, mettre à jour, ou "
+"supprimer des paquets via un programme nommé :program:`pip`. Par défaut pip "
+"installe ses paquets depuis le \"Python Package Index\", <https ://pypi."
+"python.org/pypi>. Vous pouvez parcourir les paquets en allant sur PyPI avec "
+"votre navigateur, ou en utilisant la fonction de recherche, basique, de "
+"``pip`` ::"
 
 #: ../src/Doc/tutorial/venv.rst:106
 msgid ""
@@ -7979,18 +8149,25 @@ msgid ""
 "\"freeze\", etc.  (Consult the :ref:`installing-index` guide for complete "
 "documentation for ``pip``.)"
 msgstr ""
+"``pip`` a plusieurs sous commandes : \"search\", \"install\", \" uninstall"
+"\", \"freeze\", etc... (Consultez le guide :ref:`installing-index` contenant "
+"une documentation exhaustive sur ``pip``.)"
 
 #: ../src/Doc/tutorial/venv.rst:110
 msgid ""
 "You can install the latest version of a package by specifying a package's "
 "name::"
 msgstr ""
+"Vous pouvez installer la dernière version d'un paquet simplement par son "
+"nom ::"
 
 #: ../src/Doc/tutorial/venv.rst:119
 msgid ""
 "You can also install a specific version of a package by giving the package "
 "name  followed by ``==`` and the version number::"
 msgstr ""
+"Il est aussi possible d'installer une version spécifique, en suffixant son "
+"nom de ``=`` et le numéro de version ::"
 
 #: ../src/Doc/tutorial/venv.rst:128
 msgid ""
@@ -7999,22 +8176,31 @@ msgid ""
 "number to get that version, or you can run ``pip install --upgrade`` to "
 "upgrade the package to the latest version::"
 msgstr ""
+"Si vis exécutez cette commande à nouveau, ``pip`` ne fera rien : il sera "
+"conscient que la version demandée est déjà installée. Vous pouvez fournir un "
+"numéro de version différent, et ainsi obtenir le paquet à la version "
+"demandée, ou lancer ``pip install --upgrade`` pour mettre à jour le paquet "
+"vers sa version la plus récente ::"
 
 #: ../src/Doc/tutorial/venv.rst:141
 msgid ""
 "``pip uninstall`` followed by one or more package names will remove the "
 "packages from the virtual environment."
 msgstr ""
+"``pip uninstall`` suivi d'un ou plusieurs noms de paquets les supprimera de "
+"votre virtualenv."
 
 #: ../src/Doc/tutorial/venv.rst:144
 msgid "``pip show`` will display information about a particular package::"
-msgstr ""
+msgstr "``pip show`` affichera des informations à propos d'un paquet donné ::"
 
 #: ../src/Doc/tutorial/venv.rst:159
 msgid ""
 "``pip list`` will display all of the packages installed in the virtual "
 "environment::"
 msgstr ""
+"``pip list`` énumère les paquets installés dans l'environnement virtuel "
+"courant ::"
 
 #: ../src/Doc/tutorial/venv.rst:169
 msgid ""
@@ -8022,6 +8208,9 @@ msgid ""
 "the output uses the format that ``pip install`` expects. A common convention "
 "is to put this list in a ``requirements.txt`` file::"
 msgstr ""
+"``pip freeze`` produit aussi une liste de paquets installés, mais dans un "
+"format lisible par ``pip install``. Il est coutumier de ranger cette liste "
+"dans un fichier nommé ``requirements.txt`` ::"
 
 #: ../src/Doc/tutorial/venv.rst:179
 msgid ""
@@ -8029,6 +8218,10 @@ msgid ""
 "shipped as part of an application.  Users can then install all the necessary "
 "packages with ``install -r``::"
 msgstr ""
+"Le fichier ``requirements.txt`` peut être archivé dans le système de "
+"contrôle de version, et livré comme une pièce de l'application. Les "
+"utilisateurs pourront ainsi installer les paquets nécessaires avec ``install "
+"-r`` ::"
 
 #: ../src/Doc/tutorial/venv.rst:194
 msgid ""
@@ -8037,10 +8230,13 @@ msgid ""
 "want to make it available on the Python Package Index, consult the :ref:"
 "`distributing-index` guide."
 msgstr ""
+"``pip`` a beaucoup d'autres options, documentées dans le guide :ref:"
+"`installing-index`. Lorsque vous aurez écrit un paquet, si vous voulez le "
+"rendre disponible sur PyPI, lisez le guide :ref:`distributing-index`."
 
 #: ../src/Doc/tutorial/whatnow.rst:5
 msgid "What Now?"
-msgstr ""
+msgstr "Et Maintenant ?"
 
 #: ../src/Doc/tutorial/whatnow.rst:7
 msgid ""
@@ -8048,16 +8244,21 @@ msgid ""
 "--- you should be eager to apply Python to solving your real-world problems. "
 "Where should you go to learn more?"
 msgstr ""
+"Lire ce tutoriel a probablement renforcé votre intérêt pour Python, en der "
+"l'utiliser pour résoudre des vrais problèmes. Ou devriez vous aller pour en "
+"apprendre plus ?"
 
 #: ../src/Doc/tutorial/whatnow.rst:11
 msgid ""
 "This tutorial is part of Python's documentation set.   Some other documents "
 "in the set are:"
 msgstr ""
+"Ce tutoriel fait partie de la documentation de Python, mais la documentation "
+"de Python est vaste ::"
 
 #: ../src/Doc/tutorial/whatnow.rst:14
 msgid ":ref:`library-index`:"
-msgstr ""
+msgstr ":ref:`library-index`:"
 
 #: ../src/Doc/tutorial/whatnow.rst:16
 msgid ""
@@ -8069,12 +8270,22 @@ msgid ""
 "compress data, and many other tasks. Skimming through the Library Reference "
 "will give you an idea of what's available."
 msgstr ""
+"Vous devriez naviguer dans le manuel, il est une référence complète, (et "
+"donc laconique...) sur les types, fonctions, et modules de la bibliothèque "
+"standard. La distribution standard de Python inclus *énormément* de code "
+"supplémentaire. Il existe des modules pour lire des emails, récupérer des "
+"documents via HTTP, générer des nombres aléatoires, analyser les paramètres "
+"de la ligne de commande, écrire des programmes CGI, compresser de la donnée, "
+"et plein d'autres tâches. Vous balader dans la documentation de la "
+"bibliothèque vous donnera une idée de ce qui est disponnible."
 
 #: ../src/Doc/tutorial/whatnow.rst:24
 msgid ""
 ":ref:`installing-index` explains how to install additional modules written "
 "by other Python users."
 msgstr ""
+":ref:`installing-guide` explique comment installer des paquets écrits par "
+"d'autres utilisateurs de Python."
 
 #: ../src/Doc/tutorial/whatnow.rst:27
 msgid ""
@@ -8082,6 +8293,9 @@ msgid ""
 "semantics.  It's heavy reading, but is useful as a complete guide to the "
 "language itself."
 msgstr ""
+":ref:`reference-index`: Une explication détaillée de la syntaxe et "
+"sémantique de Python. C'est une lecture fastidieuse, mais qui a sa place "
+"dans une documentation exhaustive."
 
 #: ../src/Doc/tutorial/whatnow.rst:31
 msgid "More Python resources:"
