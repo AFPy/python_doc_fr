@@ -4,17 +4,17 @@
 # Julien Palard <julien@palard.fr>, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 00:36+0100\n"
-"PO-Revision-Date: 2015-12-14 09:27+0100\n"
+"PO-Revision-Date: 2015-12-14 21:16+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Vé 0.1.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../src/Doc/glossary.rst:5
@@ -239,6 +239,15 @@ msgid ""
 "bytecodes are not expected to work between different Python virtual "
 "machines, nor to be stable between Python releases."
 msgstr ""
+"Le code source, en Python, est compilé en un bytecode, la représentation "
+"interne à CPython d'un programme Python. Le bytecode est aussi stocké dans "
+"un fichier nommé ``.pyc`` ou ``.pyo``. Ces caches permettent de charger les "
+"fichiers plus rapidement lors de la 2ème exécution (en évitant ainsi de "
+"recommencer la compilation en bytecode). On dit que ce *langage "
+"intermédiaire* est exécuté sur une :term:`machine virtuelle` qui exécute des "
+"instructions machine pour chaque instruction du bytecode. Notez que le "
+"bytecode n'a pas vocation à fonctionner entre différentes sur différentes "
+"machines virtuelle Python, encore moins entre différentes version de Python."
 
 # 693ad59d4aec412cbf25431a52fb6593
 #: ../src/Doc/glossary.rst:107
@@ -466,7 +475,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:201
 msgid "duck-typing"
-msgstr ""
+msgstr "duck-typing"
 
 # 042c1d93e5ca4d8a96eab89d07ddb0df
 #: ../src/Doc/glossary.rst:203
@@ -481,6 +490,16 @@ msgid ""
 "term:`abstract base classes <abstract base class>`.)  Instead, it typically "
 "employs :func:`hasattr` tests or :term:`EAFP` programming."
 msgstr ""
+"Un style de programmation qui ne prend pas en compte le type d'un objet pour "
+"déterminer s'il respecte une interface, mais qui qui appelle simplement la "
+"méthode ou l'attribut (*Si ça à un bec et que ça cancane, c'est un canard*). "
+"En se concentrant sur les interfaces plutôt que les types, du code bien "
+"construit améliore sa flexibilité en autorisant des substitutions "
+"polymorphiques. Le duck-typing évitent de vérifier les types via :func:"
+"`type` ou :func:`isinstance`, (notez cependant que le duck-typing peut "
+"travailler de pair avec les :term:`classes de base abstraites <classe de "
+"base abstraite>`.) À la place, le duck-typique utilise plutôt :func:"
+"`hasattr` ou la programmation :term:`EAFP`."
 
 #: ../src/Doc/glossary.rst:212
 msgid "EAFP"
@@ -595,6 +614,11 @@ msgid ""
 "`find_module`. See :pep:`302` and :pep:`420` for details and :class:"
 "`importlib.abc.Finder` for an :term:`abstract base class`."
 msgstr ""
+"Un objet qui essaye de trouver le :term:`loader` d'un module. Il doit "
+"implémenter soit une méthode :meth:`find_loader`, soit une méthode :meth:"
+"`find_module`. Voir la :pep:`302` et la :pep`420` pour plus de détails, et "
+"aussi :class:`importlib.abc.Finder` pour une :term:`classe de base "
+"abstraite`."
 
 #: ../src/Doc/glossary.rst:257
 msgid "floor division"
@@ -699,6 +723,15 @@ msgid ""
 "up where it left-off (in contrast to functions which start fresh on every "
 "invocation)."
 msgstr ""
+"Une fonction qui renvoie un itérateur. Ça ressemble à une fonction normale, "
+"en dehors du fait qu'il contient une ou plusieurs instruction :keyword:"
+"`yield`, produisant une série de valeurs utilisables dans une boucle for, ou "
+"pouvant être récupérées une à une avec la fonction :func:`next`. Chaque "
+"instruction :keyword:`yield` suspend temporairement l'exécution de la "
+"fonction, en se rappelant de la position et de l'état (les variables "
+"locales, et les *try* en cours). Lorsque le générateur reprend, il reprend "
+"là où il en était (contrairement à une fonction classique qui reprendrait du "
+"départ à chaque appel)."
 
 #: ../src/Doc/glossary.rst:311
 msgid "generator expression"
@@ -711,6 +744,10 @@ msgid ""
 "an optional :keyword:`if` expression.  The combined expression generates "
 "values for an enclosing function::"
 msgstr ""
+"Une expression qui donne un itérateur. Cela ressemble à une expression "
+"normale, suivie d'une expression :keyword:`for` définissant une variable de "
+"boucle, d'un range, et d'une expression, optionnelle, :keyword:`if`. Cette "
+"expression combinée génère des valeurs pour la fonction qui l'entoure ::"
 
 #: ../src/Doc/glossary.rst:320
 msgid "generic function"
@@ -752,6 +789,13 @@ msgid ""
 "multi-threaded, at the expense of much of the parallelism afforded by multi-"
 "processor machines."
 msgstr ""
+"Le mécanisme utilisé par l'interpréteur :term:`CPython` pour s'assurer qu'un "
+"seul thread n'execute du bytecode à la fois. Cela simplifie l'implémentation "
+"de CPython en rendant le modèle objet (incluant des parties critiques comme "
+"la classe native :class:`dict`) implicitement protégé des accès concourants. "
+"Vérouiller l'interpréteur entier le rend plus facile à rendre multi-thread, "
+"en perdant malheureusement la majorité du parallélisme possible sur les "
+"machines ayant plusieurs processeurs."
 
 # 8cc9fbea059141b080140a49ecba1e16
 #: ../src/Doc/glossary.rst:343
