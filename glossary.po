@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 1990-2010, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
+# Julien Palard <julien@palard.fr>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 00:36+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2015-12-14 09:27+0100\n"
+"Last-Translator: Julien Palard <julien@palard.fr>\n"
+"Language-Team: French <translation@afpy.fr>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"X-Generator: Vé 0.1.4\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../src/Doc/glossary.rst:5
 msgid "Glossary"
@@ -23,7 +23,7 @@ msgstr "Glossaire"
 
 #: ../src/Doc/glossary.rst:10
 msgid ">>>"
-msgstr ""
+msgstr ">>>"
 
 #: ../src/Doc/glossary.rst:12
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:14
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: ../src/Doc/glossary.rst:16
 msgid ""
@@ -50,11 +50,10 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:19
 msgid "2to3"
-msgstr ""
+msgstr "3to3"
 
 # I don’t know the accepted translation for “parse tree”
 #: ../src/Doc/glossary.rst:21
-#, fuzzy
 msgid ""
 "A tool that tries to convert Python 2.x code to Python 3.x code by handling "
 "most of the incompatibilities which can be detected by parsing the source "
@@ -62,7 +61,7 @@ msgid ""
 msgstr ""
 "Un outil qui essaie de convertir du code pour Python 2.x en code pour Python "
 "3.x en gérant la plupart des incompatibilités qui peuvent être détectées en "
-"analysant la source et traversant l’arbre d’analyse."
+"analysant la source et parcourant son arbre syntaxique."
 
 # The strange space escaping are here to handle non-breaking spaces required by French typographic rules.
 #: ../src/Doc/glossary.rst:25
@@ -77,7 +76,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:28
 msgid "abstract base class"
-msgstr ""
+msgstr "Classe de base abstraite (abstract base class)"
 
 #: ../src/Doc/glossary.rst:30
 #, fuzzy
@@ -96,20 +95,22 @@ msgstr ""
 "Les classes de base abstraites (ABC, suivant l'abbréviation anglaise) "
 "complètent le :term:`duck-typing` en fournissant un moyen de définir des "
 "interfaces pour les cas où d'autres techniques comme :func:`hasattr` "
-"seraient inélégantes. Python contient de nombreuses ABC pour les structures "
-"de données (dans le module :mod:`collections`), les nombres (dans le module :"
-"mod:`numbers`), et les flux (dans le module :mod:`io`). Vous pouvez créer "
-"vos propres ABC avec le module :mod:`abc`."
+"seraient inélégantes, ou subitement fausse. Python contient de nombreuses "
+"ABC pour les structuresde données (dans le module :mod:`collections`), les "
+"nombres (dans le module :mod:`numbers`), et les flux (dans le module :mod:"
+"`io`). Vous pouvez créer vos propres ABC avec le module :mod:`abc`."
 
 #: ../src/Doc/glossary.rst:41
 msgid "argument"
-msgstr ""
+msgstr "argument"
 
 #: ../src/Doc/glossary.rst:43
 msgid ""
 "A value passed to a :term:`function` (or :term:`method`) when calling the "
 "function.  There are two kinds of argument:"
 msgstr ""
+"Une valeur, donnée à une :term:`fonction` ou à une :term:`méthode` lors de "
+"son appel. Il existe deux types d'arguments :"
 
 # 50131cefa8d2410aa354a6b32e8435ed
 #: ../src/Doc/glossary.rst:46
@@ -119,6 +120,10 @@ msgid ""
 "by ``**``.  For example, ``3`` and ``5`` are both keyword arguments in the "
 "following calls to :func:`complex`::"
 msgstr ""
+":dfn:`argument nommé`: un argument précédé d'un identifiant (comme "
+"``name=``) ou un dictionnaire précédé de ``**``, lors d'un appel de "
+"fonction. Par exemple, ``3`` et ``5`` sont tous les deux des arguments "
+"nommés dans l'appel à :func:`complex` ici ::"
 
 # 8bbecb8af15441428909ba7722983955
 #: ../src/Doc/glossary.rst:54
@@ -128,6 +133,10 @@ msgid ""
 "be passed as elements of an :term:`iterable` preceded by ``*``. For example, "
 "``3`` and ``5`` are both positional arguments in the following calls::"
 msgstr ""
+":dfn:`argument positionnel` : Un argument qui n'est pas nommé. Les arguments "
+"positionnels apparaissent au début de la liste des arguments, ou donnés sous "
+"forme d'un :term:`itérable` précédé par ``*``. Par exemple, ``3`` et ``5`` "
+"sont tous les deux des arguments positionnels dans les appels suivants ::"
 
 # 4c19af4f404b49fabb0ae8c34ac614ae
 #: ../src/Doc/glossary.rst:63
@@ -137,6 +146,11 @@ msgid ""
 "Syntactically, any expression can be used to represent an argument; the "
 "evaluated value is assigned to the local variable."
 msgstr ""
+"Les arguments se retrouvent dans le corps de la fonction appelée parmi les "
+"variables locales. Voir la section :ref:`appels` à propos des règles dictant "
+"cet affectation. Syntaxiquement, toute expression est acceptée comme "
+"argument, et c'est la valeur résultante de l'expression qui sera affectée à "
+"la variable locale."
 
 #: ../src/Doc/glossary.rst:68
 msgid ""
@@ -144,10 +158,13 @@ msgid ""
 "difference between arguments and parameters <faq-argument-vs-parameter>`, "
 "and :pep:`362`."
 msgstr ""
+"Voir aussi :term:`paramètre` dans le glossaire, la FAQ à aussi une question "
+"à propos de `la différence entre argument et paramètre <faq-argument-vs-"
+"parameter>` et la :pep:`362`."
 
 #: ../src/Doc/glossary.rst:71
 msgid "attribute"
-msgstr ""
+msgstr "attribut"
 
 #: ../src/Doc/glossary.rst:73
 msgid ""
@@ -161,34 +178,35 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:76
 msgid "BDFL"
-msgstr ""
+msgstr "BDFL"
 
 #: ../src/Doc/glossary.rst:78
-#, fuzzy
 msgid ""
 "Benevolent Dictator For Life, a.k.a. `Guido van Rossum <https://www.python."
 "org/~guido/>`_, Python's creator."
 msgstr ""
-"Dictateur à vie bénévole, alias `Guido van Rossum <http://www.python.org/"
+"Dictateur bénévole à vie, alias `Guido van Rossum <https://www.python.org/"
 "~guido/>`_, le créateur de Python."
 
 #: ../src/Doc/glossary.rst:80
 msgid "binary file"
-msgstr ""
+msgstr "fichier binaire"
 
 #: ../src/Doc/glossary.rst:82
 msgid ""
 "A :term:`file object` able to read and write :term:`bytes-like objects "
 "<bytes-like object>`."
 msgstr ""
+"Un :term:`objet fichier` capable de lire et d'écrire :term:`des objets "
+"ressemblant à bytes <bytes-like object>`."
 
 #: ../src/Doc/glossary.rst:86
 msgid "A :term:`text file` reads and writes :class:`str` objects."
-msgstr ""
+msgstr "Un :term:`fichier texte` lis et écris des objets :class:`str`."
 
 #: ../src/Doc/glossary.rst:87
 msgid "bytes-like object"
-msgstr ""
+msgstr "Les objets bytes-compatible"
 
 #: ../src/Doc/glossary.rst:89
 msgid ""
@@ -198,10 +216,16 @@ msgid ""
 "to a binary file or sending over a socket. Some operations need the binary "
 "data to be mutable, in which case not all bytes-like objects can apply."
 msgstr ""
+"Un objet gérant le :ref:`bufferobjects`, ressemblant à la classe :class:"
+"`bytes`, comme les classes :class:`bytearray`, ou :class:`memoryview`. Les "
+"objets bytes-compatibles peuvent manipuler des données binaires et ainsi "
+"servir à leur compression, sauvegarde, envoi sur une socket... Certaines "
+"actions nécessitent que la donnée soit modifiable, ce qui n'est pas possible "
+"avec tous les objets byte-compatibles."
 
 #: ../src/Doc/glossary.rst:95
 msgid "bytecode"
-msgstr ""
+msgstr "bytecode"
 
 # 4784a51d6fea4eaf8eb8cc73ae492c9c
 #: ../src/Doc/glossary.rst:97
@@ -222,10 +246,12 @@ msgid ""
 "A list of bytecode instructions can be found in the documentation for :ref:"
 "`the dis module <bytecodes>`."
 msgstr ""
+"Une liste des instructions du bytecode se trouve dans la documentation du :"
+"ref:`module dis <bytecodes>`."
 
 #: ../src/Doc/glossary.rst:109
 msgid "class"
-msgstr ""
+msgstr "classe"
 
 #: ../src/Doc/glossary.rst:111
 msgid ""
@@ -238,7 +264,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:114
 msgid "coercion"
-msgstr ""
+msgstr "coercition"
 
 #: ../src/Doc/glossary.rst:116
 msgid ""
@@ -251,10 +277,19 @@ msgid ""
 "types would have to be normalized to the same value by the programmer, e.g., "
 "``float(3)+4.5`` rather than just ``3+4.5``."
 msgstr ""
+"La conversion implicite d'une instance d'un type vers un autre lors d'une "
+"opération impliquant deux opérandes de même type. Par exemple ``int(3.15)`` "
+"convertis explicitement le nombre a virgule flottante en nombre entier (ici, "
+"``3``), mais dans l'opération ``3 + 4.5``, les deux opérandes ont un type "
+"différent, alors qu'elles doivent avoir le même type pour être additionnées, "
+"sans quoi une exception ``TypeError`` serait levée. Sans coercition, toutes "
+"les opérandes, même de types compatibles, devraient être convertis (on parle "
+"aussi de \"cast\") explicitement par le développeur, par exemple : "
+"``float(3) + 4.5`` au lieu du simple ``3 + 4.5``."
 
 #: ../src/Doc/glossary.rst:124
 msgid "complex number"
-msgstr ""
+msgstr "nombre complexe"
 
 #: ../src/Doc/glossary.rst:126
 msgid ""
@@ -281,34 +316,38 @@ msgstr ""
 "tranquilité."
 
 #: ../src/Doc/glossary.rst:136
+#, fuzzy
 msgid "context manager"
-msgstr ""
+msgstr "gestionnaire de contexte"
 
 #: ../src/Doc/glossary.rst:138
 msgid ""
 "An object which controls the environment seen in a :keyword:`with` statement "
 "by defining :meth:`__enter__` and :meth:`__exit__` methods. See :pep:`343`."
 msgstr ""
+"Un objet contrôlant l'environnement a l'intérieur d'une instruction :keyword:"
+"`with` en définissant les méthodes :meth:`__enter__` et :meth:`__exit__`. "
+"Consultez la :pep:`343`."
 
 #: ../src/Doc/glossary.rst:141
 msgid "CPython"
-msgstr ""
+msgstr "CPython"
 
 #: ../src/Doc/glossary.rst:143
-#, fuzzy
 msgid ""
 "The canonical implementation of the Python programming language, as "
 "distributed on `python.org <https://www.python.org>`_.  The term \"CPython\" "
 "is used when necessary to distinguish this implementation from others such "
 "as Jython or IronPython."
 msgstr ""
-"L'implémentation canonique du langage de programmation Python. Le terme "
-"\"CPython\" est utilisé dans certains contextes lorsqu'il est nécessaire de "
-"distingué cette implémentation des autres comme Jython ou IronPython"
+"L'implémentation canonique du langage de programmation Python, tel que "
+"distribué sur `python.org <https://www.python.org>`_. Le terme\"CPython\" "
+"est utilisé dans certains contextes lorsqu'il est nécessaire de distinguer "
+"cette implémentation des autres comme Jython ou IronPython."
 
 #: ../src/Doc/glossary.rst:147
 msgid "decorator"
-msgstr ""
+msgstr "décorateur"
 
 #: ../src/Doc/glossary.rst:149
 msgid ""
@@ -341,7 +380,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:167
 msgid "descriptor"
-msgstr ""
+msgstr "descripteur"
 
 #: ../src/Doc/glossary.rst:169
 #, fuzzy
@@ -376,7 +415,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:180
 msgid "dictionary"
-msgstr ""
+msgstr "dictionnaire"
 
 #: ../src/Doc/glossary.rst:182
 msgid ""
@@ -384,10 +423,14 @@ msgid ""
 "can be any object with :meth:`__hash__` and :meth:`__eq__` methods. Called a "
 "hash in Perl."
 msgstr ""
+"Une structure de donnée associant des clefs et des valeurs. Les clefs "
+"peuvent être n'importe quel objet comportant les méthodes :meth:`__hash__` "
+"et :meth:`__eq__``. Elle s'appelle \"hash\" en Perl."
 
 #: ../src/Doc/glossary.rst:185
+#, fuzzy
 msgid "dictionary view"
-msgstr ""
+msgstr "vue d'un dictionnaire"
 
 #: ../src/Doc/glossary.rst:187
 msgid ""
@@ -397,10 +440,15 @@ msgid ""
 "reflects these changes. To force the dictionary view to become a full list "
 "use ``list(dictview)``.  See :ref:`dict-views`."
 msgstr ""
+"Les objets donnés par les méthodes :meth:`dict.keys`, :meth:`dict.values`, "
+"et :meth:`dict.items` sont des vues de dictionnaire. Ce sont des vues, "
+"dynamiques, des entrées du dictionnaire, ce qui signifie que lorsque le "
+"dictionnaire change, la vue change. Pour transformer une vue en vrai liste, "
+"utilisez ``list(dictview)``. Voir :ref:`dict-views`."
 
 #: ../src/Doc/glossary.rst:193
 msgid "docstring"
-msgstr ""
+msgstr "docstring"
 
 #: ../src/Doc/glossary.rst:195
 msgid ""
@@ -410,6 +458,11 @@ msgid ""
 "class, function or module.  Since it is available via introspection, it is "
 "the canonical place for documentation of the object."
 msgstr ""
+"Une chaîne littérale étant la première expression d'une classe, fonction, ou "
+"module. Bien qu'ignoré à l'exécution, elles sont reconnues par le "
+"compilateur, et placées dans l'attribut :attr:`__doc__` de sa classe, "
+"fonction, ou module respectif. Puisque cette chaîne est disponible par "
+"introspection, c'est l'endroit idéal pour documenter l'objet."
 
 #: ../src/Doc/glossary.rst:201
 msgid "duck-typing"
@@ -431,7 +484,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:212
 msgid "EAFP"
-msgstr ""
+msgstr "EAFP"
 
 #: ../src/Doc/glossary.rst:214
 msgid ""
@@ -451,7 +504,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:220
 msgid "expression"
-msgstr ""
+msgstr "expression"
 
 #: ../src/Doc/glossary.rst:222
 #, fuzzy
@@ -476,17 +529,19 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:229
 msgid "extension module"
-msgstr ""
+msgstr "module d'extension"
 
 #: ../src/Doc/glossary.rst:231
 msgid ""
 "A module written in C or C++, using Python's C API to interact with the core "
 "and with user code."
 msgstr ""
+"Un module écrit en C ou C++, utilisant l'API C de Python pour interagir avec "
+"Python et le code de l'utilisateur."
 
 #: ../src/Doc/glossary.rst:233
 msgid "file object"
-msgstr ""
+msgstr "objet fichier"
 
 # 76951cc850f44973adbb2272e984c10d
 #: ../src/Doc/glossary.rst:235
@@ -498,8 +553,16 @@ msgid ""
 "output, in-memory buffers, sockets, pipes, etc.).  File objects are also "
 "called :dfn:`file-like objects` or :dfn:`streams`."
 msgstr ""
+"Un objet exposant une ressource via une API orientée fichier (avec les "
+"méthodes :meth:`read()` ou :meth:`write()`). En fonction de la manière dont "
+"ils ont été créés, les objets fichiers peuvent exposer un fichier sur le "
+"disque, ou un autre type de stockage ou de communication (typiquement "
+"l'entrée standard, la sortie standard, un tampon en mémoire, des "
+"sockets, ...). Les objets fichiers sont aussi appelés :dfn:`file-like-"
+"objects` ou :dfn:`streams`."
 
 #: ../src/Doc/glossary.rst:243
+#, fuzzy
 msgid ""
 "There are actually three categories of file objects: raw :term:`binary files "
 "<binary file>`, buffered :term:`binary files <binary file>` and :term:`text "
@@ -507,10 +570,14 @@ msgid ""
 "The canonical way to create a file object is by using the :func:`open` "
 "function."
 msgstr ""
+"Il existe en réalité trois catégories de fichiers objets : les :term:"
+"`fichiers binaires <fichier binaire>` bruts, les :term:`fichiers binaire "
+"<fichier binaire>`"
 
 #: ../src/Doc/glossary.rst:248
+#, fuzzy
 msgid "file-like object"
-msgstr ""
+msgstr "objet fichier-compatible"
 
 # b948ad82982548409e3c905be43aa371
 #: ../src/Doc/glossary.rst:250
@@ -535,30 +602,34 @@ msgstr ""
 
 # 8325f98bd93d4e0887c926dca290641c
 #: ../src/Doc/glossary.rst:259
+#, fuzzy
 msgid ""
 "Mathematical division that rounds down to nearest integer.  The floor "
 "division operator is ``//``.  For example, the expression ``11 // 4`` "
 "evaluates to ``2`` in contrast to the ``2.75`` returned by float true "
 "division.  Note that ``(-11) // 4`` is ``-3`` because that is ``-2.75`` "
 "rounded *downward*. See :pep:`238`."
-msgstr ""
+msgstr "Division mathématique arrondissant à l'entier le plus petit. "
 
 #: ../src/Doc/glossary.rst:264
 msgid "function"
-msgstr ""
+msgstr "fonction"
 
 # 33a8dbfd67ea4e0fb4dac5f9481c8568
 #: ../src/Doc/glossary.rst:266
+#, fuzzy
 msgid ""
 "A series of statements which returns some value to a caller. It can also be "
 "passed zero or more :term:`arguments <argument>` which may be used in the "
 "execution of the body. See also :term:`parameter`, :term:`method`, and the :"
 "ref:`function` section."
 msgstr ""
+"Une suite d'instructions qui renvoient une valeur à celui qui l'appelle. On "
+"peut aussi lui passer des"
 
 #: ../src/Doc/glossary.rst:270
 msgid "function annotation"
-msgstr ""
+msgstr "annotation de fonction"
 
 #: ../src/Doc/glossary.rst:272
 msgid ""
@@ -567,6 +638,10 @@ msgid ""
 "be accessed via the :attr:`__annotations__` special attribute of a function "
 "object."
 msgstr ""
+"Une métadonnée quelconque, associée au paramètre d'une fonction ou sa valeur "
+"de retour. Sa syntaxe est documentée dans la section :ref:`function`. Les "
+"annotations sont accessibles via l'attribut spécial :attr:`__annotations__`, "
+"d'une fonction."
 
 #: ../src/Doc/glossary.rst:277
 msgid ""
@@ -574,10 +649,13 @@ msgid ""
 "annotations. They are intended to be interpreted by third-party libraries or "
 "tools.  See :pep:`3107`, which describes some of their potential uses."
 msgstr ""
+"Python ne prend pas en compte les annotations. Leur but est d'être "
+"interprétées par d'autres bibliothèques ou outils. Voir la :pep:`3207`, qui "
+"décrit certains usages."
 
 #: ../src/Doc/glossary.rst:280
 msgid "__future__"
-msgstr ""
+msgstr "__future__"
 
 #: ../src/Doc/glossary.rst:282
 msgid ""
@@ -591,10 +669,13 @@ msgid ""
 "can see when a new feature was first added to the language and when it "
 "becomes the default::"
 msgstr ""
+"En important le module :mod:`__future__` et en affichant ses variables, vous "
+"pouvez voir quand une nouvelle fonctionnalité à été rajoutée dans le "
+"langage, et quand elle devient le comportement par défaut ::"
 
 #: ../src/Doc/glossary.rst:292
 msgid "garbage collection"
-msgstr ""
+msgstr "ramasse miette"
 
 #: ../src/Doc/glossary.rst:294
 msgid ""
