@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-14 20:34+0100\n"
+"POT-Creation-Date: 2015-12-14 23:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1664,7 +1664,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:123 ../src/Doc/whatsnew/2.2.rst:927
-msgid "PEP 227 - Statically Nested Scopes"
+msgid ":pep:`227` - Statically Nested Scopes"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:124 ../src/Doc/whatsnew/2.2.rst:928
@@ -1702,7 +1702,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:153
-msgid "PEP 236 - Back to the __future__"
+msgid ":pep:`236` - Back to the :mod:`__future__`"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:154
@@ -1836,7 +1836,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:223
-msgid "PEP 207 - Rich Comparisons"
+msgid ":pep:`207` - Rich Comparisons"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:223
@@ -1914,7 +1914,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:293
-msgid "PEP 5 - Guidelines for Language Evolution"
+msgid ":pep:`5` - Guidelines for Language Evolution"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:290
@@ -1926,7 +1926,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:295
-msgid "PEP 230 - Warning Framework"
+msgid ":pep:`230` - Warning Framework"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:296
@@ -1979,7 +1979,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:335
-msgid "PEP 229 - Using Distutils to Build Python"
+msgid ":pep:`229` - Using Distutils to Build Python"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:336 ../src/Doc/whatsnew/2.1.rst:571
@@ -2051,7 +2051,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:416
-msgid "PEP 205 - Weak References"
+msgid ":pep:`205` - Weak References"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:417
@@ -2093,7 +2093,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:454
-msgid "PEP 232 - Function Attributes"
+msgid ":pep:`232` - Function Attributes"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:455
@@ -2136,7 +2136,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:502
-msgid "PEP 217 - Display Hook for Interactive Use"
+msgid ":pep:`217` - Display Hook for Interactive Use"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:503
@@ -2173,7 +2173,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:534
-msgid "PEP 208 - Reworking the Coercion Model"
+msgid ":pep:`208` - Reworking the Coercion Model"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:533
@@ -2222,11 +2222,11 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:571
-msgid "PEP 241 - Metadata for Python Software Packages"
+msgid ":pep:`241` - Metadata for Python Software Packages"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:574
-msgid "PEP 243 - Module Repository Upload Mechanism"
+msgid ":pep:`243` - Module Repository Upload Mechanism"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.1.rst:574
@@ -3085,7 +3085,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:535
-msgid "PEP 234 - Iterators"
+msgid ":pep:`234` - Iterators"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:535
@@ -3222,7 +3222,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:662 ../src/Doc/whatsnew/2.3.rst:248
-msgid "PEP 255 - Simple Generators"
+msgid ":pep:`255` - Simple Generators"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:662 ../src/Doc/whatsnew/2.3.rst:248
@@ -3268,7 +3268,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:702 ../src/Doc/whatsnew/2.4.rst:108
-msgid "PEP 237 - Unifying Long Integers and Integers"
+msgid ":pep:`237` - Unifying Long Integers and Integers"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:702
@@ -3369,7 +3369,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:770
-msgid "PEP 238 - Changing the Division Operator"
+msgid ":pep:`238` - Changing the Division Operator"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:771
@@ -3435,7 +3435,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:832
-msgid "PEP 261 - Support for 'wide' Unicode characters"
+msgid ":pep:`261` - Support for 'wide' Unicode characters"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:833
@@ -3685,7 +3685,8 @@ msgid "Rename :c:func:`Py_TPFLAGS_GC` to :c:func:`PyTPFLAGS_HAVE_GC`."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:1084
-msgid "Use PyObject_GC_New() or PyObject_GC_NewVar() to allocate"
+msgid ""
+"Use :c:func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar` to allocate"
 msgstr ""
 
 # 47a7e05176ea4aa991508d7edc335eb5
@@ -3694,7 +3695,7 @@ msgid "objects, and :c:func:`PyObject_GC_Del` to deallocate them."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.2.rst:1087
-msgid "Rename PyObject_GC_Init() to PyObject_GC_Track() and"
+msgid "Rename :c:func:`PyObject_GC_Init` to :c:func:`PyObject_GC_Track` and"
 msgstr ""
 
 # 802f896513a94c1b82f983f4d68dba44
@@ -4034,7 +4035,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:117 ../src/Doc/whatsnew/2.4.rst:83
-msgid "PEP 218 - Adding a Built-In Set Object Type"
+msgid ":pep:`218` - Adding a Built-In Set Object Type"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:117
@@ -4132,7 +4133,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:282
-msgid "PEP 263 - Defining Python Source Code Encodings"
+msgid ":pep:`263` - Defining Python Source Code Encodings"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:282
@@ -4171,7 +4172,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:329
-msgid "PEP 273 - Import Modules from Zip Archives"
+msgid ":pep:`273` - Import Modules from Zip Archives"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:327
@@ -4223,7 +4224,7 @@ msgid "Under MacOS, :func:`os.listdir` may now return Unicode filenames."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:363
-msgid "PEP 277 - Unicode file name support for Windows NT"
+msgid ":pep:`277` - Unicode file name support for Windows NT"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:363
@@ -4274,7 +4275,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:401
-msgid "PEP 278 - Universal Newline Support"
+msgid ":pep:`278` - Universal Newline Support"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:402
@@ -4302,7 +4303,7 @@ msgid "This can be rewritten using :func:`enumerate` as::"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:433
-msgid "PEP 279 - The enumerate() built-in function"
+msgid ":pep:`279` - The enumerate() built-in function"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:434
@@ -4412,7 +4413,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:539
-msgid "PEP 282 - A Logging System"
+msgid ":pep:`282` - A Logging System"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:540
@@ -4477,7 +4478,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:611
-msgid "PEP 285 - Adding a bool type"
+msgid ":pep:`285` - Adding a bool type"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:612
@@ -4520,7 +4521,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:643
-msgid "PEP 293 - Codec Error Handling Callbacks"
+msgid ":pep:`293` - Codec Error Handling Callbacks"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:644
@@ -4567,7 +4568,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:692
-msgid "PEP 301 - Package Index and Metadata for Distutils"
+msgid ":pep:`301` - Package Index and Metadata for Distutils"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:693
@@ -4633,7 +4634,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:758
-msgid "PEP 302 - New Import Hooks"
+msgid ":pep:`302` - New Import Hooks"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:759
@@ -4684,7 +4685,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:804
-msgid "PEP 305 - CSV File API"
+msgid ":pep:`305` - CSV File API"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:804
@@ -4742,7 +4743,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:847
-msgid "PEP 307 - Extensions to the pickle protocol"
+msgid ":pep:`307` - Extensions to the pickle protocol"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.3.rst:848
@@ -6361,7 +6362,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:165
-msgid "PEP 289 - Generator Expressions"
+msgid ":pep:`289` - Generator Expressions"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:165
@@ -6412,7 +6413,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:211
-msgid "PEP 292 - Simpler String Substitutions"
+msgid ":pep:`292` - Simpler String Substitutions"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:212
@@ -6526,7 +6527,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:338
-msgid "PEP 318 - Decorators for Functions, Methods and Classes"
+msgid ":pep:`318` - Decorators for Functions, Methods and Classes"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:336
@@ -6568,7 +6569,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:376
-msgid "PEP 322 - Reverse Iteration"
+msgid ":pep:`322` - Reverse Iteration"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:377
@@ -6679,7 +6680,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:465
-msgid "PEP 324 - subprocess - New process module"
+msgid ":pep:`324` - subprocess - New process module"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:465
@@ -6912,7 +6913,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:684
-msgid "PEP 327 - Decimal Data Type"
+msgid ":pep:`327` - Decimal Data Type"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:683
@@ -6974,7 +6975,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:728 ../src/Doc/whatsnew/2.5.rst:331
-msgid "PEP 328 - Imports: Multi-Line and Absolute/Relative"
+msgid ":pep:`328` - Imports: Multi-Line and Absolute/Relative"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:729
@@ -7032,7 +7033,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:767
-msgid "PEP 331 - Locale-Independent Float/String Conversions"
+msgid ":pep:`331` - Locale-Independent Float/String Conversions"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.4.rst:768
@@ -8097,7 +8098,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:123
-msgid "PEP 308 - Conditional Expressions"
+msgid ":pep:`308` - Conditional Expressions"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:123
@@ -8162,7 +8163,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:201
-msgid "PEP 309 - Partial Function Application"
+msgid ":pep:`309` - Partial Function Application"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:201
@@ -8214,7 +8215,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:248
-msgid "PEP 314 - Metadata for Python Software Packages v1.1"
+msgid ":pep:`314` - Metadata for Python Software Packages v1.1"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:248
@@ -8353,7 +8354,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:359
-msgid "PEP 338 - Executing modules as scripts"
+msgid ":pep:`338` - Executing modules as scripts"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:360
@@ -8401,7 +8402,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:407
-msgid "PEP 341 - Unifying try-except and try-finally"
+msgid ":pep:`341` - Unifying try-except and try-finally"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:408
@@ -8559,7 +8560,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:548
-msgid "PEP 342 - Coroutines via Enhanced Generators"
+msgid ":pep:`342` - Coroutines via Enhanced Generators"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:544
@@ -8834,7 +8835,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:802 ../src/Doc/whatsnew/2.6.rst:492
-msgid "PEP 343 - The \"with\" statement"
+msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:799 ../src/Doc/whatsnew/2.6.rst:489
@@ -8905,7 +8906,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:862
-msgid "PEP 352 - Required Superclass for Exceptions"
+msgid ":pep:`352` - Required Superclass for Exceptions"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:863
@@ -8991,7 +8992,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:921
-msgid "PEP 353 - Using ssize_t as the index type"
+msgid ":pep:`353` - Using ssize_t as the index type"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:922
@@ -9044,7 +9045,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:964
-msgid "PEP 357 - Allowing Any Object to be Used for Slicing"
+msgid ":pep:`357` - Allowing Any Object to be Used for Slicing"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:965
@@ -10333,7 +10334,7 @@ msgid "The documentation  for the :mod:`sqlite3` module."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:2030
-msgid "PEP 249 - Database API Specification 2.0"
+msgid ":pep:`249` - Database API Specification 2.0"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:2031
@@ -10369,7 +10370,7 @@ msgid "A central web site for WSGI-related resources."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:2070
-msgid "PEP 333 - Python Web Server Gateway Interface v1.0"
+msgid ":pep:`333` - Python Web Server Gateway Interface v1.0"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.5.rst:2071
@@ -10907,16 +10908,16 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:236
-#, fuzzy
-msgid "Documenting Python"
-msgstr "Portage vers Python 3.2"
+msgid ""
+"`Documenting Python <https://docs.python.org/devguide/documenting.html>`__"
+msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:236
 msgid "Describes how to write for Python's documentation."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:239
-msgid "Sphinx"
+msgid "`Sphinx <http://sphinx-doc.org/>`__"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:239
@@ -10924,7 +10925,7 @@ msgid "Documentation and code for the Sphinx toolchain."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:241
-msgid "Docutils"
+msgid "`Docutils <http://docutils.sourceforge.net>`__"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:242
@@ -11077,7 +11078,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:552
-msgid "PEP 370 - Per-user site-packages Directory"
+msgid ":pep:`370` - Per-user ``site-packages`` Directory"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:553
@@ -11160,7 +11161,7 @@ msgid "The documentation for the :mod:`multiprocessing` module."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:709
-msgid "PEP 371 - Addition of the multiprocessing package"
+msgid ":pep:`371` - Addition of the multiprocessing package"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:709
@@ -11373,7 +11374,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:849
-msgid "formatstrings"
+msgid ":ref:`formatstrings`"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:849
@@ -11381,7 +11382,7 @@ msgid "The reference documentation for format fields."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:851
-msgid "PEP 3101 - Advanced String Formatting"
+msgid ":pep:`3101` - Advanced String Formatting"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:852
@@ -11432,7 +11433,7 @@ msgid "*file*: the file object to which the output will be sent."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:886
-msgid "PEP 3105 - Make print a function"
+msgid ":pep:`3105` - Make print a function"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:887
@@ -11482,7 +11483,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:937
-msgid "PEP 3110 - Catching Exceptions in Python 3000"
+msgid ":pep:`3110` - Catching Exceptions in Python 3000"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:938
@@ -11560,7 +11561,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1021
-msgid "PEP 3112 - Bytes literals in Python 3000"
+msgid ":pep:`3112` - Bytes literals in Python 3000"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1022
@@ -11660,7 +11661,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1103
-msgid "PEP 3116 - New I/O"
+msgid ":pep:`3116` - New I/O"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1102
@@ -11735,7 +11736,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1155
-msgid "PEP 3118 - Revising the buffer protocol"
+msgid ":pep:`3118` - Revising the buffer protocol"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1155
@@ -11863,7 +11864,7 @@ msgid "Subclasses must then define a :meth:`readonly` property."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1303
-msgid "PEP 3119 - Introducing Abstract Base Classes"
+msgid ":pep:`3119` - Introducing Abstract Base Classes"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1302
@@ -11905,7 +11906,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1355
-msgid "PEP 3127 - Integer Literal Support and Syntax"
+msgid ":pep:`3127` - Integer Literal Support and Syntax"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1355
@@ -11927,7 +11928,7 @@ msgid "This is equivalent to::"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1382
-msgid "PEP 3129 - Class Decorators"
+msgid ":pep:`3129` - Class Decorators"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1383
@@ -11995,7 +11996,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1432
-msgid "PEP 3141 - A Type Hierarchy for Numbers"
+msgid ":pep:`3141` - A Type Hierarchy for Numbers"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.6.rst:1432
@@ -14488,7 +14489,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:307
-msgid "PEP 372 - Adding an ordered dictionary to collections"
+msgid ":pep:`372` - Adding an ordered dictionary to collections"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:307
@@ -14537,7 +14538,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:345 ../src/Doc/whatsnew/3.1.rst:111
-msgid "PEP 378 - Format Specifier for Thousands Separator"
+msgid ":pep:`378` - Format Specifier for Thousands Separator"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:346
@@ -14604,7 +14605,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:438
-msgid "argparse documentation"
+msgid ":mod:`argparse` documentation"
 msgstr ""
 
 # 65dcc4cafab24c93bf812c68dd25565a
@@ -14613,7 +14614,7 @@ msgid "The documentation page of the argparse module."
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:442
-msgid "upgrading-optparse-code"
+msgid ":ref:`upgrading-optparse-code`"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:441
@@ -14623,7 +14624,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:444
-msgid "PEP 389 - argparse - New Command Line Parsing Module"
+msgid ":pep:`389` - argparse - New Command Line Parsing Module"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:445
@@ -14706,7 +14707,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:544
-msgid "PEP 391 - Dictionary-Based Configuration For Logging"
+msgid ":pep:`391` - Dictionary-Based Configuration For Logging"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:545
@@ -14761,7 +14762,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:606
-msgid "PEP 3106 - Revamping dict.keys(), .values() and .items()"
+msgid ":pep:`3106` - Revamping dict.keys(), .values() and .items()"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:606
@@ -14793,7 +14794,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:657
-msgid "PEP 3137 - Immutable Bytes and Mutable Buffer"
+msgid ":pep:`3137` - Immutable Bytes and Mutable Buffer"
 msgstr ""
 
 #: ../src/Doc/whatsnew/2.7.rst:656
@@ -18562,7 +18563,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.1.rst:79
-msgid "PEP 372 - Ordered Dictionaries"
+msgid ":pep:`372` - Ordered Dictionaries"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.1.rst:79
@@ -19203,7 +19204,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:80
-msgid "PEP 384 - Defining a Stable ABI"
+msgid ":pep:`384` - Defining a Stable ABI"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:81
@@ -19253,7 +19254,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:171
-msgid "PEP 389 - New Command Line Parsing Module"
+msgid ":pep:`389` - New Command Line Parsing Module"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:171
@@ -19296,7 +19297,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:224
-msgid "PEP 391 - Dictionary Based Configuration for Logging"
+msgid ":pep:`391` - Dictionary Based Configuration for Logging"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:225
@@ -19362,7 +19363,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:276
-msgid "PEP 3148 - Futures -- Execute Computations Asynchronously"
+msgid ":pep:`3148` - Futures -- Execute Computations Asynchronously"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:276
@@ -19458,7 +19459,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:347
-msgid "PEP 3147 - PYC Repository Directories"
+msgid ":pep:`3147` - PYC Repository Directories"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:348 ../src/Doc/whatsnew/3.2.rst:379
@@ -19493,7 +19494,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:378
-msgid "PEP 3149 - ABI Version Tagged .so Files"
+msgid ":pep:`3149` - ABI Version Tagged .so Files"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:383
@@ -19564,7 +19565,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:425
-msgid "PEP 3333 - Python Web Server Gateway Interface v1.0.1"
+msgid ":pep:`3333` - Python Web Server Gateway Interface v1.0.1"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.2.rst:426
@@ -22516,7 +22517,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:118
-msgid "PEP 405 - Python Virtual Environments"
+msgid ":pep:`405` - Python Virtual Environments"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:119
@@ -22536,7 +22537,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:133
-msgid "PEP 420 - Implicit Namespace Packages"
+msgid ":pep:`420` - Implicit Namespace Packages"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:133
@@ -22781,7 +22782,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:283
-msgid "PEP 393 - Flexible String Representation"
+msgid ":pep:`393` - Flexible String Representation"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:283
@@ -22828,7 +22829,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:317
-msgid "PEP 397 - Python Launcher for Windows"
+msgid ":pep:`397` - Python Launcher for Windows"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:316
@@ -22949,7 +22950,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:392
-msgid "PEP 3151 - Reworking the OS and IO Exception Hierarchy"
+msgid ":pep:`3151` - Reworking the OS and IO Exception Hierarchy"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:393
@@ -22998,7 +22999,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:464
-msgid "PEP 380 - Syntax for Delegating to a Subgenerator"
+msgid ":pep:`380` - Syntax for Delegating to a Subgenerator"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:463
@@ -23033,7 +23034,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:528
-msgid "PEP 409 - Suppressing exception context"
+msgid ":pep:`409` - Suppressing exception context"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:528
@@ -23057,7 +23058,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:545
-msgid "PEP 414 - Explicit Unicode literals"
+msgid ":pep:`414` - Explicit Unicode literals"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:546
@@ -23097,7 +23098,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:606
-msgid "PEP 3155 - Qualified name for classes and functions"
+msgid ":pep:`3155` - Qualified name for classes and functions"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:607 ../src/Doc/whatsnew/3.4.rst:539
@@ -23118,7 +23119,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:622
-msgid "PEP 412 - Key-Sharing Dictionary"
+msgid ":pep:`412` - Key-Sharing Dictionary"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:623
@@ -23142,7 +23143,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:641
-msgid "PEP 362: -  Function Signature Object"
+msgid ":pep:`362`: -  Function Signature Object"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:641
@@ -23197,7 +23198,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:678
-msgid "PEP 421 - Adding sys.implementation"
+msgid ":pep:`421` - Adding sys.implementation"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:679
@@ -23850,7 +23851,7 @@ msgid "decimal"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:1095
-msgid "issue 7652 - integrate fast native decimal arithmetic."
+msgid ":issue:`7652` - integrate fast native decimal arithmetic."
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.3.rst:1095
@@ -26453,7 +26454,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:255
-msgid "PEP 453 -- Explicit bootstrapping of pip in Python installations"
+msgid ":pep:`453` -- Explicit bootstrapping of pip in Python installations"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:255
@@ -26495,7 +26496,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:279
-msgid "PEP 446 -- Make newly created file descriptors non-inheritable"
+msgid ":pep:`446` -- Make newly created file descriptors non-inheritable"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:280 ../src/Doc/whatsnew/3.4.rst:1812
@@ -26697,7 +26698,7 @@ msgid "For Python 3.4, this module is considered a :term:`provisional API`."
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:475
-msgid "PEP 3156 -- Asynchronous IO Support Rebooted: the \"asyncio\" Module"
+msgid ":pep:`3156` -- Asynchronous IO Support Rebooted: the \"asyncio\" Module"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:476
@@ -26751,7 +26752,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:519
-msgid "PEP 435 -- Adding an Enum type to the Python standard library"
+msgid ":pep:`435` -- Adding an Enum type to the Python standard library"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:519
@@ -26774,7 +26775,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:538
-msgid "PEP 428 -- The pathlib module -- object-oriented filesystem paths"
+msgid ":pep:`428` -- The pathlib module -- object-oriented filesystem paths"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:545
@@ -26801,7 +26802,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:564
-msgid "PEP 450 -- Adding A Statistics Module To The Standard Library"
+msgid ":pep:`450` -- Adding A Statistics Module To The Standard Library"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:565
@@ -26835,7 +26836,7 @@ msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:583
 msgid ""
-"PEP 454 -- Add a new tracemalloc module to trace Python memory allocations"
+":pep:`454` -- Add a new tracemalloc module to trace Python memory allocations"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:584
@@ -27168,7 +27169,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:871
-msgid "PEP 443 -- Single-dispatch generic functions"
+msgid ":pep:`443` -- Single-dispatch generic functions"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:872
@@ -27621,7 +27622,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:1230
-msgid "PEP 3154 -- Pickle protocol 4"
+msgid ":pep:`3154` -- Pickle protocol 4"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:1231
@@ -28344,7 +28345,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:1811
-msgid "PEP 445 -- Add new APIs to customize Python memory allocators"
+msgid ":pep:`445` -- Add new APIs to customize Python memory allocators"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:1818
@@ -28369,7 +28370,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:1834
-msgid "PEP 442 -- Safe object finalization"
+msgid ":pep:`442` -- Safe object finalization"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:1841
@@ -28430,7 +28431,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:1883
-msgid "PEP 436 -- The Argument Clinic DSL"
+msgid ":pep:`436` -- The Argument Clinic DSL"
 msgstr ""
 
 #: ../src/Doc/whatsnew/3.4.rst:1884
@@ -36991,7 +36992,9 @@ msgid ""
 msgstr ""
 
 #: ../../Misc/NEWS:3780
-msgid "Issue #14499: Fix several problems with OS X universal build support:"
+msgid ""
+"`Issue #14499 <https://bugs.python.org/14499>`__: Fix several problems with "
+"OS X universal build support:"
 msgstr ""
 
 #: ../../Misc/NEWS:3777
@@ -44302,7 +44305,9 @@ msgid ""
 msgstr ""
 
 #: ../../Misc/NEWS:7322
-msgid "Issue #13590: Improve support for OS X Xcode 4:"
+msgid ""
+"`Issue #13590 <https://bugs.python.org/13590>`__: Improve support for OS X "
+"Xcode 4:"
 msgstr ""
 
 #: ../../Misc/NEWS:7310
@@ -50915,6 +50920,10 @@ msgid ""
 "The \"Changelog\" is a HTML version of the file :source:`Misc/NEWS` which "
 "contains *all* nontrivial changes to Python for the current version."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Documenting Python"
+#~ msgstr "Portage vers Python 3.2"
 
 #~ msgid "Author"
 #~ msgstr "Auteur"

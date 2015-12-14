@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-14 20:34+0100\n"
+"POT-Creation-Date: 2015-12-14 23:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -256,10 +256,6 @@ msgstr ""
 msgid "Terms and conditions for accessing or otherwise using Python"
 msgstr ""
 
-#: ../src/Doc/license.rst:77
-msgid "PSF LICENSE AGREEMENT FOR PYTHON release"
-msgstr ""
-
 #: ../src/Doc/license.rst:78
 msgid ""
 "This LICENSE AGREEMENT is between the Python Software Foundation (\"PSF\"), "
@@ -328,14 +324,6 @@ msgid ""
 "to be bound by the terms and conditions of this License Agreement."
 msgstr ""
 
-#: ../src/Doc/license.rst:123
-msgid "BEOPEN.COM LICENSE AGREEMENT FOR PYTHON 2.0"
-msgstr ""
-
-#: ../src/Doc/license.rst:125
-msgid "BEOPEN PYTHON OPEN SOURCE LICENSE AGREEMENT VERSION 1"
-msgstr ""
-
 #: ../src/Doc/license.rst:126
 msgid ""
 "This LICENSE AGREEMENT is between BeOpen.com (\"BeOpen\"), having an office "
@@ -390,10 +378,6 @@ msgstr ""
 msgid ""
 "By copying, installing or otherwise using the software, Licensee agrees to "
 "be bound by the terms and conditions of this License Agreement."
-msgstr ""
-
-#: ../src/Doc/license.rst:167
-msgid "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
 msgstr ""
 
 #: ../src/Doc/license.rst:168
@@ -473,14 +457,6 @@ msgid ""
 "By clicking on the \"ACCEPT\" button where indicated, or by copying, "
 "installing or otherwise using Python 1.6.1, Licensee agrees to be bound by "
 "the terms and conditions of this License Agreement."
-msgstr ""
-
-#: ../src/Doc/license.rst:230
-msgid "ACCEPT"
-msgstr ""
-
-#: ../src/Doc/license.rst:232
-msgid "CWI LICENSE AGREEMENT FOR PYTHON 0.9.0 THROUGH 1.2"
 msgstr ""
 
 #: ../src/Doc/license.rst:233

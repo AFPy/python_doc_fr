@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-14 20:34+0100\n"
+"POT-Creation-Date: 2015-12-14 23:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/allocation.rst:69
-msgid "PyModule_Create()"
+msgid ":c:func:`PyModule_Create`"
 msgstr ""
 
 #: ../src/Doc/c-api/allocation.rst:70
@@ -331,7 +331,7 @@ msgstr ""
 "`PY_SSIZE_T_CLEAN`."
 
 #: ../src/Doc/c-api/arg.rst:72
-msgid "s (str) [const char *]"
+msgid "``s`` (:class:`str`) [const char \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:59
@@ -366,7 +366,7 @@ msgstr ""
 "*convertisseur*."
 
 #: ../src/Doc/c-api/arg.rst:78
-msgid "s* (str or bytes-like object) [Py_buffer]"
+msgid "``s*`` (:class:`str` or :term:`bytes-like object`) [Py_buffer]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:75
@@ -384,7 +384,9 @@ msgstr ""
 "utilisant un encodage ``'utf-8' ``."
 
 #: ../src/Doc/c-api/arg.rst:85
-msgid "s# (str, read-only bytes-like object) [const char *, int or Py_ssize_t]"
+msgid ""
+"``s#`` (:class:`str`, read-only :term:`bytes-like object`) [const char \\*, "
+"int or :c:type:`Py_ssize_t`]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:81
@@ -404,7 +406,7 @@ msgstr ""
 "``'utf-8'``."
 
 #: ../src/Doc/c-api/arg.rst:89
-msgid "z (str or None) [const char *]"
+msgid "``z`` (:class:`str` or ``None``) [const char \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:88
@@ -416,7 +418,8 @@ msgstr ""
 "pointeur C devient *NULL*."
 
 #: ../src/Doc/c-api/arg.rst:93
-msgid "z* (str, bytes-like object or None) [Py_buffer]"
+msgid ""
+"``z*`` (:class:`str`, :term:`bytes-like object` or ``None``) [Py_buffer]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:92
@@ -429,7 +432,9 @@ msgstr ""
 "champ ``buf`` de la structure :ctype:`Py_buffer` est définie à *NULL*."
 
 #: ../src/Doc/c-api/arg.rst:97
-msgid "z# (str, read-only bytes-like object or None) [const char *, int]"
+msgid ""
+"``z#`` (:class:`str`, read-only :term:`bytes-like object` or ``None``) "
+"[const char \\*, int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:96
@@ -441,7 +446,7 @@ msgstr ""
 "le pointeur C est définie à *NULL*."
 
 #: ../src/Doc/c-api/arg.rst:103
-msgid "y (read-only bytes-like object) [const char *]"
+msgid "``y`` (read-only :term:`bytes-like object`) [const char \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:100
@@ -457,7 +462,7 @@ msgstr ""
 "sera levée."
 
 #: ../src/Doc/c-api/arg.rst:108
-msgid "y* (bytes-like object) [Py_buffer]"
+msgid "``y*`` (:term:`bytes-like object`) [Py_buffer]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:106
@@ -471,7 +476,7 @@ msgstr ""
 "accepter des données binaires.**"
 
 #: ../src/Doc/c-api/arg.rst:112
-msgid "y# (read-only bytes-like object) [const char *, int]"
+msgid "``y#`` (read-only :term:`bytes-like object`) [const char \\*, int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:111
@@ -483,7 +488,7 @@ msgstr ""
 "objets assimilés à des octets."
 
 #: ../src/Doc/c-api/arg.rst:117
-msgid "S (bytes) [PyBytesObject *]"
+msgid "``S`` (:class:`bytes`) [PyBytesObject \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:115
@@ -499,7 +504,7 @@ msgstr ""
 "également être de type :ctype:`PyObject\\*`."
 
 #: ../src/Doc/c-api/arg.rst:122
-msgid "Y (bytearray) [PyByteArrayObject *]"
+msgid "``Y`` (:class:`bytearray`) [PyByteArrayObject \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:120
@@ -516,7 +521,7 @@ msgstr ""
 "aussi être de type :ctype:`PyObject\\*`."
 
 #: ../src/Doc/c-api/arg.rst:136 ../src/Doc/c-api/arg.rst:536
-msgid "u (str) [Py_UNICODE *]"
+msgid "``u`` (:class:`str`) [Py_UNICODE \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:125
@@ -549,7 +554,7 @@ msgstr ""
 "``u#`` ou ``U``."
 
 #: ../src/Doc/c-api/arg.rst:140 ../src/Doc/c-api/arg.rst:541
-msgid "u# (str) [Py_UNICODE *, int]"
+msgid "``u#`` (:class:`str`) [Py_UNICODE \\*, int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:139
@@ -563,7 +568,7 @@ msgstr ""
 "longueur."
 
 #: ../src/Doc/c-api/arg.rst:144
-msgid "Z (str or None) [Py_UNICODE *]"
+msgid "``Z`` (:class:`str` or ``None``) [Py_UNICODE \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:143
@@ -576,7 +581,7 @@ msgstr ""
 "pointeur :ctype:`Py_UNICODE` est fixé à *NULL*."
 
 #: ../src/Doc/c-api/arg.rst:148
-msgid "Z# (str or None) [Py_UNICODE *, int]"
+msgid "``Z#`` (:class:`str` or ``None``) [Py_UNICODE \\*, int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:147
@@ -590,7 +595,7 @@ msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:153
 #, fuzzy
-msgid "U (str) [PyObject *]"
+msgid "``U`` (:class:`str`) [PyObject \\*]"
 msgstr "Objets bytes"
 
 #: ../src/Doc/c-api/arg.rst:151
@@ -606,7 +611,8 @@ msgstr ""
 "également être de type :ctype:`PyObject\\*`."
 
 #: ../src/Doc/c-api/arg.rst:159
-msgid "w* (bytearray or read-write byte-oriented buffer) [Py_buffer]"
+msgid ""
+"``w*`` (:class:`bytearray` or read-write byte-oriented buffer) [Py_buffer]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:156
@@ -623,7 +629,7 @@ msgstr ""
 "doit appeler :cfunc:`PyBuffer_Release` quand il n'a plus l'usage du tampon."
 
 #: ../src/Doc/c-api/arg.rst:176
-msgid "es (str) [const char *encoding, char **buffer]"
+msgid "``es`` (:class:`str`) [const char \\*encoding, char \\*\\*buffer]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:162
@@ -672,7 +678,9 @@ msgstr ""
 "cfunc:`PyMem_Free` pour libérer le tampon alloué après utilisatiopn"
 
 #: ../src/Doc/c-api/arg.rst:181
-msgid "et (str, bytes or bytearray) [const char *encoding, char **buffer]"
+msgid ""
+"``et`` (:class:`str`, :class:`bytes` or :class:`bytearray`) [const char "
+"\\*encoding, char \\*\\*buffer]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:179
@@ -687,7 +695,9 @@ msgstr ""
 "de caractères utilise l'encodage passé en tant que paramètre."
 
 #: ../src/Doc/c-api/arg.rst:212
-msgid "es# (str) [const char *encoding, char **buffer, int *buffer_length]"
+msgid ""
+"``es#`` (:class:`str`) [const char \\*encoding, char \\*\\*buffer, int "
+"\\*buffer_length]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:184
@@ -771,8 +781,8 @@ msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:217
 msgid ""
-"et# (str, bytes or bytearray) [const char *encoding, char **buffer, int "
-"*buffer_length]"
+"``et#`` (:class:`str`, :class:`bytes` or :class:`bytearray`) [const char "
+"\\*encoding, char \\*\\*buffer, int \\*buffer_length]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:215
@@ -792,7 +802,7 @@ msgid "Numbers"
 msgstr "Nombres"
 
 #: ../src/Doc/c-api/arg.rst:224
-msgid "b (int) [unsigned char]"
+msgid "``b`` (:class:`int`) [unsigned char]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:223
@@ -805,7 +815,7 @@ msgstr ""
 "dans un C :ctype:`unsigned char`."
 
 #: ../src/Doc/c-api/arg.rst:228 ../src/Doc/c-api/arg.rst:562
-msgid "B (int) [unsigned char]"
+msgid "``B`` (:class:`int`) [unsigned char]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:227
@@ -818,7 +828,7 @@ msgstr ""
 "stocké dans un C :ctype:`unsigned char`."
 
 #: ../src/Doc/c-api/arg.rst:231 ../src/Doc/c-api/arg.rst:556
-msgid "h (int) [short int]"
+msgid "``h`` (:class:`int`) [short int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:231
@@ -827,7 +837,7 @@ msgid "Convert a Python integer to a C :c:type:`short int`."
 msgstr "Convertit un entier Python en un C :ctype:`short int`."
 
 #: ../src/Doc/c-api/arg.rst:235 ../src/Doc/c-api/arg.rst:565
-msgid "H (int) [unsigned short int]"
+msgid "``H`` (:class:`int`) [unsigned short int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:234
@@ -840,7 +850,7 @@ msgstr ""
 "contrôle de débordement."
 
 #: ../src/Doc/c-api/arg.rst:238 ../src/Doc/c-api/arg.rst:550
-msgid "i (int) [int]"
+msgid "``i`` (:class:`int`) [int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:238
@@ -849,7 +859,7 @@ msgid "Convert a Python integer to a plain C :c:type:`int`."
 msgstr "Convertit un entier Python en un type C :ctype:`int`."
 
 #: ../src/Doc/c-api/arg.rst:242 ../src/Doc/c-api/arg.rst:568
-msgid "I (int) [unsigned int]"
+msgid "``I`` (:class:`int`) [unsigned int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:241
@@ -862,7 +872,7 @@ msgstr ""
 "de le débordement."
 
 #: ../src/Doc/c-api/arg.rst:245 ../src/Doc/c-api/arg.rst:559
-msgid "l (int) [long int]"
+msgid "``l`` (:class:`int`) [long int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:245
@@ -871,7 +881,7 @@ msgid "Convert a Python integer to a C :c:type:`long int`."
 msgstr "Convertit un entier Python en un type  :ctype:`long int`."
 
 #: ../src/Doc/c-api/arg.rst:249 ../src/Doc/c-api/arg.rst:571
-msgid "k (int) [unsigned long]"
+msgid "``k`` (:class:`int`) [unsigned long]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:248
@@ -884,7 +894,7 @@ msgstr ""
 "de le débordement."
 
 #: ../src/Doc/c-api/arg.rst:254 ../src/Doc/c-api/arg.rst:576
-msgid "L (int) [PY_LONG_LONG]"
+msgid "``L`` (:class:`int`) [PY_LONG_LONG]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:252
@@ -899,7 +909,7 @@ msgstr ""
 "`long long` (ou :ctype:`_int64` sous Windows)."
 
 #: ../src/Doc/c-api/arg.rst:259 ../src/Doc/c-api/arg.rst:581
-msgid "K (int) [unsigned PY_LONG_LONG]"
+msgid "``K`` (:class:`int`) [unsigned PY_LONG_LONG]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:257
@@ -915,7 +925,7 @@ msgstr ""
 "`unsigned _int64` sous Windows)."
 
 #: ../src/Doc/c-api/arg.rst:262 ../src/Doc/c-api/arg.rst:584
-msgid "n (int) [Py_ssize_t]"
+msgid "``n`` (:class:`int`) [Py_ssize_t]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:262
@@ -924,7 +934,7 @@ msgid "Convert a Python integer to a C :c:type:`Py_ssize_t`."
 msgstr "Convertit un entier Python en un C :ctype:`short int`."
 
 #: ../src/Doc/c-api/arg.rst:269
-msgid "c (bytes or bytearray of length 1) [char]"
+msgid "``c`` (:class:`bytes` or :class:`bytearray` of length 1) [char]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:265
@@ -941,7 +951,7 @@ msgid "Allow :class:`bytearray` objects."
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:273 ../src/Doc/c-api/arg.rst:592
-msgid "C (str of length 1) [int]"
+msgid "``C`` (:class:`str` of length 1) [int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:272
@@ -954,7 +964,7 @@ msgstr ""
 "longueur 1, en un type C :ctype:`char`."
 
 #: ../src/Doc/c-api/arg.rst:276 ../src/Doc/c-api/arg.rst:598
-msgid "f (float) [float]"
+msgid "``f`` (:class:`float`) [float]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:276
@@ -963,7 +973,7 @@ msgid "Convert a Python floating point number to a C :c:type:`float`."
 msgstr "Convertit un nombre flottant Python vers un type C :ctype:`float`."
 
 #: ../src/Doc/c-api/arg.rst:279 ../src/Doc/c-api/arg.rst:595
-msgid "d (float) [double]"
+msgid "``d`` (:class:`float`) [double]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:279
@@ -972,7 +982,7 @@ msgid "Convert a Python floating point number to a C :c:type:`double`."
 msgstr "Convertit un nombre flottant Python vers un type C :ctype:`double`."
 
 #: ../src/Doc/c-api/arg.rst:282
-msgid "D (complex) [Py_complex]"
+msgid "``D`` (:class:`complex`) [Py_complex]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:282
@@ -987,8 +997,9 @@ msgid "Other objects"
 msgstr "Autres Objets"
 
 #: ../src/Doc/c-api/arg.rst:290 ../src/Doc/c-api/arg.rst:609
-msgid "O (object) [PyObject *]"
-msgstr ""
+#, fuzzy
+msgid "``O`` (object) [PyObject \\*]"
+msgstr "Objets bytes"
 
 #: ../src/Doc/c-api/arg.rst:288
 msgid ""
@@ -1002,7 +1013,7 @@ msgstr ""
 "*NULL*."
 
 #: ../src/Doc/c-api/arg.rst:297
-msgid "O! (object) [typeobject, PyObject *]"
+msgid "``O!`` (object) [*typeobject*, PyObject \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:293
@@ -1022,7 +1033,7 @@ msgstr ""
 "`TypeError` sera levée."
 
 #: ../src/Doc/c-api/arg.rst:322 ../src/Doc/c-api/arg.rst:623
-msgid "O& (object) [converter, anything]"
+msgid "``O&`` (object) [*converter*, *anything*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:302
@@ -1076,7 +1087,7 @@ msgid "``Py_CLEANUP_SUPPORTED`` was added."
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:331
-msgid "p (bool) [int]"
+msgid "``p`` (:class:`bool`) [int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:325
@@ -1089,7 +1100,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:336 ../src/Doc/c-api/arg.rst:626
-msgid "(items) (tuple) [matching-items]"
+msgid "``(items)`` (:class:`tuple`) [*matching-items*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:334
@@ -1127,7 +1138,7 @@ msgstr ""
 "pas les trouvées dans des parenthèses imbriquées. Ce sont :"
 
 #: ../src/Doc/c-api/arg.rst:352
-msgid "|"
+msgid "``|``"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:348
@@ -1146,7 +1157,7 @@ msgstr ""
 "modifie par le contenu de la ou des variables C correspondantes."
 
 #: ../src/Doc/c-api/arg.rst:361
-msgid "$"
+msgid "``$``"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:355
@@ -1158,7 +1169,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:366
-msgid ":"
+msgid "``:``"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:364
@@ -1173,7 +1184,7 @@ msgstr ""
 "\"valeur associée\" de l'exception levée par :cfunc:`PyArg_ParseTuple`)."
 
 #: ../src/Doc/c-api/arg.rst:371
-msgid ";"
+msgid "``;``"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:369
@@ -1368,7 +1379,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:513
-msgid "s (str or None) [char *]"
+msgid "``s`` (:class:`str` or ``None``) [char \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:512
@@ -1378,7 +1389,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:518
-msgid "s# (str or None) [char *, int]"
+msgid "``s#`` (:class:`str` or ``None``) [char \\*, int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:516
@@ -1389,7 +1400,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:522
-msgid "y (bytes) [char *]"
+msgid "``y`` (:class:`bytes`) [char \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:521
@@ -1399,7 +1410,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:526
-msgid "y# (bytes) [char *, int]"
+msgid "``y#`` (:class:`bytes`) [char \\*, int]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:525
@@ -1409,7 +1420,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:529
-msgid "z (str or None) [char *]"
+msgid "``z`` (:class:`str` or ``None``) [char \\*]"
 msgstr ""
 
 # 9fd457e48a5743c0a4310b9d435869ed
@@ -1418,7 +1429,7 @@ msgid "Same as ``s``."
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:532
-msgid "z# (str or None) [char *, int]"
+msgid "``z#`` (:class:`str` or ``None``) [char \\*, int]"
 msgstr ""
 
 # 1afa18111a644ae6974962a73a9d8c3c
@@ -1443,11 +1454,11 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:544
-msgid "U (str or None) [char *]"
+msgid "``U`` (:class:`str` or ``None``) [char \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:547
-msgid "U# (str or None) [char *, int]"
+msgid "``U#`` (:class:`str` or ``None``) [char \\*, int]"
 msgstr ""
 
 # 8ea20cbea40f445489b6c429b44779a9
@@ -1456,7 +1467,7 @@ msgid "Convert a plain C :c:type:`int` to a Python integer object."
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:553
-msgid "b (int) [char]"
+msgid "``b`` (:class:`int`) [char]"
 msgstr ""
 
 # 1721f80a75d54abe965d8e7c199b3aaa
@@ -1529,7 +1540,7 @@ msgid "Convert a C :c:type:`Py_ssize_t` to a Python integer."
 msgstr "Convertit un entier Python en un type  :ctype:`long int`."
 
 #: ../src/Doc/c-api/arg.rst:588
-msgid "c (bytes of length 1) [char]"
+msgid "``c`` (:class:`bytes` of length 1) [char]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:587
@@ -1561,7 +1572,7 @@ msgid "Convert a C :c:type:`float` to a Python floating point number."
 msgstr "Convertit un nombre flottant Python vers un type C :ctype:`float`."
 
 #: ../src/Doc/c-api/arg.rst:601
-msgid "D (complex) [Py_complex *]"
+msgid "``D`` (:class:`complex`) [Py_complex \\*]"
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:601
@@ -1582,8 +1593,9 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:612
-msgid "S (object) [PyObject *]"
-msgstr ""
+#, fuzzy
+msgid "``S`` (object) [PyObject \\*]"
+msgstr "Objets bytes"
 
 # 4f2699210d3549ca8f99d85372897683
 #: ../src/Doc/c-api/arg.rst:612
@@ -1591,8 +1603,9 @@ msgid "Same as ``O``."
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:617
-msgid "N (object) [PyObject *]"
-msgstr ""
+#, fuzzy
+msgid "``N`` (object) [PyObject \\*]"
+msgstr "Objets bytes"
 
 #: ../src/Doc/c-api/arg.rst:615
 msgid ""
@@ -1617,7 +1630,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:629
-msgid "[items] (list) [matching-items]"
+msgid "``[items]`` (:class:`list`) [*matching-items*]"
 msgstr ""
 
 # 12d80ac5c3184fd994f6f711d98934ba
@@ -1628,7 +1641,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/arg.rst:634
-msgid "{items} (dict) [matching-items]"
+msgid "``{items}`` (:class:`dict`) [*matching-items*]"
 msgstr ""
 
 # f292bfb2366c43afb96553561173a60d
@@ -8825,12 +8838,6 @@ msgstr ""
 
 #: ../src/Doc/c-api/long.rst:105
 msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using PyLong_FromUnicodeObject()."
-msgstr ""
-
-#: ../src/Doc/c-api/long.rst:105
-msgid ""
 "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:"
 "func:`PyLong_FromUnicodeObject`."
 msgstr ""
@@ -14496,12 +14503,6 @@ msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:213 ../src/Doc/c-api/unicode.rst:223
 msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Unicode API, please migrate to using PyUnicode_GET_LENGTH()."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:213 ../src/Doc/c-api/unicode.rst:223
-msgid ""
 "Part of the old-style Unicode API, please migrate to using :c:func:"
 "`PyUnicode_GET_LENGTH`."
 msgstr ""
@@ -14529,13 +14530,6 @@ msgid ""
 "can fail (return *NULL* with an exception set).  Try to port the code to use "
 "the new :c:func:`PyUnicode_nBYTE_DATA` macros or use :c:func:"
 "`PyUnicode_WRITE` or :c:func:`PyUnicode_READ`."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:245
-msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Unicode API, please migrate to using the PyUnicode_nBYTE_DATA() "
-"family of macros."
 msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:245
@@ -15006,10 +15000,6 @@ msgstr ""
 msgid "Deprecated Py_UNICODE APIs"
 msgstr ""
 
-#: ../src/Doc/c-api/unicode.rst:666
-msgid "Deprecated since version 3.3, will be removed in version 4.0."
-msgstr ""
-
 #: ../src/Doc/c-api/unicode.rst:667
 msgid ""
 "These API functions are deprecated with the implementation of :pep:`393`. "
@@ -15377,13 +15367,6 @@ msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1014
 msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using "
-"PyUnicode_AsEncodedString()."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1014
-msgid ""
 "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:"
 "func:`PyUnicode_AsEncodedString`."
 msgstr ""
@@ -15450,13 +15433,6 @@ msgid ""
 "Encode the :c:type:`Py_UNICODE` buffer *s* of the given *size* using UTF-8 "
 "and return a Python bytes object.  Return *NULL* if an exception was raised "
 "by the codec."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1078
-msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using PyUnicode_AsUTF8String() "
-"or PyUnicode_AsUTF8AndSize()."
 msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1078
@@ -15561,12 +15537,6 @@ msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1151
 msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using PyUnicode_AsUTF32String()."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1151
-msgid ""
 "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:"
 "func:`PyUnicode_AsUTF32String`."
 msgstr ""
@@ -15631,12 +15601,6 @@ msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1226
 msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using PyUnicode_AsUTF16String()."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1226
-msgid ""
 "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:"
 "func:`PyUnicode_AsUTF16String`."
 msgstr ""
@@ -15685,12 +15649,6 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1264 ../src/Doc/c-api/unicode.rst:1455
-msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1264 ../src/Doc/c-api/unicode.rst:1455
 msgid "Part of the old-style :c:type:`Py_UNICODE` API."
 msgstr ""
 
@@ -15723,13 +15681,6 @@ msgid ""
 "Encode the :c:type:`Py_UNICODE` buffer of the given *size* using Unicode-"
 "Escape and return a Python string object.  Return *NULL* if an exception was "
 "raised by the codec."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1296
-msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using "
-"PyUnicode_AsUnicodeEscapeString()."
 msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1296
@@ -15771,13 +15722,6 @@ msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1328
 msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using "
-"PyUnicode_AsRawUnicodeEscapeString()."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1328
-msgid ""
 "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:"
 "func:`PyUnicode_AsRawUnicodeEscapeString`."
 msgstr ""
@@ -15815,12 +15759,6 @@ msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1359
 msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using PyUnicode_AsLatin1String()."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1359
-msgid ""
 "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:"
 "func:`PyUnicode_AsLatin1String`."
 msgstr ""
@@ -15854,12 +15792,6 @@ msgid ""
 "Encode the :c:type:`Py_UNICODE` buffer of the given *size* using ASCII and "
 "return a Python bytes object.  Return *NULL* if an exception was raised by "
 "the codec."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1390
-msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using PyUnicode_AsASCIIString()."
 msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1390
@@ -15969,13 +15901,6 @@ msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1468
 msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using "
-"PyUnicode_AsCharmapString()."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1468
-msgid ""
 "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:"
 "func:`PyUnicode_AsCharmapString`."
 msgstr ""
@@ -16027,13 +15952,6 @@ msgid ""
 "Encode the :c:type:`Py_UNICODE` buffer of the given *size* using MBCS and "
 "return a Python bytes object.  Return *NULL* if an exception was raised by "
 "the codec."
-msgstr ""
-
-#: ../src/Doc/c-api/unicode.rst:1518
-msgid ""
-"Deprecated since version 3.3, will be removed in version 4.0: Part of the "
-"old-style Py_UNICODE API; please migrate to using PyUnicode_AsMBCSString() "
-"or PyUnicode_EncodeCodePage()."
 msgstr ""
 
 #: ../src/Doc/c-api/unicode.rst:1518

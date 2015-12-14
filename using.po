@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-14 20:34+0100\n"
+"POT-Creation-Date: 2015-12-14 23:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,7 +229,7 @@ msgstr ""
 "`timeit`\\ ::"
 
 #: ../src/Doc/using/cmdline.rst:111
-msgid "runpy.run_module()"
+msgid ":func:`runpy.run_module`"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:111 ../src/Doc/using/cmdline.rst:153
@@ -309,7 +309,7 @@ msgstr ""
 "py`` à cet endroit est exécuté en tant que module :mod:`__main__`."
 
 #: ../src/Doc/using/cmdline.rst:152
-msgid "runpy.run_path()"
+msgid ":func:`runpy.run_path`"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:156
@@ -560,7 +560,7 @@ msgstr ""
 "suivante (ou une abréviation unique):"
 
 #: ../src/Doc/using/cmdline.rst:337
-msgid "ignore"
+msgid "``ignore``"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:338
@@ -569,7 +569,7 @@ msgid "Ignore all warnings."
 msgstr "Ignorer tous les avertissements."
 
 #: ../src/Doc/using/cmdline.rst:340
-msgid "default"
+msgid "``default``"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:340
@@ -579,7 +579,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:344
-msgid "all"
+msgid "``all``"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:343
@@ -594,7 +594,7 @@ msgstr ""
 "pour la ligne du même source, comme à l'intérieur d'une boucle)."
 
 #: ../src/Doc/using/cmdline.rst:346
-msgid "module"
+msgid "``module``"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:347
@@ -605,7 +605,7 @@ msgstr ""
 "chaque module."
 
 #: ../src/Doc/using/cmdline.rst:348
-msgid "once"
+msgid "``once``"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:349
@@ -616,7 +616,7 @@ msgstr ""
 "le programme."
 
 #: ../src/Doc/using/cmdline.rst:351
-msgid "error"
+msgid "``error``"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:351
@@ -1727,18 +1727,20 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:45
-#, fuzzy
-msgid "Python on XP"
-msgstr "Python 3.0"
+msgid ""
+"`Python on XP <http://www.richarddooling.com/index.php/2006/03/14/python-on-"
+"xp-7-minutes-to-hello-world/>`_"
+msgstr ""
 
 #: ../src/Doc/using/windows.rst:44
 msgid "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:51
-#, fuzzy
-msgid "Installing on Windows"
-msgstr "Compiler Python sous Windows"
+msgid ""
+"`Installing on Windows <http://www.diveintopython.net/installing_python/"
+"windows.html>`_"
+msgstr ""
 
 #: ../src/Doc/using/windows.rst:48
 msgid ""
@@ -1747,7 +1749,8 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:55
-msgid "For Windows users"
+msgid ""
+"`For Windows users <http://www.swaroopch.com/notes/python/#install_windows>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:54
@@ -1768,7 +1771,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:67
-msgid "ActivePython"
+msgid "`ActivePython <http://www.activestate.com/activepython/>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:67
@@ -1776,7 +1779,8 @@ msgid "Installer with multi-platform compatibility, documentation, PyWin32"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:71
-msgid "Enthought Python Distribution"
+msgid ""
+"`Enthought Python Distribution <https://www.enthought.com/products/epd/>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:70
@@ -2445,7 +2449,8 @@ msgstr ""
 "Il s'agit d'un IDE embarqué avec débogueur intégré."
 
 #: ../src/Doc/using/windows.rst:523
-msgid "Win32 How Do I...?"
+msgid ""
+"`Win32 How Do I...? <http://timgolden.me.uk/python/win32_how_do_i.html>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:523
@@ -2453,7 +2458,7 @@ msgid "by Tim Golden"
 msgstr "par Tim Golden"
 
 #: ../src/Doc/using/windows.rst:525
-msgid "Python and COM"
+msgid "`Python and COM <http://www.boddie.org.uk/python/COM.html>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:526
@@ -2567,7 +2572,9 @@ msgid "For extension modules, consult :ref:`building-on-windows`."
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:585
-msgid "Python + Windows + distutils + SWIG + gcc MinGW"
+msgid ""
+"`Python + Windows + distutils + SWIG + gcc MinGW <http://sebsauvage.net/"
+"python/mingw.html>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:583
@@ -2578,7 +2585,9 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:587
-msgid "MingW -- Python extensions"
+msgid ""
+"`MingW -- Python extensions <http://oldwiki.mingw.org/index.php/Python"
+"%20extensions>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:588
@@ -2590,7 +2599,9 @@ msgid "Other resources"
 msgstr "Autres ressources"
 
 #: ../src/Doc/using/windows.rst:599
-msgid "Python Programming On Win32"
+msgid ""
+"`Python Programming On Win32 <http://shop.oreilly.com/product/9781565926219."
+"do>`_"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:597
@@ -2602,22 +2613,35 @@ msgstr ""
 "Media, 2000, ISBN 1-56592-621-8"
 
 #: ../src/Doc/using/windows.rst:602
-#, fuzzy
-msgid "A Python for Windows Tutorial"
-msgstr "Compiler Python sous Windows"
+msgid ""
+"`A Python for Windows Tutorial <http://www.imladris.com/Scripts/"
+"PythonForWindows.html>`_"
+msgstr ""
 
 #: ../src/Doc/using/windows.rst:602
 msgid "by Amanda Birmingham, 2004"
 msgstr "par Amanda Birmingham, 2004"
 
 #: ../src/Doc/using/windows.rst:604
-msgid "PEP 397 - Python launcher for Windows"
+msgid ":pep:`397` - Python launcher for Windows"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:605
 msgid ""
 "The proposal for the launcher to be included in the Python distribution."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Python on XP"
+#~ msgstr "Python 3.0"
+
+#, fuzzy
+#~ msgid "Installing on Windows"
+#~ msgstr "Compiler Python sous Windows"
+
+#, fuzzy
+#~ msgid "A Python for Windows Tutorial"
+#~ msgstr "Compiler Python sous Windows"
 
 #, fuzzy
 #~ msgid ":pep:`238` -- Changing the division operator"
