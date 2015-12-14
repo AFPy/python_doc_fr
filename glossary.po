@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 00:36+0100\n"
-"PO-Revision-Date: 2015-12-14 21:16+0100\n"
+"PO-Revision-Date: 2015-12-14 23:58+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
 "Language: fr\n"
@@ -79,7 +79,6 @@ msgid "abstract base class"
 msgstr "Classe de base abstraite (abstract base class)"
 
 #: ../src/Doc/glossary.rst:30
-#, fuzzy
 msgid ""
 "Abstract base classes complement :term:`duck-typing` by providing a way to "
 "define interfaces when other techniques like :func:`hasattr` would be clumsy "
@@ -92,13 +91,19 @@ msgid ""
 "module), import finders and loaders (in the :mod:`importlib.abc` module).  "
 "You can create your own ABCs with the :mod:`abc` module."
 msgstr ""
-"Les classes de base abstraites (ABC, suivant l'abbréviation anglaise) "
+"Les classes de base abstraites (ABC, suivant l'abréviation anglaise) "
 "complètent le :term:`duck-typing` en fournissant un moyen de définir des "
 "interfaces pour les cas où d'autres techniques comme :func:`hasattr` "
-"seraient inélégantes, ou subitement fausse. Python contient de nombreuses "
-"ABC pour les structuresde données (dans le module :mod:`collections`), les "
-"nombres (dans le module :mod:`numbers`), et les flux (dans le module :mod:"
-"`io`). Vous pouvez créer vos propres ABC avec le module :mod:`abc`."
+"seraient inélégantes, ou subitement fausse (par exemple avec les :ref:"
+"`méthodes magiques <special-lookup>`). Les ABC introduisent des sous-classes "
+"virtuelles, qui n'héritent pas d'une classe mais qui sont quand même "
+"reconnues par :func:`isinstance` ou :func:`issubclass` (Voir la "
+"documentation du module :mod:`abc`). Python contient de nombreuses ABC pour "
+"les structures de données (dans le module :mod:`collections.abc`), les "
+"nombres (dans le module :mod:`numbers`), les flux (dans le module :mod:"
+"`io`), et les chercheurs / chargeurs d'import (dans le module :mod:"
+"`importlib.abc`). Vous pouvez créer vos propres ABC avec le module :mod:"
+"`abc`."
 
 #: ../src/Doc/glossary.rst:41
 msgid "argument"
@@ -325,7 +330,6 @@ msgstr ""
 "tranquilité."
 
 #: ../src/Doc/glossary.rst:136
-#, fuzzy
 msgid "context manager"
 msgstr "gestionnaire de contexte"
 
@@ -392,7 +396,6 @@ msgid "descriptor"
 msgstr "descripteur"
 
 #: ../src/Doc/glossary.rst:169
-#, fuzzy
 msgid ""
 "Any object which defines the methods :meth:`__get__`, :meth:`__set__`, or :"
 "meth:`__delete__`.  When a class attribute is a descriptor, its special "
@@ -410,10 +413,10 @@ msgstr ""
 "attributs. En utilisant *a.b* pour obtenir, valoriser ou effacer un "
 "attribut, il recherche l'objet nommé *b* dans la dictionnaire de la classe "
 "pour *a*, mais si *b* est un descripteur, la méthode de ce descripteur est "
-"alors appelée.Comprendre les descripteurs est la clé d'une compréhension "
+"alors appelée. Comprendre les descripteurs est la clé d'une compréhension "
 "approfondie de Python, ils sont la base de nombre de ses caractéristiques "
 "notamment les fonctions, méthodes, propriétés, méthodes de classe, méthodes "
-"statiques, et les références aux classes mères. "
+"statiques, et les références aux classes mères."
 
 #: ../src/Doc/glossary.rst:179
 msgid ""
@@ -437,9 +440,8 @@ msgstr ""
 "et :meth:`__eq__``. Elle s'appelle \"hash\" en Perl."
 
 #: ../src/Doc/glossary.rst:185
-#, fuzzy
 msgid "dictionary view"
-msgstr "vue d'un dictionnaire"
+msgstr "vue de dictionnaire"
 
 #: ../src/Doc/glossary.rst:187
 msgid ""
@@ -526,7 +528,6 @@ msgid "expression"
 msgstr "expression"
 
 #: ../src/Doc/glossary.rst:222
-#, fuzzy
 msgid ""
 "A piece of syntax which can be evaluated to some value.  In other words, an "
 "expression is an accumulation of expression elements like literals, names, "
@@ -542,9 +543,9 @@ msgstr ""
 "d'attributs, méthodes ou fonctions qui aboutissent à une valeur. "
 "Contrairement à beaucoup d'autres langages, les différentes constructions du "
 "langage ne sont pas toutes des expressions. Il y a également des :term:"
-"`statement`s qui ne peuvent pas être utilisés comme expressions, tel que :"
-"keyword:`if`. Les affectations sont également des :term:`statements` et non "
-"des expressions."
+"`instructions`\\s qui ne peuvent pas être utilisés comme expressions, tel "
+"que :keyword:`if`. Les affectations sont également des :term:`instructions` "
+"et non des expressions."
 
 #: ../src/Doc/glossary.rst:229
 msgid "extension module"
@@ -581,7 +582,6 @@ msgstr ""
 "objects` ou :dfn:`streams`."
 
 #: ../src/Doc/glossary.rst:243
-#, fuzzy
 msgid ""
 "There are actually three categories of file objects: raw :term:`binary files "
 "<binary file>`, buffered :term:`binary files <binary file>` and :term:`text "
@@ -591,10 +591,12 @@ msgid ""
 msgstr ""
 "Il existe en réalité trois catégories de fichiers objets : les :term:"
 "`fichiers binaires <fichier binaire>` bruts, les :term:`fichiers binaire "
-"<fichier binaire>`"
+"<fichier binaire>`bufferisés, et les :term:`fichiers texte <fichier texte>`. "
+"Leurs interfaces sont définies dans le module :mod:`io`. Le moyen le plus "
+"simple et direct de créer un objet fichier est d'utiliser la fonction :func:"
+"`open`."
 
 #: ../src/Doc/glossary.rst:248
-#, fuzzy
 msgid "file-like object"
 msgstr "objet fichier-compatible"
 
@@ -622,18 +624,21 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:257
 msgid "floor division"
-msgstr ""
+msgstr "division entière"
 
 # 8325f98bd93d4e0887c926dca290641c
 #: ../src/Doc/glossary.rst:259
-#, fuzzy
 msgid ""
 "Mathematical division that rounds down to nearest integer.  The floor "
 "division operator is ``//``.  For example, the expression ``11 // 4`` "
 "evaluates to ``2`` in contrast to the ``2.75`` returned by float true "
 "division.  Note that ``(-11) // 4`` is ``-3`` because that is ``-2.75`` "
 "rounded *downward*. See :pep:`238`."
-msgstr "Division mathématique arrondissant à l'entier le plus petit. "
+msgstr ""
+"Division mathématique arrondissant à l'entier le plus petit. L'opérateur de "
+"la division entière est ``//``. Par exemple l'expression ``11 // 4`` vaut "
+"``2``, contrairement à ``11 / 4`` qui vaut ``2.75``. Notez que ``(-11) // "
+"4`` vaut ``-3`` car l'arrondi se fait par le bas. Voir la :pep:`328`."
 
 #: ../src/Doc/glossary.rst:264
 msgid "function"
@@ -641,7 +646,6 @@ msgstr "fonction"
 
 # 33a8dbfd67ea4e0fb4dac5f9481c8568
 #: ../src/Doc/glossary.rst:266
-#, fuzzy
 msgid ""
 "A series of statements which returns some value to a caller. It can also be "
 "passed zero or more :term:`arguments <argument>` which may be used in the "
@@ -649,7 +653,9 @@ msgid ""
 "ref:`function` section."
 msgstr ""
 "Une suite d'instructions qui renvoient une valeur à celui qui l'appelle. On "
-"peut aussi lui passer des"
+"peut aussi lui passer des :term:`arguments <argument>` qui pourront être "
+"utilisés dans le corps de la fonction. Voir aussi :term:`parametre`, :term:"
+"`méthode `, et :ref:`function`."
 
 #: ../src/Doc/glossary.rst:270
 msgid "function annotation"
@@ -686,6 +692,9 @@ msgid ""
 "A pseudo-module which programmers can use to enable new language features "
 "which are not compatible with the current interpreter."
 msgstr ""
+"Un pseudo-module que les développeurs peuvent utiliser pour activer de "
+"nouvelles fonctionnalités du langage qui ne sont pas compatibles avec "
+"l'interpréteur utilisé."
 
 #: ../src/Doc/glossary.rst:285
 msgid ""
@@ -707,10 +716,13 @@ msgid ""
 "garbage collection via reference counting and a cyclic garbage collector "
 "that is able to detect and break reference cycles."
 msgstr ""
+"Le processus de libérer de la mémoire lorsqu'elle n'est plus utilisée. "
+"Python utilise un ramasse-miettes par comptage de référence, et un ramasse "
+"miette cyclique capable de détecter et casser les références circulaires."
 
 #: ../src/Doc/glossary.rst:299
 msgid "generator"
-msgstr ""
+msgstr "générateur"
 
 #: ../src/Doc/glossary.rst:301
 msgid ""
@@ -735,7 +747,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:311
 msgid "generator expression"
-msgstr ""
+msgstr "expression génératrice"
 
 #: ../src/Doc/glossary.rst:313
 msgid ""
@@ -751,7 +763,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:320
 msgid "generic function"
-msgstr ""
+msgstr "fonction générique"
 
 #: ../src/Doc/glossary.rst:322
 msgid ""
@@ -759,24 +771,29 @@ msgid ""
 "for different types. Which implementation should be used during a call is "
 "determined by the dispatch algorithm."
 msgstr ""
+"Une fonction composée de plusieurs fonctions implémentant les mêmes "
+"opérations pour différents types. L'implémentation à utiliser est déterminé "
+"lors de l'appel est déterminée par un algorithme de répartition."
 
 #: ../src/Doc/glossary.rst:326
 msgid ""
 "See also the :term:`single dispatch` glossary entry, the :func:`functools."
 "singledispatch` decorator, and :pep:`443`."
 msgstr ""
+"Voir aussi :term:`single dispatch`, le décorateur :func:`functools."
+"singledispatch`, et la :pep:`443`."
 
 #: ../src/Doc/glossary.rst:329
 msgid "GIL"
-msgstr ""
+msgstr "GIL"
 
 #: ../src/Doc/glossary.rst:331
 msgid "See :term:`global interpreter lock`."
-msgstr ""
+msgstr "Voir :term:`verrou global de l'interpréteur `."
 
 #: ../src/Doc/glossary.rst:332
 msgid "global interpreter lock"
-msgstr ""
+msgstr "verrou global de l'interpréteur"
 
 # eae06790f2a14420857358b733306615
 #: ../src/Doc/glossary.rst:334
@@ -805,6 +822,10 @@ msgid ""
 "such as compression or hashing.  Also, the GIL is always released when doing "
 "I/O."
 msgstr ""
+"Cependant, certains modules d'extension, standards ou non, sont construits "
+"de manière à libérer le GIL lorsqu'ils effectuent des tâches lourdes tel que "
+"la compression ou le hachage. Aussi, le GIL est toujours libéré lors des "
+"lectures et écritures."
 
 # e78ce472d1e848ada067fdd3068fb708
 #: ../src/Doc/glossary.rst:348
@@ -818,7 +839,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:353
 msgid "hashable"
-msgstr ""
+msgstr "hachable"
 
 #: ../src/Doc/glossary.rst:355
 msgid ""
@@ -827,12 +848,19 @@ msgid ""
 "other objects (it needs an :meth:`__eq__` method).  Hashable objects which "
 "compare equal must have the same hash value."
 msgstr ""
+"Un objet est *hachable* s'il a une valeur de hash qui ne change jamais. (et "
+"il a besoin d'une méthode :meth:`__hash__`) et peut être comparé à d'autres "
+"objets (avec la méthode :meth:`__eq__`). Les objets hachables dont ``_eq__`` "
+"dit être équivalents, ont aussi la même valeur de hachage."
 
 #: ../src/Doc/glossary.rst:360
 msgid ""
 "Hashability makes an object usable as a dictionary key and a set member, "
 "because these data structures use the hash value internally."
 msgstr ""
+"La hashabilité permet à un objet d'être utilisé comme clef de dictionnaire, "
+"ou en temps que membre d'un *set*, car ces structures de données utilisent "
+"ce hash."
 
 #: ../src/Doc/glossary.rst:363
 msgid ""
@@ -845,7 +873,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:368
 msgid "IDLE"
-msgstr ""
+msgstr "IDLE"
 
 # 8f1c753bef6f49ef9292eff2e5e4369e
 #: ../src/Doc/glossary.rst:370
@@ -854,10 +882,12 @@ msgid ""
 "and interpreter environment which ships with the standard distribution of "
 "Python."
 msgstr ""
+"Un environnement de développement intégré pour Python. IDLE est un éditeur "
+"et interpréteur basique livré avec la distribution standard de Python."
 
 #: ../src/Doc/glossary.rst:373
 msgid "immutable"
-msgstr ""
+msgstr "immuable"
 
 #: ../src/Doc/glossary.rst:375
 msgid ""
@@ -867,10 +897,15 @@ msgid ""
 "in places where a constant hash value is needed, for example as a key in a "
 "dictionary."
 msgstr ""
+"Un objet dont la valeur ne change pas. Les nombres, les chaînes et les "
+"tuples sont immuables. Ils ne peuvent être modifiés. Un nouvel objet doit "
+"être créé si une valeur différente doit être stockée. Ils jouent un rôle "
+"important aux endroits où une valeur de hash constante est requise, "
+"typiquement en clef de dictionnaire."
 
 #: ../src/Doc/glossary.rst:380
 msgid "import path"
-msgstr ""
+msgstr "chemin d'import"
 
 #: ../src/Doc/glossary.rst:382
 msgid ""
@@ -882,28 +917,30 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:387
 msgid "importing"
-msgstr ""
+msgstr "importer"
 
 # cd4670bfe278475e82214853bcf255cc
 #: ../src/Doc/glossary.rst:389
 msgid ""
 "The process by which Python code in one module is made available to Python "
 "code in another module."
-msgstr ""
+msgstr "Le processus rendant le code d'un module disponible dans un autre."
 
 #: ../src/Doc/glossary.rst:391
 msgid "importer"
-msgstr ""
+msgstr "importateur"
 
 #: ../src/Doc/glossary.rst:393
 msgid ""
 "An object that both finds and loads a module; both a :term:`finder` and :"
 "term:`loader` object."
 msgstr ""
+"Un objet qui trouve et charge un module, en même temps un :term:`finder` et "
+"un :term:`loader`."
 
 #: ../src/Doc/glossary.rst:395
 msgid "interactive"
-msgstr ""
+msgstr "interactif"
 
 #: ../src/Doc/glossary.rst:397
 msgid ""
@@ -913,10 +950,16 @@ msgid ""
 "selecting it from your computer's main menu). It is a very powerful way to "
 "test out new ideas or inspect modules and packages (remember ``help(x)``)."
 msgstr ""
+"Python à un interpréteur interactif, ce qui signifie que vous pouvez écrire "
+"des expressions et instructions à l'invite de l'interpréteur, qui va les "
+"exécuter immédiatement, et vous en présenter le résultat. Démarrez juste "
+"``python`` (probablement depuis un menu de votre ordinateur). C'est un moyen "
+"puissant pour tester de nouvelles idées ou étudier de nouveaux modules "
+"(souvenez vous de ``help(x)``)."
 
 #: ../src/Doc/glossary.rst:403
 msgid "interpreted"
-msgstr ""
+msgstr "interprété"
 
 #: ../src/Doc/glossary.rst:405
 msgid ""
@@ -930,7 +973,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:412
 msgid "iterable"
-msgstr ""
+msgstr "itérable"
 
 #: ../src/Doc/glossary.rst:414
 msgid ""
@@ -952,7 +995,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:428
 msgid "iterator"
-msgstr ""
+msgstr "itérateur"
 
 #: ../src/Doc/glossary.rst:430
 msgid ""
@@ -974,11 +1017,11 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:445
 msgid "More information can be found in :ref:`typeiter`."
-msgstr ""
+msgstr "Plus d'informations ici : :ref:`typeiter`."
 
 #: ../src/Doc/glossary.rst:446
 msgid "key function"
-msgstr ""
+msgstr "fonction clef"
 
 # 4407f4d5ddab4943aa8b95ea3e95d087
 #: ../src/Doc/glossary.rst:448
@@ -987,6 +1030,10 @@ msgid ""
 "for sorting or ordering.  For example, :func:`locale.strxfrm` is used to "
 "produce a sort key that is aware of locale specific sort conventions."
 msgstr ""
+"Une fonction clef, est un objet appelable qui renvoie une valeur utilisée "
+"pour trier ou organiser. Par exemple la fonction :func:`local.strxfrm` sert "
+"à produire une fonction clef de tri prennant en compte les conventions de "
+"tri spécifiques aux paramètres régionaux courants."
 
 # b687dec848ca4394a8c48b2990d87905
 #: ../src/Doc/glossary.rst:453
@@ -996,6 +1043,10 @@ msgid ""
 "meth:`list.sort`, :func:`heapq.nsmallest`, :func:`heapq.nlargest`, and :func:"
 "`itertools.groupby`."
 msgstr ""
+"Plusieurs outils dans Python acceptent des fonctions clef pour maîtriser "
+"comment les éléments dont triés ou groupés. Typiquement les fonctions :func:"
+"`min`, :func:`max`, :func:`sorted`, :meth:`list.sort`, :func:`heapq."
+"nsmallest`, :func:`heapq.nlargest`, et :func:`itertools.groupby`."
 
 # 41316a1c618c4d59ba353c58c75e89fe
 #: ../src/Doc/glossary.rst:458
@@ -1012,17 +1063,17 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:466
 msgid "keyword argument"
-msgstr ""
+msgstr "argument nommé"
 
 # 65d6c99a0f6941f6ac90cc3867107f42
 # 0f29d18d80d44155bda6e138e96bd1ce
 #: ../src/Doc/glossary.rst:468 ../src/Doc/glossary.rst:693
 msgid "See :term:`argument`."
-msgstr ""
+msgstr "Voir :term:`argument`."
 
 #: ../src/Doc/glossary.rst:469
 msgid "lambda"
-msgstr ""
+msgstr "lambda"
 
 #: ../src/Doc/glossary.rst:471
 msgid ""
@@ -1030,6 +1081,9 @@ msgid ""
 "is evaluated when the function is called.  The syntax to create a lambda "
 "function is ``lambda [arguments]: expression``"
 msgstr ""
+"Une fonction anonyme sous forme d'une expression, et ne contenant qu'une "
+"expression, exécutée lorsqu'elle est appelée. La syntaxe pour créer des "
+"fonctions lambda est: ``lambda [arguments]: expression``"
 
 #: ../src/Doc/glossary.rst:474
 msgid "LBYL"
