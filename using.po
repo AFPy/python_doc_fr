@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-19 00:36+0100\n"
+"POT-Creation-Date: 2015-12-14 20:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,7 +229,7 @@ msgstr ""
 "`timeit`\\ ::"
 
 #: ../src/Doc/using/cmdline.rst:111
-msgid ":func:`runpy.run_module`"
+msgid "runpy.run_module()"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:111 ../src/Doc/using/cmdline.rst:153
@@ -309,7 +309,7 @@ msgstr ""
 "py`` à cet endroit est exécuté en tant que module :mod:`__main__`."
 
 #: ../src/Doc/using/cmdline.rst:152
-msgid ":func:`runpy.run_path`"
+msgid "runpy.run_path()"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:156
@@ -559,9 +559,8 @@ msgstr ""
 "La forme la plus simple de l'argument est l'une des chaînes d'action "
 "suivante (ou une abréviation unique):"
 
-# ef1c43473fcc4910b0ac780f07042fe6
 #: ../src/Doc/using/cmdline.rst:337
-msgid "``ignore``"
+msgid "ignore"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:338
@@ -569,9 +568,8 @@ msgstr ""
 msgid "Ignore all warnings."
 msgstr "Ignorer tous les avertissements."
 
-# 4765c4e6d8b541afac745383088c4dea
 #: ../src/Doc/using/cmdline.rst:340
-msgid "``default``"
+msgid "default"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:340
@@ -580,9 +578,8 @@ msgid ""
 "source line)."
 msgstr ""
 
-# 4571161d17224831afc7b0f01f901eb2
 #: ../src/Doc/using/cmdline.rst:344
-msgid "``all``"
+msgid "all"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:343
@@ -596,9 +593,8 @@ msgstr ""
 "beaucoup de messages si l'avertissement est déclenchée à plusieurs reprises "
 "pour la ligne du même source, comme à l'intérieur d'une boucle)."
 
-# a473fcb6ce434a39bba0cbdaf435fe16
 #: ../src/Doc/using/cmdline.rst:346
-msgid "``module``"
+msgid "module"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:347
@@ -608,9 +604,8 @@ msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
 "chaque module."
 
-# 7ec2df586e9d4113a28c445dbbc19f51
 #: ../src/Doc/using/cmdline.rst:348
-msgid "``once``"
+msgid "once"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:349
@@ -620,9 +615,8 @@ msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
 "le programme."
 
-# 39c94bdc9cbf48548d087f2fc0098412
 #: ../src/Doc/using/cmdline.rst:351
-msgid "``error``"
+msgid "error"
 msgstr ""
 
 #: ../src/Doc/using/cmdline.rst:351
@@ -1732,22 +1726,19 @@ msgid ""
 "detailed information about platforms with pre-compiled installers."
 msgstr ""
 
-# 67507a1f2fbb40689b4c2dc99ac45ea9
 #: ../src/Doc/using/windows.rst:45
-msgid ""
-"`Python on XP <http://www.richarddooling.com/index.php/2006/03/14/python-on-"
-"xp-7-minutes-to-hello-world/>`_"
-msgstr ""
+#, fuzzy
+msgid "Python on XP"
+msgstr "Python 3.0"
 
 #: ../src/Doc/using/windows.rst:44
 msgid "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:51
-msgid ""
-"`Installing on Windows <http://www.diveintopython.net/installing_python/"
-"windows.html>`_"
-msgstr ""
+#, fuzzy
+msgid "Installing on Windows"
+msgstr "Compiler Python sous Windows"
 
 #: ../src/Doc/using/windows.rst:48
 msgid ""
@@ -1756,8 +1747,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:55
-msgid ""
-"`For Windows users <http://www.swaroopch.com/notes/python/#install_windows>`_"
+msgid "For Windows users"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:54
@@ -1778,7 +1768,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:67
-msgid "`ActivePython <http://www.activestate.com/activepython/>`_"
+msgid "ActivePython"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:67
@@ -1786,8 +1776,7 @@ msgid "Installer with multi-platform compatibility, documentation, PyWin32"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:71
-msgid ""
-"`Enthought Python Distribution <https://www.enthought.com/products/epd/>`_"
+msgid "Enthought Python Distribution"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:70
@@ -2455,19 +2444,16 @@ msgstr ""
 "windows/pythonwin/>`_ est une exemple d'application MFC livrée avec PyWin32. "
 "Il s'agit d'un IDE embarqué avec débogueur intégré."
 
-# 100f9662fe0e4c64875ef88306b703ac
 #: ../src/Doc/using/windows.rst:523
-msgid ""
-"`Win32 How Do I...? <http://timgolden.me.uk/python/win32_how_do_i.html>`_"
+msgid "Win32 How Do I...?"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:523
 msgid "by Tim Golden"
 msgstr "par Tim Golden"
 
-# 3560553e94c24696bccac62e239c4e0a
 #: ../src/Doc/using/windows.rst:525
-msgid "`Python and COM <http://www.boddie.org.uk/python/COM.html>`_"
+msgid "Python and COM"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:526
@@ -2580,11 +2566,8 @@ msgstr ""
 msgid "For extension modules, consult :ref:`building-on-windows`."
 msgstr ""
 
-# f5c5256cfc284cc28938c292fdf5de56
 #: ../src/Doc/using/windows.rst:585
-msgid ""
-"`Python + Windows + distutils + SWIG + gcc MinGW <http://sebsauvage.net/"
-"python/mingw.html>`_"
+msgid "Python + Windows + distutils + SWIG + gcc MinGW"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:583
@@ -2594,11 +2577,8 @@ msgid ""
 "and without Microsoft Visual C++\" by Sébastien Sauvage, 2003"
 msgstr ""
 
-# 20de9169858245b3a25788a49de8a8a4
 #: ../src/Doc/using/windows.rst:587
-msgid ""
-"`MingW -- Python extensions <http://oldwiki.mingw.org/index.php/Python"
-"%20extensions>`_"
+msgid "MingW -- Python extensions"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:588
@@ -2610,9 +2590,7 @@ msgid "Other resources"
 msgstr "Autres ressources"
 
 #: ../src/Doc/using/windows.rst:599
-msgid ""
-"`Python Programming On Win32 <http://shop.oreilly.com/product/9781565926219."
-"do>`_"
+msgid "Python Programming On Win32"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:597
@@ -2623,19 +2601,17 @@ msgstr ""
 "\"Help for Windows Programmers\" de Mark Hammond et Andy Robinson, O'Reilly "
 "Media, 2000, ISBN 1-56592-621-8"
 
-# 837cd4194e3b4c33b0b2e4009a23e3fb
 #: ../src/Doc/using/windows.rst:602
-msgid ""
-"`A Python for Windows Tutorial <http://www.imladris.com/Scripts/"
-"PythonForWindows.html>`_"
-msgstr ""
+#, fuzzy
+msgid "A Python for Windows Tutorial"
+msgstr "Compiler Python sous Windows"
 
 #: ../src/Doc/using/windows.rst:602
 msgid "by Amanda Birmingham, 2004"
 msgstr "par Amanda Birmingham, 2004"
 
 #: ../src/Doc/using/windows.rst:604
-msgid ":pep:`397` - Python launcher for Windows"
+msgid "PEP 397 - Python launcher for Windows"
 msgstr ""
 
 #: ../src/Doc/using/windows.rst:605
@@ -2702,10 +2678,6 @@ msgstr ""
 
 #~ msgid "See also"
 #~ msgstr "Voir aussi"
-
-#, fuzzy
-#~ msgid "Python 3.0"
-#~ msgstr "Python 3.0"
 
 #~ msgid "file:line: category: message"
 #~ msgstr "file:line: category: message"

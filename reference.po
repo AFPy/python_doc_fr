@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-28 16:35+0100\n"
+"POT-Creation-Date: 2015-12-14 20:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -414,11 +414,9 @@ msgstr ""
 msgid "Support for multiple context expressions."
 msgstr ""
 
-# 3f31dae7ae0b457180c28ff386d8b377
-# b3c68401b311444e873812eb60267411
 #: ../src/Doc/reference/compound_stmts.rst:440
 #: ../src/Doc/reference/datamodel.rst:2178
-msgid ":pep:`0343` - The \"with\" statement"
+msgid "PEP 0343 - The \"with\" statement"
 msgstr ""
 
 #: ../src/Doc/reference/compound_stmts.rst:440
@@ -538,7 +536,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/compound_stmts.rst:581
-msgid ":pep:`3107` - Function Annotations"
+msgid "PEP 3107 - Function Annotations"
 msgstr ""
 
 #: ../src/Doc/reference/compound_stmts.rst:582
@@ -830,9 +828,8 @@ msgid ""
 "``Ellipsis``.  Its truth value is true."
 msgstr ""
 
-# b8af4e5c60fa44688d3d98b0d3fe7cea
 #: ../src/Doc/reference/datamodel.rst:242
-msgid ":class:`numbers.Number`"
+msgid "numbers.Number"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:177
@@ -850,9 +847,8 @@ msgid ""
 "numbers:"
 msgstr ""
 
-# 349d03b8fbac4031b3bc30ab44e943d0
 #: ../src/Doc/reference/datamodel.rst:217
-msgid ":class:`numbers.Integral`"
+msgid "numbers.Integral"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:189
@@ -879,7 +875,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:212
-msgid "Booleans (:class:`bool`)"
+msgid "Booleans (bool)"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:208
@@ -899,9 +895,8 @@ msgid ""
 "integers."
 msgstr ""
 
-# 3ce6f2d40b7f4510b323d1c9fdf9c34d
 #: ../src/Doc/reference/datamodel.rst:232
-msgid ":class:`numbers.Real` (:class:`float`)"
+msgid "numbers.Real (float)"
 msgstr ""
 
 # 7903b962cec34aee8f333e0f2fb4215e
@@ -917,7 +912,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:242
-msgid ":class:`numbers.Complex` (:class:`complex`)"
+msgid "numbers.Complex (complex)"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:239
@@ -2702,7 +2697,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:1688
-msgid ":pep:`3115` - Metaclasses in Python 3000"
+msgid "PEP 3115 - Metaclasses in Python 3000"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:1689
@@ -2761,7 +2756,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:1729
-msgid ":pep:`3135` - New super"
+msgid "PEP 3135 - New super"
 msgstr ""
 
 #: ../src/Doc/reference/datamodel.rst:1730
@@ -2838,9 +2833,8 @@ msgid ""
 "only in this case the instance is itself a class."
 msgstr ""
 
-# 5409455d49c44f6aa46db229145c95f8
 #: ../src/Doc/reference/datamodel.rst:1810
-msgid ":pep:`3119` - Introducing Abstract Base Classes"
+msgid "PEP 3119 - Introducing Abstract Base Classes"
 msgstr ""
 
 # 966728cc696b41b9b465d0843a51366f
@@ -3934,9 +3928,8 @@ msgid ""
 "expression on the right hand side of an assignment statement."
 msgstr ""
 
-# 46fe4373d01d4cc7a5900cc626613861
 #: ../src/Doc/reference/expressions.rst:382
-msgid ":pep:`0255` - Simple Generators"
+msgid "PEP 0255 - Simple Generators"
 msgstr ""
 
 #: ../src/Doc/reference/expressions.rst:382
@@ -3945,10 +3938,8 @@ msgid ""
 "Python."
 msgstr ""
 
-# 20684de4a4514b71a25c128407069512
-# 28b0eb3a499e409f82cb9a6784ed0c24
 #: ../src/Doc/reference/expressions.rst:386
-msgid ":pep:`0342` - Coroutines via Enhanced Generators"
+msgid "PEP 0342 - Coroutines via Enhanced Generators"
 msgstr ""
 
 #: ../src/Doc/reference/expressions.rst:385
@@ -3958,7 +3949,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/expressions.rst:389
-msgid ":pep:`0380` - Syntax for Delegating to a Subgenerator"
+msgid "PEP 0380 - Syntax for Delegating to a Subgenerator"
 msgstr ""
 
 #: ../src/Doc/reference/expressions.rst:389
@@ -7189,9 +7180,8 @@ msgid ""
 "underscore characters:"
 msgstr ""
 
-# ffc2f0fe74f84a19bb74d52661a2cdd1
 #: ../src/Doc/reference/lexical_analysis.rst:370
-msgid "``_*``"
+msgid "_*"
 msgstr ""
 
 #: ../src/Doc/reference/lexical_analysis.rst:361
@@ -7210,9 +7200,8 @@ msgid ""
 "this convention."
 msgstr ""
 
-# 826eeb36340146b79735de5584fdbd76
 #: ../src/Doc/reference/lexical_analysis.rst:378
-msgid "``__*__``"
+msgid "__*__"
 msgstr ""
 
 # 1d79d9c82a864c22974d73858a7d156c
@@ -7226,9 +7215,8 @@ msgid ""
 "subject to breakage without warning."
 msgstr ""
 
-# 7957f5a31edf45909938e9243889694f
 #: ../src/Doc/reference/lexical_analysis.rst:385
-msgid "``__*``"
+msgid "__*"
 msgstr ""
 
 #: ../src/Doc/reference/lexical_analysis.rst:381
@@ -7932,7 +7920,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/simple_stmts.rst:253
-msgid ":pep:`3132` - Extended Iterable Unpacking"
+msgid "PEP 3132 - Extended Iterable Unpacking"
 msgstr ""
 
 #: ../src/Doc/reference/simple_stmts.rst:254
@@ -8521,9 +8509,8 @@ msgid ""
 "interactive session started after the script is executed."
 msgstr ""
 
-# ecb182bb1b3f42eea4bcc4de576bc240
 #: ../src/Doc/reference/simple_stmts.rst:836
-msgid ":pep:`236` - Back to the __future__"
+msgid "PEP 236 - Back to the __future__"
 msgstr ""
 
 #: ../src/Doc/reference/simple_stmts.rst:837
@@ -8603,7 +8590,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/reference/simple_stmts.rst:919
-msgid ":pep:`3104` - Access to Names in Outer Scopes"
+msgid "PEP 3104 - Access to Names in Outer Scopes"
 msgstr ""
 
 #: ../src/Doc/reference/simple_stmts.rst:920

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-19 00:36+0100\n"
+"POT-Creation-Date: 2015-12-14 20:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1580,7 +1580,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/install/index.rst:1017
-msgid "`C++Builder Compiler <http://www.embarcadero.com/downloads>`_"
+msgid "C++Builder Compiler"
 msgstr ""
 
 #: ../src/Doc/install/index.rst:1016
@@ -1589,11 +1589,8 @@ msgid ""
 "download pages."
 msgstr ""
 
-# 0d82710261f94ebe8bd82a8a381ddec6
 #: ../src/Doc/install/index.rst:1020
-msgid ""
-"`Creating Python Extensions Using Borland's Free Compiler <http://www."
-"cyberus.ca/~g_will/pyExtenDL.shtml>`_"
+msgid "Creating Python Extensions Using Borland's Free Compiler"
 msgstr ""
 
 #: ../src/Doc/install/index.rst:1020
@@ -1691,9 +1688,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/install/index.rst:1087
-msgid ""
-"`Building Python modules on MS Windows platform with MinGW <http://old.zope."
-"org/Members/als/tips/win32_mingw_modules>`_"
+msgid "Building Python modules on MS Windows platform with MinGW"
 msgstr ""
 
 #: ../src/Doc/install/index.rst:1088

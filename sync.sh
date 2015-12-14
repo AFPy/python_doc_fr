@@ -7,6 +7,13 @@
 ##  - Eventually commit
 ##  - Regenerate the french HTML documentation
 
+if ! type sphinx-build >/dev/null
+then
+    printf "%s (%s)\n" "Missing sphinx-build" \
+           "pip3 install --user -U -r requirements.txt" >&2
+    exit 1
+fi
+
 if ! [ -d src/ ]
 then
     echo "Cloning cpython sources from github"

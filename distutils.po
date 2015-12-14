@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-19 00:36+0100\n"
+"POT-Creation-Date: 2015-12-14 20:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,24 +54,20 @@ msgstr ""
 "La fonction setup prend un grand nombre d'arguments. Ils sont présentés dans "
 "le tableau suivant."
 
-#: ../src/Doc/distutils/apiref.rst:32
-#: ../src/Doc/distutils/apiref.rst:175
+#: ../src/Doc/distutils/apiref.rst:32 ../src/Doc/distutils/apiref.rst:175
 msgid "argument name"
 msgstr "nom de l'argument"
 
-#: ../src/Doc/distutils/apiref.rst:32
-#: ../src/Doc/distutils/apiref.rst:133
+#: ../src/Doc/distutils/apiref.rst:32 ../src/Doc/distutils/apiref.rst:133
 #: ../src/Doc/distutils/apiref.rst:175
 msgid "value"
 msgstr "valeur"
 
-#: ../src/Doc/distutils/apiref.rst:32
-#: ../src/Doc/distutils/apiref.rst:175
+#: ../src/Doc/distutils/apiref.rst:32 ../src/Doc/distutils/apiref.rst:175
 msgid "type"
 msgstr "type"
 
-#: ../src/Doc/distutils/apiref.rst:34
-#: ../src/Doc/distutils/apiref.rst:177
+#: ../src/Doc/distutils/apiref.rst:34 ../src/Doc/distutils/apiref.rst:177
 msgid "*name*"
 msgstr "*name*"
 
@@ -80,20 +76,13 @@ msgstr "*name*"
 msgid "The name of the package"
 msgstr "Le nom du paquet"
 
-#: ../src/Doc/distutils/apiref.rst:34
-#: ../src/Doc/distutils/apiref.rst:36
-#: ../src/Doc/distutils/apiref.rst:40
-#: ../src/Doc/distutils/apiref.rst:43
-#: ../src/Doc/distutils/apiref.rst:46
-#: ../src/Doc/distutils/apiref.rst:48
-#: ../src/Doc/distutils/apiref.rst:51
-#: ../src/Doc/distutils/apiref.rst:58
-#: ../src/Doc/distutils/apiref.rst:62
-#: ../src/Doc/distutils/apiref.rst:65
-#: ../src/Doc/distutils/apiref.rst:86
-#: ../src/Doc/distutils/apiref.rst:96
-#: ../src/Doc/distutils/apiref.rst:177
-#: ../src/Doc/distutils/apiref.rst:267
+#: ../src/Doc/distutils/apiref.rst:34 ../src/Doc/distutils/apiref.rst:36
+#: ../src/Doc/distutils/apiref.rst:40 ../src/Doc/distutils/apiref.rst:43
+#: ../src/Doc/distutils/apiref.rst:46 ../src/Doc/distutils/apiref.rst:48
+#: ../src/Doc/distutils/apiref.rst:51 ../src/Doc/distutils/apiref.rst:58
+#: ../src/Doc/distutils/apiref.rst:62 ../src/Doc/distutils/apiref.rst:65
+#: ../src/Doc/distutils/apiref.rst:86 ../src/Doc/distutils/apiref.rst:96
+#: ../src/Doc/distutils/apiref.rst:177 ../src/Doc/distutils/apiref.rst:267
 msgid "a string"
 msgstr "une chaîne de caractères"
 
@@ -183,20 +172,13 @@ msgstr "*packages*"
 msgid "A list of Python packages that distutils will manipulate"
 msgstr "Une liste des paquets Python que distutils va manipuler"
 
-#: ../src/Doc/distutils/apiref.rst:67
-#: ../src/Doc/distutils/apiref.rst:70
-#: ../src/Doc/distutils/apiref.rst:73
-#: ../src/Doc/distutils/apiref.rst:90
-#: ../src/Doc/distutils/apiref.rst:183
-#: ../src/Doc/distutils/apiref.rst:196
-#: ../src/Doc/distutils/apiref.rst:212
-#: ../src/Doc/distutils/apiref.rst:215
-#: ../src/Doc/distutils/apiref.rst:219
-#: ../src/Doc/distutils/apiref.rst:223
-#: ../src/Doc/distutils/apiref.rst:229
-#: ../src/Doc/distutils/apiref.rst:236
-#: ../src/Doc/distutils/apiref.rst:247
-#: ../src/Doc/distutils/apiref.rst:256
+#: ../src/Doc/distutils/apiref.rst:67 ../src/Doc/distutils/apiref.rst:70
+#: ../src/Doc/distutils/apiref.rst:73 ../src/Doc/distutils/apiref.rst:90
+#: ../src/Doc/distutils/apiref.rst:183 ../src/Doc/distutils/apiref.rst:196
+#: ../src/Doc/distutils/apiref.rst:212 ../src/Doc/distutils/apiref.rst:215
+#: ../src/Doc/distutils/apiref.rst:219 ../src/Doc/distutils/apiref.rst:223
+#: ../src/Doc/distutils/apiref.rst:229 ../src/Doc/distutils/apiref.rst:236
+#: ../src/Doc/distutils/apiref.rst:247 ../src/Doc/distutils/apiref.rst:256
 #: ../src/Doc/distutils/apiref.rst:264
 msgid "a list of strings"
 msgstr "une liste de chaînes"
@@ -284,8 +266,7 @@ msgstr "*options*"
 msgid "default options for the setup script"
 msgstr "options par défaut pour le script d'installation"
 
-#: ../src/Doc/distutils/apiref.rst:93
-#: ../src/Doc/distutils/apiref.rst:103
+#: ../src/Doc/distutils/apiref.rst:93 ../src/Doc/distutils/apiref.rst:103
 #: ../src/Doc/distutils/apiref.rst:109
 msgid "a dictionary"
 msgstr "un dictionnaire"
@@ -308,8 +289,7 @@ msgstr "Méta-données descriptives, voir :pep:`314`"
 
 # 8f23dc2f9ac4479bb2900fcf5d35e4cf
 # 3fb5af30cc284b4fad9420d3be662b07
-#: ../src/Doc/distutils/apiref.rst:98
-#: ../src/Doc/distutils/apiref.rst:101
+#: ../src/Doc/distutils/apiref.rst:98 ../src/Doc/distutils/apiref.rst:101
 msgid "a list of strings or a comma-separated string"
 msgstr ""
 
@@ -372,8 +352,7 @@ msgid ""
 "*stop_after* tells :func:`setup` when to stop processing; possible  values:"
 msgstr "*stop_after* dit à :func:`setup` quand s'arrêter; valeurs possibles:"
 
-#: ../src/Doc/distutils/apiref.rst:133
-#: ../src/Doc/distutils/apiref.rst:542
+#: ../src/Doc/distutils/apiref.rst:133 ../src/Doc/distutils/apiref.rst:542
 #: ../src/Doc/distutils/apiref.rst:1555
 msgid "description"
 msgstr "description"
@@ -1065,8 +1044,7 @@ msgid ""
 "matters: the *debug* flag is included here just for consistency)."
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:625
-#: ../src/Doc/distutils/apiref.rst:667
+#: ../src/Doc/distutils/apiref.rst:625 ../src/Doc/distutils/apiref.rst:667
 msgid ""
 "*target_lang* is the target language for which the given objects are being "
 "compiled. This allows specific linkage time treatment of certain languages."
@@ -2144,8 +2122,7 @@ msgid ""
 "the ``'#'``\\ ---unless it is escaped by a backslash"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1557
-#: ../src/Doc/distutils/apiref.rst:1566
+#: ../src/Doc/distutils/apiref.rst:1557 ../src/Doc/distutils/apiref.rst:1566
 #: ../src/Doc/distutils/apiref.rst:1571
 msgid "true"
 msgstr ""
@@ -2158,8 +2135,7 @@ msgstr ""
 msgid "strip leading whitespace from each line before returning it"
 msgstr ""
 
-#: ../src/Doc/distutils/apiref.rst:1563
-#: ../src/Doc/distutils/apiref.rst:1581
+#: ../src/Doc/distutils/apiref.rst:1563 ../src/Doc/distutils/apiref.rst:1581
 #: ../src/Doc/distutils/apiref.rst:1592
 msgid "false"
 msgstr ""
@@ -2642,13 +2618,11 @@ msgstr ""
 msgid "The available formats for built distributions are:"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:73
-#: ../src/Doc/distutils/sourcedist.rst:25
+#: ../src/Doc/distutils/builtdist.rst:73 ../src/Doc/distutils/sourcedist.rst:25
 msgid "Format"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:73
-#: ../src/Doc/distutils/commandref.rst:61
+#: ../src/Doc/distutils/builtdist.rst:73 ../src/Doc/distutils/commandref.rst:61
 #: ../src/Doc/distutils/setupscript.rst:562
 #: ../src/Doc/distutils/sourcedist.rst:25
 msgid "Description"
@@ -2660,8 +2634,7 @@ msgstr ""
 msgid "Notes"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:75
-#: ../src/Doc/distutils/sourcedist.rst:29
+#: ../src/Doc/distutils/builtdist.rst:75 ../src/Doc/distutils/sourcedist.rst:29
 msgid "``gztar``"
 msgstr ""
 
@@ -2669,23 +2642,19 @@ msgstr ""
 msgid "gzipped tar file (:file:`.tar.gz`)"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:75
-#: ../src/Doc/distutils/sourcedist.rst:27
+#: ../src/Doc/distutils/builtdist.rst:75 ../src/Doc/distutils/sourcedist.rst:27
 msgid "(1),(3)"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:78
-#: ../src/Doc/distutils/sourcedist.rst:35
+#: ../src/Doc/distutils/builtdist.rst:78 ../src/Doc/distutils/sourcedist.rst:35
 msgid "``ztar``"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:78
-#: ../src/Doc/distutils/sourcedist.rst:35
+#: ../src/Doc/distutils/builtdist.rst:78 ../src/Doc/distutils/sourcedist.rst:35
 msgid "compressed tar file (:file:`.tar.Z`)"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:78
-#: ../src/Doc/distutils/builtdist.rst:81
+#: ../src/Doc/distutils/builtdist.rst:78 ../src/Doc/distutils/builtdist.rst:81
 #: ../src/Doc/distutils/setupscript.rst:568
 #: ../src/Doc/distutils/setupscript.rst:570
 #: ../src/Doc/distutils/setupscript.rst:573
@@ -2693,23 +2662,19 @@ msgstr ""
 msgid "\\(3)"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:81
-#: ../src/Doc/distutils/sourcedist.rst:38
+#: ../src/Doc/distutils/builtdist.rst:81 ../src/Doc/distutils/sourcedist.rst:38
 msgid "``tar``"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:81
-#: ../src/Doc/distutils/sourcedist.rst:38
+#: ../src/Doc/distutils/builtdist.rst:81 ../src/Doc/distutils/sourcedist.rst:38
 msgid "tar file (:file:`.tar`)"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:83
-#: ../src/Doc/distutils/sourcedist.rst:27
+#: ../src/Doc/distutils/builtdist.rst:83 ../src/Doc/distutils/sourcedist.rst:27
 msgid "``zip``"
 msgstr ""
 
-#: ../src/Doc/distutils/builtdist.rst:83
-#: ../src/Doc/distutils/sourcedist.rst:27
+#: ../src/Doc/distutils/builtdist.rst:83 ../src/Doc/distutils/sourcedist.rst:27
 msgid "zip file (:file:`.zip`)"
 msgstr ""
 
@@ -3614,9 +3579,8 @@ msgid ""
 "split across multiple lines for readability."
 msgstr ""
 
-# 2ca284a78b92452f8d215fd92d40afac
 #: ../src/Doc/distutils/configfile.rst:124
-msgid ":ref:`inst-config-syntax` in \"Installing Python Modules\""
+msgid "inst-config-syntax in \"Installing Python Modules\""
 msgstr ""
 
 #: ../src/Doc/distutils/configfile.rst:124
@@ -3647,7 +3611,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/distutils/examples.rst:14
-msgid "`Distutils Cookbook <https://wiki.python.org/moin/Distutils/Cookbook>`_"
+msgid "Distutils Cookbook"
 msgstr ""
 
 #: ../src/Doc/distutils/examples.rst:15
@@ -4579,9 +4543,8 @@ msgstr ""
 msgid "Each section describing a repository defines three variables:"
 msgstr ""
 
-# fbdb8f39e3794116834764205597ef1e
 #: ../src/Doc/distutils/packageindex.rst:175
-msgid "*repository*, that defines the url of the PyPI server. Defaults to"
+msgid "repository, that defines the url of the PyPI server. Defaults to"
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:176
@@ -4592,9 +4555,8 @@ msgstr ""
 msgid "*username*, which is the registered username on the PyPI server."
 msgstr ""
 
-# 5f905574e8ff42d4affadb2135f39b63
 #: ../src/Doc/distutils/packageindex.rst:179
-msgid "*password*, that will be used to authenticate. If omitted the user"
+msgid "password, that will be used to authenticate. If omitted the user"
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:179

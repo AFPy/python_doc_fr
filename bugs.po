@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-19 00:36+0100\n"
+"POT-Creation-Date: 2015-12-14 20:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,11 +165,8 @@ msgstr ""
 "org/dev/workflow/ pour une description détaillée du processus de traitement "
 "des problèmes."
 
-# 69a83a070002401aac0ef159d635dec6
 #: ../src/Doc/bugs.rst:69
-msgid ""
-"`How to Report Bugs Effectively <http://www.chiark.greenend.org.uk/~sgtatham/"
-"bugs.html>`_"
+msgid "How to Report Bugs Effectively"
 msgstr ""
 
 #: ../src/Doc/bugs.rst:68
@@ -182,9 +179,7 @@ msgstr ""
 "est utile."
 
 #: ../src/Doc/bugs.rst:72
-msgid ""
-"`Bug Writing Guidelines <https://developer.mozilla.org/en-US/docs/Mozilla/QA/"
-"Bug_writing_guidelines>`_"
+msgid "Bug Writing Guidelines"
 msgstr ""
 
 #: ../src/Doc/bugs.rst:72
