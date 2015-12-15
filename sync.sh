@@ -5,7 +5,6 @@
 ##  - Regenerate pot files
 ##  - Merge each pot in corresponding po
 ##  - Eventually commit
-##  - Regenerate the french HTML documentation
 
 if ! type sphinx-build >/dev/null
 then
@@ -53,15 +52,3 @@ echo "Git add and git commit changed po files."
         echo "Won't commit, no changes."
     fi
 )
-
-echo "Compiling po files to mo files"
-mkdir -p mo/fr/LC_MESSAGES/
-for PO in *.po
-do
-    MO="${PO%.po}.mo"
-    echo "msgfmt $PO to $MO"
-    msgfmt "$PO" -o "mo/fr/LC_MESSAGES/${MO}"
-done
-
-echo "Rebuilding local documentation cpython source"
-sphinx-build src/Doc build
