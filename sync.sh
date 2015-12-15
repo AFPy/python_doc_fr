@@ -38,7 +38,12 @@ echo "Merge each pot file to corresponding po file."
 for POT in pot/*
 do
     PO="$(basename ${POT%.pot}.po)"
-    msgmerge -U $PO $POT
+    if [ -f "$PO" ]
+    then
+        msgmerge -U $PO $POT
+    else
+        echo "Skipping $POT, it has no po file for the moment."
+    fi
 done
 
 echo "Git add and git commit changed po files."
