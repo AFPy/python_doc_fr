@@ -46,14 +46,14 @@ do
     fi
 done
 
-echo "Git add and git commit changed po files."
 (
     git add *.po
     HAS_MOD="$(git status -su | wc -l | awk '{print $1}')"
     if [ $HAS_MOD != 0 ]
     then
+        echo "Git add and git commit changed po files."
         git commit -a -m 'merge pot files'
     else
-        echo "Won't commit, no changes."
+        echo "No changes."
     fi
 )
