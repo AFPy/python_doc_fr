@@ -7,14 +7,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 00:36+0100\n"
-"PO-Revision-Date: 2015-12-14 23:58+0100\n"
+"PO-Revision-Date: 2015-12-15 21:53+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Vé 0.1.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../src/Doc/glossary.rst:5
@@ -603,11 +603,11 @@ msgstr "objet fichier-compatible"
 # b948ad82982548409e3c905be43aa371
 #: ../src/Doc/glossary.rst:250
 msgid "A synonym for :term:`file object`."
-msgstr ""
+msgstr "Un synonyme de :term:`objet fichier `."
 
 #: ../src/Doc/glossary.rst:251
 msgid "finder"
-msgstr ""
+msgstr "finder"
 
 #: ../src/Doc/glossary.rst:253
 msgid ""
@@ -836,6 +836,11 @@ msgid ""
 "that overcoming this performance issue would make the implementation much "
 "more complicated and therefore costlier to maintain."
 msgstr ""
+"Les tentatives précédentes d'implémenter un interpréteur Python avec une "
+"granularité de verrouillage plus fine ont toutes échouées, à cause de leur "
+"performances sur un seul processeur. Il est admis que corriger c'est "
+"problèmes de performance induits mènerai vers une implémentation compliquée "
+"et donc plus coûteuse à maintenir."
 
 #: ../src/Doc/glossary.rst:353
 msgid "hashable"
@@ -848,10 +853,10 @@ msgid ""
 "other objects (it needs an :meth:`__eq__` method).  Hashable objects which "
 "compare equal must have the same hash value."
 msgstr ""
-"Un objet est *hachable* s'il a une valeur de hash qui ne change jamais. (et "
-"il a besoin d'une méthode :meth:`__hash__`) et peut être comparé à d'autres "
-"objets (avec la méthode :meth:`__eq__`). Les objets hachables dont ``_eq__`` "
-"dit être équivalents, ont aussi la même valeur de hachage."
+"Un objet est *hachable* s'il a une empreinte (*hash*) qui ne change jamais. "
+"(etil a besoin d'une méthode :meth:`__hash__`) et peut être comparé à "
+"d'autres objets (avec la méthode :meth:`__eq__`). Les objets hachables dont "
+"``_eq__`` dit être équivalents, ont aussi la même empreinte."
 
 #: ../src/Doc/glossary.rst:360
 msgid ""
@@ -860,7 +865,7 @@ msgid ""
 msgstr ""
 "La hashabilité permet à un objet d'être utilisé comme clef de dictionnaire, "
 "ou en temps que membre d'un *set*, car ces structures de données utilisent "
-"ce hash."
+"ce *hash*."
 
 #: ../src/Doc/glossary.rst:363
 msgid ""
@@ -870,6 +875,12 @@ msgid ""
 "(except with themselves), and their hash value is derived from their :func:"
 "`id`."
 msgstr ""
+"Tous les types immuables fournis par Python sont hachables, et aucun type "
+"variable (comme les listes ou les dictionnaires) ne l'est. Toutes les "
+"instances de classes définies par les utilisateurs sont hachables par "
+"défaut, elles sont toutes différentes selon ``__eq__``, sauf comparées à "
+"elles mêmes, et leur empreinte (*hash*) est calculée à partir de leur :func:"
+"`id`."
 
 #: ../src/Doc/glossary.rst:368
 msgid "IDLE"
@@ -914,6 +925,10 @@ msgid ""
 "list of locations usually comes from :data:`sys.path`, but for subpackages "
 "it may also come from the parent package's ``__path__`` attribute."
 msgstr ""
+"Une liste de :term:`chemins <chemin>` dans lesquels le :term:`path based "
+"finder` cherche les modules à importer. Typiquement lors d'un import cette "
+"liste vient de :data:`sys.path`, mais pour les sous paquets, elle peut aussi "
+"venir de l'attribut ``__path__`` du paquet parent."
 
 #: ../src/Doc/glossary.rst:387
 msgid "importing"
@@ -970,6 +985,13 @@ msgid ""
 "shorter development/debug cycle than compiled ones, though their programs "
 "generally also run more slowly.  See also :term:`interactive`."
 msgstr ""
+"Python est un langage interprété, en opposition aux langages compilés, bien "
+"que la frontière soit floue du à la présence d'un compilateur en bytecode. "
+"Cela signifie que les fichiers sources peuvent être exécutés directement, "
+"sans avoir à compiler un fichier exécutable intermédiaire. Les langages "
+"interprétées ont généralement un cycle de développement / débug plus rapide, "
+"et ils s'exécutent généralement plus lentement. Voir aussi :term:"
+"`interactif`."
 
 #: ../src/Doc/glossary.rst:412
 msgid "iterable"
@@ -1060,6 +1082,14 @@ msgid ""
 "methodcaller`.  See the :ref:`Sorting HOW TO <sortinghowto>` for examples of "
 "how to create and use key functions."
 msgstr ""
+"La méthode `str.lower` peut servir en fonction clef pour effectuer des "
+"recherches insensibles à la casse. Aussi, il est possible de créer des "
+"fonctions clef au besoin avec des expressions lambda, comme ``lambda r: "
+"(r[0], r[2])``. Finalement le module :mod:`operator` fournit des "
+"constructeurs de fonctions clef : :func:`~operator.attrgetter`, :func:"
+"`~operator.itemgetter`, et :func:`~operator.methodcaller`. Voir :ref:"
+"`Comment Trier <sortinghowto>` pour avoir des exemple de création et "
+"d'utilisation de fonctions clés."
 
 #: ../src/Doc/glossary.rst:466
 msgid "keyword argument"
@@ -1087,7 +1117,7 @@ msgstr ""
 
 #: ../src/Doc/glossary.rst:474
 msgid "LBYL"
-msgstr ""
+msgstr "LBYL"
 
 #: ../src/Doc/glossary.rst:476
 msgid ""
@@ -1096,6 +1126,10 @@ msgid ""
 "approach and is characterized by the presence of many :keyword:`if` "
 "statements."
 msgstr ""
+"Regarde devant avant de tomber, (*Look before you leap*). Ce style de "
+"programmation consiste à vérifier des conditions avant d'effectuer des "
+"appels ou des accès. Ce style contraste avec le style :term:`EAFP` et se "
+"caractérise par la présence de beaucoup d'instructions :keyword : `if`."
 
 # 0dc5595fdc784d8f9afbc265a54ccb9e
 #: ../src/Doc/glossary.rst:481
@@ -1106,10 +1140,16 @@ msgid ""
 "thread removes *key* from *mapping* after the test, but before the lookup. "
 "This issue can be solved with locks or by using the EAFP approach."
 msgstr ""
+"Dans un environnement multi-thread, le style *LBYL* peut engendrer une "
+"séquence critique (*race condition*) entre \"regarder\" et \"tomber\". Par "
+"exemple, le code ``if key in mapping: return mapping[key]`` peut échouer si "
+"un autre thread supprime la clef *key* du *mapping* après le test mais avant "
+"l'accès. Ce problème peut être résolu avec des verrous (*locks*) ou avec "
+"l'approche EAFP."
 
 #: ../src/Doc/glossary.rst:486
 msgid "list"
-msgstr ""
+msgstr "list"
 
 #: ../src/Doc/glossary.rst:488
 msgid ""
@@ -1117,10 +1157,13 @@ msgid ""
 "array in other languages than to a linked list since access to elements are "
 "O(1)."
 msgstr ""
+"Un type natif de :term:`sequence` dans Python. En dépit de son nom, une "
+"``list`` ressemble plus à un *array* qu'à une liste chaînée puisque les "
+"accès se font en O(1)."
 
 #: ../src/Doc/glossary.rst:491
 msgid "list comprehension"
-msgstr ""
+msgstr "liste en compréhension"
 
 #: ../src/Doc/glossary.rst:493
 msgid ""
@@ -1130,10 +1173,16 @@ msgid ""
 "numbers (0x..) in the range from 0 to 255. The :keyword:`if` clause is "
 "optional.  If omitted, all elements in ``range(256)`` are processed."
 msgstr ""
+"Un moyen compacte de manipuler tous ou partie des éléments d'une séquence "
+"renvoyant une liste avec les résultats. ``result = ['{:#04x}'.format(x) for "
+"x in range(256) if x % 2 == 0]`` génère une liste de chaînes de caractères "
+"contenant les nombres paires sous forme hexadécimale (0x...) de 0 à 255. La "
+"clause :keyword : `if` est optionnelle. Si elle est omise, tous les éléments "
+"du ``range(256)`` seront utilisés."
 
 #: ../src/Doc/glossary.rst:499
 msgid "loader"
-msgstr ""
+msgstr "loader"
 
 #: ../src/Doc/glossary.rst:501
 msgid ""
@@ -1142,10 +1191,14 @@ msgid ""
 "`302` for details and :class:`importlib.abc.Loader` for an :term:`abstract "
 "base class`."
 msgstr ""
+"Un objet qui charge un module. Il doit définir une méthode nommée :meth:"
+"`load_module`. Un *loader* est typiquement donné par un :term:`finder`. "
+"Voir :pep:`302` pour les détails et :class:`importlib.ABC.Loader` pour sa :"
+"term:`classe de base abstraite`."
 
 #: ../src/Doc/glossary.rst:505
 msgid "mapping"
-msgstr ""
+msgstr "mapping"
 
 #: ../src/Doc/glossary.rst:507
 msgid ""
@@ -1156,10 +1209,16 @@ msgid ""
 "`collections.defaultdict`, :class:`collections.OrderedDict` and :class:"
 "`collections.Counter`."
 msgstr ""
+"Un conteneur acceptant de rechercher des éléments par clef et implémente les "
+"méthodes des :ref:`classes de base abstraites <collections-abstract-base-"
+"classes>` :class : `collections.abc.Mapping` ou :class : `collections.abc."
+"MutableMapping`. Les classes suivantes sont des exemples de mapping: :class:"
+"`dict`, :class:`collections.defaultdict`, :class:`collections.OrderedDict`, "
+"et :class:`collections.Counter`."
 
 #: ../src/Doc/glossary.rst:513
 msgid "meta path finder"
-msgstr ""
+msgstr "meta path finder"
 
 #: ../src/Doc/glossary.rst:515
 msgid ""
@@ -1167,12 +1226,16 @@ msgid ""
 "are related to, but different from :term:`path entry finders <path entry "
 "finder>`."
 msgstr ""
+"Un *finder* résultat d'une recherche de :data:`sys.meta_path`. Les *meta "
+"path finders* ressemblent, mais différent des :term:`path entry finders "
+"<path entry finder>`."
 
 #: ../src/Doc/glossary.rst:518
 msgid "metaclass"
-msgstr ""
+msgstr "metaclasse"
 
 #: ../src/Doc/glossary.rst:520
+#, fuzzy
 msgid ""
 "The class of a class.  Class definitions create a class name, a class "
 "dictionary, and a list of base classes.  The metaclass is responsible for "
@@ -1184,14 +1247,17 @@ msgid ""
 "access, adding thread-safety, tracking object creation, implementing "
 "singletons, and many other tasks."
 msgstr ""
+"La classe d'une classe. Les définitions de classe créent un nom pour la "
+"classe, un dictionnaire et une liste de classes patentes. La métaclasse a "
+"pour rôle de réunir ces trois paramètres pour construire la classe."
 
 #: ../src/Doc/glossary.rst:530
 msgid "More information can be found in :ref:`metaclasses`."
-msgstr ""
+msgstr "Plus d'informations à ce sujet : :ref:`metaclasses`."
 
 #: ../src/Doc/glossary.rst:531
 msgid "method"
-msgstr ""
+msgstr "méthode"
 
 #: ../src/Doc/glossary.rst:533
 msgid ""
@@ -1200,17 +1266,23 @@ msgid ""
 "first :term:`argument` (which is usually called ``self``). See :term:"
 "`function` and :term:`nested scope`."
 msgstr ""
+"Une fonction définie dans une classe. Lorsqu'elle est appelée comme un "
+"attribut d'une instance, la méthode reçoit l'instance en premier :term:"
+"`argument` (qui par convention est nommé ``self``). Voir :term:`function` "
+"et :term:`nested scope`."
 
 #: ../src/Doc/glossary.rst:537
 msgid "method resolution order"
-msgstr ""
+msgstr "ordre de résolution des méthodes"
 
 #: ../src/Doc/glossary.rst:539
+#, fuzzy
 msgid ""
 "Method Resolution Order is the order in which base classes are searched for "
 "a member during lookup. See `The Python 2.3 Method Resolution Order <https://"
 "www.python.org/download/releases/2.3/mro/>`_."
 msgstr ""
+"L'ordre de résolution des méthodes (*MRO* de *Method Resolution Order*)"
 
 #: ../src/Doc/glossary.rst:542
 msgid "module"
