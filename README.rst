@@ -19,7 +19,7 @@ d'une des façons suivantes:
 
 Éditer les fichiers avec l'éditeur de votre choix, il en existe beaucoup:
 
-* Le classique: <http://www.poedit.net/>`_
+* Le classique: `poedit <http://www.poedit.net/>`_
 * gted
 * gtranslator
 * lokalize
@@ -33,7 +33,7 @@ Puis vous n'avez plus qu'à vous occuper du texte en français.
 Une fois votre contribution écrite, transmettez-la nous :
 
 * soit par un pull-request (si vous avez fait un fork)
-* soit en la joignant à un `ticket github<https://github.com/AFPy/python_doc_fr/issues>`
+* soit en la joignant à un `ticket github <https://github.com/AFPy/python_doc_fr/issues>`_
 * soit par mail à la `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_
 
 Norme
@@ -52,7 +52,7 @@ pouvez donc utiliser cette ligne pour remettre vos traductions en forme:
 
     for po in *.po; do echo $po; tac $po | tac | msgcat - -o $po; done
 
-(L'astuce tac|tac c'est pour lire entièrement le fichier avant de
+(L'astuce ``tac|tac`` c'est pour lire entièrement le fichier avant de
 l'écrire).
 
 Quelles sont les priorités ?
@@ -76,7 +76,7 @@ Aides à la traduction
   qui contient des traductions consolidées de plusieur projets.
 * Consultez aussi le site de `traduc.org <http://traduc.org>`_
   qui contient de nombreuses informations pour les traducteurs.
-* `Le grand dictionnaire terminologique` <http://gdt.oqlf.gouv.qc.ca/>`_
+* `Le grand dictionnaire terminologique <http://gdt.oqlf.gouv.qc.ca/>`_
 * glossary.po tout simplement, ou `le glossaire traduit <http://www.afpy.org/doc/python/3.4/glossary.html>`_
 
 Uniformisation du vocabulaire
@@ -87,37 +87,37 @@ traduction de quelques termes techniques, rappelant ainsi les
 anglicismes à éviter, ce n'est qu'une proposition discutable (ouvrez
 un ticket si vous n'êtes pas d'acord) :
 
- * -like => -compaticle (Pas toujours élégant)
- * abstract data type => type abstrait
- * argument => argument (et non paramètre (qui est la traduction de parameter))
- * backslash => antislash
- * bound => lier
- * bug => bug (Bogue étant déjà pris par la châtaigne...)
- * débugging => débogage (en contradiction avec le précédent ?)
- * built-in => primitives, interne
- * double quote => guillemet
- * identifier => identifiant
- * immutable => immuable
- * interpreter => interpréteur
- * library => bibliothèque
- * list compréhension => compréhension de liste
- * little/big endian => `petit-boutiste et gros-boutiste <https://fr.wikipedia.org/wiki/Les_Voyages_de_Gulliver#Voyage_.C3.A0_Lilliput>`_
- * mutable => variable
- * parameter => paramètre
- * prompt => invite
- * regular expression => expression rationelle
- * simple quote => guillemet simple
- * socket => socket ("Je veux mon niveau ! Chausette ! Chausette !")
- * statement => instruction
- * underscore => tiret bas
+* -like => -compaticle (Pas toujours élégant)
+* abstract data type => type abstrait
+* argument => argument (et non paramètre (qui est la traduction de parameter))
+* backslash => antislash
+* bound => lier
+* bug => bug (Bogue étant déjà pris par la châtaigne...)
+* débugging => débogage (en contradiction avec le précédent ?)
+* built-in => primitives, interne
+* double quote => guillemet
+* identifier => identifiant
+* immutable => immuable
+* interpreter => interpréteur
+* library => bibliothèque
+* list compréhension => compréhension de liste
+* little/big endian => `petit-boutiste et gros-boutiste <https://fr.wikipedia.org/wiki/Les_Voyages_de_Gulliver#Voyage_.C3.A0_Lilliput>`_
+* mutable => variable
+* parameter => paramètre
+* prompt => invite
+* regular expression => expression rationelle
+* simple quote => guillemet simple
+* socket => socket ("Je veux mon niveau ! Chausette ! Chausette !")
+* statement => instruction
+* underscore => tiret bas
 
 Comment ça marche ?
 -------------------
 
 Tout peut être amené à bouger, mais pour le moment, voilà l'état des choses:
 
- - Il n'y à pas (plus) de cron sur afpy.org ni ailleurs.
- - ``pip3 install --user -U -r requirements.txt`` vous installera *sphinx*
- - ``sync.sh`` nous permet de mettre à jour les *msgid* dans les *.po*
- - ``build.sh`` génère une version HTML locale de la doc
- - Le résultat de ``build.sh`` peut être ``rsync`` sur afpy.org, tout simplement.
+- Il n'y à pas (plus) de cron sur afpy.org ni ailleurs.
+- ``pip3 install --user -U -r requirements.txt`` vous installera *sphinx*
+- ``sync.sh`` nous permet de mettre à jour les *msgid* dans les *.po*
+- ``build.sh`` génère une version HTML locale de la doc
+- Le résultat de ``build.sh`` peut être ``rsync`` sur afpy.org, tout simplement.
