@@ -119,4 +119,7 @@ Tout peut être amené à bouger, mais pour le moment, voilà l'état des choses
 - Il n'y à pas (plus) de cron sur afpy.org ni ailleurs.
 - ``sync.sh`` nous permet de mettre à jour les *msgid* dans les fichiers *.po*
 - ``build.sh`` génère une version HTML locale de la doc
-- Le résultat de ``build.sh`` peut être ``rsync`` sur afpy.org, tout simplement.
+- Le résultat de ``build.sh`` peut être ``rsync`` sur afpy.org, tout simplement,
+  `build.sh` vous proposera même une commande pour le faire.
+- L'*index.html* de la `page d'accueil <http://www.afpy.org/doc/python/>`_
+  est généré par *index.sh* à partir de *index.md* et de *index.tpl*.
