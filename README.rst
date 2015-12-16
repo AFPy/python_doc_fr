@@ -116,7 +116,7 @@ Comment ça marche ?
 
 Tout peut être amené à bouger, mais pour le moment, voilà l'état des choses :
 
-- Il n'y à pas (plus) de cron sur afpy.org ni ailleurs.
+- Il n'y a pas (plus) de cron sur afpy.org ni ailleurs.
 - ``sync.sh`` nous permet de mettre à jour les *msgid* dans les fichiers *.po*
 - ``build.sh`` génère une version HTML locale de la doc
 - Le résultat de ``build.sh`` peut être ``rsync`` sur afpy.org, tout simplement,
