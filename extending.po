@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-14 23:59+0100\n"
+"POT-Creation-Date: 2015-12-18 15:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,7 +187,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/extending/embedding.rst:42
-msgid ":ref:`c-api-index`"
+msgid "c-api-index"
 msgstr ""
 
 #: ../src/Doc/extending/embedding.rst:42
@@ -1842,9 +1842,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/extending/index.rst:38
-msgid ""
-"`Python Packaging User Guide: Binary Extensions <https://packaging.python."
-"org/en/latest/extensions.html>`_"
+msgid "Python Packaging User Guide: Binary Extensions"
 msgstr ""
 
 #: ../src/Doc/extending/index.rst:36

@@ -29,7 +29,7 @@ echo "Rebuilding local documentation cpython source"
 sphinx-build src/Doc build
 
 echo "Adding header in the doc to advertise the github."
-sed -i 's|<body role="document">|\0<div class="body" style="line-height: 25px; width:100%; font-size: 90%; text-align:center"><a href="https://www.github.com/AFPY/python_doc_fr/">Envie d'\''aider à traduire ?</a></div>|' *.html **/*.html
+sed -i 's|<body role="document">|\0<div class="body" style="line-height: 25px; width:100%; font-size: 90%; text-align:center"><a href="https://www.github.com/AFPY/python_doc_fr/">Envie d'\''aider à traduire ?</a></div>|' **/*.html
 
 echo "You may run :"
 printf "%s\n" "rsync -az build/ afpy.org:/home/mandark/www/3.4/"

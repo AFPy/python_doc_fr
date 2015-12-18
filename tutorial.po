@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-14 23:59+0100\n"
+"POT-Creation-Date: 2015-12-18 15:36+0100\n"
 "PO-Revision-Date: 2015-12-15 00:12+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
@@ -6102,7 +6102,8 @@ msgid "The built-in function :func:`len` returns the length of a string::"
 msgstr "La fonction native :func:`len` renvoie la longueur d'une chaîne ::"
 
 #: ../src/Doc/tutorial/introduction.rst:349
-msgid ":ref:`textseq`"
+#, fuzzy
+msgid "textseq"
 msgstr ":ref:`textseq`"
 
 # dc94a4264e3a4a0fa21b4f0848b59ea8
@@ -6116,7 +6117,8 @@ msgstr ""
 
 # 33023ea434814001bef16f2efe37b113
 #: ../src/Doc/tutorial/introduction.rst:353
-msgid ":ref:`string-methods`"
+#, fuzzy
+msgid "string-methods"
 msgstr ":ref:`string-methods`"
 
 # 0e3c9c88390d40f8b435ceca2e3e5fa2
@@ -6129,8 +6131,9 @@ msgstr ""
 "transformations basiques et de recherche."
 
 #: ../src/Doc/tutorial/introduction.rst:357
-msgid ":ref:`string-formatting`"
-msgstr ":ref:`string-formatting`"
+#, fuzzy
+msgid "string-formatting"
+msgstr "Anciennes méthodes de formatage de chaînes"
 
 #: ../src/Doc/tutorial/introduction.rst:356
 msgid ""
@@ -6140,7 +6143,8 @@ msgstr ""
 "Le formatage des chaînes avec la méthode :meth:`str.format` est décrit ici."
 
 #: ../src/Doc/tutorial/introduction.rst:360
-msgid ":ref:`old-string-formatting`"
+#, fuzzy
+msgid "old-string-formatting"
 msgstr ":ref:`old-string-formatting`"
 
 #: ../src/Doc/tutorial/introduction.rst:360
@@ -8400,12 +8404,10 @@ msgstr ""
 "Questions <faq-index>` (aussi appelée FAQ). La FAQ répond à beaucoup de "
 "questions fréquentes, et contient probablement une solution à votre problème."
 
-#, fuzzy
-#~ msgid "string-formatting"
-#~ msgstr "Anciennes méthodes de formatage de chaînes"
+#~ msgid ":ref:`string-formatting`"
+#~ msgstr ":ref:`string-formatting`"
 
-#, fuzzy
-#~ msgid "old-string-formatting"
+#~ msgid ":ref:`old-string-formatting`"
 #~ msgstr ":ref:`old-string-formatting`"
 
 #~ msgid ""

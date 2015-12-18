@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-14 23:59+0100\n"
+"POT-Creation-Date: 2015-12-18 15:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1401,7 +1401,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:751 ../src/Doc/howto/clinic.rst:1224
-msgid "``c_default``"
+msgid "c_default"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:747
@@ -1413,7 +1413,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:756
-msgid "``annotation``"
+msgid "annotation"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:754
@@ -1429,7 +1429,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:764
-msgid "``bitwise``"
+msgid "bitwise"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:762
@@ -1440,7 +1440,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:769 ../src/Doc/howto/clinic.rst:1238
-msgid "``converter``"
+msgid "converter"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:767
@@ -1451,7 +1451,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:773
-msgid "``encoding``"
+msgid "encoding"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:772
@@ -1461,7 +1461,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:778
-msgid "``length``"
+msgid "length"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:776
@@ -1472,7 +1472,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:782
-msgid "``nullable``"
+msgid "nullable"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:781
@@ -1482,7 +1482,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:786
-msgid "``subclass_of``"
+msgid "subclass_of"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:785
@@ -1492,7 +1492,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:791 ../src/Doc/howto/clinic.rst:797
-msgid "``types``"
+msgid "types"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:789
@@ -1511,7 +1511,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:801
-msgid "``zeroes``"
+msgid "zeroes"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:800
@@ -2295,7 +2295,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1210
-msgid "``type``"
+msgid "type"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1208
@@ -2306,7 +2306,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1214
-msgid "``default``"
+msgid "default"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1213
@@ -2316,7 +2316,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1219
-msgid "``py_default``"
+msgid "py_default"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1217
@@ -2332,7 +2332,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1235
-msgid "``c_ignored_default``"
+msgid "c_ignored_default"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1227
@@ -2351,7 +2351,7 @@ msgid "The name of the C converter function, as a string."
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1243
-msgid "``impl_by_reference``"
+msgid "impl_by_reference"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1241
@@ -2361,7 +2361,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1249
-msgid "``parse_by_reference``"
+msgid "parse_by_reference"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1246
@@ -2502,7 +2502,7 @@ msgid "Let's start with defining some terminology:"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1373
-msgid "*field*"
+msgid "field"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1351
@@ -2527,7 +2527,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1407
-msgid "*destination*"
+msgid "destination"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1376
@@ -2538,7 +2538,7 @@ msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1381 ../src/Doc/howto/clinic.rst:1450
 #: ../src/Doc/howto/clinic.rst:1524
-msgid "``block``"
+msgid "block"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1380
@@ -2549,7 +2549,7 @@ msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1387 ../src/Doc/howto/clinic.rst:1477
 #: ../src/Doc/howto/clinic.rst:1527
-msgid "``buffer``"
+msgid "buffer"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1384
@@ -2561,7 +2561,7 @@ msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1398 ../src/Doc/howto/clinic.rst:1463
 #: ../src/Doc/howto/clinic.rst:1553
-msgid "``file``"
+msgid "file"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1390
@@ -2581,7 +2581,7 @@ msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1403 ../src/Doc/howto/clinic.rst:1490
 #: ../src/Doc/howto/clinic.rst:1557
-msgid "``two-pass``"
+msgid "two-pass"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1401
@@ -2592,7 +2592,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1407 ../src/Doc/howto/clinic.rst:1520
-msgid "``suppress``"
+msgid "suppress"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1406
@@ -2710,7 +2710,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1501
-msgid "``partial-buffer``"
+msgid "partial-buffer"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1493
@@ -2866,7 +2866,7 @@ msgid "Both of these support two format strings:"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1579
-msgid "``{block comment start}``"
+msgid "{block comment start}"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1579
@@ -2875,7 +2875,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1582
-msgid "``{block comment end}``"
+msgid "{block comment end}"
 msgstr ""
 
 #: ../src/Doc/howto/clinic.rst:1582
@@ -3903,6 +3903,10 @@ msgstr ""
 
 #: ../src/Doc/howto/descriptor.rst:6
 msgid "<python at rcn dot com>"
+msgstr ""
+
+#: ../src/Doc/howto/descriptor.rst:0
+msgid "Contents"
 msgstr ""
 
 #: ../src/Doc/howto/descriptor.rst:13
@@ -5045,8 +5049,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/functional.rst:633
-msgid ""
-":func:`map(f, iterA, iterB, ...) <map>` returns an iterator over the sequence"
+msgid "map(f, iterA, iterB, ...) returns an iterator over the sequence"
 msgstr ""
 
 #: ../src/Doc/howto/functional.rst:625
@@ -7557,7 +7560,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/logging.rst:1067 ../src/Doc/howto/logging-cookbook.rst:1238
-msgid "Module :mod:`logging`"
+msgid "Module logging"
 msgstr ""
 
 # 4d9db3afbb294a39a785a00688797682
@@ -7566,7 +7569,7 @@ msgid "API reference for the logging module."
 msgstr ""
 
 #: ../src/Doc/howto/logging.rst:1070 ../src/Doc/howto/logging-cookbook.rst:1241
-msgid "Module :mod:`logging.config`"
+msgid "Module logging.config"
 msgstr ""
 
 # 306c129ce0424b7b971f4a2100cb3501
@@ -7575,7 +7578,7 @@ msgid "Configuration API for the logging module."
 msgstr ""
 
 #: ../src/Doc/howto/logging.rst:1073 ../src/Doc/howto/logging-cookbook.rst:1244
-msgid "Module :mod:`logging.handlers`"
+msgid "Module logging.handlers"
 msgstr ""
 
 # 5553cb8d8a3e4597ad14c7fcbb14c6e4
@@ -9658,7 +9661,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:128
-msgid "``\\d``"
+msgid "\\d"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:128
@@ -9666,7 +9669,7 @@ msgid "Matches any decimal digit; this is equivalent to the class ``[0-9]``."
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:131
-msgid "``\\D``"
+msgid "\\D"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:131
@@ -9675,7 +9678,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:135
-msgid "``\\s``"
+msgid "\\s"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:134
@@ -9685,7 +9688,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:139
-msgid "``\\S``"
+msgid "\\S"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:138
@@ -9695,7 +9698,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:143
-msgid "``\\w``"
+msgid "\\w"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:142
@@ -9705,7 +9708,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:147
-msgid "``\\W``"
+msgid "\\W"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:146
@@ -10480,7 +10483,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:677
-msgid "``|``"
+msgid "|"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:670
@@ -10499,7 +10502,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:693
-msgid "``^``"
+msgid "^"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:680
@@ -10517,7 +10520,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:707
-msgid "``$``"
+msgid "$"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:696
@@ -10533,7 +10536,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:713
-msgid "``\\A``"
+msgid "\\A"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:710
@@ -10546,7 +10549,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:716
-msgid "``\\Z``"
+msgid "\\Z"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:716
@@ -10554,7 +10557,7 @@ msgid "Matches only at the end of the string."
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:751
-msgid "``\\b``"
+msgid "\\b"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:719
@@ -10590,7 +10593,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:756
-msgid "``\\B``"
+msgid "\\B"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:754
@@ -10807,7 +10810,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:954
-msgid "``(?=...)``"
+msgid "(?=...)"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:950
@@ -10820,7 +10823,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:959
-msgid "``(?!...)``"
+msgid "(?!...)"
 msgstr ""
 
 #: ../src/Doc/howto/regex.rst:957

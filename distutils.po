@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-14 23:59+0100\n"
+"POT-Creation-Date: 2015-12-18 15:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3580,7 +3580,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/distutils/configfile.rst:124
-msgid ":ref:`inst-config-syntax` in \"Installing Python Modules\""
+msgid "inst-config-syntax in \"Installing Python Modules\""
 msgstr ""
 
 #: ../src/Doc/distutils/configfile.rst:124
@@ -3611,7 +3611,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Doc/distutils/examples.rst:14
-msgid "`Distutils Cookbook <https://wiki.python.org/moin/Distutils/Cookbook>`_"
+msgid "Distutils Cookbook"
 msgstr ""
 
 #: ../src/Doc/distutils/examples.rst:15
@@ -4544,7 +4544,7 @@ msgid "Each section describing a repository defines three variables:"
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:175
-msgid "*repository*, that defines the url of the PyPI server. Defaults to"
+msgid "repository, that defines the url of the PyPI server. Defaults to"
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:176
@@ -4556,7 +4556,7 @@ msgid "*username*, which is the registered username on the PyPI server."
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:179
-msgid "*password*, that will be used to authenticate. If omitted the user"
+msgid "password, that will be used to authenticate. If omitted the user"
 msgstr ""
 
 #: ../src/Doc/distutils/packageindex.rst:179
