@@ -54,7 +54,8 @@ done
     if [ $HAS_MOD != 0 ]
     then
         echo "Git add and git commit changed po files."
-        git commit -a -m 'merge pot files'
+        git add *.po
+        git commit -m 'merge pot files'
     else
         echo "No changes."
     fi
