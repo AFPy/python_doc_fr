@@ -27,10 +27,12 @@ rm -fr pot/
     git checkout -- .
     git pull --ff-only
     git checkout 3.4
-    echo "locale_dirs = ['../../mo']" >> Doc/conf.py
-    echo "language = 'fr'" >> Doc/conf.py
-    echo "Reparsing cpython source"
-    echo "Asking sphinx-build to generate pot files."
+    for patch in ../patches/*.patch
+    do
+        echo "Applying patch $patch"
+        git apply "$patch"
+    done
+    echo "Regenerating pot files."
     sphinx-build -b gettext Doc ../pot
 )
 
@@ -40,9 +42,9 @@ do
     PO="$(basename ${POT%.pot}.po)"
     if [ -f "$PO" ]
     then
-        msgmerge -U $PO $POT
+        msgmerge -U "$PO" "$POT"
     else
-        echo "Skipping $POT, it has no po file for the moment."
+        cp "$POT" "$PO"
     fi
 done
 
