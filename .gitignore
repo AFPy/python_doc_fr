@@ -1,5 +1,6 @@
 *~
 *.sw[a-z]
+*.mo
 src/
 pot/
 mo/
