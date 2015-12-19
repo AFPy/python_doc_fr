@@ -59,7 +59,7 @@ do
             msgmerge -U "$PYDOCFR_ROOT/$VERSION/$PO" "$POT"
         else
             mkdir -p "$PYDOCFR_ROOT/$VERSION/"
-            cp "$POT" "$PYDOCFR_ROOT/$VERSION/$PO"
+            msgcat -o "$PYDOCFR_ROOT/$VERSION/$PO" "$POT"
         fi
     done
 
