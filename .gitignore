@@ -1,7 +1,4 @@
 *~
 *.sw[a-z]
-*.mo
-src/
-pot/
-mo/
-build/
+gen/
+www/
