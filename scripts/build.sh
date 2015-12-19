@@ -39,3 +39,14 @@ sed -i 's|<body role="document">|\0<div class="body" style="line-height: 25px; w
 
 echo "You may run :"
 printf "%s\n" "rsync -az build/ afpy.org:/home/mandark/www/3.4/"
+
+if ! type markdown >/dev/null
+then
+    printf "%s (%s)\n" 'You need `markdown` to generate index.html' \
+           "apt-get install markdown" >&2
+else
+    markdown $SCRIPTS/index.md | sed '/%s/{
+        r /dev/stdin
+        d
+    }' $SCRIPTS/index.tpl > $PYDOCFR_ROOT/www/index.html
+fi
