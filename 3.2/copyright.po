@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1990-2015, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-20 13:09\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# c87fb3f0368443fba4c80945fc3ab7f7
+#: copyright.rst:3
+msgid "Copyright"
+msgstr ""
+
+# 743d045f0b0746c4b3f1981fb524d2b5
+#: copyright.rst:5
+msgid "Python and this documentation is:"
+msgstr ""
+
+# f5ec7ac108f34c529af14662881a4928
+#: copyright.rst:7
+msgid "Copyright © 2001-2015 Python Software Foundation. All rights reserved."
+msgstr ""
+
+# 369fb6865d394c07af7626f2e2075f52
+#: copyright.rst:9
+msgid "Copyright © 2000 BeOpen.com. All rights reserved."
+msgstr ""
+
+# d49c34cfdf1f4e709200eead49495100
+#: copyright.rst:11
+msgid ""
+"Copyright © 1995-2000 Corporation for National Research Initiatives. All "
+"rights reserved."
+msgstr ""
+
+# d621403336c7463e9c390358b59724fd
+#: copyright.rst:14
+msgid ""
+"Copyright © 1991-1995 Stichting Mathematisch Centrum. All rights reserved."
+msgstr ""
+
+# 0e77f244367e45549c287ab1214683ef
+#: copyright.rst:18
+msgid ""
+"See :ref:`history-and-license` for complete license and permissions "
+"information."
+msgstr ""

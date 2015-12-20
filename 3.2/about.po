@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1990-2015, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-20 13:09\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# d139f79a7afa4593a9fb29d925efa721
+#: about.rst:3
+msgid "About these documents"
+msgstr ""
+
+# 916de3d77eec47ba98075c77500f0ac3
+#: about.rst:6
+msgid ""
+"These documents are generated from `reStructuredText`_ sources by `Sphinx`_, "
+"a document processor specifically written for the Python documentation."
+msgstr ""
+
+# 855c4d4427aa494985b65fd7cdc8da96
+#: about.rst:15
+msgid ""
+"Development of the documentation and its toolchain takes place on the "
+"docs@python.org mailing list.  We're always looking for volunteers wanting "
+"to help with the docs, so feel free to send a mail there!"
+msgstr ""
+
+# 926248c0874e4b8fa5f1d86134b7e97f
+#: about.rst:19
+msgid "Many thanks go to:"
+msgstr ""
+
+# eb33930a043b469889c2b414953b37e8
+#: about.rst:21
+msgid ""
+"Fred L. Drake, Jr., the creator of the original Python documentation toolset "
+"and writer of much of the content;"
+msgstr ""
+
+# 70a3ff64b89b49b8ac98778ac84841aa
+#: about.rst:23
+msgid ""
+"the `Docutils <http://docutils.sf.net/>`_ project for creating "
+"reStructuredText and the Docutils suite;"
+msgstr ""
+
+# cab139a44eac416ca420231c53b48d35
+#: about.rst:25
+msgid ""
+"Fredrik Lundh for his `Alternative Python Reference <http://effbot.org/zone/"
+"pyref.htm>`_ project from which Sphinx got many good ideas."
+msgstr ""
+
+# d5b8b9330ace4d5d83ef336d960fb3f7
+#: about.rst:29
+msgid ""
+"See :ref:`reporting-bugs` for information how to report bugs in this "
+"documentation, or Python itself."
+msgstr ""
+
+# c64c4191f6c64dee86ae9da118d7edba
+#: about.rst:34
+msgid "Contributors to the Python Documentation"
+msgstr ""
+
+# 1edced77983d4f44ae0de1cc6629fc56
+#: about.rst:36
+msgid ""
+"Many people have contributed to the Python language, the Python standard "
+"library, and the Python documentation.  See :source:`Misc/ACKS` in the "
+"Python source distribution for a partial list of contributors."
+msgstr ""
+
+# bc764805d81940208dbe1a73e4721164
+#: about.rst:40
+msgid ""
+"It is only with the input and contributions of the Python community that "
+"Python has such wonderful documentation -- Thank You!"
+msgstr ""
