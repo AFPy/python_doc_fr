@@ -19,22 +19,23 @@ msgstr ""
 # c87fb3f0368443fba4c80945fc3ab7f7
 #: copyright.rst:3
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 # 743d045f0b0746c4b3f1981fb524d2b5
 #: copyright.rst:5
 msgid "Python and this documentation is:"
-msgstr ""
+msgstr "Python et cette documentation sont :"
 
 # f5ec7ac108f34c529af14662881a4928
 #: copyright.rst:7
 msgid "Copyright © 2001-2015 Python Software Foundation. All rights reserved."
 msgstr ""
+"Copyright © 2001-2010 Python Software Foundation. Tous droits réservés."
 
 # 369fb6865d394c07af7626f2e2075f52
 #: copyright.rst:9
 msgid "Copyright © 2000 BeOpen.com. All rights reserved."
-msgstr ""
+msgstr "Copyright © 2000 BeOpen.com. Tous droits réservés."
 
 # d49c34cfdf1f4e709200eead49495100
 #: copyright.rst:11
@@ -42,12 +43,15 @@ msgid ""
 "Copyright © 1995-2000 Corporation for National Research Initiatives. All "
 "rights reserved."
 msgstr ""
+"Copyright © 1995-2000 Corporation for National Research Initiatives. Tous "
+"droits réservés."
 
 # d621403336c7463e9c390358b59724fd
 #: copyright.rst:14
 msgid ""
 "Copyright © 1991-1995 Stichting Mathematisch Centrum. All rights reserved."
 msgstr ""
+"Copyright © 1991-1995 Stichting Mathematisch Centrum. Tous droits réservés."
 
 # 0e77f244367e45549c287ab1214683ef
 #: copyright.rst:18
@@ -55,3 +59,5 @@ msgid ""
 "See :ref:`history-and-license` for complete license and permissions "
 "information."
 msgstr ""
+"Voir :ref:`history-and-license` pour des informations complètes concernant "
+"la licence et les permissions."

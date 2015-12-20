@@ -24,7 +24,7 @@ msgstr ""
 # d254d59ad32e4d13bf243c16450f6fc9
 #: install/index.rst:9
 msgid "Greg Ward"
-msgstr ""
+msgstr "Greg Ward"
 
 # 75505401c21848e8bdd80915b74421a6
 #: install/index.rst:25
@@ -34,11 +34,15 @@ msgid ""
 "of a standard Python installation by building and installing third-party "
 "Python modules and extensions."
 msgstr ""
+"Ce document décrit les utilitaires de distribution de Python (\"Distutils\") "
+"du point de vue de l'utilisateur final, décrivant comment étendre les "
+"capacités d'une installation standard de python en construisant et "
+"installant des modules python tiers et des extensions."
 
 # 0a5f0d211f254e5ab9f227cb58d1c269
 #: install/index.rst:34
 msgid "Introduction"
-msgstr ""
+msgstr "introduction"
 
 # eef0729508954767b9b5cab68959aef2
 #: install/index.rst:36
@@ -49,6 +53,12 @@ msgid ""
 "necessary to support your own programming, or to support an application that "
 "you want to use and that happens to be written in Python."
 msgstr ""
+"Bien que la vaste bibliothèque standard de Python comble beaucoup de besoins "
+"en programmation, il arrive souvent un moment où vous avez besoin d'ajouter "
+"de nouvelles fonctionnalités à votre installation de Python, via des modules "
+"tiers. Cela peut être nécessaire pour vous aider à écrire vos programmes ou "
+"pour prendre en charge une application écrite en Python que vous souhaitez "
+"utiliser."
 
 # b7a1082e9f134645b4d80d9585802f0f
 #: install/index.rst:42
@@ -57,6 +67,10 @@ msgid ""
 "an existing Python installation.  With the introduction of the Python "
 "Distribution Utilities (Distutils for short) in Python 2.0, this changed."
 msgstr ""
+"Dans le passé, il y a eu peu de prise d'aide à l'ajout de modules tiers sur "
+"une installation existante de Python. Avec l'introduction des utilitaires de "
+"distribution de Python (Distutils pour faire plus court) dans Python 2.0, "
+"ceci a changé."
 
 # 22246202335d487995601320c3bb0528
 #: install/index.rst:46
@@ -74,7 +88,7 @@ msgstr ""
 # ea5399c88cbd4cf1892e9e06a0f3a41e
 #: install/index.rst:59
 msgid "Best case: trivial installation"
-msgstr ""
+msgstr "Le meilleur des cas : l'installation simple"
 
 # 479150058d7a4975afd6e1c19147d781
 #: install/index.rst:61
@@ -87,6 +101,15 @@ msgid ""
 "systems (Red Hat, SuSE, Mandrake, and many others), a Debian package for "
 "users of Debian-based Linux systems, and so forth."
 msgstr ""
+"Dans le meilleur des cas, quelqu'un aura préparé une version spéciale de la "
+"distribution du module que vous souhaitez installer qui est destiné "
+"spécifiquement à votre plateforme et elle va s'installer comme n'importe "
+"quel autre logiciel sur votre plateforme. Par exemple, le développeur du "
+"module pourrait faire un installeur exécutable disponible pour les "
+"utilisateurs Windows, un paquetage RPM pour les utilisateurs de systèmes "
+"Linux basés sur RPM (Red Hat, SuSE, Mandrake et bien d'autres), un paquet "
+"Debian pour les utilisateurs de Linux basé sur le système Debian et ainsi de "
+"suite."
 
 # 25d4f15c630a4c86b391eb40d979bbc8
 #: install/index.rst:69
@@ -97,6 +120,13 @@ msgid ""
 "setup script, you don't need to compile anything---you might not even need "
 "to read any instructions (although it's always a good idea to do so anyway)."
 msgstr ""
+"Dans ce cas, vous devez télécharger le programme d'installation approprié à "
+"votre plateforme et faire d'elle ce qui vous semble évident : l'exécuter "
+"s'il s'agit d'un exécutable d'installation,  ``rpm --install`` si c'est un "
+"RPM, etc. Vous n'avez même pas besoin d'exécuter Python ou un script "
+"d'installation, vous n'avez pas besoin de compiler quoi que ce soit -- vous "
+"devriez même pas avoir besoin de lire toutes les instructions (même si c'est "
+"toujours une bonne idée de le faire)."
 
 # 6ce58e844bf240b9bd34aaab6d96dc6f
 #: install/index.rst:75
@@ -109,11 +139,19 @@ msgid ""
 "standard way.  The bulk of this document is about building and installing "
 "modules from standard source distributions."
 msgstr ""
+"Bien sûr, les choses ne seront pas toujours aussi simple que cela. Vous "
+"pourriez être intéressés par une distribution d'un module qui n'a pas de "
+"programme d'installation facile à utiliser pour votre plateforme. Dans ce "
+"cas, vous allez devoir repartir des fichiers sources publiés par l'auteur/"
+"mainteneur du module. L'installation à partir des sources n'est pas très "
+"difficile, du moment que les modules en question sont packagés de façon "
+"standard. Le cœur de ce document explique comment configurer et installer "
+"des modules à partir des sources."
 
 # 7c263f1faa0e4d379f5a0abea0a89503
 #: install/index.rst:87
 msgid "The new standard: Distutils"
-msgstr ""
+msgstr "Le nouveau standard: Distutils"
 
 # edbdb7a926864ab485beb08ad7e066fb
 #: install/index.rst:89
@@ -129,6 +167,17 @@ msgid ""
 "should explain that building and installing the module distribution is a "
 "simple matter of running one command from a terminal::"
 msgstr ""
+"Si vous téléchargez une distribution source du module, vous pouvez dire "
+"assez rapidement s'il a été packagé et distribué de la façon standard, c'est "
+"à dire en utilisant Distutils. Premièrement, le nom et le numéro de version "
+"de la distribution seront affichés en bonne place dans le nom de l'archive "
+"téléchargée, par exemple :file:`foo-1.0.tar.gz` ou :file:`widget-0.9.7.zip`. "
+"Ensuite, l'archive va se décompresser dans un répertoire du même nom : :file:"
+"`foo-1.0` ou :file:`widget-0.9.7`. En outre, la distribution va contenir un "
+"script d'installation :file:`setup.py` et un fichier nommé :file:`README."
+"txt` ou éventuellement juste :file:`README`, qui doit expliquer que la "
+"construction et l'installation de la distribution du module se fait "
+"simplement en exécutant ceci ::"
 
 # 09efa7617fdb443cb6ef73bfcf2c2232
 #: install/index.rst:102
@@ -146,11 +195,17 @@ msgid ""
 "don't really need this manual.  Or rather, the above command is everything "
 "you need to get out of this manual."
 msgstr ""
+"Si toutes ces choses sont vérifiées, alors vous savez déjà comment "
+"construire et installer le module que vous venez de télécharger : en "
+"exécutant la commande ci-dessus. Sauf si vous avez besoin d'installer les "
+"choses d'une manière non standard ou de personnaliser le processus de "
+"construction, vous n'avez pas vraiment besoin de ce manuel. Ou plutôt, la "
+"commande ci-dessus est tout ce dont vous avez besoin de sortir de ce manuel."
 
 # 71bc92a7ea3c4d78b46fdb34d6286bcd
 #: install/index.rst:117
 msgid "Standard Build and Install"
-msgstr ""
+msgstr "Construction standard et installation"
 
 # 1807f28bd2604d7db03cfe53b91e2339
 #: install/index.rst:119
@@ -159,11 +214,14 @@ msgid ""
 "module distribution using the Distutils is usually one simple command to run "
 "from a terminal::"
 msgstr ""
+"Comme décrit dans la section :ref:`inst-new-standard`, la construction et "
+"l'installation d'une distribution d'un module en utilisant Distutils est "
+"habituellement fait avec la commande ::"
 
 # 93541968e01b4038b30f605d0d5590b1
 #: install/index.rst:129
 msgid "Platform variations"
-msgstr ""
+msgstr "Différences selon les plateformes"
 
 # f396c7eb191047ea93aed8106487482c
 #: install/index.rst:131
@@ -174,6 +232,12 @@ msgid ""
 "source distribution :file:`foo-1.0.tar.gz` onto a Unix system, the normal "
 "thing to do is::"
 msgstr ""
+"Vous devez toujours exécuter la commande \"setup\" à partir du répertoire "
+"racine de la distribution, à savoir le sous-répertoire de niveau supérieur à "
+"celui où se sont décompressées les sources de la distribution du module. Par "
+"exemple, si vous venez de télécharger les sources d'une distribution du "
+"module :file:`foo-1.0.tar.gz` sous un système Unix, la méthode normale "
+"consiste à faire ::"
 
 # 2da60e6d5cf04ff59ba2bf9ba2a05dee
 #: install/index.rst:140
@@ -189,7 +253,7 @@ msgstr ""
 # 5e405020cdf64ffb9db21854c2968241
 #: install/index.rst:154
 msgid "Splitting the job up"
-msgstr ""
+msgstr "Fractionnement du travail"
 
 # e9dba3fca396425cb6a30410375567e8
 #: install/index.rst:156
@@ -203,6 +267,16 @@ msgid ""
 "administrator for installation (or do it yourself, with super-user "
 "privileges)."
 msgstr ""
+"Exécuter ``setup.py install`` construit et installe tous les modules en un "
+"seul coup. Si vous préférez travailler progressivement -- ce qui est "
+"particulièrement utile si vous souhaitez personnaliser le processus de "
+"construction, ou si les choses vont mal -- vous pouvez utiliser le script de "
+"configuration pour faire une chose à la fois. Cela est particulièrement "
+"utile lorsque la construction et l'installation doit être faite par "
+"différents utilisateurs -- par exemple, vous pouvez vouloir construire une "
+"distribution d'un module et la transférer à un administrateur système pour "
+"l'installation (ou le faire vous-même, avec les privilèges de super-"
+"utilisateur)."
 
 # 9d26802243544d9eb7f6f034e46cbe71
 #: install/index.rst:164
@@ -210,6 +284,9 @@ msgid ""
 "For example, you can build everything in one step, and then install "
 "everything in a second step, by invoking the setup script twice::"
 msgstr ""
+"Par exemple, vous pouvez construire tout en une seule étape et ensuite "
+"installer le tout dans une deuxième étape, en invoquant le script "
+"d'installation deux fois ::"
 
 # 4b931383fea44f7a82152adf4e4423aa
 #: install/index.rst:170
@@ -219,6 +296,10 @@ msgid ""
 "notices that it has nothing to do, since everything in the :file:`build` "
 "directory is up-to-date."
 msgstr ""
+"Si vous faites cela, vous remarquerez que l'exécution de la commande :"
+"command:`install` lance d'abord la commande :command:`build`, qui, dans ce "
+"cas, s'aperçoit vite qu'il n'a rien à faire, puisque tout dans le dossier :"
+"file:`build` est à jour."
 
 # f3ccc7e50b5745f8bc2c4dae58572f4e
 #: install/index.rst:175
@@ -228,11 +309,17 @@ msgid ""
 "advanced tasks.  If you get into distributing your own Python modules and "
 "extensions, you'll run lots of individual Distutils commands on their own."
 msgstr ""
+"Il se peut que vous n'ayez pas souvent besoin de cette capacité à découper "
+"les étapes si tout ce que vous faite est d'installer les modules téléchargés "
+"sur le Net, mais c'est très pratique pour des tâches plus avancées. Si vous "
+"en venez à distribuer vos propres modules et extensions Python, vous allez "
+"exécuter beaucoup de commandes individuelles de Distutils, indépendamment "
+"les unes des autres."
 
 # be1036025c1a4abd99f317ff5d0bf54c
 #: install/index.rst:184
 msgid "How building works"
-msgstr ""
+msgstr "Comment fonctionne une construction"
 
 # 0f91a81ddcb44e89a01f956c1fd2cf7e
 #: install/index.rst:186
@@ -243,6 +330,12 @@ msgid ""
 "speed, or want to keep the source tree pristine, you can change the build "
 "directory with the :option:`--build-base` option. For example::"
 msgstr ""
+"Comme sous-entendu ci-dessus, la commande :command:`build` est chargé de "
+"mettre les fichiers à installer dans un *répertoire de travail*. Par défaut, "
+"c'est :file:`build` sous la racine de la distribution ; si vous êtes très "
+"préoccupés par la vitesse, ou si vous voulez conserver l'arborescence des "
+"sources d'origine, vous pouvez changer le répertoire de construction avec "
+"l'option :option:`--build-base`. Par exemple ::"
 
 # 883a387eca2e4a29ab89bd7af7a8ee56
 #: install/index.rst:194
@@ -251,11 +344,16 @@ msgid ""
 "personal Distutils configuration file; see section :ref:`inst-config-"
 "files`.)  Normally, this isn't necessary."
 msgstr ""
+"(Ou vous pourriez le faire de façon permanente avec une directive dans votre "
+"système ou dans le fichier de configuration personnelle de Distutils ; voir "
+"la section :ref:`inst-config-files`.) Normalement, ce n'est pas nécessaire."
 
 # 149f0490325f4d21b96adf26c48a4b71
 #: install/index.rst:198
 msgid "The default layout for the build tree is as follows::"
 msgstr ""
+"La mise en page par défaut pour l'arbre de compilation se présente comme "
+"suit ::"
 
 # 2430fb44f78045d3b8be14127584f7e9
 #: install/index.rst:205
@@ -271,6 +369,17 @@ msgid ""
 "`lib` (or :file:`lib.{plat}`) directory contains all Python modules (pure "
 "Python and extensions) that will be installed."
 msgstr ""
+"où ``<plat>`` représente une brève description de l'actuel système "
+"d'exploitation / plateforme matérielle et la version Python. La première "
+"forme, avec juste un dossier :file:`lib` est utilisé pour les «distributions "
+"de modules purs\" -- c'est-à-dire des distributions de module qui ne "
+"incorporent que des modules en Python. Si un module de la distribution "
+"contient au moins une extension (modules écrits en C/C++), alors il faut "
+"utiliser la deuxième forme, avec deux dossiers ``<plat>``. Dans ce cas, le "
+"répertoire :file:`temp.{plat}` contient les fichiers temporaires générés par "
+"le processus de compilation et de lien qui ne seront pas installés. Dans les "
+"deux cas, le dossier :file:`lib` (ou :file:`lib.{plat}`) contient tous les "
+"modules Python (Python pur et extensions) qui seront installés."
 
 # 26a033e63a9346e99993002ffea78d95
 #: install/index.rst:215
@@ -279,11 +388,15 @@ msgid ""
 "documentation, binary executables, and whatever else is needed to handle the "
 "job of installing Python modules and applications."
 msgstr ""
+"Dans l'avenir, d'autres répertoires seront ajoutés pour gérer les scripts "
+"Python, de la documentation, des exécutables binaires et tout ce qui est "
+"nécessaire pour gérer le travail de l'installation de modules et "
+"d'applications Python."
 
 # 478e57a02d524b54b8008f8d65f18cb3
 #: install/index.rst:223
 msgid "How installation works"
-msgstr ""
+msgstr "Comment fonctionne l'installation"
 
 # dea55d0602cf41fca8d09f26c373a77e
 #: install/index.rst:225
@@ -294,6 +407,12 @@ msgid ""
 "under :file:`build/lib` (or :file:`build/lib.{plat}`) to your chosen "
 "installation directory."
 msgstr ""
+"Après l'exécution de la commande :command:`build` (que vous l'ayez exécutez "
+"explicitement ou que la commande :command:`install` l'ai fait pour vous), le "
+"travail de la commande :command:`install` est relativement simple : tout ce "
+"qu'il a à faire est de copier tout ce qui est sous :file:`build/lib` (ou :"
+"file:`build/lib.{plat}`) dans le répertoire que vous avez choisi pour "
+"l'installation."
 
 # b654b2c02c454d6e8b7a77b57fd58679
 #: install/index.rst:231
@@ -306,91 +425,99 @@ msgid ""
 "distribution being installed is pure Python or contains extensions (\"non-"
 "pure\"):"
 msgstr ""
+"Si vous ne choisissez aucun répertoire d'installation -- c'est-à-dire, si "
+"vous lancez simplement ``setup.py install``\\ -- alors la commande :command:"
+"`install` installe à l'emplacement standard pour les modules tiers de "
+"Python. Cet emplacement varie selon la plateforme et selon la façon dont "
+"vous avez construit et/ou installés Python lui-même. Sous Unix (et Mac OS X, "
+"qui est également basé sur Unix), il dépend aussi de savoir si le module de "
+"la distribution en cours d'installation est en pur Python ou contient des "
+"extensions (\"non-pur\"):"
 
 # 7eb32c6147ea4a4fb821f5bcac142cdc
 #: install/index.rst:239
 msgid "Platform"
-msgstr ""
+msgstr "Plateforme"
 
 # d6ee7fa6541e4810ba6de9795838ebe2
 #: install/index.rst:239
 msgid "Standard installation location"
-msgstr ""
+msgstr "Emplacement standard de l'installation"
 
 # b36322d11c3040abbe0289dbaf267b53
 #: install/index.rst:239
 msgid "Default value"
-msgstr ""
+msgstr "Valeur par défaut"
 
 # a2da259589d54d6bafdb543fe05984c6
 # 8625631d5cfa4390a30a1c9cd0c1d3db
 # 45618b7c2c8641949e24211c9c60ae12
 #: install/index.rst:239 install/index.rst:752 install/index.rst:764
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 # fe445cadeba348ad80e645fbe5a5d78b
 #: install/index.rst:241
 msgid "Unix (pure)"
-msgstr ""
+msgstr "Unix (pur)"
 
 # 717f76e098e34d00ae627ccf514a4a4c
 # befadebdd68942a88a0aba48d525e6fd
 #: install/index.rst:241 install/index.rst:452
 msgid ":file:`{prefix}/lib/python{X.Y}/site-packages`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # f2b1e3fe120e40688e821e6a7b70d788
 # bd1d7a9a377d46da986c2dabe85140b8
 #: install/index.rst:241 install/index.rst:243
 msgid ":file:`/usr/local/lib/python{X.Y}/site-packages`"
-msgstr ""
+msgstr ":file:`/usr/local/lib/python{X.Y}/site-packages`"
 
 # 204a46f20f454cedaaf73e92c8d5004c
 # fc971586510b4c6594faa48bb24091a0
 # a6e10ef9d644471bbbff27bccb1a23d6
 #: install/index.rst:241 install/index.rst:243 install/index.rst:754
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
 # 8e3270c5fec9424a8b53f739b5d98d65
 #: install/index.rst:243
 msgid "Unix (non-pure)"
-msgstr ""
+msgstr "Unix (non-pur)"
 
 # fef8692da4f24b0d9927ae73c72f082d
 # 4dd3c4b168164db39c895f6660131501
 #: install/index.rst:243 install/index.rst:453
 msgid ":file:`{exec-prefix}/lib/python{X.Y}/site-packages`"
-msgstr ""
+msgstr ":file:`{exec-prefix}/lib/python{X.Y}/site-packages`"
 
 # 761a4cd1fb1646078f231f0c7dfc6166
 #: install/index.rst:245
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 # ee93ec7458ab434dbf5f08d299289e79
 # 3eca8720ac8f4755b71e36ecf53307f7
 #: install/index.rst:245 install/index.rst:504
 msgid ":file:`{prefix}\\\\Lib\\\\site-packages`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # ed6096a4ec2449c7b06df38480253d37
 #: install/index.rst:245
 msgid ":file:`C:\\\\Python{XY}\\\\Lib\\\\site-packages`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # f480286b970c400dbb87f3eded35123b
 # e1f2a06c5ae04e989561f9a46b650e24
 #: install/index.rst:245 install/index.rst:756
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
 # 40dc3370881849dea99aec00e7512c81
 # 44d1bcdd19244ea68563aadf447e851d
 #: install/index.rst:248 install/index.rst:776
 msgid "Notes:"
-msgstr ""
+msgstr "Notes:"
 
 # e95555653a1d475bae9952afd11c29f0
 #: install/index.rst:251
@@ -401,6 +528,12 @@ msgid ""
 "the default :file:`{prefix}` and :file:`{exec-prefix}` are :file:`/usr/"
 "local`."
 msgstr ""
+"La plupart des distributions Linux incluent Python comme un élément de base "
+"du système, donc : file: `{prefix}` et : ​​file: `{exec-prefix}` sont "
+"généralement tous les deux : file: `/ usr` sous Linux. Si vous construisez "
+"vous-même Python sous Linux (ou tout autre système de type Unix), les "
+"valeurs par défaut de : file: `{prefix}` et: ​​file: `{exec-prefix}` sont "
+"souvent : file: `/ usr /` locales."
 
 # 77919050195244f984b7bd64519ce2e8
 #: install/index.rst:257
@@ -408,6 +541,8 @@ msgid ""
 "The default installation directory on Windows was :file:`C:\\\\Program Files"
 "\\\\Python` under Python 1.6a1, 1.5.2, and earlier."
 msgstr ""
+"Sous Windows, le dossier d'installation par défaut était : :file:`C:"
+"\\Program Files\\Python` sous Python 1.6a1, 1.5.2 et avant."
 
 # 12487e61eadf4a248890aa167184d685
 #: install/index.rst:260
@@ -424,6 +559,18 @@ msgid ""
 "the three Python statements shown below, and get the output as shown, to "
 "find out my :file:`{prefix}` and :file:`{exec-prefix}`::"
 msgstr ""
+":file:`{prefix}` et :file:`{exec-prefix}` désignent les répertoires dans "
+"lesquels Python est installé et où il trouve les librairies lors de "
+"l'exécution. Ils sont toujours identiques sous Windows et très souvent les "
+"mêmes sous Unix et Mac OS X. Vous pouvez trouver ce que votre installation "
+"de Python utilise pour :file:`{prefix}` et :file:`{exec-prefix}` en "
+"exécutant Python en mode interactif et en tapant quelques commandes simples. "
+"Sous Unix,  taper seulement ``python`` à l'invite du shell. Sous Windows, "
+"sélectionner :menuselection:`Démarrer --> Programmes --> Python X.Y --> "
+"Python (ligne de commande)`. Un fois l'interpréteur démarré, vous taper du "
+"code Python à l'invite de commande. Par exemple, sur mon système Linux, je "
+"tape les trois instructions ci-dessous et obtient la sortie comme indiqué "
+"pour trouver mes  :file:`{prefix}` et :file:`{exec-prefix}`::"
 
 # f68ec1a99a674a67a80229a69899dbe2
 #: install/index.rst:280
@@ -446,6 +593,12 @@ msgid ""
 "your installation directories more heavily, see section :ref:`inst-custom-"
 "install` on custom installations."
 msgstr ""
+"Si vous ne voulez pas installer des modules à l'emplacement standard, ou si "
+"vous n'avez pas la permission d'écrire là-bas, alors vous avez besoin de "
+"lire la section ref: `inst-alt-installer` sur les alternatives "
+"d'installation. Si vous souhaitez personnaliser vos répertoires "
+"d'installation plus fortement, allez voir la section ref: `inst-sur-install` "
+"sur les installations personnalisées."
 
 # 1cf4d1b696b74c18904cc20442f68527
 #: install/index.rst:298
@@ -530,7 +683,7 @@ msgstr ""
 #: install/index.rst:339 install/index.rst:350 install/index.rst:401
 #: install/index.rst:450 install/index.rst:502
 msgid "Installation directory"
-msgstr ""
+msgstr "Comment fonctionne l'installation"
 
 # d7b42ea368e64c4887ff15394810df3e
 # 1c7a471911234920ba361284343150f8
@@ -544,7 +697,7 @@ msgstr ""
 # 8a12da57f05641f3a02d74b68a9b545b
 #: install/index.rst:341
 msgid ":file:`{userbase}/lib/python{X.Y}/site-packages`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # f33f0ad0948148de9e6be591891a1f0b
 # 045ef5bf84a74ee991d1f9a350369e3f
@@ -560,7 +713,7 @@ msgstr ""
 # 43df5fd78091431c84aac38af8aa3576
 #: install/index.rst:342
 msgid ":file:`{userbase}/bin`"
-msgstr ""
+msgstr ":file:`{prefix}`"
 
 # aa3da0f9424e472d94c2e709bca7a4c8
 # 4386dd14ce8d427ea558973c04e06cc6
@@ -577,7 +730,7 @@ msgstr ""
 # 7b6aef39571d4629b34516231d2237c1
 #: install/index.rst:343 install/index.rst:354
 msgid ":file:`{userbase}`"
-msgstr ""
+msgstr ":file:`{prefix}`"
 
 # 318715bdfb4540349c5850c913ce13e8
 # e81857713c8842d38e6f0ded01948add
@@ -593,7 +746,7 @@ msgstr ""
 # 4e488a92a1b6402eb996e3246582f9b5
 #: install/index.rst:344
 msgid ":file:`{userbase}/include/python{X.Y}{abiflags}/{distname}`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # 02b54a65cf764b219e56739e68d73cba
 #: install/index.rst:347
@@ -603,7 +756,7 @@ msgstr ""
 # ae7a88028b3046cdbb1f56d644629f3c
 #: install/index.rst:352
 msgid ":file:`{userbase}\\\\Python{XY}\\\\site-packages`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # f9b8e8d0b15c4c32ac0910fca58220f9
 #: install/index.rst:353
@@ -693,7 +846,7 @@ msgstr ""
 # fb522f1e39e24dc39cb2a051a66eb046
 #: install/index.rst:405
 msgid ":file:`{home}`"
-msgstr ""
+msgstr ":file:`{prefix}`"
 
 # 4de2a2ed25844cd78fe44b9971639e03
 #: install/index.rst:406
@@ -759,7 +912,7 @@ msgstr ""
 # c877945b72d94afbaf23f8f890df1abe
 #: install/index.rst:452 install/index.rst:529
 msgid "Python modules"
-msgstr ""
+msgstr "installation des modules python"
 
 # 4fbb99cc1aaa426586e5b9b8de38de16
 # cabe1e5472914f598f6b89fe29d1df0a
@@ -776,12 +929,12 @@ msgstr ""
 # 4ab6e6a91d8548b0a22e7abd2e94cba3
 #: install/index.rst:455 install/index.rst:506
 msgid ":file:`{prefix}`"
-msgstr ""
+msgstr ":file:`{prefix}`"
 
 # 0f1c3a7d60e34e34a59e4ab2a583fd6e
 #: install/index.rst:456
 msgid ":file:`{prefix}/include/python{X.Y}{abiflags}/{distname}`"
-msgstr ""
+msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
 # 29e85a18b21d46e1af6edeff6f9131f9
 #: install/index.rst:459
@@ -856,7 +1009,7 @@ msgstr ""
 # 34c64fd15e5b407aa0f5af97c9c1991e
 #: install/index.rst:507
 msgid ":file:`{prefix}\\\\Include\\\\{distname}`"
-msgstr ""
+msgstr ":file:`{prefix}`"
 
 # 184832f5bffa4d15a9a4177dbded15ab
 #: install/index.rst:514

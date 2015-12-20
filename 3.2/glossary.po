@@ -19,7 +19,7 @@ msgstr ""
 # b74ebfaf987a4c60aed73e734502260b
 #: glossary.rst:5
 msgid "Glossary"
-msgstr ""
+msgstr "Glossaire"
 
 # dd1b79c99d12453db3afa0bdc27c3596
 #: glossary.rst:12
@@ -27,6 +27,9 @@ msgid ""
 "The default Python prompt of the interactive shell.  Often seen for code "
 "examples which can be executed interactively in the interpreter."
 msgstr ""
+"L'invite de commande utilisée par défaut dans l'interpréteur interactif. On "
+"la voit souvent dans des exemples de code qui peuvent être exécutés "
+"interactivement dans l'interpréteur."
 
 # 305ea78330ff44bda6b23bbf1bede01a
 #: glossary.rst:16
@@ -35,6 +38,9 @@ msgid ""
 "indented code block or within a pair of matching left and right delimiters "
 "(parentheses, square brackets or curly braces)."
 msgstr ""
+"L'invite de commande utilisée par défaut dans l'interpréteur interactif "
+"lorsqu'on entre un bloc de code indenté ou entre deux délimiteurs "
+"(parenthèses, crochets ou accolades)."
 
 # a60a984f2f9842d1a58873f63827ca4e
 #: glossary.rst:21
@@ -43,6 +49,9 @@ msgid ""
 "most of the incompatibilities which can be detected by parsing the source "
 "and traversing the parse tree."
 msgstr ""
+"Un outil qui essaie de convertir du code pour Python 2.x en code pour Python "
+"3.x en gérant la plupart des incompatibilités qui peuvent être détectées en "
+"analysant la source et parcourant son arbre syntaxique."
 
 # d35630f491ca4cb5a2549a49e51128ef
 #: glossary.rst:25
@@ -51,6 +60,9 @@ msgid ""
 "entry point is provided as :file:`Tools/scripts/2to3`.  See :ref:`2to3-"
 "reference`."
 msgstr ""
+"2to3 est disponible dans la bibliothèque standard sous le nom de :mod:"
+"`lib2to3`\\ ; un point d’entrée indépendant est fourni via :file:`Tools/"
+"scripts/2to3`. Cf. \\ :ref:`2to3-reference`."
 
 # c4992c6ceb534c6696a5d28fea42ea7a
 #: glossary.rst:30
@@ -82,6 +94,10 @@ msgid ""
 "by ``**``.  For example, ``3`` and ``5`` are both keyword arguments in the "
 "following calls to :func:`complex`::"
 msgstr ""
+":dfn:`argument nommé`: un argument précédé d'un identifiant (comme "
+"``name=``) ou un dictionnaire précédé de ``**``, lors d'un appel de "
+"fonction. Par exemple, ``3`` et ``5`` sont tous les deux des arguments "
+"nommés dans l'appel à :func:`complex` ici ::"
 
 # e303d38ba78f4953b2f653be4af80e89
 #: glossary.rst:54
@@ -91,6 +107,10 @@ msgid ""
 "be passed as elements of an :term:`iterable` preceded by ``*``. For example, "
 "``3`` and ``5`` are both positional arguments in the following calls::"
 msgstr ""
+":dfn:`argument positionnel` : Un argument qui n'est pas nommé. Les arguments "
+"positionnels apparaissent au début de la liste des arguments, ou donnés sous "
+"forme d'un :term:`itérable` précédé par ``*``. Par exemple, ``3`` et ``5`` "
+"sont tous les deux des arguments positionnels dans les appels suivants ::"
 
 # 17cdeb2ddb56460ebf13ef0041c61550
 #: glossary.rst:63
@@ -100,6 +120,11 @@ msgid ""
 "Syntactically, any expression can be used to represent an argument; the "
 "evaluated value is assigned to the local variable."
 msgstr ""
+"Les arguments se retrouvent dans le corps de la fonction appelée parmi les "
+"variables locales. Voir la section :ref:`appels` à propos des règles dictant "
+"cet affectation. Syntaxiquement, toute expression est acceptée comme "
+"argument, et c'est la valeur résultante de l'expression qui sera affectée à "
+"la variable locale."
 
 # 4a6aa4b8f9b741ee9df327829f63df69
 #: glossary.rst:68
@@ -108,6 +133,9 @@ msgid ""
 "difference between arguments and parameters <faq-argument-vs-parameter>`, "
 "and :pep:`362`."
 msgstr ""
+"Voir aussi :term:`paramètre` dans le glossaire, la FAQ à aussi une question "
+"à propos de `la différence entre argument et paramètre <faq-argument-vs-"
+"parameter>` et la :pep:`362`."
 
 # 42fea1d5940d4b3bbb2dcd24f4099aca
 #: glossary.rst:73
@@ -116,6 +144,9 @@ msgid ""
 "expressions.  For example, if an object *o* has an attribute *a* it would be "
 "referenced as *o.a*."
 msgstr ""
+"Une valeur associée à un objet et référencé par un nom via une notation "
+"utilisant des points. Par exemple, si un objet *o* a un attribut *a*, il "
+"sera référencé par *o.a*."
 
 # 420765cdfdd3436084cfa824044f046f
 #: glossary.rst:78
@@ -136,6 +167,15 @@ msgid ""
 "bytecodes are not expected to work between different Python virtual "
 "machines, nor to be stable between Python releases."
 msgstr ""
+"Le code source, en Python, est compilé en un bytecode, la représentation "
+"interne à CPython d'un programme Python. Le bytecode est aussi stocké dans "
+"un fichier nommé ``.pyc`` ou ``.pyo``. Ces caches permettent de charger les "
+"fichiers plus rapidement lors de la 2ème exécution (en évitant ainsi de "
+"recommencer la compilation en bytecode). On dit que ce *langage "
+"intermédiaire* est exécuté sur une :term:`machine virtuelle` qui exécute des "
+"instructions machine pour chaque instruction du bytecode. Notez que le "
+"bytecode n'a pas vocation à fonctionner entre différentes sur différentes "
+"machines virtuelle Python, encore moins entre différentes version de Python."
 
 # c878760a876a44a28f6a24c375c3f0c3
 #: glossary.rst:92
@@ -143,6 +183,8 @@ msgid ""
 "A list of bytecode instructions can be found in the documentation for :ref:"
 "`the dis module <bytecodes>`."
 msgstr ""
+"Une liste des instructions du bytecode se trouve dans la documentation du :"
+"ref:`module dis <bytecodes>`."
 
 # c5bb278240304cebb3938a0a46282e44
 #: glossary.rst:96
@@ -150,6 +192,9 @@ msgid ""
 "A template for creating user-defined objects. Class definitions normally "
 "contain method definitions which operate on instances of the class."
 msgstr ""
+"Un modèle pour créer des objets définis par l'utilisateur. Les définitions "
+"de classes contiennent normalement des définitions de méthodes qui agissent "
+"sur les instances de classe."
 
 # 26f288fbeca9415c86a6d4d623c254bf
 #: glossary.rst:101
@@ -163,6 +208,15 @@ msgid ""
 "types would have to be normalized to the same value by the programmer, e.g., "
 "``float(3)+4.5`` rather than just ``3+4.5``."
 msgstr ""
+"La conversion implicite d'une instance d'un type vers un autre lors d'une "
+"opération impliquant deux opérandes de même type. Par exemple ``int(3.15)`` "
+"convertis explicitement le nombre a virgule flottante en nombre entier (ici, "
+"``3``), mais dans l'opération ``3 + 4.5``, les deux opérandes ont un type "
+"différent, alors qu'elles doivent avoir le même type pour être additionnées, "
+"sans quoi une exception ``TypeError`` serait levée. Sans coercition, toutes "
+"les opérandes, même de types compatibles, devraient être convertis (on parle "
+"aussi de \"cast\") explicitement par le développeur, par exemple : "
+"``float(3) + 4.5`` au lieu du simple ``3 + 4.5``."
 
 # 8b4441266e6647cdaf37fa2e534bb500
 #: glossary.rst:111
@@ -177,6 +231,17 @@ msgid ""
 "Use of complex numbers is a fairly advanced mathematical feature.  If you're "
 "not aware of a need for them, it's almost certain you can safely ignore them."
 msgstr ""
+"Une extension du système numéral réel familier dans laquelle tous les "
+"nombres sont exprimés sous la forme d'une somme d'un réel et d'un "
+"imaginaire. Les nombres imaginaures sont de réels multiples d'une unité "
+"imaginaire (la racine carrée de ``-1``), souvent écrite ``i`` en "
+"mathématiques ou ``j`` en ingénierie. Python supporte nativement les nombres "
+"complexes, écrits avec cette dernière notation; la partie imaginaire est "
+"écrite avec un suffixe ``j``, exemple, ``3+1j``. Pour utiliser les "
+"équivalents complexes à :mod:`math`, utilisez :mod:`cmath`. L'utilisation "
+"des nombres complexes est une caractéristiques des mathématiques avancées. "
+"Si vous n'en avez pas l'utilité, vous pouvez les ignorer en toute "
+"tranquilité."
 
 # 71391d4487c34a6f925beb337856b9e1
 #: glossary.rst:123
@@ -184,6 +249,9 @@ msgid ""
 "An object which controls the environment seen in a :keyword:`with` statement "
 "by defining :meth:`__enter__` and :meth:`__exit__` methods. See :pep:`343`."
 msgstr ""
+"Un objet contrôlant l'environnement a l'intérieur d'une instruction :keyword:"
+"`with` en définissant les méthodes :meth:`__enter__` et :meth:`__exit__`. "
+"Consultez la :pep:`343`."
 
 # 4dcf038daf164cdebb7516b83a40ee5c
 #: glossary.rst:128
@@ -201,6 +269,10 @@ msgid ""
 "transformation using the ``@wrapper`` syntax.  Common examples for "
 "decorators are :func:`classmethod` and :func:`staticmethod`."
 msgstr ""
+"Une fonction retournant une autre fonction, utilisé habituellement dans une "
+"transformation de fonction via la syntaxe ``@wrapper``.Les exemples "
+"habituels pour les décorateurs sont :func:`classmethod` et :func:"
+"`staticmethod`."
 
 # 7e0a34cefe1342ff8c874c9d58c21be1
 #: glossary.rst:138
@@ -208,6 +280,8 @@ msgid ""
 "The decorator syntax is merely syntactic sugar, the following two function "
 "definitions are semantically equivalent::"
 msgstr ""
+"La syntaxe decorator est simplement du sucre syntaxique, les définitions des "
+"deux fonctions suivantes sont sémantiquement équivalentes :"
 
 # af12f65ec98940fd9e7b50605ace9093
 #: glossary.rst:149
@@ -216,6 +290,9 @@ msgid ""
 "the documentation for :ref:`function definitions <function>` and :ref:`class "
 "definitions <class>` for more about decorators."
 msgstr ""
+"Quoique moins fréquemment utilisé, le même concept existe pour les classes. "
+"Consultez la documentation :ref:`définitions de fonctions <function> et :ref:"
+"`définitions de classes <class>` pour en savoir plus sur les decorators."
 
 # 124a072ddf6c4087a72fa658f916d909
 #: glossary.rst:154
@@ -230,12 +307,24 @@ msgid ""
 "including functions, methods, properties, class methods, static methods, and "
 "reference to super classes."
 msgstr ""
+"N'importe quel objet définissant les méthodes :meth:`__get__`, :meth:"
+"`__set__`, ou :meth:`__delete__`. Lorsque l'attribut d'une classe est un "
+"descripteur, son comportement spécial est déclenché lors de la recherche des "
+"attributs. En utilisant *a.b* pour obtenir, valoriser ou effacer un "
+"attribut, il recherche l'objet nommé *b* dans la dictionnaire de la classe "
+"pour *a*, mais si *b* est un descripteur, la méthode de ce descripteur est "
+"alors appelée. Comprendre les descripteurs est la clé d'une compréhension "
+"approfondie de Python, ils sont la base de nombre de ses caractéristiques "
+"notamment les fonctions, méthodes, propriétés, méthodes de classe, méthodes "
+"statiques, et les références aux classes mères."
 
 # 2e73f050ed524a78ad23fd77befc91b5
 #: glossary.rst:164
 msgid ""
 "For more information about descriptors' methods, see :ref:`descriptors`."
 msgstr ""
+"Pour plus d'informations sur les méthodes des descripteurs, consultez :ref:"
+"`descriptors`."
 
 # b874f641a53c4145b41bc3991549ec5e
 #: glossary.rst:167
@@ -244,6 +333,9 @@ msgid ""
 "can be any object with :meth:`__hash__` and :meth:`__eq__` methods. Called a "
 "hash in Perl."
 msgstr ""
+"Une structure de donnée associant des clefs et des valeurs. Les clefs "
+"peuvent être n'importe quel objet comportant les méthodes :meth:`__hash__` "
+"et :meth:`__eq__``. Elle s'appelle \"hash\" en Perl."
 
 # 3b6e8f13409a4612afabc41139042098
 #: glossary.rst:172
@@ -254,6 +346,11 @@ msgid ""
 "class, function or module.  Since it is available via introspection, it is "
 "the canonical place for documentation of the object."
 msgstr ""
+"Une chaîne littérale étant la première expression d'une classe, fonction, ou "
+"module. Bien qu'ignoré à l'exécution, elles sont reconnues par le "
+"compilateur, et placées dans l'attribut :attr:`__doc__` de sa classe, "
+"fonction, ou module respectif. Puisque cette chaîne est disponible par "
+"introspection, c'est l'endroit idéal pour documenter l'objet."
 
 # f663bce6664840bd9d4b3dd9ab62811c
 #: glossary.rst:180
@@ -268,6 +365,16 @@ msgid ""
 "term:`abstract base classes <abstract base class>`.)  Instead, it typically "
 "employs :func:`hasattr` tests or :term:`EAFP` programming."
 msgstr ""
+"Un style de programmation qui ne prend pas en compte le type d'un objet pour "
+"déterminer s'il respecte une interface, mais qui qui appelle simplement la "
+"méthode ou l'attribut (*Si ça à un bec et que ça cancane, c'est un canard*). "
+"En se concentrant sur les interfaces plutôt que les types, du code bien "
+"construit améliore sa flexibilité en autorisant des substitutions "
+"polymorphiques. Le duck-typing évitent de vérifier les types via :func:"
+"`type` ou :func:`isinstance`, (notez cependant que le duck-typing peut "
+"travailler de pair avec les :term:`classes de base abstraites <classe de "
+"base abstraite>`.) À la place, le duck-typique utilise plutôt :func:"
+"`hasattr` ou la programmation :term:`EAFP`."
 
 # 890b0e0c238a4aaaa1abc1962015bd12
 #: glossary.rst:191
@@ -279,6 +386,12 @@ msgid ""
 "statements.  The technique contrasts with the :term:`LBYL` style common to "
 "many other languages such as C."
 msgstr ""
+"Il est plus simple de demander pardon que demander permission. Ce style de "
+"développement Python fait l'hypothèse que le code est valide, et attrape les "
+"exceptions si cette hypothèse s'avère fausse. Ce style, propre et efficace, "
+"est caractérisé par la présence de beaucoup de mot clé :keyword:`try` et :"
+"keyword:`except`. Cette technique de programmation contraste avec le style :"
+"term:`LBYL` présent courament dans des langages tel que C."
 
 # ebeea7ccf05c43c1b31e84a4bf05ced4
 #: glossary.rst:199
@@ -291,6 +404,15 @@ msgid ""
 "expressions, such as :keyword:`if`.  Assignments are also statements, not "
 "expressions."
 msgstr ""
+"Une suite logique de termes et chiffres conformes à la syntaxe Python dont "
+"l'évaluation fournit une valeur. En d'autres termes, une expression est une "
+"suite d'éléments tels que des noms, opérateurs, littéraux, accès "
+"d'attributs, méthodes ou fonctions qui aboutissent à une valeur. "
+"Contrairement à beaucoup d'autres langages, les différentes constructions du "
+"langage ne sont pas toutes des expressions. Il y a également des :term:"
+"`instructions`\\s qui ne peuvent pas être utilisés comme expressions, tel "
+"que :keyword:`if`. Les affectations sont également des :term:`instructions` "
+"et non des expressions."
 
 # fb2165a91d4f4072893d3564a7f4232c
 #: glossary.rst:208
@@ -298,6 +420,8 @@ msgid ""
 "A module written in C or C++, using Python's C API to interact with the core "
 "and with user code."
 msgstr ""
+"Un module écrit en C ou C++, utilisant l'API C de Python pour interagir avec "
+"Python et le code de l'utilisateur."
 
 # dafd914aeacc4123add48bc81855fbbe
 #: glossary.rst:212
@@ -309,6 +433,13 @@ msgid ""
 "output, in-memory buffers, sockets, pipes, etc.).  File objects are also "
 "called :dfn:`file-like objects` or :dfn:`streams`."
 msgstr ""
+"Un objet exposant une ressource via une API orientée fichier (avec les "
+"méthodes :meth:`read()` ou :meth:`write()`). En fonction de la manière dont "
+"ils ont été créés, les objets fichiers peuvent exposer un fichier sur le "
+"disque, ou un autre type de stockage ou de communication (typiquement "
+"l'entrée standard, la sortie standard, un tampon en mémoire, des "
+"sockets, ...). Les objets fichiers sont aussi appelés :dfn:`file-like-"
+"objects` ou :dfn:`streams`."
 
 # 82f05fb05c23410e92ca56b6c132de1f
 #: glossary.rst:220
@@ -322,7 +453,7 @@ msgstr ""
 # 7645c945c87544fbbd8292e12856c6cc
 #: glossary.rst:226
 msgid "A synonym for :term:`file object`."
-msgstr ""
+msgstr "Un synonyme de :term:`objet fichier `."
 
 # fadf745cbbb545fd9a125c4c1f3d0d5a
 #: glossary.rst:229
@@ -341,6 +472,10 @@ msgid ""
 "division.  Note that ``(-11) // 4`` is ``-3`` because that is ``-2.75`` "
 "rounded *downward*. See :pep:`238`."
 msgstr ""
+"Division mathématique arrondissant à l'entier le plus petit. L'opérateur de "
+"la division entière est ``//``. Par exemple l'expression ``11 // 4`` vaut "
+"``2``, contrairement à ``11 / 4`` qui vaut ``2.75``. Notez que ``(-11) // "
+"4`` vaut ``-3`` car l'arrondi se fait par le bas. Voir la :pep:`328`."
 
 # 9ad098200b484478960360e3206c408c
 #: glossary.rst:242
@@ -350,6 +485,10 @@ msgid ""
 "execution of the body. See also :term:`parameter`, :term:`method`, and the :"
 "ref:`function` section."
 msgstr ""
+"Une suite d'instructions qui renvoient une valeur à celui qui l'appelle. On "
+"peut aussi lui passer des :term:`arguments <argument>` qui pourront être "
+"utilisés dans le corps de la fonction. Voir aussi :term:`parametre`, :term:"
+"`méthode `, et :ref:`function`."
 
 # 315d152269b94764a10666697f25632f
 #: glossary.rst:248
@@ -357,6 +496,9 @@ msgid ""
 "A pseudo-module which programmers can use to enable new language features "
 "which are not compatible with the current interpreter."
 msgstr ""
+"Un pseudo-module que les développeurs peuvent utiliser pour activer de "
+"nouvelles fonctionnalités du langage qui ne sont pas compatibles avec "
+"l'interpréteur utilisé."
 
 # 74aab2b3e88e48f2b1ad5d34f6e3984c
 #: glossary.rst:251
@@ -365,6 +507,9 @@ msgid ""
 "can see when a new feature was first added to the language and when it "
 "becomes the default::"
 msgstr ""
+"En important le module :mod:`__future__` et en affichant ses variables, vous "
+"pouvez voir quand une nouvelle fonctionnalité à été rajoutée dans le "
+"langage, et quand elle devient le comportement par défaut ::"
 
 # 01eecca14a96432a81f1a79f9c92c970
 #: glossary.rst:260
@@ -373,6 +518,9 @@ msgid ""
 "garbage collection via reference counting and a cyclic garbage collector "
 "that is able to detect and break reference cycles."
 msgstr ""
+"Le processus de libérer de la mémoire lorsqu'elle n'est plus utilisée. "
+"Python utilise un ramasse-miettes par comptage de référence, et un ramasse "
+"miette cyclique capable de détecter et casser les références circulaires."
 
 # 9a6b9acf453f4d1a81cb230329384c2f
 #: glossary.rst:267
@@ -394,11 +542,15 @@ msgid ""
 "an optional :keyword:`if` expression.  The combined expression generates "
 "values for an enclosing function::"
 msgstr ""
+"Une expression qui donne un itérateur. Cela ressemble à une expression "
+"normale, suivie d'une expression :keyword:`for` définissant une variable de "
+"boucle, d'un range, et d'une expression, optionnelle, :keyword:`if`. Cette "
+"expression combinée génère des valeurs pour la fonction qui l'entoure ::"
 
 # 50fd518f5b964721938dbf76218563fc
 #: glossary.rst:288
 msgid "See :term:`global interpreter lock`."
-msgstr ""
+msgstr "Voir :term:`verrou global de l'interpréteur `."
 
 # effbfba8c30b4f158c8b335b8d15d170
 #: glossary.rst:291
@@ -411,6 +563,13 @@ msgid ""
 "multi-threaded, at the expense of much of the parallelism afforded by multi-"
 "processor machines."
 msgstr ""
+"Le mécanisme utilisé par l'interpréteur :term:`CPython` pour s'assurer qu'un "
+"seul thread n'execute du bytecode à la fois. Cela simplifie l'implémentation "
+"de CPython en rendant le modèle objet (incluant des parties critiques comme "
+"la classe native :class:`dict`) implicitement protégé des accès concourants. "
+"Vérouiller l'interpréteur entier le rend plus facile à rendre multi-thread, "
+"en perdant malheureusement la majorité du parallélisme possible sur les "
+"machines ayant plusieurs processeurs."
 
 # b2841ab33f2749a6b6e480ed0d8c6ca3
 #: glossary.rst:300
@@ -420,6 +579,10 @@ msgid ""
 "such as compression or hashing.  Also, the GIL is always released when doing "
 "I/O."
 msgstr ""
+"Cependant, certains modules d'extension, standards ou non, sont construits "
+"de manière à libérer le GIL lorsqu'ils effectuent des tâches lourdes tel que "
+"la compression ou le hachage. Aussi, le GIL est toujours libéré lors des "
+"lectures et écritures."
 
 # fb27eff4f4104492ac3a7d70b9258292
 #: glossary.rst:305
@@ -430,6 +593,11 @@ msgid ""
 "that overcoming this performance issue would make the implementation much "
 "more complicated and therefore costlier to maintain."
 msgstr ""
+"Les tentatives précédentes d'implémenter un interpréteur Python avec une "
+"granularité de verrouillage plus fine ont toutes échouées, à cause de leur "
+"performances sur un seul processeur. Il est admis que corriger c'est "
+"problèmes de performance induits mènerai vers une implémentation compliquée "
+"et donc plus coûteuse à maintenir."
 
 # dc0cd0de884c47a9870c1be8cd7f009c
 #: glossary.rst:312
@@ -439,6 +607,10 @@ msgid ""
 "other objects (it needs an :meth:`__eq__` method).  Hashable objects which "
 "compare equal must have the same hash value."
 msgstr ""
+"Un objet est *hachable* s'il a une empreinte (*hash*) qui ne change jamais. "
+"(etil a besoin d'une méthode :meth:`__hash__`) et peut être comparé à "
+"d'autres objets (avec la méthode :meth:`__eq__`). Les objets hachables dont "
+"``_eq__`` dit être équivalents, ont aussi la même empreinte."
 
 # 1050076b9ce04f849c1eb1fbc5f5bd07
 #: glossary.rst:317
@@ -446,6 +618,9 @@ msgid ""
 "Hashability makes an object usable as a dictionary key and a set member, "
 "because these data structures use the hash value internally."
 msgstr ""
+"La hashabilité permet à un objet d'être utilisé comme clef de dictionnaire, "
+"ou en temps que membre d'un *set*, car ces structures de données utilisent "
+"ce *hash*."
 
 # aeaae3457c804848888dd0e9ab39f3b1
 #: glossary.rst:320
@@ -463,6 +638,8 @@ msgid ""
 "and interpreter environment which ships with the standard distribution of "
 "Python."
 msgstr ""
+"Un environnement de développement intégré pour Python. IDLE est un éditeur "
+"et interpréteur basique livré avec la distribution standard de Python."
 
 # fdf0ba521b9a4c77ae4d0c8c4c6b9d52
 #: glossary.rst:332
@@ -473,6 +650,11 @@ msgid ""
 "in places where a constant hash value is needed, for example as a key in a "
 "dictionary."
 msgstr ""
+"Un objet dont la valeur ne change pas. Les nombres, les chaînes et les "
+"tuples sont immuables. Ils ne peuvent être modifiés. Un nouvel objet doit "
+"être créé si une valeur différente doit être stockée. Ils jouent un rôle "
+"important aux endroits où une valeur de hash constante est requise, "
+"typiquement en clef de dictionnaire."
 
 # af1d18ea47fb45599760f4d181e74e2a
 #: glossary.rst:339
@@ -480,6 +662,8 @@ msgid ""
 "An object that both finds and loads a module; both a :term:`finder` and :"
 "term:`loader` object."
 msgstr ""
+"Un objet qui trouve et charge un module, en même temps un :term:`finder` et "
+"un :term:`loader`."
 
 # 00535d15ab214f8fb8338429772937a5
 #: glossary.rst:343
@@ -490,6 +674,12 @@ msgid ""
 "selecting it from your computer's main menu). It is a very powerful way to "
 "test out new ideas or inspect modules and packages (remember ``help(x)``)."
 msgstr ""
+"Python à un interpréteur interactif, ce qui signifie que vous pouvez écrire "
+"des expressions et instructions à l'invite de l'interpréteur, qui va les "
+"exécuter immédiatement, et vous en présenter le résultat. Démarrez juste "
+"``python`` (probablement depuis un menu de votre ordinateur). C'est un moyen "
+"puissant pour tester de nouvelles idées ou étudier de nouveaux modules "
+"(souvenez vous de ``help(x)``)."
 
 # b663b760c08b41b2bd334082b2b513e5
 #: glossary.rst:351
@@ -501,6 +691,13 @@ msgid ""
 "shorter development/debug cycle than compiled ones, though their programs "
 "generally also run more slowly.  See also :term:`interactive`."
 msgstr ""
+"Python est un langage interprété, en opposition aux langages compilés, bien "
+"que la frontière soit floue du à la présence d'un compilateur en bytecode. "
+"Cela signifie que les fichiers sources peuvent être exécutés directement, "
+"sans avoir à compiler un fichier exécutable intermédiaire. Les langages "
+"interprétées ont généralement un cycle de développement / débug plus rapide, "
+"et ils s'exécutent généralement plus lentement. Voir aussi :term:"
+"`interactif`."
 
 # 03c1ad39085245b2b8ec3074aee0cdfd
 #: glossary.rst:360
@@ -543,7 +740,7 @@ msgstr ""
 # b6da80732c2045b184bbce02c54706ab
 #: glossary.rst:391
 msgid "More information can be found in :ref:`typeiter`."
-msgstr ""
+msgstr "Plus d'informations ici : :ref:`typeiter`."
 
 # 00eee6ee0a574618b323a6c0f3dd14de
 #: glossary.rst:394
@@ -552,6 +749,10 @@ msgid ""
 "for sorting or ordering.  For example, :func:`locale.strxfrm` is used to "
 "produce a sort key that is aware of locale specific sort conventions."
 msgstr ""
+"Une fonction clef, est un objet appelable qui renvoie une valeur utilisée "
+"pour trier ou organiser. Par exemple la fonction :func:`local.strxfrm` sert "
+"à produire une fonction clef de tri prennant en compte les conventions de "
+"tri spécifiques aux paramètres régionaux courants."
 
 # 37d2749d3ab34ba2b583267bac44c3ec
 #: glossary.rst:399
@@ -561,6 +762,10 @@ msgid ""
 "meth:`list.sort`, :func:`heapq.nsmallest`, :func:`heapq.nlargest`, and :func:"
 "`itertools.groupby`."
 msgstr ""
+"Plusieurs outils dans Python acceptent des fonctions clef pour maîtriser "
+"comment les éléments dont triés ou groupés. Typiquement les fonctions :func:"
+"`min`, :func:`max`, :func:`sorted`, :meth:`list.sort`, :func:`heapq."
+"nsmallest`, :func:`heapq.nlargest`, et :func:`itertools.groupby`."
 
 # 77ca379fa5474b91bd5304f2ed44ca58
 #: glossary.rst:404
@@ -574,12 +779,20 @@ msgid ""
 "methodcaller`.  See the :ref:`Sorting HOW TO <sortinghowto>` for examples of "
 "how to create and use key functions."
 msgstr ""
+"La méthode `str.lower` peut servir en fonction clef pour effectuer des "
+"recherches insensibles à la casse. Aussi, il est possible de créer des "
+"fonctions clef au besoin avec des expressions lambda, comme ``lambda r: "
+"(r[0], r[2])``. Finalement le module :mod:`operator` fournit des "
+"constructeurs de fonctions clef : :func:`~operator.attrgetter`, :func:"
+"`~operator.itemgetter`, et :func:`~operator.methodcaller`. Voir :ref:"
+"`Comment Trier <sortinghowto>` pour avoir des exemple de création et "
+"d'utilisation de fonctions clés."
 
 # be5c7d2028ff4e6789166fabcd110c1b
 # 1f31eb5ca02d421591a785254ed299d9
 #: glossary.rst:414 glossary.rst:584
 msgid "See :term:`argument`."
-msgstr ""
+msgstr "Voir :term:`argument`."
 
 # 23e58aa44e884ad6bf19a3eb3ae564f1
 #: glossary.rst:417
@@ -588,6 +801,9 @@ msgid ""
 "is evaluated when the function is called.  The syntax to create a lambda "
 "function is ``lambda [arguments]: expression``"
 msgstr ""
+"Une fonction anonyme sous forme d'une expression, et ne contenant qu'une "
+"expression, exécutée lorsqu'elle est appelée. La syntaxe pour créer des "
+"fonctions lambda est: ``lambda [arguments]: expression``"
 
 # c383515df4ec4848a04f0f7ebe2e4346
 #: glossary.rst:422
@@ -597,6 +813,10 @@ msgid ""
 "approach and is characterized by the presence of many :keyword:`if` "
 "statements."
 msgstr ""
+"Regarde devant avant de tomber, (*Look before you leap*). Ce style de "
+"programmation consiste à vérifier des conditions avant d'effectuer des "
+"appels ou des accès. Ce style contraste avec le style :term:`EAFP` et se "
+"caractérise par la présence de beaucoup d'instructions :keyword : `if`."
 
 # 5a59bf0c0e984d0f89a1bf3636ae0f92
 #: glossary.rst:427
@@ -607,6 +827,12 @@ msgid ""
 "thread removes *key* from *mapping* after the test, but before the lookup. "
 "This issue can be solved with locks or by using the EAFP approach."
 msgstr ""
+"Dans un environnement multi-thread, le style *LBYL* peut engendrer une "
+"séquence critique (*race condition*) entre \"regarder\" et \"tomber\". Par "
+"exemple, le code ``if key in mapping: return mapping[key]`` peut échouer si "
+"un autre thread supprime la clef *key* du *mapping* après le test mais avant "
+"l'accès. Ce problème peut être résolu avec des verrous (*locks*) ou avec "
+"l'approche EAFP."
 
 # 212d5a1ca3cd490e9edd786738d9965c
 #: glossary.rst:434
@@ -615,6 +841,9 @@ msgid ""
 "array in other languages than to a linked list since access to elements are "
 "O(1)."
 msgstr ""
+"Un type natif de :term:`sequence` dans Python. En dépit de son nom, une "
+"``list`` ressemble plus à un *array* qu'à une liste chaînée puisque les "
+"accès se font en O(1)."
 
 # bb7bdad57d0a41c49577bbb5951a93ed
 #: glossary.rst:439
@@ -625,6 +854,12 @@ msgid ""
 "numbers (0x..) in the range from 0 to 255. The :keyword:`if` clause is "
 "optional.  If omitted, all elements in ``range(256)`` are processed."
 msgstr ""
+"Un moyen compacte de manipuler tous ou partie des éléments d'une séquence "
+"renvoyant une liste avec les résultats. ``result = ['{:#04x}'.format(x) for "
+"x in range(256) if x % 2 == 0]`` génère une liste de chaînes de caractères "
+"contenant les nombres paires sous forme hexadécimale (0x...) de 0 à 255. La "
+"clause :keyword : `if` est optionnelle. Si elle est omise, tous les éléments "
+"du ``range(256)`` seront utilisés."
 
 # af85382be6444bd8b6a0b0c14cd34219
 #: glossary.rst:447
@@ -634,6 +869,10 @@ msgid ""
 "`302` for details and :class:`importlib.abc.Loader` for an :term:`abstract "
 "base class`."
 msgstr ""
+"Un objet qui charge un module. Il doit définir une méthode nommée :meth:"
+"`load_module`. Un *loader* est typiquement donné par un :term:`finder`. "
+"Voir :pep:`302` pour les détails et :class:`importlib.ABC.Loader` pour sa :"
+"term:`classe de base abstraite`."
 
 # d3f8d163546b4aef87e07a1961c15c1e
 #: glossary.rst:453
@@ -659,11 +898,14 @@ msgid ""
 "access, adding thread-safety, tracking object creation, implementing "
 "singletons, and many other tasks."
 msgstr ""
+"La classe d'une classe. Les définitions de classe créent un nom pour la "
+"classe, un dictionnaire et une liste de classes patentes. La métaclasse a "
+"pour rôle de réunir ces trois paramètres pour construire la classe."
 
 # e74d253e52094f0e8c259b548131f9fc
 #: glossary.rst:471
 msgid "More information can be found in :ref:`metaclasses`."
-msgstr ""
+msgstr "Plus d'informations à ce sujet : :ref:`metaclasses`."
 
 # fc9355391d354473bb61173a1c666f6c
 #: glossary.rst:474
@@ -673,6 +915,10 @@ msgid ""
 "first :term:`argument` (which is usually called ``self``). See :term:"
 "`function` and :term:`nested scope`."
 msgstr ""
+"Une fonction définie dans une classe. Lorsqu'elle est appelée comme un "
+"attribut d'une instance, la méthode reçoit l'instance en premier :term:"
+"`argument` (qui par convention est nommé ``self``). Voir :term:`function` "
+"et :term:`nested scope`."
 
 # 8a1ebe93ab0049cd9c41ae0dd50b6df2
 #: glossary.rst:480

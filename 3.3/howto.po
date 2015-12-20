@@ -493,7 +493,7 @@ msgstr ""
 #: howto/pyporting.rst:0 howto/regex.rst:0 howto/sockets.rst:0
 #: howto/webservers.rst:0
 msgid "Abstract"
-msgstr ""
+msgstr "Résumé"
 
 #: howto/cporting.rst:14
 msgid ""
@@ -10938,7 +10938,7 @@ msgstr ""
 
 #: howto/webservers.rst:210
 msgid "mod_python"
-msgstr ""
+msgstr "mod_python"
 
 #: howto/webservers.rst:212
 msgid ""
@@ -11347,11 +11347,11 @@ msgstr ""
 
 #: howto/webservers.rst:523
 msgid "`Mako <http://www.makotemplates.org/>`_"
-msgstr ""
+msgstr "`Mako <http://www.makotemplates.org/>`_"
 
 #: howto/webservers.rst:524
 msgid "`Genshi <http://genshi.edgewall.org/>`_"
-msgstr ""
+msgstr "`Genshi <http://genshi.edgewall.org/>`_"
 
 #: howto/webservers.rst:525
 msgid "`Jinja <http://jinja.pocoo.org/2/>`_"
@@ -11518,7 +11518,7 @@ msgstr ""
 
 #: howto/webservers.rst:645
 msgid "Django"
-msgstr ""
+msgstr "Django"
 
 #: howto/webservers.rst:647
 msgid ""
@@ -11554,7 +11554,7 @@ msgstr ""
 
 #: howto/webservers.rst:672
 msgid "TurboGears"
-msgstr ""
+msgstr "TurboGears"
 
 #: howto/webservers.rst:674
 msgid ""
@@ -11585,7 +11585,7 @@ msgstr ""
 
 #: howto/webservers.rst:694
 msgid "Zope"
-msgstr ""
+msgstr "Zope"
 
 #: howto/webservers.rst:696
 msgid ""

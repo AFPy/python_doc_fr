@@ -59,3 +59,4 @@ def merge_po_files():
 
 if __name__ == '__main__':
     merge_po_files()
+    print("Don't forget to run ./scripts/fix_style.sh")

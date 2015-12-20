@@ -29,7 +29,8 @@ msgstr ""
 "L'interpréteur CPython analyse la ligne de commande et l'environnement à la "
 "recherche de différents paramètres/"
 
-# We’re speaking about the command line of other Python implementations, not other implementatons of command lines.
+# We’re speaking about the command line of other Python implementations, not
+# other implementatons of command lines.
 #: using/cmdline.rst:16
 msgid ""
 "Other implementations' command line schemes may differ.  See :ref:"
@@ -469,7 +470,8 @@ msgid ""
 "secret."
 msgstr ""
 
-# I’m creating terminology here; where’s the mailing list to discuss such stuff?
+# I’m creating terminology here; where’s the mailing list to discuss such
+# stuff?
 #: using/cmdline.rst:280
 #, fuzzy
 msgid ""

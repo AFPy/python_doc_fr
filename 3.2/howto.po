@@ -24,12 +24,12 @@ msgstr ""
 # 275dfc3f60444226aa98c187c8b1f7e9
 #: howto/advocacy.rst:5
 msgid "A.M. Kuchling"
-msgstr ""
+msgstr "A.M. Kuchling"
 
 # 4eec03f4c42f49298460dcff404d42b7
 #: howto/advocacy.rst:6
 msgid "0.03"
-msgstr ""
+msgstr "0.03"
 
 # 7a8018cff18e45d7add43acedc1a3b3c
 #: howto/advocacy.rst:11
@@ -39,11 +39,16 @@ msgid ""
 "reasons to use Python, strategies for winning acceptance, facts and "
 "arguments you can use, and cases where you *shouldn't* try to use Python."
 msgstr ""
+"Il est souvent difficile de faire accepter les logiciels open source par "
+"votre encadrement, et Python n'est pas une exception à cette règle. Ce "
+"document traite des raisons d'utiliser Python, des stratégies pour le faire "
+"accepter, des faits et arguments que vous pouvez exploiter, et des cas où "
+"vous *ne devriez pas* essayer d'utiliser python."
 
 # b90fa39225e74c61abc5f0ba7e3d87ed
 #: howto/advocacy.rst:18
 msgid "Reasons to Use Python"
-msgstr ""
+msgstr "Les raisons de choisir Python"
 
 # 773199130d494fecaeb848e1a9da5a8c
 #: howto/advocacy.rst:20
@@ -52,6 +57,9 @@ msgid ""
 "development process, and this section will discuss them, and why Python has "
 "some properties that make it a particularly good choice."
 msgstr ""
+"Ce chapitre traite des différentes raisons d'introduire un langage de script "
+"dans vos processus de développements, et pourquoi Python est un choix "
+"particulièrement judicieux."
 
 # 8656b0fccad8439cb9c50b1e928f3a60
 #: howto/advocacy.rst:26
@@ -65,6 +73,10 @@ msgid ""
 "are grouped together, and called by higher-level functions, which may in "
 "turn be used as basic operations by still further upper levels."
 msgstr ""
+"Les programmes sont en général organisés de manière modulaire. Les "
+"opérations de bas niveau sont regroupées, et appelées par des fonctions de "
+"niveau supérieur, qui peuvent être à leur tour être utilisées comme des "
+"opérations unitaires par du code de niveau encore supérieur."
 
 # 14bf79a44c454779949c00bd169c2eb6
 #: howto/advocacy.rst:32
@@ -87,6 +99,13 @@ msgid ""
 "approach, the primitives can be seen as basic building blocks which are then "
 "glued together to produce the complete product."
 msgstr ""
+"En général, les niveaux inférieurs réalisent des opérations très simples ; "
+"ils implémentent une structure de données comme un arbre binaire ou une "
+"table de hachage, ou ils exécutent des opérations simples, comme la "
+"conversion d'une date en chaîne de caractères par exemple. Les niveaux "
+"supérieurs fournissent la logique pour associer ces opérations primitives. "
+"Avec cette approche, les primitives peuvent être considérées comme des "
+"simples briques qui sont assemblées afin de construire le produit complet."
 
 # 534490655999416ab7223622807cbc9a
 #: howto/advocacy.rst:46
@@ -116,7 +135,7 @@ msgstr ""
 # 28bf61212b1b42aaaf814ecaab41b08e
 #: howto/advocacy.rst:65
 msgid "Prototyping"
-msgstr ""
+msgstr "Prototypage"
 
 # de4ddeb358214b2abfcab958b1168c62
 #: howto/advocacy.rst:67
@@ -2111,7 +2130,7 @@ msgstr ""
 # 67a17c2b18f34c0d92f2a0760121532d
 #: howto/descriptor.rst:11
 msgid "Abstract"
-msgstr ""
+msgstr "Résumé"
 
 # fd370b6c6bfc41e08df798096a483aa8
 #: howto/descriptor.rst:13
@@ -12399,7 +12418,7 @@ msgstr ""
 # 8021a4c4f25447fc8400540a035c32d9
 #: howto/webservers.rst:210
 msgid "mod_python"
-msgstr ""
+msgstr "mod_python"
 
 # 65c785664c9f4418922a8af54f3f9990
 #: howto/webservers.rst:212
@@ -12863,12 +12882,12 @@ msgstr ""
 # 6c950f14cc0248e08e9c68294fd3aef4
 #: howto/webservers.rst:523
 msgid "`Mako <http://www.makotemplates.org/>`_"
-msgstr ""
+msgstr "`Mako <http://www.makotemplates.org/>`_"
 
 # d623c35097b24280a00839fc91e95c7a
 #: howto/webservers.rst:524
 msgid "`Genshi <http://genshi.edgewall.org/>`_"
-msgstr ""
+msgstr "`Genshi <http://genshi.edgewall.org/>`_"
 
 # d76d73f045bc41fe8715e7bb9892f450
 #: howto/webservers.rst:525
@@ -13057,7 +13076,7 @@ msgstr ""
 # ab1e4a80744549c2a09e284578774df2
 #: howto/webservers.rst:645
 msgid "Django"
-msgstr ""
+msgstr "Django"
 
 # 65564ac6b72b45e7b659fb3216dc9e54
 #: howto/webservers.rst:647
@@ -13097,7 +13116,7 @@ msgstr ""
 # fdc1c377b1d84a4faddd3ccdbced78c4
 #: howto/webservers.rst:672
 msgid "TurboGears"
-msgstr ""
+msgstr "TurboGears"
 
 # 52d3b1f0b1744a4abc02e4e22cb33a5d
 #: howto/webservers.rst:674
@@ -13132,7 +13151,7 @@ msgstr ""
 # 13851c9e387949a8ab09b65b8e6250eb
 #: howto/webservers.rst:694
 msgid "Zope"
-msgstr ""
+msgstr "Zope"
 
 # 0d84e279893f4f9c9a00f76fe5ffe3e7
 #: howto/webservers.rst:696

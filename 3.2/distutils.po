@@ -19,7 +19,7 @@ msgstr ""
 # 172afef1734f491a9a0c7f41fbe48fd8
 #: distutils/apiref.rst:5
 msgid "API Reference"
-msgstr ""
+msgstr "Référence de l'API"
 
 # 27b3495eb0a846e98c9a1fb2183203e6
 #: distutils/apiref.rst:9
@@ -34,6 +34,10 @@ msgid ""
 "called from the setup script). Indirectly provides the  :class:`distutils."
 "dist.Distribution` and :class:`distutils.cmd.Command` class."
 msgstr ""
+"Le module :mod:`distutils.core` est le seul module qui a besoin d'être "
+"installé pour utiliser Distutils. Il fournit le :func:`setup` (qui est "
+"appelé par le script de setup). Il fournit indirectement les classes :class:"
+"`distutils.dist.Distribution` et :class:`distutils.cmd.Command`."
 
 # fe9e78da272541e881b399a5188be78c
 #: distutils/apiref.rst:23
@@ -41,6 +45,8 @@ msgid ""
 "The basic do-everything function that does most everything you could ever "
 "ask for from a Distutils method."
 msgstr ""
+"La fonction de base à tout faire qui fait presque tout ce dont vous pourriez "
+"attendre d'une méthode Distutils. Voir XXXXX"
 
 # ecf06a9913024cc099588ecf13930982
 #: distutils/apiref.rst:26
@@ -48,36 +54,38 @@ msgid ""
 "The setup function takes a large number of arguments. These are laid out in "
 "the following table."
 msgstr ""
+"La fonction setup prend un grand nombre d'arguments. Ils sont présentés dans "
+"le tableau suivant."
 
 # d2b888ca12f844b2b1ede777c5df6ec1
 # 42ca91259fa24e53ad4807222d69a8c8
 #: distutils/apiref.rst:30 distutils/apiref.rst:169
 msgid "argument name"
-msgstr ""
+msgstr "nom de l'argument"
 
 # 1dcfe066d69348308b66874dc8bf697c
 # cc5b020251ba45d6b95dc394816e3db7
 # 7c927ea7803a45fa8704806a4984b91c
 #: distutils/apiref.rst:30 distutils/apiref.rst:129 distutils/apiref.rst:169
 msgid "value"
-msgstr ""
+msgstr "valeur"
 
 # 58305b6af6d04f0aa05befc6f5657564
 # 7625d90465ab471dacd25a6c1281926f
 #: distutils/apiref.rst:30 distutils/apiref.rst:169
 msgid "type"
-msgstr ""
+msgstr "type"
 
 # ff6fbc6364484c6aad990e3a84e8e3c7
 # ea35177d0b674a51a01c18878e4ced70
 #: distutils/apiref.rst:32 distutils/apiref.rst:171
 msgid "*name*"
-msgstr ""
+msgstr "*name*"
 
 # 5c9002b5880649b39288ed71dda71ea5
 #: distutils/apiref.rst:32
 msgid "The name of the package"
-msgstr ""
+msgstr "Le nom du paquet"
 
 # 0b3b791ed5f0440d88558ccddb4c7507
 # 0038780e4da14e1f9ad93937491ec335
@@ -99,62 +107,62 @@ msgstr ""
 #: distutils/apiref.rst:63 distutils/apiref.rst:84 distutils/apiref.rst:94
 #: distutils/apiref.rst:171 distutils/apiref.rst:261
 msgid "a string"
-msgstr ""
+msgstr "une chaîne de caractères"
 
 # dcf710e8bdc4489bb9890eb40bc9a26a
 #: distutils/apiref.rst:34
 msgid "*version*"
-msgstr ""
+msgstr "*version*"
 
 # 2621c1214f884b4d8eaf06f2bf5aff1d
 #: distutils/apiref.rst:34
 msgid "The version number of the package; see :mod:`distutils.version`"
-msgstr ""
+msgstr "Le numéro de version du paquet"
 
 # 097b26d32a584c01b4f19512e85b5066
 #: distutils/apiref.rst:38
 msgid "*description*"
-msgstr ""
+msgstr "*description*"
 
 # 3087a4dacbcf45be904723ba36ccb5e6
 #: distutils/apiref.rst:38
 msgid "A single line describing the package"
-msgstr ""
+msgstr "Une ligne unique décrivant le paquet"
 
 # 4bbbf746d8c84510bad417d0a3b699a6
 #: distutils/apiref.rst:41
 msgid "*long_description*"
-msgstr ""
+msgstr "*long_description*"
 
 # 795d26d5ee434f2caa54cd10bd53d9d8
 #: distutils/apiref.rst:41
 msgid "Longer description of the package"
-msgstr ""
+msgstr "Une description plus longue du paquet"
 
 # 5dcc172aa70a48a3858ded7ebef8f4e3
 #: distutils/apiref.rst:44
 msgid "*author*"
-msgstr ""
+msgstr "*author*"
 
 # 16e6e171eb104b5a933dfc43f30bdaec
 #: distutils/apiref.rst:44
 msgid "The name of the package author"
-msgstr ""
+msgstr "Le nom de l'auteur du paquet"
 
 # d2d631edeeeb4fe09d46dc5c5769d766
 #: distutils/apiref.rst:46
 msgid "*author_email*"
-msgstr ""
+msgstr "*author_email*"
 
 # 0a0b2328fe5046f3bc2199714ae1637a
 #: distutils/apiref.rst:46
 msgid "The email address of the package author"
-msgstr ""
+msgstr "L'adresse e-mail de l'auteur du paquet"
 
 # 9c89d240aebc4e69bac27d66bbb670ed
 #: distutils/apiref.rst:49
 msgid "*maintainer*"
-msgstr ""
+msgstr "*maintainer*"
 
 # 40082c4fa84743a299f06539c856f13e
 #: distutils/apiref.rst:49
@@ -167,43 +175,43 @@ msgstr ""
 # 6a8d58d4b08b4633a34d35f8839ccaa8
 #: distutils/apiref.rst:56
 msgid "*maintainer_email*"
-msgstr ""
+msgstr "*maintainer_email*"
 
 # 88d72d1a36b2409ba94b5392c85c668b
 #: distutils/apiref.rst:56
 msgid ""
 "The email address of the current maintainer, if different from the author"
-msgstr ""
+msgstr "L'adresse email de l'actuel mainteneur, si différent de l'auteur"
 
 # 633f3a67f18441fca9038ebd88a552e8
 #: distutils/apiref.rst:60
 msgid "*url*"
-msgstr ""
+msgstr "*url*"
 
 # 51b7eeffb11041ac982e04990a963849
 #: distutils/apiref.rst:60
 msgid "A URL for the package (homepage)"
-msgstr ""
+msgstr "Une URL pour le paquet (page d'accueil)"
 
 # d91f9bc89ca347a1a54b0ca1dd28460b
 #: distutils/apiref.rst:63
 msgid "*download_url*"
-msgstr ""
+msgstr "*download_url*"
 
 # 1ab613227293442c8a7c7ca113247cd6
 #: distutils/apiref.rst:63
 msgid "A URL to download the package"
-msgstr ""
+msgstr "Une URL pour télécharger le paquet"
 
 # 2e04c5c145214a44a13cb47a0213404c
 #: distutils/apiref.rst:65
 msgid "*packages*"
-msgstr ""
+msgstr "*packages*"
 
 # 6b97a59882054b5c916743733c79b223
 #: distutils/apiref.rst:65
 msgid "A list of Python packages that distutils will manipulate"
-msgstr ""
+msgstr "Une liste des paquets Python que distutils va manipuler"
 
 # 32426b04712947dbadad042376ff6a70
 # 611b8eb5c8704873a0713eb5e6efe782
@@ -226,52 +234,52 @@ msgstr ""
 #: distutils/apiref.rst:217 distutils/apiref.rst:223 distutils/apiref.rst:230
 #: distutils/apiref.rst:241 distutils/apiref.rst:250 distutils/apiref.rst:258
 msgid "a list of strings"
-msgstr ""
+msgstr "une liste de chaînes"
 
 # 480549d4cb054e0e8329092e738120c1
 #: distutils/apiref.rst:68
 msgid "*py_modules*"
-msgstr ""
+msgstr "*py_modules*"
 
 # f541ba1a5b89432899b803a44cf4130f
 #: distutils/apiref.rst:68
 msgid "A list of Python modules that distutils will manipulate"
-msgstr ""
+msgstr "Une liste de modules Python que distutils va manipuler"
 
 # 787efe9990374bb8989c4850b6934eed
 #: distutils/apiref.rst:71
 msgid "*scripts*"
-msgstr ""
+msgstr "*scripts*"
 
 # 20d9a3d1784845b08d693ca32a707b1e
 #: distutils/apiref.rst:71
 msgid "A list of standalone script files to be built and installed"
-msgstr ""
+msgstr "Une liste de scripts autonomes à construire et à installer"
 
 # 07954b3f212f41dda91c28e576ed75aa
 #: distutils/apiref.rst:75
 msgid "*ext_modules*"
-msgstr ""
+msgstr "*ext_modules*"
 
 # 93b7c1d946d74eb595404d3a8dca7c9e
 #: distutils/apiref.rst:75
 msgid "A list of Python extensions to be built"
-msgstr ""
+msgstr "Une liste des extensions Python à construire"
 
 # d53bfaf8f8a74d2eb726b9c9dc2c5c29
 #: distutils/apiref.rst:75
 msgid "a list of instances of :class:`distutils.core.Extension`"
-msgstr ""
+msgstr "Une liste d'instances de :class:`distutils.core.Extension'"
 
 # ed87004e8e3d4a6fa58a1304c01996a8
 #: distutils/apiref.rst:78
 msgid "*classifiers*"
-msgstr ""
+msgstr "*classifiers*"
 
 # 0e6d131000414cbab61345130cff1d49
 #: distutils/apiref.rst:78
 msgid "A list of categories for the package"
-msgstr ""
+msgstr "Une liste de catégories pour le paquet"
 
 # 7c25ff026f004575bc77d995489a8195
 #: distutils/apiref.rst:78
@@ -283,22 +291,22 @@ msgstr ""
 # 55cb260fb3ee46c5a92a81be8719e639
 #: distutils/apiref.rst:81
 msgid "*distclass*"
-msgstr ""
+msgstr "*distclass*"
 
 # 5b4a5cdd67ae432ba446f6506dd35ef3
 #: distutils/apiref.rst:81
 msgid "the :class:`Distribution` class to use"
-msgstr ""
+msgstr "la classe :class:`Distribution` à utiliser"
 
 # 0f97eb084ae743c29463989a4170728d
 #: distutils/apiref.rst:81
 msgid "a subclass of :class:`distutils.core.Distribution`"
-msgstr ""
+msgstr "Une sous classe de :class:`distutils.core.Distribution`"
 
 # 9d0a1f421cc14f83b850a8bb77acf9be
 #: distutils/apiref.rst:84
 msgid "*script_name*"
-msgstr ""
+msgstr "*script_name*"
 
 # ea52679762c642a5817b69acf7c86c5c
 #: distutils/apiref.rst:84
@@ -308,49 +316,49 @@ msgstr ""
 # c9278a3821a04617aa5f18a97aba754e
 #: distutils/apiref.rst:88
 msgid "*script_args*"
-msgstr ""
+msgstr "*script_args*"
 
 # 2cdd9f23ce5942c3a47da23d5f50b526
 #: distutils/apiref.rst:88
 msgid "Arguments to supply to the setup script"
-msgstr ""
+msgstr "Arguments à fournir au script d'installation"
 
 # ca8271fded1a4d1db51cc64da1ba7524
 #: distutils/apiref.rst:91
 msgid "*options*"
-msgstr ""
+msgstr "*options*"
 
 # d2dd836d549645f28c1e2dc1f3579405
 #: distutils/apiref.rst:91
 msgid "default options for the setup script"
-msgstr ""
+msgstr "options par défaut pour le script d'installation"
 
 # 3a8b1220063e45b8bf7105056cedf68a
 # e511dc90c2b64ae6b19ed4168e7a15a3
 # ddd6b9830c6b4036a8f9cc764936e348
 #: distutils/apiref.rst:91 distutils/apiref.rst:101 distutils/apiref.rst:107
 msgid "a dictionary"
-msgstr ""
+msgstr "un dictionnaire"
 
 # 4cdb7e0e59fc4d828a217db49fad2439
 #: distutils/apiref.rst:94
 msgid "*license*"
-msgstr ""
+msgstr "*license*"
 
 # 113dac6ffba5404ea587f488f2c902ec
 #: distutils/apiref.rst:94
 msgid "The license for the package"
-msgstr ""
+msgstr "La licence pour le paquet"
 
 # 5d7075bc017e470285d8e5f678e22836
 #: distutils/apiref.rst:96
 msgid "*keywords*"
-msgstr ""
+msgstr "*keywords*"
 
 # 07bc755880f34f04819dd004fe7b5572
 #: distutils/apiref.rst:96
 msgid "Descriptive meta-data, see :pep:`314`"
-msgstr ""
+msgstr "Méta-données descriptives, voir :pep:`314`"
 
 # 9c6f5e92af97464a93a37f511741661c
 # f22c7e3ab4d940fc897b566c4adf107f
@@ -361,42 +369,42 @@ msgstr ""
 # 37a1ca063a504233b5fb4862482f785f
 #: distutils/apiref.rst:99
 msgid "*platforms*"
-msgstr ""
+msgstr "*platforms*"
 
 # 8b93af62dd3b4f9e92bd4e52a8c4023d
 #: distutils/apiref.rst:101
 msgid "*cmdclass*"
-msgstr ""
+msgstr "*cmdclass*"
 
 # 0fd4f8e2719b463f936638480b12ccdf
 #: distutils/apiref.rst:101
 msgid "A mapping of command names to :class:`Command` subclasses"
-msgstr ""
+msgstr "Un mapping des noms de commandes et des sous-classes :class:`Command`"
 
 # 8d4461263c094fc4bbc93315aa6975a0
 #: distutils/apiref.rst:104
 msgid "*data_files*"
-msgstr ""
+msgstr "*data_files*"
 
 # 737322fe58f34553896617a43d00a6ac
 #: distutils/apiref.rst:104
 msgid "A list of data files to install"
-msgstr ""
+msgstr "Une liste de fichiers de données à installer"
 
 # a1888aa3104942e2b14b16d5e0362574
 #: distutils/apiref.rst:104
 msgid "a list"
-msgstr ""
+msgstr "une liste"
 
 # 1b39767cadc549ba8c16a9aa87dbd720
 #: distutils/apiref.rst:107
 msgid "*package_dir*"
-msgstr ""
+msgstr "*package_dir*"
 
 # 11d3d6c73bb94a72a323c2e10ad89713
 #: distutils/apiref.rst:107
 msgid "A mapping of package to directory names"
-msgstr ""
+msgstr "Un mapping des paquets et des noms de dossiers"
 
 # bacb42d0931f4b6cb6fa3ae8763bc3d6
 #: distutils/apiref.rst:115
@@ -416,24 +424,28 @@ msgid ""
 "*script_args* is a list of strings; if supplied, ``sys.argv[1:]`` will be "
 "replaced by *script_args* for the duration  of the call."
 msgstr ""
+"*script_name* est un fichier qui sera lu et exécuté avec :func:`exec`. ``sys."
+"argv[0]`` sera remplacé par *script* par la durée de l'appel. *script_args* "
+"est une liste de chaînes; si fourni, ``sys.argv[1:]`` sera remplacé par "
+"*script_args* pour la durée de l'appel."
 
 # f91bb3699e78458e94ae5130e26f7dcc
 #: distutils/apiref.rst:126
 msgid ""
 "*stop_after* tells :func:`setup` when to stop processing; possible  values:"
-msgstr ""
+msgstr "*stop_after* dit à :func:`setup` quand s'arrêter; valeurs possibles:"
 
 # 9a0a121d25a74d5c8da837adf3f18052
 # b30ad88cb35a496b8e25406e35dc2ba9
 # 892121616e0b4b79ad3520317aeae2cb
 #: distutils/apiref.rst:129 distutils/apiref.rst:536 distutils/apiref.rst:1567
 msgid "description"
-msgstr ""
+msgstr "description"
 
 # f487a9f34409465287e1f9f4bb25cf30
 #: distutils/apiref.rst:131
 msgid "*init*"
-msgstr ""
+msgstr "*init*"
 
 # e3c3695ea1274e2a89e387f141c87945
 #: distutils/apiref.rst:131
@@ -441,11 +453,13 @@ msgid ""
 "Stop after the :class:`Distribution` instance has been created  and "
 "populated with the keyword arguments to :func:`setup`"
 msgstr ""
+"S'arrête une fois que l'instance :class:`Distribution` a été créée et "
+"renseignée avec les arguments-clés de :func:`setup`"
 
 # cd653ec9b591437eb87f833c2e249445
 #: distutils/apiref.rst:135
 msgid "*config*"
-msgstr ""
+msgstr "*config*"
 
 # 1be996f80b624b0591b3811d0ddcc548
 #: distutils/apiref.rst:135
@@ -453,11 +467,13 @@ msgid ""
 "Stop after config files have been parsed (and their data stored in the :"
 "class:`Distribution` instance)"
 msgstr ""
+"S'arrête une fois que les fichiers de configuration ont été parcouru (et que "
+"leurs données ont été stockées dans l'instance :class:`Distribution`)"
 
 # 5e1c3bce214a435986535a3705d51eae
 #: distutils/apiref.rst:139
 msgid "*commandline*"
-msgstr ""
+msgstr "*commandline*"
 
 # 4f799d0a45384aa1a53a7f2f981da4fe
 #: distutils/apiref.rst:139
@@ -465,11 +481,14 @@ msgid ""
 "Stop after the command-line (``sys.argv[1:]`` or  *script_args*) have been "
 "parsed (and the data stored in the :class:`Distribution` instance.)"
 msgstr ""
+"S'arrête une fois que la ligne de commande (``sys.argv[1:]`` ou "
+"*script_args*) a été parcouru (et les données stockées dans l'instance :"
+"class:`Distribution`)"
 
 # d85d3217f65146d3aaed8db47d8e8359
 #: distutils/apiref.rst:144
 msgid "*run*"
-msgstr ""
+msgstr "*run*"
 
 # ec9876cf0b554b94a1eade37a17bfa02
 #: distutils/apiref.rst:144
@@ -477,6 +496,8 @@ msgid ""
 "Stop after all commands have been run (the same as  if :func:`setup` had "
 "been called in the usual way). This is the default value."
 msgstr ""
+"S'arrête une fois que toutes les commandes ont été exécutées (comme si :func:"
+"`setup` fût appelé de la manière habituelle). Ceci est la valeur par défaut."
 
 # 041c0cced54948c7a9acb3481aa173a2
 #: distutils/apiref.rst:150
@@ -484,21 +505,23 @@ msgid ""
 "In addition, the :mod:`distutils.core` module exposed a number of  classes "
 "that live elsewhere."
 msgstr ""
+"De plus, le module :mod:`distutils.core` a exposé un nombre de classe qui "
+"existent ailleurs."
 
 # 53a57db8b30647449025388edec69ae0
 #: distutils/apiref.rst:153
 msgid ":class:`~distutils.extension.Extension` from :mod:`distutils.extension`"
-msgstr ""
+msgstr ":class:`Extension` de :mod:`distutils.extension`"
 
 # 1f5abaed439846919601a9d3b1711028
 #: distutils/apiref.rst:155
 msgid ":class:`~distutils.cmd.Command` from :mod:`distutils.cmd`"
-msgstr ""
+msgstr ":class:`Command` de :mod:`distutils.cmd`"
 
 # e50d2a2c1ded43179ec7c4966f2351eb
 #: distutils/apiref.rst:157
 msgid ":class:`~distutils.dist.Distribution` from :mod:`distutils.dist`"
-msgstr ""
+msgstr ":class:`Distribution` de :mod:`distutils.dist`"
 
 # ad451459067e43ef8b57b84c58d13540
 #: distutils/apiref.rst:159
@@ -506,6 +529,8 @@ msgid ""
 "A short description of each of these follows, but see the relevant module "
 "for the full reference."
 msgstr ""
+"Une courte description de chacune d'elle suit, mais consultez le module "
+"concerné pour une référence complète."
 
 # 475442e7bf4d40f48442ae97d5a94ad7
 #: distutils/apiref.rst:165
@@ -520,11 +545,13 @@ msgid ""
 "the full name of the extension, including any packages --- ie. *not* a "
 "filename or pathname, but Python dotted name"
 msgstr ""
+"le nom complet de l'extension, incluant n'importe quel paquet --- c-à-d "
+"*pas* un nom de fichier ou de chemin mais un nom Python séparé par des points"
 
 # 5a259e1e58d94ec8ac1f0e4fe3750bc0
 #: distutils/apiref.rst:177
 msgid "*sources*"
-msgstr ""
+msgstr "*sources*"
 
 # 7d2997ff1b8d478aa350a8567a045b90
 #: distutils/apiref.rst:177
@@ -535,6 +562,12 @@ msgid ""
 "is recognized by the :command:`build_ext` command as source for a Python "
 "extension."
 msgstr ""
+"listes des noms de fichier des sources, relatifs à la racine de la "
+"distribution (où est placé le script setup), dans un format Unix (séparé par "
+"des slashs) dans un souci de portabilité. Les fichiers de code source "
+"peuvent être du C, C++, SWIG (.i), des fichiers de ressources spécifiques à "
+"la plateforme ou tout autre reconnu par la commande :command:`build_ext` "
+"comme source d'une extension Python"
 
 # 44828e21fae24a67bfdbe916461024db
 #: distutils/apiref.rst:190
@@ -547,11 +580,13 @@ msgid ""
 "list of directories to search for C/C++ header files (in Unix form for "
 "portability)"
 msgstr ""
+"liste des répertoires où chercher les fichiers d'entêtes C/C++ (en format "
+"Unix dans un souci de portabilité)"
 
 # 3e74837d882448bbbc608c5bfeff69f1
 #: distutils/apiref.rst:194
 msgid "*define_macros*"
-msgstr ""
+msgstr "*define_macros*"
 
 # af9732ba71474669864ec2e949d16928
 #: distutils/apiref.rst:194
@@ -565,12 +600,12 @@ msgstr ""
 # af5f64dd0e4b4341b61c43513a1bc3b3
 #: distutils/apiref.rst:194
 msgid "a list of tuples"
-msgstr ""
+msgstr "une liste de chaînes"
 
 # 38aff3b2ec8b4ba9b506e99b13365784
 #: distutils/apiref.rst:206
 msgid "*undef_macros*"
-msgstr ""
+msgstr "*undef_macros*"
 
 # f26fdcb54ef04626b84d2189da3f3ffe
 #: distutils/apiref.rst:206
@@ -670,7 +705,7 @@ msgstr ""
 # 0dc18d48f1824b9bbd7471a4b8b495ef
 #: distutils/apiref.rst:258
 msgid "list of files that the extension depends on"
-msgstr ""
+msgstr "liste des fichiers dont dépend l'extension"
 
 # c230eac28a0245859e4cb755f7d29527
 #: distutils/apiref.rst:261
@@ -683,11 +718,13 @@ msgid ""
 "extension language (i.e. ``'c'``, ``'c++'``, ``'objc'``). Will be detected "
 "from the source extensions if not provided."
 msgstr ""
+"langage de l'extension (par exemple ``'c'``, ``'c++'``, ``'objc'``). Il sera "
+"détecté selon l'extension de la source s'il n'est pas précisé."
 
 # b050d10070f346559db135e5eb2633dd
 #: distutils/apiref.rst:267
 msgid "*optional*"
-msgstr ""
+msgstr "*options*"
 
 # d3bdcae492564b588282e60964fa471d
 #: distutils/apiref.rst:267
@@ -740,7 +777,7 @@ msgstr ""
 # 54621204a7d24f368534ba9a4c6b7322
 #: distutils/apiref.rst:302
 msgid "This module provides the following functions."
-msgstr ""
+msgstr "Ce module fournit les fonctions suivantes."
 
 # 8a81e6f7b4804e27a89cffa80d9f4b9f
 #: distutils/apiref.rst:307
@@ -769,6 +806,7 @@ msgstr ""
 #: distutils/apiref.rst:328
 msgid "Determine the default compiler to use for the given platform."
 msgstr ""
+"Détermine le compilateur par défaut a utiliser par une plateforme donnée"
 
 # 438b8686f10d442498712d790ef14f4b
 #: distutils/apiref.rst:330
@@ -784,6 +822,8 @@ msgid ""
 "The default values are ``os.name`` and ``sys.platform`` in case the "
 "parameters are not given."
 msgstr ""
+"Les valeurs par défaut sont ``os.name`` et ``sys.platform`` si les "
+"paramètres ne sont pas fournis."
 
 # c8a3d4adc4f04fb4b07f52a009a36951
 #: distutils/apiref.rst:340
@@ -4788,7 +4828,7 @@ msgstr ""
 # 1401622346824e38bf483c6e0881351d
 #: distutils/introduction.rst:155
 msgid "module"
-msgstr ""
+msgstr "*py_modules*"
 
 # c18a0870c9ca41cfa666ac129d3e5bb5
 #: distutils/introduction.rst:153
@@ -4814,7 +4854,7 @@ msgstr ""
 # bd786f91f249497bbe73246666d23fe2
 #: distutils/introduction.rst:168
 msgid "extension module"
-msgstr ""
+msgstr "*ext_modules*"
 
 # efcbc20da19d41db8cbeaacbc4a3cedb
 #: distutils/introduction.rst:163
@@ -4831,7 +4871,7 @@ msgstr ""
 # 9e7e8ecacf794f52a6b8b3d8c1784f1b
 #: distutils/introduction.rst:173
 msgid "package"
-msgstr ""
+msgstr "*packages*"
 
 # 6e50147b674842289c56560c5605c3ca
 #: distutils/introduction.rst:171
@@ -4844,7 +4884,7 @@ msgstr ""
 # ecf23fa967594ac29d1a9bf08841a389
 #: distutils/introduction.rst:183
 msgid "root package"
-msgstr ""
+msgstr "*packages*"
 
 # 833823eae8f54c51ab6e5a8e2c022cdd
 #: distutils/introduction.rst:176
@@ -4873,7 +4913,7 @@ msgstr ""
 # 597ac937c2f74c639e5a92e63d5e739d
 #: distutils/introduction.rst:199
 msgid "module distribution"
-msgstr ""
+msgstr "description"
 
 # 832fcb4a1c7a41dcbe3018b14b53386f
 #: distutils/introduction.rst:194
@@ -6205,7 +6245,7 @@ msgstr ""
 # 5d947ce54ee444798498a47cd4997191
 #: distutils/setupscript.rst:625
 msgid "'short string'"
-msgstr ""
+msgstr "une chaîne de caractères"
 
 # c8a9308ad5ae4b08ae1ab58214a93c19
 #: distutils/setupscript.rst:625
@@ -6215,7 +6255,7 @@ msgstr ""
 # cbbf41cb0eb246f1be9270f385c65a92
 #: distutils/setupscript.rst:629
 msgid "'long string'"
-msgstr ""
+msgstr "une chaîne de caractères"
 
 # e340bbf5fadd4c08871e96cd4daacd70
 #: distutils/setupscript.rst:628
@@ -6227,7 +6267,7 @@ msgstr ""
 # f2fe6962e79645f0a4838c2e39362fc8
 #: distutils/setupscript.rst:632
 msgid "'list of strings'"
-msgstr ""
+msgstr "une liste de chaînes"
 
 # 1b252145a50d49d7a4f5aaaab3ca0154
 #: distutils/setupscript.rst:632

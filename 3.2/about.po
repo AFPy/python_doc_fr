@@ -19,7 +19,7 @@ msgstr ""
 # d139f79a7afa4593a9fb29d925efa721
 #: about.rst:3
 msgid "About these documents"
-msgstr ""
+msgstr "À propos de ces documents"
 
 # 916de3d77eec47ba98075c77500f0ac3
 #: about.rst:6
@@ -27,6 +27,9 @@ msgid ""
 "These documents are generated from `reStructuredText`_ sources by `Sphinx`_, "
 "a document processor specifically written for the Python documentation."
 msgstr ""
+"Ces documents sont générés à partir de sources en `reStructuredText`_ par "
+"`Sphinx`_, un analyseur de documents spécialement conçu pour la "
+"documentation Python."
 
 # 855c4d4427aa494985b65fd7cdc8da96
 #: about.rst:15
@@ -35,11 +38,15 @@ msgid ""
 "docs@python.org mailing list.  We're always looking for volunteers wanting "
 "to help with the docs, so feel free to send a mail there!"
 msgstr ""
+"Le développement de la documentation et de ses outils se passe sur la liste "
+"de diffusion docs@python.org. Nous sommes toujours à la recherche de "
+"volontaires souhaitant aider avec les documentations, alors n'hésitez pas à "
+"envoyer un mail !"
 
 # 926248c0874e4b8fa5f1d86134b7e97f
 #: about.rst:19
 msgid "Many thanks go to:"
-msgstr ""
+msgstr "Merci beaucoup à :"
 
 # eb33930a043b469889c2b414953b37e8
 #: about.rst:21
@@ -47,6 +54,8 @@ msgid ""
 "Fred L. Drake, Jr., the creator of the original Python documentation toolset "
 "and writer of much of the content;"
 msgstr ""
+"Fred L. Drake, Jr., créateur des outils originaux de la documentation Python "
+"et rédacteur de la plupart de son contenu ;"
 
 # 70a3ff64b89b49b8ac98778ac84841aa
 #: about.rst:23
@@ -61,6 +70,8 @@ msgid ""
 "Fredrik Lundh for his `Alternative Python Reference <http://effbot.org/zone/"
 "pyref.htm>`_ project from which Sphinx got many good ideas."
 msgstr ""
+"Fredrik Lundh pour son projet `Alternative Python Reference <http://effbot."
+"org/zone/pyref.htm>`_, dont Sphinx a pris beaucoup de bonnes idées."
 
 # d5b8b9330ace4d5d83ef336d960fb3f7
 #: about.rst:29
@@ -68,11 +79,13 @@ msgid ""
 "See :ref:`reporting-bugs` for information how to report bugs in this "
 "documentation, or Python itself."
 msgstr ""
+"Veuillez consulter :ref:`reporting-bugs` pour savoir comment signaler des "
+"bugs dans cette documentation ou dans Python lui-même."
 
 # c64c4191f6c64dee86ae9da118d7edba
 #: about.rst:34
 msgid "Contributors to the Python Documentation"
-msgstr ""
+msgstr "Contributeurs de la documentation Python"
 
 # 1edced77983d4f44ae0de1cc6629fc56
 #: about.rst:36
@@ -81,6 +94,10 @@ msgid ""
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
+"De nombreuses personnes ont contribué au language Python, à sa librarie "
+"standard et à sa documentation. Consultez :source:`Misc/ACKS` dans les "
+"sources de la distribution Python pour avoir une liste partielle des "
+"contributeurs."
 
 # bc764805d81940208dbe1a73e4721164
 #: about.rst:40
@@ -88,3 +105,5 @@ msgid ""
 "It is only with the input and contributions of the Python community that "
 "Python has such wonderful documentation -- Thank You!"
 msgstr ""
+"Ce n'est que grâce aux suggestions et contributions de la communauté Python "
+"que Python a une documentation si merveilleuse -- Merci !"

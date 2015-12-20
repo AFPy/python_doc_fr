@@ -125,7 +125,8 @@ msgstr ""
 "Debian pour les utilisateurs de Linux basé sur le système Debian et ainsi de "
 "suite."
 
-# j'ai un doute sur le "les choses qui vous semble évidentes"...on conjuge comment "semble" ?
+# j'ai un doute sur le "les choses qui vous semble évidentes"...on conjuge
+# comment "semble" ?
 #: install/index.rst:78
 #, fuzzy
 msgid ""

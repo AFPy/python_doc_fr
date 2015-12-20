@@ -18,42 +18,52 @@ msgstr ""
 
 #: using/cmdline.rst:9
 msgid "Command line and environment"
-msgstr ""
+msgstr "Ligne de commande et environnement"
 
 #: using/cmdline.rst:11
 msgid ""
 "The CPython interpreter scans the command line and the environment for "
 "various settings."
 msgstr ""
+"L'interpréteur CPython analyse la ligne de commande et l'environnement à la "
+"recherche de différents paramètres/"
 
 #: using/cmdline.rst:16
 msgid ""
 "Other implementations' command line schemes may differ.  See :ref:"
 "`implementations` for further resources."
 msgstr ""
+"Le format des lignes de commandes utilisées par d'autres implémentations "
+"peut être différent. Voir :ref:`implementations` pour plus d'informations."
 
 #: using/cmdline.rst:23
 msgid "Command line"
-msgstr ""
+msgstr "Ligne de commande"
 
 #: using/cmdline.rst:25
 msgid "When invoking Python, you may specify any of these options::"
 msgstr ""
+"Quand vous invoquez Python, vous pouvez spécifier n’importe laquelle de ces "
+"options :"
 
 #: using/cmdline.rst:29
 msgid ""
 "The most common use case is, of course, a simple invocation of a script::"
 msgstr ""
+"Le cas d'utilisation le plus courant est, bien entendu, la simple invocation "
+"d'un script ::"
 
 #: using/cmdline.rst:37
 msgid "Interface options"
-msgstr ""
+msgstr "Options de l'interface"
 
 #: using/cmdline.rst:39
 msgid ""
 "The interpreter interface resembles that of the UNIX shell, but provides "
 "some additional methods of invocation:"
 msgstr ""
+"L'interface de l’interpréteur ressemble à celle du shell UNIX, mais fournit "
+"quelques méthodes d'invocation supplémentaires :"
 
 #: using/cmdline.rst:42
 msgid ""
@@ -67,12 +77,18 @@ msgid ""
 "When called with a file name argument or with a file as standard input, it "
 "reads and executes a script from that file."
 msgstr ""
+"Quand l'interpréteur est appelé avec argument correspondant à un nom de "
+"fichier ou avec un fichier comme entrée standard, il lit et exécute le "
+"script contenu dans ce fichier."
 
 #: using/cmdline.rst:47
 msgid ""
 "When called with a directory name argument, it reads and executes an "
 "appropriately named script from that directory."
 msgstr ""
+"Quand l'interpréteur est appelé avec un argument correspondant à un "
+"répertoire, il lit et exécute un script nommé d’une certaine façon depuis ce "
+"répertoire."
 
 #: using/cmdline.rst:49
 msgid ""
@@ -80,17 +96,25 @@ msgid ""
 "as *command*.  Here *command* may contain multiple statements separated by "
 "newlines. Leading whitespace is significant in Python statements!"
 msgstr ""
+"Quand l'interpréteur est appelé avec l'option ``-c commande``, il exécute la "
+"ou les instructions Python données comme *commande*. Ici *commande* peut "
+"contenir plusieurs instructions séparées par des fins de ligne. Les blancs "
+"en début de ligne ne sont pas ignorés dans les instructions Python !"
 
 #: using/cmdline.rst:52
 msgid ""
 "When called with ``-m module-name``, the given module is located on the "
 "Python module path and executed as a script."
 msgstr ""
+"Quand l'interpréteur est appelé avec l'option ``-m nom-de-module``, le "
+"module donné est recherché dans le chemin des modules Python et est exécuté "
+"en tant que script."
 
 #: using/cmdline.rst:55
 msgid ""
 "In non-interactive mode, the entire input is parsed before it is executed."
 msgstr ""
+"En mode non-interactif, toute l’entrée est analysée avant d’être exécutée. "
 
 #: using/cmdline.rst:57
 msgid ""
@@ -99,6 +123,10 @@ msgid ""
 "note that the first element, subscript zero (``sys.argv[0]``), is a string "
 "reflecting the program's source."
 msgstr ""
+"Une option d'interface termine la listes des options consommées par "
+"l'interpréteur ; tous les arguments échoueront dans :data:`sys.argv` — notez "
+"que le premier élément, à l'indice zéro (``sys.argv|0]``), est une chaîne de "
+"caractères indiquant la source du programme."
 
 #: using/cmdline.rst:64
 msgid ""
@@ -106,6 +134,9 @@ msgid ""
 "statements separated by newlines, with significant leading whitespace as in "
 "normal module code."
 msgstr ""
+"Exécute le code Python dans *commande*. *commande* peut être une ou "
+"plusieurs instructions, séparées par des fins de ligne, avec des blancs en "
+"début de ligne qui ne sont pas ignorés, comme dans le code d’un module."
 
 #: using/cmdline.rst:68
 msgid ""
@@ -114,12 +145,18 @@ msgid ""
 "path` (allowing modules in that directory to be imported as top level "
 "modules)."
 msgstr ""
+"Si cette option est donnée, le premier élément de :data: `sys.argv` sera ``"
+"\"-c\"`` et le répertoire courant sera ajouté au début de :data: `sys.path` "
+"(permettant aux modules de ce répertoire d'être importé comme des modules de "
+"premier niveau)."
 
 #: using/cmdline.rst:76
 msgid ""
 "Search :data:`sys.path` for the named module and execute its contents as "
 "the :mod:`__main__` module."
 msgstr ""
+"Parcourir :data:`sys.path` à la recherche du module donné et exécuter son "
+"contenu en tant que module :mod:`__main__`."
 
 #: using/cmdline.rst:79
 msgid ""
@@ -128,6 +165,10 @@ msgid ""
 "the implementation may not always enforce this (e.g. it may allow you to use "
 "a name that includes a hyphen)."
 msgstr ""
+"L'argument étant un nom de *module*, vous ne devez pas fournir d’extension "
+"de fichier (``.py``). Le ``nom-du-module` devrait être un nom de module "
+"Python valide, mais l'implémentation n’est pas tenue de le vérifier (par "
+"exemple, l'utilisation d'un trait d'union peut être autorisée)."
 
 #: using/cmdline.rst:84
 msgid ""
@@ -145,6 +186,11 @@ msgid ""
 "still be used for precompiled modules, even if the original source file is "
 "not available."
 msgstr ""
+"Cette option ne peut pas être utilisée avec les modules intégrés et les "
+"modules d'extension écrits en C, étant donné qu'il ne possèdent pas de "
+"fichiers modules en Python. Cependant, elle peut toujours être utilisées "
+"pour les modules pré-complilés, même si le fichier source original n'est pas "
+"disponible."
 
 #: using/cmdline.rst:97
 msgid ""
@@ -153,12 +199,18 @@ msgid ""
 "first element will be set to ``\"-m\"``). As with the :option:`-c` option, "
 "the current directory will be added to the start of :data:`sys.path`."
 msgstr ""
+"Si cette option est donnée, le premier élément de :data:`sys.argv` sera le "
+"chemin complet d'accès au fichier du module. Comme pour l'option :option:`-"
+"c`, le répertoire courant sera ajouté au début de :data:`sys.path`."
 
 #: using/cmdline.rst:102
 msgid ""
 "Many standard library modules contain code that is invoked on their "
 "execution as a script.  An example is the :mod:`timeit` module::"
 msgstr ""
+"De nombreux modules de la bibliothèque standard contiennent du code qui est "
+"invoqué quand ils sont exécutés comme scripts. Un exemple est le module :mod:"
+"`timeit`\\ ::"
 
 #: using/cmdline.rst:110
 msgid "runpy.run_module()"
@@ -170,7 +222,7 @@ msgstr ""
 
 #: using/cmdline.rst:112
 msgid ":pep:`338` -- Executing modules as scripts"
-msgstr ""
+msgstr ":pep:`338` --  Exécuter des modules en tant que scripts"
 
 #: using/cmdline.rst:115
 msgid "Supply the package name to run a ``__main__`` submodule."
@@ -181,6 +233,8 @@ msgid ""
 "Read commands from standard input (:data:`sys.stdin`).  If standard input is "
 "a terminal, :option:`-i` is implied."
 msgstr ""
+"Lit les commandes depuis l'entrée standard (:data:`sys.stdin`). Si l'entrée "
+"standard est un terminal, l':option:`-i` est activée implicitement."
 
 #: using/cmdline.rst:124
 msgid ""
@@ -188,6 +242,8 @@ msgid ""
 "\"`` and the current directory will be added to the start of :data:`sys."
 "path`."
 msgstr ""
+"Si cette option est donnée, le premier élément de :data:`sys.argv` sera ``\"-"
+"\"`` et le répertoire courant sera ajouté au début de :data:`sys.path`."
 
 #: using/cmdline.rst:131
 msgid ""
@@ -196,12 +252,18 @@ msgid ""
 "containing a ``__main__.py`` file, or a zipfile containing a ``__main__.py`` "
 "file."
 msgstr ""
+"Exécute le code Python contenu dans *script*, qui doit être un chemin "
+"d'accès au fichier (absolu ou relatif), se référant à un fichier Python, à "
+"un répertoire contenant un fichier ``__main__.py`` ou à un fichier zip "
+"contenant un fichier ``__main__.py``."
 
 #: using/cmdline.rst:136
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be the "
 "script name as given on the command line."
 msgstr ""
+"Si cette option est donnée, le premier élément de :data:`sys.argv` sera le "
+"nom du script comme donné sur la ligne de commande."
 
 #: using/cmdline.rst:139
 msgid ""
@@ -209,6 +271,9 @@ msgid ""
 "containing that file is added to the start of :data:`sys.path`, and the file "
 "is executed as the :mod:`__main__` module."
 msgstr ""
+"Si le nom du script se réfère directement à un fichier Python, le répertoire "
+"contenant ce fichier est ajouté au début de :data:`sys.path`, et le fichier "
+"est exécuté en tant que module :mod:`__main__`."
 
 #: using/cmdline.rst:143
 msgid ""
@@ -216,6 +281,9 @@ msgid ""
 "added to the start of :data:`sys.path` and the ``__main__.py`` file in that "
 "location is executed as the :mod:`__main__` module."
 msgstr ""
+"Si le nom du script fait référence à un répertoire ou un fichier zip, le nom "
+"du script est ajouté au début de :data:`sys.path` et le fichier ``__main__."
+"py`` à cet endroit est exécuté en tant que module :mod:`__main__`."
 
 #: using/cmdline.rst:148
 msgid ""
@@ -230,43 +298,55 @@ msgstr ""
 
 #: using/cmdline.rst:156
 msgid "Generic options"
-msgstr ""
+msgstr "Options génériques"
 
 #: using/cmdline.rst:162
 msgid "Print a short description of all command line options."
 msgstr ""
+"Affiche une brève description de toutes les options de ligne de commande."
 
 #: using/cmdline.rst:168
 msgid "Print the Python version number and exit.  Example output could be::"
 msgstr ""
+"Imprimer le numéro de version de Python et termine. Exemple de sortie ::"
 
 #: using/cmdline.rst:174
 msgid "Miscellaneous options"
-msgstr ""
+msgstr "Options diverses"
 
 #: using/cmdline.rst:178
 msgid ""
 "Issue a warning when comparing str and bytes. Issue an error when the option "
 "is given twice (:option:`-bb`)."
 msgstr ""
+"Émettre un avertissement lorsque l'on compare un str et un bytes. Émettre "
+"une erreur lorsque l'option est donné deux fois (:option:`-bb`)."
 
 #: using/cmdline.rst:184
 msgid ""
 "If given, Python won't try to write ``.pyc`` or ``.pyo`` files on the import "
 "of source modules.  See also :envvar:`PYTHONDONTWRITEBYTECODE`."
 msgstr ""
+"Si donné, Python ne tentera pas d'écrire de fichier ``.pyc``` ou ``.pyo`` à "
+"l'importation des modules source. Voir aussi :envvar:"
+"`PYTHONDONTWRITEBYTECODE`."
 
 #: using/cmdline.rst:190
 msgid ""
 "Turn on parser debugging output (for wizards only, depending on compilation "
 "options).  See also :envvar:`PYTHONDEBUG`."
 msgstr ""
+"Activer la sortie de l'analyseur de débogage (pour les magiciens uniquement, "
+"en fonction des options de compilation). Voir aussi :envvar:`PYTHONDEBUG`."
 
 #: using/cmdline.rst:196
 msgid ""
 "Ignore all :envvar:`PYTHON*` environment variables, e.g. :envvar:"
 "`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set."
 msgstr ""
+"Ignorer toutes les variables d'environnement :envvar:`PYTHON*`, par "
+"exemple, :envvar:`PYTHONPATH` et :envvar:`PYTHONHOME`, qui pourraient être "
+"définies."
 
 #: using/cmdline.rst:202
 msgid ""
@@ -275,12 +355,19 @@ msgid ""
 "when :data:`sys.stdin` does not appear to be a terminal.  The :envvar:"
 "`PYTHONSTARTUP` file is not read."
 msgstr ""
+"Quand un script est passé comme premier argument ou que l'option :option:`-"
+"c` est utilisée, entrer en mode interactif après avoir exécuté le script ou "
+"la commande, même lorsque :data:`sys.stdin` ne semble pas être un terminal. "
+"Le fichier :envvar:`PYTHONSTARTUP` n'est pas lu."
 
 #: using/cmdline.rst:207
 msgid ""
 "This can be useful to inspect global variables or a stack trace when a "
 "script raises an exception.  See also :envvar:`PYTHONINSPECT`."
 msgstr ""
+"Cela peut être utile pour examiner les variables globales ou une trace de la "
+"pile lorsque le script lève une exception. Voir aussi :envvar:"
+"`PYTHONINSPECT`."
 
 #: using/cmdline.rst:213
 msgid ""
@@ -288,10 +375,14 @@ msgid ""
 "compiled (:term:`bytecode`) files from ``.pyc`` to ``.pyo``.  See also :"
 "envvar:`PYTHONOPTIMIZE`."
 msgstr ""
+"Activer les optimisations de base. Cela modifie l'extension du fichier pour "
+"les fichiers compilés (:term:`bytecode`) de ``.pyc`` à ``.pyo``. Voir aussi :"
+"envvar:`PYTHONOPTIMIZE`."
 
 #: using/cmdline.rst:220
 msgid "Discard docstrings in addition to the :option:`-O` optimizations."
 msgstr ""
+"Supprimer les docstrings en plus des optimisations réalisés par :option:`-O`."
 
 #: using/cmdline.rst:225
 msgid ""
@@ -331,11 +422,11 @@ msgstr ""
 msgid ""
 "Don't add the :data:`user site-packages directory <site.USER_SITE>` to :data:"
 "`sys.path`."
-msgstr ""
+msgstr "Ne pas ajouter le répertoire spécifique de l’utilisateur à sys.path"
 
 #: using/cmdline.rst:259 using/cmdline.rst:530 using/cmdline.rst:542
 msgid ":pep:`370` -- Per user site-packages directory"
-msgstr ""
+msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
 
 #: using/cmdline.rst:264
 msgid ""
@@ -344,6 +435,8 @@ msgid ""
 "manipulations if :mod:`site` is explicitly imported later (call :func:`site."
 "main` if you want them to be triggered)."
 msgstr ""
+"Désactiver l’importation du module :mod:`site` et les modifications de :data:"
+"`sys.path` spécifiques au site qu’elle implique."
 
 #: using/cmdline.rst:272
 msgid ""
@@ -352,10 +445,13 @@ msgid ""
 "still be line-buffered if writing to the console, or block-buffered if "
 "redirected to a non-interactive file."
 msgstr ""
+"Force la couche binaire des flux stdin, stdout and stderr (disponible comme "
+"leur attribut ``buffer``) à ne pas mettre de données en tampon. La couche "
+"d’entrée-sortie en mode texte continuera de mettre une ligne en tampon."
 
 #: using/cmdline.rst:277
 msgid "See also :envvar:`PYTHONUNBUFFERED`."
-msgstr ""
+msgstr "Voir aussi :envvar:`PYTHONUNBUFFERED`."
 
 #: using/cmdline.rst:282
 msgid ""
@@ -378,6 +474,9 @@ msgid ""
 "By default, each warning is printed once for each source line where it "
 "occurs.  This option controls how often warnings are printed."
 msgstr ""
+"Par défaut, chaque avertissement est afficher une fois pour chaque ligne de "
+"source où elle se trouve. Cette option définit la fréquence d'affichage des "
+"avertissements."
 
 #: using/cmdline.rst:300
 msgid ""
@@ -398,6 +497,8 @@ msgid ""
 "The simplest form of argument is one of the following action strings (or a "
 "unique abbreviation):"
 msgstr ""
+"La forme la plus simple de l'argument est l'une des chaînes d'action "
+"suivante (ou une abréviation unique):"
 
 #: using/cmdline.rst:311
 msgid "ignore"
@@ -405,7 +506,7 @@ msgstr ""
 
 #: using/cmdline.rst:312
 msgid "Ignore all warnings."
-msgstr ""
+msgstr "Ignorer tous les avertissements."
 
 #: using/cmdline.rst:314
 msgid "default"
@@ -427,6 +528,9 @@ msgid ""
 "warning is triggered repeatedly for the same source line, such as inside a "
 "loop)."
 msgstr ""
+"Affiche un avertissement à chaque fois qu'il se produit (ce qui peut générer "
+"beaucoup de messages si l'avertissement est déclenchée à plusieurs reprises "
+"pour la ligne du même source, comme à l'intérieur d'une boucle)."
 
 #: using/cmdline.rst:320
 msgid "module"
@@ -435,6 +539,8 @@ msgstr ""
 #: using/cmdline.rst:321
 msgid "Print each warning only the first time it occurs in each module."
 msgstr ""
+"Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
+"chaque module."
 
 #: using/cmdline.rst:322
 msgid "once"
@@ -443,6 +549,8 @@ msgstr ""
 #: using/cmdline.rst:323
 msgid "Print each warning only the first time it occurs in the program."
 msgstr ""
+"Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
+"le programme."
 
 #: using/cmdline.rst:325
 msgid "error"
@@ -450,11 +558,11 @@ msgstr ""
 
 #: using/cmdline.rst:325
 msgid "Raise an exception instead of printing a warning message."
-msgstr ""
+msgstr "Déclenche une exception au lieu d'afficher un message d'avertissement."
 
 #: using/cmdline.rst:327
 msgid "The full form of argument is::"
-msgstr ""
+msgstr "La forme complète de l'argument est le suivant::"
 
 #: using/cmdline.rst:331
 msgid ""
@@ -469,6 +577,18 @@ msgid ""
 "sensitive.  The *line* field matches the line number, where zero matches all "
 "line numbers and is thus equivalent to an omitted line number."
 msgstr ""
+"Ici, *action* est tel qu'expliqué ci-dessus, mais s'applique uniquement aux "
+"messages qui correspondent aux champs restants. Les champs vides "
+"correspondent à toutes les valeurs ; les champs vides de fin peuvent être "
+"omis. Le champ *message* correspond au début du message d'avertissement "
+"affiché, cette expression est insensible à la casse. Le champ *category* "
+"correspond à la catégorie d'avertissement. Ce nom doit être un nom complet "
+"de classe ; La règle s'applique à tous les messages d'alertes construits "
+"avec une classe héritante de celle spécifiée. Le nom de la classe complète "
+"doit être donnée. Le champ *module* correspond au nom (pleinement qualifié) "
+"du module, cette correspondance est sensible à la casse. Le champ *line* "
+"correspond au numéro de ligne, où zéro correspond à n'importe quel numéro de "
+"ligne et correspond donc à l'option par défaut."
 
 #: using/cmdline.rst:343
 msgid ":mod:`warnings` -- the warnings module"
@@ -476,7 +596,7 @@ msgstr ""
 
 #: using/cmdline.rst:345
 msgid ":pep:`230` -- Warning framework"
-msgstr ""
+msgstr ":pep:`230` -- Gestion des alertes"
 
 #: using/cmdline.rst:347
 msgid ":envvar:`PYTHONWARNINGS`"
@@ -491,6 +611,7 @@ msgstr ""
 #: using/cmdline.rst:355
 msgid "The line numbers in error messages will be off by one."
 msgstr ""
+"Les numéros de ligne dans les messages d'erreur seront désactivés un par un."
 
 #: using/cmdline.rst:360
 msgid ""
@@ -510,15 +631,15 @@ msgstr ""
 
 #: using/cmdline.rst:373
 msgid "Options you shouldn't use"
-msgstr ""
+msgstr "Options que vous ne devriez pas utiliser"
 
 #: using/cmdline.rst:377
 msgid "Reserved for use by Jython_."
-msgstr ""
+msgstr "Utilisation réservée à Jython_."
 
 #: using/cmdline.rst:385
 msgid "Environment variables"
-msgstr ""
+msgstr "Variables d'environnement"
 
 #: using/cmdline.rst:387
 msgid ""
@@ -1405,7 +1526,7 @@ msgstr ""
 
 #: using/windows.rst:42
 msgid "Python on XP"
-msgstr ""
+msgstr "Python 3.0"
 
 #: using/windows.rst:41
 msgid "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"
@@ -1413,7 +1534,7 @@ msgstr ""
 
 #: using/windows.rst:48
 msgid "Installing on Windows"
-msgstr ""
+msgstr "Compiler Python sous Windows"
 
 #: using/windows.rst:45
 msgid ""
@@ -1542,7 +1663,7 @@ msgstr ""
 
 #: using/windows.rst:125
 msgid "How To Manage Environment Variables in Windows XP"
-msgstr ""
+msgstr "Comment gérer les variables d'environnement sous Windows XP"
 
 #: using/windows.rst:127
 msgid "http://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
@@ -1550,11 +1671,11 @@ msgstr ""
 
 #: using/windows.rst:128
 msgid "Setting Environment variables, Louis J. Farrugia"
-msgstr ""
+msgstr "Définir les variables d'environnement, Louis J. Farrugia"
 
 #: using/windows.rst:134
 msgid "Finding the Python executable"
-msgstr ""
+msgstr "Trouver l'exécutable Python"
 
 #: using/windows.rst:138
 msgid ""
@@ -1735,7 +1856,7 @@ msgstr ""
 
 #: using/windows.rst:260
 msgid "From the command-line"
-msgstr ""
+msgstr "Ligne de commande"
 
 #: using/windows.rst:262
 msgid ""
@@ -2055,7 +2176,7 @@ msgstr ""
 
 #: using/windows.rst:500
 msgid "PyWin32"
-msgstr ""
+msgstr "PyWin32"
 
 #: using/windows.rst:502
 msgid ""
@@ -2063,28 +2184,33 @@ msgid ""
 "Hammond is a collection of modules for advanced Windows-specific support.  "
 "This includes utilities for:"
 msgstr ""
+"Le module `PyWin32 <http://python.net/crew/mhammond/win32/>`_ de Mark "
+"Hammond est une collection de modules pour un support avancé spécifique à "
+"Windows.  Cela inclut les services pour :"
 
 #: using/windows.rst:506
 msgid "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
-msgstr ""
+msgstr "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
 
 #: using/windows.rst:507
 msgid "Win32 API calls"
-msgstr ""
+msgstr "Appels à l'API Win32"
 
 #: using/windows.rst:508
 msgid "Registry"
-msgstr ""
+msgstr "Registre"
 
 #: using/windows.rst:509
 msgid "Event log"
-msgstr ""
+msgstr "journal d'événement"
 
 #: using/windows.rst:510
 msgid ""
 "`Microsoft Foundation Classes <http://msdn.microsoft.com/en-us/library/"
 "fe1cf721%28VS.80%29.aspx>`_ (MFC) user interfaces"
 msgstr ""
+"`Microsoft Foundation Classes <http://msdn.microsoft.com/en-us/library/"
+"fe1cf721%28VS.80%29.aspx>`_ (MFC) interfaces utilisateur"
 
 #: using/windows.rst:513
 msgid ""
@@ -2099,15 +2225,15 @@ msgstr ""
 
 #: using/windows.rst:520
 msgid "by Tim Golden"
-msgstr ""
+msgstr "par Tim Golden"
 
 #: using/windows.rst:522
 msgid "Python and COM"
-msgstr ""
+msgstr "Python 3.0"
 
 #: using/windows.rst:523
 msgid "by David and Paul Boddie"
-msgstr ""
+msgstr "par David et Paul Boddie"
 
 #: using/windows.rst:527
 msgid "cx_Freeze"
@@ -2124,7 +2250,7 @@ msgstr ""
 
 #: using/windows.rst:537
 msgid "WConio"
-msgstr ""
+msgstr "WConio"
 
 #: using/windows.rst:539
 msgid ""
@@ -2141,7 +2267,7 @@ msgstr ""
 
 #: using/windows.rst:549
 msgid "Compiling Python on Windows"
-msgstr ""
+msgstr "Compiler Python sous Windows"
 
 #: using/windows.rst:551
 msgid ""
@@ -2160,39 +2286,39 @@ msgstr ""
 
 #: using/windows.rst:561
 msgid "Directory"
-msgstr ""
+msgstr "Répertoire"
 
 #: using/windows.rst:561
 msgid "MSVC version"
-msgstr ""
+msgstr "version de MSVC"
 
 #: using/windows.rst:561
 msgid "Visual Studio version"
-msgstr ""
+msgstr "Version de Visual Studio"
 
 #: using/windows.rst:563
 msgid ":file:`PC/VC6/`"
-msgstr ""
+msgstr ":file:`PC/VC6/`"
 
 #: using/windows.rst:563
 msgid "6.0"
-msgstr ""
+msgstr "6.0"
 
 #: using/windows.rst:563
 msgid "97"
-msgstr ""
+msgstr "97"
 
 #: using/windows.rst:565
 msgid ":file:`PC/VS7.1/`"
-msgstr ""
+msgstr ":file:`PC/VS7.1/`"
 
 #: using/windows.rst:565
 msgid "7.1"
-msgstr ""
+msgstr "7.1"
 
 #: using/windows.rst:565
 msgid "2003"
-msgstr ""
+msgstr "2003"
 
 #: using/windows.rst:567
 msgid ":file:`PC/VS8.0/`"
@@ -2200,27 +2326,27 @@ msgstr ""
 
 #: using/windows.rst:567
 msgid "8.0"
-msgstr ""
+msgstr "8.0"
 
 #: using/windows.rst:567
 msgid "2005"
-msgstr ""
+msgstr "2005"
 
 #: using/windows.rst:569
 msgid ":file:`PC/VS9.0/`"
-msgstr ""
+msgstr ":file:`PC/VS8.0/`"
 
 #: using/windows.rst:569
 msgid "9.0"
-msgstr ""
+msgstr "9.0"
 
 #: using/windows.rst:569
 msgid "2008"
-msgstr ""
+msgstr "2008"
 
 #: using/windows.rst:571
 msgid ":file:`PCbuild/`"
-msgstr ""
+msgstr ":file:`PCbuild/`"
 
 #: using/windows.rst:571
 msgid "10.0"
@@ -2242,6 +2368,8 @@ msgid ""
 "Check :file:`PCbuild/readme.txt` for general information on the build "
 "process."
 msgstr ""
+"Vérifiez :file:`PC/readme.txt` pour des informations générales sur le "
+"processus de construction."
 
 #: using/windows.rst:581
 msgid "For extension modules, consult :ref:`building-on-windows`."
@@ -2264,11 +2392,11 @@ msgstr ""
 
 #: using/windows.rst:591
 msgid "by Trent Apted et al, 2007"
-msgstr ""
+msgstr "par Trent Apted et al, 2007"
 
 #: using/windows.rst:595
 msgid "Other resources"
-msgstr ""
+msgstr "Autres ressources"
 
 #: using/windows.rst:602
 msgid "Python Programming On Win32"
@@ -2279,14 +2407,16 @@ msgid ""
 "\"Help for Windows Programmers\" by Mark Hammond and Andy Robinson, O'Reilly "
 "Media, 2000, ISBN 1-56592-621-8"
 msgstr ""
+"\"Help for Windows Programmers\" de Mark Hammond et Andy Robinson, O'Reilly "
+"Media, 2000, ISBN 1-56592-621-8"
 
 #: using/windows.rst:605
 msgid "A Python for Windows Tutorial"
-msgstr ""
+msgstr "Compiler Python sous Windows"
 
 #: using/windows.rst:605
 msgid "by Amanda Birmingham, 2004"
-msgstr ""
+msgstr "par Amanda Birmingham, 2004"
 
 #: using/windows.rst:607
 msgid "PEP 397 - Python launcher for Windows"

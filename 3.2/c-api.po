@@ -19,7 +19,7 @@ msgstr ""
 # 31518bd37bb544938528708d3a43fabc
 #: c-api/abstract.rst:7
 msgid "Abstract Objects Layer"
-msgstr ""
+msgstr "Couche d'Abstraction des Objets"
 
 # f9ffd3d07907479b8a30284fc7a0c9b6
 #: c-api/abstract.rst:9
@@ -29,6 +29,11 @@ msgid ""
 "or all sequence types).  When used on object types for which they do not "
 "apply, they will raise a Python exception."
 msgstr ""
+"Dans ce chapitre, les fonctions s'appliquent à des objets Python sans tenir "
+"compte de leur type, ou des classes d'objets au sens large (par exemple, "
+"tous les types numériques, ou tous les types de séquence). Quand ils sont "
+"utilisés sur des types d'objets qui ne correspondent pas, ils lèveront une "
+"exception Python."
 
 # 52cf71a24f54424cbaa408f9cc4bcf57
 #: c-api/abstract.rst:14
@@ -38,11 +43,15 @@ msgid ""
 "`PyList_New`, but whose items have not been set to some non-\\ ``NULL`` "
 "value yet."
 msgstr ""
+"Il n'est pas possible d'utiliser ces fonctions sur des objets qui n'ont pas "
+"été correctement initialisés, comme un objet liste qui a été créé avec :"
+"cfunc:`PyList_New` mais dont les éléments n'ont pas encore été mis à une "
+"valeur non-\\ ``NULL``."
 
 # 8716e589af2a4ed5af0ddab544612017
 #: c-api/allocation.rst:6
 msgid "Allocating Objects on the Heap"
-msgstr ""
+msgstr "Allouer des objets dans le tas"
 
 # 335af554c4584671883eff3231946728
 #: c-api/allocation.rst:17
@@ -109,12 +118,12 @@ msgstr ""
 # edc6b99b5dfb499094e906e45ae50f53
 #: c-api/allocation.rst:70
 msgid "To allocate and create extension modules."
-msgstr ""
+msgstr "Allouer et créer des modules d'extension."
 
 # 9bc94c7a607643d39dbf22e59fc5781a
 #: c-api/arg.rst:6
 msgid "Parsing arguments and building values"
-msgstr ""
+msgstr "Analyse des arguments et construction des valeurs"
 
 # fb561b4542984d08a012a3bec0029b62
 #: c-api/arg.rst:8
@@ -123,6 +132,9 @@ msgid ""
 "methods.  Additional information and examples are available in :ref:"
 "`extending-index`."
 msgstr ""
+"Ces fonctions sont utiles pour créer vos propres fonctions et méthodes "
+"d'extensions. Des informations supplémentaires et des exemples sont "
+"disponibles ici: ref:`extending-index`."
 
 # 56bccd900f764874807a5e2986d810c8
 #: c-api/arg.rst:12
@@ -133,11 +145,16 @@ msgid ""
 "arguments.  The format strings use the same syntax for each of these "
 "functions."
 msgstr ""
+"Dans Les trois premières de ces fonctions décrites, :cfunc: "
+"`PyArg_ParseTuple`, :cfunc: `PyArg_ParseTupleAndKeywords`, et :cfunc: "
+"`PyArg_Parse`, toutes utilisent *des chaînes de format* qui sont utilisées "
+"pour indiquer à la fonction les arguments attendus. Les chaînes de format "
+"utilise la même syntaxe pour chacune de ces fonctions."
 
 # e0dd94bd0ecb4dd48db57dedde67e8e3
 #: c-api/arg.rst:19
 msgid "Parsing arguments"
-msgstr ""
+msgstr "Analyse des arguments"
 
 # dab0b5e62835415b9181b06eadd076b3
 #: c-api/arg.rst:21
@@ -151,11 +168,20 @@ msgid ""
 "Python object type that matches the format unit; and the entry in [square] "
 "brackets is the type of the C variable(s) whose address should be passed."
 msgstr ""
+"Une chaîne de format se compose de zéro ou plusieurs \"unités de format\". "
+"Une unité de format décrit un objet Python, elle est généralement composée "
+"d'un seul caractère ou d'une séquence d'unités de format entre parenthèses. "
+"À quelques exceptions près, une unité de format qui n'est pas une séquence "
+"entre parenthèses correspond normalement à un argument d'une seule adresse "
+"pour ces fonctions. Dans la description qui suit, la forme entre guillemets "
+"est l'unité de format, l'entrée entre parenthèses est le type d'objet Python "
+"qui correspond à l'unité de format, et l'entrée entre crochets est le type "
+"de la variable C (ou des variables) dont l'adresse doit être donnée."
 
 # 3dad61f7428340bd8d0855278efaab70
 #: c-api/arg.rst:31
 msgid "Strings and buffers"
-msgstr ""
+msgstr "Chaînes et tampons"
 
 # bc8734619d7b4613b383d4b2eeb0fa0a
 #: c-api/arg.rst:33
@@ -165,6 +191,10 @@ msgid ""
 "Also, you won't have to release any memory yourself, except with the ``es``, "
 "``es#``, ``et`` and ``et#`` formats."
 msgstr ""
+"Ces formats n'attendent pas que vous fournissiez un stockage sous forme "
+"brute pour les chaînes ou octets retournés. Alors, vous n'aurez pas à "
+"libérer la mémoire vous-même, excepté pour les formats ``es``, ``es#``, "
+"``et`` et ``et#``."
 
 # f551c67c503a4af5bd91e44c7f6bf894
 #: c-api/arg.rst:38
@@ -176,11 +206,19 @@ msgid ""
 "`PyBuffer_Release` after you have finished processing the data (or in any "
 "early abort case)."
 msgstr ""
+"Néanmoins, quand une structure :ctype:`Py_buffer` est en cours de "
+"remplissage, le tampon sous-jacent est verrouillé pour permettre à "
+"l'appelant d'utiliser le buffer par la suite, même lorsqu'il est à "
+"'intérieur d'un bloc :ctype:`Py_BEGIN_ALLOW_THREADS`. Ceci sans le risque "
+"pour les données mutables de voir leur taille changée ou d'être supprimées. "
+"En conséquence, **il vous appartient d'appeler** :cfunc:`PyBuffer_Release` "
+"après que vous ayez terminé de traiter les données (ou après une "
+"interruption prémataturée du traitement de ces données)."
 
 # cb994695bd204812853a6bbd75ded24e
 #: c-api/arg.rst:45
 msgid "Unless otherwise stated, buffers are not NUL-terminated."
-msgstr ""
+msgstr "Sauf indication contraire, les tampons ne se terminent pas par NUL."
 
 # f5b53113cf304c188b41b71b42ae6654
 #: c-api/arg.rst:48
@@ -193,6 +231,14 @@ msgid ""
 "c:type:`Py_ssize_t` and drop :c:type:`int` support. It is best to always "
 "define :c:macro:`PY_SSIZE_T_CLEAN`."
 msgstr ""
+"Pour toutes les variantes de formats ``#`` (``s#``, ``y#``, etc), le type de "
+"l'argument longueur (int ou :ctype:`Py_ssize_t`) est contrôlé en définissant "
+"la macro :cmacro:`PY_SSIZE_T_CLEAN` avant d'inclure le fichier :file:`Python."
+"h`. Si la macro est définie, la longueur est de type :ctype:`Py_ssize_t`  au "
+"lieu d'être de type :ctype:`int`. Ce comportement changera dans une future "
+"version de Python, qui supportera seulement :ctype:`Py_ssize_t` et plus :"
+"ctype:`int`. Il est préférable de toujours définir :cmacro:"
+"`PY_SSIZE_T_CLEAN`."
 
 # 7025df0e058f4f96b40106463a4da246
 #: c-api/arg.rst:70
@@ -209,6 +255,13 @@ msgid ""
 "raised. Unicode objects are converted to C strings using ``'utf-8'`` "
 "encoding. If this conversion fails, a :exc:`UnicodeError` is raised."
 msgstr ""
+"Convertir un objet Unicode en un pointeur C sur une chaîne de caractères. Un "
+"pointeur sur une chaîne existante est stocké dans le pointeur de la variable "
+"caractère dont vous passez l'adresse. La chaîne C est terminée par le "
+"caractère NUL. La chaîne Python ne doit pas contenir d'octets NUL, sinon une "
+"exception de type :exc:`TypeError` sera levée. Les objets Unicode sont "
+"convertis en chaîne de caractères C avec l'encodage ``'utf-8'``. Si la "
+"conversion échoue, une exception :exc:`UnicodeError` sera levée."
 
 # 09ad12c755e34541b7504c51d5b7452c
 #: c-api/arg.rst:67
@@ -262,6 +315,8 @@ msgid ""
 "Like ``s``, but the Python object may also be ``None``, in which case the C "
 "pointer is set to *NULL*."
 msgstr ""
+"Comme ``s``, mais l'objet Python peut aussi être ``None``, auquel cas le "
+"pointeur C devient *NULL*."
 
 # c3eaa85ac8bc4a5690c42b2103de5599
 #: c-api/arg.rst:92
@@ -276,6 +331,8 @@ msgid ""
 "Like ``s*``, but the Python object may also be ``None``, in which case the "
 "``buf`` member of the :c:type:`Py_buffer` structure is set to *NULL*."
 msgstr ""
+"Comme ``s*``, mais l'objet Python peut aussi être ``None``, dans ce cas le "
+"champ ``buf`` de la structure :ctype:`Py_buffer` est définie à *NULL*."
 
 # c733e6d15e8f414b86c0a05a8c274c2b
 #: c-api/arg.rst:96
@@ -290,6 +347,8 @@ msgid ""
 "Like ``s#``, but the Python object may also be ``None``, in which case the C "
 "pointer is set to *NULL*."
 msgstr ""
+"Comme ``s#``, mais l'objet Python peut également être ``None``, dans ce cas "
+"le pointeur C est définie à *NULL*."
 
 # 647c4654eaa44c928de88bdf0411d6aa
 #: c-api/arg.rst:102
@@ -304,6 +363,10 @@ msgid ""
 "contain embedded NUL bytes; if it does, a :exc:`TypeError` exception is "
 "raised."
 msgstr ""
+"Ce format converti un objet contenant des octets en un pointeur C sur une "
+"chaîne de caractères, il n'accepte pas d'objets Unicode. Le buffer ne doit "
+"pas contenir d'octets NUL ; s'il en contient, une exception :exc:`TypeError` "
+"sera levée."
 
 # 0715aa86a74b4bc5a3853fab38b27f4b
 #: c-api/arg.rst:107
@@ -331,6 +394,8 @@ msgid ""
 "This variant on ``s#`` doesn't accept Unicode objects, only bytes-like "
 "objects."
 msgstr ""
+"Cette variante de ``s#`` n'accepte pas les objets Unicode, uniquement des "
+"objets assimilés à des octets."
 
 # df7fe1e49b8f4a71a7c9f066d6b8975d
 #: c-api/arg.rst:116
@@ -344,6 +409,10 @@ msgid ""
 "attempting any conversion.  Raises :exc:`TypeError` if the object is not a "
 "bytes object.  The C variable may also be declared as :c:type:`PyObject\\*`."
 msgstr ""
+"Nécessite que l'objet Python soit un objet class:`bytes`, sans tenter de "
+"faire aucune conversion au préalable. Si l'objet n'est pas un objet de type "
+"octets, une exception :exc:`TypeError` sera levée. La variable C peut "
+"également être de type :ctype:`PyObject\\*`."
 
 # 177efe98851d4763a5a3656156a10f44
 #: c-api/arg.rst:121
@@ -358,6 +427,10 @@ msgid ""
 "class:`bytearray` object. The C variable may also be declared as :c:type:"
 "`PyObject\\*`."
 msgstr ""
+"Nécessite que l'objet Python soit un objet :class:`bytearray`, sans tenter "
+"de faire aucune conversion. Si l'objet n'est pas un objet de type :class:"
+"`bytearray`, une exception :exc:`TypeError` sera levée. La variable C peut "
+"aussi être de type :ctype:`PyObject\\*`."
 
 # ec70fb41ea2f4b849cfe55fe92804445
 # cf3825f4b2834b09aa512558b0ac8136
@@ -376,6 +449,13 @@ msgid ""
 "Python string must not contain embedded NUL characters; if it does, a :exc:"
 "`TypeError` exception is raised."
 msgstr ""
+"Converti un objet Python Unicode en un pointeur C sur un tampon terminé par "
+"NUL de caractères Unicode. Vous devez fournir l'adresse d'une variable "
+"pointant sur un :ctype:`Py_UNICODE`, qui sera rempli avec le pointeur sur un "
+"tampon Unicode existant. Notez que la taille d'un caractère :ctype:"
+"`Py_UNICODE` dépend des options choisies à la compilation (16 ou 32 bits). "
+"La chaîne de caractères Python ne doit pas contenir de caractères NUL, sinon "
+"une exception  :exc:`TypeError` sera levée."
 
 # 31ff4044b26c4cbe9dfc0b23657dca95
 #: c-api/arg.rst:133
@@ -384,6 +464,9 @@ msgid ""
 "contain embedded NUL characters, it is recommended to use ``u#`` or ``U`` "
 "instead."
 msgstr ""
+"Comme ``u`` ne vous donne pas en retour la longueur de la chaîne, et comme "
+"il peut contenir des caractères NUL, il est recommandé d'utiliser à la place "
+"``u#`` ou ``U``."
 
 # 74f5ed1b8ccd4c48817d26fed8b56e05
 # 02122fe4c55147bb9c72aea29bec882d
@@ -397,6 +480,9 @@ msgid ""
 "This variant on ``u`` stores into two C variables, the first one a pointer "
 "to a Unicode data buffer, the second one its length."
 msgstr ""
+"Cette variante de ``u`` stocke son résultat dans deux variables C, la "
+"première pointant vers un tampon de données Unicode, la seconde donnant sa "
+"longueur."
 
 # e79b4acdaee4477586cdf28c4fc482de
 #: c-api/arg.rst:143
@@ -409,6 +495,8 @@ msgid ""
 "Like ``u``, but the Python object may also be ``None``, in which case the :c:"
 "type:`Py_UNICODE` pointer is set to *NULL*."
 msgstr ""
+"Comme ``u``, mais l'objet Python peut aussi être ``None``, auquel cas le "
+"pointeur :ctype:`Py_UNICODE` est fixé à *NULL*."
 
 # 8ac202bae5014f25920bea4b81358f0e
 #: c-api/arg.rst:147
@@ -421,6 +509,8 @@ msgid ""
 "Like ``u#``, but the Python object may also be ``None``, in which case the :"
 "c:type:`Py_UNICODE` pointer is set to *NULL*."
 msgstr ""
+"Comme ``u#``, mais l'objet Python peut également être ``None``, auquel cas "
+"le pointeur :ctype:`Py_UNICODE` est fixé à *NULL*."
 
 # f4e4efcc25d1458aa551f40421277c19
 #: c-api/arg.rst:152
@@ -434,6 +524,10 @@ msgid ""
 "conversion.  Raises :exc:`TypeError` if the object is not a Unicode object.  "
 "The C variable may also be declared as :c:type:`PyObject\\*`."
 msgstr ""
+"Nécessite que l'objet Python soit un objet class:`bytes`, sans tenter de "
+"faire aucune conversion au préalable. Si l'objet n'est pas un objet de type "
+"octets, une exception :exc:`TypeError` sera levée. La variable C peut "
+"également être de type :ctype:`PyObject\\*`."
 
 # 1ab09d25188f46d1ab562dd0c355e573
 #: c-api/arg.rst:158
@@ -449,6 +543,10 @@ msgid ""
 "The buffer may contain embedded null bytes. The caller have to call :c:func:"
 "`PyBuffer_Release` when it is done with the buffer."
 msgstr ""
+"Ce format accepte n'importe quel objet qui implémente l'interface de mémoire "
+"tampon en lecture/écriture. Il remplit une structure :ctype:`Py_buffer` "
+"fournie par l'appelant. Le tampon peut contenir des octets nuls. L'appelant "
+"doit appeler :cfunc:`PyBuffer_Release` quand il n'a plus l'usage du tampon."
 
 # 8bd56e0c5e5a4f00b0377a55a6421732
 #: c-api/arg.rst:175
@@ -461,6 +559,9 @@ msgid ""
 "This variant on ``s`` is used for encoding Unicode into a character buffer. "
 "It only works for encoded data without embedded NUL bytes."
 msgstr ""
+"Cette variante ``s`` est utilisée pour encoder de l'Unicode dans un buffer "
+"de caractères. Cela ne fonctionne que pour les données encodées qui ne "
+"contiennent pas d'octets NUL."
 
 # 2b08aadcddc54b0ba73cf595b85bc55b
 #: c-api/arg.rst:164
@@ -474,6 +575,15 @@ msgid ""
 "text. The text will be encoded in the encoding specified by the first "
 "argument."
 msgstr ""
+"Ce format requiert deux arguments. Le premier est seulement utilisé en "
+"entrée, et doit être de type :ctype:`const char\\*`. Il pointe sur une "
+"chaîne de caractères contenant le nom d'un encodage, terminée par NUL. Si "
+"cette chaîne contient *NULL*, l'encoding ``'utf-8'`` sera utilisé. Une "
+"exception sera levé si le nom de l'encodage est inconnu de Python. Le second "
+"argument doit être de type :ctype:`char\\*\\*`, la valeur du pointeur qu'il "
+"référence sera fixée à la valeur d'un tampon contenant le texte de "
+"l'argument. Le texte sera encodé avec l'encodage spécifié dans le premier "
+"argument. "
 
 # 5f79b35abf934d7683f63008fcf13f89
 #: c-api/arg.rst:172
@@ -483,6 +593,10 @@ msgid ""
 "newly allocated storage.  The caller is responsible for calling :c:func:"
 "`PyMem_Free` to free the allocated buffer after use."
 msgstr ""
+":cfunc:`PyArg_ParseTuple` allouera un tampon de la taille nécessaire, "
+"copiera les données encodées dans ce tampon et fera pointer *\\*buffer* vers "
+"le nouveau tampon alloué. L'appelant est responsable de l'invocation de :"
+"cfunc:`PyMem_Free` pour libérer le tampon alloué après utilisatiopn"
 
 # e9574e1d6e88464189b68332fbe1be3a
 #: c-api/arg.rst:180
@@ -498,6 +612,9 @@ msgid ""
 "recoding them.  Instead, the implementation assumes that the byte string "
 "object uses the encoding passed in as parameter."
 msgstr ""
+"Comme pour ``es``, excepté que les objets chaînes de caractères sont passées "
+"sans les ré-encoder. À la place, l'implémentation assume que l'objet chaîne "
+"de caractères utilise l'encodage passé en tant que paramètre."
 
 # 59be06d0bd184237b4b4e41bd6b4fdfe
 #: c-api/arg.rst:211
@@ -513,6 +630,9 @@ msgid ""
 "Unlike the ``es`` format, this variant allows input data which contains NUL "
 "characters."
 msgstr ""
+"Cette variante de ``s#`` est utilisée pour encoder de l'Unicode dans un "
+"tampon de caractères. Contrairement au format ``es``, cette variante "
+"autorise les caractères NUL dans les données d'entrée."
 
 # 55a12d2ec7af4a65b14bb3a9f88eb402
 #: c-api/arg.rst:187
@@ -527,11 +647,22 @@ msgid ""
 "The third argument must be a pointer to an integer; the referenced integer "
 "will be set to the number of bytes in the output buffer."
 msgstr ""
+"Ce format requiert deux arguments. Le premier est seulement utilisé en "
+"entrée, et doit être de type :ctype:`const char\\*`. Il pointe sur une "
+"chaîne de caractères contenant le nom d'un encodage, terminée par NUL. Si "
+"cette chaîne contient *NULL*, l'encoding ``'utf-8'`` sera utilisé. Une "
+"exception sera levé si le nom de l'encodage est inconnu de Python. Le second "
+"argument doit être de type :ctype:`char\\*\\*`, la valeur du pointeur qu'il "
+"référence sera fixée à la valeur d'un tampon contenant le texte de "
+"l'argument. Le texte sera encodé avec l'encodage spécifié dans le premier "
+"argument. Le troisième argument doit être un pointeur sur un entier ; "
+"l'entier référencé sera positionné avec le nombre d'octets dans le tampon de "
+"sortie"
 
 # bebbda5cb33e4c289a996a26a1e9eb07
 #: c-api/arg.rst:197
 msgid "There are two modes of operation:"
-msgstr ""
+msgstr "Il existe deux modes de fonctionnement :"
 
 # 5ce5ee8ee532442386f2b111bbaa9aa8
 #: c-api/arg.rst:199
@@ -542,6 +673,11 @@ msgid ""
 "responsible for calling :c:func:`PyMem_Free` to free the allocated buffer "
 "after usage."
 msgstr ""
+"Si *\\*buffer* pointe sur un pointeur *NULL*, la fonction allouera un tampon "
+"de la taille nécessaire, copiera les données encodées dans ce tampon et "
+"mettra dans *\\*buffer* le nouveau tampon alloué. L'appelant est responsable "
+"de la libération de la mémoire après utilisation du tampon, par un appel à :"
+"cfunc:`PyMem_Free`."
 
 # f61966a2a7c6485ba5594b5a39deaf09
 #: c-api/arg.rst:204
@@ -552,6 +688,12 @@ msgid ""
 "will then copy the encoded data into the buffer and NUL-terminate it.  If "
 "the buffer is not large enough, a :exc:`ValueError` will be set."
 msgstr ""
+"Si *\\*buffer* pointe sur un pointeur qui n'est pas *NULL* (un tampon déjà "
+"alloué), :cfunc:`PyArg_ParseTuple` utilisera cet espace comme le tampon et "
+"interprétera la valeur initiale de *\\*buffer_length* comme la taille du "
+"tampon. Il copiera alors les données encodées dans le tampon et terminera ce "
+"dernier par NUL. Si le tampon n'est pas de taille suffisante, une exception :"
+"exc:`ValueError` sera levée."
 
 # c33170c8071947cea756bb71b938d901
 #: c-api/arg.rst:210
@@ -559,6 +701,8 @@ msgid ""
 "In both cases, *\\*buffer_length* is set to the length of the encoded data "
 "without the trailing NUL byte."
 msgstr ""
+"Dans les deux cas, *\\*buffer_length* est la longueur des données encodées, "
+"sans l'octet NUL de fin."
 
 # 3d0209f6d56c45f79335bfb461cc8316
 #: c-api/arg.rst:216
@@ -574,11 +718,14 @@ msgid ""
 "recoding them. Instead, the implementation assumes that the byte string "
 "object uses the encoding passed in as parameter."
 msgstr ""
+"Comme pour ``es#`` excepté que les objets chaînes de caractères sont traités "
+"sans recodage. À la place, l'implémentation assume que les objets de type "
+"chaînes de caractères utilisent l'encodage passé en tant que paramètre."
 
 # dd10c8310c9c4bef851225779eb9bba2
 #: c-api/arg.rst:219
 msgid "Numbers"
-msgstr ""
+msgstr "Nombres"
 
 # 4e85ce32b0344197ae47911cd9a51267
 #: c-api/arg.rst:223
@@ -591,6 +738,8 @@ msgid ""
 "Convert a nonnegative Python integer to an unsigned tiny int, stored in a C :"
 "c:type:`unsigned char`."
 msgstr ""
+"Convertit un entier Python positif ou nul en un unsigned tiny int, stocké "
+"dans un C :ctype:`unsigned char`."
 
 # 66f311e6da2a41e48bcf7f0917905c4e
 # 3d49ddd104a94f25bfd3411a495e985e
@@ -604,6 +753,8 @@ msgid ""
 "Convert a Python integer to a tiny int without overflow checking, stored in "
 "a C :c:type:`unsigned char`."
 msgstr ""
+"Convertit un entier Python en un tiny int sans vérifier le débordement, "
+"stocké dans un C :ctype:`unsigned char`."
 
 # 4f9ccb54cfdf45a393fe096729ccf9d7
 # 6bc7273a173340b08cfe7e5fcf74374d
@@ -614,7 +765,7 @@ msgstr ""
 # c05f03993d494e33aebb0276a2d55777
 #: c-api/arg.rst:230
 msgid "Convert a Python integer to a C :c:type:`short int`."
-msgstr ""
+msgstr "Convertit un entier Python en un C :ctype:`short int`."
 
 # a7485ae650e84b1bad5a903939fac666
 # 55a4d9a956284c59922c819da1affa75
@@ -628,6 +779,8 @@ msgid ""
 "Convert a Python integer to a C :c:type:`unsigned short int`, without "
 "overflow checking."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 # 9e7111ac546c45c5ad4bde5a769cd730
 # 8f8beab97d694c4b9d75ddfd2e4a3644
@@ -638,7 +791,7 @@ msgstr ""
 # 93ffbc4928d34e129703b414152b9a72
 #: c-api/arg.rst:237
 msgid "Convert a Python integer to a plain C :c:type:`int`."
-msgstr ""
+msgstr "Convertit un entier Python en un type C :ctype:`int`."
 
 # 68f6500b364549539e04c46c1ca80729
 # 955c6e26356c4ca3a3d4fade4dcd021f
@@ -652,6 +805,8 @@ msgid ""
 "Convert a Python integer to a C :c:type:`unsigned int`, without overflow "
 "checking."
 msgstr ""
+"Convertit un entier Python en un type C :ctype:`unsigned int`, sans contrôle "
+"de le débordement."
 
 # 6411bb70e648408b946fd0c6f31a1d99
 # b97bf4bf6a3d4cb29c39bc25b6cedfda
@@ -662,7 +817,7 @@ msgstr ""
 # e1cad4428f714526abf6f145a7fba2f0
 #: c-api/arg.rst:244
 msgid "Convert a Python integer to a C :c:type:`long int`."
-msgstr ""
+msgstr "Convertit un entier Python en un type  :ctype:`long int`."
 
 # 29c42b90ff984e2bba6f07ac085b8a04
 # b8d061e9297f44959bdc72372110ff33
@@ -676,6 +831,8 @@ msgid ""
 "Convert a Python integer to a C :c:type:`unsigned long` without overflow "
 "checking."
 msgstr ""
+"Convertit un entier Python en un type C :ctype:`unsigned int`, sans contrôle "
+"de le débordement."
 
 # 0a2b78e5cb6449c39c74ad10474d3bb5
 # fc623b0bf41a4a2c9cbb9d18d1a2766c
@@ -690,6 +847,9 @@ msgid ""
 "available on platforms that support :c:type:`long long` (or :c:type:`_int64` "
 "on Windows)."
 msgstr ""
+"Convertit un entier Python en un type C :ctype:`long long`. Ce format est "
+"uniquement disponible sur les plates-formes qui prennent en charge :ctype:"
+"`long long` (ou :ctype:`_int64` sous Windows)."
 
 # 232c3690987e4c478c39e1735b934fff
 # 93ac9952a9e94856a551ba4a3e0f71cf
@@ -704,6 +864,10 @@ msgid ""
 "overflow checking.  This format is only available on platforms that support :"
 "c:type:`unsigned long long` (or :c:type:`unsigned _int64` on Windows)."
 msgstr ""
+"Convertit un entier Python en un type C :ctype:`unsigned long long` sans en "
+"vérifier le débordement. Ce format est uniquement disponible sur les plates-"
+"formes qui prennent en charge :ctype:`unsigned long long` (ou :ctype:"
+"`unsigned _int64` sous Windows)."
 
 # a784a58d242441d6903c695cbc6d7863
 # 47e45aa8739541128a2055ecf0478dab
@@ -714,7 +878,7 @@ msgstr ""
 # 55254f5139824b14b0b9386e4417e86a
 #: c-api/arg.rst:261
 msgid "Convert a Python integer to a C :c:type:`Py_ssize_t`."
-msgstr ""
+msgstr "Convertit un entier Python en un C :ctype:`short int`."
 
 # 383b3c9690a34d1284a25e73f187d5e2
 # 87fb74c0804741eb90e719b3842151bc
@@ -741,6 +905,8 @@ msgid ""
 "Convert a Python character, represented as a :class:`str` object of length "
 "1, to a C :c:type:`int`."
 msgstr ""
+"Convertit un octet Python, représenté comme un objet :class:`bytes` de "
+"longueur 1, en un type C :ctype:`char`."
 
 # eecedfea48064bf2b775fc9794670e58
 # 9103213ab274475da9a31d084703bd4f
@@ -751,7 +917,7 @@ msgstr ""
 # 9b22410e225c4f0387a6994613ecebc0
 #: c-api/arg.rst:272
 msgid "Convert a Python floating point number to a C :c:type:`float`."
-msgstr ""
+msgstr "Convertit un nombre flottant Python vers un type C :ctype:`float`."
 
 # 0d8a1eaa2b954bde8d04bf977ae14087
 # 1f699f2675cf44c0a575209d3aafe5df
@@ -762,7 +928,7 @@ msgstr ""
 # 95bac86f56764630a982b69a4bda8552
 #: c-api/arg.rst:275
 msgid "Convert a Python floating point number to a C :c:type:`double`."
-msgstr ""
+msgstr "Convertit un nombre flottant Python vers un type C :ctype:`double`."
 
 # 98b9159c22174b32a3dc96d09c82522e
 #: c-api/arg.rst:278
@@ -773,11 +939,12 @@ msgstr ""
 #: c-api/arg.rst:278
 msgid "Convert a Python complex number to a C :c:type:`Py_complex` structure."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # ae20e37774ff47a79cb7fcec9bdd7f7c
 #: c-api/arg.rst:281
 msgid "Other objects"
-msgstr ""
+msgstr "Autres Objets"
 
 # e837a7340ac34605af94f3090bddbbbe
 # 5d8ecefc9ae6403681d0af0f56136a74
@@ -792,6 +959,10 @@ msgid ""
 "program thus receives the actual object that was passed.  The object's "
 "reference count is not increased.  The pointer stored is not *NULL*."
 msgstr ""
+"Stocke un objet Python (sans aucune conversion) en un pointeur sur un objet "
+"C. Ainsi, Le programme C reçoit l'objet réel qui a été passé. Le compteur de "
+"référence sur l'objet n'est pas incrémenté. Le pointeur stocké n'est pas "
+"*NULL*."
 
 # 9ba491b818a74a8d9107731a9243e72a
 #: c-api/arg.rst:293
@@ -807,6 +978,12 @@ msgid ""
 "which the object pointer is stored.  If the Python object does not have the "
 "required type, :exc:`TypeError` is raised."
 msgstr ""
+"Stocke un objet Python en pointeur sur un objet C. C'est comparable à ``O``, "
+"mais la fonction prend deux arguments C : le premier est l'adresse d'un "
+"objet de type Python, le second est l'adresse d'une variable C (de type :"
+"ctype:`P:exc:`TypeError`yObject\\*`) dans laquelle le pointeur sur l'objet "
+"sera stocké. Si l'objet Python n'est pas du type requis, une exception :exc:"
+"`TypeError` sera levée."
 
 # f43a30a856cc4a74a9a1b6a8fbd0a03a
 # 4cf06727d5b0416586c76b644eb22ad7
@@ -822,6 +999,11 @@ msgid ""
 "of a C variable (of arbitrary type), converted to :c:type:`void \\*`.  The "
 "*converter* function in turn is called as follows::"
 msgstr ""
+"Converti un objet Python en une variable C en utilisant une fonction de "
+"*conversion*. La fonction prend deux arguments : le premier est une "
+"fonction, le second est l'adresse d'une variable C (de type arbitraire), "
+"convertie en :ctype:`void \\*`. La fonction de *conversion* est appellée à "
+"son tour de la manière suivante :"
 
 # fb7dd494e99941608b98a56c101310b4
 #: c-api/arg.rst:303
@@ -833,6 +1015,12 @@ msgid ""
 "*converter* function should raise an exception and leave the content of "
 "*address* unmodified."
 msgstr ""
+"Où *objet* est l'objet Python à convertir et *adresse* est l'argument de "
+"type :ctype:`void\\*` qui a été passé à la function :cfunc:`PyArg_Parse\\*`. "
+"Le status retourné devrait être ``1`` pour conversion réussie, et ``0`` si "
+"la conversion a échouée. Quand la conversion échoue, la fonction de "
+"*conversion* devrait lever une exception et laisser le contenu de *adresse* "
+"non modifié."
 
 # 1943fe69fd2a4c40ba1b8c779875714c
 #: c-api/arg.rst:309
@@ -843,6 +1031,11 @@ msgid ""
 "call, the *object* parameter will be NULL; *address* will have the same "
 "value as in the original call."
 msgstr ""
+"Si la fonction de *conversion* retourne Py_CLEANUP_SUPPORTED, elle peut être "
+"appelée une seconde fois si l'analyse des arguments échoue, donnant ainsi à "
+"la fonction de conversion la possibilité de libérer la mémoire qu'elle avait "
+"allouée précédemment. Dans ce second appel, le paramètre correspondant à "
+"l'*objet* sera NULL; *adresse* aura la même valeur que dans le premier appel."
 
 # eea36a86b3fb4a38bc69d4cdfd295573
 # 60e4a2385522447e9749880f4f31e9a1
@@ -857,6 +1050,10 @@ msgid ""
 "units in *items*.  The C arguments must correspond to the individual format "
 "units in *items*.  Format units for sequences may be nested."
 msgstr ""
+"L'objet doit être une séquence Python dont la longueur est le nombre "
+"d'unités de formats dans *articles*. Les arguments C doivent correspondre à "
+"chaque unité de format particulière dans *articles*. Les unités de formats "
+"pour les séquences peuvent être imbriquées. "
 
 # 2e4b39c788fc49c6896cdcc270187447
 #: c-api/arg.rst:323
@@ -867,6 +1064,11 @@ msgid ""
 "too small to receive the value (actually, the semantics are inherited from "
 "downcasts in C --- your mileage may vary)."
 msgstr ""
+"Il est possible de passer des entiers de type \"long\" (dont la valeur "
+"dépasse le :const:`LONG_MAX` de la plateforme), cependant aucun contrôle "
+"d'intervalle n'est effectué --- les bits les plus significatifs sont "
+"tronqués silencieusement quand le champ cible est trop petit (en fait, la "
+"sémantique est héritée du transtypage en C --- la perte peut varier)."
 
 # 82f22c924f8c477793cc7e3b75209611
 #: c-api/arg.rst:329
@@ -874,6 +1076,8 @@ msgid ""
 "A few other characters have a meaning in a format string.  These may not "
 "occur inside nested parentheses.  They are:"
 msgstr ""
+"Quelques autres caractères ont un sens dans une chaîne de format. On ne doit "
+"pas les trouvées dans des parenthèses imbriquées. Ce sont :"
 
 # 104e441992184ea98fa7bac7c3eca9fd
 #: c-api/arg.rst:337
@@ -889,6 +1093,11 @@ msgid ""
 "specified, :c:func:`PyArg_ParseTuple` does not touch the contents of the "
 "corresponding C variable(s)."
 msgstr ""
+"Incique que les arguments restants dans la liste Python des arguments sont "
+"optionels. Les variables C correspondant à ces arguments optionnels "
+"devraient être initialisés avec leur valeur par défaut --- quan un argument "
+"optionnel n'est pas spécifié, la fonction :cfunc:`PyArg_ParseTuple` ne "
+"modifie par le contenu de la ou des variables C correspondantes."
 
 # 5f151d1fbe044e878972ac951735ba39
 #: c-api/arg.rst:342
@@ -902,6 +1111,9 @@ msgid ""
 "the function name in error messages (the \"associated value\" of the "
 "exception that :c:func:`PyArg_ParseTuple` raises)."
 msgstr ""
+"La liste des unités de format s'arrête ici ; la chaîne après les deux-points "
+"est utilisée comme le nom de la fonction dans les messages d'erreur (la "
+"\"valeur associée\" de l'exception levée par :cfunc:`PyArg_ParseTuple`)."
 
 # b75bb917418d4d6faed8418d67cc552a
 #: c-api/arg.rst:347
@@ -915,6 +1127,9 @@ msgid ""
 "as the error message *instead* of the default error message.  ``:`` and ``;"
 "`` mutually exclude each other."
 msgstr ""
+"La liste des unités de format s'arrête ici ; la chaîne après le point-"
+"virgule est utilise comme message d'erreur *au lieu* du message d'erreur par "
+"défaut. ``:`` et ``;`` sont mutuellement exclusifs. "
 
 # 3f660466150b4d73b580b91b23a211d1
 #: c-api/arg.rst:349
@@ -922,6 +1137,9 @@ msgid ""
 "Note that any Python object references which are provided to the caller are "
 "*borrowed* references; do not decrement their reference count!"
 msgstr ""
+"Notez que n'importe quelles références sur un objet Python qui sont données "
+"à l'appelant sont des références *empruntées* ; ne décrémentez pas leur "
+"compteur de références ! "
 
 # fe5ebda860a246b0b7a1efbff8e29516
 #: c-api/arg.rst:352
@@ -933,6 +1151,13 @@ msgid ""
 "values; they should match what is specified for the corresponding format "
 "unit in that case."
 msgstr ""
+"Les arguments additionnels qui sont donnés à ces fonctions doivent être des "
+"adresses de variables dont le type est déterminé par la chaîine de format. "
+"Elles sont utilisées pour stocker les valeurs du n-uplet d'entrée. Il y a "
+"quelques cas, comme décrit précédemment dans le liste des unités de formats, "
+"où ces paramètres sont utilisés comme valeurs d'entrée. Dans ce cas, ils "
+"devraient correspondre à ce qui est spécifié pour l'unité de format "
+"correspondante."
 
 # 4e011564748741e1a84c4e40895ca0df
 #: c-api/arg.rst:358
@@ -945,11 +1170,18 @@ msgid ""
 "addresses corresponding to that and the following format units are left "
 "untouched."
 msgstr ""
+"Pour que la conversion réussise, l'objet *arg* doit correspondre au format, "
+"et le format doit être épuisé. En cas de succès, les fonctions :cfunc:"
+"`PyArg_Parse\\*` retournent vrai, sinon elles retournent faux et lèvent "
+"l'exception appropriée. Quand une fonction :cfunc:`PyArg_Parse\\*` échoue en "
+"raison d'une erreur de conversion dans une des unités de format, les "
+"variables aux adresses correspondantes à cette erreur et les unités de "
+"formats suivantes sont laissées telles quelles."
 
 # 18cf40c85db04d21852afcc7d93a3c0e
 #: c-api/arg.rst:367
 msgid "API Functions"
-msgstr ""
+msgstr "Fonction de l'API"
 
 # 3785442a9f294c3c91c9c5d343ba2aa8
 #: c-api/arg.rst:371
@@ -1037,7 +1269,7 @@ msgstr ""
 # 453a8e73aef64aaf97e0f648bd7498bb
 #: c-api/arg.rst:455
 msgid "Building values"
-msgstr ""
+msgstr "Construction des valeurs"
 
 # 46427f18e2cf46bea927304db2e3c76a
 #: c-api/arg.rst:459
@@ -1218,16 +1450,22 @@ msgstr ""
 #: c-api/arg.rst:540
 msgid "Convert a C :c:type:`unsigned short int` to a Python integer object."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 # 9c4c8e7199af4bc1bf93d4aaaca0922f
 #: c-api/arg.rst:543
 msgid "Convert a C :c:type:`unsigned int` to a Python integer object."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 # c355ac9cca134cc99967117f8cb278a0
 #: c-api/arg.rst:546
 msgid "Convert a C :c:type:`unsigned long` to a Python integer object."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 # b372e10b36bf4c6c948a47b5db422024
 #: c-api/arg.rst:549
@@ -1236,6 +1474,9 @@ msgid ""
 "on platforms that support :c:type:`long long` (or :c:type:`_int64` on "
 "Windows)."
 msgstr ""
+"Convertit un entier Python en un type C :ctype:`long long`. Ce format est "
+"uniquement disponible sur les plates-formes qui prennent en charge :ctype:"
+"`long long` (ou :ctype:`_int64` sous Windows)."
 
 # 78d4b0e110884450a85309e654efd847
 #: c-api/arg.rst:554
@@ -1244,11 +1485,15 @@ msgid ""
 "available on platforms that support :c:type:`unsigned long long` (or :c:type:"
 "`unsigned _int64` on Windows)."
 msgstr ""
+"Convertit un entier Python en un type C :ctype:`unsigned long long` sans en "
+"vérifier le débordement. Ce format est uniquement disponible sur les plates-"
+"formes qui prennent en charge :ctype:`unsigned long long` (ou :ctype:"
+"`unsigned _int64` sous Windows)."
 
 # 41b1d0c372b4433e9cfb530de08cc7a1
 #: c-api/arg.rst:559
 msgid "Convert a C :c:type:`Py_ssize_t` to a Python integer."
-msgstr ""
+msgstr "Convertit un entier Python en un type  :ctype:`long int`."
 
 # d4a6e189642b45ce971ee9869138cc65
 #: c-api/arg.rst:562
@@ -1256,6 +1501,8 @@ msgid ""
 "Convert a C :c:type:`int` representing a byte to a Python :class:`bytes` "
 "object of length 1."
 msgstr ""
+"Convertit un octet Python, représenté comme un objet :class:`bytes` de "
+"longueur 1, en un type C :ctype:`char`."
 
 # dbd0d741da2645db9dade1c8af1bd2ce
 #: c-api/arg.rst:566
@@ -1263,16 +1510,18 @@ msgid ""
 "Convert a C :c:type:`int` representing a character to Python :class:`str` "
 "object of length 1."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 # 755d91f9279d4f73a1e0172f5fc54417
 #: c-api/arg.rst:570
 msgid "Convert a C :c:type:`double` to a Python floating point number."
-msgstr ""
+msgstr "Convertit un nombre flottant Python vers un type C :ctype:`float`."
 
 # c1c56f6583304048b383b9c6914744d5
 #: c-api/arg.rst:573
 msgid "Convert a C :c:type:`float` to a Python floating point number."
-msgstr ""
+msgstr "Convertit un nombre flottant Python vers un type C :ctype:`float`."
 
 # d4c3b60c26074a88b3dea7b23856f4b3
 #: c-api/arg.rst:576
@@ -1283,6 +1532,7 @@ msgstr ""
 #: c-api/arg.rst:576
 msgid "Convert a C :c:type:`Py_complex` structure to a Python complex number."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # bafb3f0fcb1f4f8d8347aaf0cc1e3a58
 #: c-api/arg.rst:579
@@ -1376,7 +1626,7 @@ msgstr ""
 # 76ceeadc41d345f285d729ba497fa77e
 #: c-api/bool.rst:6
 msgid "Boolean Objects"
-msgstr ""
+msgstr "Les objets booléens"
 
 # 12970e743dc645efa84d6e14d22ee4a6
 #: c-api/bool.rst:8
@@ -1386,6 +1636,11 @@ msgid ""
 "normal creation and deletion functions don't apply to booleans.  The "
 "following macros are available, however."
 msgstr ""
+"Les booléens en Python sont implémentés comme une classe dérivée des "
+"entiers. Il y a seulement deux booléens, :const:`Py_False` et :const:"
+"`Py_True`. Comme tel, les fonctions de création de suppression ne "
+"s'appliquent pas aux booléens. Toutefois, les macros suivantes sont "
+"disponibles."
 
 # d65b896be28d48ada429d396d40c27a5
 #: c-api/bool.rst:16
@@ -1539,6 +1794,15 @@ msgid ""
 "operating system library, or it could be used to pass around structured data "
 "in its native, in-memory format."
 msgstr ""
+"Les objets tampons sont utiles pour exposer les données d'une autre "
+"interface d'un objet tampon au développeur Python. Ils peuvent aussi être "
+"utilisés comme un mécanisme de découpage sans copie. En utilisant leur "
+"capacité à référencer un bloc de mémoire, il est possible d'exposer "
+"n'importe quelle donnée au développeur Python assez simplement. La mémoire "
+"peut ainsi être un tableau constant de grande taille d'une extension en C, "
+"elle peut être un bloc mémoire destiné à être modifié avant de le passer à "
+"une librairie système, ou encore elle peut permettre de faire passer des "
+"données structurées dans leur format originel en mémoire."
 
 # 96ed057bc7524d7d9b8038aa93aa56e6
 #: c-api/buffer.rst:77
@@ -1638,7 +1902,7 @@ msgstr ""
 # e30c9b6c18424b26b41f8646fe24ec45
 #: c-api/buffer.rst:170
 msgid "Buffer-related functions"
-msgstr ""
+msgstr "Fonctions relatives aux tampons"
 
 # a009f3c20fee4326b0f39ab8f062f355
 #: c-api/buffer.rst:175
@@ -1837,7 +2101,7 @@ msgstr ""
 # be0c5bac219a40fc8039b409bd454502
 #: c-api/bytearray.rst:6
 msgid "Byte Array Objects"
-msgstr ""
+msgstr "Objets Tableau d'Octets"
 
 # 64f8a11e1efa4e258fe870e4a556b2b4
 #: c-api/bytearray.rst:13
@@ -1855,7 +2119,7 @@ msgstr ""
 # d96ef9db4109449a8c03dd44c0b9ac7b
 #: c-api/bytearray.rst:23
 msgid "Type check macros"
-msgstr ""
+msgstr "Macros de vérification de type"
 
 # 1666a8b44cbc48dd88b1ded73bfb7522
 #: c-api/bytearray.rst:27
@@ -1874,7 +2138,7 @@ msgstr ""
 # b42a950d987542ecb06a83171bba05a8
 #: c-api/bytearray.rst:38
 msgid "Direct API functions"
-msgstr ""
+msgstr "Fonctions directes sur l'API"
 
 # 0f6f498bdca943f1b70d86606066e2d3
 #: c-api/bytearray.rst:42
@@ -1916,12 +2180,14 @@ msgstr ""
 # b64ddf0a30c34c8c96750a6cc6277c7c
 #: c-api/bytearray.rst:75
 msgid "Macros"
-msgstr ""
+msgstr "Macros"
 
 # 10d0417f3b7a47faadc6f418edc51f5e
 #: c-api/bytearray.rst:77
 msgid "These macros trade safety for speed and they don't check pointers."
 msgstr ""
+"Ces macros sont taillées pour la vitesse d'exécution et ne vérifient pas les "
+"pointeurs."
 
 # 6aea4119236d41f1898a941715a5b4db
 #: c-api/bytearray.rst:81
@@ -1936,7 +2202,7 @@ msgstr ""
 # 2a936c9dec2c4954ab42f782b8547e0b
 #: c-api/bytes.rst:6
 msgid "Bytes Objects"
-msgstr ""
+msgstr "Objets bytes"
 
 # b237e3c34233455dafb446da152779b8
 #: c-api/bytes.rst:8
@@ -1944,6 +2210,9 @@ msgid ""
 "These functions raise :exc:`TypeError` when expecting a bytes parameter and "
 "are called with a non-bytes parameter."
 msgstr ""
+"Ces fonctions lèvent :exc:`TypeError` lorsqu'elles attendent un paramètre de "
+"type octets et qu'elles sont appelées avec un paramètre qui n'est pas un "
+"octet."
 
 # 08c86120b77f4998b380b5d205c823a8
 #: c-api/bytes.rst:16
@@ -2344,13 +2613,15 @@ msgstr ""
 # 206ba07ace6c4ce092c6116069b367cf
 #: c-api/capsule.rst:6
 msgid "Capsules"
-msgstr ""
+msgstr "Capsules"
 
 # 647a2c5b9b84418bac52a659e09a3412
 #: c-api/capsule.rst:10
 msgid ""
 "Refer to :ref:`using-capsules` for more information on using these objects."
 msgstr ""
+"Reportez-vous à :ref:`using-capsules` pour plus d'informations sur "
+"l'utilisation de ces objets."
 
 # 303460ed8bbd42e4b61d61a04b5f3664
 #: c-api/capsule.rst:15
@@ -2557,7 +2828,7 @@ msgstr ""
 # 900bcb49261d464fa010abe2b0454d02
 #: c-api/cell.rst:6
 msgid "Cell Objects"
-msgstr ""
+msgstr "Objets Cellules"
 
 # ace6994c67b44990a9285876c193af80
 #: c-api/cell.rst:8
@@ -2571,6 +2842,16 @@ msgid ""
 "support from the generated byte-code; these are not automatically de-"
 "referenced when accessed. Cell objects are not likely to be useful elsewhere."
 msgstr ""
+"Les objets \"Cellules\" sont utilisés pour implémenter des variables "
+"référencées dans de multiples enviromments. Pour chacune de ces variables, "
+"un objet cellule est créé pour stocker sa valeur ; les variables locales de "
+"chaque pile d'exécution qui référence cette valeur contiennent une référence "
+"sur les cellules des autres environnements qui utilisent aussi cette "
+"variable. Quand la valeur est accédée, la valeur de la cellule est utilisée, "
+"au lei de celle de l'objet cellule proprement dit. Ce dé-référencement de "
+"l'objet cellule requiert l'intervention du bytecode généré ; il n'est pas "
+"automatiquement dé-référencé quand il est accédé. Il est plausible que les "
+"objets cellules ne soit utilisés ailleurs."
 
 # 7528111529614688a3039d8027463c2b
 #: c-api/cell.rst:20
@@ -2626,7 +2907,7 @@ msgstr ""
 # bd338616db554507818399a9b1bd76ff
 #: c-api/code.rst:6
 msgid "Code Objects"
-msgstr ""
+msgstr "Objets Code"
 
 # f454e3c097d54fdcb3a83070f314fdd6
 #: c-api/code.rst:14
@@ -2635,6 +2916,9 @@ msgid ""
 "represents a chunk of executable code that hasn't yet been bound into a "
 "function."
 msgstr ""
+"Les objets Code sont un détail bas-niveau de l'implémentation CPython. "
+"Chacun d'eux représente une partie de code exécutable, qui n'a pas encore "
+"été lié dans une fonction."
 
 # 6f9f4e7216fd434d81814873a75f438f
 #: c-api/code.rst:20
@@ -2844,7 +3128,7 @@ msgstr ""
 # e4b0233750e94c959e617c831fc908fd
 #: c-api/complex.rst:6
 msgid "Complex Number Objects"
-msgstr ""
+msgstr "Objets Nombres Complexes"
 
 # 45d293e3a82e4cc78c08c31782ad220c
 #: c-api/complex.rst:10
@@ -2854,11 +3138,16 @@ msgid ""
 "and the other is a C structure which represents the actual complex number "
 "value. The API provides functions for working with both."
 msgstr ""
+"Les objets Python nombres complexes sont implémentés comme deux types "
+"distincts, lorsqu'ils sont vus de l'API C : l'un est l'objet Python tel "
+"qu'il est vu par les programmes Python, et l'autre est une structure C qui "
+"représente la valeur complexe courante. L'API fournit des fonctions pour "
+"travailler avec ces deux représentations."
 
 # 6d58c157893f4c26952762d27222e26d
 #: c-api/complex.rst:17
 msgid "Complex Numbers as C Structures"
-msgstr ""
+msgstr "Nombres complexes en tant que structures C"
 
 # 6efe1c2f9a23439fb1494cac93151ec6
 #: c-api/complex.rst:19
@@ -2867,6 +3156,9 @@ msgid ""
 "return them as results do so *by value* rather than dereferencing them "
 "through pointers.  This is consistent throughout the API."
 msgstr ""
+"Remarquez que les fonctions qui acceptent ces structures comme paramètres et "
+"les retournent comme résultats le font *par valeur* au lieur de les dé-"
+"référencer en utilisant des pointeurs. Cela est constant dans toute l'API."
 
 # 9899ff4139bc4011a6d09f81df6b7413
 #: c-api/complex.rst:26
@@ -2883,6 +3175,7 @@ msgid ""
 "Return the sum of two complex numbers, using the C :c:type:`Py_complex` "
 "representation."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # 42bd3f95e09c4a7fba65a84d1b9217e3
 #: c-api/complex.rst:45
@@ -2890,6 +3183,7 @@ msgid ""
 "Return the difference between two complex numbers, using the C :c:type:"
 "`Py_complex` representation."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # 788d75a1ea414444ada091a5a273f272
 #: c-api/complex.rst:51
@@ -2897,6 +3191,7 @@ msgid ""
 "Return the negation of the complex number *complex*, using the C :c:type:"
 "`Py_complex` representation."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # 5135b37662f9462b8433583f337a1486
 #: c-api/complex.rst:57
@@ -2904,6 +3199,7 @@ msgid ""
 "Return the product of two complex numbers, using the C :c:type:`Py_complex` "
 "representation."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # 2ad154ee21f540d6884cd7e45d0e568f
 #: c-api/complex.rst:63
@@ -2911,6 +3207,7 @@ msgid ""
 "Return the quotient of two complex numbers, using the C :c:type:`Py_complex` "
 "representation."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # 13da7a062f7a4d5f99fc5abdbaeb521f
 #: c-api/complex.rst:66
@@ -2936,7 +3233,7 @@ msgstr ""
 # 7ac4c7e92b0d486e8a65d57e61f1730f
 #: c-api/complex.rst:80
 msgid "Complex Numbers as Python Objects"
-msgstr ""
+msgstr "Nombres complexes en tant qu'objets Python"
 
 # 14d28635be0d4118b6638e10044134cd
 #: c-api/complex.rst:85
@@ -2971,6 +3268,7 @@ msgid ""
 "Create a new Python complex number object from a C :c:type:`Py_complex` "
 "value."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # 9ba137e1c28f40daa28d24a2c344fdaf
 #: c-api/complex.rst:113
@@ -2985,12 +3283,13 @@ msgstr ""
 # 12884635f3864cb2b45555f2f4707df2
 #: c-api/complex.rst:123
 msgid "Return the imaginary part of *op* as a C :c:type:`double`."
-msgstr ""
+msgstr "Convertit un nombre flottant Python vers un type C :ctype:`double`."
 
 # 7e147f61910c4d23b97ee471d7d59a78
 #: c-api/complex.rst:128
 msgid "Return the :c:type:`Py_complex` value of the complex number *op*."
 msgstr ""
+"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
 
 # 429867a832474d17bec0599256724911
 #: c-api/complex.rst:130
@@ -3003,7 +3302,7 @@ msgstr ""
 # 2395699dbd3d4a5e9b57bad41553cf2e
 #: c-api/concrete.rst:8
 msgid "Concrete Objects Layer"
-msgstr ""
+msgstr "Couche des Objets Concrets"
 
 # c9949ad6803a42aa853d2cd49d9d69b8
 #: c-api/concrete.rst:10
@@ -3015,6 +3314,13 @@ msgid ""
 "object is a dictionary, use :c:func:`PyDict_Check`.  The chapter is "
 "structured like the \"family tree\" of Python object types."
 msgstr ""
+"Les fonctions dans ce chapitre sont spécifiques à certains types d'objets "
+"Python. Leur donner un objet d'un mauvais type n'est pas une bonne idée. Si "
+"vous recevez un objet d'un programme Python et que vous n'êtes pas sûr qu'il "
+"est du bon type, vous devez tout d'abord vérifier son type. Par exemple, "
+"pour vérifier qu'un objet est un dictionnaire, utiliser :cfunc:"
+"`PyDict_Check`. Ce chapitre est structuré comme un \"arbre des familles\" "
+"des types d'objets Python."
 
 # a1d60f4a7c53434899aa6866c96c8a42
 #: c-api/concrete.rst:19
@@ -3024,27 +3330,33 @@ msgid ""
 "passed instead of a valid object.  Allowing *NULL* to be passed in can cause "
 "memory access violations and immediate termination of the interpreter."
 msgstr ""
+"Tandis que les fonctions décrites dans ce chapitre vérifient avec soin le "
+"type des objets qui leur sont passés, beaucoup d'entre elles ne vérifient "
+"pas que *NULL* est passé au lieu d'un objet valide. Autoriser *NULL* à être "
+"passé peut provoquer des violations d'accès à la mémoire et ainsi terminer "
+"immédiatement l'interpréteur."
 
 # 34168edf28c44ab4bc82dc248f409179
 #: c-api/concrete.rst:28
 msgid "Fundamental Objects"
-msgstr ""
+msgstr "Objets fondamentaux"
 
 # 1866caed9dc74a2f8bff8a09dd38d387
 #: c-api/concrete.rst:30
 msgid ""
 "This section describes Python type objects and the singleton object ``None``."
 msgstr ""
+"Cette section décrit les objets de type Python et l'objet singleton ``None``."
 
 # 7685db0a106b4a318508bfe4b4259549
 #: c-api/concrete.rst:41
 msgid "Numeric Objects"
-msgstr ""
+msgstr "Objets numériques"
 
 # 3f263cca6f7843b897e28eaa99a80dbb
 #: c-api/concrete.rst:56
 msgid "Sequence Objects"
-msgstr ""
+msgstr "Objets séquences"
 
 # 9a476bfbe8db428384b6dd75083a84a8
 #: c-api/concrete.rst:60
@@ -3053,26 +3365,31 @@ msgid ""
 "chapter; this section deals with the specific kinds of sequence objects that "
 "are intrinsic to the Python language."
 msgstr ""
+"Les opérations génériques sur les objets séquences ont été discutées dans le "
+"chapitre précédent. Cette section traite des genres spécifiques d'objets "
+"séquences qui sont intrinsèques au langage Python."
 
 # bd1d180f97e5454e85e055eddf32ebb9
 #: c-api/concrete.rst:78
 msgid "Mapping Objects"
-msgstr ""
+msgstr "Objets association"
 
 # 9058c95cd0204e349464e228b59360c5
 #: c-api/concrete.rst:90
 msgid "Other Objects"
-msgstr ""
+msgstr "Autres Objets"
 
 # 63538334efe54788948f4175af39578d
 #: c-api/conversion.rst:6
 msgid "String conversion and formatting"
-msgstr ""
+msgstr "Conversion et formatage de chaînes"
 
 # 414bd89208e64a73988e2fe79080123d
 #: c-api/conversion.rst:8
 msgid "Functions for number conversion and formatted string output."
 msgstr ""
+"Fonctions de conversion pour les nombres et pour la sortie des chaînes "
+"formattées."
 
 # ff8a9025aae4450a826c0c8fb1060f1e
 #: c-api/conversion.rst:13
@@ -3276,7 +3593,7 @@ msgstr ""
 # 37d3b29715ca4a718ce92947e603d24f
 #: c-api/datetime.rst:6
 msgid "DateTime Objects"
-msgstr ""
+msgstr "Objets DateTime"
 
 # 97fa9ce33399495e9ed714103cd0d7a0
 #: c-api/datetime.rst:8
@@ -3510,7 +3827,7 @@ msgstr ""
 # 0c74c31b7d484407bbf530b8e75e645c
 #: c-api/dict.rst:6
 msgid "Dictionary Objects"
-msgstr ""
+msgstr "Objets dictionnaires"
 
 # 9fc802e4fe384436a5407b7b28dd32ff
 #: c-api/dict.rst:13
@@ -3708,7 +4025,7 @@ msgstr ""
 # 1852fd8012954e52b40c76382fed1f11
 #: c-api/exceptions.rst:8
 msgid "Exception Handling"
-msgstr ""
+msgstr "Gestion des exceptions"
 
 # 86467935441940318d9f0b556c7a92dc
 #: c-api/exceptions.rst:10
@@ -4149,7 +4466,7 @@ msgstr ""
 # 7fcfdce41d9841018705935df4f88127
 #: c-api/exceptions.rst:392
 msgid "Exception Objects"
-msgstr ""
+msgstr "Objets Exception"
 
 # 889236e3a9054ff3a52e5714d5edfc19
 #: c-api/exceptions.rst:396
@@ -4203,7 +4520,7 @@ msgstr ""
 # dd53be4775cf4b3883cf12a3dc884164
 #: c-api/exceptions.rst:440
 msgid "Unicode Exception Objects"
-msgstr ""
+msgstr "Objets Exception"
 
 # cbe19bad9e03429c8523842b41ee1e20
 #: c-api/exceptions.rst:442
@@ -4290,7 +4607,7 @@ msgstr ""
 # 7616c331efb34b95a9ed68dd47722209
 #: c-api/exceptions.rst:517
 msgid "Recursion Control"
-msgstr ""
+msgstr "Contrôle de la récursion"
 
 # 0d24c08d9aac4e63b1d833006a3426d1
 #: c-api/exceptions.rst:519
@@ -4388,7 +4705,7 @@ msgstr ""
 # 5c4373f04ecb4850bb1837788fa21c79
 #: c-api/exceptions.rst:578
 msgid "Standard Exceptions"
-msgstr ""
+msgstr "Exceptions standards"
 
 # 490de4a56c55412abee0a7e297b5b957
 #: c-api/exceptions.rst:580
@@ -4402,27 +4719,27 @@ msgstr ""
 # a89f79d4be2e4f9fbcd66ed1aa3c6375
 #: c-api/exceptions.rst:586
 msgid "C Name"
-msgstr ""
+msgstr "Nom C"
 
 # 11cffc87a83749eca0e9a4c70b5e9bf9
 #: c-api/exceptions.rst:586
 msgid "Python Name"
-msgstr ""
+msgstr "Nom Python"
 
 # 7ae8827edeaf458c97afbdb1b7a863aa
 #: c-api/exceptions.rst:586
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 # 2e0b8c8a08d742f18a9ebf956d3946d9
 #: c-api/exceptions.rst:588
 msgid ":c:data:`PyExc_BaseException`"
-msgstr ""
+msgstr ":cdata:`PyExc_BaseException`"
 
 # fbda648f352d449d9517cdcf3f324913
 #: c-api/exceptions.rst:588
 msgid ":exc:`BaseException`"
-msgstr ""
+msgstr ":exc:`BaseException`"
 
 # 2011a29b27894ccf8bc19af9f8d6d8ea
 # d6590385850640449e335ca45a174a0a
@@ -4432,72 +4749,72 @@ msgstr ""
 #: c-api/exceptions.rst:588 c-api/exceptions.rst:590 c-api/exceptions.rst:592
 #: c-api/exceptions.rst:594 c-api/exceptions.rst:602
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
 # 40d1f22350b641d2981828f2cec415de
 #: c-api/exceptions.rst:590
 msgid ":c:data:`PyExc_Exception`"
-msgstr ""
+msgstr ":cdata:`PyExc_Exception`"
 
 # cf7082e56d65437dadb10fe7e89c87a1
 #: c-api/exceptions.rst:590
 msgid ":exc:`Exception`"
-msgstr ""
+msgstr ":exc:`Exception`"
 
 # 973cc7bae03244e78fe07b6c9765dd09
 #: c-api/exceptions.rst:592
 msgid ":c:data:`PyExc_ArithmeticError`"
-msgstr ""
+msgstr ":cdata:`PyExc_ArithmeticError`"
 
 # 547f64cc459e432e80683330a1d7a2b4
 #: c-api/exceptions.rst:592
 msgid ":exc:`ArithmeticError`"
-msgstr ""
+msgstr ":exc:`ArithmeticError`"
 
 # 9bd9d4c40ebd47258f9e743d21785301
 #: c-api/exceptions.rst:594
 msgid ":c:data:`PyExc_LookupError`"
-msgstr ""
+msgstr ":cdata:`PyExc_LookupError`"
 
 # 417795b0925f4246a97349a29241f060
 #: c-api/exceptions.rst:594
 msgid ":exc:`LookupError`"
-msgstr ""
+msgstr ":exc:`LookupError`"
 
 # 8d79901ec0164a20841adad465efbc51
 #: c-api/exceptions.rst:596
 msgid ":c:data:`PyExc_AssertionError`"
-msgstr ""
+msgstr ":cdata:`PyExc_AssertionError`"
 
 # 7c415bad65a94bc6a68a1038e19d6668
 #: c-api/exceptions.rst:596
 msgid ":exc:`AssertionError`"
-msgstr ""
+msgstr ":exc:`AssertionError`"
 
 # af1726c520b348edacc64cea6d9be074
 #: c-api/exceptions.rst:598
 msgid ":c:data:`PyExc_AttributeError`"
-msgstr ""
+msgstr ":cdata:`PyExc_AttributeError`"
 
 # 567072dc54c54e62a61396fe3dca1bac
 #: c-api/exceptions.rst:598
 msgid ":exc:`AttributeError`"
-msgstr ""
+msgstr ":exc:`AttributeError`"
 
 # c093d3b0a8d9423eb4be6af6b407af53
 #: c-api/exceptions.rst:600
 msgid ":c:data:`PyExc_EOFError`"
-msgstr ""
+msgstr ":cdata:`PyExc_EOFError`"
 
 # 0a9895a80814438ba2392e3106eab155
 #: c-api/exceptions.rst:600
 msgid ":exc:`EOFError`"
-msgstr ""
+msgstr ":exc:`EOFError`"
 
 # 82114e2eef194e3b8fcad0c4fba93ce9
 #: c-api/exceptions.rst:602
 msgid ":c:data:`PyExc_EnvironmentError`"
-msgstr ""
+msgstr ":cdata:`PyExc_EnvironmentError`"
 
 # 859468f996a74f1c95bdbbfb33bae39a
 #: c-api/exceptions.rst:602
@@ -4507,17 +4824,17 @@ msgstr ""
 # 5413316b82024ed39c5106fe28229afc
 #: c-api/exceptions.rst:604
 msgid ":c:data:`PyExc_FloatingPointError`"
-msgstr ""
+msgstr ":cdata:`PyExc_FloatingPointError`"
 
 # 202728e621b1476d8e16c591600b0f9b
 #: c-api/exceptions.rst:604
 msgid ":exc:`FloatingPointError`"
-msgstr ""
+msgstr ":exc:`FloatingPointError`"
 
 # cb4f13424f19408aa9048d424cb566ee
 #: c-api/exceptions.rst:606
 msgid ":c:data:`PyExc_IOError`"
-msgstr ""
+msgstr ":cdata:`PyExc_IOError`"
 
 # f1704727234a46bda5b176170fba0b54
 #: c-api/exceptions.rst:606
@@ -4527,172 +4844,172 @@ msgstr ""
 # 28ab268b62cb4a66aee0547724685864
 #: c-api/exceptions.rst:608
 msgid ":c:data:`PyExc_ImportError`"
-msgstr ""
+msgstr ":cdata:`PyExc_ImportError`"
 
 # 3b27a580d82f4a47b6efcc82f2dc9e0d
 #: c-api/exceptions.rst:608
 msgid ":exc:`ImportError`"
-msgstr ""
+msgstr ":exc:`ImportError`"
 
 # ccfbd8b76eb6425283a5c4fd7e14562e
 #: c-api/exceptions.rst:610
 msgid ":c:data:`PyExc_IndexError`"
-msgstr ""
+msgstr ":cdata:`PyExc_IndexError`"
 
 # 8ceb69a2955648069fafe84bdaa4fbe0
 #: c-api/exceptions.rst:610
 msgid ":exc:`IndexError`"
-msgstr ""
+msgstr ":exc:`IndexError`"
 
 # a39ebb67f55f4b97a729f4f2602059d1
 #: c-api/exceptions.rst:612
 msgid ":c:data:`PyExc_KeyError`"
-msgstr ""
+msgstr ":cdata:`PyExc_KeyError`"
 
 # 45e82306be71494b94e885246bdd278f
 #: c-api/exceptions.rst:612
 msgid ":exc:`KeyError`"
-msgstr ""
+msgstr ":exc:`KeyError`"
 
 # b84a25de854a4ba7be477bd706290036
 #: c-api/exceptions.rst:614
 msgid ":c:data:`PyExc_KeyboardInterrupt`"
-msgstr ""
+msgstr ":cdata:`PyExc_KeyboardInterrupt`"
 
 # d733e3dd353d44e8b612e92c06041814
 #: c-api/exceptions.rst:614
 msgid ":exc:`KeyboardInterrupt`"
-msgstr ""
+msgstr ":exc:`KeyboardInterrupt`"
 
 # a1b65ab4785a4bf0b0479498cc501a64
 #: c-api/exceptions.rst:616
 msgid ":c:data:`PyExc_MemoryError`"
-msgstr ""
+msgstr ":cdata:`PyExc_MemoryError`"
 
 # b7dcf4548596481ca25d60a587b20f57
 #: c-api/exceptions.rst:616
 msgid ":exc:`MemoryError`"
-msgstr ""
+msgstr ":exc:`MemoryError`"
 
 # ea85899f50404163a933d6e0cbdd3678
 #: c-api/exceptions.rst:618
 msgid ":c:data:`PyExc_NameError`"
-msgstr ""
+msgstr ":cdata:`PyExc_NameError`"
 
 # 9d9d88d7171b46938bd39a2b17df6e1f
 #: c-api/exceptions.rst:618
 msgid ":exc:`NameError`"
-msgstr ""
+msgstr ":exc:`NameError`"
 
 # 92576b27d9ef4821ab7e20a1bc4a1a11
 #: c-api/exceptions.rst:620
 msgid ":c:data:`PyExc_NotImplementedError`"
-msgstr ""
+msgstr ":cdata:`PyExc_NotImplementedError`"
 
 # 81f979618a67473097809178096fe90a
 #: c-api/exceptions.rst:620
 msgid ":exc:`NotImplementedError`"
-msgstr ""
+msgstr ":exc:`NotImplementedError`"
 
 # 85d108cf4ac64e03aa351e762ede7492
 #: c-api/exceptions.rst:622
 msgid ":c:data:`PyExc_OSError`"
-msgstr ""
+msgstr ":cdata:`PyExc_OSError`"
 
 # 4f7b58d016c9486289aa64521129e0b6
 #: c-api/exceptions.rst:622
 msgid ":exc:`OSError`"
-msgstr ""
+msgstr ":exc:`OSError`"
 
 # 8fa9e634c2d14e61a6f8a1e8efc3e8f0
 #: c-api/exceptions.rst:624
 msgid ":c:data:`PyExc_OverflowError`"
-msgstr ""
+msgstr ":cdata:`PyExc_OverflowError`"
 
 # 1b2be8a64f2346648f9116d90f931d24
 #: c-api/exceptions.rst:624
 msgid ":exc:`OverflowError`"
-msgstr ""
+msgstr ":exc:`OverflowError`"
 
 # ee7110e68f6b4b828b1d139ef6674d12
 #: c-api/exceptions.rst:626
 msgid ":c:data:`PyExc_ReferenceError`"
-msgstr ""
+msgstr ":cdata:`PyExc_ReferenceError`"
 
 # e7163e7048364e919781a551c4bad647
 #: c-api/exceptions.rst:626
 msgid ":exc:`ReferenceError`"
-msgstr ""
+msgstr ":exc:`ReferenceError`"
 
 # 6525298aaedf44c88712b0a8afb87d3a
 #: c-api/exceptions.rst:626
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
 # 2ef4aed512d140e6b1506b2a48599e7f
 #: c-api/exceptions.rst:628
 msgid ":c:data:`PyExc_RuntimeError`"
-msgstr ""
+msgstr ":cdata:`PyExc_RuntimeError`"
 
 # 63b032dff564426a9ba33d6e2bda211b
 #: c-api/exceptions.rst:628
 msgid ":exc:`RuntimeError`"
-msgstr ""
+msgstr ":exc:`RuntimeError`"
 
 # 95c184a7642243e4adf2c37968c87df2
 #: c-api/exceptions.rst:630
 msgid ":c:data:`PyExc_SyntaxError`"
-msgstr ""
+msgstr ":cdata:`PyExc_SyntaxError`"
 
 # 18e33b63c49443f4b09c21c2bb4e40a9
 #: c-api/exceptions.rst:630
 msgid ":exc:`SyntaxError`"
-msgstr ""
+msgstr ":exc:`SyntaxError`"
 
 # da2828efb7354335bf169aab6cdbd941
 #: c-api/exceptions.rst:632
 msgid ":c:data:`PyExc_SystemError`"
-msgstr ""
+msgstr ":cdata:`PyExc_SystemError`"
 
 # ddcd61b59a224013bea0edd67b1f0016
 #: c-api/exceptions.rst:632
 msgid ":exc:`SystemError`"
-msgstr ""
+msgstr ":exc:`SystemError`"
 
 # b2de7c39b54a423994f6a0b1e0b1fad6
 #: c-api/exceptions.rst:634
 msgid ":c:data:`PyExc_SystemExit`"
-msgstr ""
+msgstr ":cdata:`PyExc_SystemExit`"
 
 # 5b458a38d03d4cb8a11cda3784dca1d2
 #: c-api/exceptions.rst:634
 msgid ":exc:`SystemExit`"
-msgstr ""
+msgstr ":exc:`SystemExit`"
 
 # 093930f8181242c091ddfa062f647e6f
 #: c-api/exceptions.rst:636
 msgid ":c:data:`PyExc_TypeError`"
-msgstr ""
+msgstr ":cdata:`PyExc_TypeError`"
 
 # b61df511f9254e8dac926088ea52ea8f
 #: c-api/exceptions.rst:636
 msgid ":exc:`TypeError`"
-msgstr ""
+msgstr ":exc:`TypeError`"
 
 # 7791cba0259e4c389192fda54124eada
 #: c-api/exceptions.rst:638
 msgid ":c:data:`PyExc_ValueError`"
-msgstr ""
+msgstr ":cdata:`PyExc_ValueError`"
 
 # a1de0d85298941ac982ebc65a5b6b089
 #: c-api/exceptions.rst:638
 msgid ":exc:`ValueError`"
-msgstr ""
+msgstr ":exc:`ValueError`"
 
 # 3551737e245e424080ea50d0900543e4
 #: c-api/exceptions.rst:640
 msgid ":c:data:`PyExc_WindowsError`"
-msgstr ""
+msgstr ":cdata:`PyExc_WindowsError`"
 
 # e70b0183e4d94503825a8c34048d6041
 #: c-api/exceptions.rst:640
@@ -4702,32 +5019,32 @@ msgstr ""
 # 722bba173de94cd1a24ce460c86140be
 #: c-api/exceptions.rst:640
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 # e739628c337d4d909281face10d1de9e
 #: c-api/exceptions.rst:642
 msgid ":c:data:`PyExc_ZeroDivisionError`"
-msgstr ""
+msgstr ":cdata:`PyExc_ZeroDivisionError`"
 
 # 1ce4be3017e94d359c70522e18d86439
 #: c-api/exceptions.rst:642
 msgid ":exc:`ZeroDivisionError`"
-msgstr ""
+msgstr ":exc:`ZeroDivisionError`"
 
 # 324016559db94480b10e77f95398957a
 #: c-api/exceptions.rst:675
 msgid "Notes:"
-msgstr ""
+msgstr "Notes : "
 
 # df7a3a9f724e4b0aae6bf6680b8feb6b
 #: c-api/exceptions.rst:678
 msgid "This is a base class for other standard exceptions."
-msgstr ""
+msgstr "C'est la classe de base pour les autres exceptions standards"
 
 # ad16d2ad39b94aaeb727beee2e786b66
 #: c-api/exceptions.rst:681
 msgid "This is the same as :exc:`weakref.ReferenceError`."
-msgstr ""
+msgstr "Identique à :exc:`weakref.ReferenceError`."
 
 # 008fe085898947a88bf04e2a96f61770
 #: c-api/exceptions.rst:684
@@ -4739,7 +5056,7 @@ msgstr ""
 # 7d59a83d75c1435e8134f9423615c7f1
 #: c-api/file.rst:6
 msgid "File Objects"
-msgstr ""
+msgstr "Objets fichiers"
 
 # dffcc1b3c60a42fa9696d0e2cb4f7571
 #: c-api/file.rst:10
@@ -6810,7 +7127,7 @@ msgstr ""
 # 07f702328c8949ea8fb16b1d6c4a5fb4
 #: c-api/init.rst:1067
 msgid "Name"
-msgstr ""
+msgstr "Nom C"
 
 # 44be42e4245546df9b223f6767c7e8c1
 #: c-api/init.rst:1067
@@ -6952,7 +7269,7 @@ msgstr ""
 # b4ed396189d8495587d8adc8b3ec36de
 #: c-api/init.rst:1105
 msgid "Advanced Debugger Support"
-msgstr ""
+msgstr "Support avancé du debugger"
 
 # 4bf7bf7ae0774ed8813b0590c37cd9c9
 #: c-api/init.rst:1110
@@ -6991,7 +7308,7 @@ msgstr ""
 # d5d2e95cb9be4498a82045e29001efee
 #: c-api/intro.rst:8
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 # f71eed7348df4284881d0195cdeaff45
 #: c-api/intro.rst:10
@@ -7365,7 +7682,7 @@ msgstr ""
 # b09cfa8ddce84ed38e216fc733f8663f
 #: c-api/intro.rst:368
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 # b9551c5f510f47a5ac5289d4d90e6149
 #: c-api/intro.rst:370
@@ -7928,7 +8245,7 @@ msgstr ""
 # 097038dbdec444b8bd51418a7c468dbc
 #: c-api/long.rst:6
 msgid "Integer Objects"
-msgstr ""
+msgstr "Autres Objets"
 
 # e576b536c5244c1ca85c2bab1c4971f6
 #: c-api/long.rst:11
@@ -8624,7 +8941,7 @@ msgstr ""
 # 99157ed3bb8d42549a10354a7ea0d38f
 #: c-api/memoryview.rst:9
 msgid "MemoryView objects"
-msgstr ""
+msgstr "Objets de type MemoryView"
 
 # 2d171a21e7e24dae9fe3e9c5afd87985
 #: c-api/memoryview.rst:11
@@ -8632,7 +8949,7 @@ msgid ""
 "A :class:`memoryview` object exposes the C level :ref:`buffer interface "
 "<bufferobjects>` as a Python object which can then be passed around like any "
 "other object."
-msgstr ""
+msgstr "Un objet MemoryView expose l'interface tampon au niveau C à Python."
 
 # b9b99a4ac2a140f2824599b89f9a93eb
 #: c-api/memoryview.rst:18
@@ -8678,7 +8995,7 @@ msgstr ""
 # cad8ac4e34474d8d8253bd624f9549f8
 #: c-api/method.rst:6
 msgid "Instance Method Objects"
-msgstr ""
+msgstr "Objets Exception"
 
 # 70bb4c78a73d49aa90a83c062e0c54dd
 #: c-api/method.rst:10
@@ -10509,7 +10826,7 @@ msgstr ""
 # f7bd5098aee6413d80515c75abd4dd63
 #: c-api/structures.rst:120
 msgid "PyCFunction"
-msgstr ""
+msgstr "Fonction de l'API"
 
 # 058911b8a6ad496da2660e16a9b86b32
 #: c-api/structures.rst:120
@@ -10711,7 +11028,7 @@ msgstr ""
 # b4cabb3e970c48e99d33b6529dd1eb4f
 #: c-api/structures.rst:252
 msgid "Macro name"
-msgstr ""
+msgstr "Macros"
 
 # 45cf04c6cfa9409186f187c482f950db
 #: c-api/structures.rst:252
@@ -12713,7 +13030,7 @@ msgstr ""
 # 364e5be59f2f429295916ebad4bc9e47
 #: c-api/typeobj.rst:999
 msgid "Number of frees."
-msgstr ""
+msgstr "Nombres"
 
 # 91d2db4b19684d70961bbda3c01e0563
 #: c-api/typeobj.rst:1004
@@ -13264,7 +13581,7 @@ msgstr ""
 #: c-api/unicode.rst:295 c-api/unicode.rst:298 c-api/unicode.rst:307
 #: c-api/unicode.rst:310
 msgid "PyObject\\*"
-msgstr ""
+msgstr "Objets bytes"
 
 # 6298ce6711f54f62a62a889e5a24a0bf
 #: c-api/unicode.rst:295
@@ -13279,7 +13596,7 @@ msgstr ""
 # 806d621e5fa9407eb68ac636fc42a9ed
 #: c-api/unicode.rst:298
 msgid "A unicode object."
-msgstr ""
+msgstr "Objets Code"
 
 # 757e43fe302544d3a8a8e78de8967a4d
 #: c-api/unicode.rst:300
@@ -14376,7 +14693,7 @@ msgstr ""
 # ef0b3f497aad45858fabaf372c550aa2
 #: c-api/utilities.rst:7
 msgid "Utilities"
-msgstr ""
+msgstr "Utilitaires"
 
 # ee8c683eabc84800bb9cc23351a56ac5
 #: c-api/utilities.rst:9

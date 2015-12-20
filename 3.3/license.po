@@ -18,11 +18,11 @@ msgstr ""
 
 #: license.rst:7
 msgid "History and License"
-msgstr ""
+msgstr "Histoire et Licence"
 
 #: license.rst:11
 msgid "History of the software"
-msgstr ""
+msgstr "Histoire du logiciel"
 
 #: license.rst:13
 msgid ""
@@ -31,6 +31,11 @@ msgid ""
 "successor of a language called ABC.  Guido remains Python's principal "
 "author, although it includes many contributions from others."
 msgstr ""
+"Python a été créé au début des années 1990 par Guido van Rossum, au "
+"Stichting Mathematisch Centrum (CWI, voir http://www.cwi.nl/) au Pays-Bas en "
+"tant que successeur d'un langage appelé ABC. Guido est l'auteur principal de "
+"Python, bien qu'il inclut de nombreuses contributions de la part d'autres "
+"personnes."
 
 #: license.rst:18
 msgid ""
@@ -38,6 +43,9 @@ msgid ""
 "Research Initiatives (CNRI, see http://www.cnri.reston.va.us/) in Reston, "
 "Virginia where he released several versions of the software."
 msgstr ""
+"En 1995, Guido continua son travail sur Python au Corporation for National "
+"Research Initiatives (CNRI, voir http://www.cnri.reston.va.us/) de Reston, "
+"en Viriginie, d'où il diffusa plusieurs versions du logiciel."
 
 #: license.rst:22
 msgid ""
@@ -60,129 +68,129 @@ msgstr ""
 
 #: license.rst:35
 msgid "Release"
-msgstr ""
+msgstr "Version"
 
 #: license.rst:35
 msgid "Derived from"
-msgstr ""
+msgstr "Dérivé de"
 
 #: license.rst:35
 msgid "Year"
-msgstr ""
+msgstr "Année"
 
 #: license.rst:35
 msgid "Owner"
-msgstr ""
+msgstr "Propriétaire"
 
 #: license.rst:35
 msgid "GPL compatible?"
-msgstr ""
+msgstr "Compatible avec la GPL ?"
 
 #: license.rst:37
 msgid "0.9.0 thru 1.2"
-msgstr ""
+msgstr "0.9.0 à 1.2"
 
 #: license.rst:37
 msgid "n/a"
-msgstr ""
+msgstr "n/a"
 
 #: license.rst:37
 msgid "1991-1995"
-msgstr ""
+msgstr "1991-1995"
 
 #: license.rst:37
 msgid "CWI"
-msgstr ""
+msgstr "CWI"
 
 #: license.rst:37 license.rst:39 license.rst:49 license.rst:51 license.rst:53
 #: license.rst:55 license.rst:57
 msgid "yes"
-msgstr ""
+msgstr "oui"
 
 #: license.rst:39
 msgid "1.3 thru 1.5.2"
-msgstr ""
+msgstr "1.3 à 1.5.2"
 
 #: license.rst:39
 msgid "1.2"
-msgstr ""
+msgstr "1.2"
 
 #: license.rst:39
 msgid "1995-1999"
-msgstr ""
+msgstr "1995-1999"
 
 #: license.rst:39 license.rst:41 license.rst:45
 msgid "CNRI"
-msgstr ""
+msgstr "CNRI"
 
 #: license.rst:41 license.rst:43 license.rst:45
 msgid "1.6"
-msgstr ""
+msgstr "1.6"
 
 #: license.rst:41
 msgid "1.5.2"
-msgstr ""
+msgstr "1.5.2"
 
 #: license.rst:41 license.rst:43
 msgid "2000"
-msgstr ""
+msgstr "2000"
 
 #: license.rst:41 license.rst:43 license.rst:45 license.rst:47
 msgid "no"
-msgstr ""
+msgstr "non"
 
 #: license.rst:43
 msgid "2.0"
-msgstr ""
+msgstr "2.0"
 
 #: license.rst:43
 msgid "BeOpen.com"
-msgstr ""
+msgstr "BeOpen.com"
 
 #: license.rst:45
 msgid "1.6.1"
-msgstr ""
+msgstr "1.6.1"
 
 #: license.rst:45 license.rst:47 license.rst:49 license.rst:51
 msgid "2001"
-msgstr ""
+msgstr "2001"
 
 #: license.rst:47
 msgid "2.1"
-msgstr ""
+msgstr "2.1"
 
 #: license.rst:47 license.rst:49
 msgid "2.0+1.6.1"
-msgstr ""
+msgstr "2.0+1.6.1"
 
 #: license.rst:47 license.rst:49 license.rst:51 license.rst:53 license.rst:55
 #: license.rst:57
 msgid "PSF"
-msgstr ""
+msgstr "PSF"
 
 #: license.rst:49
 msgid "2.0.1"
-msgstr ""
+msgstr "2.0.1"
 
 #: license.rst:51 license.rst:53 license.rst:57
 msgid "2.1.1"
-msgstr ""
+msgstr "2.1.1"
 
 #: license.rst:51
 msgid "2.1+2.0.1"
-msgstr ""
+msgstr "2.1+2.0.1"
 
 #: license.rst:53 license.rst:55
 msgid "2.1.2"
-msgstr ""
+msgstr "2.1.2"
 
 #: license.rst:53 license.rst:55
 msgid "2002"
-msgstr ""
+msgstr "2002"
 
 #: license.rst:55
 msgid "2.1.3"
-msgstr ""
+msgstr "2.1.3"
 
 #: license.rst:57
 msgid "2.2 and above"
@@ -190,7 +198,7 @@ msgstr ""
 
 #: license.rst:57
 msgid "2001-now"
-msgstr ""
+msgstr "2001"
 
 #: license.rst:62
 msgid ""
@@ -200,12 +208,20 @@ msgid ""
 "possible to combine Python with other software that is released under the "
 "GPL; the others don't."
 msgstr ""
+"Compatible GPL ne signifie pas que nous distribuons Python sous licence GPL. "
+"Toutes les licences Python, excepté la licence GPL, vous permettent la "
+"distribution d'une version modifiée sans rendre open source ces changements. "
+"La licence \"compatible GPL\" rend possible la diffusion de Python avec un "
+"autre logiciel qui est lui, diffusé sous la licence GPL; les licences \"non "
+"compatible GPL\" ne le peuvent pas."
 
 #: license.rst:68
 msgid ""
 "Thanks to the many outside volunteers who have worked under Guido's "
 "direction to make these releases possible."
 msgstr ""
+"Merci aux nombreux bénévoles qui ont travaillé sous la direction de Guido "
+"pour rendre ces versions possibles."
 
 #: license.rst:73
 msgid "Terms and conditions for accessing or otherwise using Python"

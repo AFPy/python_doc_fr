@@ -19,7 +19,7 @@ msgstr ""
 # dd3f14d1c81a4ef0ba3991adade15d17
 #: bugs.rst:5
 msgid "Reporting Bugs"
-msgstr ""
+msgstr "Rapporter des bogues"
 
 # 4373f2cb78d441b49578120959625892
 #: bugs.rst:7
@@ -28,11 +28,14 @@ msgid ""
 "for stability.  In order to maintain this reputation, the developers would "
 "like to know of any deficiencies you find in Python."
 msgstr ""
+"Python est un langage de programmation mature réputé pour sa stabilité. Afin "
+"de maintenir cette réputation, les développeurs souhaitent connaître toute "
+"déficience que vous pourriez rencontrer dans Python."
 
 # 6d42ac4e6420447fb6cfdb75b56167cd
 #: bugs.rst:13
 msgid "Documentation bugs"
-msgstr ""
+msgstr "Bogues de documentation"
 
 # 431a6fdcea7d42f980d9e55e299dd78f
 #: bugs.rst:15
@@ -56,11 +59,13 @@ msgid ""
 "Of course, if you want a more persistent record of your issue, you can use "
 "the issue tracker for documentation bugs as well."
 msgstr ""
+"Bien sûr, si vous voulez un suivi plus persistant de votre problème, vous "
+"pouvez aussi utiliser le tracker pour les bugs de documentation."
 
 # bde9b9d35ce34b1488ebf62ceabd513a
 #: bugs.rst:27
 msgid "Using the Python issue tracker"
-msgstr ""
+msgstr "Utilisation du tracker Python"
 
 # 8fba48fb3b3d4df780e01e677dd27464
 #: bugs.rst:29
@@ -81,6 +86,13 @@ msgid ""
 "can!). To do this, search the bug database using the search box on the top "
 "of the page."
 msgstr ""
+"La première étape pour remplir un rapport est de déterminer si le problème a "
+"déjà été rapporté. L'avantage de cette approche, en plus d'économiser du "
+"temps aux développeurs, est d'apprendre ce qui a été fait pour le résoudre ; "
+"il se peut que le problème soit déjà résolu dans la prochaine version, ou "
+"que des informations complémentaires soient attendues (auquel cas votre "
+"contribution est la bienvenue !). Pour ce faire, cherchez dans la base de "
+"données de bogues grâce à la boîte de recherche en haut de la page."
 
 # af257711ffc04886b65d4a4c480ac43d
 #: bugs.rst:40
@@ -91,6 +103,12 @@ msgid ""
 "OpenID provider logos in the sidebar.  It is not possible to submit a bug "
 "report anonymously."
 msgstr ""
+"Si le problème que vous soumettez n'est pas déjà dans le bug tracker, "
+"retournez au Python Bug Tracker et connectez-vous. Si vous n'avez pas déjà "
+"un compte pour le tracker, cliquez sur le lien \"S'enregistrer\", ou, si "
+"vous utilisez OpenID, sur l'un des logos des fournisseurs OpenID dans la "
+"barre latérale. Il n'est pas possible de soumettre un rapport de bug de "
+"manière anonyme."
 
 # 33511a54a1764074ab4b6c34b93afdd2
 #: bugs.rst:45
@@ -98,6 +116,9 @@ msgid ""
 "Being now logged in, you can submit a bug.  Select the \"Create New\" link "
 "in the sidebar to open the bug reporting form."
 msgstr ""
+"Une fois identifié, pour pouvez rapporter un bogue. Sélectionnez le lien "
+"\"Create New\" dans la barre latérale pour ouvrir un nouveau formulaire de "
+"rapport de bogue."
 
 # 30c53f7fd1f34b04913a15bfa19e31d4
 #: bugs.rst:48
@@ -107,6 +128,11 @@ msgid ""
 "the \"Type\" field, select the type of your problem; also select the "
 "\"Component\" and \"Versions\" to which the bug relates."
 msgstr ""
+"Le formulaire de soumission a un certain nombre de champs. Pour le champ "
+"\"Titre\", saisissez une *très* courte description du problème ; moins de "
+"dix mots est approprié. Dans le champ \"Type\", sélectionnez le type de "
+"problème ; sélectionnez aussi \"Composant\" et \"Versions\" en rapport avec "
+"le bogue."
 
 # cdf149cabb4747bd950005dc32a0ec47
 #: bugs.rst:53
@@ -116,6 +142,11 @@ msgid ""
 "extension modules were involved, and what hardware and software platform you "
 "were using (including version information as appropriate)."
 msgstr ""
+"Dans le champ \"Commentaire\", décrivez le problème de manière détaillée, "
+"incluant ce à quoi vous vous attendiez et ce qui s'est vraiment produit. "
+"Assurez-vous d'y inclure les éventuels modules d'extensions impliqués et la "
+"plateforme matérielle et logicielle vous utilisiez (en incluant les "
+"informations de versions)."
 
 # 2053ac0ba09d4a00bc04a6e1ceab0071
 #: bugs.rst:58
@@ -124,6 +155,11 @@ msgid ""
 "needs to be done to correct the problem.  You will receive an update each "
 "time action is taken on the bug."
 msgstr ""
+"Chaque bogue sera attribué à un développeur qui déterminera ce qui est "
+"nécessaire d'entreprendre pour corriger le problème. Vous recevrez une "
+"notification à chaque action effectuée sur le bogue. Voir http://www.python."
+"org/dev/workflow/ pour une description détaillée du processus de traitement "
+"des problèmes."
 
 # f90bb5d36e76478782f9cf9da9b58ddd
 #: bugs.rst:66
@@ -148,6 +184,9 @@ msgid ""
 "Article which goes into some detail about how to create a useful bug report. "
 "This describes what kind of information is useful and why it is useful."
 msgstr ""
+"Article qui entre dans les détails sur la manière de créer un rapport de "
+"bogue utile. Il décrit quel genre d'information est utile et pourquoi elle "
+"est utile."
 
 # 417f70cbbfaf46eb962f27d38331dab5
 #: bugs.rst:73
@@ -162,3 +201,5 @@ msgid ""
 "Information about writing a good bug report.  Some of this is specific to "
 "the Mozilla project, but describes general good practices."
 msgstr ""
+"Conseils pour écrire un bon rapport de bogue. Certains sont spécifiques au "
+"projet Mozilla mais présentent des bonnes pratiques générales."

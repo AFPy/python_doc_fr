@@ -63,7 +63,8 @@ msgstr ""
 "3.x en gérant la plupart des incompatibilités qui peuvent être détectées en "
 "analysant la source et parcourant son arbre syntaxique."
 
-# The strange space escaping are here to handle non-breaking spaces required by French typographic rules.
+# The strange space escaping are here to handle non-breaking spaces required
+# by French typographic rules.
 #: glossary.rst:25
 msgid ""
 "2to3 is available in the standard library as :mod:`lib2to3`; a standalone "

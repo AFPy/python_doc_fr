@@ -19,19 +19,19 @@ msgstr ""
 # 816b2dd9d8be40ac85f9c4bcc6647c49
 #: whatsnew/2.0.rst:3
 msgid "What's New in Python 2.0"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # 1dcdf27bc78743669400e7d02832cb1d
 #: whatsnew/2.0.rst:5
 msgid "A.M. Kuchling and Moshe Zadka"
-msgstr ""
+msgstr "A.M. Kuchling et Moshe Zadka"
 
 # 0c2aa464ec2741b28e52d413eb56431f
 # e58d1035fcf94fb48cfa394c040f05af
 # 5dac6e14a1a4474ebfb28032fb5a393f
 #: whatsnew/2.0.rst:13 whatsnew/2.1.rst:13 whatsnew/2.2.rst:13
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 # f0ef05c1e3394be9bd33078b82b4edba
 #: whatsnew/2.0.rst:15
@@ -41,6 +41,10 @@ msgid ""
 "useful changes, and points out a few incompatible changes that may require "
 "rewriting code."
 msgstr ""
+"Une nouvelle version de Python, la version 2.0, est sortie le 16 octobre "
+"2000. Cet article traite des nouvelles fonctionnalités intéressantes de "
+"cette version, met en évidence d'autres changements utiles, et souligne "
+"quelques incompatibilités qui peuvent nécessiter la réécriture du code."
 
 # 9fa2e53ff3c64917b416f2b9fa422b9e
 #: whatsnew/2.0.rst:20
@@ -54,11 +58,21 @@ msgid ""
 "for  PythonLabs are now getting paid to spend their days fixing bugs, and "
 "also due to the improved communication resulting  from moving to SourceForge."
 msgstr ""
+"Le développement de Python n'a jamais complétement été arrêté entre chaque "
+"versions, et un flux constant de corrections de bogues et d'améliorations "
+"ont toujours été soumis. Une foule de corrections mineures, quelques "
+"optimisations, des docstrings supplémentaires, et de meilleurs messages "
+"d'erreur sont apparus avec l'arrivée de la version 2.0; tous les énumérer "
+"serait impossible, mais ils sont certainement significatif. Consultez les "
+"journaux CVS publics disponibles pour obtenir la liste complète. Ce progrès "
+"est dû aux cinq développeurs travaillant pour PythonLabs qui sont désormais "
+"payés pour passer leurs journées à corriger les bugs, mais aussi en raison "
+"de l'amélioration de la communication résultant du passage à SourceForge."
 
 # 38d3cc87f45e437a94f37b50af0e6d8f
 #: whatsnew/2.0.rst:33
 msgid "What About Python 1.6?"
-msgstr ""
+msgstr "A propos de Python 1.6"
 
 # 2c932df77cd84b438735e087af54bb90
 #: whatsnew/2.0.rst:35
@@ -89,7 +103,7 @@ msgstr ""
 # 744f8f80d0094da989f98f921775f966
 #: whatsnew/2.0.rst:57
 msgid "New Development Process"
-msgstr ""
+msgstr "Nouveau processus de développement"
 
 # bb36fa46432b4e2dbc32cf1eb957bb66
 #: whatsnew/2.0.rst:59
@@ -19260,7 +19274,7 @@ msgstr ""
 # 200bec89ed894077a686632eff54daf2
 #: whatsnew/3.0.rst:3
 msgid "What's New In Python 3.0"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # bc3822aba3794bd89786e48c5dd1373c
 #: whatsnew/3.0.rst:7
@@ -20704,7 +20718,7 @@ msgstr ""
 # 8182d1a2adb3462b8082d87c24d88674
 #: whatsnew/3.0.rst:894
 msgid "Porting To Python 3.0"
-msgstr ""
+msgstr "Portage vers Python 3.2"
 
 # 2236054b2082495ebc57cd493dacd8f6
 #: whatsnew/3.0.rst:896
@@ -20764,7 +20778,7 @@ msgstr ""
 # 123069faca2d4b0aaa5f55b510469019
 #: whatsnew/3.1.rst:3
 msgid "What's New In Python 3.1"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # 2d30b8e9f0af425991bc575c61ad8688
 # 7a8f81755f4f463bb3439818c9387d67
@@ -20900,7 +20914,7 @@ msgstr ""
 # cff64ea6adc04f3ca74d55ded73d2cca
 #: whatsnew/3.1.rst:152
 msgid "(Contributed by Eric Smith; :issue:`5237`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # de6fb71eb8a84c15b5f62cac16dd3f28
 #: whatsnew/3.1.rst:154
@@ -20917,7 +20931,7 @@ msgstr ""
 # cacb01f2ba914836bdd9792de2137258
 #: whatsnew/3.1.rst:161 whatsnew/3.2.rst:2638
 msgid "(Contributed by Georg Brandl; :issue:`5675`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # bbecc693915345b8bc6128ccd4703020
 #: whatsnew/3.1.rst:163
@@ -20951,7 +20965,7 @@ msgstr ""
 # eadce332aff4449082306c0116f79828
 #: whatsnew/3.1.rst:183
 msgid "(Contributed by Mark Dickinson; :issue:`4707`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 69b9334b7b7342da9cce0c11f2456090
 #: whatsnew/3.1.rst:185
@@ -21015,7 +21029,7 @@ msgstr ""
 # f3201780c85c456b905db92874373b19
 #: whatsnew/3.1.rst:221
 msgid "(Contributed by Eric Smith and Mark Dickinson; :issue:`1580`)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # f685cd729d2f47c1abc3f75469cbffa4
 #: whatsnew/3.1.rst:226
@@ -21027,7 +21041,7 @@ msgstr ""
 # fa4367f8553941218d482b4ad5366b4d
 #: whatsnew/3.1.rst:232
 msgid "(Contributed by Raymond Hettinger; :issue:`1696199`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # f1a97b87b677433bba0ee5f200522789
 #: whatsnew/3.1.rst:234
@@ -21040,7 +21054,7 @@ msgstr ""
 # c40e27dcd5624a3aa2cd4826ed13e1e3
 #: whatsnew/3.1.rst:238
 msgid "(Contributed by Guilherme Polo; :issue:`2983`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # bd59b0b6dadf4c8f91d5a1d575af86dc
 #: whatsnew/3.1.rst:240
@@ -21053,7 +21067,7 @@ msgstr ""
 # 888adc769dad4a6d89c3e6f7f60903cd
 #: whatsnew/3.1.rst:247 whatsnew/3.2.rst:2290
 msgid "(Contributed by Antoine Pitrou.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 1882847bd78a4689bd599e24561ead63
 #: whatsnew/3.1.rst:249
@@ -21101,7 +21115,7 @@ msgstr ""
 # d89681e4bca74f27a7e7289f8ec9fa30
 #: whatsnew/3.1.rst:300
 msgid "(Contributed by Raymond Hettinger; :issue:`1818`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 1682f3d5e30546e48855feaeeb6c4357
 #: whatsnew/3.1.rst:302
@@ -21127,7 +21141,7 @@ msgstr ""
 # fad4fd961e3f467b999bf9828f4c11ce
 #: whatsnew/3.1.rst:315
 msgid "(Contributed by Vinay Sajip; :issue:`4384`)."
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 0791a977c8bc40a9b79f7c8b70346ccf
 #: whatsnew/3.1.rst:317
@@ -21140,7 +21154,7 @@ msgstr ""
 # 364c194743574275b4d89caabcf1ab02
 #: whatsnew/3.1.rst:321
 msgid "(Contributed by Andi Vajda; :issue:`4195`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 37721905ad474f7ead5a245698e547d6
 #: whatsnew/3.1.rst:323
@@ -21152,7 +21166,7 @@ msgstr ""
 # f16423acc7b34c8984a26cc182c5761f
 #: whatsnew/3.1.rst:326
 msgid "(Contributed by Alexander Belopolsky; :issue:`4201`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 5094a0e75d9648ce893def73373f31d8
 #: whatsnew/3.1.rst:328
@@ -21176,7 +21190,7 @@ msgstr ""
 # 9a5a885b20ae4e2fb449155e74b9ce7c
 #: whatsnew/3.1.rst:336
 msgid "(Contributed by David Laban; :issue:`4739`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 751a7479590a42a8a40ef511dcbdbcb3
 #: whatsnew/3.1.rst:338
@@ -21207,7 +21221,7 @@ msgstr ""
 # b3b5846929744588a55d081d148b6037
 #: whatsnew/3.1.rst:367
 msgid "(Contributed by Benjamin Peterson and Antoine Pitrou.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 9600caf2d1f24ec7a817d741fcfba233
 #: whatsnew/3.1.rst:369
@@ -21224,7 +21238,7 @@ msgstr ""
 # 6cda3e5fb1b74df08f2d8467fcd72d2d
 #: whatsnew/3.1.rst:377
 msgid "(Contributed by Ross Light; :issue:`4285`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 91cef6c5f7254594b128bf6043dda536
 #: whatsnew/3.1.rst:379
@@ -21234,7 +21248,7 @@ msgstr ""
 # 6df69d7cea69488d9ff613755b1a119b
 #: whatsnew/3.1.rst:381
 msgid "(Contributed by Derek Morr; :issue:`1655` and :issue:`1664`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # f7fab012f01e442887627d225a4ef663
 #: whatsnew/3.1.rst:383
@@ -21264,7 +21278,7 @@ msgstr ""
 #: whatsnew/3.1.rst:405
 msgid ""
 "(Contributed by Alexandre Vassalotti and Antoine Pitrou, :issue:`6137`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # e1d26f0c4458479b8faf05fe73b38a0a
 #: whatsnew/3.1.rst:407
@@ -21294,7 +21308,7 @@ msgstr ""
 # eb557a9b44de4810abe87d06dbec5dda
 #: whatsnew/3.1.rst:427
 msgid "(Contributed by Amaury Forgeot d'Arc and Antoine Pitrou.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 54fbd64fd3834aed8e37a49405954641
 #: whatsnew/3.1.rst:429
@@ -21308,7 +21322,7 @@ msgstr ""
 # 3a83512f0d224e41ae736b864b6def55
 #: whatsnew/3.1.rst:434
 msgid "(Contributed by Antoine Pitrou, :issue:`4688`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # d4e8759dbf5041ca98428521bd5f90c0
 #: whatsnew/3.1.rst:436
@@ -21324,7 +21338,7 @@ msgstr ""
 msgid ""
 "(Contributed by Antoine Pitrou along with a number of other participants, :"
 "issue:`4753`)."
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 832a90545bc44f58b72b455c67b4d593
 #: whatsnew/3.1.rst:445
@@ -21336,7 +21350,7 @@ msgstr ""
 #: whatsnew/3.1.rst:448
 msgid ""
 "(Contributed by Antoine Pitrou and Amaury Forgeot d'Arc, :issue:`4868`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # fb94b3f7cb044a2ab0b87719a49e3d66
 #: whatsnew/3.1.rst:450
@@ -21365,7 +21379,7 @@ msgstr ""
 # 53dd9756e92644dbb584f9d8d64649ad
 #: whatsnew/3.1.rst:462
 msgid "(Contributed by Jake McGuire and Antoine Pitrou; :issue:`5084`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 4263ee79ea4f4364b04bb323c58f1dda
 # b046e73277064401a811d7fdc262f501
@@ -21383,7 +21397,7 @@ msgstr ""
 # c2b002048351460899001a56bddbcf6d
 #: whatsnew/3.1.rst:470
 msgid "(Contributed by Roger D. Serwy; :issue:`5150`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 18841a2c92744d6ca710e6628d5acc9a
 #: whatsnew/3.1.rst:477
@@ -21417,7 +21431,7 @@ msgstr ""
 # fd4aae921a4844baba4ed430dabe485e
 #: whatsnew/3.1.rst:501
 msgid "(Contributed by Mark Dickinson and Lisandro Dalcrin; :issue:`5175`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 1c814e02279e4af381f483eb06ed609f
 #: whatsnew/3.1.rst:503
@@ -21428,7 +21442,7 @@ msgstr ""
 # c129442d3a3b4d829dcc5b684cec917e
 #: whatsnew/3.1.rst:505
 msgid "(Contributed by Mark Dickinson; :issue:`4910`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 79155b34711640469901e7f20793f75c
 #: whatsnew/3.1.rst:507
@@ -21441,7 +21455,7 @@ msgstr ""
 # 8f67426587a74157b4df1dea42c28784
 #: whatsnew/3.1.rst:510
 msgid "(Contributed by Mark Dickinson; :issue:`5914`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 0209b68a2d3c4636ad2a1267fbdf75ab
 #: whatsnew/3.1.rst:512
@@ -21456,12 +21470,12 @@ msgstr ""
 # b3ceba88a7844ff1be18c687411fca1d
 #: whatsnew/3.1.rst:518
 msgid "(Contributed by Larry Hastings; :issue:`5630`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 267cd79417fd4d279acbbb10fc236a03
 #: whatsnew/3.1.rst:521
 msgid "Porting to Python 3.1"
-msgstr ""
+msgstr "Portage vers Python 3.2"
 
 # 6f071ac0c8af4a3187248cce98ed884b
 #: whatsnew/3.1.rst:526
@@ -21482,7 +21496,7 @@ msgstr ""
 # 882163d0974744c5afbf8ff969e2a1f4
 #: whatsnew/3.2.rst:3
 msgid "What's New In Python 3.2"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # 948d133d446c4330a8aff16e2cee882c
 #: whatsnew/3.2.rst:51
@@ -22001,7 +22015,7 @@ msgstr ""
 # 37f261f89e764977b88b190211691641
 #: whatsnew/3.2.rst:488
 msgid "(Contributed by Marcin Wojdyr in :issue:`1772833`)."
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 1da891bed5604c35b855681e7bf4c93b
 #: whatsnew/3.2.rst:490
@@ -22047,7 +22061,7 @@ msgstr ""
 # ddb0a9c9af644d3f9ad3fdca71591229
 #: whatsnew/3.2.rst:533
 msgid "(Added by Antoine Pitrou; :issue:`9757`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 8a759d4d5ecf46729b2507d103153d49
 #: whatsnew/3.2.rst:535
@@ -22393,7 +22407,7 @@ msgstr ""
 # dfeb0a8e900745e1805037ece92d58c7
 #: whatsnew/3.2.rst:737
 msgid "(Contributed by Florent Xicluna and Fredrik Lundh, :issue:`6472`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 1fa2e22504cf49fe8dbd9cfb09ef7c98
 #: whatsnew/3.2.rst:740
@@ -22814,7 +22828,7 @@ msgstr ""
 # 2f637653e7334e39bc423026dc58b6f5
 #: whatsnew/3.2.rst:1118
 msgid "(Contributed by Antoine Pitrou in :issue:`5506`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 7a739912e24f4fe9bb50f17a6f020284
 #: whatsnew/3.2.rst:1123
@@ -22837,7 +22851,7 @@ msgstr ""
 # 167f9fabf5b64df7a041ded486f158dd
 #: whatsnew/3.2.rst:1144
 msgid "(Contributed by Raymond Hettinger in :issue:`9826` and :issue:`9840`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 13bc36478cf0456883132929b1a764c9
 #: whatsnew/3.2.rst:1147
@@ -22998,7 +23012,7 @@ msgstr ""
 # 06970e81690b40d4bce6c2df3ce3780b
 #: whatsnew/3.2.rst:1263
 msgid "(Contributed by Michael Foord in :issue:`9110`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 6cbc28ccfc3045fca4858eda8a7224eb
 #: whatsnew/3.2.rst:1266
@@ -23112,7 +23126,7 @@ msgstr ""
 # 1df3d66073ab44e1931d725551847806
 #: whatsnew/3.2.rst:1347
 msgid "(Contributed by Giampaolo Rodolà; :issue:`8806`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # e7122e8cd97a4a47adab448691d61c92
 #: whatsnew/3.2.rst:1350
@@ -23131,7 +23145,7 @@ msgstr ""
 msgid ""
 "(Contributed by Antoine Pitrou and Brian Curtin in :issue:`7461` and :issue:"
 "`10554`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 5586d403e8ac4702a877854860517b15
 #: whatsnew/3.2.rst:1359
@@ -23301,7 +23315,7 @@ msgstr ""
 # a0a0b19c405545a690359ce06154ed3e
 #: whatsnew/3.2.rst:1508
 msgid "(Contributed by Victor Stinner.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 1f44077f76694868bcf455d3e437591f
 #: whatsnew/3.2.rst:1511
@@ -23533,7 +23547,7 @@ msgstr ""
 msgid ""
 "(Contributed by Antoine Pitrou in :issue:`9360` and Andrew Vant in :issue:"
 "`1926`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 8e4dd9d15c0942bfbec0295f67b93527
 #: whatsnew/3.2.rst:1660
@@ -23552,7 +23566,7 @@ msgstr ""
 # 5dd85595fce6436f8f3a424baf805731
 #: whatsnew/3.2.rst:1667
 msgid "(Added by Antoine Pitrou, :issue:`9003`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # d31f508179584fcfa02a6acf4cd2f8f3
 #: whatsnew/3.2.rst:1670
@@ -23569,7 +23583,7 @@ msgstr ""
 # a716663abea24cb887d883e3951dd0c0
 #: whatsnew/3.2.rst:1675
 msgid "(Contributed by Lorenzo M. Catucci and Antoine Pitrou, :issue:`4471`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 28655871378642888b6b19c94481cbe0
 #: whatsnew/3.2.rst:1678
@@ -23678,7 +23692,7 @@ msgstr ""
 # d8cf54d0fcdc48ff8313ca0d01787723
 #: whatsnew/3.2.rst:1743
 msgid "(Contributed by Antoine Pitrou, :issue:`9754`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 104e22c1639f439c8c6f6a0c88d621f2
 #: whatsnew/3.2.rst:1745
@@ -23797,7 +23811,7 @@ msgstr ""
 # ef7374b2735042c99b370369bae83125
 #: whatsnew/3.2.rst:1791
 msgid "(Contributed by Ezio Melotti; :issue:`9424`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 923963250b75432f865f8e47f8976c3c
 #: whatsnew/3.2.rst:1793
@@ -23829,7 +23843,7 @@ msgstr ""
 # 55e3ed74c4684676b28a1d7960ff9aff
 #: whatsnew/3.2.rst:1812
 msgid "(Contributed by Raymond Hettinger; :issue:`9025`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 4c27f0ea199947abbab331f1e6d2c682
 #: whatsnew/3.2.rst:1815
@@ -23848,7 +23862,7 @@ msgstr ""
 # 84f5a7984f624b109719b765e55a89a0
 #: whatsnew/3.2.rst:1822
 msgid "(Contributed by Giampaolo Rodolà; :issue:`8807`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 01e378b70b25496c829ed7a00a89ee68
 #: whatsnew/3.2.rst:1825
@@ -23869,7 +23883,7 @@ msgstr ""
 # 2071796771e14eb2879f3eabca921255
 #: whatsnew/3.2.rst:1834
 msgid "(Contributed by Giampaolo Rodolà; :issue:`6706`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 7c518bfedd4f479b8ffe834ac949ac31
 #: whatsnew/3.2.rst:1837
@@ -23887,7 +23901,7 @@ msgstr ""
 # ee63a31f27bc42e79e18974197273ed4
 #: whatsnew/3.2.rst:1846
 msgid "(Contributed by Neil Schemenauer and Nick Coghlan; :issue:`5178`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 9c588eb516124b319936ad03583ef6d6
 #: whatsnew/3.2.rst:1849
@@ -23905,7 +23919,7 @@ msgstr ""
 # bf8999d57f3047d08ee543815aa7c087
 #: whatsnew/3.2.rst:1869
 msgid "(Contributed by Rodolpho Eckhardt and Nick Coghlan, :issue:`10220`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 123106c626af4212b404be4fcb93e230
 #: whatsnew/3.2.rst:1871
@@ -23932,7 +23946,7 @@ msgstr ""
 # cb4e8dbcbaca4b5986b152293302f77a
 #: whatsnew/3.2.rst:1900
 msgid "(Contributed by Ron Adam; :issue:`2001`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 5d1ed42df0314f1b9258a1bd4352670c
 #: whatsnew/3.2.rst:1903
@@ -23967,7 +23981,7 @@ msgstr ""
 # 1a24644cb9a04eaeb6c8fee67e19b776
 #: whatsnew/3.2.rst:1958
 msgid "(Contributed by Nick Coghlan in :issue:`9147`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 1eabcbdb5dc04fa189879a25d288c87c
 #: whatsnew/3.2.rst:1961
@@ -24040,7 +24054,7 @@ msgstr ""
 # 76f8a6029a5345a8aab7a4c8e63b1d4d
 #: whatsnew/3.2.rst:2006
 msgid "(Contributed by Tarek Ziadé in :issue:`6693`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # f6101dc34e274c14b34d6fa2527030f1
 #: whatsnew/3.2.rst:2009
@@ -24390,6 +24404,11 @@ msgid ""
 "their :meth:`~threading.Lock.acquire` method.  (Contributed by Antoine "
 "Pitrou; :issue:`7316`.)"
 msgstr ""
+"Les verrous standards et récursifs acceptent désormais un argument optionnel "
+"*timeout* à leur méthode ``acquire``. (Contribution par Antoine Pitrou; :"
+"issue:`7316`). Pareillement, :meth:`threading.Semaphore.acquire` acquière "
+"d'un argument *timeout* (Contribution par Torsten Landschoff; :issue:"
+"`850728`)."
 
 # 377faabaf1d942beb16662ebe3399911
 #: whatsnew/3.2.rst:2296
@@ -24397,6 +24416,11 @@ msgid ""
 "Similarly, :meth:`threading.Semaphore.acquire` also gained a *timeout* "
 "argument.  (Contributed by Torsten Landschoff; :issue:`850728`.)"
 msgstr ""
+"Les verrous standards et récursifs acceptent désormais un argument optionnel "
+"*timeout* à leur méthode ``acquire``. (Contribution par Antoine Pitrou; :"
+"issue:`7316`). Pareillement, :meth:`threading.Semaphore.acquire` acquière "
+"d'un argument *timeout* (Contribution par Torsten Landschoff; :issue:"
+"`850728`)."
 
 # f8b6a3ea5af143e59ced45a42da83807
 #: whatsnew/3.2.rst:2299
@@ -24492,7 +24516,7 @@ msgstr ""
 # c205e4a13c5c492c9d895e0980a44480
 #: whatsnew/3.2.rst:2352
 msgid "(Contributed by Antoine Pitrou; :issue:`3001`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # ad8f615a64e34d56b2ecd158731f46df
 #: whatsnew/3.2.rst:2354
@@ -24660,7 +24684,7 @@ msgstr ""
 # 8c207a8c996c4ed89a745e2da3242a5c
 #: whatsnew/3.2.rst:2446
 msgid "(Contributed by Alexander Belopolsky in :issue:`9528`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 7cb114f2b3a94f3dae79ab6f4a2cca43
 #: whatsnew/3.2.rst:2448
@@ -24673,7 +24697,7 @@ msgstr ""
 # cceb968fce4a42369f51eb41b84fe45f
 #: whatsnew/3.2.rst:2452
 msgid "(Contributed by Georg Brandl in :issue:`7962`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 3c078a42802a41e6b821b9c9ead45ef7
 #: whatsnew/3.2.rst:2458
@@ -24685,7 +24709,7 @@ msgstr ""
 # fe24c445d4ff416b858eb7644e16b1fa
 #: whatsnew/3.2.rst:2461
 msgid "(Contributed by Raymond Hettinger; :issue:`5150`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 290e4b09f7e84224a4d4f09c6ebd1e4e
 #: whatsnew/3.2.rst:2463
@@ -24763,7 +24787,7 @@ msgstr ""
 # e68c3c7b8d1745bd87a24fb5a61d8201
 #: whatsnew/3.2.rst:2505
 msgid "(Contributed by Antoine Pitrou; :issue:`9203`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # fd74de86eeaf4d1f9ee1aab0edf186b1
 #: whatsnew/3.2.rst:2507
@@ -24775,7 +24799,7 @@ msgstr ""
 # 7f6f7c05d2fe46cb993af9aeb2782c31
 #: whatsnew/3.2.rst:2510
 msgid "(Contributed by Amaury Forgeot D'Arc; :issue:`9210`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # dc0cfda0cb614061ab798b52bd1baed6
 #: whatsnew/3.2.rst:2512
@@ -24881,7 +24905,7 @@ msgstr ""
 # f0b75fa8712a422da747e0ac0d27c94d
 #: whatsnew/3.2.rst:2566
 msgid "Porting to Python 3.2"
-msgstr ""
+msgstr "Portage vers Python 3.2"
 
 # 3874116f827e4d55b35a64ca8f5f9885
 #: whatsnew/3.2.rst:2571
@@ -24953,6 +24977,8 @@ msgid ""
 ":class:`bytearray` objects can no longer be used as filenames; instead, they "
 "should be converted to :class:`bytes`."
 msgstr ""
+"Les objets bytearray ne peuvent plus être utilisés en tant que nom de "
+"fichiers : les convertir en octets"
 
 # 1ef32477b1484ab5a0d066840e8f2476
 #: whatsnew/3.2.rst:2608
@@ -24965,17 +24991,18 @@ msgstr ""
 # 72b8043842904345839b5ad6f78fe9bd
 #: whatsnew/3.2.rst:2612
 msgid "``PyArg_Parse*()`` functions:"
-msgstr ""
+msgstr "Les fonctions PyArg_Parse*() :"
 
 # 6c1d6ff6074e42c383b6790c253f27ec
 #: whatsnew/3.2.rst:2614
 msgid "\"t#\" format has been removed: use \"s#\" or \"s*\" instead"
-msgstr ""
+msgstr "Le format \"t#\" a été supprimé : utiliser \"s#\" ou \"s*\" à la place"
 
 # 0e6177560b8a4ae59d8a1d0e6e424542
 #: whatsnew/3.2.rst:2615
 msgid "\"w\" and \"w#\" formats has been removed: use \"w*\" instead"
 msgstr ""
+"Les formats \"w\" et \"w#\" ont été supprimés : utiliser \"w*\" à la place"
 
 # 29efd93ff65c421da29c537936890072
 #: whatsnew/3.2.rst:2617
@@ -25083,7 +25110,7 @@ msgstr ""
 # 28c2873cfa6c40f995ede404f4847674
 #: whatsnew/3.2.rst:2683
 msgid "(Contributed by Antoine Pitrou, :issue:`10711`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 1ace0c3154c847cd810166b87165257c
 #: whatsnew/3.2.rst:2685
@@ -25095,7 +25122,7 @@ msgstr ""
 # fb288201f5d14651869373b0d1ea9a01
 #: whatsnew/3.2.rst:2688
 msgid "(Contributed by Antoine Pitrou, :issue:`10272`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 65db3d7261ef469fad979f12192b7d4b
 #: whatsnew/3.2.rst:2690
@@ -25117,7 +25144,7 @@ msgstr ""
 # a0ad060d1c6541e58440081b4102fc07
 #: whatsnew/3.2.rst:2698
 msgid "(Contributed by Giampaolo Rodola in :issue:`6706`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 76151d4d74184d69806ff6c2f03bdd47
 #: whatsnew/3.2.rst:2700
@@ -25129,7 +25156,7 @@ msgstr ""
 # 9b8ea0c81c1640c0bad4cf6f3915cba0
 #: whatsnew/index.rst:5
 msgid "What's New in Python"
-msgstr ""
+msgstr "Quoi de neuf dans Python"
 
 # ffdd4a897ce14c0ba2d0d8c456ebc343
 #: whatsnew/index.rst:7
@@ -25138,3 +25165,6 @@ msgid ""
 "important changes between major Python versions.  They are a \"must read\" "
 "for anyone wishing to stay up-to-date after a new release."
 msgstr ""
+"La série d'essais \"Quoi de neuf dans Python\" reprend les plus importants "
+"changements entres les versions majeures de Python. Elles sont à lire pour "
+"quiconque souhaitant être à jour suite à une nouvelle sortie."

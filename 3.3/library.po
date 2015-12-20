@@ -18,7 +18,7 @@ msgstr ""
 
 #: library/2to3.rst:4
 msgid "2to3 - Automated Python 2 to 3 code translation"
-msgstr ""
+msgstr "2to3 - Automatise la traduction du code de Python 2 vers Python 3"
 
 #: library/2to3.rst:8
 msgid ""
@@ -33,13 +33,16 @@ msgstr ""
 
 #: library/2to3.rst:20
 msgid "Using 2to3"
-msgstr ""
+msgstr "Utilisation de 2to3"
 
 #: library/2to3.rst:22
 msgid ""
 "2to3 will usually be installed with the Python interpreter as a script.  It "
 "is also located in the :file:`Tools/scripts` directory of the Python root."
 msgstr ""
+"2to3 sera généralement installé avec l'interpréteur Python en temps que "
+"script. Il est également situé dans le dossier :file:`Tools/scripts` à "
+"racine de Python."
 
 #: library/2to3.rst:25
 msgid ""
@@ -49,11 +52,12 @@ msgstr ""
 
 #: library/2to3.rst:28
 msgid "Here is a sample Python 2.x source file, :file:`example.py`::"
-msgstr ""
+msgstr "Voici un exemple de fichier source Python 2.x, :file:`example.py`::"
 
 #: library/2to3.rst:36
 msgid "It can be converted to Python 3.x code via 2to3 on the command line::"
 msgstr ""
+"Il peut être converti en code Python 3.x par 2to3 sur la ligne de commande ::"
 
 #: library/2to3.rst:40
 msgid ""
@@ -65,13 +69,15 @@ msgstr ""
 
 #: library/2to3.rst:47
 msgid "After transformation, :file:`example.py` looks like this::"
-msgstr ""
+msgstr "Après transformation, :file:`example.py` ressemble à ::"
 
 #: library/2to3.rst:55
 msgid ""
 "Comments and exact indentation are preserved throughout the translation "
 "process."
 msgstr ""
+"Les commentaires et les retraits sont préservés tout au long du processus de "
+"traduction."
 
 #: library/2to3.rst:57
 msgid ""
@@ -137,10 +143,14 @@ msgid ""
 "option:`-n` flag is required when using this as backup files do not make "
 "sense when not overwriting the input files."
 msgstr ""
+"L'option :option:`-o` ou :option:`--output-dir` permet de donner autre "
+"répertoire pour les fichiers de sortie en écriture. L'option :option:`-n` "
+"est requis quand on les utilise comme fichiers de sauvegarde qui n'ont pas "
+"de sens si les fichiers d'entrée ne sont pas écrasés."
 
 #: library/2to3.rst:102
 msgid "The :option:`-o` option was added."
-msgstr ""
+msgstr "L'option :option:`-o` a été ajoutée."
 
 #: library/2to3.rst:105
 msgid ""
@@ -161,6 +171,10 @@ msgid ""
 "filenames.  The :option:`-n` flag is required when specifying this as "
 "backups are not necessary when writing to different filenames.  Example::"
 msgstr ""
+"L'option :option:`--add-suffix` spécifie une chaîne à ajouter à tous les "
+"noms de fichiers de sortie. L'option :option:`-n` est une balise qui est "
+"requise pour spécifier que les sauvegardes ne sont pas nécessaires lors de "
+"l'écriture de noms de fichiers différents. Exemple ::"
 
 #: library/2to3.rst:120
 msgid "Will cause a converted file named ``example.py3`` to be written."
@@ -176,7 +190,7 @@ msgstr ""
 
 #: library/2to3.rst:133
 msgid "Fixers"
-msgstr ""
+msgstr " Correcteurs"
 
 #: library/2to3.rst:135
 msgid ""
@@ -240,6 +254,8 @@ msgid ""
 "Changes assignment of :attr:`sys.exitfunc` to use of the :mod:`atexit` "
 "module."
 msgstr ""
+"change l'affectation de :attr:`sys.exitfunc` pour utiliser le module :mod:"
+"`atexit`."
 
 #: library/2to3.rst:192
 msgid "Wraps :func:`filter` usage in a :class:`list` call."
@@ -261,7 +277,7 @@ msgstr ""
 
 #: library/2to3.rst:209
 msgid "Changes ``dict.has_key(key)`` to ``key in dict``."
-msgstr ""
+msgstr "Change ``dict.has_key(key)`` en ``key in dict``."
 
 #: library/2to3.rst:213
 msgid ""
@@ -289,6 +305,9 @@ msgid ""
 "Handles other modules renames in the standard library.  It is separate from "
 "the :2to3fixer:`imports` fixer only because of technical limitations."
 msgstr ""
+"Gères d'autres renomages de modules dans la bibliothèque standard. Il est "
+"distinct de :2to3fixer:`imports` seulement en raison de limitations "
+"techniques."
 
 #: library/2to3.rst:241
 msgid "Converts ``input(prompt)`` to ``eval(input(prompt))``"
@@ -296,7 +315,7 @@ msgstr ""
 
 #: library/2to3.rst:245
 msgid "Converts :func:`intern` to :func:`sys.intern`."
-msgstr ""
+msgstr "Convertit :func:`intern` en :func:`sys.intern`."
 
 #: library/2to3.rst:249
 msgid ""
@@ -335,6 +354,8 @@ msgid ""
 "Converts the old metaclass syntax (``__metaclass__ = Meta`` in the class "
 "body) to the new (``class X(metaclass=Meta)``)."
 msgstr ""
+"Convertit l'ancienne syntaxe de métaclasse (``__metaclass__ = Meta`` dans le "
+"corps de la classe) à la nouvelle (``class X(metaclasse = Meta) ``)."
 
 #: library/2to3.rst:282
 msgid ""
@@ -355,7 +376,7 @@ msgstr ""
 
 #: library/2to3.rst:297
 msgid "Renames :meth:`__nonzero__` to :meth:`~object.__bool__`."
-msgstr ""
+msgstr "Renomme  :meth:`__nonzero__` en :meth:`~object.__bool__`."
 
 #: library/2to3.rst:301
 msgid "Converts octal literals into the new syntax."
@@ -391,7 +412,7 @@ msgstr ""
 
 #: library/2to3.rst:314
 msgid "``operator.contains(obj)``"
-msgstr ""
+msgstr "``operator.contains(obj)``"
 
 #: library/2to3.rst:315
 msgid "``operator.isSequenceType(obj)``"
@@ -441,7 +462,7 @@ msgstr ""
 
 #: library/2to3.rst:329
 msgid "Converts the ``print`` statement to the :func:`print` function."
-msgstr ""
+msgstr "Convertit l'instruction ``print`` fonction :func:`print`."
 
 #: library/2to3.rst:333
 msgid ""
@@ -452,7 +473,7 @@ msgstr ""
 
 #: library/2to3.rst:339
 msgid "Converts :func:`raw_input` to :func:`input`."
-msgstr ""
+msgstr "Convertit :func:`raw_input` en :func:`input`."
 
 #: library/2to3.rst:343
 msgid "Handles the move of :func:`reduce` to :func:`functools.reduce`."
@@ -465,6 +486,8 @@ msgstr ""
 #: library/2to3.rst:351
 msgid "Replaces backtick repr with the :func:`repr` function."
 msgstr ""
+"Remplace les accents graves utilisés comme ``repr`` par des appels à :func:"
+"`repr`."
 
 #: library/2to3.rst:355
 msgid ""
@@ -500,13 +523,15 @@ msgstr ""
 
 #: library/2to3.rst:383
 msgid "Renames :class:`unicode` to :class:`str`."
-msgstr ""
+msgstr "Renomme :class:`unicode`en :class:`str`."
 
 #: library/2to3.rst:387
 msgid ""
 "Handles the rename of :mod:`urllib` and :mod:`urllib2` to the :mod:`urllib` "
 "package."
 msgstr ""
+"Gère le renommage des paquets :mod:`urllib` et :mod:`urllib2` en :mod:"
+"`urllib`"
 
 #: library/2to3.rst:392
 msgid ""
@@ -519,6 +544,8 @@ msgid ""
 "Renames :func:`xrange` to :func:`range` and wraps existing :func:`range` "
 "calls with :class:`list`."
 msgstr ""
+"Renomme la fonction :func:`xrange` en :func:`range` et encapsule les appels "
+"à la fonction :func:`range` avec des appels à :class:`list`."
 
 #: library/2to3.rst:402
 msgid "Changes ``for x in file.xreadlines()`` to ``for x in file``."
@@ -546,7 +573,7 @@ msgstr ""
 
 #: library/__future__.rst:7
 msgid "**Source code:** :source:`Lib/__future__.py`"
-msgstr ""
+msgstr "**Source code:** :source:`Lib/_future_.py`"
 
 #: library/__future__.rst:11
 msgid ":mod:`__future__` is a real module, and serves three purposes:"
@@ -630,10 +657,13 @@ msgid ""
 "its introduction in Python 2.1 the following features have found their way "
 "into the language using this mechanism:"
 msgstr ""
+"Aucune fonctionnalité ne sera jamais supprimée de :mod:`__future__. Depuis "
+"son introduction dans Python 2.1, les fonctionnalités suivantes ont trouvé "
+"leur places dans le langage utilisant ce mécanisme :"
 
 #: library/__future__.rst:67
 msgid "feature"
-msgstr ""
+msgstr "fonctionnalité"
 
 #: library/__future__.rst:67
 msgid "optional in"
@@ -645,27 +675,27 @@ msgstr ""
 
 #: library/__future__.rst:67
 msgid "effect"
-msgstr ""
+msgstr "effet"
 
 #: library/__future__.rst:69
 msgid "nested_scopes"
-msgstr ""
+msgstr "nested_scopes"
 
 #: library/__future__.rst:69
 msgid "2.1.0b1"
-msgstr ""
+msgstr "2.1.0b1"
 
 #: library/__future__.rst:69
 msgid "2.2"
-msgstr ""
+msgstr "2.2"
 
 #: library/__future__.rst:69
 msgid ":pep:`227`: *Statically Nested Scopes*"
-msgstr ""
+msgstr ":pep:`227`: *Statically Nested Scopes*"
 
 #: library/__future__.rst:72
 msgid "generators"
-msgstr ""
+msgstr "générateurs"
 
 #: library/__future__.rst:72
 msgid "2.2.0a1"
@@ -673,7 +703,7 @@ msgstr ""
 
 #: library/__future__.rst:72
 msgid "2.3"
-msgstr ""
+msgstr "2.3"
 
 #: library/__future__.rst:72
 msgid ":pep:`255`: *Simple Generators*"
@@ -681,11 +711,11 @@ msgstr ""
 
 #: library/__future__.rst:75
 msgid "division"
-msgstr ""
+msgstr "division"
 
 #: library/__future__.rst:75
 msgid "2.2.0a2"
-msgstr ""
+msgstr "2.2.0a2"
 
 #: library/__future__.rst:75 library/__future__.rst:78
 #: library/__future__.rst:84 library/__future__.rst:87
@@ -702,7 +732,7 @@ msgstr ""
 
 #: library/__future__.rst:78 library/__future__.rst:81
 msgid "2.5.0a1"
-msgstr ""
+msgstr "2.5.0a1"
 
 #: library/__future__.rst:78
 msgid ":pep:`328`: *Imports: Multi-Line and Absolute/Relative*"
@@ -726,15 +756,15 @@ msgstr ""
 
 #: library/__future__.rst:84 library/__future__.rst:87
 msgid "2.6.0a2"
-msgstr ""
+msgstr "2.6.0a2"
 
 #: library/__future__.rst:84
 msgid ":pep:`3105`: *Make print a function*"
-msgstr ""
+msgstr ":pep:`3105`: *Make print a function*"
 
 #: library/__future__.rst:87
 msgid "unicode_literals"
-msgstr ""
+msgstr "unicode_literals"
 
 #: library/__future__.rst:87
 msgid ":pep:`3112`: *Bytes literals in Python 3000*"
@@ -742,7 +772,7 @@ msgstr ""
 
 #: library/__future__.rst:94
 msgid "future"
-msgstr ""
+msgstr "fonctionnalité"
 
 #: library/__future__.rst:95
 msgid "How the compiler treats future imports."
@@ -768,7 +798,7 @@ msgstr ""
 
 #: library/_dummy_thread.rst:7
 msgid "**Source code:** :source:`Lib/_dummy_thread.py`"
-msgstr ""
+msgstr "**Code source:** :source:`Lib/_dummy_thread.py`"
 
 #: library/_dummy_thread.rst:11
 msgid ""
@@ -779,7 +809,7 @@ msgstr ""
 
 #: library/_dummy_thread.rst:15 library/dummy_threading.rst:15
 msgid "Suggested usage is::"
-msgstr ""
+msgstr "Utilisation suggérée : "
 
 #: library/_dummy_thread.rst:22 library/dummy_threading.rst:22
 msgid ""
@@ -787,6 +817,9 @@ msgid ""
 "being created that blocks waiting for another thread to be created.  This "
 "often occurs with blocking I/O."
 msgstr ""
+"Soyez prudent de ne pas utiliser ce module lorsqu'un deadlock peut se "
+"produire à partir d'un thread en cours de création qui bloque en attentant "
+"qu'un autre thread soit créé. Cela se produit souvent avec des I/O bloquants."
 
 #: library/_thread.rst:2
 msgid ":mod:`_thread` --- Low-level threading API"
@@ -822,6 +855,7 @@ msgstr ""
 #: library/_thread.rst:38
 msgid "This is now a synonym of the built-in :exc:`RuntimeError`."
 msgstr ""
+"Ceci est à présent un synonyme de l'exception native :exc:`RuntimeError`."
 
 #: library/_thread.rst:44
 msgid "This is the type of lock objects."
@@ -854,6 +888,8 @@ msgid ""
 "Return a new lock object.  Methods of locks are described below.  The lock "
 "is initially unlocked."
 msgstr ""
+"Retourne un nouvel objet *lock*. Les méthodes de l'objet *lock* sont "
+"décrites ci-après. Le *lock* est initialement déverrouillé."
 
 #: library/_thread.rst:85 library/threading.rst:43
 msgid ""
@@ -888,6 +924,9 @@ msgid ""
 "acquire`. Specifying a timeout greater than this value will raise an :exc:"
 "`OverflowError`."
 msgstr ""
+"La valeur maximale autorisée pour le  paramètre *timeout* de la méthode :"
+"meth:`Lock.acquire`. Donner un délai d'attente supérieur à cette valeur lève "
+"une :exc:`OverflowError`."
 
 #: library/_thread.rst:118
 msgid "Lock objects have the following methods:"
@@ -952,7 +991,7 @@ msgstr ""
 
 #: library/_thread.rst:168
 msgid "**Caveats:**"
-msgstr ""
+msgstr "**Avertissements :**"
 
 #: library/_thread.rst:172
 msgid ""

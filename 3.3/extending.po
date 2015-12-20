@@ -18,7 +18,7 @@ msgstr ""
 
 #: extending/building.rst:8
 msgid "Building C and C++ Extensions with distutils"
-msgstr ""
+msgstr "Construire les extensions C et C + + avec distutils"
 
 #: extending/building.rst:13
 msgid ""
@@ -485,7 +485,7 @@ msgstr ""
 
 #: extending/extending.rst:34
 msgid "A Simple Example"
-msgstr ""
+msgstr "Un exemple simple"
 
 #: extending/extending.rst:36
 msgid ""
@@ -506,7 +506,7 @@ msgstr ""
 
 #: extending/extending.rst:50
 msgid "The first line of our file can be::"
-msgstr ""
+msgstr "La première ligne de notre fichier peut être:"
 
 #: extending/extending.rst:54
 msgid ""

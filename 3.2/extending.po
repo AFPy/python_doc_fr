@@ -19,7 +19,7 @@ msgstr ""
 # df1e70980a9e45fba9b921c31e087e92
 #: extending/building.rst:8
 msgid "Building C and C++ Extensions with distutils"
-msgstr ""
+msgstr "Construire les extensions C et C + + avec distutils"
 
 # f43aeef6b736439a8bf380bfe761cbd1
 #: extending/building.rst:13
@@ -552,7 +552,7 @@ msgstr ""
 # c7c2da4a0ae046ecaf0c09590bbd2446
 #: extending/extending.rst:34
 msgid "A Simple Example"
-msgstr ""
+msgstr "Un exemple simple"
 
 # dfd8645065f743b7ad4ff92e9e136a43
 #: extending/extending.rst:36
@@ -576,7 +576,7 @@ msgstr ""
 # 508a211a782945a493f19486e84dbfa2
 #: extending/extending.rst:50
 msgid "The first line of our file can be::"
-msgstr ""
+msgstr "La première ligne de notre fichier peut être:"
 
 # 350cfec8dd9045f1a3ab997409f2bc3f
 #: extending/extending.rst:54

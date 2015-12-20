@@ -1579,7 +1579,8 @@ msgstr ""
 "présent dans la définition d'une classe."
 
 # 76822657f61145529176860bfd786541
-# Une définition en français pour le "name mangling", littéralement "bricolage" ??
+# Une définition en français pour le "name mangling", littéralement
+# "bricolage" ??
 #: tutorial/classes.rst:670
 msgid ""
 "Name mangling is helpful for letting subclasses override methods without "
