@@ -47,7 +47,9 @@ do
         printf "%s\n%s\n" "locale_dirs = ['../../mo']" "language = 'fr'" \
                >> Doc/conf.py
         echo "Regenerating pot files."
-        sphinx-build -Q -b gettext Doc "$GENVER/pot/"
+        sphinx-build -Q -b gettext Doc Doc
+        mkdir -p "$GENVER/pot/"
+        mv Doc/*.pot "$GENVER/pot/"
     )
 
     echo "Merge each pot file to corresponding po file."
