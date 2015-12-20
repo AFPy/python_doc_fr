@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 
+"""
+Replicate translations from one version to another,
+but this generate useless diffs as polib don't store order of metadata:
+https://bitbucket.org/izi/polib/issues/72/
+
+And as polib losses the flags / tcomments of obsolete entries:
+https://bitbucket.org/izi/polib/issues/71/
+
+Hope they'll fix it.
+"""
+
 import os
 import glob
 import polib
@@ -19,8 +30,10 @@ def group_by_filename(po_files):
     return sorted(po_per_version.values())
 
 
-
 def merge_po_file(po_files):
+    """Given a list of po files, replicate known translation from each
+    file to the others.
+    """
     known_translations = {}
     # Aggregate all known translations
     for po_file in po_files:
@@ -38,6 +51,9 @@ def merge_po_file(po_files):
 
 
 def merge_po_files():
+    """Find each po file from the current directory, group them by name,
+    and replicate known translations from each one to the others.
+    """
     for po_files in group_by_filename(glob.glob('*/*.po')):
         merge_po_file(po_files)
 
