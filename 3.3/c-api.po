@@ -369,6 +369,12 @@ msgid ""
 "contain embedded null bytes. Unicode objects are converted to C strings "
 "using ``'utf-8'`` encoding."
 msgstr ""
+"Comme ``s*``, excepté qu'il n'accepte pas d'objets de type tampons mutables, "
+"comme :class:`bytearray`. Le résultat est stocké dans deux variables C, la "
+"première étant un pointeur sur une chaîne de caractères C, la seconde étant "
+"sa longueur. La chaîne de caractère peut contenir des octets nuls. Les "
+"objets Unicode sont convertis en chaînes de caractères C avec l'encodage "
+"``'utf-8'``."
 
 #: c-api/arg.rst:88
 msgid "z (str or None) [const char *]"

@@ -71,6 +71,10 @@ msgid ""
 "commands and executes them until an EOF (an end-of-file character, you can "
 "produce that with *Ctrl-D* on UNIX or *Ctrl-Z, Enter* on Windows) is read."
 msgstr ""
+"Quand l'interpréteur est appelé avec l'entrée standard connectée à un "
+"périphérique tty, il lit les lignes de commande et les exécute jusqu'à ce "
+"qu'un caractère EOF (un caractère fin de fichier, que vous pouvez produire "
+"avec *Ctrl-D* sous UNIX ou *Ctrl-Z, Entrée* sous Windows) soit lu."
 
 #: using/cmdline.rst:45
 msgid ""
@@ -178,6 +182,11 @@ msgid ""
 "directories and zipfiles that are passed to the interpreter as the script "
 "argument."
 msgstr ""
+"Les noms de paquets sont aussi autorisés. Quand un nom de paquet est donné à "
+"la place d'un module habituel, l'interpréteur exécutera ``<pkg>.__main`` "
+"comme module principal. Ce comportement est délibérement identique que pour "
+"un répertoire on un fichier zip donné à l'interpréteur comme argument à "
+"exécuter."
 
 #: using/cmdline.rst:92
 msgid ""
@@ -291,6 +300,9 @@ msgid ""
 "an empty string (``\"\"``) and the current directory will be added to the "
 "start of :data:`sys.path`."
 msgstr ""
+"Si aucune option d'interface est donnée, :option:`-i` est implicite, ``sys."
+"argv[0]`` est une chaine vide (``\"\"``) et le répertoire courant sera "
+"ajouté au début de :data:`sys.path`."
 
 #: using/cmdline.rst:152
 msgid ":ref:`tut-invoking`"
@@ -764,6 +776,9 @@ msgid ""
 "import of source modules.  This is equivalent to specifying the :option:`-B` "
 "option."
 msgstr ""
+"Si donné, Python ne tentera pas d'écrire de fichier ``.pyc``` ou ``.pyo`` à "
+"l'importation des modules source. Voir aussi :envvar:"
+"`PYTHONDONTWRITEBYTECODE`."
 
 #: using/cmdline.rst:495
 msgid ""
@@ -2322,7 +2337,7 @@ msgstr "2003"
 
 #: using/windows.rst:567
 msgid ":file:`PC/VS8.0/`"
-msgstr ""
+msgstr ":file:`PC/VS8.0/`"
 
 #: using/windows.rst:567
 msgid "8.0"

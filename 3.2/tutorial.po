@@ -2736,6 +2736,7 @@ msgstr ""
 #: tutorial/datastructures.rst:22
 msgid "Add an item to the end of the list; equivalent to ``a[len(a):] = [x]``."
 msgstr ""
+"Ajoute un élément à la fin de la liste ; équivalent à ``a[len(a):] = [x]``."
 
 # 39ccd90019dc4e5f8af7da2f8994c3e5
 #: tutorial/datastructures.rst:28
@@ -2743,6 +2744,8 @@ msgid ""
 "Extend the list by appending all the items in the given list; equivalent to "
 "``a[len(a):] = L``."
 msgstr ""
+"Étend la liste en y ajoutant tous les éléments de la liste fournie ; "
+"équivalent à ``a[len(a):] = L``."
 
 # 1c04785442d7420dbf2c43d9fa392d09
 #: tutorial/datastructures.rst:35
@@ -2762,6 +2765,8 @@ msgid ""
 "Remove the first item from the list whose value is *x*. It is an error if "
 "there is no such item."
 msgstr ""
+"Supprime de la liste le premier élément dont la valeur est *x*. Une "
+"exception est levée s'il existe aucun élément avec cette valeur."
 
 # cd0659ac21db44a8ae0b167d8527b004
 #: tutorial/datastructures.rst:50
@@ -2797,12 +2802,12 @@ msgstr "Retourne le nombre d'éléments ayant la valeur *x* dans la liste."
 # aafb7fd7033a4154b8cf065778a88725
 #: tutorial/datastructures.rst:73
 msgid "Sort the items of the list, in place."
-msgstr ""
+msgstr "Trie les éléments de la liste, en place."
 
 # af56df56130b4b799f968678f0cbb6cd
 #: tutorial/datastructures.rst:79
 msgid "Reverse the elements of the list, in place."
-msgstr ""
+msgstr "Inverse l'ordre des éléments de la liste, en place."
 
 # 4ecc579ecf45452a9019f384e84db685
 #: tutorial/datastructures.rst:81
@@ -5161,6 +5166,14 @@ msgid ""
 "the end of the file as the reference point.  *from_what* can be omitted and "
 "defaults to 0, using the beginning of the file as the reference point. ::"
 msgstr ""
+"``f.tell()`` retourne un entier indiquant la position actuelle dans le "
+"fichier, mesurée en octets à partir du début du fichier. Pour modifier la "
+"position dans le fichier, utilisez ``f.seek(offset, from_what)``. La "
+"position est calculée en ajoutant *offset* à un point de référence ; ce "
+"point de référence est sélectionné par l'argument *from_what* : 0 pour le "
+"début du fichier, 1 pour la position actuelle, et 2 pour la fin du fichier. "
+"*from_what* peut être omis et sa valeur par défaut est 0, utilisant le début "
+"du fichier comme point de référence ::"
 
 # d9233d36910a4dd1a3cea2765d69eb62
 #: tutorial/inputoutput.rst:361
@@ -5299,6 +5312,15 @@ msgid ""
 "easily explained.  The interactive editing and history described here are "
 "optionally available in the Unix and Cygwin versions of the interpreter."
 msgstr ""
+"Certaines versions de l'interpréteur Python prennent en charge l'édition de "
+"la ligne d'entrée courante et la substitution d'historique, similaires aux "
+"facilités que l'on trouve dans le shell Korn et dans le shell GNU Bash. "
+"C'est implémenté en utilisant la bibliothèque `GNU Readline`_, qui supporte "
+"l'édition en style Emacs et en style Vi. La bibliothèque a sa propre "
+"documentation qui ne va pas être dupliquée ici ; toutefois, les bases seront "
+"expliquées rapidement. L'éditeur interactif et la gestion d'historique "
+"décrits ici sont disponibles en option sous les versions Unix et Cygwin de "
+"l'interpréteur."
 
 # 2dccc22bfe5c4c189632d49711414e91
 #: tutorial/interactive.rst:15
@@ -5450,6 +5472,15 @@ msgid ""
 "resulting object.  Note that this may execute application-defined code if an "
 "object with a :meth:`__getattr__` method is part of the expression."
 msgstr ""
+"Ceci lie la touche :kbd:`Tab` à la fonction de complétude, donc taper la "
+"touche :kbd:`Tab` deux fois de suite suggère les options disponibles ; la "
+"recherche s'effectue dans les noms d'instructions Python, les noms des "
+"variables locales et les noms de modules disponibles. Pour les expressions "
+"pointées telles que ``string.a``, l'expression est évaluée jusqu'au dernier "
+"``'.'`` avant de suggérer les options disponibles à partir des attributs de "
+"l'objet résultant de cette évaluation. Notez bien que ceci peut exécuter une "
+"partie du code de l'application si un objet disposant d'une méthode :meth:"
+"`__getattr__` fait partie de l'expression."
 
 # 52551b5f032d49ba87c0f9ab0d41dc5c
 #: tutorial/interactive.rst:113
@@ -5590,6 +5621,18 @@ msgid ""
 "or if ``^P`` is echoed, command line editing isn't available; you'll only be "
 "able to use backspace to remove characters from the current line."
 msgstr ""
+"Les possibilités d'édition de l'interpréteur ne sont généralement pas très "
+"sophistiquées. Sous Unix, quiconque a installé l'interpréteur est "
+"susceptible d'avoir la gestion de la bibliothèque GNU readline d'activé, ce "
+"qui ajoute une édition interactive plus élaborée et une fonctionnalité "
+"d'historique. Le moyen le plus rapide de tester si l'édition de la ligne de "
+"commande est gérée est peut-être de taper :kbd:`Ctrl-P` suite au premier "
+"invite de commande que vous rencontrez. Si cela bip, vous disposez de "
+"l'édition de la ligne de commande; voyez l'appendice :ref:`tut-interacting` "
+"pour une introduction aux touches. Si rien ne semble se produire ou si "
+"``^P`` s'affiche, l'édition de la ligne de commande n'est pas disponible; "
+"vous serez seulement en mesure d'utiliser la touche retour arrière pour "
+"supprimer des caractères de la ligne courante."
 
 # 7004c801cef14fa1b6c487949f5d5da7
 #: tutorial/interpreter.rst:48
@@ -5755,6 +5798,11 @@ msgid ""
 "`KeyboardInterrupt` exception, which may be handled by a :keyword:`try` "
 "statement."
 msgstr ""
+"Taper le caractère d'interruption (généralement :kbd:`Ctrl+C` ou :kbd:"
+"`Supprimer`) au niveau de l'invite de commande primaire annule l'entrée et "
+"revient à l'invite. [#]_ Saisir une interruption tandis qu'une commande "
+"s'exécute lève une exception :exc:`KeyboardInterrupt` qui peut être gérée "
+"par une instruction :keyword:`try`."
 
 # e6a45747611d4e78a69d4c74a340475f
 #: tutorial/interpreter.rst:147

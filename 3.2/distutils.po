@@ -538,6 +538,9 @@ msgid ""
 "The Extension class describes a single C or C++extension module in a setup "
 "script. It accepts the following keyword arguments in its constructor"
 msgstr ""
+"La class Extension décrit un seul module d'extension C ou C++ dans un script "
+"d'installation. Elle accepte dans son constructeur les arguments-clés "
+"suivants"
 
 # b903da9407fa485593b41b42d580fe36
 #: distutils/apiref.rst:171

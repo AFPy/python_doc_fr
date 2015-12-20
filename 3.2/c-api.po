@@ -303,6 +303,12 @@ msgid ""
 "contain embedded null bytes. Unicode objects are converted to C strings "
 "using ``'utf-8'`` encoding."
 msgstr ""
+"Comme ``s*``, excepté qu'il n'accepte pas d'objets de type tampons mutables, "
+"comme :class:`bytearray`. Le résultat est stocké dans deux variables C, la "
+"première étant un pointeur sur une chaîne de caractères C, la seconde étant "
+"sa longueur. La chaîne de caractère peut contenir des octets nuls. Les "
+"objets Unicode sont convertis en chaînes de caractères C avec l'encodage "
+"``'utf-8'``."
 
 # 1f42f4c985fa426e9a305d86a0672ffe
 #: c-api/arg.rst:88
@@ -382,6 +388,9 @@ msgid ""
 "supporting the buffer protocol.  **This is the recommended way to accept "
 "binary data.**"
 msgstr ""
+"Cette variante sur ``s*`` n'accepte pas d'objets Unicode, seulement des "
+"objets supportant le protocole buffer. **C'est le moyen recommandé pour "
+"accepter des données binaires.**"
 
 # 3dc6ac422c2947288adf8dad0115734f
 #: c-api/arg.rst:111
@@ -4819,7 +4828,7 @@ msgstr ":cdata:`PyExc_EnvironmentError`"
 # 859468f996a74f1c95bdbbfb33bae39a
 #: c-api/exceptions.rst:602
 msgid ":exc:`EnvironmentError`"
-msgstr ""
+msgstr ":exc:`EnvironmentError`"
 
 # 5413316b82024ed39c5106fe28229afc
 #: c-api/exceptions.rst:604
@@ -4839,7 +4848,7 @@ msgstr ":cdata:`PyExc_IOError`"
 # f1704727234a46bda5b176170fba0b54
 #: c-api/exceptions.rst:606
 msgid ":exc:`IOError`"
-msgstr ""
+msgstr ":exc:`IOError`"
 
 # 28ab268b62cb4a66aee0547724685864
 #: c-api/exceptions.rst:608
@@ -5014,7 +5023,7 @@ msgstr ":cdata:`PyExc_WindowsError`"
 # e70b0183e4d94503825a8c34048d6041
 #: c-api/exceptions.rst:640
 msgid ":exc:`WindowsError`"
-msgstr ""
+msgstr ":exc:`WindowsError`"
 
 # 722bba173de94cd1a24ce460c86140be
 #: c-api/exceptions.rst:640

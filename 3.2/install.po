@@ -19,7 +19,7 @@ msgstr ""
 # 8ab963b410814d58a039b203ef941b47
 #: install/index.rst:7
 msgid "Installing Python Modules"
-msgstr ""
+msgstr "installation des modules python"
 
 # d254d59ad32e4d13bf243c16450f6fc9
 #: install/index.rst:9
@@ -249,6 +249,13 @@ msgid ""
 "program:`unzip` or :program:`pkunzip`) to unpack the archive.  Then, open a "
 "command prompt window and run::"
 msgstr ""
+"Sous Windows, vous avez probablement téléchargé :file:`foo-1.0.zip`. Si vous "
+"avez téléchargé le fichier d'archive dans :file:`C:\\Temp`, il se "
+"décompressera alors dans :file:`C:\\Temp\\foo-1.0` ; vous pouvez utiliser "
+"soit un manipulateur d'archive avec une interface graphique (comme WinZip) "
+"soit un outil de ligne de commande (telles que :program:`unzip` ou :program:"
+"`pkunzip`) pour décompresser l'archive. Ensuite, ouvrez une fenêtre d'invite "
+"de commandes (\"fenêtre DOS\") et exécutez ::"
 
 # 5e405020cdf64ffb9db21854c2968241
 #: install/index.rst:154

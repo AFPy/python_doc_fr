@@ -80,6 +80,10 @@ msgid ""
 "commands and executes them until an EOF (an end-of-file character, you can "
 "produce that with *Ctrl-D* on UNIX or *Ctrl-Z, Enter* on Windows) is read."
 msgstr ""
+"Quand l'interpréteur est appelé avec l'entrée standard connectée à un "
+"périphérique tty, il lit les lignes de commande et les exécute jusqu'à ce "
+"qu'un caractère EOF (un caractère fin de fichier, que vous pouvez produire "
+"avec *Ctrl-D* sous UNIX ou *Ctrl-Z, Entrée* sous Windows) soit lu."
 
 # ad789b53be0f4c1d9b63b0ff8c68bd4f
 #: using/cmdline.rst:45
@@ -198,6 +202,11 @@ msgid ""
 "directories and zipfiles that are passed to the interpreter as the script "
 "argument."
 msgstr ""
+"Les noms de paquets sont aussi autorisés. Quand un nom de paquet est donné à "
+"la place d'un module habituel, l'interpréteur exécutera ``<pkg>.__main`` "
+"comme module principal. Ce comportement est délibérement identique que pour "
+"un répertoire on un fichier zip donné à l'interpréteur comme argument à "
+"exécuter."
 
 # bf6fe180499048999e263ecd1315a101
 #: using/cmdline.rst:92
@@ -310,6 +319,9 @@ msgid ""
 "an empty string (``\"\"``) and the current directory will be added to the "
 "start of :data:`sys.path`."
 msgstr ""
+"Si aucune option d'interface est donnée, :option:`-i` est implicite, ``sys."
+"argv[0]`` est une chaine vide (``\"\"``) et le répertoire courant sera "
+"ajouté au début de :data:`sys.path`."
 
 # 43e5c4c5223d40f69ceff23c8e1476b9
 #: using/cmdline.rst:156
@@ -470,6 +482,8 @@ msgid ""
 "Disable the import of the module :mod:`site` and the site-dependent "
 "manipulations of :data:`sys.path` that it entails."
 msgstr ""
+"Désactiver l’importation du module :mod:`site` et les modifications de :data:"
+"`sys.path` spécifiques au site qu’elle implique."
 
 # 0cb4a7fd5f0f45ecad7a8aa3533f6015
 #: using/cmdline.rst:271
@@ -828,6 +842,9 @@ msgid ""
 "import of source modules.  This is equivalent to specifying the :option:`-B` "
 "option."
 msgstr ""
+"Si donné, Python ne tentera pas d'écrire de fichier ``.pyc``` ou ``.pyo`` à "
+"l'importation des modules source. Voir aussi :envvar:"
+"`PYTHONDONTWRITEBYTECODE`."
 
 # 652c723e493c400db7a2774f6a8e4a36
 #: using/cmdline.rst:490
@@ -2161,7 +2178,7 @@ msgstr "2003"
 # b97f354373f643989c826af010e9af48
 #: using/windows.rst:308
 msgid ":file:`PC/VS8.0/`"
-msgstr ""
+msgstr ":file:`PC/VS8.0/`"
 
 # 49da8dded7ad46e4b690d98fd4046239
 #: using/windows.rst:308
@@ -2201,6 +2218,8 @@ msgstr ""
 msgid ""
 "Check :file:`PC/readme.txt` for general information on the build process."
 msgstr ""
+"Vérifiez :file:`PC/readme.txt` pour des informations générales sur le "
+"processus de construction."
 
 # 640e10fb7ce04f60b7f552e6b7ac8070
 #: using/windows.rst:320

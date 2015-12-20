@@ -4989,6 +4989,12 @@ msgid ""
 "interpreted using Python's rules: a leading '0' indicates octal, and '0x' "
 "indicates a hex number."
 msgstr ""
+"Par défaut, ces fonctions interprètent les nombre en tant que décimaux, de "
+"telles façons que ``int('0144')==144`` et ``int('0x144')`` remontent :exc:"
+"`ValueError`. ``int(string, base)`` prends la base depuis laquelle il faut "
+"convertir dans le second argument, optionnel, donc ``int('0x144', 16) == "
+"324``. Si la base donnée est 0, le nombre est interprété selon les règles "
+"Python: un '0' en tête indique octal, et '0x' indique un hexadécimal."
 
 # 05d6db8247ca414b9e61602c8932a5e6
 #: faq/programming.rst:714
@@ -5631,6 +5637,8 @@ msgstr "Dictionnaires"
 #: faq/programming.rst:1108
 msgid "How can I get a dictionary to display its keys in a consistent order?"
 msgstr ""
+"Comment puis-je faire afficher les éléments d'un dictionnaire dans un ordre "
+"consistant?"
 
 # a32f49ee6c694208ad40edd9fbe6d4d3
 #: faq/programming.rst:1110

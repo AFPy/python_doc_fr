@@ -4310,6 +4310,12 @@ msgid ""
 "interpreted using Python's rules: a leading '0' indicates octal, and '0x' "
 "indicates a hex number."
 msgstr ""
+"Par défaut, ces fonctions interprètent les nombre en tant que décimaux, de "
+"telles façons que ``int('0144')==144`` et ``int('0x144')`` remontent :exc:"
+"`ValueError`. ``int(string, base)`` prends la base depuis laquelle il faut "
+"convertir dans le second argument, optionnel, donc ``int('0x144', 16) == "
+"324``. Si la base donnée est 0, le nombre est interprété selon les règles "
+"Python: un '0' en tête indique octal, et '0x' indique un hexadécimal."
 
 #: faq/programming.rst:716
 msgid ""
