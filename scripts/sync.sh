@@ -41,7 +41,7 @@ do
         git checkout "$VERSION"
         for patch in "$PATCHES/$VERSION"/*.patch
         do
-            echo "Applying patch $patch"
+            echo "Applying patch $(basename $patch)"
             git apply "$patch"
         done
         printf "%s\n%s\n" "locale_dirs = ['../../mo']" "language = 'fr'" \
