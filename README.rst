@@ -8,6 +8,31 @@ documentation officielle de Python.
 Votre aide est la bienvenue que ce soit pour maintenir les traductions
 à jour, les relire, les améliorer ou traduire de nouveaux blocs.
 
+=============== ====== ====== ====== ====== ======
+                   2.7    3.2    3.3    3.4    3.5
+--------------- ------ ------ ------ ------ ------
+       tutorial    97%    94%    98%   100%   100%
+       glossary    73%    79%    78%    78%    68%
+       contents   100%   100%   100%   100%   100%
+      copyright   100%   100%   100%   100%   100%
+          about    90%   100%    90%    90%    90%
+           bugs    80%    71%    80%    80%    76%
+   distributing     0%     0%     0%     5%     5%
+         sphinx     0%     0%    95%   100%   100%
+     installing     0%     0%     0%     4%     4%
+        license    40%    50%    38%    36%    36%
+        install    30%    30%    30%    30%    30%
+      extending     1%     1%     1%     1%     1%
+          using    30%    32%    27%    24%    18%
+            faq    23%    24%    23%    23%    23%
+      distutils    12%    12%    11%    12%    12%
+      reference     2%     1%     1%     1%     1%
+          howto     1%     1%     1%     0%     0%
+          c-api    10%    11%    11%    11%    10%
+       whatsnew     1%     3%     2%     2%     2%
+        library     0%     0%     0%     0%     0%
+=============== ====== ====== ====== ====== ======
+
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
 
