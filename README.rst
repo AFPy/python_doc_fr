@@ -117,9 +117,13 @@ Comment ça marche ?
 Tout peut être amené à bouger, mais pour le moment, voilà l'état des choses :
 
 - Il n'y a pas (plus) de cron sur afpy.org ni ailleurs.
-- ``scripts/sync.sh`` nous permet de mettre à jour les *msgid* dans les fichiers *.po*
+- ``scripts/sync.sh`` nous permet de mettre à jour les *pot* en fonction des
+  modifs de cpython, et *msgmerge* ça dans les fichiers *.po*
 - ``scripts/build.sh`` génère une version HTML locale de la doc
 - Le résultat de ``build.sh`` peut être ``rsync`` sur afpy.org, tout simplement,
   ``build.sh`` vous proposera même une commande pour le faire.
+- Pour tout build pour mettre à jour la prod:
+  `for V in 2.7 3.2 3.3 3.4 3.5; do ./scripts/build.sh $V; done`
 - L'*index.html* de la `page d'accueil <http://www.afpy.org/doc/python/>`_
-  est généré par *index.sh* à partir de *index.md* et de *index.tpl*.
+  est généré par *build.sh* à partir de *scripts/index.md* et
+  de *scripts/index.tpl*.
