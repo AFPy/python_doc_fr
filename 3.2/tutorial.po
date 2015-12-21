@@ -3111,11 +3111,12 @@ msgid ""
 msgstr ""
 "Si les tuples peuvent sembler similaires aux listes, ils sont souvent "
 "utilisés dans des cas différents et pour des raisons différentes. Les tuples "
-"sont :term:`immuables <immuable>` et contiennent souvent des séquences hétérogènes "
-"d'éléments qui sont accédés par \"déballage\" (voir plus loin) ou indexation "
-"(ou même par attributs dans le cas des :func:`namedtuples <collections."
-"namedtuple>`). Les listes sont souvent :term:`mutables <mutable>`, et contiennent des "
-"éléments homogènes qui sont accédés par itération sur la liste."
+"sont :term:`immuables <immuable>` et contiennent souvent des séquences "
+"hétérogènes d'éléments qui sont accédés par \"déballage\" (voir plus loin) "
+"ou indexation (ou même par attributs dans le cas des :func:`namedtuples "
+"<collections.namedtuple>`). Les listes sont souvent :term:`mutables "
+"<mutable>`, et contiennent des éléments homogènes qui sont accédés par "
+"itération sur la liste."
 
 # 980fabe4fdc94ba7b66be153672fd8fc
 #: tutorial/datastructures.rst:378
