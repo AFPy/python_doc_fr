@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 13:12+0100\n"
-"PO-Revision-Date: 2015-12-15 21:53+0100\n"
+"POT-Creation-Date: 2015-11-19 00:36+0100\n"
+"PO-Revision-Date: 2015-12-18 12:21+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: French <translation@afpy.fr>\n"
 "Language: fr\n"
@@ -63,8 +63,7 @@ msgstr ""
 "3.x en gérant la plupart des incompatibilités qui peuvent être détectées en "
 "analysant la source et parcourant son arbre syntaxique."
 
-# The strange space escaping are here to handle non-breaking spaces required
-# by French typographic rules.
+# The strange space escaping are here to handle non-breaking spaces required by French typographic rules.
 #: glossary.rst:25
 msgid ""
 "2to3 is available in the standard library as :mod:`lib2to3`; a standalone "
@@ -153,7 +152,7 @@ msgid ""
 "evaluated value is assigned to the local variable."
 msgstr ""
 "Les arguments se retrouvent dans le corps de la fonction appelée parmi les "
-"variables locales. Voir la section :ref:`calls` à propos des règles dictant "
+"variables locales. Voir la section :ref:`appels` à propos des règles dictant "
 "cet affectation. Syntaxiquement, toute expression est acceptée comme "
 "argument, et c'est la valeur résultante de l'expression qui sera affectée à "
 "la variable locale."
@@ -390,7 +389,7 @@ msgid ""
 msgstr ""
 "Quoique moins fréquemment utilisé, le même concept existe pour les classes. "
 "Consultez la documentation :ref:`définitions de fonctions <function> et :ref:"
-"`définitions de classes <classe>` pour en savoir plus sur les decorators."
+"`définitions de classes <class>` pour en savoir plus sur les decorators."
 
 #: glossary.rst:167
 msgid "descriptor"
@@ -420,8 +419,7 @@ msgstr ""
 "statiques, et les références aux classes mères."
 
 #: glossary.rst:179
-msgid ""
-"For more information about descriptors' methods, see :ref:`descriptors`."
+msgid "For more information about descriptors' methods, see :ref:`descriptors`."
 msgstr ""
 "Pour plus d'informations sur les méthodes des descripteurs, consultez :ref:"
 "`descriptors`."
@@ -1098,7 +1096,7 @@ msgstr "argument nommé"
 
 # 65d6c99a0f6941f6ac90cc3867107f42
 # 0f29d18d80d44155bda6e138e96bd1ce
-#: glossary.rst:468 glossary.rst:693
+#: glossary.rst:468 ../src/Doc/glossary.rst:693
 msgid "See :term:`argument`."
 msgstr "Voir :term:`argument`."
 
@@ -1277,17 +1275,19 @@ msgid "method resolution order"
 msgstr "ordre de résolution des méthodes"
 
 #: glossary.rst:539
-#, fuzzy
 msgid ""
 "Method Resolution Order is the order in which base classes are searched for "
 "a member during lookup. See `The Python 2.3 Method Resolution Order <https://"
 "www.python.org/download/releases/2.3/mro/>`_."
 msgstr ""
-"L'ordre de résolution des méthodes (*MRO* de *Method Resolution Order*)"
+"L'ordre de résolution des méthodes (*MRO* de *Method Resolution Order*) est "
+"l'ordre dans lequel les membres sont recherchés dans l'arbre d'héritage. Voir "
+"`The Python 2.3 Method Resolution Order "
+"<https://www.python.org/download/releases/2.3/mro/>`_."
 
 #: glossary.rst:542
 msgid "module"
-msgstr ""
+msgstr "module"
 
 # ad7a03faeea844749c0307592277e63f
 #: glossary.rst:544
@@ -1296,43 +1296,50 @@ msgid ""
 "have a namespace containing arbitrary Python objects.  Modules are loaded "
 "into Python by the process of :term:`importing`."
 msgstr ""
+"L'unité élémentaire de l'organisation du code en Python. Les modules ont un "
+"espace de noms pouvant contenir n'importe quel objet Python. Charger des "
+"modules est appelé :term:`importer`."
 
 # 65d6c99a0f6941f6ac90cc3867107f42
 #: glossary.rst:548
 msgid "See also :term:`package`."
-msgstr ""
+msgstr "Voir aussi :term:`paquet`."
 
 #: glossary.rst:549
 msgid "module spec"
-msgstr ""
+msgstr "module spec"
 
 #: glossary.rst:551
 msgid ""
 "A namespace containing the import-related information used to load a module."
 msgstr ""
+"Un espace de noms contenant des informations d'import utilisées pour charger "
+"un module."
 
 #: glossary.rst:553
 msgid "MRO"
-msgstr ""
+msgstr "MRO"
 
 # c6741e9b5b1d47d7b0cf92e63d7437b1
 #: glossary.rst:555
 msgid "See :term:`method resolution order`."
-msgstr ""
+msgstr "Voir :term:`ordre de  résolution des méthodes `."
 
 #: glossary.rst:556
 msgid "mutable"
-msgstr ""
+msgstr "variable"
 
 #: glossary.rst:558
 msgid ""
 "Mutable objects can change their value but keep their :func:`id`.  See also :"
 "term:`immutable`."
 msgstr ""
+"Un objet variable (*mutable*) peut changer de valeur tout en gardant le même "
+":func:`id`. Voir aussi :term:`immuable`."
 
 #: glossary.rst:560
 msgid "named tuple"
-msgstr ""
+msgstr "named tuple"
 
 #: glossary.rst:562
 msgid ""
@@ -1341,6 +1348,11 @@ msgid ""
 "object where the *year* is accessible either with an index such as ``t[0]`` "
 "or with a named attribute like ``t.tm_year``)."
 msgstr ""
+"Une classe, proche d'un tuple, dont les éléments, classiquement accessible par "
+""
+"leur indice, sont aussi accessibles par leur nom (par exemple, "
+":func:`time.localtime` donne un objet ressemblant à un tuple, dont *year* est "
+"accessible par son indice : ``t[0]`` ou par son nom : ``t.tm_year``)."
 
 #: glossary.rst:567
 msgid ""
@@ -1351,10 +1363,17 @@ msgid ""
 "as a self-documenting representation like ``Employee(name='jones', "
 "title='programmer')``."
 msgstr ""
+"Un *named tuple* peut être un type natif tel que :class:`time.struct_time` ou "
+"il peut être construit comme une simple classe. Un *named tuple* complet peut "
+"aussi être créé via la fonction :func:`collections.namedtuple`. Cette dernière "
+""
+"approche fournit automatiquement des fonctionnalités supplémentaires, tel "
+"qu'une représentation lisible comme ``Employee(name='jones', "
+"title='programmer')``."
 
 #: glossary.rst:573
 msgid "namespace"
-msgstr ""
+msgstr "espace de nom"
 
 #: glossary.rst:575
 msgid ""
@@ -1371,7 +1390,7 @@ msgstr ""
 
 #: glossary.rst:585
 msgid "namespace package"
-msgstr ""
+msgstr "paquet-espace de noms"
 
 #: glossary.rst:587
 msgid ""
@@ -1380,14 +1399,18 @@ msgid ""
 "specifically are not like a :term:`regular package` because they have no "
 "``__init__.py`` file."
 msgstr ""
+"Un :term:`paquet` tel que défini dans la :pep:`421` qui ne sert qu'à contenir "
+"des sous paquets. Les paquets-espace de nom peuvent n'avoir aucune "
+"représentation physique, et plus spécifiquement ne sont pas comme un "
+":term:`paquet classique ` puisqu'ils n'ont pas de fichier ``__init__.py``."
 
 #: glossary.rst:592
 msgid "See also :term:`module`."
-msgstr ""
+msgstr "Voir aussi :term:`module`."
 
 #: glossary.rst:593
 msgid "nested scope"
-msgstr ""
+msgstr "portée imbriquée"
 
 #: glossary.rst:595
 msgid ""
@@ -1398,10 +1421,18 @@ msgid ""
 "the innermost scope.  Likewise, global variables read and write to the "
 "global namespace.  The :keyword:`nonlocal` allows writing to outer scopes."
 msgstr ""
+"La possibilité de toucher une variable déclarée dans une définition "
+"englobante. Typiquement, une fonction définie à l'intérieur d'une autre "
+"fonction aura accès aux variables de cette autre fonction. Souvenez-vous "
+"cependant que cela ne fonctionne que pour accéder à des variables, pas pour "
+"les assigner. Les variables locales sont lues et assignées dans l'espace de "
+"nom le plus proche. Tout comme les variables globales qui sont stockés sur "
+"l'espace de noms global, le mot clef :keyword:`nonlocal` permet d'écrire dans "
+"l'espace de nom dans lequel est déclaré la variable."
 
 #: glossary.rst:602
 msgid "new-style class"
-msgstr ""
+msgstr "nouvelle classe"
 
 #: glossary.rst:604
 msgid ""
@@ -1410,20 +1441,31 @@ msgid ""
 "versatile features like :attr:`~object.__slots__`, descriptors, properties, :"
 "meth:`__getattribute__`, class methods, and static methods."
 msgstr ""
+"Ancien nom pour l'implémentation actuelle des classes, pour tous les objets. "
+"Dans les anciennes"
+"versions de Python, seulement les nouvelles classes pouvaient utiliser les "
+"nouvelles fonctionnalités tel que :attr:`~object.__slots__`, les descripteurs, "
+"les propriétés, :meth:`__getattribute__`, les méthodes de classe, et les "
+"méthodes statiques."
 
 #: glossary.rst:608
 msgid "object"
-msgstr ""
+msgstr "objet"
 
 #: glossary.rst:610
 msgid ""
 "Any data with state (attributes or value) and defined behavior (methods).  "
 "Also the ultimate base class of any :term:`new-style class`."
 msgstr ""
+"N'importe quelle donnée comportant des états sous forme d'attributs ou de "
+"valeurs, et un comportement (des :term:`méthodes <méthode>`). C'est aussi "
+"(``object``) l'ancêtre commun à absolument toutes les :term:`nouvelles classes "
+""
+"<nouvelle classe>`."
 
 #: glossary.rst:613
 msgid "package"
-msgstr ""
+msgstr "paquet"
 
 # f0589e9db9374de0a7c664556ace1d7b
 #: glossary.rst:615
@@ -1432,10 +1474,12 @@ msgid ""
 "subpackages.  Technically, a package is a Python module with an ``__path__`` "
 "attribute."
 msgstr ""
+"Un :term:`module` qui peut contenir des sous modules ou des sous paquets. "
+"Techniquement, un paquet est un module qui a un attribut ``__path__``."
 
 #: glossary.rst:619
 msgid "See also :term:`regular package` and :term:`namespace package`."
-msgstr ""
+msgstr "Voir aussi :term:`paquet classique` et :term:`paquet espace de nom`."
 
 #: glossary.rst:620
 msgid "parameter"
@@ -1447,6 +1491,9 @@ msgid ""
 "an :term:`argument` (or in some cases, arguments) that the function can "
 "accept.  There are five kinds of parameter:"
 msgstr ""
+"Une entité nommée, dans la définition d'une :term:`fonction` ou d'une "
+":term:`méthode `, décrivant un :term:`argument` (ou dans certains cas des "
+"arguments) que la fonction accepte. Il existe cinque sorte de paramètres :"
 
 # 88cbbf8a9c094e96972c9a4bae674b54
 #: glossary.rst:626
@@ -1455,7 +1502,7 @@ msgid ""
 "either :term:`positionally <argument>` or as a :term:`keyword argument "
 "<argument>`.  This is the default kind of parameter, for example *foo* and "
 "*bar* in the following::"
-msgstr ""
+msgstr ":dfn:`positional-or-keyword` : "
 
 # 5d344aa1c2c14f41bdde1b3c739e316b
 #: glossary.rst:633
@@ -1465,8 +1512,12 @@ msgid ""
 "However, some built-in functions have positional-only parameters (e.g. :func:"
 "`abs`)."
 msgstr ""
+":dfn:`positional-only`: un argument qui ne peut être donné que par sa "
+"position. Python n'a pas de syntaxe pour déclarer de tels paramètre, cependant "
+"des fonctions natives, comme :func:`abs` en utilisent."
 
 #: glossary.rst:640
+#, fuzzy
 msgid ""
 ":dfn:`keyword-only`: specifies an argument that can be supplied only by "
 "keyword.  Keyword-only parameters can be defined by including a single var-"
@@ -1474,16 +1525,19 @@ msgid ""
 "definition before them, for example *kw_only1* and *kw_only2* in the "
 "following::"
 msgstr ""
+":dfn:`keyword-only`: définit un argument qui ne peut être fournit que par nom. "
+"Les paramètres *keyword-only* peuvent être définis en utilisant un"
 
 # df1910817a5e46739941e5d42e94a364
 #: glossary.rst:648
+#, fuzzy
 msgid ""
 ":dfn:`var-positional`: specifies that an arbitrary sequence of positional "
 "arguments can be provided (in addition to any positional arguments already "
 "accepted by other parameters).  Such a parameter can be defined by "
 "prepending the parameter name with ``*``, for example *args* in the "
 "following::"
-msgstr ""
+msgstr ":dfn:`var-positional` : "
 
 # 8dd7e79a1566402e9e9ad95b604afeb4
 #: glossary.rst:656
@@ -1500,6 +1554,8 @@ msgid ""
 "Parameters can specify both optional and required arguments, as well as "
 "default values for some optional arguments."
 msgstr ""
+"Les paramètres peuvent décrire aussi bien des paramètres optionnels ou "
+"obligatoires, aussi que des valeurs par défaut pour les paramètres optionnels."
 
 #: glossary.rst:665
 msgid ""
@@ -1508,6 +1564,10 @@ msgid ""
 "the :class:`inspect.Parameter` class, the :ref:`function` section, and :pep:"
 "`362`."
 msgstr ""
+"Voir aussi :term:`argument` dans le glossaire, la question sur :ref:`la "
+"différence entre les arguments et les paramètre <faq-argument-vs-parameter>` "
+"dans la FAQ, la classe :class:`inspect.Parameter`, la section :ref:`fonction`, "
+"et la :pep:`362`."
 
 #: glossary.rst:669
 msgid "path entry"
@@ -1563,7 +1623,7 @@ msgstr ""
 
 #: glossary.rst:691
 msgid "positional argument"
-msgstr ""
+msgstr "augment positionnel"
 
 #: glossary.rst:694
 msgid "provisional API"
@@ -1604,7 +1664,7 @@ msgstr ""
 
 #: glossary.rst:715
 msgid "Python 3000"
-msgstr ""
+msgstr "Python 3000"
 
 #: glossary.rst:717
 msgid ""
@@ -1612,10 +1672,12 @@ msgid ""
 "of version 3 was something in the distant future.)  This is also abbreviated "
 "\"Py3k\"."
 msgstr ""
+"Surnom de la série des Python 3.x (très vieux surnom donné à l'époque pour "
+"Python 3 n'était qu'un futur lointain). Aussi abrégé \"Py3k\"."
 
 #: glossary.rst:720
 msgid "Pythonic"
-msgstr ""
+msgstr "Pythonique"
 
 #: glossary.rst:722
 msgid ""
@@ -1626,10 +1688,17 @@ msgid ""
 "languages don't have this type of construct, so people unfamiliar with "
 "Python sometimes use a numerical counter instead::"
 msgstr ""
+"Une idée, ou un bout de code, qui suit de près la philosophie de Python, "
+"parfois en opposition avec les concepts rencontrés dans d'autres langages. "
+"Typiquement, la coutume en Python est de parcourir les éléments d'un itérable "
+"en utilisant :keyword:`for`. Beaucoup de langages n'ont pas cette possibilité, "
+"donc les gens qui ne sont pas habitués à Python pourraient parfois utiliser un "
+"compteur à la place ::"
 
 #: glossary.rst:732
 msgid "As opposed to the cleaner, Pythonic method::"
 msgstr ""
+"Plutôt qu'utiliser la méthode, plus propre et élégante, donc Pythonique ::"
 
 #: glossary.rst:736
 msgid "qualified name"
@@ -1652,9 +1721,10 @@ msgstr ""
 
 #: glossary.rst:762
 msgid "reference count"
-msgstr ""
+msgstr "nombre de références"
 
 #: glossary.rst:764
+#, fuzzy
 msgid ""
 "The number of references to an object.  When the reference count of an "
 "object drops to zero, it is deallocated.  Reference counting is generally "
@@ -1662,11 +1732,11 @@ msgid ""
 "implementation.  The :mod:`sys` module defines a :func:`~sys.getrefcount` "
 "function that programmers can call to return the reference count for a "
 "particular object."
-msgstr ""
+msgstr "Le nombre de références à un objet. Lorsque "
 
 #: glossary.rst:770
 msgid "regular package"
-msgstr ""
+msgstr "paquet classique"
 
 #: glossary.rst:772
 msgid ""
