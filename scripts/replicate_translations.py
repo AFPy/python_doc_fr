@@ -54,8 +54,7 @@ def merge_po_files():
     """Find each po file from the current directory, group them by name,
     and replicate known translations from each one to the others.
     """
-    for po_files in group_by_filename(glob.glob('*/*.po')):
-        merge_po_file(po_files)
+    merge_po_file(glob.glob('*/*.po'))
 
 if __name__ == '__main__':
     merge_po_files()

@@ -405,7 +405,7 @@ msgstr ""
 # 6840c7c0a3da4c50b15ad6be7959527d
 #: whatsnew/2.0.rst:262
 msgid "List Comprehensions"
-msgstr ""
+msgstr "Compréhensions de listes"
 
 # d140c77dc2224fc2bd7c5a052e6e4c23
 #: whatsnew/2.0.rst:264
@@ -1728,7 +1728,7 @@ msgstr ""
 #: whatsnew/2.1.rst:5 whatsnew/2.2.rst:5 whatsnew/2.3.rst:5 whatsnew/2.4.rst:5
 #: whatsnew/2.5.rst:5
 msgid "A.M. Kuchling"
-msgstr ""
+msgstr "A.M. Kuchling"
 
 # 7603f9226f794449a6163465c16f1ff8
 #: whatsnew/2.1.rst:15
@@ -10357,7 +10357,7 @@ msgstr ""
 # f7bf486ae38f4e26b7ac34cad6b77e63
 #: whatsnew/2.5.rst:1004
 msgid "Some examples::"
-msgstr ""
+msgstr "Quelques exemples ::"
 
 # b414b72b7c444d588fe373e677e4f9c4
 #: whatsnew/2.5.rst:1017
@@ -12169,7 +12169,7 @@ msgstr ""
 # 4b0f5b848cd5406ca0c779881b25ef69
 #: whatsnew/2.6.rst:90
 msgid "Python 3.0"
-msgstr ""
+msgstr "Python 3.0"
 
 # 4fcf051943574910b7bc689b7a1964d3
 #: whatsnew/2.6.rst:92
@@ -18960,7 +18960,7 @@ msgstr ""
 # cf3e75348f8e4c7999d1cc7088c9191f
 #: whatsnew/2.7.rst:2213
 msgid "Capsules"
-msgstr ""
+msgstr "Capsules"
 
 # 6f24690277994c3faaaac3aea9bf696a
 #: whatsnew/2.7.rst:2215
@@ -19279,7 +19279,7 @@ msgstr "Nouveautés de Python 2.0"
 # bc3822aba3794bd89786e48c5dd1373c
 #: whatsnew/3.0.rst:7
 msgid "Guido van Rossum"
-msgstr ""
+msgstr "Guido van Rossum"
 
 # 674781d1250e41f6934a36c4f3a20408
 #: whatsnew/3.0.rst:54

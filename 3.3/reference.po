@@ -943,7 +943,7 @@ msgstr ""
 
 #: reference/datamodel.rst:297
 msgid "Strings"
-msgstr ""
+msgstr "Les chaînes de caractères"
 
 #: reference/datamodel.rst:288
 msgid ""
@@ -1002,7 +1002,7 @@ msgstr ""
 
 #: reference/datamodel.rst:342
 msgid "Lists"
-msgstr ""
+msgstr "Les listes"
 
 #: reference/datamodel.rst:340
 msgid ""
@@ -1057,7 +1057,7 @@ msgstr ""
 
 #: reference/datamodel.rst:381
 msgid "Sets"
-msgstr ""
+msgstr "Les ensembles"
 
 #: reference/datamodel.rst:379
 msgid ""
@@ -1096,7 +1096,7 @@ msgstr ""
 
 #: reference/datamodel.rst:426
 msgid "Dictionaries"
-msgstr ""
+msgstr "Dictionnaires"
 
 #: reference/datamodel.rst:408
 msgid ""
@@ -1422,7 +1422,7 @@ msgstr ""
 
 #: reference/datamodel.rst:646
 msgid "Classes"
-msgstr ""
+msgstr "Classes"
 
 #: reference/datamodel.rst:642
 msgid ""
@@ -2153,7 +2153,7 @@ msgstr ""
 
 #: reference/datamodel.rst:1336
 msgid "See also :envvar:`PYTHONHASHSEED`."
-msgstr ""
+msgstr "Voir aussi :envvar:`PYTHONUNBUFFERED`."
 
 #: reference/datamodel.rst:1338
 msgid "Hash randomization is enabled by default."
@@ -3294,7 +3294,7 @@ msgstr ""
 
 #: reference/executionmodel.rst:180
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 #: reference/executionmodel.rst:191
 msgid ""
@@ -5852,7 +5852,7 @@ msgstr ""
 
 #: reference/introduction.rst:6
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: reference/introduction.rst:8
 msgid ""
@@ -6573,7 +6573,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:474 reference/lexical_analysis.rst:507
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: reference/lexical_analysis.rst:476
 msgid "``\\newline``"
@@ -6729,7 +6729,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:519
 msgid "Notes:"
-msgstr ""
+msgstr "Notes : "
 
 #: reference/lexical_analysis.rst:522
 msgid "As in Standard C, up to three octal digits are accepted."
@@ -7275,7 +7275,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:364
 msgid "The :keyword:`del` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`del`"
 
 #: reference/simple_stmts.rst:374
 msgid ""
@@ -7587,7 +7587,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:689
 msgid "Examples::"
-msgstr ""
+msgstr "Exemples ::"
 
 #: reference/simple_stmts.rst:697
 msgid ""

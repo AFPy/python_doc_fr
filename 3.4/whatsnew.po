@@ -366,7 +366,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:262
 msgid "List Comprehensions"
-msgstr ""
+msgstr "Compréhensions de listes"
 
 #: whatsnew/2.0.rst:264
 msgid ""
@@ -1535,7 +1535,7 @@ msgstr ""
 #: whatsnew/2.1.rst:5 whatsnew/2.2.rst:5 whatsnew/2.3.rst:5 whatsnew/2.4.rst:5
 #: whatsnew/2.5.rst:5
 msgid "A.M. Kuchling"
-msgstr ""
+msgstr "A.M. Kuchling"
 
 #: whatsnew/2.1.rst:15
 msgid ""
@@ -9073,7 +9073,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1004
 msgid "Some examples::"
-msgstr ""
+msgstr "Quelques exemples ::"
 
 #: whatsnew/2.5.rst:1017
 msgid ""
@@ -10687,7 +10687,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:90
 msgid "Python 3.0"
-msgstr ""
+msgstr "Python 3.0"
 
 #: whatsnew/2.6.rst:92
 msgid ""
@@ -16782,7 +16782,7 @@ msgstr ""
 
 #: whatsnew/2.7.rst:2253
 msgid "Capsules"
-msgstr ""
+msgstr "Capsules"
 
 # 448b963908564c1e832dd9677ecce54b
 #: whatsnew/2.7.rst:2255
@@ -17204,7 +17204,7 @@ msgstr "Nouveautés de Python 2.0"
 
 #: whatsnew/3.0.rst:7
 msgid "Guido van Rossum"
-msgstr ""
+msgstr "Guido van Rossum"
 
 #: whatsnew/3.0.rst:54
 msgid ""
@@ -31100,7 +31100,7 @@ msgstr ""
 #: ../../../Misc/NEWS:819 ../../../Misc/NEWS:1219 ../../../Misc/NEWS:1687
 #: ../../../Misc/NEWS:6351
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../../Misc/NEWS:821
 msgid ""

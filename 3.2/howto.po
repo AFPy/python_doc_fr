@@ -1210,7 +1210,7 @@ msgstr ""
 # 48d9e54a60c543a3a6d803e5a2e06e92
 #: howto/cporting.rst:9
 msgid "Benjamin Peterson"
-msgstr ""
+msgstr "Benjamin Peterson"
 
 # 4c2c23364d38444f87f3fd94cb07fb87
 #: howto/cporting.rst:14
@@ -2680,7 +2680,7 @@ msgstr ""
 # 5cd31324f163413c930d11803349a122
 #: howto/functional.rst:16 howto/regex.rst:24 howto/urllib2.rst:18
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 # 8b2d8b68993b44ca9728cf9ba9d6ff15
 #: howto/functional.rst:18
@@ -2954,7 +2954,7 @@ msgstr ""
 # ffe15c4658e2429c899b9b2dc5f9d253
 #: howto/functional.rst:177
 msgid "Iterators"
-msgstr ""
+msgstr "Itérateurs"
 
 # 3274967365a74217817c4e9ed901eba6
 #: howto/functional.rst:179
@@ -3208,7 +3208,7 @@ msgstr ""
 # 47545b4c0b1540258af509bcc5e5933f
 #: howto/functional.rst:427
 msgid "Generators"
-msgstr ""
+msgstr "Générateurs"
 
 # 8d67da42f1654c4992699323aa8f04d1
 #: howto/functional.rst:429
@@ -11680,7 +11680,7 @@ msgstr ""
 # 7ae6d873a117444093f39d8e25616031
 #: howto/urllib2.rst:187
 msgid "Handling Exceptions"
-msgstr ""
+msgstr "Gestion des exceptions"
 
 # e8264865a2ad4d0fbabc7143fba9f768
 #: howto/urllib2.rst:189

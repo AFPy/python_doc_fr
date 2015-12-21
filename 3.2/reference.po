@@ -1055,7 +1055,7 @@ msgstr ""
 # a91b3e002d9946ebb83662166d6405e4
 #: reference/datamodel.rst:288
 msgid "Strings"
-msgstr ""
+msgstr "Les chaînes de caractères"
 
 # 319ab8f769484b6ea6fc0b1214fb5b2f
 #: reference/datamodel.rst:279
@@ -1124,7 +1124,7 @@ msgstr ""
 # f9c3628931b7430aa5c2e5ebd8183bc9
 #: reference/datamodel.rst:333
 msgid "Lists"
-msgstr ""
+msgstr "Les listes"
 
 # edc05caf4d21482b9765055280459795
 #: reference/datamodel.rst:331
@@ -1188,7 +1188,7 @@ msgstr ""
 # 1937a0c7be204194b435016203af22de
 #: reference/datamodel.rst:372
 msgid "Sets"
-msgstr ""
+msgstr "Les ensembles"
 
 # a253888144f3483bb45c316d499c68a1
 #: reference/datamodel.rst:370
@@ -1234,7 +1234,7 @@ msgstr ""
 # 0fd60e822e4145299e8a7b7a3f3de1bb
 #: reference/datamodel.rst:417
 msgid "Dictionaries"
-msgstr ""
+msgstr "Dictionnaires"
 
 # 203a923201bc4b9daab79e655054846c
 #: reference/datamodel.rst:399
@@ -1614,7 +1614,7 @@ msgstr ""
 # 9b149acd08d045f39989fa11c324515b
 #: reference/datamodel.rst:630
 msgid "Classes"
-msgstr ""
+msgstr "Classes"
 
 # 0c576d877f4e45a5ba5bb4d50c5b47aa
 #: reference/datamodel.rst:626
@@ -3561,7 +3561,7 @@ msgstr ""
 # c805cfd40f014857aa12c8a1e7bc352b
 #: reference/executionmodel.rst:180
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 # 00b56de03b5144039d457c7a8479c3f1
 #: reference/executionmodel.rst:191
@@ -5373,7 +5373,7 @@ msgstr ""
 # 4fb5fc7a6f74432394f1d308fd42b6f8
 #: reference/introduction.rst:6
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 # 9d6e461c68f74f47b9120ce8ea467891
 #: reference/introduction.rst:8
@@ -6183,7 +6183,7 @@ msgstr ""
 # 9fd8d6ed0b724beaa10ddae05a473dc7
 #: reference/lexical_analysis.rst:460 reference/lexical_analysis.rst:493
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 # 6882c60ff53b4bfebadaf104cacf5a54
 #: reference/lexical_analysis.rst:462
@@ -6373,7 +6373,7 @@ msgstr ""
 # 4479fd5872d14d3aa4f38c2eb7289050
 #: reference/lexical_analysis.rst:505
 msgid "Notes:"
-msgstr ""
+msgstr "Notes : "
 
 # 237865d42a5148f68c46c32c23241a43
 #: reference/lexical_analysis.rst:508
@@ -6995,7 +6995,7 @@ msgstr ""
 # 288b535315634e27932ef6057bb19f19
 #: reference/simple_stmts.rst:364
 msgid "The :keyword:`del` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`del`"
 
 # 8df7c631ea3e46f68276c706eeabb253
 #: reference/simple_stmts.rst:374

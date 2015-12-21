@@ -968,7 +968,7 @@ msgstr ""
 # caf3cd5ee98841eda871ef1e84af8f8f
 #: reference/datamodel.rst:303
 msgid "Strings"
-msgstr ""
+msgstr "Les chaînes de caractères"
 
 #: reference/datamodel.rst:293
 msgid ""
@@ -1031,7 +1031,7 @@ msgstr ""
 # 1da278a6a29745b3b2a403b4084ebad7
 #: reference/datamodel.rst:346
 msgid "Lists"
-msgstr ""
+msgstr "Les listes"
 
 #: reference/datamodel.rst:344
 msgid ""
@@ -1089,7 +1089,7 @@ msgstr ""
 # 2b181f2fd0c9482db2e1860b491fc739
 #: reference/datamodel.rst:385
 msgid "Sets"
-msgstr ""
+msgstr "Les ensembles"
 
 # 42da18eafdeb400cb5ec2db21fd97ebe
 #: reference/datamodel.rst:383
@@ -1132,7 +1132,7 @@ msgstr ""
 # 1401c1869aff43039fd8375bf7b3d11a
 #: reference/datamodel.rst:430
 msgid "Dictionaries"
-msgstr ""
+msgstr "Dictionnaires"
 
 #: reference/datamodel.rst:412
 msgid ""
@@ -1467,7 +1467,7 @@ msgstr ""
 # dec5c1bb2d844ee0a239a6b253cce479
 #: reference/datamodel.rst:651
 msgid "Classes"
-msgstr ""
+msgstr "Classes"
 
 #: reference/datamodel.rst:647
 msgid ""
@@ -3449,7 +3449,7 @@ msgstr ""
 
 #: reference/executionmodel.rst:216
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 #: reference/executionmodel.rst:227
 msgid ""
@@ -6575,7 +6575,7 @@ msgstr ""
 
 #: reference/introduction.rst:6
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: reference/introduction.rst:8
 msgid ""
@@ -7302,7 +7302,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:478 reference/lexical_analysis.rst:511
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: reference/lexical_analysis.rst:480
 msgid "``\\newline``"
@@ -7458,7 +7458,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:523
 msgid "Notes:"
-msgstr ""
+msgstr "Notes : "
 
 #: reference/lexical_analysis.rst:526
 msgid "As in Standard C, up to three octal digits are accepted."
@@ -8019,7 +8019,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:383
 msgid "The :keyword:`del` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`del`"
 
 # 184528231d394424ac43191e923ac751
 #: reference/simple_stmts.rst:393
@@ -8333,7 +8333,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:710
 msgid "Examples::"
-msgstr ""
+msgstr "Exemples ::"
 
 #: reference/simple_stmts.rst:718
 msgid ""

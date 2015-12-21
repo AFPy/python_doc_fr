@@ -720,7 +720,7 @@ msgstr "2.2.0a2"
 #: library/__future__.rst:75 library/__future__.rst:78
 #: library/__future__.rst:84 library/__future__.rst:87
 msgid "3.0"
-msgstr ""
+msgstr "3.0"
 
 #: library/__future__.rst:75
 msgid ":pep:`238`: *Changing the Division Operator*"
@@ -744,7 +744,7 @@ msgstr ""
 
 #: library/__future__.rst:81
 msgid "2.6"
-msgstr ""
+msgstr "2.6"
 
 #: library/__future__.rst:81
 msgid ":pep:`343`: *The \"with\" Statement*"
@@ -1664,7 +1664,7 @@ msgstr ""
 
 #: library/argparse.rst:114 library/optparse.rst:1314
 msgid "Parsing arguments"
-msgstr ""
+msgstr "Analyse des arguments"
 
 #: library/argparse.rst:116
 msgid ""
@@ -3197,7 +3197,7 @@ msgstr ""
 #: library/stdtypes.rst:2043 library/struct.rst:161 library/subprocess.rst:1104
 #: library/time.rst:370 library/webbrowser.rst:102
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: library/array.rst:20 library/functions.rst:866 library/string.rst:401
 msgid "``'b'``"
@@ -3265,7 +3265,7 @@ msgstr ""
 #: library/time.rst:403 library/webbrowser.rst:116 library/webbrowser.rst:118
 #: library/webbrowser.rst:120
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
 #: library/array.rst:26
 msgid "``'h'``"
@@ -3343,7 +3343,7 @@ msgstr ""
 #: library/stdtypes.rst:309 library/stdtypes.rst:1072 library/stdtypes.rst:2053
 #: library/stdtypes.rst:2055 library/time.rst:406 library/webbrowser.rst:136
 msgid "\\(2)"
-msgstr ""
+msgstr "\\(2)"
 
 #: library/array.rst:40
 msgid "``'Q'``"
@@ -3379,7 +3379,7 @@ msgstr ""
 #: library/subprocess.rst:925 library/time.rst:452 library/tkinter.rst:227
 #: library/tkinter.ttk.rst:826 library/webbrowser.rst:151
 msgid "Notes:"
-msgstr ""
+msgstr "Notes : "
 
 #: library/array.rst:50
 msgid ""
@@ -6633,7 +6633,7 @@ msgstr ""
 #: library/cgi.rst:27 library/importlib.rst:14 library/intro.rst:5
 #: library/multiprocessing.rst:9 library/sqlite3.rst:681 library/turtle.rst:15
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: library/cgi.rst:31
 msgid ""
@@ -13768,7 +13768,7 @@ msgstr ""
 #: library/socket.rst:145 library/subprocess.rst:563 library/xdrlib.rst:256
 #: library/xml.dom.rst:805 library/xml.etree.elementtree.rst:945
 msgid "Exceptions"
-msgstr ""
+msgstr "Exceptions"
 
 #: library/configparser.rst:1207
 msgid "Base class for all other :mod:`configparser` exceptions."
@@ -13951,7 +13951,7 @@ msgstr ""
 
 #: library/contextlib.rst:17
 msgid "Utilities"
-msgstr ""
+msgstr "Utilitaires"
 
 #: library/contextlib.rst:19
 msgid "Functions and classes provided:"
@@ -18410,7 +18410,7 @@ msgstr ""
 
 #: library/curses.rst:744
 msgid "Default value"
-msgstr ""
+msgstr "Valeur par défaut"
 
 #: library/curses.rst:746
 msgid "*ls*"
@@ -21803,7 +21803,7 @@ msgstr ""
 #: library/struct.rst:181 library/struct.rst:183 library/time.rst:409
 #: library/time.rst:420 library/webbrowser.rst:138 library/webbrowser.rst:140
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 #: library/datetime.rst:477
 msgid "``date1 < date2``"
@@ -22781,7 +22781,7 @@ msgstr ""
 
 #: library/datetime.rst:1554
 msgid "or ::"
-msgstr ""
+msgstr "ou ::"
 
 #: library/datetime.rst:1566
 msgid ""
@@ -37808,7 +37808,7 @@ msgstr ""
 #: library/functions.rst:510 library/pkgutil.rst:179 library/subprocess.rst:49
 #: library/subprocess.rst:92 library/subprocess.rst:141
 msgid "Examples::"
-msgstr ""
+msgstr "Exemples ::"
 
 #: library/functions.rst:523
 msgid "The float type is described in :ref:`typesnumeric`."
@@ -45082,7 +45082,7 @@ msgstr ""
 
 #: library/idle.rst:284
 msgid "Strings"
-msgstr ""
+msgstr "Les chaînes de caractères"
 
 #: library/idle.rst:284
 msgid "green"
@@ -50766,7 +50766,7 @@ msgstr ""
 
 #: library/itertools.rst:51
 msgid "iterable"
-msgstr ""
+msgstr "itérable"
 
 #: library/itertools.rst:51
 msgid "``chain.from_iterable(['ABC', 'DEF']) --> A B C D E F``"
@@ -63382,7 +63382,7 @@ msgstr ""
 
 #: library/multiprocessing.rst:2403 library/socket.rst:836 library/sys.rst:812
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: library/multiprocessing.rst:2405
 msgid "Since Windows lacks :func:`os.fork` it has a few extra restrictions:"
@@ -76152,7 +76152,7 @@ msgstr ""
 
 #: library/pyclbr.rst:44
 msgid "Class Objects"
-msgstr ""
+msgstr "Les objets classe"
 
 #: library/pyclbr.rst:46
 msgid ""
@@ -83291,7 +83291,7 @@ msgstr ""
 
 #: library/site.rst:228
 msgid ":pep:`370` -- Per user site-packages directory"
-msgstr ""
+msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
 
 #: library/smtpd.rst:2
 msgid ":mod:`smtpd` --- SMTP Server"
@@ -87335,12 +87335,12 @@ msgstr ""
 #: library/ssl.rst:192 library/ssl.rst:193 library/ssl.rst:194
 #: library/ssl.rst:195
 msgid "yes"
-msgstr ""
+msgstr "oui"
 
 #: library/ssl.rst:192 library/ssl.rst:193 library/ssl.rst:194
 #: library/ssl.rst:195
 msgid "no"
-msgstr ""
+msgstr "non"
 
 #: library/ssl.rst:193
 msgid "*SSLv3*"
@@ -90267,7 +90267,7 @@ msgstr ""
 
 #: library/stdtypes.rst:1112
 msgid "Lists"
-msgstr ""
+msgstr "Les listes"
 
 #: library/stdtypes.rst:1116
 msgid ""
@@ -92755,7 +92755,7 @@ msgstr ""
 
 #: library/stdtypes.rst:3439
 msgid "Code Objects"
-msgstr ""
+msgstr "Objets Code"
 
 #: library/stdtypes.rst:3447
 msgid ""
@@ -93223,7 +93223,7 @@ msgstr ""
 
 #: library/string.rst:251
 msgid "Some examples::"
-msgstr ""
+msgstr "Quelques exemples ::"
 
 #: library/string.rst:257
 msgid ""
@@ -94496,7 +94496,7 @@ msgstr ""
 
 #: library/struct.rst:353
 msgid "Classes"
-msgstr ""
+msgstr "Classes"
 
 #: library/struct.rst:355
 msgid "The :mod:`struct` module also defines the following type:"
@@ -96951,7 +96951,7 @@ msgstr ""
 
 #: library/sys.rst:525
 msgid "Platform"
-msgstr ""
+msgstr "Plateforme"
 
 #: library/sys.rst:527
 msgid ":const:`0 (VER_PLATFORM_WIN32s)`"
@@ -111284,7 +111284,7 @@ msgstr ""
 #: library/unittest.rst:1093 library/unittest.rst:1096
 #: library/unittest.rst:1099 library/unittest.rst:1102
 msgid "3.1"
-msgstr ""
+msgstr "3.1"
 
 #: library/unittest.rst:708
 msgid ":meth:`assertIsNot(a, b) <TestCase.assertIsNot>`"
@@ -126802,7 +126802,7 @@ msgstr ""
 
 #: library/xmlrpc.client.rst:223
 msgid "DateTime Objects"
-msgstr ""
+msgstr "Objets DateTime"
 
 #: library/xmlrpc.client.rst:225
 msgid ""

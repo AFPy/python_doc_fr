@@ -3595,7 +3595,7 @@ msgstr ""
 # 2fdd183bed9b40828779b0aff8573c67
 #: faq/library.rst:452
 msgid "Input and Output"
-msgstr ""
+msgstr "Les entrées/sorties"
 
 # 3c86245db8d9482d8f9afd933994640b
 #: faq/library.rst:455

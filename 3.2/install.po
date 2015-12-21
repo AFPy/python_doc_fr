@@ -1383,7 +1383,7 @@ msgstr ""
 # 07f5091cff7f48d5a1680e7df28674e7
 #: install/index.rst:758 install/index.rst:770
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 # c381729f48ab4741b05a301aebaec213
 #: install/index.rst:761

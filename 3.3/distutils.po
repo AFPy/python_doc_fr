@@ -2593,7 +2593,7 @@ msgstr ""
 #: distutils/builtdist.rst:73 distutils/setupscript.rst:562
 #: distutils/sourcedist.rst:25
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: distutils/builtdist.rst:75 distutils/sourcedist.rst:29
 msgid "``gztar``"
@@ -2619,7 +2619,7 @@ msgstr ""
 #: distutils/setupscript.rst:568 distutils/setupscript.rst:570
 #: distutils/setupscript.rst:573 distutils/setupscript.rst:575
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 #: distutils/builtdist.rst:81 distutils/sourcedist.rst:38
 msgid "``tar``"
@@ -2694,7 +2694,7 @@ msgstr ""
 #: distutils/builtdist.rst:98 distutils/setupscript.rst:597
 #: distutils/sourcedist.rst:41
 msgid "Notes:"
-msgstr ""
+msgstr "Notes : "
 
 #: distutils/builtdist.rst:101 distutils/sourcedist.rst:47
 msgid "default on Unix"
@@ -2906,7 +2906,7 @@ msgstr ""
 
 #: distutils/builtdist.rst:214
 msgid "Release"
-msgstr ""
+msgstr "Publication"
 
 #: distutils/builtdist.rst:214
 msgid ":option:`release`"
@@ -3985,7 +3985,7 @@ msgstr ""
 
 #: distutils/introduction.rst:47
 msgid "A Simple Example"
-msgstr ""
+msgstr "Un exemple simple"
 
 #: distutils/introduction.rst:49
 msgid ""
@@ -5193,7 +5193,7 @@ msgstr ""
 
 #: distutils/setupscript.rst:564 distutils/setupscript.rst:578
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
 #: distutils/setupscript.rst:566
 msgid "``version``"

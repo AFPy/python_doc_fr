@@ -3044,7 +3044,7 @@ msgstr ""
 #: distutils/builtdist.rst:73 distutils/setupscript.rst:560
 #: distutils/sourcedist.rst:25
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 # 0fc5290b5b164a70b9a5e0f9902ff6ae
 # 8e01b957b1a34742b69f58e066885969
@@ -3085,7 +3085,7 @@ msgstr ""
 #: distutils/setupscript.rst:566 distutils/setupscript.rst:568
 #: distutils/setupscript.rst:571 distutils/setupscript.rst:573
 msgid "\\(3)"
-msgstr ""
+msgstr "\\(3)"
 
 # 445b7d51686f47a1b313737add3f9b63
 # cff96191c7074f82ab1d6aa732f0b84e
@@ -3191,7 +3191,7 @@ msgstr ""
 #: distutils/builtdist.rst:98 distutils/setupscript.rst:595
 #: distutils/sourcedist.rst:41
 msgid "Notes:"
-msgstr ""
+msgstr "Notes : "
 
 # f40cda2a890d47c8a23ec61e78c1bdb4
 # aca0cf25ca174119aed5eeba33f54faf
@@ -3453,7 +3453,7 @@ msgstr ""
 # b5206a1298324dd39df373b0a7c8aefc
 #: distutils/builtdist.rst:214
 msgid "Release"
-msgstr ""
+msgstr "Publication"
 
 # a54289a78dc0439b9734eca7aeede197
 #: distutils/builtdist.rst:214
@@ -4667,7 +4667,7 @@ msgstr ""
 # d635de6dcdc24aef86072e30d6662261
 #: distutils/introduction.rst:47
 msgid "A Simple Example"
-msgstr ""
+msgstr "Un exemple simple"
 
 # c6e6629fdb434a2e839732182c18614d
 #: distutils/introduction.rst:49
@@ -6047,7 +6047,7 @@ msgstr ""
 # 742486f8adb6408493bc2dc8054bf94f
 #: distutils/setupscript.rst:562 distutils/setupscript.rst:576
 msgid "\\(1)"
-msgstr ""
+msgstr "\\(1)"
 
 # 18e737ce770f457589f4ca85dacde439
 #: distutils/setupscript.rst:564

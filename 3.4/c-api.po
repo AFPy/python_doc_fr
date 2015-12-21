@@ -2107,7 +2107,7 @@ msgstr ""
 #: c-api/buffer.rst:324 c-api/buffer.rst:326 c-api/buffer.rst:328
 #: c-api/buffer.rst:330 c-api/buffer.rst:332 c-api/buffer.rst:334
 msgid "yes"
-msgstr ""
+msgstr "oui"
 
 #: c-api/buffer.rst:274 c-api/buffer.rst:320 c-api/buffer.rst:322
 msgid "if needed"

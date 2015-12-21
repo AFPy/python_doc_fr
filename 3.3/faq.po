@@ -3102,7 +3102,7 @@ msgstr ""
 
 #: faq/library.rst:454
 msgid "Input and Output"
-msgstr ""
+msgstr "Les entrées/sorties"
 
 #: faq/library.rst:457
 msgid "How do I delete a file? (And other file questions...)"
