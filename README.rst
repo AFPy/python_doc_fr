@@ -10,7 +10,6 @@ Votre aide est la bienvenue que ce soit pour maintenir les traductions
 
 =============== ====== ====== ====== ====== ======
                    2.7    3.2    3.3    3.4    3.5
---------------- ------ ------ ------ ------ ------
        tutorial    97%    94%    98%   100%   100%
        glossary    73%    79%    78%    78%    68%
        contents   100%   100%   100%   100%   100%
