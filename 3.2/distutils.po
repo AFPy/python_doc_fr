@@ -3362,7 +3362,7 @@ msgstr ""
 # e8eebd088c7c4b089cb402b98d378db6
 #: distutils/builtdist.rst:189
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 # 24ea1e4f80d94bad874475f13aa73186
 #: distutils/builtdist.rst:189

@@ -11,23 +11,8 @@ https://bitbucket.org/izi/polib/issues/71/
 Hope they'll fix it.
 """
 
-import os
 import glob
 import polib
-from collections import defaultdict
-
-
-def group_by_filename(po_files):
-    """
-    For each po file in */*.po, aggregate them by directory name, like:
-
-    >>> group_by_filename(['2.7/foo.po', '2.7/bar.po', '3.2/foo.po'])
-    [['2.7/bar.po'], ['2.7/foo.po', '3.2/foo.po']]
-    """
-    po_per_version = defaultdict(list)
-    for po_file in po_files:
-        po_per_version[os.path.basename(po_file)].append(po_file)
-    return sorted(po_per_version.values())
 
 
 def merge_po_file(po_files):
@@ -39,7 +24,8 @@ def merge_po_file(po_files):
     for po_file in po_files:
         po_file = polib.pofile(po_file)
         for entry in po_file:
-            if entry.msgid not in known_translations:
+            if ((entry.msgid not in known_translations and
+                 'fuzzy' not in entry.flags)):
                 known_translations[entry.msgid] = entry.msgstr
     # Propagate them
     for po_file in po_files:

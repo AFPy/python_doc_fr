@@ -4533,7 +4533,7 @@ msgstr "Notes"
 
 #: c-api/exceptions.rst:653
 msgid ":c:data:`PyExc_BaseException`"
-msgstr ":cdata:`PyExc_BaseException`"
+msgstr ":c:data:`PyExc_BaseException`"
 
 #: c-api/exceptions.rst:653
 msgid ":exc:`BaseException`"
@@ -4546,7 +4546,7 @@ msgstr "\\(1)"
 
 #: c-api/exceptions.rst:655
 msgid ":c:data:`PyExc_Exception`"
-msgstr ":cdata:`PyExc_Exception`"
+msgstr ":c:data:`PyExc_Exception`"
 
 #: c-api/exceptions.rst:655
 msgid ":exc:`Exception`"
@@ -4554,7 +4554,7 @@ msgstr ":exc:`Exception`"
 
 #: c-api/exceptions.rst:657
 msgid ":c:data:`PyExc_ArithmeticError`"
-msgstr ":cdata:`PyExc_ArithmeticError`"
+msgstr ":c:data:`PyExc_ArithmeticError`"
 
 #: c-api/exceptions.rst:657
 msgid ":exc:`ArithmeticError`"
@@ -4562,7 +4562,7 @@ msgstr ":exc:`ArithmeticError`"
 
 #: c-api/exceptions.rst:659
 msgid ":c:data:`PyExc_LookupError`"
-msgstr ":cdata:`PyExc_LookupError`"
+msgstr ":c:data:`PyExc_LookupError`"
 
 #: c-api/exceptions.rst:659
 msgid ":exc:`LookupError`"
@@ -4570,7 +4570,7 @@ msgstr ":exc:`LookupError`"
 
 #: c-api/exceptions.rst:661
 msgid ":c:data:`PyExc_AssertionError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_AssertionError`"
 
 #: c-api/exceptions.rst:661
 msgid ":exc:`AssertionError`"
@@ -4578,7 +4578,7 @@ msgstr ":exc:`AssertionError`"
 
 #: c-api/exceptions.rst:663
 msgid ":c:data:`PyExc_AttributeError`"
-msgstr ":cdata:`PyExc_AttributeError`"
+msgstr ":c:data:`PyExc_AttributeError`"
 
 #: c-api/exceptions.rst:663
 msgid ":exc:`AttributeError`"
@@ -4586,79 +4586,79 @@ msgstr ":exc:`AttributeError`"
 
 #: c-api/exceptions.rst:665
 msgid ":c:data:`PyExc_BlockingIOError`"
-msgstr ":cdata:`PyExc_IOError`"
+msgstr ":c:data:`PyExc_BlockingIOError`"
 
 #: c-api/exceptions.rst:665
 msgid ":exc:`BlockingIOError`"
-msgstr ":exc:`IOError`"
+msgstr ":exc:`BlockingIOError`"
 
 #: c-api/exceptions.rst:667
 msgid ":c:data:`PyExc_BrokenPipeError`"
-msgstr ":cdata:`PyExc_LookupError`"
+msgstr ":c:data:`PyExc_BrokenPipeError`"
 
 #: c-api/exceptions.rst:667
 msgid ":exc:`BrokenPipeError`"
-msgstr ":exc:`LookupError`"
+msgstr ":exc:`BrokenPipeError`"
 
 #: c-api/exceptions.rst:669
 msgid ":c:data:`PyExc_ChildProcessError`"
-msgstr ":cdata:`PyExc_WindowsError`"
+msgstr ":c:data:`PyExc_ChildProcessError`"
 
 #: c-api/exceptions.rst:669
 msgid ":exc:`ChildProcessError`"
-msgstr ":exc:`WindowsError`"
+msgstr ":exc:`ChildProcessError`"
 
 #: c-api/exceptions.rst:671
 msgid ":c:data:`PyExc_ConnectionError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_ConnectionError`"
 
 #: c-api/exceptions.rst:671
 msgid ":exc:`ConnectionError`"
-msgstr ":exc:`AssertionError`"
+msgstr ":exc:`ConnectionError`"
 
 #: c-api/exceptions.rst:673
 msgid ":c:data:`PyExc_ConnectionAbortedError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_ConnectionAbortedError`"
 
 #: c-api/exceptions.rst:673
 msgid ":exc:`ConnectionAbortedError`"
-msgstr ":exc:`AssertionError`"
+msgstr ":exc:`ConnectionAbortedError`"
 
 #: c-api/exceptions.rst:675
 msgid ":c:data:`PyExc_ConnectionRefusedError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_ConnectionRefusedError`"
 
 #: c-api/exceptions.rst:675
 msgid ":exc:`ConnectionRefusedError`"
-msgstr ":exc:`AssertionError`"
+msgstr ":exc:`ConnectionRefusedError`"
 
 #: c-api/exceptions.rst:677
 msgid ":c:data:`PyExc_ConnectionResetError`"
-msgstr ":cdata:`PyExc_EnvironmentError`"
+msgstr ":c:data:`PyExc_ConnectionResetError`"
 
 #: c-api/exceptions.rst:677
 msgid ":exc:`ConnectionResetError`"
-msgstr ":exc:`EnvironmentError`"
+msgstr ":exc:`ConnectionResetError`"
 
 #: c-api/exceptions.rst:679
 msgid ":c:data:`PyExc_FileExistsError`"
-msgstr ":cdata:`PyExc_IndexError`"
+msgstr ":c:data:`PyExc_FileExistsError`"
 
 #: c-api/exceptions.rst:679
 msgid ":exc:`FileExistsError`"
-msgstr ":exc:`IndexError`"
+msgstr ":exc:`FileExistsError`"
 
 #: c-api/exceptions.rst:681
 msgid ":c:data:`PyExc_FileNotFoundError`"
-msgstr ":cdata:`PyExc_FloatingPointError`"
+msgstr ":c:data:`PyExc_FileNotFoundError`"
 
 #: c-api/exceptions.rst:681
 msgid ":exc:`FileNotFoundError`"
-msgstr ":exc:`FloatingPointError`"
+msgstr ":exc:`FileNotFoundError`"
 
 #: c-api/exceptions.rst:683
 msgid ":c:data:`PyExc_EOFError`"
-msgstr ":cdata:`PyExc_EOFError`"
+msgstr ":c:data:`PyExc_EOFError`"
 
 #: c-api/exceptions.rst:683
 msgid ":exc:`EOFError`"
@@ -4666,7 +4666,7 @@ msgstr ":exc:`EOFError`"
 
 #: c-api/exceptions.rst:685
 msgid ":c:data:`PyExc_FloatingPointError`"
-msgstr ":cdata:`PyExc_FloatingPointError`"
+msgstr ":c:data:`PyExc_FloatingPointError`"
 
 #: c-api/exceptions.rst:685
 msgid ":exc:`FloatingPointError`"
@@ -4674,7 +4674,7 @@ msgstr ":exc:`FloatingPointError`"
 
 #: c-api/exceptions.rst:687
 msgid ":c:data:`PyExc_ImportError`"
-msgstr ":cdata:`PyExc_ImportError`"
+msgstr ":c:data:`PyExc_ImportError`"
 
 #: c-api/exceptions.rst:687
 msgid ":exc:`ImportError`"
@@ -4682,7 +4682,7 @@ msgstr ":exc:`ImportError`"
 
 #: c-api/exceptions.rst:689
 msgid ":c:data:`PyExc_IndexError`"
-msgstr ":cdata:`PyExc_IndexError`"
+msgstr ":c:data:`PyExc_IndexError`"
 
 #: c-api/exceptions.rst:689
 msgid ":exc:`IndexError`"
@@ -4690,23 +4690,23 @@ msgstr ":exc:`IndexError`"
 
 #: c-api/exceptions.rst:691
 msgid ":c:data:`PyExc_InterruptedError`"
-msgstr ":cdata:`PyExc_AttributeError`"
+msgstr ":c:data:`PyExc_InterruptedError`"
 
 #: c-api/exceptions.rst:691
 msgid ":exc:`InterruptedError`"
-msgstr ":exc:`AttributeError`"
+msgstr ":exc:`InterruptedError`"
 
 #: c-api/exceptions.rst:693
 msgid ":c:data:`PyExc_IsADirectoryError`"
-msgstr ":cdata:`PyExc_MemoryError`"
+msgstr ":c:data:`PyExc_IsADirectoryError`"
 
 #: c-api/exceptions.rst:693
 msgid ":exc:`IsADirectoryError`"
-msgstr ":exc:`MemoryError`"
+msgstr ":exc:`IsADirectoryError`"
 
 #: c-api/exceptions.rst:695
 msgid ":c:data:`PyExc_KeyError`"
-msgstr ":cdata:`PyExc_KeyError`"
+msgstr ":c:data:`PyExc_KeyError`"
 
 #: c-api/exceptions.rst:695
 msgid ":exc:`KeyError`"
@@ -4714,7 +4714,7 @@ msgstr ":exc:`KeyError`"
 
 #: c-api/exceptions.rst:697
 msgid ":c:data:`PyExc_KeyboardInterrupt`"
-msgstr ":cdata:`PyExc_KeyboardInterrupt`"
+msgstr ":c:data:`PyExc_KeyboardInterrupt`"
 
 #: c-api/exceptions.rst:697
 msgid ":exc:`KeyboardInterrupt`"
@@ -4722,7 +4722,7 @@ msgstr ":exc:`KeyboardInterrupt`"
 
 #: c-api/exceptions.rst:699
 msgid ":c:data:`PyExc_MemoryError`"
-msgstr ":cdata:`PyExc_MemoryError`"
+msgstr ":c:data:`PyExc_MemoryError`"
 
 #: c-api/exceptions.rst:699
 msgid ":exc:`MemoryError`"
@@ -4730,7 +4730,7 @@ msgstr ":exc:`MemoryError`"
 
 #: c-api/exceptions.rst:701
 msgid ":c:data:`PyExc_NameError`"
-msgstr ":cdata:`PyExc_NameError`"
+msgstr ":c:data:`PyExc_NameError`"
 
 #: c-api/exceptions.rst:701
 msgid ":exc:`NameError`"
@@ -4738,15 +4738,15 @@ msgstr ":exc:`NameError`"
 
 #: c-api/exceptions.rst:703
 msgid ":c:data:`PyExc_NotADirectoryError`"
-msgstr ":cdata:`PyExc_MemoryError`"
+msgstr ":c:data:`PyExc_NotADirectoryError`"
 
 #: c-api/exceptions.rst:703
 msgid ":exc:`NotADirectoryError`"
-msgstr ":exc:`MemoryError`"
+msgstr ":exc:`NotADirectoryError`"
 
 #: c-api/exceptions.rst:705
 msgid ":c:data:`PyExc_NotImplementedError`"
-msgstr ":cdata:`PyExc_NotImplementedError`"
+msgstr ":c:data:`PyExc_NotImplementedError`"
 
 #: c-api/exceptions.rst:705
 msgid ":exc:`NotImplementedError`"
@@ -4754,7 +4754,7 @@ msgstr ":exc:`NotImplementedError`"
 
 #: c-api/exceptions.rst:707
 msgid ":c:data:`PyExc_OSError`"
-msgstr ":cdata:`PyExc_OSError`"
+msgstr ":c:data:`PyExc_OSError`"
 
 #: c-api/exceptions.rst:707
 msgid ":exc:`OSError`"
@@ -4762,7 +4762,7 @@ msgstr ":exc:`OSError`"
 
 #: c-api/exceptions.rst:709
 msgid ":c:data:`PyExc_OverflowError`"
-msgstr ":cdata:`PyExc_OverflowError`"
+msgstr ":c:data:`PyExc_OverflowError`"
 
 #: c-api/exceptions.rst:709
 msgid ":exc:`OverflowError`"
@@ -4770,23 +4770,23 @@ msgstr ":exc:`OverflowError`"
 
 #: c-api/exceptions.rst:711
 msgid ":c:data:`PyExc_PermissionError`"
-msgstr ":cdata:`PyExc_ZeroDivisionError`"
+msgstr ":c:data:`PyExc_PermissionError`"
 
 #: c-api/exceptions.rst:711
 msgid ":exc:`PermissionError`"
-msgstr ":exc:`ZeroDivisionError`"
+msgstr ":exc:`PermissionError`"
 
 #: c-api/exceptions.rst:713
 msgid ":c:data:`PyExc_ProcessLookupError`"
-msgstr ":cdata:`PyExc_LookupError`"
+msgstr ":c:data:`PyExc_ProcessLookupError`"
 
 #: c-api/exceptions.rst:713
 msgid ":exc:`ProcessLookupError`"
-msgstr ":exc:`LookupError`"
+msgstr ":exc:`ProcessLookupError`"
 
 #: c-api/exceptions.rst:715
 msgid ":c:data:`PyExc_ReferenceError`"
-msgstr ":cdata:`PyExc_ReferenceError`"
+msgstr ":c:data:`PyExc_ReferenceError`"
 
 #: c-api/exceptions.rst:715
 msgid ":exc:`ReferenceError`"
@@ -4798,7 +4798,7 @@ msgstr "\\(2)"
 
 #: c-api/exceptions.rst:717
 msgid ":c:data:`PyExc_RuntimeError`"
-msgstr ":cdata:`PyExc_RuntimeError`"
+msgstr ":c:data:`PyExc_RuntimeError`"
 
 #: c-api/exceptions.rst:717
 msgid ":exc:`RuntimeError`"
@@ -4806,7 +4806,7 @@ msgstr ":exc:`RuntimeError`"
 
 #: c-api/exceptions.rst:719
 msgid ":c:data:`PyExc_SyntaxError`"
-msgstr ":cdata:`PyExc_SyntaxError`"
+msgstr ":c:data:`PyExc_SyntaxError`"
 
 #: c-api/exceptions.rst:719
 msgid ":exc:`SyntaxError`"
@@ -4814,7 +4814,7 @@ msgstr ":exc:`SyntaxError`"
 
 #: c-api/exceptions.rst:721
 msgid ":c:data:`PyExc_SystemError`"
-msgstr ":cdata:`PyExc_SystemError`"
+msgstr ":c:data:`PyExc_SystemError`"
 
 #: c-api/exceptions.rst:721
 msgid ":exc:`SystemError`"
@@ -4822,15 +4822,15 @@ msgstr ":exc:`SystemError`"
 
 #: c-api/exceptions.rst:723
 msgid ":c:data:`PyExc_TimeoutError`"
-msgstr ":cdata:`PyExc_ImportError`"
+msgstr ":c:data:`PyExc_TimeoutError`"
 
 #: c-api/exceptions.rst:723
 msgid ":exc:`TimeoutError`"
-msgstr ":exc:`ImportError`"
+msgstr ":exc:`TimeoutError`"
 
 #: c-api/exceptions.rst:725
 msgid ":c:data:`PyExc_SystemExit`"
-msgstr ":cdata:`PyExc_SystemExit`"
+msgstr ":c:data:`PyExc_SystemExit`"
 
 #: c-api/exceptions.rst:725
 msgid ":exc:`SystemExit`"
@@ -4838,7 +4838,7 @@ msgstr ":exc:`SystemExit`"
 
 #: c-api/exceptions.rst:727
 msgid ":c:data:`PyExc_TypeError`"
-msgstr ":cdata:`PyExc_TypeError`"
+msgstr ":c:data:`PyExc_TypeError`"
 
 #: c-api/exceptions.rst:727
 msgid ":exc:`TypeError`"
@@ -4846,7 +4846,7 @@ msgstr ":exc:`TypeError`"
 
 #: c-api/exceptions.rst:729
 msgid ":c:data:`PyExc_ValueError`"
-msgstr ":cdata:`PyExc_ValueError`"
+msgstr ":c:data:`PyExc_ValueError`"
 
 #: c-api/exceptions.rst:729
 msgid ":exc:`ValueError`"
@@ -4854,7 +4854,7 @@ msgstr ":exc:`ValueError`"
 
 #: c-api/exceptions.rst:731
 msgid ":c:data:`PyExc_ZeroDivisionError`"
-msgstr ":cdata:`PyExc_ZeroDivisionError`"
+msgstr ":c:data:`PyExc_ZeroDivisionError`"
 
 #: c-api/exceptions.rst:731
 msgid ":exc:`ZeroDivisionError`"
@@ -4878,15 +4878,15 @@ msgstr ""
 
 #: c-api/exceptions.rst:750
 msgid ":c:data:`PyExc_EnvironmentError`"
-msgstr ":cdata:`PyExc_EnvironmentError`"
+msgstr ":c:data:`PyExc_EnvironmentError`"
 
 #: c-api/exceptions.rst:752
 msgid ":c:data:`PyExc_IOError`"
-msgstr ":cdata:`PyExc_IOError`"
+msgstr ":c:data:`PyExc_IOError`"
 
 #: c-api/exceptions.rst:754
 msgid ":c:data:`PyExc_WindowsError`"
-msgstr ":cdata:`PyExc_WindowsError`"
+msgstr ":c:data:`PyExc_WindowsError`"
 
 #: c-api/exceptions.rst:754
 msgid "\\(3)"
@@ -6826,7 +6826,7 @@ msgstr ""
 
 #: c-api/init.rst:1073
 msgid "Name"
-msgstr "Nom C"
+msgstr "Nom"
 
 #: c-api/init.rst:1073
 msgid "Value"

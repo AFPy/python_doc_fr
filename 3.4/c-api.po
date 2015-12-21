@@ -5015,9 +5015,8 @@ msgid "Notes"
 msgstr "Notes"
 
 #: c-api/exceptions.rst:688
-#, fuzzy
 msgid ":c:data:`PyExc_BaseException`"
-msgstr ":cdata:`PyExc_BaseException`"
+msgstr ":c:data:`PyExc_BaseException`"
 
 #: c-api/exceptions.rst:688
 msgid ":exc:`BaseException`"
@@ -5029,162 +5028,136 @@ msgid "\\(1)"
 msgstr "\\(1)"
 
 #: c-api/exceptions.rst:690
-#, fuzzy
 msgid ":c:data:`PyExc_Exception`"
-msgstr ":cdata:`PyExc_Exception`"
+msgstr ":c:data:`PyExc_Exception`"
 
 #: c-api/exceptions.rst:690
 msgid ":exc:`Exception`"
 msgstr ":exc:`Exception`"
 
 #: c-api/exceptions.rst:692
-#, fuzzy
 msgid ":c:data:`PyExc_ArithmeticError`"
-msgstr ":cdata:`PyExc_ArithmeticError`"
+msgstr ":c:data:`PyExc_ArithmeticError`"
 
 #: c-api/exceptions.rst:692
 msgid ":exc:`ArithmeticError`"
 msgstr ":exc:`ArithmeticError`"
 
 #: c-api/exceptions.rst:694
-#, fuzzy
 msgid ":c:data:`PyExc_LookupError`"
-msgstr ":cdata:`PyExc_LookupError`"
+msgstr ":c:data:`PyExc_LookupError`"
 
 #: c-api/exceptions.rst:694
 msgid ":exc:`LookupError`"
 msgstr ":exc:`LookupError`"
 
 #: c-api/exceptions.rst:696
-#, fuzzy
 msgid ":c:data:`PyExc_AssertionError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_AssertionError`"
 
 #: c-api/exceptions.rst:696
 msgid ":exc:`AssertionError`"
 msgstr ":exc:`AssertionError`"
 
 #: c-api/exceptions.rst:698
-#, fuzzy
 msgid ":c:data:`PyExc_AttributeError`"
-msgstr ":cdata:`PyExc_AttributeError`"
+msgstr ":c:data:`PyExc_AttributeError`"
 
 #: c-api/exceptions.rst:698
 msgid ":exc:`AttributeError`"
 msgstr ":exc:`AttributeError`"
 
 #: c-api/exceptions.rst:700
-#, fuzzy
 msgid ":c:data:`PyExc_BlockingIOError`"
-msgstr ":cdata:`PyExc_IOError`"
+msgstr ":c:data:`PyExc_BlockingIOError`"
 
 #: c-api/exceptions.rst:700
-#, fuzzy
 msgid ":exc:`BlockingIOError`"
-msgstr ":exc:`IOError`"
+msgstr ":exc:`BlockingIOError`"
 
 #: c-api/exceptions.rst:702
-#, fuzzy
 msgid ":c:data:`PyExc_BrokenPipeError`"
-msgstr ":cdata:`PyExc_LookupError`"
+msgstr ":c:data:`PyExc_BrokenPipeError`"
 
 #: c-api/exceptions.rst:702
-#, fuzzy
 msgid ":exc:`BrokenPipeError`"
-msgstr ":exc:`LookupError`"
+msgstr ":exc:`BrokenPipeError`"
 
 #: c-api/exceptions.rst:704
-#, fuzzy
 msgid ":c:data:`PyExc_ChildProcessError`"
-msgstr ":cdata:`PyExc_WindowsError`"
+msgstr ":c:data:`PyExc_ChildProcessError`"
 
 #: c-api/exceptions.rst:704
-#, fuzzy
 msgid ":exc:`ChildProcessError`"
-msgstr ":exc:`WindowsError`"
+msgstr ":exc:`ChildProcessError`"
 
 #: c-api/exceptions.rst:706
-#, fuzzy
 msgid ":c:data:`PyExc_ConnectionError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_ConnectionError`"
 
 #: c-api/exceptions.rst:706
-#, fuzzy
 msgid ":exc:`ConnectionError`"
-msgstr ":exc:`AssertionError`"
+msgstr ":exc:`ConnectionError`"
 
 #: c-api/exceptions.rst:708
-#, fuzzy
 msgid ":c:data:`PyExc_ConnectionAbortedError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_ConnectionAbortedError`"
 
 #: c-api/exceptions.rst:708
-#, fuzzy
 msgid ":exc:`ConnectionAbortedError`"
-msgstr ":exc:`AssertionError`"
+msgstr ":exc:`ConnectionAbortedError`"
 
 #: c-api/exceptions.rst:710
-#, fuzzy
 msgid ":c:data:`PyExc_ConnectionRefusedError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_ConnectionRefusedError`"
 
 #: c-api/exceptions.rst:710
-#, fuzzy
 msgid ":exc:`ConnectionRefusedError`"
-msgstr ":exc:`AssertionError`"
+msgstr ":exc:`ConnectionRefusedError`"
 
 #: c-api/exceptions.rst:712
-#, fuzzy
 msgid ":c:data:`PyExc_ConnectionResetError`"
-msgstr ":cdata:`PyExc_EnvironmentError`"
+msgstr ":c:data:`PyExc_ConnectionResetError`"
 
 #: c-api/exceptions.rst:712
-#, fuzzy
 msgid ":exc:`ConnectionResetError`"
-msgstr ":exc:`EnvironmentError`"
+msgstr ":exc:`ConnectionResetError`"
 
 #: c-api/exceptions.rst:714
-#, fuzzy
 msgid ":c:data:`PyExc_FileExistsError`"
-msgstr ":cdata:`PyExc_IndexError`"
+msgstr ":c:data:`PyExc_FileExistsError`"
 
 #: c-api/exceptions.rst:714
-#, fuzzy
 msgid ":exc:`FileExistsError`"
-msgstr ":exc:`IndexError`"
+msgstr ":exc:`FileExistsError`"
 
 #: c-api/exceptions.rst:716
-#, fuzzy
 msgid ":c:data:`PyExc_FileNotFoundError`"
-msgstr ":cdata:`PyExc_FloatingPointError`"
+msgstr ":c:data:`PyExc_FloatingPointError`"
 
 #: c-api/exceptions.rst:716
-#, fuzzy
 msgid ":exc:`FileNotFoundError`"
-msgstr ":exc:`FloatingPointError`"
+msgstr ":exc:`FileNotFoundError`"
 
 #: c-api/exceptions.rst:718
-#, fuzzy
 msgid ":c:data:`PyExc_EOFError`"
-msgstr ":cdata:`PyExc_EOFError`"
+msgstr ":c:data:`PyExc_EOFError`"
 
 #: c-api/exceptions.rst:718
 msgid ":exc:`EOFError`"
 msgstr ":exc:`EOFError`"
 
 #: c-api/exceptions.rst:720
-#, fuzzy
 msgid ":c:data:`PyExc_FloatingPointError`"
-msgstr ":cdata:`PyExc_FloatingPointError`"
+msgstr ":c:data:`PyExc_FloatingPointError`"
 
 #: c-api/exceptions.rst:720
 msgid ":exc:`FloatingPointError`"
 msgstr ":exc:`FloatingPointError`"
 
 #: c-api/exceptions.rst:722
-#, fuzzy
 msgid ":c:data:`PyExc_ImportError`"
-msgstr ":cdata:`PyExc_ImportError`"
+msgstr ":c:data:`PyExc_ImportError`"
 
 #: c-api/exceptions.rst:722
 msgid ":exc:`ImportError`"
@@ -5193,54 +5166,47 @@ msgstr ":exc:`ImportError`"
 #: c-api/exceptions.rst:724
 #, fuzzy
 msgid ":c:data:`PyExc_IndexError`"
-msgstr ":cdata:`PyExc_IndexError`"
+msgstr ":c:data:`PyExc_IndexError`"
 
 #: c-api/exceptions.rst:724
 msgid ":exc:`IndexError`"
 msgstr ":exc:`IndexError`"
 
 #: c-api/exceptions.rst:726
-#, fuzzy
 msgid ":c:data:`PyExc_InterruptedError`"
-msgstr ":cdata:`PyExc_AttributeError`"
+msgstr ":c:data:`PyExc_InterruptedError`"
 
 #: c-api/exceptions.rst:726
-#, fuzzy
 msgid ":exc:`InterruptedError`"
-msgstr ":exc:`AttributeError`"
+msgstr ":exc:`InterruptedError`"
 
 #: c-api/exceptions.rst:728
-#, fuzzy
 msgid ":c:data:`PyExc_IsADirectoryError`"
-msgstr ":cdata:`PyExc_MemoryError`"
+msgstr ":c:data:`PyExc_IsADirectoryError`"
 
 #: c-api/exceptions.rst:728
-#, fuzzy
 msgid ":exc:`IsADirectoryError`"
-msgstr ":exc:`MemoryError`"
+msgstr ":exc:`IsADirectoryError`"
 
 #: c-api/exceptions.rst:730
-#, fuzzy
 msgid ":c:data:`PyExc_KeyError`"
-msgstr ":cdata:`PyExc_KeyError`"
+msgstr ":c:data:`PyExc_KeyError`"
 
 #: c-api/exceptions.rst:730
 msgid ":exc:`KeyError`"
 msgstr ":exc:`KeyError`"
 
 #: c-api/exceptions.rst:732
-#, fuzzy
 msgid ":c:data:`PyExc_KeyboardInterrupt`"
-msgstr ":cdata:`PyExc_KeyboardInterrupt`"
+msgstr ":c:data:`PyExc_KeyboardInterrupt`"
 
 #: c-api/exceptions.rst:732
 msgid ":exc:`KeyboardInterrupt`"
 msgstr ":exc:`KeyboardInterrupt`"
 
 #: c-api/exceptions.rst:734
-#, fuzzy
 msgid ":c:data:`PyExc_MemoryError`"
-msgstr ":cdata:`PyExc_MemoryError`"
+msgstr ":c:data:`PyExc_MemoryError`"
 
 #: c-api/exceptions.rst:734
 msgid ":exc:`MemoryError`"
@@ -5249,73 +5215,63 @@ msgstr ":exc:`MemoryError`"
 #: c-api/exceptions.rst:736
 #, fuzzy
 msgid ":c:data:`PyExc_NameError`"
-msgstr ":cdata:`PyExc_NameError`"
+msgstr ":c:data:`PyExc_NameError`"
 
 #: c-api/exceptions.rst:736
 msgid ":exc:`NameError`"
 msgstr ":exc:`NameError`"
 
 #: c-api/exceptions.rst:738
-#, fuzzy
 msgid ":c:data:`PyExc_NotADirectoryError`"
-msgstr ":cdata:`PyExc_MemoryError`"
+msgstr ":c:data:`PyExc_NotADirectoryError`"
 
 #: c-api/exceptions.rst:738
-#, fuzzy
 msgid ":exc:`NotADirectoryError`"
-msgstr ":exc:`MemoryError`"
+msgstr ":exc:`NotADirectoryError`"
 
 #: c-api/exceptions.rst:740
-#, fuzzy
 msgid ":c:data:`PyExc_NotImplementedError`"
-msgstr ":cdata:`PyExc_NotImplementedError`"
+msgstr ":c:data:`PyExc_NotImplementedError`"
 
 #: c-api/exceptions.rst:740
 msgid ":exc:`NotImplementedError`"
 msgstr ":exc:`NotImplementedError`"
 
 #: c-api/exceptions.rst:742
-#, fuzzy
 msgid ":c:data:`PyExc_OSError`"
-msgstr ":cdata:`PyExc_OSError`"
+msgstr ":c:data:`PyExc_OSError`"
 
 #: c-api/exceptions.rst:742
 msgid ":exc:`OSError`"
 msgstr ":exc:`OSError`"
 
 #: c-api/exceptions.rst:744
-#, fuzzy
 msgid ":c:data:`PyExc_OverflowError`"
-msgstr ":cdata:`PyExc_OverflowError`"
+msgstr ":c:data:`PyExc_OverflowError`"
 
 #: c-api/exceptions.rst:744
 msgid ":exc:`OverflowError`"
 msgstr ":exc:`OverflowError`"
 
 #: c-api/exceptions.rst:746
-#, fuzzy
 msgid ":c:data:`PyExc_PermissionError`"
-msgstr ":cdata:`PyExc_ZeroDivisionError`"
+msgstr ":c:data:`PyExc_PermissionError`"
 
 #: c-api/exceptions.rst:746
-#, fuzzy
 msgid ":exc:`PermissionError`"
-msgstr ":exc:`ZeroDivisionError`"
+msgstr ":exc:`PermissionError`"
 
 #: c-api/exceptions.rst:748
-#, fuzzy
 msgid ":c:data:`PyExc_ProcessLookupError`"
-msgstr ":cdata:`PyExc_LookupError`"
+msgstr ":c:data:`PyExc_ProcessLookupError`"
 
 #: c-api/exceptions.rst:748
-#, fuzzy
 msgid ":exc:`ProcessLookupError`"
-msgstr ":exc:`LookupError`"
+msgstr ":exc:`ProcessLookupError`"
 
 #: c-api/exceptions.rst:750
-#, fuzzy
 msgid ":c:data:`PyExc_ReferenceError`"
-msgstr ":cdata:`PyExc_ReferenceError`"
+msgstr ":c:data:`PyExc_ReferenceError`"
 
 #: c-api/exceptions.rst:750
 msgid ":exc:`ReferenceError`"
@@ -5326,73 +5282,64 @@ msgid "\\(2)"
 msgstr "\\(2)"
 
 #: c-api/exceptions.rst:752
-#, fuzzy
 msgid ":c:data:`PyExc_RuntimeError`"
-msgstr ":cdata:`PyExc_RuntimeError`"
+msgstr ":c:data:`PyExc_RuntimeError`"
 
 #: c-api/exceptions.rst:752
 msgid ":exc:`RuntimeError`"
 msgstr ":exc:`RuntimeError`"
 
 #: c-api/exceptions.rst:754
-#, fuzzy
 msgid ":c:data:`PyExc_SyntaxError`"
-msgstr ":cdata:`PyExc_SyntaxError`"
+msgstr ":c:data:`PyExc_SyntaxError`"
 
 #: c-api/exceptions.rst:754
 msgid ":exc:`SyntaxError`"
 msgstr ":exc:`SyntaxError`"
 
 #: c-api/exceptions.rst:756
-#, fuzzy
 msgid ":c:data:`PyExc_SystemError`"
-msgstr ":cdata:`PyExc_SystemError`"
+msgstr ":c:data:`PyExc_SystemError`"
 
 #: c-api/exceptions.rst:756
 msgid ":exc:`SystemError`"
 msgstr ":exc:`SystemError`"
 
 #: c-api/exceptions.rst:758
-#, fuzzy
 msgid ":c:data:`PyExc_TimeoutError`"
-msgstr ":cdata:`PyExc_ImportError`"
+msgstr ":c:data:`PyExc_TimeoutError`"
 
 #: c-api/exceptions.rst:758
-#, fuzzy
 msgid ":exc:`TimeoutError`"
-msgstr ":exc:`ImportError`"
+msgstr ":exc:`TimeoutError`"
 
 #: c-api/exceptions.rst:760
-#, fuzzy
 msgid ":c:data:`PyExc_SystemExit`"
-msgstr ":cdata:`PyExc_SystemExit`"
+msgstr ":c:data:`PyExc_SystemExit`"
 
 #: c-api/exceptions.rst:760
 msgid ":exc:`SystemExit`"
 msgstr ":exc:`SystemExit`"
 
 #: c-api/exceptions.rst:762
-#, fuzzy
 msgid ":c:data:`PyExc_TypeError`"
-msgstr ":cdata:`PyExc_TypeError`"
+msgstr ":c:data:`PyExc_TypeError`"
 
 #: c-api/exceptions.rst:762
 msgid ":exc:`TypeError`"
 msgstr ":exc:`TypeError`"
 
 #: c-api/exceptions.rst:764
-#, fuzzy
 msgid ":c:data:`PyExc_ValueError`"
-msgstr ":cdata:`PyExc_ValueError`"
+msgstr ":c:data:`PyExc_ValueError`"
 
 #: c-api/exceptions.rst:764
 msgid ":exc:`ValueError`"
 msgstr ":exc:`ValueError`"
 
 #: c-api/exceptions.rst:766
-#, fuzzy
 msgid ":c:data:`PyExc_ZeroDivisionError`"
-msgstr ":cdata:`PyExc_ZeroDivisionError`"
+msgstr ":c:data:`PyExc_ZeroDivisionError`"
 
 #: c-api/exceptions.rst:766
 msgid ":exc:`ZeroDivisionError`"
@@ -5415,19 +5362,16 @@ msgid "These are compatibility aliases to :c:data:`PyExc_OSError`:"
 msgstr ""
 
 #: c-api/exceptions.rst:785
-#, fuzzy
 msgid ":c:data:`PyExc_EnvironmentError`"
-msgstr ":cdata:`PyExc_EnvironmentError`"
+msgstr ":c:data:`PyExc_EnvironmentError`"
 
 #: c-api/exceptions.rst:787
-#, fuzzy
 msgid ":c:data:`PyExc_IOError`"
-msgstr ":cdata:`PyExc_IOError`"
+msgstr ":c:data:`PyExc_IOError`"
 
 #: c-api/exceptions.rst:789
-#, fuzzy
 msgid ":c:data:`PyExc_WindowsError`"
-msgstr ":cdata:`PyExc_WindowsError`"
+msgstr ":c:data:`PyExc_WindowsError`"
 
 #: c-api/exceptions.rst:789
 msgid "\\(3)"
@@ -16849,7 +16793,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid ":c:data:`PyExc_StandardError`"
-#~ msgstr ":cdata:`PyExc_SyntaxError`"
+#~ msgstr ":c:data:`PyExc_SyntaxError`"
 
 #, fuzzy
 #~ msgid ":exc:`StandardError`"

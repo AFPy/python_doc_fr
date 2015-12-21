@@ -4743,7 +4743,7 @@ msgstr "Notes"
 # 2e0b8c8a08d742f18a9ebf956d3946d9
 #: c-api/exceptions.rst:588
 msgid ":c:data:`PyExc_BaseException`"
-msgstr ":cdata:`PyExc_BaseException`"
+msgstr ":c:data:`PyExc_BaseException`"
 
 # fbda648f352d449d9517cdcf3f324913
 #: c-api/exceptions.rst:588
@@ -4763,7 +4763,7 @@ msgstr "\\(1)"
 # 40d1f22350b641d2981828f2cec415de
 #: c-api/exceptions.rst:590
 msgid ":c:data:`PyExc_Exception`"
-msgstr ":cdata:`PyExc_Exception`"
+msgstr ":c:data:`PyExc_Exception`"
 
 # cf7082e56d65437dadb10fe7e89c87a1
 #: c-api/exceptions.rst:590
@@ -4773,7 +4773,7 @@ msgstr ":exc:`Exception`"
 # 973cc7bae03244e78fe07b6c9765dd09
 #: c-api/exceptions.rst:592
 msgid ":c:data:`PyExc_ArithmeticError`"
-msgstr ":cdata:`PyExc_ArithmeticError`"
+msgstr ":c:data:`PyExc_ArithmeticError`"
 
 # 547f64cc459e432e80683330a1d7a2b4
 #: c-api/exceptions.rst:592
@@ -4783,7 +4783,7 @@ msgstr ":exc:`ArithmeticError`"
 # 9bd9d4c40ebd47258f9e743d21785301
 #: c-api/exceptions.rst:594
 msgid ":c:data:`PyExc_LookupError`"
-msgstr ":cdata:`PyExc_LookupError`"
+msgstr ":c:data:`PyExc_LookupError`"
 
 # 417795b0925f4246a97349a29241f060
 #: c-api/exceptions.rst:594
@@ -4793,7 +4793,7 @@ msgstr ":exc:`LookupError`"
 # 8d79901ec0164a20841adad465efbc51
 #: c-api/exceptions.rst:596
 msgid ":c:data:`PyExc_AssertionError`"
-msgstr ":cdata:`PyExc_AssertionError`"
+msgstr ":c:data:`PyExc_AssertionError`"
 
 # 7c415bad65a94bc6a68a1038e19d6668
 #: c-api/exceptions.rst:596
@@ -4803,7 +4803,7 @@ msgstr ":exc:`AssertionError`"
 # af1726c520b348edacc64cea6d9be074
 #: c-api/exceptions.rst:598
 msgid ":c:data:`PyExc_AttributeError`"
-msgstr ":cdata:`PyExc_AttributeError`"
+msgstr ":c:data:`PyExc_AttributeError`"
 
 # 567072dc54c54e62a61396fe3dca1bac
 #: c-api/exceptions.rst:598
@@ -4813,7 +4813,7 @@ msgstr ":exc:`AttributeError`"
 # c093d3b0a8d9423eb4be6af6b407af53
 #: c-api/exceptions.rst:600
 msgid ":c:data:`PyExc_EOFError`"
-msgstr ":cdata:`PyExc_EOFError`"
+msgstr ":c:data:`PyExc_EOFError`"
 
 # 0a9895a80814438ba2392e3106eab155
 #: c-api/exceptions.rst:600
@@ -4823,7 +4823,7 @@ msgstr ":exc:`EOFError`"
 # 82114e2eef194e3b8fcad0c4fba93ce9
 #: c-api/exceptions.rst:602
 msgid ":c:data:`PyExc_EnvironmentError`"
-msgstr ":cdata:`PyExc_EnvironmentError`"
+msgstr ":c:data:`PyExc_EnvironmentError`"
 
 # 859468f996a74f1c95bdbbfb33bae39a
 #: c-api/exceptions.rst:602
@@ -4833,7 +4833,7 @@ msgstr ":exc:`EnvironmentError`"
 # 5413316b82024ed39c5106fe28229afc
 #: c-api/exceptions.rst:604
 msgid ":c:data:`PyExc_FloatingPointError`"
-msgstr ":cdata:`PyExc_FloatingPointError`"
+msgstr ":c:data:`PyExc_FloatingPointError`"
 
 # 202728e621b1476d8e16c591600b0f9b
 #: c-api/exceptions.rst:604
@@ -4843,7 +4843,7 @@ msgstr ":exc:`FloatingPointError`"
 # cb4f13424f19408aa9048d424cb566ee
 #: c-api/exceptions.rst:606
 msgid ":c:data:`PyExc_IOError`"
-msgstr ":cdata:`PyExc_IOError`"
+msgstr ":c:data:`PyExc_IOError`"
 
 # f1704727234a46bda5b176170fba0b54
 #: c-api/exceptions.rst:606
@@ -4853,7 +4853,7 @@ msgstr ":exc:`IOError`"
 # 28ab268b62cb4a66aee0547724685864
 #: c-api/exceptions.rst:608
 msgid ":c:data:`PyExc_ImportError`"
-msgstr ":cdata:`PyExc_ImportError`"
+msgstr ":c:data:`PyExc_ImportError`"
 
 # 3b27a580d82f4a47b6efcc82f2dc9e0d
 #: c-api/exceptions.rst:608
@@ -4863,7 +4863,7 @@ msgstr ":exc:`ImportError`"
 # ccfbd8b76eb6425283a5c4fd7e14562e
 #: c-api/exceptions.rst:610
 msgid ":c:data:`PyExc_IndexError`"
-msgstr ":cdata:`PyExc_IndexError`"
+msgstr ":c:data:`PyExc_IndexError`"
 
 # 8ceb69a2955648069fafe84bdaa4fbe0
 #: c-api/exceptions.rst:610
@@ -4873,7 +4873,7 @@ msgstr ":exc:`IndexError`"
 # a39ebb67f55f4b97a729f4f2602059d1
 #: c-api/exceptions.rst:612
 msgid ":c:data:`PyExc_KeyError`"
-msgstr ":cdata:`PyExc_KeyError`"
+msgstr ":c:data:`PyExc_KeyError`"
 
 # 45e82306be71494b94e885246bdd278f
 #: c-api/exceptions.rst:612
@@ -4883,7 +4883,7 @@ msgstr ":exc:`KeyError`"
 # b84a25de854a4ba7be477bd706290036
 #: c-api/exceptions.rst:614
 msgid ":c:data:`PyExc_KeyboardInterrupt`"
-msgstr ":cdata:`PyExc_KeyboardInterrupt`"
+msgstr ":c:data:`PyExc_KeyboardInterrupt`"
 
 # d733e3dd353d44e8b612e92c06041814
 #: c-api/exceptions.rst:614
@@ -4893,7 +4893,7 @@ msgstr ":exc:`KeyboardInterrupt`"
 # a1b65ab4785a4bf0b0479498cc501a64
 #: c-api/exceptions.rst:616
 msgid ":c:data:`PyExc_MemoryError`"
-msgstr ":cdata:`PyExc_MemoryError`"
+msgstr ":c:data:`PyExc_MemoryError`"
 
 # b7dcf4548596481ca25d60a587b20f57
 #: c-api/exceptions.rst:616
@@ -4903,7 +4903,7 @@ msgstr ":exc:`MemoryError`"
 # ea85899f50404163a933d6e0cbdd3678
 #: c-api/exceptions.rst:618
 msgid ":c:data:`PyExc_NameError`"
-msgstr ":cdata:`PyExc_NameError`"
+msgstr ":c:data:`PyExc_NameError`"
 
 # 9d9d88d7171b46938bd39a2b17df6e1f
 #: c-api/exceptions.rst:618
@@ -4913,7 +4913,7 @@ msgstr ":exc:`NameError`"
 # 92576b27d9ef4821ab7e20a1bc4a1a11
 #: c-api/exceptions.rst:620
 msgid ":c:data:`PyExc_NotImplementedError`"
-msgstr ":cdata:`PyExc_NotImplementedError`"
+msgstr ":c:data:`PyExc_NotImplementedError`"
 
 # 81f979618a67473097809178096fe90a
 #: c-api/exceptions.rst:620
@@ -4923,7 +4923,7 @@ msgstr ":exc:`NotImplementedError`"
 # 85d108cf4ac64e03aa351e762ede7492
 #: c-api/exceptions.rst:622
 msgid ":c:data:`PyExc_OSError`"
-msgstr ":cdata:`PyExc_OSError`"
+msgstr ":c:data:`PyExc_OSError`"
 
 # 4f7b58d016c9486289aa64521129e0b6
 #: c-api/exceptions.rst:622
@@ -4933,7 +4933,7 @@ msgstr ":exc:`OSError`"
 # 8fa9e634c2d14e61a6f8a1e8efc3e8f0
 #: c-api/exceptions.rst:624
 msgid ":c:data:`PyExc_OverflowError`"
-msgstr ":cdata:`PyExc_OverflowError`"
+msgstr ":c:data:`PyExc_OverflowError`"
 
 # 1b2be8a64f2346648f9116d90f931d24
 #: c-api/exceptions.rst:624
@@ -4943,7 +4943,7 @@ msgstr ":exc:`OverflowError`"
 # ee7110e68f6b4b828b1d139ef6674d12
 #: c-api/exceptions.rst:626
 msgid ":c:data:`PyExc_ReferenceError`"
-msgstr ":cdata:`PyExc_ReferenceError`"
+msgstr ":c:data:`PyExc_ReferenceError`"
 
 # e7163e7048364e919781a551c4bad647
 #: c-api/exceptions.rst:626
@@ -4958,7 +4958,7 @@ msgstr "\\(2)"
 # 2ef4aed512d140e6b1506b2a48599e7f
 #: c-api/exceptions.rst:628
 msgid ":c:data:`PyExc_RuntimeError`"
-msgstr ":cdata:`PyExc_RuntimeError`"
+msgstr ":c:data:`PyExc_RuntimeError`"
 
 # 63b032dff564426a9ba33d6e2bda211b
 #: c-api/exceptions.rst:628
@@ -4968,7 +4968,7 @@ msgstr ":exc:`RuntimeError`"
 # 95c184a7642243e4adf2c37968c87df2
 #: c-api/exceptions.rst:630
 msgid ":c:data:`PyExc_SyntaxError`"
-msgstr ":cdata:`PyExc_SyntaxError`"
+msgstr ":c:data:`PyExc_SyntaxError`"
 
 # 18e33b63c49443f4b09c21c2bb4e40a9
 #: c-api/exceptions.rst:630
@@ -4978,7 +4978,7 @@ msgstr ":exc:`SyntaxError`"
 # da2828efb7354335bf169aab6cdbd941
 #: c-api/exceptions.rst:632
 msgid ":c:data:`PyExc_SystemError`"
-msgstr ":cdata:`PyExc_SystemError`"
+msgstr ":c:data:`PyExc_SystemError`"
 
 # ddcd61b59a224013bea0edd67b1f0016
 #: c-api/exceptions.rst:632
@@ -4988,7 +4988,7 @@ msgstr ":exc:`SystemError`"
 # b2de7c39b54a423994f6a0b1e0b1fad6
 #: c-api/exceptions.rst:634
 msgid ":c:data:`PyExc_SystemExit`"
-msgstr ":cdata:`PyExc_SystemExit`"
+msgstr ":c:data:`PyExc_SystemExit`"
 
 # 5b458a38d03d4cb8a11cda3784dca1d2
 #: c-api/exceptions.rst:634
@@ -4998,7 +4998,7 @@ msgstr ":exc:`SystemExit`"
 # 093930f8181242c091ddfa062f647e6f
 #: c-api/exceptions.rst:636
 msgid ":c:data:`PyExc_TypeError`"
-msgstr ":cdata:`PyExc_TypeError`"
+msgstr ":c:data:`PyExc_TypeError`"
 
 # b61df511f9254e8dac926088ea52ea8f
 #: c-api/exceptions.rst:636
@@ -5008,7 +5008,7 @@ msgstr ":exc:`TypeError`"
 # 7791cba0259e4c389192fda54124eada
 #: c-api/exceptions.rst:638
 msgid ":c:data:`PyExc_ValueError`"
-msgstr ":cdata:`PyExc_ValueError`"
+msgstr ":c:data:`PyExc_ValueError`"
 
 # a1de0d85298941ac982ebc65a5b6b089
 #: c-api/exceptions.rst:638
@@ -5018,7 +5018,7 @@ msgstr ":exc:`ValueError`"
 # 3551737e245e424080ea50d0900543e4
 #: c-api/exceptions.rst:640
 msgid ":c:data:`PyExc_WindowsError`"
-msgstr ":cdata:`PyExc_WindowsError`"
+msgstr ":c:data:`PyExc_WindowsError`"
 
 # e70b0183e4d94503825a8c34048d6041
 #: c-api/exceptions.rst:640
@@ -5033,7 +5033,7 @@ msgstr "\\(3)"
 # e739628c337d4d909281face10d1de9e
 #: c-api/exceptions.rst:642
 msgid ":c:data:`PyExc_ZeroDivisionError`"
-msgstr ":cdata:`PyExc_ZeroDivisionError`"
+msgstr ":c:data:`PyExc_ZeroDivisionError`"
 
 # 1ce4be3017e94d359c70522e18d86439
 #: c-api/exceptions.rst:642

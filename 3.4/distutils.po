@@ -2861,7 +2861,7 @@ msgstr ""
 
 #: distutils/builtdist.rst:189
 msgid "Name"
-msgstr "Nom C"
+msgstr "Nom"
 
 #: distutils/builtdist.rst:189 distutils/setupscript.rst:564
 msgid "``name``"

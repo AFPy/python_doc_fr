@@ -2833,7 +2833,7 @@ msgstr ""
 
 #: distutils/builtdist.rst:189
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: distutils/builtdist.rst:189
 msgid ":option:`name`"

@@ -20572,7 +20572,7 @@ msgstr ""
 #: library/curses.ascii.rst:15 library/inspect.rst:535 library/turtle.rst:2307
 #: library/xmlrpc.client.rst:83
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: library/curses.ascii.rst:17
 msgid ":const:`NUL`"
