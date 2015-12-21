@@ -292,7 +292,7 @@ msgid ""
 msgstr ""
 "Quoique moins fréquemment utilisé, le même concept existe pour les classes. "
 "Consultez la documentation :ref:`définitions de fonctions <fonction>` et :"
-"ref:`définitions de classes <class>` pour en savoir plus sur les decorators."
+"ref:`définitions de classes <classe>` pour en savoir plus sur les decorators."
 
 # 124a072ddf6c4087a72fa658f916d909
 #: glossary.rst:154
