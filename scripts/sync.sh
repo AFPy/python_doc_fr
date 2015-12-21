@@ -11,7 +11,7 @@ SCRIPTS="$PYDOCFR_ROOT/scripts/"
 
 VERSION=${1:-3.5}
 
-"$SCRIPTS/prepare.sh"
+"$SCRIPTS"/prepare.sh "$VERSION"
 
 (
     cd "$GEN/src/"
