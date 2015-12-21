@@ -1,7 +1,7 @@
 #!/bin/bash
 
 printf "=============== ====== ====== ====== ====== ======\n"
-printf "                   2.7    3.2    3.3    3.4    3.5\n"
+printf "        version    2.7    3.2    3.3    3.4    3.5\n"
 printf -- "--------------- ------ ------ ------ ------ ------\n"
 files='tutorial glossary contents copyright about bugs distributing sphinx
 installing license install extending using faq distutils reference howto
