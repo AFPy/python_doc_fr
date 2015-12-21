@@ -1389,7 +1389,7 @@ msgstr ""
 
 #: glossary.rst:585
 msgid "namespace package"
-msgstr "paquet espace de noms"
+msgstr "paquet espace de nom"
 
 #: glossary.rst:587
 msgid ""
