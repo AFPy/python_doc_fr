@@ -6066,8 +6066,8 @@ msgid ""
 "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
 "type, i.e. it is possible to change their content::"
 msgstr ""
-"Mais à la différence des listes qui sont :term:`immuables`, les listes sont :"
-"term:`variables` : il est possible de changer leur contenu ::"
+"Mais à la différence des listes qui sont :term:`immuable`\\s, les listes "
+"sont :term:`variables` : il est possible de changer leur contenu ::"
 
 #: tutorial/introduction.rst:409
 msgid ""

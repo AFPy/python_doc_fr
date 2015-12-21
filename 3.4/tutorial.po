@@ -6087,7 +6087,7 @@ msgid ""
 "assigning to an indexed position in the string results in an error::"
 msgstr ""
 "Les chaînes de caractères, en Python ne peuvent pas être modifiées, on dit "
-"quelles sont :term:`immuables `. Affecter une nouvelle valeur à un indice "
+"quelles sont :term:`immuable`\\s. Affecter une nouvelle valeur à un indice "
 "dans une chaîne produit une erreur ::"
 
 # e6f19742421b4743a89d8785cf57573e
@@ -6200,8 +6200,8 @@ msgid ""
 "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
 "type, i.e. it is possible to change their content::"
 msgstr ""
-"Mais à la différence des listes qui sont :term:`immuables`, les listes sont :"
-"term:`variables` : il est possible de changer leur contenu ::"
+"Mais à la différence des listes qui sont :term:`immuable`\\s, les listes "
+"sont :term:`variables` : il est possible de changer leur contenu ::"
 
 # 48a20ff5d1ce4fbf8027ba7b65a64c9b
 #: tutorial/introduction.rst:409
