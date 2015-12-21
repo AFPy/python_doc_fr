@@ -6,11 +6,11 @@
 ##  - Eventually commit
 
 PYDOCFR_ROOT="$(dirname -- "$(dirname -- "$(readlink -f -- "$0")")")"
-GEN="$PYDOCFR_ROOT/gen/"
-SCRIPTS="$PYDOCFR_ROOT/scripts/"
+GEN="$PYDOCFR_ROOT/gen"
+SCRIPTS="$PYDOCFR_ROOT/scripts"
 
 VERSION=${1:-3.5}
-
+GENVER="$GEN/$VERSION"
 "$SCRIPTS"/prepare.sh "$VERSION"
 
 (
