@@ -76,7 +76,7 @@ msgstr ""
 
 #: glossary.rst:28
 msgid "abstract base class"
-msgstr "Classe de base abstraite (abstract base class)"
+msgstr "classe de base abstraite"
 
 #: glossary.rst:30
 msgid ""
@@ -385,11 +385,11 @@ msgstr ""
 msgid ""
 "The same concept exists for classes, but is less commonly used there.  See "
 "the documentation for :ref:`function definitions <function>` and :ref:`class "
-"definitions <class>` for more about decorators."
+"definitions <classe>` for more about decorators."
 msgstr ""
 "Quoique moins fréquemment utilisé, le même concept existe pour les classes. "
-"Consultez la documentation :ref:`définitions de fonctions <function> et :ref:"
-"`définitions de classes <class>` pour en savoir plus sur les decorators."
+"Consultez la documentation :ref:`définitions de fonctions <fonction>` et :"
+"ref:`définitions de classes <class>` pour en savoir plus sur les decorators."
 
 #: glossary.rst:167
 msgid "descriptor"
@@ -590,7 +590,7 @@ msgid ""
 msgstr ""
 "Il existe en réalité trois catégories de fichiers objets : les :term:"
 "`fichiers binaires <fichier binaire>` bruts, les :term:`fichiers binaire "
-"<fichier binaire>`bufferisés, et les :term:`fichiers texte <fichier texte>`. "
+"<fichier binaire>` bufferisés, et les :term:`fichiers texte <fichier texte>`. "
 "Leurs interfaces sont définies dans le module :mod:`io`. Le moyen le plus "
 "simple et direct de créer un objet fichier est d'utiliser la fonction :func:"
 "`open`."
@@ -653,8 +653,8 @@ msgid ""
 msgstr ""
 "Une suite d'instructions qui renvoient une valeur à celui qui l'appelle. On "
 "peut aussi lui passer des :term:`arguments <argument>` qui pourront être "
-"utilisés dans le corps de la fonction. Voir aussi :term:`parametre`, :term:"
-"`méthode `, et :ref:`function`."
+"utilisés dans le corps de la fonction. Voir aussi :term:`paramètre`, :term:"
+"`méthode`, et :ref:`function`."
 
 #: glossary.rst:270
 msgid "function annotation"
@@ -707,7 +707,7 @@ msgstr ""
 
 #: glossary.rst:292
 msgid "garbage collection"
-msgstr "ramasse miette"
+msgstr "ramasse-miette"
 
 #: glossary.rst:294
 msgid ""
@@ -1081,7 +1081,7 @@ msgid ""
 "methodcaller`.  See the :ref:`Sorting HOW TO <sortinghowto>` for examples of "
 "how to create and use key functions."
 msgstr ""
-"La méthode `str.lower` peut servir en fonction clef pour effectuer des "
+"La méthode :meth:`str.lower` peut servir en fonction clef pour effectuer des "
 "recherches insensibles à la casse. Aussi, il est possible de créer des "
 "fonctions clef au besoin avec des expressions lambda, comme ``lambda r: "
 "(r[0], r[2])``. Finalement le module :mod:`operator` fournit des "
@@ -1390,7 +1390,7 @@ msgstr ""
 
 #: glossary.rst:585
 msgid "namespace package"
-msgstr "paquet-espace de noms"
+msgstr "paquet espace de noms"
 
 #: glossary.rst:587
 msgid ""
@@ -1402,7 +1402,7 @@ msgstr ""
 "Un :term:`paquet` tel que défini dans la :pep:`421` qui ne sert qu'à contenir "
 "des sous paquets. Les paquets-espace de nom peuvent n'avoir aucune "
 "représentation physique, et plus spécifiquement ne sont pas comme un "
-":term:`paquet classique ` puisqu'ils n'ont pas de fichier ``__init__.py``."
+":term:`paquet classique` puisqu'ils n'ont pas de fichier ``__init__.py``."
 
 #: glossary.rst:592
 msgid "See also :term:`module`."
@@ -1492,7 +1492,7 @@ msgid ""
 "accept.  There are five kinds of parameter:"
 msgstr ""
 "Une entité nommée, dans la définition d'une :term:`fonction` ou d'une "
-":term:`méthode `, décrivant un :term:`argument` (ou dans certains cas des "
+":term:`méthode`, décrivant un :term:`argument` (ou dans certains cas des "
 "arguments) que la fonction accepte. Il existe cinque sorte de paramètres :"
 
 # 88cbbf8a9c094e96972c9a4bae674b54
@@ -1571,7 +1571,7 @@ msgstr ""
 
 #: glossary.rst:669
 msgid "path entry"
-msgstr ""
+msgstr "chemin"
 
 #: glossary.rst:671
 msgid ""
@@ -1821,7 +1821,7 @@ msgstr ""
 
 #: glossary.rst:817
 msgid "statement"
-msgstr ""
+msgstr "instruction"
 
 # ed4604b8fb634111bdfe9c8e6f2f5387
 #: glossary.rst:819
