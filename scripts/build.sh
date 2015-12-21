@@ -55,4 +55,4 @@ printf "%s...\n" "Preparing zip and tarballs"
 )
 
 echo "You may run :"
-printf "%s\n" "rsync -az build/ afpy.org:/home/mandark/www/3.4/"
+printf "%s\n" "rsync -az www/ afpy.org:/home/mandark/www/"
