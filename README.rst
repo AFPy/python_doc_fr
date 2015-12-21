@@ -8,6 +8,8 @@ documentation officielle de Python.
 Votre aide est la bienvenue que ce soit pour maintenir les traductions
 à jour, les relire, les améliorer ou traduire de nouveaux blocs.
 
+Progression de la traduction:
+
 =============== ====== ====== ====== ====== ======
         version    2.7    3.2    3.3    3.4    3.5
 --------------- ------ ------ ------ ------ ------
@@ -39,7 +41,7 @@ Comment qu'on fait pour aider à traduire ?
 Pour cela récupérez les fichiers *.po* de la partie qui vous intéresse,
 d'une des façons suivantes:
 
-* forkez ce dépôt
+* forkez ce dépôt (conseillée)
 * cliquez sur l'icone "Download ZIP"
 
 Éditer les fichiers avec l'éditeur de votre choix, il en existe beaucoup:
@@ -57,7 +59,7 @@ Puis vous n'avez plus qu'à vous occuper du texte en français.
 
 Une fois votre contribution écrite, transmettez-la nous :
 
-* soit par un pull-request (si vous avez fait un fork)
+* soit par un pull-request (si vous avez fait un fork du dépot)
 * soit en la joignant à un `ticket github <https://github.com/AFPy/python_doc_fr/issues>`_
 * soit par mail à la `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_
 
@@ -70,15 +72,12 @@ importante, pour les mails et les tickets, on s'en occupera pur vous.
 Afin de ne pas générer des diff illisibles remplis de plus de
 différences de norme que de différences de texte, autremment dit, afin
 d'obtenir un historique git lisible, et des merge faciles, nous
-devrions tous utiliser strictement la même norme.
+utilisons tous la même norme.
 
 Actuellement, nous utilisons la norme proposée par *msgcat*, vous
 pouvez donc utiliser cette ligne pour remettre vos traductions en forme:
 
-    for po in *.po; do echo $po; tac $po | tac | msgcat - -o $po; done
-
-(L'astuce ``tac|tac`` c'est pour lire entièrement le fichier avant de
-l'écrire).
+    ./scripts/fix_style.sh
 
 Quelles sont les priorités ?
 ----------------------------
@@ -86,8 +85,7 @@ La quantité de textes à traduire est énorme et il serait très facile de
 disperser notre énergie dans des textes destinés aux utilisateurs très avancés,
 il nous paraît nécessaire de fixer des priorités:
 
-1. Avant tout et surtout : maintenir les textes déjà complets (tutorial.po).
-2. le glossaire (glossary.po)
+1. Avant tout et surtout : maintenir les textes déjà complets (tutorial.po, glossary.po).
 3. les bases du langage (reference.po)
 4. la notice d'installation de Python (using.po)
 5. la foire aux questions (faq.po)
@@ -95,14 +93,15 @@ il nous paraît nécessaire de fixer des priorités:
 Aides à la traduction
 ---------------------
 
-* Si vous hésitez sur un terme, demandez un avis sur la
-  `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_.
+* `Le grand dictionnaire terminologique <http://gdt.oqlf.gouv.qc.ca/>`_
+* Le chan IRC `#python-fr <irc.lc/freenode/python-fr>`_ sur freenode
+* La `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_
 * Vous pouvez consulter le `glossaire traduc.org <http://glossaire.traduc.org>`_
   qui contient des traductions consolidées de plusieur projets.
 * Consultez aussi le site de `traduc.org <http://traduc.org>`_
   qui contient de nombreuses informations pour les traducteurs.
-* `Le grand dictionnaire terminologique <http://gdt.oqlf.gouv.qc.ca/>`_
-* glossary.po tout simplement, ou `le glossaire traduit <http://www.afpy.org/doc/python/3.4/glossary.html>`_
+* glossary.po tout simplement, ou
+  `le glossaire traduit <http://www.afpy.org/doc/python/3.5/glossary.html>`_
 
 Uniformisation du vocabulaire
 -----------------------------
@@ -136,19 +135,35 @@ un ticket si vous n'êtes pas d'acord) :
 * statement => instruction
 * underscore => tiret bas
 
-Comment ça marche ?
--------------------
+Comment générer la doc localement ?
+-----------------------------------
 
-Tout peut être amené à bouger, mais pour le moment, voilà l'état des choses :
+Un script, ``./scripts/build.sh`` permet de générer la doc, il
+s'occupera pour vous de rappatrier un clone de *cpython*, de le
+configurer, d'y appliquer éventuellement quelques patches (en
+attendant qu'ils soient mergés upstream), et vous vous retrouvez si
+tout va bien avec la doc dans ``www/``.
 
-- Il n'y a pas (plus) de cron sur afpy.org ni ailleurs.
-- ``scripts/sync.sh`` nous permet de mettre à jour les *pot* en fonction des
-  modifs de cpython, et *msgmerge* ça dans les fichiers *.po*
-- ``scripts/build.sh`` génère une version HTML locale de la doc
-- Le résultat de ``build.sh`` peut être ``rsync`` sur afpy.org, tout simplement,
-  ``build.sh`` vous proposera même une commande pour le faire.
-- Pour tout build pour mettre à jour la prod:
-  `for V in 2.7 3.2 3.3 3.4 3.5; do ./scripts/build.sh $V; done`
-- L'*index.html* de la `page d'accueil <http://www.afpy.org/doc/python/>`_
-  est généré par *build.sh* à partir de *scripts/index.md* et
-  de *scripts/index.tpl*.
+Pour générer une autre version que la dernière, passer là en
+paramètre, comme : ``./scripts/build.sh 3.2``.
+
+Comment on met à jour les *.pot*, et comment on les merge dans les *.po* ?
+--------------------------------------------------------------------------
+
+Un script, ``./scripts/sync.sh`` permet de récupérer ou mettre à jour
+un clone de *cpython* dans ``gen/``, il y fera passer un ``xgettext``,
+fera les bon msgmerge qui vont bien, sur la dernière version par
+défaut, lancez donc plutôt:
+
+    for V in 2.7 3.2 3.3 3.4 3.5; do ./scripts/sync.sh $V; done
+
+Comment ça part sur afpy.org/python ?
+-------------------------------------
+
+Tout peut être amené à bouger, mais pour le moment, rien n'est executé
+server side, le protocole actuel pour mettre à jour la prod est donc de lancer
+
+    for V in 2.7 3.2 3.3 3.4 3.5; do ./scripts/build.sh $V; done
+    rsync -az www/ afpy.org:/home/mandark/www/
+
+tout simplement.

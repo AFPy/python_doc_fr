@@ -1,18 +1,26 @@
 #!/bin/sh
 
 ## This script:
+##  - run xgettext on cpython
 ##  - Merge each pot in corresponding po
 ##  - Eventually commit
 
-VERSIONS="3.2 3.3 3.4 3.5"
 PYDOCFR_ROOT="$(dirname -- "$(dirname -- "$(readlink -f -- "$0")")")"
 GEN="$PYDOCFR_ROOT/gen/"
 SCRIPTS="$PYDOCFR_ROOT/scripts/"
-PATCHES="$PYDOCFR_ROOT/scripts/patches/"
 
 VERSION=${1:-3.5}
 
 "$SCRIPTS/prepare.sh"
+
+(
+    cd "$GEN/src/"
+    echo "Regenerating pot files."
+    sphinx-build -Q -b gettext Doc Doc
+    mkdir -p "$GENVER/pot/"
+    rm -fr "$GENVER/pot/"
+    mv Doc/*.pot "$GENVER/pot/"
+)
 
 echo "Merge each pot file to corresponding po file."
 for POT in "$GENVER/pot"/*
@@ -26,15 +34,6 @@ do
         msgcat -o "$PYDOCFR_ROOT/$VERSION/$PO" "$POT"
     fi
 done
-
-(
-    cd "$GEN/src/"
-    echo "Regenerating pot files."
-    sphinx-build -Q -b gettext Doc Doc
-    mkdir -p "$GENVER/pot/"
-    rm -fr "$GENVER/pot/"
-    mv Doc/*.pot "$GENVER/pot/"
-)
 
 (
     cd "$PYDOCFR_ROOT"
