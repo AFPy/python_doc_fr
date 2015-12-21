@@ -20,13 +20,7 @@ then
     )
 fi
 
-if [ "$VERSION" = 3.2 ]
-then
-    pip -q install --user -U "sphinx==1.1.3"
-    # To have sphinx.ext.refcounting
-else
-    pip -q install --user -U "sphinx"
-fi
+pip -q install --user -U "sphinx"
 
 GENVER="$GEN/$VERSION"
 echo "Updating cpython sources"
@@ -41,6 +35,10 @@ echo "Updating cpython sources"
         echo "Applying patch $(basename $patch)"
         git apply "$patch"
     done
+    if [ "$VERSION" = 3.2 ]
+    then
+        sed -i "s/'sphinx.ext.refcounting', //" Doc/conf.py
+    fi
     printf "%s\n%s\n" "locale_dirs = ['$GEN/$VERSION/mo/']" "language = 'fr'" \
            >> Doc/conf.py
 )
