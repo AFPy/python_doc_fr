@@ -984,6 +984,14 @@ msgid ""
 "the innermost scope.  Likewise, global variables read and write to the "
 "global namespace.  The :keyword:`nonlocal` allows writing to outer scopes."
 msgstr ""
+"La possibilité de toucher une variable déclarée dans une définition "
+"englobante. Typiquement, une fonction définie à l'intérieur d'une autre "
+"fonction aura accès aux variables de cette autre fonction. Souvenez-vous "
+"cependant que cela ne fonctionne que pour accéder à des variables, pas pour "
+"les assigner. Les variables locales sont lues et assignées dans l'espace de "
+"nom le plus proche. Tout comme les variables globales qui sont stockés sur "
+"l'espace de noms global, le mot clef :keyword:`nonlocal` permet d'écrire "
+"dans l'espace de nom dans lequel est déclaré la variable."
 
 # 178a0ca5b2c34d399e170091b215bfea
 #: glossary.rst:526
@@ -1036,6 +1044,8 @@ msgid ""
 "definition before them, for example *kw_only1* and *kw_only2* in the "
 "following::"
 msgstr ""
+":dfn:`keyword-only`: définit un argument qui ne peut être fournit que par "
+"nom. Les paramètres *keyword-only* peuvent être définis en utilisant un"
 
 # 54cfd511cd764aebaed4f6605605af41
 #: glossary.rst:561
@@ -1071,6 +1081,10 @@ msgid ""
 "the :class:`inspect.Parameter` class, the :ref:`function` section, and :pep:"
 "`362`."
 msgstr ""
+"Voir aussi :term:`argument` dans le glossaire, la question sur :ref:`la "
+"différence entre les arguments et les paramètre <faq-argument-vs-parameter>` "
+"dans la FAQ, la classe :class:`inspect.Parameter`, la section :ref:"
+"`fonction`, et la :pep:`362`."
 
 # 82a12c64dd2e43fca5e647c7f7b44874
 #: glossary.rst:587
