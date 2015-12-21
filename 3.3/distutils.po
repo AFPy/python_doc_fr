@@ -209,10 +209,13 @@ msgid "A list of categories for the package"
 msgstr "Une liste de catégories pour le paquet"
 
 #: distutils/apiref.rst:80
+#, fuzzy
 msgid ""
 "a list of strings; valid classifiers are listed on `PyPI <http://pypi.python."
 "org/pypi?:action=list_classifiers>`_."
 msgstr ""
+"La liste des catégorisations est disponibles sur http://pypi.python.org/"
+"pypi?:action=list_classifiers."
 
 #: distutils/apiref.rst:83
 msgid "*distclass*"
@@ -4990,8 +4993,9 @@ msgid ""
 msgstr ""
 
 #: distutils/setupscript.rst:413
+#, fuzzy
 msgid "Some examples:"
-msgstr ""
+msgstr "Quelques exemples ::"
 
 #: distutils/setupscript.rst:416
 msgid "Provides Expression"

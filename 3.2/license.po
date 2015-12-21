@@ -53,6 +53,7 @@ msgstr ""
 
 # 3d0cc16c97f4443db8a2f87ebb36188c
 #: license.rst:22
+#, fuzzy
 msgid ""
 "In May 2000, Guido and the Python core development team moved to BeOpen.com "
 "to form the BeOpen PythonLabs team.  In October of the same year, the "
@@ -62,15 +63,27 @@ msgid ""
 "specifically to own Python-related Intellectual Property.  Zope Corporation "
 "is a sponsoring member of the PSF."
 msgstr ""
+"En mai 2000, Guido et l'équipe de développement centrale de Python sont "
+"parti vers BeOpen.com pour former l'équipe BeOpen PythonLabs. En octobre de "
+"la même année, l'équipe de PythonLabs est partie vers Digital Creations "
+"(désormais Zope Corporation; voir http://www.zope.com/). En 2001, la Python "
+"Software Foundation (PSF, voir http://www.python.org/psf/) voit le jour. Il "
+"s'agit d'une organisation à but non lucratif détenant les droits de "
+"propriété intellectuelle de Python. Zope Corporation en est un sponsor."
 
 # 1493a5c5553748eeba37e5d07b39447c
 #: license.rst:30
+#, fuzzy
 msgid ""
 "All Python releases are Open Source (see http://www.opensource.org/ for the "
 "Open Source Definition). Historically, most, but not all, Python releases "
 "have also been GPL-compatible; the table below summarizes the various "
 "releases."
 msgstr ""
+"Toutes les versions de Python sont Open Source (voir http://www.opensource."
+"org/ pour la définition d'Open Source). Historiquement, la plupart, mais pas "
+"toutes, des versions de Python ont également été compatible avec la GPL, le "
+"tableau ci-dessous résume les différentes versions."
 
 # aa00ee5b35764b908db0a1c54ab7d0fb
 #: license.rst:35

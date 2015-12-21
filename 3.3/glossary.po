@@ -180,10 +180,13 @@ msgid "BDFL"
 msgstr "BDFL"
 
 #: glossary.rst:78
+#, fuzzy
 msgid ""
 "Benevolent Dictator For Life, a.k.a. `Guido van Rossum <http://www.python."
 "org/~guido/>`_, Python's creator."
 msgstr ""
+"Dictateur bénévole à vie, alias `Guido van Rossum <https://www.python.org/"
+"~guido/>`_, le créateur de Python."
 
 #: glossary.rst:80
 msgid "binary file"
@@ -337,12 +340,17 @@ msgid "CPython"
 msgstr "CPython"
 
 #: glossary.rst:143
+#, fuzzy
 msgid ""
 "The canonical implementation of the Python programming language, as "
 "distributed on `python.org <http://python.org>`_.  The term \"CPython\" is "
 "used when necessary to distinguish this implementation from others such as "
 "Jython or IronPython."
 msgstr ""
+"L'implémentation canonique du langage de programmation Python, tel que "
+"distribué sur `python.org <https://www.python.org>`_. Le terme\"CPython\" "
+"est utilisé dans certains contextes lorsqu'il est nécessaire de distinguer "
+"cette implémentation des autres comme Jython ou IronPython."
 
 #: glossary.rst:147
 msgid "decorator"
@@ -688,6 +696,7 @@ msgid "generator"
 msgstr "générateur"
 
 #: glossary.rst:293
+#, fuzzy
 msgid ""
 "A function which returns an iterator.  It looks like a normal function "
 "except that it contains :keyword:`yield` statements for producing a series a "
@@ -697,6 +706,15 @@ msgid ""
 "pending try-statements).  When the generator resumes, it picks-up where it "
 "left-off (in contrast to functions which start fresh on every invocation)."
 msgstr ""
+"Une fonction qui renvoie un itérateur. Ça ressemble à une fonction normale, "
+"en dehors du fait qu'il contient une ou plusieurs instruction :keyword:"
+"`yield`, produisant une série de valeurs utilisables dans une boucle for, ou "
+"pouvant être récupérées une à une avec la fonction :func:`next`. Chaque "
+"instruction :keyword:`yield` suspend temporairement l'exécution de la "
+"fonction, en se rappelant de la position et de l'état (les variables "
+"locales, et les *try* en cours). Lorsque le générateur reprend, il reprend "
+"là où il en était (contrairement à une fonction classique qui reprendrait du "
+"départ à chaque appel)."
 
 #: glossary.rst:303
 msgid "generator expression"
@@ -796,12 +814,19 @@ msgstr ""
 "ce *hash*."
 
 #: glossary.rst:346
+#, fuzzy
 msgid ""
 "All of Python's immutable built-in objects are hashable, while no mutable "
 "containers (such as lists or dictionaries) are.  Objects which are instances "
 "of user-defined classes are hashable by default; they all compare unequal "
 "(except with themselves), and their hash value is their :func:`id`."
 msgstr ""
+"Tous les types immuables fournis par Python sont hachables, et aucun type "
+"variable (comme les listes ou les dictionnaires) ne l'est. Toutes les "
+"instances de classes définies par les utilisateurs sont hachables par "
+"défaut, elles sont toutes différentes selon ``__eq__``, sauf comparées à "
+"elles mêmes, et leur empreinte (*hash*) est calculée à partir de leur :func:"
+"`id`."
 
 #: glossary.rst:351
 msgid "IDLE"
@@ -1188,11 +1213,16 @@ msgid "method resolution order"
 msgstr "ordre de résolution des méthodes"
 
 #: glossary.rst:522
+#, fuzzy
 msgid ""
 "Method Resolution Order is the order in which base classes are searched for "
 "a member during lookup. See `The Python 2.3 Method Resolution Order <http://"
 "www.python.org/download/releases/2.3/mro/>`_."
 msgstr ""
+"L'ordre de résolution des méthodes (*MRO* de *Method Resolution Order*) est "
+"l'ordre dans lequel les membres sont recherchés dans l'arbre d'héritage. "
+"Voir `The Python 2.3 Method Resolution Order <https://www.python.org/"
+"download/releases/2.3/mro/>`_."
 
 #: glossary.rst:525
 msgid "module"

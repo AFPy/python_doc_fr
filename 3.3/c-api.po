@@ -337,23 +337,34 @@ msgstr ""
 "conversion échoue, une exception :exc:`UnicodeError` sera levée."
 
 #: c-api/arg.rst:68
+#, fuzzy
 msgid ""
 "This format does not accept bytes-like objects.  If you want to accept "
 "filesystem paths and convert them to C character strings, it is preferable "
 "to use the ``O&`` format with :c:func:`PyUnicode_FSConverter` as *converter*."
 msgstr ""
+"Ce format n'accepte pas les objets de type octets. Si vous voulez accepter "
+"des chemins de fichiers et les convertir en chaînes de caractères C, il vaut "
+"mieux utiliser le format ``O&`` avec :cfunc:`PyUnicode_FSConverter` comme "
+"*convertisseur*."
 
 #: c-api/arg.rst:77
 msgid "s* (str, bytes, bytearray or buffer compatible object) [Py_buffer]"
 msgstr ""
 
 #: c-api/arg.rst:74
+#, fuzzy
 msgid ""
 "This format accepts Unicode objects as well as :term:`bytes-like object`\\ "
 "s. It fills a :c:type:`Py_buffer` structure provided by the caller. In this "
 "case the resulting C string may contain embedded NUL bytes. Unicode objects "
 "are converted to C strings using ``'utf-8'`` encoding."
 msgstr ""
+"Ce format accepte aussi bien les objets Unicode que des objets supportant le "
+"protocole de mémoire tampon.Il remplit une structure :ctype:`Py_buffer` "
+"fournie par l'appelant. Dans ce cas, La chaîne C qui en résulte peut "
+"contenir des octets NUL. Les objets Unicode sont convertis en chaînes C en "
+"utilisant un encodage ``'utf-8' ``."
 
 #: c-api/arg.rst:84
 msgid ""
@@ -436,20 +447,27 @@ msgid "y* (bytes, bytearray or bytes-like object) [Py_buffer]"
 msgstr ""
 
 #: c-api/arg.rst:105
+#, fuzzy
 msgid ""
 "This variant on ``s*`` doesn't accept Unicode objects, only :term:`bytes-"
 "like object`\\ s.  **This is the recommended way to accept binary data.**"
 msgstr ""
+"Cette variante sur ``s*`` n'accepte pas d'objets Unicode, seulement des "
+"objets supportant le protocole buffer. **C'est le moyen recommandé pour "
+"accepter des données binaires.**"
 
 #: c-api/arg.rst:111
 msgid "y# (bytes) [const char *, int]"
 msgstr ""
 
 #: c-api/arg.rst:110
+#, fuzzy
 msgid ""
 "This variant on ``s#`` doesn't accept Unicode objects, only :term:`bytes-"
 "like object`\\ s."
 msgstr ""
+"Cette variante de ``s#`` n'accepte pas les objets Unicode, uniquement des "
+"objets assimilés à des octets."
 
 #: c-api/arg.rst:116
 msgid "S (bytes) [PyBytesObject *]"
@@ -1377,12 +1395,18 @@ msgid "Convert a plain C :c:type:`short int` to a Python integer object."
 msgstr ""
 
 #: c-api/arg.rst:555
+#, fuzzy
 msgid "Convert a C :c:type:`long int` to a Python integer object."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 #: c-api/arg.rst:558
+#, fuzzy
 msgid "Convert a C :c:type:`unsigned char` to a Python integer object."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 #: c-api/arg.rst:561
 msgid "Convert a C :c:type:`unsigned short int` to a Python integer object."
@@ -3180,8 +3204,9 @@ msgid "Return a new :c:type:`PyComplexObject` object from *real* and *imag*."
 msgstr ""
 
 #: c-api/complex.rst:118
+#, fuzzy
 msgid "Return the real part of *op* as a C :c:type:`double`."
-msgstr ""
+msgstr "Convertit un nombre flottant Python vers un type C :ctype:`double`."
 
 #: c-api/complex.rst:123
 msgid "Return the imaginary part of *op* as a C :c:type:`double`."
@@ -10427,8 +10452,9 @@ msgid "T_OBJECT"
 msgstr ""
 
 #: c-api/structures.rst:260 c-api/structures.rst:261
+#, fuzzy
 msgid "PyObject \\*"
-msgstr ""
+msgstr "Objets bytes"
 
 #: c-api/structures.rst:261
 msgid "T_OBJECT_EX"

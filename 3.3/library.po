@@ -310,8 +310,9 @@ msgstr ""
 "techniques."
 
 #: library/2to3.rst:241
+#, fuzzy
 msgid "Converts ``input(prompt)`` to ``eval(input(prompt))``"
-msgstr ""
+msgstr "Convertit ``input(prompt)`` en ``eval(input(prompt))``."
 
 #: library/2to3.rst:245
 msgid "Converts :func:`intern` to :func:`sys.intern`."
@@ -12189,8 +12190,9 @@ msgstr ""
 #: library/socket.rst:983 library/sqlite3.rst:486 library/stat.rst:79
 #: library/tkinter.rst:440 library/xml.dom.pulldom.rst:28
 #: library/xmlrpc.server.rst:298
+#, fuzzy
 msgid "Example::"
-msgstr ""
+msgstr "Exemples ::"
 
 #: library/compileall.rst:2
 msgid ":mod:`compileall` --- Byte-compile Python libraries"
@@ -12961,8 +12963,9 @@ msgstr ""
 #: library/configparser.rst:235 library/configparser.rst:296
 #: library/difflib.rst:480 library/multiprocessing.rst:881 library/re.rst:918
 #: library/time.rst:499 library/turtle.rst:1480 library/unittest.mock.rst:1648
+#, fuzzy
 msgid "For example:"
-msgstr ""
+msgstr "Par exemple ::"
 
 #: library/configparser.rst:283
 msgid "Interpolation of values"
@@ -29436,8 +29439,9 @@ msgid ""
 msgstr ""
 
 #: library/dummy_threading.rst:7
+#, fuzzy
 msgid "**Source code:** :source:`Lib/dummy_threading.py`"
-msgstr ""
+msgstr "**Code source:** :source:`Lib/_dummy_thread.py`"
 
 #: library/dummy_threading.rst:11
 msgid ""
@@ -50665,8 +50669,9 @@ msgid "**Infinite Iterators:**"
 msgstr ""
 
 #: library/itertools.rst:37 library/itertools.rst:47 library/itertools.rst:66
+#, fuzzy
 msgid "Iterator"
-msgstr ""
+msgstr "Itérateurs"
 
 #: library/itertools.rst:37 library/itertools.rst:47 library/itertools.rst:66
 msgid "Arguments"
@@ -64218,8 +64223,9 @@ msgid ""
 msgstr ""
 
 #: library/numbers.rst:65 library/numbers.rst:69
+#, fuzzy
 msgid "Abstract."
-msgstr ""
+msgstr "Résumé"
 
 #: library/numbers.rst:74
 msgid ""
@@ -65522,8 +65528,9 @@ msgid ""
 msgstr ""
 
 #: library/optparse.rst:358
+#, fuzzy
 msgid "will print ``42``."
-msgstr ""
+msgstr "imprimera ``5``."
 
 #: library/optparse.rst:360
 msgid ""
@@ -65620,8 +65627,9 @@ msgid ""
 msgstr ""
 
 #: library/optparse.rst:424
+#, fuzzy
 msgid "Default values"
-msgstr ""
+msgstr "Valeur par défaut"
 
 #: library/optparse.rst:426
 msgid ""
@@ -66645,8 +66653,9 @@ msgstr ""
 
 #: library/optparse.rst:1329 library/tkinter.ttk.rst:341
 #: library/tkinter.ttk.rst:781
+#, fuzzy
 msgid "values"
-msgstr ""
+msgstr "valeur"
 
 #: library/optparse.rst:1327
 msgid ""
@@ -73510,8 +73519,9 @@ msgid ""
 msgstr ""
 
 #: library/pickle.rst:647
+#, fuzzy
 msgid "For example ::"
-msgstr ""
+msgstr "Par exemple ::"
 
 #: library/pickle.rst:654
 msgid ""
@@ -87073,8 +87083,9 @@ msgid "Common issues"
 msgstr ""
 
 #: library/sqlite3.rst:914
+#, fuzzy
 msgid "Multithreading"
-msgstr ""
+msgstr "Threads"
 
 #: library/sqlite3.rst:916
 msgid ""
@@ -88728,8 +88739,9 @@ msgid "Block device."
 msgstr ""
 
 #: library/stat.rst:203
+#, fuzzy
 msgid "Directory."
-msgstr ""
+msgstr "Répertoire"
 
 #: library/stat.rst:207
 msgid "Character device."
@@ -110474,8 +110486,9 @@ msgid ""
 msgstr ""
 
 #: library/unicodedata.rst:148
+#, fuzzy
 msgid "Examples:"
-msgstr ""
+msgstr "Exemples ::"
 
 #: library/unicodedata.rst:169
 msgid "http://www.unicode.org/Public/6.1.0/ucd/NameAliases.txt"
@@ -118656,8 +118669,9 @@ msgid "See :pep:`405` for more information about Python virtual environments."
 msgstr ""
 
 #: library/venv.rst:27
+#, fuzzy
 msgid "Creating virtual environments"
-msgstr ""
+msgstr "Création d'Environnements Virtuels"
 
 #: using/venv-create.inc:1
 msgid ""
@@ -123773,8 +123787,9 @@ msgid ""
 msgstr ""
 
 #: library/xml.dom.rst:924
+#, fuzzy
 msgid "Exception"
-msgstr ""
+msgstr "Exceptions"
 
 #: library/xml.dom.rst:926
 msgid ":const:`DOMSTRING_SIZE_ERR`"
@@ -123885,8 +123900,9 @@ msgid ":const:`SYNTAX_ERR`"
 msgstr ""
 
 #: library/xml.dom.rst:952
+#, fuzzy
 msgid ":exc:`SyntaxErr`"
-msgstr ""
+msgstr ":exc:`SyntaxError`"
 
 #: library/xml.dom.rst:954
 msgid ":const:`WRONG_DOCUMENT_ERR`"

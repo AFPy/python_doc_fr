@@ -81,8 +81,9 @@ msgid ""
 msgstr ""
 
 #: reference/compound_stmts.rst:78
+#, fuzzy
 msgid "The :keyword:`if` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`del`"
 
 #: reference/compound_stmts.rst:87
 msgid "The :keyword:`if` statement is used for conditional execution:"
@@ -1673,8 +1674,9 @@ msgstr ""
 
 # eaee202b99024fc4a04d4a87446d8bd7
 #: reference/datamodel.rst:905
+#, fuzzy
 msgid "Code objects"
-msgstr ""
+msgstr "Objets Code"
 
 #: reference/datamodel.rst:844
 msgid ""
@@ -3802,8 +3804,9 @@ msgid ""
 msgstr ""
 
 #: reference/expressions.rst:282
+#, fuzzy
 msgid "Generator expressions"
-msgstr ""
+msgstr "Expressions et générateurs"
 
 #: reference/expressions.rst:287
 msgid "A generator expression is a compact generator notation in parentheses:"
@@ -5069,8 +5072,9 @@ msgid ":keyword:`lambda`"
 msgstr ""
 
 #: reference/expressions.rst:1445
+#, fuzzy
 msgid "Lambda expression"
-msgstr ""
+msgstr "Fonctions anonymes"
 
 #: reference/expressions.rst:1447
 msgid ":keyword:`if` -- :keyword:`else`"
@@ -8094,8 +8098,9 @@ msgid ""
 msgstr ""
 
 #: reference/simple_stmts.rst:455
+#, fuzzy
 msgid "The :keyword:`yield` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`del`"
 
 #: reference/simple_stmts.rst:467
 msgid ""

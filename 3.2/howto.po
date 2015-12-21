@@ -7571,8 +7571,9 @@ msgstr ""
 
 # 465e515a3ced4f4f851dea07272b83a4
 #: howto/pyporting.rst:698
+#, fuzzy
 msgid "Other Resources"
-msgstr ""
+msgstr "Autres ressources"
 
 # 2fd37c83f15b43efbaa69b2779fc0cda
 #: howto/pyporting.rst:700
@@ -12891,8 +12892,9 @@ msgstr "`Genshi <http://genshi.edgewall.org/>`_"
 
 # d76d73f045bc41fe8715e7bb9892f450
 #: howto/webservers.rst:525
+#, fuzzy
 msgid "`Jinja <http://jinja.pocoo.org/2/>`_"
-msgstr ""
+msgstr "`Jinja <http://jinja.pocoo.org/2/>`_"
 
 # cacc64043e6c4c7aa39051b5a643a39a
 #: howto/webservers.rst:529

@@ -1717,8 +1717,9 @@ msgstr ""
 
 # 08f0ae893ef14d2a9ac420334c91b667
 #: whatsnew/2.1.rst:3
+#, fuzzy
 msgid "What's New in Python 2.1"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # 12cdd3401c1c474bb43dd76667f93300
 # 01f2ab21431b43bd878da2efc99e92f2
@@ -1878,8 +1879,9 @@ msgstr ""
 # 41a02a4269f34bd192f25f53229f5b51
 # b2ab49206f4749759aaab10e050c68d2
 #: whatsnew/2.1.rst:123 whatsnew/2.2.rst:927
+#, fuzzy
 msgid ":pep:`227` - Statically Nested Scopes"
-msgstr ""
+msgstr ":pep:`227`: *Statically Nested Scopes*"
 
 # 56b44c5f9a0d49e2b2e1d87e76c8b740
 # d628f185c6e64dad83308891e1a727ae
@@ -2185,8 +2187,9 @@ msgstr ""
 
 # bbe930f349fe49c5913cc69f1b5fc3a6
 #: whatsnew/2.1.rst:295
+#, fuzzy
 msgid ":pep:`230` - Warning Framework"
-msgstr ""
+msgstr ":pep:`230` -- Gestion des alertes"
 
 # 5be35e5922f84fd6be7f747104f07eed
 #: whatsnew/2.1.rst:296
@@ -2862,8 +2865,9 @@ msgstr ""
 
 # 911aed8e5062464ca3f67ce8295e1f1b
 #: whatsnew/2.2.rst:3
+#, fuzzy
 msgid "What's New in Python 2.2"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # a8d8f8934a0d4733b5c2ae908278611b
 #: whatsnew/2.2.rst:15
@@ -4466,8 +4470,9 @@ msgstr ""
 
 # 412e9acd1b60404d94150884e7bf31c7
 #: whatsnew/2.3.rst:3
+#, fuzzy
 msgid "What's New in Python 2.3"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # 6c9ddf0893f64547882281f0965d404e
 #: whatsnew/2.3.rst:11
@@ -4920,8 +4925,9 @@ msgstr ""
 # d99f49ecc1354bf9a0084fd6f0b25bb2
 # acbae5912efd4489aa2f9398838ad791
 #: whatsnew/2.3.rst:473 whatsnew/2.3.rst:498 whatsnew/2.6.rst:642
+#, fuzzy
 msgid "This produces the following output::"
-msgstr ""
+msgstr "Produisant l'affichage suivant :"
 
 # 09440e4f42a140ad96e5673a1f0fd432
 #: whatsnew/2.3.rst:479
@@ -6954,8 +6960,9 @@ msgstr ""
 
 # 14049f23541047d49450f98a15ea796b
 #: whatsnew/2.3.rst:2009
+#, fuzzy
 msgid "Porting to Python 2.3"
-msgstr ""
+msgstr "Portage vers Python 3.2"
 
 # dd5cacaeb62b411089b998e31ec70fa4
 # 3e8e04d9d35a40a3bd90f832fe026edc
@@ -7068,8 +7075,9 @@ msgstr ""
 
 # 0e69821ae2fa4edf8a892a2655eed90f
 #: whatsnew/2.4.rst:3
+#, fuzzy
 msgid "What's New in Python 2.4"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # ef6e35bede0342c8922eda5c1792b7ee
 #: whatsnew/2.4.rst:14
@@ -8958,8 +8966,9 @@ msgstr ""
 
 # f188c004c3534c94a4fec00f56938d66
 #: whatsnew/2.4.rst:1508
+#, fuzzy
 msgid "Porting to Python 2.4"
-msgstr ""
+msgstr "Portage vers Python 3.2"
 
 # 8da1162d3a9642a3b2d8bf2da90046a0
 #: whatsnew/2.4.rst:1513
@@ -9048,8 +9057,9 @@ msgstr ""
 
 # ae61bd2fbc434ee1acf825092d39e79d
 #: whatsnew/2.5.rst:3
+#, fuzzy
 msgid "What's New in Python 2.5"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # b4c7aac15a774bb3a6123ffa0f1c8f6f
 #: whatsnew/2.5.rst:12
@@ -9497,8 +9507,9 @@ msgstr ""
 
 # f59106ecb45d4832a1e7c6dce5c8bf81
 #: whatsnew/2.5.rst:359
+#, fuzzy
 msgid ":pep:`338` - Executing modules as scripts"
-msgstr ""
+msgstr ":pep:`338` --  Exécuter des modules en tant que scripts"
 
 # 0b273524c59545b799cec3dd4c1b51d8
 #: whatsnew/2.5.rst:360
@@ -12012,8 +12023,9 @@ msgstr ""
 
 # e9910bab7a5e4ef08c12224a1ed4fa9a
 #: whatsnew/2.5.rst:2227
+#, fuzzy
 msgid "Porting to Python 2.5"
-msgstr ""
+msgstr "Portage vers Python 3.2"
 
 # 95951faa9cb14a7d94e5d3243522d4a3
 #: whatsnew/2.5.rst:2232
@@ -12110,8 +12122,9 @@ msgstr ""
 
 # 28acd1940e694121bf2301b516b07721
 #: whatsnew/2.6.rst:5
+#, fuzzy
 msgid "What's New in Python 2.6"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # c29a3272d505440ca6c813cf461d3ee3
 # f9a310b4fcf14787b893c07c385b0cc2
@@ -12606,8 +12619,9 @@ msgstr ""
 
 # 8f1dc9bc11b04970bf110cdcfe0a8ea6
 #: whatsnew/2.6.rst:552
+#, fuzzy
 msgid ":pep:`370` - Per-user ``site-packages`` Directory"
-msgstr ""
+msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
 
 # 8fc844356c454a02ad06ac87d68c7cd9
 #: whatsnew/2.6.rst:553
@@ -13027,8 +13041,9 @@ msgstr ""
 
 # 73af2ae8185d4077886f17691e5c4cb8
 #: whatsnew/2.6.rst:886
+#, fuzzy
 msgid ":pep:`3105` - Make print a function"
-msgstr ""
+msgstr ":pep:`3105`: *Make print a function*"
 
 # 0d04e32ef22e453d96a93b5a43969dec
 #: whatsnew/2.6.rst:887
@@ -13775,8 +13790,9 @@ msgstr ""
 
 # 0b8a3c4f9df741afb7f383f8a8105437
 #: whatsnew/2.6.rst:1517
+#, fuzzy
 msgid "(Contributed by Alexander Belopolsky; :issue:`1686487`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 92a074225e844aa1a7eb1f6c8d34f920
 #: whatsnew/2.6.rst:1519
@@ -14818,8 +14834,9 @@ msgstr ""
 
 # e4980135f1504525bcd3d3b84c1c64d2
 #: whatsnew/2.6.rst:2315
+#, fuzzy
 msgid "(Contributed by Tarek Ziadé; :issue:`2663`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 4524f223be2c4b3795713dd19795e7aa
 #: whatsnew/2.6.rst:2317
@@ -15956,8 +15973,9 @@ msgstr ""
 
 # 7fe42011c112418ab258e9fa5f2eafa4
 #: whatsnew/2.6.rst:3232
+#, fuzzy
 msgid "Porting to Python 2.6"
-msgstr ""
+msgstr "Portage vers Python 3.2"
 
 # 2479a693e56a42339367a7bceda53ebe
 # 9a942cf59c9f4b4fa237fc5695530286
@@ -16083,8 +16101,9 @@ msgstr ""
 
 # 8f36cf23ade14658ba84f83a9e90a44e
 #: whatsnew/2.7.rst:3
+#, fuzzy
 msgid "What's New in Python 2.7"
-msgstr ""
+msgstr "Nouveautés de Python 2.0"
 
 # 4a7bc782c983400c8e02bdae8d4d178e
 #: whatsnew/2.7.rst:53
@@ -17125,8 +17144,9 @@ msgstr ""
 # 18fe2b7cfdee4f29911895e42175da46
 # 7f0d15f8437b43709eb4341ff01ab9e4
 #: whatsnew/2.7.rst:920 whatsnew/3.1.rst:496
+#, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`4258`.)"
-msgstr ""
+msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 # 89104bf92c604616b392332e7608339a
 #: whatsnew/2.7.rst:922
@@ -19146,8 +19166,9 @@ msgstr ""
 
 # 1d3187be8d414f92a31e014cdd178437
 #: whatsnew/2.7.rst:2357
+#, fuzzy
 msgid "Porting to Python 2.7"
-msgstr ""
+msgstr "Portage vers Python 3.2"
 
 # e9564720b7dd409ab1b00f38cc17cb3c
 #: whatsnew/2.7.rst:2362

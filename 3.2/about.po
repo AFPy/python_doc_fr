@@ -59,10 +59,13 @@ msgstr ""
 
 # 70a3ff64b89b49b8ac98778ac84841aa
 #: about.rst:23
+#, fuzzy
 msgid ""
 "the `Docutils <http://docutils.sf.net/>`_ project for creating "
 "reStructuredText and the Docutils suite;"
 msgstr ""
+"le projet `Docutils <http://docutils.sf.net/>`_ pour avoir créé "
+"reStructuredText et la suite d'outils Docutils ;"
 
 # cab139a44eac416ca420231c53b48d35
 #: about.rst:25

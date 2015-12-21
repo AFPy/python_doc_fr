@@ -1138,8 +1138,9 @@ msgid ""
 msgstr ""
 
 #: using/mac.rst:172
+#, fuzzy
 msgid "Other Resources"
-msgstr ""
+msgstr "Autres ressources"
 
 #: using/mac.rst:174
 msgid ""
@@ -2098,8 +2099,9 @@ msgid ""
 msgstr ""
 
 #: using/windows.rst:432
+#, fuzzy
 msgid "Examples:"
-msgstr ""
+msgstr "Exemples ::"
 
 #: using/windows.rst:434
 msgid ""
@@ -2145,8 +2147,9 @@ msgid ""
 msgstr ""
 
 #: using/windows.rst:459
+#, fuzzy
 msgid "For example:"
-msgstr ""
+msgstr "Par exemple ::"
 
 #: using/windows.rst:461
 msgid "Setting ``PY_PYTHON=3.1`` is equivalent to the INI file containing:"
@@ -2228,11 +2231,15 @@ msgstr ""
 "fe1cf721%28VS.80%29.aspx>`_ (MFC) interfaces utilisateur"
 
 #: using/windows.rst:513
+#, fuzzy
 msgid ""
 "`PythonWin <http://web.archive.org/web/20060524042422/ http://www.python.org/"
 "windows/pythonwin/>`_ is a sample MFC application shipped with PyWin32.  It "
 "is an embeddable IDE with a built-in debugger."
 msgstr ""
+"`PythonWin <http://web.archive.org/web/20060524042422/ http://www.python.org/"
+"windows/pythonwin/>`_ est une exemple d'application MFC livrée avec PyWin32. "
+"Il s'agit d'un IDE embarqué avec débogueur intégré."
 
 #: using/windows.rst:520
 msgid "Win32 How Do I...?"

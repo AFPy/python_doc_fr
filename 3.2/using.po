@@ -487,12 +487,16 @@ msgstr ""
 
 # 0cb4a7fd5f0f45ecad7a8aa3533f6015
 #: using/cmdline.rst:271
+#, fuzzy
 msgid ""
 "Force the binary layer of the stdin, stdout and stderr streams (which is "
 "available as their ``buffer`` attribute) to be unbuffered.  The text I/O "
 "layer will still be line-buffered if writing to the console, or block-"
 "buffered if redirected to a non-interactive file."
 msgstr ""
+"Force la couche binaire des flux stdin, stdout and stderr (disponible comme "
+"leur attribut ``buffer``) à ne pas mettre de données en tampon. La couche "
+"d’entrée-sortie en mode texte continuera de mettre une ligne en tampon."
 
 # 594254a932ea4c738ddc11340d5ad891
 #: using/cmdline.rst:276
@@ -1261,8 +1265,9 @@ msgstr ""
 
 # e7de7e62848e4bd7966538ce97d05ef7
 #: using/mac.rst:173
+#, fuzzy
 msgid "Other Resources"
-msgstr ""
+msgstr "Autres ressources"
 
 # 350a2203d25c4c6190bebb513f46af65
 #: using/mac.rst:175
@@ -2047,11 +2052,15 @@ msgstr ""
 
 # 44c1c1d5e79843cfa9138e3d74c3eb73
 #: using/windows.rst:255
+#, fuzzy
 msgid ""
 "`PythonWin <http://web.archive.org/web/20060524042422/ http://www.python.org/"
 "windows/pythonwin/>`_ is a sample MFC application shipped with PyWin32.  It "
 "is an embeddable IDE with a built-in debugger."
 msgstr ""
+"`PythonWin <http://web.archive.org/web/20060524042422/ http://www.python.org/"
+"windows/pythonwin/>`_ est une exemple d'application MFC livrée avec PyWin32. "
+"Il s'agit d'un IDE embarqué avec débogueur intégré."
 
 # fb79672c6881408d9bdb5f57ee12abb7
 #: using/windows.rst:262

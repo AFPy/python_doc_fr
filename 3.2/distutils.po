@@ -283,10 +283,13 @@ msgstr "Une liste de catégories pour le paquet"
 
 # 7c25ff026f004575bc77d995489a8195
 #: distutils/apiref.rst:78
+#, fuzzy
 msgid ""
 "a list of strings; valid classifiers are listed on `PyPI <http://pypi.python."
 "org/pypi?:action=list_classifiers>`_."
 msgstr ""
+"La liste des catégorisations est disponibles sur http://pypi.python.org/"
+"pypi?:action=list_classifiers."
 
 # 55cb260fb3ee46c5a92a81be8719e639
 #: distutils/apiref.rst:81
@@ -2652,10 +2655,11 @@ msgstr ""
 
 # 33bb4b0c634e4835b9363461f2457b9c
 #: distutils/apiref.rst:1708
+#, fuzzy
 msgid ""
 "The class constructor takes a single argument *dist*, a :class:"
 "`Distribution` instance."
-msgstr ""
+msgstr "Une sous classe de :class:`distutils.core.Distribution`"
 
 # 17878a8c1bc145a1ae61aed39050caf3
 #: distutils/apiref.rst:1713
@@ -5825,8 +5829,9 @@ msgstr ""
 
 # 2b276f0312e84de9a848d3576a70e47f
 #: distutils/setupscript.rst:411
+#, fuzzy
 msgid "Some examples:"
-msgstr ""
+msgstr "Quelques exemples ::"
 
 # a497abecf8224f26a8137db4bc3a7cd2
 #: distutils/setupscript.rst:414

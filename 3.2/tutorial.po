@@ -1357,6 +1357,7 @@ msgstr ""
 
 # da3f1f795ea74d0c872d7522f0a9608e
 #: tutorial/classes.rst:566
+#, fuzzy
 msgid ""
 "Dynamic ordering is necessary because all cases of multiple inheritance "
 "exhibit one or more diamond relationships (where at least one of the parent "
@@ -1372,6 +1373,20 @@ msgid ""
 "multiple inheritance.  For more detail, see http://www.python.org/download/"
 "releases/2.3/mro/."
 msgstr ""
+"L'ordre défini dynamiquement est nécessaire car tous les cas d'héritage "
+"multiple comportent une ou plusieurs relations en losange (où au moins une "
+"classe peut être accédée à partir de plusieurs chemins en pariant de la "
+"classe la plus base). Par exemple, puisque toutes les classes héritent de :"
+"class:`object`, tout héritage multiple ouvre plusieurs chemins pour "
+"atteindre :class:`object`. Pour qu'une classe de base ne soit pas appelée "
+"plusieurs fois, l'algorithme dynamique linéarise l'ordre de recherche d'une "
+"façon qui préserve l'ordre d'héritage, de lagauche vers la droite, spécifié "
+"dans chaque classe, qui appelle chaque classe parente une seule fois, qui "
+"est monotone (ce qui signifie qu'une classe peut être sous-classée sans "
+"affecter l'ordre d'héritage de ses parents). Prises ensemble, ces propriétés "
+"permettent de concevoir des classes de façon fiable et extensible dans un "
+"contexte d'héritage multiple. Pour plus de détail, consultez http://www."
+"python.org/download/releases/2.3/mro/."
 
 # ed97928e12d14dfba6837e4df0059b4f
 #: tutorial/classes.rst:583
@@ -1476,6 +1491,7 @@ msgstr ""
 
 # c70f621cfaa84fcdabfe5a858641238d
 #: tutorial/classes.rst:654
+#, fuzzy
 msgid ""
 "A piece of Python code that expects a particular abstract data type can "
 "often be passed a class that emulates the methods of that data type "
@@ -1484,6 +1500,12 @@ msgid ""
 "`readline` that get the data from a string buffer instead, and pass it as an "
 "argument."
 msgstr ""
+"On peut souvent fournir, à du code Python qui s'attend à recevoir un type de "
+"donnée abstrait spécifique, une classe qui simule les méthodes de ce type. "
+"Par exemple, si vous avez une fonction qui formate des données extraites "
+"d'un objet fichier, vous pouvez définir une classe avec des méthodes :meth:"
+"`read` et :meth:`!readline` qui extrait ses données d'un tampon de chaînes "
+"de caractères à la place, et lui passer une instance comme argument."
 
 # 268cdef52139463d90b3303a7b73d434
 #: tutorial/classes.rst:665
@@ -1579,6 +1601,7 @@ msgstr ""
 
 # b2a9bec420134035b3cca98e2fb101aa
 #: tutorial/classes.rst:738
+#, fuzzy
 msgid ""
 "This style of access is clear, concise, and convenient.  The use of "
 "iterators pervades and unifies Python.  Behind the scenes, the :keyword:"
@@ -1590,6 +1613,14 @@ msgid ""
 "the :meth:`__next__` method using the :func:`next` built-in function; this "
 "example shows how it all works::"
 msgstr ""
+"Ce mode d'accès est simple, concis et pratique. L'utilisation d'itérateurs "
+"imprègne et unifie Python. En arrière plan, l'instruction :keyword:`for` "
+"appelle la fonction :func:`iter` sur l'objet conteneur. Cette fonction "
+"renvoie un itérateur qui définit la méthode :meth:`~iterator.__next__`, "
+"laquelle accèdeaux éléments du conteneur un par un. Lorsqu'il n'y a plus "
+"d'élément, :meth:`~iterator.__next__` lève une exception :exc:"
+"`StopIteration` qui indique à la boucle del'instruction :keyword:`for` de se "
+"terminer. Cet exemple montre comment tout cela fonctionne ::"
 
 # 5d71b09c32194baab59fe4508b5dad5f
 #: tutorial/classes.rst:763
@@ -1612,6 +1643,7 @@ msgstr "Générateurs"
 
 # 0d409683913b49018830121fde243feb
 #: tutorial/classes.rst:800
+#, fuzzy
 msgid ""
 ":term:`Generator`\\s are a simple and powerful tool for creating iterators.  "
 "They are written like regular functions but use the :keyword:`yield` "
@@ -1620,15 +1652,28 @@ msgid ""
 "data values and which statement was last executed).  An example shows that "
 "generators can be trivially easy to create::"
 msgstr ""
+"Les :term:`générateur`\\s sont des outils simples et puissants pour créer "
+"des itérateurs. Ils sont écrits comme des fonctions classiques mais "
+"utilisent l'instruction :keyword:`yield` lorsqu'ils veulent renvoyer des "
+"données. À chaque fois que :func:`next` est appelée, le générateur reprend "
+"son exécution là où il s'était arrété (en conservant tout son contexte "
+"d'exécution). Un exemple montre très bien combien les générateurs sont "
+"simples à créer ::"
 
 # c841cc4150b74badabb29bfc0ef297b9
 #: tutorial/classes.rst:821
+#, fuzzy
 msgid ""
 "Anything that can be done with generators can also be done with class based "
 "iterators as described in the previous section.  What makes generators so "
 "compact is that the :meth:`__iter__` and :meth:`~generator.__next__` methods "
 "are created automatically."
 msgstr ""
+"Tout ce qui peut être fait avec des générateurs peut également être fait "
+"avec des itérateurs basés sur des classes, comme décrit dans le paragraphe "
+"précédent. Si qui fait que les générateurs sont si compacts est que les "
+"méthodes :meth:`__iter__` et :meth:`~generator.__next__` sont créées "
+"automatiquement."
 
 # 4c43011a25294e678d9585b12306ff6e
 #: tutorial/classes.rst:826
@@ -2549,6 +2594,7 @@ msgstr ""
 
 # 7dfe92b9a33b4108971985cc4dd20683
 #: tutorial/controlflow.rst:675
+#, fuzzy
 msgid ""
 "Annotations are stored in the :attr:`__annotations__` attribute of the "
 "function as a dictionary and have no effect on any other part of the "
@@ -2559,6 +2605,14 @@ msgid ""
 "the :keyword:`def` statement.  The following example has a positional "
 "argument, a keyword argument, and the return value annotated with nonsense::"
 msgstr ""
+"Les annotations sont stockées dans l'attribut :attr:`__annotations__` de la "
+"fonction, sous forme d'un dictionnaire, et n'ont aucun autre effet. Les "
+"annotations sur les paramètres sont définis par deux points (:) après le nom "
+"du paramètre suivi d'une expression donnant la valeur de l'annotation. Les "
+"annotations de retour sont définies par ``->`` suivi d'une expression, entre "
+"la liste des paramètres et les deux points de fin de l'instruction :keyword:"
+"`def`. L'exemple suivant a un paramètre positionnel, un paramètre nommé, et "
+"une valeur de retour annotée ::"
 
 # c7e9712b11bd49abbe27f729bdac0e0e
 #: tutorial/controlflow.rst:696
@@ -2899,10 +2953,13 @@ msgstr "On peut obtenir le même résultat avec ::"
 
 # 750bbefc515241598e48bbaa9660afa0
 #: tutorial/datastructures.rst:184
+#, fuzzy
 msgid ""
 "This is also equivalent to ``squares = list(map(lambda x: x**2, "
 "range(10)))``, but it's more concise and readable."
 msgstr ""
+"C'est également l'équivalent de ``squares = map(lambda x: x**2, "
+"range(10))``, mais en plus concis et plus lisible."
 
 # f30fcbe7e16949a3969375f382240826
 #: tutorial/datastructures.rst:187
@@ -3276,12 +3333,18 @@ msgstr ""
 
 # 07f6474064cd4a0eafeec2e57969b363
 #: tutorial/datastructures.rst:481
+#, fuzzy
 msgid ""
 "Performing ``list(d.keys())`` on a dictionary returns a list of all the keys "
 "used in the dictionary, in arbitrary order (if you want it sorted, just use "
 "``sorted(d.keys())`` instead). [1]_  To check whether a single key is in the "
 "dictionary, use the :keyword:`in` keyword."
 msgstr ""
+"Exécuter ``list(d.keys())`` sur un dictionnaire ``d`` retourne une liste de "
+"toutes lesclés utilisées dans le dictionnaire, dans un ordre arbitraire (si "
+"vous voulez qu'elles soient triées, utilisez ``sorted(d.keys())``). [2]_ "
+"Pour tester si une clé est dans le dictionnaire, utilisez le mot-clé :"
+"keyword:`in`."
 
 # 6509cc44d77544c2902d93abc7543d2c
 #: tutorial/datastructures.rst:486
@@ -3489,6 +3552,7 @@ msgstr "Comparer des séquences avec d'autres types"
 
 # 75b6b16111b14fe18c07dd0b697559a0
 #: tutorial/datastructures.rst:651
+#, fuzzy
 msgid ""
 "Sequence objects may be compared to other objects with the same sequence "
 "type. The comparison uses *lexicographical* ordering: first the first two "
@@ -3503,6 +3567,19 @@ msgid ""
 "order individual characters.  Some examples of comparisons between sequences "
 "of the same type::"
 msgstr ""
+"Des séquences peuvent être comparées avec d'autres séquences du même type. "
+"La comparaison utilise un ordre *lexicographique* : les deux premiers "
+"éléments de chaque séquence sont comparés, et s'ils diffèrent cela détermine "
+"le résultat de la comparaison ; s'ils sont égaux, les deux éléments suivants "
+"sont comparés à leur tour, et ainsi de suite jusqu'à ce que l'une des "
+"séquences soit épuisée. Si deux éléments à comparer sont eux-mêmes des "
+"séquences du même type, alors la comparaison lexicographique est effectuée "
+"récursivement. Si tous les éléments des deux séquences sont égaux, les deux "
+"séquences sont alors considérées comme égales. Si une séquence est une sous-"
+"séquence de l'autre, la séquence la plus courte est celle dont la valeur est "
+"inférieure. La comparaison lexicographique des chaînes de caractères utilise "
+"le code Unicode des caractères. Voici quelques exemples de comparaisons "
+"entre séquences de même type ::"
 
 # 4ce59ca11de34a7ca57cfdf9ee617baa
 #: tutorial/datastructures.rst:671
@@ -3963,6 +4040,7 @@ msgstr ""
 
 # d1c51a08aae445399ea9e75f8cbf3e66
 #: tutorial/errors.rst:336
+#, fuzzy
 msgid ""
 "A *finally clause* is always executed before leaving the :keyword:`try` "
 "statement, whether an exception has occurred or not. When an exception has "
@@ -3974,6 +4052,16 @@ msgid ""
 "a :keyword:`break`, :keyword:`continue` or :keyword:`return` statement.  A "
 "more complicated example::"
 msgstr ""
+"Une *clause finally* est toujours exécutée avant de quitter l'instruction :"
+"keyword:`try`, qu'une exception ait été déclenchée ou non. Quand "
+"uneexception a été déclenchée dans la clause :keyword:`try` et n'a pas été "
+"prise en charge par une clause :keyword:`except` (ou si elle a été "
+"déclenchée dans une clause :keyword:`except` ou :keyword:`else`), elle est "
+"re-déclenchée après l'exécution de la clause :keyword:`finally`. La clause :"
+"keyword:`finally` est également exécutée \"à la sortie\" quand "
+"n'importequelle autre clause de l'instruction :keyword:`try` est abandonnée "
+"par une instruction :keyword:`break`, :keyword:`continue` ou :keyword:"
+"`return`. Voici un exemple plus compliqué ::"
 
 # ba3482e7ee954dcfb11527cb1ee7bc15
 #: tutorial/errors.rst:369
@@ -4609,6 +4697,7 @@ msgstr ""
 
 # 86313a8536824ba8afa72de9d73ced58
 #: tutorial/index.rst:13
+#, fuzzy
 msgid ""
 "The Python interpreter and the extensive standard library are freely "
 "available in source or binary form for all major platforms from the Python "
@@ -4616,6 +4705,12 @@ msgid ""
 "site also contains distributions of and pointers to many free third party "
 "Python modules, programs and tools, and additional documentation."
 msgstr ""
+"L'interpréteur Python et sa vaste bibliothèque standard sont disponibles "
+"librement, sous forme de sources ou de binaires, pour toutes les plateformes "
+"majeures, depuis le site Internet http://www.python.org/ et peuvent être "
+"librement redistribués. Le même site distribue et contient des liens vers "
+"des modules, des programmes et des outils tiers ainsi que vers de la "
+"documentation supplémentaire."
 
 # 5db764c975f540e0bee4e1ce104f90f3
 #: tutorial/index.rst:19
@@ -5567,12 +5662,17 @@ msgstr "Invoquer l'interpréteur"
 
 # fdd4244ca2db46b6bd9fe191a0196bd0
 #: tutorial/interpreter.rst:13
+#, fuzzy
 msgid ""
 "The Python interpreter is usually installed as :file:`/usr/local/bin/"
 "python3.2` on those machines where it is available; putting :file:`/usr/"
 "local/bin` in your Unix shell's search path makes it possible to start it by "
 "typing the command:"
 msgstr ""
+"L'interpréteur Python est habituellement installé ici :file:`/usr/local/bin/"
+"python3.4` sur les machines où il est disponible. En mettant :file:`/usr/"
+"local/bin` dans les chemins de recherche de votre shell Unix, vous permettez "
+"de lancer l'interpréteur Python en tapant la commande ::"
 
 # 47cfe437aa254af68fc33c3de4ad1b61
 #: tutorial/interpreter.rst:21
@@ -5589,12 +5689,17 @@ msgstr ""
 
 # e1afee9d184440c2b6025b0110a3ea18
 #: tutorial/interpreter.rst:26
+#, fuzzy
 msgid ""
 "On Windows machines, the Python installation is usually placed in :file:`C:\\"
 "\\Python32`, though you can change this when you're running the installer.  "
 "To add this directory to your path,  you can type the following command into "
 "the command prompt in a DOS box::"
 msgstr ""
+"Sur les machines Windows, l'installation de Python se situe souvent dans :"
+"file:`C:\\\\Python35`, cependant, il est possible de changer ça à "
+"l'installation. Pour ajouter ce dossier à votre :envvar:`PATH`, vous pouvez "
+"copier cette commande dans un interpréteur DOS ::"
 
 # 34ca1f44716b4412af6b808d9239a292
 #: tutorial/interpreter.rst:33
@@ -5838,10 +5943,13 @@ msgstr ""
 
 # a13b3970e8ac489794d95dcfe6e954ff
 #: tutorial/interpreter.rst:161
+#, fuzzy
 msgid ""
 "The script can be given an executable mode, or permission, using the :"
 "program:`chmod` command::"
 msgstr ""
+"Un script peut être rendu utilisable en utilisant la commande :program:"
+"`chmod`."
 
 # 8460ae6c4c9f40939882bcca17614330
 #: tutorial/interpreter.rst:166
@@ -5990,12 +6098,17 @@ msgstr "Les modules de Personnalisation"
 
 # 61888bb2adf54847b335b1baa7562b58
 #: tutorial/interpreter.rst:245
+#, fuzzy
 msgid ""
 "Python provides two hooks to let you customize it: :mod:`sitecustomize` and :"
 "mod:`usercustomize`.  To see how it works, you need first to find the "
 "location of your user site-packages directory.  Start Python and run this "
 "code:"
 msgstr ""
+"Python peut être personnalisé via les modules :mod:`sitecustomize` et :"
+"\"\"mod:`usercustomize`. Pour découvrir comment ils fonctionnent vous devez "
+"d'abord les trouver, ils sont dans un dossier appelé user site-packages. "
+"Démarrez Python et exécutez : code::"
 
 # f6a872185b1440b3b7548c2164879804
 #: tutorial/interpreter.rst:253
@@ -6046,6 +6159,7 @@ msgstr "Introduction informelle à Python"
 
 # aee94e45e0b6453a8db12b9187e6a984
 #: tutorial/introduction.rst:7
+#, fuzzy
 msgid ""
 "In the following examples, input and output are distinguished by the "
 "presence or absence of prompts (``>>>`` and ``...``): to repeat the example, "
@@ -6054,6 +6168,13 @@ msgid ""
 "secondary prompt on a line by itself in an example means you must type a "
 "blank line; this is used to end a multi-line command."
 msgstr ""
+"Dans les exemples qui suivent, les entrées et sorties se distinguent par la "
+"présence ou l'absence d'invite (``>>>`` et ``...``) : pour reproduire les "
+"exemples, vous devez taper tout ce qui est après l'invite, au moment où "
+"celle-ci apparaît ; les lignes qui n'affichent pas d'invite sont les sorties "
+"de l'interpréteur. Notez qu'une invite secondaire affichée seule sur une "
+"ligne dans un exemple indique que vous devez entrer une ligne vide ; ceci "
+"est utilisé pour terminer une commande multi-lignes."
 
 # 6c8b1d26bc644031a59c2e3fd1e0b8b9
 #: tutorial/introduction.rst:14
@@ -6097,6 +6218,7 @@ msgstr "Les nombres"
 
 # 7fc84a8e5a2e425ba518fae1619bbfae
 #: tutorial/introduction.rst:44
+#, fuzzy
 msgid ""
 "The interpreter acts as a simple calculator: you can type an expression at "
 "it and it will write the value.  Expression syntax is straightforward: the "
@@ -6104,6 +6226,11 @@ msgid ""
 "languages (for example, Pascal or C); parentheses can be used for grouping.  "
 "For example::"
 msgstr ""
+"L'interpréteur agit comme une simple calculatrice : vous pouvez lui entrer "
+"une expression et il vous affiche la valeur. La syntaxe des expressions est "
+"simple : les opérateurs ``+``, ``-``, ``*`` et ``/`` fonctionnent comme dans "
+"la plupart des langages (par exemple, Pascal ou C) ; les parenthèses peuvent "
+"être utilisées pour faire des regroupements. Par exemple ::"
 
 # a6428dd4ac4e42dbbe560b356ed63f51
 #: tutorial/introduction.rst:61
@@ -6124,10 +6251,13 @@ msgstr ""
 
 # 99214657c4894c6681d8eb7e9e662295
 #: tutorial/introduction.rst:76
+#, fuzzy
 msgid ""
 "The equal sign (``'='``) is used to assign a value to a variable. "
 "Afterwards, no result is displayed before the next interactive prompt::"
 msgstr ""
+"Le signe égal (``=``) est utilisé pour affecter une valeur à une variable. "
+"Après cela, aucun résultat n'est affiché avant l'invite suivante ::"
 
 # 804a379dfd234700ad178eff394b12f9
 #: tutorial/introduction.rst:84
@@ -6177,12 +6307,18 @@ msgstr ""
 
 # 7034444fa44f4372a412a17e5a1f4297
 #: tutorial/introduction.rst:136
+#, fuzzy
 msgid ""
 "The conversion functions to floating point and integer (:func:`float`, :func:"
 "`int`) don't work for complex numbers --- there is not one correct way to "
 "convert a complex number to a real number.  Use ``abs(z)`` to get its "
 "magnitude (as a float) or ``z.real`` to get its real part::"
 msgstr ""
+"Les fonctions de conversion en nombres à virgule flottante et en entiers :"
+"func:`float`, :func:`int` et :func:`long`) ne fonctionnent pas pour les "
+"nombres complexes --- il n'y a pas de manière correcte de convertir un "
+"nombre complexe en nombre réel. Utilisez ``abs(z)`` pour obtenir sa "
+"magnitude (de type flottant) ou ``z.real`` pour obtenir sa partie réelle ::"
 
 # 682c669903d14ba094f4a891feaea4a5
 #: tutorial/introduction.rst:153
@@ -6404,12 +6540,17 @@ msgstr ""
 
 # ea281612ebe84fd6be5157bb95b530fa
 #: tutorial/introduction.rst:375
+#, fuzzy
 msgid ""
 "The first row of numbers gives the position of the indices 0...5 in the "
 "string; the second row gives the corresponding negative indices. The slice "
 "from *i* to *j* consists of all characters between the edges labeled *i* and "
 "*j*, respectively."
 msgstr ""
+"La première ligne de nombres donne la position des indices 0...6 dans la "
+"chaîne ; la deuxième ligne donne l'indice négatif correspondant. La tranche "
+"de *i* à *j* est constituée de tous les caractères situés entre les bords "
+"libellés *i* et *j*, respectivement."
 
 # 7cd9f9e434f64843bbdba7419a3dcc50
 #: tutorial/introduction.rst:380
@@ -6590,10 +6731,14 @@ msgstr ""
 
 # 80c0c017b4b04a81904d39b0e0856b9c
 #: tutorial/introduction.rst:485
+#, fuzzy
 msgid ""
 "All slice operations return a new list containing the requested elements.  "
 "This means that the following slice returns a shallow copy of the list *a*::"
 msgstr ""
+"Toutes les opérations par tranches renvoient une nouvelle liste contenant "
+"les éléments demandés. Ce qui signifie que l'opération suivante renvoie une "
+"copie superficielle de la liste ::"
 
 # 91a3511d7c0941c4b88f421f6fd0988d
 #: tutorial/introduction.rst:491
@@ -6723,6 +6868,7 @@ msgstr ""
 
 # ffdf2051e5d94fd48205a5f14452abe8
 #: tutorial/introduction.rst:603
+#, fuzzy
 msgid ""
 "The :func:`print` function writes the value of the expression(s) it is "
 "given.  It differs from just writing the expression you want to write (as we "
@@ -6731,13 +6877,23 @@ msgid ""
 "without quotes, and a space is inserted between items, so you can format "
 "things nicely, like this::"
 msgstr ""
+"La fonction :func:`print` écrit les valeur des paramètres qui lui sont "
+"fournis. Ce n'est pas la même chose que d'écrire l'expression que vousvoulez "
+"afficher (comme nous l'avons fait dans l'exemple de la calculatrice), dû à "
+"la manière de :func:`print` de gérer les paramètres multiples, les nombres "
+"décimaux, et les chaînes. Les chaînes sont affichées sans apostrophes et "
+"unespace est inséré entre les éléments de telle sorte que vous pouvez "
+"facilement formater les choses, comme ceci ::"
 
 # bd7e3783277645d1825bcb1f0e91367c
 #: tutorial/introduction.rst:614
+#, fuzzy
 msgid ""
 "The keyword *end* can be used to avoid the newline after the output, or end "
 "the output with a different string::"
 msgstr ""
+"Le paramètre nommé *end* peut servir pour enlever le retour à la ligne, ou "
+"terminer la ligne par une autre chaîne ::"
 
 # 47bda19f84e34d98aa2cf1c738057e1b
 #: tutorial/modules.rst:5
@@ -7126,10 +7282,13 @@ msgstr ""
 
 # 0b74696d464443b98be6e53f070f8668
 #: tutorial/modules.rst:234
+#, fuzzy
 msgid ""
 "The module :mod:`compileall` can create :file:`.pyc` files (or :file:`.pyo` "
 "files when :option:`-O` is used) for all modules in a directory."
 msgstr ""
+"Le module :mod:`compileall` permet de compiler tous les modules d'un dossier "
+"(et accepte aussi le paramètre :option:`-O`)."
 
 # d2da975e24d445f3949c1a292f4db513
 #: tutorial/modules.rst:241
@@ -7253,6 +7412,7 @@ msgstr ""
 
 # b3187ea8c7184a7093491dc2ee85cbd9
 #: tutorial/modules.rst:364
+#, fuzzy
 msgid ""
 "Suppose you want to design a collection of modules (a \"package\") for the "
 "uniform handling of sound files and sound data.  There are many different "
@@ -7266,6 +7426,18 @@ msgid ""
 "operations.  Here's a possible structure for your package (expressed in "
 "terms of a hierarchical filesystem)::"
 msgstr ""
+"Imaginez que vous voulez constuire une collections de modules (un \"paquet"
+"\") pour gérer uniformément les fichiers contenant du son et des données "
+"sonores. Il existe un grand nombre de formats de fichiers pour stocker du "
+"son (généralement repérés par leur extension, par exemple :file:`.wav`, :"
+"file:`.aiff`, :file:`.au`), vous aurez donc envie de créer et maintenir un "
+"nombre croissant de modules pour gérer la conversion entre tous ces formats. "
+"Il existe aussi tout une floppée d'opérations que vous voudriez pouvoir "
+"faire sur du son (mixer, ajouter de l'écho, égaliser, ajouter un effet "
+"stéréo articifiel), donc, en plus des modules de conversion, vous allez "
+"écrire un nombre illimité de modules permettant d'effectuer ces opérations. "
+"Voici une structure possible pour votre paquet (exprimée comme un système de "
+"fichier, hierarchiquement) :"
 
 # fc229c7d1a3141bcb10e719e3af47fff
 #: tutorial/modules.rst:399
@@ -7398,6 +7570,7 @@ msgstr ""
 
 # c39634ee16e543329abf3ee4456d67a6
 #: tutorial/modules.rst:463
+#, fuzzy
 msgid ""
 "The only solution is for the package author to provide an explicit index of "
 "the package.  The :keyword:`import` statement uses the following convention: "
@@ -7409,6 +7582,15 @@ msgid ""
 "importing \\* from their package.  For example, the file :file:`sounds/"
 "effects/__init__.py` could contain the following code::"
 msgstr ""
+"La seule solution, pour l'auteur du paquet, est de fournir un index "
+"explicite du contenu du paquet. L'instruction :keyword:`import` utilise la "
+"convention suivante: Si le fichier :file:`__init__.py` du paquet définit une "
+"liste nommée ``__all__`, cette liste sera utilisée comme liste des noms de "
+"modules devant être importés lorsque ``from package import *`` est utilisé. "
+"C'est le rôle de l'auteur du paquet de maintenir cette liste à jour lorsque "
+"de nouvelles version du paquet sont publiées. Un auteur de paquet peut aussi "
+"décider de ne pas autoriser d'importer ``*`` de leur paquet. Par exemple, le "
+"fichier :file:`sound/effects/__init__.py` peut contenir le code suivant ::"
 
 # 41f65e8609da41a9860776369a2f83ff
 #: tutorial/modules.rst:475
@@ -7556,11 +7738,15 @@ msgstr ""
 
 # b8a583edff80481da4b12de63f053e83
 #: tutorial/modules.rst:544
+#, fuzzy
 msgid ""
 "In fact function definitions are also 'statements' that are 'executed'; the "
 "execution of a module-level function enters the function name in the "
 "module's global symbol table."
 msgstr ""
+"En réalité, la déclaration d'une fonction est elle même une instruction, "
+"sont l'exécution enregistre le nom de la fonction dans la table des symboles "
+"globaux du module."
 
 # 625b03e0ef774f1b82b1fd48d576840b
 #: tutorial/stdlib.rst:5
@@ -7785,11 +7971,15 @@ msgstr "Compression de donnée"
 
 # b54213755d2246d490691f8ed58e258d
 #: tutorial/stdlib.rst:205
+#, fuzzy
 msgid ""
 "Common data archiving and compression formats are directly supported by "
 "modules including: :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:`zipfile` and :"
 "mod:`tarfile`. ::"
 msgstr ""
+"Les formats d'archivage et de compression les plus communs sont directement "
+"gérés par les modules :mod:`zlib`, :mod:`gzip`, :mod:`bz2`, :mod:`lzma`, :"
+"mod:`zipfile`, et :mod:`tarfile` ::"
 
 # 725abd6709854d81a03c75a2beb8a25c
 #: tutorial/stdlib.rst:225
@@ -8006,11 +8196,17 @@ msgstr "Gabarits (Templates)"
 
 # a4677abfcf1b4b35a1cdc5944db9dd63
 #: tutorial/stdlib2.rst:74
+#, fuzzy
 msgid ""
 "The :mod:`string` module includes a versatile :class:`Template` class with a "
 "simplified syntax suitable for editing by end-users.  This allows users to "
 "customize their applications without having to alter the application."
 msgstr ""
+"Le module :mod:`string`  contiens une classe fort polyvalente : :class:"
+"`~string.Template` permettant d'écrire des gabarits (dits \"templates\") "
+"avec une syntaxe simple, si simple qu'elle est compréhensible par des non-"
+"développeurs. Cela permet donc à vous utilisateurs de personnaliser leur "
+"application sans la modifier."
 
 # 4d893939b2b44551bb79bdb0f3953894
 #: tutorial/stdlib2.rst:78
@@ -8068,6 +8264,7 @@ msgstr "Travailler avec des données binaires"
 
 # 016646d9bdb246cf8154cf1c5da69a33
 #: tutorial/stdlib2.rst:135
+#, fuzzy
 msgid ""
 "The :mod:`struct` module provides :func:`pack` and :func:`unpack` functions "
 "for working with variable length binary record formats.  The following "
@@ -8076,6 +8273,13 @@ msgid ""
 "represent two and four byte unsigned numbers respectively.  The ``\"<\"`` "
 "indicates that they are standard size and in little-endian byte order::"
 msgstr ""
+"Le module :mod:`struct` expose les fonctions :func:`~struct.pack` et :func:"
+"`~struct.unpack` permettant de travailler avec des données binaires. "
+"L'exemple suivant montre comment parcourir une entête de fichier ZIP sans "
+"recourir au module :mod:`zipfile`. Les marqueurs ``\"H\"`` et ``\"I\"`` "
+"représentent des nombres entiers non signés, stockés respectivement sur deux "
+"et quatre octets. Le ``\"<\"`` indique qu'ils ont une taille standard et "
+"dans le style petit-boutiste."
 
 # 90db47da928e48e0b81e1f133eaa3fdb
 #: tutorial/stdlib2.rst:163
@@ -8124,6 +8328,7 @@ msgstr ""
 
 # be388ea455e34dd4a14924a91dc8008d
 #: tutorial/stdlib2.rst:198
+#, fuzzy
 msgid ""
 "While those tools are powerful, minor design errors can result in problems "
 "that are difficult to reproduce.  So, the preferred approach to task "
@@ -8133,6 +8338,13 @@ msgid ""
 "communication and coordination are easier to design, more readable, and more "
 "reliable."
 msgstr ""
+"Bien que ces outils soient puissants, des erreurs de conceptions peuvent "
+"engendrer des problèmes difficiles à reproduire. Donc, l'approche favorite "
+"pour coordonner des tâches est de restreindre l'accès d'une ressource à un "
+"seul thread, et d'utiliser le module :mod:`queue` pour alimenter ce thread "
+"de requêtes venant d'autres threads. Les applications utilisant des :class:"
+"`~queue.Queue` pour leurs communication et coordination entre threads sont "
+"plus simples à concevoir, plus lisible, et plus fiables."
 
 # 6ef153008b1f4cbbab923c63e49b60fd
 #: tutorial/stdlib2.rst:209
@@ -8157,6 +8369,7 @@ msgstr "Produisant l'affichage suivant :"
 
 # a886eca51f044ac99a8596f67c204af1
 #: tutorial/stdlib2.rst:229
+#, fuzzy
 msgid ""
 "By default, informational and debugging messages are suppressed and the "
 "output is sent to standard error.  Other output options include routing "
@@ -8165,6 +8378,13 @@ msgid ""
 "`DEBUG`, :const:`INFO`, :const:`WARNING`, :const:`ERROR`, and :const:"
 "`CRITICAL`."
 msgstr ""
+"Par défaut, les messages d'information et de débogage sont ignorés, les "
+"autres écrites sur la sortie standard. Il est aussi possible d'envoyer les "
+"messages par email, datagrammes, sur des sockets, ou postés sur un serveur "
+"HTTP. Les nouveaux filtres permettent d'utiliser des sorties différentes en "
+"fonction de la priorité du message : :const:`~logging.DEBUG`,:const:"
+"`~logging.INFO`, :const:`~logging.WARNING`, :const:`~logging.ERROR`, et :"
+"const:`~logging.CRITICAL`."
 
 # 89c70a6c22154b45a835ef091eb47a9f
 #: tutorial/stdlib2.rst:235
@@ -8233,6 +8453,7 @@ msgstr ""
 
 # f8a3aba67a924d26b48479a717425b59
 #: tutorial/stdlib2.rst:290
+#, fuzzy
 msgid ""
 "The :mod:`array` module provides an :class:`array()` object that is like a "
 "list that stores only homogeneous data and stores it more compactly.  The "
@@ -8240,15 +8461,26 @@ msgid ""
 "binary numbers (typecode ``\"H\"``) rather than the usual 16 bytes per entry "
 "for regular lists of Python int objects::"
 msgstr ""
+"Le module :mod:`array` fournit un objet :class:`~array.array()`, ne "
+"permettant de stocker que des listes homogènes, mais d'une manière plus "
+"compacte. L'exemple suivant montre une liste de nombres, stockés chacun sur "
+"deux octets non signés (marqueur ``\"H\"``) plutôt que d'utiliser 16 octets "
+"comme l'aurais fait une liste classique ::"
 
 # 804496d5e59d47728024951e67d4e243
 #: tutorial/stdlib2.rst:303
+#, fuzzy
 msgid ""
 "The :mod:`collections` module provides a :class:`deque()` object that is "
 "like a list with faster appends and pops from the left side but slower "
 "lookups in the middle. These objects are well suited for implementing queues "
 "and breadth first tree searches::"
 msgstr ""
+"Le module :mod:`collections` fournit la classe :class:`~collections."
+"deque()`, qui ressemble à une liste, mais plus rapide à insérer ou sortir "
+"des éléments par la gauche, et plus lente pour accéder aux éléments du "
+"milieu. C'est objets sont particulièrement adaptés pour construire des "
+"queues ou des algorithme de parcours d'arbre en largeur ::"
 
 # bf54e6b44b894976856c5076b95deffa
 #: tutorial/stdlib2.rst:324
@@ -8281,11 +8513,16 @@ msgstr "Arithmétique décimale à Virgule Flottante"
 
 # 329a94765dec48ca96907f073171d461
 #: tutorial/stdlib2.rst:352
+#, fuzzy
 msgid ""
 "The :mod:`decimal` module offers a :class:`Decimal` datatype for decimal "
 "floating point arithmetic.  Compared to the built-in :class:`float` "
 "implementation of binary floating point, the class is especially helpful for"
 msgstr ""
+"Le module :mod:`decimal` expose la classe :class:`~decimal.Decimal`, "
+"spécialisée dans le calcul de nombres décimaux représentés en virgule "
+"flottante. Par rapport à la classe native :class:`float`, elle est "
+"particulièrement utile pour"
 
 # a17b5bb9a9d54f8fa7dc584f62ab912c
 #: tutorial/stdlib2.rst:356
@@ -8345,11 +8582,15 @@ msgstr ""
 
 # c953e51456664ee2988fc12ff3a8ccaf
 #: tutorial/stdlib2.rst:379
+#, fuzzy
 msgid ""
 "Exact representation enables the :class:`Decimal` class to perform modulo "
 "calculations and equality tests that are unsuitable for binary floating "
 "point::"
 msgstr ""
+"La représentation exacte de la classe :class:`~decimal.Decimal`lui permet de "
+"faire des calculs du modulo ou des tests d'égalité qui ne seraient pas "
+"possibles avec des virgules flottantes binaires ::"
 
 # 782305200a6d42e994da730f959aa82d
 #: tutorial/stdlib2.rst:392
@@ -8412,10 +8653,13 @@ msgstr ""
 
 # eccec95b74784d50a5dbadb5f4802fd8
 #: tutorial/whatnow.rst:24
+#, fuzzy
 msgid ""
 ":ref:`install-index` explains how to install external modules written by "
 "other Python users."
 msgstr ""
+":ref:`installing-index` explique comment installer des paquets écrits par "
+"d'autres utilisateurs de Python."
 
 # 6874e72a18f74e9e93bc4185f25fd6a4
 #: tutorial/whatnow.rst:27
@@ -8459,12 +8703,17 @@ msgstr ""
 
 # e00c22e9a3b54bb3a13d19994bc697ca
 #: tutorial/whatnow.rst:46
+#, fuzzy
 msgid ""
 "http://aspn.activestate.com/ASPN/Python/Cookbook/: The Python Cookbook is a "
 "sizable collection of code examples, larger modules, and useful scripts. "
 "Particularly notable contributions are collected in a book also titled "
 "Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 msgstr ""
+"http://code.activestate.com/recipes/langs/python/: \"The Python Cookbook\" "
+"est un recueil assez important d'exemples de code, de modules, et de "
+"scripts. Les contributions les plus remarquables y sont regroupées dans un "
+"livre appelé \"Python Cookbook\" (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 
 # dd7c82cc6cce4c16b66eb0a534592f49
 #: tutorial/whatnow.rst:51

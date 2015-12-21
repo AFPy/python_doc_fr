@@ -74,6 +74,7 @@ msgstr ""
 
 # 22246202335d487995601320c3bb0528
 #: install/index.rst:46
+#, fuzzy
 msgid ""
 "This document is aimed primarily at the people who need to install third-"
 "party Python modules: end-users and system administrators who just need to "
@@ -84,6 +85,16 @@ msgid ""
 "you're looking for information on how to distribute your own Python modules "
 "so that others may use them, see the :ref:`distutils-index` manual."
 msgstr ""
+"Ce document s'adresse principalement aux personnes qui ont besoin "
+"d'installer des modules tiers de Python : les utilisateurs finaux et les "
+"administrateurs système, qui ont juste besoin de faire fonctionner une "
+"application Python, et les programmeurs Python, qui veulent ajouter de "
+"nouvelles fonctionnalités à leur boîte à outils. Vous n'avez pas besoin de "
+"connaître Python pour lire ce document. Il y aura quelques brèves "
+"utilisations du mode interactif de Python pour explorer votre installation, "
+"mais c'est tout. Si vous cherchez des informations sur la façon de "
+"distribuer vos propres modules Python afin que d'autres puissent les "
+"utiliser, allez voir le manuel de :ref:`distutils-index`."
 
 # ea5399c88cbd4cf1892e9e06a0f3a41e
 #: install/index.rst:59
@@ -698,8 +709,9 @@ msgstr "Comment fonctionne l'installation"
 # 82469bcb8afc4a0899d355f72c46f487
 #: install/index.rst:341 install/index.rst:352 install/index.rst:403
 #: install/index.rst:504
+#, fuzzy
 msgid "modules"
-msgstr ""
+msgstr "module"
 
 # 8a12da57f05641f3a02d74b68a9b545b
 #: install/index.rst:341
@@ -924,8 +936,9 @@ msgstr "installation des modules python"
 # 4fbb99cc1aaa426586e5b9b8de38de16
 # cabe1e5472914f598f6b89fe29d1df0a
 #: install/index.rst:453 install/index.rst:530
+#, fuzzy
 msgid "extension modules"
-msgstr ""
+msgstr "module d'extension"
 
 # 5dd0b51f145c49f58daf3d01faf5af8a
 #: install/index.rst:454
@@ -1159,8 +1172,9 @@ msgstr ""
 # f1a6cb2a94844506a0cf7b103231e6c1
 # 375316ae27e34efe85eb67363ec3c4da
 #: install/index.rst:595 install/index.rst:618
+#, fuzzy
 msgid "or, equivalently, ::"
-msgstr ""
+msgstr "ou ::"
 
 # 4e81d7a8f3524d0383ab8aea58e5f747
 #: install/index.rst:603

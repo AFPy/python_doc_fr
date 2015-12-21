@@ -89,8 +89,9 @@ msgstr ""
 
 # 616ab8ff4b8f4c02972e128a6e52fd56
 #: reference/compound_stmts.rst:78
+#, fuzzy
 msgid "The :keyword:`if` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`del`"
 
 # 4f651f85f50246bfaba88fef9d5f0e1e
 #: reference/compound_stmts.rst:87
@@ -1834,8 +1835,9 @@ msgstr ""
 
 # ffd8ad899642400bb12edac1fd79d94e
 #: reference/datamodel.rst:880
+#, fuzzy
 msgid "Code objects"
-msgstr ""
+msgstr "Objets Code"
 
 # 4e1e96bd8429455c93e58555aeaf2976
 #: reference/datamodel.rst:819
@@ -3967,8 +3969,9 @@ msgstr ""
 
 # 675bd659f35346d59b6e3dae7fe8b138
 #: reference/expressions.rst:282
+#, fuzzy
 msgid "Generator expressions"
-msgstr ""
+msgstr "Expressions et générateurs"
 
 # a8c59d7b7bf343cf8226b9ff97516abe
 #: reference/expressions.rst:287
@@ -5127,8 +5130,9 @@ msgstr ""
 
 # 01e92da280ac49d6a1e914568493e821
 #: reference/expressions.rst:1290
+#, fuzzy
 msgid "Lambda expression"
-msgstr ""
+msgstr "Fonctions anonymes"
 
 # e6f452c527c34670b6603faeea01f2f9
 #: reference/expressions.rst:1292
@@ -7074,8 +7078,9 @@ msgstr ""
 
 # b22e1573aa1942b18291ffe9fd031c8e
 #: reference/simple_stmts.rst:436
+#, fuzzy
 msgid "The :keyword:`yield` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`del`"
 
 # 8d4b82558045456f954bd99c1dee4c65
 #: reference/simple_stmts.rst:448

@@ -69,11 +69,16 @@ msgstr "Utilisation du tracker Python"
 
 # 8fba48fb3b3d4df780e01e677dd27464
 #: bugs.rst:29
+#, fuzzy
 msgid ""
 "Bug reports for Python itself should be submitted via the Python Bug Tracker "
 "(http://bugs.python.org/).  The bug tracker offers a Web form which allows "
 "pertinent information to be entered and submitted to the developers."
 msgstr ""
+"Les rapports de bugs pour Python lui-même devraient être soumis via le Bug "
+"Tracker Python (http://bugs.python.org/). Le traqueur de bogues propose un "
+"formulaire Web permettant de saisir des informations pertinentes à soumettre "
+"aux développeurs."
 
 # 1e75699e363745dfa104a56dc0f0eaaa
 #: bugs.rst:33

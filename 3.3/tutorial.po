@@ -1255,6 +1255,7 @@ msgstr ""
 "trouve dans les langages à héritage simple."
 
 #: tutorial/classes.rst:564
+#, fuzzy
 msgid ""
 "Dynamic ordering is necessary because all cases of multiple inheritance "
 "exhibit one or more diamond relationships (where at least one of the parent "
@@ -1270,6 +1271,20 @@ msgid ""
 "multiple inheritance.  For more detail, see http://www.python.org/download/"
 "releases/2.3/mro/."
 msgstr ""
+"L'ordre défini dynamiquement est nécessaire car tous les cas d'héritage "
+"multiple comportent une ou plusieurs relations en losange (où au moins une "
+"classe peut être accédée à partir de plusieurs chemins en pariant de la "
+"classe la plus base). Par exemple, puisque toutes les classes héritent de :"
+"class:`object`, tout héritage multiple ouvre plusieurs chemins pour "
+"atteindre :class:`object`. Pour qu'une classe de base ne soit pas appelée "
+"plusieurs fois, l'algorithme dynamique linéarise l'ordre de recherche d'une "
+"façon qui préserve l'ordre d'héritage, de lagauche vers la droite, spécifié "
+"dans chaque classe, qui appelle chaque classe parente une seule fois, qui "
+"est monotone (ce qui signifie qu'une classe peut être sous-classée sans "
+"affecter l'ordre d'héritage de ses parents). Prises ensemble, ces propriétés "
+"permettent de concevoir des classes de façon fiable et extensible dans un "
+"contexte d'héritage multiple. Pour plus de détail, consultez http://www."
+"python.org/download/releases/2.3/mro/."
 
 #: tutorial/classes.rst:581
 msgid "Private Variables"
@@ -1501,6 +1516,7 @@ msgid "Generators"
 msgstr "Générateurs"
 
 #: tutorial/classes.rst:798
+#, fuzzy
 msgid ""
 ":term:`Generator`\\s are a simple and powerful tool for creating iterators.  "
 "They are written like regular functions but use the :keyword:`yield` "
@@ -1509,14 +1525,27 @@ msgid ""
 "data values and which statement was last executed).  An example shows that "
 "generators can be trivially easy to create::"
 msgstr ""
+"Les :term:`générateur`\\s sont des outils simples et puissants pour créer "
+"des itérateurs. Ils sont écrits comme des fonctions classiques mais "
+"utilisent l'instruction :keyword:`yield` lorsqu'ils veulent renvoyer des "
+"données. À chaque fois que :func:`next` est appelée, le générateur reprend "
+"son exécution là où il s'était arrété (en conservant tout son contexte "
+"d'exécution). Un exemple montre très bien combien les générateurs sont "
+"simples à créer ::"
 
 #: tutorial/classes.rst:819
+#, fuzzy
 msgid ""
 "Anything that can be done with generators can also be done with class based "
 "iterators as described in the previous section.  What makes generators so "
 "compact is that the :meth:`__iter__` and :meth:`~generator.__next__` methods "
 "are created automatically."
 msgstr ""
+"Tout ce qui peut être fait avec des générateurs peut également être fait "
+"avec des itérateurs basés sur des classes, comme décrit dans le paragraphe "
+"précédent. Si qui fait que les générateurs sont si compacts est que les "
+"méthodes :meth:`__iter__` et :meth:`~generator.__next__` sont créées "
+"automatiquement."
 
 #: tutorial/classes.rst:824
 msgid ""
@@ -2362,6 +2391,7 @@ msgid ""
 msgstr ""
 
 #: tutorial/controlflow.rst:682
+#, fuzzy
 msgid ""
 "Annotations are stored in the :attr:`__annotations__` attribute of the "
 "function as a dictionary and have no effect on any other part of the "
@@ -2372,6 +2402,14 @@ msgid ""
 "the :keyword:`def` statement.  The following example has a positional "
 "argument, a keyword argument, and the return value annotated with nonsense::"
 msgstr ""
+"Les annotations sont stockées dans l'attribut :attr:`__annotations__` de la "
+"fonction, sous forme d'un dictionnaire, et n'ont aucun autre effet. Les "
+"annotations sur les paramètres sont définis par deux points (:) après le nom "
+"du paramètre suivi d'une expression donnant la valeur de l'annotation. Les "
+"annotations de retour sont définies par ``->`` suivi d'une expression, entre "
+"la liste des paramètres et les deux points de fin de l'instruction :keyword:"
+"`def`. L'exemple suivant a un paramètre positionnel, un paramètre nommé, et "
+"une valeur de retour annotée ::"
 
 #: tutorial/controlflow.rst:703
 msgid "Intermezzo: Coding Style"
@@ -2608,11 +2646,16 @@ msgid "An example that uses most of the list methods::"
 msgstr "L'exemple suivant utilise la plupart des méthodes des listes ::"
 
 #: tutorial/datastructures.rst:115
+#, fuzzy
 msgid ""
 "You might have noticed that methods like ``insert``, ``remove`` or ``sort`` "
 "that modify the list have no return value printed -- they return ``None``. "
 "[1]_  This is a design principle for all mutable data structures in Python."
 msgstr ""
+"Vous avez probablement remarqué que les méthodes tel que ``insert``, "
+"``remove`` ou``sort``, qui ne font que modifier la liste, ne renvoient pas "
+"de valeur mais ``None``. [1]_ C'est un principe respecté par toutes les "
+"structures de données variables en Python."
 
 #: tutorial/datastructures.rst:123
 msgid "Using Lists as Stacks"
@@ -2689,10 +2732,13 @@ msgid "We can obtain the same result with::"
 msgstr "On peut obtenir le même résultat avec ::"
 
 #: tutorial/datastructures.rst:201
+#, fuzzy
 msgid ""
 "This is also equivalent to ``squares = list(map(lambda x: x**2, "
 "range(10)))``, but it's more concise and readable."
 msgstr ""
+"C'est également l'équivalent de ``squares = map(lambda x: x**2, "
+"range(10))``, mais en plus concis et plus lisible."
 
 #: tutorial/datastructures.rst:204
 msgid ""
@@ -3228,6 +3274,7 @@ msgid "Comparing Sequences and Other Types"
 msgstr "Comparer des séquences avec d'autres types"
 
 #: tutorial/datastructures.rst:668
+#, fuzzy
 msgid ""
 "Sequence objects may be compared to other objects with the same sequence "
 "type. The comparison uses *lexicographical* ordering: first the first two "
@@ -3242,6 +3289,19 @@ msgid ""
 "order individual characters.  Some examples of comparisons between sequences "
 "of the same type::"
 msgstr ""
+"Des séquences peuvent être comparées avec d'autres séquences du même type. "
+"La comparaison utilise un ordre *lexicographique* : les deux premiers "
+"éléments de chaque séquence sont comparés, et s'ils diffèrent cela détermine "
+"le résultat de la comparaison ; s'ils sont égaux, les deux éléments suivants "
+"sont comparés à leur tour, et ainsi de suite jusqu'à ce que l'une des "
+"séquences soit épuisée. Si deux éléments à comparer sont eux-mêmes des "
+"séquences du même type, alors la comparaison lexicographique est effectuée "
+"récursivement. Si tous les éléments des deux séquences sont égaux, les deux "
+"séquences sont alors considérées comme égales. Si une séquence est une sous-"
+"séquence de l'autre, la séquence la plus courte est celle dont la valeur est "
+"inférieure. La comparaison lexicographique des chaînes de caractères utilise "
+"le code Unicode des caractères. Voici quelques exemples de comparaisons "
+"entre séquences de même type ::"
 
 #: tutorial/datastructures.rst:688
 msgid ""
@@ -3669,6 +3729,7 @@ msgstr ""
 "circonstances. Par exemple ::"
 
 #: tutorial/errors.rst:336
+#, fuzzy
 msgid ""
 "A *finally clause* is always executed before leaving the :keyword:`try` "
 "statement, whether an exception has occurred or not. When an exception has "
@@ -3680,6 +3741,16 @@ msgid ""
 "a :keyword:`break`, :keyword:`continue` or :keyword:`return` statement.  A "
 "more complicated example::"
 msgstr ""
+"Une *clause finally* est toujours exécutée avant de quitter l'instruction :"
+"keyword:`try`, qu'une exception ait été déclenchée ou non. Quand "
+"uneexception a été déclenchée dans la clause :keyword:`try` et n'a pas été "
+"prise en charge par une clause :keyword:`except` (ou si elle a été "
+"déclenchée dans une clause :keyword:`except` ou :keyword:`else`), elle est "
+"re-déclenchée après l'exécution de la clause :keyword:`finally`. La clause :"
+"keyword:`finally` est également exécutée \"à la sortie\" quand "
+"n'importequelle autre clause de l'instruction :keyword:`try` est abandonnée "
+"par une instruction :keyword:`break`, :keyword:`continue` ou :keyword:"
+"`return`. Voici un exemple plus compliqué ::"
 
 #: tutorial/errors.rst:369
 msgid ""
@@ -4257,6 +4328,7 @@ msgstr ""
 "d'applications dans de nombreux domaines et sur de nombreuses plateformes."
 
 #: tutorial/index.rst:13
+#, fuzzy
 msgid ""
 "The Python interpreter and the extensive standard library are freely "
 "available in source or binary form for all major platforms from the Python "
@@ -4264,6 +4336,12 @@ msgid ""
 "site also contains distributions of and pointers to many free third party "
 "Python modules, programs and tools, and additional documentation."
 msgstr ""
+"L'interpréteur Python et sa vaste bibliothèque standard sont disponibles "
+"librement, sous forme de sources ou de binaires, pour toutes les plateformes "
+"majeures, depuis le site Internet http://www.python.org/ et peuvent être "
+"librement redistribués. Le même site distribue et contient des liens vers "
+"des modules, des programmes et des outils tiers ainsi que vers de la "
+"documentation supplémentaire."
 
 #: tutorial/index.rst:19
 msgid ""
@@ -4729,11 +4807,15 @@ msgstr ""
 "chaîne ::"
 
 #: tutorial/inputoutput.rst:325
+#, fuzzy
 msgid ""
 "``f.tell()`` returns an integer giving the file object's current position in "
 "the file represented as number of bytes from the beginning of the file when "
 "in `binary mode` and an opaque number when in `text mode`."
 msgstr ""
+"``f.tell()`` retourne un entier indiquant la position actuelle dans le "
+"fichier, mesurée en octets à partir du début du fichier, lorsque le fichier "
+"est ouvert en mode binaire, ou un nombre obscure en mode texte."
 
 #: tutorial/inputoutput.rst:329
 msgid ""
@@ -5161,12 +5243,17 @@ msgid "Invoking the Interpreter"
 msgstr "Invoquer l'interpréteur"
 
 #: tutorial/interpreter.rst:13
+#, fuzzy
 msgid ""
 "The Python interpreter is usually installed as :file:`/usr/local/bin/"
 "python3.3` on those machines where it is available; putting :file:`/usr/"
 "local/bin` in your Unix shell's search path makes it possible to start it by "
 "typing the command:"
 msgstr ""
+"L'interpréteur Python est habituellement installé ici :file:`/usr/local/bin/"
+"python3.4` sur les machines où il est disponible. En mettant :file:`/usr/"
+"local/bin` dans les chemins de recherche de votre shell Unix, vous permettez "
+"de lancer l'interpréteur Python en tapant la commande ::"
 
 #: tutorial/interpreter.rst:21
 msgid ""
@@ -5181,12 +5268,17 @@ msgstr ""
 "local/python` est une localisation courante.)"
 
 #: tutorial/interpreter.rst:26
+#, fuzzy
 msgid ""
 "On Windows machines, the Python installation is usually placed in :file:`C:\\"
 "\\Python33`, though you can change this when you're running the installer.  "
 "To add this directory to your path,  you can type the following command into "
 "the command prompt in a DOS box::"
 msgstr ""
+"Sur les machines Windows, l'installation de Python se situe souvent dans :"
+"file:`C:\\\\Python35`, cependant, il est possible de changer ça à "
+"l'installation. Pour ajouter ce dossier à votre :envvar:`PATH`, vous pouvez "
+"copier cette commande dans un interpréteur DOS ::"
 
 #: tutorial/interpreter.rst:33
 msgid ""
@@ -5411,10 +5503,13 @@ msgstr ""
 "caractère dièse, ``'#'``, est utilisé pour initier un commentaire en Python."
 
 #: tutorial/interpreter.rst:161
+#, fuzzy
 msgid ""
 "The script can be given an executable mode, or permission, using the :"
 "program:`chmod` command::"
 msgstr ""
+"Un script peut être rendu utilisable en utilisant la commande :program:"
+"`chmod`."
 
 #: tutorial/interpreter.rst:166
 msgid ""
@@ -5550,12 +5645,17 @@ msgid "The Customization Modules"
 msgstr "Les modules de Personnalisation"
 
 #: tutorial/interpreter.rst:245
+#, fuzzy
 msgid ""
 "Python provides two hooks to let you customize it: :mod:`sitecustomize` and :"
 "mod:`usercustomize`.  To see how it works, you need first to find the "
 "location of your user site-packages directory.  Start Python and run this "
 "code:"
 msgstr ""
+"Python peut être personnalisé via les modules :mod:`sitecustomize` et :"
+"\"\"mod:`usercustomize`. Pour découvrir comment ils fonctionnent vous devez "
+"d'abord les trouver, ils sont dans un dossier appelé user site-packages. "
+"Démarrez Python et exécutez : code::"
 
 #: tutorial/interpreter.rst:253
 msgid ""
@@ -5945,8 +6045,9 @@ msgstr ""
 "de ``word[1:3]`` est 2."
 
 #: tutorial/introduction.rst:306
+#, fuzzy
 msgid "Attempting to use a index that is too large will result in an error::"
-msgstr ""
+msgstr "Utiliser un indice trop grand générera une erreur ::"
 
 #: tutorial/introduction.rst:313
 msgid ""
@@ -6058,8 +6159,9 @@ msgstr ""
 "copie superficielle de la liste ::"
 
 #: tutorial/introduction.rst:394
+#, fuzzy
 msgid "Lists also supports operations like concatenation::"
-msgstr ""
+msgstr "Les listes gèrent aussi les opérations comme les concaténations ::"
 
 #: tutorial/introduction.rst:399
 msgid ""
@@ -7836,10 +7938,13 @@ msgstr ""
 "bibliothèque vous donnera une idée de ce qui est disponnible."
 
 #: tutorial/whatnow.rst:24
+#, fuzzy
 msgid ""
 ":ref:`install-index` explains how to install external modules written by "
 "other Python users."
 msgstr ""
+":ref:`installing-index` explique comment installer des paquets écrits par "
+"d'autres utilisateurs de Python."
 
 #: tutorial/whatnow.rst:27
 msgid ""
@@ -7877,12 +7982,17 @@ msgid ""
 msgstr ""
 
 #: tutorial/whatnow.rst:46
+#, fuzzy
 msgid ""
 "http://aspn.activestate.com/ASPN/Python/Cookbook/: The Python Cookbook is a "
 "sizable collection of code examples, larger modules, and useful scripts. "
 "Particularly notable contributions are collected in a book also titled "
 "Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 msgstr ""
+"http://code.activestate.com/recipes/langs/python/: \"The Python Cookbook\" "
+"est un recueil assez important d'exemples de code, de modules, et de "
+"scripts. Les contributions les plus remarquables y sont regroupées dans un "
+"livre appelé \"Python Cookbook\" (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 
 #: tutorial/whatnow.rst:51
 msgid ""

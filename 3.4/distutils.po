@@ -5114,8 +5114,9 @@ msgid ""
 msgstr ""
 
 #: distutils/setupscript.rst:413
+#, fuzzy
 msgid "Some examples:"
-msgstr ""
+msgstr "Quelques exemples ::"
 
 #: distutils/setupscript.rst:416
 msgid "Provides Expression"

@@ -66,6 +66,7 @@ msgstr ""
 
 # c4992c6ceb534c6696a5d28fea42ea7a
 #: glossary.rst:30
+#, fuzzy
 msgid ""
 "Abstract base classes complement :term:`duck-typing` by providing a way to "
 "define interfaces when other techniques like :func:`hasattr` would be clumsy "
@@ -78,13 +79,29 @@ msgid ""
 "import finders and loaders (in the :mod:`importlib.abc` module).  You can "
 "create your own ABCs with the :mod:`abc` module."
 msgstr ""
+"Les classes de base abstraites (ABC, suivant l'abréviation anglaise) "
+"complètent le :term:`duck-typing` en fournissant un moyen de définir des "
+"interfaces pour les cas où d'autres techniques comme :func:`hasattr` "
+"seraient inélégantes, ou subitement fausse (par exemple avec les :ref:"
+"`méthodes magiques <special-lookup>`). Les ABC introduisent des sous-classes "
+"virtuelles, qui n'héritent pas d'une classe mais qui sont quand même "
+"reconnues par :func:`isinstance` ou :func:`issubclass` (Voir la "
+"documentation du module :mod:`abc`). Python contient de nombreuses ABC pour "
+"les structures de données (dans le module :mod:`collections.abc`), les "
+"nombres (dans le module :mod:`numbers`), les flux (dans le module :mod:"
+"`io`), et les chercheurs / chargeurs d'import (dans le module :mod:"
+"`importlib.abc`). Vous pouvez créer vos propres ABC avec le module :mod:"
+"`abc`."
 
 # 25e25b57c0424daa8e01f56776fa6c3e
 #: glossary.rst:43
+#, fuzzy
 msgid ""
 "A value passed to a :term:`function` (or :term:`method`) when calling the "
 "function.  There are two types of arguments:"
 msgstr ""
+"Une valeur, donnée à une :term:`fonction` ou à une :term:`méthode` lors de "
+"son appel. Il existe deux types d'arguments :"
 
 # ca832f9b5c274fef986153f487821cf3
 #: glossary.rst:46
@@ -150,10 +167,13 @@ msgstr ""
 
 # 420765cdfdd3436084cfa824044f046f
 #: glossary.rst:78
+#, fuzzy
 msgid ""
 "Benevolent Dictator For Life, a.k.a. `Guido van Rossum <http://www.python."
 "org/~guido/>`_, Python's creator."
 msgstr ""
+"Dictateur bénévole à vie, alias `Guido van Rossum <https://www.python.org/"
+"~guido/>`_, le créateur de Python."
 
 # 68089286948b4328a9c60081077a2f0c
 #: glossary.rst:82
@@ -255,12 +275,17 @@ msgstr ""
 
 # 4dcf038daf164cdebb7516b83a40ee5c
 #: glossary.rst:128
+#, fuzzy
 msgid ""
 "The canonical implementation of the Python programming language, as "
 "distributed on `python.org <http://python.org>`_.  The term \"CPython\" is "
 "used when necessary to distinguish this implementation from others such as "
 "Jython or IronPython."
 msgstr ""
+"L'implémentation canonique du langage de programmation Python, tel que "
+"distribué sur `python.org <https://www.python.org>`_. Le terme\"CPython\" "
+"est utilisé dans certains contextes lorsqu'il est nécessaire de distinguer "
+"cette implémentation des autres comme Jython ou IronPython."
 
 # feb6afd789ee4621b27ff78e392e076b
 #: glossary.rst:134
@@ -524,6 +549,7 @@ msgstr ""
 
 # 9a6b9acf453f4d1a81cb230329384c2f
 #: glossary.rst:267
+#, fuzzy
 msgid ""
 "A function which returns an iterator.  It looks like a normal function "
 "except that it contains :keyword:`yield` statements for producing a series a "
@@ -533,6 +559,15 @@ msgid ""
 "pending try-statements).  When the generator resumes, it picks-up where it "
 "left-off (in contrast to functions which start fresh on every invocation)."
 msgstr ""
+"Une fonction qui renvoie un itérateur. Ça ressemble à une fonction normale, "
+"en dehors du fait qu'il contient une ou plusieurs instruction :keyword:"
+"`yield`, produisant une série de valeurs utilisables dans une boucle for, ou "
+"pouvant être récupérées une à une avec la fonction :func:`next`. Chaque "
+"instruction :keyword:`yield` suspend temporairement l'exécution de la "
+"fonction, en se rappelant de la position et de l'état (les variables "
+"locales, et les *try* en cours). Lorsque le générateur reprend, il reprend "
+"là où il en était (contrairement à une fonction classique qui reprendrait du "
+"départ à chaque appel)."
 
 # 4984ef4ec7324316bf080d3cc5ff01e8
 #: glossary.rst:279
@@ -624,12 +659,19 @@ msgstr ""
 
 # aeaae3457c804848888dd0e9ab39f3b1
 #: glossary.rst:320
+#, fuzzy
 msgid ""
 "All of Python's immutable built-in objects are hashable, while no mutable "
 "containers (such as lists or dictionaries) are.  Objects which are instances "
 "of user-defined classes are hashable by default; they all compare unequal "
 "(except with themselves), and their hash value is their :func:`id`."
 msgstr ""
+"Tous les types immuables fournis par Python sont hachables, et aucun type "
+"variable (comme les listes ou les dictionnaires) ne l'est. Toutes les "
+"instances de classes définies par les utilisateurs sont hachables par "
+"défaut, elles sont toutes différentes selon ``__eq__``, sauf comparées à "
+"elles mêmes, et leur empreinte (*hash*) est calculée à partir de leur :func:"
+"`id`."
 
 # 14a0891e08a74fc6898cc5eced90003a
 #: glossary.rst:327
@@ -876,6 +918,7 @@ msgstr ""
 
 # d3f8d163546b4aef87e07a1961c15c1e
 #: glossary.rst:453
+#, fuzzy
 msgid ""
 "A container object that supports arbitrary key lookups and implements the "
 "methods specified in the :class:`~collections.Mapping` or :class:"
@@ -884,6 +927,12 @@ msgid ""
 "`collections.defaultdict`, :class:`collections.OrderedDict` and :class:"
 "`collections.Counter`."
 msgstr ""
+"Un conteneur acceptant de rechercher des éléments par clef et implémente les "
+"méthodes des :ref:`classes de base abstraites <collections-abstract-base-"
+"classes>` :class : `collections.abc.Mapping` ou :class : `collections.abc."
+"MutableMapping`. Les classes suivantes sont des exemples de mapping: :class:"
+"`dict`, :class:`collections.defaultdict`, :class:`collections.OrderedDict`, "
+"et :class:`collections.Counter`."
 
 # e6b596d0452c4bc49837015cf8d21ad9
 #: glossary.rst:461
@@ -922,11 +971,16 @@ msgstr ""
 
 # 8a1ebe93ab0049cd9c41ae0dd50b6df2
 #: glossary.rst:480
+#, fuzzy
 msgid ""
 "Method Resolution Order is the order in which base classes are searched for "
 "a member during lookup. See `The Python 2.3 Method Resolution Order <http://"
 "www.python.org/download/releases/2.3/mro/>`_."
 msgstr ""
+"L'ordre de résolution des méthodes (*MRO* de *Method Resolution Order*) est "
+"l'ordre dans lequel les membres sont recherchés dans l'arbre d'héritage. "
+"Voir `The Python 2.3 Method Resolution Order <https://www.python.org/"
+"download/releases/2.3/mro/>`_."
 
 # 102a7da4a0db41a994fe6f56bb73aabc
 #: glossary.rst:485
@@ -1027,11 +1081,15 @@ msgstr ""
 
 # 8ae79a750a264a759e607d3449a8358e
 #: glossary.rst:537
+#, fuzzy
 msgid ""
 "A named entity in a :term:`function` (or method) definition that specifies "
 "an :term:`argument` (or in some cases, arguments) that the function can "
 "accept.  There are five types of parameters:"
 msgstr ""
+"Une entité nommée, dans la définition d'une :term:`fonction` ou d'une :term:"
+"`méthode`, décrivant un :term:`argument` (ou dans certains cas des "
+"arguments) que la fonction accepte. Il existe cinque sorte de paramètres :"
 
 # 325e22a22fb94a189545e1a316076d7f
 #: glossary.rst:541

@@ -1242,8 +1242,9 @@ msgid ""
 msgstr ""
 
 #: using/mac.rst:173
+#, fuzzy
 msgid "Other Resources"
-msgstr ""
+msgstr "Autres ressources"
 
 #: using/mac.rst:175
 msgid ""
@@ -2303,8 +2304,9 @@ msgid ""
 msgstr ""
 
 #: using/windows.rst:435
+#, fuzzy
 msgid "Examples:"
-msgstr ""
+msgstr "Exemples ::"
 
 #: using/windows.rst:437
 msgid ""
@@ -2350,8 +2352,9 @@ msgid ""
 msgstr ""
 
 #: using/windows.rst:462
+#, fuzzy
 msgid "For example:"
-msgstr ""
+msgstr "Par exemple ::"
 
 #: using/windows.rst:464
 msgid "Setting ``PY_PYTHON=3.1`` is equivalent to the INI file containing:"

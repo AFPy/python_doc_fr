@@ -265,11 +265,16 @@ msgstr ""
 
 # 09ad12c755e34541b7504c51d5b7452c
 #: c-api/arg.rst:67
+#, fuzzy
 msgid ""
 "This format does not accept bytes-like objects.  If you want to accept "
 "filesystem paths and convert them to C character strings, it is preferable "
 "to use the ``O&`` format with :c:func:`PyUnicode_FSConverter` as *converter*."
 msgstr ""
+"Ce format n'accepte pas les objets de type octets. Si vous voulez accepter "
+"des chemins de fichiers et les convertir en chaînes de caractères C, il vaut "
+"mieux utiliser le format ``O&`` avec :cfunc:`PyUnicode_FSConverter` comme "
+"*convertisseur*."
 
 # 567ba2b9f3a4401e8feef5715948f7ed
 #: c-api/arg.rst:77
@@ -280,12 +285,18 @@ msgstr ""
 
 # 74dcc9a9462f4a9e8ef2e01398c9547e
 #: c-api/arg.rst:73
+#, fuzzy
 msgid ""
 "This format accepts Unicode objects as well as objects supporting the buffer "
 "protocol. It fills a :c:type:`Py_buffer` structure provided by the caller. "
 "In this case the resulting C string may contain embedded NUL bytes. Unicode "
 "objects are converted to C strings using ``'utf-8'`` encoding."
 msgstr ""
+"Ce format accepte aussi bien les objets Unicode que des objets supportant le "
+"protocole de mémoire tampon.Il remplit une structure :ctype:`Py_buffer` "
+"fournie par l'appelant. Dans ce cas, La chaîne C qui en résulte peut "
+"contenir des octets NUL. Les objets Unicode sont convertis en chaînes C en "
+"utilisant un encodage ``'utf-8' ``."
 
 # cf1f0cc9306549b095f525dd0d81c6bc
 #: c-api/arg.rst:84
@@ -897,10 +908,13 @@ msgstr ""
 
 # ddc11b782a4f4dfc9cf643b017f10400
 #: c-api/arg.rst:264
+#, fuzzy
 msgid ""
 "Convert a Python byte, represented as a :class:`bytes` object of length 1, "
 "to a C :c:type:`char`."
 msgstr ""
+"Convertit un octet Python, représenté comme un objet :class:`bytes` de "
+"longueur 1, en un type C :ctype:`char`."
 
 # a29dc953122b43fe88cc8ff7e6e0796b
 # e985e853124a42a49f54d66ffd3223bc
@@ -1447,13 +1461,19 @@ msgstr ""
 
 # aadc4df2a9dc44d19b3a74828e2c49ed
 #: c-api/arg.rst:534
+#, fuzzy
 msgid "Convert a C :c:type:`long int` to a Python integer object."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 # 456378e1545f4bb69cb431d6ba7d5247
 #: c-api/arg.rst:537
+#, fuzzy
 msgid "Convert a C :c:type:`unsigned char` to a Python integer object."
 msgstr ""
+"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"contrôle de débordement."
 
 # 2986e62a2f6045639b4d392e8f637857
 #: c-api/arg.rst:540
@@ -3286,8 +3306,9 @@ msgstr ""
 
 # f857f466a7b34b2f90459bc7d9319bb1
 #: c-api/complex.rst:118
+#, fuzzy
 msgid "Return the real part of *op* as a C :c:type:`double`."
-msgstr ""
+msgstr "Convertit un nombre flottant Python vers un type C :ctype:`double`."
 
 # 12884635f3864cb2b45555f2f4707df2
 #: c-api/complex.rst:123
@@ -11097,8 +11118,9 @@ msgstr ""
 # fe4563119b2745d78b0587ef41b4e716
 # 0555d1c1c3304b0e91a00b6877d1353f
 #: c-api/structures.rst:260 c-api/structures.rst:261
+#, fuzzy
 msgid "PyObject \\*"
-msgstr ""
+msgstr "Objets bytes"
 
 # 2bc0e7c3bfed43b59b181ba709034351
 #: c-api/structures.rst:261
