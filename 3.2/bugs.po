@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 13:09\n"
+"POT-Creation-Date: 2015-12-22 00:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -166,9 +167,8 @@ msgstr ""
 "org/dev/workflow/ pour une description détaillée du processus de traitement "
 "des problèmes."
 
-# f90bb5d36e76478782f9cf9da9b58ddd
 #: bugs.rst:66
-msgid "`Python Developer's Guide <http://docs.python.org/devguide/>`_"
+msgid "Python Developer's Guide"
 msgstr ""
 
 # 3e2d263cd7334a919f71aa4a13dae196
@@ -176,11 +176,8 @@ msgstr ""
 msgid "Detailed description of the issue workflow and developers tools."
 msgstr ""
 
-# 9e2eb3d9d467450c9cf1d24bf2f3e5b1
 #: bugs.rst:70
-msgid ""
-"`How to Report Bugs Effectively <http://www.chiark.greenend.org.uk/~sgtatham/"
-"bugs.html>`_"
+msgid "How to Report Bugs Effectively"
 msgstr ""
 
 # a56eb61f2e9a41189929f2181cac890d
@@ -193,11 +190,8 @@ msgstr ""
 "bogue utile. Il décrit quel genre d'information est utile et pourquoi elle "
 "est utile."
 
-# 417f70cbbfaf46eb962f27d38331dab5
 #: bugs.rst:73
-msgid ""
-"`Bug Writing Guidelines <http://developer.mozilla.org/en/docs/"
-"Bug_writing_guidelines>`_"
+msgid "Bug Writing Guidelines"
 msgstr ""
 
 # 034acd49e97b4a4b98309bd71e72c0e2

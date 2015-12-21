@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 13:09\n"
+"POT-Creation-Date: 2015-12-22 00:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -6568,9 +6569,8 @@ msgstr ""
 msgid "The built-in function :func:`len` returns the length of a string::"
 msgstr "La fonction native :func:`len` renvoie la longueur d'une chaîne ::"
 
-# 2829ccbdf55e429d97166a04162e389e
 #: tutorial/introduction.rst:395
-msgid ":ref:`typesseq`"
+msgid "typesseq"
 msgstr ""
 
 # 23d2420adb914970b86778f66c9ff50f
@@ -6582,9 +6582,8 @@ msgstr ""
 "Les chaînes de caractères sont des exemples de *types séquences*, et "
 "supportent donc lesopérations classiques prises en charge par ces types."
 
-# 20842a5b3bf74a2391938273c1682e41
 #: tutorial/introduction.rst:399
-msgid ":ref:`string-methods`"
+msgid "string-methods"
 msgstr ""
 
 # 5c62a4761a744ab685d6c3e21f0161bb
@@ -6596,10 +6595,11 @@ msgstr ""
 "Les chaînes de caractères supportent un large éventail de méthodes de "
 "transformations basiques et de recherche."
 
-# ac4655a8c36d4229bfc08eab5da7c919
+# bbcaa73d3df74693a37d7615cd85f412
 #: tutorial/introduction.rst:403
-msgid ":ref:`string-formatting`"
-msgstr ":ref:`string-formatting`"
+#, fuzzy
+msgid "string-formatting"
+msgstr "Anciennes méthodes de formatage de chaînes"
 
 # 57cbeeecf44c43648d9015569fdf1095
 #: tutorial/introduction.rst:402
@@ -6611,7 +6611,8 @@ msgstr ""
 
 # e258371882ea447cbb861801e7360b4e
 #: tutorial/introduction.rst:406
-msgid ":ref:`old-string-formatting`"
+#, fuzzy
+msgid "old-string-formatting"
 msgstr ":ref:`old-string-formatting`"
 
 # de2aaa4e3943483895b17f054973a253
@@ -8744,3 +8745,7 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
+
+# ac4655a8c36d4229bfc08eab5da7c919
+#~ msgid ":ref:`string-formatting`"
+#~ msgstr ":ref:`string-formatting`"

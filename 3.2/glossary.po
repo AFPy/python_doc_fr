@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 13:09\n"
+"POT-Creation-Date: 2015-12-22 00:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,6 +21,10 @@ msgstr ""
 #: glossary.rst:5
 msgid "Glossary"
 msgstr "Glossaire"
+
+#: glossary.rst:10
+msgid ">>>"
+msgstr ""
 
 # dd1b79c99d12453db3afa0bdc27c3596
 #: glossary.rst:12
@@ -31,6 +36,10 @@ msgstr ""
 "la voit souvent dans des exemples de code qui peuvent être exécutés "
 "interactivement dans l'interpréteur."
 
+#: glossary.rst:14
+msgid "..."
+msgstr ""
+
 # 305ea78330ff44bda6b23bbf1bede01a
 #: glossary.rst:16
 msgid ""
@@ -41,6 +50,10 @@ msgstr ""
 "L'invite de commande utilisée par défaut dans l'interpréteur interactif "
 "lorsqu'on entre un bloc de code indenté ou entre deux délimiteurs "
 "(parenthèses, crochets ou accolades)."
+
+#: glossary.rst:19
+msgid "2to3"
+msgstr ""
 
 # a60a984f2f9842d1a58873f63827ca4e
 #: glossary.rst:21
@@ -63,6 +76,10 @@ msgstr ""
 "2to3 est disponible dans la bibliothèque standard sous le nom de :mod:"
 "`lib2to3`\\ ; un point d’entrée indépendant est fourni via :file:`Tools/"
 "scripts/2to3`. Cf. \\ :ref:`2to3-reference`."
+
+#: glossary.rst:28
+msgid "abstract base class"
+msgstr ""
 
 # c4992c6ceb534c6696a5d28fea42ea7a
 #: glossary.rst:30
@@ -92,6 +109,10 @@ msgstr ""
 "`io`), et les chercheurs / chargeurs d'import (dans le module :mod:"
 "`importlib.abc`). Vous pouvez créer vos propres ABC avec le module :mod:"
 "`abc`."
+
+#: glossary.rst:41
+msgid "argument"
+msgstr ""
 
 # 25e25b57c0424daa8e01f56776fa6c3e
 #: glossary.rst:43
@@ -154,6 +175,10 @@ msgstr ""
 "à propos de `la différence entre argument et paramètre <faq-argument-vs-"
 "parameter>` et la :pep:`362`."
 
+#: glossary.rst:71
+msgid "attribute"
+msgstr ""
+
 # 42fea1d5940d4b3bbb2dcd24f4099aca
 #: glossary.rst:73
 msgid ""
@@ -165,6 +190,10 @@ msgstr ""
 "utilisant des points. Par exemple, si un objet *o* a un attribut *a*, il "
 "sera référencé par *o.a*."
 
+#: glossary.rst:76
+msgid "BDFL"
+msgstr ""
+
 # 420765cdfdd3436084cfa824044f046f
 #: glossary.rst:78
 #, fuzzy
@@ -174,6 +203,10 @@ msgid ""
 msgstr ""
 "Dictateur bénévole à vie, alias `Guido van Rossum <https://www.python.org/"
 "~guido/>`_, le créateur de Python."
+
+#: glossary.rst:80
+msgid "bytecode"
+msgstr ""
 
 # 68089286948b4328a9c60081077a2f0c
 #: glossary.rst:82
@@ -206,6 +239,10 @@ msgstr ""
 "Une liste des instructions du bytecode se trouve dans la documentation du :"
 "ref:`module dis <bytecodes>`."
 
+#: glossary.rst:94
+msgid "class"
+msgstr ""
+
 # c5bb278240304cebb3938a0a46282e44
 #: glossary.rst:96
 msgid ""
@@ -215,6 +252,10 @@ msgstr ""
 "Un modèle pour créer des objets définis par l'utilisateur. Les définitions "
 "de classes contiennent normalement des définitions de méthodes qui agissent "
 "sur les instances de classe."
+
+#: glossary.rst:99
+msgid "coercion"
+msgstr ""
 
 # 26f288fbeca9415c86a6d4d623c254bf
 #: glossary.rst:101
@@ -237,6 +278,10 @@ msgstr ""
 "les opérandes, même de types compatibles, devraient être convertis (on parle "
 "aussi de \"cast\") explicitement par le développeur, par exemple : "
 "``float(3) + 4.5`` au lieu du simple ``3 + 4.5``."
+
+#: glossary.rst:109
+msgid "complex number"
+msgstr ""
 
 # 8b4441266e6647cdaf37fa2e534bb500
 #: glossary.rst:111
@@ -263,6 +308,10 @@ msgstr ""
 "Si vous n'en avez pas l'utilité, vous pouvez les ignorer en toute "
 "tranquilité."
 
+#: glossary.rst:121
+msgid "context manager"
+msgstr ""
+
 # 71391d4487c34a6f925beb337856b9e1
 #: glossary.rst:123
 msgid ""
@@ -272,6 +321,10 @@ msgstr ""
 "Un objet contrôlant l'environnement a l'intérieur d'une instruction :keyword:"
 "`with` en définissant les méthodes :meth:`__enter__` et :meth:`__exit__`. "
 "Consultez la :pep:`343`."
+
+#: glossary.rst:126
+msgid "CPython"
+msgstr ""
 
 # 4dcf038daf164cdebb7516b83a40ee5c
 #: glossary.rst:128
@@ -286,6 +339,10 @@ msgstr ""
 "distribué sur `python.org <https://www.python.org>`_. Le terme\"CPython\" "
 "est utilisé dans certains contextes lorsqu'il est nécessaire de distinguer "
 "cette implémentation des autres comme Jython ou IronPython."
+
+#: glossary.rst:132
+msgid "decorator"
+msgstr ""
 
 # feb6afd789ee4621b27ff78e392e076b
 #: glossary.rst:134
@@ -319,6 +376,10 @@ msgstr ""
 "Consultez la documentation :ref:`définitions de fonctions <fonction>` et :"
 "ref:`définitions de classes <classe>` pour en savoir plus sur les decorators."
 
+#: glossary.rst:152
+msgid "descriptor"
+msgstr ""
+
 # 124a072ddf6c4087a72fa658f916d909
 #: glossary.rst:154
 msgid ""
@@ -351,6 +412,10 @@ msgstr ""
 "Pour plus d'informations sur les méthodes des descripteurs, consultez :ref:"
 "`descriptors`."
 
+#: glossary.rst:165
+msgid "dictionary"
+msgstr ""
+
 # b874f641a53c4145b41bc3991549ec5e
 #: glossary.rst:167
 msgid ""
@@ -361,6 +426,10 @@ msgstr ""
 "Une structure de donnée associant des clefs et des valeurs. Les clefs "
 "peuvent être n'importe quel objet comportant les méthodes :meth:`__hash__` "
 "et :meth:`__eq__``. Elle s'appelle \"hash\" en Perl."
+
+#: glossary.rst:170
+msgid "docstring"
+msgstr ""
 
 # 3b6e8f13409a4612afabc41139042098
 #: glossary.rst:172
@@ -376,6 +445,10 @@ msgstr ""
 "compilateur, et placées dans l'attribut :attr:`__doc__` de sa classe, "
 "fonction, ou module respectif. Puisque cette chaîne est disponible par "
 "introspection, c'est l'endroit idéal pour documenter l'objet."
+
+#: glossary.rst:178
+msgid "duck-typing"
+msgstr ""
 
 # f663bce6664840bd9d4b3dd9ab62811c
 #: glossary.rst:180
@@ -401,6 +474,10 @@ msgstr ""
 "base abstraite>`.) À la place, le duck-typique utilise plutôt :func:"
 "`hasattr` ou la programmation :term:`EAFP`."
 
+#: glossary.rst:189
+msgid "EAFP"
+msgstr ""
+
 # 890b0e0c238a4aaaa1abc1962015bd12
 #: glossary.rst:191
 msgid ""
@@ -417,6 +494,10 @@ msgstr ""
 "est caractérisé par la présence de beaucoup de mot clé :keyword:`try` et :"
 "keyword:`except`. Cette technique de programmation contraste avec le style :"
 "term:`LBYL` présent courament dans des langages tel que C."
+
+#: glossary.rst:197
+msgid "expression"
+msgstr ""
 
 # ebeea7ccf05c43c1b31e84a4bf05ced4
 #: glossary.rst:199
@@ -439,6 +520,10 @@ msgstr ""
 "que :keyword:`if`. Les affectations sont également des :term:`instructions` "
 "et non des expressions."
 
+#: glossary.rst:206
+msgid "extension module"
+msgstr ""
+
 # fb2165a91d4f4072893d3564a7f4232c
 #: glossary.rst:208
 msgid ""
@@ -447,6 +532,10 @@ msgid ""
 msgstr ""
 "Un module écrit en C ou C++, utilisant l'API C de Python pour interagir avec "
 "Python et le code de l'utilisateur."
+
+#: glossary.rst:210
+msgid "file object"
+msgstr ""
 
 # dafd914aeacc4123add48bc81855fbbe
 #: glossary.rst:212
@@ -475,10 +564,18 @@ msgid ""
 "func:`open` function."
 msgstr ""
 
+#: glossary.rst:224
+msgid "file-like object"
+msgstr ""
+
 # 7645c945c87544fbbd8292e12856c6cc
 #: glossary.rst:226
 msgid "A synonym for :term:`file object`."
 msgstr "Un synonyme de :term:`objet fichier `."
+
+#: glossary.rst:227
+msgid "finder"
+msgstr ""
 
 # fadf745cbbb545fd9a125c4c1f3d0d5a
 #: glossary.rst:229
@@ -486,6 +583,10 @@ msgid ""
 "An object that tries to find the :term:`loader` for a module. It must "
 "implement a method named :meth:`find_module`. See :pep:`302` for details "
 "and :class:`importlib.abc.Finder` for an :term:`abstract base class`."
+msgstr ""
+
+#: glossary.rst:233
+msgid "floor division"
 msgstr ""
 
 # cb17ef220f9c49df804be5120495001c
@@ -502,6 +603,10 @@ msgstr ""
 "``2``, contrairement à ``11 / 4`` qui vaut ``2.75``. Notez que ``(-11) // "
 "4`` vaut ``-3`` car l'arrondi se fait par le bas. Voir la :pep:`328`."
 
+#: glossary.rst:240
+msgid "function"
+msgstr ""
+
 # 9ad098200b484478960360e3206c408c
 #: glossary.rst:242
 msgid ""
@@ -514,6 +619,10 @@ msgstr ""
 "peut aussi lui passer des :term:`arguments <argument>` qui pourront être "
 "utilisés dans le corps de la fonction. Voir aussi :term:`paramètre`, :term:"
 "`méthode`, et :ref:`function`."
+
+#: glossary.rst:246
+msgid "__future__"
+msgstr ""
 
 # 315d152269b94764a10666697f25632f
 #: glossary.rst:248
@@ -536,6 +645,10 @@ msgstr ""
 "pouvez voir quand une nouvelle fonctionnalité à été rajoutée dans le "
 "langage, et quand elle devient le comportement par défaut ::"
 
+#: glossary.rst:258
+msgid "garbage collection"
+msgstr ""
+
 # 01eecca14a96432a81f1a79f9c92c970
 #: glossary.rst:260
 msgid ""
@@ -546,6 +659,10 @@ msgstr ""
 "Le processus de libérer de la mémoire lorsqu'elle n'est plus utilisée. "
 "Python utilise un ramasse-miettes par comptage de référence, et un ramasse "
 "miette cyclique capable de détecter et casser les références circulaires."
+
+#: glossary.rst:265
+msgid "generator"
+msgstr ""
 
 # 9a6b9acf453f4d1a81cb230329384c2f
 #: glossary.rst:267
@@ -569,6 +686,10 @@ msgstr ""
 "là où il en était (contrairement à une fonction classique qui reprendrait du "
 "départ à chaque appel)."
 
+#: glossary.rst:277
+msgid "generator expression"
+msgstr ""
+
 # 4984ef4ec7324316bf080d3cc5ff01e8
 #: glossary.rst:279
 msgid ""
@@ -582,9 +703,19 @@ msgstr ""
 "boucle, d'un range, et d'une expression, optionnelle, :keyword:`if`. Cette "
 "expression combinée génère des valeurs pour la fonction qui l'entoure ::"
 
+#: glossary.rst:286
+msgid "GIL"
+msgstr ""
+
 # 50fd518f5b964721938dbf76218563fc
 #: glossary.rst:288
 msgid "See :term:`global interpreter lock`."
+msgstr "Voir :term:`verrou global de l'interpréteur `."
+
+# 50fd518f5b964721938dbf76218563fc
+#: glossary.rst:289
+#, fuzzy
+msgid "global interpreter lock"
 msgstr "Voir :term:`verrou global de l'interpréteur `."
 
 # effbfba8c30b4f158c8b335b8d15d170
@@ -634,6 +765,10 @@ msgstr ""
 "problèmes de performance induits mènerai vers une implémentation compliquée "
 "et donc plus coûteuse à maintenir."
 
+#: glossary.rst:310
+msgid "hashable"
+msgstr ""
+
 # dc0cd0de884c47a9870c1be8cd7f009c
 #: glossary.rst:312
 msgid ""
@@ -673,6 +808,10 @@ msgstr ""
 "elles mêmes, et leur empreinte (*hash*) est calculée à partir de leur :func:"
 "`id`."
 
+#: glossary.rst:325
+msgid "IDLE"
+msgstr ""
+
 # 14a0891e08a74fc6898cc5eced90003a
 #: glossary.rst:327
 msgid ""
@@ -682,6 +821,10 @@ msgid ""
 msgstr ""
 "Un environnement de développement intégré pour Python. IDLE est un éditeur "
 "et interpréteur basique livré avec la distribution standard de Python."
+
+#: glossary.rst:330
+msgid "immutable"
+msgstr ""
 
 # fdf0ba521b9a4c77ae4d0c8c4c6b9d52
 #: glossary.rst:332
@@ -698,6 +841,10 @@ msgstr ""
 "important aux endroits où une valeur de hash constante est requise, "
 "typiquement en clef de dictionnaire."
 
+#: glossary.rst:337
+msgid "importer"
+msgstr ""
+
 # af1d18ea47fb45599760f4d181e74e2a
 #: glossary.rst:339
 msgid ""
@@ -706,6 +853,10 @@ msgid ""
 msgstr ""
 "Un objet qui trouve et charge un module, en même temps un :term:`finder` et "
 "un :term:`loader`."
+
+#: glossary.rst:341
+msgid "interactive"
+msgstr ""
 
 # 00535d15ab214f8fb8338429772937a5
 #: glossary.rst:343
@@ -722,6 +873,10 @@ msgstr ""
 "``python`` (probablement depuis un menu de votre ordinateur). C'est un moyen "
 "puissant pour tester de nouvelles idées ou étudier de nouveaux modules "
 "(souvenez vous de ``help(x)``)."
+
+#: glossary.rst:349
+msgid "interpreted"
+msgstr ""
 
 # b663b760c08b41b2bd334082b2b513e5
 #: glossary.rst:351
@@ -741,6 +896,10 @@ msgstr ""
 "et ils s'exécutent généralement plus lentement. Voir aussi :term:"
 "`interactif`."
 
+#: glossary.rst:358
+msgid "iterable"
+msgstr ""
+
 # 03c1ad39085245b2b8ec3074aee0cdfd
 #: glossary.rst:360
 msgid ""
@@ -758,6 +917,10 @@ msgid ""
 "automatically for you, creating a temporary unnamed variable to hold the "
 "iterator for the duration of the loop.  See also :term:`iterator`, :term:"
 "`sequence`, and :term:`generator`."
+msgstr ""
+
+#: glossary.rst:374
+msgid "iterator"
 msgstr ""
 
 # 09a58d23edd54c9cbde01d21ab272593
@@ -783,6 +946,10 @@ msgstr ""
 #: glossary.rst:391
 msgid "More information can be found in :ref:`typeiter`."
 msgstr "Plus d'informations ici : :ref:`typeiter`."
+
+#: glossary.rst:392
+msgid "key function"
+msgstr ""
 
 # 00eee6ee0a574618b323a6c0f3dd14de
 #: glossary.rst:394
@@ -830,11 +997,19 @@ msgstr ""
 "`Comment Trier <sortinghowto>` pour avoir des exemple de création et "
 "d'utilisation de fonctions clés."
 
+#: glossary.rst:412
+msgid "keyword argument"
+msgstr ""
+
 # be5c7d2028ff4e6789166fabcd110c1b
 # 1f31eb5ca02d421591a785254ed299d9
 #: glossary.rst:414 glossary.rst:584
 msgid "See :term:`argument`."
 msgstr "Voir :term:`argument`."
+
+#: glossary.rst:415
+msgid "lambda"
+msgstr ""
 
 # 23e58aa44e884ad6bf19a3eb3ae564f1
 #: glossary.rst:417
@@ -846,6 +1021,10 @@ msgstr ""
 "Une fonction anonyme sous forme d'une expression, et ne contenant qu'une "
 "expression, exécutée lorsqu'elle est appelée. La syntaxe pour créer des "
 "fonctions lambda est: ``lambda [arguments]: expression``"
+
+#: glossary.rst:420
+msgid "LBYL"
+msgstr ""
 
 # c383515df4ec4848a04f0f7ebe2e4346
 #: glossary.rst:422
@@ -876,6 +1055,10 @@ msgstr ""
 "l'accès. Ce problème peut être résolu avec des verrous (*locks*) ou avec "
 "l'approche EAFP."
 
+#: glossary.rst:432
+msgid "list"
+msgstr ""
+
 # 212d5a1ca3cd490e9edd786738d9965c
 #: glossary.rst:434
 msgid ""
@@ -886,6 +1069,10 @@ msgstr ""
 "Un type natif de :term:`sequence` dans Python. En dépit de son nom, une "
 "``list`` ressemble plus à un *array* qu'à une liste chaînée puisque les "
 "accès se font en O(1)."
+
+#: glossary.rst:437
+msgid "list comprehension"
+msgstr ""
 
 # bb7bdad57d0a41c49577bbb5951a93ed
 #: glossary.rst:439
@@ -903,6 +1090,10 @@ msgstr ""
 "clause :keyword : `if` est optionnelle. Si elle est omise, tous les éléments "
 "du ``range(256)`` seront utilisés."
 
+#: glossary.rst:445
+msgid "loader"
+msgstr ""
+
 # af85382be6444bd8b6a0b0c14cd34219
 #: glossary.rst:447
 msgid ""
@@ -915,6 +1106,10 @@ msgstr ""
 "`load_module`. Un *loader* est typiquement donné par un :term:`finder`. "
 "Voir :pep:`302` pour les détails et :class:`importlib.ABC.Loader` pour sa :"
 "term:`classe de base abstraite`."
+
+#: glossary.rst:451
+msgid "mapping"
+msgstr ""
 
 # d3f8d163546b4aef87e07a1961c15c1e
 #: glossary.rst:453
@@ -933,6 +1128,10 @@ msgstr ""
 "MutableMapping`. Les classes suivantes sont des exemples de mapping: :class:"
 "`dict`, :class:`collections.defaultdict`, :class:`collections.OrderedDict`, "
 "et :class:`collections.Counter`."
+
+#: glossary.rst:459
+msgid "metaclass"
+msgstr ""
 
 # e6b596d0452c4bc49837015cf8d21ad9
 #: glossary.rst:461
@@ -956,6 +1155,10 @@ msgstr ""
 msgid "More information can be found in :ref:`metaclasses`."
 msgstr "Plus d'informations à ce sujet : :ref:`metaclasses`."
 
+#: glossary.rst:472
+msgid "method"
+msgstr ""
+
 # fc9355391d354473bb61173a1c666f6c
 #: glossary.rst:474
 msgid ""
@@ -968,6 +1171,12 @@ msgstr ""
 "attribut d'une instance, la méthode reçoit l'instance en premier :term:"
 "`argument` (qui par convention est nommé ``self``). Voir :term:`function` "
 "et :term:`nested scope`."
+
+# 102a7da4a0db41a994fe6f56bb73aabc
+#: glossary.rst:478
+#, fuzzy
+msgid "method resolution order"
+msgstr "Voir :term:`ordre de  résolution des méthodes `."
 
 # 8a1ebe93ab0049cd9c41ae0dd50b6df2
 #: glossary.rst:480
@@ -982,10 +1191,18 @@ msgstr ""
 "Voir `The Python 2.3 Method Resolution Order <https://www.python.org/"
 "download/releases/2.3/mro/>`_."
 
+#: glossary.rst:483
+msgid "MRO"
+msgstr ""
+
 # 102a7da4a0db41a994fe6f56bb73aabc
 #: glossary.rst:485
 msgid "See :term:`method resolution order`."
 msgstr "Voir :term:`ordre de  résolution des méthodes `."
+
+#: glossary.rst:486
+msgid "mutable"
+msgstr ""
 
 # b1886f8391484c57a607799d5d1afbc2
 #: glossary.rst:488
@@ -995,6 +1212,10 @@ msgid ""
 msgstr ""
 "Un objet variable (*mutable*) peut changer de valeur tout en gardant le "
 "même :func:`id`. Voir aussi :term:`immuable`."
+
+#: glossary.rst:490
+msgid "named tuple"
+msgstr ""
 
 # 4ee3d3a96f1947a59cbbb1ab7df27f37
 #: glossary.rst:492
@@ -1026,6 +1247,10 @@ msgstr ""
 "supplémentaires, tel qu'une représentation lisible comme "
 "``Employee(name='jones', title='programmer')``."
 
+#: glossary.rst:503
+msgid "namespace"
+msgstr ""
+
 # e3c3f846eb5a42d0a0bee3ca6517c30a
 #: glossary.rst:505
 msgid ""
@@ -1038,6 +1263,10 @@ msgid ""
 "implements a function.  For instance, writing :func:`random.seed` or :func:"
 "`itertools.islice` makes it clear that those functions are implemented by "
 "the :mod:`random` and :mod:`itertools` modules, respectively."
+msgstr ""
+
+#: glossary.rst:515
+msgid "nested scope"
 msgstr ""
 
 # 1628f77a53b3416194cb45147f039150
@@ -1059,6 +1288,10 @@ msgstr ""
 "l'espace de noms global, le mot clef :keyword:`nonlocal` permet d'écrire "
 "dans l'espace de nom dans lequel est déclaré la variable."
 
+#: glossary.rst:524
+msgid "new-style class"
+msgstr ""
+
 # 178a0ca5b2c34d399e170091b215bfea
 #: glossary.rst:526
 msgid ""
@@ -1066,6 +1299,10 @@ msgid ""
 "earlier Python versions, only new-style classes could use Python's newer, "
 "versatile features like :attr:`__slots__`, descriptors, properties, :meth:"
 "`__getattribute__`, class methods, and static methods."
+msgstr ""
+
+#: glossary.rst:530
+msgid "object"
 msgstr ""
 
 # 168e9fdd587c456ebc6de793f8893f8e
@@ -1078,6 +1315,10 @@ msgstr ""
 "valeurs, et un comportement (des :term:`méthodes <méthode>`). C'est aussi "
 "(``object``) l'ancêtre commun à absolument toutes les :term:`nouvelles "
 "classes <nouvelle classe>`."
+
+#: glossary.rst:535
+msgid "parameter"
+msgstr ""
 
 # 8ae79a750a264a759e607d3449a8358e
 #: glossary.rst:537
@@ -1166,6 +1407,14 @@ msgstr ""
 "dans la FAQ, la classe :class:`inspect.Parameter`, la section :ref:"
 "`fonction`, et la :pep:`362`."
 
+#: glossary.rst:582
+msgid "positional argument"
+msgstr ""
+
+#: glossary.rst:585
+msgid "Python 3000"
+msgstr ""
+
 # 82a12c64dd2e43fca5e647c7f7b44874
 #: glossary.rst:587
 msgid ""
@@ -1175,6 +1424,10 @@ msgid ""
 msgstr ""
 "Surnom de la série des Python 3.x (très vieux surnom donné à l'époque pour "
 "Python 3 n'était qu'un futur lointain). Aussi abrégé \"Py3k\"."
+
+#: glossary.rst:590
+msgid "Pythonic"
+msgstr ""
 
 # 237aac01670d4832b6f9d2c62df79088
 #: glossary.rst:592
@@ -1199,6 +1452,10 @@ msgid "As opposed to the cleaner, Pythonic method::"
 msgstr ""
 "Plutôt qu'utiliser la méthode, plus propre et élégante, donc Pythonique ::"
 
+#: glossary.rst:606
+msgid "reference count"
+msgstr ""
+
 # c5ad93e8cc6444bd8fcf6872b2ee8277
 #: glossary.rst:608
 msgid ""
@@ -1210,6 +1467,10 @@ msgid ""
 "particular object."
 msgstr ""
 
+#: glossary.rst:614
+msgid "__slots__"
+msgstr ""
+
 # 22246c7f0b7d4fac9d1bbabbf7ae4d0d
 #: glossary.rst:616
 msgid ""
@@ -1218,6 +1479,10 @@ msgid ""
 "the technique is somewhat tricky to get right and is best reserved for rare "
 "cases where there are large numbers of instances in a memory-critical "
 "application."
+msgstr ""
+
+#: glossary.rst:621
+msgid "sequence"
 msgstr ""
 
 # a50a49d7675e483a8e4f59cbb6c03325
@@ -1232,6 +1497,10 @@ msgid ""
 "lookups use arbitrary :term:`immutable` keys rather than integers."
 msgstr ""
 
+#: glossary.rst:631
+msgid "slice"
+msgstr ""
+
 # 5226408ffecd4c9ca14a3461d601810a
 #: glossary.rst:633
 msgid ""
@@ -1239,6 +1508,10 @@ msgid ""
 "created using the subscript notation, ``[]`` with colons between numbers "
 "when several are given, such as in ``variable_name[1:3:5]``.  The bracket "
 "(subscript) notation uses :class:`slice` objects internally."
+msgstr ""
+
+#: glossary.rst:637
+msgid "special method"
 msgstr ""
 
 # 51c764c3f36e45b1b27244ac3dacf588
@@ -1250,12 +1523,20 @@ msgid ""
 "`specialnames`."
 msgstr ""
 
+#: glossary.rst:643
+msgid "statement"
+msgstr ""
+
 # 839005a4150e4b63afd23d05a0bfc265
 #: glossary.rst:645
 msgid ""
 "A statement is part of a suite (a \"block\" of code).  A statement is either "
 "an :term:`expression` or a one of several constructs with a keyword, such "
 "as :keyword:`if`, :keyword:`while` or :keyword:`for`."
+msgstr ""
+
+#: glossary.rst:648
+msgid "triple-quoted string"
 msgstr ""
 
 # c1b3e4430e624f588341689b5bd515bf
@@ -1270,12 +1551,20 @@ msgid ""
 "docstrings."
 msgstr ""
 
+#: glossary.rst:657
+msgid "type"
+msgstr ""
+
 # 6fc0255cee854fc79293bfe3fa151da3
 #: glossary.rst:659
 msgid ""
 "The type of a Python object determines what kind of object it is; every "
 "object has a type.  An object's type is accessible as its :attr:`__class__` "
 "attribute or can be retrieved with ``type(obj)``."
+msgstr ""
+
+#: glossary.rst:662
+msgid "universal newlines"
 msgstr ""
 
 # 47a57b318c4a462dbdba375a7fd9ce6e
@@ -1288,6 +1577,10 @@ msgid ""
 "splitlines` for an additional use."
 msgstr ""
 
+#: glossary.rst:669
+msgid "view"
+msgstr ""
+
 # 1b940b9f34364c408528d5bc5164fb33
 #: glossary.rst:671
 msgid ""
@@ -1297,11 +1590,19 @@ msgid ""
 "become a full list use ``list(dictview)``.  See :ref:`dict-views`."
 msgstr ""
 
+#: glossary.rst:676
+msgid "virtual machine"
+msgstr ""
+
 # ccb2f9c132694f3c8626c49dd3e04149
 #: glossary.rst:678
 msgid ""
 "A computer defined entirely in software.  Python's virtual machine executes "
 "the :term:`bytecode` emitted by the bytecode compiler."
+msgstr ""
+
+#: glossary.rst:680
+msgid "Zen of Python"
 msgstr ""
 
 # d381fcf5f251472da7016edec32302f5

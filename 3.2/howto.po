@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 13:09\n"
+"POT-Creation-Date: 2015-12-22 00:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,6 +31,13 @@ msgstr "A.M. Kuchling"
 #: howto/advocacy.rst:6
 msgid "0.03"
 msgstr "0.03"
+
+# 67a17c2b18f34c0d92f2a0760121532d
+#: howto/advocacy.rst:0 howto/cporting.rst:0 howto/curses.rst:0
+#: howto/descriptor.rst:11 howto/pyporting.rst:0 howto/regex.rst:0
+#: howto/sockets.rst:0 howto/webservers.rst:0
+msgid "Abstract"
+msgstr "Résumé"
 
 # 7a8018cff18e45d7add43acedc1a3b3c
 #: howto/advocacy.rst:11
@@ -2127,10 +2135,9 @@ msgstr ""
 msgid "<python at rcn dot com>"
 msgstr ""
 
-# 67a17c2b18f34c0d92f2a0760121532d
-#: howto/descriptor.rst:11
-msgid "Abstract"
-msgstr "Résumé"
+#: howto/descriptor.rst:0
+msgid "Contents"
+msgstr ""
 
 # fd370b6c6bfc41e08df798096a483aa8
 #: howto/descriptor.rst:13
@@ -3455,10 +3462,8 @@ msgid ""
 "the features of generator expressions:"
 msgstr ""
 
-# d3b66dfa019748c4b939ea3714aa39ed
 #: howto/functional.rst:633
-msgid ""
-":func:`map(f, iterA, iterB, ...) <map>` returns an iterator over the sequence"
+msgid "map(f, iterA, iterB, ...) returns an iterator over the sequence"
 msgstr ""
 
 # 2568752e827f412085ab804f9096c65d
@@ -5000,6 +5005,10 @@ msgid ""
 "conform to what is expected by :meth:`string.Template.substitute`."
 msgstr ""
 
+#: howto/logging.rst:530
+msgid "Added the ``style`` parameter."
+msgstr ""
+
 # a9693960f8bc49b78c1b3e491955c037
 #: howto/logging.rst:533
 msgid ""
@@ -5517,6 +5526,14 @@ msgid ""
 "more information."
 msgstr ""
 
+#: howto/logging.rst:933
+msgid "The :class:`NullHandler` class."
+msgstr ""
+
+#: howto/logging.rst:936
+msgid "The :class:`~handlers.QueueHandler` class."
+msgstr ""
+
 # a5c33ea70edc4bb3ba75d23b2ade59ef
 #: howto/logging.rst:939
 msgid ""
@@ -5699,10 +5716,8 @@ msgid ""
 "won't take up any memory."
 msgstr ""
 
-# 19ed7db05b324092b0dfa7ed54d50ccc
-# 20d06093c18f415e8b3e1bac687a6f9a
 #: howto/logging.rst:1044 howto/logging-cookbook.rst:1243
-msgid "Module :mod:`logging`"
+msgid "Module logging"
 msgstr ""
 
 # a4bd9c8e57884322a32f321a9cf1e47f
@@ -5711,10 +5726,8 @@ msgstr ""
 msgid "API reference for the logging module."
 msgstr ""
 
-# 320a2e865c45430488799b90bfd95500
-# fe69eab6293c4c2bb241e2acc4914bd8
 #: howto/logging.rst:1047 howto/logging-cookbook.rst:1246
-msgid "Module :mod:`logging.config`"
+msgid "Module logging.config"
 msgstr ""
 
 # 52c91c18e1c94fc28abe6d0642a8d354
@@ -5723,10 +5736,8 @@ msgstr ""
 msgid "Configuration API for the logging module."
 msgstr ""
 
-# 7be4d81f26be489d9927bd21e091465d
-# 643d6211d27f42d4ac67c41aa59b7d18
 #: howto/logging.rst:1050 howto/logging-cookbook.rst:1249
-msgid "Module :mod:`logging.handlers`"
+msgid "Module logging.handlers"
 msgstr ""
 
 # 9226efa034364e149a4591ea7f585c27
@@ -7791,9 +7802,8 @@ msgid ""
 "of :ref:`Regular Expression Syntax <re-syntax>`."
 msgstr ""
 
-# 1e4fd92cbfd8440c9505354d4c038c5a
 #: howto/regex.rst:116
-msgid "``\\d``"
+msgid "\\d"
 msgstr ""
 
 # 4cb9ca21eb9141cba99286cc2e89d4fd
@@ -7801,9 +7811,8 @@ msgstr ""
 msgid "Matches any decimal digit; this is equivalent to the class ``[0-9]``."
 msgstr ""
 
-# c0a94b64224b437c8487d50d6df31dd1
 #: howto/regex.rst:119
-msgid "``\\D``"
+msgid "\\D"
 msgstr ""
 
 # 3f41bc6e7b55452b89580498fa9fad08
@@ -7812,9 +7821,8 @@ msgid ""
 "Matches any non-digit character; this is equivalent to the class ``[^0-9]``."
 msgstr ""
 
-# 349bdae3815241afa138ebc3ed7c4a4c
 #: howto/regex.rst:123
-msgid "``\\s``"
+msgid "\\s"
 msgstr ""
 
 # 205f9fec5d7046129396ac6f65341ab8
@@ -7824,9 +7832,8 @@ msgid ""
 "\\r\\f\\v]``."
 msgstr ""
 
-# 0617fd6d7a9241d2b378afcc2ee86c63
 #: howto/regex.rst:127
-msgid "``\\S``"
+msgid "\\S"
 msgstr ""
 
 # 126c32f6562c473a87318e535e71847a
@@ -7836,9 +7843,8 @@ msgid ""
 "\\t\\n\\r\\f\\v]``."
 msgstr ""
 
-# 626e5097b299428fbfc099b673027c45
 #: howto/regex.rst:131
-msgid "``\\w``"
+msgid "\\w"
 msgstr ""
 
 # 80daf519cc8e4122924208a1cadab662
@@ -7848,9 +7854,8 @@ msgid ""
 "Z0-9_]``."
 msgstr ""
 
-# 149c43f71afb4ec7ab556309523de39a
 #: howto/regex.rst:135
-msgid "``\\W``"
+msgid "\\W"
 msgstr ""
 
 # f447bb02b58d4346a71dc0f1dd09ddb4
@@ -8769,9 +8774,8 @@ msgid ""
 "of times."
 msgstr ""
 
-# 01d1fd70ca634a9885aec485d68c78a1
 #: howto/regex.rst:676
-msgid "``|``"
+msgid "|"
 msgstr ""
 
 # 7e7dfbf635ca45d4b0182ce9a2478892
@@ -8791,9 +8795,8 @@ msgid ""
 "class, as in ``[|]``."
 msgstr ""
 
-# d3dcf82939e34abcba0e397027954372
 #: howto/regex.rst:692
-msgid "``^``"
+msgid "^"
 msgstr ""
 
 # 8783e3af65ad4319975e737b52e43cdc
@@ -8812,9 +8815,8 @@ msgid ""
 "a line, the RE to use is ``^From``. ::"
 msgstr ""
 
-# b588220c02b34df0ac7f8c686ff37a44
 #: howto/regex.rst:706
-msgid "``$``"
+msgid "$"
 msgstr ""
 
 # 2c1eef6c31b64ab59bf8b94819e876b8
@@ -8831,9 +8833,8 @@ msgid ""
 "class, as in  ``[$]``."
 msgstr ""
 
-# 36ffbe29a1f743a59ea3324e84fa5144
 #: howto/regex.rst:712
-msgid "``\\A``"
+msgid "\\A"
 msgstr ""
 
 # 6e7d910804f44e4b9897f8790ad68a8b
@@ -8846,9 +8847,8 @@ msgid ""
 "newline character."
 msgstr ""
 
-# ad86cd120b1f412eb4f82fb3fabc4adb
 #: howto/regex.rst:715
-msgid "``\\Z``"
+msgid "\\Z"
 msgstr ""
 
 # d9261bc6398e4bde9788c0ce5819aadb
@@ -8856,9 +8856,8 @@ msgstr ""
 msgid "Matches only at the end of the string."
 msgstr ""
 
-# 9520a6e724f94d6d9b00ca84ee8772d0
 #: howto/regex.rst:750
-msgid "``\\b``"
+msgid "\\b"
 msgstr ""
 
 # 98e3e44eb7df4b9487bcb96b91da9096
@@ -8897,9 +8896,8 @@ msgid ""
 "string literals."
 msgstr ""
 
-# f6650ae3c68d4ee89383ccb507fb2504
 #: howto/regex.rst:755
-msgid "``\\B``"
+msgid "\\B"
 msgstr ""
 
 # a8885b37343048b8af1efc6c30a29e86
@@ -9151,9 +9149,8 @@ msgid ""
 "this:"
 msgstr ""
 
-# 03eafdcf01964598ad4d9fba1b32bc14
 #: howto/regex.rst:961
-msgid "``(?=...)``"
+msgid "(?=...)"
 msgstr ""
 
 # b8e6e16dd6fa42199181ca02c9b30382
@@ -9166,9 +9163,8 @@ msgid ""
 "is tried right where the assertion started."
 msgstr ""
 
-# b41a994d410b4cce883322655f9008ae
 #: howto/regex.rst:966
-msgid "``(?!...)``"
+msgid "(?!...)"
 msgstr ""
 
 # 77b816e10bdd4f5caad1f42572de61a1
@@ -9894,6 +9890,12 @@ msgid ""
 "the \"server\" socket to ``'localhost'``. On most platforms, this will take "
 "a shortcut around a couple of layers of network code and be quite a bit "
 "faster."
+msgstr ""
+
+#: howto/sockets.rst:133
+msgid ""
+"The :mod:`multiprocessing` integrates cross-platform IPC into a higher-level "
+"API."
 msgstr ""
 
 # 113884d74f4e439999ed790bb4a44c10
@@ -11488,6 +11490,10 @@ msgid ""
 "There is a French translation of an earlier revision of this HOWTO, "
 "available at `urllib2 - Le Manuel manquant <http://www.voidspace.org.uk/"
 "python/articles/urllib2_francais.shtml>`_."
+msgstr ""
+
+#: howto/urllib2.rst:0
+msgid "Related Articles"
 msgstr ""
 
 # c9467eb7843148829be94110e2831089

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 13:09\n"
+"POT-Creation-Date: 2015-12-22 00:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -204,9 +205,8 @@ msgid ""
 "Python objects."
 msgstr ""
 
-# 01c7d6d98f5b4587ab4498ce60f9cf11
 #: extending/embedding.rst:42
-msgid ":ref:`c-api-index`"
+msgid "c-api-index"
 msgstr ""
 
 # 28baea4513a44eedb88f747bff98b148

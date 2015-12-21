@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 13:09\n"
+"POT-Creation-Date: 2015-12-22 00:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -450,10 +451,12 @@ msgstr ""
 msgid "is equivalent to ::"
 msgstr ""
 
-# 5864a2436d2c4d03b03c377af37aad37
-# cfe7dd0dae4c42e8a9b3ad62c67412cf
+#: reference/compound_stmts.rst:410
+msgid "Support for multiple context expressions."
+msgstr ""
+
 #: reference/compound_stmts.rst:416 reference/datamodel.rst:1997
-msgid ":pep:`0343` - The \"with\" statement"
+msgid "PEP 0343 - The \"with\" statement"
 msgstr ""
 
 # 650177c88ae14a5f8d1697599385fff8
@@ -584,9 +587,8 @@ msgid ""
 "section :ref:`naming` for details."
 msgstr ""
 
-# df039fca6e4c4dd69b7c7992f469bf37
 #: reference/compound_stmts.rst:556
-msgid ":pep:`3107` - Function Annotations"
+msgid "PEP 3107 - Function Annotations"
 msgstr ""
 
 # 43bbe029c9644d92be6f49603283e71e
@@ -889,9 +891,8 @@ msgid ""
 "``Ellipsis``.  Its truth value is true."
 msgstr ""
 
-# ca58bfb9fb6945a8a041748002185aa3
 #: reference/datamodel.rst:230
-msgid ":class:`numbers.Number`"
+msgid "numbers.Number"
 msgstr ""
 
 # 3693e62eff5b4714b70418af46a7298a
@@ -911,9 +912,8 @@ msgid ""
 "numbers:"
 msgstr ""
 
-# 42912c3b2e4e47dcb2c3029108929533
 #: reference/datamodel.rst:205
-msgid ":class:`numbers.Integral`"
+msgid "numbers.Integral"
 msgstr ""
 
 # 17717c2a3fa8438f8b2bd426d69450c1
@@ -943,9 +943,8 @@ msgid ""
 "sign bits extending to the left."
 msgstr ""
 
-# a552cacdd5f445f0a787cab19646ffab
 #: reference/datamodel.rst:200
-msgid "Booleans (:class:`bool`)"
+msgid "Booleans (bool)"
 msgstr ""
 
 # a2ea512e2bbe45c9964cea970d41d2b0
@@ -967,9 +966,8 @@ msgid ""
 "integers."
 msgstr ""
 
-# 0176b9ba74b44367916136228b97f675
 #: reference/datamodel.rst:220
-msgid ":class:`numbers.Real` (:class:`float`)"
+msgid "numbers.Real (float)"
 msgstr ""
 
 # ea46084dd8204189b1bc2c91172458f5
@@ -984,9 +982,8 @@ msgid ""
 "complicate the language with two kinds of floating point numbers."
 msgstr ""
 
-# 1657768773e241ed98b27a64e5c2e2fb
 #: reference/datamodel.rst:230
-msgid ":class:`numbers.Complex` (:class:`complex`)"
+msgid "numbers.Complex (complex)"
 msgstr ""
 
 # 63694ba508784adf9c9430aceba78b5b
@@ -2921,9 +2918,8 @@ msgid ""
 "only in this case the instance is itself a class."
 msgstr ""
 
-# befd72521832414881c073afb1c4b857
 #: reference/datamodel.rst:1654
-msgid ":pep:`3119` - Introducing Abstract Base Classes"
+msgid "PEP 3119 - Introducing Abstract Base Classes"
 msgstr ""
 
 # 90a277b85a634688976a375c2517eb7f
@@ -4141,10 +4137,8 @@ msgid ""
 "generator functions::"
 msgstr ""
 
-# 7b0f77c966c44f0c94b477aa46eae38e
-# 04c1755b2de444ccaa584243aa718187
 #: reference/expressions.rst:449 reference/simple_stmts.rst:474
-msgid ":pep:`0255` - Simple Generators"
+msgid "PEP 0255 - Simple Generators"
 msgstr ""
 
 # 679c085cd4c1476eb5c92d1df60dccac
@@ -4155,10 +4149,8 @@ msgid ""
 "Python."
 msgstr ""
 
-# 03720628a1ae4f628143ced7f3c0ae48
-# eab42641f3c2430b804babf544919acc
 #: reference/expressions.rst:452 reference/simple_stmts.rst:477
-msgid ":pep:`0342` - Coroutines via Enhanced Generators"
+msgid "PEP 0342 - Coroutines via Enhanced Generators"
 msgstr ""
 
 # 6305a26d664b43b983747d495b7b7a59
@@ -6053,9 +6045,8 @@ msgid ""
 "underscore characters:"
 msgstr ""
 
-# 25f34b9dda834a02871c5b57f6f2bf1f
 #: reference/lexical_analysis.rst:366
-msgid "``_*``"
+msgid "_*"
 msgstr ""
 
 # 24440be63bed4d468a8023f071f77955
@@ -6076,9 +6067,8 @@ msgid ""
 "this convention."
 msgstr ""
 
-# c09f0e5fbf46476bbc1d784aa8a9dc9c
 #: reference/lexical_analysis.rst:374
-msgid "``__*__``"
+msgid "__*__"
 msgstr ""
 
 # f2e4b078ed5c430e8bdd29b7a029b8f3
@@ -6092,9 +6082,8 @@ msgid ""
 "subject to breakage without warning."
 msgstr ""
 
-# a67242c8546b414186f6fb3381a75ac2
 #: reference/lexical_analysis.rst:381
-msgid "``__*``"
+msgid "__*"
 msgstr ""
 
 # 884abe0e96964e008c251d9d354f2eb1
@@ -6880,9 +6869,8 @@ msgid ""
 "2]``::"
 msgstr ""
 
-# 8f29ac8032db4826a1ee6ed1535e9cc1
 #: reference/simple_stmts.rst:251
-msgid ":pep:`3132` - Extended Iterable Unpacking"
+msgid "PEP 3132 - Extended Iterable Unpacking"
 msgstr ""
 
 # ddbdb0c017584f9f909c070e5571ac60
@@ -7031,6 +7019,12 @@ msgid ""
 "the primary object involved; deletion of a slicing is in general equivalent "
 "to assignment of an empty slice of the right type (but even this is "
 "determined by the sliced object)."
+msgstr ""
+
+#: reference/simple_stmts.rst:395
+msgid ""
+"Previously it was illegal to delete a name from the local namespace if it "
+"occurs as a free variable in a nested block."
 msgstr ""
 
 # ee1d9ee6da96446e8dcdccf95b5c2311
@@ -7569,9 +7563,8 @@ msgid ""
 "interactive session started after the script is executed."
 msgstr ""
 
-# 8f42b884219c4bda8f014cffe555f091
 #: reference/simple_stmts.rst:905
-msgid ":pep:`236` - Back to the __future__"
+msgid "PEP 236 - Back to the __future__"
 msgstr ""
 
 # ee51f23ac2f440b3ac86fec6e096727a
@@ -7661,9 +7654,8 @@ msgid ""
 "existing bindings in the local scope."
 msgstr ""
 
-# 27229eb4c7bc4f859a74e92105775a85
 #: reference/simple_stmts.rst:988
-msgid ":pep:`3104` - Access to Names in Outer Scopes"
+msgid "PEP 3104 - Access to Names in Outer Scopes"
 msgstr ""
 
 # b799b68b3c954afe8eb4af317211403d

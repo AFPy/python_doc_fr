@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-20 13:09\n"
+"POT-Creation-Date: 2015-12-22 00:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1718,6 +1719,10 @@ msgid ""
 "sourceforge.net/#section_d>`_."
 msgstr ""
 
+#: distutils/apiref.rst:1002
+msgid "NFS files are ignored."
+msgstr ""
+
 # f43c016f93e84d8abce9cc976302144d
 #: distutils/apiref.rst:1007
 msgid ""
@@ -2060,6 +2065,13 @@ msgid ""
 "figure out to use direct compilation or not (see the source for details).  "
 "The *direct* flag is used by the script generated in indirect mode; unless "
 "you know what you're doing, leave it set to ``None``."
+msgstr ""
+
+#: distutils/apiref.rst:1238
+msgid ""
+"Create ``.pyc`` or ``.pyo`` files with an :func:`import magic tag <imp."
+"get_tag>` in their name, in a :file:`__pycache__` subdirectory instead of "
+"files without tag in the current directory."
 msgstr ""
 
 # b1947f77ff85463ea6625d52f9a48865
@@ -4161,10 +4173,11 @@ msgid ""
 "string split across multiple lines for readability."
 msgstr ""
 
-# da3d6c3d2f8d4179856a0a43726ec073
+# 5d10edfd8df743d28d5394ccab09bc19
 #: distutils/configfile.rst:122
-msgid ":ref:`inst-config-syntax` in \"Installing Python Modules\""
-msgstr ""
+#, fuzzy
+msgid "inst-config-syntax in \"Installing Python Modules\""
+msgstr "Distribuer des Modules Python [en]"
 
 # 6e54c2d61f504f6a9e3bd8c53da3066a
 #: distutils/configfile.rst:122
@@ -4198,9 +4211,8 @@ msgid ""
 "Distutils Cookbook."
 msgstr ""
 
-# 5c1ad2dd37ae40e0a62f06f0fe17d588
 #: distutils/examples.rst:14
-msgid "`Distutils Cookbook <http://wiki.python.org/moin/Distutils/Cookbook>`_"
+msgid "Distutils Cookbook"
 msgstr ""
 
 # 7e564fa128d747f1bfdd305589e386d0
@@ -5155,9 +5167,8 @@ msgstr ""
 msgid "Each section describing a repository defines three variables:"
 msgstr ""
 
-# 6090abdc60fa4905b642c9d587367439
 #: distutils/packageindex.rst:139
-msgid "*repository*, that defines the url of the PyPI server. Defaults to"
+msgid "repository, that defines the url of the PyPI server. Defaults to"
 msgstr ""
 
 # 0b1a7f6d7f8f4d91ad7076e22a9dd371
@@ -5170,9 +5181,8 @@ msgstr ""
 msgid "*username*, which is the registered username on the PyPI server."
 msgstr ""
 
-# 5d3a4d0c94b147ae8119912955b3f95a
 #: distutils/packageindex.rst:143
-msgid "*password*, that will be used to authenticate. If omitted the user"
+msgid "password, that will be used to authenticate. If omitted the user"
 msgstr ""
 
 # b7ca180d2cc1412e98530f7d261eb20f
@@ -5909,6 +5919,12 @@ msgid ""
 "way.  From the PyXML setup script::"
 msgstr ""
 
+#: distutils/setupscript.rst:457
+msgid ""
+"All the scripts will also be added to the ``MANIFEST`` file if no template "
+"is provided.  See :ref:`manifest`."
+msgstr ""
+
 # ef9911da343e4de59eede4df0c68d5c3
 #: distutils/setupscript.rst:465
 msgid "Installing Package Data"
@@ -5952,6 +5968,12 @@ msgstr ""
 # 93c87f6dff2a483991af203c75fcc920
 #: distutils/setupscript.rst:496
 msgid "The corresponding call to :func:`setup` might be::"
+msgstr ""
+
+#: distutils/setupscript.rst:505
+msgid ""
+"All the files that match ``package_data`` will be added to the ``MANIFEST`` "
+"file if no template is provided.  See :ref:`manifest`."
 msgstr ""
 
 # d8345c18ddc649a59945831afd76d40b
@@ -6002,6 +6024,12 @@ msgid ""
 "and the :command:`install` command will print a warning in this case. To "
 "install data files directly in the target directory, an empty string should "
 "be given as the directory."
+msgstr ""
+
+#: distutils/setupscript.rst:546
+msgid ""
+"All the files that match ``data_files`` will be added to the ``MANIFEST`` "
+"file if no template is provided.  See :ref:`manifest`."
 msgstr ""
 
 # 1541708f3dc84c1b8aca3af5ca924510
@@ -6498,6 +6526,25 @@ msgid ""
 "filename per line, regular files (or symlinks to them) only.  If you do "
 "supply your own :file:`MANIFEST`, you must specify everything: the default "
 "set of files described above does not apply in this case."
+msgstr ""
+
+#: distutils/sourcedist.rst:106
+msgid ""
+"An existing generated :file:`MANIFEST` will be regenerated without :command:"
+"`sdist` comparing its modification time to the one of :file:`MANIFEST.in` "
+"or :file:`setup.py`."
+msgstr ""
+
+#: distutils/sourcedist.rst:111
+msgid ""
+":file:`MANIFEST` files start with a comment indicating they are generated. "
+"Files without this comment are not overwritten or removed."
+msgstr ""
+
+#: distutils/sourcedist.rst:115
+msgid ""
+":command:`sdist` will read a :file:`MANIFEST` file if no :file:`MANIFEST.in` "
+"exists, like it used to do."
 msgstr ""
 
 # 0fc5e6e56dd64f04aca1195a2ea0b9c2
