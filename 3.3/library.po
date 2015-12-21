@@ -1292,7 +1292,7 @@ msgstr ""
 #: library/xml.dom.minidom.rst:249 library/xml.etree.elementtree.rst:964
 #: library/xmlrpc.client.rst:569
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes"
 
 #: library/abc.rst:300
 msgid ""
@@ -1568,7 +1568,7 @@ msgstr ""
 #: library/argparse.rst:0 library/optparse.rst:245
 #: library/xml.etree.elementtree.rst:23
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutoriel [fr]"
 
 #: library/argparse.rst:17
 msgid ""
@@ -1808,7 +1808,7 @@ msgstr ""
 
 #: library/argparse.rst:271
 msgid "description"
-msgstr ""
+msgstr "description"
 
 #: library/argparse.rst:273
 msgid ""
@@ -2361,7 +2361,7 @@ msgstr ""
 
 #: library/argparse.rst:952 library/optparse.rst:1589 library/tkinter.rst:728
 msgid "type"
-msgstr ""
+msgstr "type"
 
 #: library/argparse.rst:954
 msgid ""
@@ -39105,7 +39105,7 @@ msgstr ""
 #: library/tkinter.rst:269 library/tkinter.rst:531 library/tkinter.rst:705
 #: library/winsound.rst:73
 msgid "For example::"
-msgstr ""
+msgstr "Par exemple ::"
 
 #: library/functools.rst:148
 msgid ""
@@ -40414,7 +40414,7 @@ msgstr ""
 
 #: library/gettext.rst:634
 msgid "Peter Funk"
-msgstr ""
+msgstr "Peter Funk"
 
 #: library/gettext.rst:636
 msgid "James Henstridge"
@@ -40426,19 +40426,19 @@ msgstr ""
 
 #: library/gettext.rst:640
 msgid "Marc-André Lemburg"
-msgstr ""
+msgstr "Marc-André Lemburg"
 
 #: library/gettext.rst:642
 msgid "Martin von Löwis"
-msgstr ""
+msgstr "Martin von Löwis"
 
 #: library/gettext.rst:644
 msgid "François Pinard"
-msgstr ""
+msgstr "François Pinard"
 
 #: library/gettext.rst:646
 msgid "Barry Warsaw"
-msgstr ""
+msgstr "Barry Warsaw"
 
 #: library/gettext.rst:648
 msgid "Gustavo Niemeyer"
@@ -44609,7 +44609,7 @@ msgstr ""
 
 #: library/idle.rst:4
 msgid "IDLE"
-msgstr ""
+msgstr "IDLE"
 
 #: library/idle.rst:13
 msgid "IDLE is the Python IDE built with the :mod:`tkinter` GUI toolkit."
@@ -47393,7 +47393,7 @@ msgstr ""
 
 #: library/inspect.rst:39 library/logging.rst:765
 msgid "module"
-msgstr ""
+msgstr "module"
 
 #: library/inspect.rst:39 library/inspect.rst:44 library/inspect.rst:49
 #: library/inspect.rst:62 library/inspect.rst:157
@@ -47411,7 +47411,7 @@ msgstr ""
 
 #: library/inspect.rst:44 library/tkinter.ttk.rst:110
 msgid "class"
-msgstr ""
+msgstr "classe"
 
 #: library/inspect.rst:46
 msgid "__module__"
@@ -47423,7 +47423,7 @@ msgstr ""
 
 #: library/inspect.rst:49
 msgid "method"
-msgstr ""
+msgstr "méthode"
 
 #: library/inspect.rst:51
 msgid "name with which this method was defined"
@@ -47447,7 +47447,7 @@ msgstr ""
 
 #: library/inspect.rst:62
 msgid "function"
-msgstr ""
+msgstr "fonction"
 
 #: library/inspect.rst:64
 msgid "name with which this function was defined"
@@ -49818,7 +49818,7 @@ msgstr ""
 
 #: library/io.rst:924
 msgid "Multi-threading"
-msgstr ""
+msgstr "Threads"
 
 #: library/io.rst:926
 msgid ""
@@ -51624,7 +51624,7 @@ msgstr ""
 
 #: library/json.rst:275 library/json.rst:360
 msgid "object"
-msgstr ""
+msgstr "objet"
 
 #: library/json.rst:275 library/json.rst:360
 msgid "dict"
@@ -51636,7 +51636,7 @@ msgstr ""
 
 #: library/json.rst:277
 msgid "list"
-msgstr ""
+msgstr "list"
 
 #: library/json.rst:279 library/json.rst:364 library/turtle.rst:1791
 #: library/turtle.rst:1792 library/turtle.rst:1804 library/turtle.rst:1805
@@ -63096,7 +63096,7 @@ msgstr ""
 
 #: library/multiprocessing.rst:2149
 msgid "Logging"
-msgstr ""
+msgstr "Journalisation"
 
 #: library/multiprocessing.rst:2151
 msgid ""
@@ -65169,7 +65169,7 @@ msgstr ""
 
 #: library/optparse.rst:103
 msgid "argument"
-msgstr ""
+msgstr "argument"
 
 #: library/optparse.rst:95
 msgid ""
@@ -65269,7 +65269,7 @@ msgstr ""
 
 #: library/optparse.rst:164
 msgid "positional argument"
-msgstr ""
+msgstr "augment positionnel"
 
 #: library/optparse.rst:162
 msgid ""
@@ -67012,7 +67012,7 @@ msgstr ""
 
 #: library/optparse.rst:1630 library/tkinter.ttk.rst:597
 msgid "value"
-msgstr ""
+msgstr "valeur"
 
 #: library/optparse.rst:1626
 msgid ""
@@ -92662,7 +92662,7 @@ msgstr ""
 
 #: library/stdtypes.rst:3348
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 #: library/stdtypes.rst:3350
 msgid ""
@@ -92699,7 +92699,7 @@ msgstr ""
 
 #: library/stdtypes.rst:3374
 msgid "See :ref:`objects` and :ref:`class` for these."
-msgstr ""
+msgstr "Voir :ref:`objets` et :ref:`classe`."
 
 #: library/stdtypes.rst:3382
 msgid ""
@@ -96496,7 +96496,7 @@ msgstr ""
 
 #: library/sys.rst:277 library/sys.rst:315 library/sys.rst:569
 msgid "attribute"
-msgstr ""
+msgstr "attribut"
 
 #: library/sys.rst:277
 msgid "flag"

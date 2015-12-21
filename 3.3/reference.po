@@ -593,7 +593,7 @@ msgstr ""
 #: reference/executionmodel.rst:234 reference/expressions.rst:1367
 #: reference/import.rst:693 reference/lexical_analysis.rst:728
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes"
 
 #: reference/compound_stmts.rst:640
 msgid ""
@@ -1445,7 +1445,7 @@ msgstr ""
 
 #: reference/datamodel.rst:698
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 #: reference/datamodel.rst:658
 msgid ""
@@ -4971,7 +4971,7 @@ msgstr ""
 
 #: reference/import.rst:64
 msgid "Packages"
-msgstr ""
+msgstr "Les paquets"
 
 #: reference/import.rst:69
 msgid ""
@@ -5912,7 +5912,7 @@ msgstr ""
 
 #: reference/introduction.rst:51
 msgid "CPython"
-msgstr ""
+msgstr "CPython"
 
 #: reference/introduction.rst:50
 msgid ""

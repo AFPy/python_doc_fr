@@ -1067,7 +1067,7 @@ msgstr ""
 # 294c66459a5d48f09a9eedaf52dd9662
 #: distutils/apiref.rst:536
 msgid "attribute"
-msgstr ""
+msgstr "attribut"
 
 # c2699266a1684af3a7488c6b2fdc32f0
 #: distutils/apiref.rst:538
@@ -3405,7 +3405,7 @@ msgstr ""
 # 57a9e4805b594adcba3ca694a6be01de
 #: distutils/builtdist.rst:199
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 # 9dc7696b0d03443491a588b3a830d794
 #: distutils/builtdist.rst:199
@@ -4172,7 +4172,7 @@ msgstr ""
 # 25a2f96519614f80a7d77861ed0466f0
 #: distutils/configfile.rst:127
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes"
 
 # c7527531837d4bbbb14cce173d49961b
 #: distutils/configfile.rst:128
@@ -4576,7 +4576,7 @@ msgstr ""
 # 5d10edfd8df743d28d5394ccab09bc19
 #: distutils/index.rst:5
 msgid "Distributing Python Modules"
-msgstr ""
+msgstr "Distribuer des Modules Python [en]"
 
 # 61da7b17dd6640bf9c367f676b7bb527
 #: distutils/index.rst:7
@@ -5613,7 +5613,7 @@ msgstr ""
 # cffc9a2c4f904031b5b5e6b009ed4a6a
 #: distutils/setupscript.rst:289
 msgid "For example::"
-msgstr ""
+msgstr "Par exemple ::"
 
 # 3419ab79afeb494b9bb543f5a01cf714
 #: distutils/setupscript.rst:296

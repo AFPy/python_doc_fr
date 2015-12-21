@@ -1222,6 +1222,9 @@ msgid ""
 "Note that any Python object references which are provided to the caller are "
 "*borrowed* references; do not decrement their reference count!"
 msgstr ""
+"Notez que n'importe quelles références sur un objet Python qui sont données "
+"à l'appelant sont des références *empruntées* ; ne décrémentez pas leur "
+"compteur de références ! "
 
 # 329641ce09044d7ab039da24b4a07c50
 #: extending/extending.rst:605
@@ -1909,7 +1912,7 @@ msgstr ""
 # 4e588c3c213547a3a3af75cc82aef394
 #: extending/extending.rst:1322 extending/newtypes.rst:1502
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes"
 
 # 2bb46704a5eb49ee9a7960bbd3828c99
 #: extending/extending.rst:1323

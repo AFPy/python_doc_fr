@@ -672,7 +672,7 @@ msgstr ""
 #: reference/compound_stmts.rst:639 reference/datamodel.rst:2077
 #: reference/executionmodel.rst:234 reference/expressions.rst:1332
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes"
 
 # e8b22194bff646d9a3481005142bccfb
 #: reference/compound_stmts.rst:640
@@ -1641,7 +1641,7 @@ msgstr ""
 # f545724ae9f94c499e81890303e7be98
 #: reference/datamodel.rst:678
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 # ba18ee1e58f8443fa55df1c43a9b6e16
 #: reference/datamodel.rst:642
@@ -5441,7 +5441,7 @@ msgstr ""
 # 326dbde79758418cb276a4c0e6479bad
 #: reference/introduction.rst:51
 msgid "CPython"
-msgstr ""
+msgstr "CPython"
 
 # c48ab5ba96ec4543a055c96374daed88
 #: reference/introduction.rst:50

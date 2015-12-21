@@ -546,7 +546,7 @@ msgstr ""
 
 #: using/cmdline.rst:320
 msgid "module"
-msgstr ""
+msgstr "module"
 
 #: using/cmdline.rst:321
 msgid "Print each warning only the first time it occurs in each module."
@@ -883,7 +883,7 @@ msgstr ""
 
 #: using/index.rst:5
 msgid "Python Setup and Usage"
-msgstr ""
+msgstr "Installation et Utilisation de Python [en]"
 
 #: using/index.rst:8
 msgid ""

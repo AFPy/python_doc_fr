@@ -6289,7 +6289,7 @@ msgstr ""
 # 391bfb176d534e5c8dc78ee90a988c11
 #: faq/programming.rst:1514
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 # 9f3b7a4546c0494b9d8991e262c7be52
 #: faq/programming.rst:1517

@@ -4204,7 +4204,7 @@ msgstr ""
 # d8c93165b881432ebb4d3cc49f511720
 #: c-api/dict.rst:159
 msgid "For example::"
-msgstr ""
+msgstr "Par exemple ::"
 
 #: c-api/dict.rst:169
 msgid ""
@@ -9671,7 +9671,7 @@ msgstr ""
 
 #: c-api/method.rst:47
 msgid "Method Objects"
-msgstr ""
+msgstr "Les objets méthode"
 
 #: c-api/method.rst:51
 msgid ""

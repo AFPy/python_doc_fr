@@ -931,7 +931,7 @@ msgstr ""
 # 102a7da4a0db41a994fe6f56bb73aabc
 #: glossary.rst:485
 msgid "See :term:`method resolution order`."
-msgstr ""
+msgstr "Voir :term:`ordre de  résolution des méthodes `."
 
 # b1886f8391484c57a607799d5d1afbc2
 #: glossary.rst:488
@@ -939,6 +939,8 @@ msgid ""
 "Mutable objects can change their value but keep their :func:`id`.  See also :"
 "term:`immutable`."
 msgstr ""
+"Un objet variable (*mutable*) peut changer de valeur tout en gardant le "
+"même :func:`id`. Voir aussi :term:`immuable`."
 
 # 4ee3d3a96f1947a59cbbb1ab7df27f37
 #: glossary.rst:492
@@ -948,6 +950,10 @@ msgid ""
 "object where the *year* is accessible either with an index such as ``t[0]`` "
 "or with a named attribute like ``t.tm_year``)."
 msgstr ""
+"Une classe, proche d'un tuple, dont les éléments, classiquement accessible "
+"par leur indice, sont aussi accessibles par leur nom (par exemple, :func:"
+"`time.localtime` donne un objet ressemblant à un tuple, dont *year* est "
+"accessible par son indice : ``t[0]`` ou par son nom : ``t.tm_year``)."
 
 # 3960ffe9684e484583344e4e9744dd68
 #: glossary.rst:497
@@ -959,6 +965,12 @@ msgid ""
 "as a self-documenting representation like ``Employee(name='jones', "
 "title='programmer')``."
 msgstr ""
+"Un *named tuple* peut être un type natif tel que :class:`time.struct_time` "
+"ou il peut être construit comme une simple classe. Un *named tuple* complet "
+"peut aussi être créé via la fonction :func:`collections.namedtuple`. Cette "
+"dernière approche fournit automatiquement des fonctionnalités "
+"supplémentaires, tel qu'une représentation lisible comme "
+"``Employee(name='jones', title='programmer')``."
 
 # e3c3f846eb5a42d0a0bee3ca6517c30a
 #: glossary.rst:505
@@ -1008,6 +1020,10 @@ msgid ""
 "Any data with state (attributes or value) and defined behavior (methods).  "
 "Also the ultimate base class of any :term:`new-style class`."
 msgstr ""
+"N'importe quelle donnée comportant des états sous forme d'attributs ou de "
+"valeurs, et un comportement (des :term:`méthodes <méthode>`). C'est aussi "
+"(``object``) l'ancêtre commun à absolument toutes les :term:`nouvelles "
+"classes <nouvelle classe>`."
 
 # 8ae79a750a264a759e607d3449a8358e
 #: glossary.rst:537
@@ -1034,6 +1050,9 @@ msgid ""
 "However, some built-in functions have positional-only parameters (e.g. :func:"
 "`abs`)."
 msgstr ""
+":dfn:`positional-only`: un argument qui ne peut être donné que par sa "
+"position. Python n'a pas de syntaxe pour déclarer de tels paramètre, "
+"cependant des fonctions natives, comme :func:`abs` en utilisent."
 
 # f313e01e240c4cdfb291e0eecc1c0200
 #: glossary.rst:553
@@ -1072,6 +1091,9 @@ msgid ""
 "Parameters can specify both optional and required arguments, as well as "
 "default values for some optional arguments."
 msgstr ""
+"Les paramètres peuvent décrire aussi bien des paramètres optionnels ou "
+"obligatoires, aussi que des valeurs par défaut pour les paramètres "
+"optionnels."
 
 # ed6d25a6fe234046916f64e85ebcbbe9
 #: glossary.rst:578
@@ -1093,6 +1115,8 @@ msgid ""
 "of version 3 was something in the distant future.)  This is also abbreviated "
 "\"Py3k\"."
 msgstr ""
+"Surnom de la série des Python 3.x (très vieux surnom donné à l'époque pour "
+"Python 3 n'était qu'un futur lointain). Aussi abrégé \"Py3k\"."
 
 # 237aac01670d4832b6f9d2c62df79088
 #: glossary.rst:592
@@ -1104,11 +1128,18 @@ msgid ""
 "languages don't have this type of construct, so people unfamiliar with "
 "Python sometimes use a numerical counter instead::"
 msgstr ""
+"Une idée, ou un bout de code, qui suit de près la philosophie de Python, "
+"parfois en opposition avec les concepts rencontrés dans d'autres langages. "
+"Typiquement, la coutume en Python est de parcourir les éléments d'un "
+"itérable en utilisant :keyword:`for`. Beaucoup de langages n'ont pas cette "
+"possibilité, donc les gens qui ne sont pas habitués à Python pourraient "
+"parfois utiliser un compteur à la place ::"
 
 # 913e6e9d4b4a45e4a009754b85205893
 #: glossary.rst:602
 msgid "As opposed to the cleaner, Pythonic method::"
 msgstr ""
+"Plutôt qu'utiliser la méthode, plus propre et élégante, donc Pythonique ::"
 
 # c5ad93e8cc6444bd8fcf6872b2ee8277
 #: glossary.rst:608

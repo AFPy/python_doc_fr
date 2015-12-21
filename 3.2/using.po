@@ -959,7 +959,7 @@ msgstr ""
 # b01d0f23d8da4057ab38d2225c6525e0
 #: using/index.rst:5
 msgid "Python Setup and Usage"
-msgstr ""
+msgstr "Installation et Utilisation de Python [en]"
 
 # b8dcc7d578004ef984ddea4bf53cfe5d
 #: using/index.rst:8

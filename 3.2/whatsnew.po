@@ -21385,7 +21385,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 # b046e73277064401a811d7fdc262f501
 #: whatsnew/3.1.rst:465 whatsnew/3.2.rst:2456
 msgid "IDLE"
-msgstr ""
+msgstr "IDLE"
 
 # cc0f30c8699146d3b63ccd18ad4b92ab
 #: whatsnew/3.1.rst:467
@@ -24373,7 +24373,7 @@ msgstr ""
 # f5cab42d1bbe451b98d980a1d5b82b68
 #: whatsnew/3.2.rst:2273
 msgid "Multi-threading"
-msgstr ""
+msgstr "Threads"
 
 # d965524182424ddb8f9924ad2d7b7559
 #: whatsnew/3.2.rst:2275

@@ -5544,7 +5544,7 @@ msgstr ""
 
 #: faq/programming.rst:1606
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 #: faq/programming.rst:1609
 msgid "How do I create a .pyc file?"

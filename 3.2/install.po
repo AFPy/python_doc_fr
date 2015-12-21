@@ -1871,7 +1871,7 @@ msgstr ""
 # 16580783ec1b4839b951c44c13029a47
 #: install/index.rst:1076
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes"
 
 # 212d1223d91c46f1849e278ee3dffcf4
 #: install/index.rst:1077

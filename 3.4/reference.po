@@ -606,7 +606,7 @@ msgstr ""
 #: reference/executionmodel.rst:270 reference/expressions.rst:1487
 #: reference/import.rst:965 reference/lexical_analysis.rst:731
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes"
 
 # a93e0edf24f94b76b62618582bf50dc5
 #: reference/compound_stmts.rst:665
@@ -1491,7 +1491,7 @@ msgstr ""
 # 8b81f6145bc44987a6cbf4205bc1f0c8
 #: reference/datamodel.rst:703
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 #: reference/datamodel.rst:663
 msgid ""
@@ -2235,7 +2235,7 @@ msgstr ""
 
 #: reference/datamodel.rst:1363
 msgid "See also :envvar:`PYTHONHASHSEED`."
-msgstr ""
+msgstr "Voir aussi :envvar:`PYTHONUNBUFFERED`."
 
 #: reference/datamodel.rst:1365
 msgid "Hash randomization is enabled by default."
@@ -5355,7 +5355,7 @@ msgstr ""
 
 #: reference/import.rst:64
 msgid "Packages"
-msgstr ""
+msgstr "Les paquets"
 
 #: reference/import.rst:69
 msgid ""
@@ -6636,7 +6636,7 @@ msgstr ""
 # 77b83c95da9e480c8fdf9b1e550bc199
 #: reference/introduction.rst:51
 msgid "CPython"
-msgstr ""
+msgstr "CPython"
 
 #: reference/introduction.rst:50
 msgid ""

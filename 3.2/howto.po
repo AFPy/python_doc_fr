@@ -2542,7 +2542,7 @@ msgstr ""
 # dd5096cfea8549619e14f3ce79f65f67
 #: howto/descriptor.rst:330
 msgid "function"
-msgstr ""
+msgstr "fonction"
 
 # 9dd3fb8a930b4b48b0c36f736a498e6a
 #: howto/descriptor.rst:330
@@ -4138,7 +4138,7 @@ msgstr ""
 # c61ecc8b657a426c8f0e697011359092
 #: howto/index.rst:3
 msgid "Python HOWTOs"
-msgstr ""
+msgstr "Les HOWTOs de Python [en]"
 
 # e6634ddd5be9470da413fef1b819194f
 #: howto/index.rst:5
@@ -12041,7 +12041,7 @@ msgstr ""
 # 0f42b3b75e8249fcb7d3cb6869a5aecb
 #: howto/urllib2.rst:562
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes"
 
 # ca49edff15df4f49a0d37aea79c7d179
 #: howto/urllib2.rst:564

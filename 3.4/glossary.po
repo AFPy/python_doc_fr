@@ -1499,7 +1499,7 @@ msgid ""
 "either :term:`positionally <argument>` or as a :term:`keyword argument "
 "<argument>`.  This is the default kind of parameter, for example *foo* and "
 "*bar* in the following::"
-msgstr ":dfn:`positional-or-keyword` : "
+msgstr ""
 
 # 5d344aa1c2c14f41bdde1b3c739e316b
 #: glossary.rst:633
@@ -1883,7 +1883,7 @@ msgstr ""
 
 #: glossary.rst:850
 msgid "type"
-msgstr ""
+msgstr "type"
 
 # 4ceb47bcd8704e648862b6bc1b5311fe
 #: glossary.rst:852
@@ -1908,7 +1908,7 @@ msgstr ""
 
 #: glossary.rst:863
 msgid "virtual environment"
-msgstr ""
+msgstr "environnement virtuel"
 
 #: glossary.rst:865
 msgid ""
@@ -1924,7 +1924,7 @@ msgstr ""
 
 #: glossary.rst:871
 msgid "virtual machine"
-msgstr ""
+msgstr "machine virtuelle"
 
 #: glossary.rst:873
 msgid ""
