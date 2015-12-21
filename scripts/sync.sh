@@ -17,8 +17,8 @@ GENVER="$GEN/$VERSION"
     cd "$GEN/src/"
     echo "Regenerating pot files."
     sphinx-build -Q -b gettext Doc Doc
-    mkdir -p "$GENVER/pot/"
     rm -fr "$GENVER/pot/"
+    mkdir -p "$GENVER/pot/"
     mv Doc/*.pot "$GENVER/pot/"
 )
 
