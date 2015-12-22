@@ -8776,6 +8776,7 @@ msgstr ""
 
 # e3f59a9f9ef3455f984b1617e581816a
 #: tutorial/whatnow.rst:56
+#, fuzzy
 msgid ""
 "For Python-related questions and problem reports, you can post to the "
 "newsgroup :newsgroup:`comp.lang.python`, or send them to the mailing list at "
@@ -8789,6 +8790,17 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
+"Pour les questions et problèmes liés à Python, vous pouvez écrire sur le "
+"newsgroup :newsgroup:`comp.lang.python`, ou les envoyer à la mailing-list "
+"python-list@python.org. Le newsgroup et la mailing list sont liés, les "
+"messages écris d'un côté sont automatiquement transférés de l'autre. Il y a "
+"environ 120 messages par jour, (avec des pics autour de plusieurs centaines) "
+"demandant (et répondant) à des questions, suggérant de nouvelles "
+"fonctionnalités, et annonçant de nouveaux modules. Avant d'y écrire, assurez-"
+"vous d'avoir lu la :ref:`Foire Aux Questions <faq-index>` (autrement nommée "
+"FAQ). Les archives de la mailing list sont disponnibles à https://mail."
+"python.org/pipermail/. La FAQ répond à la pluspart des questions qui "
+"reviennent fréquemment, et peut contenir la solution à votre problème."
 
 # ac4655a8c36d4229bfc08eab5da7c919
 #~ msgid ":ref:`string-formatting`"
