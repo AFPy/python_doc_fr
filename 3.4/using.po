@@ -1731,7 +1731,7 @@ msgstr ""
 #: using/windows.rst:45
 #, fuzzy
 msgid "Python on XP"
-msgstr "Python 3.0"
+msgstr "Python sur XP"
 
 #: using/windows.rst:44
 msgid "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"

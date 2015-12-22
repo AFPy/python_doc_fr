@@ -29,7 +29,7 @@ msgstr "Greg Ward"
 
 #: install/index.rst:0
 msgid "Abstract"
-msgstr ""
+msgstr "Résumé"
 
 # 75505401c21848e8bdd80915b74421a6
 #: install/index.rst:25

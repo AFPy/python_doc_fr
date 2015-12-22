@@ -6571,7 +6571,7 @@ msgstr ""
 
 #: tutorial/modules.rst:168
 msgid "the directory containing the input script (or the current directory)."
-msgstr ""
+msgstr "le dossier contenant le script d'entrée (ou le dossier courant)."
 
 #: tutorial/modules.rst:169
 msgid ""
@@ -6583,7 +6583,7 @@ msgstr ""
 
 #: tutorial/modules.rst:171
 msgid "the installation-dependent default."
-msgstr ""
+msgstr "les valeurs par défaut dépendantes de l'installation."
 
 #: tutorial/modules.rst:173
 msgid ""
@@ -7447,6 +7447,11 @@ msgid ""
 "Together, these modules and packages greatly simplify data interchange "
 "between Python applications and other tools."
 msgstr ""
+"Les paquets :mod:`xml.dom` et :mod:`xml.sax` fournissent un moyen solide de "
+"parser ce format populaire. Aussi, le module :mod:`csv` peut lire et écrire "
+"dans un format de base de donnée commun. Ensemble, ces modules et paquets "
+"simplifient grandement l'échange de donnée entre les applications Python et "
+"les autres outils."
 
 #: tutorial/stdlib.rst:317
 msgid ""

@@ -24,7 +24,7 @@ msgstr "Glossaire"
 
 #: glossary.rst:10
 msgid ">>>"
-msgstr ""
+msgstr ">>>"
 
 # dd1b79c99d12453db3afa0bdc27c3596
 #: glossary.rst:12
@@ -38,7 +38,7 @@ msgstr ""
 
 #: glossary.rst:14
 msgid "..."
-msgstr ""
+msgstr "..."
 
 # 305ea78330ff44bda6b23bbf1bede01a
 #: glossary.rst:16
@@ -53,7 +53,7 @@ msgstr ""
 
 #: glossary.rst:19
 msgid "2to3"
-msgstr ""
+msgstr "3to3"
 
 # a60a984f2f9842d1a58873f63827ca4e
 #: glossary.rst:21
@@ -79,7 +79,7 @@ msgstr ""
 
 #: glossary.rst:28
 msgid "abstract base class"
-msgstr ""
+msgstr "classe de base abstraite"
 
 # c4992c6ceb534c6696a5d28fea42ea7a
 #: glossary.rst:30
@@ -112,7 +112,7 @@ msgstr ""
 
 #: glossary.rst:41
 msgid "argument"
-msgstr ""
+msgstr "argument"
 
 # 25e25b57c0424daa8e01f56776fa6c3e
 #: glossary.rst:43
@@ -177,7 +177,7 @@ msgstr ""
 
 #: glossary.rst:71
 msgid "attribute"
-msgstr ""
+msgstr "attribut"
 
 # 42fea1d5940d4b3bbb2dcd24f4099aca
 #: glossary.rst:73
@@ -192,7 +192,7 @@ msgstr ""
 
 #: glossary.rst:76
 msgid "BDFL"
-msgstr ""
+msgstr "BDFL"
 
 # 420765cdfdd3436084cfa824044f046f
 #: glossary.rst:78
@@ -206,7 +206,7 @@ msgstr ""
 
 #: glossary.rst:80
 msgid "bytecode"
-msgstr ""
+msgstr "bytecode"
 
 # 68089286948b4328a9c60081077a2f0c
 #: glossary.rst:82
@@ -241,7 +241,7 @@ msgstr ""
 
 #: glossary.rst:94
 msgid "class"
-msgstr ""
+msgstr "classe"
 
 # c5bb278240304cebb3938a0a46282e44
 #: glossary.rst:96
@@ -255,7 +255,7 @@ msgstr ""
 
 #: glossary.rst:99
 msgid "coercion"
-msgstr ""
+msgstr "coercition"
 
 # 26f288fbeca9415c86a6d4d623c254bf
 #: glossary.rst:101
@@ -281,7 +281,7 @@ msgstr ""
 
 #: glossary.rst:109
 msgid "complex number"
-msgstr ""
+msgstr "nombre complexe"
 
 # 8b4441266e6647cdaf37fa2e534bb500
 #: glossary.rst:111
@@ -310,7 +310,7 @@ msgstr ""
 
 #: glossary.rst:121
 msgid "context manager"
-msgstr ""
+msgstr "gestionnaire de contexte"
 
 # 71391d4487c34a6f925beb337856b9e1
 #: glossary.rst:123
@@ -324,7 +324,7 @@ msgstr ""
 
 #: glossary.rst:126
 msgid "CPython"
-msgstr ""
+msgstr "CPython"
 
 # 4dcf038daf164cdebb7516b83a40ee5c
 #: glossary.rst:128
@@ -342,7 +342,7 @@ msgstr ""
 
 #: glossary.rst:132
 msgid "decorator"
-msgstr ""
+msgstr "décorateur"
 
 # feb6afd789ee4621b27ff78e392e076b
 #: glossary.rst:134
@@ -378,7 +378,7 @@ msgstr ""
 
 #: glossary.rst:152
 msgid "descriptor"
-msgstr ""
+msgstr "descripteur"
 
 # 124a072ddf6c4087a72fa658f916d909
 #: glossary.rst:154
@@ -414,7 +414,7 @@ msgstr ""
 
 #: glossary.rst:165
 msgid "dictionary"
-msgstr ""
+msgstr "dictionnaire"
 
 # b874f641a53c4145b41bc3991549ec5e
 #: glossary.rst:167
@@ -429,7 +429,7 @@ msgstr ""
 
 #: glossary.rst:170
 msgid "docstring"
-msgstr ""
+msgstr "docstring"
 
 # 3b6e8f13409a4612afabc41139042098
 #: glossary.rst:172
@@ -448,7 +448,7 @@ msgstr ""
 
 #: glossary.rst:178
 msgid "duck-typing"
-msgstr ""
+msgstr "duck-typing"
 
 # f663bce6664840bd9d4b3dd9ab62811c
 #: glossary.rst:180
@@ -476,7 +476,7 @@ msgstr ""
 
 #: glossary.rst:189
 msgid "EAFP"
-msgstr ""
+msgstr "EAFP"
 
 # 890b0e0c238a4aaaa1abc1962015bd12
 #: glossary.rst:191
@@ -497,7 +497,7 @@ msgstr ""
 
 #: glossary.rst:197
 msgid "expression"
-msgstr ""
+msgstr "expression"
 
 # ebeea7ccf05c43c1b31e84a4bf05ced4
 #: glossary.rst:199
@@ -522,7 +522,7 @@ msgstr ""
 
 #: glossary.rst:206
 msgid "extension module"
-msgstr ""
+msgstr "module d'extension"
 
 # fb2165a91d4f4072893d3564a7f4232c
 #: glossary.rst:208
@@ -535,7 +535,7 @@ msgstr ""
 
 #: glossary.rst:210
 msgid "file object"
-msgstr ""
+msgstr "objet fichier"
 
 # dafd914aeacc4123add48bc81855fbbe
 #: glossary.rst:212
@@ -566,7 +566,7 @@ msgstr ""
 
 #: glossary.rst:224
 msgid "file-like object"
-msgstr ""
+msgstr "objet fichier-compatible"
 
 # 7645c945c87544fbbd8292e12856c6cc
 #: glossary.rst:226
@@ -575,7 +575,7 @@ msgstr "Un synonyme de :term:`objet fichier `."
 
 #: glossary.rst:227
 msgid "finder"
-msgstr ""
+msgstr "finder"
 
 # fadf745cbbb545fd9a125c4c1f3d0d5a
 #: glossary.rst:229
@@ -587,7 +587,7 @@ msgstr ""
 
 #: glossary.rst:233
 msgid "floor division"
-msgstr ""
+msgstr "division entière"
 
 # cb17ef220f9c49df804be5120495001c
 #: glossary.rst:235
@@ -605,7 +605,7 @@ msgstr ""
 
 #: glossary.rst:240
 msgid "function"
-msgstr ""
+msgstr "fonction"
 
 # 9ad098200b484478960360e3206c408c
 #: glossary.rst:242
@@ -622,7 +622,7 @@ msgstr ""
 
 #: glossary.rst:246
 msgid "__future__"
-msgstr ""
+msgstr "__future__"
 
 # 315d152269b94764a10666697f25632f
 #: glossary.rst:248
@@ -647,7 +647,7 @@ msgstr ""
 
 #: glossary.rst:258
 msgid "garbage collection"
-msgstr ""
+msgstr "ramasse-miette"
 
 # 01eecca14a96432a81f1a79f9c92c970
 #: glossary.rst:260
@@ -662,7 +662,7 @@ msgstr ""
 
 #: glossary.rst:265
 msgid "generator"
-msgstr ""
+msgstr "générateur"
 
 # 9a6b9acf453f4d1a81cb230329384c2f
 #: glossary.rst:267
@@ -688,7 +688,7 @@ msgstr ""
 
 #: glossary.rst:277
 msgid "generator expression"
-msgstr ""
+msgstr "expression génératrice"
 
 # 4984ef4ec7324316bf080d3cc5ff01e8
 #: glossary.rst:279
@@ -705,7 +705,7 @@ msgstr ""
 
 #: glossary.rst:286
 msgid "GIL"
-msgstr ""
+msgstr "GIL"
 
 # 50fd518f5b964721938dbf76218563fc
 #: glossary.rst:288
@@ -767,7 +767,7 @@ msgstr ""
 
 #: glossary.rst:310
 msgid "hashable"
-msgstr ""
+msgstr "hachable"
 
 # dc0cd0de884c47a9870c1be8cd7f009c
 #: glossary.rst:312
@@ -810,7 +810,7 @@ msgstr ""
 
 #: glossary.rst:325
 msgid "IDLE"
-msgstr ""
+msgstr "IDLE"
 
 # 14a0891e08a74fc6898cc5eced90003a
 #: glossary.rst:327
@@ -824,7 +824,7 @@ msgstr ""
 
 #: glossary.rst:330
 msgid "immutable"
-msgstr ""
+msgstr "immuable"
 
 # fdf0ba521b9a4c77ae4d0c8c4c6b9d52
 #: glossary.rst:332
@@ -843,7 +843,7 @@ msgstr ""
 
 #: glossary.rst:337
 msgid "importer"
-msgstr ""
+msgstr "importateur"
 
 # af1d18ea47fb45599760f4d181e74e2a
 #: glossary.rst:339
@@ -856,7 +856,7 @@ msgstr ""
 
 #: glossary.rst:341
 msgid "interactive"
-msgstr ""
+msgstr "interactif"
 
 # 00535d15ab214f8fb8338429772937a5
 #: glossary.rst:343
@@ -876,7 +876,7 @@ msgstr ""
 
 #: glossary.rst:349
 msgid "interpreted"
-msgstr ""
+msgstr "interprété"
 
 # b663b760c08b41b2bd334082b2b513e5
 #: glossary.rst:351
@@ -898,7 +898,7 @@ msgstr ""
 
 #: glossary.rst:358
 msgid "iterable"
-msgstr ""
+msgstr "itérable"
 
 # 03c1ad39085245b2b8ec3074aee0cdfd
 #: glossary.rst:360
@@ -921,7 +921,7 @@ msgstr ""
 
 #: glossary.rst:374
 msgid "iterator"
-msgstr ""
+msgstr "itérateur"
 
 # 09a58d23edd54c9cbde01d21ab272593
 #: glossary.rst:376
@@ -949,7 +949,7 @@ msgstr "Plus d'informations ici : :ref:`typeiter`."
 
 #: glossary.rst:392
 msgid "key function"
-msgstr ""
+msgstr "fonction clef"
 
 # 00eee6ee0a574618b323a6c0f3dd14de
 #: glossary.rst:394
@@ -999,7 +999,7 @@ msgstr ""
 
 #: glossary.rst:412
 msgid "keyword argument"
-msgstr ""
+msgstr "argument nommé"
 
 # be5c7d2028ff4e6789166fabcd110c1b
 # 1f31eb5ca02d421591a785254ed299d9
@@ -1009,7 +1009,7 @@ msgstr "Voir :term:`argument`."
 
 #: glossary.rst:415
 msgid "lambda"
-msgstr ""
+msgstr "lambda"
 
 # 23e58aa44e884ad6bf19a3eb3ae564f1
 #: glossary.rst:417
@@ -1024,7 +1024,7 @@ msgstr ""
 
 #: glossary.rst:420
 msgid "LBYL"
-msgstr ""
+msgstr "LBYL"
 
 # c383515df4ec4848a04f0f7ebe2e4346
 #: glossary.rst:422
@@ -1057,7 +1057,7 @@ msgstr ""
 
 #: glossary.rst:432
 msgid "list"
-msgstr ""
+msgstr "list"
 
 # 212d5a1ca3cd490e9edd786738d9965c
 #: glossary.rst:434
@@ -1072,7 +1072,7 @@ msgstr ""
 
 #: glossary.rst:437
 msgid "list comprehension"
-msgstr ""
+msgstr "liste en compréhension"
 
 # bb7bdad57d0a41c49577bbb5951a93ed
 #: glossary.rst:439
@@ -1092,7 +1092,7 @@ msgstr ""
 
 #: glossary.rst:445
 msgid "loader"
-msgstr ""
+msgstr "loader"
 
 # af85382be6444bd8b6a0b0c14cd34219
 #: glossary.rst:447
@@ -1109,7 +1109,7 @@ msgstr ""
 
 #: glossary.rst:451
 msgid "mapping"
-msgstr ""
+msgstr "mapping"
 
 # d3f8d163546b4aef87e07a1961c15c1e
 #: glossary.rst:453
@@ -1131,7 +1131,7 @@ msgstr ""
 
 #: glossary.rst:459
 msgid "metaclass"
-msgstr ""
+msgstr "metaclasse"
 
 # e6b596d0452c4bc49837015cf8d21ad9
 #: glossary.rst:461
@@ -1157,7 +1157,7 @@ msgstr "Plus d'informations à ce sujet : :ref:`metaclasses`."
 
 #: glossary.rst:472
 msgid "method"
-msgstr ""
+msgstr "méthode"
 
 # fc9355391d354473bb61173a1c666f6c
 #: glossary.rst:474
@@ -1193,7 +1193,7 @@ msgstr ""
 
 #: glossary.rst:483
 msgid "MRO"
-msgstr ""
+msgstr "MRO"
 
 # 102a7da4a0db41a994fe6f56bb73aabc
 #: glossary.rst:485
@@ -1202,7 +1202,7 @@ msgstr "Voir :term:`ordre de  résolution des méthodes `."
 
 #: glossary.rst:486
 msgid "mutable"
-msgstr ""
+msgstr "variable"
 
 # b1886f8391484c57a607799d5d1afbc2
 #: glossary.rst:488
@@ -1215,7 +1215,7 @@ msgstr ""
 
 #: glossary.rst:490
 msgid "named tuple"
-msgstr ""
+msgstr "named tuple"
 
 # 4ee3d3a96f1947a59cbbb1ab7df27f37
 #: glossary.rst:492
@@ -1249,7 +1249,7 @@ msgstr ""
 
 #: glossary.rst:503
 msgid "namespace"
-msgstr ""
+msgstr "espace de nom"
 
 # e3c3f846eb5a42d0a0bee3ca6517c30a
 #: glossary.rst:505
@@ -1267,7 +1267,7 @@ msgstr ""
 
 #: glossary.rst:515
 msgid "nested scope"
-msgstr ""
+msgstr "portée imbriquée"
 
 # 1628f77a53b3416194cb45147f039150
 #: glossary.rst:517
@@ -1290,7 +1290,7 @@ msgstr ""
 
 #: glossary.rst:524
 msgid "new-style class"
-msgstr ""
+msgstr "nouvelle classe"
 
 # 178a0ca5b2c34d399e170091b215bfea
 #: glossary.rst:526
@@ -1303,7 +1303,7 @@ msgstr ""
 
 #: glossary.rst:530
 msgid "object"
-msgstr ""
+msgstr "objet"
 
 # 168e9fdd587c456ebc6de793f8893f8e
 #: glossary.rst:532
@@ -1318,7 +1318,7 @@ msgstr ""
 
 #: glossary.rst:535
 msgid "parameter"
-msgstr ""
+msgstr "paramètre"
 
 # 8ae79a750a264a759e607d3449a8358e
 #: glossary.rst:537
@@ -1409,11 +1409,11 @@ msgstr ""
 
 #: glossary.rst:582
 msgid "positional argument"
-msgstr ""
+msgstr "augment positionnel"
 
 #: glossary.rst:585
 msgid "Python 3000"
-msgstr ""
+msgstr "Python 3000"
 
 # 82a12c64dd2e43fca5e647c7f7b44874
 #: glossary.rst:587
@@ -1427,7 +1427,7 @@ msgstr ""
 
 #: glossary.rst:590
 msgid "Pythonic"
-msgstr ""
+msgstr "Pythonique"
 
 # 237aac01670d4832b6f9d2c62df79088
 #: glossary.rst:592
@@ -1454,7 +1454,7 @@ msgstr ""
 
 #: glossary.rst:606
 msgid "reference count"
-msgstr ""
+msgstr "nombre de références"
 
 # c5ad93e8cc6444bd8fcf6872b2ee8277
 #: glossary.rst:608
@@ -1525,7 +1525,7 @@ msgstr ""
 
 #: glossary.rst:643
 msgid "statement"
-msgstr ""
+msgstr "instruction"
 
 # 839005a4150e4b63afd23d05a0bfc265
 #: glossary.rst:645
@@ -1553,7 +1553,7 @@ msgstr ""
 
 #: glossary.rst:657
 msgid "type"
-msgstr ""
+msgstr "type"
 
 # 6fc0255cee854fc79293bfe3fa151da3
 #: glossary.rst:659
@@ -1592,7 +1592,7 @@ msgstr ""
 
 #: glossary.rst:676
 msgid "virtual machine"
-msgstr ""
+msgstr "machine virtuelle"
 
 # ccb2f9c132694f3c8626c49dd3e04149
 #: glossary.rst:678

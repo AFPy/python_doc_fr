@@ -610,7 +610,7 @@ msgstr ""
 
 #: using/cmdline.rst:319
 msgid "module"
-msgstr ""
+msgstr "module"
 
 # f5ef1692630441abb3fb70098aa5dcea
 #: using/cmdline.rst:320
@@ -1658,7 +1658,7 @@ msgstr ""
 
 #: using/windows.rst:46
 msgid "Python on XP"
-msgstr ""
+msgstr "Python sur XP"
 
 # 79a68cf0c41743718f808883e4799256
 #: using/windows.rst:45
