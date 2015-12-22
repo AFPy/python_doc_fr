@@ -1,7 +1,6 @@
 #!/bin/sh
 #
 # Usefull to clean po file before diffing them.
-# You'll need:
-# $ printf "%s\n    %s\n" "[diff "podiff"]" "textconv = scripts/podiff" > .git/config
+# See .gitattributes to learn how to use it.
 #
 grep -v '^#:' "$1"
