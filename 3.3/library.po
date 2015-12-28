@@ -92712,7 +92712,7 @@ msgstr ""
 
 #: library/stdtypes.rst:3374
 msgid "See :ref:`objects` and :ref:`class` for these."
-msgstr "Voir :ref:`objets` et :ref:`classe`."
+msgstr "Voir :ref:`objects` et :ref:`class`."
 
 #: library/stdtypes.rst:3382
 msgid ""
