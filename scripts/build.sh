@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## This script regenerates the french HTML documentation
+
 shopt -s globstar
 
 PYDOCFR_ROOT="$(dirname -- "$(dirname -- "$(readlink -f -- "$0")")")"
@@ -8,7 +10,6 @@ SCRIPTS="$PYDOCFR_ROOT/scripts/"
 PATCHES="$PYDOCFR_ROOT/scripts/patches/"
 
 VERSION=${1:-3.5}
-## This script regenerates the french HTML documentation
 
 if ! type sphinx-build >/dev/null
 then
