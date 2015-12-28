@@ -63,14 +63,16 @@ Une fois votre contribution écrite, transmettez-la nous :
 * soit en la joignant à un `ticket github <https://github.com/AFPy/python_doc_fr/issues>`_
 * soit par mail à la `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_
 
-Quoi traduire / ne pas traduire ?
+Quoi traduire, ne pas traduire, quel style ?
 
 * Les référence *:ref:`...`* ne sont pas à traduire
 * Les références *:term:`...`* sont à traduire, leur traduction se
   trouve dans *glossary.po*.
+* Les mots anglais, nous les mettons en *italique* (en les entourant
+  d'étoiles dans la traduction).
 
-Norme
------
+Norme et style
+--------------
 
 Si vous utilisez git et faites des pull requests, cette section est
 importante, pour les mails et les tickets, on s'en occupera pur vous.
