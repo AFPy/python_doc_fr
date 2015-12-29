@@ -13,19 +13,19 @@ Progression de la traduction:
 =============== ====== ====== ====== ====== ======
         version    2.7    3.2    3.3    3.4    3.5
 --------------- ------ ------ ------ ------ ------
-       tutorial   100%    95%    99%   100%   100%
-       glossary    79%    83%    78%    78%   100%
        contents   100%   100%   100%   100%   100%
       copyright   100%   100%   100%   100%   100%
           about    90%   100%    90%    90%   100%
            bugs    80%    71%    80%    80%   100%
-   distributing     5%     0%     0%     5%     5%
+   distributing     5%     0%     0%     5%   100%
          sphinx   100%    95%    95%   100%   100%
      installing     4%     0%     0%     4%     4%
         license    38%    48%    38%    36%    36%
         install    30%    31%    30%    30%    30%
+       glossary    79%    83%    78%    78%   100%
       extending     1%     1%     1%     1%     1%
           using    31%    33%    27%    24%    18%
+       tutorial   100%    95%    99%   100%   100%
             faq    23%    23%    23%    23%    23%
       distutils    12%    12%    11%    12%    12%
       reference     2%     1%     1%     1%     1%

@@ -3,9 +3,9 @@
 printf "=============== ====== ====== ====== ====== ======\n"
 printf "        version    2.7    3.2    3.3    3.4    3.5\n"
 printf -- "--------------- ------ ------ ------ ------ ------\n"
-files='tutorial glossary contents copyright about bugs distributing sphinx
-installing license install extending using faq distutils reference howto
-c-api whatsnew library'
+files='contents copyright about bugs distributing sphinx installing license
+install glossary extending using tutorial faq distutils reference howto c-api
+whatsnew library'
 
 for file in $files
 do
