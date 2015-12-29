@@ -119,7 +119,8 @@ traduction de quelques termes techniques, rappelant ainsi les
 anglicismes à éviter, ce n'est qu'une proposition discutable (ouvrez
 un ticket si vous n'êtes pas d'acord) :
 
-* -like => -compaticle (Pas toujours élégant)
+* -like => -compatible (Pas toujours élégant, voir
+  `ce ticket <https://github.com/soulaklabs/bitoduc.fr/issues/86>`_)
 * abstract data type => type abstrait
 * argument => argument (et non paramètre (qui est la traduction de parameter))
 * backslash => antislash
