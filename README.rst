@@ -19,11 +19,11 @@ Progression de la traduction:
            bugs   100%    80%   100%   100%   100%
    distributing   100%     0%     0%   100%   100%
          sphinx   100%    95%    95%   100%   100%
-     installing    23%     0%     0%    22%    22%
+     installing    28%     0%     0%    22%    22%
         license    38%    48%    38%    36%    36%
         install    30%    31%    30%    30%    30%
-       glossary    89%    94%    97%   100%   100%
-      extending     8%     9%     9%     9%    11%
+       glossary    91%    94%    97%   100%   100%
+      extending     9%     9%     9%     9%    11%
           using    31%    33%    27%    24%    18%
        tutorial   100%    95%    99%   100%   100%
             faq    23%    23%    23%    23%    23%
@@ -65,6 +65,10 @@ Une fois votre contribution écrite, transmettez-la nous :
 
 Quoi traduire, ne pas traduire, quel style ?
 
+* Nous ne travaillons que sur la dernière version de Python,
+  lorsqu'elle sera entièrement traduite, nous attaquerons le reste, en
+  attendant, nous répliquons notre travail en utilisant
+  ``./scripts/replicate_translations.py``
 * Les référence *:ref:`...`* ne sont pas à traduire
 * Les références *:term:`...`* sont à traduire, leur traduction se
   trouve dans *glossary.po*.
