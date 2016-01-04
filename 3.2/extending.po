@@ -49,11 +49,13 @@ msgid ""
 "A distutils package contains a driver script, :file:`setup.py`. This is a "
 "plain Python file, which, in the most simple case, could look like this::"
 msgstr ""
+"Un paquet distutils contient un script pilote, :file:`setup.py`. C'est un "
+"simple fichier Python, qui ressemble typiquement à ::"
 
 # 86f8b28184dd44059f73aad9605af4c2
 #: extending/building.rst:40
 msgid "With this :file:`setup.py`, and a file :file:`demo.c`, running ::"
-msgstr ""
+msgstr "Avec ce :file:`setup.py` et un fichier :file:`demo.c`, lancer ::"
 
 # c7fe94c7d9634b1285ba74436cd9ce04
 #: extending/building.rst:44
@@ -63,6 +65,10 @@ msgid ""
 "will end up in a subdirectory :file:`build/lib.system`, and may have a name "
 "like :file:`demo.so` or :file:`demo.pyd`."
 msgstr ""
+"compilera :file:`demo.c`, et produira un module d'extension nommé ``demo`` "
+"dans le dossier :file:`build`. En fonction du système, le fichier du module "
+"peut se retrouver dans :file:`build/lib.system`, et son nom peut être :file:"
+"`demo.py` ou :file:`demo.pyd`."
 
 # 68381642e90f45cbb8e9139a286f3f2d
 #: extending/building.rst:49
@@ -95,6 +101,9 @@ msgid ""
 "preprocessor defines and libraries may be needed. This is demonstrated in "
 "the example below. ::"
 msgstr ""
+"Dans la plupart des cas, construire une extension est plus complexe à cause "
+"des bibliothèque et définitions de préprocesseur  dont la compilation "
+"pourrait dépendre. En voilà un exemple typique ::"
 
 # 6e973be7765b45c7a5af497fb17c997f
 #: extending/building.rst:90
@@ -113,11 +122,13 @@ msgid ""
 "These lines are for demonstration purposes only; distutils users should "
 "trust that distutils gets the invocations right."
 msgstr ""
+"Ces lignes ne sont qu'à titre d'exemple, les utilisateurs de distutils "
+"doivent avoir confiance en distutils qui fera les appels correctement."
 
 # 21d47fceb90c48fe8f56e88386957638
 #: extending/building.rst:108
 msgid "Distributing your extension modules"
-msgstr ""
+msgstr "Distribuer vos modules d'extension"
 
 # 5cbdd0b027f94f25b7515d97b197c7b9
 #: extending/building.rst:110
@@ -125,18 +136,24 @@ msgid ""
 "When an extension has been successfully build, there are three ways to use "
 "it."
 msgstr ""
+"Lorsqu'une extension a été construite avec succès, il existe trois moyens de "
+"l'utiliser."
 
 # 8a9068dba89f4923b63d7234bb39b466
 #: extending/building.rst:112
 msgid ""
 "End-users will typically want to install the module, they do so by running ::"
 msgstr ""
+"Typiquement, les utilisateurs vont vouloir installer le module, ils le font "
+"en exécutant ::"
 
 # 5fece846cdd74f4bbe417beb68d90084
 #: extending/building.rst:116
 msgid ""
 "Module maintainers should produce source packages; to do so, they run ::"
 msgstr ""
+"Les mainteneurs de modules voudront produire des paquets source, pour ce "
+"faire ils exécuteront ::"
 
 # 0bfdfcecb3234072ad79e6306f6545af
 #: extending/building.rst:120
@@ -145,6 +162,9 @@ msgid ""
 "distribution; this is done through a :file:`MANIFEST.in` file; see the "
 "distutils documentation for details."
 msgstr ""
+"Dans certains cas, des fichiers supplémentaires doivent être joints à la "
+"distribution source, c'est possible grâce à un fichier :file:`MANIFEST.in`. "
+"Voir la documentation de distutils pour plus de détails."
 
 # 49cb4df033df463f858c8b8af0bd52f7
 #: extending/building.rst:124
@@ -153,11 +173,14 @@ msgid ""
 "create binary distributions. Depending on the platform, one of the following "
 "commands can be used to do so. ::"
 msgstr ""
+"Si la distribution source a été construite avec succès, les mainteneurs "
+"peuvent créer une distribution binaire. En fonction de la plateforme, une "
+"des commandes suivantes peut être utilisée. ::"
 
 # c417b8788736400db5a261625c9c00b1
 #: extending/embedding.rst:8
 msgid "Embedding Python in Another Application"
-msgstr ""
+msgstr "Inclure Python dans une autre Application"
 
 # e61b800bb56746d1a80b0e1a803c62db
 #: extending/embedding.rst:10
@@ -207,7 +230,7 @@ msgstr ""
 
 #: extending/embedding.rst:42
 msgid "c-api-index"
-msgstr ""
+msgstr "c-api-index"
 
 # 28baea4513a44eedb88f747bff98b148
 #: extending/embedding.rst:42
@@ -215,11 +238,13 @@ msgid ""
 "The details of Python's C interface are given in this manual. A great deal "
 "of necessary information can be found here."
 msgstr ""
+"Les détails sur l'interface entre Python et le C sont donnés dans ce manuel. "
+"Pléthore informations s'y trouvent."
 
 # 93be13ef5cfd4e6cb735d39f15da0b91
 #: extending/embedding.rst:49
 msgid "Very High Level Embedding"
-msgstr ""
+msgstr "Inclusion de Très Haut Niveau"
 
 # 609ffed3362b4bea9cd9116e90c89e30
 #: extending/embedding.rst:51
@@ -229,6 +254,10 @@ msgid ""
 "needing to interact with the application directly. This can for example be "
 "used to perform some operation on a file. ::"
 msgstr ""
+"La manière la plus simple d'intégrer Python est d'utiliser une interface de "
+"très haut niveau. Cette interface a pour but d'exécuter un script Python "
+"sans avoir à interagir avec directement. C'est utile, par exemple, pour "
+"effectuer une opération sur un fichier. ::"
 
 # 505dda551616491bb062787be8213470
 #: extending/embedding.rst:69
@@ -249,7 +278,7 @@ msgstr ""
 # cbdb871e00a0471896aeefd1baabaeb1
 #: extending/embedding.rst:84
 msgid "Beyond Very High Level Embedding: An overview"
-msgstr ""
+msgstr "Au delà de l'Inclusion de Haut Niveau: Survol"
 
 # 7a17aad5162148719304733ef03caa51
 #: extending/embedding.rst:86
@@ -260,6 +289,11 @@ msgid ""
 "calls. At the cost of having to write more C code, you can achieve almost "
 "anything."
 msgstr ""
+"L'interface de haut niveau vous permet d'exécuter n'importe quel morceau de "
+"code Python depuis votre application, mais échanger des données est quelque "
+"peu alambiqué. Si c'est ce dont vous avez besoin, vous devez utiliser des "
+"appels de niveau plus bas. Il vous en coûtera plus de lignes de C à écrire, "
+"mais vous pourrez presque tout faire."
 
 # 86c07c22ed5745f18ae1e5587f482ae4
 #: extending/embedding.rst:91
@@ -269,31 +303,35 @@ msgid ""
 "previous chapters are still valid. To show this, consider what the extension "
 "code from Python to C really does:"
 msgstr ""
+"Il est à souligner qu'étendre ou inclure Python revient à la louche au même, "
+"en dépit de la différence d'intention. La plupart des sujets parcourus dans "
+"les chapitres précédents sont toujours valides. Pour le prouver, regardez ce "
+"qu'un code d'extension de Python vers C fait réellement :"
 
 # dfd23e92e3474bf8822a09794e29e0d7
 #: extending/embedding.rst:96
 msgid "Convert data values from Python to C,"
-msgstr ""
+msgstr "Convertir des valeurs de Python vers le C,"
 
 # 014d8f91584e49e0866bc929a16d548b
 #: extending/embedding.rst:98
 msgid "Perform a function call to a C routine using the converted values, and"
-msgstr ""
+msgstr "Appeler une fonction C en utilisant les valeurs converties, et"
 
 # bd0b87c3408e42a39243666fa1e365e3
 #: extending/embedding.rst:100
 msgid "Convert the data values from the call from C to Python."
-msgstr ""
+msgstr "Convertir les résultats de l'appel à la fonction C pour Python."
 
 # 78ca26605ffb412f87b9041f256882f6
 #: extending/embedding.rst:102
 msgid "When embedding Python, the interface code does:"
-msgstr ""
+msgstr "Lors de l'inclusion de Python, le code de l'interface fait :"
 
 # 2fa1e84e9f7349479b2b3886dcdd4cef
 #: extending/embedding.rst:104
 msgid "Convert data values from C to Python,"
-msgstr ""
+msgstr "Convertir les valeurs depuis le C vers Python,"
 
 # 7bb8a353171e47a88721ef8fc5d033c5
 #: extending/embedding.rst:106
@@ -301,11 +339,13 @@ msgid ""
 "Perform a function call to a Python interface routine using the converted "
 "values, and"
 msgstr ""
+"Effectuer un appel de fonction de l'interface Python en utilisant les "
+"valeurs converties, et"
 
 # 1548ed7a5f0149ef8fec55cbf9a38cdb
 #: extending/embedding.rst:109
 msgid "Convert the data values from the call from Python to C."
-msgstr ""
+msgstr "Convertir les valeurs de l'appel Python pour le C."
 
 # a530674d8cbe40cc92a792c5ec8a980a
 #: extending/embedding.rst:111
@@ -315,6 +355,11 @@ msgid ""
 "is the routine that you call between both data conversions. When extending, "
 "you call a C routine, when embedding, you call a Python routine."
 msgstr ""
+"Tel que vous le voyez, les conversions sont simplement inversées pour "
+"s'adapter au différentes directions de transfert inter-langage. La seule "
+"différence est la fonction que vous appelez entre les deux conversions de "
+"données. Lors de l'extension, vous appelez une fonction C, lors de "
+"l'inclusion vous appelez une fonction Python."
 
 # 54a2c78b756d4a1ab5637adf88c9865a
 #: extending/embedding.rst:116
@@ -324,11 +369,16 @@ msgid ""
 "be understood.  Since these aspects do not differ from extending the "
 "interpreter, you can refer to earlier chapters for the required information."
 msgstr ""
+"Ce chapitre ne couvrira pas la conversion des données de Python vers le C ni "
+"l'inverse. Aussi, un usage correct des références, ainsi que savoir gérer "
+"les erreurs sont considérés acquis. Ces aspects étant identiques à "
+"l'extension de l'interpréteur, vous pouvez vous référer aux chapitres "
+"précédents."
 
 # fac24e587a7846608be64a430074cbb8
 #: extending/embedding.rst:125
 msgid "Pure Embedding"
-msgstr ""
+msgstr "Inclusion Pure"
 
 # b80328cc0db04a63902cbb66cc8b1fdf
 #: extending/embedding.rst:127
@@ -338,11 +388,15 @@ msgid ""
 "directly interact with the application (but that will change in the next "
 "section)."
 msgstr ""
+"L'objectif du premier programme est d'exécuter une fonction dans un script "
+"Python. Comme dans la section à propos des interfaces de haut niveau, "
+"l'interpréteur n'interagit pas directement avec l'application (mais le fera "
+"dans la section suivante)."
 
 # 85445c6225b74c0d96bffe36c90c17e8
 #: extending/embedding.rst:132
 msgid "The code to run a function defined in a Python script is:"
-msgstr ""
+msgstr "Le code pour appeler une fonction définie dans un script Python est :"
 
 # dd8b39ee540b4a6a946c836b16aa5199
 #: extending/embedding.rst:137
@@ -353,11 +407,16 @@ msgid ""
 "(let's call the finished executable :program:`call`), and use it to execute "
 "a Python script, such as:"
 msgstr ""
+"Ce code charge un script Python en utilisant ``argv[1]``, et appelle une "
+"fonction dont le nom est dans ``argv[2]``. Ses arguments entiers sont les "
+"autres valeurs de ``argv``. Si vous :ref:`compilez et liez <compiling>` ce "
+"programme (appelons l'exécutable :program:`call`), et l'appellez pour "
+"exécuter un script Python, tel que :"
 
 # 7c03afa046824707afc21b96b4c0115a
 #: extending/embedding.rst:152
 msgid "then the result should be::"
-msgstr ""
+msgstr "alors le résultat sera ::"
 
 # 03a9199cd7b1482f969f9e8f794735cd
 #: extending/embedding.rst:158
@@ -366,6 +425,10 @@ msgid ""
 "is for data conversion between Python and C, and for error reporting.  The "
 "interesting part with respect to embedding Python starts with ::"
 msgstr ""
+"Bien que le programme soit plutôt gros pour ses fonctionnalités, la plupart "
+"du code n'est que conversion de données entre Python et C, aussi que pour "
+"rapporter les erreurs. La partie intéressante, qui concerne l'insertion de "
+"Python débute par ::"
 
 # 7a0cdc64bd684448a1789d1d42196618
 #: extending/embedding.rst:167
@@ -375,6 +438,10 @@ msgid ""
 "which is constructed using the :c:func:`PyUnicode_FromString` data "
 "conversion routine. ::"
 msgstr ""
+"Après avoir initialisé l'interpréteur, le script est chargé en utilisant :c:"
+"func:`PyImport_Import`. Cette fonction prend une chaîne Python pour "
+"argument, elle même construite en utilisant la fonction de conversion :c:"
+"func:`PyUnicode_FromString`."
 
 # a8a933f8b6f54c3eac2ec6b0e8d744cd
 #: extending/embedding.rst:180
@@ -385,6 +452,11 @@ msgid ""
 "proceeds by constructing a tuple of arguments as normal.  The call to the "
 "Python function is then made with::"
 msgstr ""
+"Une fois le script chargé, le nom recherché est obtenu en utilisant :c:func:"
+"`PyObject_GetAttrString`. Si le nom existe, et que l'objet récupéré peut "
+"être appelé, vous pouvez présumer sans risque que c'est une fonction. Le "
+"programme continue, classiquement, par la construction de l'uplet "
+"d'arguments. L'appel à la fonction Python est alors effectué avec ::"
 
 # 6450bde8a16d4274aaebfdbd20c9da4b
 #: extending/embedding.rst:188

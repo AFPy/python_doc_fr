@@ -157,7 +157,7 @@ msgstr ""
 
 #: bugs.rst:69
 msgid "How to Report Bugs Effectively"
-msgstr ""
+msgstr "Comment remonter des bugs de manière efficiente"
 
 #: bugs.rst:68
 msgid ""
@@ -170,7 +170,7 @@ msgstr ""
 
 #: bugs.rst:72
 msgid "Bug Writing Guidelines"
-msgstr ""
+msgstr "Recommandations pour la rédaction de bugs"
 
 #: bugs.rst:72
 msgid ""
@@ -182,7 +182,7 @@ msgstr ""
 
 #: bugs.rst:77
 msgid "Getting started contributing to Python yourself"
-msgstr ""
+msgstr "Commencer à contribuer à Python vous-même"
 
 #: bugs.rst:79
 msgid ""
@@ -192,3 +192,9 @@ msgid ""
 "the `core-mentorship mailing list`_ is a friendly place to get answers to "
 "any and all questions pertaining to the process of fixing issues in Python."
 msgstr ""
+"Au delà de simplement remonter les bugs que vous trouvez, vous serez aussi "
+"appréciés si vous y attachiez des correctifs. Vous pouvez trouver plus "
+"d'informations pour débuter la rédaction de correctifs dans le `Python "
+"Developer's Guide`_. Si vous avez des questions, le `core-mentorship mailing "
+"list`_ est un endroit amical pour obtenir des réponses à toutes les "
+"questions à propos du processus de corrections de bugs dans Python."

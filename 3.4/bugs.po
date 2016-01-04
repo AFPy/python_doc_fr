@@ -36,16 +36,18 @@ msgid "Documentation bugs"
 msgstr "Bogues de documentation"
 
 #: bugs.rst:15
-#, fuzzy
 msgid ""
 "If you find a bug in this documentation or would like to propose an "
 "improvement, please submit a bug report on the :ref:`tracker <using-the-"
 "tracker>`.  If you have a suggestion how to fix it, include that as well."
 msgstr ""
 "Si vous trouvez un bogue dans cette documentation ou si vous désirez "
-"proposer une amélioration, envoyez un e-mail à docs@python.org décrivant le "
-"bogue et où vous l'avez trouvé. Si vous avez une suggestion de correction, "
-"merci de l'inclure également."
+"proposer une amélioration, si cela concerne aussi la documentation en "
+"anglais, envoyez un e-mail à docs@python.org décrivant le bogue et où vous "
+"l'avez trouvé, si le problème ne touche que la traduction en français, "
+"envoyez un e-mail à traductions@lists.afpy.org ou ouvrez un ticket sur "
+"`github <https://github.com/AFPy/python_doc_fr/issues>`_. Si vous avez une "
+"suggestion de correction, merci de l'inclure également."
 
 #: bugs.rst:19
 #, fuzzy
@@ -54,30 +56,30 @@ msgid ""
 "org. 'docs@' is a mailing list run by volunteers; your request will be "
 "noticed, though it may take a while to be processed."
 msgstr ""
-"docs@python.org est une liste de diffusion tenue par des bénévoles ; votre "
-"demande sera prise en compte, même si sa prise en charge prend du temps."
+"Si vous êtes limités par le temps, vous pouvez aussi envoyer un e-mail à "
+"docs@python.org (les bugs de comportement peuvent être envoyés à python-"
+"list@python.org). 'docs@' est une liste de diffusion gérée par des "
+"volontaires, votre requête sera vue, mais elle peut prendre un moment pour "
+"être traitée."
 
 #: bugs.rst:24
-#, fuzzy
 msgid "`Documentation bugs`_ on the Python issue tracker"
-msgstr "Utilisation du tracker Python"
+msgstr "`Documentation bugs`_ sur le gestionnaire de ticket de Python"
 
 #: bugs.rst:29
 msgid "Using the Python issue tracker"
-msgstr "Utilisation du tracker Python"
+msgstr "Utilisation du gestionnaire de ticket Python"
 
-# aconrad: "traqueur de bogues" ? Comment traduire ça ?
 #: bugs.rst:31
-#, fuzzy
 msgid ""
 "Bug reports for Python itself should be submitted via the Python Bug Tracker "
 "(https://bugs.python.org/).  The bug tracker offers a Web form which allows "
 "pertinent information to be entered and submitted to the developers."
 msgstr ""
 "Les rapports de bugs pour Python lui-même devraient être soumis via le Bug "
-"Tracker Python (http://bugs.python.org/). Le traqueur de bogues propose un "
-"formulaire Web permettant de saisir des informations pertinentes à soumettre "
-"aux développeurs."
+"Tracker Python (http://bugs.python.org/). Le gestionnaire de ticket propose "
+"un formulaire Web permettant de saisir des informations pertinentes à "
+"soumettre aux développeurs."
 
 #: bugs.rst:35
 msgid ""
@@ -157,7 +159,6 @@ msgstr ""
 "informations de versions)."
 
 #: bugs.rst:60
-#, fuzzy
 msgid ""
 "Each bug report will be assigned to a developer who will determine what "
 "needs to be done to correct the problem.  You will receive an update each "
@@ -171,7 +172,7 @@ msgstr ""
 
 #: bugs.rst:69
 msgid "How to Report Bugs Effectively"
-msgstr ""
+msgstr "Comment remonter des bugs de manière efficiente"
 
 #: bugs.rst:68
 msgid ""
@@ -184,7 +185,7 @@ msgstr ""
 
 #: bugs.rst:72
 msgid "Bug Writing Guidelines"
-msgstr ""
+msgstr "Recommandations pour la rédaction de bugs"
 
 #: bugs.rst:72
 msgid ""
@@ -197,7 +198,7 @@ msgstr ""
 # 9c7f8b3b87054431a436607c10a61840
 #: bugs.rst:77
 msgid "Getting started contributing to Python yourself"
-msgstr ""
+msgstr "Commencer à contribuer à Python vous-même"
 
 # 7b966de34a774a329b09560666a10777
 #: bugs.rst:79
@@ -208,6 +209,12 @@ msgid ""
 "the `core-mentorship mailing list`_ is a friendly place to get answers to "
 "any and all questions pertaining to the process of fixing issues in Python."
 msgstr ""
+"Au delà de simplement remonter les bugs que vous trouvez, vous serez aussi "
+"appréciés si vous y attachiez des correctifs. Vous pouvez trouver plus "
+"d'informations pour débuter la rédaction de correctifs dans le `Python "
+"Developer's Guide`_. Si vous avez des questions, le `core-mentorship mailing "
+"list`_ est un endroit amical pour obtenir des réponses à toutes les "
+"questions à propos du processus de corrections de bugs dans Python."
 
 #~ msgid ""
 #~ "Of course, if you want a more persistent record of your issue, you can "

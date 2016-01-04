@@ -2647,7 +2647,7 @@ msgstr ""
 # 2805bde6bf1f473f9f49f749040f7d9c
 #: reference/datamodel.rst:1467
 msgid "__slots__"
-msgstr ""
+msgstr "__slots__"
 
 # 351ce55ffd27424e92c4936827191fb5
 #: reference/datamodel.rst:1469

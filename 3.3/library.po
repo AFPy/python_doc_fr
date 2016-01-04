@@ -104167,7 +104167,7 @@ msgstr ""
 
 #: library/tkinter.rst:692
 msgid "sequence"
-msgstr ""
+msgstr "séquence"
 
 #: library/tkinter.rst:691
 msgid ""

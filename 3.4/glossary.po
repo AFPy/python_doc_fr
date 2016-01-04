@@ -1016,6 +1016,21 @@ msgid ""
 "iterator for the duration of the loop.  See also :term:`iterator`, :term:"
 "`sequence`, and :term:`generator`."
 msgstr ""
+"Un objet capable de donner ses éléments un à un. Pour lister quelques "
+"exemples d'itérables, on pourrait lister tout les types séquence (comme :"
+"class:`list`, :class:`str`, et :class:`tuple`), et quelques autres comme :"
+"class:`dict`, :term:`objets fichiers <objet fichier>`, ou tout objet de "
+"toute classe ayant une méthode :meth:`__iter__` ou :meth:`__getitem__`. Les "
+"itérables peuvent être utilisés dans des boucles :keyword:`for` ou tout "
+"autre endroit où une séquence est requise (:func:`zip`, :func:`map`, ...). "
+"Lorsqu'un itérable est passé comme argument à la fonction native :func:"
+"`iter`, elle donnera un itérateur de cet itérable. Cet itérateur n'est "
+"valable que pour une passe sur le jeu de valeurs. Lors de l'utilisation "
+"d'itérables, il n'est habituellement pas nécessaire d'appeler :func:`iter` "
+"ou de s'occuper d'objet itérateurs. L'instruction ``for`` fait ça "
+"automatiquement pour vous, créant une variable temporaire anonyme pour "
+"garder l'itérateur durant la boucle. Voir aussi :term:`itérateur`, :term:"
+"`séquence`, et :term:`générateur`."
 
 #: glossary.rst:428
 msgid "iterator"
@@ -1038,6 +1053,21 @@ msgid ""
 "iterator will just return the same exhausted iterator object used in the "
 "previous iteration pass, making it appear like an empty container."
 msgstr ""
+"Un objet représentant un flux de donnée. Des appels successifs à la méthode :"
+"meth:`~iterator.__next__` de l'itérateur (ou le donner à la fonction native :"
+"func:`next`) donne successivement les objets du flux. Lorsque plus aucune "
+"donnée n'est disponible, une exception :exc:`StopIteration` est lancée. À ce "
+"point, l'itérateur est épuisé et tous les appels suivants à sa méthode :meth:"
+"`__next__` lanceront encore une exception :exc:`StopIteration`. Les "
+"itérateurs doivent avoir une méthode :meth:`__iter__` qui renvoie l'objet "
+"itérateur lui même, tel que chaque itérateur soit aussi itérable et puisse "
+"être utilisé dans la plupart des endroits où d'autres itérables sont "
+"attendus. Une exception notable serait un code qui tenterai plusieurs "
+"itérations complètes. Un objet conteneur, (tel que :class:`list`) produit un "
+"nouvel itérateur neuf à chaque fois qu'il est donné à la fonction :func:"
+"`iter` où qu'il est utilisé dans une boucle :keyword:`for`. Faire ceci sur "
+"un itérateur donnerai simplement le même objet itérateur épuisé utilisé dans "
+"son itération précédente, le faisant ressembler à un conteneur vide."
 
 #: glossary.rst:445
 msgid "More information can be found in :ref:`typeiter`."
@@ -1388,6 +1418,16 @@ msgid ""
 "func:`itertools.islice` makes it clear that those functions are implemented "
 "by the :mod:`random` and :mod:`itertools` modules, respectively."
 msgstr ""
+"L'endroit où une variable est stockée. Les espaces de noms sont en fait des "
+"dictionnaires. Il existe des espaces de noms globaux, natifs, ou imbriqués "
+"dans les objets (dans les méthodes). Les espaces de noms sont modulaires "
+"afin d'éviter les conflits de noms. Par exemple, les fonctions :func:"
+"`builtins.open <.open>` et :func:`os.open`sont différenciées par leurs "
+"espaces de nom. Les espaces de noms aident aussi à la lisibilité et "
+"maintenabilité en rendant clair quel module implémente une fonction. Par "
+"exemple, écrire :func:`random.seed` ou :func:`itertools.islice` rend clair "
+"que ces fonctions sont implémentées respectivement dans les modules :mod:"
+"`random` et :mod:`itertools`."
 
 #: glossary.rst:585
 msgid "namespace package"
@@ -1502,6 +1542,10 @@ msgid ""
 "<argument>`.  This is the default kind of parameter, for example *foo* and "
 "*bar* in the following::"
 msgstr ""
+":dfn:`positional-or-keyword`: dit d'un argument qui peut être passé soit par "
+"sa :term:`position <argument>` soit en temps que :term:`paramètre nommé "
+"<argument>`. C'est le type de paramètre par défaut, par exemple, *foo* et "
+"*bar* dans l'exemple suivant ::"
 
 # 5d344aa1c2c14f41bdde1b3c739e316b
 #: glossary.rst:633
@@ -1546,6 +1590,10 @@ msgid ""
 "parameters).  Such a parameter can be defined by prepending the parameter "
 "name with ``**``, for example *kwargs* in the example above."
 msgstr ""
+":dfn:`var-keyword`: spécifie qu'une quantité arbitraire d'arguments peuvent "
+"être passés par nom (en plus de tous les arguments nommés déjà acceptés par "
+"d'autres paramètres). Un tel paramètre est définit en préfixant le nom du "
+"paramètre par ``**``, par exemple, *kwargs* ci-dessus."
 
 # bf3e82954a6648efbe51ffdf2066bd51
 #: glossary.rst:662
@@ -1578,10 +1626,12 @@ msgid ""
 "A single location on the :term:`import path` which the :term:`path based "
 "finder` consults to find modules for importing."
 msgstr ""
+"Un seul emplacement dans l':term:`import path` que le :term:`path based "
+"finder` consulte pour trouver des modules à importer."
 
 #: glossary.rst:673
 msgid "path entry finder"
-msgstr ""
+msgstr "path entry finder"
 
 #: glossary.rst:675
 msgid ""
@@ -1589,10 +1639,13 @@ msgid ""
 "term:`path entry hook`) which knows how to locate modules given a :term:"
 "`path entry`."
 msgstr ""
+"Un :term:`finder` donné par un appelable sur un :data:`sys.path_hooks` (çàd "
+"un :term:`path entry hook`) qui sait où trouver des modules lorsqu'on lui "
+"donne un :term:`path entry`."
 
 #: glossary.rst:678
 msgid "path entry hook"
-msgstr ""
+msgstr "path entry hook"
 
 #: glossary.rst:680
 msgid ""
@@ -1600,26 +1653,34 @@ msgid ""
 "entry finder` if it knows how to find modules on a specific :term:`path "
 "entry`."
 msgstr ""
+"Un appelable dans la liste :data:`sys.path_hook` qui donne un :term:`path "
+"entry finder` s'il sait où trouver des modules pour un :term:`path entry` "
+"donné."
 
 #: glossary.rst:683
 msgid "path based finder"
-msgstr ""
+msgstr "path based finder"
 
 #: glossary.rst:685
 msgid ""
 "One of the default :term:`meta path finders <meta path finder>` which "
 "searches an :term:`import path` for modules."
 msgstr ""
+"L'un des :term:`meta path finders <meta path finder>` par défaut qui cherche "
+"des modules dans un :term:`import path`."
 
 #: glossary.rst:687
 msgid "portion"
-msgstr ""
+msgstr "portion"
 
 #: glossary.rst:689
 msgid ""
 "A set of files in a single directory (possibly stored in a zip file) that "
 "contribute to a namespace package, as defined in :pep:`420`."
 msgstr ""
+"Un jeu de fichiers dans un seul dossier (pouvant être stockés sous forme de "
+"fichier zip) qui contribuent à l'espace de nom d'un paquet, tel que définit "
+"dans la :pep:`420`."
 
 #: glossary.rst:691
 msgid "positional argument"
@@ -1627,7 +1688,7 @@ msgstr "augment positionnel"
 
 #: glossary.rst:694
 msgid "provisional API"
-msgstr ""
+msgstr "API provisoire"
 
 #: glossary.rst:696
 msgid ""
@@ -1639,6 +1700,14 @@ msgid ""
 "will not be made gratuitously -- they will occur only if serious fundamental "
 "flaws are uncovered that were missed prior to the inclusion of the API."
 msgstr ""
+"Une API provisoire est une API délibérément exclue des garanties de "
+"rétrocompatibilité de la bibliothèque standard. Bien que des changements "
+"majeurs de telles interfaces ne sont pas attendus, tant qu'elles sont "
+"marquées provisoires, des changement cassant la rétrocompatibilité (jusqu'à "
+"sa suppression complète) peuvent survenir s'ils semblent nécessaires. Ces "
+"modifications ne seront pas effectuées gratuitement, ils ne surviendront "
+"seulement si de sérieux problèmes sont découvert, qui n'avaient pas étés "
+"repérés avant l'ajout de l'API."
 
 #: glossary.rst:705
 msgid ""
@@ -1646,6 +1715,10 @@ msgid ""
 "\"solution of last resort\" - every attempt will still be made to find a "
 "backwards compatible resolution to any identified problems."
 msgstr ""
+"Même pour les API provisoires, les changement cassant la rétrocompatibilité "
+"sont des \"solutions de dernier recours\", tout ce qui est possible sera "
+"fait pour tenter de résoudre les problème en conservant la "
+"rétrocompatibilité."
 
 #: glossary.rst:709
 msgid ""
@@ -1653,14 +1726,17 @@ msgid ""
 "without locking in problematic design errors for extended periods of time.  "
 "See :pep:`411` for more details."
 msgstr ""
+"Ce processus permet à la bibliothèque standard de continuer à évoluer avec "
+"le temps, sans se bloquer longtemps sur des erreurs d'architecture. Voir la :"
+"pep:`411` pour plus de détails."
 
 #: glossary.rst:712
 msgid "provisional package"
-msgstr ""
+msgstr "paquet provisoire"
 
 #: glossary.rst:714
 msgid "See :term:`provisional API`."
-msgstr ""
+msgstr "Voir :term:`provisional API`."
 
 #: glossary.rst:715
 msgid "Python 3000"
@@ -1702,7 +1778,7 @@ msgstr ""
 
 #: glossary.rst:736
 msgid "qualified name"
-msgstr ""
+msgstr "nom qualifié"
 
 #: glossary.rst:738
 msgid ""
@@ -1711,6 +1787,10 @@ msgid ""
 "top-level functions and classes, the qualified name is the same as the "
 "object's name::"
 msgstr ""
+"Un nom, comprenant des points, montrant le \"chemin\" de l'espace de nom "
+"globale d'un module à une class, fonction, ou méthode définie dans ce "
+"module, tel que défini dans la :pep:`3155`. Pour les fonctions et classes de "
+"premier niveau, le nom qualifié est le même que le nom de l'objet ::"
 
 #: glossary.rst:755
 msgid ""
@@ -1718,6 +1798,9 @@ msgid ""
 "dotted path to the module, including any parent packages, e.g. ``email.mime."
 "text``::"
 msgstr ""
+"Lorsqu'il est utilisé pour nommer des modules, le *nom qualifié complet* "
+"signifie le chemin complet (séparé par des points) vers le module, incluant "
+"tous les paquet parents, typiquement: ``email.mime.text`` ::"
 
 #: glossary.rst:762
 msgid "reference count"
@@ -1743,14 +1826,16 @@ msgid ""
 "A traditional :term:`package`, such as a directory containing an ``__init__."
 "py`` file."
 msgstr ""
+"Un :term:`paquet` traditionnel, tel qu'un dossier contenant un fichier "
+"``__init__.py``."
 
 #: glossary.rst:775
 msgid "See also :term:`namespace package`."
-msgstr ""
+msgstr "Voir aussi :term:`paquet espace de nom`."
 
 #: glossary.rst:776
 msgid "__slots__"
-msgstr ""
+msgstr "__slots__"
 
 #: glossary.rst:778
 msgid ""
@@ -1760,10 +1845,15 @@ msgid ""
 "cases where there are large numbers of instances in a memory-critical "
 "application."
 msgstr ""
+"Une déclaration dans une classe qui économise de la mémoire en pré-allouant "
+"de l'espace pour les instances des attributs, et le dictionnaire des "
+"instances. Bien que populaire, cette technique est difficile à maîtriser et "
+"devrait être réservée à de rares cas avec un grand nombre d'instances dans "
+"une application où la mémoire est un sujet critique."
 
 #: glossary.rst:783
 msgid "sequence"
-msgstr ""
+msgstr "séquence"
 
 #: glossary.rst:785
 msgid ""
@@ -1775,6 +1865,14 @@ msgid ""
 "`__len__`, but is considered a mapping rather than a sequence because the "
 "lookups use arbitrary :term:`immutable` keys rather than integers."
 msgstr ""
+"Un :term:`itérable` qui gère l'accès efficient à ses éléments par un indice "
+"sous forme de nombre entier via la méthode spéciale :meth:`__getitem__` et "
+"qui défini une méthode :meth:`__len__` qui donne sa taille. Voici quelques "
+"séquences natives : :class:`list`, :class:`str`, :class:`tuple`, et :class:"
+"`bytes`. Notez que :class:`dict` a aussi une méthode :meth:`__getitem__` et "
+"une méthode :meth:`__len__`, mais il est considéré comme un *mapping* plutôt "
+"qu'une séquence, car ses accès se font par une clef arbitraire :term:"
+"`immuable` plutôt qu'un nombre entier."
 
 #: glossary.rst:794
 msgid ""
@@ -1784,20 +1882,28 @@ msgid ""
 "meth:`__reversed__`. Types that implement this expanded interface can be "
 "registered explicitly using :func:`~abc.register`."
 msgstr ""
+"La class abstraite de base :class:`collections.abc.Sequence` défini une "
+"interface plus riche qui va au delà des simples :meth:`__getitem__` et :meth:"
+"`__len__`, en ajoutant :meth:`count`, :meth:`index`, :meth:`__contains__`, "
+"et :meth:`__reversed__`. Les types qui implémentent cette interface étendue "
+"peuvent s'enregistrer explicitement en utilisant :func:`~abc.register`."
 
 #: glossary.rst:801
 msgid "single dispatch"
-msgstr ""
+msgstr "distribution simple"
 
 #: glossary.rst:803
 msgid ""
 "A form of :term:`generic function` dispatch where the implementation is "
 "chosen based on the type of a single argument."
 msgstr ""
+"Une forme de distribution, comme les :term:`fonction génériques <fonction "
+"générique>`, où l'implémentation est choisie en fonction du type d'un seul "
+"argument."
 
 #: glossary.rst:805
 msgid "slice"
-msgstr ""
+msgstr "tranche"
 
 #: glossary.rst:807
 msgid ""
@@ -1806,10 +1912,15 @@ msgid ""
 "when several are given, such as in ``variable_name[1:3:5]``.  The bracket "
 "(subscript) notation uses :class:`slice` objects internally."
 msgstr ""
+"*slice*, un objet contenant habituellement une portion de :term:`séquence`. "
+"Une tranche est crée en utilisant la notation ``[]`` avec des ``:`` entre "
+"les nombres lorsque plusieurs sont fournis, tel que dans "
+"``variable_name[1:3:5]``. Cette notation utilise des objets :class:`slice` "
+"en interne."
 
 #: glossary.rst:811
 msgid "special method"
-msgstr ""
+msgstr "méthode spéciale"
 
 #: glossary.rst:813
 msgid ""
@@ -1818,6 +1929,10 @@ msgid ""
 "with double underscores.  Special methods are documented in :ref:"
 "`specialnames`."
 msgstr ""
+"*special method*: Une méthode appelée implicitement par Python pour exécuter "
+"une opération sur un type, tel qu'une addition. De telles méthodes ont des "
+"noms commençant et terminant par des doubles tirets bas. Les méthodes "
+"spéciales sont documentées dans :ref:`specialnames`."
 
 #: glossary.rst:817
 msgid "statement"
@@ -1830,10 +1945,14 @@ msgid ""
 "an :term:`expression` or one of several constructs with a keyword, such as :"
 "keyword:`if`, :keyword:`while` or :keyword:`for`."
 msgstr ""
+"Une instruction (*statement*) fait partie d'une suite, (un \"bloc\" de "
+"code). Une instruction est soit une :term:`expression` soit une ou plusieurs "
+"constructions basées sur un mot-clef, tel qu'un :keyword:`if`, :keyword:"
+"`while`, ou :keyword:`for`."
 
 #: glossary.rst:822
 msgid "struct sequence"
-msgstr ""
+msgstr "struct sequence"
 
 #: glossary.rst:824
 msgid ""
@@ -1844,14 +1963,21 @@ msgid ""
 "`~collections.somenamedtuple._asdict`. Examples of struct sequences include :"
 "data:`sys.float_info` and the return value of :func:`os.stat`."
 msgstr ""
+"Un uplet (*tuple*) dont les éléments sont nommés. Les *struct sequences* "
+"exposent une interface similaires au :term:`named tuple` par le fait que "
+"leurs éléments peuvent être accédés par nom d'attribut ou par indice. "
+"Cependant, elles n'ont aucune des méthodes du *named tuple*, comme :meth:"
+"`collections.somenamedtuple._make` ou :meth:`~collections.somenamedtuple."
+"_asdict`. Par exemple :data:`sys.float_info`, ou les valeurs données par :"
+"func:`os.stat` sont des *struct sequence*."
 
 #: glossary.rst:830
 msgid "text encoding"
-msgstr ""
+msgstr "encodage de texte"
 
 #: glossary.rst:832
 msgid "A codec which encodes Unicode strings to bytes."
-msgstr ""
+msgstr "Un codec qui convertit des chaînes de caractères Unicode en octets."
 
 #: glossary.rst:833
 msgid "text file"
@@ -1863,14 +1989,17 @@ msgid ""
 "text file actually accesses a byte-oriented datastream and handles the :term:"
 "`text encoding` automatically."
 msgstr ""
+"Un :term:`objet fichier` capable de lire et d'écrire des objets :class:"
+"`str`. Souvent, un fichier texte (*text file*) accède en fait à flux de "
+"donnée en octets, et gère l':term:`encodage de texte` automatiquement."
 
 #: glossary.rst:840
 msgid "A :term:`binary file` reads and write :class:`bytes` objects."
-msgstr ""
+msgstr "Un :term:`fichier binaire` lit et écrit des objets :class:`bytes`."
 
 #: glossary.rst:841
 msgid "triple-quoted string"
-msgstr ""
+msgstr "chaîne entre triple guillemets"
 
 #: glossary.rst:843
 msgid ""
@@ -1882,6 +2011,14 @@ msgid ""
 "continuation character, making them especially useful when writing "
 "docstrings."
 msgstr ""
+"Une chaîne qui est assembée par trois guillemets simples (``'``) ou trois "
+"guillemets doubles (``\"``). Bien qu'elles ne fournissent aucune "
+"fonctionalité qui ne serait pas disponnible avec les chaînes entre "
+"guillemets, elles sont utiles pour moultes raisons. Elles vous autorisent à "
+"insérer des guillemets simples et doubles dans une chaîne sans avoir à les "
+"protéger, et elles peuvent s'étendre sur plusieurs lignes sans avoir à les "
+"terminer par un ``\\``, les rendant ainsi particulièrement utile pour les "
+"chaînes de documentation (*docstrings*)."
 
 #: glossary.rst:850
 msgid "type"
@@ -1894,10 +2031,13 @@ msgid ""
 "object has a type.  An object's type is accessible as its :attr:`~instance."
 "__class__` attribute or can be retrieved with ``type(obj)``."
 msgstr ""
+"Le type d'un objet Python détermine quel genre d'objet c'est. Tous les "
+"objets ont un type. Le type d'un objet peut être obtenu via son attribut :"
+"attr:`~instance.__class__` ou via ``type(obj)``."
 
 #: glossary.rst:856
 msgid "universal newlines"
-msgstr ""
+msgstr "retours à la ligne universels"
 
 #: glossary.rst:858
 msgid ""
@@ -1907,6 +2047,11 @@ msgid ""
 "``'\\r'``.  See :pep:`278` and :pep:`3116`, as well as :func:`bytes."
 "splitlines` for an additional use."
 msgstr ""
+"Une manière d'interpréter des flux de texte dans lesquels toutes les fin de "
+"lignes suivantes sont reconnues: la convention Unix ``'\\n'``, la convention "
+"Windows ``'\\r\\n'``, et l'ancienne convention Macintosh ``'\\r'``. Voir la :"
+"pep:`278` et la :pep:`3116`, ainsi que la fonction :func:bytes.splitlines` "
+"pour d'autres usages."
 
 #: glossary.rst:863
 msgid "virtual environment"
@@ -1919,10 +2064,14 @@ msgid ""
 "interfering with the behaviour of other Python applications running on the "
 "same system."
 msgstr ""
+"Un environnement isolé, coopérant à son isolement à l'execution, qui permet "
+"aux utilisateurs de Python et aux applications d'installer et de mettre à "
+"jour des paquets sans interférer avec d'autres applications Python "
+"fonctionnant sur le même système."
 
 #: glossary.rst:870
 msgid "See also :ref:`scripts-pyvenv`."
-msgstr ""
+msgstr "Voir aussi :ref:`scripts-pyvenv`."
 
 #: glossary.rst:871
 msgid "virtual machine"
@@ -1933,10 +2082,13 @@ msgid ""
 "A computer defined entirely in software.  Python's virtual machine executes "
 "the :term:`bytecode` emitted by the bytecode compiler."
 msgstr ""
+"Un ordinateur défini entièrement par du logiciel. La machine virtuelle "
+"(*virtual machine*) de Python exécute le :term:`bytecode` donné par le "
+"compilateur de *bytecode*."
 
 #: glossary.rst:875
 msgid "Zen of Python"
-msgstr ""
+msgstr "Le Zen de Python"
 
 #: glossary.rst:877
 msgid ""
@@ -1944,6 +2096,9 @@ msgid ""
 "understanding and using the language.  The listing can be found by typing "
 "\"``import this``\" at the interactive prompt."
 msgstr ""
+"Liste de principes et de philosophies utiles pour comprendre et utiliser le "
+"langage. Cette liste peut être obtenue en tapant \"``import this``\" dans "
+"une invite Python interactive."
 
 #~ msgid ""
 #~ "A value passed to a function or method, assigned to a named local "

@@ -918,6 +918,21 @@ msgid ""
 "iterator for the duration of the loop.  See also :term:`iterator`, :term:"
 "`sequence`, and :term:`generator`."
 msgstr ""
+"Un objet capable de donner ses éléments un à un. Pour lister quelques "
+"exemples d'itérables, on pourrait lister tout les types séquence (comme :"
+"class:`list`, :class:`str`, et :class:`tuple`), et quelques autres comme :"
+"class:`dict`, :term:`objets fichiers <objet fichier>`, ou tout objet de "
+"toute classe ayant une méthode :meth:`__iter__` ou :meth:`__getitem__`. Les "
+"itérables peuvent être utilisés dans des boucles :keyword:`for` ou tout "
+"autre endroit où une séquence est requise (:func:`zip`, :func:`map`, ...). "
+"Lorsqu'un itérable est passé comme argument à la fonction native :func:"
+"`iter`, elle donnera un itérateur de cet itérable. Cet itérateur n'est "
+"valable que pour une passe sur le jeu de valeurs. Lors de l'utilisation "
+"d'itérables, il n'est habituellement pas nécessaire d'appeler :func:`iter` "
+"ou de s'occuper d'objet itérateurs. L'instruction ``for`` fait ça "
+"automatiquement pour vous, créant une variable temporaire anonyme pour "
+"garder l'itérateur durant la boucle. Voir aussi :term:`itérateur`, :term:"
+"`séquence`, et :term:`générateur`."
 
 #: glossary.rst:374
 msgid "iterator"
@@ -941,6 +956,21 @@ msgid ""
 "iterator will just return the same exhausted iterator object used in the "
 "previous iteration pass, making it appear like an empty container."
 msgstr ""
+"Un objet représentant un flux de donnée. Des appels successifs à la méthode :"
+"meth:`~iterator.__next__` de l'itérateur (ou le donner à la fonction native :"
+"func:`next`) donne successivement les objets du flux. Lorsque plus aucune "
+"donnée n'est disponible, une exception :exc:`StopIteration` est lancée. À ce "
+"point, l'itérateur est épuisé et tous les appels suivants à sa méthode :meth:"
+"`__next__` lanceront encore une exception :exc:`StopIteration`. Les "
+"itérateurs doivent avoir une méthode :meth:`__iter__` qui renvoie l'objet "
+"itérateur lui même, tel que chaque itérateur soit aussi itérable et puisse "
+"être utilisé dans la plupart des endroits où d'autres itérables sont "
+"attendus. Une exception notable serait un code qui tenterai plusieurs "
+"itérations complètes. Un objet conteneur, (tel que :class:`list`) produit un "
+"nouvel itérateur neuf à chaque fois qu'il est donné à la fonction :func:"
+"`iter` où qu'il est utilisé dans une boucle :keyword:`for`. Faire ceci sur "
+"un itérateur donnerai simplement le même objet itérateur épuisé utilisé dans "
+"son itération précédente, le faisant ressembler à un conteneur vide."
 
 # b6da80732c2045b184bbce02c54706ab
 #: glossary.rst:391
@@ -1340,6 +1370,10 @@ msgid ""
 "<argument>`.  This is the default kind of parameter, for example *foo* and "
 "*bar* in the following::"
 msgstr ""
+":dfn:`positional-or-keyword`: dit d'un argument qui peut être passé soit par "
+"sa :term:`position <argument>` soit en temps que :term:`paramètre nommé "
+"<argument>`. C'est le type de paramètre par défaut, par exemple, *foo* et "
+"*bar* dans l'exemple suivant ::"
 
 # 0ebb23d47127466391dd0e0f94a26316
 #: glossary.rst:548
@@ -1374,6 +1408,10 @@ msgid ""
 "prepending the parameter name with ``*``, for example *args* in the "
 "following::"
 msgstr ""
+":dfn:`var-positional`: spécifie qu'une séquence d'arguments positionels peut "
+"être fourni (en plus de tous les arguments positionels déjà acceptés par "
+"d'autres paramètres). Un tel paramètre peut être définit en préfixant son "
+"nom par une ``*``, par exemple *args* ici ::"
 
 # 30e60e5ebb524b53b9f5b83c3e719a8a
 #: glossary.rst:569
@@ -1383,6 +1421,10 @@ msgid ""
 "parameters).  Such a parameter can be defined by prepending the parameter "
 "name with ``**``, for example *kwargs* in the example above."
 msgstr ""
+":dfn:`var-keyword`: spécifie qu'une quantité arbitraire d'arguments peuvent "
+"être passés par nom (en plus de tous les arguments nommés déjà acceptés par "
+"d'autres paramètres). Un tel paramètre est définit en préfixant le nom du "
+"paramètre par ``**``, par exemple, *kwargs* ci-dessus."
 
 # a1e40780ee024eefb9f9de4f034390e7
 #: glossary.rst:575
@@ -1466,10 +1508,16 @@ msgid ""
 "function that programmers can call to return the reference count for a "
 "particular object."
 msgstr ""
+"Le nombre de références à un objet. Lorsque le nombre de références à un "
+"objet descend à zéro, l'objet est désalloué. Le comptage de référence n'est "
+"généralement pas visible dans le code Python, mais c'est un élément clef de "
+"l'implémentation :term:`CPython`. Le module :mod:`sys` défini une fonction :"
+"func:`~sys.getrefcount` que les développeurs peuvent utiliser pour obtenir "
+"le nombre de référence d'un objet donné."
 
 #: glossary.rst:614
 msgid "__slots__"
-msgstr ""
+msgstr "__slots__"
 
 # 22246c7f0b7d4fac9d1bbabbf7ae4d0d
 #: glossary.rst:616
@@ -1480,10 +1528,15 @@ msgid ""
 "cases where there are large numbers of instances in a memory-critical "
 "application."
 msgstr ""
+"Une déclaration dans une classe qui économise de la mémoire en pré-allouant "
+"de l'espace pour les instances des attributs, et le dictionnaire des "
+"instances. Bien que populaire, cette technique est difficile à maîtriser et "
+"devrait être réservée à de rares cas avec un grand nombre d'instances dans "
+"une application où la mémoire est un sujet critique."
 
 #: glossary.rst:621
 msgid "sequence"
-msgstr ""
+msgstr "séquence"
 
 # a50a49d7675e483a8e4f59cbb6c03325
 #: glossary.rst:623
@@ -1496,10 +1549,18 @@ msgid ""
 "`__len__`, but is considered a mapping rather than a sequence because the "
 "lookups use arbitrary :term:`immutable` keys rather than integers."
 msgstr ""
+"Un :term:`itérable` qui gère l'accès efficient à ses éléments par un indice "
+"sous forme de nombre entier via la méthode spéciale :meth:`__getitem__` et "
+"qui défini une méthode :meth:`__len__` qui donne sa taille. Voici quelques "
+"séquences natives : :class:`list`, :class:`str`, :class:`tuple`, et :class:"
+"`bytes`. Notez que :class:`dict` a aussi une méthode :meth:`__getitem__` et "
+"une méthode :meth:`__len__`, mais il est considéré comme un *mapping* plutôt "
+"qu'une séquence, car ses accès se font par une clef arbitraire :term:"
+"`immuable` plutôt qu'un nombre entier."
 
 #: glossary.rst:631
 msgid "slice"
-msgstr ""
+msgstr "tranche"
 
 # 5226408ffecd4c9ca14a3461d601810a
 #: glossary.rst:633
@@ -1509,10 +1570,15 @@ msgid ""
 "when several are given, such as in ``variable_name[1:3:5]``.  The bracket "
 "(subscript) notation uses :class:`slice` objects internally."
 msgstr ""
+"*slice*, un objet contenant habituellement une portion de :term:`séquence`. "
+"Une tranche est crée en utilisant la notation ``[]`` avec des ``:`` entre "
+"les nombres lorsque plusieurs sont fournis, tel que dans "
+"``variable_name[1:3:5]``. Cette notation utilise des objets :class:`slice` "
+"en interne."
 
 #: glossary.rst:637
 msgid "special method"
-msgstr ""
+msgstr "méthode spéciale"
 
 # 51c764c3f36e45b1b27244ac3dacf588
 #: glossary.rst:639
@@ -1522,6 +1588,10 @@ msgid ""
 "with double underscores.  Special methods are documented in :ref:"
 "`specialnames`."
 msgstr ""
+"*special method*: Une méthode appelée implicitement par Python pour exécuter "
+"une opération sur un type, tel qu'une addition. De telles méthodes ont des "
+"noms commençant et terminant par des doubles tirets bas. Les méthodes "
+"spéciales sont documentées dans :ref:`specialnames`."
 
 #: glossary.rst:643
 msgid "statement"
@@ -1537,7 +1607,7 @@ msgstr ""
 
 #: glossary.rst:648
 msgid "triple-quoted string"
-msgstr ""
+msgstr "chaîne entre triple guillemets"
 
 # c1b3e4430e624f588341689b5bd515bf
 #: glossary.rst:650
@@ -1550,6 +1620,14 @@ msgid ""
 "continuation character, making them especially useful when writing "
 "docstrings."
 msgstr ""
+"Une chaîne qui est assembée par trois guillemets simples (``'``) ou trois "
+"guillemets doubles (``\"``). Bien qu'elles ne fournissent aucune "
+"fonctionalité qui ne serait pas disponnible avec les chaînes entre "
+"guillemets, elles sont utiles pour moultes raisons. Elles vous autorisent à "
+"insérer des guillemets simples et doubles dans une chaîne sans avoir à les "
+"protéger, et elles peuvent s'étendre sur plusieurs lignes sans avoir à les "
+"terminer par un ``\\``, les rendant ainsi particulièrement utile pour les "
+"chaînes de documentation (*docstrings*)."
 
 #: glossary.rst:657
 msgid "type"
@@ -1565,7 +1643,7 @@ msgstr ""
 
 #: glossary.rst:662
 msgid "universal newlines"
-msgstr ""
+msgstr "retours à la ligne universels"
 
 # 47a57b318c4a462dbdba375a7fd9ce6e
 #: glossary.rst:664
@@ -1600,10 +1678,13 @@ msgid ""
 "A computer defined entirely in software.  Python's virtual machine executes "
 "the :term:`bytecode` emitted by the bytecode compiler."
 msgstr ""
+"Un ordinateur défini entièrement par du logiciel. La machine virtuelle "
+"(*virtual machine*) de Python exécute le :term:`bytecode` donné par le "
+"compilateur de *bytecode*."
 
 #: glossary.rst:680
 msgid "Zen of Python"
-msgstr ""
+msgstr "Le Zen de Python"
 
 # d381fcf5f251472da7016edec32302f5
 #: glossary.rst:682
@@ -1612,3 +1693,6 @@ msgid ""
 "understanding and using the language.  The listing can be found by typing "
 "\"``import this``\" at the interactive prompt."
 msgstr ""
+"Liste de principes et de philosophies utiles pour comprendre et utiliser le "
+"langage. Cette liste peut être obtenue en tapant \"``import this``\" dans "
+"une invite Python interactive."

@@ -2393,7 +2393,7 @@ msgstr ""
 
 #: reference/datamodel.rst:1524
 msgid "__slots__"
-msgstr ""
+msgstr "__slots__"
 
 #: reference/datamodel.rst:1526
 msgid ""

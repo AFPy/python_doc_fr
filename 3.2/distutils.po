@@ -4602,7 +4602,7 @@ msgstr ""
 # f628be6fd7194698a698e4a5b941022d
 #: distutils/index.rst:8
 msgid "distutils-sig@python.org"
-msgstr ""
+msgstr "distutils-sig@python.org"
 
 # 2b7be301cc7147608cb80a77c676a88e
 #: distutils/index.rst:10

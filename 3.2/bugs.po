@@ -178,7 +178,7 @@ msgstr ""
 
 #: bugs.rst:70
 msgid "How to Report Bugs Effectively"
-msgstr ""
+msgstr "Comment remonter des bugs de manière efficiente"
 
 # a56eb61f2e9a41189929f2181cac890d
 #: bugs.rst:69
@@ -192,7 +192,7 @@ msgstr ""
 
 #: bugs.rst:73
 msgid "Bug Writing Guidelines"
-msgstr ""
+msgstr "Recommandations pour la rédaction de bugs"
 
 # 034acd49e97b4a4b98309bd71e72c0e2
 #: bugs.rst:73
