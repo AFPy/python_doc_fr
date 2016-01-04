@@ -412,7 +412,7 @@ msgstr ""
 
 #: c-api/arg.rst:116
 msgid "S (bytes) [PyBytesObject *]"
-msgstr ""
+msgstr "S (bytes) [PyBytesObject *]"
 
 # b33ee75ef6ff4abf8891a2fef101170f
 #: c-api/arg.rst:114
@@ -949,7 +949,7 @@ msgstr "Autres Objets"
 
 #: c-api/arg.rst:286 c-api/arg.rst:584
 msgid "O (object) [PyObject *]"
-msgstr ""
+msgstr "O (object) [PyObject *]"
 
 # 6ac1322539cf40b3a6a71dfe79df97e6
 #: c-api/arg.rst:284
@@ -965,7 +965,7 @@ msgstr ""
 
 #: c-api/arg.rst:293
 msgid "O! (object) [typeobject, PyObject *]"
-msgstr ""
+msgstr "O! (object) [typeobject, PyObject *]"
 
 # 24d1b90152b643d2bc1dbdd373f6a7a0
 #: c-api/arg.rst:289
@@ -1558,7 +1558,7 @@ msgstr ""
 
 #: c-api/arg.rst:587
 msgid "S (object) [PyObject *]"
-msgstr ""
+msgstr "S (object) [PyObject *]"
 
 # a1a06e89f00d427ca77000fc6f32e05c
 #: c-api/arg.rst:587
@@ -1567,7 +1567,7 @@ msgstr ""
 
 #: c-api/arg.rst:592
 msgid "N (object) [PyObject *]"
-msgstr ""
+msgstr "N (object) [PyObject *]"
 
 # ba894b663d724373b137fb28a9b718de
 #: c-api/arg.rst:590
@@ -13654,7 +13654,7 @@ msgstr ""
 #: c-api/unicode.rst:295 c-api/unicode.rst:298 c-api/unicode.rst:307
 #: c-api/unicode.rst:310
 msgid "PyObject\\*"
-msgstr ""
+msgstr "PyObject\\*"
 
 # 6298ce6711f54f62a62a889e5a24a0bf
 #: c-api/unicode.rst:295
