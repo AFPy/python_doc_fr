@@ -34,7 +34,7 @@ echo "Rebuilding local documentation"
 sphinx-build "$GEN/src/Doc" "$PYDOCFR_ROOT/www/$VERSION/"
 
 echo "Adding header in the doc to advertise the github."
-sed -i 's|<body role="document"> *$|\0<div class="body" style="line-height: 25px; width:100%; font-size: 90%; text-align:center"><a href="https://www.github.com/AFPY/python_doc_fr/">Envie d'\''aider à traduire ?</a></div>|' $PYDOCFR_ROOT/www/3.4/**/*.html $PYDOCFR_ROOT/www/3.4/*.html
+sed -i 's|<body role="document"> *$|\0<div class="body" style="line-height: 25px; width:100%; font-size: 90%; text-align:center"><a href="https://www.github.com/AFPY/python_doc_fr/">Envie d'\''aider à traduire ?</a></div>|' $PYDOCFR_ROOT/www/$VERSION/**/*.html $PYDOCFR_ROOT/www/$VERSION/*.html
 
 if ! type markdown >/dev/null
 then
