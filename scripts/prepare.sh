@@ -14,6 +14,7 @@ VERSION=${1:-3.5}
 if ! [ -d "$GEN/src/" ]
 then
     (
+        mkdir -p "$GEN"
         cd "$GEN"
         echo "Cloning cpython sources from github"
         git clone https://github.com/python/cpython.git src
