@@ -156,6 +156,7 @@ msgstr ""
 
 # 2053ac0ba09d4a00bc04a6e1ceab0071
 #: bugs.rst:58
+#, fuzzy
 msgid ""
 "Each bug report will be assigned to a developer who will determine what "
 "needs to be done to correct the problem.  You will receive an update each "

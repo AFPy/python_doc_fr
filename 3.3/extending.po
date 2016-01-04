@@ -18,6 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: extending/building.rst:8
+#, fuzzy
 msgid "Building C and C++ Extensions with distutils"
 msgstr "Construire les extensions C et C + + avec distutils"
 
@@ -557,6 +558,7 @@ msgid ""
 msgstr ""
 
 #: extending/extending.rst:34
+#, fuzzy
 msgid "A Simple Example"
 msgstr "Un exemple simple"
 
@@ -578,6 +580,7 @@ msgid ""
 msgstr ""
 
 #: extending/extending.rst:50
+#, fuzzy
 msgid "The first line of our file can be::"
 msgstr "La première ligne de notre fichier peut être:"
 

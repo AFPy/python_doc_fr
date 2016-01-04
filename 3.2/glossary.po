@@ -1165,6 +1165,7 @@ msgstr "metaclasse"
 
 # e6b596d0452c4bc49837015cf8d21ad9
 #: glossary.rst:461
+#, fuzzy
 msgid ""
 "The class of a class.  Class definitions create a class name, a class "
 "dictionary, and a list of base classes.  The metaclass is responsible for "

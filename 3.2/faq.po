@@ -81,6 +81,7 @@ msgstr ""
 
 # 4d53b7ddf53e4053b514a3fe802a88c0
 #: faq/design.rst:31
+#, fuzzy
 msgid ""
 "Many coding styles place begin/end brackets on a line by themselves.  This "
 "makes programs considerably longer and wastes valuable screen space, making "
@@ -114,16 +115,19 @@ msgstr "Voir la question suivante."
 
 # 3d34a62d547a4c65aeaca681e5b69e91
 #: faq/design.rst:47
+#, fuzzy
 msgid "Why are floating-point calculations so inaccurate?"
 msgstr "Pourquoi les calculs à virgules flottantes sont si imprécis ?"
 
 # cb5850cbdf794415b953d998857a81e3
 #: faq/design.rst:49
+#, fuzzy
 msgid "Users are often surprised by results like this::"
 msgstr "Les gens sont très souvent surpris par des résultats comme celui-ci ::"
 
 # 4d92ba63408c4d608aa0fa189ebb70c4
 #: faq/design.rst:54
+#, fuzzy
 msgid ""
 "and think it is a bug in Python.  It's not.  This has little to do with "
 "Python, and much more to do with how the underlying platform handles "
@@ -163,6 +167,7 @@ msgstr ""
 
 # 311c1bfcf62c42bdb6d1586322e16110
 #: faq/design.rst:76
+#, fuzzy
 msgid "which is exactly::"
 msgstr "qui donne le résultat ::"
 
@@ -175,6 +180,7 @@ msgstr ""
 
 # b90b3357a25e44f982549146445c3d04
 #: faq/design.rst:83
+#, fuzzy
 msgid ""
 "For a fuller explanation, please see the :ref:`floating point arithmetic "
 "<tut-fp-issues>` chapter in the Python tutorial."
@@ -407,6 +413,7 @@ msgstr ""
 
 # d3548a1960ef4e8c9a246a1faf1e47bb
 #: faq/design.rst:201
+#, fuzzy
 msgid ""
 "The best approach is to use iterators, making it possible to loop through "
 "objects using the ``for`` statement.  For example, :term:`file objects <file "
@@ -428,6 +435,7 @@ msgstr ""
 
 # 9448964d94bf4229be2d786e83ac5dfd
 #: faq/design.rst:213
+#, fuzzy
 msgid ""
 "The major reason is history. Functions were used for those operations that "
 "were generic for a group of types and which were intended to work even for "
@@ -533,6 +541,7 @@ msgstr ""
 
 # b24255e43e4349219af700c6330565f8
 #: faq/design.rst:263
+#, fuzzy
 msgid ""
 "is an instruction to a string literal to return the substrings delimited by "
 "the given separator (or, by default, arbitrary runs of white space)."
@@ -542,6 +551,7 @@ msgstr ""
 
 # fad16fed6df34cb49c3562e4b10821ad
 #: faq/design.rst:266
+#, fuzzy
 msgid ""
 ":meth:`~str.join` is a string method because in using it you are telling the "
 "separator string to iterate over a sequence of strings and insert itself "
@@ -774,6 +784,7 @@ msgstr ""
 
 # 7d265ff1617c412ead4adad67ea29112
 #: faq/design.rst:437
+#, fuzzy
 msgid "Why doesn't CPython use a more traditional garbage collection scheme?"
 msgstr "Pourquoi Python utilise l'indentation pour grouper les instructions ?"
 
@@ -4618,6 +4629,7 @@ msgstr "En utilisant un dictionnaire, qui est modifié (en place)."
 
 # 9a84dbdb7dc64492a2d1a61a336a6a71
 #: faq/programming.rst:436
+#, fuzzy
 msgid "Or bundle up values in a class instance::"
 msgstr "Ou regrouper les valeurs dans une instance de classe::"
 
@@ -4682,6 +4694,7 @@ msgstr ""
 
 # 17b71c83171e4c5cabe9af3836292e7c
 #: faq/programming.rst:494
+#, fuzzy
 msgid "Object can encapsulate state for several methods::"
 msgstr "Les objets peuvent encapsuler un état pour plusieurs méthodes::"
 
@@ -4857,6 +4870,7 @@ msgstr "Existe-t'il un équivalent à l'opérateur \"?:\" ternaire du C?"
 
 # f285f229897d4744a78e0c6f0700ee66
 #: faq/programming.rst:606
+#, fuzzy
 msgid "Yes, there is. The syntax is as follows::"
 msgstr ""
 "Oui, cette fonctionnalité à été ajouté à partir de Python 2.5. La syntaxe "
@@ -5026,6 +5040,7 @@ msgstr ""
 
 # 7c051b526be64d069a5c70bc8bc22193
 #: faq/programming.rst:721
+#, fuzzy
 msgid ""
 ":func:`eval` also has the effect of interpreting numbers as Python "
 "expressions, so that e.g. ``eval('09')`` gives a syntax error because Python "
@@ -5150,6 +5165,7 @@ msgstr ""
 
 # 0ed8c568502a4376b9385fd9a9158136
 #: faq/programming.rst:828
+#, fuzzy
 msgid ""
 "You can use ``S.rstrip(\"\\r\\n\")`` to remove all occurrences of any line "
 "terminator from the end of the string ``S`` without removing other trailing "
@@ -5202,6 +5218,7 @@ msgstr ""
 
 # 2d1c0265499547989ce5d99d5594a32e
 #: faq/programming.rst:855
+#, fuzzy
 msgid ""
 "For more complicated input parsing, regular expressions are more powerful "
 "than C's :c:func:`sscanf` and better suited for the task."
@@ -5211,12 +5228,14 @@ msgstr ""
 
 # 7740dfbfc2e5403aa8a385cdc1651f65
 #: faq/programming.rst:860
+#, fuzzy
 msgid "What does 'UnicodeDecodeError' or 'UnicodeEncodeError' error  mean?"
 msgstr ""
 "Que signifient les erreurs  'UnicodeDecodeError' ou 'UnicodeEncodeError'?"
 
 # 6cadcb7c7ab84c398c698798b00ff69a
 #: faq/programming.rst:862
+#, fuzzy
 msgid "See the :ref:`unicode-howto`."
 msgstr "Regardez le :ref:`unicode-howto`."
 
@@ -5505,6 +5524,7 @@ msgstr ""
 
 # 2d66ca2a2707410ba965ef0f3083e832
 #: faq/programming.rst:1022
+#, fuzzy
 msgid ""
 "If all elements of the list may be used as set keys (i.e. they are all :term:"
 "`hashable`) this is often faster ::"
@@ -5759,6 +5779,7 @@ msgstr ""
 
 # b076947bf02f46d18268e5df47cf76a8
 #: faq/programming.rst:1161
+#, fuzzy
 msgid "For versions prior to 3.0, Isorted may also be computed by ::"
 msgstr ""
 "Pour les versions antérieures à 3.0, Isorted peut également être calculé par:"
@@ -5780,6 +5801,7 @@ msgstr ""
 
 # 1fded91566874c52932f3341b09f2e34
 #: faq/programming.rst:1179
+#, fuzzy
 msgid ""
 "Merge them into an iterator of tuples, sort the resulting list, and then "
 "pick out the element you want. ::"
@@ -5789,6 +5811,7 @@ msgstr ""
 
 # 524eb7a294a843d3adc0ab55d5fc479a
 #: faq/programming.rst:1193
+#, fuzzy
 msgid "An alternative for the last step is::"
 msgstr "Une alternative pour la dernière étape est la suivante::"
 
@@ -5904,6 +5927,7 @@ msgstr ""
 
 # 6c4089c0db9a454fa57f01eb67b7447b
 #: faq/programming.rst:1251
+#, fuzzy
 msgid ""
 "Use the built-in function ``isinstance(obj, cls)``.  You can check if an "
 "object is an instance of any of a number of classes by providing a tuple "
@@ -6030,11 +6054,13 @@ msgstr ""
 
 # 5fa1d145a0364172bae041a2855ceabf
 #: faq/programming.rst:1334
+#, fuzzy
 msgid "Use the built-in :func:`super` function::"
 msgstr "Utiliser la fonction :func:`getattr`::"
 
 # c8a6f07b0685461e9d774cd6ecfbd0aa
 #: faq/programming.rst:1340
+#, fuzzy
 msgid ""
 "For version prior to 3.0, you may be using classic classes: For a class "
 "definition such as ``class Derived(Base): ...`` you can call method "
@@ -6127,6 +6153,7 @@ msgstr ""
 
 # 71749b400f5c4f2699bb7385c4aef2f5
 #: faq/programming.rst:1393
+#, fuzzy
 msgid "Static methods are possible::"
 msgstr "Les méthodes statiques sont possibles depuis Python 2.2::"
 
@@ -6822,6 +6849,7 @@ msgstr ""
 
 # 6273ef2f07544479afc8aec29724330a
 #: faq/windows.rst:169
+#, fuzzy
 msgid "How do I make an executable from a Python script?"
 msgstr "Comment construire un tableau en Python?"
 

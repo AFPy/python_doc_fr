@@ -42,6 +42,7 @@ msgstr ""
 
 # fe9e78da272541e881b399a5188be78c
 #: distutils/apiref.rst:23
+#, fuzzy
 msgid ""
 "The basic do-everything function that does most everything you could ever "
 "ask for from a Distutils method."
@@ -117,6 +118,7 @@ msgstr "*version*"
 
 # 2621c1214f884b4d8eaf06f2bf5aff1d
 #: distutils/apiref.rst:34
+#, fuzzy
 msgid "The version number of the package; see :mod:`distutils.version`"
 msgstr "Le numéro de version du paquet"
 
@@ -269,6 +271,7 @@ msgstr "Une liste des extensions Python à construire"
 
 # d53bfaf8f8a74d2eb726b9c9dc2c5c29
 #: distutils/apiref.rst:75
+#, fuzzy
 msgid "a list of instances of :class:`distutils.core.Extension`"
 msgstr "Une liste d'instances de :class:`distutils.core.Extension'"
 
@@ -304,6 +307,7 @@ msgstr "la classe :class:`Distribution` à utiliser"
 
 # 0f97eb084ae743c29463989a4170728d
 #: distutils/apiref.rst:81
+#, fuzzy
 msgid "a subclass of :class:`distutils.core.Distribution`"
 msgstr "Une sous classe de :class:`distutils.core.Distribution`"
 
@@ -422,6 +426,7 @@ msgstr ""
 
 # 24815670b83242cd8b14e751c2e58514
 #: distutils/apiref.rst:121
+#, fuzzy
 msgid ""
 "*script_name* is a file that will be read and run with :func:`exec`.  ``sys."
 "argv[0]`` will be replaced with *script* for the duration of the call.  "
@@ -514,16 +519,19 @@ msgstr ""
 
 # 53a57db8b30647449025388edec69ae0
 #: distutils/apiref.rst:153
+#, fuzzy
 msgid ":class:`~distutils.extension.Extension` from :mod:`distutils.extension`"
 msgstr ":class:`Extension` de :mod:`distutils.extension`"
 
 # 1f5abaed439846919601a9d3b1711028
 #: distutils/apiref.rst:155
+#, fuzzy
 msgid ":class:`~distutils.cmd.Command` from :mod:`distutils.cmd`"
 msgstr ":class:`Command` de :mod:`distutils.cmd`"
 
 # e50d2a2c1ded43179ec7c4966f2351eb
 #: distutils/apiref.rst:157
+#, fuzzy
 msgid ":class:`~distutils.dist.Distribution` from :mod:`distutils.dist`"
 msgstr ":class:`Distribution` de :mod:`distutils.dist`"
 
@@ -606,6 +614,7 @@ msgstr ""
 
 # af5f64dd0e4b4341b61c43513a1bc3b3
 #: distutils/apiref.rst:194
+#, fuzzy
 msgid "a list of tuples"
 msgstr "une liste de chaînes"
 
@@ -730,6 +739,7 @@ msgstr ""
 
 # b050d10070f346559db135e5eb2633dd
 #: distutils/apiref.rst:267
+#, fuzzy
 msgid "*optional*"
 msgstr "*options*"
 
@@ -4682,6 +4692,7 @@ msgstr ""
 
 # d635de6dcdc24aef86072e30d6662261
 #: distutils/introduction.rst:47
+#, fuzzy
 msgid "A Simple Example"
 msgstr "Un exemple simple"
 
@@ -4846,6 +4857,7 @@ msgstr ""
 
 # 1401622346824e38bf483c6e0881351d
 #: distutils/introduction.rst:155
+#, fuzzy
 msgid "module"
 msgstr "*py_modules*"
 
@@ -4872,6 +4884,7 @@ msgstr ""
 
 # bd786f91f249497bbe73246666d23fe2
 #: distutils/introduction.rst:168
+#, fuzzy
 msgid "extension module"
 msgstr "*ext_modules*"
 
@@ -4889,6 +4902,7 @@ msgstr ""
 
 # 9e7e8ecacf794f52a6b8b3d8c1784f1b
 #: distutils/introduction.rst:173
+#, fuzzy
 msgid "package"
 msgstr "*packages*"
 
@@ -4902,6 +4916,7 @@ msgstr ""
 
 # ecf23fa967594ac29d1a9bf08841a389
 #: distutils/introduction.rst:183
+#, fuzzy
 msgid "root package"
 msgstr "*packages*"
 
@@ -4931,6 +4946,7 @@ msgstr ""
 
 # 597ac937c2f74c639e5a92e63d5e739d
 #: distutils/introduction.rst:199
+#, fuzzy
 msgid "module distribution"
 msgstr "description"
 
@@ -6280,6 +6296,7 @@ msgstr ""
 
 # 5d947ce54ee444798498a47cd4997191
 #: distutils/setupscript.rst:625
+#, fuzzy
 msgid "'short string'"
 msgstr "une chaîne de caractères"
 
@@ -6290,6 +6307,7 @@ msgstr ""
 
 # cbbf41cb0eb246f1be9270f385c65a92
 #: distutils/setupscript.rst:629
+#, fuzzy
 msgid "'long string'"
 msgstr "une chaîne de caractères"
 
@@ -6302,6 +6320,7 @@ msgstr ""
 
 # f2fe6962e79645f0a4838c2e39362fc8
 #: distutils/setupscript.rst:632
+#, fuzzy
 msgid "'list of strings'"
 msgstr "une liste de chaînes"
 

@@ -36,6 +36,7 @@ msgid "Documentation bugs"
 msgstr "Bogues de documentation"
 
 #: bugs.rst:15
+#, fuzzy
 msgid ""
 "If you find a bug in this documentation or would like to propose an "
 "improvement, please submit a bug report on the :ref:`tracker <using-the-"
@@ -47,6 +48,7 @@ msgstr ""
 "merci de l'inclure également."
 
 #: bugs.rst:19
+#, fuzzy
 msgid ""
 "If you're short on time, you can also email your bug report to docs@python."
 "org. 'docs@' is a mailing list run by volunteers; your request will be "
@@ -56,6 +58,7 @@ msgstr ""
 "demande sera prise en compte, même si sa prise en charge prend du temps."
 
 #: bugs.rst:24
+#, fuzzy
 msgid "`Documentation bugs`_ on the Python issue tracker"
 msgstr "Utilisation du tracker Python"
 
@@ -144,6 +147,7 @@ msgstr ""
 "informations de versions)."
 
 #: bugs.rst:60
+#, fuzzy
 msgid ""
 "Each bug report will be assigned to a developer who will determine what "
 "needs to be done to correct the problem.  You will receive an update each "

@@ -2106,6 +2106,7 @@ msgstr ""
 #: c-api/buffer.rst:301 c-api/buffer.rst:320 c-api/buffer.rst:322
 #: c-api/buffer.rst:324 c-api/buffer.rst:326 c-api/buffer.rst:328
 #: c-api/buffer.rst:330 c-api/buffer.rst:332 c-api/buffer.rst:334
+#, fuzzy
 msgid "yes"
 msgstr "oui"
 
@@ -2445,6 +2446,7 @@ msgid "Macro version of :c:func:`PyByteArray_Size`."
 msgstr ""
 
 #: c-api/bytes.rst:6
+#, fuzzy
 msgid "Bytes Objects"
 msgstr "Objets bytes"
 

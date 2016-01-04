@@ -29,6 +29,7 @@ msgstr "Python et cette documentation sont :"
 
 # f5ec7ac108f34c529af14662881a4928
 #: copyright.rst:7
+#, fuzzy
 msgid "Copyright © 2001-2015 Python Software Foundation. All rights reserved."
 msgstr ""
 "Copyright © 2001-2010 Python Software Foundation. Tous droits réservés."

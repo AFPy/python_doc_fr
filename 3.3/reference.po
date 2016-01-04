@@ -2155,6 +2155,7 @@ msgid ""
 msgstr ""
 
 #: reference/datamodel.rst:1336
+#, fuzzy
 msgid "See also :envvar:`PYTHONHASHSEED`."
 msgstr "Voir aussi :envvar:`PYTHONUNBUFFERED`."
 

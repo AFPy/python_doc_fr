@@ -4027,6 +4027,7 @@ msgid ""
 msgstr ""
 
 #: distutils/introduction.rst:47
+#, fuzzy
 msgid "A Simple Example"
 msgstr "Un exemple simple"
 

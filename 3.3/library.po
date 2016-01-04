@@ -773,6 +773,7 @@ msgid ":pep:`3112`: *Bytes literals in Python 3000*"
 msgstr ""
 
 #: library/__future__.rst:94
+#, fuzzy
 msgid "future"
 msgstr "fonctionnalité"
 
@@ -83301,6 +83302,7 @@ msgid ""
 msgstr ""
 
 #: library/site.rst:228
+#, fuzzy
 msgid ":pep:`370` -- Per user site-packages directory"
 msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
 
@@ -87346,6 +87348,7 @@ msgstr ""
 
 #: library/ssl.rst:192 library/ssl.rst:193 library/ssl.rst:194
 #: library/ssl.rst:195
+#, fuzzy
 msgid "yes"
 msgstr "oui"
 

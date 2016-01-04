@@ -134,6 +134,7 @@ msgstr ""
 "caractères indiquant la source du programme."
 
 #: using/cmdline.rst:64
+#, fuzzy
 msgid ""
 "Execute the Python code in *command*.  *command* can be one or more "
 "statements separated by newlines, with significant leading whitespace as in "
@@ -203,6 +204,7 @@ msgstr ""
 "disponible."
 
 #: using/cmdline.rst:97
+#, fuzzy
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be the "
 "full path to the module file (while the module file is being located, the "
@@ -247,6 +249,7 @@ msgstr ""
 "standard est un terminal, l':option:`-i` est activée implicitement."
 
 #: using/cmdline.rst:124
+#, fuzzy
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be ``\"-"
 "\"`` and the current directory will be added to the start of :data:`sys."
@@ -276,6 +279,7 @@ msgstr ""
 "nom du script comme donné sur la ligne de commande."
 
 #: using/cmdline.rst:139
+#, fuzzy
 msgid ""
 "If the script name refers directly to a Python file, the directory "
 "containing that file is added to the start of :data:`sys.path`, and the file "
@@ -286,6 +290,7 @@ msgstr ""
 "est exécuté en tant que module :mod:`__main__`."
 
 #: using/cmdline.rst:143
+#, fuzzy
 msgid ""
 "If the script name refers to a directory or zipfile, the script name is "
 "added to the start of :data:`sys.path` and the ``__main__.py`` file in that "
@@ -310,24 +315,29 @@ msgid ":ref:`tut-invoking`"
 msgstr ""
 
 #: using/cmdline.rst:156
+#, fuzzy
 msgid "Generic options"
 msgstr "Options génériques"
 
 #: using/cmdline.rst:162
+#, fuzzy
 msgid "Print a short description of all command line options."
 msgstr ""
 "Affiche une brève description de toutes les options de ligne de commande."
 
 #: using/cmdline.rst:168
+#, fuzzy
 msgid "Print the Python version number and exit.  Example output could be::"
 msgstr ""
 "Imprimer le numéro de version de Python et termine. Exemple de sortie ::"
 
 #: using/cmdline.rst:174
+#, fuzzy
 msgid "Miscellaneous options"
 msgstr "Options diverses"
 
 #: using/cmdline.rst:178
+#, fuzzy
 msgid ""
 "Issue a warning when comparing str and bytes. Issue an error when the option "
 "is given twice (:option:`-bb`)."
@@ -432,16 +442,19 @@ msgid ""
 msgstr ""
 
 #: using/cmdline.rst:254
+#, fuzzy
 msgid ""
 "Don't add the :data:`user site-packages directory <site.USER_SITE>` to :data:"
 "`sys.path`."
 msgstr "Ne pas ajouter le répertoire spécifique de l’utilisateur à sys.path"
 
 #: using/cmdline.rst:259 using/cmdline.rst:530 using/cmdline.rst:542
+#, fuzzy
 msgid ":pep:`370` -- Per user site-packages directory"
 msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
 
 #: using/cmdline.rst:264
+#, fuzzy
 msgid ""
 "Disable the import of the module :mod:`site` and the site-dependent "
 "manipulations of :data:`sys.path` that it entails.  Also disable these "
@@ -452,6 +465,7 @@ msgstr ""
 "`sys.path` spécifiques au site qu’elle implique."
 
 #: using/cmdline.rst:272
+#, fuzzy
 msgid ""
 "Force the binary layer of the stdout and stderr streams (which is available "
 "as their ``buffer`` attribute) to be unbuffered. The text I/O layer will "
@@ -483,6 +497,7 @@ msgid ""
 msgstr ""
 
 #: using/cmdline.rst:297
+#, fuzzy
 msgid ""
 "By default, each warning is printed once for each source line where it "
 "occurs.  This option controls how often warnings are printed."
@@ -506,6 +521,7 @@ msgid ""
 msgstr ""
 
 #: using/cmdline.rst:308
+#, fuzzy
 msgid ""
 "The simplest form of argument is one of the following action strings (or a "
 "unique abbreviation):"
@@ -518,6 +534,7 @@ msgid "ignore"
 msgstr ""
 
 #: using/cmdline.rst:312
+#, fuzzy
 msgid "Ignore all warnings."
 msgstr "Ignorer tous les avertissements."
 
@@ -536,6 +553,7 @@ msgid "all"
 msgstr ""
 
 #: using/cmdline.rst:317
+#, fuzzy
 msgid ""
 "Print a warning each time it occurs (this may generate many messages if a "
 "warning is triggered repeatedly for the same source line, such as inside a "
@@ -550,6 +568,7 @@ msgid "module"
 msgstr "module"
 
 #: using/cmdline.rst:321
+#, fuzzy
 msgid "Print each warning only the first time it occurs in each module."
 msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
@@ -560,6 +579,7 @@ msgid "once"
 msgstr ""
 
 #: using/cmdline.rst:323
+#, fuzzy
 msgid "Print each warning only the first time it occurs in the program."
 msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
@@ -570,14 +590,17 @@ msgid "error"
 msgstr ""
 
 #: using/cmdline.rst:325
+#, fuzzy
 msgid "Raise an exception instead of printing a warning message."
 msgstr "Déclenche une exception au lieu d'afficher un message d'avertissement."
 
 #: using/cmdline.rst:327
+#, fuzzy
 msgid "The full form of argument is::"
 msgstr "La forme complète de l'argument est le suivant::"
 
 #: using/cmdline.rst:331
+#, fuzzy
 msgid ""
 "Here, *action* is as explained above but only applies to messages that match "
 "the remaining fields.  Empty fields match all values; trailing empty fields "
@@ -622,6 +645,7 @@ msgid ""
 msgstr ""
 
 #: using/cmdline.rst:355
+#, fuzzy
 msgid "The line numbers in error messages will be off by one."
 msgstr ""
 "Les numéros de ligne dans les messages d'erreur seront désactivés un par un."
@@ -647,6 +671,7 @@ msgid "Options you shouldn't use"
 msgstr "Options que vous ne devriez pas utiliser"
 
 #: using/cmdline.rst:377
+#, fuzzy
 msgid "Reserved for use by Jython_."
 msgstr "Utilisation réservée à Jython_."
 
@@ -1550,6 +1575,7 @@ msgid "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"
 msgstr ""
 
 #: using/windows.rst:48
+#, fuzzy
 msgid "Installing on Windows"
 msgstr "Compiler Python sous Windows"
 
@@ -1691,6 +1717,7 @@ msgid "Setting Environment variables, Louis J. Farrugia"
 msgstr "Définir les variables d'environnement, Louis J. Farrugia"
 
 #: using/windows.rst:134
+#, fuzzy
 msgid "Finding the Python executable"
 msgstr "Trouver l'exécutable Python"
 
@@ -1872,6 +1899,7 @@ msgid "Getting started"
 msgstr ""
 
 #: using/windows.rst:260
+#, fuzzy
 msgid "From the command-line"
 msgstr "Ligne de commande"
 
@@ -2216,10 +2244,12 @@ msgid "Win32 API calls"
 msgstr "Appels à l'API Win32"
 
 #: using/windows.rst:508
+#, fuzzy
 msgid "Registry"
 msgstr "Registre"
 
 #: using/windows.rst:509
+#, fuzzy
 msgid "Event log"
 msgstr "journal d'événement"
 
@@ -2251,6 +2281,7 @@ msgid "by Tim Golden"
 msgstr "par Tim Golden"
 
 #: using/windows.rst:522
+#, fuzzy
 msgid "Python and COM"
 msgstr "Python 3.0"
 
@@ -2356,6 +2387,7 @@ msgid "2005"
 msgstr "2005"
 
 #: using/windows.rst:569
+#, fuzzy
 msgid ":file:`PC/VS9.0/`"
 msgstr ":file:`PC/VS8.0/`"
 
@@ -2387,6 +2419,7 @@ msgid ""
 msgstr ""
 
 #: using/windows.rst:578
+#, fuzzy
 msgid ""
 "Check :file:`PCbuild/readme.txt` for general information on the build "
 "process."
@@ -2434,6 +2467,7 @@ msgstr ""
 "Media, 2000, ISBN 1-56592-621-8"
 
 #: using/windows.rst:605
+#, fuzzy
 msgid "A Python for Windows Tutorial"
 msgstr "Compiler Python sous Windows"
 

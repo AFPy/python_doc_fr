@@ -108,16 +108,19 @@ msgstr "Propriétaire"
 
 # 5163dee8748f428ea6e60254d711c144
 #: license.rst:35
+#, fuzzy
 msgid "GPL compatible?"
 msgstr "Compatible avec la GPL ?"
 
 # adb255038ed04e2ca1ead2b3420db2c5
 #: license.rst:37
+#, fuzzy
 msgid "0.9.0 thru 1.2"
 msgstr "0.9.0 à 1.2"
 
 # 67ce94f31f0944ee98e9abdb76fc7f39
 #: license.rst:37
+#, fuzzy
 msgid "n/a"
 msgstr "n/a"
 
@@ -182,11 +185,13 @@ msgstr "CWI"
 #: license.rst:105 license.rst:107 license.rst:109 license.rst:111
 #: license.rst:113 license.rst:115 license.rst:117 license.rst:119
 #: license.rst:121 license.rst:123 license.rst:125 license.rst:127
+#, fuzzy
 msgid "yes"
 msgstr "oui"
 
 # a0766dc6a2b3424baab97c5fc2ab5010
 #: license.rst:39
+#, fuzzy
 msgid "1.3 thru 1.5.2"
 msgstr "1.3 à 1.5.2"
 
@@ -676,6 +681,7 @@ msgstr ""
 
 # 6c91b517fe424c1ebe9d42521a627f5b
 #: license.rst:138
+#, fuzzy
 msgid ""
 "Thanks to the many outside volunteers who have worked under Guido's "
 "direction to make these releases possible."
