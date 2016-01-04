@@ -472,7 +472,7 @@ msgstr ""
 
 #: c-api/arg.rst:116
 msgid "S (bytes) [PyBytesObject *]"
-msgstr "Objets bytes"
+msgstr ""
 
 #: c-api/arg.rst:114
 msgid ""
@@ -572,7 +572,7 @@ msgstr ""
 
 #: c-api/arg.rst:152
 msgid "U (str) [PyObject *]"
-msgstr "Objets bytes"
+msgstr ""
 
 #: c-api/arg.rst:150
 msgid ""
@@ -940,7 +940,7 @@ msgstr "Autres Objets"
 
 #: c-api/arg.rst:289 c-api/arg.rst:605
 msgid "O (object) [PyObject *]"
-msgstr "Objets bytes"
+msgstr ""
 
 #: c-api/arg.rst:287
 msgid ""
@@ -955,7 +955,7 @@ msgstr ""
 
 #: c-api/arg.rst:296
 msgid "O! (object) [typeobject, PyObject *]"
-msgstr "Objets bytes"
+msgstr ""
 
 #: c-api/arg.rst:292
 msgid ""
@@ -1501,7 +1501,7 @@ msgstr ""
 
 #: c-api/arg.rst:608
 msgid "S (object) [PyObject *]"
-msgstr "Objets bytes"
+msgstr ""
 
 #: c-api/arg.rst:608
 msgid "Same as ``O``."
@@ -1509,7 +1509,7 @@ msgstr ""
 
 #: c-api/arg.rst:613
 msgid "N (object) [PyObject *]"
-msgstr "Objets bytes"
+msgstr ""
 
 #: c-api/arg.rst:611
 msgid ""
@@ -10455,7 +10455,7 @@ msgstr ""
 #: c-api/structures.rst:260 c-api/structures.rst:261
 #, fuzzy
 msgid "PyObject \\*"
-msgstr "Objets bytes"
+msgstr ""
 
 #: c-api/structures.rst:261
 msgid "T_OBJECT_EX"
@@ -13047,7 +13047,7 @@ msgstr ""
 #: c-api/unicode.rst:502 c-api/unicode.rst:505 c-api/unicode.rst:514
 #: c-api/unicode.rst:517
 msgid "PyObject\\*"
-msgstr "Objets bytes"
+msgstr ""
 
 #: c-api/unicode.rst:502
 msgid "The result of calling :func:`ascii`."

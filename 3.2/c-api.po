@@ -11078,9 +11078,8 @@ msgstr ""
 # fe4563119b2745d78b0587ef41b4e716
 # 0555d1c1c3304b0e91a00b6877d1353f
 #: c-api/structures.rst:260 c-api/structures.rst:261
-#, fuzzy
 msgid "PyObject \\*"
-msgstr "Objets bytes"
+msgstr ""
 
 # 2bc0e7c3bfed43b59b181ba709034351
 #: c-api/structures.rst:261
@@ -13572,7 +13571,7 @@ msgstr ""
 #: c-api/unicode.rst:295 c-api/unicode.rst:298 c-api/unicode.rst:307
 #: c-api/unicode.rst:310
 msgid "PyObject\\*"
-msgstr "Objets bytes"
+msgstr ""
 
 # 6298ce6711f54f62a62a889e5a24a0bf
 #: c-api/unicode.rst:295
