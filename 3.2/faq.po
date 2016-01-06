@@ -5173,11 +5173,11 @@ msgid ""
 "empty lines at the end, the line terminators for all the blank lines will be "
 "removed::"
 msgstr ""
-"À partir de Python 2.2 vous pouvez utiliser ``S.rstrip(\"\r\n"
-"\")`` pour retirer toute occurrence de n'importe quel terminateur de ligne à "
-"la fin d'une chaine de caractère ``S``, sans retirer aucun espace de fin de "
-"ligne. Si la chaine ``S`` représente plus d'une ligne, avec plusieurs lignes "
-"vides, les terminateurs de lignes de toutes les lignes vides seront retirés::"
+"À partir de Python 2.2 vous pouvez utiliser ``S.rstrip(\"\\r\\n\")`` pour "
+"retirer toute occurrence de n'importe quel terminateur de ligne à la fin "
+"d'une chaine de caractère ``S``, sans retirer aucun espace de fin de ligne. "
+"Si la chaine ``S`` représente plus d'une ligne, avec plusieurs lignes vides, "
+"les terminateurs de lignes de toutes les lignes vides seront retirés::"
 
 # c5dc2770577c48e889ccde7157b65579
 #: faq/programming.rst:840
