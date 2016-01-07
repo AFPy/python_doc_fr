@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Usage: progression.sh --update_readme README.rst
+
+if [ z"$1" = z"--update-readme" ]
+then
+    $0 | sed 's/ \+$//' |
+    sed -i '/^=============== =/,/^=============== =/{ /version/{r /dev/stdin
+        }; d }' "$2"
+    exit 0
+fi
+
 printf "=============== ====== ====== ====== ====== ======\n"
 printf "        version    2.7    3.2    3.3    3.4    3.5\n"
 printf -- "--------------- ------ ------ ------ ------ ------\n"
@@ -14,8 +24,9 @@ do
     do
         if [ -f "$version/$file.po" ]
         then
-            translated="$(msgattrib --translated $version/$file.po 2>/dev/null |
-                          grep -c ^msgid)"
+            translated="$(
+               msgattrib --translated --no-fuzzy $version/$file.po 2>/dev/null |
+               grep -c ^msgid)"
             total="$(grep -c ^msgid $version/$file.po)"
         else
             translated=0
