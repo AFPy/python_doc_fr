@@ -22,7 +22,7 @@ Progression de la traduction:
      installing    23%     0%     0%    22%    22%
         license    29%    43%    29%    28%    35%
         install    21%    22%    22%    21%    21%
-       glossary    78%    88%    95%    97%    99%
+       glossary    78%    88%    95%    97%   100%
       extending     8%     8%     8%     8%    15%
           using    20%    23%    18%    14%    10%
        tutorial    95%    90%    96%    99%   100%
