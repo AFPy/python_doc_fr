@@ -15,15 +15,15 @@ Progression de la traduction:
 --------------- ------ ------ ------ ------ ------
        contents   100%   100%   100%   100%   100%
       copyright    87%    87%    87%    87%   100%
-          about    90%    91%    90%    90%   100%
+          about    90%    91%    90%   100%   100%
            bugs    76%    71%    76%    90%   100%
    distributing   100%     0%     0%   100%   100%
          sphinx   100%    95%    95%   100%   100%
-     installing    23%     0%     0%    22%    22%
+     installing    84%     0%     0%   100%   100%
         license    29%    43%    29%    28%    35%
         install    21%    22%    22%    21%    21%
        glossary    78%    88%    95%    97%   100%
-      extending     8%     8%     8%     8%    15%
+      extending    12%    12%    12%    13%    15%
           using    20%    23%    18%    14%    10%
        tutorial    95%    90%    96%    99%   100%
             faq    21%    20%    19%    19%    19%
