@@ -28,11 +28,10 @@ do
                msgattrib --translated --no-fuzzy $version/$file.po 2>/dev/null |
                grep -c ^msgid)"
             total="$(grep -c ^msgid $version/$file.po)"
+            printf "%5s%% " "$((100 * $translated / $total))"
         else
-            translated=0
-            total=1
+            printf "%6s " "N/A"
         fi
-        printf "%5s%% " "$((100 * $translated / $total))"
     done
     printf "\n"
 done

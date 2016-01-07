@@ -17,9 +17,9 @@ Progression de la traduction:
       copyright    87%    87%    87%    87%   100%
           about    90%    91%    90%   100%   100%
            bugs    76%    71%    76%    90%   100%
-   distributing   100%     0%     0%   100%   100%
+   distributing   100%    N/A    N/A   100%   100%
          sphinx   100%    95%    95%   100%   100%
-     installing    84%     0%     0%   100%   100%
+     installing    84%    N/A    N/A   100%   100%
         license    29%    43%    29%    28%    35%
         install    21%    22%    22%    21%    21%
        glossary    78%    88%    95%    97%   100%
