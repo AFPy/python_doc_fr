@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import csv
 import polib
 
@@ -5,7 +7,7 @@ import polib
 def csv2po(csvfile, pofile, msgid_column=0, msgstr_column=1):
     translations = {}
     with open(csvfile) as opened_csvfile:
-        dialect = csv.Sniffer().sniff(opened_csvfile.read(1024))
+        dialect = csv.Sniffer().sniff(opened_csvfile.read())
         opened_csvfile.seek(0)
         reader = csv.reader(opened_csvfile, dialect)
         for line in reader:
