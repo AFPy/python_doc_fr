@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: progression.sh --update_readme README.rst
+# Usage: progression.sh --update-readme README.rst
 
 if [ z"$1" = z"--update-readme" ]
 then
