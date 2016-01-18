@@ -20,7 +20,7 @@ Progression de la traduction:
    distributing   100%    N/A    N/A   100%   100%
          sphinx   100%    95%    95%   100%   100%
      installing    84%    N/A    N/A   100%   100%
-        license    29%    43%    29%    28%    37%
+        license    29%    43%    29%    28%   100%
         install    21%    22%    22%    21%    21%
        glossary    78%    88%    95%    97%   100%
       extending    12%    12%    12%    13%    19%
