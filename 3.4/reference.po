@@ -290,7 +290,6 @@ msgid ""
 "or :keyword:`break` statement, the saved exception is discarded::"
 msgstr ""
 
-# a456408e32484ed7a9360d2a980341cd
 #: reference/compound_stmts.rst:333
 msgid ""
 "The exception information is not available to the program during execution "
@@ -307,7 +306,6 @@ msgid ""
 "--- this restriction may be lifted in the future)."
 msgstr ""
 
-# 09bfd574bc524511928a2d512ad7a339
 #: reference/compound_stmts.rst:348
 msgid ""
 "The return value of a function is determined by the last :keyword:`return` "
@@ -341,7 +339,6 @@ msgid ""
 "follows:"
 msgstr ""
 
-# b7c6cf84fdc14044bceff98a4a84aa5a
 #: reference/compound_stmts.rst:388
 msgid ""
 "The context expression (the expression given in the :token:`with_item`) is "
@@ -609,7 +606,6 @@ msgstr ""
 msgid "Footnotes"
 msgstr "Notes"
 
-# a93e0edf24f94b76b62618582bf50dc5
 #: reference/compound_stmts.rst:665
 msgid ""
 "The exception is propagated to the invocation stack unless there is a :"
@@ -778,7 +774,6 @@ msgid ""
 "future."
 msgstr ""
 
-# 6af85f376d8e4e15991b6e063789595d
 #: reference/datamodel.rst:150
 msgid "None"
 msgstr ""
@@ -791,7 +786,6 @@ msgid ""
 "functions that don't explicitly return anything. Its truth value is false."
 msgstr ""
 
-# 2dbd77a018804c8dae256820666e33f3
 #: reference/datamodel.rst:165
 msgid "NotImplemented"
 msgstr ""
@@ -810,7 +804,6 @@ msgstr ""
 msgid "See :ref:`implementing-the-arithmetic-operations` for more details."
 msgstr ""
 
-# 1617e5bfd452481c80c35729a58e1093
 #: reference/datamodel.rst:172
 msgid "Ellipsis"
 msgstr ""
@@ -893,7 +886,6 @@ msgstr ""
 msgid "numbers.Real (float)"
 msgstr ""
 
-# 7903b962cec34aee8f333e0f2fb4215e
 #: reference/datamodel.rst:226
 msgid ""
 "These represent machine-level double precision floating point numbers. You "
@@ -917,7 +909,6 @@ msgid ""
 "retrieved through the read-only attributes ``z.real`` and ``z.imag``."
 msgstr ""
 
-# 3c601840a65349a1acf8fe090791a8e5
 #: reference/datamodel.rst:359
 msgid "Sequences"
 msgstr ""
@@ -949,7 +940,6 @@ msgstr ""
 msgid "Sequences are distinguished according to their mutability:"
 msgstr ""
 
-# cd5bbb030fe14b09ae8240dcf8ad7d1f
 #: reference/datamodel.rst:325
 msgid "Immutable sequences"
 msgstr ""
@@ -966,7 +956,6 @@ msgstr ""
 msgid "The following types are immutable sequences:"
 msgstr ""
 
-# caf3cd5ee98841eda871ef1e84af8f8f
 #: reference/datamodel.rst:303
 msgid "Strings"
 msgstr "Les chaînes de caractères"
@@ -985,7 +974,6 @@ msgid ""
 "to achieve the opposite."
 msgstr ""
 
-# 9d453b389c094952a60e1145c0159ae5
 #: reference/datamodel.rst:316
 msgid "Tuples"
 msgstr ""
@@ -1013,7 +1001,6 @@ msgid ""
 "`~bytes.decode` method."
 msgstr ""
 
-# 1ba7d42f927f4a22aed32ebd336c85b3
 #: reference/datamodel.rst:359
 msgid "Mutable sequences"
 msgstr ""
@@ -1029,7 +1016,6 @@ msgstr ""
 msgid "There are currently two intrinsic mutable sequence types:"
 msgstr ""
 
-# 1da278a6a29745b3b2a403b4084ebad7
 #: reference/datamodel.rst:346
 msgid "Lists"
 msgstr "Les listes"
@@ -1041,7 +1027,6 @@ msgid ""
 "there are no special cases needed to form lists of length 0 or 1.)"
 msgstr ""
 
-# aefdd452318f4aaaadd0560e3ef41a5e
 #: reference/datamodel.rst:354
 msgid "Byte Arrays"
 msgstr ""
@@ -1060,7 +1045,6 @@ msgid ""
 "mutable sequence type, as does the :mod:`collections` module."
 msgstr ""
 
-# 2f7aab895c7d43858d878c1934cde388
 #: reference/datamodel.rst:393
 msgid "Set types"
 msgstr ""
@@ -1087,12 +1071,10 @@ msgstr ""
 msgid "There are currently two intrinsic set types:"
 msgstr ""
 
-# 2b181f2fd0c9482db2e1860b491fc739
 #: reference/datamodel.rst:385
 msgid "Sets"
 msgstr "Les ensembles"
 
-# 42da18eafdeb400cb5ec2db21fd97ebe
 #: reference/datamodel.rst:383
 msgid ""
 "These represent a mutable set. They are created by the built-in :func:`set` "
@@ -1100,7 +1082,6 @@ msgid ""
 "`~set.add`."
 msgstr ""
 
-# 046b68589a5c4c489295a463240770a6
 #: reference/datamodel.rst:393
 msgid "Frozen sets"
 msgstr ""
@@ -1112,7 +1093,6 @@ msgid ""
 "it can be used again as an element of another set, or as a dictionary key."
 msgstr ""
 
-# 50dff33f14f640d89869365269fc8008
 #: reference/datamodel.rst:430
 msgid "Mappings"
 msgstr ""
@@ -1130,7 +1110,6 @@ msgstr ""
 msgid "There is currently a single intrinsic mapping type:"
 msgstr ""
 
-# 1401c1869aff43039fd8375bf7b3d11a
 #: reference/datamodel.rst:430
 msgid "Dictionaries"
 msgstr "Dictionnaires"
@@ -1159,7 +1138,6 @@ msgid ""
 "examples of mapping types, as does the :mod:`collections` module."
 msgstr ""
 
-# 31c6b46636d245fea435cea46f7bd0e6
 #: reference/datamodel.rst:656
 msgid "Callable types"
 msgstr ""
@@ -1170,7 +1148,6 @@ msgid ""
 "`calls`) can be applied:"
 msgstr ""
 
-# 02e3d46b71774a2fb852c08a14010643
 #: reference/datamodel.rst:533
 msgid "User-defined functions"
 msgstr ""
@@ -1415,7 +1392,6 @@ msgid ""
 "the function is an attribute of the class."
 msgstr ""
 
-# d06649a933304a91bcc1fc562339b36d
 #: reference/datamodel.rst:617
 msgid "Generator functions"
 msgstr ""
@@ -1433,7 +1409,6 @@ msgid ""
 "returned."
 msgstr ""
 
-# a54e20b73e7249eb8e492e40fdc356bc
 #: reference/datamodel.rst:632
 msgid "Built-in functions"
 msgstr ""
@@ -1450,12 +1425,10 @@ msgid ""
 "function was defined in or ``None`` if unavailable."
 msgstr ""
 
-# 403a08fff2014365a38ad5bc8b330666
 #: reference/datamodel.rst:644
 msgid "Built-in methods"
 msgstr ""
 
-# ae49a031018c4787909d7e961bbef93b
 #: reference/datamodel.rst:640
 msgid ""
 "This is really a different disguise of a built-in function, this time "
@@ -1465,7 +1438,6 @@ msgid ""
 "attr:`__self__` is set to the object denoted by *alist*."
 msgstr ""
 
-# dec5c1bb2d844ee0a239a6b253cce479
 #: reference/datamodel.rst:651
 msgid "Classes"
 msgstr "Classes"
@@ -1489,7 +1461,6 @@ msgid ""
 "`__call__` method in their class."
 msgstr ""
 
-# 8b81f6145bc44987a6cbf4205bc1f0c8
 #: reference/datamodel.rst:703
 msgid "Modules"
 msgstr "Modules"
@@ -1520,7 +1491,6 @@ msgid ""
 "dictionary object."
 msgstr ""
 
-# 9535f61b76ba466986a636c5e38fd388
 #: reference/datamodel.rst:685
 msgid ""
 "Because of the way CPython clears module dictionaries, the module dictionary "
@@ -1584,7 +1554,6 @@ msgid ""
 "below)."
 msgstr ""
 
-# 511dec8cb42742be80978908ec4e83f8
 #: reference/datamodel.rst:754
 msgid ""
 "Special attributes: :attr:`__name__` is the class name; :attr:`__module__` "
@@ -1595,8 +1564,6 @@ msgid ""
 "class's documentation string, or None if undefined."
 msgstr ""
 
-# 4c0a611441684ed4a65195c94fa46f0b
-# 38b0e10b8a7843cb9c991bea5683c384
 #: reference/datamodel.rst:802
 msgid "Class instances"
 msgstr ""
@@ -1632,7 +1599,6 @@ msgid ""
 "have methods with certain special names.  See section :ref:`specialnames`."
 msgstr ""
 
-# f6adef6a193c46049af4d4d1920b001c
 #: reference/datamodel.rst:801
 msgid ""
 "Special attributes: :attr:`~object.__dict__` is the attribute dictionary; :"
@@ -1660,7 +1626,6 @@ msgid ""
 "interface defined by the :class:`io.TextIOBase` abstract class."
 msgstr ""
 
-# 55a3c6b48f574bdca1e6bc5ba9677fb5
 #: reference/datamodel.rst:1036
 msgid "Internal types"
 msgstr ""
@@ -1672,7 +1637,6 @@ msgid ""
 "they are mentioned here for completeness."
 msgstr ""
 
-# eaee202b99024fc4a04d4a87446d8bd7
 #: reference/datamodel.rst:905
 #, fuzzy
 msgid "Code objects"
@@ -1739,7 +1703,6 @@ msgid ""
 "is the documentation string of the function, or ``None`` if undefined."
 msgstr ""
 
-# af1eff0271274124bb8f8853bc33107c
 #: reference/datamodel.rst:954
 msgid "Frame objects"
 msgstr ""
@@ -1787,7 +1750,6 @@ msgstr ""
 msgid ":exc:`RuntimeError` is raised if the frame is currently executing."
 msgstr ""
 
-# 853b4e93f4b84e1aaf1b12f20a42c778
 #: reference/datamodel.rst:992
 msgid "Traceback objects"
 msgstr ""
@@ -1818,7 +1780,6 @@ msgid ""
 "with no matching except clause or with a finally clause."
 msgstr ""
 
-# 99ac9d5a67cf40f69ef4429c229741ca
 #: reference/datamodel.rst:1018
 msgid "Slice objects"
 msgstr ""
@@ -1829,7 +1790,6 @@ msgid ""
 "They are also created by the built-in :func:`slice` function."
 msgstr ""
 
-# 06420b9e10e844b29739c809a8509b2e
 #: reference/datamodel.rst:1005
 msgid ""
 "Special read-only attributes: :attr:`~slice.start` is the lower bound; :attr:"
@@ -1851,7 +1811,6 @@ msgid ""
 "a manner consistent with regular slices."
 msgstr ""
 
-# d896fb9f843b4e58b976e21917dbf786
 #: reference/datamodel.rst:1028
 msgid "Static method objects"
 msgstr ""
@@ -1868,7 +1827,6 @@ msgid ""
 "are created by the built-in :func:`staticmethod` constructor."
 msgstr ""
 
-# 3546aa8801ef461cb18fb7ec7ee47246
 #: reference/datamodel.rst:1036
 msgid "Class method objects"
 msgstr ""
@@ -1900,7 +1858,6 @@ msgid ""
 "`TypeError`)."
 msgstr ""
 
-# 13953edb87744504a6a2a3f440ba08fa
 #: reference/datamodel.rst:1057
 msgid ""
 "When implementing a class that emulates any built-in type, it is important "
@@ -2336,7 +2293,6 @@ msgstr ""
 msgid "Implementing Descriptors"
 msgstr ""
 
-# 6cc1116071a2463390cee6cb14744300
 #: reference/datamodel.rst:1456
 msgid ""
 "The following methods only apply when an instance of the class containing "
@@ -2413,7 +2369,6 @@ msgid ""
 "arguments are assembled depends on ``a``:"
 msgstr ""
 
-# 791962457fbc46a6819506356b104b7f
 #: reference/datamodel.rst:1518
 msgid "Direct Call"
 msgstr ""
@@ -2424,7 +2379,6 @@ msgid ""
 "descriptor method:    ``x.__get__(a)``."
 msgstr ""
 
-# 2d6801b131824abc9a483e3ba3917449
 #: reference/datamodel.rst:1522
 msgid "Instance Binding"
 msgstr ""
@@ -2435,7 +2389,6 @@ msgid ""
 "``type(a).__dict__['x'].__get__(a, type(a))``."
 msgstr ""
 
-# 8fb2e41704a64ccca3a54c789e8d01fd
 #: reference/datamodel.rst:1526
 msgid "Class Binding"
 msgstr ""
@@ -2446,12 +2399,10 @@ msgid ""
 "__dict__['x'].__get__(None, A)``."
 msgstr ""
 
-# 4e5871e9a56d4456ae25aa9b04c80d74
 #: reference/datamodel.rst:1532
 msgid "Super Binding"
 msgstr ""
 
-# 415b17f3d1df4684bf21da7e6b531d23
 #: reference/datamodel.rst:1529
 msgid ""
 "If ``a`` is an instance of :class:`super`, then the binding ``super(B, obj)."
@@ -2827,7 +2778,6 @@ msgstr ""
 msgid "PEP 3119 - Introducing Abstract Base Classes"
 msgstr ""
 
-# 966728cc696b41b9b465d0843a51366f
 #: reference/datamodel.rst:1807
 msgid ""
 "Includes the specification for customizing :func:`isinstance` and :func:"
@@ -3356,7 +3306,6 @@ msgid ""
 "statement must precede all uses of the name."
 msgstr ""
 
-# 0e16b14a4dfb44339ed0248e5bd28bdd
 #: reference/executionmodel.rst:129
 msgid ""
 "The :keyword:`global` statement has the same scope as a name binding "
@@ -3603,7 +3552,6 @@ msgid ""
 "`NameError` exception."
 msgstr ""
 
-# 3ccc4d78527a4706bad4729092614920
 #: reference/expressions.rst:84
 msgid ""
 "**Private name mangling:** When an identifier that textually occurs in a "
@@ -3636,7 +3584,6 @@ msgid ""
 "(complex) literals.  See section :ref:`literals` for details."
 msgstr ""
 
-# b36e60895e204cf699e4a948e5ca1095
 #: reference/expressions.rst:119
 msgid ""
 "All literals correspond to immutable data types, and hence the object's "
@@ -3948,19 +3895,16 @@ msgid ""
 "to sub-generators easy."
 msgstr ""
 
-# f7e403a1fdfc4774aea8ef5bccd791f5
 #: reference/expressions.rst:395
 msgid "Generator-iterator methods"
 msgstr ""
 
-# 58d143f990024d358fc30a950510d75f
 #: reference/expressions.rst:397
 msgid ""
 "This subsection describes the methods of a generator iterator.  They can be "
 "used to control the execution of a generator function."
 msgstr ""
 
-# c091bbb4768b4aed8523c84c4a4432f4
 #: reference/expressions.rst:400
 msgid ""
 "Note that calling any of the generator methods below when the generator is "
@@ -4159,7 +4103,6 @@ msgstr ""
 msgid "Calls"
 msgstr ""
 
-# 53eb6238970d4a56b1b199d855596e4a
 #: reference/expressions.rst:646
 msgid ""
 "A call calls a callable object (e.g., a :term:`function`) with a possibly "
@@ -4204,7 +4147,6 @@ msgid ""
 "call."
 msgstr ""
 
-# 9982809b8b8b456fbe25cc9e3b8d6cd6
 #: reference/expressions.rst:696
 msgid ""
 "An implementation may provide built-in functions whose positional parameters "
@@ -4233,7 +4175,6 @@ msgid ""
 "(new) empty dictionary if there were no excess keyword arguments."
 msgstr ""
 
-# fec2deb16bac4cf8b5bf145485ca01c4
 #: reference/expressions.rst:718
 msgid ""
 "If the syntax ``*expression`` appears in the function call, ``expression`` "
@@ -4283,7 +4224,6 @@ msgstr ""
 msgid "If it is---"
 msgstr ""
 
-# 15f21c6a233b4d27ba0f3496d0d69f26
 #: reference/expressions.rst:772
 msgid "a user-defined function:"
 msgstr ""
@@ -4297,7 +4237,6 @@ msgid ""
 "value of the function call."
 msgstr ""
 
-# 6f370af1ee9a46a0bb983b3343a977fe
 #: reference/expressions.rst:786
 msgid "a built-in function or method:"
 msgstr ""
@@ -4308,7 +4247,6 @@ msgid ""
 "descriptions of built-in functions and methods."
 msgstr ""
 
-# 1a16881c8d8849d6b4aff6723f82a272
 #: reference/expressions.rst:793
 msgid "a class object:"
 msgstr ""
@@ -4317,7 +4255,6 @@ msgstr ""
 msgid "A new instance of that class is returned."
 msgstr ""
 
-# fc8025f1c4794b858684291a624095e5
 #: reference/expressions.rst:803
 msgid "a class instance method:"
 msgstr ""
@@ -4329,7 +4266,6 @@ msgid ""
 "the first argument."
 msgstr ""
 
-# 95e01195dc8540a7a960984d8e3372c1
 #: reference/expressions.rst:812
 msgid "a class instance:"
 msgstr ""
@@ -5039,7 +4975,6 @@ msgid ""
 "order of their suffixes::"
 msgstr ""
 
-# 31afa1dd2ec046ebbeadf2a8a84cd4aa
 #: reference/expressions.rst:1427
 msgid "Operator precedence"
 msgstr ""
@@ -5101,7 +5036,6 @@ msgstr ""
 msgid "Boolean AND"
 msgstr ""
 
-# 9c83cf1334b94aac9f57eca5b8c0cf7f
 #: reference/expressions.rst:1453
 msgid ":keyword:`not` ``x``"
 msgstr ""
@@ -5116,7 +5050,6 @@ msgid ""
 "``<=``, ``>``, ``>=``, ``!=``, ``==``"
 msgstr ""
 
-# 408ef4c5c7e544c8a73e0e559638448e
 #: reference/expressions.rst:1455
 msgid "Comparisons, including membership tests and identity tests"
 msgstr ""
@@ -5165,7 +5098,6 @@ msgstr ""
 msgid "``*``, ``/``, ``//``, ``%``"
 msgstr ""
 
-# 4decff26a3a24609a6efd997d8b699c1
 #: reference/expressions.rst:1469
 msgid "Multiplication, division, remainder [#]_"
 msgstr ""
@@ -5204,7 +5136,6 @@ msgstr ""
 msgid "Binding or tuple display, list display, dictionary display, set display"
 msgstr ""
 
-# 148849a0d81841f684388564cdf7139e
 #: reference/expressions.rst:1488
 msgid ""
 "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be "
@@ -5261,7 +5192,6 @@ msgid ""
 "instance methods, or constants.  Check their documentation for more info."
 msgstr ""
 
-# 39f30010c83140ad91134fe4d37e0702
 #: reference/expressions.rst:1526
 msgid ""
 "The ``%`` operator is also used for string formatting; the same precedence "
@@ -6638,7 +6568,6 @@ msgstr ""
 msgid "Known implementations include:"
 msgstr ""
 
-# 77b83c95da9e480c8fdf9b1e550bc199
 #: reference/introduction.rst:51
 msgid "CPython"
 msgstr "CPython"
@@ -6649,7 +6578,6 @@ msgid ""
 "in C. New language features generally appear here first."
 msgstr ""
 
-# a38ae54a5a0b4611aa173138c3c66940
 #: reference/introduction.rst:57
 msgid "Jython"
 msgstr ""
@@ -6663,7 +6591,6 @@ msgid ""
 "jython.org/>`_."
 msgstr ""
 
-# 511d8df24d5546c099149e5c4151b455
 #: reference/introduction.rst:63
 msgid "Python for .NET"
 msgstr ""
@@ -6676,7 +6603,6 @@ msgid ""
 "<http://pythonnet.sourceforge.net>`_."
 msgstr ""
 
-# 462f86eff1d74618a1c16a2047179140
 #: reference/introduction.rst:69
 msgid "IronPython"
 msgstr ""
@@ -6689,7 +6615,6 @@ msgid ""
 "For more information, see `the IronPython website <http://ironpython.net/>`_."
 msgstr ""
 
-# fa8c8c5bea09451c980720c6c75809d8
 #: reference/introduction.rst:77
 msgid "PyPy"
 msgstr ""
@@ -7195,7 +7120,6 @@ msgstr ""
 msgid "__*__"
 msgstr ""
 
-# 1d79d9c82a864c22974d73858a7d156c
 #: reference/lexical_analysis.rst:373
 msgid ""
 "System-defined names. These names are defined by the interpreter and its "
@@ -7750,7 +7674,6 @@ msgid ""
 "If the target list is a single target: The object is assigned to that target."
 msgstr ""
 
-# 97512ef2abc1447786873687a71e6e57
 #: reference/simple_stmts.rst:120
 msgid ""
 "If the target list is a comma-separated list of targets: The object must be "
@@ -8026,7 +7949,6 @@ msgstr ""
 msgid "The :keyword:`del` statement"
 msgstr "L'instruction :keyword:`del`"
 
-# 184528231d394424ac43191e923ac751
 #: reference/simple_stmts.rst:393
 msgid ""
 "Deletion is recursively defined very similar to the way assignment is "
@@ -8123,7 +8045,6 @@ msgid ""
 "definition to create a generator function instead of a normal function."
 msgstr ""
 
-# c740e01c103b496bbe804462e721de10
 #: reference/simple_stmts.rst:485
 msgid ""
 "For full details of :keyword:`yield` semantics, refer to the :ref:"
@@ -8368,7 +8289,6 @@ msgid ""
 "definitions will raise a :exc:`SyntaxError`."
 msgstr ""
 
-# b949da19675841da823c36c880259d5b
 #: reference/simple_stmts.rst:741
 msgid ""
 "When specifying what module to import you do not have to specify the "

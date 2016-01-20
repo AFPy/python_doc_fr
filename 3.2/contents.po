@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# 9ce23c82265b4e2eb8a059226497660e
 #: contents.rst:3
 msgid "Python Documentation contents"
 msgstr "Contenu de la documentation Python"

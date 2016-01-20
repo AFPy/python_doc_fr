@@ -521,7 +521,6 @@ msgstr ""
 msgid "How fast are exceptions?"
 msgstr ""
 
-# b6f0277dd5004985a79e89b89ea52fec
 #: faq/design.rst:276
 msgid ""
 "A try/except block is extremely efficient if no exceptions are raised.  "
@@ -589,7 +588,6 @@ msgid ""
 "requires thread support for C."
 msgstr ""
 
-# 90c31368a54d47e599f0c7a62ff060e5
 #: faq/design.rst:346
 msgid ""
 "Answer 2: Fortunately, there is `Stackless Python <http://www.stackless."
@@ -597,12 +595,10 @@ msgid ""
 "stack."
 msgstr ""
 
-# 9d39032c5cef4182b90f76f54e892445
 #: faq/design.rst:351
 msgid "Why can't lambda expressions contain statements?"
 msgstr ""
 
-# 2ad3f5f006c2486191151cca91d654d6
 #: faq/design.rst:353
 msgid ""
 "Python lambda expressions cannot contain statements because Python's "
@@ -612,7 +608,6 @@ msgid ""
 "shorthand notation if you're too lazy to define a function."
 msgstr ""
 
-# 159c73c109504f54bc8287595f3e3650
 #: faq/design.rst:359
 msgid ""
 "Functions are already first class objects in Python, and can be declared in "
@@ -1182,7 +1177,6 @@ msgstr ""
 msgid "There are several reasons to allow this."
 msgstr ""
 
-# 298742dc20444d93965e2fca2825408f
 #: faq/design.rst:808
 msgid ""
 "When you have a literal value for a list, tuple, or dictionary spread across "
@@ -1275,7 +1269,6 @@ msgstr ""
 msgid "How can I execute arbitrary Python statements from C?"
 msgstr ""
 
-# 18b0e3c64e884142b76368d196969d3d
 #: faq/extending.rst:63
 msgid ""
 "The highest-level function to do this is :c:func:`PyRun_SimpleString` which "
@@ -1290,7 +1283,6 @@ msgstr ""
 msgid "How can I evaluate an arbitrary Python expression from C?"
 msgstr ""
 
-# 4da2349aa63d4260a91f85be17bc553d
 #: faq/extending.rst:74
 msgid ""
 "Call the function :c:func:`PyRun_String` from the previous question with the "
@@ -1302,7 +1294,6 @@ msgstr ""
 msgid "How do I extract C values from a Python object?"
 msgstr ""
 
-# bf6d1f0de5d5498cb6d9c72ec2c0f291
 #: faq/extending.rst:82
 msgid ""
 "That depends on the object's type.  If it's a tuple, :c:func:`PyTuple_Size` "
@@ -1348,7 +1339,6 @@ msgstr ""
 msgid "How do I call an object's method from C?"
 msgstr ""
 
-# df0a0e00b90e4282a8bea227ff1b10ca
 #: faq/extending.rst:112
 msgid ""
 "The :c:func:`PyObject_CallMethod` function can be used to call an arbitrary "
@@ -1357,7 +1347,6 @@ msgid ""
 "the argument values::"
 msgstr ""
 
-# b219b7268bfc44069c09cf32040d168d
 #: faq/extending.rst:121
 msgid ""
 "This works for any object that has methods -- whether built-in or user-"
@@ -1371,7 +1360,6 @@ msgid ""
 "(assuming the file object pointer is \"f\")::"
 msgstr ""
 
-# 45739a85a41845659ac0d8e44d22aab8
 #: faq/extending.rst:135
 msgid ""
 "Note that since :c:func:`PyObject_CallObject` *always* wants a tuple for the "
@@ -1425,7 +1413,6 @@ msgid ""
 "module) as follows::"
 msgstr ""
 
-# 646b1887089947edac480d122919c21a
 #: faq/extending.rst:195
 msgid ""
 "Calling :c:func:`PyObject_SetAttrString` to assign to variables in the "
@@ -1446,7 +1433,6 @@ msgid ""
 "work for C++ objects."
 msgstr ""
 
-# 79545e2b1466479284f3c186af5c4e7a
 #: faq/extending.rst:208
 msgid "For C++ libraries, see :ref:`c-wrapper-software`."
 msgstr ""
@@ -1542,7 +1528,6 @@ msgid ""
 "parser's behavior sufficiently.  IDLE uses this, for example."
 msgstr ""
 
-# 19a4a0d28eec4133a082ff7797453944
 #: faq/extending.rst:276
 msgid ""
 "The easiest way to do it in C is to call :c:func:`PyRun_InteractiveLoop` "
@@ -1552,7 +1537,6 @@ msgid ""
 "``Parser/myreadline.c`` for more hints."
 msgstr ""
 
-# 77f9464418f243e29c3907a9a12ab26a
 #: faq/extending.rst:282
 msgid ""
 "However sometimes you have to run the embedded Python interpreter in the "
@@ -1563,7 +1547,6 @@ msgid ""
 "sample code fragment, untested, inspired by code from Alex Farber::"
 msgstr ""
 
-# 2c15d7c7e14a406d9987caf0f7289897
 #: faq/extending.rst:315
 msgid ""
 "Another solution is trying to compile the received string with :c:func:"
@@ -1839,7 +1822,6 @@ msgid ""
 "source will compile and run out of the box on most UNIX platforms."
 msgstr ""
 
-# 20df971777764e7b86d2945158f49983
 #: faq/general.rst:170
 msgid ""
 "Consult the `Getting Started section of the Python Developer's Guide "
@@ -1858,7 +1840,6 @@ msgid ""
 "HTML versions are also available at https://docs.python.org/3/download.html."
 msgstr ""
 
-# 7ad68c3fd07643b89f4ddc9e8b2f19da
 #: faq/general.rst:184
 msgid ""
 "The documentation is written in reStructuredText and processed by `the "
@@ -2210,7 +2191,6 @@ msgid ""
 "programming."
 msgstr ""
 
-# f94af7923ed745f58ebf8abde3518df3
 #: faq/general.rst:445
 msgid ""
 "There are also good IDEs for Python.  IDLE is a cross-platform IDE for "
@@ -2267,7 +2247,6 @@ msgstr ""
 msgid "wxWidgets"
 msgstr ""
 
-# 954a564ac8da44b99a250d54e9dc373f
 #: faq/gui.rst:40
 msgid ""
 "wxWidgets (http://www.wxwidgets.org) is a free, portable GUI class library "
@@ -2408,7 +2387,6 @@ msgid ""
 "tix.sourceforge.net/)."
 msgstr ""
 
-# 305a161b8df040a5977ca7cfe21f949b
 #: faq/gui.rst:133
 msgid ""
 "Build Tix with SAM enabled, perform the appropriate call to :c:func:"
@@ -2551,7 +2529,6 @@ msgstr ""
 msgid "How do I find a module or application to perform task X?"
 msgstr ""
 
-# bc3737a59e9446b1aa99fa07fc18d033
 #: faq/library.rst:17
 msgid ""
 "Check :ref:`the Library Reference <library-index>` to see if there's a "
@@ -2571,7 +2548,6 @@ msgstr ""
 msgid "Where is the math.py (socket.py, regex.py, etc.) source file?"
 msgstr ""
 
-# a85fce27be314446b1f02cbc9f6d5a3a
 #: faq/library.rst:30
 msgid ""
 "If you can't find a source file for a module it may be a built-in or "
@@ -2629,7 +2605,6 @@ msgid ""
 "interpreter is installed on your platform."
 msgstr ""
 
-# 0a01ff692448441bb8c810e2376a53ec
 #: faq/library.rst:64
 msgid ""
 "If you would like the script to be independent of where the Python "
@@ -2638,7 +2613,6 @@ msgid ""
 "directory on the user's :envvar:`PATH`::"
 msgstr ""
 
-# 5bb64238d1004d68afe1fc24428456e1
 #: faq/library.rst:71
 msgid ""
 "*Don't* do this for CGI scripts.  The :envvar:`PATH` variable for CGI "
@@ -2646,7 +2620,6 @@ msgid ""
 "pathname of the interpreter."
 msgstr ""
 
-# 11c70aaee9f04c3ab6268f31f16ca1a9
 #: faq/library.rst:75
 msgid ""
 "Occasionally, a user's environment is so full that the :program:`/usr/bin/"
@@ -2672,7 +2645,6 @@ msgid ""
 "distribution -- there is no curses module for Windows.)"
 msgstr ""
 
-# aa5a87f13faa48da950fd7339da90add
 #: faq/library.rst:101
 msgid ""
 "The :mod:`curses` module supports basic curses features as well as many "
@@ -2693,7 +2665,6 @@ msgstr ""
 msgid "Is there an equivalent to C's onexit() in Python?"
 msgstr ""
 
-# 5e5d2c69ded348f5a7e91e468c340bea
 #: faq/library.rst:114
 msgid ""
 "The :mod:`atexit` module provides a register function that is similar to "
@@ -2735,7 +2706,6 @@ msgid ""
 "and Smalltalk testing frameworks."
 msgstr ""
 
-# 4657b944660745599833f9be205984ef
 #: faq/library.rst:145
 msgid ""
 "To make testing easier, you should use good modular design in your program. "
@@ -2755,7 +2725,6 @@ msgstr ""
 msgid "at the bottom of the main module of your program."
 msgstr ""
 
-# 90221ca6b4024e4cbc6d229d3bc555d1
 #: faq/library.rst:160
 msgid ""
 "Once your program is organized as a tractable collection of functions and "
@@ -2884,7 +2853,6 @@ msgstr ""
 msgid "Here's a trivial example::"
 msgstr ""
 
-# 9388dec82b3f4056a524814851ce0228
 #: faq/library.rst:342
 msgid "When run, this will produce the following output:"
 msgstr ""
@@ -2939,7 +2907,6 @@ msgstr ""
 msgid "Can't we get rid of the Global Interpreter Lock?"
 msgstr ""
 
-# 4645f49916d74429b99ac83c664c66b2
 #: faq/library.rst:412
 msgid ""
 "The :term:`global interpreter lock` (GIL) is often seen as a hindrance to "
@@ -3083,7 +3050,6 @@ msgid ""
 "bytes) from the string."
 msgstr ""
 
-# fef9fd4c406745759a75aad37e902d24
 #: faq/library.rst:512
 msgid ""
 "For data that is more regular (e.g. a homogeneous list of ints or floats), "
@@ -3102,7 +3068,6 @@ msgstr ""
 msgid "I can't seem to use os.read() on a pipe created with os.popen(); why?"
 msgstr ""
 
-# d22d10e0ad1c44028fd64db3211e81d7
 #: faq/library.rst:527
 msgid ""
 ":func:`os.read` is a low-level function which takes a file descriptor, a "
@@ -3246,7 +3211,6 @@ msgid ""
 "work on any host that supports an SMTP listener. ::"
 msgstr ""
 
-# f96b24bc2e6348e99069db16a21c5822
 #: faq/library.rst:738
 msgid ""
 "A Unix-only alternative uses sendmail.  The location of the sendmail program "
@@ -3620,21 +3584,18 @@ msgid ""
 "of the ``global`` declaration for identifying side-effects."
 msgstr ""
 
-# 924a0fb4c52d4d508ae61ede7c3f8fdf
 #: faq/programming.rst:203
 msgid ""
 "Why do lambdas defined in a loop with different values all return the same "
 "result?"
 msgstr ""
 
-# 6e3ea9d4df2642eb9d3e92eaa6a9968c
 #: faq/programming.rst:205
 msgid ""
 "Assume you use a for loop to define a few different lambdas (or even plain "
 "functions), e.g.::"
 msgstr ""
 
-# 13aa3d4bd1ba489385475d37babef0c0
 #: faq/programming.rst:212
 msgid ""
 "This gives you a list that contains 5 lambdas that calculate ``x**2``.  You "
@@ -3643,7 +3604,6 @@ msgid ""
 "see that they all return ``16``::"
 msgstr ""
 
-# 05dae30e0a144c0297629c1951263f65
 #: faq/programming.rst:222
 msgid ""
 "This happens because ``x`` is not local to the lambdas, but is defined in "
@@ -3653,14 +3613,12 @@ msgid ""
 "changing the value of ``x`` and see how the results of the lambdas change::"
 msgstr ""
 
-# bdbfb8d8dc1247e98b41e0aff5680c34
 #: faq/programming.rst:232
 msgid ""
 "In order to avoid this, you need to save the values in variables local to "
 "the lambdas, so that they don't rely on the value of the global ``x``::"
 msgstr ""
 
-# 0d3f70faade14c55b8ed25080bd41a4e
 #: faq/programming.rst:239
 msgid ""
 "Here, ``n=x`` creates a new variable ``n`` local to the lambda and computed "
@@ -3670,7 +3628,6 @@ msgid ""
 "Therefore each lambda will now return the correct result::"
 msgstr ""
 
-# b620a634f93a46fca3caa69d6a8410d2
 #: faq/programming.rst:250
 msgid ""
 "Note that this behaviour is not peculiar to lambdas, but applies to regular "
@@ -3865,12 +3822,10 @@ msgid ""
 "arguments when calling another function by using ``*`` and ``**``::"
 msgstr ""
 
-# 96b5be5f561c4e388030863e5bbacca1
 #: faq/programming.rst:410
 msgid "What is the difference between arguments and parameters?"
 msgstr ""
 
-# a4cafc0bd37a4682bb11a96bcc193305
 #: faq/programming.rst:412
 msgid ""
 ":term:`Parameters <parameter>` are defined by the names that appear in a "
@@ -3880,19 +3835,16 @@ msgid ""
 "definition::"
 msgstr ""
 
-# aebb59148b8f4b369dcddd620bda8acc
 #: faq/programming.rst:420
 msgid ""
 "*foo*, *bar* and *kwargs* are parameters of ``func``.  However, when calling "
 "``func``, for example::"
 msgstr ""
 
-# 786ad2fc6ac74da49f7655b754d46766
 #: faq/programming.rst:425
 msgid "the values ``42``, ``314``, and ``somevar`` are arguments."
 msgstr ""
 
-# 0bd1025c430c46fca744f1ab71d0c6f9
 #: faq/programming.rst:429
 msgid "Why did changing list 'y' also change list 'x'?"
 msgstr ""
@@ -3902,18 +3854,15 @@ msgstr ""
 msgid "If you wrote code like::"
 msgstr "In C++ you'd write"
 
-# dcf823fe26834b4298e3ab0729b2fa4c
 #: faq/programming.rst:441
 msgid ""
 "you might be wondering why appending an element to ``y`` changed ``x`` too."
 msgstr ""
 
-# 49fc350d28fb420ca92faac571737b2d
 #: faq/programming.rst:443
 msgid "There are two factors that produce this result:"
 msgstr ""
 
-# 413d98a41e7b4e67aed138c28d7ba12f
 #: faq/programming.rst:445
 msgid ""
 "Variables are simply names that refer to objects.  Doing ``y = x`` doesn't "
@@ -3922,13 +3871,11 @@ msgid ""
 "(the list), and both ``x`` and ``y`` refer to it."
 msgstr ""
 
-# e44847fa07dd4dc4af11a625d09fda63
 #: faq/programming.rst:449
 msgid ""
 "Lists are :term:`mutable`, which means that you can change their content."
 msgstr ""
 
-# a8ee185e5f0240fd850b3c16b68088da
 #: faq/programming.rst:451
 msgid ""
 "After the call to :meth:`~list.append`, the content of the mutable object "
@@ -3936,12 +3883,10 @@ msgid ""
 "same object, using either name accesses the modified value ``[10]``."
 msgstr ""
 
-# 9f8319228d964bfda3bab873ba568653
 #: faq/programming.rst:455
 msgid "If we instead assign an immutable object to ``x``::"
 msgstr ""
 
-# 2a525148729d47d8b88281de2d3d4f0c
 #: faq/programming.rst:465
 msgid ""
 "we can see that in this case ``x`` and ``y`` are not equal anymore.  This is "
@@ -3953,7 +3898,6 @@ msgid ""
 "(``x`` now refers to ``6`` but ``y`` still refers to ``5``)."
 msgstr ""
 
-# 46a5fa2e975f4e98b02b22431e76776e
 #: faq/programming.rst:473
 msgid ""
 "Some operations (for example ``y.append(10)`` and ``y.sort()``) mutate the "
@@ -3966,7 +3910,6 @@ msgid ""
 "your program to generate an easily diagnosed error."
 msgstr ""
 
-# b71ccf689a1e48a7ae3dc9f6cd9a3322
 #: faq/programming.rst:482
 msgid ""
 "However, there is one class of operations where the same operation sometimes "
@@ -3977,12 +3920,10 @@ msgid ""
 "1`` create new objects)."
 msgstr ""
 
-# 2a5ffb67bd9448e8ade209869f3c7f75
 #: faq/programming.rst:489
 msgid "In other words:"
 msgstr ""
 
-# dc6bcce15dcf4b898d9e766c2b41e03e
 #: faq/programming.rst:491
 msgid ""
 "If we have a mutable object (:class:`list`, :class:`dict`, :class:`set`, "
@@ -3990,7 +3931,6 @@ msgid ""
 "variables that refer to it will see the change."
 msgstr ""
 
-# 4d5f00e6b8d34e29bf200694d85fd9e4
 #: faq/programming.rst:494
 msgid ""
 "If we have an immutable object (:class:`str`, :class:`int`, :class:`tuple`, "
@@ -3999,7 +3939,6 @@ msgid ""
 "new object."
 msgstr ""
 
-# ac62a0f8bdb148b28efffd5e47189104
 #: faq/programming.rst:499
 msgid ""
 "If you want to know if two variables refer to the same object or not, you "
@@ -4969,13 +4908,11 @@ msgstr "Comment appliquer une méthode à une séquence d'objets?"
 msgid "Use a list comprehension::"
 msgstr "Utilisez une compréhension de liste::"
 
-# 5a0eb6dede2647bdac746cbc48c5eba5
 #: faq/programming.rst:1219
 msgid ""
 "Why does a_tuple[i] += ['item'] raise an exception when the addition works?"
 msgstr ""
 
-# 8e31dcde6e1f4ce3b7c3c4effef19a96
 #: faq/programming.rst:1221
 msgid ""
 "This is because of a combination of the fact that augmented assignment "
@@ -4983,7 +4920,6 @@ msgid ""
 "immutable objects in Python."
 msgstr ""
 
-# 18c8244bc189403c8895afe6d77cc812
 #: faq/programming.rst:1225
 msgid ""
 "This discussion applies in general when augmented assignment operators are "
@@ -4996,7 +4932,6 @@ msgstr ""
 msgid "If you wrote::"
 msgstr "In C++ you'd write"
 
-# cffe9637e54d476794eb875231ac036a
 #: faq/programming.rst:1237
 msgid ""
 "The reason for the exception should be immediately clear: ``1`` is added to "
@@ -5006,33 +4941,28 @@ msgid ""
 "an element of a tuple points to."
 msgstr ""
 
-# 8dcb87ef61454fadbf4fc78f068e58c7
 #: faq/programming.rst:1243
 msgid ""
 "Under the covers, what this augmented assignment statement is doing is "
 "approximately this::"
 msgstr ""
 
-# 04515ebb67074e5193bcbe4a00b2bd91
 #: faq/programming.rst:1252
 msgid ""
 "It is the assignment part of the operation that produces the error, since a "
 "tuple is immutable."
 msgstr ""
 
-# 22ab6008a94a4d6495c88e57365e7312
 #: faq/programming.rst:1255
 msgid "When you write something like::"
 msgstr ""
 
-# 9b46cde118ca40508fedaacc63714819
 #: faq/programming.rst:1263
 msgid ""
 "The exception is a bit more surprising, and even more surprising is the fact "
 "that even though there was an error, the append worked::"
 msgstr ""
 
-# c28e7f2a9c4c4302955de0232c836eda
 #: faq/programming.rst:1269
 msgid ""
 "To see why this happens, you need to know that (a) if an object implements "
@@ -5043,12 +4973,10 @@ msgid ""
 "that for lists, ``+=`` is a \"shorthand\" for ``list.extend``::"
 msgstr ""
 
-# ced4b3cf4f0946c1a201c57c5e321cf3
 #: faq/programming.rst:1281
 msgid "This is equivalent to::"
 msgstr ""
 
-# 785acb48819d476eb6b4f321f4c38644
 #: faq/programming.rst:1286
 msgid ""
 "The object pointed to by a_list has been mutated, and the pointer to the "
@@ -5057,12 +4985,10 @@ msgid ""
 "``a_list`` was previously pointing to, but the assignment still happens."
 msgstr ""
 
-# 57b86ec3f01146199872ad5223ff75ac
 #: faq/programming.rst:1291
 msgid "Thus, in our tuple example what is happening is equivalent to::"
 msgstr ""
 
-# 9885a85fc7e943cebf75939e62e69ff6
 #: faq/programming.rst:1299
 msgid ""
 "The ``__iadd__`` succeeds, and thus the list is extended, but even though "
@@ -5631,12 +5557,10 @@ msgid ""
 "instances by keeping a list of weak references to each instance."
 msgstr ""
 
-# cf90e9f3b4064c549dfbec4909638712
 #: faq/programming.rst:1690
 msgid "Why does the result of ``id()`` appear to be not unique?"
 msgstr ""
 
-# f61b99b4126f49fe955ab0fa86ba17b4
 #: faq/programming.rst:1692
 msgid ""
 "The :func:`id` builtin returns an integer that is guaranteed to be unique "
@@ -5646,7 +5570,6 @@ msgid ""
 "memory.  This is illustrated by this example:"
 msgstr ""
 
-# b3a195c4502f46088e88298fe469109c
 #: faq/programming.rst:1703
 msgid ""
 "The two ids belong to different integer objects that are created before, and "
@@ -5861,7 +5784,6 @@ msgstr ""
 msgid "__import__('x.y.z') returns <module 'x'>; how do I get z?"
 msgstr ""
 
-# e48fce842ecb4de4838850cae5fbd306
 #: faq/programming.rst:1843
 msgid ""
 "Consider using the convenience function :func:`~importlib.import_module` "
@@ -5911,7 +5833,6 @@ msgstr ""
 msgid "How do I run a Python program under Windows?"
 msgstr ""
 
-# 53ef8c8cd2b8484c88c64aab2a4e1a36
 #: faq/windows.rst:20
 msgid ""
 "This is not necessarily a straightforward question. If you are already "
@@ -5931,7 +5852,6 @@ msgid ""
 "IDE, and debugging and writing solid code with unit-tests."
 msgstr ""
 
-# 9d7948e6038a4a51a4bad91ca4fc7931
 #: faq/windows.rst:36
 msgid ""
 "Unless you use some sort of integrated development environment, you will end "
@@ -5956,7 +5876,6 @@ msgid ""
 "the way to running Python programs."
 msgstr ""
 
-# 6c03998a0a844db1971bea8cd63765fa
 #: faq/windows.rst:55
 msgid ""
 "You need to realize that your Python scripts have to be processed by another "
@@ -5965,7 +5884,6 @@ msgid ""
 "program. So, how do you arrange for the interpreter to handle your Python?"
 msgstr ""
 
-# 4eb0edada5ae45ad99a255b0db73a830
 #: faq/windows.rst:60
 msgid ""
 "First, you need to make sure that your command window recognises the word "
@@ -5974,7 +5892,6 @@ msgid ""
 "return.::"
 msgstr ""
 
-# 4f609a87bff2442ca7cd1ff9bd7cdaf8
 #: faq/windows.rst:67
 msgid "You should then see something like::"
 msgstr ""
@@ -6061,7 +5978,6 @@ msgid ""
 "in the installer as of CPython 3.3."
 msgstr ""
 
-# ed7403dd874946cdbc3f3918c7d74c16
 #: faq/windows.rst:140
 msgid ""
 "More information about environment variables can be found on the :ref:`Using "
@@ -6072,7 +5988,6 @@ msgstr ""
 msgid "How do I make Python scripts executable?"
 msgstr ""
 
-# 507a227f35bb44819a7430bc0380a3fa
 #: faq/windows.rst:146
 msgid ""
 "On Windows, the standard Python installer already associates the .py "
@@ -6165,7 +6080,6 @@ msgid ""
 "version, a number such as \"33\" for Python 3.3."
 msgstr ""
 
-# ccc0def2b7d84a97a01196cbd172917b
 #: faq/windows.rst:209
 msgid ""
 "You can link to Python in two different ways.  Load-time linking means "
@@ -6175,7 +6089,6 @@ msgid ""
 "merely defines symbols for the linker.)"
 msgstr ""
 
-# b83fc8f27fe84320990b94a26419a932
 #: faq/windows.rst:215
 msgid ""
 "Run-time linking greatly simplifies link options; everything happens at run "

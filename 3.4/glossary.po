@@ -118,7 +118,6 @@ msgstr ""
 "Une valeur, donnée à une :term:`fonction` ou à une :term:`méthode` lors de "
 "son appel. Il existe deux types d'arguments :"
 
-# 50131cefa8d2410aa354a6b32e8435ed
 #: glossary.rst:46
 msgid ""
 ":dfn:`keyword argument`: an argument preceded by an identifier (e.g. "
@@ -131,7 +130,6 @@ msgstr ""
 "fonction. Par exemple, ``3`` et ``5`` sont tous les deux des arguments "
 "nommés dans l'appel à :func:`complex` ici ::"
 
-# 8bbecb8af15441428909ba7722983955
 #: glossary.rst:54
 msgid ""
 ":dfn:`positional argument`: an argument that is not a keyword argument. "
@@ -144,7 +142,6 @@ msgstr ""
 "forme d'un :term:`itérable` précédé par ``*``. Par exemple, ``3`` et ``5`` "
 "sont tous les deux des arguments positionnels dans les appels suivants ::"
 
-# 4c19af4f404b49fabb0ae8c34ac614ae
 #: glossary.rst:63
 msgid ""
 "Arguments are assigned to the named local variables in a function body. See "
@@ -233,7 +230,6 @@ msgstr ""
 msgid "bytecode"
 msgstr "bytecode"
 
-# 4784a51d6fea4eaf8eb8cc73ae492c9c
 #: glossary.rst:97
 msgid ""
 "Python source code is compiled into bytecode, the internal representation of "
@@ -255,7 +251,6 @@ msgstr ""
 "bytecode n'a pas vocation à fonctionner entre différentes sur différentes "
 "machines virtuelle Python, encore moins entre différentes version de Python."
 
-# 693ad59d4aec412cbf25431a52fb6593
 #: glossary.rst:107
 msgid ""
 "A list of bytecode instructions can be found in the documentation for :ref:"
@@ -481,7 +476,6 @@ msgstr ""
 msgid "duck-typing"
 msgstr "duck-typing"
 
-# 042c1d93e5ca4d8a96eab89d07ddb0df
 #: glossary.rst:203
 msgid ""
 "A programming style which does not look at an object's type to determine if "
@@ -565,7 +559,6 @@ msgstr ""
 msgid "file object"
 msgstr "objet fichier"
 
-# 76951cc850f44973adbb2272e984c10d
 #: glossary.rst:235
 msgid ""
 "An object exposing a file-oriented API (with methods such as :meth:`read()` "
@@ -602,7 +595,6 @@ msgstr ""
 msgid "file-like object"
 msgstr "objet fichier-compatible"
 
-# b948ad82982548409e3c905be43aa371
 #: glossary.rst:250
 msgid "A synonym for :term:`file object`."
 msgstr "Un synonyme de :term:`objet fichier `."
@@ -628,7 +620,6 @@ msgstr ""
 msgid "floor division"
 msgstr "division entière"
 
-# 8325f98bd93d4e0887c926dca290641c
 #: glossary.rst:259
 msgid ""
 "Mathematical division that rounds down to nearest integer.  The floor "
@@ -646,7 +637,6 @@ msgstr ""
 msgid "function"
 msgstr "fonction"
 
-# 33a8dbfd67ea4e0fb4dac5f9481c8568
 #: glossary.rst:266
 msgid ""
 "A series of statements which returns some value to a caller. It can also be "
@@ -797,7 +787,6 @@ msgstr "Voir :term:`verrou global de l'interpréteur `."
 msgid "global interpreter lock"
 msgstr "verrou global de l'interpréteur"
 
-# eae06790f2a14420857358b733306615
 #: glossary.rst:334
 msgid ""
 "The mechanism used by the :term:`CPython` interpreter to assure that only "
@@ -816,7 +805,6 @@ msgstr ""
 "en perdant malheureusement la majorité du parallélisme possible sur les "
 "machines ayant plusieurs processeurs."
 
-# 8cc9fbea059141b080140a49ecba1e16
 #: glossary.rst:343
 msgid ""
 "However, some extension modules, either standard or third-party, are "
@@ -829,7 +817,6 @@ msgstr ""
 "la compression ou le hachage. Aussi, le GIL est toujours libéré lors des "
 "lectures et écritures."
 
-# e78ce472d1e848ada067fdd3068fb708
 #: glossary.rst:348
 msgid ""
 "Past efforts to create a \"free-threaded\" interpreter (one which locks "
@@ -888,7 +875,6 @@ msgstr ""
 msgid "IDLE"
 msgstr "IDLE"
 
-# 8f1c753bef6f49ef9292eff2e5e4369e
 #: glossary.rst:370
 msgid ""
 "An Integrated Development Environment for Python.  IDLE is a basic editor "
@@ -936,7 +922,6 @@ msgstr ""
 msgid "importing"
 msgstr "importer"
 
-# cd4670bfe278475e82214853bcf255cc
 #: glossary.rst:389
 msgid ""
 "The process by which Python code in one module is made available to Python "
@@ -1077,7 +1062,6 @@ msgstr "Plus d'informations ici : :ref:`typeiter`."
 msgid "key function"
 msgstr "fonction clef"
 
-# 4407f4d5ddab4943aa8b95ea3e95d087
 #: glossary.rst:448
 msgid ""
 "A key function or collation function is a callable that returns a value used "
@@ -1089,7 +1073,6 @@ msgstr ""
 "à produire une fonction clef de tri prennant en compte les conventions de "
 "tri spécifiques aux paramètres régionaux courants."
 
-# b687dec848ca4394a8c48b2990d87905
 #: glossary.rst:453
 msgid ""
 "A number of tools in Python accept key functions to control how elements are "
@@ -1102,7 +1085,6 @@ msgstr ""
 "`min`, :func:`max`, :func:`sorted`, :meth:`list.sort`, :func:`heapq."
 "nsmallest`, :func:`heapq.nlargest`, et :func:`itertools.groupby`."
 
-# 41316a1c618c4d59ba353c58c75e89fe
 #: glossary.rst:458
 msgid ""
 "There are several ways to create a key function.  For example. the :meth:"
@@ -1127,8 +1109,6 @@ msgstr ""
 msgid "keyword argument"
 msgstr "argument nommé"
 
-# 65d6c99a0f6941f6ac90cc3867107f42
-# 0f29d18d80d44155bda6e138e96bd1ce
 #: glossary.rst:468 glossary.rst:693
 msgid "See :term:`argument`."
 msgstr "Voir :term:`argument`."
@@ -1163,7 +1143,6 @@ msgstr ""
 "appels ou des accès. Ce style contraste avec le style :term:`EAFP` et se "
 "caractérise par la présence de beaucoup d'instructions :keyword : `if`."
 
-# 0dc5595fdc784d8f9afbc265a54ccb9e
 #: glossary.rst:481
 msgid ""
 "In a multi-threaded environment, the LBYL approach can risk introducing a "
@@ -1322,7 +1301,6 @@ msgstr ""
 msgid "module"
 msgstr "module"
 
-# ad7a03faeea844749c0307592277e63f
 #: glossary.rst:544
 msgid ""
 "An object that serves as an organizational unit of Python code.  Modules "
@@ -1333,7 +1311,6 @@ msgstr ""
 "espace de noms pouvant contenir n'importe quel objet Python. Charger des "
 "modules est appelé :term:`importer`."
 
-# 65d6c99a0f6941f6ac90cc3867107f42
 #: glossary.rst:548
 msgid "See also :term:`package`."
 msgstr "Voir aussi :term:`paquet`."
@@ -1353,7 +1330,6 @@ msgstr ""
 msgid "MRO"
 msgstr "MRO"
 
-# c6741e9b5b1d47d7b0cf92e63d7437b1
 #: glossary.rst:555
 msgid "See :term:`method resolution order`."
 msgstr "Voir :term:`ordre de  résolution des méthodes `."
@@ -1506,7 +1482,6 @@ msgstr ""
 msgid "package"
 msgstr "paquet"
 
-# f0589e9db9374de0a7c664556ace1d7b
 #: glossary.rst:615
 msgid ""
 "A Python :term:`module` which can contain submodules or recursively, "
@@ -1534,7 +1509,6 @@ msgstr ""
 "`méthode`, décrivant un :term:`argument` (ou dans certains cas des "
 "arguments) que la fonction accepte. Il existe cinque sorte de paramètres :"
 
-# 88cbbf8a9c094e96972c9a4bae674b54
 #: glossary.rst:626
 msgid ""
 ":dfn:`positional-or-keyword`: specifies an argument that can be passed "
@@ -1547,7 +1521,6 @@ msgstr ""
 "<argument>`. C'est le type de paramètre par défaut, par exemple, *foo* et "
 "*bar* dans l'exemple suivant ::"
 
-# 5d344aa1c2c14f41bdde1b3c739e316b
 #: glossary.rst:633
 msgid ""
 ":dfn:`positional-only`: specifies an argument that can be supplied only by "
@@ -1571,7 +1544,6 @@ msgstr ""
 ":dfn:`keyword-only`: définit un argument qui ne peut être fournit que par "
 "nom. Les paramètres *keyword-only* peuvent être définis en utilisant un"
 
-# df1910817a5e46739941e5d42e94a364
 #: glossary.rst:648
 #, fuzzy
 msgid ""
@@ -1582,7 +1554,6 @@ msgid ""
 "following::"
 msgstr ":dfn:`var-positional` : "
 
-# 8dd7e79a1566402e9e9ad95b604afeb4
 #: glossary.rst:656
 msgid ""
 ":dfn:`var-keyword`: specifies that arbitrarily many keyword arguments can be "
@@ -1595,7 +1566,6 @@ msgstr ""
 "d'autres paramètres). Un tel paramètre est définit en préfixant le nom du "
 "paramètre par ``**``, par exemple, *kwargs* ci-dessus."
 
-# bf3e82954a6648efbe51ffdf2066bd51
 #: glossary.rst:662
 msgid ""
 "Parameters can specify both optional and required arguments, as well as "
@@ -1938,7 +1908,6 @@ msgstr ""
 msgid "statement"
 msgstr "instruction"
 
-# ed4604b8fb634111bdfe9c8e6f2f5387
 #: glossary.rst:819
 msgid ""
 "A statement is part of a suite (a \"block\" of code).  A statement is either "
@@ -2024,7 +1993,6 @@ msgstr ""
 msgid "type"
 msgstr "type"
 
-# 4ceb47bcd8704e648862b6bc1b5311fe
 #: glossary.rst:852
 msgid ""
 "The type of a Python object determines what kind of object it is; every "

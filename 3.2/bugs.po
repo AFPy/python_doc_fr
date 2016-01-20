@@ -17,12 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# dd3f14d1c81a4ef0ba3991adade15d17
 #: bugs.rst:5
 msgid "Reporting Bugs"
 msgstr "Rapporter des bogues"
 
-# 4373f2cb78d441b49578120959625892
 #: bugs.rst:7
 msgid ""
 "Python is a mature programming language which has established a reputation "
@@ -33,12 +31,10 @@ msgstr ""
 "de maintenir cette réputation, les développeurs souhaitent connaître toute "
 "déficience que vous pourriez rencontrer dans Python."
 
-# 6d42ac4e6420447fb6cfdb75b56167cd
 #: bugs.rst:13
 msgid "Documentation bugs"
 msgstr "Bogues de documentation"
 
-# 431a6fdcea7d42f980d9e55e299dd78f
 #: bugs.rst:15
 msgid ""
 "If you find a bug in this documentation or would like to propose an "
@@ -47,14 +43,12 @@ msgid ""
 "well."
 msgstr ""
 
-# a9105a30ffe746d48f57582ce981b847
 #: bugs.rst:19
 msgid ""
 "docs@python.org is a mailing list run by volunteers; your request will be "
 "noticed, even if it takes a while to be processed."
 msgstr ""
 
-# 08bcc6c75c024c6f9e55897e6c486e48
 #: bugs.rst:22
 msgid ""
 "Of course, if you want a more persistent record of your issue, you can use "
@@ -63,12 +57,10 @@ msgstr ""
 "Bien sûr, si vous voulez un suivi plus persistant de votre problème, vous "
 "pouvez aussi utiliser le tracker pour les bugs de documentation."
 
-# bde9b9d35ce34b1488ebf62ceabd513a
 #: bugs.rst:27
 msgid "Using the Python issue tracker"
 msgstr "Utilisation du tracker Python"
 
-# 8fba48fb3b3d4df780e01e677dd27464
 #: bugs.rst:29
 #, fuzzy
 msgid ""
@@ -81,7 +73,6 @@ msgstr ""
 "formulaire Web permettant de saisir des informations pertinentes à soumettre "
 "aux développeurs."
 
-# 1e75699e363745dfa104a56dc0f0eaaa
 #: bugs.rst:33
 msgid ""
 "The first step in filing a report is to determine whether the problem has "
@@ -100,7 +91,6 @@ msgstr ""
 "contribution est la bienvenue !). Pour ce faire, cherchez dans la base de "
 "données de bogues grâce à la boîte de recherche en haut de la page."
 
-# af257711ffc04886b65d4a4c480ac43d
 #: bugs.rst:40
 msgid ""
 "If the problem you're reporting is not already in the bug tracker, go back "
@@ -116,7 +106,6 @@ msgstr ""
 "barre latérale. Il n'est pas possible de soumettre un rapport de bug de "
 "manière anonyme."
 
-# 33511a54a1764074ab4b6c34b93afdd2
 #: bugs.rst:45
 msgid ""
 "Being now logged in, you can submit a bug.  Select the \"Create New\" link "
@@ -126,7 +115,6 @@ msgstr ""
 "\"Create New\" dans la barre latérale pour ouvrir un nouveau formulaire de "
 "rapport de bogue."
 
-# 30c53f7fd1f34b04913a15bfa19e31d4
 #: bugs.rst:48
 msgid ""
 "The submission form has a number of fields.  For the \"Title\" field, enter "
@@ -140,7 +128,6 @@ msgstr ""
 "problème ; sélectionnez aussi \"Composant\" et \"Versions\" en rapport avec "
 "le bogue."
 
-# cdf149cabb4747bd950005dc32a0ec47
 #: bugs.rst:53
 msgid ""
 "In the \"Comment\" field, describe the problem in detail, including what you "
@@ -154,7 +141,6 @@ msgstr ""
 "plateforme matérielle et logicielle vous utilisiez (en incluant les "
 "informations de versions)."
 
-# 2053ac0ba09d4a00bc04a6e1ceab0071
 #: bugs.rst:58
 #, fuzzy
 msgid ""
@@ -172,7 +158,6 @@ msgstr ""
 msgid "Python Developer's Guide"
 msgstr ""
 
-# 3e2d263cd7334a919f71aa4a13dae196
 #: bugs.rst:66
 msgid "Detailed description of the issue workflow and developers tools."
 msgstr ""
@@ -181,7 +166,6 @@ msgstr ""
 msgid "How to Report Bugs Effectively"
 msgstr "Comment remonter des bugs de manière efficiente"
 
-# a56eb61f2e9a41189929f2181cac890d
 #: bugs.rst:69
 msgid ""
 "Article which goes into some detail about how to create a useful bug report. "
@@ -195,7 +179,6 @@ msgstr ""
 msgid "Bug Writing Guidelines"
 msgstr "Recommandations pour la rédaction de bugs"
 
-# 034acd49e97b4a4b98309bd71e72c0e2
 #: bugs.rst:73
 msgid ""
 "Information about writing a good bug report.  Some of this is specific to "

@@ -17,12 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# 8ab963b410814d58a039b203ef941b47
 #: install/index.rst:7
 msgid "Installing Python Modules"
 msgstr "installation des modules python"
 
-# d254d59ad32e4d13bf243c16450f6fc9
 #: install/index.rst:9
 msgid "Greg Ward"
 msgstr "Greg Ward"
@@ -31,7 +29,6 @@ msgstr "Greg Ward"
 msgid "Abstract"
 msgstr "Résumé"
 
-# 75505401c21848e8bdd80915b74421a6
 #: install/index.rst:25
 msgid ""
 "This document describes the Python Distribution Utilities (\"Distutils\") "
@@ -44,12 +41,10 @@ msgstr ""
 "capacités d'une installation standard de python en construisant et "
 "installant des modules python tiers et des extensions."
 
-# 0a5f0d211f254e5ab9f227cb58d1c269
 #: install/index.rst:34
 msgid "Introduction"
 msgstr "introduction"
 
-# eef0729508954767b9b5cab68959aef2
 #: install/index.rst:36
 msgid ""
 "Although Python's extensive standard library covers many programming needs, "
@@ -65,7 +60,6 @@ msgstr ""
 "pour prendre en charge une application écrite en Python que vous souhaitez "
 "utiliser."
 
-# b7a1082e9f134645b4d80d9585802f0f
 #: install/index.rst:42
 msgid ""
 "In the past, there has been little support for adding third-party modules to "
@@ -77,7 +71,6 @@ msgstr ""
 "distribution de Python (Distutils pour faire plus court) dans Python 2.0, "
 "ceci a changé."
 
-# 22246202335d487995601320c3bb0528
 #: install/index.rst:46
 #, fuzzy
 msgid ""
@@ -101,12 +94,10 @@ msgstr ""
 "distribuer vos propres modules Python afin que d'autres puissent les "
 "utiliser, allez voir le manuel de :ref:`distutils-index`."
 
-# ea5399c88cbd4cf1892e9e06a0f3a41e
 #: install/index.rst:59
 msgid "Best case: trivial installation"
 msgstr "Le meilleur des cas : l'installation simple"
 
-# 479150058d7a4975afd6e1c19147d781
 #: install/index.rst:61
 msgid ""
 "In the best case, someone will have prepared a special version of the module "
@@ -127,7 +118,6 @@ msgstr ""
 "Debian pour les utilisateurs de Linux basé sur le système Debian et ainsi de "
 "suite."
 
-# 25d4f15c630a4c86b391eb40d979bbc8
 #: install/index.rst:69
 #, fuzzy
 msgid ""
@@ -145,7 +135,6 @@ msgstr ""
 "devriez même pas avoir besoin de lire toutes les instructions (même si c'est "
 "toujours une bonne idée de le faire)."
 
-# 6ce58e844bf240b9bd34aaab6d96dc6f
 #: install/index.rst:75
 msgid ""
 "Of course, things will not always be that easy.  You might be interested in "
@@ -165,12 +154,10 @@ msgstr ""
 "standard. Le cœur de ce document explique comment configurer et installer "
 "des modules à partir des sources."
 
-# 7c263f1faa0e4d379f5a0abea0a89503
 #: install/index.rst:87
 msgid "The new standard: Distutils"
 msgstr "Le nouveau standard: Distutils"
 
-# edbdb7a926864ab485beb08ad7e066fb
 #: install/index.rst:89
 #, fuzzy
 msgid ""
@@ -197,14 +184,12 @@ msgstr ""
 "construction et l'installation de la distribution du module se fait "
 "simplement en exécutant ceci ::"
 
-# 09efa7617fdb443cb6ef73bfcf2c2232
 #: install/index.rst:102
 msgid ""
 "For Windows, this command should be run from a command prompt window (:"
 "menuselection:`Start --> Accessories`)::"
 msgstr ""
 
-# 8cb796dfeca7479aa6cf98406696a6c0
 #: install/index.rst:107
 msgid ""
 "If all these things are true, then you already know how to build and install "
@@ -220,12 +205,10 @@ msgstr ""
 "construction, vous n'avez pas vraiment besoin de ce manuel. Ou plutôt, la "
 "commande ci-dessus est tout ce dont vous avez besoin de sortir de ce manuel."
 
-# 71bc92a7ea3c4d78b46fdb34d6286bcd
 #: install/index.rst:117
 msgid "Standard Build and Install"
 msgstr "Construction standard et installation"
 
-# 1807f28bd2604d7db03cfe53b91e2339
 #: install/index.rst:119
 #, fuzzy
 msgid ""
@@ -237,12 +220,10 @@ msgstr ""
 "l'installation d'une distribution d'un module en utilisant Distutils est "
 "habituellement fait avec la commande ::"
 
-# 93541968e01b4038b30f605d0d5590b1
 #: install/index.rst:129
 msgid "Platform variations"
 msgstr "Différences selon les plateformes"
 
-# f396c7eb191047ea93aed8106487482c
 #: install/index.rst:131
 msgid ""
 "You should always run the setup command from the distribution root "
@@ -258,7 +239,6 @@ msgstr ""
 "module :file:`foo-1.0.tar.gz` sous un système Unix, la méthode normale "
 "consiste à faire ::"
 
-# 2da60e6d5cf04ff59ba2bf9ba2a05dee
 #: install/index.rst:140
 msgid ""
 "On Windows, you'd probably download :file:`foo-1.0.zip`.  If you downloaded "
@@ -276,12 +256,10 @@ msgstr ""
 "`pkunzip`) pour décompresser l'archive. Ensuite, ouvrez une fenêtre d'invite "
 "de commandes (\"fenêtre DOS\") et exécutez ::"
 
-# 5e405020cdf64ffb9db21854c2968241
 #: install/index.rst:154
 msgid "Splitting the job up"
 msgstr "Fractionnement du travail"
 
-# e9dba3fca396425cb6a30410375567e8
 #: install/index.rst:156
 msgid ""
 "Running ``setup.py install`` builds and installs all modules in one run.  If "
@@ -304,7 +282,6 @@ msgstr ""
 "l'installation (ou le faire vous-même, avec les privilèges de super-"
 "utilisateur)."
 
-# 9d26802243544d9eb7f6f034e46cbe71
 #: install/index.rst:164
 msgid ""
 "For example, you can build everything in one step, and then install "
@@ -314,7 +291,6 @@ msgstr ""
 "installer le tout dans une deuxième étape, en invoquant le script "
 "d'installation deux fois ::"
 
-# 4b931383fea44f7a82152adf4e4423aa
 #: install/index.rst:170
 msgid ""
 "If you do this, you will notice that running the :command:`install` command "
@@ -327,7 +303,6 @@ msgstr ""
 "cas, s'aperçoit vite qu'il n'a rien à faire, puisque tout dans le dossier :"
 "file:`build` est à jour."
 
-# f3ccc7e50b5745f8bc2c4dae58572f4e
 #: install/index.rst:175
 msgid ""
 "You may not need this ability to break things down often if all you do is "
@@ -342,12 +317,10 @@ msgstr ""
 "exécuter beaucoup de commandes individuelles de Distutils, indépendamment "
 "les unes des autres."
 
-# be1036025c1a4abd99f317ff5d0bf54c
 #: install/index.rst:184
 msgid "How building works"
 msgstr "Comment fonctionne une construction"
 
-# 0f91a81ddcb44e89a01f956c1fd2cf7e
 #: install/index.rst:186
 msgid ""
 "As implied above, the :command:`build` command is responsible for putting "
@@ -363,7 +336,6 @@ msgstr ""
 "sources d'origine, vous pouvez changer le répertoire de construction avec "
 "l'option :option:`--build-base`. Par exemple ::"
 
-# 883a387eca2e4a29ab89bd7af7a8ee56
 #: install/index.rst:194
 msgid ""
 "(Or you could do this permanently with a directive in your system or "
@@ -374,14 +346,12 @@ msgstr ""
 "système ou dans le fichier de configuration personnelle de Distutils ; voir "
 "la section :ref:`inst-config-files`.) Normalement, ce n'est pas nécessaire."
 
-# 149f0490325f4d21b96adf26c48a4b71
 #: install/index.rst:198
 msgid "The default layout for the build tree is as follows::"
 msgstr ""
 "La mise en page par défaut pour l'arbre de compilation se présente comme "
 "suit ::"
 
-# 2430fb44f78045d3b8be14127584f7e9
 #: install/index.rst:205
 msgid ""
 "where ``<plat>`` expands to a brief description of the current OS/hardware "
@@ -407,7 +377,6 @@ msgstr ""
 "deux cas, le dossier :file:`lib` (ou :file:`lib.{plat}`) contient tous les "
 "modules Python (Python pur et extensions) qui seront installés."
 
-# 26a033e63a9346e99993002ffea78d95
 #: install/index.rst:215
 msgid ""
 "In the future, more directories will be added to handle Python scripts, "
@@ -419,12 +388,10 @@ msgstr ""
 "nécessaire pour gérer le travail de l'installation de modules et "
 "d'applications Python."
 
-# 478e57a02d524b54b8008f8d65f18cb3
 #: install/index.rst:223
 msgid "How installation works"
 msgstr "Comment fonctionne l'installation"
 
-# dea55d0602cf41fca8d09f26c373a77e
 #: install/index.rst:225
 msgid ""
 "After the :command:`build` command runs (whether you run it explicitly, or "
@@ -440,7 +407,6 @@ msgstr ""
 "file:`build/lib.{plat}`) dans le répertoire que vous avez choisi pour "
 "l'installation."
 
-# b654b2c02c454d6e8b7a77b57fd58679
 #: install/index.rst:231
 msgid ""
 "If you don't choose an installation directory---i.e., if you just run "
@@ -460,94 +426,68 @@ msgstr ""
 "la distribution en cours d'installation est en pur Python ou contient des "
 "extensions (\"non-pur\"):"
 
-# 7eb32c6147ea4a4fb821f5bcac142cdc
 #: install/index.rst:239
 msgid "Platform"
 msgstr "Plateforme"
 
-# d6ee7fa6541e4810ba6de9795838ebe2
 #: install/index.rst:239
 msgid "Standard installation location"
 msgstr "Emplacement standard de l'installation"
 
-# b36322d11c3040abbe0289dbaf267b53
 #: install/index.rst:239
 msgid "Default value"
 msgstr "Valeur par défaut"
 
-# a2da259589d54d6bafdb543fe05984c6
-# 8625631d5cfa4390a30a1c9cd0c1d3db
-# 45618b7c2c8641949e24211c9c60ae12
 #: install/index.rst:239 install/index.rst:752 install/index.rst:764
 msgid "Notes"
 msgstr "Notes"
 
-# fe445cadeba348ad80e645fbe5a5d78b
 #: install/index.rst:241
 msgid "Unix (pure)"
 msgstr "Unix (pur)"
 
-# 717f76e098e34d00ae627ccf514a4a4c
-# befadebdd68942a88a0aba48d525e6fd
 #: install/index.rst:241 install/index.rst:452
 msgid ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-# f2b1e3fe120e40688e821e6a7b70d788
-# bd1d7a9a377d46da986c2dabe85140b8
 #: install/index.rst:241 install/index.rst:243
 msgid ":file:`/usr/local/lib/python{X.Y}/site-packages`"
 msgstr ":file:`/usr/local/lib/python{X.Y}/site-packages`"
 
-# 204a46f20f454cedaaf73e92c8d5004c
-# fc971586510b4c6594faa48bb24091a0
-# a6e10ef9d644471bbbff27bccb1a23d6
 #: install/index.rst:241 install/index.rst:243 install/index.rst:754
 msgid "\\(1)"
 msgstr "\\(1)"
 
-# 8e3270c5fec9424a8b53f739b5d98d65
 #: install/index.rst:243
 msgid "Unix (non-pure)"
 msgstr "Unix (non-pur)"
 
-# fef8692da4f24b0d9927ae73c72f082d
-# 4dd3c4b168164db39c895f6660131501
 #: install/index.rst:243 install/index.rst:453
 msgid ":file:`{exec-prefix}/lib/python{X.Y}/site-packages`"
 msgstr ":file:`{exec-prefix}/lib/python{X.Y}/site-packages`"
 
-# 761a4cd1fb1646078f231f0c7dfc6166
 #: install/index.rst:245
 msgid "Windows"
 msgstr "Windows"
 
-# ee93ec7458ab434dbf5f08d299289e79
-# 3eca8720ac8f4755b71e36ecf53307f7
 #: install/index.rst:245 install/index.rst:504
 #, fuzzy
 msgid ":file:`{prefix}\\\\Lib\\\\site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-# ed6096a4ec2449c7b06df38480253d37
 #: install/index.rst:245
 #, fuzzy
 msgid ":file:`C:\\\\Python{XY}\\\\Lib\\\\site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-# f480286b970c400dbb87f3eded35123b
-# e1f2a06c5ae04e989561f9a46b650e24
 #: install/index.rst:245 install/index.rst:756
 msgid "\\(2)"
 msgstr "\\(2)"
 
-# 40dc3370881849dea99aec00e7512c81
-# 44d1bcdd19244ea68563aadf447e851d
 #: install/index.rst:248 install/index.rst:776
 msgid "Notes:"
 msgstr "Notes:"
 
-# e95555653a1d475bae9952afd11c29f0
 #: install/index.rst:251
 msgid ""
 "Most Linux distributions include Python as a standard part of the system, "
@@ -563,7 +503,6 @@ msgstr ""
 "valeurs par défaut de : file: `{prefix}` et: ​​file: `{exec-prefix}` sont "
 "souvent : file: `/ usr /` locales."
 
-# 77919050195244f984b7bd64519ce2e8
 #: install/index.rst:257
 msgid ""
 "The default installation directory on Windows was :file:`C:\\\\Program Files"
@@ -572,7 +511,6 @@ msgstr ""
 "Sous Windows, le dossier d'installation par défaut était : :file:`C:"
 "\\Program Files\\Python` sous Python 1.6a1, 1.5.2 et avant."
 
-# 12487e61eadf4a248890aa167184d685
 #: install/index.rst:260
 msgid ""
 ":file:`{prefix}` and :file:`{exec-prefix}` stand for the directories that "
@@ -600,7 +538,6 @@ msgstr ""
 "tape les trois instructions ci-dessous et obtient la sortie comme indiqué "
 "pour trouver mes  :file:`{prefix}` et :file:`{exec-prefix}`::"
 
-# f68ec1a99a674a67a80229a69899dbe2
 #: install/index.rst:280
 msgid ""
 "A few other placeholders are used in this document: :file:`{X.Y}` stands for "
@@ -612,7 +549,6 @@ msgid ""
 "``python3.2`` on UNIX will typically use ``Python32`` on Windows."
 msgstr ""
 
-# 49050a0c90444aeca94c31f8c2f39c49
 #: install/index.rst:288
 msgid ""
 "If you don't want to install modules to the standard location, or if you "
@@ -628,12 +564,10 @@ msgstr ""
 "d'installation plus fortement, allez voir la section ref: `inst-sur-install` "
 "sur les installations personnalisées."
 
-# 1cf4d1b696b74c18904cc20442f68527
 #: install/index.rst:298
 msgid "Alternate Installation"
 msgstr ""
 
-# 0e2bbebab045445b801f0e748fd0fec6
 #: install/index.rst:300
 msgid ""
 "Often, it is necessary or desirable to install modules to a location other "
@@ -646,7 +580,6 @@ msgid ""
 "actually upgrading."
 msgstr ""
 
-# 63c4c0228c95463496722c3fffe4f22b
 #: install/index.rst:308
 msgid ""
 "The Distutils :command:`install` command is designed to make installing "
@@ -658,7 +591,6 @@ msgid ""
 "sections applies to you."
 msgstr ""
 
-# 99cfa1338c2d49b884e97803e3d63ca2
 #: install/index.rst:316
 msgid ""
 "Note that the various alternate installation schemes are mutually exclusive: "
@@ -667,12 +599,10 @@ msgid ""
 "mix from these groups."
 msgstr ""
 
-# c029819695bb469688a2d60fdf87ff22
 #: install/index.rst:325
 msgid "Alternate installation: the user scheme"
 msgstr ""
 
-# 97c1af23e7534c329ae1a2b8d83859d5
 #: install/index.rst:327
 msgid ""
 "This scheme is designed to be the most convenient solution for users that "
@@ -680,7 +610,6 @@ msgid ""
 "want to install into it.  It is enabled with a simple option::"
 msgstr ""
 
-# 47d0bf511d274b2682f016ab70f7bf76
 #: install/index.rst:333
 msgid ""
 "Files will be installed into subdirectories of :data:`site.USER_BASE` "
@@ -689,121 +618,76 @@ msgid ""
 "`site.USER_SITE`). Here are the values for UNIX, including Mac OS X:"
 msgstr ""
 
-# 81043e6e0fa7498299d9a03497ef9efd
-# a0c2b7808b054a1e8438d62d78632686
-# 7fdfe3938aba4cbfb8d58d772a3072f9
-# 90c5a029448b46c6af2b77104f665e51
-# 8eb80060eab544059d7f784fd131b502
-# ee6d11f7429943e28f5a4a7e378cb975
-# fc7a53c4b53748ce948a1803b4439274
-# 872e34bfcf79456c88c64eddc66de0fd
 #: install/index.rst:339 install/index.rst:350 install/index.rst:401
 #: install/index.rst:450 install/index.rst:502 install/index.rst:527
 #: install/index.rst:752 install/index.rst:764
 msgid "Type of file"
 msgstr ""
 
-# f01d0cc52f0c45eb9b71c57b3fb7d0b3
-# 4d832563279444269f9d209517e17869
-# 2387ba7ded574732b5fd4abad9555313
-# ae29407d709643fb91114d47e46b7447
-# 8e7cfad06e6a446e829e933e170e1b56
 #: install/index.rst:339 install/index.rst:350 install/index.rst:401
 #: install/index.rst:450 install/index.rst:502
 #, fuzzy
 msgid "Installation directory"
 msgstr "Comment fonctionne l'installation"
 
-# d7b42ea368e64c4887ff15394810df3e
-# 1c7a471911234920ba361284343150f8
-# fb2f7f75775341219d30ca6324da8e69
-# 82469bcb8afc4a0899d355f72c46f487
 #: install/index.rst:341 install/index.rst:352 install/index.rst:403
 #: install/index.rst:504
 #, fuzzy
 msgid "modules"
 msgstr "module"
 
-# 8a12da57f05641f3a02d74b68a9b545b
 #: install/index.rst:341
 #, fuzzy
 msgid ":file:`{userbase}/lib/python{X.Y}/site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-# f33f0ad0948148de9e6be591891a1f0b
-# 045ef5bf84a74ee991d1f9a350369e3f
-# e655f4f62e9f4945bfe376d5518e78b4
-# 1304cd05ec8b4801aae06e1f91f5fb31
-# 622d111b97234de7b49e70333c0d4d0e
-# 229c5d7604544e5d8b6ed6aac5b0f502
 #: install/index.rst:342 install/index.rst:353 install/index.rst:404
 #: install/index.rst:454 install/index.rst:505 install/index.rst:532
 msgid "scripts"
 msgstr ""
 
-# 43df5fd78091431c84aac38af8aa3576
 #: install/index.rst:342
 #, fuzzy
 msgid ":file:`{userbase}/bin`"
 msgstr ":file:`{prefix}`"
 
-# aa3da0f9424e472d94c2e709bca7a4c8
-# 4386dd14ce8d427ea558973c04e06cc6
-# 6bdce49c161f4db48dae6126090e8c2a
-# c8a924ba6d2340dcbf61eaefd00bece7
-# 6380db5939bb4e068d9f9bd6cbdc881d
-# d8a8fa1a48614206a9f8c9f3b00237fc
 #: install/index.rst:343 install/index.rst:354 install/index.rst:405
 #: install/index.rst:455 install/index.rst:506 install/index.rst:533
 msgid "data"
 msgstr ""
 
-# fc49997d73124d0ea793ee88b897a796
-# 7b6aef39571d4629b34516231d2237c1
 #: install/index.rst:343 install/index.rst:354
 #, fuzzy
 msgid ":file:`{userbase}`"
 msgstr ":file:`{prefix}`"
 
-# 318715bdfb4540349c5850c913ce13e8
-# e81857713c8842d38e6f0ded01948add
-# d3ff80fe4e6342cf9980038aa64d6b90
-# 9c9711ad89d943f994d55d6329f9d7bc
-# f8a4133886da47b6ae693974814f6e85
-# 87a72e872ab54ce7bc8522c7c8bdc1d4
 #: install/index.rst:344 install/index.rst:355 install/index.rst:406
 #: install/index.rst:456 install/index.rst:507 install/index.rst:534
 msgid "C headers"
 msgstr ""
 
-# 4e488a92a1b6402eb996e3246582f9b5
 #: install/index.rst:344
 #, fuzzy
 msgid ":file:`{userbase}/include/python{X.Y}{abiflags}/{distname}`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-# 02b54a65cf764b219e56739e68d73cba
 #: install/index.rst:347
 msgid "And here are the values used on Windows:"
 msgstr ""
 
-# ae7a88028b3046cdbb1f56d644629f3c
 #: install/index.rst:352
 #, fuzzy
 msgid ":file:`{userbase}\\\\Python{XY}\\\\site-packages`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-# f9b8e8d0b15c4c32ac0910fca58220f9
 #: install/index.rst:353
 msgid ":file:`{userbase}\\\\Scripts`"
 msgstr ""
 
-# b44f8d52071b4ca58cff8a3c4e052fd8
 #: install/index.rst:355
 msgid ":file:`{userbase}\\\\Python{XY}\\\\Include\\\\{distname}`"
 msgstr ""
 
-# 2e232ba4248d4b3f9c705e0152845d2e
 #: install/index.rst:358
 msgid ""
 "The advantage of using this scheme compared to the other ones described "
@@ -813,7 +697,6 @@ msgid ""
 "file:`setup.py` script to finalize the installation."
 msgstr ""
 
-# 4c5406d22c16455d980ae3b149334376
 #: install/index.rst:364
 msgid ""
 "The :command:`build_ext` command also has a ``--user`` option to add :file:"
@@ -822,12 +705,10 @@ msgid ""
 "runtime search path for shared C libraries (rpath)."
 msgstr ""
 
-# 20e2992f8a4c49f5af083a6b9a8e55d9
 #: install/index.rst:373
 msgid "Alternate installation: the home scheme"
 msgstr ""
 
-# 9357c6e88fd640968253fddadbce2df3
 #: install/index.rst:375
 msgid ""
 "The idea behind the \"home scheme\" is that you build and maintain a "
@@ -838,12 +719,10 @@ msgid ""
 "operating system they are installing for."
 msgstr ""
 
-# d41dd0eecbea4ddf8ee2598d7474272f
 #: install/index.rst:382
 msgid "Installing a new module distribution is as simple as ::"
 msgstr ""
 
-# 33ea0248570444e3b56f287e9b144473
 #: install/index.rst:386
 msgid ""
 "where you can supply any directory you like for the :option:`--home` "
@@ -851,7 +730,6 @@ msgid ""
 "`install` command will expand this to your home directory::"
 msgstr ""
 
-# 8a062ca08f5d4ff983a6afdc8f7686d2
 #: install/index.rst:392
 msgid ""
 "To make Python find the distributions installed with this scheme, you may "
@@ -860,7 +738,6 @@ msgid ""
 "data:`sys.path`."
 msgstr ""
 
-# 19619453009d4612a2374cfd77957c73
 #: install/index.rst:397
 msgid ""
 "The :option:`--home` option defines the installation base directory.  Files "
@@ -868,38 +745,31 @@ msgid ""
 "follows:"
 msgstr ""
 
-# db6ffb2229f24b349afa9b6db264107b
 #: install/index.rst:403
 msgid ":file:`{home}/lib/python`"
 msgstr ""
 
-# bd3f8781e9724ee58b0d5cef8e54a71c
 #: install/index.rst:404
 msgid ":file:`{home}/bin`"
 msgstr ""
 
-# fb522f1e39e24dc39cb2a051a66eb046
 #: install/index.rst:405
 #, fuzzy
 msgid ":file:`{home}`"
 msgstr ":file:`{prefix}`"
 
-# 4de2a2ed25844cd78fe44b9971639e03
 #: install/index.rst:406
 msgid ":file:`{home}/include/python/{distname}`"
 msgstr ""
 
-# b6db6e79e4a54cf29a8a9054fd0874ef
 #: install/index.rst:409
 msgid "(Mentally replace slashes with backslashes if you're on Windows.)"
 msgstr ""
 
-# 3f94efd01e1e417585efcdccbbcac7a5
 #: install/index.rst:415
 msgid "Alternate installation: Unix (the prefix scheme)"
 msgstr ""
 
-# 8c642407eb3b4f91ab3ca3ef5bb22752
 #: install/index.rst:417
 msgid ""
 "The \"prefix scheme\" is useful when you wish to use one Python installation "
@@ -911,7 +781,6 @@ msgid ""
 "where the prefix scheme will be useful."
 msgstr ""
 
-# 6413e422ccfe4cb2aa69cc967f285188
 #: install/index.rst:424
 msgid ""
 "First, consider that many Linux distributions put Python in :file:`/usr`, "
@@ -922,7 +791,6 @@ msgid ""
 "rather than :file:`/usr/lib/python2.{X}`.  This can be done with ::"
 msgstr ""
 
-# 411c7d6840004314a72d6bbbfbc1a821
 #: install/index.rst:433
 msgid ""
 "Another possibility is a network filesystem where the name used to write to "
@@ -933,7 +801,6 @@ msgid ""
 "{X}`.  This could be done with ::"
 msgstr ""
 
-# 9c15828b07f044aeaafaee41bb697bf5
 #: install/index.rst:442
 msgid ""
 "In either case, the :option:`--prefix` option defines the installation base, "
@@ -944,38 +811,29 @@ msgid ""
 "supplied, it defaults to :option:`--prefix`.  Files are installed as follows:"
 msgstr ""
 
-# d03dc83b6b414185a74b614d1de5fe1d
-# c877945b72d94afbaf23f8f890df1abe
 #: install/index.rst:452 install/index.rst:529
 #, fuzzy
 msgid "Python modules"
 msgstr "installation des modules python"
 
-# 4fbb99cc1aaa426586e5b9b8de38de16
-# cabe1e5472914f598f6b89fe29d1df0a
 #: install/index.rst:453 install/index.rst:530
 #, fuzzy
 msgid "extension modules"
 msgstr "module d'extension"
 
-# 5dd0b51f145c49f58daf3d01faf5af8a
 #: install/index.rst:454
 msgid ":file:`{prefix}/bin`"
 msgstr ""
 
-# 08847b6b2f6a4728966a29b5ab1aa3ae
-# 4ab6e6a91d8548b0a22e7abd2e94cba3
 #: install/index.rst:455 install/index.rst:506
 msgid ":file:`{prefix}`"
 msgstr ":file:`{prefix}`"
 
-# 0f1c3a7d60e34e34a59e4ab2a583fd6e
 #: install/index.rst:456
 #, fuzzy
 msgid ":file:`{prefix}/include/python{X.Y}{abiflags}/{distname}`"
 msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
 
-# 29e85a18b21d46e1af6edeff6f9131f9
 #: install/index.rst:459
 msgid ""
 "There is no requirement that :option:`--prefix` or :option:`--exec-prefix` "
@@ -983,7 +841,6 @@ msgid ""
 "listed above do not already exist, they are created at installation time."
 msgstr ""
 
-# ab11a500836b451984fc8d153dfc281c
 #: install/index.rst:463
 msgid ""
 "Incidentally, the real reason the prefix scheme is important is simply that "
@@ -994,7 +851,6 @@ msgid ""
 "without any other options, you're using it."
 msgstr ""
 
-# 67162cbf35b44deab27ec30ce2c60272
 #: install/index.rst:470
 msgid ""
 "Note that installing extensions to an alternate Python installation has no "
@@ -1010,12 +866,10 @@ msgid ""
 "immaterial.)"
 msgstr ""
 
-# 7cdf56afb79849e688549cd0c43463cf
 #: install/index.rst:485
 msgid "Alternate installation: Windows (the prefix scheme)"
 msgstr ""
 
-# c6b7039b2c374deebbd44083bff1a072
 #: install/index.rst:487
 msgid ""
 "Windows has no concept of a user's home directory, and since the standard "
@@ -1024,14 +878,12 @@ msgid ""
 "separate locations on Windows. ::"
 msgstr ""
 
-# 484988f963564a308019b9dec09afe6d
 #: install/index.rst:494
 msgid ""
 "to install modules to the :file:`\\\\Temp\\\\Python` directory on the "
 "current drive."
 msgstr ""
 
-# 37a3348072014c649a1d4ca7623ad959
 #: install/index.rst:496
 msgid ""
 "The installation base is defined by the :option:`--prefix` option; the :"
@@ -1040,23 +892,19 @@ msgid ""
 "location. Files are installed as follows:"
 msgstr ""
 
-# 82dfa5d3818a41029b121cf500f124a7
 #: install/index.rst:505
 msgid ":file:`{prefix}\\\\Scripts`"
 msgstr ""
 
-# 34c64fd15e5b407aa0f5af97c9c1991e
 #: install/index.rst:507
 #, fuzzy
 msgid ":file:`{prefix}\\\\Include\\\\{distname}`"
 msgstr ":file:`{prefix}`"
 
-# 184832f5bffa4d15a9a4177dbded15ab
 #: install/index.rst:514
 msgid "Custom Installation"
 msgstr ""
 
-# 32cc1187e1a54fa8833ea34f5240b342
 #: install/index.rst:516
 msgid ""
 "Sometimes, the alternate installation schemes described in section :ref:"
@@ -1066,7 +914,6 @@ msgid ""
 "scheme.  In either case, you're creating a *custom installation scheme*."
 msgstr ""
 
-# 8f1da4adcb7b4232973b3a2352c4cfb7
 #: install/index.rst:522
 msgid ""
 "To create a custom installation scheme, you start with one of the alternate "
@@ -1074,47 +921,38 @@ msgid ""
 "various types of files, using these options:"
 msgstr ""
 
-# d0de2fb6dc564d09ad8e81192b399669
 #: install/index.rst:527
 msgid "Override option"
 msgstr ""
 
-# 63268f15f63b4531b4b4ce4e4ffe3472
 #: install/index.rst:529
 msgid "``--install-purelib``"
 msgstr ""
 
-# cb6d4ebb6da3427c9b906494474064b5
 #: install/index.rst:530
 msgid "``--install-platlib``"
 msgstr ""
 
-# 4e9a9d8a06f449f7b4c66a0ca45f58f0
 #: install/index.rst:531
 msgid "all modules"
 msgstr ""
 
-# d7ff392253044bf59a6d917a2a67462b
 #: install/index.rst:531
 msgid "``--install-lib``"
 msgstr ""
 
-# 701116cef5b54e2d8b743e8381378f0b
 #: install/index.rst:532
 msgid "``--install-scripts``"
 msgstr ""
 
-# ac33034ee79246168582d64c96273359
 #: install/index.rst:533
 msgid "``--install-data``"
 msgstr ""
 
-# 726fae3470bb4fd294ac804d68c54008
 #: install/index.rst:534
 msgid "``--install-headers``"
 msgstr ""
 
-# a486242eadd548f486210ebfe8c4a08d
 #: install/index.rst:537
 msgid ""
 "These override options can be relative, absolute, or explicitly defined in "
@@ -1127,7 +965,6 @@ msgid ""
 "between Python and extension modules.)"
 msgstr ""
 
-# 756f1b8ee84e4457bcb2967edf3b6736
 #: install/index.rst:546
 msgid ""
 "For example, say you're installing a module distribution to your home "
@@ -1139,7 +976,6 @@ msgid ""
 "case)::"
 msgstr ""
 
-# c16f4d002bcb4917bd6754cb74a7699c
 #: install/index.rst:555
 msgid ""
 "Another Unix example: suppose your Python installation was built and "
@@ -1149,7 +985,6 @@ msgid ""
 "directory for the :option:`--install-scripts` option::"
 msgstr ""
 
-# 30665d563b624f7380b50ea366a4fec4
 #: install/index.rst:563
 msgid ""
 "(This performs an installation using the \"prefix scheme,\" where the prefix "
@@ -1157,7 +992,6 @@ msgid ""
 "python` in this case.)"
 msgstr ""
 
-# 394a7b8ce0394ae38f0b01ef9210a229
 #: install/index.rst:567
 msgid ""
 "If you maintain Python on Windows, you might want third-party modules to "
@@ -1168,7 +1002,6 @@ msgid ""
 "conveniently be both controlled by one option::"
 msgstr ""
 
-# 916989f7c847452d8301118bfac60abe
 #: install/index.rst:576
 msgid ""
 "The specified installation directory is relative to :file:`{prefix}`.  Of "
@@ -1178,7 +1011,6 @@ msgid ""
 "modify Python's search path."
 msgstr ""
 
-# e48b59a62c54455781bde67bdc008c42
 #: install/index.rst:582
 msgid ""
 "If you want to define an entire installation scheme, you just have to supply "
@@ -1189,14 +1021,11 @@ msgid ""
 "from, you might define the following installation scheme::"
 msgstr ""
 
-# f1a6cb2a94844506a0cf7b103231e6c1
-# 375316ae27e34efe85eb67363ec3c4da
 #: install/index.rst:595 install/index.rst:618
 #, fuzzy
 msgid "or, equivalently, ::"
 msgstr "ou ::"
 
-# 4e81d7a8f3524d0383ab8aea58e5f747
 #: install/index.rst:603
 msgid ""
 "``$PLAT`` is not (necessarily) an environment variable---it will be expanded "
@@ -1204,7 +1033,6 @@ msgid ""
 "when parsing your configuration file(s)."
 msgstr ""
 
-# dc8dd23c8aa743be8ca6a7a029765459
 #: install/index.rst:607
 msgid ""
 "Obviously, specifying the entire installation scheme every time you install "
@@ -1213,14 +1041,12 @@ msgid ""
 "files`)::"
 msgstr ""
 
-# 123675718e2443188ab7440e55f7ce66
 #: install/index.rst:627
 msgid ""
 "Note that these two are *not* equivalent if you supply a different "
 "installation base directory when you run the setup script.  For example, ::"
 msgstr ""
 
-# cdb8ba911b6a48e3a2b283c3e8f3c1b0
 #: install/index.rst:632
 msgid ""
 "would install pure modules to :file:`/tmp/python/lib` in the first case, and "
@@ -1228,7 +1054,6 @@ msgid ""
 "want to supply an installation base of :file:`/tmp/python`.)"
 msgstr ""
 
-# 57202a37d85f45e89dfc56eac32e7d4e
 #: install/index.rst:636
 msgid ""
 "You probably noticed the use of ``$HOME`` and ``$PLAT`` in the sample "
@@ -1242,12 +1067,10 @@ msgid ""
 "section :ref:`inst-config-files` for details."
 msgstr ""
 
-# 24fbd43a4d32408087a106340467d127
 #: install/index.rst:655
 msgid "Modifying Python's Search Path"
 msgstr ""
 
-# 6825a72ec1114ef4884f50ec9377d433
 #: install/index.rst:657
 msgid ""
 "When the Python interpreter executes an :keyword:`import` statement, it "
@@ -1257,13 +1080,11 @@ msgid ""
 "module and printing the value of ``sys.path``.   ::"
 msgstr ""
 
-# 9d82865e7a09429cb8e11d6cb05d5372
 #: install/index.rst:674
 msgid ""
 "The null string in ``sys.path`` represents the current working directory."
 msgstr ""
 
-# 7b4adc875d1a40f48114fe57aaf460b6
 #: install/index.rst:676
 msgid ""
 "The expected convention for locally installed packages is to put them in "
@@ -1275,7 +1096,6 @@ msgid ""
 "There are several different ways to add the directory."
 msgstr ""
 
-# 6124f7c0b3a94fb0996a2dcb429b286a
 #: install/index.rst:684
 msgid ""
 "The most convenient way is to add a path configuration file to a directory "
@@ -1287,7 +1107,6 @@ msgid ""
 "this mechanism for installing fixed versions of standard modules.)"
 msgstr ""
 
-# 4733b80fe05a47e08070527cb22263ac
 #: install/index.rst:692
 msgid ""
 "Paths can be absolute or relative, in which case they're relative to the "
@@ -1295,7 +1114,6 @@ msgid ""
 "mod:`site` module for more information."
 msgstr ""
 
-# a5a51501a35840a7a2cb90d558a9d654
 #: install/index.rst:696
 msgid ""
 "A slightly less convenient way is to edit the :file:`site.py` file in "
@@ -1305,7 +1123,6 @@ msgid ""
 "simply edit :file:`site.py` and add two lines to it::"
 msgstr ""
 
-# 810e0da4aa7b4c099191739767ca559d
 #: install/index.rst:705
 msgid ""
 "However, if you reinstall the same major version of Python (perhaps when "
@@ -1314,7 +1131,6 @@ msgid ""
 "modified and save a copy before doing the installation."
 msgstr ""
 
-# 86847b4988f14464833bc741f93d635a
 #: install/index.rst:710
 msgid ""
 "There are two environment variables that can modify ``sys.path``. :envvar:"
@@ -1324,7 +1140,6 @@ msgid ""
 "Y/', '/www/python/lib/pythonX.Y/plat-linux2', ...]``."
 msgstr ""
 
-# ef70001651084a9ba205ac02f87add11
 #: install/index.rst:716
 msgid ""
 "The :envvar:`PYTHONPATH` variable can be set to a list of paths that will be "
@@ -1335,19 +1150,16 @@ msgid ""
 "don't exist.)"
 msgstr ""
 
-# d2282f3f1a7f4b43a98c5699212e15eb
 #: install/index.rst:723
 msgid ""
 "Finally, ``sys.path`` is just a regular Python list, so any Python "
 "application can modify it by adding or removing entries."
 msgstr ""
 
-# fe638edf6a6c49c3afa42fb98bbbdef8
 #: install/index.rst:730
 msgid "Distutils Configuration Files"
 msgstr ""
 
-# 225e635107b84e2f8fabb87489744223
 #: install/index.rst:732
 msgid ""
 "As mentioned above, you can use Distutils configuration files to record "
@@ -1360,12 +1172,10 @@ msgid ""
 "files are overridden by \"later\" files."
 msgstr ""
 
-# 335efbed1ed442018762a66e811187f6
 #: install/index.rst:745
 msgid "Location and names of config files"
 msgstr ""
 
-# 67b54ba615fe402aa35922942fb13df1
 #: install/index.rst:747
 msgid ""
 "The names and locations of the configuration files vary slightly across "
@@ -1373,85 +1183,64 @@ msgid ""
 "order they are processed) are:"
 msgstr ""
 
-# 1190e24cb8124b378b9b3cf51131ad9b
-# 9e338ee89fdb489a89814e40703f6010
 #: install/index.rst:752 install/index.rst:764
 msgid "Location and filename"
 msgstr ""
 
-# 51e9ef214ee84a86bcc7a1d89b5c42f5
-# 6f5f9c88a9dc4ca5b142cf949dc98113
 #: install/index.rst:754 install/index.rst:766
 msgid "system"
 msgstr ""
 
-# 726c59f36a154aeca164c214d45ad57c
 #: install/index.rst:754
 msgid ":file:`{prefix}/lib/python{ver}/distutils/distutils.cfg`"
 msgstr ""
 
-# f9b7cbc4b614426fa80963e81aa3bf09
-# 7e712df26c784626919511bbfad52735
 #: install/index.rst:756 install/index.rst:768
 msgid "personal"
 msgstr ""
 
-# 3b7b2d5ced764a259a1c14ff697e1830
 #: install/index.rst:756
 msgid ":file:`$HOME/.pydistutils.cfg`"
 msgstr ""
 
-# 3772f137171d44219f20ed84bce6558d
-# 7d6283bc16b6456eb711a0b5ab9b7ed4
 #: install/index.rst:758 install/index.rst:770
 msgid "local"
 msgstr ""
 
-# 135f6d758866418897f185a3aeb90a39
-# ded422367e56467cbd694ea724c633e8
 #: install/index.rst:758 install/index.rst:770
 msgid ":file:`setup.cfg`"
 msgstr ""
 
-# 2fd1a04d0c87435792189425a190eae7
-# 07f5091cff7f48d5a1680e7df28674e7
 #: install/index.rst:758 install/index.rst:770
 msgid "\\(3)"
 msgstr "\\(3)"
 
-# c381729f48ab4741b05a301aebaec213
 #: install/index.rst:761
 msgid "And on Windows, the configuration files are:"
 msgstr ""
 
-# e7b87be951344f9d854145d2591e8e8a
 #: install/index.rst:766
 msgid ":file:`{prefix}\\\\Lib\\\\distutils\\\\distutils.cfg`"
 msgstr ""
 
-# bb421a205f2a4ba594531452dfe42103
 #: install/index.rst:766
 msgid "\\(4)"
 msgstr ""
 
-# f96d7d84b9194a7f826daad5137de34d
 #: install/index.rst:768
 msgid ":file:`%HOME%\\\\pydistutils.cfg`"
 msgstr ""
 
-# 2edb95ea4d6d452d927c5516cd520397
 #: install/index.rst:768
 msgid "\\(5)"
 msgstr ""
 
-# 24b7ccee65a74304879c7771be3a54fb
 #: install/index.rst:773
 msgid ""
 "On all platforms, the \"personal\" file can be temporarily disabled by "
 "passing the `--no-user-cfg` option."
 msgstr ""
 
-# 2150ada6ac3d45a89c12a1bb28a2797a
 #: install/index.rst:779
 msgid ""
 "Strictly speaking, the system-wide configuration file lives in the directory "
@@ -1461,7 +1250,6 @@ msgid ""
 "configuration file should be put there under Python 1.5.2."
 msgstr ""
 
-# 085d1fdb89a9486cbf9d75a5570f75dc
 #: install/index.rst:786
 msgid ""
 "On Unix, if the :envvar:`HOME` environment variable is not defined, the "
@@ -1470,13 +1258,11 @@ msgid ""
 "expanduser` function used by Distutils."
 msgstr ""
 
-# 410d4d0d53d64b8581e97fbc0658882a
 #: install/index.rst:792
 msgid ""
 "I.e., in the current directory (usually the location of the setup script)."
 msgstr ""
 
-# abffe80763dd46b1ab186380e1caf144
 #: install/index.rst:795
 msgid ""
 "(See also note (1).)  Under Python 1.6 and later, Python's default "
@@ -1489,7 +1275,6 @@ msgid ""
 "Windows."
 msgstr ""
 
-# 531830b7cd4741a58e12a567df462521
 #: install/index.rst:804
 msgid ""
 "On Windows, if the :envvar:`HOME` environment variable is not defined, :"
@@ -1498,12 +1283,10 @@ msgid ""
 "Distutils."
 msgstr ""
 
-# 35b2fbdeee4c4f338cb1595d8f0075f1
 #: install/index.rst:813
 msgid "Syntax of config files"
 msgstr ""
 
-# 5baa349d093649d7add18ae4c13a0f71
 #: install/index.rst:815
 msgid ""
 "The Distutils configuration files all have the same syntax.  The config "
@@ -1513,14 +1296,12 @@ msgid ""
 "``option=value``."
 msgstr ""
 
-# a4e93c067191469089f8f0d90e40a66b
 #: install/index.rst:820
 msgid ""
 "For example, the following is a complete config file that just forces all "
 "commands to run quietly by default::"
 msgstr ""
 
-# 5caeb7ce095b402dbdfa92956edbe90b
 #: install/index.rst:826
 msgid ""
 "If this is installed as the system config file, it will affect all "
@@ -1531,7 +1312,6 @@ msgid ""
 "distribution, it affects only that distribution."
 msgstr ""
 
-# 2cc99e7662c94b069bf6f326a7b2b534
 #: install/index.rst:833
 msgid ""
 "You could override the default \"build base\" directory and make the :"
@@ -1539,12 +1319,10 @@ msgid ""
 "following::"
 msgstr ""
 
-# 9aababbdc23f4ff388001e75dddacf12
 #: install/index.rst:841
 msgid "which corresponds to the command-line arguments ::"
 msgstr ""
 
-# 782b058c0a0b428b98a03ff787ac6991
 #: install/index.rst:845
 msgid ""
 "except that including the :command:`build` command on the command-line means "
@@ -1554,33 +1332,28 @@ msgid ""
 "values from it are run, they will use the values in the config file.)"
 msgstr ""
 
-# aa0173cff2ed4b91b0d4e184d9318f3a
 #: install/index.rst:851
 msgid ""
 "You can find out the complete list of options for any command using the :"
 "option:`--help` option, e.g.::"
 msgstr ""
 
-# 7316e1a1979c4f5198c1027fe99fc82b
 #: install/index.rst:856
 msgid ""
 "and you can find out the complete list of global options by using :option:`--"
 "help` without a command::"
 msgstr ""
 
-# 6b5af3871cd84c8aa0a99b6a45471fa1
 #: install/index.rst:861
 msgid ""
 "See also the \"Reference\" section of the \"Distributing Python Modules\" "
 "manual."
 msgstr ""
 
-# 69cba7f96c9944019bf2a189148520a8
 #: install/index.rst:867
 msgid "Building Extensions: Tips and Tricks"
 msgstr ""
 
-# b315f9ad359541c59e2f56c31954838d
 #: install/index.rst:869
 msgid ""
 "Whenever possible, the Distutils try to use the configuration information "
@@ -1591,12 +1364,10 @@ msgid ""
 "section discusses how to override the usual Distutils behaviour."
 msgstr ""
 
-# f63db25d7c0741938a7611fd7e3921b5
 #: install/index.rst:880
 msgid "Tweaking compiler/linker flags"
 msgstr ""
 
-# 941b33bdaec84c398ad376817d080f7e
 #: install/index.rst:882
 msgid ""
 "Compiling a Python extension written in C or C++ will sometimes require "
@@ -1606,7 +1377,6 @@ msgid ""
 "you're trying to cross-compile Python."
 msgstr ""
 
-# 0340b11b4cd34696a7756cfaf49e75d6
 #: install/index.rst:888
 msgid ""
 "In the most general case, the extension author might have foreseen that "
@@ -1616,7 +1386,6 @@ msgid ""
 "require elaborate sets of compiler flags in order to work."
 msgstr ""
 
-# ddba10e2b62548dc92d343b865dbfa80
 #: install/index.rst:894
 msgid ""
 "A :file:`Setup` file, if present, is parsed in order to get a list of "
@@ -1624,12 +1393,10 @@ msgid ""
 "module.  Lines have the following structure::"
 msgstr ""
 
-# 08ea9e581f7049e097937f8459bf6641
 #: install/index.rst:901
 msgid "Let's examine each of the fields in turn."
 msgstr ""
 
-# 2d10ac1ef9cc4ae19fb0c09cb41f60fd
 #: install/index.rst:903
 msgid ""
 "*module* is the name of the extension module to be built, and should be a "
@@ -1638,7 +1405,6 @@ msgid ""
 "left alone."
 msgstr ""
 
-# 4ef14745b4c947ce80a8e36563de2c64
 #: install/index.rst:907
 msgid ""
 "*sourcefile* is anything that's likely to be a source code file, at least "
@@ -1648,21 +1414,18 @@ msgid ""
 "assumed to be in Objective C."
 msgstr ""
 
-# 96f56e84f2cd4647b7936a3b80a8cfa1
 #: install/index.rst:913
 msgid ""
 "*cpparg* is an argument for the C preprocessor,  and is anything starting "
 "with :option:`-I`, :option:`-D`, :option:`-U` or :option:`-C`."
 msgstr ""
 
-# 24a2a11509cc4b44b933c32b9977eae9
 #: install/index.rst:916
 msgid ""
 "*library* is anything ending in :file:`.a` or beginning with :option:`-l` "
 "or :option:`-L`."
 msgstr ""
 
-# 27132f0ad6544266bad3dd335b8a206c
 #: install/index.rst:919
 msgid ""
 "If a particular platform requires a special library on your platform, you "
@@ -1670,21 +1433,18 @@ msgid ""
 "build``. For example, if the module defined by the line ::"
 msgstr ""
 
-# 4c4d2311144941adae02f7eda8ddbc28
 #: install/index.rst:925
 msgid ""
 "must be linked with the math library :file:`libm.a` on your platform, simply "
 "add :option:`-lm` to the line::"
 msgstr ""
 
-# ee1579abaa904a62bf30a742bbcb60db
 #: install/index.rst:930
 msgid ""
 "Arbitrary switches intended for the compiler or the linker can be supplied "
 "with the :option:`-Xcompiler` *arg* and :option:`-Xlinker` *arg* options::"
 msgstr ""
 
-# 10ebcf34fb774480815b38b90b5cb8a1
 #: install/index.rst:935
 msgid ""
 "The next option after :option:`-Xcompiler` and :option:`-Xlinker` will be "
@@ -1696,7 +1456,6 @@ msgid ""
 "++``."
 msgstr ""
 
-# 68ab31313b654826a2ee3b682c8346be
 #: install/index.rst:942
 msgid ""
 "Compiler flags can also be supplied through setting the :envvar:`CFLAGS` "
@@ -1704,17 +1463,14 @@ msgid ""
 "added to the compiler flags specified in the  :file:`Setup` file."
 msgstr ""
 
-# 35168fcb54434839bfc03e717e57df90
 #: install/index.rst:950
 msgid "Using non-Microsoft compilers on Windows"
 msgstr ""
 
-# 14264129e988482fba0beffeea3fce19
 #: install/index.rst:957
 msgid "Borland/CodeGear C++"
 msgstr ""
 
-# df66090f5f7d49baa72061256356e7cb
 #: install/index.rst:959
 msgid ""
 "This subsection describes the necessary steps to use Distutils with the "
@@ -1726,7 +1482,6 @@ msgid ""
 "`python25.lib` into the Borland format.  You can do this as follows:"
 msgstr ""
 
-# 778731d1cf7a445195ce7ca724ceb48d
 #: install/index.rst:974
 msgid ""
 "The :file:`coff2omf` program comes with the Borland compiler.  The file :"
@@ -1735,14 +1490,12 @@ msgid ""
 "to convert them too."
 msgstr ""
 
-# f1e8916286504f56b4e9870710b25a2b
 #: install/index.rst:979
 msgid ""
 "The converted files have to reside in the same directories as the normal "
 "libraries."
 msgstr ""
 
-# ef2b8ecb944448ecad1e4bb9de616b00
 #: install/index.rst:982
 msgid ""
 "How does Distutils manage to use these libraries with their changed names?  "
@@ -1752,14 +1505,12 @@ msgid ""
 "it uses the default name (:file:`foo.lib`.) [#]_"
 msgstr ""
 
-# 402f3f4ea844491699f85c2e00886210
 #: install/index.rst:988
 msgid ""
 "To let Distutils compile your extension with Borland C++ you now have to "
 "type::"
 msgstr ""
 
-# 06f4aedf97da4c1faa4880b7707628a4
 #: install/index.rst:992
 msgid ""
 "If you want to use the Borland C++ compiler as the default, you could "
@@ -1771,7 +1522,6 @@ msgstr ""
 msgid "C++Builder Compiler"
 msgstr ""
 
-# 67beb0e83b8240c8a27ce54940570d67
 #: install/index.rst:1000
 msgid ""
 "Information about the free C++ compiler from Borland, including links to the "
@@ -1782,19 +1532,16 @@ msgstr ""
 msgid "Creating Python Extensions Using Borland's Free Compiler"
 msgstr ""
 
-# c0c62221b4014788ab81bafdb0eaa634
 #: install/index.rst:1004
 msgid ""
 "Document describing how to use Borland's free command-line C++ compiler to "
 "build Python."
 msgstr ""
 
-# 2e98fc8b50814ce8b040565ead1c5ab3
 #: install/index.rst:1009
 msgid "GNU C / Cygwin / MinGW"
 msgstr ""
 
-# 2ac8bb86f58847f88fbc64d2ba295f60
 #: install/index.rst:1011
 msgid ""
 "This section describes the necessary steps to use Distutils with the GNU C/C+"
@@ -1803,7 +1550,6 @@ msgid ""
 "of these following steps."
 msgstr ""
 
-# 1bc79ab27e70436fb1691fde1a8563c9
 #: install/index.rst:1016
 msgid ""
 "Not all extensions can be built with MinGW or Cygwin, but many can.  "
@@ -1811,17 +1557,14 @@ msgid ""
 "Microsoft Visual C extensions."
 msgstr ""
 
-# 785e9c0cc33d41aa84a14071be032393
 #: install/index.rst:1020
 msgid "To let Distutils compile your extension with Cygwin you have to type::"
 msgstr ""
 
-# 97352e7d07714afbaf767c865ae496d8
 #: install/index.rst:1024
 msgid "and for Cygwin in no-cygwin mode [#]_ or for MinGW type::"
 msgstr ""
 
-# 11a522ebdc5440f2a3075878dc92ed85
 #: install/index.rst:1028
 msgid ""
 "If you want to use any of these options/compilers as default, you should "
@@ -1829,12 +1572,10 @@ msgid ""
 "Distutils (see section :ref:`inst-config-files`.)"
 msgstr ""
 
-# 02dcf1fc14784415bce7eb5c695433c1
 #: install/index.rst:1033
 msgid "Older Versions of Python and MinGW"
 msgstr ""
 
-# 6c75f3042a4f4f35b2eb3f1590434768
 #: install/index.rst:1034
 msgid ""
 "The following instructions only apply if you're using a version of Python "
@@ -1842,7 +1583,6 @@ msgid ""
 "binutils-2.13.90-20030111-1)."
 msgstr ""
 
-# 56ebf792c0254b2aae8f805da71a8a11
 #: install/index.rst:1038
 msgid ""
 "These compilers require some special libraries.  This task is more complex "
@@ -1852,7 +1592,6 @@ msgid ""
 "software/pexports-0.43/download_pexports.html)."
 msgstr ""
 
-# 9c4b9677f6544a8a87bd45645bf083eb
 #: install/index.rst:1051
 msgid ""
 "The location of an installed :file:`python25.dll` will depend on the "
@@ -1862,13 +1601,11 @@ msgid ""
 "directory."
 msgstr ""
 
-# d119faa28e814cdb84c17beda06a285f
 #: install/index.rst:1056
 msgid ""
 "Then you can create from these information an import library for gcc. ::"
 msgstr ""
 
-# 494d4aee4fb14b78b8f74fe48c9724c5
 #: install/index.rst:1060
 msgid ""
 "The resulting library has to be placed in the same directory as :file:"
@@ -1876,7 +1613,6 @@ msgid ""
 "installation directory.)"
 msgstr ""
 
-# 790a839d43804e2886e743d318cb6dc0
 #: install/index.rst:1064
 msgid ""
 "If your extension uses other libraries (zlib,...) you might  have to convert "
@@ -1888,32 +1624,27 @@ msgstr ""
 msgid "Building Python modules on MS Windows platform with MinGW"
 msgstr ""
 
-# 5e681927d9f9419fa095a8d99b7ab5a5
 #: install/index.rst:1072
 msgid ""
 "Information about building the required libraries for the MinGW environment."
 msgstr ""
 
-# 16580783ec1b4839b951c44c13029a47
 #: install/index.rst:1076
 msgid "Footnotes"
 msgstr "Notes"
 
-# 212d1223d91c46f1849e278ee3dffcf4
 #: install/index.rst:1077
 msgid ""
 "This also means you could replace all existing COFF-libraries with OMF-"
 "libraries of the same name."
 msgstr ""
 
-# 26c3f398de3b4818846303293b35cc7d
 #: install/index.rst:1080
 msgid ""
 "Check http://sources.redhat.com/cygwin/ and http://www.mingw.org/ for more "
 "information"
 msgstr ""
 
-# f36e8dba8d93400da33b7a5a3d886b2e
 #: install/index.rst:1083
 msgid ""
 "Then you have no POSIX emulation available, but you also don't need :file:"
