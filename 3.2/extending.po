@@ -3075,7 +3075,7 @@ msgstr ""
 
 #: extending/newtypes.rst:1155
 msgid "Meaning"
-msgstr ""
+msgstr "Signification"
 
 #: extending/newtypes.rst:1157
 msgid ":const:`READONLY`"

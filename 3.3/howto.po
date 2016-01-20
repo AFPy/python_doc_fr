@@ -3456,7 +3456,7 @@ msgstr ""
 
 #: howto/logging.rst:33
 msgid ":func:`print`"
-msgstr ""
+msgstr ":func:`print`"
 
 #: howto/logging.rst:37
 msgid ""
@@ -7467,7 +7467,7 @@ msgstr ""
 
 #: howto/regex.rst:525
 msgid "Meaning"
-msgstr ""
+msgstr "Signification"
 
 #: howto/regex.rst:527
 msgid ":const:`ASCII`, :const:`A`"

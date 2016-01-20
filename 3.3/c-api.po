@@ -143,7 +143,7 @@ msgstr ""
 #: c-api/apiabiversion.rst:16 c-api/structures.rst:116 c-api/structures.rst:228
 #: c-api/tuple.rst:137 c-api/tuple.rst:160
 msgid "Meaning"
-msgstr ""
+msgstr "Signification"
 
 #: c-api/apiabiversion.rst:18
 msgid "``1``"

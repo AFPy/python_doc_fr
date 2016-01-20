@@ -1142,7 +1142,7 @@ msgstr ""
 #: reference/datamodel.rst:443 reference/lexical_analysis.rst:460
 #: reference/lexical_analysis.rst:493
 msgid "Meaning"
-msgstr ""
+msgstr "Signification"
 
 #: reference/datamodel.rst:445
 msgid ":attr:`__doc__`"

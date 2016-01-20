@@ -1320,7 +1320,7 @@ msgstr ""
 
 #: using/unix.rst:100
 msgid "Meaning"
-msgstr ""
+msgstr "Signification"
 
 #: using/unix.rst:102
 msgid ":file:`{exec_prefix}/bin/python3`"

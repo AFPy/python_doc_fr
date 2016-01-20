@@ -23,14 +23,14 @@ Progression de la traduction:
         license    63%    67%    66%    68%   100%
         install    21%    22%    22%    21%    21%
        glossary    78%    88%    95%    97%   100%
-      extending    18%    19%    19%    20%    22%
-          using    20%    23%    18%    14%    10%
+      extending    19%    19%    19%    20%    23%
+          using    21%    23%    18%    14%    10%
        tutorial    95%    90%    96%    99%   100%
             faq    23%    24%    24%    24%    26%
       distutils    10%     9%     9%     9%     9%
       reference     1%     1%     1%     1%     1%
-          howto     1%     1%     0%     0%     0%
-          c-api     6%     7%     7%     6%     6%
+          howto     1%     1%     1%     1%     1%
+          c-api     6%     7%     7%     7%     6%
        whatsnew     0%     0%     0%     0%     0%
         library     0%     0%     0%     0%     0%
 =============== ====== ====== ====== ====== ======

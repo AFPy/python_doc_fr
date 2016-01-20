@@ -9464,7 +9464,7 @@ msgstr ""
 
 #: c-api/structures.rst:116 c-api/structures.rst:228
 msgid "Meaning"
-msgstr ""
+msgstr "Signification"
 
 #: c-api/structures.rst:118
 msgid ":attr:`ml_name`"
