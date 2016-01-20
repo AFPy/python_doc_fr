@@ -927,6 +927,8 @@ msgid ""
 "The Python API defines a number of functions to set various types of "
 "exceptions."
 msgstr ""
+"L'interface de programmation Python définit un certain nombre de fonctions pour"
+"fixer divers types d'exceptions"
 
 #: extending/extending.rst:134
 msgid ""
@@ -936,6 +938,11 @@ msgid ""
 "indicates the cause of the error and is converted to a Python string object "
 "and stored as the \"associated value\" of the exception."
 msgstr ""
+"La plus commune d'entre elles est: :c:func:`PyErr_SetString`. Ses arguments"
+"sont un objet exception et un une C chaîne. L'objet exception est généralement"
+"un objet prédéfini comme :c:data:`PyExc_ZeroDivisionError`. La C chaîne"
+"indique la cause de l'erreur et est convertie en une chaîne Python et " 
+"est stockée comme la \"associated value\" de l'exception." 
 
 #: extending/extending.rst:140
 msgid ""
@@ -946,6 +953,11 @@ msgid ""
 "associated value.  You don't need to :c:func:`Py_INCREF` the objects passed "
 "to any of these functions."
 msgstr ""
+"Une autre fonction utile est :c:func:`PyErr_SetFromErrno`, qui prend seulement"
+"un argument exception et construit la valeur associée via l'examen de la variable"
+"globale :c:data:`errno`. La fonction la plus générale est :c:func:`PyErr_SetObject`"
+"qui demande deux objets arguments, l'exception et la valeur associée. Il n'est pas"
+"nécessaire de :c:func:`Py_INCREF` les objets fournis à toutes ces fonctions."
 
 #: extending/extending.rst:147
 msgid ""
