@@ -69,7 +69,7 @@ Quoi traduire, ne pas traduire, quel style ?
   lorsqu'elle sera entièrement traduite, nous attaquerons le reste, en
   attendant, nous répliquons notre travail en utilisant
   ``./scripts/replicate_translations.py``
-* Attention, ``install.po`` est à peu près innutile, aucun (?) lien ne
+* Attention, ``install.po`` est à peu près inutile, aucun (?) lien ne
   pointe dessus.
 * Pour le moment, nous laissons à part ``licence.po``,
   `voir le ticket #30 <https://github.com/AFPy/python_doc_fr/issues/30>`.
@@ -133,7 +133,7 @@ un ticket si vous n'êtes pas d'acord) :
 * argument => argument (et non paramètre (qui est la traduction de parameter))
 * backslash => antislash
 * bound => lier
-* bug => bug (Bogue étant déjà pris par la châtaigne...)
+* bug => bug (Bogue étant déjà pris par la châtaigne…)
 * débugging => débogage (en contradiction avec le précédent ?)
 * built-in => primitives, interne
 * double quote => guillemet
@@ -146,7 +146,7 @@ un ticket si vous n'êtes pas d'acord) :
 * mutable => variable
 * parameter => paramètre
 * prompt => invite
-* regular expression => expression rationelle
+* regular expression => expression rationnelle
 * simple quote => guillemet simple
 * socket => socket ("Je veux mon niveau ! Chausette ! Chausette !")
 * statement => instruction
@@ -161,7 +161,7 @@ configurer, d'y appliquer éventuellement quelques patches (en
 attendant qu'ils soient mergés upstream), et vous vous retrouvez si
 tout va bien avec la doc dans ``www/``.
 
-Pour générer une autre version que la dernière, passer là en
+Pour générer une autre version que la dernière, la passer en
 paramètre, comme : ``./scripts/build.sh 3.2``.
 
 Comment on met à jour les *.pot*, et comment on les merge dans les *.po* ?
