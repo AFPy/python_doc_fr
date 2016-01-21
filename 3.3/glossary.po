@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-22 00:53+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2016-01-21 23:34+0100\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.6\n"
 
 #: glossary.rst:5
 msgid "Glossary"
@@ -181,7 +181,6 @@ msgid "BDFL"
 msgstr "BDFL"
 
 #: glossary.rst:78
-#, fuzzy
 msgid ""
 "Benevolent Dictator For Life, a.k.a. `Guido van Rossum <http://www.python."
 "org/~guido/>`_, Python's creator."
@@ -341,7 +340,6 @@ msgid "CPython"
 msgstr "CPython"
 
 #: glossary.rst:143
-#, fuzzy
 msgid ""
 "The canonical implementation of the Python programming language, as "
 "distributed on `python.org <http://python.org>`_.  The term \"CPython\" is "
@@ -349,7 +347,7 @@ msgid ""
 "Jython or IronPython."
 msgstr ""
 "L'implémentation canonique du langage de programmation Python, tel que "
-"distribué sur `python.org <https://www.python.org>`_. Le terme\"CPython\" "
+"distribué sur `python.org <https://www.python.org>`_. Le terme « CPython » "
 "est utilisé dans certains contextes lorsqu'il est nécessaire de distinguer "
 "cette implémentation des autres comme Jython ou IronPython."
 
@@ -384,7 +382,8 @@ msgid ""
 msgstr ""
 "Quoique moins fréquemment utilisé, le même concept existe pour les classes. "
 "Consultez la documentation :ref:`définitions de fonctions <fonction>` et :"
-"ref:`définitions de classes <classe>` pour en savoir plus sur les decorators."
+"ref:`définitions de classes <classe>` pour en savoir plus sur les "
+"decorateurs."
 
 #: glossary.rst:167
 msgid "descriptor"
@@ -697,7 +696,6 @@ msgid "generator"
 msgstr "générateur"
 
 #: glossary.rst:293
-#, fuzzy
 msgid ""
 "A function which returns an iterator.  It looks like a normal function "
 "except that it contains :keyword:`yield` statements for producing a series a "
@@ -708,7 +706,7 @@ msgid ""
 "left-off (in contrast to functions which start fresh on every invocation)."
 msgstr ""
 "Une fonction qui renvoie un itérateur. Ça ressemble à une fonction normale, "
-"en dehors du fait qu'il contient une ou plusieurs instruction :keyword:"
+"en dehors du fait qu'il contient une ou plusieurs instructions :keyword:"
 "`yield`, produisant une série de valeurs utilisables dans une boucle for, ou "
 "pouvant être récupérées une à une avec la fonction :func:`next`. Chaque "
 "instruction :keyword:`yield` suspend temporairement l'exécution de la "
@@ -739,7 +737,7 @@ msgstr "GIL"
 
 #: glossary.rst:314
 msgid "See :term:`global interpreter lock`."
-msgstr "Voir :term:`verrou global de l'interpréteur `."
+msgstr "Voir :term:`verrou global de l'interpréteur`."
 
 #: glossary.rst:315
 msgid "global interpreter lock"
@@ -815,7 +813,6 @@ msgstr ""
 "ce *hash*."
 
 #: glossary.rst:346
-#, fuzzy
 msgid ""
 "All of Python's immutable built-in objects are hashable, while no mutable "
 "containers (such as lists or dictionaries) are.  Objects which are instances "
@@ -1204,7 +1201,6 @@ msgid "metaclass"
 msgstr "metaclasse"
 
 #: glossary.rst:503
-#, fuzzy
 msgid ""
 "The class of a class.  Class definitions create a class name, a class "
 "dictionary, and a list of base classes.  The metaclass is responsible for "
@@ -1218,7 +1214,15 @@ msgid ""
 msgstr ""
 "La classe d'une classe. Les définitions de classe créent un nom pour la "
 "classe, un dictionnaire et une liste de classes patentes. La métaclasse a "
-"pour rôle de réunir ces trois paramètres pour construire la classe."
+"pour rôle de réunir ces trois paramètres pour construire la classe. La "
+"plupart des langages de programmation orientés objet fournissent une "
+"implémentation par défaut. Python est spécial puisqu’il est possible de "
+"créer des métaclasses personnalisées. La plupart des utilisateurs n’ont "
+"jamais besoin de cet outil, mais quand le besoin se fait sentir les "
+"métaclasses peuvent fournir de puissantes et élégantes solutions. Elles ont "
+"été utilisées pour journaliser les accès aux attributs, supporter les "
+"threads, suivre la création des objets, implémenter des singletons, et plein "
+"d’autres tâches."
 
 #: glossary.rst:513
 msgid "More information can be found in :ref:`metaclasses`."
@@ -1245,7 +1249,6 @@ msgid "method resolution order"
 msgstr "ordre de résolution des méthodes"
 
 #: glossary.rst:522
-#, fuzzy
 msgid ""
 "Method Resolution Order is the order in which base classes are searched for "
 "a member during lookup. See `The Python 2.3 Method Resolution Order <http://"
