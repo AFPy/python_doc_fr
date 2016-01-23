@@ -1,8 +1,8 @@
 diff --git a/Doc/tools/templates/download.html b/Doc/tools/templates/download.html
-index 66e09cc..1ecc629 100644
+index 66e09cc..2a885d7 100644
 --- a/Doc/tools/templates/download.html
 +++ b/Doc/tools/templates/download.html
-@@ -7,55 +7,101 @@
+@@ -7,55 +7,96 @@
  {% endif %}
  
  {% block body %}
@@ -96,11 +96,9 @@ index 66e09cc..1ecc629 100644
 -<p>HTML Help (<tt>.chm</tt>) files are made available in the "Windows" section
 -on the <a href="https://www.python.org/download/releases/{{ release[:5] }}/">Python
 -download page</a>.</p>
-+<p>
-+  {% trans download_page="https://www.python.org/download/releases/{{ release[:5] }}/" %}
-+  HTML Help (<tt>.chm</tt>) files are made available in the "Windows" section
-+  on the <a href={{ download_page }}>Python download page</a>.{% endtrans %}
-+</p>
++<p>{% trans download_page="https://www.python.org/download/releases/{{ release[:5] }}/" %}HTML Help
++(<tt>.chm</tt>) files are made available in the "Windows" section
++on the <a href={{ download_page }}>Python download page</a>.{% endtrans %}</p>
  
  
 -<h2>Unpacking</h2>
@@ -130,12 +128,9 @@ index 66e09cc..1ecc629 100644
  
 -<p>If you have comments or suggestions for the Python documentation, please send
 -email to <a href="mailto:docs@python.org">docs@python.org</a>.</p>
-+<p>
-+  {% trans %}If you have comments or suggestions for the Python
-+  documentation, please send email to
-+  <a href="mailto:docs@python.org">docs@python.org</a>.
-+  {% endtrans %}
-+</p>
++<p>{% trans %}If you have comments or suggestions for the Python
++documentation, please send email to
++<a href="mailto:docs@python.org">docs@python.org</a>.{% endtrans %}</p>
  {% endblock %}
 diff --git a/Doc/tools/templates/indexcontent.html b/Doc/tools/templates/indexcontent.html
 index 7f85470..d919a36 100644
@@ -271,7 +266,7 @@ index 4e10d69..d93021d 100644
 +  <li><a href="https://www.python.org/doc/av/">{% trans %}Audio/Visual Talks{% endtrans %}</a></li>
  </ul>
 diff --git a/Doc/tools/templates/layout.html b/Doc/tools/templates/layout.html
-index ec29ca2..31cb79d 100644
+index ec29ca2..78b3b27 100644
 --- a/Doc/tools/templates/layout.html
 +++ b/Doc/tools/templates/layout.html
 @@ -6,7 +6,7 @@
@@ -301,7 +296,7 @@ index ec29ca2..31cb79d 100644
 +    {% trans pathto_bugs=pathto('bugs') %}<a href="{{ pathto_bugs }}">Found a bug</a>?{% endtrans %}
      <br />
 -    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version|e }}.
-+    {% trans sphinx_version=sphinx_version|e %} Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
++    {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
      </div>
  {% endblock %}
  {% block sidebarsourcelink %}
