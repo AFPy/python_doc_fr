@@ -201,7 +201,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:141 whatsnew/3.2.rst:2379
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: whatsnew/2.0.rst:143
 msgid ""
@@ -483,7 +483,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:390
 msgid "String Methods"
-msgstr ""
+msgstr "Méthodes de chaînes de caractères"
 
 #: whatsnew/2.0.rst:392
 msgid ""
@@ -630,7 +630,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:502
 msgid "Minor Language Changes"
-msgstr ""
+msgstr "Changements mineurs du langage"
 
 #: whatsnew/2.0.rst:504
 msgid ""
@@ -745,7 +745,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:601
 msgid "Changes to Built-in Functions"
-msgstr ""
+msgstr "Changements concernant les fonctions primitives"
 
 #: whatsnew/2.0.rst:603
 msgid ""
@@ -1092,7 +1092,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:880
 msgid "XML Modules"
-msgstr ""
+msgstr "Modules XML"
 
 #: whatsnew/2.0.rst:882
 msgid ""
@@ -1111,7 +1111,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:896
 msgid "SAX2 Support"
-msgstr ""
+msgstr "Support de SAX2"
 
 #: whatsnew/2.0.rst:898
 msgid ""
@@ -1148,7 +1148,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:940
 msgid "DOM Support"
-msgstr ""
+msgstr "Support du DOM"
 
 #: whatsnew/2.0.rst:942
 msgid ""
@@ -1311,7 +1311,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:1074
 msgid "New modules"
-msgstr ""
+msgstr "Nouveaux modules"
 
 #: whatsnew/2.0.rst:1076
 msgid ""
@@ -1666,11 +1666,11 @@ msgstr ""
 
 #: whatsnew/2.1.rst:124 whatsnew/2.2.rst:928
 msgid "Written and implemented by Jeremy Hylton."
-msgstr ""
+msgstr "Écrit et implémenté par Jeremy Hylton."
 
 #: whatsnew/2.1.rst:130
 msgid "PEP 236: __future__ Directives"
-msgstr ""
+msgstr "PEP 236 : Directives __future__"
 
 #: whatsnew/2.1.rst:132
 msgid ""
@@ -1700,11 +1700,11 @@ msgstr ""
 
 #: whatsnew/2.1.rst:153
 msgid "PEP 236 - Back to the __future__"
-msgstr ""
+msgstr "PEP 236 - Retour vers le __future__"
 
 #: whatsnew/2.1.rst:154
 msgid "Written by Tim Peters, and primarily implemented by Jeremy Hylton."
-msgstr ""
+msgstr "Écrit par Tim Peters, et implémenté principalement par Jeremy Hylton."
 
 #: whatsnew/2.1.rst:160
 msgid "PEP 207: Rich Comparisons"
@@ -1736,59 +1736,59 @@ msgstr ""
 
 #: whatsnew/2.1.rst:179 whatsnew/2.5.rst:1807
 msgid "Operation"
-msgstr ""
+msgstr "Opération"
 
 #: whatsnew/2.1.rst:179
 msgid "Method name"
-msgstr ""
+msgstr "Nom de méthode"
 
 #: whatsnew/2.1.rst:181
 msgid "``<``"
-msgstr ""
+msgstr "``<``"
 
 #: whatsnew/2.1.rst:181
 msgid ":meth:`__lt__`"
-msgstr ""
+msgstr ":meth:`__lt__`"
 
 #: whatsnew/2.1.rst:183
 msgid "``<=``"
-msgstr ""
+msgstr "``<=``"
 
 #: whatsnew/2.1.rst:183
 msgid ":meth:`__le__`"
-msgstr ""
+msgstr ":meth:`__le__`"
 
 #: whatsnew/2.1.rst:185
 msgid "``>``"
-msgstr ""
+msgstr "``>``"
 
 #: whatsnew/2.1.rst:185
 msgid ":meth:`__gt__`"
-msgstr ""
+msgstr ":meth:`__gt__`"
 
 #: whatsnew/2.1.rst:187
 msgid "``>=``"
-msgstr ""
+msgstr "``>=``"
 
 #: whatsnew/2.1.rst:187
 msgid ":meth:`__ge__`"
-msgstr ""
+msgstr ":meth:`__ge__`"
 
 #: whatsnew/2.1.rst:189
 msgid "``==``"
-msgstr ""
+msgstr "``==``"
 
 #: whatsnew/2.1.rst:189
 msgid ":meth:`__eq__`"
-msgstr ""
+msgstr ":meth:`__eq__`"
 
 #: whatsnew/2.1.rst:191
 msgid "``!=``"
-msgstr ""
+msgstr "``!=``"
 
 #: whatsnew/2.1.rst:191
 msgid ":meth:`__ne__`"
-msgstr ""
+msgstr ":meth:`__ne__`"
 
 #: whatsnew/2.1.rst:194
 msgid ""
@@ -2053,11 +2053,11 @@ msgstr ""
 
 #: whatsnew/2.1.rst:417
 msgid "Written and implemented by Fred L. Drake, Jr."
-msgstr ""
+msgstr "Écrit et implémenté par Fred L. Drake, Jr."
 
 #: whatsnew/2.1.rst:423
 msgid "PEP 232: Function Attributes"
-msgstr ""
+msgstr "PEP 232 : Attributs de fonctions"
 
 #: whatsnew/2.1.rst:425
 msgid ""
@@ -2091,11 +2091,11 @@ msgstr ""
 
 #: whatsnew/2.1.rst:454
 msgid "PEP 232 - Function Attributes"
-msgstr ""
+msgstr "PEP 232 - Attributs de fonctions"
 
 #: whatsnew/2.1.rst:455
 msgid "Written and implemented by Barry Warsaw."
-msgstr ""
+msgstr "Écrit et implémenté par Barry Warsaw."
 
 #: whatsnew/2.1.rst:461
 msgid "PEP 235: Importing Modules on Case-Insensitive Platforms"
@@ -2365,7 +2365,7 @@ msgstr ""
 #: whatsnew/2.1.rst:684 whatsnew/2.2.rst:1129 whatsnew/2.3.rst:1960
 #: whatsnew/2.7.rst:2313
 msgid "Other Changes and Fixes"
-msgstr ""
+msgstr "Autres changements et corrections"
 
 #: whatsnew/2.1.rst:686
 msgid ""
@@ -2548,7 +2548,7 @@ msgstr ""
 
 #: whatsnew/2.2.rst:43
 msgid "PEPs 252 and 253: Type and Class Changes"
-msgstr ""
+msgstr "PEP 252 et 253 : Changements concernant les types et classes"
 
 #: whatsnew/2.2.rst:45
 msgid ""
@@ -2638,7 +2638,7 @@ msgstr ""
 
 #: whatsnew/2.2.rst:100
 msgid "Old and New Classes"
-msgstr ""
+msgstr "Anciennes et nouvelles classes"
 
 #: whatsnew/2.2.rst:102
 msgid ""
@@ -2694,7 +2694,7 @@ msgstr ""
 
 #: whatsnew/2.2.rst:153
 msgid "Descriptors"
-msgstr ""
+msgstr "Descripteurs"
 
 #: whatsnew/2.2.rst:155
 msgid ""
@@ -2725,7 +2725,7 @@ msgstr ""
 
 #: whatsnew/2.2.rst:172
 msgid ":attr:`__name__` is the attribute's name."
-msgstr ""
+msgstr ":attr:`__name__` est le nom de l’attribut."
 
 #: whatsnew/2.2.rst:174
 msgid ":attr:`__doc__` is the attribute's docstring."
@@ -2795,7 +2795,7 @@ msgstr ""
 
 #: whatsnew/2.2.rst:244
 msgid "Multiple Inheritance: The Diamond Rule"
-msgstr ""
+msgstr "Héritage multiple : la règle du diamant"
 
 #: whatsnew/2.2.rst:246
 msgid ""
@@ -2979,7 +2979,7 @@ msgstr ""
 
 #: whatsnew/2.2.rst:421
 msgid "PEP 234: Iterators"
-msgstr ""
+msgstr "PEP 234 : Itérateurs"
 
 #: whatsnew/2.2.rst:423
 msgid ""
@@ -3082,7 +3082,7 @@ msgstr ""
 
 #: whatsnew/2.2.rst:535
 msgid "PEP 234 - Iterators"
-msgstr ""
+msgstr "PEP 234 - Itérateurs"
 
 #: whatsnew/2.2.rst:535
 msgid ""
@@ -3092,7 +3092,7 @@ msgstr ""
 
 #: whatsnew/2.2.rst:542 whatsnew/2.3.rst:126
 msgid "PEP 255: Simple Generators"
-msgstr ""
+msgstr "PEP 255 : Générateurs simples"
 
 #: whatsnew/2.2.rst:544
 msgid ""
@@ -4402,7 +4402,7 @@ msgstr ""
 
 #: whatsnew/2.3.rst:548
 msgid "PEP 285: A Boolean Type"
-msgstr ""
+msgstr "PEP 285 : Un type booléen"
 
 #: whatsnew/2.3.rst:550
 msgid ""
@@ -21497,7 +21497,7 @@ msgstr ""
 #: ../../../Misc/NEWS:3547 ../../../Misc/NEWS:3867 ../../../Misc/NEWS:4324
 #: ../../../Misc/NEWS:6712
 msgid "Documentation"
-msgstr ""
+msgstr "Documentation"
 
 #: whatsnew/3.2.rst:2420
 msgid "The documentation continues to be improved."
@@ -24556,7 +24556,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1844
 msgid "smtpd"
-msgstr ""
+msgstr "smtpd"
 
 #: whatsnew/3.3.rst:1846
 msgid ""
@@ -24607,15 +24607,15 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1879
 msgid ":func:`~socket.socket.sendmsg`"
-msgstr ""
+msgstr ":func:`~socket.socket.sendmsg`"
 
 #: whatsnew/3.3.rst:1880
 msgid ":func:`~socket.socket.recvmsg`"
-msgstr ""
+msgstr ":func:`~socket.socket.recvmsg`"
 
 #: whatsnew/3.3.rst:1881
 msgid ":func:`~socket.socket.recvmsg_into`"
-msgstr ""
+msgstr ":func:`~socket.socket.recvmsg_into`"
 
 #: whatsnew/3.3.rst:1883
 msgid ""
@@ -24756,7 +24756,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1973
 msgid "stat"
-msgstr ""
+msgstr "stat"
 
 #: whatsnew/3.3.rst:1975
 msgid ""
@@ -24772,7 +24772,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.3.rst:1983
 msgid "struct"
-msgstr ""
+msgstr "struct"
 
 #: whatsnew/3.3.rst:1985
 msgid ""
@@ -24783,7 +24783,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1991
 msgid "subprocess"
-msgstr ""
+msgstr "subprocess"
 
 #: whatsnew/3.3.rst:1993
 msgid ""
@@ -24800,7 +24800,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2002
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: whatsnew/3.3.rst:2004
 msgid ""
@@ -24824,7 +24824,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2025
 msgid "textwrap"
-msgstr ""
+msgstr "textwrap"
 
 #: whatsnew/3.3.rst:2027
 msgid ""
@@ -24860,7 +24860,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2053
 msgid "time"
-msgstr ""
+msgstr "time"
 
 #: whatsnew/3.3.rst:2055
 msgid "The :pep:`418` added new functions to the :mod:`time` module:"
@@ -24938,7 +24938,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2100
 msgid "urllib"
-msgstr ""
+msgstr "urllib"
 
 #: whatsnew/3.3.rst:2102
 msgid ""
@@ -24953,7 +24953,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2112
 msgid "webbrowser"
-msgstr ""
+msgstr "webbrowser"
 
 #: whatsnew/3.3.rst:2114
 msgid ""
@@ -39496,6 +39496,8 @@ msgstr ""
 #: ../../../Misc/NEWS:6760
 msgid "**(For information about older versions, consult the HISTORY file.)**"
 msgstr ""
+"**(Pour des informations sur les versions précédentes, consultez le fichier "
+"HISTORY.)**"
 
 #: whatsnew/index.rst:5
 msgid "What's New in Python"
@@ -39516,3 +39518,6 @@ msgid ""
 "The \"Changelog\" is a HTML version of the file :source:`Misc/NEWS` which "
 "contains *all* nontrivial changes to Python for the current version."
 msgstr ""
+"Le « Changelog » est une version HTML du fichier :source:`Misc/NEWS` qui "
+"contient *tous* les changements non-triviaux de Python pour la version "
+"courante."

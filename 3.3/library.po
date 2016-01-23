@@ -21449,7 +21449,7 @@ msgstr ""
 #: library/stdtypes.rst:276 library/stdtypes.rst:365 library/stdtypes.rst:411
 #: library/stdtypes.rst:847 library/stdtypes.rst:1037
 msgid "Operation"
-msgstr ""
+msgstr "Opération"
 
 #: library/datetime.rst:228 library/datetime.rst:467 library/datetime.rst:869
 #: library/stdtypes.rst:90 library/stdtypes.rst:276 library/stdtypes.rst:365
@@ -48793,7 +48793,7 @@ msgstr ""
 
 #: library/io.rst:143
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: library/io.rst:143
 msgid ""
@@ -89064,7 +89064,7 @@ msgstr ""
 
 #: library/stdtypes.rst:150 library/struct.rst:105
 msgid "``<``"
-msgstr ""
+msgstr "``<``"
 
 #: library/stdtypes.rst:150
 msgid "strictly less than"
@@ -89072,7 +89072,7 @@ msgstr ""
 
 #: library/stdtypes.rst:152
 msgid "``<=``"
-msgstr ""
+msgstr "``<=``"
 
 #: library/stdtypes.rst:152
 msgid "less than or equal"
@@ -89080,7 +89080,7 @@ msgstr ""
 
 #: library/stdtypes.rst:154 library/struct.rst:107
 msgid "``>``"
-msgstr ""
+msgstr "``>``"
 
 #: library/stdtypes.rst:154
 msgid "strictly greater than"
@@ -89088,7 +89088,7 @@ msgstr ""
 
 #: library/stdtypes.rst:156
 msgid "``>=``"
-msgstr ""
+msgstr "``>=``"
 
 #: library/stdtypes.rst:156
 msgid "greater than or equal"
@@ -89096,7 +89096,7 @@ msgstr ""
 
 #: library/stdtypes.rst:158
 msgid "``==``"
-msgstr ""
+msgstr "``==``"
 
 #: library/stdtypes.rst:158
 msgid "equal"
@@ -89104,7 +89104,7 @@ msgstr ""
 
 #: library/stdtypes.rst:160
 msgid "``!=``"
-msgstr ""
+msgstr "``!=``"
 
 #: library/stdtypes.rst:160
 msgid "not equal"
@@ -90693,7 +90693,7 @@ msgstr ""
 
 #: library/stdtypes.rst:1451
 msgid "String Methods"
-msgstr ""
+msgstr "Méthodes de chaînes de caractères"
 
 #: library/stdtypes.rst:1456
 msgid ""
@@ -104307,7 +104307,7 @@ msgstr ""
 
 #: library/tkinter.rst:728
 msgid "time"
-msgstr ""
+msgstr "time"
 
 #: library/tkinter.rst:728
 msgid "%T"

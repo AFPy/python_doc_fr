@@ -20421,7 +20421,7 @@ msgstr ""
 #: library/stdtypes.rst:272 library/stdtypes.rst:361 library/stdtypes.rst:407
 #: library/stdtypes.rst:870 library/stdtypes.rst:1703
 msgid "Operation"
-msgstr ""
+msgstr "Opération"
 
 #: library/datetime.rst:228 library/datetime.rst:460 library/datetime.rst:829
 #: library/stdtypes.rst:86 library/stdtypes.rst:272 library/stdtypes.rst:361
@@ -80287,7 +80287,7 @@ msgstr ""
 
 #: library/stdtypes.rst:146 library/struct.rst:105
 msgid "``<``"
-msgstr ""
+msgstr "``<``"
 
 #: library/stdtypes.rst:146
 msgid "strictly less than"
@@ -80295,7 +80295,7 @@ msgstr ""
 
 #: library/stdtypes.rst:148
 msgid "``<=``"
-msgstr ""
+msgstr "``<=``"
 
 #: library/stdtypes.rst:148
 msgid "less than or equal"
@@ -80303,7 +80303,7 @@ msgstr ""
 
 #: library/stdtypes.rst:150 library/struct.rst:107
 msgid "``>``"
-msgstr ""
+msgstr "``>``"
 
 #: library/stdtypes.rst:150
 msgid "strictly greater than"
@@ -80311,7 +80311,7 @@ msgstr ""
 
 #: library/stdtypes.rst:152
 msgid "``>=``"
-msgstr ""
+msgstr "``>=``"
 
 #: library/stdtypes.rst:152
 msgid "greater than or equal"
@@ -80319,7 +80319,7 @@ msgstr ""
 
 #: library/stdtypes.rst:154
 msgid "``==``"
-msgstr ""
+msgstr "``==``"
 
 #: library/stdtypes.rst:154
 msgid "equal"
@@ -80327,7 +80327,7 @@ msgstr ""
 
 #: library/stdtypes.rst:156
 msgid "``!=``"
-msgstr ""
+msgstr "``!=``"
 
 #: library/stdtypes.rst:156
 msgid "not equal"
@@ -81346,7 +81346,7 @@ msgstr ""
 
 #: library/stdtypes.rst:992
 msgid "String Methods"
-msgstr ""
+msgstr "Méthodes de chaînes de caractères"
 
 #: library/stdtypes.rst:996
 msgid "String objects support the methods listed below."
@@ -94171,7 +94171,7 @@ msgstr ""
 
 #: library/tkinter.rst:736
 msgid "time"
-msgstr ""
+msgstr "time"
 
 #: library/tkinter.rst:736
 msgid "%T"

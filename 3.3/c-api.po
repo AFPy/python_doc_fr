@@ -11884,7 +11884,7 @@ msgstr ""
 
 #: c-api/typeobj.rst:598
 msgid "``<``"
-msgstr ""
+msgstr "``<``"
 
 #: c-api/typeobj.rst:600
 msgid ":const:`Py_LE`"
@@ -11892,7 +11892,7 @@ msgstr ""
 
 #: c-api/typeobj.rst:600
 msgid "``<=``"
-msgstr ""
+msgstr "``<=``"
 
 #: c-api/typeobj.rst:602
 msgid ":const:`Py_EQ`"
@@ -11900,7 +11900,7 @@ msgstr ""
 
 #: c-api/typeobj.rst:602
 msgid "``==``"
-msgstr ""
+msgstr "``==``"
 
 #: c-api/typeobj.rst:604
 msgid ":const:`Py_NE`"
@@ -11908,7 +11908,7 @@ msgstr ""
 
 #: c-api/typeobj.rst:604
 msgid "``!=``"
-msgstr ""
+msgstr "``!=``"
 
 #: c-api/typeobj.rst:606
 msgid ":const:`Py_GT`"
@@ -11916,7 +11916,7 @@ msgstr ""
 
 #: c-api/typeobj.rst:606
 msgid "``>``"
-msgstr ""
+msgstr "``>``"
 
 #: c-api/typeobj.rst:608
 msgid ":const:`Py_GE`"
@@ -11924,7 +11924,7 @@ msgstr ""
 
 #: c-api/typeobj.rst:608
 msgid "``>=``"
-msgstr ""
+msgstr "``>=``"
 
 #: c-api/typeobj.rst:614
 msgid ""
