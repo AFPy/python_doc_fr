@@ -10,16 +10,15 @@ GEN="$PYDOCFR_ROOT/gen"
 SCRIPTS="$PYDOCFR_ROOT/scripts"
 
 VERSION=${1:-3.5}
-GENVER="$GEN/$VERSION"
+GENVER="$(readlink -f "$GEN/$VERSION")"
 "$SCRIPTS"/prepare.sh "$VERSION"
 
 (
     cd "$GEN/src/"
     echo "Regenerating pot files."
-    sphinx-build -Q -b gettext Doc Doc
     rm -fr "$GENVER/pot/"
     mkdir -p "$GENVER/pot/"
-    mv Doc/*.pot "$GENVER/pot/"
+    sphinx-build -Q -b gettext Doc "$GENVER/pot/"
 )
 
 echo "Merge each pot file to corresponding po file."

@@ -33,8 +33,11 @@ echo "Updating cpython sources"
     git checkout "$VERSION"
     for patch in "$PATCHES/$VERSION"/*.patch
     do
-        echo "Applying patch $(basename $patch)"
-        git apply "$patch"
+        if [ -f "$patch" ]
+        then
+            echo "Applying patch $(basename $patch)"
+            git apply "$patch"
+        fi
     done
     if [ "$VERSION" = 3.2 ]
     then
