@@ -15,23 +15,23 @@ Progression de la traduction:
 --------------- ------ ------ ------ ------ ------
        contents   100%   100%   100%   100%   100%
       copyright    87%    87%    87%    87%   100%
-          about    90%    91%    90%   100%   100%
+          about   100%   100%   100%   100%   100%
            bugs    76%    71%    76%    90%   100%
    distributing   100%    N/A    N/A   100%   100%
-         sphinx    66%    95%    95%   100%   100%
+         sphinx   100%    95%    95%   100%   100%
      installing    84%    N/A    N/A   100%   100%
         license    82%    67%    66%    68%   100%
         install    21%    22%    22%    21%    21%
-       glossary    77%    88%    95%    97%   100%
+       glossary    81%    94%    97%    98%   100%
       extending    21%    21%    22%    23%    25%
-          using    21%    23%    18%    14%    10%
+          using    21%    23%    18%    14%     9%
        tutorial    95%    90%    96%    99%   100%
             faq    23%    24%    24%    24%    26%
       distutils    10%     9%     9%     9%     9%
       reference     1%     1%     1%     1%     1%
           howto     1%     1%     1%     1%     1%
-          c-api     6%     7%     7%     7%     7%
-       whatsnew     2%     1%     1%     1%     1%
+          c-api     6%     7%     7%     7%     6%
+       whatsnew     2%     1%     1%     1%     4%
         library     0%     0%     0%     0%     0%
 =============== ====== ====== ====== ====== ======
 
