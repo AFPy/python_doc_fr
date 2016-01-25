@@ -31,7 +31,7 @@ do
 done
 
 echo "Rebuilding local documentation"
-sphinx-build "$GEN/src/Doc" "$PYDOCFR_ROOT/www/$VERSION/"
+sphinx-build -A versionswitcher=1 "$GEN/src/Doc" "$PYDOCFR_ROOT/www/$VERSION/"
 
 echo "Adding header in the doc to advertise the github."
 sed -i 's|<body role="document"> *$|\0<div class="body" style="padding:0; line-height: 25px; width:100%; font-size: 90%; text-align:center"><a href="https://www.github.com/AFPY/python_doc_fr/">Envie d'\''aider à traduire ?</a></div>|' $PYDOCFR_ROOT/www/$VERSION/**/*.html $PYDOCFR_ROOT/www/$VERSION/*.html

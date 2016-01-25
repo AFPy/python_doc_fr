@@ -1,0 +1,25 @@
+diff --git a/Doc/conf.py b/Doc/conf.py
+index 3e656ea..9188941 100644
+--- a/Doc/conf.py
++++ b/Doc/conf.py
+@@ -195,3 +195,5 @@ linkcheck_ignore = [r'https://bugs.python.org/(issue)?\d+',
+ 
+ # Relative filename of the reference count data file.
+ refcount_file = 'data/refcounts.dat'
++locale_dirs = ['/home/mandark/python_doc_fr/gen//3.5/mo/']
++language = 'fr'
+diff --git a/Doc/tools/static/version_switch.js b/Doc/tools/static/version_switch.js
+index 7289a4d..c3cc107 100644
+--- a/Doc/tools/static/version_switch.js
++++ b/Doc/tools/static/version_switch.js
+@@ -27,8 +27,8 @@
+   }
+ 
+   function patch_url(url, new_version) {
+-    var url_re = /\.org\/(\d|py3k|dev|((release\/)?\d\.\d[\w\d\.]*))\//,
+-        new_url = url.replace(url_re, '.org/' + new_version + '/');
++    var url_re = /\/(\d|py3k|dev|((release\/)?\d\.\d[\w\d\.]*))\//,
++        new_url = url.replace(url_re, '/' + new_version + '/');
+ 
+     if (new_url == url && !new_url.match(url_re)) {
+       // python 2 url without version?
