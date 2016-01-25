@@ -43,9 +43,9 @@ done
 printf "%15s " '**TOTAL**'
 for version in 2.7 3.2 3.3 3.4 3.5
 do
-    printf "%6s " \
-        '**'"$((100 * ${translated_by_ver[$(echo $version | tr -d .)]} /
-                ${total_by_ver[$(echo $version | tr -d .)]}))"'%**'
+    printf "%5s%% " \
+        "$((100 * ${translated_by_ver[$(echo $version | tr -d .)]} /
+            ${total_by_ver[$(echo $version | tr -d .)]}))"
 done
 printf "\n"
 printf "=============== ====== ====== ====== ====== ======\n"
