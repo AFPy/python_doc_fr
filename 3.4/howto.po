@@ -5266,7 +5266,7 @@ msgstr ""
 
 #: howto/functional.rst:1003
 msgid "Here's a small but realistic example::"
-msgstr ""
+msgstr "Voici un exemple court mais réaliste ::"
 
 #: howto/functional.rst:1015
 msgid ""

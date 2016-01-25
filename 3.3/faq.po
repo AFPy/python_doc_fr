@@ -5119,7 +5119,7 @@ msgstr ""
 
 #: faq/programming.rst:1171
 msgid "This is equivalent to::"
-msgstr ""
+msgstr "C’est équivalent à ::"
 
 #: faq/programming.rst:1176
 msgid ""

@@ -2806,7 +2806,7 @@ msgstr ""
 
 #: howto/functional.rst:929
 msgid "Here's a small but realistic example::"
-msgstr ""
+msgstr "Voici un exemple court mais réaliste ::"
 
 #: howto/functional.rst:941
 msgid ""
@@ -7662,7 +7662,7 @@ msgstr ""
 
 #: howto/regex.rst:693
 msgid "^"
-msgstr ""
+msgstr "^"
 
 #: howto/regex.rst:680
 msgid ""

@@ -97,7 +97,7 @@ msgstr "L'installation de modules Python [en]"
 
 #: tools/sphinxext/indexcontent.html:24
 msgid "information for installers &amp; sys-admins"
-msgstr ""
+msgstr "Informations pour les installateurs &amp; administrateurs système"
 
 #: tools/sphinxext/indexcontent.html:25
 msgid "Distributing Python Modules"
@@ -105,7 +105,7 @@ msgstr "Distribuer des Modules Python [en]"
 
 #: tools/sphinxext/indexcontent.html:26
 msgid "sharing modules with others"
-msgstr ""
+msgstr "partager des modules"
 
 #: tools/sphinxext/indexcontent.html:27
 msgid "FAQs"

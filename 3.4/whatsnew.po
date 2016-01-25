@@ -81,6 +81,15 @@ msgid ""
 "received a few fixes to ensure that it's forward-compatible with Python "
 "2.0.  1.6 is therefore part of Python's evolution, and not a side branch."
 msgstr ""
+"Python 1.6 peut être vu comme la version des obligations contractuelles. "
+"Après que l’équipe de développement eût quitté le CNRI en mai 2000, celui-ci "
+"a demandé la création d’une version 1.6, contenant tout le travail sur "
+"Python réalisé au CNRI. Python 1.6 représente de ce fait l’état de l’arbre "
+"*CVS* tel qu’il était en mai 2000, la nouvelle fonctionnalité la plus "
+"remarquable étant le support d’Unicode. Le développement a continué après "
+"mai bien sûr, donc la branche 1.6 a reçu quelques corrections pour être sûr "
+"qu’elle soit compatible avec Python 2.0. La version 1.6 fait donc partie de "
+"l’évolution de Python, ce n’est pas une branche séparée."
 
 #: whatsnew/2.0.rst:44
 msgid ""
@@ -93,6 +102,15 @@ msgid ""
 "2.0.  Most of the really interesting features described in this document are "
 "only in 2.0, because a lot of work was done between May and September."
 msgstr ""
+"Alors, devriez-vous vous intéresser à Python 1.6 ? Probablement pas. Les "
+"versions 1.6final et 2.0beta1 sont sorties le même jour (5 septembre 2000), "
+"le plan étant de finaliser Python 2.0 environ un mois plus tard. Si vous "
+"avez des applications à maintenir, il n’y a pas vraiment d’intérêt à casser "
+"des choses en migrant sur la version 1.6, les réparer, puis avoir de nouveau "
+"des choses cassées à peine un mois plus tard en passant à la 2.0; il vaut "
+"mieux partir directement de la 2.0. La plupart des fonctionnalités vraiment "
+"intéressantes décrites dans ce document sont seulement dans la 2.0, parce "
+"que beaucoup de travail a été réalisé entre mai et septembre."
 
 #: whatsnew/2.0.rst:57
 msgid "New Development Process"
@@ -108,6 +126,14 @@ msgid ""
 "available from Python's project page, located at http://sourceforge.net/"
 "projects/python/."
 msgstr ""
+"Le changement le plus important dans Python 2.0 n’est peut-être pas du tout "
+"le code, mais comment Python a été développé : en mai 2000 les développeurs "
+"de Python ont commencé à utiliser les outils rendus disponibles par "
+"SourceForge pour stocker du code, suivre les signalements de bugs, et gérer "
+"la file des soumissions de correctifs. Pour signaler des bugs ou soumettre "
+"des correctifs pour Python 2.0, utilisez les outils de suivi de bugs et de "
+"gestion de correctifs disponibles sur la page du projet Python, à l’adresse "
+"suivante : http://sourceforge.net/projects/python/."
 
 #: whatsnew/2.0.rst:66
 msgid ""
@@ -255,18 +281,24 @@ msgid ""
 "New built-in functions have been added, and existing built-ins modified to "
 "support Unicode:"
 msgstr ""
+"De nouvelles fonctions primitives ont été ajoutées, et des fonctions "
+"existantes ont été modifiées pour supporter Unicode :"
 
 #: whatsnew/2.0.rst:178
 msgid ""
 "``unichr(ch)`` returns a Unicode string 1 character long, containing the "
 "character *ch*."
 msgstr ""
+"``unichr(ch)`` retourne une chaîne Unicode de longueur 1, contenant le "
+"caractère *ch*."
 
 #: whatsnew/2.0.rst:181
 msgid ""
 "``ord(u)``, where *u* is a 1-character regular or Unicode string, returns "
 "the number of the character as an integer."
 msgstr ""
+"``ord(u)``, quand *u* est une chaîne normale ou Unicode de longueur 1, "
+"retourne un entier représentant le nombre de caractères."
 
 #: whatsnew/2.0.rst:184
 msgid ""
@@ -343,10 +375,12 @@ msgid ""
 "For example, the following code writes a Unicode string into a file,  "
 "encoding it as UTF-8::"
 msgstr ""
+"Par exemple, le code suivant écrit une chaîne Unicode dans un fichier, en "
+"l’encodant en UTF-8 ::"
 
 #: whatsnew/2.0.rst:243
 msgid "The following code would then read UTF-8 input from the file::"
-msgstr ""
+msgstr "Le code suivant lirait ensuite le texte UTF-8 du fichier ::"
 
 #: whatsnew/2.0.rst:249
 msgid ""
@@ -354,6 +388,9 @@ msgid ""
 "module, which has a new underlying implementation called SRE written by "
 "Fredrik Lundh of Secret Labs AB."
 msgstr ""
+"Des expressions rationnelles supportant l’Unicode sont disponibles dans le "
+"module :mod:`re`, qui a une implémentation sous-jacente appelée SRE écrite "
+"par Fredrik Lundh de Secret Labs AB."
 
 #: whatsnew/2.0.rst:253
 msgid ""
@@ -399,7 +436,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:292
 msgid "List comprehensions have the form::"
-msgstr ""
+msgstr "Les compréhensions de liste sont de la forme suivante ::"
 
 #: whatsnew/2.0.rst:299
 msgid ""
@@ -417,6 +454,8 @@ msgid ""
 "To make the semantics very clear, a list comprehension is equivalent to the "
 "following Python code::"
 msgstr ""
+"Pour que la sémantique soit très claire, une compréhension de liste est "
+"équivalente au code Python suivant ::"
 
 #: whatsnew/2.0.rst:319
 msgid ""
@@ -7268,31 +7307,35 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1011
 msgid "Chinese (PRC): gb2312, gbk, gb18030, big5hkscs, hz"
-msgstr ""
+msgstr "Chinois (PRC) : gb2312, gbk, gb18030, big5hkscs, hz"
 
 #: whatsnew/2.4.rst:1013
 msgid "Chinese (ROC): big5, cp950"
-msgstr ""
+msgstr "Chinois (ROC) : big5, cp950"
 
 #: whatsnew/2.4.rst:1017
 msgid "Japanese: cp932, euc-jis-2004, euc-jp, euc-jisx0213, iso-2022-jp,"
-msgstr ""
+msgstr "Japonais : cp932, euc-jis-2004, euc-jp, euc-jisx0213, iso-2022-jp,"
 
 #: whatsnew/2.4.rst:1016
 msgid ""
 "iso-2022-jp-1, iso-2022-jp-2, iso-2022-jp-3, iso-2022-jp-ext, iso-2022-"
 "jp-2004, shift-jis, shift-jisx0213, shift-jis-2004"
 msgstr ""
+"iso-2022-jp-1, iso-2022-jp-2, iso-2022-jp-3, iso-2022-jp-ext, iso-2022-"
+"jp-2004, shift-jis, shift-jisx0213, shift-jis-2004"
 
 #: whatsnew/2.4.rst:1019
 msgid "Korean: cp949, euc-kr, johab, iso-2022-kr"
-msgstr ""
+msgstr "Coréen : cp949, euc-kr, johab, iso-2022-kr"
 
 #: whatsnew/2.4.rst:1021
 msgid ""
 "Some other new encodings were added: HP Roman8,  ISO_8859-11, ISO_8859-16, "
 "PCTP-154, and TIS-620."
 msgstr ""
+"D’autres encodages ont été ajoutés : HP Roman8,  ISO_8859-11, ISO_8859-16, "
+"PCTP-154, and TIS-620."
 
 #: whatsnew/2.4.rst:1024
 msgid ""
@@ -7407,7 +7450,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1140
 msgid "(Contributed by Hye-Shik Chang.)"
-msgstr ""
+msgstr "(Contribution par Hye-Shik Chang.)"
 
 #: whatsnew/2.4.rst:1142
 msgid ""
@@ -7457,7 +7500,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1187
 msgid "(Changes implemented by Vinay Sajip.)"
-msgstr ""
+msgstr "(Changements implémentés par Vinay Sajip.)"
 
 #: whatsnew/2.4.rst:1189
 msgid ""
@@ -7529,6 +7572,8 @@ msgid ""
 "The :mod:`poplib` module now supports POP over SSL.  (Contributed by Hector "
 "Urtubia.)"
 msgstr ""
+"Le module :mod:`poplib` supporte maintenant POP sur SSL.  (Contribution par "
+"Hector Urtubia.)"
 
 #: whatsnew/2.4.rst:1243
 msgid ""
@@ -7645,7 +7690,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1323
 msgid "cookielib"
-msgstr ""
+msgstr "cookielib"
 
 #: whatsnew/2.4.rst:1325
 msgid ""
@@ -7677,7 +7722,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1347 whatsnew/3.4.rst:776
 msgid "doctest"
-msgstr ""
+msgstr "doctest"
 
 #: whatsnew/2.4.rst:1349
 msgid ""
@@ -7964,7 +8009,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:54
 msgid "PEP 308: Conditional Expressions"
-msgstr ""
+msgstr "PEP 308 : Expressions conditionnelles"
 
 #: whatsnew/2.5.rst:56
 msgid ""
@@ -7986,7 +8031,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:72
 msgid "Guido van Rossum eventually chose a surprising syntax::"
-msgstr ""
+msgstr "Guido van Rossum a finalement choisi une syntaxe surprenante ::"
 
 #: whatsnew/2.5.rst:76
 msgid ""
@@ -8051,10 +8096,12 @@ msgid ""
 "PEP written by Guido van Rossum and Raymond D. Hettinger; implemented by "
 "Thomas Wouters."
 msgstr ""
+"PEP écrite par Guido van Rossum et Raymond D. Hettinger; implémentée par "
+"Thomas Wouters."
 
 #: whatsnew/2.5.rst:132
 msgid "PEP 309: Partial Function Application"
-msgstr ""
+msgstr "PEP 309 : Application partielle de fonction"
 
 #: whatsnew/2.5.rst:134
 msgid ""
@@ -8081,7 +8128,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:148
 msgid "Here's a small but realistic example::"
-msgstr ""
+msgstr "Voici un exemple court mais réaliste ::"
 
 #: whatsnew/2.5.rst:160
 msgid ""
@@ -8263,11 +8310,11 @@ msgstr ""
 
 #: whatsnew/2.5.rst:331
 msgid "PEP written by Aahz; implemented by Thomas Wouters."
-msgstr ""
+msgstr "PEP écrite par Aahz; implémentée par Thomas Wouters."
 
 #: whatsnew/2.5.rst:333
 msgid "http://codespeak.net/py/current/doc/index.html"
-msgstr ""
+msgstr "http://codespeak.net/py/current/doc/index.html"
 
 #: whatsnew/2.5.rst:334
 msgid ""
@@ -8520,15 +8567,15 @@ msgstr ""
 
 #: whatsnew/2.5.rst:551
 msgid "http://en.wikipedia.org/wiki/Coroutine"
-msgstr ""
+msgstr "https://fr.wikipedia.org/wiki/Coroutine"
 
 #: whatsnew/2.5.rst:551
 msgid "The Wikipedia entry for  coroutines."
-msgstr ""
+msgstr "L’article de Wikipédia sur les coroutines."
 
 #: whatsnew/2.5.rst:553
 msgid "http://www.sidhe.org/~dan/blog/archives/000178.html"
-msgstr ""
+msgstr "http://www.sidhe.org/~dan/blog/archives/000178.html"
 
 #: whatsnew/2.5.rst:554
 msgid ""
@@ -8628,7 +8675,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:643 whatsnew/2.6.rst:331
 msgid "Writing Context Managers"
-msgstr ""
+msgstr "Écrire des gestionnaires de contexte"
 
 #: whatsnew/2.5.rst:645 whatsnew/2.6.rst:333
 msgid ""
@@ -8659,7 +8706,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:661 whatsnew/2.6.rst:349
 msgid "The code in *BLOCK* is executed."
-msgstr ""
+msgstr "Le code dans *BLOCK* est exécuté."
 
 #: whatsnew/2.5.rst:663
 msgid ""
@@ -8733,7 +8780,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:742 whatsnew/2.6.rst:431
 msgid "The contextlib module"
-msgstr ""
+msgstr "Le module contextlib"
 
 #: whatsnew/2.5.rst:744
 msgid ""
@@ -9138,7 +9185,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1115
 msgid "Interactive Interpreter Changes"
-msgstr ""
+msgstr "Changements de l’interpréteur interactif"
 
 #: whatsnew/2.5.rst:1117
 msgid ""
@@ -9258,7 +9305,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1217
 msgid "New, Improved, and Removed Modules"
-msgstr ""
+msgstr "Modules ajoutés, modifiés, et supprimés"
 
 #: whatsnew/2.5.rst:1219
 msgid ""
@@ -9312,7 +9359,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1268
 msgid "(Contributed by Guido van Rossum.)"
-msgstr ""
+msgstr "(Contribution par Guido van Rossum.)"
 
 #: whatsnew/2.5.rst:1270
 msgid ""
@@ -10069,7 +10116,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1833
 msgid "Deletes attribute *name*."
-msgstr ""
+msgstr "Supprime l’attribut *name*."
 
 #: whatsnew/2.5.rst:1836
 msgid ""
@@ -10958,11 +11005,11 @@ msgstr ""
 
 #: whatsnew/2.6.rst:532
 msgid "Unix and Mac OS X: :file:`~/.local/`"
-msgstr ""
+msgstr "Unix et Mac OS X : :file:`~/.local/`"
 
 #: whatsnew/2.6.rst:533
 msgid "Windows: :file:`%APPDATA%/Python`"
-msgstr ""
+msgstr "Windows : :file:`%APPDATA%/Python`"
 
 #: whatsnew/2.6.rst:535
 msgid ""
@@ -11142,7 +11189,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:791
 msgid "< (default)"
-msgstr ""
+msgstr "< (par défaut)"
 
 #: whatsnew/2.6.rst:791
 msgid "Left-align"
@@ -11150,7 +11197,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:792
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #: whatsnew/2.6.rst:792
 msgid "Right-align"
@@ -11158,7 +11205,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:793
 msgid "^"
-msgstr ""
+msgstr "^"
 
 #: whatsnew/2.6.rst:793
 msgid "Center"
@@ -11166,7 +11213,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:794
 msgid "="
-msgstr ""
+msgstr "="
 
 #: whatsnew/2.6.rst:794
 msgid "(For numeric types only) Pad after the sign."
@@ -11829,7 +11876,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:1373
 msgid "This is equivalent to::"
-msgstr ""
+msgstr "C’est équivalent à ::"
 
 #: whatsnew/2.6.rst:1382
 msgid "PEP 3129 - Class Decorators"
@@ -16300,7 +16347,7 @@ msgstr ""
 
 #: whatsnew/2.7.rst:1987
 msgid "Updated module: ElementTree 1.3"
-msgstr ""
+msgstr "Module mis-à-jour : ElementTree 1.3"
 
 #: whatsnew/2.7.rst:1989
 msgid ""
@@ -17149,7 +17196,7 @@ msgstr ""
 
 #: whatsnew/3.0.rst:175
 msgid ":func:`zip` now returns an iterator."
-msgstr ""
+msgstr ":func:`zip` retourne maintenant un itérateur."
 
 #: whatsnew/3.0.rst:178
 msgid "Ordering Comparisons"
@@ -17615,11 +17662,11 @@ msgstr ""
 
 #: whatsnew/3.0.rst:494
 msgid ":ref:`pep-0370`."
-msgstr ""
+msgstr ":ref:`pep-0370`."
 
 #: whatsnew/3.0.rst:496
 msgid ":ref:`pep-0371`."
-msgstr ""
+msgstr ":ref:`pep-0371`."
 
 #: whatsnew/3.0.rst:498
 msgid ""
@@ -17685,7 +17732,7 @@ msgstr ""
 
 #: whatsnew/3.0.rst:541
 msgid ":ref:`pep-3129`."
-msgstr ""
+msgstr ":ref:`pep-3129`."
 
 #: whatsnew/3.0.rst:543
 msgid ""
@@ -17748,11 +17795,11 @@ msgstr ""
 
 #: whatsnew/3.0.rst:577
 msgid "ConfigParser"
-msgstr ""
+msgstr "ConfigParser"
 
 #: whatsnew/3.0.rst:577 whatsnew/3.2.rst:2092
 msgid "configparser"
-msgstr ""
+msgstr "configparser"
 
 #: whatsnew/3.0.rst:578
 msgid "copy_reg"
@@ -19602,7 +19649,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:666 whatsnew/3.3.rst:1191 whatsnew/3.4.rst:793
 msgid "email"
-msgstr ""
+msgstr "email"
 
 #: whatsnew/3.2.rst:668
 msgid ""
@@ -19668,7 +19715,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:706
 msgid "elementtree"
-msgstr ""
+msgstr "elementtree"
 
 #: whatsnew/3.2.rst:708
 msgid ""
@@ -19729,7 +19776,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:729
 msgid "Two methods have been deprecated:"
-msgstr ""
+msgstr "Deux méthodes ont été dépréciées :"
 
 #: whatsnew/3.2.rst:731
 msgid ":meth:`xml.etree.ElementTree.getchildren` use ``list(elem)`` instead."
@@ -19906,7 +19953,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:900 whatsnew/3.3.rst:2033 whatsnew/3.4.rst:1595
 msgid "threading"
-msgstr ""
+msgstr "threading"
 
 #: whatsnew/3.2.rst:902
 msgid ""
@@ -20192,7 +20239,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1185
 msgid "csv"
-msgstr ""
+msgstr "csv"
 
 #: whatsnew/3.2.rst:1187
 msgid ""
@@ -20216,7 +20263,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1209 whatsnew/3.3.rst:1036 whatsnew/3.4.rst:680
 msgid "contextlib"
-msgstr ""
+msgstr "contextlib"
 
 #: whatsnew/3.2.rst:1211
 msgid ""
@@ -20495,7 +20542,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1463
 msgid "ast"
-msgstr ""
+msgstr "ast"
 
 #: whatsnew/3.2.rst:1465
 msgid ""
@@ -20826,7 +20873,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1709 whatsnew/3.3.rst:2088 whatsnew/3.4.rst:1655
 msgid "unittest"
-msgstr ""
+msgstr "unittest"
 
 #: whatsnew/3.2.rst:1711
 msgid ""
@@ -20919,43 +20966,43 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1780
 msgid ":meth:`assert_`"
-msgstr ""
+msgstr ":meth:`assert_`"
 
 #: whatsnew/3.2.rst:1780
 msgid ":meth:`.assertTrue`"
-msgstr ""
+msgstr ":meth:`.assertTrue`"
 
 #: whatsnew/3.2.rst:1781
 msgid ":meth:`assertEquals`"
-msgstr ""
+msgstr ":meth:`assertEquals`"
 
 #: whatsnew/3.2.rst:1781
 msgid ":meth:`.assertEqual`"
-msgstr ""
+msgstr ":meth:`.assertEqual`"
 
 #: whatsnew/3.2.rst:1782
 msgid ":meth:`assertNotEquals`"
-msgstr ""
+msgstr ":meth:`assertNotEquals`"
 
 #: whatsnew/3.2.rst:1782
 msgid ":meth:`.assertNotEqual`"
-msgstr ""
+msgstr ":meth:`.assertNotEqual`"
 
 #: whatsnew/3.2.rst:1783
 msgid ":meth:`assertAlmostEquals`"
-msgstr ""
+msgstr ":meth:`assertAlmostEquals`"
 
 #: whatsnew/3.2.rst:1783
 msgid ":meth:`.assertAlmostEqual`"
-msgstr ""
+msgstr ":meth:`.assertAlmostEqual`"
 
 #: whatsnew/3.2.rst:1784
 msgid ":meth:`assertNotAlmostEquals`"
-msgstr ""
+msgstr ":meth:`assertNotAlmostEquals`"
 
 #: whatsnew/3.2.rst:1784
 msgid ":meth:`.assertNotAlmostEqual`"
-msgstr ""
+msgstr ":meth:`.assertNotAlmostEqual`"
 
 #: whatsnew/3.2.rst:1787
 msgid ""
@@ -21017,7 +21064,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.2.rst:1825
 msgid "asyncore"
-msgstr ""
+msgstr "asyncore"
 
 #: whatsnew/3.2.rst:1827
 msgid ""
@@ -21092,7 +21139,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.2.rst:1903 whatsnew/3.4.rst:713
 msgid "dis"
-msgstr ""
+msgstr "dis"
 
 #: whatsnew/3.2.rst:1905
 msgid ""
@@ -21123,7 +21170,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.2.rst:1961 whatsnew/3.4.rst:704
 msgid "dbm"
-msgstr ""
+msgstr "dbm"
 
 #: whatsnew/3.2.rst:1963
 msgid ""
@@ -21137,7 +21184,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1968
 msgid "ctypes"
-msgstr ""
+msgstr "ctypes"
 
 #: whatsnew/3.2.rst:1970
 msgid ""
@@ -21336,7 +21383,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:2178
 msgid "urllib.parse"
-msgstr ""
+msgstr "urllib.parse"
 
 #: whatsnew/3.2.rst:2180
 msgid ""
@@ -21437,7 +21484,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:2261
 msgid "turtledemo"
-msgstr ""
+msgstr "turtledemo"
 
 #: whatsnew/3.2.rst:2263
 msgid ""
@@ -23378,7 +23425,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.3.rst:940 whatsnew/3.4.rst:645
 msgid "base64"
-msgstr ""
+msgstr "base64"
 
 #: whatsnew/3.3.rst:942
 msgid ""
@@ -23390,7 +23437,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:948
 msgid "binascii"
-msgstr ""
+msgstr "binascii"
 
 #: whatsnew/3.3.rst:950
 msgid ""
@@ -23401,7 +23448,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:956
 msgid "bz2"
-msgstr ""
+msgstr "bz2"
 
 #: whatsnew/3.3.rst:958
 msgid ""
@@ -23537,7 +23584,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1051
 msgid "crypt"
-msgstr ""
+msgstr "crypt"
 
 #: whatsnew/3.3.rst:1053
 msgid ""
@@ -23551,7 +23598,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1059
 msgid "curses"
-msgstr ""
+msgstr "curses"
 
 #: whatsnew/3.3.rst:1061
 msgid ""
@@ -23589,7 +23636,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.3.rst:1075
 msgid "datetime"
-msgstr ""
+msgstr "datetime"
 
 #: whatsnew/3.3.rst:1077
 msgid ""
@@ -23653,7 +23700,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1111
 msgid "decimal.py"
-msgstr ""
+msgstr "decimal.py"
 
 #: whatsnew/3.3.rst:1111
 msgid "_decimal"
@@ -23677,7 +23724,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1113
 msgid "120x"
-msgstr ""
+msgstr "120x"
 
 #: whatsnew/3.3.rst:1115
 msgid "telco"
@@ -23693,7 +23740,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1115
 msgid "30x"
-msgstr ""
+msgstr "30x"
 
 #: whatsnew/3.3.rst:1117
 msgid "psycopg"
@@ -23709,7 +23756,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1117
 msgid "12x"
-msgstr ""
+msgstr "12x"
 
 #: whatsnew/3.3.rst:1123
 msgid ""
@@ -23740,31 +23787,31 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1139
 msgid ":const:`MAX_PREC`"
-msgstr ""
+msgstr ":const:`MAX_PREC`"
 
 #: whatsnew/3.3.rst:1139 whatsnew/3.3.rst:1141
 msgid ":const:`425000000`"
-msgstr ""
+msgstr ":const:`425000000`"
 
 #: whatsnew/3.3.rst:1139 whatsnew/3.3.rst:1141
 msgid ":const:`999999999999999999`"
-msgstr ""
+msgstr ":const:`999999999999999999`"
 
 #: whatsnew/3.3.rst:1141
 msgid ":const:`MAX_EMAX`"
-msgstr ""
+msgstr ":const:`MAX_EMAX`"
 
 #: whatsnew/3.3.rst:1143
 msgid ":const:`MIN_EMIN`"
-msgstr ""
+msgstr ":const:`MIN_EMIN`"
 
 #: whatsnew/3.3.rst:1143
 msgid ":const:`-425000000`"
-msgstr ""
+msgstr ":const:`-425000000`"
 
 #: whatsnew/3.3.rst:1143
 msgid ":const:`-999999999999999999`"
-msgstr ""
+msgstr ":const:`-999999999999999999`"
 
 #: whatsnew/3.3.rst:1146
 msgid ""
@@ -23868,7 +23915,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1221
 msgid "cte_type"
-msgstr ""
+msgstr "cte_type"
 
 #: whatsnew/3.3.rst:1221
 msgid ""
@@ -25158,7 +25205,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2124
 msgid "xml.etree.ElementTree"
-msgstr ""
+msgstr "xml.etree.ElementTree"
 
 #: whatsnew/3.3.rst:2126
 msgid ""
@@ -25206,7 +25253,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2157
 msgid "the UTF-8 encoder has been optimized"
-msgstr ""
+msgstr "l’encodeur UTF-8 a été optimisé"
 
 #: whatsnew/3.3.rst:2158
 msgid ""
@@ -25230,7 +25277,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2174
 msgid ":c:func:`PyMemoryView_FromMemory`"
-msgstr ""
+msgstr ":c:func:`PyMemoryView_FromMemory`"
 
 #: whatsnew/3.3.rst:2176
 msgid ":pep:`393` added new Unicode types, macros and functions:"
@@ -25242,27 +25289,27 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2180
 msgid ":c:func:`PyUnicode_CopyCharacters`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_CopyCharacters`"
 
 #: whatsnew/3.3.rst:2181
 msgid ":c:func:`PyUnicode_FindChar`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_FindChar`"
 
 #: whatsnew/3.3.rst:2182
 msgid ":c:func:`PyUnicode_GetLength`, :c:macro:`PyUnicode_GET_LENGTH`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_GetLength`, :c:macro:`PyUnicode_GET_LENGTH`"
 
 #: whatsnew/3.3.rst:2183
 msgid ":c:func:`PyUnicode_New`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_New`"
 
 #: whatsnew/3.3.rst:2184
 msgid ":c:func:`PyUnicode_Substring`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_Substring`"
 
 #: whatsnew/3.3.rst:2185
 msgid ":c:func:`PyUnicode_ReadChar`, :c:func:`PyUnicode_WriteChar`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_ReadChar`, :c:func:`PyUnicode_WriteChar`"
 
 #: whatsnew/3.3.rst:2187
 msgid "Low-level API:"
@@ -25278,11 +25325,11 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2191
 msgid ":c:macro:`PyUnicode_READY`"
-msgstr ""
+msgstr ":c:macro:`PyUnicode_READY`"
 
 #: whatsnew/3.3.rst:2192
 msgid ":c:func:`PyUnicode_FromKindAndData`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_FromKindAndData`"
 
 #: whatsnew/3.3.rst:2193
 msgid ":c:func:`PyUnicode_AsUCS4`, :c:func:`PyUnicode_AsUCS4Copy`"
@@ -25309,7 +25356,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2200
 msgid ":c:macro:`PyUnicode_MAX_CHAR_VALUE`"
-msgstr ""
+msgstr ":c:macro:`PyUnicode_MAX_CHAR_VALUE`"
 
 #: whatsnew/3.3.rst:2202
 msgid ""
@@ -25462,7 +25509,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2284
 msgid ":c:func:`PyUnicode_GetMax`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_GetMax`"
 
 #: whatsnew/3.3.rst:2287
 msgid "Functions and macros manipulating Py_UNICODE* strings:"
@@ -25507,11 +25554,11 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2301
 msgid ":c:macro:`Py_UNICODE_MATCH`"
-msgstr ""
+msgstr ":c:macro:`Py_UNICODE_MATCH`"
 
 #: whatsnew/3.3.rst:2303
 msgid "Encoders:"
-msgstr ""
+msgstr "Encodeurs :"
 
 #: whatsnew/3.3.rst:2305
 msgid ":c:func:`PyUnicode_Encode`: use :c:func:`PyUnicode_AsEncodedObject`"
@@ -25519,7 +25566,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2306
 msgid ":c:func:`PyUnicode_EncodeUTF7`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_EncodeUTF7`"
 
 #: whatsnew/3.3.rst:2307
 msgid ""
@@ -25529,11 +25576,11 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2309
 msgid ":c:func:`PyUnicode_EncodeUTF32`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_EncodeUTF32`"
 
 #: whatsnew/3.3.rst:2310
 msgid ":c:func:`PyUnicode_EncodeUTF16`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_EncodeUTF16`"
 
 #: whatsnew/3.3.rst:2311
 msgid ""
@@ -25558,11 +25605,11 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2317
 msgid ":c:func:`PyUnicode_EncodeCharmap`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_EncodeCharmap`"
 
 #: whatsnew/3.3.rst:2318
 msgid ":c:func:`PyUnicode_TranslateCharmap`"
-msgstr ""
+msgstr ":c:func:`PyUnicode_TranslateCharmap`"
 
 #: whatsnew/3.3.rst:2319
 msgid ""
@@ -25578,7 +25625,7 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2326
 msgid "Deprecated features"
-msgstr ""
+msgstr "Fonctionnalités dépréciées"
 
 #: whatsnew/3.3.rst:2328
 msgid ""
@@ -26453,7 +26500,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:464
 msgid "asyncio"
-msgstr ""
+msgstr "asyncio"
 
 #: whatsnew/3.4.rst:466
 msgid ""
@@ -26477,7 +26524,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:482
 msgid "ensurepip"
-msgstr ""
+msgstr "ensurepip"
 
 #: whatsnew/3.4.rst:484
 msgid ""
@@ -26510,7 +26557,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:508
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: whatsnew/3.4.rst:510
 msgid ""
@@ -26581,7 +26628,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:571
 msgid "tracemalloc"
-msgstr ""
+msgstr "tracemalloc"
 
 #: whatsnew/3.4.rst:573
 msgid ""
@@ -26630,7 +26677,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:606
 msgid "aifc"
-msgstr ""
+msgstr "aifc"
 
 #: whatsnew/3.4.rst:608
 msgid ""
@@ -26655,7 +26702,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:622
 msgid "argparse"
-msgstr ""
+msgstr "argparse"
 
 #: whatsnew/3.4.rst:624
 msgid ""
@@ -26666,7 +26713,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:630
 msgid "audioop"
-msgstr ""
+msgstr "audioop"
 
 #: whatsnew/3.4.rst:632
 msgid ""
@@ -27841,7 +27888,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1604
 msgid "traceback"
-msgstr ""
+msgstr "traceback"
 
 #: whatsnew/3.4.rst:1606
 msgid ""
@@ -27984,7 +28031,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1718
 msgid "venv"
-msgstr ""
+msgstr "venv"
 
 #: whatsnew/3.4.rst:1720
 msgid ""
@@ -28003,7 +28050,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1731
 msgid "wave"
-msgstr ""
+msgstr "wave"
 
 #: whatsnew/3.4.rst:1733
 msgid ""
@@ -28033,7 +28080,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1749
 msgid "weakref"
-msgstr ""
+msgstr "weakref"
 
 #: whatsnew/3.4.rst:1751
 msgid ""
@@ -28058,7 +28105,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1765
 msgid "xml.etree"
-msgstr ""
+msgstr "xml.etree"
 
 #: whatsnew/3.4.rst:1767
 msgid ""
@@ -28082,7 +28129,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1783
 msgid "zipfile"
-msgstr ""
+msgstr "zipfile"
 
 #: whatsnew/3.4.rst:1785
 msgid ""
@@ -28587,7 +28634,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:2146
 msgid "Deprecated Features"
-msgstr ""
+msgstr "Fonctionnalités dépréciées"
 
 #: whatsnew/3.4.rst:2148
 msgid ""
@@ -41640,6 +41687,8 @@ msgid ""
 "`Issue #15557 <https://bugs.python.org/15557>`__: Added a test suite for the "
 "webbrowser module, thanks to Anton Barkovsky."
 msgstr ""
+"`Ticket #15557 <https://bugs.python.org/15557>`__: Ajoute une suite de tests "
+"pour le module webbrowser, grâce à Anton Barkovsky."
 
 #: ../../../Misc/NEWS:6073
 msgid ""
@@ -41735,12 +41784,16 @@ msgid ""
 "`Issue #3718 <https://bugs.python.org/3718>`__: Use AC_ARG_VAR to set "
 "MACHDEP in configure.ac."
 msgstr ""
+"`Ticket #3718 <https://bugs.python.org/3718>`__: Utilise *AC_ARG_VAR* pour "
+"assigner *MACHDEP* dans configure.ac."
 
 #: ../../../Misc/NEWS:6118
 msgid ""
 "`Issue #16235 <https://bugs.python.org/16235>`__: Implement python-config as "
 "a shell script."
 msgstr ""
+"`Ticket #16235 <https://bugs.python.org/16235>`__: Implémente python-config "
+"sous forme de script shell."
 
 #: ../../../Misc/NEWS:6120
 msgid ""
@@ -42158,36 +42211,50 @@ msgid ""
 "`Issue #15116 <https://bugs.python.org/15116>`__: Remove references to "
 "appscript as it is no longer being supported."
 msgstr ""
+"`Ticket #15116 <https://bugs.python.org/15116>`__: Supprime les références à "
+"*appscript* car il n’est plus supporté."
 
 #: ../../../Misc/NEWS:6313
 msgid ""
 "`Issue #18817 <https://bugs.python.org/18817>`__: Fix a resource warning in "
 "Lib/aifc.py demo.  Patch by Vajrasky Kok."
 msgstr ""
+"`Ticket #18817 <https://bugs.python.org/18817>`__: Corrige un avertissement "
+"à propos d’une ressourcedans la démo de Lib/aifc.py. Contribution par "
+"Vajrasky Kok."
 
 #: ../../../Misc/NEWS:6316
 msgid ""
 "`Issue #18439 <https://bugs.python.org/18439>`__: Make patchcheck work on "
 "Windows for ACKS, NEWS."
 msgstr ""
+"`Ticket #18439 <https://bugs.python.org/18439>`__: Permet à *patchcheck* de "
+"fonctionner sous Windows pour *ACKS* et *NEWS*."
 
 #: ../../../Misc/NEWS:6318
 msgid ""
 "`Issue #18448 <https://bugs.python.org/18448>`__: Fix a typo in Tools/demo/"
 "eiffel.py."
 msgstr ""
+"`Ticket #18448 <https://bugs.python.org/18448>`__: Corrige une coquille dans "
+"Tools/demo/eiffel.py."
 
 #: ../../../Misc/NEWS:6320
 msgid ""
 "`Issue #18457 <https://bugs.python.org/18457>`__: Fixed saving of formulas "
 "and complex numbers in Tools/demo/ss1.py."
 msgstr ""
+"`Issue #18457 <https://bugs.python.org/18457>`__: Corrige l’enregistrement "
+"des formules et nombres complexes dans Tools/demo/ss1.py."
 
 #: ../../../Misc/NEWS:6323
 msgid ""
 "`Issue #18449 <https://bugs.python.org/18449>`__: Make Tools/demo/ss1.py "
 "work again on Python 3.  Patch by Févry Thibault."
 msgstr ""
+"`Ticket #18449 <https://bugs.python.org/18449>`__: Permet à Tools/demo/ss1."
+"py de fonctionner à nouveau correctement sous Python 3. Contribution par "
+"Févry Thibault."
 
 #: ../../../Misc/NEWS:6326
 msgid ""
@@ -42195,18 +42262,25 @@ msgid ""
 "OSX could not launch python scripts that have paths that include wide "
 "characters."
 msgstr ""
+"`Ticket #12990 <https://bugs.python.org/12990>`__: Le lanceur Python sous "
+"Mac OS X ne pouvait pas lancer des scripts Python dont le chemin inclut des "
+"caractères étendus."
 
 #: ../../../Misc/NEWS:6329
 msgid ""
 "`Issue #15239 <https://bugs.python.org/15239>`__: Make mkstringprep.py work "
 "again on Python 3."
 msgstr ""
+"`Ticket #15239 <https://bugs.python.org/15239>`__: Permet à mkstringprep.py "
+"de fonctionner à nouveau correctement sous Python 3."
 
 #: ../../../Misc/NEWS:6331
 msgid ""
 "`Issue #17028 <https://bugs.python.org/17028>`__: Allowed Python arguments "
 "to be supplied to the Windows launcher."
 msgstr ""
+"`Ticket #17028 <https://bugs.python.org/17028>`__: Permet au lanceur Windows "
+"de fournir des arguments pour Python."
 
 #: ../../../Misc/NEWS:6334
 msgid ""
@@ -42214,6 +42288,9 @@ msgid ""
 "the encoding of source files and correctly writes and escapes non-ascii "
 "characters."
 msgstr ""
+"`Ticket #17156 <https://bugs.python.org/17156>`__: pygettext.py détecte "
+"maintenant l’encodage des fichiers sources et écrit et échappe correctement "
+"les caractères non-ASCII."
 
 #: ../../../Misc/NEWS:6337
 msgid ""
@@ -42223,24 +42300,36 @@ msgid ""
 "with continued lines broken after \"class\" or \"def\" keywords and with "
 "continuations at the start of line."
 msgstr ""
+"`Ticket #15539 <https://bugs.python.org/15539>`__: Corrige un certain nombre "
+"de bugs dans Tools/scripts/pindent.py. pindent.py marche maintenant avec une "
+"instruction \"with\". pindent.py ne produit plus de la mauvaise indentation. "
+"pindent.py marche maintenant avec des instructions continuées sur plusieurs "
+"lignes après les mots-clefs \"class\" ou \"def\" et avec des continuations "
+"au début de la ligne."
 
 #: ../../../Misc/NEWS:6342
 msgid ""
 "`Issue #11797 <https://bugs.python.org/11797>`__: Add a 2to3 fixer that maps "
 "reload() to imp.reload()."
 msgstr ""
+"`Ticket #11797 <https://bugs.python.org/11797>`__: Ajoute un correcteur 2to3 "
+"qui remplace reload() par imp.reload()."
 
 #: ../../../Misc/NEWS:6344
 msgid ""
 "`Issue #10966 <https://bugs.python.org/10966>`__: Remove the concept of "
 "unexpected skipped tests."
 msgstr ""
+"`Ticket #10966 <https://bugs.python.org/10966>`__: Supprime le concept de "
+"tests ignorés de façon inattendue."
 
 #: ../../../Misc/NEWS:6346
 msgid ""
 "`Issue #9893 <https://bugs.python.org/9893>`__: Removed the Misc/Vim "
 "directory."
 msgstr ""
+"`Ticket #9893 <https://bugs.python.org/9893>`__: Supprime le répertoire Misc/"
+"Vim."
 
 #: ../../../Misc/NEWS:6348
 msgid "Removed the Misc/TextMate directory."
@@ -42252,12 +42341,17 @@ msgid ""
 "parse_html5_entities.py script to parse the list of HTML5 entities and "
 "update the html.entities.html5 dictionary."
 msgstr ""
+"`Ticket #16245 <https://bugs.python.org/16245>`__: Ajoute le script Tools/"
+"scripts/parse_html5_entities.py pour parser la liste d’entités HTML5 et "
+"mettre à jour le dictionnaire html.entities.html5."
 
 #: ../../../Misc/NEWS:6353
 msgid ""
 "`Issue #15378 <https://bugs.python.org/15378>`__: Fix Tools/unicode/"
 "comparecodecs.py.  Patch by Serhiy Storchaka."
 msgstr ""
+"`Ticket #15378 <https://bugs.python.org/15378>`__: Corrige Tools/unicode/"
+"comparecodecs.py.  Contribution par Serhiy Storchaka."
 
 #: ../../../Misc/NEWS:6355
 msgid ""
@@ -42265,6 +42359,9 @@ msgid ""
 "on Python 3 and add tests. Initial patch by Berker Peksag and Serhiy "
 "Storchaka."
 msgstr ""
+"`Ticket #16549 <https://bugs.python.org/16549>`__: Rend json.tool de nouveau "
+"fonctionnel sous Python 3 et ajoute des tests. Contribution initiale par "
+"Berker Peksag et Serhiy Storchaka."
 
 #: ../../../Misc/NEWS:6358
 msgid ""

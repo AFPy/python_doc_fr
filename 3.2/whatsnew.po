@@ -81,6 +81,15 @@ msgid ""
 "received a few fixes to ensure that it's forward-compatible with Python "
 "2.0.  1.6 is therefore part of Python's evolution, and not a side branch."
 msgstr ""
+"Python 1.6 peut être vu comme la version des obligations contractuelles. "
+"Après que l’équipe de développement eût quitté le CNRI en mai 2000, celui-ci "
+"a demandé la création d’une version 1.6, contenant tout le travail sur "
+"Python réalisé au CNRI. Python 1.6 représente de ce fait l’état de l’arbre "
+"*CVS* tel qu’il était en mai 2000, la nouvelle fonctionnalité la plus "
+"remarquable étant le support d’Unicode. Le développement a continué après "
+"mai bien sûr, donc la branche 1.6 a reçu quelques corrections pour être sûr "
+"qu’elle soit compatible avec Python 2.0. La version 1.6 fait donc partie de "
+"l’évolution de Python, ce n’est pas une branche séparée."
 
 #: whatsnew/2.0.rst:44
 msgid ""
@@ -93,6 +102,15 @@ msgid ""
 "2.0.  Most of the really interesting features described in this document are "
 "only in 2.0, because a lot of work was done between May and September."
 msgstr ""
+"Alors, devriez-vous vous intéresser à Python 1.6 ? Probablement pas. Les "
+"versions 1.6final et 2.0beta1 sont sorties le même jour (5 septembre 2000), "
+"le plan étant de finaliser Python 2.0 environ un mois plus tard. Si vous "
+"avez des applications à maintenir, il n’y a pas vraiment d’intérêt à casser "
+"des choses en migrant sur la version 1.6, les réparer, puis avoir de nouveau "
+"des choses cassées à peine un mois plus tard en passant à la 2.0; il vaut "
+"mieux partir directement de la 2.0. La plupart des fonctionnalités vraiment "
+"intéressantes décrites dans ce document sont seulement dans la 2.0, parce "
+"que beaucoup de travail a été réalisé entre mai et septembre."
 
 #: whatsnew/2.0.rst:57
 msgid "New Development Process"
@@ -108,6 +126,14 @@ msgid ""
 "available from Python's project page, located at http://sourceforge.net/"
 "projects/python/."
 msgstr ""
+"Le changement le plus important dans Python 2.0 n’est peut-être pas du tout "
+"le code, mais comment Python a été développé : en mai 2000 les développeurs "
+"de Python ont commencé à utiliser les outils rendus disponibles par "
+"SourceForge pour stocker du code, suivre les signalements de bugs, et gérer "
+"la file des soumissions de correctifs. Pour signaler des bugs ou soumettre "
+"des correctifs pour Python 2.0, utilisez les outils de suivi de bugs et de "
+"gestion de correctifs disponibles sur la page du projet Python, à l’adresse "
+"suivante : http://sourceforge.net/projects/python/."
 
 #: whatsnew/2.0.rst:66
 msgid ""
@@ -255,18 +281,24 @@ msgid ""
 "New built-in functions have been added, and existing built-ins modified to "
 "support Unicode:"
 msgstr ""
+"De nouvelles fonctions primitives ont été ajoutées, et des fonctions "
+"existantes ont été modifiées pour supporter Unicode :"
 
 #: whatsnew/2.0.rst:178
 msgid ""
 "``unichr(ch)`` returns a Unicode string 1 character long, containing the "
 "character *ch*."
 msgstr ""
+"``unichr(ch)`` retourne une chaîne Unicode de longueur 1, contenant le "
+"caractère *ch*."
 
 #: whatsnew/2.0.rst:181
 msgid ""
 "``ord(u)``, where *u* is a 1-character regular or Unicode string, returns "
 "the number of the character as an integer."
 msgstr ""
+"``ord(u)``, quand *u* est une chaîne normale ou Unicode de longueur 1, "
+"retourne un entier représentant le nombre de caractères."
 
 #: whatsnew/2.0.rst:184
 msgid ""
@@ -344,10 +376,12 @@ msgid ""
 "For example, the following code writes a Unicode string into a file,  "
 "encoding it as UTF-8::"
 msgstr ""
+"Par exemple, le code suivant écrit une chaîne Unicode dans un fichier, en "
+"l’encodant en UTF-8 ::"
 
 #: whatsnew/2.0.rst:243
 msgid "The following code would then read UTF-8 input from the file::"
-msgstr ""
+msgstr "Le code suivant lirait ensuite le texte UTF-8 du fichier ::"
 
 #: whatsnew/2.0.rst:249
 msgid ""
@@ -355,6 +389,9 @@ msgid ""
 "module, which has a new underlying implementation called SRE written by "
 "Fredrik Lundh of Secret Labs AB."
 msgstr ""
+"Des expressions rationnelles supportant l’Unicode sont disponibles dans le "
+"module :mod:`re`, qui a une implémentation sous-jacente appelée SRE écrite "
+"par Fredrik Lundh de Secret Labs AB."
 
 #: whatsnew/2.0.rst:253
 msgid ""
@@ -400,7 +437,7 @@ msgstr ""
 
 #: whatsnew/2.0.rst:292
 msgid "List comprehensions have the form::"
-msgstr ""
+msgstr "Les compréhensions de liste sont de la forme suivante ::"
 
 #: whatsnew/2.0.rst:299
 msgid ""
@@ -418,6 +455,8 @@ msgid ""
 "To make the semantics very clear, a list comprehension is equivalent to the "
 "following Python code::"
 msgstr ""
+"Pour que la sémantique soit très claire, une compréhension de liste est "
+"équivalente au code Python suivant ::"
 
 #: whatsnew/2.0.rst:319
 msgid ""
@@ -7272,31 +7311,35 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1011
 msgid "Chinese (PRC): gb2312, gbk, gb18030, big5hkscs, hz"
-msgstr ""
+msgstr "Chinois (PRC) : gb2312, gbk, gb18030, big5hkscs, hz"
 
 #: whatsnew/2.4.rst:1013
 msgid "Chinese (ROC): big5, cp950"
-msgstr ""
+msgstr "Chinois (ROC) : big5, cp950"
 
 #: whatsnew/2.4.rst:1017
 msgid "Japanese: cp932, euc-jis-2004, euc-jp, euc-jisx0213, iso-2022-jp,"
-msgstr ""
+msgstr "Japonais : cp932, euc-jis-2004, euc-jp, euc-jisx0213, iso-2022-jp,"
 
 #: whatsnew/2.4.rst:1016
 msgid ""
 "iso-2022-jp-1, iso-2022-jp-2, iso-2022-jp-3, iso-2022-jp-ext, iso-2022-"
 "jp-2004, shift-jis, shift-jisx0213, shift-jis-2004"
 msgstr ""
+"iso-2022-jp-1, iso-2022-jp-2, iso-2022-jp-3, iso-2022-jp-ext, iso-2022-"
+"jp-2004, shift-jis, shift-jisx0213, shift-jis-2004"
 
 #: whatsnew/2.4.rst:1019
 msgid "Korean: cp949, euc-kr, johab, iso-2022-kr"
-msgstr ""
+msgstr "Coréen : cp949, euc-kr, johab, iso-2022-kr"
 
 #: whatsnew/2.4.rst:1021
 msgid ""
 "Some other new encodings were added: HP Roman8,  ISO_8859-11, ISO_8859-16, "
 "PCTP-154, and TIS-620."
 msgstr ""
+"D’autres encodages ont été ajoutés : HP Roman8,  ISO_8859-11, ISO_8859-16, "
+"PCTP-154, and TIS-620."
 
 #: whatsnew/2.4.rst:1024
 msgid ""
@@ -7411,7 +7454,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1140
 msgid "(Contributed by Hye-Shik Chang.)"
-msgstr ""
+msgstr "(Contribution par Hye-Shik Chang.)"
 
 #: whatsnew/2.4.rst:1142
 msgid ""
@@ -7461,7 +7504,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1187
 msgid "(Changes implemented by Vinay Sajip.)"
-msgstr ""
+msgstr "(Changements implémentés par Vinay Sajip.)"
 
 #: whatsnew/2.4.rst:1189
 msgid ""
@@ -7534,6 +7577,8 @@ msgid ""
 "The :mod:`poplib` module now supports POP over SSL.  (Contributed by Hector "
 "Urtubia.)"
 msgstr ""
+"Le module :mod:`poplib` supporte maintenant POP sur SSL.  (Contribution par "
+"Hector Urtubia.)"
 
 #: whatsnew/2.4.rst:1243
 msgid ""
@@ -7650,7 +7695,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1323
 msgid "cookielib"
-msgstr ""
+msgstr "cookielib"
 
 #: whatsnew/2.4.rst:1325
 msgid ""
@@ -7682,7 +7727,7 @@ msgstr ""
 
 #: whatsnew/2.4.rst:1347
 msgid "doctest"
-msgstr ""
+msgstr "doctest"
 
 #: whatsnew/2.4.rst:1349
 msgid ""
@@ -7969,7 +8014,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:54
 msgid "PEP 308: Conditional Expressions"
-msgstr ""
+msgstr "PEP 308 : Expressions conditionnelles"
 
 #: whatsnew/2.5.rst:56
 msgid ""
@@ -7991,7 +8036,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:72
 msgid "Guido van Rossum eventually chose a surprising syntax::"
-msgstr ""
+msgstr "Guido van Rossum a finalement choisi une syntaxe surprenante ::"
 
 #: whatsnew/2.5.rst:76
 msgid ""
@@ -8056,10 +8101,12 @@ msgid ""
 "PEP written by Guido van Rossum and Raymond D. Hettinger; implemented by "
 "Thomas Wouters."
 msgstr ""
+"PEP écrite par Guido van Rossum et Raymond D. Hettinger; implémentée par "
+"Thomas Wouters."
 
 #: whatsnew/2.5.rst:132
 msgid "PEP 309: Partial Function Application"
-msgstr ""
+msgstr "PEP 309 : Application partielle de fonction"
 
 #: whatsnew/2.5.rst:134
 msgid ""
@@ -8086,7 +8133,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:148
 msgid "Here's a small but realistic example::"
-msgstr ""
+msgstr "Voici un exemple court mais réaliste ::"
 
 #: whatsnew/2.5.rst:160
 msgid ""
@@ -8268,11 +8315,11 @@ msgstr ""
 
 #: whatsnew/2.5.rst:331
 msgid "PEP written by Aahz; implemented by Thomas Wouters."
-msgstr ""
+msgstr "PEP écrite par Aahz; implémentée par Thomas Wouters."
 
 #: whatsnew/2.5.rst:333
 msgid "http://codespeak.net/py/current/doc/index.html"
-msgstr ""
+msgstr "http://codespeak.net/py/current/doc/index.html"
 
 #: whatsnew/2.5.rst:334
 msgid ""
@@ -8526,15 +8573,15 @@ msgstr ""
 
 #: whatsnew/2.5.rst:551
 msgid "http://en.wikipedia.org/wiki/Coroutine"
-msgstr ""
+msgstr "https://fr.wikipedia.org/wiki/Coroutine"
 
 #: whatsnew/2.5.rst:551
 msgid "The Wikipedia entry for  coroutines."
-msgstr ""
+msgstr "L’article de Wikipédia sur les coroutines."
 
 #: whatsnew/2.5.rst:553
 msgid "http://www.sidhe.org/~dan/blog/archives/000178.html"
-msgstr ""
+msgstr "http://www.sidhe.org/~dan/blog/archives/000178.html"
 
 #: whatsnew/2.5.rst:554
 msgid ""
@@ -8634,7 +8681,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:643 whatsnew/2.6.rst:331
 msgid "Writing Context Managers"
-msgstr ""
+msgstr "Écrire des gestionnaires de contexte"
 
 #: whatsnew/2.5.rst:645 whatsnew/2.6.rst:333
 msgid ""
@@ -8665,7 +8712,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:661 whatsnew/2.6.rst:349
 msgid "The code in *BLOCK* is executed."
-msgstr ""
+msgstr "Le code dans *BLOCK* est exécuté."
 
 #: whatsnew/2.5.rst:663
 msgid ""
@@ -8739,7 +8786,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:742 whatsnew/2.6.rst:431
 msgid "The contextlib module"
-msgstr ""
+msgstr "Le module contextlib"
 
 #: whatsnew/2.5.rst:744
 msgid ""
@@ -9146,7 +9193,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1115
 msgid "Interactive Interpreter Changes"
-msgstr ""
+msgstr "Changements de l’interpréteur interactif"
 
 #: whatsnew/2.5.rst:1117
 msgid ""
@@ -9266,7 +9313,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1217
 msgid "New, Improved, and Removed Modules"
-msgstr ""
+msgstr "Modules ajoutés, modifiés, et supprimés"
 
 #: whatsnew/2.5.rst:1219
 msgid ""
@@ -9320,7 +9367,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1268
 msgid "(Contributed by Guido van Rossum.)"
-msgstr ""
+msgstr "(Contribution par Guido van Rossum.)"
 
 #: whatsnew/2.5.rst:1270
 msgid ""
@@ -10076,7 +10123,7 @@ msgstr ""
 
 #: whatsnew/2.5.rst:1833
 msgid "Deletes attribute *name*."
-msgstr ""
+msgstr "Supprime l’attribut *name*."
 
 #: whatsnew/2.5.rst:1836
 msgid ""
@@ -10972,11 +11019,11 @@ msgstr ""
 
 #: whatsnew/2.6.rst:532
 msgid "Unix and Mac OS X: :file:`~/.local/`"
-msgstr ""
+msgstr "Unix et Mac OS X : :file:`~/.local/`"
 
 #: whatsnew/2.6.rst:533
 msgid "Windows: :file:`%APPDATA%/Python`"
-msgstr ""
+msgstr "Windows : :file:`%APPDATA%/Python`"
 
 #: whatsnew/2.6.rst:535
 msgid ""
@@ -11157,7 +11204,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:791
 msgid "< (default)"
-msgstr ""
+msgstr "< (par défaut)"
 
 #: whatsnew/2.6.rst:791
 msgid "Left-align"
@@ -11165,7 +11212,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:792
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #: whatsnew/2.6.rst:792
 msgid "Right-align"
@@ -11173,7 +11220,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:793
 msgid "^"
-msgstr ""
+msgstr "^"
 
 #: whatsnew/2.6.rst:793
 msgid "Center"
@@ -11181,7 +11228,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:794
 msgid "="
-msgstr ""
+msgstr "="
 
 #: whatsnew/2.6.rst:794
 msgid "(For numeric types only) Pad after the sign."
@@ -11845,7 +11892,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:1373
 msgid "This is equivalent to::"
-msgstr ""
+msgstr "C’est équivalent à ::"
 
 #: whatsnew/2.6.rst:1382
 msgid "PEP 3129 - Class Decorators"
@@ -16242,7 +16289,7 @@ msgstr ""
 
 #: whatsnew/2.7.rst:1947
 msgid "Updated module: ElementTree 1.3"
-msgstr ""
+msgstr "Module mis-à-jour : ElementTree 1.3"
 
 #: whatsnew/2.7.rst:1949
 msgid ""
@@ -16980,7 +17027,7 @@ msgstr ""
 
 #: whatsnew/3.0.rst:175
 msgid ":func:`zip` now returns an iterator."
-msgstr ""
+msgstr ":func:`zip` retourne maintenant un itérateur."
 
 #: whatsnew/3.0.rst:178
 msgid "Ordering Comparisons"
@@ -17446,11 +17493,11 @@ msgstr ""
 
 #: whatsnew/3.0.rst:494
 msgid ":ref:`pep-0370`."
-msgstr ""
+msgstr ":ref:`pep-0370`."
 
 #: whatsnew/3.0.rst:496
 msgid ":ref:`pep-0371`."
-msgstr ""
+msgstr ":ref:`pep-0371`."
 
 #: whatsnew/3.0.rst:498
 msgid ""
@@ -17516,7 +17563,7 @@ msgstr ""
 
 #: whatsnew/3.0.rst:541
 msgid ":ref:`pep-3129`."
-msgstr ""
+msgstr ":ref:`pep-3129`."
 
 #: whatsnew/3.0.rst:543
 msgid ""
@@ -17579,11 +17626,11 @@ msgstr ""
 
 #: whatsnew/3.0.rst:577
 msgid "ConfigParser"
-msgstr ""
+msgstr "ConfigParser"
 
 #: whatsnew/3.0.rst:577 whatsnew/3.2.rst:2092
 msgid "configparser"
-msgstr ""
+msgstr "configparser"
 
 #: whatsnew/3.0.rst:578
 msgid "copy_reg"
@@ -19427,7 +19474,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:666
 msgid "email"
-msgstr ""
+msgstr "email"
 
 #: whatsnew/3.2.rst:668
 msgid ""
@@ -19493,7 +19540,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:706
 msgid "elementtree"
-msgstr ""
+msgstr "elementtree"
 
 #: whatsnew/3.2.rst:708
 msgid ""
@@ -19554,7 +19601,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:729
 msgid "Two methods have been deprecated:"
-msgstr ""
+msgstr "Deux méthodes ont été dépréciées :"
 
 #: whatsnew/3.2.rst:731
 msgid ":meth:`xml.etree.ElementTree.getchildren` use ``list(elem)`` instead."
@@ -19731,7 +19778,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:900
 msgid "threading"
-msgstr ""
+msgstr "threading"
 
 #: whatsnew/3.2.rst:902
 msgid ""
@@ -20017,7 +20064,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1185
 msgid "csv"
-msgstr ""
+msgstr "csv"
 
 #: whatsnew/3.2.rst:1187
 msgid ""
@@ -20041,7 +20088,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1209
 msgid "contextlib"
-msgstr ""
+msgstr "contextlib"
 
 #: whatsnew/3.2.rst:1211
 msgid ""
@@ -20320,7 +20367,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1463
 msgid "ast"
-msgstr ""
+msgstr "ast"
 
 #: whatsnew/3.2.rst:1465
 msgid ""
@@ -20651,7 +20698,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1709
 msgid "unittest"
-msgstr ""
+msgstr "unittest"
 
 #: whatsnew/3.2.rst:1711
 msgid ""
@@ -20744,43 +20791,43 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1780
 msgid ":meth:`assert_`"
-msgstr ""
+msgstr ":meth:`assert_`"
 
 #: whatsnew/3.2.rst:1780
 msgid ":meth:`.assertTrue`"
-msgstr ""
+msgstr ":meth:`.assertTrue`"
 
 #: whatsnew/3.2.rst:1781
 msgid ":meth:`assertEquals`"
-msgstr ""
+msgstr ":meth:`assertEquals`"
 
 #: whatsnew/3.2.rst:1781
 msgid ":meth:`.assertEqual`"
-msgstr ""
+msgstr ":meth:`.assertEqual`"
 
 #: whatsnew/3.2.rst:1782
 msgid ":meth:`assertNotEquals`"
-msgstr ""
+msgstr ":meth:`assertNotEquals`"
 
 #: whatsnew/3.2.rst:1782
 msgid ":meth:`.assertNotEqual`"
-msgstr ""
+msgstr ":meth:`.assertNotEqual`"
 
 #: whatsnew/3.2.rst:1783
 msgid ":meth:`assertAlmostEquals`"
-msgstr ""
+msgstr ":meth:`assertAlmostEquals`"
 
 #: whatsnew/3.2.rst:1783
 msgid ":meth:`.assertAlmostEqual`"
-msgstr ""
+msgstr ":meth:`.assertAlmostEqual`"
 
 #: whatsnew/3.2.rst:1784
 msgid ":meth:`assertNotAlmostEquals`"
-msgstr ""
+msgstr ":meth:`assertNotAlmostEquals`"
 
 #: whatsnew/3.2.rst:1784
 msgid ":meth:`.assertNotAlmostEqual`"
-msgstr ""
+msgstr ":meth:`.assertNotAlmostEqual`"
 
 #: whatsnew/3.2.rst:1787
 msgid ""
@@ -20842,7 +20889,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.2.rst:1825
 msgid "asyncore"
-msgstr ""
+msgstr "asyncore"
 
 #: whatsnew/3.2.rst:1827
 msgid ""
@@ -20917,7 +20964,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.2.rst:1903
 msgid "dis"
-msgstr ""
+msgstr "dis"
 
 #: whatsnew/3.2.rst:1905
 msgid ""
@@ -20948,7 +20995,7 @@ msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
 
 #: whatsnew/3.2.rst:1961
 msgid "dbm"
-msgstr ""
+msgstr "dbm"
 
 #: whatsnew/3.2.rst:1963
 msgid ""
@@ -20962,7 +21009,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1968
 msgid "ctypes"
-msgstr ""
+msgstr "ctypes"
 
 #: whatsnew/3.2.rst:1970
 msgid ""
@@ -21161,7 +21208,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:2178
 msgid "urllib.parse"
-msgstr ""
+msgstr "urllib.parse"
 
 #: whatsnew/3.2.rst:2180
 msgid ""
@@ -21262,7 +21309,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:2261
 msgid "turtledemo"
-msgstr ""
+msgstr "turtledemo"
 
 #: whatsnew/3.2.rst:2263
 msgid ""

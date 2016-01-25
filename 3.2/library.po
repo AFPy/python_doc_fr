@@ -10103,7 +10103,7 @@ msgstr ""
 
 #: library/codecs.rst:1173
 msgid "bz2"
-msgstr ""
+msgstr "bz2"
 
 #: library/codecs.rst:1173
 msgid "Compress the operand using bz2"
@@ -34200,6 +34200,8 @@ msgid ""
 "The optional *source* parameter can be used to initialize the array in a few "
 "different ways:"
 msgstr ""
+"Le paramètre optionnel *source* peut être utilisé pour initialiser l'*array* "
+"de quelques manières différentes :"
 
 #: library/functions.rst:106
 msgid ""
@@ -34207,28 +34209,38 @@ msgid ""
 "*errors*) parameters; :func:`bytearray` then converts the string to bytes "
 "using :meth:`str.encode`."
 msgstr ""
+"Si c'est une *chaîne*, vous devez aussi donner les paramètre *encoding* pour "
+"l'encodage (et éventuellement *errors*). La fonction :func:`bytearray` "
+"convertis ensuite la chaîne en *bytes* via la méthode :meth:`str.encode`."
 
 #: library/functions.rst:110
 msgid ""
 "If it is an *integer*, the array will have that size and will be initialized "
 "with null bytes."
 msgstr ""
+"Si c'est un *entier*, l'*array* aura cette taille et sera initialisé de "
+"*null bytes*."
 
 #: library/functions.rst:113
 msgid ""
 "If it is an object conforming to the *buffer* interface, a read-only buffer "
 "of the object will be used to initialize the bytes array."
 msgstr ""
+"Si c'est un objet conforme à l'interface *buffer*, un *buffer* en lecture "
+"seule de l'objet sera utilisé pour initialiser l'*array*."
 
 #: library/functions.rst:116
 msgid ""
 "If it is an *iterable*, it must be an iterable of integers in the range ``0 "
 "<= x < 256``, which are used as the initial contents of the array."
 msgstr ""
+"Si c'est un *itérable*, il doit itérer sur des nombres entier dans "
+"l'intervalle ``0 <= x < 256``, qui seront utilisés pour initialiser le "
+"contenu de l'*array*."
 
 #: library/functions.rst:119
 msgid "Without an argument, an array of size 0 is created."
-msgstr ""
+msgstr "Sans argument, un *array* de taille vide est crée."
 
 #: library/functions.rst:124
 msgid ""
@@ -43486,7 +43498,7 @@ msgstr ""
 
 #: library/inspect.rst:77
 msgid "traceback"
-msgstr ""
+msgstr "traceback"
 
 #: library/inspect.rst:77
 msgid "tb_frame"
@@ -48439,7 +48451,7 @@ msgstr ""
 #: library/logging.rst:679 library/logging.rst:1021 library/ossaudiodev.rst:187
 #: library/struct.rst:161
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #: library/logging.rst:681 library/optparse.rst:1324 library/optparse.rst:1338
 #: library/optparse.rst:1657
@@ -49662,7 +49674,7 @@ msgstr ""
 
 #: library/logging.config.rst:393
 msgid "and::"
-msgstr ""
+msgstr "et ::"
 
 #: library/logging.config.rst:400
 msgid ""
@@ -55959,7 +55971,7 @@ msgstr ""
 
 #: library/multiprocessing.rst:1063
 msgid "ctypes"
-msgstr ""
+msgstr "ctypes"
 
 #: library/multiprocessing.rst:1063
 msgid "sharedctypes using type"
@@ -83467,7 +83479,7 @@ msgstr ""
 
 #: library/string.rst:15
 msgid ":ref:`string-methods`"
-msgstr ""
+msgstr ":ref:`string-methods`"
 
 #: library/string.rst:18
 msgid "String constants"
@@ -101870,7 +101882,7 @@ msgstr ""
 
 #: library/unittest.rst:1460
 msgid ":meth:`.assertEqual`"
-msgstr ""
+msgstr ":meth:`.assertEqual`"
 
 #: library/unittest.rst:1460
 msgid "failUnlessEqual"
@@ -101882,7 +101894,7 @@ msgstr ""
 
 #: library/unittest.rst:1461
 msgid ":meth:`.assertNotEqual`"
-msgstr ""
+msgstr ":meth:`.assertNotEqual`"
 
 #: library/unittest.rst:1461
 msgid "failIfEqual"
@@ -101894,7 +101906,7 @@ msgstr ""
 
 #: library/unittest.rst:1462
 msgid ":meth:`.assertTrue`"
-msgstr ""
+msgstr ":meth:`.assertTrue`"
 
 #: library/unittest.rst:1462
 msgid "failUnless"
@@ -101922,7 +101934,7 @@ msgstr ""
 
 #: library/unittest.rst:1465
 msgid ":meth:`.assertAlmostEqual`"
-msgstr ""
+msgstr ":meth:`.assertAlmostEqual`"
 
 #: library/unittest.rst:1465
 msgid "failUnlessAlmostEqual"
@@ -101934,7 +101946,7 @@ msgstr ""
 
 #: library/unittest.rst:1466
 msgid ":meth:`.assertNotAlmostEqual`"
-msgstr ""
+msgstr ":meth:`.assertNotAlmostEqual`"
 
 #: library/unittest.rst:1466
 msgid "failIfAlmostEqual"
@@ -108903,7 +108915,7 @@ msgstr ""
 
 #: library/xml.rst:57
 msgid "xmlrpc"
-msgstr ""
+msgstr "xmlrpc"
 
 #: library/xml.rst:59
 msgid "billion laughs"
