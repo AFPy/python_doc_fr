@@ -1445,7 +1445,7 @@ msgstr ""
 
 #: howto/clinic.rst:816
 msgid "``'B'``"
-msgstr ""
+msgstr "``'B'``"
 
 #: howto/clinic.rst:816
 msgid "``unsigned_char(bitwise=True)``"
@@ -1477,7 +1477,7 @@ msgstr ""
 
 #: howto/clinic.rst:820
 msgid "``'d'``"
-msgstr ""
+msgstr "``'d'``"
 
 #: howto/clinic.rst:820
 msgid "``double``"
@@ -1485,7 +1485,7 @@ msgstr ""
 
 #: howto/clinic.rst:821
 msgid "``'D'``"
-msgstr ""
+msgstr "``'D'``"
 
 #: howto/clinic.rst:821
 msgid "``Py_complex``"
@@ -1527,7 +1527,7 @@ msgstr ""
 
 #: howto/clinic.rst:826
 msgid "``'f'``"
-msgstr ""
+msgstr "``'f'``"
 
 #: howto/clinic.rst:826
 msgid "``float``"
@@ -1535,7 +1535,7 @@ msgstr ""
 
 #: howto/clinic.rst:827
 msgid "``'h'``"
-msgstr ""
+msgstr "``'h'``"
 
 #: howto/clinic.rst:827
 msgid "``short``"
@@ -1543,7 +1543,7 @@ msgstr ""
 
 #: howto/clinic.rst:828
 msgid "``'H'``"
-msgstr ""
+msgstr "``'H'``"
 
 #: howto/clinic.rst:828
 msgid "``unsigned_short(bitwise=True)``"
@@ -1551,15 +1551,15 @@ msgstr ""
 
 #: howto/clinic.rst:829
 msgid "``'i'``"
-msgstr ""
+msgstr "``'i'``"
 
 #: howto/clinic.rst:829
 msgid "``int``"
-msgstr ""
+msgstr "``int``"
 
 #: howto/clinic.rst:830
 msgid "``'I'``"
-msgstr ""
+msgstr "``'I'``"
 
 #: howto/clinic.rst:830
 msgid "``unsigned_int(bitwise=True)``"
@@ -1583,7 +1583,7 @@ msgstr ""
 
 #: howto/clinic.rst:833
 msgid "``'L'``"
-msgstr ""
+msgstr "``'L'``"
 
 #: howto/clinic.rst:833
 msgid "``PY_LONG_LONG``"
@@ -1639,7 +1639,7 @@ msgstr ""
 
 #: howto/clinic.rst:840
 msgid "``'S'``"
-msgstr ""
+msgstr "``'S'``"
 
 #: howto/clinic.rst:840
 msgid "``PyBytesObject``"
@@ -1647,7 +1647,7 @@ msgstr ""
 
 #: howto/clinic.rst:841
 msgid "``'s'``"
-msgstr ""
+msgstr "``'s'``"
 
 #: howto/clinic.rst:841
 msgid "``str``"
@@ -1671,7 +1671,7 @@ msgstr ""
 
 #: howto/clinic.rst:844
 msgid "``'u'``"
-msgstr ""
+msgstr "``'u'``"
 
 #: howto/clinic.rst:844
 msgid "``Py_UNICODE``"
@@ -5991,7 +5991,7 @@ msgstr ""
 
 #: howto/logging.rst:71 howto/logging.rst:828
 msgid "``DEBUG``"
-msgstr ""
+msgstr "``DEBUG``"
 
 #: howto/logging.rst:71
 msgid ""
@@ -6000,7 +6000,7 @@ msgstr ""
 
 #: howto/logging.rst:74 howto/logging.rst:826
 msgid "``INFO``"
-msgstr ""
+msgstr "``INFO``"
 
 #: howto/logging.rst:74
 msgid "Confirmation that things are working as expected."
@@ -6008,7 +6008,7 @@ msgstr ""
 
 #: howto/logging.rst:77 howto/logging.rst:824
 msgid "``WARNING``"
-msgstr ""
+msgstr "``WARNING``"
 
 #: howto/logging.rst:77
 msgid ""
@@ -6019,7 +6019,7 @@ msgstr ""
 
 #: howto/logging.rst:82 howto/logging.rst:822
 msgid "``ERROR``"
-msgstr ""
+msgstr "``ERROR``"
 
 #: howto/logging.rst:82
 msgid ""
@@ -6029,7 +6029,7 @@ msgstr ""
 
 #: howto/logging.rst:85 howto/logging.rst:820
 msgid "``CRITICAL``"
-msgstr ""
+msgstr "``CRITICAL``"
 
 #: howto/logging.rst:85
 msgid ""
@@ -6866,27 +6866,27 @@ msgstr ""
 
 #: howto/logging.rst:820
 msgid "50"
-msgstr ""
+msgstr "50"
 
 #: howto/logging.rst:822
 msgid "40"
-msgstr ""
+msgstr "40"
 
 #: howto/logging.rst:824
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: howto/logging.rst:826
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: howto/logging.rst:828
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: howto/logging.rst:830
 msgid "``NOTSET``"
-msgstr ""
+msgstr "``NOTSET``"
 
 #: howto/logging.rst:830
 msgid "0"
@@ -9385,7 +9385,7 @@ msgstr ""
 
 #: howto/regex.rst:191
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: howto/regex.rst:191
 msgid "``a``"
@@ -9397,7 +9397,7 @@ msgstr ""
 
 #: howto/regex.rst:193
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: howto/regex.rst:193
 msgid "``abcbd``"
@@ -9411,7 +9411,7 @@ msgstr ""
 
 #: howto/regex.rst:197
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: howto/regex.rst:197 howto/regex.rst:205
 msgid "*Failure*"
@@ -9425,7 +9425,7 @@ msgstr ""
 
 #: howto/regex.rst:202
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: howto/regex.rst:202 howto/regex.rst:213
 msgid "``abcb``"
@@ -9437,7 +9437,7 @@ msgstr ""
 
 #: howto/regex.rst:205
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: howto/regex.rst:205
 msgid ""
@@ -9447,7 +9447,7 @@ msgstr ""
 
 #: howto/regex.rst:209 howto/regex.rst:213
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: howto/regex.rst:209
 msgid "``abc``"
@@ -10091,7 +10091,7 @@ msgstr ""
 
 #: howto/regex.rst:693
 msgid "^"
-msgstr ""
+msgstr "^"
 
 #: howto/regex.rst:680
 msgid ""

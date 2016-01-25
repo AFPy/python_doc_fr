@@ -11249,7 +11249,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:810
 msgid "``b``"
-msgstr ""
+msgstr "``b``"
 
 #: whatsnew/2.6.rst:810
 msgid "Binary. Outputs the number in base 2."
@@ -11257,7 +11257,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:811
 msgid "``c``"
-msgstr ""
+msgstr "``c``"
 
 #: whatsnew/2.6.rst:811
 msgid ""
@@ -11267,7 +11267,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:813
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
 #: whatsnew/2.6.rst:813
 msgid "Decimal Integer. Outputs the number in base 10."
@@ -11283,7 +11283,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:815
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: whatsnew/2.6.rst:815
 msgid ""
@@ -11313,7 +11313,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:822
 msgid "``n``"
-msgstr ""
+msgstr "``n``"
 
 #: whatsnew/2.6.rst:822
 msgid ""

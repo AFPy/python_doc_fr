@@ -2096,7 +2096,7 @@ msgstr ""
 #: c-api/structures.rst:255 c-api/unicode.rst:251 c-api/unicode.rst:254
 #: c-api/unicode.rst:278 c-api/unicode.rst:281
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: c-api/bytes.rst:70 c-api/unicode.rst:251
 msgid "A single character, represented as an C int."
@@ -2116,7 +2116,7 @@ msgstr ""
 
 #: c-api/bytes.rst:76 c-api/structures.rst:265 c-api/unicode.rst:257
 msgid "unsigned int"
-msgstr ""
+msgstr "unsigned int"
 
 #: c-api/bytes.rst:76 c-api/unicode.rst:257
 msgid "Exactly equivalent to ``printf(\"%u\")``."
@@ -2140,7 +2140,7 @@ msgstr ""
 
 #: c-api/bytes.rst:82 c-api/structures.rst:267 c-api/unicode.rst:263
 msgid "unsigned long"
-msgstr ""
+msgstr "unsigned long"
 
 #: c-api/bytes.rst:82 c-api/unicode.rst:263
 msgid "Exactly equivalent to ``printf(\"%lu\")``."
@@ -6263,7 +6263,7 @@ msgstr ""
 
 #: c-api/init.rst:1071
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: c-api/init.rst:1073
 msgid ":const:`PCALL_FAST_FUNCTION`"
@@ -6271,7 +6271,7 @@ msgstr ""
 
 #: c-api/init.rst:1073
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: c-api/init.rst:1075
 msgid ":const:`PCALL_FASTER_FUNCTION`"
@@ -6279,7 +6279,7 @@ msgstr ""
 
 #: c-api/init.rst:1075
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: c-api/init.rst:1077
 msgid ":const:`PCALL_METHOD`"
@@ -6287,7 +6287,7 @@ msgstr ""
 
 #: c-api/init.rst:1077
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: c-api/init.rst:1079
 msgid ":const:`PCALL_BOUND_METHOD`"
@@ -6295,7 +6295,7 @@ msgstr ""
 
 #: c-api/init.rst:1079
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: c-api/init.rst:1081
 msgid ":const:`PCALL_CFUNCTION`"
@@ -6303,7 +6303,7 @@ msgstr ""
 
 #: c-api/init.rst:1081
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: c-api/init.rst:1083
 msgid ":const:`PCALL_TYPE`"
@@ -6319,7 +6319,7 @@ msgstr ""
 
 #: c-api/init.rst:1085
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: c-api/init.rst:1087
 msgid ":const:`PCALL_OTHER`"
@@ -6335,7 +6335,7 @@ msgstr ""
 
 #: c-api/init.rst:1089
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: c-api/init.rst:1092
 msgid ""
@@ -9460,7 +9460,7 @@ msgstr ""
 
 #: c-api/structures.rst:116 c-api/structures.rst:228
 msgid "C Type"
-msgstr ""
+msgstr "Type C"
 
 #: c-api/structures.rst:116 c-api/structures.rst:228
 msgid "Meaning"
@@ -9664,7 +9664,7 @@ msgstr "Macros"
 
 #: c-api/structures.rst:252
 msgid "C type"
-msgstr ""
+msgstr "Type C"
 
 #: c-api/structures.rst:254
 msgid "T_SHORT"
@@ -9688,7 +9688,7 @@ msgstr ""
 
 #: c-api/structures.rst:257
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: c-api/structures.rst:258
 msgid "T_DOUBLE"
@@ -9696,7 +9696,7 @@ msgstr ""
 
 #: c-api/structures.rst:258
 msgid "double"
-msgstr ""
+msgstr "double"
 
 #: c-api/structures.rst:259
 msgid "T_STRING"
@@ -9720,7 +9720,7 @@ msgstr ""
 
 #: c-api/structures.rst:262 c-api/structures.rst:263 c-api/structures.rst:268
 msgid "char"
-msgstr ""
+msgstr "char"
 
 #: c-api/structures.rst:263
 msgid "T_BYTE"
@@ -9732,7 +9732,7 @@ msgstr ""
 
 #: c-api/structures.rst:264
 msgid "unsigned char"
-msgstr ""
+msgstr "unsigned char"
 
 #: c-api/structures.rst:265
 msgid "T_UINT"
@@ -9744,7 +9744,7 @@ msgstr ""
 
 #: c-api/structures.rst:266
 msgid "unsigned short"
-msgstr ""
+msgstr "unsigned short"
 
 #: c-api/structures.rst:267
 msgid "T_ULONG"
@@ -9768,7 +9768,7 @@ msgstr ""
 
 #: c-api/structures.rst:270 c-api/unicode.rst:269
 msgid "unsigned long long"
-msgstr ""
+msgstr "unsigned long long"
 
 #: c-api/structures.rst:271
 msgid "T_PYSSIZET"

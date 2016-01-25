@@ -21,19 +21,19 @@ Progression de la traduction:
          sphinx   100%   100%   100%   100%   100%
      installing    84%    N/A    N/A   100%   100%
         license    82%    67%    66%    68%   100%
-        install    21%    22%    22%    21%    21%
+        install    22%    23%    23%    22%    22%
        glossary    81%    94%    97%    98%   100%
       extending    21%    21%    22%    23%    25%
-          using    21%    23%    18%    14%     9%
+          using    21%    23%    18%    17%    12%
        tutorial    95%    90%    96%    99%   100%
             faq    24%    24%    24%    24%    26%
-      distutils    10%     9%     9%     9%     9%
-      reference     1%     1%     1%     1%     1%
-          howto     1%     1%     1%     1%     1%
-          c-api     6%     7%     7%     7%     6%
+      distutils    10%    10%    10%    10%    10%
+      reference     2%     2%     2%     1%     1%
+          howto     2%     2%     2%     2%     3%
+          c-api     7%     8%     8%     8%     7%
        whatsnew     4%     4%     3%     3%     4%
-        library     0%     1%     1%     0%     9%
-      **TOTAL** **6%** **6%** **6%** **6%** **11%**
+        library     8%     9%     9%     8%     9%
+      **TOTAL** **11%** **12%** **11%** **10%** **11%**
 =============== ====== ====== ====== ====== ======
 
 Comment qu'on fait pour aider à traduire ?

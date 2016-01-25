@@ -7275,7 +7275,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:490
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 #: reference/lexical_analysis.rst:490
 msgid "ASCII Backspace (BS)"
@@ -7291,7 +7291,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:494
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: reference/lexical_analysis.rst:494
 msgid "ASCII Linefeed (LF)"
@@ -7299,7 +7299,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:496
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: reference/lexical_analysis.rst:496
 msgid "ASCII Carriage Return (CR)"
@@ -7359,7 +7359,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:513
 msgid "\\(4)"
-msgstr ""
+msgstr "\\(4)"
 
 #: reference/lexical_analysis.rst:516
 msgid "``\\uxxxx``"
@@ -7371,7 +7371,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:516
 msgid "\\(5)"
-msgstr ""
+msgstr "\\(5)"
 
 #: reference/lexical_analysis.rst:519
 msgid "``\\Uxxxxxxxx``"
@@ -7383,7 +7383,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:519
 msgid "\\(6)"
-msgstr ""
+msgstr "\\(6)"
 
 #: reference/lexical_analysis.rst:523
 msgid "Notes:"

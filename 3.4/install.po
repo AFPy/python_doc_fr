@@ -1243,7 +1243,7 @@ msgstr ""
 
 #: install/index.rst:782
 msgid "\\(4)"
-msgstr ""
+msgstr "\\(4)"
 
 #: install/index.rst:784
 msgid ":file:`%HOME%\\\\pydistutils.cfg`"
@@ -1251,7 +1251,7 @@ msgstr ""
 
 #: install/index.rst:784
 msgid "\\(5)"
-msgstr ""
+msgstr "\\(5)"
 
 #: install/index.rst:789
 msgid ""

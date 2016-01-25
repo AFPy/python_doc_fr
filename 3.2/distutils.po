@@ -2663,7 +2663,7 @@ msgstr ""
 
 #: distutils/builtdist.rst:85 distutils/setupscript.rst:582
 msgid "\\(5)"
-msgstr ""
+msgstr "\\(5)"
 
 #: distutils/builtdist.rst:87
 msgid "``pkgtool``"
@@ -2693,7 +2693,7 @@ msgstr ""
 #: distutils/setupscript.rst:588 distutils/sourcedist.rst:32
 #: distutils/sourcedist.rst:35 distutils/sourcedist.rst:38
 msgid "\\(4)"
-msgstr ""
+msgstr "\\(4)"
 
 #: distutils/builtdist.rst:94
 msgid "``msi``"
@@ -5178,7 +5178,7 @@ msgstr ""
 
 #: distutils/setupscript.rst:564
 msgid "(1)(2)"
-msgstr ""
+msgstr "(1)(2)"
 
 #: distutils/setupscript.rst:566
 msgid "``author``"
@@ -5286,7 +5286,7 @@ msgstr ""
 
 #: distutils/setupscript.rst:592
 msgid "\\(6)"
-msgstr ""
+msgstr "\\(6)"
 
 #: distutils/setupscript.rst:598
 msgid "These fields are required."

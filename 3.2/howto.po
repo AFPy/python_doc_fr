@@ -3719,7 +3719,7 @@ msgstr ""
 
 #: howto/logging.rst:69 howto/logging.rst:823
 msgid "``DEBUG``"
-msgstr ""
+msgstr "``DEBUG``"
 
 #: howto/logging.rst:69
 msgid ""
@@ -3728,7 +3728,7 @@ msgstr ""
 
 #: howto/logging.rst:72 howto/logging.rst:821
 msgid "``INFO``"
-msgstr ""
+msgstr "``INFO``"
 
 #: howto/logging.rst:72
 msgid "Confirmation that things are working as expected."
@@ -3736,7 +3736,7 @@ msgstr ""
 
 #: howto/logging.rst:75 howto/logging.rst:819
 msgid "``WARNING``"
-msgstr ""
+msgstr "``WARNING``"
 
 #: howto/logging.rst:75
 msgid ""
@@ -3747,7 +3747,7 @@ msgstr ""
 
 #: howto/logging.rst:80 howto/logging.rst:817
 msgid "``ERROR``"
-msgstr ""
+msgstr "``ERROR``"
 
 #: howto/logging.rst:80
 msgid ""
@@ -3757,7 +3757,7 @@ msgstr ""
 
 #: howto/logging.rst:83 howto/logging.rst:815
 msgid "``CRITICAL``"
-msgstr ""
+msgstr "``CRITICAL``"
 
 #: howto/logging.rst:83
 msgid ""
@@ -4591,27 +4591,27 @@ msgstr ""
 
 #: howto/logging.rst:815
 msgid "50"
-msgstr ""
+msgstr "50"
 
 #: howto/logging.rst:817
 msgid "40"
-msgstr ""
+msgstr "40"
 
 #: howto/logging.rst:819
 msgid "30"
-msgstr ""
+msgstr "30"
 
 #: howto/logging.rst:821
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: howto/logging.rst:823
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: howto/logging.rst:825
 msgid "``NOTSET``"
-msgstr ""
+msgstr "``NOTSET``"
 
 #: howto/logging.rst:825
 msgid "0"
@@ -6904,7 +6904,7 @@ msgstr ""
 
 #: howto/regex.rst:180
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: howto/regex.rst:180
 msgid "``a``"
@@ -6916,7 +6916,7 @@ msgstr ""
 
 #: howto/regex.rst:182
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: howto/regex.rst:182
 msgid "``abcbd``"
@@ -6930,7 +6930,7 @@ msgstr ""
 
 #: howto/regex.rst:186
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: howto/regex.rst:186 howto/regex.rst:194
 msgid "*Failure*"
@@ -6944,7 +6944,7 @@ msgstr ""
 
 #: howto/regex.rst:191
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: howto/regex.rst:191 howto/regex.rst:202
 msgid "``abcb``"
@@ -6956,7 +6956,7 @@ msgstr ""
 
 #: howto/regex.rst:194
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: howto/regex.rst:194
 msgid ""
@@ -6966,7 +6966,7 @@ msgstr ""
 
 #: howto/regex.rst:198 howto/regex.rst:202
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: howto/regex.rst:198
 msgid "``abc``"

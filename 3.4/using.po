@@ -1365,31 +1365,31 @@ msgstr "Ligne de commande et environnement"
 
 #: using/venv-create.inc:86
 msgid "Posix"
-msgstr ""
+msgstr "Posix"
 
 #: using/venv-create.inc:86
 msgid "bash/zsh"
-msgstr ""
+msgstr "bash/zsh"
 
 #: using/venv-create.inc:86
 msgid "$ source <venv>/bin/activate"
-msgstr ""
+msgstr "$ source <venv>/bin/activate"
 
 #: using/venv-create.inc:88
 msgid "fish"
-msgstr ""
+msgstr "fish"
 
 #: using/venv-create.inc:88
 msgid "$ . <venv>/bin/activate.fish"
-msgstr ""
+msgstr "$ . <venv>/bin/activate.fish"
 
 #: using/venv-create.inc:90
 msgid "csh/tcsh"
-msgstr ""
+msgstr "csh/tcsh"
 
 #: using/venv-create.inc:90
 msgid "$ source <venv>/bin/activate.csh"
-msgstr ""
+msgstr "$ source <venv>/bin/activate.csh"
 
 #: using/venv-create.inc:92
 msgid "Windows"
@@ -1397,19 +1397,19 @@ msgstr "Windows"
 
 #: using/venv-create.inc:92
 msgid "cmd.exe"
-msgstr ""
+msgstr "cmd.exe"
 
 #: using/venv-create.inc:92
 msgid "C:\\> <venv>/Scripts/activate.bat"
-msgstr ""
+msgstr "C:\\> <venv>/Scripts/activate.bat"
 
 #: using/venv-create.inc:94
 msgid "PowerShell"
-msgstr ""
+msgstr "PowerShell"
 
 #: using/venv-create.inc:94
 msgid "PS C:\\> <venv>/Scripts/Activate.ps1"
-msgstr ""
+msgstr "PS C:\\> <venv>/Scripts/Activate.ps1"
 
 #: using/venv-create.inc:97
 msgid ""

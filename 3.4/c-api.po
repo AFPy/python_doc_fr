@@ -148,7 +148,7 @@ msgstr "Signification"
 
 #: c-api/apiabiversion.rst:18
 msgid "``1``"
-msgstr ""
+msgstr "``1``"
 
 #: c-api/apiabiversion.rst:18
 msgid "``1-8``"
@@ -160,7 +160,7 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:21
 msgid "``2``"
-msgstr ""
+msgstr "``2``"
 
 #: c-api/apiabiversion.rst:21
 msgid "``9-16``"
@@ -172,7 +172,7 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:24
 msgid "``3``"
-msgstr ""
+msgstr "``3``"
 
 #: c-api/apiabiversion.rst:24
 msgid "``17-24``"
@@ -184,7 +184,7 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:27
 msgid "``4``"
-msgstr ""
+msgstr "``4``"
 
 #: c-api/apiabiversion.rst:27
 msgid "``25-28``"
@@ -2109,7 +2109,7 @@ msgstr ""
 
 #: c-api/buffer.rst:297
 msgid "F"
-msgstr ""
+msgstr "F"
 
 #: c-api/buffer.rst:299
 msgid "C or F"
@@ -2495,7 +2495,7 @@ msgstr ""
 #: c-api/structures.rst:268 c-api/unicode.rst:452 c-api/unicode.rst:455
 #: c-api/unicode.rst:488 c-api/unicode.rst:491
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: c-api/bytes.rst:72
 msgid "A single byte, represented as a C int."
@@ -2515,7 +2515,7 @@ msgstr ""
 
 #: c-api/bytes.rst:78 c-api/structures.rst:278 c-api/unicode.rst:458
 msgid "unsigned int"
-msgstr ""
+msgstr "unsigned int"
 
 #: c-api/bytes.rst:78 c-api/unicode.rst:458
 msgid "Exactly equivalent to ``printf(\"%u\")``."
@@ -2540,7 +2540,7 @@ msgstr ""
 
 #: c-api/bytes.rst:84 c-api/structures.rst:280 c-api/unicode.rst:467
 msgid "unsigned long"
-msgstr ""
+msgstr "unsigned long"
 
 #: c-api/bytes.rst:84 c-api/unicode.rst:467
 msgid "Exactly equivalent to ``printf(\"%lu\")``."
@@ -7068,7 +7068,7 @@ msgstr ""
 
 #: c-api/init.rst:1130
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: c-api/init.rst:1132
 msgid ":const:`PCALL_FAST_FUNCTION`"
@@ -7076,7 +7076,7 @@ msgstr ""
 
 #: c-api/init.rst:1132
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: c-api/init.rst:1134
 msgid ":const:`PCALL_FASTER_FUNCTION`"
@@ -7084,7 +7084,7 @@ msgstr ""
 
 #: c-api/init.rst:1134
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: c-api/init.rst:1136
 msgid ":const:`PCALL_METHOD`"
@@ -7092,7 +7092,7 @@ msgstr ""
 
 #: c-api/init.rst:1136
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: c-api/init.rst:1138
 msgid ":const:`PCALL_BOUND_METHOD`"
@@ -7100,7 +7100,7 @@ msgstr ""
 
 #: c-api/init.rst:1138
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: c-api/init.rst:1140
 msgid ":const:`PCALL_CFUNCTION`"
@@ -7108,7 +7108,7 @@ msgstr ""
 
 #: c-api/init.rst:1140
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: c-api/init.rst:1142
 msgid ":const:`PCALL_TYPE`"
@@ -7124,7 +7124,7 @@ msgstr ""
 
 #: c-api/init.rst:1144
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: c-api/init.rst:1146
 msgid ":const:`PCALL_OTHER`"
@@ -7140,7 +7140,7 @@ msgstr ""
 
 #: c-api/init.rst:1148
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: c-api/init.rst:1151
 msgid ""
@@ -10731,7 +10731,7 @@ msgstr ""
 #: c-api/structures.rst:129 c-api/structures.rst:241 c-api/tuple.rst:145
 #: c-api/tuple.rst:168
 msgid "C Type"
-msgstr ""
+msgstr "Type C"
 
 #: c-api/structures.rst:131
 msgid ":attr:`ml_name`"
@@ -10931,7 +10931,7 @@ msgstr "Macros"
 
 #: c-api/structures.rst:265
 msgid "C type"
-msgstr ""
+msgstr "Type C"
 
 #: c-api/structures.rst:267
 msgid "T_SHORT"
@@ -10955,7 +10955,7 @@ msgstr ""
 
 #: c-api/structures.rst:270
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: c-api/structures.rst:271
 msgid "T_DOUBLE"
@@ -10963,7 +10963,7 @@ msgstr ""
 
 #: c-api/structures.rst:271
 msgid "double"
-msgstr ""
+msgstr "double"
 
 #: c-api/structures.rst:272
 msgid "T_STRING"
@@ -10987,7 +10987,7 @@ msgstr ""
 
 #: c-api/structures.rst:275 c-api/structures.rst:276 c-api/structures.rst:281
 msgid "char"
-msgstr ""
+msgstr "char"
 
 #: c-api/structures.rst:276
 msgid "T_BYTE"
@@ -10999,7 +10999,7 @@ msgstr ""
 
 #: c-api/structures.rst:277
 msgid "unsigned char"
-msgstr ""
+msgstr "unsigned char"
 
 #: c-api/structures.rst:278
 msgid "T_UINT"
@@ -11011,7 +11011,7 @@ msgstr ""
 
 #: c-api/structures.rst:279
 msgid "unsigned short"
-msgstr ""
+msgstr "unsigned short"
 
 #: c-api/structures.rst:280
 msgid "T_ULONG"
@@ -11035,7 +11035,7 @@ msgstr ""
 
 #: c-api/structures.rst:283 c-api/unicode.rst:476
 msgid "unsigned long long"
-msgstr ""
+msgstr "unsigned long long"
 
 #: c-api/structures.rst:284
 msgid "T_PYSSIZET"
@@ -11406,7 +11406,7 @@ msgstr ""
 
 #: c-api/tuple.rst:155
 msgid "``int``"
-msgstr ""
+msgstr "``int``"
 
 #: c-api/tuple.rst:155
 msgid "number of fields visible to the Python side (if used as tuple)"

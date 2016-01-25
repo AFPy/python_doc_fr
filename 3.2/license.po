@@ -384,7 +384,7 @@ msgstr ""
 
 #: license.rst:115 license.rst:117
 msgid "3.2"
-msgstr ""
+msgstr "3.2"
 
 #: license.rst:117 license.rst:119
 msgid "3.2.1"
