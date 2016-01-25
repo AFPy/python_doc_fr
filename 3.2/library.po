@@ -397,11 +397,11 @@ msgstr ""
 
 #: library/2to3.rst:312 library/time.rst:102
 msgid "From"
-msgstr ""
+msgstr "De"
 
 #: library/2to3.rst:312 library/time.rst:102
 msgid "To"
-msgstr ""
+msgstr "À"
 
 #: library/2to3.rst:314
 msgid "``operator.isCallable(obj)``"
@@ -704,7 +704,7 @@ msgstr "générateurs"
 
 #: library/__future__.rst:72
 msgid "2.2.0a1"
-msgstr ""
+msgstr "2.2.0a1"
 
 #: library/__future__.rst:72
 msgid "2.3"
@@ -1532,7 +1532,7 @@ msgstr ""
 #: library/signal.rst:253 library/socket.rst:883 library/termios.rst:85
 #: library/tkinter.rst:434 library/uuid.rst:219 library/weakref.rst:306
 msgid "Example"
-msgstr ""
+msgstr "Exemple"
 
 #: library/argparse.rst:31
 msgid ""
@@ -1714,7 +1714,7 @@ msgstr ""
 
 #: library/argparse.rst:197
 msgid "epilog"
-msgstr ""
+msgstr "epilog"
 
 #: library/argparse.rst:199
 msgid ""
@@ -1732,7 +1732,7 @@ msgstr ""
 
 #: library/argparse.rst:222
 msgid "add_help"
-msgstr ""
+msgstr "add_help"
 
 #: library/argparse.rst:224
 msgid ""
@@ -1829,7 +1829,7 @@ msgstr ""
 
 #: library/argparse.rst:338
 msgid "parents"
-msgstr ""
+msgstr "parents"
 
 #: library/argparse.rst:340
 msgid ""
@@ -1929,7 +1929,7 @@ msgstr ""
 
 #: library/argparse.rst:493 library/optparse.rst:847
 msgid "prog"
-msgstr ""
+msgstr "prog"
 
 #: library/argparse.rst:495
 msgid ""
@@ -1961,7 +1961,7 @@ msgstr ""
 
 #: library/argparse.rst:550
 msgid "usage"
-msgstr ""
+msgstr "usage"
 
 #: library/argparse.rst:552
 msgid ""
@@ -2073,7 +2073,7 @@ msgstr ""
 
 #: library/argparse.rst:660 library/tarfile.rst:47
 msgid "action"
-msgstr ""
+msgstr "action"
 
 #: library/argparse.rst:662
 msgid ""
@@ -2161,7 +2161,7 @@ msgstr ""
 
 #: library/argparse.rst:768 library/optparse.rst:1595
 msgid "nargs"
-msgstr ""
+msgstr "nargs"
 
 #: library/argparse.rst:770
 msgid ""
@@ -2231,7 +2231,7 @@ msgstr ""
 
 #: library/argparse.rst:860
 msgid "const"
-msgstr ""
+msgstr "const"
 
 #: library/argparse.rst:862
 msgid ""
@@ -2265,7 +2265,7 @@ msgstr ""
 
 #: library/argparse.rst:882
 msgid "default"
-msgstr ""
+msgstr "default"
 
 #: library/argparse.rst:884
 msgid ""
@@ -2344,7 +2344,7 @@ msgstr ""
 
 #: library/argparse.rst:994
 msgid "choices"
-msgstr ""
+msgstr "choices"
 
 #: library/argparse.rst:996
 msgid ""
@@ -2371,7 +2371,7 @@ msgstr ""
 
 #: library/argparse.rst:1029
 msgid "required"
-msgstr ""
+msgstr "required"
 
 #: library/argparse.rst:1031
 msgid ""
@@ -2396,7 +2396,7 @@ msgstr ""
 
 #: library/argparse.rst:1055
 msgid "help"
-msgstr ""
+msgstr "help"
 
 #: library/argparse.rst:1057
 msgid ""
@@ -2429,7 +2429,7 @@ msgstr ""
 
 #: library/argparse.rst:1110
 msgid "metavar"
-msgstr ""
+msgstr "metavar"
 
 #: library/argparse.rst:1112
 msgid ""
@@ -2463,7 +2463,7 @@ msgstr ""
 
 #: library/argparse.rst:1174
 msgid "dest"
-msgstr ""
+msgstr "dest"
 
 #: library/argparse.rst:1176
 msgid ""
@@ -3060,7 +3060,7 @@ msgstr ""
 
 #: library/array.rst:18
 msgid "Type code"
-msgstr ""
+msgstr "Code du type"
 
 #: library/array.rst:18 library/struct.rst:161
 msgid "C Type"
@@ -3878,7 +3878,7 @@ msgstr ""
 
 #: library/asynchat.rst:128
 msgid "term"
-msgstr ""
+msgstr "*term*"
 
 #: library/asynchat.rst:128 library/asyncore.rst:84
 #: library/concurrent.futures.rst:341 library/curses.rst:733
@@ -3900,7 +3900,7 @@ msgstr ""
 
 #: library/asynchat.rst:133
 msgid "*integer*"
-msgstr ""
+msgstr "*integer*"
 
 #: library/asynchat.rst:133
 msgid ""
@@ -3910,7 +3910,7 @@ msgstr ""
 
 #: library/asynchat.rst:137 library/stdtypes.rst:43 library/xml.dom.rst:988
 msgid "``None``"
-msgstr ""
+msgstr "``None``"
 
 #: library/asynchat.rst:137
 msgid "The channel continues to collect data forever"
@@ -7042,7 +7042,7 @@ msgstr ""
 #: library/urllib.parse.rst:93 library/urllib.parse.rst:203
 #: library/urllib.parse.rst:278
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: library/chunk.rst:27
 msgid "Chunk ID"
@@ -7054,7 +7054,7 @@ msgstr ""
 
 #: library/chunk.rst:33
 msgid "*n*"
-msgstr ""
+msgstr "*n*"
 
 #: library/chunk.rst:33
 msgid "Data bytes, where *n* is the size given in the preceding field"
@@ -7062,11 +7062,11 @@ msgstr ""
 
 #: library/chunk.rst:37
 msgid "8 + *n*"
-msgstr ""
+msgstr "8 + *n*"
 
 #: library/chunk.rst:37
 msgid "0 or 1"
-msgstr ""
+msgstr "0 or 1"
 
 #: library/chunk.rst:37
 msgid "Pad byte needed if *n* is odd and chunk alignment is used"
@@ -8309,7 +8309,7 @@ msgstr ""
 #: library/urllib.parse.rst:201 library/urllib.parse.rst:276
 #: library/warnings.rst:122 library/zipfile.rst:413
 msgid "Value"
-msgstr ""
+msgstr "Valeur"
 
 #: library/codecs.rst:316 library/codecs.rst:343 library/curses.rst:1237
 #: library/curses.rst:1489 library/curses.ascii.rst:15
@@ -9034,7 +9034,7 @@ msgstr ""
 
 #: library/codecs.rst:850
 msgid "0xxxxxxx"
-msgstr ""
+msgstr "0xxxxxxx"
 
 #: library/codecs.rst:852
 msgid "``U-00000080`` ... ``U-000007FF``"
@@ -10769,7 +10769,7 @@ msgstr ""
 #: library/sqlite3.rst:330 library/sqlite3.rst:424 library/sqlite3.rst:528
 #: library/turtle.rst:2071
 msgid "Example:"
-msgstr ""
+msgstr "Exemple :"
 
 #: library/collections.rst:393
 msgid ":class:`deque` Recipes"
@@ -11928,7 +11928,7 @@ msgstr ""
 
 #: library/concurrent.futures.rst:106
 msgid "And::"
-msgstr ""
+msgstr "Et ::"
 
 #: library/concurrent.futures.rst:120
 msgid ""
@@ -14170,7 +14170,7 @@ msgstr ""
 #: library/urllib.request.rst:987 library/wsgiref.rst:744
 #: library/zipimport.rst:142
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: library/csv.rst:430
 msgid "The simplest example of reading a CSV file::"
@@ -15270,7 +15270,7 @@ msgstr ""
 
 #: library/ctypes.rst:1168
 msgid "Surprises"
-msgstr ""
+msgstr "Surprises"
 
 #: library/ctypes.rst:1170
 msgid ""
@@ -16133,7 +16133,7 @@ msgstr ""
 
 #: library/ctypes.rst:1999
 msgid "Data types"
-msgstr ""
+msgstr "Types de données"
 
 #: library/ctypes.rst:2004
 msgid ""
@@ -17405,7 +17405,7 @@ msgstr ""
 
 #: library/curses.rst:733
 msgid "Parameter"
-msgstr ""
+msgstr "Paramètre"
 
 #: library/curses.rst:733
 msgid "Default value"
@@ -22324,7 +22324,7 @@ msgstr ""
 #: library/dbm.rst:52 library/dbm.rst:155 library/dbm.rst:264
 #: library/stdtypes.rst:1571 library/string.rst:403
 msgid "``'c'``"
-msgstr ""
+msgstr "``'c'``"
 
 #: library/dbm.rst:52 library/dbm.rst:155 library/dbm.rst:264
 msgid "Open database for reading and writing, creating it if it doesn't exist"
@@ -22333,7 +22333,7 @@ msgstr ""
 #: library/dbm.rst:55 library/dbm.rst:158 library/dbm.rst:267
 #: library/string.rst:416 library/string.rst:473
 msgid "``'n'``"
-msgstr ""
+msgstr "``'n'``"
 
 #: library/dbm.rst:55 library/dbm.rst:158 library/dbm.rst:267
 msgid "Always create a new, empty database, open for reading and writing"
@@ -37351,7 +37351,7 @@ msgstr ""
 
 #: library/grp.rst:19
 msgid "gr_name"
-msgstr ""
+msgstr "gr_name"
 
 #: library/grp.rst:19
 msgid "the name of the group"
@@ -37359,7 +37359,7 @@ msgstr ""
 
 #: library/grp.rst:21
 msgid "gr_passwd"
-msgstr ""
+msgstr "gr_passwd"
 
 #: library/grp.rst:21
 msgid "the (encrypted) group password; often empty"
@@ -37367,7 +37367,7 @@ msgstr ""
 
 #: library/grp.rst:24
 msgid "gr_gid"
-msgstr ""
+msgstr "gr_gid"
 
 #: library/grp.rst:24
 msgid "the numerical group ID"
@@ -37381,7 +37381,7 @@ msgstr "3"
 
 #: library/grp.rst:26
 msgid "gr_mem"
-msgstr ""
+msgstr "gr_mem"
 
 #: library/grp.rst:26
 msgid "all the group member's  user names"
@@ -40603,7 +40603,7 @@ msgstr ""
 
 #: library/http.cookies.rst:129
 msgid "``path``"
-msgstr ""
+msgstr "``path``"
 
 #: library/http.cookies.rst:130
 msgid "``comment``"
@@ -40611,7 +40611,7 @@ msgstr ""
 
 #: library/http.cookies.rst:131
 msgid "``domain``"
-msgstr ""
+msgstr "``domain``"
 
 #: library/http.cookies.rst:132
 msgid "``max-age``"
@@ -40619,7 +40619,7 @@ msgstr ""
 
 #: library/http.cookies.rst:133
 msgid "``secure``"
-msgstr ""
+msgstr "``secure``"
 
 #: library/http.cookies.rst:134
 msgid "``version``"
@@ -54907,7 +54907,7 @@ msgstr ""
 
 #: library/multiprocessing.rst:107
 msgid "**Queues**"
-msgstr ""
+msgstr "**Queues**"
 
 #: library/multiprocessing.rst:109
 msgid ""
@@ -54924,7 +54924,7 @@ msgstr ""
 
 #: library/multiprocessing.rst:128
 msgid "**Pipes**"
-msgstr ""
+msgstr "**Pipes**"
 
 #: library/multiprocessing.rst:130
 msgid ""
@@ -64281,7 +64281,7 @@ msgstr ""
 
 #: library/ossaudiodev.rst:243
 msgid "8000"
-msgstr ""
+msgstr "8000"
 
 #: library/ossaudiodev.rst:243
 msgid "default rate for :file:`/dev/audio`"
@@ -64289,7 +64289,7 @@ msgstr ""
 
 #: library/ossaudiodev.rst:245
 msgid "11025"
-msgstr ""
+msgstr "11025"
 
 #: library/ossaudiodev.rst:245
 msgid "speech recording"
@@ -64297,11 +64297,11 @@ msgstr ""
 
 #: library/ossaudiodev.rst:247
 msgid "22050"
-msgstr ""
+msgstr "22050"
 
 #: library/ossaudiodev.rst:249
 msgid "44100"
-msgstr ""
+msgstr "44100"
 
 #: library/ossaudiodev.rst:249
 msgid "CD quality audio (at 16 bits/sample and 2 channels)"
@@ -64309,7 +64309,7 @@ msgstr ""
 
 #: library/ossaudiodev.rst:252
 msgid "96000"
-msgstr ""
+msgstr "96000"
 
 #: library/ossaudiodev.rst:252
 msgid "DVD quality audio (at 24 bits/sample)"
@@ -77498,11 +77498,11 @@ msgstr ""
 
 #: library/socketserver.rst:416
 msgid "Server::"
-msgstr ""
+msgstr "Serveur ::"
 
 #: library/socketserver.rst:424
 msgid "Client::"
-msgstr ""
+msgstr "Client ::"
 
 #: library/socketserver.rst:435
 msgid ":class:`socketserver.UDPServer` Example"
@@ -77595,7 +77595,7 @@ msgstr ""
 
 #: library/spwd.rst:28
 msgid "``sp_min``"
-msgstr ""
+msgstr "``sp_min``"
 
 #: library/spwd.rst:28
 msgid "Minimal number of days between changes"
@@ -77603,7 +77603,7 @@ msgstr ""
 
 #: library/spwd.rst:31
 msgid "``sp_max``"
-msgstr ""
+msgstr "``sp_max``"
 
 #: library/spwd.rst:31
 msgid "Maximum number of days between changes"
@@ -77627,7 +77627,7 @@ msgstr ""
 
 #: library/spwd.rst:41 library/time.rst:415
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: library/spwd.rst:41
 msgid "``sp_expire``"
@@ -77643,7 +77643,7 @@ msgstr ""
 
 #: library/spwd.rst:44
 msgid "Reserved"
-msgstr ""
+msgstr "Réservé"
 
 #: library/spwd.rst:47
 msgid ""
@@ -78362,7 +78362,7 @@ msgstr ""
 
 #: library/sqlite3.rst:675 library/sqlite3.rst:692
 msgid "``NULL``"
-msgstr ""
+msgstr "``NULL``"
 
 #: library/sqlite3.rst:677 library/sqlite3.rst:694
 msgid ":class:`int`"
@@ -78378,7 +78378,7 @@ msgstr ""
 
 #: library/sqlite3.rst:679 library/sqlite3.rst:696
 msgid "``REAL``"
-msgstr ""
+msgstr "``REAL``"
 
 #: library/sqlite3.rst:681
 msgid ":class:`str`"
@@ -78386,7 +78386,7 @@ msgstr ""
 
 #: library/sqlite3.rst:681 library/sqlite3.rst:698
 msgid "``TEXT``"
-msgstr ""
+msgstr "``TEXT``"
 
 #: library/sqlite3.rst:683 library/sqlite3.rst:700
 msgid ":class:`bytes`"
@@ -78394,7 +78394,7 @@ msgstr ""
 
 #: library/sqlite3.rst:683 library/sqlite3.rst:700
 msgid "``BLOB``"
-msgstr ""
+msgstr "``BLOB``"
 
 #: library/sqlite3.rst:687
 msgid "This is how SQLite types are converted to Python types by default:"
@@ -80205,7 +80205,7 @@ msgstr ""
 
 #: library/stdtypes.rst:47
 msgid "``False``"
-msgstr ""
+msgstr "``False``"
 
 #: library/stdtypes.rst:49
 msgid "zero of any numeric type, for example, ``0``, ``0.0``, ``0j``."
@@ -80250,7 +80250,7 @@ msgstr ""
 
 #: library/stdtypes.rst:88
 msgid "``x or y``"
-msgstr ""
+msgstr "``x or y``"
 
 #: library/stdtypes.rst:88
 msgid "if *x* is false, then *y*, else *x*"
@@ -80266,7 +80266,7 @@ msgstr ""
 
 #: library/stdtypes.rst:94
 msgid "``not x``"
-msgstr ""
+msgstr "``not x``"
 
 #: library/stdtypes.rst:94
 msgid "if *x* is false, then ``True``, else ``False``"
@@ -80357,7 +80357,7 @@ msgstr ""
 
 #: library/stdtypes.rst:158
 msgid "``is``"
-msgstr ""
+msgstr "``is``"
 
 #: library/stdtypes.rst:158
 msgid "object identity"
@@ -80365,7 +80365,7 @@ msgstr ""
 
 #: library/stdtypes.rst:160
 msgid "``is not``"
-msgstr ""
+msgstr "``is not``"
 
 #: library/stdtypes.rst:160
 msgid "negated object identity"
@@ -83863,7 +83863,7 @@ msgstr ""
 
 #: library/string.rst:325
 msgid "``'^'``"
-msgstr ""
+msgstr "``'^'``"
 
 #: library/string.rst:325
 msgid "Forces the field to be centered within the available space."
@@ -87338,7 +87338,7 @@ msgstr ":const:`3 (VER_PLATFORM_WIN32_CE)`"
 
 #: library/sys.rst:492
 msgid "Windows CE"
-msgstr ""
+msgstr "Windows CE"
 
 #: library/sys.rst:495
 msgid "*product_type* may be one of the following values:"
@@ -87707,7 +87707,7 @@ msgstr "``'cygwin'``"
 
 #: library/sys.rst:747
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #: library/sys.rst:747
 msgid "``'darwin'``"
@@ -99393,11 +99393,11 @@ msgstr ""
 
 #: library/turtle.rst:2057
 msgid "*type_*"
-msgstr ""
+msgstr "*type_*"
 
 #: library/turtle.rst:2057
 msgid "*data*"
-msgstr ""
+msgstr "*data*"
 
 #: library/turtle.rst:2059
 msgid "\"polygon\""
@@ -101393,7 +101393,7 @@ msgstr ""
 
 #: library/unittest.rst:1009 library/unittest.rst:1066
 msgid "or::"
-msgstr ""
+msgstr "ou ::"
 
 #: library/unittest.rst:1014
 msgid "under the name ``assertRaisesRegexp``."

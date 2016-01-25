@@ -2145,7 +2145,7 @@ msgstr ""
 #: c-api/buffer.rst:317 c-api/buffer.rst:321 c-api/buffer.rst:325
 #: c-api/buffer.rst:329 c-api/init.rst:1075
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: c-api/buffer.rst:319 c-api/buffer.rst:323 c-api/buffer.rst:327
 #: c-api/buffer.rst:331
@@ -6940,7 +6940,7 @@ msgstr "Nom"
 
 #: c-api/init.rst:1073
 msgid "Value"
-msgstr ""
+msgstr "Valeur"
 
 #: c-api/init.rst:1075
 msgid ":const:`PCALL_ALL`"
@@ -7000,7 +7000,7 @@ msgstr ""
 
 #: c-api/init.rst:1089
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: c-api/init.rst:1091
 msgid ":const:`PCALL_GENERATOR`"
@@ -8506,7 +8506,7 @@ msgstr ""
 
 #: c-api/memory.rst:161
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: c-api/memory.rst:163
 msgid ""

@@ -6094,7 +6094,7 @@ msgstr ""
 
 #: faq/windows.rst:111
 msgid "or::"
-msgstr ""
+msgstr "ou ::"
 
 #: faq/windows.rst:115
 msgid ""

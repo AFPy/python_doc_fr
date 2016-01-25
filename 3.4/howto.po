@@ -1461,7 +1461,7 @@ msgstr ""
 
 #: howto/clinic.rst:818
 msgid "``'c'``"
-msgstr ""
+msgstr "``'c'``"
 
 #: howto/clinic.rst:818
 msgid "``char``"
@@ -1591,7 +1591,7 @@ msgstr ""
 
 #: howto/clinic.rst:834
 msgid "``'n'``"
-msgstr ""
+msgstr "``'n'``"
 
 #: howto/clinic.rst:834
 msgid "``Py_ssize_t``"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 #: howto/clinic.rst:1214
 msgid "default"
-msgstr ""
+msgstr "default"
 
 #: howto/clinic.rst:1213
 msgid ""
@@ -6890,7 +6890,7 @@ msgstr "``NOTSET``"
 
 #: howto/logging.rst:830
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: howto/logging.rst:833
 msgid ""

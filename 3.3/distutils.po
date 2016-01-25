@@ -2098,7 +2098,7 @@ msgstr ""
 
 #: distutils/apiref.rst:1566
 msgid "default"
-msgstr ""
+msgstr "default"
 
 #: distutils/apiref.rst:1568
 msgid "*strip_comments*"
@@ -3540,7 +3540,7 @@ msgstr ""
 
 #: distutils/examples.rst:5
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: distutils/examples.rst:7
 msgid ""
@@ -5198,7 +5198,7 @@ msgstr ""
 
 #: distutils/setupscript.rst:562
 msgid "Value"
-msgstr ""
+msgstr "Valeur"
 
 #: distutils/setupscript.rst:564
 msgid "``name``"

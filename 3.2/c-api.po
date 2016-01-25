@@ -6247,7 +6247,7 @@ msgstr "Nom C"
 
 #: c-api/init.rst:1067
 msgid "Value"
-msgstr ""
+msgstr "Valeur"
 
 #: c-api/init.rst:1069
 msgid ":const:`PCALL_ALL`"
@@ -6255,7 +6255,7 @@ msgstr ""
 
 #: c-api/init.rst:1069
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: c-api/init.rst:1071
 msgid ":const:`PCALL_FUNCTION`"
@@ -6311,7 +6311,7 @@ msgstr ""
 
 #: c-api/init.rst:1083
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: c-api/init.rst:1085
 msgid ":const:`PCALL_GENERATOR`"
@@ -7796,7 +7796,7 @@ msgstr ""
 
 #: c-api/memory.rst:161
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: c-api/memory.rst:163
 msgid ""

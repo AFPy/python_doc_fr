@@ -3860,7 +3860,7 @@ msgstr ""
 
 #: reference/expressions.rst:457
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: reference/expressions.rst:459
 msgid ""
@@ -3997,7 +3997,7 @@ msgstr ""
 
 #: reference/expressions.rst:645
 msgid "Calls"
-msgstr ""
+msgstr "Appels"
 
 #: reference/expressions.rst:647
 msgid ""

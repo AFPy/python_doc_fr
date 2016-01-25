@@ -4615,7 +4615,7 @@ msgstr "``NOTSET``"
 
 #: howto/logging.rst:825
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: howto/logging.rst:828
 msgid ""

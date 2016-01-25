@@ -23590,11 +23590,11 @@ msgstr ""
 
 #: whatsnew/3.3.rst:1137
 msgid "32-bit"
-msgstr ""
+msgstr "32-bit"
 
 #: whatsnew/3.3.rst:1137
 msgid "64-bit"
-msgstr ""
+msgstr "64-bit"
 
 #: whatsnew/3.3.rst:1139
 msgid ":const:`MAX_PREC`"

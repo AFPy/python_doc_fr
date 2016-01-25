@@ -538,7 +538,7 @@ msgstr "Ignorer tous les avertissements."
 
 #: using/cmdline.rst:313
 msgid "default"
-msgstr ""
+msgstr "default"
 
 #: using/cmdline.rst:313
 msgid ""

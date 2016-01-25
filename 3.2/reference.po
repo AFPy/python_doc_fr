@@ -3773,7 +3773,7 @@ msgstr ""
 
 #: reference/expressions.rst:611
 msgid "Calls"
-msgstr ""
+msgstr "Appels"
 
 #: reference/expressions.rst:613
 msgid ""

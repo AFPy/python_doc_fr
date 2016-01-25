@@ -28,12 +28,12 @@ Progression de la traduction:
        tutorial    95%    90%    96%    99%   100%
             faq    24%    24%    24%    24%    26%
       distutils    10%    10%    10%    10%    10%
-      reference     2%     2%     2%     1%     1%
+      reference     2%     2%     2%     2%     2%
           howto     2%     2%     2%     2%     3%
-          c-api     7%     8%     8%     8%     7%
+          c-api     7%     8%     9%     8%     8%
        whatsnew     4%     4%     3%     3%     4%
-        library     8%     9%     9%     8%     9%
-      **TOTAL**    11%    12%    11%    10%    11%
+        library     9%    10%     9%     9%     9%
+      **TOTAL**    12%    12%    11%    10%    11%
 =============== ====== ====== ====== ====== ======
 
 Comment qu'on fait pour aider à traduire ?
