@@ -155,7 +155,7 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:18
 msgid "``PY_MAJOR_VERSION`` (the ``3`` in ``3.4.1a2``)"
-msgstr ""
+msgstr "``PY_MAJOR_VERSION`` (le ``3`` dans ``3.4.1a2``)"
 
 #: c-api/apiabiversion.rst:21
 msgid "``2``"
@@ -167,7 +167,7 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:21
 msgid "``PY_MINOR_VERSION`` (the ``4`` in ``3.4.1a2``)"
-msgstr ""
+msgstr "``PY_MINOR_VERSION`` (le ``4`` dans ``3.4.1a2``)"
 
 #: c-api/apiabiversion.rst:24
 msgid "``3``"
@@ -179,7 +179,7 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:24
 msgid "``PY_MICRO_VERSION`` (the ``1`` in ``3.4.1a2``)"
-msgstr ""
+msgstr "``PY_MICRO_VERSION`` (le ``1`` dans ``3.4.1a2``)"
 
 #: c-api/apiabiversion.rst:27
 msgid "``4``"
@@ -1072,7 +1072,7 @@ msgstr ""
 
 #: c-api/arg.rst:318
 msgid "``Py_CLEANUP_SUPPORTED`` was added."
-msgstr ""
+msgstr "``Py_CLEANUP_SUPPORTED`` à été ajouté."
 
 #: c-api/arg.rst:328
 msgid "p (bool) [int]"
@@ -10959,7 +10959,7 @@ msgstr ""
 
 #: c-api/tuple.rst:144
 msgid "``PyStructSequence_Field *``"
-msgstr ""
+msgstr "``PyStructSequence_Field *``"
 
 #: c-api/tuple.rst:144
 msgid "pointer to *NULL*-terminated array with field names of the new type"
@@ -10967,7 +10967,7 @@ msgstr ""
 
 #: c-api/tuple.rst:147
 msgid "``n_in_sequence``"
-msgstr ""
+msgstr "``n_in_sequence``"
 
 #: c-api/tuple.rst:147
 msgid "``int``"

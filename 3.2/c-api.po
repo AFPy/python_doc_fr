@@ -970,7 +970,7 @@ msgstr ""
 
 #: c-api/arg.rst:315
 msgid "``Py_CLEANUP_SUPPORTED`` was added."
-msgstr ""
+msgstr "``Py_CLEANUP_SUPPORTED`` à été ajouté."
 
 #: c-api/arg.rst:321 c-api/arg.rst:601
 msgid "(items) (tuple) [matching-items]"

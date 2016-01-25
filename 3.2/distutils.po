@@ -5170,7 +5170,7 @@ msgstr "\\(1)"
 
 #: distutils/setupscript.rst:564
 msgid "``version``"
-msgstr ""
+msgstr "``version``"
 
 #: distutils/setupscript.rst:564
 msgid "version of this release"

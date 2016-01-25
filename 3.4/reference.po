@@ -4722,7 +4722,7 @@ msgstr ""
 
 #: reference/expressions.rst:1184
 msgid "``x is y`` implies ``x == y``"
-msgstr ""
+msgstr "``x is y`` implique ``x == y``"
 
 #: reference/expressions.rst:1186
 msgid ""
@@ -4732,19 +4732,19 @@ msgstr ""
 
 #: reference/expressions.rst:1189
 msgid "``x == y`` and ``y == x``"
-msgstr ""
+msgstr "``x == y`` et ``y == x``"
 
 #: reference/expressions.rst:1191
 msgid "``x != y`` and ``y != x``"
-msgstr ""
+msgstr "``x != y`` et ``y != x``"
 
 #: reference/expressions.rst:1193
 msgid "``x < y`` and ``y > x``"
-msgstr ""
+msgstr "``x < y`` et ``y > x``"
 
 #: reference/expressions.rst:1195
 msgid "``x <= y`` and ``y >= x``"
-msgstr ""
+msgstr "``x <= y`` et ``y >= x``"
 
 #: reference/expressions.rst:1197
 msgid ""
@@ -4754,11 +4754,11 @@ msgstr ""
 
 #: reference/expressions.rst:1200
 msgid "``x > y and y > z`` implies ``x > z``"
-msgstr ""
+msgstr "``x > y et y > z`` implique ``x > z``"
 
 #: reference/expressions.rst:1202
 msgid "``x < y and y <= z`` implies ``x < z``"
-msgstr ""
+msgstr "``x < y et y <= z`` implique ``x < z``"
 
 #: reference/expressions.rst:1204
 msgid ""
@@ -4768,7 +4768,7 @@ msgstr ""
 
 #: reference/expressions.rst:1207
 msgid "``x == y`` and ``not x != y``"
-msgstr ""
+msgstr "``x == y`` et ``not x != y``"
 
 #: reference/expressions.rst:1209
 msgid "``x < y`` and ``not x >= y`` (for total ordering)"
@@ -5080,7 +5080,7 @@ msgstr ""
 
 #: reference/expressions.rst:1465
 msgid "``<<``, ``>>``"
-msgstr ""
+msgstr "``<<``, ``>>``"
 
 #: reference/expressions.rst:1465
 msgid "Shifts"
@@ -5088,7 +5088,7 @@ msgstr ""
 
 #: reference/expressions.rst:1467
 msgid "``+``, ``-``"
-msgstr ""
+msgstr "``+``, ``-``"
 
 #: reference/expressions.rst:1467
 msgid "Addition and subtraction"
@@ -5104,7 +5104,7 @@ msgstr ""
 
 #: reference/expressions.rst:1472
 msgid "``+x``, ``-x``, ``~x``"
-msgstr ""
+msgstr "``+x``, ``-x``, ``~x``"
 
 #: reference/expressions.rst:1472
 msgid "Positive, negative, bitwise NOT"
@@ -7235,7 +7235,7 @@ msgstr "Notes"
 
 #: reference/lexical_analysis.rst:480
 msgid "``\\newline``"
-msgstr ""
+msgstr "``\\newline``"
 
 #: reference/lexical_analysis.rst:480
 msgid "Backslash and newline ignored"
@@ -7351,7 +7351,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:513
 msgid "``\\N{name}``"
-msgstr ""
+msgstr "``\\N{name}``"
 
 #: reference/lexical_analysis.rst:513
 msgid "Character named *name* in the Unicode database"
@@ -7375,7 +7375,7 @@ msgstr "\\(5)"
 
 #: reference/lexical_analysis.rst:519
 msgid "``\\Uxxxxxxxx``"
-msgstr ""
+msgstr "``\\Uxxxxxxxx``"
 
 #: reference/lexical_analysis.rst:519
 msgid "Character with 32-bit hex value *xxxxxxxx*"

@@ -405,15 +405,15 @@ msgstr "À"
 
 #: library/2to3.rst:314
 msgid "``operator.isCallable(obj)``"
-msgstr ""
+msgstr "``operator.isCallable(obj)``"
 
 #: library/2to3.rst:314
 msgid "``hasattr(obj, '__call__')``"
-msgstr ""
+msgstr "``hasattr(obj, '__call__')``"
 
 #: library/2to3.rst:315
 msgid "``operator.sequenceIncludes(obj)``"
-msgstr ""
+msgstr "``operator.sequenceIncludes(obj)``"
 
 #: library/2to3.rst:315
 msgid "``operator.contains(obj)``"
@@ -421,43 +421,43 @@ msgstr "``operator.contains(obj)``"
 
 #: library/2to3.rst:316
 msgid "``operator.isSequenceType(obj)``"
-msgstr ""
+msgstr "``operator.isSequenceType(obj)``"
 
 #: library/2to3.rst:316
 msgid "``isinstance(obj, collections.Sequence)``"
-msgstr ""
+msgstr "``isinstance(obj, collections.Sequence)``"
 
 #: library/2to3.rst:317
 msgid "``operator.isMappingType(obj)``"
-msgstr ""
+msgstr "``operator.isMappingType(obj)``"
 
 #: library/2to3.rst:317
 msgid "``isinstance(obj, collections.Mapping)``"
-msgstr ""
+msgstr "``isinstance(obj, collections.Mapping)``"
 
 #: library/2to3.rst:318
 msgid "``operator.isNumberType(obj)``"
-msgstr ""
+msgstr "``operator.isNumberType(obj)``"
 
 #: library/2to3.rst:318
 msgid "``isinstance(obj, numbers.Number)``"
-msgstr ""
+msgstr "``isinstance(obj, numbers.Number)``"
 
 #: library/2to3.rst:319
 msgid "``operator.repeat(obj, n)``"
-msgstr ""
+msgstr "``operator.repeat(obj, n)``"
 
 #: library/2to3.rst:319
 msgid "``operator.mul(obj, n)``"
-msgstr ""
+msgstr "``operator.mul(obj, n)``"
 
 #: library/2to3.rst:320
 msgid "``operator.irepeat(obj, n)``"
-msgstr ""
+msgstr "``operator.irepeat(obj, n)``"
 
 #: library/2to3.rst:320
 msgid "``operator.imul(obj, n)``"
-msgstr ""
+msgstr "``operator.imul(obj, n)``"
 
 #: library/2to3.rst:325
 msgid ""
@@ -8332,7 +8332,7 @@ msgstr "Signification"
 
 #: library/codecs.rst:318
 msgid "``'strict'``"
-msgstr ""
+msgstr "``'strict'``"
 
 #: library/codecs.rst:318
 msgid "Raise :exc:`UnicodeError` (or a subclass); this is the default."
@@ -8340,7 +8340,7 @@ msgstr ""
 
 #: library/codecs.rst:321
 msgid "``'ignore'``"
-msgstr ""
+msgstr "``'ignore'``"
 
 #: library/codecs.rst:321
 msgid "Ignore the character and continue with the next."
@@ -8348,7 +8348,7 @@ msgstr ""
 
 #: library/codecs.rst:324 library/difflib.rst:466
 msgid "``'replace'``"
-msgstr ""
+msgstr "``'replace'``"
 
 #: library/codecs.rst:324
 msgid ""
@@ -8359,7 +8359,7 @@ msgstr ""
 
 #: library/codecs.rst:330
 msgid "``'xmlcharrefreplace'``"
-msgstr ""
+msgstr "``'xmlcharrefreplace'``"
 
 #: library/codecs.rst:330
 msgid ""
@@ -8368,7 +8368,7 @@ msgstr ""
 
 #: library/codecs.rst:333
 msgid "``'backslashreplace'``"
-msgstr ""
+msgstr "``'backslashreplace'``"
 
 #: library/codecs.rst:333
 msgid "Replace with backslashed escape sequences (only for encoding)."
@@ -8376,7 +8376,7 @@ msgstr ""
 
 #: library/codecs.rst:336
 msgid "``'surrogateescape'``"
-msgstr ""
+msgstr "``'surrogateescape'``"
 
 #: library/codecs.rst:336
 msgid "Replace byte with surrogate U+DCxx, as defined in :pep:`383`."
@@ -8394,7 +8394,7 @@ msgstr ""
 
 #: library/codecs.rst:345
 msgid "``'surrogatepass'``"
-msgstr ""
+msgstr "``'surrogatepass'``"
 
 #: library/codecs.rst:345
 msgid "utf-8"
@@ -9030,7 +9030,7 @@ msgstr ""
 
 #: library/codecs.rst:850
 msgid "``U-00000000`` ... ``U-0000007F``"
-msgstr ""
+msgstr "``U-00000000`` ... ``U-0000007F``"
 
 #: library/codecs.rst:850
 msgid "0xxxxxxx"
@@ -9038,7 +9038,7 @@ msgstr "0xxxxxxx"
 
 #: library/codecs.rst:852
 msgid "``U-00000080`` ... ``U-000007FF``"
-msgstr ""
+msgstr "``U-00000080`` ... ``U-000007FF``"
 
 #: library/codecs.rst:852
 msgid "110xxxxx 10xxxxxx"
@@ -9046,7 +9046,7 @@ msgstr ""
 
 #: library/codecs.rst:854
 msgid "``U-00000800`` ... ``U-0000FFFF``"
-msgstr ""
+msgstr "``U-00000800`` ... ``U-0000FFFF``"
 
 #: library/codecs.rst:854
 msgid "1110xxxx 10xxxxxx 10xxxxxx"
@@ -9054,7 +9054,7 @@ msgstr ""
 
 #: library/codecs.rst:856
 msgid "``U-00010000`` ... ``U-0010FFFF``"
-msgstr ""
+msgstr "``U-00010000`` ... ``U-0010FFFF``"
 
 #: library/codecs.rst:856
 msgid "11110xxx 10xxxxxx 10xxxxxx 10xxxxxx"
@@ -18969,7 +18969,7 @@ msgstr ""
 
 #: library/curses.rst:1509
 msgid "``ACS_DARROW``"
-msgstr ""
+msgstr "``ACS_DARROW``"
 
 #: library/curses.rst:1509
 msgid "arrow pointing down"
@@ -20333,7 +20333,7 @@ msgstr ""
 
 #: library/datetime.rst:169
 msgid "``0 <= microseconds < 1000000``"
-msgstr ""
+msgstr "``0 <= microseconds < 1000000``"
 
 #: library/datetime.rst:170
 msgid "``0 <= seconds < 3600*24`` (the number of seconds in one day)"
@@ -20341,7 +20341,7 @@ msgstr ""
 
 #: library/datetime.rst:171
 msgid "``-999999999 <= days <= 999999999``"
-msgstr ""
+msgstr "``-999999999 <= days <= 999999999``"
 
 #: library/datetime.rst:173
 msgid ""
@@ -20685,7 +20685,7 @@ msgstr ""
 
 #: library/datetime.rst:389 library/datetime.rst:664
 msgid "``MINYEAR <= year <= MAXYEAR``"
-msgstr ""
+msgstr "``MINYEAR <= year <= MAXYEAR``"
 
 #: library/datetime.rst:390 library/datetime.rst:665
 msgid "``1 <= month <= 12``"
@@ -20793,7 +20793,7 @@ msgstr "\\(3)"
 
 #: library/datetime.rst:470
 msgid "``date1 < date2``"
-msgstr ""
+msgstr "``date1 < date2``"
 
 #: library/datetime.rst:470
 msgid ""
@@ -21440,7 +21440,7 @@ msgstr ""
 
 #: library/datetime.rst:1200
 msgid "``0 <= microsecond < 1000000``."
-msgstr ""
+msgstr "``0 <= microsecond < 1000000``."
 
 #: library/datetime.rst:1202
 msgid ""
@@ -21638,7 +21638,7 @@ msgstr ""
 
 #: library/datetime.rst:1420
 msgid "``tz.utcoffset(dt) - tz.dst(dt)``"
-msgstr ""
+msgstr "``tz.utcoffset(dt) - tz.dst(dt)``"
 
 #: library/datetime.rst:1422
 msgid ""
@@ -40599,7 +40599,7 @@ msgstr ""
 
 #: library/http.cookies.rst:128
 msgid "``expires``"
-msgstr ""
+msgstr "``expires``"
 
 #: library/http.cookies.rst:129
 msgid "``path``"
@@ -40607,7 +40607,7 @@ msgstr "``path``"
 
 #: library/http.cookies.rst:130
 msgid "``comment``"
-msgstr ""
+msgstr "``comment``"
 
 #: library/http.cookies.rst:131
 msgid "``domain``"
@@ -40615,7 +40615,7 @@ msgstr "``domain``"
 
 #: library/http.cookies.rst:132
 msgid "``max-age``"
-msgstr ""
+msgstr "``max-age``"
 
 #: library/http.cookies.rst:133
 msgid "``secure``"
@@ -40623,11 +40623,11 @@ msgstr "``secure``"
 
 #: library/http.cookies.rst:134
 msgid "``version``"
-msgstr ""
+msgstr "``version``"
 
 #: library/http.cookies.rst:135
 msgid "``httponly``"
-msgstr ""
+msgstr "``httponly``"
 
 #: library/http.cookies.rst:137
 msgid ""
@@ -44549,7 +44549,7 @@ msgstr ""
 
 #: library/io.rst:197
 msgid "``fileno``, ``seek``, and ``truncate``"
-msgstr ""
+msgstr "``fileno``, ``seek``, et ``truncate``"
 
 #: library/io.rst:197
 msgid ""
@@ -44564,7 +44564,7 @@ msgstr ""
 
 #: library/io.rst:202
 msgid "``readinto`` and ``write``"
-msgstr ""
+msgstr "``readinto`` et ``write``"
 
 #: library/io.rst:202
 msgid "Inherited :class:`IOBase` methods, ``read``, and ``readall``"
@@ -44576,7 +44576,7 @@ msgstr ""
 
 #: library/io.rst:204
 msgid "``detach``, ``read``, ``read1``, and ``write``"
-msgstr ""
+msgstr "``detach``, ``read``, ``read1``, et ``write``"
 
 #: library/io.rst:204
 msgid "Inherited :class:`IOBase` methods, ``readinto``"
@@ -44588,7 +44588,7 @@ msgstr ""
 
 #: library/io.rst:206
 msgid "``detach``, ``read``, ``readline``, and ``write``"
-msgstr ""
+msgstr "``detach``, ``read``, ``readline``, et ``write``"
 
 #: library/io.rst:206
 msgid ""
@@ -45590,7 +45590,7 @@ msgstr ""
 
 #: library/itertools.rst:39
 msgid "``count(10) --> 10 11 12 13 14 ...``"
-msgstr ""
+msgstr "``count(10) --> 10 11 12 13 14 ...``"
 
 #: library/itertools.rst:40
 msgid ":func:`cycle`"
@@ -50539,7 +50539,7 @@ msgstr "LOG_ALERT"
 
 #: library/logging.handlers.rst:475
 msgid "``crit`` or ``critical``"
-msgstr ""
+msgstr "``crit`` ou ``critical``"
 
 #: library/logging.handlers.rst:475
 msgid "LOG_CRIT"
@@ -50555,7 +50555,7 @@ msgstr "LOG_DEBUG"
 
 #: library/logging.handlers.rst:479
 msgid "``emerg`` or ``panic``"
-msgstr ""
+msgstr "``emerg`` ou ``panic``"
 
 #: library/logging.handlers.rst:479
 msgid "LOG_EMERG"
@@ -50563,7 +50563,7 @@ msgstr "LOG_EMERG"
 
 #: library/logging.handlers.rst:481
 msgid "``err`` or ``error``"
-msgstr ""
+msgstr "``err`` ou ``error``"
 
 #: library/logging.handlers.rst:481
 msgid "LOG_ERR"
@@ -50587,7 +50587,7 @@ msgstr "LOG_NOTICE"
 
 #: library/logging.handlers.rst:487
 msgid "``warn`` or ``warning``"
-msgstr ""
+msgstr "``warn`` ou ``warning``"
 
 #: library/logging.handlers.rst:487
 msgid "LOG_WARNING"
@@ -65945,7 +65945,7 @@ msgstr ""
 
 #: library/pickle.rst:356
 msgid "``None``, ``True``, and ``False``"
-msgstr ""
+msgstr "``None``, ``True``, and ``False``"
 
 #: library/pickle.rst:358
 msgid "integers, floating point numbers, complex numbers"
@@ -77587,7 +77587,7 @@ msgstr ""
 
 #: library/spwd.rst:26
 msgid "``sp_lstchg``"
-msgstr ""
+msgstr "``sp_lstchg``"
 
 #: library/spwd.rst:26
 msgid "Date of last change"
@@ -77611,7 +77611,7 @@ msgstr ""
 
 #: library/spwd.rst:34
 msgid "``sp_warn``"
-msgstr ""
+msgstr "``sp_warn``"
 
 #: library/spwd.rst:34
 msgid "Number of days before password expires to warn user about it"
@@ -77619,7 +77619,7 @@ msgstr ""
 
 #: library/spwd.rst:37
 msgid "``sp_inact``"
-msgstr ""
+msgstr "``sp_inact``"
 
 #: library/spwd.rst:37
 msgid "Number of days after password expires until account is blocked"
@@ -77631,7 +77631,7 @@ msgstr "7"
 
 #: library/spwd.rst:41
 msgid "``sp_expire``"
-msgstr ""
+msgstr "``sp_expire``"
 
 #: library/spwd.rst:41
 msgid "Number of days since 1970-01-01 until account is disabled"
@@ -77639,7 +77639,7 @@ msgstr ""
 
 #: library/spwd.rst:44
 msgid "``sp_flag``"
-msgstr ""
+msgstr "``sp_flag``"
 
 #: library/spwd.rst:44
 msgid "Reserved"
@@ -78370,7 +78370,7 @@ msgstr ""
 
 #: library/sqlite3.rst:677 library/sqlite3.rst:694
 msgid "``INTEGER``"
-msgstr ""
+msgstr "``INTEGER``"
 
 #: library/sqlite3.rst:679 library/sqlite3.rst:696
 msgid ":class:`float`"
@@ -80258,7 +80258,7 @@ msgstr ""
 
 #: library/stdtypes.rst:91
 msgid "``x and y``"
-msgstr ""
+msgstr "``x and y``"
 
 #: library/stdtypes.rst:91
 msgid "if *x* is false, then *x*, else *y*"
@@ -88803,7 +88803,7 @@ msgstr ""
 
 #: library/tarfile.rst:49
 msgid "``'r' or 'r:*'``"
-msgstr ""
+msgstr "``'r' ou 'r:*'``"
 
 #: library/tarfile.rst:49
 msgid "Open for reading with transparent compression (recommended)."

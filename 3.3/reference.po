@@ -4785,7 +4785,7 @@ msgstr ""
 
 #: reference/expressions.rst:1345
 msgid "``<<``, ``>>``"
-msgstr ""
+msgstr "``<<``, ``>>``"
 
 #: reference/expressions.rst:1345
 msgid "Shifts"
@@ -4793,7 +4793,7 @@ msgstr ""
 
 #: reference/expressions.rst:1347
 msgid "``+``, ``-``"
-msgstr ""
+msgstr "``+``, ``-``"
 
 #: reference/expressions.rst:1347
 msgid "Addition and subtraction"
@@ -4809,7 +4809,7 @@ msgstr ""
 
 #: reference/expressions.rst:1352
 msgid "``+x``, ``-x``, ``~x``"
-msgstr ""
+msgstr "``+x``, ``-x``, ``~x``"
 
 #: reference/expressions.rst:1352
 msgid "Positive, negative, bitwise NOT"
@@ -6583,7 +6583,7 @@ msgstr "Notes"
 
 #: reference/lexical_analysis.rst:476
 msgid "``\\newline``"
-msgstr ""
+msgstr "``\\newline``"
 
 #: reference/lexical_analysis.rst:476
 msgid "Backslash and newline ignored"
@@ -6699,7 +6699,7 @@ msgstr ""
 
 #: reference/lexical_analysis.rst:509
 msgid "``\\N{name}``"
-msgstr ""
+msgstr "``\\N{name}``"
 
 #: reference/lexical_analysis.rst:509
 msgid "Character named *name* in the Unicode database"
@@ -6723,7 +6723,7 @@ msgstr "\\(5)"
 
 #: reference/lexical_analysis.rst:515
 msgid "``\\Uxxxxxxxx``"
-msgstr ""
+msgstr "``\\Uxxxxxxxx``"
 
 #: reference/lexical_analysis.rst:515
 msgid "Character with 32-bit hex value *xxxxxxxx*"
