@@ -5001,7 +5001,7 @@ msgstr ""
 
 #: reference/expressions.rst:1443
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: reference/expressions.rst:1445
 msgid ":keyword:`lambda`"

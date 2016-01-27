@@ -2604,7 +2604,7 @@ msgstr "Format"
 #: distutils/builtdist.rst:73 distutils/commandref.rst:61
 #: distutils/setupscript.rst:562 distutils/sourcedist.rst:25
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: distutils/builtdist.rst:73 distutils/setupscript.rst:562
 #: distutils/sourcedist.rst:25

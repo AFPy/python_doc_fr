@@ -1320,7 +1320,7 @@ msgstr ""
 
 #: library/aifc.rst:76
 msgid "Return the number of audio frames in the file."
-msgstr ""
+msgstr "Donne le nombre de trames (*frames*) audio du fichier."
 
 #: library/aifc.rst:81
 msgid ""
@@ -1369,11 +1369,11 @@ msgstr ""
 
 #: library/aifc.rst:127
 msgid "Seek to the specified frame number."
-msgstr ""
+msgstr "Va à la trame de numéro donné."
 
 #: library/aifc.rst:132
 msgid "Return the current frame number."
-msgstr ""
+msgstr "Donne le numéro de la trame courante."
 
 #: library/aifc.rst:137
 msgid ""
@@ -1407,11 +1407,11 @@ msgstr ""
 
 #: library/aifc.rst:163
 msgid "Specify the number of channels in the audio file."
-msgstr ""
+msgstr "Définit le nombre de canaux du fichier audio."
 
 #: library/aifc.rst:168
 msgid "Specify the size in bytes of audio samples."
-msgstr ""
+msgstr "Définit la taille en octets des échantillons audio."
 
 #: library/aifc.rst:173
 msgid "Specify the sampling frequency in frames per second."
@@ -1474,7 +1474,7 @@ msgstr ""
 
 #: library/allos.rst:5
 msgid "Generic Operating System Services"
-msgstr ""
+msgstr "Services génériques du système d'exploitation"
 
 #: library/allos.rst:7
 msgid ""
@@ -1487,7 +1487,7 @@ msgstr ""
 
 #: library/archiving.rst:5
 msgid "Data Compression and Archiving"
-msgstr ""
+msgstr "Compression de donnée et archivage"
 
 #: library/archiving.rst:7
 msgid ""
@@ -1505,7 +1505,7 @@ msgstr ""
 
 #: library/argparse.rst:11
 msgid "**Source code:** :source:`Lib/argparse.py`"
-msgstr ""
+msgstr "**Code source:** :source:`Lib/argparse.py`"
 
 #: library/argparse.rst:0 library/optparse.rst:245
 msgid "Tutorial"
@@ -1564,7 +1564,7 @@ msgstr ""
 
 #: library/argparse.rst:80
 msgid "Creating a parser"
-msgstr ""
+msgstr "Créer un parseur"
 
 #: library/argparse.rst:82
 msgid ""
@@ -1580,7 +1580,7 @@ msgstr ""
 
 #: library/argparse.rst:92
 msgid "Adding arguments"
-msgstr ""
+msgstr "Ajouter des arguments"
 
 #: library/argparse.rst:94
 msgid ""
@@ -1623,7 +1623,7 @@ msgstr ""
 
 #: library/argparse.rst:131
 msgid "ArgumentParser objects"
-msgstr ""
+msgstr "Objets ArgumentParser"
 
 #: library/argparse.rst:140
 msgid ""
@@ -1766,7 +1766,7 @@ msgstr ""
 
 #: library/argparse.rst:270
 msgid "prefix_chars"
-msgstr ""
+msgstr "préfixe_chars"
 
 #: library/argparse.rst:272
 msgid ""
@@ -1785,7 +1785,7 @@ msgstr ""
 
 #: library/argparse.rst:290
 msgid "fromfile_prefix_chars"
-msgstr ""
+msgstr "fromfile_préfixe_chars"
 
 #: library/argparse.rst:292
 msgid ""
@@ -1815,7 +1815,7 @@ msgstr ""
 
 #: library/argparse.rst:317
 msgid "argument_default"
-msgstr ""
+msgstr "argument_default"
 
 #: library/argparse.rst:319
 msgid ""
@@ -1860,7 +1860,7 @@ msgstr ""
 
 #: library/argparse.rst:371
 msgid "formatter_class"
-msgstr ""
+msgstr "formatte_class"
 
 #: library/argparse.rst:373
 msgid ""
@@ -1903,7 +1903,7 @@ msgstr ""
 
 #: library/argparse.rst:456
 msgid "conflict_handler"
-msgstr ""
+msgstr "conflict_handler"
 
 #: library/argparse.rst:458
 msgid ""
@@ -1984,7 +1984,7 @@ msgstr ""
 
 #: library/argparse.rst:588
 msgid "The add_argument() method"
-msgstr ""
+msgstr "La méthode add_argument()"
 
 #: library/argparse.rst:594
 msgid ""
@@ -2050,7 +2050,7 @@ msgstr ""
 
 #: library/argparse.rst:628
 msgid "name or flags"
-msgstr ""
+msgstr "nom ou option"
 
 #: library/argparse.rst:630
 msgid ""
@@ -2155,11 +2155,11 @@ msgstr ""
 
 #: library/argparse.rst:745
 msgid "An example of a custom action::"
-msgstr ""
+msgstr "Un exemple d'action personnalisée ::"
 
 #: library/argparse.rst:765
 msgid "For more details, see :class:`Action`."
-msgstr ""
+msgstr "Pour plus d'information, voir :class:`Action`."
 
 #: library/argparse.rst:768 library/optparse.rst:1595
 msgid "nargs"
@@ -2342,7 +2342,7 @@ msgstr ""
 
 #: library/argparse.rst:990
 msgid "See the choices_ section for more details."
-msgstr ""
+msgstr "Voir la section choices_ pour plus de détails."
 
 #: library/argparse.rst:994
 msgid "choices"
@@ -2495,7 +2495,7 @@ msgstr ""
 
 #: library/argparse.rst:1213
 msgid "Action classes"
-msgstr ""
+msgstr "Classes Action"
 
 #: library/argparse.rst:1215
 msgid ""
@@ -2560,7 +2560,7 @@ msgstr ""
 
 #: library/argparse.rst:1257
 msgid "The parse_args() method"
-msgstr ""
+msgstr "La méthode parse_args()"
 
 #: library/argparse.rst:1261
 msgid ""
@@ -2613,7 +2613,7 @@ msgstr ""
 
 #: library/argparse.rst:1312
 msgid "Invalid arguments"
-msgstr ""
+msgstr "Arguments invalides"
 
 #: library/argparse.rst:1314
 msgid ""
@@ -2625,7 +2625,7 @@ msgstr ""
 
 #: library/argparse.rst:1340
 msgid "Arguments containing ``-``"
-msgstr ""
+msgstr "Arguments contenant ``-``"
 
 #: library/argparse.rst:1342
 msgid ""
@@ -2664,7 +2664,7 @@ msgstr ""
 
 #: library/argparse.rst:1410
 msgid "Beyond ``sys.argv``"
-msgstr ""
+msgstr "Au delà de ``sys.argv``"
 
 #: library/argparse.rst:1412
 msgid ""
@@ -2676,7 +2676,7 @@ msgstr ""
 
 #: library/argparse.rst:1431
 msgid "The Namespace object"
-msgstr ""
+msgstr "L'objet Namespace"
 
 #: library/argparse.rst:1435
 msgid ""
@@ -2700,11 +2700,11 @@ msgstr ""
 
 #: library/argparse.rst:1464
 msgid "Other utilities"
-msgstr ""
+msgstr "Autres outils"
 
 #: library/argparse.rst:1467
 msgid "Sub-commands"
-msgstr ""
+msgstr "Sous commandes"
 
 #: library/argparse.rst:1471
 msgid ""
@@ -2724,7 +2724,7 @@ msgstr ""
 
 #: library/argparse.rst:1483
 msgid "Some example usage::"
-msgstr ""
+msgstr "Quelques exemples d'utilisation ::"
 
 #: library/argparse.rst:1504
 msgid ""
@@ -2779,7 +2779,7 @@ msgstr ""
 
 #: library/argparse.rst:1634
 msgid "FileType objects"
-msgstr ""
+msgstr "Objets ``FileType``"
 
 #: library/argparse.rst:1638
 msgid ""
@@ -2798,7 +2798,7 @@ msgstr ""
 
 #: library/argparse.rst:1659
 msgid "Argument groups"
-msgstr ""
+msgstr "Groupes d'arguments"
 
 #: library/argparse.rst:1663
 msgid ""
@@ -2828,7 +2828,7 @@ msgstr ""
 
 #: library/argparse.rst:1711
 msgid "Mutual exclusion"
-msgstr ""
+msgstr "Exclusion mutuelle"
 
 #: library/argparse.rst:1715
 msgid ""
@@ -2853,7 +2853,7 @@ msgstr ""
 
 #: library/argparse.rst:1749
 msgid "Parser defaults"
-msgstr ""
+msgstr "Valeurs par défaut du parseur"
 
 #: library/argparse.rst:1753
 msgid ""
@@ -2884,7 +2884,7 @@ msgstr ""
 
 #: library/argparse.rst:1790
 msgid "Printing help"
-msgstr ""
+msgstr "Afficher l'aide"
 
 #: library/argparse.rst:1792
 msgid ""
@@ -2927,7 +2927,7 @@ msgstr ""
 
 #: library/argparse.rst:1823
 msgid "Partial parsing"
-msgstr ""
+msgstr "*Parsing* partiel"
 
 #: library/argparse.rst:1827
 msgid ""
@@ -2942,7 +2942,7 @@ msgstr ""
 
 #: library/argparse.rst:1844
 msgid "Customizing file parsing"
-msgstr ""
+msgstr "Personnaliser le *parsing* de fichiers"
 
 #: library/argparse.rst:1848
 msgid ""
@@ -2983,7 +2983,7 @@ msgstr ""
 
 #: library/argparse.rst:1883
 msgid "Upgrading optparse code"
-msgstr ""
+msgstr "Mettre à jour du code ``optparse``"
 
 #: library/argparse.rst:1885
 msgid ""
@@ -3232,7 +3232,7 @@ msgstr ""
 
 #: library/array.rst:52
 msgid "The module defines the following type:"
-msgstr ""
+msgstr "Le module définit le type suivant :"
 
 #: library/array.rst:57
 msgid ""
@@ -3347,7 +3347,7 @@ msgstr ""
 
 #: library/array.rst:161
 msgid "Deprecated alias for :meth:`frombytes`."
-msgstr ""
+msgstr "Alias déprécié de :meth:`frombytes`."
 
 #: library/array.rst:166
 msgid ""
@@ -3378,11 +3378,11 @@ msgstr ""
 
 #: library/array.rst:193
 msgid "Remove the first occurrence of *x* from the array."
-msgstr ""
+msgstr "Supprime la dernière occurrence de *x* du tableau."
 
 #: library/array.rst:198
 msgid "Reverse the order of the items in the array."
-msgstr ""
+msgstr "Inverse l'ordre des élégante du tableau."
 
 #: library/array.rst:203
 msgid ""
@@ -3405,7 +3405,7 @@ msgstr ""
 
 #: library/array.rst:223
 msgid "Deprecated alias for :meth:`tobytes`."
-msgstr ""
+msgstr "Alias déprécié de :meth:`tobytes`."
 
 #: library/array.rst:228
 msgid ""
@@ -3459,11 +3459,11 @@ msgstr ""
 
 #: library/ast.rst:2
 msgid ":mod:`ast` --- Abstract Syntax Trees"
-msgstr ""
+msgstr ":mod:`ast` --- Arbre Syntaxique Abstrait"
 
 #: library/ast.rst:10
 msgid "**Source code:** :source:`Lib/ast.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/ast.py`"
 
 #: library/ast.rst:14
 msgid ""
@@ -3562,11 +3562,11 @@ msgstr ""
 
 #: library/ast.rst:88
 msgid "or the more compact ::"
-msgstr ""
+msgstr "ou, plus compact ::"
 
 #: library/ast.rst:97
 msgid "Abstract Grammar"
-msgstr ""
+msgstr "Grammaire Abstraite"
 
 #: library/ast.rst:99
 msgid ""
@@ -3580,7 +3580,7 @@ msgstr ""
 
 #: library/ast.rst:108
 msgid ":mod:`ast` Helpers"
-msgstr ""
+msgstr "Outils du module :mod:`ast`"
 
 #: library/ast.rst:110
 msgid ""
@@ -3610,7 +3610,7 @@ msgstr ""
 
 #: library/ast.rst:129
 msgid "Now allows bytes and set literals."
-msgstr ""
+msgstr "Accepte maintenant les *bytes* et *sets* écrits littéralement."
 
 #: library/ast.rst:135
 msgid ""
@@ -3734,7 +3734,7 @@ msgstr ""
 
 #: library/ast.rst:240
 msgid "Usually you use the transformer like this::"
-msgstr ""
+msgstr "Utilisation typique du *transformer* ::"
 
 #: library/ast.rst:247
 msgid ""
@@ -3752,7 +3752,7 @@ msgstr ""
 
 #: library/asynchat.rst:9
 msgid "**Source code:** :source:`Lib/asynchat.py`"
-msgstr ""
+msgstr "*Code source :** :source:`Lib/asynchat.py`"
 
 #: library/asynchat.rst:13
 msgid ""
@@ -3888,7 +3888,7 @@ msgstr "*term*"
 #: library/ossaudiodev.rst:187 library/ossaudiodev.rst:241
 #: library/tkinter.ttk.rst:106 library/turtle.rst:2305 library/warnings.rst:58
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: library/asynchat.rst:130
 msgid "*string*"
@@ -3916,7 +3916,7 @@ msgstr "``None``"
 
 #: library/asynchat.rst:137
 msgid "The channel continues to collect data forever"
-msgstr ""
+msgstr "Le canal continue de collecter des informations indéfiniment"
 
 #: library/asynchat.rst:141
 msgid ""
@@ -3959,7 +3959,7 @@ msgstr ""
 
 #: library/asynchat.rst:182
 msgid "asynchat Example"
-msgstr ""
+msgstr "Exemple asynchat"
 
 #: library/asynchat.rst:184
 msgid ""
@@ -63233,7 +63233,7 @@ msgstr ""
 #: library/os.rst:1980 library/os.rst:2005 library/signal.rst:94
 #: library/signal.rst:104 library/sys.rst:514
 msgid "Availability: Windows."
-msgstr ""
+msgstr "Disponibilité : Windows."
 
 #: library/os.rst:1985
 msgid "Start a file with its associated application."
@@ -86008,7 +86008,7 @@ msgstr ""
 
 #: library/subprocess.rst:952 library/subprocess.rst:965
 msgid "Availability: UNIX."
-msgstr ""
+msgstr "Disponible sur : UNIX."
 
 #: library/subprocess.rst:957
 msgid "Return output (stdout and stderr) of executing *cmd* in a shell."

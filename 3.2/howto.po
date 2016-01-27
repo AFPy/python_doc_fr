@@ -1501,7 +1501,7 @@ msgstr ""
 
 #: howto/curses.rst:223 howto/curses.rst:281
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: howto/curses.rst:225
 msgid "*str* or *ch*"

@@ -27,12 +27,12 @@ Progression de la traduction:
           using    21%    23%    18%    17%    12%
        tutorial    95%    90%    96%    99%   100%
             faq    24%    24%    24%    24%    26%
-      distutils    10%    10%    10%    10%    10%
-      reference     2%     2%     2%     3%     3%
+      distutils    11%    10%    10%    10%    10%
+      reference     2%     3%     2%     3%     3%
           howto     2%     2%     2%     2%     3%
           c-api     7%     8%     9%     8%    10%
        whatsnew     4%     4%     3%     3%     4%
-        library     9%    10%    10%     9%    10%
+        library     9%    11%    10%    10%    11%
       **TOTAL**    12%    13%    12%    11%    12%
 =============== ====== ====== ====== ====== ======
 
