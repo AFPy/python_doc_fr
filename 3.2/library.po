@@ -3988,11 +3988,11 @@ msgstr ""
 
 #: library/asyncore.rst:2
 msgid ":mod:`asyncore` --- Asynchronous socket handler"
-msgstr ""
+msgstr ":mod:`asyncore` --- Gestionnaire de socket asynchrone"
 
 #: library/asyncore.rst:12
 msgid "**Source code:** :source:`Lib/asyncore.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/asyncore.py`"
 
 #: library/asyncore.rst:16
 msgid ""
@@ -4153,7 +4153,7 @@ msgstr ""
 
 #: library/asyncore.rst:137
 msgid "Called when the socket is closed."
-msgstr ""
+msgstr "Appelé lorsque la socket est fermée."
 
 #: library/asyncore.rst:142
 msgid ""
@@ -4215,7 +4215,7 @@ msgstr ""
 
 #: library/asyncore.rst:202
 msgid "Send *data* to the remote end-point of the socket."
-msgstr ""
+msgstr "Envoie *data* à l'autre bout de la socket."
 
 #: library/asyncore.rst:207
 msgid ""
@@ -4283,7 +4283,7 @@ msgstr ""
 
 #: library/asyncore.rst:272
 msgid "asyncore Example basic HTTP client"
-msgstr ""
+msgstr "Exemple de client HTTP basique avec :mod:`asyncore`"
 
 #: library/asyncore.rst:274
 msgid ""
@@ -4293,7 +4293,7 @@ msgstr ""
 
 #: library/asyncore.rst:311
 msgid "asyncore Example basic echo server"
-msgstr ""
+msgstr "Serveur \"echo\" basique avec :mod:`asyncore`"
 
 #: library/asyncore.rst:313
 msgid ""
@@ -4303,7 +4303,7 @@ msgstr ""
 
 #: library/atexit.rst:2
 msgid ":mod:`atexit` --- Exit handlers"
-msgstr ""
+msgstr ":mod:`atexit` --- Gestionnaire de fin de programme"
 
 #: library/atexit.rst:10
 msgid ""
@@ -4374,7 +4374,7 @@ msgstr ""
 
 #: library/atexit.rst:62
 msgid ":mod:`atexit` Example"
-msgstr ""
+msgstr "Exemple avec :mod:`atexit`"
 
 #: library/atexit.rst:64
 msgid ""
@@ -4392,7 +4392,7 @@ msgstr ""
 
 #: library/atexit.rst:96
 msgid "Usage as a :term:`decorator`::"
-msgstr ""
+msgstr "Utilisation en temps que :term:`decorateur` ::"
 
 #: library/atexit.rst:104
 msgid "This only works with functions that can be called without arguments."
@@ -4400,7 +4400,7 @@ msgstr ""
 
 #: library/audioop.rst:2
 msgid ":mod:`audioop` --- Manipulate raw audio data"
-msgstr ""
+msgstr ":mod:`audioloop` --- Manipulation de données audio brutes"
 
 #: library/audioop.rst:8
 msgid ""
@@ -4614,7 +4614,7 @@ msgstr ""
 
 #: library/audioop.rst:202
 msgid "This is a measure of the power in an audio signal."
-msgstr ""
+msgstr "C'est une mesure de la puissance dans un signal audio."
 
 #: library/audioop.rst:207
 msgid ""
@@ -4698,7 +4698,7 @@ msgstr ""
 
 #: library/base64.rst:25
 msgid "The modern interface provides:"
-msgstr ""
+msgstr "L'interface moderne propose :"
 
 #: library/base64.rst:29
 msgid "Encode a byte string using Base64."
@@ -4818,7 +4818,7 @@ msgstr ""
 
 #: library/base64.rst:126
 msgid "The legacy interface:"
-msgstr ""
+msgstr "L'interface historique :"
 
 #: library/base64.rst:130
 msgid ""
@@ -4855,7 +4855,7 @@ msgstr ""
 
 #: library/base64.rst:165
 msgid "An example usage of the module:"
-msgstr ""
+msgstr "Un exemple d'utilisation du module :"
 
 #: library/base64.rst:179 library/binhex.rst:40 library/uu.rst:60
 #, fuzzy
@@ -4881,11 +4881,11 @@ msgstr ""
 
 #: library/bdb.rst:2
 msgid ":mod:`bdb` --- Debugger framework"
-msgstr ""
+msgstr ":mod:`bdb` --- Framework de débogage"
 
 #: library/bdb.rst:7
 msgid "**Source code:** :source:`Lib/bdb.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/bdb.py`"
 
 #: library/bdb.rst:11
 msgid ""
@@ -4895,7 +4895,7 @@ msgstr ""
 
 #: library/bdb.rst:14 library/webbrowser.rst:43
 msgid "The following exception is defined:"
-msgstr ""
+msgstr "L'exception suivante est définie :"
 
 #: library/bdb.rst:18
 msgid "Exception raised by the :class:`Bdb` class for quitting the debugger."
@@ -4903,7 +4903,7 @@ msgstr ""
 
 #: library/bdb.rst:21
 msgid "The :mod:`bdb` module also defines two classes:"
-msgstr ""
+msgstr "Le module :mod:`bdb` définis deux classes :"
 
 #: library/bdb.rst:25
 msgid ""
@@ -4940,11 +4940,11 @@ msgstr ""
 
 #: library/bdb.rst:49
 msgid "Mark the breakpoint as enabled."
-msgstr ""
+msgstr "Active le point d'arrêt."
 
 #: library/bdb.rst:54
 msgid "Mark the breakpoint as disabled."
-msgstr ""
+msgstr "Désactive le point d'arrêt."
 
 #: library/bdb.rst:59
 msgid ""
@@ -4954,11 +4954,11 @@ msgstr ""
 
 #: library/bdb.rst:62
 msgid "The breakpoint number."
-msgstr ""
+msgstr "Le numéro du point d'arrêt."
 
 #: library/bdb.rst:63
 msgid "If it is temporary or not."
-msgstr ""
+msgstr "S'il est temporaire ou non."
 
 #: library/bdb.rst:64
 msgid "Its file,line position."
@@ -5004,7 +5004,7 @@ msgstr ""
 
 #: library/bdb.rst:91 library/pdb.rst:159
 msgid "The *skip* argument."
-msgstr ""
+msgstr "L'argument *skip*."
 
 #: library/bdb.rst:94
 msgid ""
@@ -5053,15 +5053,15 @@ msgstr ""
 
 #: library/bdb.rst:120
 msgid "``\"exception\"``: An exception has occurred."
-msgstr ""
+msgstr "``\"exception\"`` : Une exception est survenue."
 
 #: library/bdb.rst:121
 msgid "``\"c_call\"``: A C function is about to be called."
-msgstr ""
+msgstr "``\"c_call\"`` : Une fonction C est sur le point d'être appelée."
 
 #: library/bdb.rst:122
 msgid "``\"c_return\"``: A C function has returned."
-msgstr ""
+msgstr "``\"c_return\"`` : Une fonction C s'est terminée."
 
 #: library/bdb.rst:123
 msgid "``\"c_exception\"``: A C function has raised an exception."
@@ -5075,7 +5075,7 @@ msgstr ""
 
 #: library/bdb.rst:128
 msgid "The *arg* parameter depends on the previous event."
-msgstr ""
+msgstr "Le paramètre *arg* dépend de l'événement précédent."
 
 #: library/bdb.rst:130
 msgid ""
@@ -5192,7 +5192,7 @@ msgstr ""
 
 #: library/bdb.rst:221
 msgid "Stop after one line of code."
-msgstr ""
+msgstr "Arrête après une ligne de code."
 
 #: library/bdb.rst:225
 msgid "Stop on the next line in or below the given frame."
@@ -5261,7 +5261,7 @@ msgstr ""
 
 #: library/bdb.rst:280
 msgid "Delete all existing breakpoints."
-msgstr ""
+msgstr "Supprime tous les points d'arrêt définis."
 
 #: library/bdb.rst:284
 msgid ""
@@ -5287,7 +5287,7 @@ msgstr ""
 
 #: library/bdb.rst:306
 msgid "Return all breakpoints that are set."
-msgstr ""
+msgstr "Donne tous les points d'arrêt définis."
 
 #: library/bdb.rst:309
 msgid ""
@@ -5313,19 +5313,19 @@ msgstr ""
 
 #: library/bdb.rst:323
 msgid "The function name, or ``\"<lambda>\"``."
-msgstr ""
+msgstr "Le nom de la fonction, ou ``\"<lambda>\"``."
 
 #: library/bdb.rst:324
 msgid "The input arguments."
-msgstr ""
+msgstr "Les arguments donnés."
 
 #: library/bdb.rst:325
 msgid "The return value."
-msgstr ""
+msgstr "Le résultat."
 
 #: library/bdb.rst:326
 msgid "The line of code (if it exists)."
-msgstr ""
+msgstr "La ligne de code (si elle existe)."
 
 #: library/bdb.rst:329
 msgid ""
@@ -5558,7 +5558,7 @@ msgstr "Modules"
 
 #: library/binascii.rst:177
 msgid "Support for UU encoding used on Unix."
-msgstr ""
+msgstr "Gestion de l'encodage UU utilisé sur UNIX."
 
 #: library/binascii.rst:179
 #, fuzzy
@@ -5571,7 +5571,7 @@ msgstr ""
 
 #: library/binhex.rst:2
 msgid ":mod:`binhex` --- Encode and decode binhex4 files"
-msgstr ""
+msgstr ":mod:`binhex` --- Encode et décode les fichiers binhex4"
 
 #: library/binhex.rst:8
 msgid ""
@@ -5600,7 +5600,7 @@ msgstr ""
 
 #: library/binhex.rst:28
 msgid "The following exception is also defined:"
-msgstr ""
+msgstr "L'exception suivante est aussi définie :"
 
 #: library/binhex.rst:33
 msgid ""
@@ -5635,11 +5635,11 @@ msgstr ""
 
 #: library/bisect.rst:2
 msgid ":mod:`bisect` --- Array bisection algorithm"
-msgstr ""
+msgstr ":mod:`bisect` --- Algorithme de bissection de listes"
 
 #: library/bisect.rst:10
 msgid "**Source code:** :source:`Lib/bisect.py`"
-msgstr ""
+msgstr "**Code source :* :source:`Lib/bisect.py`"
 
 #: library/bisect.rst:14
 msgid ""
@@ -5654,7 +5654,7 @@ msgstr ""
 
 #: library/bisect.rst:21 library/heapq.rst:39
 msgid "The following functions are provided:"
-msgstr ""
+msgstr "Les fonctions suivantes sont fournies :"
 
 #: library/bisect.rst:26
 msgid ""
@@ -5711,7 +5711,7 @@ msgstr ""
 
 #: library/bisect.rst:70
 msgid "Searching Sorted Lists"
-msgstr ""
+msgstr "Chercher dans des listes triées"
 
 #: library/bisect.rst:72
 msgid ""
@@ -5723,7 +5723,7 @@ msgstr ""
 
 #: library/bisect.rst:114
 msgid "Other Examples"
-msgstr ""
+msgstr "Autres Exemples"
 
 #: library/bisect.rst:118
 msgid ""
@@ -5749,7 +5749,7 @@ msgstr ""
 
 #: library/builtins.rst:2
 msgid ":mod:`builtins` --- Built-in objects"
-msgstr ""
+msgstr ":mod:`builtins` --- Objets natifs"
 
 #: library/builtins.rst:8
 msgid ""
@@ -5832,7 +5832,7 @@ msgstr ""
 
 #: library/bz2.rst:38
 msgid "(De)compression of files"
-msgstr ""
+msgstr "(Dé)compression de fichiers"
 
 #: library/bz2.rst:40
 msgid "Handling of compressed files is offered by the :class:`BZ2File` class."
@@ -5984,7 +5984,7 @@ msgstr ""
 
 #: library/bz2.rst:184
 msgid "One-shot (de)compression"
-msgstr ""
+msgstr "(Dé)compression en une fois"
 
 #: library/bz2.rst:186
 msgid ""
@@ -6012,7 +6012,7 @@ msgstr ""
 
 #: library/calendar.rst:9
 msgid "**Source code:** :source:`Lib/calendar.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/calendar.py`"
 
 #: library/calendar.rst:13
 msgid ""
@@ -6157,7 +6157,7 @@ msgstr ""
 
 #: library/calendar.rst:146
 msgid "This class can be used to generate HTML calendars."
-msgstr ""
+msgstr "Cette classe peut être utilisée pour générer des calendriers HTML."
 
 #: library/calendar.rst:149
 msgid ":class:`HTMLCalendar` instances have the following methods:"
@@ -12153,7 +12153,7 @@ msgstr ""
 
 #: library/concurrent.futures.rst:343
 msgid ":const:`FIRST_COMPLETED`"
-msgstr ""
+msgstr ":const:`FIRST_COMPLETED`"
 
 #: library/concurrent.futures.rst:343
 msgid "The function will return when any future finishes or is cancelled."
@@ -12161,7 +12161,7 @@ msgstr ""
 
 #: library/concurrent.futures.rst:346
 msgid ":const:`FIRST_EXCEPTION`"
-msgstr ""
+msgstr ":const:`FIRST_EXCEPTION`"
 
 #: library/concurrent.futures.rst:346
 msgid ""
@@ -12172,7 +12172,7 @@ msgstr ""
 
 #: library/concurrent.futures.rst:352
 msgid ":const:`ALL_COMPLETED`"
-msgstr ""
+msgstr ":const:`ALL_COMPLETED`"
 
 #: library/concurrent.futures.rst:352
 msgid "The function will return when all futures finish or are cancelled."
@@ -55476,7 +55476,7 @@ msgstr ""
 
 #: library/multiprocessing.rst:623
 msgid "Remove and return an item from the queue."
-msgstr ""
+msgstr "Supprime et donne un élément de la queue."
 
 #: library/multiprocessing.rst:627
 msgid "Put *item* into the queue."
@@ -91485,7 +91485,7 @@ msgstr ""
 
 #: library/threading.rst:446 library/threading.rst:510
 msgid "There is no return value."
-msgstr ""
+msgstr "Il n'y a pas de valeur de retour."
 
 #: library/threading.rst:452
 msgid "RLock Objects"
