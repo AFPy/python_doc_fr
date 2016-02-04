@@ -34284,12 +34284,20 @@ msgid ""
 "classes are callable (calling a class returns a new instance); instances are "
 "callable if their class has a :meth:`__call__` method."
 msgstr ""
+"Donne :const:`True` si l'argument *object* semble être appelable, sinon :"
+"const:`False`. Lorsqu'elle donne :const:`True`, il reste une éventualité "
+"pour qu'un appel échoue, cependant, lorsqu'elle donne :const:`False`, il ne "
+"sera jamais possible d'appeler *object*. Notez que les classes sont "
+"appelables (appeler une classe donne une nouvelle instance). Les instances "
+"sont appelables si leur class défini une méthode :meth:`__call__`."
 
 #: library/functions.rst:142
 msgid ""
 "This function was first removed in Python 3.0 and then brought back in "
 "Python 3.2."
 msgstr ""
+"Cette fonction à d'abord été supprimée avec Python 3.0 puis elle à été "
+"remise dans Python 3.2."
 
 #: library/functions.rst:149
 msgid ""
@@ -34308,7 +34316,7 @@ msgstr ""
 
 #: library/functions.rst:162
 msgid "Return a class method for *function*."
-msgstr ""
+msgstr "Donne une méthode de classe pour *fonction*."
 
 #: library/functions.rst:164
 msgid ""
@@ -34316,12 +34324,18 @@ msgid ""
 "instance method receives the instance. To declare a class method, use this "
 "idiom::"
 msgstr ""
+"Une méthode de classe reçoit implicitement la classe en premier augment, "
+"tout comme une méthode d'instance reçoit l'instance. Voici comment déclarer "
+"une méthode de classe ::"
 
 #: library/functions.rst:172
 msgid ""
 "The ``@classmethod`` form is a function :term:`decorator` -- see the "
 "description of function definitions in :ref:`function` for details."
 msgstr ""
+"La forme ``@classmethod`` est un :term:`decorator` -- consultez la "
+"documentation sur la définition de fonctions dans :ref:`function` pour plus "
+"de détails."
 
 #: library/functions.rst:175
 msgid ""
@@ -34330,18 +34344,27 @@ msgid ""
 "class method is called for a derived class, the derived class object is "
 "passed as the implied first argument."
 msgstr ""
+"Elle peut être appelée soit sur la classe (comme ``C.f()``) ou sur une "
+"instance (comme ``C().f()``). L'instance est ignorée, sauf pour déterminer "
+"sa classe. Si la méthode est appelée sur une instance de classe fille, c'est "
+"la classe fille qui sera donnée en premier argument implicite."
 
 #: library/functions.rst:180
 msgid ""
 "Class methods are different than C++ or Java static methods. If you want "
 "those, see :func:`staticmethod` in this section."
 msgstr ""
+"Les méthodes de classe sont différentes des méthodes statiques du C++ ou du "
+"Java. Si c'est elles sont vous avez besoin, regardez du côté de :func:"
+"`staticmethod`."
 
 #: library/functions.rst:183
 msgid ""
 "For more information on class methods, consult the documentation on the "
 "standard type hierarchy in :ref:`types`."
 msgstr ""
+"Pour plus d'informations sur les méthodes de classe, consultez la "
+"documentation sur la hiérarchie des types standards dans :ref:`types`."
 
 #: library/functions.rst:189
 msgid ""
@@ -34357,6 +34380,9 @@ msgid ""
 "pass some recognizable value if it wasn't read from a file (``'<string>'`` "
 "is commonly used)."
 msgstr ""
+"L'argument *filename* doit nommer le fichier duquel le code à été lu. Donnez "
+"quelque chose de reconnaissable lorsqu'il n'a pas été lu depuis un fichier "
+"(typiquement ``\"<string>\"``)."
 
 #: library/functions.rst:198
 msgid ""
@@ -34366,6 +34392,11 @@ msgid ""
 "single interactive statement (in the latter case, expression statements that "
 "evaluate to something other than ``None`` will be printed)."
 msgstr ""
+"L'argument *mode* indique quel type de code doit être compilé : ``'exec'`` "
+"si source est une suite d'instructions, ``'eval'`` pour une seule "
+"expression, ou ``'single'`` si il ne contient qu'une instruction interactive "
+"(dans ce dernier cas, les résultats d'expressions donnant autre chose que "
+"``None`` seront affichés)."
 
 #: library/functions.rst:204
 msgid ""
@@ -34396,12 +34427,20 @@ msgid ""
 "optimization; ``__debug__`` is true), ``1`` (asserts are removed, "
 "``__debug__`` is false) or ``2`` (docstrings are removed too)."
 msgstr ""
+"L'argument *optimize* indique le niveau d'optimisation du compilateur. La "
+"valeur par défaut est ``-1`` qui prend le niveau d'optimisation de "
+"l'interpréteur tel que reçu via l'option :option:`-O`. Les niveau explicites "
+"sont : ``0`` (pas d'optimisation, ``__debug__`` est ``True``), ``1`` (les "
+"``assert`` sont supprimés, ``__debug__`` est ``False``) ou ``2`` (les "
+"docstrings sont supprimés aussi)."
 
 #: library/functions.rst:225
 msgid ""
 "This function raises :exc:`SyntaxError` if the compiled source is invalid, "
 "and :exc:`TypeError` if the source contains null bytes."
 msgstr ""
+"Cette fonction lève une :exc:`SyntaxError` si la source n'est pas valide, "
+"et :exc:`TypeError` si la source contient des octets null."
 
 #: library/functions.rst:230
 msgid ""
@@ -34410,12 +34449,19 @@ msgid ""
 "to facilitate detection of incomplete and complete statements in the :mod:"
 "`code` module."
 msgstr ""
+"Lors de la compilation d'une chaîne de plusieurs lignes de code avec les "
+"modes ``'single'`` ou ``'eval'``, celle-ci doit être terminée d'au moins un "
+"retour à la ligne. Cela permet de faciliter la distinction entre les "
+"instructions complètes et incomplètes dans le module :mod:`code`."
 
 #: library/functions.rst:235
 msgid ""
 "Allowed use of Windows and Mac newlines.  Also input in ``'exec'`` mode does "
 "not have to end in a newline anymore.  Added the *optimize* parameter."
 msgstr ""
+"Autorise l'utilisation de retours à la ligne Mac et Windows. Aussi, la "
+"chaîne donnée à ``'exec'`` n'a plus besoin de terminer par un retour à la "
+"ligne. Ajout du paramètre *optimize*."
 
 #: library/functions.rst:242
 msgid ""
@@ -34435,10 +34481,14 @@ msgid ""
 "the central ``+`` or ``-`` operator.  For example, ``complex('1+2j')`` is "
 "fine, but ``complex('1 + 2j')`` raises :exc:`ValueError`."
 msgstr ""
+"Lors de la conversion depuis une chaîne, elle ne doit pas contenir d'espaces "
+"autour des opérateurs binaires ``+`` ou ``-``. Par exemple "
+"``complex('1+2j')`` est bon, mais ``complex('1 + 2j')`` lève une :exc:"
+"`ValueError`."
 
 #: library/functions.rst:257
 msgid "The complex type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "Le type complexe est décrit dans :ref:`typesnumeric`."
 
 #: library/functions.rst:262
 msgid ""
@@ -34447,18 +34497,27 @@ msgid ""
 "function deletes the named attribute, provided the object allows it.  For "
 "example, ``delattr(x, 'foobar')`` is equivalent to ``del x.foobar``."
 msgstr ""
+"C'est un cousin de :func:`setattr`. Les arguments sont un objet et une "
+"chaîne. La chaîne doit être le nom de l'un des attributs de l'objet. La "
+"fonction supprime l'attribut nommé, si l'objet l'y autorise. Par exemple "
+"``delattr(x, 'foobar')`` est l'équivalent de ``del x.foobar``."
 
 #: library/functions.rst:274
 msgid ""
 "Create a new dictionary.  The :class:`dict` object is the dictionary class. "
 "See :class:`dict` and :ref:`typesmapping` for documentation about this class."
 msgstr ""
+"Créé un nouveau dictionnaire. L'objet :class:`dict` est la classe du "
+"dictionnaire. Voir : class:`dict` et :ref:`typesmapping` pour vous "
+"documenter sur cette classe."
 
 #: library/functions.rst:278
 msgid ""
 "For other containers see the built-in :class:`list`, :class:`set`, and :"
 "class:`tuple` classes, as well as the :mod:`collections` module."
 msgstr ""
+"Pour les autres conteneurs, voir les classes natives :class:`list`, :class:"
+"`set`, et :class:`typle`. ainsi que le module :mod:`collections`."
 
 #: library/functions.rst:284
 msgid ""
@@ -34466,6 +34525,9 @@ msgid ""
 "With an argument, attempt to return a list of valid attributes for that "
 "object."
 msgstr ""
+"Sans arguments, elle donne la liste des noms dans l'espace de noms local. "
+"Avec un argument, elle essaye de donner une liste d'attributs valides pour "
+"cet objet."
 
 #: library/functions.rst:287
 msgid ""
@@ -34474,6 +34536,10 @@ msgid ""
 "custom :func:`__getattr__` or :func:`__getattribute__` function to customize "
 "the way :func:`dir` reports their attributes."
 msgstr ""
+"Si l'objet à une méthode :meth:`__dir__`, elle est appelée et doit donner "
+"une liste d'attributs. Cela permet aux objets implémentant :func:"
+"`__getattr__` ou :func:`__getattribute__` de personnaliser ce que donnera :"
+"func:`dir`."
 
 #: library/functions.rst:292
 msgid ""
@@ -34483,6 +34549,10 @@ msgid ""
 "complete, and may be inaccurate when the object has a custom :func:"
 "`__getattr__`."
 msgstr ""
+"Si l'objet ne propose pas :meth:`__dir__`, elle fait de son mieux pour "
+"obtenir la liste depuis son attribut :attr:`__dict__`, s'il existe, et de "
+"son objet type. La liste obtenue n'est pas nécessairement complète, et peut "
+"être fausse si l'objet personnalise :func:`__getattr__`."
 
 #: library/functions.rst:297
 msgid ""
