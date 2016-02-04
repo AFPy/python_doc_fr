@@ -26,7 +26,7 @@ Progression de la traduction:
       extending    21%    21%    22%    23%    25%
           using    21%    23%    18%    17%    12%
        tutorial    95%    90%    96%    99%   100%
-            faq    24%    24%    24%    24%    26%
+            faq    24%    24%    24%    24%    29%
       distutils    11%    10%    10%    10%    10%
       reference     2%     3%     2%     3%     3%
           howto     2%     2%     2%     2%     3%
