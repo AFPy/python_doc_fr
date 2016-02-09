@@ -11196,7 +11196,7 @@ msgstr ""
 
 #: whatsnew/2.6.rst:789
 msgid "Character"
-msgstr ""
+msgstr "Caractère"
 
 #: whatsnew/2.6.rst:789
 msgid "Effect"
