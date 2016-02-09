@@ -34560,18 +34560,25 @@ msgid ""
 "of objects, as it attempts to produce the most relevant, rather than "
 "complete, information:"
 msgstr ""
+"Le mécanisme par défaut de :func:`dir` se comporte différemment avec "
+"différents types d'objets, car elle préfère donner une information "
+"pertinente plutôt qu'exhaustive :"
 
 #: library/functions.rst:301
 msgid ""
 "If the object is a module object, the list contains the names of the "
 "module's attributes."
 msgstr ""
+"Si l'objet est un module, la liste contiendra les noms des attributs du "
+"module."
 
 #: library/functions.rst:304
 msgid ""
 "If the object is a type or class object, the list contains the names of its "
 "attributes, and recursively of the attributes of its bases."
 msgstr ""
+"Si l'objet est un type ou une classe, la liste contiendra les noms de ses "
+"attributs, et récursivement, des attributs de ses parents."
 
 #: library/functions.rst:307
 msgid ""
@@ -34579,10 +34586,13 @@ msgid ""
 "its class's attributes, and recursively of the attributes of its class's "
 "base classes."
 msgstr ""
+"Autrement, la liste contient les noms des attributs de l'objet, le nom des "
+"attributs de la classe, et récursivement des attributs des parents de la "
+"classe."
 
 #: library/functions.rst:311
 msgid "The resulting list is sorted alphabetically.  For example:"
-msgstr ""
+msgstr "La liste donnée est triée par ordre alphabétique, par exemple :"
 
 #: library/functions.rst:329
 msgid ""
@@ -34592,6 +34602,11 @@ msgid ""
 "its detailed behavior may change across releases.  For example, metaclass "
 "attributes are not in the result list when the argument is a class."
 msgstr ""
+"Étant donné que :func:`dir` est d'abord fournie pour son côté pratique en "
+"mode interactif, elle a tendance à fournir un jeu intéressant de noms plutôt "
+"qu'un ensemble consistant et rigoureusement défini, son comportement peut "
+"aussi changer d'une version à l'autre. Par exemple, les attributs de méta-"
+"classes ne sont pas données lorsque l'argument est une classe."
 
 #: library/functions.rst:339
 msgid ""
@@ -34604,6 +34619,14 @@ msgid ""
 "is very close to *a*, if ``a % b`` is non-zero it has the same sign as *b*, "
 "and ``0 <= abs(a % b) < abs(b)``."
 msgstr ""
+"Prend deux nombres (non complexes) et donne leur quotient et reste de leur "
+"division entière sous forme d'une paire de nombres. Avec des opérandes de "
+"types différents, les règles des opérateurs binaires s'appliquent. Pour deux "
+"entiers le résultat est le même que ``(a // b, a % b)``. Pour des nombres à "
+"virgule flottante le résultat est ``(q, a % b), où *q* est généralement "
+"``math.floor(a / b)`` mais peut valoir un de moins. Dans tous les cas ``q * "
+"b + a % b`` est très proche de *a*. Si ``a % b`` est différent de zéro, il a "
+"le même signe que *b*, et ``0 <= abs(a % b) < abs(b)``."
 
 #: library/functions.rst:351
 msgid ""
@@ -34613,11 +34636,15 @@ msgid ""
 "returns a tuple containing a count (from *start* which defaults to 0) and "
 "the values obtained from iterating over *iterable*."
 msgstr ""
+"`iterator`, ou tout autre objet supportant l'itération. La méthode :meth:"
+"`~iterator.__next__` de l'itérateur donné par :func:`enumerate` donne un "
+"tuple contenant un compte (démarrant à *start*, 0 par défaut) et les valeurs "
+"obtenues de l'itération sur *iterable*."
 
 #: library/functions.rst:363 library/itertools.rst:143
 #: library/itertools.rst:192 library/itertools.rst:412 library/stdtypes.rst:462
 msgid "Equivalent to::"
-msgstr ""
+msgstr "Équivalent à ::"
 
 #: library/functions.rst:374
 msgid ""
@@ -34648,6 +34675,10 @@ msgid ""
 "of a string.  If the code object has been compiled with ``'exec'`` as the "
 "*mode* argument, :func:`eval`\\'s return value will be ``None``."
 msgstr ""
+"Cette fonction peut aussi être utilisée pour exécuter n'importe quel objet "
+"code (tel que ceux créés par :func:`compile`). Dans ce cas, donnez un objet "
+"code plutôt qu'une chaîne. Si l'objet code à été compilé avec ``'exec'`` en "
+"argument pour *mode*, :func:`eval` donnera ``None``."
 
 #: library/functions.rst:398
 msgid ""
@@ -34656,12 +34687,19 @@ msgid ""
 "current global and local dictionary, respectively, which may be useful to "
 "pass around for use by :func:`eval` or :func:`exec`."
 msgstr ""
+"Conseils : L'exécution dynamique d'instructions est gérée par la fonction :"
+"func:`exec`. Les fonctions :func:`globals` et :func:`locals` donnent "
+"respectivement les dictionnaires globaux et locaux, qui peuvent être utiles "
+"lors de l'usage de :func:`eval` et :func:`exec`."
 
 #: library/functions.rst:403
 msgid ""
 "See :func:`ast.literal_eval` for a function that can safely evaluate strings "
 "with expressions containing only literals."
 msgstr ""
+"Utilisez :func:`ast.literal_eval` si vous avez besoin d'une fonction qui "
+"peut évaluer en toute sécurité des chaînes avec des expressions ne contenant "
+"que des valeurs littérales."
 
 #: library/functions.rst:409
 msgid ""
@@ -34696,6 +34734,11 @@ msgid ""
 "builtins are available to the executed code by inserting your own "
 "``__builtins__`` dictionary into *globals* before passing it to :func:`exec`."
 msgstr ""
+"Si le dictionnaire *globals* ne contient pas de valeur pour la clef "
+"``__builtins___``, une référence au dictionnaire du module :mod:`builtins` y "
+"est inséré. Cela vous permet de contrôler quelles fonctions natives sont "
+"exposées au code exécuté en insérant votre propre dictionnaire "
+"``__builtins__`` dans *globals* avant de le donner à :func:`exec`."
 
 #: library/functions.rst:436
 msgid ""
@@ -34703,6 +34746,9 @@ msgid ""
 "global and local dictionary, respectively, which may be useful to pass "
 "around for use as the second and third argument to :func:`exec`."
 msgstr ""
+"Les fonctions natives :func:`globals` et :func:`locals` donnent "
+"respectivement les dictionnaires globaux et locaux, qui peuvent être utiles "
+"en deuxième et troisième argument de :func:`exec`."
 
 #: library/functions.rst:442
 msgid ""
@@ -34711,6 +34757,11 @@ msgid ""
 "Pass an explicit *locals* dictionary if you need to see effects of the code "
 "on *locals* after function :func:`exec` returns."
 msgstr ""
+"La valeur par défaut pour *locals* se comporte comme  la fonction :func:"
+"`locals`: Il est déconseillé de modifier le dictionnaire *locals* par "
+"défaut. Donnez un dictionnaire explicitement à *locals* si vous désirez "
+"observer l'effet du code sur les variables locales, après que :func:`exec` "
+"soit terminée."
 
 #: library/functions.rst:450
 msgid ""
@@ -34720,6 +34771,11 @@ msgid ""
 "function is assumed, that is, all elements of *iterable* that are false are "
 "removed."
 msgstr ""
+"Construit un itérateur depuis les éléments d'*iterable* pour lesquels "
+"*function* donne vrai. *iterable* peut aussi bien être une séquence, un "
+"conteneur qui supporte l'itération, ou un itérateur. Si *function* est "
+"``None``, la fonction identité est prise, c'est à dire que tous les éléments "
+"faux d'*iterable* sont supprimés."
 
 #: library/functions.rst:456
 msgid ""
@@ -34728,12 +34784,18 @@ msgid ""
 "not ``None`` and ``(item for item in iterable if item)`` if function is "
 "``None``."
 msgstr ""
+"Notez que ``filter(fonction, iterable)`` est l'équivalent du générateur "
+"``(item for item in iterable if fonction(item))`` si *fonction* n'est pas "
+"``None`` et de ``(item for item in iterable if item)`` si *fonction\" est "
+"``None``."
 
 #: library/functions.rst:461
 msgid ""
 "See :func:`itertools.filterfalse` for the complementary function that "
 "returns elements of *iterable* for which *function* returns false."
 msgstr ""
+"Voir :func:`itertools.filterfalse` pour la fonction complémentaire qui donne "
+"les éléments d'*iterable* pour lesquels *fonction* donne ``False``."
 
 #: library/functions.rst:471
 msgid "Convert a string or a number to floating point."
@@ -34757,6 +34819,10 @@ msgid ""
 "\"inf\", \"Inf\", \"INFINITY\" and \"iNfINity\" are all acceptable spellings "
 "for positive infinity."
 msgstr ""
+"Ici ``floatnumber`` est un nombre a virgule flottante littéral Python, "
+"décrit dans :ref:`floating`. La casse n'y est pas significative, donc, par "
+"exemple, \"inf\", \" Inf\", \"INFINITY\", et \" iNfiNity\" sont tous des "
+"orthographes valides pour un infini positif."
 
 #: library/functions.rst:493
 msgid ""
@@ -34765,16 +34831,22 @@ msgid ""
 "precision) is returned.  If the argument is outside the range of a Python "
 "float, an :exc:`OverflowError` will be raised."
 msgstr ""
+"Autrement, si l'argument est un entier ou un nombre à virgule flottante, un "
+"nombre à virgule flottante de même valeur (en accord avec la précision des "
+"nombres à virgule flottante de Python) est donné. Si l'argument est en "
+"dehors de l'intervalle d'un nombre a virgule flottante pour Python, :exc:"
+"`OverflowError` est levée."
 
 #: library/functions.rst:498
 msgid ""
 "For a general Python object ``x``, ``float(x)`` delegates to ``x."
 "__float__()``."
 msgstr ""
+"Pour un objet Python ``x``, ``float(x)`` est délégué à ``x.__float__()``."
 
 #: library/functions.rst:501
 msgid "If no argument is given, ``0.0`` is returned."
-msgstr ""
+msgstr "Dans argument, ``0.0`` est donné."
 
 #: library/functions.rst:503 library/pkgutil.rst:161 library/subprocess.rst:44
 #: library/subprocess.rst:79 library/subprocess.rst:121
@@ -34783,7 +34855,7 @@ msgstr "Exemples ::"
 
 #: library/functions.rst:516
 msgid "The float type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "Le type *float* est décrit dans :ref:`typesnumeric`."
 
 #: library/functions.rst:525
 msgid ""
@@ -34792,12 +34864,18 @@ msgid ""
 "of the *value* argument, however there is a standard formatting syntax that "
 "is used by most built-in types: :ref:`formatspec`."
 msgstr ""
+"Convertis une valeur en sa représentation \"formatée\", tel que décrit par "
+"*format_spec*. L'interprétation de *format_spec* dépend du type de la "
+"valeur, cependant il existe une syntaxe standard utilisée par la plupart des "
+"types natifs : :ref:`formatspec`."
 
 #: library/functions.rst:530
 msgid ""
 "The default *format_spec* is an empty string which usually gives the same "
 "effect as calling :func:`str(value) <str>`."
 msgstr ""
+"Par défaut, *format_spec* est une chaîne vide qui généralement donne le même "
+"effet qu'appeler :func:`str(value) <str>`."
 
 #: library/functions.rst:533
 msgid ""
@@ -34814,12 +34892,18 @@ msgid ""
 "*iterable*.  ``frozenset`` is a built-in class.  See :class:`frozenset` and :"
 "ref:`types-set` for documentation about this class."
 msgstr ""
+"Donne un nouveau :class:`frozenset`, dont les objets sont éventuellement "
+"tirés d'*iterable*. :class:`frozenset` est une classe native. Voir :class:"
+"`frozenset` et :ref:`types-set` pour leurs documentation."
 
 #: library/functions.rst:548
 msgid ""
 "For other containers see the built-in :class:`set`, :class:`list`, :class:"
 "`tuple`, and :class:`dict` classes, as well as the :mod:`collections` module."
 msgstr ""
+"Pour d'autres conteneurs, voyez les classes natives :class:`set`, :class:"
+"`list`, :class:`tuple`, et :class:`dict`, ainsi que le module :mod:"
+"`collections`."
 
 #: library/functions.rst:555
 msgid ""
@@ -34830,6 +34914,12 @@ msgid ""
 "exist, *default* is returned if provided, otherwise :exc:`AttributeError` is "
 "raised."
 msgstr ""
+"Donne la valeur de l'attribut nommé *name* de l'objet *object*. *name* doit "
+"être une chaîne. Si la chaîne est le nom d'un des attributs de l'objet, le "
+"résultat est la valeur de cet attribut. Par exemple, ``getattr(x, "
+"'foobar')`` est équivalent à ``x.foobar``. Si l'attribut n'existe pas, et "
+"que *default* est fourni, il est renvoyé, sinon l'exception :exc:"
+"`AttributeError` est levée."
 
 #: library/functions.rst:564
 msgid ""
@@ -34838,6 +34928,10 @@ msgid ""
 "this is the module where it is defined, not the module from which it is "
 "called)."
 msgstr ""
+"Donne une représentation de la table de symboles globaux sous forme d'un "
+"dictionnaire. C'est toujours le dictionnaire du module courant (dans une "
+"fonction ou méthode, c'est le module où elle est définie, et non le module "
+"d'où elle est appelée)."
 
 #: library/functions.rst:571
 msgid ""
@@ -34846,6 +34940,10 @@ msgid ""
 "(This is implemented by calling ``getattr(object, name)`` and seeing whether "
 "it raises an :exc:`AttributeError` or not.)"
 msgstr ""
+"Les arguments sont : un objet et une chaîne. Le résultat est ``True`` si la "
+"chaîne est le nom d'un des attributs de l'objet, sinon ``False``. "
+"(L'implémentation appelle ``getattr(object, name)`` et regarde si une "
+"exception :exc:`AttributeError` à été levée.)"
 
 #: library/functions.rst:579
 msgid ""
@@ -34869,6 +34967,8 @@ msgstr ""
 msgid ""
 "This function is added to the built-in namespace by the :mod:`site` module."
 msgstr ""
+"Cette fonction est ajoutée à l'espace de noms natif par le module :mod:"
+"`site`."
 
 #: library/functions.rst:599
 msgid ""
@@ -34882,6 +34982,8 @@ msgid ""
 "To obtain a hexadecimal string representation for a float, use the :meth:"
 "`float.hex` method."
 msgstr ""
+"Pour obtenir une représentation hexadécimale sous forme de chaîne d'un :"
+"class:`float`, utilisez la méthode :meth:`float.hex`."
 
 #: library/functions.rst:611
 msgid ""
@@ -34890,6 +34992,9 @@ msgid ""
 "Two objects with non-overlapping lifetimes may have the same :func:`id` "
 "value."
 msgstr ""
+"Donne l'\"identité\" d'un objet. C'est un nombre entier garanti unique et "
+"constant pour cet objet durant sa durée de vie. Deux objets sont les durées "
+"de vie ne se chevauchent pas peuvent partager le même :func:`id`."
 
 #: library/functions.rst:621
 msgid ""
@@ -34904,6 +35009,8 @@ msgid ""
 "If the :mod:`readline` module was loaded, then :func:`input` will use it to "
 "provide elaborate line editing and history features."
 msgstr ""
+"Si le module :mod:`readline` est chargé, :func:`input` l'utilisera pour "
+"fournir des fonctionnalités d'édition et d'historique élaborées."
 
 #: library/functions.rst:638
 msgid ""
@@ -34930,7 +35037,7 @@ msgstr ""
 
 #: library/functions.rst:655
 msgid "The integer type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "Le type des entiers est décrit dans :ref:`typesnumeric`."
 
 #: library/functions.rst:660
 msgid ""
@@ -34952,6 +35059,11 @@ msgid ""
 "entry in *classinfo* will be checked. In any other case, a :exc:`TypeError` "
 "exception is raised."
 msgstr ""
+"Donne ``True`` si *class* est une classe fille (directe, indirecte, ou :term:"
+"`virtual <abstract base class>`) de *classinfo*. Une classe est considérée "
+"sous-classe d'elle même. *classinfo* peut être un tuple de classes, dans ce "
+"cas la vérification sera faite pour chaque classe de *classinfo*. Dans tous "
+"les autres cas, :exc:`TypeError` est levée."
 
 #: library/functions.rst:681
 msgid ""
@@ -35003,12 +35115,18 @@ msgid ""
 "Free variables are returned by :func:`locals` when it is called in function "
 "blocks, but not in class blocks."
 msgstr ""
+"Met à jour et donne un dictionnaire représentant la table des symboles "
+"locaux. Les variables libres sont données par :func:`locals` lorsqu'elle est "
+"appelée dans le corps d'une fonction, mais pas dans le corps d'une classe."
 
 #: library/functions.rst:728
 msgid ""
 "The contents of this dictionary should not be modified; changes may not "
 "affect the values of local and free variables used by the interpreter."
 msgstr ""
+"Le contenu de ce dictionnaire ne devrait pas être modifié, les changements "
+"peuvent ne pas affecter les valeurs des variables locales ou libres "
+"utilisées par l'interpréteur."
 
 #: library/functions.rst:733
 msgid ""
@@ -35025,6 +35143,8 @@ msgid ""
 "Return the largest item in an iterable or the largest of two or more "
 "arguments."
 msgstr ""
+"Donne l'élément le plus grand dans un iterable, ou l'argument le plus grand "
+"parmi au moins deux arguments."
 
 #: library/functions.rst:747
 msgid ""
@@ -35047,18 +35167,26 @@ msgid ""
 "such as ``sorted(iterable, key=keyfunc, reverse=True)[0]`` and ``heapq."
 "nlargest(1, iterable, key=keyfunc)``."
 msgstr ""
+"Si plusieurs éléments représentent la plus grande valeur, le premier "
+"rencontré est donné. C'est cohérent avec d'autres outils préservant une "
+"stabilité lors du tri, tel que ``sorted(iterable, key=keyfunc, reverse=True)"
+"[0]`` et ``heapq.nlargest(1, iterable, key=keyfunc)``."
 
 #: library/functions.rst:765
 msgid ""
 "Return a \"memory view\" object created from the given argument.  See :ref:"
 "`typememoryview` for more information."
 msgstr ""
+"Donne une \"vue mémoire\" (*memory view*) créée depuis l'argument. Voir :ref:"
+"`typememoryview` pour plus d'informations."
 
 #: library/functions.rst:772
 msgid ""
 "Return the smallest item in an iterable or the smallest of two or more "
 "arguments."
 msgstr ""
+"Donne le plus petit élément d'un itérable ou le plus petit d'au moins deux "
+"arguments."
 
 #: library/functions.rst:775
 msgid ""
@@ -35075,6 +35203,10 @@ msgid ""
 "such as ``sorted(iterable, key=keyfunc)[0]`` and ``heapq.nsmallest(1, "
 "iterable, key=keyfunc)``."
 msgstr ""
+"Si plusieurs éléments sont minimaux, la fonction donne le premier. C'est "
+"cohérent avec d'autres outils préservant une stabilité lors du tri, tel que "
+"``sorted(iterable, key=keyfunc)[0]`` et ``heapq.nsmallest(1, iterable, "
+"key=keyfunc)``."
 
 #: library/functions.rst:790
 msgid ""
@@ -35082,6 +35214,9 @@ msgid ""
 "__next__` method.  If *default* is given, it is returned if the iterator is "
 "exhausted, otherwise :exc:`StopIteration` is raised."
 msgstr ""
+"Donne l'élément suivant d'*iterator* en appelant sa méthode :meth:`~iterator."
+"__next__`. Si *default* est fourni, il sera donné si l'itérateur est épousé, "
+"sinon :exc:`StopIteration` est levée."
 
 #: library/functions.rst:797
 msgid ""
@@ -35102,6 +35237,9 @@ msgid ""
 "expression.  If *x* is not a Python :class:`int` object, it has to define "
 "an :meth:`__index__` method that returns an integer."
 msgstr ""
+"Convertis un entier en sa représentation octale dans une chaîne. Le résultat "
+"est une expression Python valide. Si *x* n'est pas un objet :class:`int` de "
+"Python, il doit définir une méthode :meth:`__index__` qui donne un entier."
 
 #: library/functions.rst:819
 msgid ""
@@ -35117,6 +35255,11 @@ msgid ""
 "given, it is closed when the returned I/O object is closed, unless *closefd* "
 "is set to ``False``.)"
 msgstr ""
+"*file* est soit une chaîne soit un objet :class:`bytes` donnant le chemin "
+"(absolu ou relatif au dossier courant) du fichier à ouvrir, ou un entier, "
+"descripteur de fichier à encapsuler. (Si un descripteur de fichier est "
+"donné, il est fermé lorsque l'objet I/O donné est fermé, sauf si *closefd* "
+"est fourni et ``False``.)"
 
 #: library/functions.rst:828
 msgid ""
@@ -35132,15 +35275,15 @@ msgstr ""
 
 #: library/functions.rst:838 library/struct.rst:99
 msgid "Character"
-msgstr ""
+msgstr "Caractère"
 
 #: library/functions.rst:840
 msgid "open for reading (default)"
-msgstr ""
+msgstr "ouvre en lecture (par défaut)"
 
 #: library/functions.rst:841
 msgid "open for writing, truncating the file first"
-msgstr ""
+msgstr "ouvre en écriture, tronquant le fichier"
 
 #: library/functions.rst:842 library/stdtypes.rst:1580
 msgid "``'a'``"
@@ -35148,11 +35291,11 @@ msgstr "``'a'``"
 
 #: library/functions.rst:842
 msgid "open for writing, appending to the end of the file if it exists"
-msgstr ""
+msgstr "ouvre en écriture, ajoutant à la fin du fichier s'il existe"
 
 #: library/functions.rst:843
 msgid "binary mode"
-msgstr ""
+msgstr "mode binaire"
 
 #: library/functions.rst:844
 msgid "``'t'``"
@@ -35160,7 +35303,7 @@ msgstr "``'t'``"
 
 #: library/functions.rst:844
 msgid "text mode (default)"
-msgstr ""
+msgstr "mode texte (par défaut)"
 
 #: library/functions.rst:845 library/stdtypes.rst:1531 library/string.rst:339
 msgid "``'+'``"
