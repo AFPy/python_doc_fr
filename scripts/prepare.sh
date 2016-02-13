@@ -29,8 +29,8 @@ echo "Updating cpython sources"
     cd "$GEN/src/"
     git clean -dfq
     git checkout -- .
-    git pull --ff-only
     git checkout "$VERSION"
+    git pull --ff-only
     for patch in "$PATCHES/$VERSION"/*.patch
     do
         if [ -f "$patch" ]
