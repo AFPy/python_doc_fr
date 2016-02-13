@@ -4783,7 +4783,7 @@ msgstr ""
 
 #: distutils/setupscript.rst:289
 msgid "For example::"
-msgstr "Par exemple ::"
+msgstr "Par exemple : ::"
 
 #: distutils/setupscript.rst:296
 msgid "is the equivalent of having this at the top of every C source file::"
@@ -4964,7 +4964,7 @@ msgstr ""
 #: distutils/setupscript.rst:411
 #, fuzzy
 msgid "Some examples:"
-msgstr "Quelques exemples ::"
+msgstr "Quelques exemples : ::"
 
 #: distutils/setupscript.rst:414
 msgid "Provides Expression"

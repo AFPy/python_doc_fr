@@ -329,7 +329,7 @@ msgstr ""
 #, fuzzy
 msgid "Print the Python version number and exit.  Example output could be::"
 msgstr ""
-"Imprimer le numéro de version de Python et termine. Exemple de sortie ::"
+"Imprimer le numéro de version de Python et termine. Exemple de sortie : ::"
 
 #: using/cmdline.rst:174
 #, fuzzy
@@ -2130,7 +2130,7 @@ msgstr ""
 #: using/windows.rst:432
 #, fuzzy
 msgid "Examples:"
-msgstr "Exemples ::"
+msgstr "Exemples : ::"
 
 #: using/windows.rst:434
 msgid ""
@@ -2178,7 +2178,7 @@ msgstr ""
 #: using/windows.rst:459
 #, fuzzy
 msgid "For example:"
-msgstr "Par exemple ::"
+msgstr "Par exemple : ::"
 
 #: using/windows.rst:461
 msgid "Setting ``PY_PYTHON=3.1`` is equivalent to the INI file containing:"

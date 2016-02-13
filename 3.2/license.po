@@ -764,7 +764,7 @@ msgid ""
 "notice::"
 msgstr ""
 "Les modules :mod:`asynchat` et :mod:`asyncore` contiennent la note "
-"suivante ::"
+"suivante : ::"
 
 #: license.rst:484
 msgid "Cookie management"
@@ -772,7 +772,7 @@ msgstr "Gestion de témoin (*cookie*)"
 
 #: license.rst:486
 msgid "The :mod:`http.cookies` module contains the following notice::"
-msgstr "Le module :mod:`http.cookies` contient la note suivante ::"
+msgstr "Le module :mod:`http.cookies` contient la note suivante : ::"
 
 #: license.rst:512
 msgid "Execution tracing"
@@ -780,7 +780,7 @@ msgstr "Traçage d'exécution"
 
 #: license.rst:514
 msgid "The :mod:`trace` module contains the following notice::"
-msgstr "Le module :mod:`trace` contient la note suivante ::"
+msgstr "Le module :mod:`trace` contient la note suivante : ::"
 
 #: license.rst:545
 msgid "UUencode and UUdecode functions"
@@ -805,7 +805,7 @@ msgstr "test_epoll"
 
 #: license.rst:610
 msgid "The :mod:`test_epoll` contains the following notice::"
-msgstr "Le module :mod:`test_epoll` contient la note suivante ::"
+msgstr "Le module :mod:`test_epoll` contient la note suivante : ::"
 
 #: license.rst:634
 msgid "Select kqueue"
@@ -816,7 +816,8 @@ msgid ""
 "The :mod:`select` and contains the following notice for the kqueue "
 "interface::"
 msgstr ""
-"Le module :mod:`select` contiens la note suivante pour l'interface kqueue ::"
+"Le module :mod:`select` contiens la note suivante pour l'interface "
+"kqueue : ::"
 
 #: license.rst:664
 msgid "strtod and dtoa"
@@ -834,7 +835,7 @@ msgstr ""
 "``strtod`` pour la conversions de *doubles* C vers et depuis les chaînes, et "
 "tiré d'un fichier du même nom par David M. Gay, actuellement disponible sur "
 "http://www.netlib.org/fp/. Le fichier original, tel que récupéré le 16 mars "
-"2009, contiens la licence suivante ::"
+"2009, contiens la licence suivante : ::"
 
 #: license.rst:694
 msgid "OpenSSL"

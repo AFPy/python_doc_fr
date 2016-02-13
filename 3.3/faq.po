@@ -112,7 +112,8 @@ msgstr "Pourquoi les calculs à virgules flottantes sont si imprécis ?"
 #: faq/design.rst:49
 #, fuzzy
 msgid "Users are often surprised by results like this::"
-msgstr "Les gens sont très souvent surpris par des résultats comme celui-ci ::"
+msgstr ""
+"Les gens sont très souvent surpris par des résultats comme celui-ci : ::"
 
 #: faq/design.rst:54
 #, fuzzy
@@ -152,7 +153,7 @@ msgid ""
 msgstr ""
 "Beaucoup de nombres pouvant être écrits facilement en notation décimale ne "
 "peuvent pas s'exprimer de manière exacte en binaire à virgule flottante. Par "
-"exemple, après ::"
+"exemple, après : ::"
 
 #: faq/design.rst:70
 msgid ""
@@ -162,12 +163,12 @@ msgid ""
 msgstr ""
 "la valeur stockée pour ``x`` est une (très bonne) approximation de la valeur "
 "décimale ``1.2``, mais cette valeur n'est pas exacte. Sur une machine "
-"typique, la valeur stockée est en fait ::"
+"typique, la valeur stockée est en fait : ::"
 
 #: faq/design.rst:76
 #, fuzzy
 msgid "which is exactly::"
-msgstr "qui donne le résultat ::"
+msgstr "qui donne le résultat : ::"
 
 #: faq/design.rst:80
 msgid ""
@@ -323,7 +324,7 @@ msgstr ""
 
 #: faq/design.rst:155
 msgid "where in Python you're forced to write this::"
-msgstr "où en Python vous êtes forcé à écrire ceci ::"
+msgstr "où en Python vous êtes forcé à écrire ceci : ::"
 
 #: faq/design.rst:163
 msgid ""
@@ -401,7 +402,7 @@ msgstr ""
 "La meilleur approche est d'utiliser les itérateurs, rendant possible de "
 "boucler au travers d'objets en utilisant la déclaration ``for``. Par "
 "exemple, dans la version actuelle de Python, les fichiers objets supportent "
-"le protocole d'itérateur, vous pouvez alors simplement écrire ::"
+"le protocole d'itérateur, vous pouvez alors simplement écrire : ::"
 
 #: faq/design.rst:211
 msgid ""
@@ -471,11 +472,11 @@ msgstr ""
 "mêmes fonctionnalités que celles qui étaient déjà disponibles en utilisant "
 "les fonctions du module string. La plupart de ces nouvelles méthodes ont été "
 "largement acceptées, mais celle qui semble rendre certains programmeurs "
-"inconfortables est ::"
+"inconfortables est : ::"
 
 #: faq/design.rst:244
 msgid "which gives the result::"
-msgstr "qui donne le résultat ::"
+msgstr "qui donne le résultat : ::"
 
 #: faq/design.rst:248
 msgid "There are two common arguments against this usage."
@@ -506,7 +507,7 @@ msgstr ""
 "train de dire à une séquence de joindre ses membres avec une constante de "
 "chaîne\". Malheureusement, vous ne l'êtes pas. Pour quelque raison, il "
 "semble être bien moins difficile d'avoir :meth:`~str.split` en tant que "
-"méthode de chaîne, puisque dans ce cas il est facile de voir que ::"
+"méthode de chaîne, puisque dans ce cas il est facile de voir que : ::"
 
 #: faq/design.rst:263
 #, fuzzy
@@ -555,7 +556,7 @@ msgid ""
 msgstr ""
 "Cela n'a de sens que si vous vous attendez à ce que le dictionnaire ait la "
 "clé presque tout le temps. Si ce n'était pas le cas, vous l'auriez codé "
-"comme suit ::"
+"comme suit : ::"
 
 #: faq/design.rst:294
 msgid ""
@@ -593,7 +594,7 @@ msgid ""
 msgstr ""
 "Dans les cas où vous devez choisir parmi un très grand nombre de "
 "possibilités, vous pouvez créer un dictionnaire faisant correspondre des "
-"valeurs à des fonctions à appeler. Par exemple ::"
+"valeurs à des fonctions à appeler. Par exemple : ::"
 
 #: faq/design.rst:321
 msgid ""
@@ -602,7 +603,7 @@ msgid ""
 msgstr ""
 "Pour appeler les méthodes sur des objets, vous pouvez simplifier davantage "
 "en utilisant la fonction native :func:`getattr` pour récupérer les méthodes "
-"avec un nom donné ::"
+"avec un nom donné : ::"
 
 #: faq/design.rst:333
 msgid ""
@@ -5678,7 +5679,7 @@ msgstr ""
 msgid "You could also try a variable-length argument list, e.g. ::"
 msgstr ""
 "Vous pouvez aussi utiliser une liste d'arguments de longueur variable, par "
-"exemple ::"
+"exemple : ::"
 
 #: faq/programming.rst:1509
 msgid "The same approach works for all method definitions."
@@ -6181,7 +6182,7 @@ msgstr ""
 
 #: faq/windows.rst:111
 msgid "or::"
-msgstr "ou ::"
+msgstr "ou : ::"
 
 #: faq/windows.rst:115
 msgid ""

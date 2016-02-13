@@ -3932,7 +3932,7 @@ msgstr ""
 
 #: c-api/dict.rst:159
 msgid "For example::"
-msgstr "Par exemple ::"
+msgstr "Par exemple : ::"
 
 #: c-api/dict.rst:169
 msgid ""

@@ -203,7 +203,7 @@ msgid ""
 "command line::"
 msgstr ""
 "Il est également possible de spécifier une version exacte ou minimum "
-"directement sur la ligne de commande ::"
+"directement sur la ligne de commande : ::"
 
 #: installing/index.rst:92
 msgid ""
@@ -213,7 +213,7 @@ msgid ""
 msgstr ""
 "Normalement, si un module approprié est déjà installé, l'installer à nouveau "
 "n'aura aucun effet. La mise à jour de modules existants doit être demandée "
-"explicitement ::"
+"explicitement : ::"
 
 #: installing/index.rst:98
 msgid ""

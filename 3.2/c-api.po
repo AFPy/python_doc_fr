@@ -3490,7 +3490,7 @@ msgstr ""
 
 #: c-api/dict.rst:150
 msgid "For example::"
-msgstr "Par exemple ::"
+msgstr "Par exemple : ::"
 
 #: c-api/dict.rst:160
 msgid ""

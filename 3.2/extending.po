@@ -47,11 +47,11 @@ msgid ""
 "plain Python file, which, in the most simple case, could look like this::"
 msgstr ""
 "Un paquet distutils contient un script pilote, :file:`setup.py`. C'est un "
-"simple fichier Python, qui ressemble typiquement à ::"
+"simple fichier Python, qui ressemble typiquement à : ::"
 
 #: extending/building.rst:40
 msgid "With this :file:`setup.py`, and a file :file:`demo.c`, running ::"
-msgstr "Avec ce :file:`setup.py` et un fichier :file:`demo.c`, lancer ::"
+msgstr "Avec ce :file:`setup.py` et un fichier :file:`demo.c`, lancer : ::"
 
 #: extending/building.rst:44
 msgid ""
@@ -104,7 +104,7 @@ msgid ""
 msgstr ""
 "Dans la plupart des cas, construire une extension est plus complexe à cause "
 "des bibliothèque et définitions de préprocesseur  dont la compilation "
-"pourrait dépendre. En voilà un exemple typique ::"
+"pourrait dépendre. En voilà un exemple typique : ::"
 
 #: extending/building.rst:90
 msgid ""
@@ -121,7 +121,7 @@ msgstr ""
 "préprocesseur (*defines*), dossiers de bibliothèques, et bibliothèques. En "
 "fonction du compilateur distutils peut lui donner ces informations de "
 "différentes manières, par exemple, sur Linux, on pourrait obtenir cette "
-"ligne ::"
+"ligne : ::"
 
 #: extending/building.rst:101
 msgid ""
@@ -148,14 +148,14 @@ msgid ""
 "End-users will typically want to install the module, they do so by running ::"
 msgstr ""
 "Typiquement, les utilisateurs vont vouloir installer le module, ils le font "
-"en exécutant ::"
+"en exécutant : ::"
 
 #: extending/building.rst:116
 msgid ""
 "Module maintainers should produce source packages; to do so, they run ::"
 msgstr ""
 "Les mainteneurs de modules voudront produire des paquets source, pour ce "
-"faire ils exécuteront ::"
+"faire ils exécuteront : ::"
 
 #: extending/building.rst:120
 msgid ""
@@ -426,7 +426,7 @@ msgstr ""
 
 #: extending/embedding.rst:152
 msgid "then the result should be::"
-msgstr "alors le résultat sera ::"
+msgstr "alors le résultat sera : ::"
 
 #: extending/embedding.rst:158
 msgid ""
@@ -437,7 +437,7 @@ msgstr ""
 "Bien que le programme soit plutôt gros pour ses fonctionnalités, la plupart "
 "du code n'est que conversion de données entre Python et C, aussi que pour "
 "rapporter les erreurs. La partie intéressante, qui concerne l'insertion de "
-"Python débute par ::"
+"Python débute par : ::"
 
 #: extending/embedding.rst:167
 msgid ""
@@ -463,7 +463,7 @@ msgstr ""
 "`PyObject_GetAttrString`. Si le nom existe, et que l'objet récupéré peut "
 "être appelé, vous pouvez présumer sans risque que c'est une fonction. Le "
 "programme continue, classiquement, par la construction de l'uplet "
-"d'arguments. L'appel à la fonction Python est alors effectué avec ::"
+"d'arguments. L'appel à la fonction Python est alors effectué avec : ::"
 
 #: extending/embedding.rst:188
 msgid ""
@@ -498,7 +498,7 @@ msgstr ""
 "démarre l'interpréteur Python, au lieu de cela, voyez l'application comme un "
 "ensemble de fonctions, et rédigez un peu de code pour exposer ces fonctions "
 "à Python, tout comme vous écririez une extension Python normale. Par "
-"exemple ::"
+"exemple : ::"
 
 #: extending/embedding.rst:235
 msgid ""
@@ -580,7 +580,7 @@ msgid ""
 "compiling::"
 msgstr ""
 "``pythonX.Y-config --cflags`` vous donnera les options recommandés pour "
-"compiler ::"
+"compiler : ::"
 
 #: extending/embedding.rst:291
 msgid ""
@@ -588,7 +588,7 @@ msgid ""
 "linking::"
 msgstr ""
 "``pythonX.Y-config --ldflags`` vous donnera les options recommandées pour "
-"lier ::"
+"lier : ::"
 
 #: extending/embedding.rst:298
 msgid ""
@@ -679,7 +679,7 @@ msgstr ""
 "à la fonction de la bibliothèque C :c:func:`system`. [#] _ Cette fonction "
 "prend une chaîne de caractères terminée par NULL comme argument et renvoie "
 "un entier. Nous voulons que cette fonction soit appelable à partir de Python "
-"comme suit ::"
+"comme suit : ::"
 
 #: extending/extending.rst:45
 msgid ""
@@ -1007,7 +1007,8 @@ msgid ""
 "you usually declare a static object variable at the beginning of your file::"
 msgstr ""
 "Vous pouvez également créer une exception spécifique à votre module. Pour "
-"cela, déclarez simplement une variable statique au début de votre fichier ::"
+"cela, déclarez simplement une variable statique au début de votre "
+"fichier : ::"
 
 #: extending/extending.rst:199
 msgid ""

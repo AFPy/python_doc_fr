@@ -7594,7 +7594,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:689
 msgid "Examples::"
-msgstr "Exemples ::"
+msgstr "Exemples : ::"
 
 #: reference/simple_stmts.rst:697
 msgid ""

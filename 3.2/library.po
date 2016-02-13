@@ -58,7 +58,8 @@ msgstr "Voici un exemple de fichier source Python 2.x, :file:`example.py`::"
 #: library/2to3.rst:36
 msgid "It can be converted to Python 3.x code via 2to3 on the command line::"
 msgstr ""
-"Il peut être converti en code Python 3.x par 2to3 sur la ligne de commande ::"
+"Il peut être converti en code Python 3.x par 2to3 sur la ligne de "
+"commande : ::"
 
 #: library/2to3.rst:40
 msgid ""
@@ -70,7 +71,7 @@ msgstr ""
 
 #: library/2to3.rst:47
 msgid "After transformation, :file:`example.py` looks like this::"
-msgstr "Après transformation, :file:`example.py` ressemble à ::"
+msgstr "Après transformation, :file:`example.py` ressemble à : ::"
 
 #: library/2to3.rst:55
 msgid ""
@@ -175,7 +176,7 @@ msgstr ""
 "L'option :option:`--add-suffix` spécifie une chaîne à ajouter à tous les "
 "noms de fichiers de sortie. L'option :option:`-n` est une balise qui est "
 "requise pour spécifier que les sauvegardes ne sont pas nécessaires lors de "
-"l'écriture de noms de fichiers différents. Exemple ::"
+"l'écriture de noms de fichiers différents. Exemple : ::"
 
 #: library/2to3.rst:120
 msgid "Will cause a converted file named ``example.py3`` to be written."
@@ -291,7 +292,7 @@ msgstr ""
 
 #: library/2to3.rst:222
 msgid "is changed to ::"
-msgstr "est transformé en ::"
+msgstr "est transformé en : ::"
 
 #: library/2to3.rst:228
 msgid "Detects sibling imports and converts them to relative imports."
@@ -2155,7 +2156,7 @@ msgstr ""
 
 #: library/argparse.rst:745
 msgid "An example of a custom action::"
-msgstr "Un exemple d'action personnalisée ::"
+msgstr "Un exemple d'action personnalisée : ::"
 
 #: library/argparse.rst:765
 msgid "For more details, see :class:`Action`."
@@ -2724,7 +2725,7 @@ msgstr ""
 
 #: library/argparse.rst:1483
 msgid "Some example usage::"
-msgstr "Quelques exemples d'utilisation ::"
+msgstr "Quelques exemples d'utilisation : ::"
 
 #: library/argparse.rst:1504
 msgid ""
@@ -3562,7 +3563,7 @@ msgstr ""
 
 #: library/ast.rst:88
 msgid "or the more compact ::"
-msgstr "ou, plus compact ::"
+msgstr "ou, plus compact : ::"
 
 #: library/ast.rst:97
 msgid "Abstract Grammar"
@@ -11640,7 +11641,7 @@ msgstr ""
 #: library/xmlrpc.server.rst:219
 #, fuzzy
 msgid "Example::"
-msgstr "Exemples ::"
+msgstr "Exemples : ::"
 
 #: library/compileall.rst:2
 msgid ":mod:`compileall` --- Byte-compile Python libraries"
@@ -11930,7 +11931,7 @@ msgstr ""
 
 #: library/concurrent.futures.rst:106
 msgid "And::"
-msgstr "Et ::"
+msgstr "Et : ::"
 
 #: library/concurrent.futures.rst:120
 msgid ""
@@ -12366,7 +12367,7 @@ msgstr ""
 #: library/time.rst:371 library/turtle.rst:1480
 #, fuzzy
 msgid "For example:"
-msgstr "Par exemple ::"
+msgstr "Par exemple : ::"
 
 #: library/configparser.rst:283
 msgid "Interpolation of values"
@@ -21663,7 +21664,7 @@ msgstr ""
 
 #: library/datetime.rst:1437
 msgid "or ::"
-msgstr "ou ::"
+msgstr "ou : ::"
 
 #: library/datetime.rst:1449
 msgid ""
@@ -34326,7 +34327,7 @@ msgid ""
 msgstr ""
 "Une méthode de classe reçoit implicitement la classe en premier augment, "
 "tout comme une méthode d'instance reçoit l'instance. Voici comment déclarer "
-"une méthode de classe ::"
+"une méthode de classe : ::"
 
 #: library/functions.rst:172
 msgid ""
@@ -34644,7 +34645,7 @@ msgstr ""
 #: library/functions.rst:363 library/itertools.rst:143
 #: library/itertools.rst:192 library/itertools.rst:412 library/stdtypes.rst:462
 msgid "Equivalent to::"
-msgstr "Équivalent à ::"
+msgstr "Équivalent à : ::"
 
 #: library/functions.rst:374
 msgid ""
@@ -34879,7 +34880,7 @@ msgstr "Dans argument, ``0.0`` est donné."
 #: library/functions.rst:503 library/pkgutil.rst:161 library/subprocess.rst:44
 #: library/subprocess.rst:79 library/subprocess.rst:121
 msgid "Examples::"
-msgstr "Exemples ::"
+msgstr "Exemples : ::"
 
 #: library/functions.rst:516
 msgid "The float type is described in :ref:`typesnumeric`."
@@ -35040,7 +35041,7 @@ msgstr ""
 "Si l'argument *prompt* est donné, il est écrit sur la sortie standard sans "
 "le retour à la ligne final. La fonction lis ensuite une ligne sur l'entrée "
 "standard et la convertis en chaîne (supprimant le retour à la ligne final) "
-"quelle donne. Lorsque EOF est lu, :exc:`EOFError` est levée. Exemple ::"
+"quelle donne. Lorsque EOF est lu, :exc:`EOFError` est levée. Exemple : ::"
 
 #: library/functions.rst:631
 msgid ""
@@ -36281,7 +36282,7 @@ msgstr ""
 #: library/textwrap.rst:66 library/threading.rst:835 library/tkinter.rst:277
 #: library/tkinter.rst:539 library/tkinter.rst:713 library/winsound.rst:73
 msgid "For example::"
-msgstr "Par exemple ::"
+msgstr "Par exemple : ::"
 
 #: library/functools.rst:140
 msgid ""
@@ -77816,11 +77817,11 @@ msgstr ""
 
 #: library/socketserver.rst:416
 msgid "Server::"
-msgstr "Serveur ::"
+msgstr "Serveur : ::"
 
 #: library/socketserver.rst:424
 msgid "Client::"
-msgstr "Client ::"
+msgstr "Client : ::"
 
 #: library/socketserver.rst:435
 msgid ":class:`socketserver.UDPServer` Example"
@@ -84070,7 +84071,7 @@ msgstr ""
 
 #: library/string.rst:251
 msgid "Some examples::"
-msgstr "Quelques exemples ::"
+msgstr "Quelques exemples : ::"
 
 #: library/string.rst:257
 msgid ""
@@ -100550,7 +100551,7 @@ msgstr ""
 #: library/unicodedata.rst:145
 #, fuzzy
 msgid "Examples:"
-msgstr "Exemples ::"
+msgstr "Exemples : ::"
 
 #: library/unittest.rst:2
 msgid ":mod:`unittest` --- Unit testing framework"
@@ -101711,7 +101712,7 @@ msgstr ""
 
 #: library/unittest.rst:1009 library/unittest.rst:1066
 msgid "or::"
-msgstr "ou ::"
+msgstr "ou : ::"
 
 #: library/unittest.rst:1014
 msgid "under the name ``assertRaisesRegexp``."

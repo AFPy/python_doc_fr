@@ -79,6 +79,8 @@ Quoi traduire, ne pas traduire, quel style ?
   trouve dans *glossary.po*.
 * Les mots anglais, nous les mettons en *italique* (en les entourant
   d'étoiles dans la traduction).
+* Les "::" de fin de paragraphes se traduisent " : ::" en français,
+  pour créer l'espace précédent le ":" du français.
 
 Norme et style
 --------------
