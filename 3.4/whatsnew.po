@@ -25526,6 +25526,8 @@ msgid ""
 ":c:macro:`Py_UNICODE_strcat`: use :c:func:`PyUnicode_CopyCharacters` or :c:"
 "func:`PyUnicode_FromFormat`"
 msgstr ""
+":c:macro:`Py_UNICODE_strcat` : utilisez :c:func:`PyUnicode_CopyCharacters` "
+"ou :c:func:`PyUnicode_FromFormat`"
 
 #: whatsnew/3.3.rst:2293
 msgid ""
@@ -25536,21 +25538,23 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2296
 msgid ":c:macro:`Py_UNICODE_strcmp`: use :c:func:`PyUnicode_Compare`"
-msgstr ""
+msgstr ":c:macro:`Py_UNICODE_strcmp` : utilisez :c:func:`PyUnicode_Compare`"
 
 #: whatsnew/3.3.rst:2297
 msgid ":c:macro:`Py_UNICODE_strncmp`: use :c:func:`PyUnicode_Tailmatch`"
-msgstr ""
+msgstr ":c:macro:`Py_UNICODE_strncmp` : utilisez :c:func:`PyUnicode_Tailmatch`"
 
 #: whatsnew/3.3.rst:2298
 msgid ""
 ":c:macro:`Py_UNICODE_strchr`, :c:macro:`Py_UNICODE_strrchr`: use :c:func:"
 "`PyUnicode_FindChar`"
 msgstr ""
+":c:macro:`Py_UNICODE_strchr`, :c:macro:`Py_UNICODE_strrchr` : utilisez :c:"
+"func:`PyUnicode_FindChar`"
 
 #: whatsnew/3.3.rst:2300
 msgid ":c:macro:`Py_UNICODE_FILL`: use :c:func:`PyUnicode_Fill`"
-msgstr ""
+msgstr ":c:macro:`Py_UNICODE_FILL` : utilisez :c:func:`PyUnicode_Fill`"
 
 #: whatsnew/3.3.rst:2301
 msgid ":c:macro:`Py_UNICODE_MATCH`"
@@ -25563,6 +25567,7 @@ msgstr "Encodeurs :"
 #: whatsnew/3.3.rst:2305
 msgid ":c:func:`PyUnicode_Encode`: use :c:func:`PyUnicode_AsEncodedObject`"
 msgstr ""
+":c:func:`PyUnicode_Encode` : utilisez :c:func:`PyUnicode_AsEncodedObject`"
 
 #: whatsnew/3.3.rst:2306
 msgid ":c:func:`PyUnicode_EncodeUTF7`"
@@ -25573,6 +25578,8 @@ msgid ""
 ":c:func:`PyUnicode_EncodeUTF8`: use :c:func:`PyUnicode_AsUTF8` or :c:func:"
 "`PyUnicode_AsUTF8String`"
 msgstr ""
+":c:func:`PyUnicode_EncodeUTF8` : utilisez :c:func:`PyUnicode_AsUTF8` ou :c:"
+"func:`PyUnicode_AsUTF8String`"
 
 #: whatsnew/3.3.rst:2309
 msgid ":c:func:`PyUnicode_EncodeUTF32`"
@@ -25587,21 +25594,28 @@ msgid ""
 ":c:func:`PyUnicode_EncodeUnicodeEscape:` use :c:func:"
 "`PyUnicode_AsUnicodeEscapeString`"
 msgstr ""
+":c:func:`PyUnicode_EncodeUnicodeEscape:` utilisez :c:func:"
+"`PyUnicode_AsUnicodeEscapeString`"
 
 #: whatsnew/3.3.rst:2313
 msgid ""
 ":c:func:`PyUnicode_EncodeRawUnicodeEscape:` use :c:func:"
 "`PyUnicode_AsRawUnicodeEscapeString`"
 msgstr ""
+":c:func:`PyUnicode_EncodeRawUnicodeEscape:` utilisez :c:func:"
+"`PyUnicode_AsRawUnicodeEscapeString`"
 
 #: whatsnew/3.3.rst:2315
 msgid ""
 ":c:func:`PyUnicode_EncodeLatin1`: use :c:func:`PyUnicode_AsLatin1String`"
 msgstr ""
+":c:func:`PyUnicode_EncodeLatin1` : utilisez :c:func:"
+"`PyUnicode_AsLatin1String`"
 
 #: whatsnew/3.3.rst:2316
 msgid ":c:func:`PyUnicode_EncodeASCII`: use :c:func:`PyUnicode_AsASCIIString`"
 msgstr ""
+":c:func:`PyUnicode_EncodeASCII` : utilisez :c:func:`PyUnicode_AsASCIIString`"
 
 #: whatsnew/3.3.rst:2317
 msgid ":c:func:`PyUnicode_EncodeCharmap`"
@@ -25622,6 +25636,8 @@ msgid ""
 ":c:func:`PyUnicode_EncodeDecimal`, :c:func:"
 "`PyUnicode_TransformDecimalToASCII`"
 msgstr ""
+":c:func:`PyUnicode_EncodeDecimal`, :c:func:"
+"`PyUnicode_TransformDecimalToASCII`"
 
 #: whatsnew/3.3.rst:2326
 msgid "Deprecated features"
@@ -26171,7 +26187,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:175
 msgid "New Features"
-msgstr ""
+msgstr "Nouvelles fonctionnalités"
 
 #: whatsnew/3.4.rst:180
 msgid "PEP 453: Explicit Bootstrapping of PIP in Python Installations"
@@ -26763,7 +26779,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:671
 msgid "colorsys"
-msgstr ""
+msgstr "colorsys"
 
 #: whatsnew/3.4.rst:673
 msgid ""
@@ -26945,7 +26961,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:835
 msgid "filecmp"
-msgstr ""
+msgstr "filecmp"
 
 #: whatsnew/3.4.rst:837
 msgid ""
@@ -27017,7 +27033,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:893
 msgid "glob"
-msgstr ""
+msgstr "glob"
 
 #: whatsnew/3.4.rst:895
 msgid ""
@@ -27125,7 +27141,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:981
 msgid "importlib"
-msgstr ""
+msgstr "importlib"
 
 #: whatsnew/3.4.rst:983
 msgid ""
@@ -28325,7 +28341,7 @@ msgstr ""
 
 #: whatsnew/3.4.rst:1932
 msgid "Other Improvements"
-msgstr ""
+msgstr "Autres améliorations"
 
 #: whatsnew/3.4.rst:1936
 msgid ""
@@ -29220,7 +29236,7 @@ msgstr ""
 
 #: whatsnew/changelog.rst:3
 msgid "Changelog"
-msgstr ""
+msgstr "Changements"
 
 #: ../../../Misc/NEWS:5
 #, fuzzy
@@ -29229,7 +29245,7 @@ msgstr "Portage vers Python 3.2"
 
 #: ../../../Misc/NEWS:7
 msgid "Release date: tba"
-msgstr ""
+msgstr "Date de sortie : à déterminer"
 
 #: ../../../Misc/NEWS:10 ../../../Misc/NEWS:33 ../../../Misc/NEWS:844
 #: ../../../Misc/NEWS:1280 ../../../Misc/NEWS:1724 ../../../Misc/NEWS:1778
@@ -30784,7 +30800,7 @@ msgstr ""
 #: ../../../Misc/NEWS:7299 ../../../Misc/NEWS:7827 ../../../Misc/NEWS:8086
 #: ../../../Misc/NEWS:10181
 msgid "Tests"
-msgstr ""
+msgstr "Tests"
 
 #: ../../../Misc/NEWS:744
 msgid ""
@@ -33424,7 +33440,7 @@ msgstr ""
 
 #: ../../../Misc/NEWS:2054
 msgid "Add test case for freeze."
-msgstr ""
+msgstr "Ajoute un test pour *freeze*."
 
 #: ../../../Misc/NEWS:2056
 msgid ""
@@ -33460,7 +33476,7 @@ msgstr ""
 
 #: ../../../Misc/NEWS:2073
 msgid "Add support for ``yield from`` to 2to3."
-msgstr ""
+msgstr "Ajoute le support de ``yield from`` à *2to3*."
 
 #: ../../../Misc/NEWS:2075
 msgid "Add support for the PEP 465 matrix multiplication operator to 2to3."
@@ -34186,7 +34202,7 @@ msgstr ""
 
 #: ../../../Misc/NEWS:2483
 msgid "Python 3.4.0 Beta 3"
-msgstr ""
+msgstr "Python 3.4.0 Beta 3"
 
 #: ../../../Misc/NEWS:2485
 msgid "Release date: 2014-01-26"
@@ -34639,11 +34655,11 @@ msgstr ""
 
 #: ../../../Misc/NEWS:2723
 msgid "Python 3.4.0 Beta 2"
-msgstr ""
+msgstr "Python 3.4.0 Beta 2"
 
 #: ../../../Misc/NEWS:2725
 msgid "Release date: 2014-01-05"
-msgstr ""
+msgstr "Date de sortie : 05-01-2014"
 
 #: ../../../Misc/NEWS:2730
 msgid ""
@@ -35432,7 +35448,7 @@ msgstr ""
 
 #: ../../../Misc/NEWS:3099
 msgid "Python 3.4.0 Beta 1"
-msgstr ""
+msgstr "Python 3.4.0 Beta 1"
 
 #: ../../../Misc/NEWS:3101
 msgid "Release date: 2013-11-24"
@@ -36401,7 +36417,7 @@ msgstr ""
 
 #: ../../../Misc/NEWS:3570
 msgid "Python 3.4.0 Alpha 4"
-msgstr ""
+msgstr "Python 3.4.0 Alpha 4"
 
 #: ../../../Misc/NEWS:3572
 msgid "Release date: 2013-10-20"
@@ -36855,11 +36871,11 @@ msgstr ""
 
 #: ../../../Misc/NEWS:3800
 msgid "Python 3.4.0 Alpha 3"
-msgstr ""
+msgstr "Python 3.4.0 Alpha 3"
 
 #: ../../../Misc/NEWS:3802
 msgid "Release date: 2013-09-29"
-msgstr ""
+msgstr "Date de sortie : 29-09-2013"
 
 #: ../../../Misc/NEWS:3807
 msgid ""
@@ -37050,11 +37066,11 @@ msgstr ""
 
 #: ../../../Misc/NEWS:3921
 msgid "Python 3.4.0 Alpha 2"
-msgstr ""
+msgstr "Python 3.4.0 Alpha 2"
 
 #: ../../../Misc/NEWS:3923
 msgid "Release date: 2013-09-09"
-msgstr ""
+msgstr "Date de sortie : 09-09-2013"
 
 #: ../../../Misc/NEWS:3928
 msgid ""
@@ -42180,18 +42196,25 @@ msgid ""
 "`Issue #15533 <https://bugs.python.org/15533>`__: Clarify docs and add tests "
 "for `subprocess.Popen()`'s cwd argument."
 msgstr ""
+"`Ticket #15533 <https://bugs.python.org/15533>`__ : Clarifie la "
+"documentation et ajoute des tests pour l’argument *cwd* de `subprocess."
+"Popen()`."
 
 #: ../../../Misc/NEWS:6296
 msgid ""
 "`Issue #15979 <https://bugs.python.org/15979>`__: Improve timeit "
 "documentation."
 msgstr ""
+"`Ticket #15979 <https://bugs.python.org/15979>`__ : Améliore la traduction "
+"de *timeit*."
 
 #: ../../../Misc/NEWS:6298
 msgid ""
 "`Issue #16036 <https://bugs.python.org/16036>`__: Improve documentation of "
 "built-in `int()`'s signature and arguments."
 msgstr ""
+"`Ticket #16036 <https://bugs.python.org/16036>`__ : Améliore la "
+"documentation de la signature et des arguments de la primitive `int()`."
 
 #: ../../../Misc/NEWS:6301
 msgid ""
@@ -42199,12 +42222,18 @@ msgid ""
 "`argparse` docs, re: add_argument() type and default arguments.  Patch "
 "contributed by Chris Jerdonek."
 msgstr ""
+"`Ticket #15935 <https://bugs.python.org/15935>`__ : Clarification de la "
+"documentation d’`argparse` à propos du type et des arguments par défaut "
+"d’`add_argument()`. Contribution par Chris Jerdonek."
 
 #: ../../../Misc/NEWS:6304
 msgid ""
 "`Issue #11964 <https://bugs.python.org/11964>`__: Document a change in v3.2 "
 "to the behavior of the indent parameter of json encoding operations."
 msgstr ""
+"`Ticket #11964 <https://bugs.python.org/11964>`__ : Documente un changement "
+"dans la v3.2 à propos du paramètre *indent* des opérations d’encodage en "
+"JSON."
 
 #: ../../../Misc/NEWS:6307
 msgid ""

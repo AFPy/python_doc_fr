@@ -25336,6 +25336,8 @@ msgid ""
 ":c:macro:`Py_UNICODE_strcat`: use :c:func:`PyUnicode_CopyCharacters` or :c:"
 "func:`PyUnicode_FromFormat`"
 msgstr ""
+":c:macro:`Py_UNICODE_strcat` : utilisez :c:func:`PyUnicode_CopyCharacters` "
+"ou :c:func:`PyUnicode_FromFormat`"
 
 #: whatsnew/3.3.rst:2293
 msgid ""
@@ -25346,21 +25348,23 @@ msgstr ""
 
 #: whatsnew/3.3.rst:2296
 msgid ":c:macro:`Py_UNICODE_strcmp`: use :c:func:`PyUnicode_Compare`"
-msgstr ""
+msgstr ":c:macro:`Py_UNICODE_strcmp` : utilisez :c:func:`PyUnicode_Compare`"
 
 #: whatsnew/3.3.rst:2297
 msgid ":c:macro:`Py_UNICODE_strncmp`: use :c:func:`PyUnicode_Tailmatch`"
-msgstr ""
+msgstr ":c:macro:`Py_UNICODE_strncmp` : utilisez :c:func:`PyUnicode_Tailmatch`"
 
 #: whatsnew/3.3.rst:2298
 msgid ""
 ":c:macro:`Py_UNICODE_strchr`, :c:macro:`Py_UNICODE_strrchr`: use :c:func:"
 "`PyUnicode_FindChar`"
 msgstr ""
+":c:macro:`Py_UNICODE_strchr`, :c:macro:`Py_UNICODE_strrchr` : utilisez :c:"
+"func:`PyUnicode_FindChar`"
 
 #: whatsnew/3.3.rst:2300
 msgid ":c:macro:`Py_UNICODE_FILL`: use :c:func:`PyUnicode_Fill`"
-msgstr ""
+msgstr ":c:macro:`Py_UNICODE_FILL` : utilisez :c:func:`PyUnicode_Fill`"
 
 #: whatsnew/3.3.rst:2301
 msgid ":c:macro:`Py_UNICODE_MATCH`"
@@ -25373,6 +25377,7 @@ msgstr "Encodeurs :"
 #: whatsnew/3.3.rst:2305
 msgid ":c:func:`PyUnicode_Encode`: use :c:func:`PyUnicode_AsEncodedObject`"
 msgstr ""
+":c:func:`PyUnicode_Encode` : utilisez :c:func:`PyUnicode_AsEncodedObject`"
 
 #: whatsnew/3.3.rst:2306
 msgid ":c:func:`PyUnicode_EncodeUTF7`"
@@ -25383,6 +25388,8 @@ msgid ""
 ":c:func:`PyUnicode_EncodeUTF8`: use :c:func:`PyUnicode_AsUTF8` or :c:func:"
 "`PyUnicode_AsUTF8String`"
 msgstr ""
+":c:func:`PyUnicode_EncodeUTF8` : utilisez :c:func:`PyUnicode_AsUTF8` ou :c:"
+"func:`PyUnicode_AsUTF8String`"
 
 #: whatsnew/3.3.rst:2309
 msgid ":c:func:`PyUnicode_EncodeUTF32`"
@@ -25397,21 +25404,28 @@ msgid ""
 ":c:func:`PyUnicode_EncodeUnicodeEscape:` use :c:func:"
 "`PyUnicode_AsUnicodeEscapeString`"
 msgstr ""
+":c:func:`PyUnicode_EncodeUnicodeEscape:` utilisez :c:func:"
+"`PyUnicode_AsUnicodeEscapeString`"
 
 #: whatsnew/3.3.rst:2313
 msgid ""
 ":c:func:`PyUnicode_EncodeRawUnicodeEscape:` use :c:func:"
 "`PyUnicode_AsRawUnicodeEscapeString`"
 msgstr ""
+":c:func:`PyUnicode_EncodeRawUnicodeEscape:` utilisez :c:func:"
+"`PyUnicode_AsRawUnicodeEscapeString`"
 
 #: whatsnew/3.3.rst:2315
 msgid ""
 ":c:func:`PyUnicode_EncodeLatin1`: use :c:func:`PyUnicode_AsLatin1String`"
 msgstr ""
+":c:func:`PyUnicode_EncodeLatin1` : utilisez :c:func:"
+"`PyUnicode_AsLatin1String`"
 
 #: whatsnew/3.3.rst:2316
 msgid ":c:func:`PyUnicode_EncodeASCII`: use :c:func:`PyUnicode_AsASCIIString`"
 msgstr ""
+":c:func:`PyUnicode_EncodeASCII` : utilisez :c:func:`PyUnicode_AsASCIIString`"
 
 #: whatsnew/3.3.rst:2317
 msgid ":c:func:`PyUnicode_EncodeCharmap`"
@@ -25432,6 +25446,8 @@ msgid ""
 ":c:func:`PyUnicode_EncodeDecimal`, :c:func:"
 "`PyUnicode_TransformDecimalToASCII`"
 msgstr ""
+":c:func:`PyUnicode_EncodeDecimal`, :c:func:"
+"`PyUnicode_TransformDecimalToASCII`"
 
 #: whatsnew/3.3.rst:2326
 msgid "Deprecated features"
@@ -25736,7 +25752,7 @@ msgstr ""
 
 #: whatsnew/changelog.rst:3
 msgid "Changelog"
-msgstr ""
+msgstr "Changements"
 
 #: ../../../Misc/NEWS:5
 msgid "Python 3.3.7"
@@ -25998,7 +26014,7 @@ msgstr ""
 #: ../../../Misc/NEWS:3212 ../../../Misc/NEWS:3562 ../../../Misc/NEWS:4090
 #: ../../../Misc/NEWS:4349 ../../../Misc/NEWS:6441
 msgid "Tests"
-msgstr ""
+msgstr "Tests"
 
 #: ../../../Misc/NEWS:128
 msgid ""

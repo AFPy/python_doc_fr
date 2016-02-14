@@ -31,7 +31,7 @@ Progression de la traduction:
       reference     2%     3%     2%     3%     3%
           howto     2%     2%     2%     2%     3%
           c-api     7%     8%     9%     8%    10%
-       whatsnew     4%     4%     3%     3%     6%
+       whatsnew     4%     4%     4%     3%     6%
         library    10%    12%    11%    11%    12%
       **TOTAL**    13%    14%    12%    12%    13%
 =============== ====== ====== ====== ====== ======
