@@ -66,5 +66,6 @@ def merge_po_files(po_files, fuzzy=False):
 
 if __name__ == '__main__':
     import sys
-    merge_po_files(glob.glob('*/*.po'), '--fuzzy' in sys.argv)
+    merge_po_files(glob.glob('*.po') + glob.glob('*/*.po'),
+                   '--fuzzy' in sys.argv)
     print("Don't forget to run ./scripts/fix_style.sh")
