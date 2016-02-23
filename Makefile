@@ -47,8 +47,8 @@ build: pull $(PATCHES) $(MO_FILES)
 	$(MAKE) -C gen/src/$(RELEASE)/Doc/ $(MODE)
 	[ $(MODE) = autobuild-stable ] && \
 	    mkdir -p www/archives && \
-	    cp -a gen/src/Doc/dist/* www/archives/ || :
-	rsync -a --delete gen/src/Doc/build/html/ www/$(RELEASE)/
+	    cp -a gen/src/$(RELEASE)Doc/dist/* www/archives/ || :
+	rsync -a --delete gen/src/$(RELEASE)/Doc/build/html/ www/$(RELEASE)/
 
 index_page:
 	markdown scripts/index.md | sed '/%s/{r /dev/stdin\
@@ -61,15 +61,15 @@ clean:
 
 sync:
 	mkdir -p $(RELEASE)/
-	#cd gen/src/$(RELEASE) && sphinx-build -Q -b gettext Doc pot/
-	#for POT in gen/src/$(RELEASE)/pot/*; \
-	#do \
-	#    PO="$$(basename $${POT%.pot}.po)"; \
-	#    if [ -f "$(RELEASE)/$$PO" ]; \
-	#    then \
-	#        msgmerge -U "$(RELEASE)/$$PO" "$$POT"; \
-	#    else \
-	#        msgcat -o "$(RELEASE)/$$PO" "$$POT"; \
-	#    fi \
-	#done
-	#@echo "You may commit this by using git commit -u -m '$(RELEASE): merge pot files'"
+	cd gen/src/$(RELEASE) && sphinx-build -Q -b gettext Doc pot/
+	for POT in gen/src/$(RELEASE)/pot/*; \
+	do \
+	    PO="$$(basename $${POT%.pot}.po)"; \
+	    if [ -f "$(RELEASE)/$$PO" ]; \
+	    then \
+	        msgmerge -U "$(RELEASE)/$$PO" "$$POT"; \
+	    else \
+	        msgcat -o "$(RELEASE)/$$PO" "$$POT"; \
+	    fi \
+	done
+	@echo "You may commit this by using git commit -u -m '$(RELEASE): merge pot files'"

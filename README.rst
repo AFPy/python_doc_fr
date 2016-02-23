@@ -195,7 +195,7 @@ Ou pour une autre version : ::
 
   $ make sync RELEASE=2.7
 
-Ou pour toutes les versionsd d'un coup : ::
+Ou pour toutes les versions d'un coup : ::
 
   $ make all_sync
 
