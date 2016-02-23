@@ -7,5 +7,5 @@ index 5b63cad..0400f25 100644
  #    'cfunction': [...]
  }
 +
-+locale_dirs = ['../../mo']
++locale_dirs = ['../mo']
 +language = 'fr'

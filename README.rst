@@ -173,7 +173,7 @@ Plus compliqué, pour générer une version spécifique : ::
 
 Ou toutes les releases : ::
 
-  $ make all_releases
+  $ make build_all
 
 Ou générer aussi le Latex et les PDF : ::
 
@@ -181,7 +181,10 @@ Ou générer aussi le Latex et les PDF : ::
 
 Donc, pour tout mettre en prod, attention ça prend du temps : ::
 
-  $ make all_releases MODE=autobuild-stable
+  $ make build_all MODE=autobuild-stable
+
+Regardez aussi le Makefile lui même pour toutes les autres options et
+détails.
 
 
 Comment on met à jour les *.pot*, et comment on les merge dans les *.po* ?
@@ -189,15 +192,15 @@ Comment on met à jour les *.pot*, et comment on les merge dans les *.po* ?
 
 Le Makefile le permet via : ::
 
-  $ make sync
+  $ make msgmerge
 
 Ou pour une autre version : ::
 
-  $ make sync RELEASE=2.7
+  $ make msgmerge RELEASE=2.7
 
 Ou pour toutes les versions d'un coup : ::
 
-  $ make all_sync
+  $ make mermerge_all
 
 Comment ça part sur afpy.org/python ?
 -------------------------------------
