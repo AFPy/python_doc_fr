@@ -45,9 +45,6 @@ $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/
 
 build: gen/src/$(release)/ $(PATCHES) $(MO_FILES)
 	$(MAKE) -C gen/src/$(RELEASE)/Doc/ $(MODE)
-	[ $(MODE) = autobuild-stable ] && \
-	    mkdir -p www/archives && \
-	    cp -a gen/src/$(RELEASE)Doc/dist/* www/archives/ || :
 
 rsync: build
 	# You'll need your ssh public key to be in afpy.org:/home/pythondoc/.ssh/authorized_keys
