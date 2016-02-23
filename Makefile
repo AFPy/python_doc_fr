@@ -12,7 +12,7 @@ MO_FILES=$(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,
 
 .PHONY: $(RELEASES) $(PATCHES)
 
-all: build index_page
+all: pull build index_page
 
 all_releases: RULE=build
 all_releases: $(RELEASES)
@@ -43,7 +43,7 @@ gen/src/%/mo/fr/LC_MESSAGES/:
 $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/
 	msgfmt $< -o $@
 
-build: pull $(PATCHES) $(MO_FILES)
+build: gen/src/$(release)/ $(PATCHES) $(MO_FILES)
 	$(MAKE) -C gen/src/$(RELEASE)/Doc/ $(MODE)
 	[ $(MODE) = autobuild-stable ] && \
 	    mkdir -p www/archives && \
