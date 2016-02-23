@@ -158,32 +158,56 @@ un ticket si vous n'êtes pas d'acord) :
 Comment générer la doc localement ?
 -----------------------------------
 
-Un script, ``./scripts/build.sh`` permet de générer la doc, il
-s'occupera pour vous de rappatrier un clone de *cpython*, de le
-configurer, d'y appliquer éventuellement quelques patches (en
-attendant qu'ils soient mergés upstream), et vous vous retrouvez si
-tout va bien avec la doc dans ``www/``.
+La doc de Python est générée par un Makefile, nous utilisons aussi un
+Makefile lançant le leur.
 
-Pour générer une autre version que la dernière, la passer en
-paramètre, comme : ``./scripts/build.sh 3.2``.
+Pour faire simple, pour générer le HTML de la dernière version dans
+`www/` faite juste : ::
+
+  $ pip -q install --user -U -r scripts/requirements.txt
+  $ make
+
+Plus compliqué, pour générer une version spécifique : ::
+
+  $ make RELEASE=2.7
+
+Ou toutes les releases : ::
+
+  $ make all_releases
+
+Ou générer aussi le Latex et les PDF : ::
+
+  $ make MODE=autobuild-stable
+
+Donc, pour tout mettre en prod, attention ça prend du temps : ::
+
+  $ make all_releases MODE=autobuild-stable
+
 
 Comment on met à jour les *.pot*, et comment on les merge dans les *.po* ?
 --------------------------------------------------------------------------
 
-Un script, ``./scripts/sync.sh`` permet de récupérer ou mettre à jour
-un clone de *cpython* dans ``gen/``, il y fera passer un ``xgettext``,
-fera les bon msgmerge qui vont bien, sur la dernière version par
-défaut, lancez donc plutôt:
+Le Makefile le permet via : ::
 
-    for V in 2.7 3.2 3.3 3.4 3.5; do ./scripts/sync.sh $V; done
+  $ make sync
+
+Ou pour une autre version : ::
+
+  $ make sync RELEASE=2.7
+
+Ou pour toutes les versionsd d'un coup : ::
+
+  $ make all_sync
 
 Comment ça part sur afpy.org/python ?
 -------------------------------------
 
 Tout peut être amené à bouger, mais pour le moment, rien n'est executé
-server side, le protocole actuel pour mettre à jour la prod est donc de lancer
+côté serveur, le protocole actuel pour mettre à jour la prod est donc
+de lancer : ::
 
-    for V in 2.7 3.2 3.3 3.4 3.5; do ./scripts/build.sh $V; done
-    rsync -az www/ afpy.org:/home/mandark/www/
+  $ make all_releases
+  $ make index_page
+  $ rsync -az www/ afpy.org:/home/mandark/www/
 
 tout simplement.
