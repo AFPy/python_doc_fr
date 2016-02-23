@@ -55,9 +55,7 @@ index_page:
 	 d}' scripts/index.tpl > www/index.html
 
 clean:
-	git -C gen/src/$(RELEASE) clean -dfq
-	git -C gen/src/$(RELEASE) checkout -- .
-	git -C gen/src/$(RELEASE) checkout $(RELEASE)
+	rm -fr gen
 
 sync:
 	mkdir -p $(RELEASE)/
