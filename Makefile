@@ -48,7 +48,12 @@ build: pull $(PATCHES) $(MO_FILES)
 	[ $(MODE) = autobuild-stable ] && \
 	    mkdir -p www/archives && \
 	    cp -a gen/src/$(RELEASE)Doc/dist/* www/archives/ || :
-	rsync -a --delete gen/src/$(RELEASE)/Doc/build/html/ www/$(RELEASE)/
+
+rsync: build
+	# You'll need your ssh public key to be in afpy.org:/home/pythondoc/.ssh/authorized_keys
+	rsync -a --delete-delay gen/src/$(RELEASE)/Doc/build/html/ pythondoc@afpy.org:/home/pythondoc/www/$(RELEASE)
+	# We're reloading apache, else it misses the index.html and whines with directory listing permission denied
+	ssh pythondoc@afpy.org sudo /usr/sbin/service apache2 reload
 
 index_page:
 	markdown scripts/index.md | sed '/%s/{r /dev/stdin\
