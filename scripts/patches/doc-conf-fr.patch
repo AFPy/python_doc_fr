@@ -6,5 +6,5 @@ index f803de2..e4cb9ca 100644
  
  # Relative filename of the reference count data file.
  refcount_file = 'data/refcounts.dat'
-+locale_dirs = ['../../mo']
++locale_dirs = ['../mo']
 +language = 'fr'
