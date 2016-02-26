@@ -39,15 +39,20 @@ Progression de la traduction:
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
 
-Pour cela récupérez les fichiers *.po* de la partie qui vous intéresse,
-d'une des façons suivantes:
+Pour cela récupérez les fichiers *.po* de la partie qui vous
+intéresse, soit via `Download ZIP` (si `git` n'est pas encore fait
+pour vous), soit : ::
 
-* forkez ce dépôt (conseillée)
-* cliquez sur l'icone "Download ZIP"
+  $ git clone https://github.com/AFPy/python_doc_fr.git # Ou votre fork
+  $ cd python_doc_fr
+  $ make requirements # Juste la première fois
+  $ PATH=$PATH:~/.local/bin/ # Vous devriez mettre ça dans votre ~/.bashrc
+  $ make # Génère la doc en HTML chez vous
+  $ x-www-browser gen/src/3.5/Doc/build/html/index.html
 
 Éditer les fichiers avec l'éditeur de votre choix, il en existe beaucoup:
 
-* Le classique: `poedit <http://www.poedit.net/>`_
+* Le classique, fortement conseillé: `poedit <http://www.poedit.net/>`_
 * gted
 * gtranslator
 * lokalize
