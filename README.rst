@@ -79,9 +79,7 @@ Quoi traduire, ne pas traduire, quel style ?
   pointe dessus.
 * Pour le moment, nous laissons à part ``licence.po``,
   `voir le ticket #30 <https://github.com/AFPy/python_doc_fr/issues/30>`.
-* Les référence *:ref:`...`* ne sont pas à traduire
-* Les références *:term:`...`* sont à traduire, leur traduction se
-  trouve dans *glossary.po*.
+* Les référence *:ref:`...`*, *:term:`...`* ne sont pas à traduire
 * Les mots anglais, nous les mettons en *italique* (en les entourant
   d'étoiles dans la traduction).
 * Les "::" de fin de paragraphes se traduisent " : ::" en français,
