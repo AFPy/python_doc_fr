@@ -36156,6 +36156,8 @@ msgid ""
 "The :func:`isinstance` built-in function is recommended for testing the type "
 "of an object, because it takes subclasses into account."
 msgstr ""
+"La fonction native :func:`isinstance` est recommandée pour tester le type "
+"d'un objet car elle prend en compte l'héritage."
 
 #: library/functions.rst:1388
 msgid ""
