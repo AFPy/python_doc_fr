@@ -68,7 +68,7 @@ gen/src/%/:
 	git clone --depth 1 --branch "$(RELEASE)" https://github.com/python/cpython.git $@
 
 requirements:
-	pip -q install --user -U -r scripts/requirements.txt
+	pip -q install --user -r scripts/requirements.txt
 
 pull: gen/src/$(RELEASE)/
 	git -C gen/src/$(RELEASE) pull --ff-only
@@ -84,7 +84,7 @@ gen/src/%/mo/fr/LC_MESSAGES/:
 $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/
 	msgfmt $< -o $@
 
-build: gen/src/$(RELEASE)/ $(PATCHES) $(MO_FILES)
+build: requirements gen/src/$(RELEASE)/ $(PATCHES) $(MO_FILES)
 	$(MAKE) -C gen/src/$(RELEASE)/Doc/ $(MODE)
 
 rsync: build

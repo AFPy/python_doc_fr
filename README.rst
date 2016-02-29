@@ -45,7 +45,6 @@ pour vous), soit : ::
 
   $ git clone https://github.com/AFPy/python_doc_fr.git # Ou votre fork
   $ cd python_doc_fr
-  $ make requirements # Juste la première fois
   $ PATH=$PATH:~/.local/bin/ # Vous devriez mettre ça dans votre ~/.bashrc
   $ make # Génère la doc en HTML chez vous
   $ x-www-browser gen/src/3.5/Doc/build/html/index.html
