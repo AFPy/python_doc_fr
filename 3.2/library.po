@@ -36188,7 +36188,7 @@ msgstr ""
 
 #: library/functions.rst:1415
 msgid "Make an iterator that aggregates elements from each of the iterables."
-msgstr ""
+msgstr "Construit un itérateur agrégeant les éléments de tous les itérables."
 
 #: library/functions.rst:1417
 msgid ""
@@ -36198,6 +36198,11 @@ msgid ""
 "argument, it returns an iterator of 1-tuples.  With no arguments, it returns "
 "an empty iterator.  Equivalent to::"
 msgstr ""
+"Donne un itérateur de tuples, où le *i*ème tuple contiens le *i*ème élément "
+"de chacune des séquences ou itérables fournis. L'itérateur s'arrête lorsque "
+"le plus petit iterable fourni est épuisé. Avec un seul argument iterable, "
+"elle donne un itérateur sur des *tuples* d'un élément. Sans arguments, elle "
+"donne un itérateur vide. Équivalent à : ::"
 
 #: library/functions.rst:1436
 msgid ""
@@ -36212,18 +36217,26 @@ msgid ""
 "care about trailing, unmatched values from the longer iterables.  If those "
 "values are important, use :func:`itertools.zip_longest` instead."
 msgstr ""
+":func:`zip` ne devrait être utilisée avec des itérables de longueur "
+"différente que lorsque les dernières données des itérables les plus longs "
+"peuvent être ignorées. Si c'est valeurs sont importantes, utilisez plutôt :"
+"func:`itertools.zip_longest`."
 
 #: library/functions.rst:1444
 msgid ""
 ":func:`zip` in conjunction with the ``*`` operator can be used to unzip a "
 "list::"
 msgstr ""
+":func:`zip` peut être utilisée conjointement avec l'opérateur ``*`` pour de-"
+"*zip*-per une liste : ::"
 
 #: library/functions.rst:1465
 msgid ""
 "This is an advanced function that is not needed in everyday Python "
 "programming, unlike :func:`importlib.import_module`."
 msgstr ""
+"C'est une fonction avancée qui n'est pas fréquemment nécessaire, "
+"contrairement à :func:`importlib.import_module`."
 
 #: library/functions.rst:1468
 msgid ""
