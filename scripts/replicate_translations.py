@@ -13,7 +13,9 @@ Hope they'll fix it.
 
 import glob
 import polib
+from tqdm import tqdm
 from difflib import SequenceMatcher as SM
+from fix_style import fix_style
 
 
 def find_best_match(possibilities, to_find):
@@ -36,22 +38,16 @@ def merge_po_files(po_files, fuzzy=False):
     """
     known_translations = {}
     # Aggregate all known translations
-    for po_file in po_files:
+    for po_file in tqdm(po_files, desc="Searching known translations"):
         po_file = polib.pofile(po_file)
         for entry in po_file:
-            if ((entry.msgid not in known_translations and
-                 'fuzzy' not in entry.flags and
-                 entry.msgstr != '')):
+            if 'fuzzy' not in entry.flags and entry.msgstr != '':
                 known_translations[entry.msgid] = entry.msgstr
     # Propagate them
     done = 0
-    for po_file in po_files:
-        print("{:.0%} done".format(done / len(po_files)))
-        done += 1
+    for po_file in tqdm(po_files, desc="Replicating them"):
         po_file = polib.pofile(po_file)
         for entry in po_file:
-            if entry.msgstr != '':
-                continue
             if entry.msgid in known_translations:
                 entry.msgstr = known_translations[entry.msgid]
             elif fuzzy:
@@ -66,6 +62,6 @@ def merge_po_files(po_files, fuzzy=False):
 
 if __name__ == '__main__':
     import sys
-    merge_po_files(glob.glob('*.po') + glob.glob('*/*.po'),
+    merge_po_files(sorted(glob.glob('*.po') + glob.glob('*/*.po')),
                    '--fuzzy' in sys.argv)
-    print("Don't forget to run ./scripts/fix_style.sh")
+    fix_style()

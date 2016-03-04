@@ -43,8 +43,8 @@ msgid ""
 "value yet."
 msgstr ""
 "Il n'est pas possible d'utiliser ces fonctions sur des objets qui n'ont pas "
-"été correctement initialisés, comme un objet liste qui a été créé avec :"
-"cfunc:`PyList_New` mais dont les éléments n'ont pas encore été mis à une "
+"été correctement initialisés, comme un objet liste qui a été créé avec :c:"
+"func:`PyList_New` mais dont les éléments n'ont pas encore été mis à une "
 "valeur non-\\ ``NULL``."
 
 #: c-api/allocation.rst:6
@@ -224,7 +224,7 @@ msgid ""
 msgstr ""
 "Ces fonctions sont utiles pour créer vos propres fonctions et méthodes "
 "d'extensions. Des informations supplémentaires et des exemples sont "
-"disponibles ici: ref:`extending-index`."
+"disponibles ici: :ref:`extending-index`."
 
 #: c-api/arg.rst:12
 #, fuzzy
@@ -235,8 +235,8 @@ msgid ""
 "arguments.  The format strings use the same syntax for each of these "
 "functions."
 msgstr ""
-"Dans Les trois premières de ces fonctions décrites, :cfunc: "
-"`PyArg_ParseTuple`, :cfunc: `PyArg_ParseTupleAndKeywords`, et :cfunc: "
+"Dans Les trois premières de ces fonctions décrites, :c:func:"
+"`PyArg_ParseTuple`, :c:func:`PyArg_ParseTupleAndKeywords`, et :c:func:"
 "`PyArg_Parse`, toutes utilisent *des chaînes de format* qui sont utilisées "
 "pour indiquer à la fonction les arguments attendus. Les chaînes de format "
 "utilise la même syntaxe pour chacune de ces fonctions."
@@ -788,7 +788,7 @@ msgstr ""
 #: c-api/arg.rst:219
 #, fuzzy
 msgid "Numbers"
-msgstr "Nombres"
+msgstr "Les nombres"
 
 #: c-api/arg.rst:223
 msgid "b (int) [unsigned char]"
@@ -4760,7 +4760,7 @@ msgstr ":exc:`FileExistsError`"
 
 #: c-api/exceptions.rst:681
 msgid ":c:data:`PyExc_FileNotFoundError`"
-msgstr ":c:data:`PyExc_FileNotFoundError`"
+msgstr ":c:data:`PyExc_FloatingPointError`"
 
 #: c-api/exceptions.rst:681
 msgid ":exc:`FileNotFoundError`"
@@ -4932,7 +4932,7 @@ msgstr ":exc:`SystemError`"
 
 #: c-api/exceptions.rst:723
 msgid ":c:data:`PyExc_TimeoutError`"
-msgstr ":c:data:`PyExc_TimeoutError`"
+msgstr ":c:data:`PyExc_ImportError`"
 
 #: c-api/exceptions.rst:723
 msgid ":exc:`TimeoutError`"
@@ -7421,7 +7421,7 @@ msgstr ""
 
 #: c-api/intro.rst:368
 msgid "Exceptions"
-msgstr "Exceptions"
+msgstr "Les exceptions"
 
 #: c-api/intro.rst:370
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: installing/index.rst:7
 msgid "Installing Python Modules"
-msgstr "installation des modules python"
+msgstr "L'installation de modules Python"
 
 #: installing/index.rst:9
 msgid "distutils-sig@python.org"
@@ -152,10 +152,10 @@ msgid ""
 "mailing list used to coordinate Python packaging standards development)."
 msgstr ""
 "``distutils`` est le premier système de construction et de distribution "
-"ajouté à la bibliothèque standard en 1998. Bien que l'utilisation directe "
-"de :mod:`distutils` soit progressivement supprimée, elle reste le fondement "
-"de l'infrastructure actuelle de construction de paquet et de distribution. "
-"Au delà de rester dans la bibliothèque standard, son nom vit aussi sous "
+"ajouté à la bibliothèque standard en 1998. Bien que l'utilisation directe de "
+"``distutils`` soit progressivement supprimée, elle reste le fondement de "
+"l'infrastructure actuelle de construction de paquet et de distribution. Au "
+"delà de rester dans la bibliothèque standard, son nom vit aussi sous "
 "d'autres formes, tel que la liste de diffusion utilisée pour coordonner le "
 "développement et les standards de la création de paquet."
 
@@ -185,7 +185,7 @@ msgid ""
 "guide assume the use of a :term:`virtual environment`."
 msgstr ""
 "Pour les utilisateurs POSIX (y compris Mac OS X et Linux), les exemples de "
-"ce guide supposent l'utilisation d'un :term:`environment virtuel`."
+"ce guide supposent l'utilisation d'un :term:`environnement virtuel`."
 
 #: installing/index.rst:82
 msgid ""
@@ -203,7 +203,7 @@ msgid ""
 "command line::"
 msgstr ""
 "Il est également possible de spécifier une version exacte ou minimum "
-"directement sur la ligne de commande : ::"
+"directement sur la ligne de commande ::"
 
 #: installing/index.rst:92
 msgid ""
@@ -229,8 +229,8 @@ msgid ""
 "``pyvenv`` has its own documentation at :ref:`scripts-pyvenv`. Installing "
 "into an active virtual environment uses the commands shown above."
 msgstr ""
-"``pyvenv`` a sa propre documentation : :ref: `scripts-pyvenv`. Installer "
-"dans un environnement virtuel actif se fait avec les commandes indiquées ci-"
+"``pyvenv`` a sa propre documentation : :ref:`scripts-pyvenv`. Installer dans "
+"un environnement virtuel actif se fait avec les commandes indiquées ci-"
 "dessus."
 
 #: installing/index.rst:106

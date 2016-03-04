@@ -36,7 +36,7 @@ msgstr ""
 
 #: tools/sphinxext/indexcontent.html:8
 msgid "Tutorial"
-msgstr "Tutoriel [fr]"
+msgstr "Tutoriel"
 
 #: tools/sphinxext/indexcontent.html:9
 msgid "start here"
@@ -92,7 +92,7 @@ msgstr "référence pour les développeurs C/C++"
 
 #: tools/sphinxext/indexcontent.html:23
 msgid "Installing Python Modules"
-msgstr "installation des modules python"
+msgstr "L'installation de modules Python"
 
 #: tools/sphinxext/indexcontent.html:24
 msgid "information for installers &amp; sys-admins"
@@ -100,7 +100,7 @@ msgstr "Informations pour les installateurs &amp; administrateurs système"
 
 #: tools/sphinxext/indexcontent.html:25
 msgid "Distributing Python Modules"
-msgstr "Distribuer des Modules Python [en]"
+msgstr "Distribuer des Modules Python"
 
 #: tools/sphinxext/indexcontent.html:26
 msgid "sharing modules with others"
@@ -128,7 +128,7 @@ msgstr "accès rapide à tous les modules"
 
 #: tools/sphinxext/indexcontent.html:37
 msgid "General Index"
-msgstr "Index Général [en]"
+msgstr "Index Général"
 
 #: tools/sphinxext/indexcontent.html:38
 msgid "all functions, classes, terms"
@@ -144,7 +144,7 @@ msgstr "les mots les plus importants expliqués"
 
 #: tools/sphinxext/indexcontent.html:42
 msgid "Search page"
-msgstr "Page de recherche [en]"
+msgstr "Page de recherche"
 
 #: tools/sphinxext/indexcontent.html:43
 msgid "search this documentation"
@@ -152,7 +152,7 @@ msgstr "chercher dans cette documentation"
 
 #: tools/sphinxext/indexcontent.html:44
 msgid "Complete Table of Contents"
-msgstr "Table des matières complète [en]"
+msgstr "Table des matières complète"
 
 #: tools/sphinxext/indexcontent.html:45
 msgid "lists all sections and subsections"
@@ -164,15 +164,15 @@ msgstr "Méta informations :"
 
 #: tools/sphinxext/indexcontent.html:52
 msgid "Reporting bugs"
-msgstr "Rapporter des bugs [en]"
+msgstr "Rapporter des bugs"
 
 #: tools/sphinxext/indexcontent.html:53
 msgid "About the documentation"
-msgstr "À propos de la documentation [en]"
+msgstr "À propos de la documentation"
 
 #: tools/sphinxext/indexcontent.html:55
 msgid "History and License of Python"
-msgstr "Histoire et Licence de Python [en]"
+msgstr "Histoire et Licence de Python"
 
 #: tools/sphinxext/indexcontent.html:56
 msgid "Copyright"

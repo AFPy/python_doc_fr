@@ -59,7 +59,7 @@ msgstr ""
 
 #: bugs.rst:27
 msgid "Using the Python issue tracker"
-msgstr "Utilisation du tracker Python"
+msgstr "Utilisation du gestionnaire de ticket Python"
 
 #: bugs.rst:29
 #, fuzzy
@@ -150,9 +150,7 @@ msgid ""
 msgstr ""
 "Chaque bogue sera attribué à un développeur qui déterminera ce qui est "
 "nécessaire d'entreprendre pour corriger le problème. Vous recevrez une "
-"notification à chaque action effectuée sur le bogue. Voir http://www.python."
-"org/dev/workflow/ pour une description détaillée du processus de traitement "
-"des problèmes."
+"notification à chaque action effectuée sur le bogue."
 
 #: bugs.rst:66
 msgid "Python Developer's Guide"

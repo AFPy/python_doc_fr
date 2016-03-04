@@ -2912,7 +2912,7 @@ msgstr ""
 
 #: distutils/builtdist.rst:214
 msgid "Release"
-msgstr "Publication"
+msgstr "Version"
 
 #: distutils/builtdist.rst:214
 msgid "``release``"
@@ -4129,7 +4129,7 @@ msgstr ""
 #: distutils/introduction.rst:155
 #, fuzzy
 msgid "module"
-msgstr "*py_modules*"
+msgstr "module"
 
 #: distutils/introduction.rst:153
 msgid ""
@@ -4152,7 +4152,7 @@ msgstr ""
 #: distutils/introduction.rst:168
 #, fuzzy
 msgid "extension module"
-msgstr "*ext_modules*"
+msgstr "module d'extension"
 
 #: distutils/introduction.rst:163
 msgid ""
@@ -4168,7 +4168,7 @@ msgstr ""
 #: distutils/introduction.rst:173
 #, fuzzy
 msgid "package"
-msgstr "*packages*"
+msgstr "paquet"
 
 #: distutils/introduction.rst:171
 msgid ""

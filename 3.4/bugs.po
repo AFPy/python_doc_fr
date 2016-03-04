@@ -43,11 +43,12 @@ msgid ""
 msgstr ""
 "Si vous trouvez un bogue dans cette documentation ou si vous désirez "
 "proposer une amélioration, si cela concerne aussi la documentation en "
-"anglais, envoyez un e-mail à docs@python.org décrivant le bogue et où vous "
-"l'avez trouvé, si le problème ne touche que la traduction en français, "
-"envoyez un e-mail à traductions@lists.afpy.org ou ouvrez un ticket sur "
-"`github <https://github.com/AFPy/python_doc_fr/issues>`_. Si vous avez une "
-"suggestion de correction, merci de l'inclure également."
+"anglais, ouvrez un rapport sur le :ref:`tracker <using-the-tracker>` "
+"décrivant le bogue et où vous l'avez trouvé, si le problème ne touche que la "
+"traduction en français, envoyez un e-mail à traductions@lists.afpy.org ou "
+"ouvrez un ticket sur `github <https://github.com/AFPy/python_doc_fr/"
+"issues>`_. Si vous avez une suggestion de correction, merci de l'inclure "
+"également."
 
 #: bugs.rst:19
 #, fuzzy
@@ -167,9 +168,7 @@ msgid ""
 msgstr ""
 "Chaque bogue sera attribué à un développeur qui déterminera ce qui est "
 "nécessaire d'entreprendre pour corriger le problème. Vous recevrez une "
-"notification à chaque action effectuée sur le bogue. Voir http://www.python."
-"org/dev/workflow/ pour une description détaillée du processus de traitement "
-"des problèmes."
+"notification à chaque action effectuée sur le bogue."
 
 #: bugs.rst:69
 msgid "How to Report Bugs Effectively"

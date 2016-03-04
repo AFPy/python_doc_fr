@@ -217,7 +217,7 @@ msgstr "2.2 et supérieur"
 #: license.rst:57
 #, fuzzy
 msgid "2001-now"
-msgstr "2001"
+msgstr "2001-maintenant"
 
 #: license.rst:62
 msgid ""
@@ -625,7 +625,7 @@ msgid ""
 "The file :file:`Python/pyhash.c` contains Marek Majkowski' implementation of "
 "Dan Bernstein's SipHash24 algorithm. The contains the following note::"
 msgstr ""
-"Le fichier :file:`Python/pyhash.c`contiens une implémentation par Marek "
+"Le fichier :file:`Python/pyhash.c` contiens une implémentation par Marek "
 "Majkowski de l'algorithme SipHash24 de Dan Bernstein. Il contient la note "
 "suivante : ::"
 
@@ -830,7 +830,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "2.7"
-#~ msgstr "2.0"
+#~ msgstr "2.7"
 
 #~ msgid "3.0"
 #~ msgstr "3.0"

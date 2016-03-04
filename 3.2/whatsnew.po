@@ -54,7 +54,7 @@ msgid ""
 "for  PythonLabs are now getting paid to spend their days fixing bugs, and "
 "also due to the improved communication resulting  from moving to SourceForge."
 msgstr ""
-"Le développement de Python n'a jamais complétement été arrêté entre chaque "
+"Le développement de Python n'a jamais complètement été arrêté entre chaque "
 "versions, et un flux constant de corrections de bogues et d'améliorations "
 "ont toujours été soumis. Une foule de corrections mineures, quelques "
 "optimisations, des docstrings supplémentaires, et de meilleurs messages "
@@ -68,7 +68,7 @@ msgstr ""
 #: whatsnew/2.0.rst:33
 #, fuzzy
 msgid "What About Python 1.6?"
-msgstr "A propos de Python 1.6"
+msgstr "À propos de Python 1.6"
 
 #: whatsnew/2.0.rst:35
 msgid ""
@@ -1570,7 +1570,7 @@ msgstr ""
 #: whatsnew/2.1.rst:3
 #, fuzzy
 msgid "What's New in Python 2.1"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 2.1"
 
 #: whatsnew/2.1.rst:5 whatsnew/2.2.rst:5 whatsnew/2.3.rst:5 whatsnew/2.4.rst:5
 #: whatsnew/2.5.rst:5
@@ -2560,7 +2560,7 @@ msgstr ""
 #: whatsnew/2.2.rst:3
 #, fuzzy
 msgid "What's New in Python 2.2"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 2.2"
 
 #: whatsnew/2.2.rst:15
 msgid ""
@@ -3974,7 +3974,7 @@ msgstr ""
 #: whatsnew/2.3.rst:3
 #, fuzzy
 msgid "What's New in Python 2.3"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 2.3"
 
 #: whatsnew/2.3.rst:11
 msgid ""
@@ -4371,7 +4371,7 @@ msgstr ""
 #: whatsnew/2.3.rst:473 whatsnew/2.3.rst:498 whatsnew/2.6.rst:642
 #, fuzzy
 msgid "This produces the following output::"
-msgstr "Produisant l'affichage suivant :"
+msgstr "Ceci produit l’affichage suivant :"
 
 #: whatsnew/2.3.rst:479
 msgid ""
@@ -6121,7 +6121,7 @@ msgstr ""
 #: whatsnew/2.3.rst:2009
 #, fuzzy
 msgid "Porting to Python 2.3"
-msgstr "Portage vers Python 3.2"
+msgstr "Portage vers Python 2.3"
 
 #: whatsnew/2.3.rst:2011 whatsnew/2.4.rst:1510 whatsnew/2.5.rst:2229
 msgid ""
@@ -6220,7 +6220,7 @@ msgstr ""
 #: whatsnew/2.4.rst:3
 #, fuzzy
 msgid "What's New in Python 2.4"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 2.4"
 
 #: whatsnew/2.4.rst:14
 msgid ""
@@ -7875,7 +7875,7 @@ msgstr ""
 #: whatsnew/2.4.rst:1508
 #, fuzzy
 msgid "Porting to Python 2.4"
-msgstr "Portage vers Python 3.2"
+msgstr "Portage vers Python 2.4"
 
 #: whatsnew/2.4.rst:1513
 msgid ""
@@ -7954,7 +7954,7 @@ msgstr ""
 #: whatsnew/2.5.rst:3
 #, fuzzy
 msgid "What's New in Python 2.5"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 2.5"
 
 #: whatsnew/2.5.rst:12
 msgid ""
@@ -10532,7 +10532,7 @@ msgstr ""
 #: whatsnew/2.5.rst:2227
 #, fuzzy
 msgid "Porting to Python 2.5"
-msgstr "Portage vers Python 3.2"
+msgstr "Portage vers Python 2.5"
 
 #: whatsnew/2.5.rst:2232
 msgid ""
@@ -10620,7 +10620,7 @@ msgstr ""
 #: whatsnew/2.6.rst:5
 #, fuzzy
 msgid "What's New in Python 2.6"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 2.6"
 
 #: whatsnew/2.6.rst:9 whatsnew/2.7.rst:5
 msgid "A.M. Kuchling (amk at amk.ca)"
@@ -10873,7 +10873,7 @@ msgstr ""
 #: whatsnew/2.6.rst:236
 #, fuzzy
 msgid "Documenting Python"
-msgstr "Portage vers Python 3.2"
+msgstr "Documenter Python"
 
 #: whatsnew/2.6.rst:236
 msgid "Describes how to write for Python's documentation."
@@ -12056,7 +12056,7 @@ msgstr ""
 #: whatsnew/2.6.rst:1517
 #, fuzzy
 msgid "(Contributed by Alexander Belopolsky; :issue:`1686487`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Alexander Belopolsky; :issue:`1686487`.)"
 
 #: whatsnew/2.6.rst:1519
 msgid ""
@@ -12975,7 +12975,7 @@ msgstr ""
 #: whatsnew/2.6.rst:2315
 #, fuzzy
 msgid "(Contributed by Tarek Ziadé; :issue:`2663`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Tarek Ziadé; :issue:`2663`.)"
 
 #: whatsnew/2.6.rst:2317
 msgid ""
@@ -13973,7 +13973,7 @@ msgstr ""
 #: whatsnew/2.6.rst:3232
 #, fuzzy
 msgid "Porting to Python 2.6"
-msgstr "Portage vers Python 3.2"
+msgstr "Portage vers Python 2.6"
 
 #: whatsnew/2.6.rst:3234 whatsnew/2.7.rst:2359 whatsnew/3.1.rst:523
 #: whatsnew/3.2.rst:2568
@@ -14083,7 +14083,7 @@ msgstr ""
 #: whatsnew/2.7.rst:3
 #, fuzzy
 msgid "What's New in Python 2.7"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 2.7"
 
 #: whatsnew/2.7.rst:53
 msgid ""
@@ -14984,7 +14984,7 @@ msgstr ""
 #: whatsnew/2.7.rst:920 whatsnew/3.1.rst:496
 #, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`4258`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Mark Dickinson; :issue:`4258`.)"
 
 #: whatsnew/2.7.rst:922
 msgid ""
@@ -16774,7 +16774,7 @@ msgstr ""
 #: whatsnew/2.7.rst:2357
 #, fuzzy
 msgid "Porting to Python 2.7"
-msgstr "Portage vers Python 3.2"
+msgstr "Portage vers Python 2.7"
 
 #: whatsnew/2.7.rst:2362
 msgid ""
@@ -16886,7 +16886,7 @@ msgstr ""
 #: whatsnew/3.0.rst:3
 #, fuzzy
 msgid "What's New In Python 3.0"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 3.0"
 
 #: whatsnew/3.0.rst:7
 msgid "Guido van Rossum"
@@ -18133,7 +18133,7 @@ msgstr ""
 #: whatsnew/3.0.rst:894
 #, fuzzy
 msgid "Porting To Python 3.0"
-msgstr "Portage vers Python 3.2"
+msgstr "Portage vers Python 3.0"
 
 #: whatsnew/3.0.rst:896
 msgid ""
@@ -18186,7 +18186,7 @@ msgstr ""
 #: whatsnew/3.1.rst:3
 #, fuzzy
 msgid "What's New In Python 3.1"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 3.1"
 
 #: whatsnew/3.1.rst:5 whatsnew/3.2.rst:5
 msgid "Raymond Hettinger"
@@ -18304,7 +18304,7 @@ msgstr ""
 #: whatsnew/3.1.rst:152
 #, fuzzy
 msgid "(Contributed by Eric Smith; :issue:`5237`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Eric Smith; :issue:`5237`.)"
 
 #: whatsnew/3.1.rst:154
 msgid ""
@@ -18319,7 +18319,7 @@ msgstr ""
 #: whatsnew/3.1.rst:161 whatsnew/3.2.rst:2638
 #, fuzzy
 msgid "(Contributed by Georg Brandl; :issue:`5675`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Georg Brandl; :issue:`5675`.)"
 
 #: whatsnew/3.1.rst:163
 msgid ""
@@ -18348,7 +18348,7 @@ msgstr ""
 #: whatsnew/3.1.rst:183
 #, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`4707`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Mark Dickinson; :issue:`4707`.)"
 
 #: whatsnew/3.1.rst:185
 msgid ""
@@ -18406,7 +18406,7 @@ msgstr ""
 #: whatsnew/3.1.rst:221
 #, fuzzy
 msgid "(Contributed by Eric Smith and Mark Dickinson; :issue:`1580`)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Eric Smith et Mark Dickinson; :issue:`1580`.)"
 
 #: whatsnew/3.1.rst:226
 msgid ""
@@ -18417,7 +18417,7 @@ msgstr ""
 #: whatsnew/3.1.rst:232
 #, fuzzy
 msgid "(Contributed by Raymond Hettinger; :issue:`1696199`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Raymond Hettinger; :issue:`1696199`.)"
 
 #: whatsnew/3.1.rst:234
 msgid ""
@@ -18429,7 +18429,7 @@ msgstr ""
 #: whatsnew/3.1.rst:238
 #, fuzzy
 msgid "(Contributed by Guilherme Polo; :issue:`2983`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Guilherme Polo; :issue:`2983`.)"
 
 #: whatsnew/3.1.rst:240
 msgid ""
@@ -18440,7 +18440,7 @@ msgstr ""
 #: whatsnew/3.1.rst:247 whatsnew/3.2.rst:2290
 #, fuzzy
 msgid "(Contributed by Antoine Pitrou.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Antoine Pitrou)"
 
 #: whatsnew/3.1.rst:249
 msgid ""
@@ -18483,7 +18483,7 @@ msgstr ""
 #: whatsnew/3.1.rst:300
 #, fuzzy
 msgid "(Contributed by Raymond Hettinger; :issue:`1818`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Raymond Hettinger; :issue:`1818`.)"
 
 #: whatsnew/3.1.rst:302
 msgid ""
@@ -18506,7 +18506,7 @@ msgstr ""
 #: whatsnew/3.1.rst:315
 #, fuzzy
 msgid "(Contributed by Vinay Sajip; :issue:`4384`)."
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Vinay Sajip; :issue:`4384`.)"
 
 #: whatsnew/3.1.rst:317
 msgid ""
@@ -18518,7 +18518,7 @@ msgstr ""
 #: whatsnew/3.1.rst:321
 #, fuzzy
 msgid "(Contributed by Andi Vajda; :issue:`4195`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Andi Vajda; :issue:`4195`.)"
 
 #: whatsnew/3.1.rst:323
 msgid ""
@@ -18529,7 +18529,7 @@ msgstr ""
 #: whatsnew/3.1.rst:326
 #, fuzzy
 msgid "(Contributed by Alexander Belopolsky; :issue:`4201`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Alexander Belopolsky; :issue:`4201`.)"
 
 #: whatsnew/3.1.rst:328
 msgid ":class:`functools.partial` objects can now be pickled."
@@ -18550,7 +18550,7 @@ msgstr ""
 #: whatsnew/3.1.rst:336
 #, fuzzy
 msgid "(Contributed by David Laban; :issue:`4739`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par David Laban; :issue:`4739`.)"
 
 #: whatsnew/3.1.rst:338
 msgid ""
@@ -18578,7 +18578,7 @@ msgstr ""
 #: whatsnew/3.1.rst:367
 #, fuzzy
 msgid "(Contributed by Benjamin Peterson and Antoine Pitrou.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Benjamin Peterson et Antoine Pitrou)"
 
 #: whatsnew/3.1.rst:369
 msgid ""
@@ -18593,7 +18593,7 @@ msgstr ""
 #: whatsnew/3.1.rst:377
 #, fuzzy
 msgid "(Contributed by Ross Light; :issue:`4285`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Ross Ligh; :issue:`4285`.)"
 
 #: whatsnew/3.1.rst:379
 msgid "The :mod:`nntplib` and :mod:`imaplib` modules now support IPv6."
@@ -18602,7 +18602,7 @@ msgstr ""
 #: whatsnew/3.1.rst:381
 #, fuzzy
 msgid "(Contributed by Derek Morr; :issue:`1655` and :issue:`1664`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Derek Morr; :issue:`1655` et :issue:`1664`)"
 
 #: whatsnew/3.1.rst:383
 msgid ""
@@ -18630,7 +18630,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "(Contributed by Alexandre Vassalotti and Antoine Pitrou, :issue:`6137`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr ""
+"(Contribution par Alexandre Vassalotti et Antoine Pitrou; :issue:`6137`.)"
 
 #: whatsnew/3.1.rst:407
 msgid ""
@@ -18657,7 +18658,7 @@ msgstr ""
 #: whatsnew/3.1.rst:427
 #, fuzzy
 msgid "(Contributed by Amaury Forgeot d'Arc and Antoine Pitrou.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Amaury Forgeot d'Arc and Antoine Pitrou)"
 
 #: whatsnew/3.1.rst:429
 msgid ""
@@ -18670,7 +18671,7 @@ msgstr ""
 #: whatsnew/3.1.rst:434
 #, fuzzy
 msgid "(Contributed by Antoine Pitrou, :issue:`4688`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Antoine Pitrou; :issue:`4688`.)"
 
 #: whatsnew/3.1.rst:436
 msgid ""
@@ -18685,7 +18686,9 @@ msgstr ""
 msgid ""
 "(Contributed by Antoine Pitrou along with a number of other participants, :"
 "issue:`4753`)."
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr ""
+"(Contribution par Antoine Pitrou ainsi qu’un certain nombre d’autres "
+"participants; :issue:`4753`.)"
 
 #: whatsnew/3.1.rst:445
 msgid ""
@@ -18696,7 +18699,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "(Contributed by Antoine Pitrou and Amaury Forgeot d'Arc, :issue:`4868`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr ""
+"(Contribution par Antoine Pitrou et Amaury Forgeot d'Arc; :issue:`4868`.)"
 
 #: whatsnew/3.1.rst:450
 msgid ""
@@ -18722,7 +18726,7 @@ msgstr ""
 #: whatsnew/3.1.rst:462
 #, fuzzy
 msgid "(Contributed by Jake McGuire and Antoine Pitrou; :issue:`5084`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Jake McGuire et Antoine Pitrou; :issue:`5084`.)"
 
 #: whatsnew/3.1.rst:465 whatsnew/3.2.rst:2456
 msgid "IDLE"
@@ -18737,7 +18741,7 @@ msgstr ""
 #: whatsnew/3.1.rst:470
 #, fuzzy
 msgid "(Contributed by Roger D. Serwy; :issue:`5150`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Roger D. Serwy; :issue:`5150`.)"
 
 #: whatsnew/3.1.rst:477
 msgid ""
@@ -18768,7 +18772,7 @@ msgstr ""
 #: whatsnew/3.1.rst:501
 #, fuzzy
 msgid "(Contributed by Mark Dickinson and Lisandro Dalcrin; :issue:`5175`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Mark Dickinson et Lisandro Dalcrin; :issue:`5175`)"
 
 #: whatsnew/3.1.rst:503
 msgid ""
@@ -18778,7 +18782,7 @@ msgstr ""
 #: whatsnew/3.1.rst:505
 #, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`4910`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Mark Dickinson; :issue:`4910`)"
 
 #: whatsnew/3.1.rst:507
 msgid ""
@@ -18790,7 +18794,7 @@ msgstr ""
 #: whatsnew/3.1.rst:510
 #, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`5914`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Mark Dickinson; :issue:`5914`)"
 
 #: whatsnew/3.1.rst:512
 msgid ""
@@ -18804,12 +18808,12 @@ msgstr ""
 #: whatsnew/3.1.rst:518
 #, fuzzy
 msgid "(Contributed by Larry Hastings; :issue:`5630`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Larry Hastings; :issue:`5630`)"
 
 #: whatsnew/3.1.rst:521
 #, fuzzy
 msgid "Porting to Python 3.1"
-msgstr "Portage vers Python 3.2"
+msgstr "Portage vers Python 3.1"
 
 #: whatsnew/3.1.rst:526
 msgid ""
@@ -18828,7 +18832,7 @@ msgstr ""
 #: whatsnew/3.2.rst:3
 #, fuzzy
 msgid "What's New In Python 3.2"
-msgstr "Nouveautés de Python 2.0"
+msgstr "Nouveautés de Python 3.2"
 
 #: whatsnew/3.2.rst:51
 msgid ""
@@ -19279,7 +19283,7 @@ msgstr ""
 #: whatsnew/3.2.rst:488
 #, fuzzy
 msgid "(Contributed by Marcin Wojdyr in :issue:`1772833`)."
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Marcin Wojdyr; :issue:`1772833`)"
 
 #: whatsnew/3.2.rst:490
 msgid ""
@@ -19320,7 +19324,7 @@ msgstr ""
 #: whatsnew/3.2.rst:533
 #, fuzzy
 msgid "(Added by Antoine Pitrou; :issue:`9757`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Antoine Pitrou; :issue:`9757`.)"
 
 #: whatsnew/3.2.rst:535
 msgid ""
@@ -19620,7 +19624,7 @@ msgstr ""
 #: whatsnew/3.2.rst:737
 #, fuzzy
 msgid "(Contributed by Florent Xicluna and Fredrik Lundh, :issue:`6472`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Florent Xicluna et Fredrik Lundh; :issue:`6472`)"
 
 #: whatsnew/3.2.rst:740
 msgid "functools"
@@ -19986,7 +19990,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1118
 #, fuzzy
 msgid "(Contributed by Antoine Pitrou in :issue:`5506`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Antoine Pitrou; :issue:`5506`.)"
 
 #: whatsnew/3.2.rst:1123
 msgid ""
@@ -20007,7 +20011,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1144
 #, fuzzy
 msgid "(Contributed by Raymond Hettinger in :issue:`9826` and :issue:`9840`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Raymond Hettinger; :issue:`9826 ` et issue:`9840`)"
 
 #: whatsnew/3.2.rst:1147
 msgid "logging"
@@ -20148,7 +20152,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1263
 #, fuzzy
 msgid "(Contributed by Michael Foord in :issue:`9110`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Michael Foord; :issue:`9110`)"
 
 #: whatsnew/3.2.rst:1266
 msgid "decimal and fractions"
@@ -20248,7 +20252,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1347
 #, fuzzy
 msgid "(Contributed by Giampaolo Rodolà; :issue:`8806`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Giampaolo Rodolà; :issue:`8806`)"
 
 #: whatsnew/3.2.rst:1350
 msgid "popen"
@@ -20265,7 +20269,9 @@ msgstr ""
 msgid ""
 "(Contributed by Antoine Pitrou and Brian Curtin in :issue:`7461` and :issue:"
 "`10554`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr ""
+"(Contribution par Antoine Pitrou et Brian Curtin; :issue:`7461` et :issue:"
+"`10554`)"
 
 #: whatsnew/3.2.rst:1359
 msgid "select"
@@ -20412,7 +20418,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1508
 #, fuzzy
 msgid "(Contributed by Victor Stinner.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Victor Stinner)"
 
 #: whatsnew/3.2.rst:1511
 msgid "shutil"
@@ -20612,7 +20618,9 @@ msgstr ""
 msgid ""
 "(Contributed by Antoine Pitrou in :issue:`9360` and Andrew Vant in :issue:"
 "`1926`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr ""
+"(Contribution par Antoine Pitrou, :issue:`9360`, et Andrew Vant, :issue:"
+"`1926`)"
 
 #: whatsnew/3.2.rst:1660
 msgid "certificates"
@@ -20629,7 +20637,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1667
 #, fuzzy
 msgid "(Added by Antoine Pitrou, :issue:`9003`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Ajouté par Antoine Pitrou; :issue:`9003`.)"
 
 #: whatsnew/3.2.rst:1670
 msgid "imaplib"
@@ -20644,7 +20652,8 @@ msgstr ""
 #: whatsnew/3.2.rst:1675
 #, fuzzy
 msgid "(Contributed by Lorenzo M. Catucci and Antoine Pitrou, :issue:`4471`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr ""
+"(Contribution par Lorenzo M. Catucci et Antoine Pitrou; :issue:`4471`.)"
 
 #: whatsnew/3.2.rst:1678
 msgid "http.client"
@@ -20738,7 +20747,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1743
 #, fuzzy
 msgid "(Contributed by Antoine Pitrou, :issue:`9754`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Antoine Pitrou; :issue:`9754`.)"
 
 #: whatsnew/3.2.rst:1745
 msgid ""
@@ -20839,7 +20848,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1791
 #, fuzzy
 msgid "(Contributed by Ezio Melotti; :issue:`9424`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Ezio Melotti; :issue:`9424`)"
 
 #: whatsnew/3.2.rst:1793
 msgid ""
@@ -20868,7 +20877,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1812
 #, fuzzy
 msgid "(Contributed by Raymond Hettinger; :issue:`9025`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Raymond Hettinger; :issue:`9025`)"
 
 #: whatsnew/3.2.rst:1815
 msgid "poplib"
@@ -20885,7 +20894,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1822
 #, fuzzy
 msgid "(Contributed by Giampaolo Rodolà; :issue:`8807`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Giampaolo Rodolà; :issue:`8807`)"
 
 #: whatsnew/3.2.rst:1825
 msgid "asyncore"
@@ -20904,7 +20913,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1834
 #, fuzzy
 msgid "(Contributed by Giampaolo Rodolà; :issue:`6706`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Giampaolo Rodolà; :issue:`6706`)"
 
 #: whatsnew/3.2.rst:1837
 msgid "tempfile"
@@ -20920,7 +20929,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1846
 #, fuzzy
 msgid "(Contributed by Neil Schemenauer and Nick Coghlan; :issue:`5178`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Neil Schemenauer et Nick Coghlan; :issue:`5178`.)"
 
 #: whatsnew/3.2.rst:1849
 msgid "inspect"
@@ -20936,7 +20945,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1869
 #, fuzzy
 msgid "(Contributed by Rodolpho Eckhardt and Nick Coghlan, :issue:`10220`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Rodolpho Eckhardt et Nick Coghlan; :issue:`10220`.)"
 
 #: whatsnew/3.2.rst:1871
 msgid ""
@@ -20960,7 +20969,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1900
 #, fuzzy
 msgid "(Contributed by Ron Adam; :issue:`2001`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Ron Adam; :issue:`2001`.)"
 
 #: whatsnew/3.2.rst:1903
 msgid "dis"
@@ -20991,7 +21000,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1958
 #, fuzzy
 msgid "(Contributed by Nick Coghlan in :issue:`9147`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Nick Coghlan; :issue:`9147`.)"
 
 #: whatsnew/3.2.rst:1961
 msgid "dbm"
@@ -21053,7 +21062,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2006
 #, fuzzy
 msgid "(Contributed by Tarek Ziadé in :issue:`6693`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Tarek Ziadé; :issue:`6693`.)"
 
 #: whatsnew/3.2.rst:2009
 msgid "sysconfig"
@@ -21356,10 +21365,8 @@ msgid ""
 "Pitrou; :issue:`7316`.)"
 msgstr ""
 "Les verrous standards et récursifs acceptent désormais un argument optionnel "
-"*timeout* à leur méthode ``acquire``. (Contribution par Antoine Pitrou; :"
-"issue:`7316`). Pareillement, :meth:`threading.Semaphore.acquire` acquière "
-"d'un argument *timeout* (Contribution par Torsten Landschoff; :issue:"
-"`850728`)."
+"*timeout* à leur méthode :meth:`~threading.Lock.acquire`. (Contribution par "
+"Antoine Pitrou; :issue:`7316`)."
 
 #: whatsnew/3.2.rst:2296
 #, fuzzy
@@ -21367,11 +21374,8 @@ msgid ""
 "Similarly, :meth:`threading.Semaphore.acquire` also gained a *timeout* "
 "argument.  (Contributed by Torsten Landschoff; :issue:`850728`.)"
 msgstr ""
-"Les verrous standards et récursifs acceptent désormais un argument optionnel "
-"*timeout* à leur méthode ``acquire``. (Contribution par Antoine Pitrou; :"
-"issue:`7316`). Pareillement, :meth:`threading.Semaphore.acquire` acquière "
-"d'un argument *timeout* (Contribution par Torsten Landschoff; :issue:"
-"`850728`)."
+"Pareillement, :meth:`threading.Semaphore.acquire` acquière un argument "
+"*timeout* (Contribution par Torsten Landschoff; :issue:`850728`)."
 
 #: whatsnew/3.2.rst:2299
 msgid ""
@@ -21600,7 +21604,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2446
 #, fuzzy
 msgid "(Contributed by Alexander Belopolsky in :issue:`9528`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Alexander Belopolsky; :issue:`9528`.)"
 
 #: whatsnew/3.2.rst:2448
 msgid ""
@@ -21612,7 +21616,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2452
 #, fuzzy
 msgid "(Contributed by Georg Brandl in :issue:`7962`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Georg Brandl; :issue:`7962`.)"
 
 #: whatsnew/3.2.rst:2458
 msgid ""
@@ -21623,7 +21627,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2461
 #, fuzzy
 msgid "(Contributed by Raymond Hettinger; :issue:`5150`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Raymond Hettinger; :issue:`5150`.)"
 
 #: whatsnew/3.2.rst:2463
 msgid "IDLE on Mac OS X now works with both Carbon AquaTk and Cocoa AquaTk."
@@ -21691,7 +21695,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2505
 #, fuzzy
 msgid "(Contributed by Antoine Pitrou; :issue:`9203`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Antoine Pitrou; :issue:`9203`.)"
 
 #: whatsnew/3.2.rst:2507
 msgid ""
@@ -21702,7 +21706,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2510
 #, fuzzy
 msgid "(Contributed by Amaury Forgeot D'Arc; :issue:`9210`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Amaury Forgeot D'Arc; :issue:`9210`.)"
 
 #: whatsnew/3.2.rst:2512
 msgid ""
@@ -21859,8 +21863,8 @@ msgid ""
 ":class:`bytearray` objects can no longer be used as filenames; instead, they "
 "should be converted to :class:`bytes`."
 msgstr ""
-"Les objets bytearray ne peuvent plus être utilisés en tant que nom de "
-"fichiers : les convertir en octets"
+"Les objets :class:`bytearray` ne peuvent plus être utilisés en tant que nom "
+"de fichiers : ils doivent être convertis en :class:`bytes` à la place."
 
 #: whatsnew/3.2.rst:2608
 msgid ""
@@ -21872,7 +21876,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2612
 #, fuzzy
 msgid "``PyArg_Parse*()`` functions:"
-msgstr "Les fonctions PyArg_Parse*() :"
+msgstr "Les fonctions ``PyArg_Parse*()`` :"
 
 #: whatsnew/3.2.rst:2614
 msgid "\"t#\" format has been removed: use \"s#\" or \"s*\" instead"
@@ -21977,7 +21981,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2683
 #, fuzzy
 msgid "(Contributed by Antoine Pitrou, :issue:`10711`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Antoine Pitrou; :issue:`10711`.)"
 
 #: whatsnew/3.2.rst:2685
 msgid ""
@@ -21988,7 +21992,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2688
 #, fuzzy
 msgid "(Contributed by Antoine Pitrou, :issue:`10272`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Antoine Pitrou; :issue:`10272`.)"
 
 #: whatsnew/3.2.rst:2690
 msgid ""
@@ -22008,7 +22012,7 @@ msgstr ""
 #: whatsnew/3.2.rst:2698
 #, fuzzy
 msgid "(Contributed by Giampaolo Rodola in :issue:`6706`.)"
-msgstr "(Contribution par Antoine Pitrou; :issue:`3001`.)"
+msgstr "(Contribution par Giampaolo Rodola; :issue:`6706`.)"
 
 #: whatsnew/3.2.rst:2700
 msgid ""
@@ -22018,7 +22022,7 @@ msgstr ""
 
 #: whatsnew/index.rst:5
 msgid "What's New in Python"
-msgstr "Quoi de neuf dans Python"
+msgstr "Nouveautés de Python"
 
 #: whatsnew/index.rst:7
 msgid ""

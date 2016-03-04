@@ -218,7 +218,7 @@ msgstr "2.2 et supérieur"
 #: license.rst:57
 #, fuzzy
 msgid "2001-now"
-msgstr "2001"
+msgstr "2001-maintenant"
 
 #: license.rst:62
 msgid ""

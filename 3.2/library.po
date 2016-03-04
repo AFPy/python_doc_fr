@@ -360,7 +360,7 @@ msgid ""
 "body) to the new (``class X(metaclass=Meta)``)."
 msgstr ""
 "Convertit l'ancienne syntaxe de métaclasse (``__metaclass__ = Meta`` dans le "
-"corps de la classe) à la nouvelle (``class X(metaclasse = Meta) ``)."
+"corps de la classe) à la nouvelle (``class X(metaclasse=Meta)``)."
 
 #: library/2to3.rst:283
 msgid ""
@@ -531,7 +531,7 @@ msgstr ""
 
 #: library/2to3.rst:384
 msgid "Renames :class:`unicode` to :class:`str`."
-msgstr "Renomme :class:`unicode`en :class:`str`."
+msgstr "Renomme :class:`unicode` en :class:`str`."
 
 #: library/2to3.rst:388
 msgid ""
@@ -577,7 +577,7 @@ msgstr ""
 
 #: library/__future__.rst:2
 msgid ":mod:`__future__` --- Future statement definitions"
-msgstr ":mod:`__future__ --- Définitions des futurs"
+msgstr ":mod:`__future__` --- Définitions des futurs"
 
 #: library/__future__.rst:7
 msgid "**Source code:** :source:`Lib/__future__.py`"
@@ -665,7 +665,7 @@ msgid ""
 "its introduction in Python 2.1 the following features have found their way "
 "into the language using this mechanism:"
 msgstr ""
-"Aucune fonctionnalité ne sera jamais supprimée de :mod:`__future__. Depuis "
+"Aucune fonctionnalité ne sera jamais supprimée de :mod:`__future__`. Depuis "
 "son introduction dans Python 2.1, les fonctionnalités suivantes ont trouvé "
 "leur places dans le langage utilisant ce mécanisme :"
 
@@ -1044,7 +1044,7 @@ msgstr ":mod:`abc` --- Classes de Base Abstraites"
 
 #: library/abc.rst:10
 msgid "**Source code:** :source:`Lib/abc.py`"
-msgstr "**Code source:* :source:`Lib/abc.py`"
+msgstr "**Code source:** :source:`Lib/abc.py`"
 
 #: library/abc.rst:14
 msgid ""
@@ -1510,7 +1510,7 @@ msgstr "**Code source:** :source:`Lib/argparse.py`"
 
 #: library/argparse.rst:0 library/optparse.rst:245
 msgid "Tutorial"
-msgstr "Tutoriel [fr]"
+msgstr "Tutoriel"
 
 #: library/argparse.rst:17
 msgid ""
@@ -4393,7 +4393,7 @@ msgstr ""
 
 #: library/atexit.rst:96
 msgid "Usage as a :term:`decorator`::"
-msgstr "Utilisation en temps que :term:`decorateur` ::"
+msgstr "Utilisation en temps que :term:`decorator` ::"
 
 #: library/atexit.rst:104
 msgid "This only works with functions that can be called without arguments."
@@ -5640,7 +5640,7 @@ msgstr ":mod:`bisect` --- Algorithme de bissection de listes"
 
 #: library/bisect.rst:10
 msgid "**Source code:** :source:`Lib/bisect.py`"
-msgstr "**Code source :* :source:`Lib/bisect.py`"
+msgstr "**Code source :** :source:`Lib/bisect.py`"
 
 #: library/bisect.rst:14
 msgid ""
@@ -11641,7 +11641,7 @@ msgstr ""
 #: library/xmlrpc.server.rst:219
 #, fuzzy
 msgid "Example::"
-msgstr "Exemples : ::"
+msgstr "Exemples ::"
 
 #: library/compileall.rst:2
 msgid ":mod:`compileall` --- Byte-compile Python libraries"
@@ -13172,7 +13172,7 @@ msgstr ""
 #: library/configparser.rst:1202 library/mailbox.rst:1485
 #: library/subprocess.rst:484 library/xdrlib.rst:256 library/xml.dom.rst:804
 msgid "Exceptions"
-msgstr "Exceptions"
+msgstr "Les exceptions"
 
 #: library/configparser.rst:1206
 msgid "Base class for all other :mod:`configparser` exceptions."
@@ -34150,7 +34150,7 @@ msgid ""
 msgstr ""
 "Donne la valeur absolue d'un nombre. L'argument peut être un nombre entier "
 "ou un nombre à virgule flottante. Si l'argument est un nombre complexe, son "
-"`module <https://fr.wikipedia.org/wiki/Module_d%27un_nombre_complexe>` est "
+"`module <https://fr.wikipedia.org/wiki/Module_d%27un_nombre_complexe>`_ est "
 "donné."
 
 #: library/functions.rst:47
@@ -34185,7 +34185,7 @@ msgid ""
 msgstr ""
 "Convertit un nombre entier en binaire dans une chaîne. Le résultat est une "
 "expression Python valide. Si *x* n'est pas un :class:`int`, il doit définir "
-"une méthode :meth:`__index__`` donnant un nombre entier."
+"une méthode :meth:`__index__` donnant un nombre entier."
 
 #: library/functions.rst:86
 msgid ""
@@ -34259,10 +34259,10 @@ msgid ""
 "class:`bytearray` -- it has the same non-mutating methods and the same "
 "indexing and slicing behavior."
 msgstr ""
-"Donne un nouvel objet :class:`bytes`, qui est une séquence immuable de "
-"nombre entiers dans l'intervalle ``0 <= x <= 256``. Les :class:`bytes` est "
-"une version immuable de :class:bytearray` -- avec les mêmes méthodes "
-"d'accès, et le même comportement lors de l'indexation ou la découpe."
+"Donne un nouvel objet *bytes*, qui est une séquence immuable de nombre "
+"entiers dans l'intervalle ``0 <= x <= 256``. Les :class:`bytes` est une "
+"version immuable de :class:`bytearray` -- avec les mêmes méthodes d'accès, "
+"et le même comportement lors de l'indexation ou la découpe."
 
 #: library/functions.rst:129
 msgid ""
@@ -34274,8 +34274,8 @@ msgstr ""
 #: library/functions.rst:131
 msgid "Bytes objects can also be created with literals, see :ref:`strings`."
 msgstr ""
-"Les objets :class:`bytes` peuvent aussi être crées à partir de litéraux, "
-"voir :ref:`strings`."
+"Les objets *bytes* peuvent aussi être crées à partir de litéraux, voir :ref:"
+"`strings`."
 
 #: library/functions.rst:136
 msgid ""
@@ -34286,11 +34286,11 @@ msgid ""
 "callable if their class has a :meth:`__call__` method."
 msgstr ""
 "Donne :const:`True` si l'argument *object* semble être appelable, sinon :"
-"const:`False`. Lorsqu'elle donne :const:`True`, il reste une éventualité "
-"pour qu'un appel échoue, cependant, lorsqu'elle donne :const:`False`, il ne "
-"sera jamais possible d'appeler *object*. Notez que les classes sont "
-"appelables (appeler une classe donne une nouvelle instance). Les instances "
-"sont appelables si leur class défini une méthode :meth:`__call__`."
+"const:`False`. Lorsqu'elle donne vrai, il reste une éventualité pour qu'un "
+"appel échoue, cependant, lorsqu'elle donne faux, il ne sera jamais possible "
+"d'appeler *object*. Notez que les classes sont appelables (appeler une "
+"classe donne une nouvelle instance). Les instances sont appelables si leur "
+"class définit une méthode :meth:`__call__`."
 
 #: library/functions.rst:142
 msgid ""
@@ -34509,8 +34509,8 @@ msgid ""
 "See :class:`dict` and :ref:`typesmapping` for documentation about this class."
 msgstr ""
 "Créé un nouveau dictionnaire. L'objet :class:`dict` est la classe du "
-"dictionnaire. Voir : class:`dict` et :ref:`typesmapping` pour vous "
-"documenter sur cette classe."
+"dictionnaire. Voir :class:`dict` et :ref:`typesmapping` pour vous documenter "
+"sur cette classe."
 
 #: library/functions.rst:278
 msgid ""
@@ -34624,7 +34624,7 @@ msgstr ""
 "division entière sous forme d'une paire de nombres. Avec des opérandes de "
 "types différents, les règles des opérateurs binaires s'appliquent. Pour deux "
 "entiers le résultat est le même que ``(a // b, a % b)``. Pour des nombres à "
-"virgule flottante le résultat est ``(q, a % b), où *q* est généralement "
+"virgule flottante le résultat est ``(q, a % b)``, où *q* est généralement "
 "``math.floor(a / b)`` mais peut valoir un de moins. Dans tous les cas ``q * "
 "b + a % b`` est très proche de *a*. Si ``a % b`` est différent de zéro, il a "
 "le même signe que *b*, et ``0 <= abs(a % b) < abs(b)``."
@@ -34637,6 +34637,7 @@ msgid ""
 "returns a tuple containing a count (from *start* which defaults to 0) and "
 "the values obtained from iterating over *iterable*."
 msgstr ""
+"Donne un objet énumérant. *iterable* doit être une séquence, un :term:"
 "`iterator`, ou tout autre objet supportant l'itération. La méthode :meth:"
 "`~iterator.__next__` de l'itérateur donné par :func:`enumerate` donne un "
 "tuple contenant un compte (démarrant à *start*, 0 par défaut) et les valeurs "
@@ -34655,7 +34656,7 @@ msgid ""
 msgstr ""
 "Les arguments sont : une chaîne, et optionnellement des locales et des "
 "globales. S'il est fourni, *globals* doit être un dictionnaire. S'il est "
-"fourni, *locals* peut être n'importe quel objet :term:`mapping`."
+"fourni, *locals* peut être n'importe quel objet *mapping*."
 
 #: library/functions.rst:378
 msgid ""
@@ -34681,8 +34682,8 @@ msgstr ""
 "Si le dictionnaire *locals* est omis, sa valeur par défaut est le "
 "dictionnaire *globals*. Si les deux dictionnaires sont omis, l'expression "
 "est executée dans l'environnement où :func:`eval` est appelé. La valeur "
-"donnée par :func:`eval` est le résultat de l'exressipn évaluée. Les erreurs "
-"de syntaxe sont rapportées via des exceptions. Exemple :"
+"donnée par *eval* est le résultat de l'exressipn évaluée. Les erreurs de "
+"syntaxe sont rapportées via des exceptions. Exemple :"
 
 #: library/functions.rst:393
 msgid ""
@@ -34737,7 +34738,7 @@ msgstr ""
 "les mêmes critères que s'il était un script dans un fichier (voir la section "
 "\"File Input\" dans le manuel). Gardez en tête que les mots clefs :keyword:"
 "`return` et :keyword:`yield` ne peuvent pas être utilisés en dehors d'une "
-"fonction, même dans du code passé à :func:`ecec`. La fonction donne ``None``."
+"fonction, même dans du code passé à :func:`exec`. La fonction donne ``None``."
 
 #: library/functions.rst:419
 msgid ""
@@ -34754,11 +34755,11 @@ msgstr ""
 "exécuté dans le contexte actuel. Si seul *globals* est fourni, il doit être "
 "un dictionnaire qui sera utilisé pour les globales et les locales. Si les "
 "deux sont fournis, ils sont utilisés respectivement pour les variables "
-"globales et locales. *locales* peut être n'importe quel objet :term:"
-"`mapping`. Souvenez vous qu'au niveau d'un module, les dictionnaires des "
-"locales et des globales ne sont qu'un. Si :func:`exec` reçoit deux objets "
-"distincts dans *globals* et *locals*, le code sera exécuté comme s'il était "
-"inclus dans une définition de classe."
+"globales et locales. *locales* peut être n'importe quel objet ``mapping``. "
+"Souvenez vous qu'au niveau d'un module, les dictionnaires des locales et des "
+"globales ne sont qu'un. Si ``exec`` reçoit deux objets distincts dans "
+"*globals* et *locals*, le code sera exécuté comme s'il était inclus dans une "
+"définition de classe."
 
 #: library/functions.rst:428
 msgid ""
@@ -34769,7 +34770,7 @@ msgid ""
 "``__builtins__`` dictionary into *globals* before passing it to :func:`exec`."
 msgstr ""
 "Si le dictionnaire *globals* ne contient pas de valeur pour la clef "
-"``__builtins___``, une référence au dictionnaire du module :mod:`builtins` y "
+"``__builtins__``, une référence au dictionnaire du module :mod:`builtins` y "
 "est inséré. Cela vous permet de contrôler quelles fonctions natives sont "
 "exposées au code exécuté en insérant votre propre dictionnaire "
 "``__builtins__`` dans *globals* avant de le donner à :func:`exec`."
@@ -34820,7 +34821,7 @@ msgid ""
 msgstr ""
 "Notez que ``filter(fonction, iterable)`` est l'équivalent du générateur "
 "``(item for item in iterable if fonction(item))`` si *fonction* n'est pas "
-"``None`` et de ``(item for item in iterable if item)`` si *fonction\" est "
+"``None`` et de ``(item for item in iterable if item)`` si *function* est "
 "``None``."
 
 #: library/functions.rst:461
@@ -34934,7 +34935,7 @@ msgid ""
 "ref:`types-set` for documentation about this class."
 msgstr ""
 "Donne un nouveau :class:`frozenset`, dont les objets sont éventuellement "
-"tirés d'*iterable*. :class:`frozenset` est une classe native. Voir :class:"
+"tirés d'*iterable*. ``frozenset`` est une classe native. Voir :class:"
 "`frozenset` et :ref:`types-set` pour leurs documentation."
 
 #: library/functions.rst:548
@@ -35029,8 +35030,8 @@ msgid ""
 "To obtain a hexadecimal string representation for a float, use the :meth:"
 "`float.hex` method."
 msgstr ""
-"Pour obtenir une représentation hexadécimale sous forme de chaîne d'un :"
-"class:`float`, utilisez la méthode :meth:`float.hex`."
+"Pour obtenir une représentation hexadécimale sous forme de chaîne d'un "
+"nombre à virgule flottante, utilisez la méthode :meth:`float.hex`."
 
 #: library/functions.rst:611
 msgid ""
@@ -35339,8 +35340,8 @@ msgid ""
 "given, it is closed when the returned I/O object is closed, unless *closefd* "
 "is set to ``False``.)"
 msgstr ""
-"*file* est soit une chaîne soit un objet :class:`bytes` donnant le chemin "
-"(absolu ou relatif au dossier courant) du fichier à ouvrir, ou un entier, "
+"*file* est soit une chaîne soit un objet ``bytes`` donnant le chemin (absolu "
+"ou relatif au dossier courant) du fichier à ouvrir, ou un entier, "
 "descripteur de fichier à encapsuler. (Si un descripteur de fichier est "
 "donné, il est fermé lorsque l'objet I/O donné est fermé, sauf si *closefd* "
 "est fourni et ``False``.)"
@@ -35621,10 +35622,10 @@ msgstr ""
 "arithmétiques binaires s'appliquent. Pour des opérandes de type :class:"
 "`int`, le résultat sera de même type que les opérandes (après coercition) "
 "sauf si le second argument est négatif, dans ce cas, les arguments sont "
-"convertis en :class:`float`, et le résultat sera un :class:`float` aussi. "
-"Par exemple, ``10**2`` donne ``100``, alors que ``10**-2`` donne ``0.01``. "
-"Si le second argument est négatif, le troisième doit être omis. Si *z* est "
-"fourni, *x* et *y* doivent être des entiers et *y* positif."
+"convertis en ``float``, et le résultat sera un ``float`` aussi. Par exemple, "
+"``10**2`` donne ``100``, alors que ``10**-2`` donne ``0.01``. Si le second "
+"argument est négatif, le troisième doit être omis. Si *z* est fourni, *x* et "
+"*y* doivent être des entiers et *y* positif."
 
 #: library/functions.rst:983
 msgid ""
@@ -35775,7 +35776,7 @@ msgid ""
 msgstr ""
 "Donne un :term:`iterator` inversé. *seq* doit être un objet ayant une "
 "méthode :meth:`__reverse__` ou supportant le protocole séquence (la méthode :"
-"merh:`__len__` et la méthode :meth:`__getitem__` avec des arguments entiers "
+"meth:`__len__` et la méthode :meth:`__getitem__` avec des arguments entiers "
 "commençant à zéro)."
 
 #: library/functions.rst:1148
@@ -36262,7 +36263,7 @@ msgstr ""
 "paquet. *fromlist* donne le nom des objets ou sous-modules qui devraient "
 "être importés du module *name*. L'implémentation standard n'utilise pas "
 "l'argument *locals* et n'utilise *globals* que pour déterminer le contexte "
-"du paquet de l'instruction :keyword:`statement`."
+"du paquet de l'instruction :keyword:`import`."
 
 #: library/functions.rst:1482
 msgid ""
@@ -44964,7 +44965,7 @@ msgstr ""
 #: library/io.rst:147
 #, fuzzy
 msgid "sys"
-msgstr "oui"
+msgstr "sys"
 
 #: library/io.rst:147
 msgid ""
@@ -60916,7 +60917,7 @@ msgstr ""
 #: library/tkinter.ttk.rst:763
 #, fuzzy
 msgid "values"
-msgstr "valeur"
+msgstr "valeurs"
 
 #: library/optparse.rst:1327
 msgid ""
@@ -98140,7 +98141,7 @@ msgstr ":func:`backward` | :func:`bk` | :func:`back`"
 #: library/turtle.rst:0
 #, fuzzy
 msgid ":func:`right` | :func:`rt`"
-msgstr "Convertit :func:`raw_input` en :func:`input`."
+msgstr ":func:`right` | :func:`rt`"
 
 #: library/turtle.rst:0
 msgid ":func:`left` | :func:`lt`"
@@ -98261,7 +98262,7 @@ msgstr ":func:`pen`"
 #: library/turtle.rst:0
 #, fuzzy
 msgid ":func:`isdown`"
-msgstr "fonction"
+msgstr ":func:`isdown`"
 
 #: library/turtle.rst:140 library/turtle.rst:852
 msgid "Color control"
@@ -98362,7 +98363,7 @@ msgstr ":func:`tiltangle`"
 #: library/turtle.rst:0
 #, fuzzy
 msgid ":func:`tilt`"
-msgstr "fonction"
+msgstr ":func:`tilt`"
 
 #: library/turtle.rst:0
 msgid ":func:`shapetransform`"
@@ -98495,12 +98496,12 @@ msgstr ":func:`onclick` | :func:`onscreenclick`"
 #: library/turtle.rst:0
 #, fuzzy
 msgid ":func:`ontimer`"
-msgstr ":exc:`RuntimeError`"
+msgstr ":func:`ontimer`"
 
 #: library/turtle.rst:0
 #, fuzzy
 msgid ":func:`mainloop` | :func:`done`"
-msgstr "Convertit :func:`raw_input` en :func:`input`."
+msgstr ":func:`mainloop` | :func:`done`"
 
 #: library/turtle.rst:217 library/turtle.rst:1823
 msgid "Settings and special methods"
@@ -110634,7 +110635,7 @@ msgstr ""
 #: library/xml.dom.rst:923
 #, fuzzy
 msgid "Exception"
-msgstr "Exceptions"
+msgstr "Exception"
 
 #: library/xml.dom.rst:925
 msgid ":const:`DOMSTRING_SIZE_ERR`"
@@ -110747,7 +110748,7 @@ msgstr ":const:`SYNTAX_ERR`"
 #: library/xml.dom.rst:951
 #, fuzzy
 msgid ":exc:`SyntaxErr`"
-msgstr ":exc:`SyntaxError`"
+msgstr ":exc:`SyntaxErr`"
 
 #: library/xml.dom.rst:953
 msgid ":const:`WRONG_DOCUMENT_ERR`"
