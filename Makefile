@@ -68,7 +68,7 @@ gen/src/%/:
 	git clone --depth 1 --branch "$(RELEASE)" https://github.com/python/cpython.git $@
 
 requirements:
-	pip -q install --user -r scripts/requirements.txt
+	pip3 -q install --user -r scripts/requirements.txt
 
 pull: gen/src/$(RELEASE)/
 	git -C gen/src/$(RELEASE) pull --ff-only
