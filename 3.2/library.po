@@ -209,7 +209,7 @@ msgstr ""
 
 #: library/2to3.rst:147
 msgid "Converts :class:`basestring` to :class:`str`."
-msgstr "Convertis une :class:`basestring` en :class:`str`."
+msgstr "Convertit une :class:`basestring` en :class:`str`."
 
 #: library/2to3.rst:151
 msgid ""
@@ -34173,10 +34173,9 @@ msgid ""
 "similar to that returned by :func:`repr` in Python 2."
 msgstr ""
 "Donne, tout comme :func:`repr`, une chaîne contenant une représentation "
-"affichable d'un objet, en transformant les caractères non-ASCII donnés par :"
+"affichable d'un objet, entransformant les caractères non-ASCII donnés par :"
 "func:`repr` en utilisant des séquences d'échappement ``\\x``, ``\\u`` ou ``"
-"\\U``. Cela génère une chaîne similaire à ce que renvoie repr() dans Python "
-"2."
+"\\U``. Cela peut ressembler à ce que donnait :func:`repr` en Python 2."
 
 #: library/functions.rst:79
 msgid ""
