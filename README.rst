@@ -98,7 +98,7 @@ utilisons tous la même norme.
 Actuellement, nous utilisons la norme proposée par *msgcat*, vous
 pouvez donc utiliser cette ligne pour remettre vos traductions en forme:
 
-    ./scripts/fix_style.sh
+    ./scripts/fix_style.py
 
 Quelles sont les priorités ?
 ----------------------------
