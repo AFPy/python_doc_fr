@@ -6589,13 +6589,6 @@ msgstr ""
 #~ "méthode ``rstrip()`` des chaines de caractères. Cela retire tous les "
 #~ "espaces de fin de ligne, pas seulement le caractère de fin de ligne."
 
-#~ msgid ""
-#~ "Otherwise, if there is only one line in the string ``S``, use ``S."
-#~ "splitlines()[0]``."
-#~ msgstr ""
-#~ "Sinon, s'il y a seulement une ligne dans la chaine ``S``, utilisez ``S."
-#~ "splitlines()``[0]."
-
 #~ msgid "In Python 2.5 and later, the following is possible instead::"
 #~ msgstr ""
 #~ "En Python 2.5 et suivant, la forme suivante est possible à la place::"

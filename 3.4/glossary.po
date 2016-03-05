@@ -782,7 +782,7 @@ msgstr "GIL"
 
 #: glossary.rst:331
 msgid "See :term:`global interpreter lock`."
-msgstr "Voir :term:`verrou global de l'interpréteur`."
+msgstr "Voir :term:`global interpreter lock`."
 
 #: glossary.rst:332
 msgid "global interpreter lock"
