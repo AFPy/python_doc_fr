@@ -90,7 +90,7 @@ build: requirements gen/src/$(RELEASE)/ $(PATCHES) $(MO_FILES)
 rsync: build
 	# You'll need your ssh public key to be in afpy.org:/home/pythondoc/.ssh/authorized_keys
 	rsync -a --delete-delay gen/src/$(RELEASE)/Doc/build/html/ pythondoc@afpy.org:/home/pythondoc/www/$(RELEASE)
-	rsync -a --delete-delay gen/src/$(RELEASE)/Doc/dist/ pythondoc@afpy.org:/home/pythondoc/www/$(RELEASE)/archives/
+	rsync -a gen/src/$(RELEASE)/Doc/dist/ pythondoc@afpy.org:/home/pythondoc/www/$(RELEASE)/archives/
 	# We're reloading apache, else it misses the index.html and whines with directory listing permission denied
 	ssh pythondoc@afpy.org sudo /usr/sbin/service apache2 reload
 
