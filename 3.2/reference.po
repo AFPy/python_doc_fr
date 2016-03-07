@@ -4156,7 +4156,7 @@ msgstr ""
 
 #: reference/expressions.rst:989
 msgid "Comparisons"
-msgstr ""
+msgstr "Comparaisons"
 
 #: reference/expressions.rst:995
 msgid ""

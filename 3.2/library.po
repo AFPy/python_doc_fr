@@ -6623,7 +6623,7 @@ msgstr ""
 #: library/importlib.rst:64 library/stdtypes.rst:2632
 #: library/xml.etree.elementtree.rst:58
 msgid "Functions"
-msgstr ""
+msgstr "Fonctions"
 
 #: library/cgi.rst:261
 msgid ""
@@ -20437,7 +20437,7 @@ msgstr "Opération"
 #: library/stdtypes.rst:86 library/stdtypes.rst:272 library/stdtypes.rst:361
 #: library/stdtypes.rst:407 library/stdtypes.rst:870 library/stdtypes.rst:1703
 msgid "Result"
-msgstr ""
+msgstr "Résultat"
 
 #: library/datetime.rst:230
 msgid "``t1 = t2 + t3``"
@@ -34175,8 +34175,8 @@ msgstr ""
 "Donne, tout comme :func:`repr`, une chaîne contenant une représentation "
 "affichable d'un objet, en transformant les caractères non-ASCII donnés par :"
 "func:`repr` en utilisant des séquences d'échappement ``\\x``, ``\\u`` ou ``"
-"\\U``. Cela génère une chaîne similaire à ce que renvoie repr() dans Python "
-"2."
+"\\U``. Cela génère une chaîne similaire à ce que renvoie :func:`repr` dans "
+"Python 2."
 
 #: library/functions.rst:79
 msgid ""
@@ -52554,7 +52554,7 @@ msgstr ""
 #: library/mailbox.rst:813 library/mailbox.rst:980 library/mailbox.rst:1350
 #: library/stdtypes.rst:1518
 msgid "Flag"
-msgstr ""
+msgstr "Option"
 
 #: library/mailbox.rst:815 library/mailbox.rst:986 library/mailbox.rst:1356
 msgid "D"
@@ -58075,7 +58075,7 @@ msgstr ""
 
 #: library/nntplib.rst:158 library/stdtypes.rst:2647
 msgid "Methods"
-msgstr ""
+msgstr "Méthodes"
 
 #: library/nntplib.rst:160
 msgid ""
@@ -80678,19 +80678,23 @@ msgstr ""
 
 #: library/stdtypes.rst:8
 msgid "Built-in Types"
-msgstr ""
+msgstr "Types natifs"
 
 #: library/stdtypes.rst:10
 msgid ""
 "The following sections describe the standard types that are built into the "
 "interpreter."
 msgstr ""
+"Les sections suivantes décrivent les types standards qui sont intégrés dans "
+"l'interpréteur."
 
 #: library/stdtypes.rst:15
 msgid ""
 "The principal built-in types are numerics, sequences, mappings, classes, "
 "instances and exceptions."
 msgstr ""
+"Les principaux types natifs sont les numeriques, les séquences, les "
+"dictionnaires, les classes, les instances et les exceptions."
 
 #: library/stdtypes.rst:18
 msgid ""
@@ -80700,10 +80704,16 @@ msgid ""
 "different :func:`str` function).  The latter function is implicitly used "
 "when an object is written by the :func:`print` function."
 msgstr ""
+"Certaines opérations sont prises en charge par plusieurs types d'objets; en "
+"particulier, pratiquement tous les objets peuvent être comparés, testés pour "
+"la valeur de vérité, et convertis en une chaîne (avec la fonction :func:"
+"`repr` ou la fonction légèrement différente :func:`str`). Cette dernière est "
+"implicitement utilisée quand un objet est écrit par la fonction :func:"
+"`print`."
 
 #: library/stdtypes.rst:28
 msgid "Truth Value Testing"
-msgstr ""
+msgstr "Valeurs booléennes"
 
 #: library/stdtypes.rst:37
 msgid ""
@@ -80711,6 +80721,10 @@ msgid ""
 "keyword:`while` condition or as operand of the Boolean operations below. The "
 "following values are considered false:"
 msgstr ""
+"Tout objet peut être testé pour la valeur de la vérité, pour une utilisation "
+"dans une condition :keyword:`if` ou :keyword:`while` ou comme opérande des "
+"opérations booléennes ci-dessous. Les valeurs suivantes sont considérées "
+"comme fausses :"
 
 #: library/stdtypes.rst:47
 msgid "``False``"
@@ -80718,15 +80732,15 @@ msgstr "``False``"
 
 #: library/stdtypes.rst:49
 msgid "zero of any numeric type, for example, ``0``, ``0.0``, ``0j``."
-msgstr ""
+msgstr "zéro de tout type numérique, par exemple, ``0``, ``0.0``, ``0j``."
 
 #: library/stdtypes.rst:51
 msgid "any empty sequence, for example, ``''``, ``()``, ``[]``."
-msgstr ""
+msgstr "toute séquence vide, par exemple, ``''``, ``()``, ``[]``."
 
 #: library/stdtypes.rst:53
 msgid "any empty mapping, for example, ``{}``."
-msgstr ""
+msgstr "toute dictionnaire vide, par exemple, ``{}``."
 
 #: library/stdtypes.rst:55
 msgid ""
@@ -80734,12 +80748,18 @@ msgid ""
 "or :meth:`__len__` method, when that method returns the integer zero or :"
 "class:`bool` value ``False``. [1]_"
 msgstr ""
+"pour les instances de classes définies par l'utilisateur, si la classe "
+"définit une méthode :meth:`__bool__` ou :meth:`__len__`, lorsque cette "
+"méthode renvoie le nombre entier zéro ou la valeur ``False`` de la classe :"
+"class:`bool`. [1]_"
 
 #: library/stdtypes.rst:61
 msgid ""
 "All other values are considered true --- so objects of many types are always "
 "true."
 msgstr ""
+"Toutes les autres valeurs sont considérées comme vraies --- donc des objets "
+"de beaucoup de types sont toujours vrais."
 
 #: library/stdtypes.rst:70
 msgid ""
@@ -80748,14 +80768,19 @@ msgid ""
 "otherwise stated. (Important exception: the Boolean operations ``or`` and "
 "``and`` always return one of their operands.)"
 msgstr ""
+"Les opérations et fonctions natives qui ont un résultat booléen donnent "
+"toujours ``0`` ou ``False`` pour faux et ``1`` ou ``True`` pour vrai, sauf "
+"indication contraire. (Exception importante : les opérations booléennes "
+"``or`` et ``and`` retournent toujours l'une de leurs opérandes.)"
 
 #: library/stdtypes.rst:79
 msgid "Boolean Operations --- :keyword:`and`, :keyword:`or`, :keyword:`not`"
 msgstr ""
+"Opérations booléennes --- :keyword:`and`, :keyword:`or`, :keyword:`not`"
 
 #: library/stdtypes.rst:83
 msgid "These are the Boolean operations, ordered by ascending priority:"
-msgstr ""
+msgstr "Ce sont les opérations booléennes, classés par priorité ascendante :"
 
 #: library/stdtypes.rst:88
 msgid "``x or y``"
@@ -80763,7 +80788,7 @@ msgstr "``x or y``"
 
 #: library/stdtypes.rst:88
 msgid "if *x* is false, then *y*, else *x*"
-msgstr ""
+msgstr "si *x* est faux, alors *y*, sinon *x*"
 
 #: library/stdtypes.rst:91
 msgid "``x and y``"
@@ -80771,7 +80796,7 @@ msgstr "``x and y``"
 
 #: library/stdtypes.rst:91
 msgid "if *x* is false, then *x*, else *y*"
-msgstr ""
+msgstr "si *x* est faux, alors *x*, sinon *y*"
 
 #: library/stdtypes.rst:94
 msgid "``not x``"
@@ -80779,29 +80804,36 @@ msgstr "``not x``"
 
 #: library/stdtypes.rst:94
 msgid "if *x* is false, then ``True``, else ``False``"
-msgstr ""
+msgstr "si *x* est faux, alors ``True``, sinon ``False``"
 
 #: library/stdtypes.rst:106
 msgid ""
 "This is a short-circuit operator, so it only evaluates the second argument "
 "if the first one is :const:`False`."
 msgstr ""
+"Ceci est un opérateur court-circuit, il évalue seulement le deuxième "
+"argument si le premier est :const:`False`."
 
 #: library/stdtypes.rst:110
 msgid ""
 "This is a short-circuit operator, so it only evaluates the second argument "
 "if the first one is :const:`True`."
 msgstr ""
+"Ceci est un opérateur court-circuit, il évalue seulement le deuxième "
+"argument si le premier est :const:`True`."
 
 #: library/stdtypes.rst:114
 msgid ""
 "``not`` has a lower priority than non-Boolean operators, so ``not a == b`` "
 "is interpreted as ``not (a == b)``, and ``a == not b`` is a syntax error."
 msgstr ""
+"``not`` a une priorité inférieure à celle des opérateurs non-booléens, donc "
+"``not a == b`` est interprété comme ``not (a == b)`` et ``a == not b`` est "
+"une erreur de syntaxe."
 
 #: library/stdtypes.rst:121
 msgid "Comparisons"
-msgstr ""
+msgstr "Comparaisons"
 
 #: library/stdtypes.rst:135
 msgid ""
@@ -80811,10 +80843,16 @@ msgid ""
 "< y and y <= z``, except that *y* is evaluated only once (but in both cases "
 "*z* is not evaluated at all when ``x < y`` is found to be false)."
 msgstr ""
+"Il y a huit opérations de comparaison en Python. Elles ont toutes la même "
+"priorité (qui est supérieure à celle des opérations booléennes). Les "
+"comparaisons peuvent être enchaînés arbitrairement; par exemple, ``x < y <= "
+"z`` est équivalent à ``x < y and y <= z``, sauf que *y* est évaluée une "
+"seule fois (mais dans les deux cas *z* est pas évalué du tout quand ``x < "
+"y`` est faux)."
 
 #: library/stdtypes.rst:141
 msgid "This table summarizes the comparison operations:"
-msgstr ""
+msgstr "Ce tableau résume les opérations de comparaison :"
 
 #: library/stdtypes.rst:146 library/struct.rst:105
 msgid "``<``"
@@ -80822,7 +80860,7 @@ msgstr "``<``"
 
 #: library/stdtypes.rst:146
 msgid "strictly less than"
-msgstr ""
+msgstr "strictement inférieur"
 
 #: library/stdtypes.rst:148
 msgid "``<=``"
@@ -80830,7 +80868,7 @@ msgstr "``<=``"
 
 #: library/stdtypes.rst:148
 msgid "less than or equal"
-msgstr ""
+msgstr "inférieur ou égal"
 
 #: library/stdtypes.rst:150 library/struct.rst:107
 msgid "``>``"
@@ -80838,7 +80876,7 @@ msgstr "``>``"
 
 #: library/stdtypes.rst:150
 msgid "strictly greater than"
-msgstr ""
+msgstr "strictement supérieur"
 
 #: library/stdtypes.rst:152
 msgid "``>=``"
@@ -80846,7 +80884,7 @@ msgstr "``>=``"
 
 #: library/stdtypes.rst:152
 msgid "greater than or equal"
-msgstr ""
+msgstr "supérieur ou égal"
 
 #: library/stdtypes.rst:154
 msgid "``==``"
@@ -80854,7 +80892,7 @@ msgstr "``==``"
 
 #: library/stdtypes.rst:154
 msgid "equal"
-msgstr ""
+msgstr "égal"
 
 #: library/stdtypes.rst:156
 msgid "``!=``"
@@ -80862,7 +80900,7 @@ msgstr "``!=``"
 
 #: library/stdtypes.rst:156
 msgid "not equal"
-msgstr ""
+msgstr "différent"
 
 #: library/stdtypes.rst:158
 msgid "``is``"
@@ -80870,7 +80908,7 @@ msgstr "``is``"
 
 #: library/stdtypes.rst:158
 msgid "object identity"
-msgstr ""
+msgstr "identité d'objet"
 
 #: library/stdtypes.rst:160
 msgid "``is not``"
@@ -80878,7 +80916,7 @@ msgstr "``is not``"
 
 #: library/stdtypes.rst:160
 msgid "negated object identity"
-msgstr ""
+msgstr "contraire de l'identité d'objet"
 
 #: library/stdtypes.rst:167
 msgid ""
@@ -80890,12 +80928,22 @@ msgid ""
 "numeric type, when the objects are of different types that cannot be "
 "compared, or in other cases where there is no defined ordering."
 msgstr ""
+"Les objets de différents types, à l'exception de différents types "
+"numériques, ne peuvent jamais être égaux. En outre, certains types (par "
+"exemple, les objets fonction) ne gèrent qu'une une notion dégénérée de la "
+"comparaisonoù deux objets de ce type sont inégaux. Les opérateurs ``<``, "
+"``<=``, ``>`` et ``>=`` lèvent une exception :exc:`TypeError` lorsqu'on  "
+"compare un nombre complexe avec un autre type natif numérique, lorsque les "
+"objets sont de différents types qui ne peuvent pas être comparés, ou dans "
+"d'autres cas où il n'y a pas d'ordre défini."
 
 #: library/stdtypes.rst:183
 msgid ""
 "Non-identical instances of a class normally compare as non-equal unless the "
 "class defines the :meth:`__eq__` method."
 msgstr ""
+"Des instances différentes d'une classe se comparent normalement comme non "
+"égales à moins que la classe définit la méthode :meth:`__eq__`."
 
 #: library/stdtypes.rst:186
 msgid ""
@@ -80905,6 +80953,12 @@ msgid ""
 "`__ge__` (in general, :meth:`__lt__` and :meth:`__eq__` are sufficient, if "
 "you want the conventional meanings of the comparison operators)."
 msgstr ""
+"Les instances d'une classe ne peuvent pas être ordonnées par rapport à "
+"d'autres instances de la même classe, ou d'autres types d'objets, à moins "
+"que la classe définisse suffisamment de méthodes parmis :meth:`__lt__`, :"
+"meth:`__le__`, :meth:`__gt__` et :meth:`__ge__` (en général, :meth:`__lt__` "
+"et :meth:`__eq__` sont suffisantes, si vous voulez les significations "
+"classiques des opérateurs de comparaison)."
 
 #: library/stdtypes.rst:192
 msgid ""
@@ -80912,16 +80966,22 @@ msgid ""
 "customized; also they can be applied to any two objects and never raise an "
 "exception."
 msgstr ""
+"Le comportement des opérateurs :keyword:`is` et :keyword:`is not` ne peut "
+"pas être personnalisé; aussi ils peuvent être appliqués a deux objets "
+"quelconques et ne soulèvent jamais d'exception."
 
 #: library/stdtypes.rst:200
 msgid ""
 "Two more operations with the same syntactic priority, :keyword:`in` and :"
 "keyword:`not in`, are supported only by sequence types (below)."
 msgstr ""
+"Deux autres opérations avec la même priorité syntaxique, :keyword:`in` et :"
+"keyword:`not in`, sont pris en charge uniquement par des types séquence(ci-"
+"dessous)."
 
 #: library/stdtypes.rst:207
 msgid "Numeric Types --- :class:`int`, :class:`float`, :class:`complex`"
-msgstr ""
+msgstr "Types numériques --- :class:`int`, :class:`float`, :class:`complex`"
 
 #: library/stdtypes.rst:217
 msgid ""
@@ -80937,6 +80997,19 @@ msgid ""
 "numeric types, :mod:`fractions` that hold rationals, and :mod:`decimal` that "
 "hold floating-point numbers with user-definable precision.)"
 msgstr ""
+"Il existe trois types numériques distincts: :dfn:`integers`, :dfn:`floating "
+"point numbers` et :dfn:`complex numbers`. En outre, les booléens sont un "
+"sous-type des entiers. Les entiers ont une précision illimitée. Les nombres "
+"à virgule flottante sont généralement implémentés en utilisant des :c:type:"
+"`double` en C; des informations sur la précision et la représentation "
+"interne des nombres à virgule flottante pour la machine sur laquelle le "
+"programme est en cours d'exécution est disponible dans :data:`sys."
+"float_info`. Les nombres complexes ont une partie réelle et une partie "
+"imaginaire, qui sont chacunes des nombres à virgule flottante. Pour extraire "
+"ces parties d'un nombre complexe *z*, utilisez ``z.real`` et ``z.imag``. (La "
+"bibliothèque standard comprend d'autres types numériques, :mod:`fractions` "
+"qui stocke des rationnels et :mod:`decimal` qui stocke les nombres à virgule "
+"flottante avec une précision définissable par l'utilisateur.)"
 
 #: library/stdtypes.rst:239
 msgid ""
@@ -80959,6 +81032,13 @@ msgid ""
 "`float`, and :func:`complex` can be used to produce numbers of a specific "
 "type."
 msgstr ""
+"Python gère pleinement l'arithmétique mixte: quand un opérateur arithmétique "
+"binaire a des opérandes de types numériques différents, l'opérande avec le "
+"type \"le plus étroit\" est élargie au type de l'autre, où l'entier est plus "
+"étroit que la virgule flottante, qui est plus étroite que les complexes. Les "
+"comparaisons entre des nombres de type mixte utilisent la même règle. [2]_ "
+"Les constructeurs :func:`int`, :func:`float` et :func:`complex` peuvent être "
+"utilisé pour produire des nombres d'un type spécifique."
 
 #: library/stdtypes.rst:267
 msgid ""

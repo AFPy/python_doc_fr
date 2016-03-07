@@ -7421,7 +7421,7 @@ msgstr ""
 
 #: howto/regex.rst:525
 msgid "Flag"
-msgstr ""
+msgstr "Option"
 
 #: howto/regex.rst:525
 msgid "Meaning"

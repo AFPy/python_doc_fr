@@ -3345,7 +3345,7 @@ msgstr ""
 
 #: howto/ipaddress.rst:270
 msgid "Comparisons"
-msgstr ""
+msgstr "Comparaisons"
 
 #: howto/ipaddress.rst:272
 msgid ""
@@ -7463,7 +7463,7 @@ msgstr ""
 
 #: howto/regex.rst:525
 msgid "Flag"
-msgstr ""
+msgstr "Option"
 
 #: howto/regex.rst:525
 msgid "Meaning"
