@@ -136,18 +136,17 @@ un ticket si vous n'êtes pas d'acord) :
   `ce ticket <https://github.com/soulaklabs/bitoduc.fr/issues/86>`_)
 * abstract data type => type abstrait
 * argument => argument (et non paramètre (qui est la traduction de parameter))
-* backslash => antislash
+* backslash => antislash ?
 * bound => lier
 * bug => bug (Bogue étant déjà pris par la châtaigne…)
 * débugging => débogage (en contradiction avec le précédent ?)
-* built-in => primitives, interne
+* built-in => primitives, natives, interne, intégré
 * double quote => guillemet
 * identifier => identifiant
 * immutable => immuable
 * interpreter => interpréteur
 * library => bibliothèque
 * list compréhension => compréhension de liste
-* little/big endian => `petit-boutiste et gros-boutiste <https://fr.wikipedia.org/wiki/Les_Voyages_de_Gulliver#Voyage_.C3.A0_Lilliput>`_
 * mutable => variable
 * parameter => paramètre
 * prompt => invite
@@ -155,7 +154,7 @@ un ticket si vous n'êtes pas d'acord) :
 * simple quote => guillemet simple
 * socket => socket ("Je veux mon niveau ! Chausette ! Chausette !")
 * statement => instruction
-* underscore => tiret bas
+* underscore => tiret bas ?
 
 Comment générer la doc localement ?
 -----------------------------------
