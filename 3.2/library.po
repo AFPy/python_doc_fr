@@ -50192,7 +50192,7 @@ msgstr ""
 
 #: library/logging.config.rst:393
 msgid "and::"
-msgstr "et ::"
+msgstr "et  : ::"
 
 #: library/logging.config.rst:400
 msgid ""
@@ -81021,6 +81021,14 @@ msgid ""
 "with a zero real part) which you can add to an integer or float to get a "
 "complex number with real and imaginary parts."
 msgstr ""
+"Les nombres sont créés par des littéraux numériques ou sont le résultat de "
+"fonctions natives ou d'opérateurs. Les entiers littéraux basiques (y compris "
+"leur forme hexadécimale, octale et binaire) donnent des entiers. Les nombres "
+"littéraux contenant un point décimal ou un exposant donnent des nombres à "
+"virgule flottante. Suffixer ``'j'`` ou ``'J'`` à un nombre littéral donne un "
+"nombre imaginaire (un nombre complexe avec une partie réelle nulle) que vous "
+"pouvez ajouter à un nombre entier ou un à virgule flottante pour obtenir un "
+"nombre complexe avec une partie réelle et une partie imaginaire."
 
 #: library/stdtypes.rst:260
 msgid ""
@@ -81049,7 +81057,7 @@ msgstr ""
 
 #: library/stdtypes.rst:272
 msgid "Full documentation"
-msgstr ""
+msgstr "Documentation complète"
 
 #: library/stdtypes.rst:274
 msgid "``x + y``"
@@ -81057,7 +81065,7 @@ msgstr "``x + y``"
 
 #: library/stdtypes.rst:274
 msgid "sum of *x* and *y*"
-msgstr ""
+msgstr "somme de *x* et *y*"
 
 #: library/stdtypes.rst:276
 msgid "``x - y``"
@@ -81065,7 +81073,7 @@ msgstr "``x - y``"
 
 #: library/stdtypes.rst:276
 msgid "difference of *x* and *y*"
-msgstr ""
+msgstr "différence de *x* et *y*"
 
 #: library/stdtypes.rst:278
 msgid "``x * y``"
@@ -81073,7 +81081,7 @@ msgstr "``x * y``"
 
 #: library/stdtypes.rst:278
 msgid "product of *x* and *y*"
-msgstr ""
+msgstr "produit de *x* et *y*"
 
 #: library/stdtypes.rst:280
 msgid "``x / y``"
@@ -81081,7 +81089,7 @@ msgstr "``x / y``"
 
 #: library/stdtypes.rst:280
 msgid "quotient of *x* and *y*"
-msgstr ""
+msgstr "quotient de *x* et *y*"
 
 #: library/stdtypes.rst:282
 msgid "``x // y``"
@@ -81089,7 +81097,7 @@ msgstr "``x // y``"
 
 #: library/stdtypes.rst:282
 msgid "floored quotient of *x* and *y*"
-msgstr ""
+msgstr "quotient entier de *x* et *y*"
 
 #: library/stdtypes.rst:285
 msgid "``x % y``"
@@ -81097,7 +81105,7 @@ msgstr "``x % y``"
 
 #: library/stdtypes.rst:285
 msgid "remainder of ``x / y``"
-msgstr ""
+msgstr "reste de ``x / y``"
 
 #: library/stdtypes.rst:287
 msgid "``-x``"
@@ -81105,7 +81113,7 @@ msgstr "``-x``"
 
 #: library/stdtypes.rst:287
 msgid "*x* negated"
-msgstr ""
+msgstr "négatif de *x*"
 
 #: library/stdtypes.rst:289
 msgid "``+x``"
@@ -81113,7 +81121,7 @@ msgstr "``+x``"
 
 #: library/stdtypes.rst:289
 msgid "*x* unchanged"
-msgstr ""
+msgstr "*x* inchangé"
 
 #: library/stdtypes.rst:291
 msgid "``abs(x)``"
@@ -81121,7 +81129,7 @@ msgstr "``abs(x)``"
 
 #: library/stdtypes.rst:291
 msgid "absolute value or magnitude of *x*"
-msgstr ""
+msgstr "valeur absolue de *x*"
 
 #: library/stdtypes.rst:294
 msgid "``int(x)``"
@@ -81129,7 +81137,7 @@ msgstr "``int(x)``"
 
 #: library/stdtypes.rst:294
 msgid "*x* converted to integer"
-msgstr ""
+msgstr "*x* converti en nombre entier"
 
 #: library/stdtypes.rst:294
 msgid "\\(3)\\(6)"
@@ -81141,7 +81149,7 @@ msgstr "``float(x)``"
 
 #: library/stdtypes.rst:296
 msgid "*x* converted to floating point"
-msgstr ""
+msgstr "*x* converti en nombre à virgule flottante"
 
 #: library/stdtypes.rst:296
 msgid "\\(4)\\(6)"
@@ -81156,6 +81164,8 @@ msgid ""
 "a complex number with real part *re*, imaginary part *im*. *im* defaults to "
 "zero."
 msgstr ""
+"un nombre complexe avec *re* pour partie réelle et *im* pour partie "
+"imaginaire. *im* vaut zéro par défaut."
 
 #: library/stdtypes.rst:302
 msgid "``c.conjugate()``"
@@ -81163,7 +81173,7 @@ msgstr "``c.conjugate()``"
 
 #: library/stdtypes.rst:302
 msgid "conjugate of the complex number *c*"
-msgstr ""
+msgstr "conjugué du nombre complexe *c*"
 
 #: library/stdtypes.rst:305
 msgid "``divmod(x, y)``"
@@ -81171,7 +81181,7 @@ msgstr "``divmod(x, y)``"
 
 #: library/stdtypes.rst:305
 msgid "the pair ``(x // y, x % y)``"
-msgstr ""
+msgstr "la paire ``(x // y, x % y)``"
 
 #: library/stdtypes.rst:307
 msgid "``pow(x, y)``"
@@ -81179,7 +81189,7 @@ msgstr "``pow(x, y)``"
 
 #: library/stdtypes.rst:307 library/stdtypes.rst:309
 msgid "*x* to the power *y*"
-msgstr ""
+msgstr "*x* à la puissance *y*"
 
 #: library/stdtypes.rst:309
 msgid "``x ** y``"
@@ -81192,12 +81202,19 @@ msgid ""
 "always rounded towards minus infinity: ``1//2`` is ``0``, ``(-1)//2`` is "
 "``-1``, ``1//(-2)`` is ``-1``, and ``(-1)//(-2)`` is ``0``."
 msgstr ""
+"Également appelé division entière. La valeur résultante est un nombre "
+"entier, bien que le type du résultat ne soit nécessairement *int*. Le "
+"résultat est toujours arrondi vers moins l'infini : ``1//2`` vaut ``0``, "
+"``(-1)//2`` vaut ``-1``, ``1//(-2)`` vaut ``-1``, et ``(-1)//(-2)`` vaut ``"
+"0``."
 
 #: library/stdtypes.rst:325
 msgid ""
 "Not for complex numbers.  Instead convert to floats using :func:`abs` if "
 "appropriate."
 msgstr ""
+"Pas pour les nombres complexes. Convertissez-les plutôt en nombres flottants "
+"à l'aide de :func:`abs` si c'est approprié."
 
 #: library/stdtypes.rst:337
 msgid ""
@@ -81211,18 +81228,24 @@ msgid ""
 "float also accepts the strings \"nan\" and \"inf\" with an optional prefix "
 "\"+\" or \"-\" for Not a Number (NaN) and positive or negative infinity."
 msgstr ""
+"float accepte aussi les chauves \"nan\" et \"inf\" avec un préfixe optionnel "
+"\"+\" ou \"-\" pour Not a Number (NaN) et l'infini positif ou négatif."
 
 #: library/stdtypes.rst:346
 msgid ""
 "Python defines ``pow(0, 0)`` and ``0 ** 0`` to be ``1``, as is common for "
 "programming languages."
 msgstr ""
+"Python définit ``pow(0, 0)`` et ``0 ** 0`` valant ``1``, ​puisque c'est "
+"courant pour les langages de programmation."
 
 #: library/stdtypes.rst:350
 msgid ""
 "The numeric literals accepted include the digits ``0`` to ``9`` or any "
 "Unicode equivalent (code points with the ``Nd`` property)."
 msgstr ""
+"Les littéraux numériques acceptés comprennent les chiffres ``0`` à ``9`` ou "
+"tout équivalent Unicode (caractères avec la propriété ``Nd``)."
 
 #: library/stdtypes.rst:353
 msgid ""
@@ -81235,6 +81258,8 @@ msgid ""
 "All :class:`numbers.Real` types (:class:`int` and :class:`float`) also "
 "include the following operations:"
 msgstr ""
+"Tous types :class:`numbers.Real` (:class:`int` et :class:`float`) "
+"comprennent également les opérations suivantes :"
 
 #: library/stdtypes.rst:363
 msgid "``math.trunc(x)``"
@@ -81242,7 +81267,7 @@ msgstr "``math.trunc(x)``"
 
 #: library/stdtypes.rst:363
 msgid "*x* truncated to Integral"
-msgstr ""
+msgstr "*x* tronqué à l'entier vers zéro"
 
 #: library/stdtypes.rst:365
 msgid "``round(x[, n])``"
@@ -81253,6 +81278,8 @@ msgid ""
 "*x* rounded to n digits, rounding half to even. If n is omitted, it defaults "
 "to 0."
 msgstr ""
+"*x* arrondi à n chiffres, arrondissant la moitié au pair. Si n est omis, la "
+"valeur par défaut à 0."
 
 #: library/stdtypes.rst:369
 msgid "``math.floor(x)``"
@@ -81260,7 +81287,7 @@ msgstr "``math.floor(x)``"
 
 #: library/stdtypes.rst:369
 msgid "the greatest integral float <= *x*"
-msgstr ""
+msgstr "le plus grand entier <= *x*"
 
 #: library/stdtypes.rst:371
 msgid "``math.ceil(x)``"
@@ -81268,17 +81295,19 @@ msgstr "``math.ceil(x)``"
 
 #: library/stdtypes.rst:371
 msgid "the least integral float >= *x*"
-msgstr ""
+msgstr "le plus petit entier >= *x*"
 
 #: library/stdtypes.rst:374
 msgid ""
 "For additional numeric operations see the :mod:`math` and :mod:`cmath` "
 "modules."
 msgstr ""
+"Pour d'autres opérations numériques voir les modules :mod:`math` et :mod:"
+"`cmath`."
 
 #: library/stdtypes.rst:383
 msgid "Bitwise Operations on Integer Types"
-msgstr ""
+msgstr "Opérations sur les bits des nombres entiers"
 
 #: library/stdtypes.rst:395
 msgid ""

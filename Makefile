@@ -69,6 +69,7 @@ gen/src/%/:
 
 requirements:
 	pip3 -q install --user -r scripts/requirements.txt
+	patch --batch -s ~/.local/lib/python3.5/sites-packages/polib.py scripts/patches/polib.patch || :
 
 pull: gen/src/$(RELEASE)/
 	git -C gen/src/$(RELEASE) pull --ff-only
