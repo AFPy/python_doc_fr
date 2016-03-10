@@ -71,7 +71,7 @@ gen/src/%/:
 
 requirements:
 	pip3 -q install --user -r scripts/requirements.txt
-	patch --batch -s ~/.local/lib/python3.5/sites-packages/polib.py scripts/patches/polib.patch || :
+	patch --batch -s ~/.local/lib/python3.5/site-packages/polib.py scripts/patches/polib.patch || :
 ifeq ($(MODE),autobuild-stable)
 ifndef HAS_PDFLATEX
 	$(error "You need to install pdflatex, typically apt-get install texlive-full")
