@@ -37,16 +37,18 @@
 # have 'if's everywhere for its compatibility.
 
 # May be overriden by calling make RELEASE=2.7
-RELEASE=3.5
-RELEASES=2.7 3.3 3.4 3.5
+RELEASE := 3.5
+RELEASES := 2.7 3.3 3.4 3.5
 
 # May be overriden by calling make MODE=autobuild-stable for a full build
-MODE=autobuild-html
+MODE := autobuild-html
 
-PATCHES=$(wildcard scripts/patches/$(RELEASE)/*.patch)
+PATCHES := $(wildcard scripts/patches/$(RELEASE)/*.patch)
 
-PO_FILES=$(wildcard $(RELEASE)/*.po)
-MO_FILES=$(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,$(notdir $(PO_FILES))))
+PO_FILES := $(wildcard $(RELEASE)/*.po)
+MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,$(notdir $(PO_FILES))))
+
+HAS_PDFLATEX := $(shell which pdflatex)
 
 .PHONY: $(RELEASES) $(PATCHES) all build_all msgmerge_all rsync_all pull requirements build
 
@@ -70,6 +72,11 @@ gen/src/%/:
 requirements:
 	pip3 -q install --user -r scripts/requirements.txt
 	patch --batch -s ~/.local/lib/python3.5/sites-packages/polib.py scripts/patches/polib.patch || :
+ifeq ($(MODE),autobuild-stable)
+ifndef HAS_PDFLATEX
+	$(error "You need to install pdflatex, typically apt-get install texlive-full")
+endif
+endif
 
 pull: gen/src/$(RELEASE)/
 	git -C gen/src/$(RELEASE) pull --ff-only
