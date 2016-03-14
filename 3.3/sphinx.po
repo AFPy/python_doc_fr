@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-22 00:53+0100\n"
+"POT-Creation-Date: 2016-03-12 23:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,164 +17,164 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: tools/sphinxext/layout.html:93
-msgid "This Page"
-msgstr "Cette Page"
-
-#: tools/sphinxext/indexcontent.html:3
+#: ../Doc/tools/sphinxext/indexcontent.html:3
 msgid "Parts of the documentation:"
 msgstr "La documentation:"
 
-#: tools/sphinxext/indexcontent.html:6
+#: ../Doc/tools/sphinxext/indexcontent.html:6
 msgid "What's new in Python %(version)s?"
 msgstr "Quoi de neuf avec Python %(version)s ? [en]"
 
-#: tools/sphinxext/indexcontent.html:7
+#: ../Doc/tools/sphinxext/indexcontent.html:7
 msgid ""
 "or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents</a> since 2.0"
 msgstr ""
 "ou <a href=\"%(whatsnew_index)s\">tous les \"Quoi de neuf\"</a> depuis la 2.0"
 
-#: tools/sphinxext/indexcontent.html:8
+#: ../Doc/tools/sphinxext/indexcontent.html:8
 msgid "Tutorial"
 msgstr "Tutoriel"
 
-#: tools/sphinxext/indexcontent.html:9
+#: ../Doc/tools/sphinxext/indexcontent.html:9
 msgid "start here"
 msgstr "démarrez ici"
 
-#: tools/sphinxext/indexcontent.html:10
+#: ../Doc/tools/sphinxext/indexcontent.html:10
 msgid "Library Reference"
 msgstr "Référence de la Bibliothèque [en]"
 
-#: tools/sphinxext/indexcontent.html:11
+#: ../Doc/tools/sphinxext/indexcontent.html:11
 msgid "keep this under your pillow"
 msgstr "gardez-ça sous votre oreiller"
 
-#: tools/sphinxext/indexcontent.html:12
+#: ../Doc/tools/sphinxext/indexcontent.html:12
 msgid "Language Reference"
 msgstr "Référence du Langage [en]"
 
-#: tools/sphinxext/indexcontent.html:13
+#: ../Doc/tools/sphinxext/indexcontent.html:13
 msgid "describes syntax and language elements"
 msgstr "décrit la syntaxe et les éléments du langage"
 
-#: tools/sphinxext/indexcontent.html:14
+#: ../Doc/tools/sphinxext/indexcontent.html:14
 msgid "Python Setup and Usage"
 msgstr "Installation et Utilisation de Python [en]"
 
-#: tools/sphinxext/indexcontent.html:15
+#: ../Doc/tools/sphinxext/indexcontent.html:15
 msgid "how to use Python on different platforms"
 msgstr "comment utiliser Python sur différentes plateformes"
 
-#: tools/sphinxext/indexcontent.html:16
+#: ../Doc/tools/sphinxext/indexcontent.html:16
 msgid "Python HOWTOs"
 msgstr "Les HOWTOs de Python [en]"
 
-#: tools/sphinxext/indexcontent.html:17
+#: ../Doc/tools/sphinxext/indexcontent.html:17
 msgid "in-depth documents on specific topics"
 msgstr "documents explorant certains sujets en profondeur"
 
-#: tools/sphinxext/indexcontent.html:19
+#: ../Doc/tools/sphinxext/indexcontent.html:19
 msgid "Extending and Embedding"
 msgstr "Améliorer et Intégrer [en]"
 
-#: tools/sphinxext/indexcontent.html:20
+#: ../Doc/tools/sphinxext/indexcontent.html:20
 msgid "tutorial for C/C++ programmers"
 msgstr "tutoriel pour les développeurs C/C++"
 
-#: tools/sphinxext/indexcontent.html:21
+#: ../Doc/tools/sphinxext/indexcontent.html:21
 msgid "Python/C API"
 msgstr "Python/C API [en]"
 
-#: tools/sphinxext/indexcontent.html:22
+#: ../Doc/tools/sphinxext/indexcontent.html:22
 msgid "reference for C/C++ programmers"
 msgstr "référence pour les développeurs C/C++"
 
-#: tools/sphinxext/indexcontent.html:23
+#: ../Doc/tools/sphinxext/indexcontent.html:23
 msgid "Installing Python Modules"
 msgstr "L'installation de modules Python"
 
-#: tools/sphinxext/indexcontent.html:24
+#: ../Doc/tools/sphinxext/indexcontent.html:24
 msgid "information for installers &amp; sys-admins"
 msgstr "Informations pour les installateurs &amp; administrateurs système"
 
-#: tools/sphinxext/indexcontent.html:25
+#: ../Doc/tools/sphinxext/indexcontent.html:25
 msgid "Distributing Python Modules"
 msgstr "Distribuer des Modules Python"
 
-#: tools/sphinxext/indexcontent.html:26
+#: ../Doc/tools/sphinxext/indexcontent.html:26
 msgid "sharing modules with others"
 msgstr "partager des modules"
 
-#: tools/sphinxext/indexcontent.html:27
+#: ../Doc/tools/sphinxext/indexcontent.html:27
 msgid "FAQs"
 msgstr "FAQs [en]"
 
-#: tools/sphinxext/indexcontent.html:28
+#: ../Doc/tools/sphinxext/indexcontent.html:28
 msgid "frequently asked questions (with answers!)"
 msgstr "foire aux questions (avec les réponses !)"
 
-#: tools/sphinxext/indexcontent.html:32
+#: ../Doc/tools/sphinxext/indexcontent.html:32
 msgid "Indices and tables:"
 msgstr "Indexes et tables des matières:"
 
-#: tools/sphinxext/indexcontent.html:35
+#: ../Doc/tools/sphinxext/indexcontent.html:35
 msgid "Global Module Index"
 msgstr "Index global des modules"
 
-#: tools/sphinxext/indexcontent.html:36
+#: ../Doc/tools/sphinxext/indexcontent.html:36
 msgid "quick access to all modules"
 msgstr "accès rapide à tous les modules"
 
-#: tools/sphinxext/indexcontent.html:37
+#: ../Doc/tools/sphinxext/indexcontent.html:37
 msgid "General Index"
 msgstr "Index Général"
 
-#: tools/sphinxext/indexcontent.html:38
+#: ../Doc/tools/sphinxext/indexcontent.html:38
 msgid "all functions, classes, terms"
 msgstr "toutes les fonctions, classes, et termes"
 
-#: tools/sphinxext/indexcontent.html:39
+#: ../Doc/tools/sphinxext/indexcontent.html:39
 msgid "Glossary"
 msgstr "Glossaire"
 
-#: tools/sphinxext/indexcontent.html:40
+#: ../Doc/tools/sphinxext/indexcontent.html:40
 msgid "the most important terms explained"
 msgstr "les mots les plus importants expliqués"
 
-#: tools/sphinxext/indexcontent.html:42
+#: ../Doc/tools/sphinxext/indexcontent.html:42
 msgid "Search page"
 msgstr "Page de recherche"
 
-#: tools/sphinxext/indexcontent.html:43
+#: ../Doc/tools/sphinxext/indexcontent.html:43
 msgid "search this documentation"
 msgstr "chercher dans cette documentation"
 
-#: tools/sphinxext/indexcontent.html:44
+#: ../Doc/tools/sphinxext/indexcontent.html:44
 msgid "Complete Table of Contents"
 msgstr "Table des matières complète"
 
-#: tools/sphinxext/indexcontent.html:45
+#: ../Doc/tools/sphinxext/indexcontent.html:45
 msgid "lists all sections and subsections"
 msgstr "liste toute les sections et sous-sections"
 
-#: tools/sphinxext/indexcontent.html:49
+#: ../Doc/tools/sphinxext/indexcontent.html:49
 msgid "Meta information:"
 msgstr "Méta informations :"
 
-#: tools/sphinxext/indexcontent.html:52
+#: ../Doc/tools/sphinxext/indexcontent.html:52
 msgid "Reporting bugs"
 msgstr "Rapporter des bugs"
 
-#: tools/sphinxext/indexcontent.html:53
+#: ../Doc/tools/sphinxext/indexcontent.html:53
 msgid "About the documentation"
 msgstr "À propos de la documentation"
 
-#: tools/sphinxext/indexcontent.html:55
+#: ../Doc/tools/sphinxext/indexcontent.html:55
 msgid "History and License of Python"
 msgstr "Histoire et Licence de Python"
 
-#: tools/sphinxext/indexcontent.html:56
+#: ../Doc/tools/sphinxext/indexcontent.html:56
 msgid "Copyright"
 msgstr "Copyright"
+
+#: ../Doc/tools/sphinxext/layout.html:93
+msgid "This Page"
+msgstr "Cette Page"

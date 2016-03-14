@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-22 00:53+0100\n"
+"POT-Creation-Date: 2016-03-12 23:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: using/cmdline.rst:9
+#: ../Doc/using/cmdline.rst:9
 msgid "Command line and environment"
 msgstr "Ligne de commande et environnement"
 
-#: using/cmdline.rst:11
+#: ../Doc/using/cmdline.rst:11
 msgid ""
 "The CPython interpreter scans the command line and the environment for "
 "various settings."
@@ -29,7 +29,7 @@ msgstr ""
 "L'interpréteur CPython analyse la ligne de commande et l'environnement à la "
 "recherche de différents paramètres/"
 
-#: using/cmdline.rst:16
+#: ../Doc/using/cmdline.rst:16
 msgid ""
 "Other implementations' command line schemes may differ.  See :ref:"
 "`implementations` for further resources."
@@ -37,28 +37,28 @@ msgstr ""
 "Le format des lignes de commandes utilisées par d'autres implémentations "
 "peut être différent. Voir :ref:`implementations` pour plus d'informations."
 
-#: using/cmdline.rst:23
+#: ../Doc/using/cmdline.rst:23
 msgid "Command line"
 msgstr "Ligne de commande"
 
-#: using/cmdline.rst:25
+#: ../Doc/using/cmdline.rst:25
 msgid "When invoking Python, you may specify any of these options::"
 msgstr ""
 "Quand vous invoquez Python, vous pouvez spécifier n’importe laquelle de ces "
 "options :"
 
-#: using/cmdline.rst:29
+#: ../Doc/using/cmdline.rst:29
 msgid ""
 "The most common use case is, of course, a simple invocation of a script::"
 msgstr ""
 "Le cas d'utilisation le plus courant est, bien entendu, la simple invocation "
 "d'un script ::"
 
-#: using/cmdline.rst:37
+#: ../Doc/using/cmdline.rst:37
 msgid "Interface options"
 msgstr "Options de l'interface"
 
-#: using/cmdline.rst:39
+#: ../Doc/using/cmdline.rst:39
 msgid ""
 "The interpreter interface resembles that of the UNIX shell, but provides "
 "some additional methods of invocation:"
@@ -66,7 +66,7 @@ msgstr ""
 "L'interface de l’interpréteur ressemble à celle du shell UNIX, mais fournit "
 "quelques méthodes d'invocation supplémentaires :"
 
-#: using/cmdline.rst:42
+#: ../Doc/using/cmdline.rst:42
 msgid ""
 "When called with standard input connected to a tty device, it prompts for "
 "commands and executes them until an EOF (an end-of-file character, you can "
@@ -77,7 +77,7 @@ msgstr ""
 "qu'un caractère EOF (un caractère fin de fichier, que vous pouvez produire "
 "avec *Ctrl-D* sous UNIX ou *Ctrl-Z, Entrée* sous Windows) soit lu."
 
-#: using/cmdline.rst:45
+#: ../Doc/using/cmdline.rst:45
 msgid ""
 "When called with a file name argument or with a file as standard input, it "
 "reads and executes a script from that file."
@@ -86,7 +86,7 @@ msgstr ""
 "fichier ou avec un fichier comme entrée standard, il lit et exécute le "
 "script contenu dans ce fichier."
 
-#: using/cmdline.rst:47
+#: ../Doc/using/cmdline.rst:47
 msgid ""
 "When called with a directory name argument, it reads and executes an "
 "appropriately named script from that directory."
@@ -95,7 +95,7 @@ msgstr ""
 "répertoire, il lit et exécute un script nommé d’une certaine façon depuis ce "
 "répertoire."
 
-#: using/cmdline.rst:49
+#: ../Doc/using/cmdline.rst:49
 msgid ""
 "When called with ``-c command``, it executes the Python statement(s) given "
 "as *command*.  Here *command* may contain multiple statements separated by "
@@ -106,7 +106,7 @@ msgstr ""
 "contenir plusieurs instructions séparées par des fins de ligne. Les blancs "
 "en début de ligne ne sont pas ignorés dans les instructions Python !"
 
-#: using/cmdline.rst:52
+#: ../Doc/using/cmdline.rst:52
 msgid ""
 "When called with ``-m module-name``, the given module is located on the "
 "Python module path and executed as a script."
@@ -115,13 +115,13 @@ msgstr ""
 "module donné est recherché dans le chemin des modules Python et est exécuté "
 "en tant que script."
 
-#: using/cmdline.rst:55
+#: ../Doc/using/cmdline.rst:55
 msgid ""
 "In non-interactive mode, the entire input is parsed before it is executed."
 msgstr ""
 "En mode non-interactif, toute l’entrée est analysée avant d’être exécutée. "
 
-#: using/cmdline.rst:57
+#: ../Doc/using/cmdline.rst:57
 msgid ""
 "An interface option terminates the list of options consumed by the "
 "interpreter, all consecutive arguments will end up in :data:`sys.argv` -- "
@@ -133,7 +133,7 @@ msgstr ""
 "que le premier élément, à l'indice zéro (``sys.argv|0]``), est une chaîne de "
 "caractères indiquant la source du programme."
 
-#: using/cmdline.rst:64
+#: ../Doc/using/cmdline.rst:64
 #, fuzzy
 msgid ""
 "Execute the Python code in *command*.  *command* can be one or more "
@@ -144,7 +144,7 @@ msgstr ""
 "plusieurs instructions, séparées par des fins de ligne, avec des blancs en "
 "début de ligne qui ne sont pas ignorés, comme dans le code d’un module."
 
-#: using/cmdline.rst:68
+#: ../Doc/using/cmdline.rst:68
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be ``\"-c"
 "\"`` and the current directory will be added to the start of :data:`sys."
@@ -156,7 +156,7 @@ msgstr ""
 "(permettant aux modules de ce répertoire d'être importé comme des modules de "
 "premier niveau)."
 
-#: using/cmdline.rst:76
+#: ../Doc/using/cmdline.rst:76
 msgid ""
 "Search :data:`sys.path` for the named module and execute its contents as "
 "the :mod:`__main__` module."
@@ -164,7 +164,7 @@ msgstr ""
 "Parcourir :data:`sys.path` à la recherche du module donné et exécuter son "
 "contenu en tant que module :mod:`__main__`."
 
-#: using/cmdline.rst:79
+#: ../Doc/using/cmdline.rst:79
 msgid ""
 "Since the argument is a *module* name, you must not give a file extension "
 "(``.py``).  The ``module-name`` should be a valid Python module name, but "
@@ -176,7 +176,7 @@ msgstr ""
 "Python valide, mais l'implémentation n’est pas tenue de le vérifier (par "
 "exemple, l'utilisation d'un trait d'union peut être autorisée)."
 
-#: using/cmdline.rst:84
+#: ../Doc/using/cmdline.rst:84
 msgid ""
 "Package names are also permitted. When a package name is supplied instead of "
 "a normal module, the interpreter will execute ``<pkg>.__main__`` as the main "
@@ -190,7 +190,7 @@ msgstr ""
 "un répertoire on un fichier zip donné à l'interpréteur comme argument à "
 "exécuter."
 
-#: using/cmdline.rst:92
+#: ../Doc/using/cmdline.rst:92
 msgid ""
 "This option cannot be used with built-in modules and extension modules "
 "written in C, since they do not have Python module files. However, it can "
@@ -203,7 +203,7 @@ msgstr ""
 "pour les modules pré-complilés, même si le fichier source original n'est pas "
 "disponible."
 
-#: using/cmdline.rst:97
+#: ../Doc/using/cmdline.rst:97
 #, fuzzy
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be the "
@@ -215,7 +215,7 @@ msgstr ""
 "chemin complet d'accès au fichier du module. Comme pour l'option :option:`-"
 "c`, le répertoire courant sera ajouté au début de :data:`sys.path`."
 
-#: using/cmdline.rst:102
+#: ../Doc/using/cmdline.rst:102
 msgid ""
 "Many standard library modules contain code that is invoked on their "
 "execution as a script.  An example is the :mod:`timeit` module::"
@@ -224,23 +224,23 @@ msgstr ""
 "invoqué quand ils sont exécutés comme scripts. Un exemple est le module :mod:"
 "`timeit`\\ ::"
 
-#: using/cmdline.rst:110
-msgid "runpy.run_module()"
+#: ../Doc/using/cmdline.rst:110
+msgid ":func:`runpy.run_module`"
 msgstr ""
 
-#: using/cmdline.rst:110
+#: ../Doc/using/cmdline.rst:110
 msgid "Equivalent functionality directly available to Python code"
 msgstr ""
 
-#: using/cmdline.rst:112
+#: ../Doc/using/cmdline.rst:112
 msgid ":pep:`338` -- Executing modules as scripts"
 msgstr ":pep:`338` --  Exécuter des modules en tant que scripts"
 
-#: using/cmdline.rst:115
+#: ../Doc/using/cmdline.rst:115
 msgid "Supply the package name to run a ``__main__`` submodule."
 msgstr ""
 
-#: using/cmdline.rst:121
+#: ../Doc/using/cmdline.rst:121
 msgid ""
 "Read commands from standard input (:data:`sys.stdin`).  If standard input is "
 "a terminal, :option:`-i` is implied."
@@ -248,7 +248,7 @@ msgstr ""
 "Lit les commandes depuis l'entrée standard (:data:`sys.stdin`). Si l'entrée "
 "standard est un terminal, l':option:`-i` est activée implicitement."
 
-#: using/cmdline.rst:124
+#: ../Doc/using/cmdline.rst:124
 #, fuzzy
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be ``\"-"
@@ -258,7 +258,7 @@ msgstr ""
 "Si cette option est donnée, le premier élément de :data:`sys.argv` sera ``\"-"
 "\"`` et le répertoire courant sera ajouté au début de :data:`sys.path`."
 
-#: using/cmdline.rst:131
+#: ../Doc/using/cmdline.rst:131
 msgid ""
 "Execute the Python code contained in *script*, which must be a filesystem "
 "path (absolute or relative) referring to either a Python file, a directory "
@@ -270,7 +270,7 @@ msgstr ""
 "un répertoire contenant un fichier ``__main__.py`` ou à un fichier zip "
 "contenant un fichier ``__main__.py``."
 
-#: using/cmdline.rst:136
+#: ../Doc/using/cmdline.rst:136
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be the "
 "script name as given on the command line."
@@ -278,7 +278,7 @@ msgstr ""
 "Si cette option est donnée, le premier élément de :data:`sys.argv` sera le "
 "nom du script comme donné sur la ligne de commande."
 
-#: using/cmdline.rst:139
+#: ../Doc/using/cmdline.rst:139
 #, fuzzy
 msgid ""
 "If the script name refers directly to a Python file, the directory "
@@ -289,7 +289,7 @@ msgstr ""
 "contenant ce fichier est ajouté au début de :data:`sys.path`, et le fichier "
 "est exécuté en tant que module :mod:`__main__`."
 
-#: using/cmdline.rst:143
+#: ../Doc/using/cmdline.rst:143
 #, fuzzy
 msgid ""
 "If the script name refers to a directory or zipfile, the script name is "
@@ -300,7 +300,7 @@ msgstr ""
 "du script est ajouté au début de :data:`sys.path` et le fichier ``__main__."
 "py`` à cet endroit est exécuté en tant que module :mod:`__main__`."
 
-#: using/cmdline.rst:148
+#: ../Doc/using/cmdline.rst:148
 msgid ""
 "If no interface option is given, :option:`-i` is implied, ``sys.argv[0]`` is "
 "an empty string (``\"\"``) and the current directory will be added to the "
@@ -310,33 +310,33 @@ msgstr ""
 "argv[0]`` est une chaine vide (``\"\"``) et le répertoire courant sera "
 "ajouté au début de :data:`sys.path`."
 
-#: using/cmdline.rst:152
+#: ../Doc/using/cmdline.rst:152
 msgid ":ref:`tut-invoking`"
 msgstr ""
 
-#: using/cmdline.rst:156
+#: ../Doc/using/cmdline.rst:156
 #, fuzzy
 msgid "Generic options"
 msgstr "Options génériques"
 
-#: using/cmdline.rst:162
+#: ../Doc/using/cmdline.rst:162
 #, fuzzy
 msgid "Print a short description of all command line options."
 msgstr ""
 "Affiche une brève description de toutes les options de ligne de commande."
 
-#: using/cmdline.rst:168
+#: ../Doc/using/cmdline.rst:168
 #, fuzzy
 msgid "Print the Python version number and exit.  Example output could be::"
 msgstr ""
 "Imprimer le numéro de version de Python et termine. Exemple de sortie : ::"
 
-#: using/cmdline.rst:174
+#: ../Doc/using/cmdline.rst:174
 #, fuzzy
 msgid "Miscellaneous options"
 msgstr "Options diverses"
 
-#: using/cmdline.rst:178
+#: ../Doc/using/cmdline.rst:178
 #, fuzzy
 msgid ""
 "Issue a warning when comparing str and bytes. Issue an error when the option "
@@ -345,7 +345,7 @@ msgstr ""
 "Émettre un avertissement lorsque l'on compare un str et un bytes. Émettre "
 "une erreur lorsque l'option est donné deux fois (:option:`-bb`)."
 
-#: using/cmdline.rst:184
+#: ../Doc/using/cmdline.rst:184
 msgid ""
 "If given, Python won't try to write ``.pyc`` or ``.pyo`` files on the import "
 "of source modules.  See also :envvar:`PYTHONDONTWRITEBYTECODE`."
@@ -354,7 +354,7 @@ msgstr ""
 "l'importation des modules source. Voir aussi :envvar:"
 "`PYTHONDONTWRITEBYTECODE`."
 
-#: using/cmdline.rst:190
+#: ../Doc/using/cmdline.rst:190
 msgid ""
 "Turn on parser debugging output (for wizards only, depending on compilation "
 "options).  See also :envvar:`PYTHONDEBUG`."
@@ -362,7 +362,7 @@ msgstr ""
 "Activer la sortie de l'analyseur de débogage (pour les magiciens uniquement, "
 "en fonction des options de compilation). Voir aussi :envvar:`PYTHONDEBUG`."
 
-#: using/cmdline.rst:196
+#: ../Doc/using/cmdline.rst:196
 msgid ""
 "Ignore all :envvar:`PYTHON*` environment variables, e.g. :envvar:"
 "`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set."
@@ -371,7 +371,7 @@ msgstr ""
 "exemple, :envvar:`PYTHONPATH` et :envvar:`PYTHONHOME`, qui pourraient être "
 "définies."
 
-#: using/cmdline.rst:202
+#: ../Doc/using/cmdline.rst:202
 msgid ""
 "When a script is passed as first argument or the :option:`-c` option is "
 "used, enter interactive mode after executing the script or the command, even "
@@ -383,7 +383,7 @@ msgstr ""
 "la commande, même lorsque :data:`sys.stdin` ne semble pas être un terminal. "
 "Le fichier :envvar:`PYTHONSTARTUP` n'est pas lu."
 
-#: using/cmdline.rst:207
+#: ../Doc/using/cmdline.rst:207
 msgid ""
 "This can be useful to inspect global variables or a stack trace when a "
 "script raises an exception.  See also :envvar:`PYTHONINSPECT`."
@@ -392,7 +392,7 @@ msgstr ""
 "pile lorsque le script lève une exception. Voir aussi :envvar:"
 "`PYTHONINSPECT`."
 
-#: using/cmdline.rst:213
+#: ../Doc/using/cmdline.rst:213
 msgid ""
 "Turn on basic optimizations.  This changes the filename extension for "
 "compiled (:term:`bytecode`) files from ``.pyc`` to ``.pyo``.  See also :"
@@ -402,23 +402,23 @@ msgstr ""
 "les fichiers compilés (:term:`bytecode`) de ``.pyc`` à ``.pyo``. Voir aussi :"
 "envvar:`PYTHONOPTIMIZE`."
 
-#: using/cmdline.rst:220
+#: ../Doc/using/cmdline.rst:220
 msgid "Discard docstrings in addition to the :option:`-O` optimizations."
 msgstr ""
 "Supprimer les docstrings en plus des optimisations réalisés par :option:`-O`."
 
-#: using/cmdline.rst:225
+#: ../Doc/using/cmdline.rst:225
 msgid ""
 "Don't display the copyright and version messages even in interactive mode."
 msgstr ""
 
-#: using/cmdline.rst:232
+#: ../Doc/using/cmdline.rst:232
 msgid ""
 "Kept for compatibility.  On Python 3.3 and greater, hash randomization is "
 "turned on by default."
 msgstr ""
 
-#: using/cmdline.rst:235
+#: ../Doc/using/cmdline.rst:235
 msgid ""
 "On previous versions of Python, this option turns on hash randomization, so "
 "that the :meth:`__hash__` values of str, bytes and datetime are \"salted\" "
@@ -427,7 +427,7 @@ msgid ""
 "invocations of Python."
 msgstr ""
 
-#: using/cmdline.rst:241
+#: ../Doc/using/cmdline.rst:241
 msgid ""
 "Hash randomization is intended to provide protection against a denial-of-"
 "service caused by carefully-chosen inputs that exploit the worst case "
@@ -435,25 +435,26 @@ msgid ""
 "org/advisories/ocert-2011-003.html for details."
 msgstr ""
 
-#: using/cmdline.rst:246
+#: ../Doc/using/cmdline.rst:246
 msgid ""
 ":envvar:`PYTHONHASHSEED` allows you to set a fixed value for the hash seed "
 "secret."
 msgstr ""
 
-#: using/cmdline.rst:254
+#: ../Doc/using/cmdline.rst:254
 #, fuzzy
 msgid ""
 "Don't add the :data:`user site-packages directory <site.USER_SITE>` to :data:"
 "`sys.path`."
 msgstr "Ne pas ajouter le répertoire spécifique de l’utilisateur à sys.path"
 
-#: using/cmdline.rst:259 using/cmdline.rst:530 using/cmdline.rst:542
+#: ../Doc/using/cmdline.rst:259 ../Doc/using/cmdline.rst:530
+#: ../Doc/using/cmdline.rst:542
 #, fuzzy
 msgid ":pep:`370` -- Per user site-packages directory"
 msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
 
-#: using/cmdline.rst:264
+#: ../Doc/using/cmdline.rst:264
 #, fuzzy
 msgid ""
 "Disable the import of the module :mod:`site` and the site-dependent "
@@ -464,7 +465,7 @@ msgstr ""
 "Désactiver l’importation du module :mod:`site` et les modifications de :data:"
 "`sys.path` spécifiques au site qu’elle implique."
 
-#: using/cmdline.rst:272
+#: ../Doc/using/cmdline.rst:272
 #, fuzzy
 msgid ""
 "Force the binary layer of the stdout and stderr streams (which is available "
@@ -476,11 +477,11 @@ msgstr ""
 "leur attribut ``buffer``) à ne pas mettre de données en tampon. La couche "
 "d’entrée-sortie en mode texte continuera de mettre une ligne en tampon."
 
-#: using/cmdline.rst:277
+#: ../Doc/using/cmdline.rst:277
 msgid "See also :envvar:`PYTHONUNBUFFERED`."
 msgstr "Voir aussi :envvar:`PYTHONUNBUFFERED`."
 
-#: using/cmdline.rst:282
+#: ../Doc/using/cmdline.rst:282
 msgid ""
 "Print a message each time a module is initialized, showing the place "
 "(filename or built-in module) from which it is loaded.  When given twice (:"
@@ -489,14 +490,14 @@ msgid ""
 "exit. See also :envvar:`PYTHONVERBOSE`."
 msgstr ""
 
-#: using/cmdline.rst:291
+#: ../Doc/using/cmdline.rst:291
 msgid ""
 "Warning control.  Python's warning machinery by default prints warning "
 "messages to :data:`sys.stderr`.  A typical warning message has the following "
 "form::"
 msgstr ""
 
-#: using/cmdline.rst:297
+#: ../Doc/using/cmdline.rst:297
 #, fuzzy
 msgid ""
 "By default, each warning is printed once for each source line where it "
@@ -506,7 +507,7 @@ msgstr ""
 "source où elle se trouve. Cette option définit la fréquence d'affichage des "
 "avertissements."
 
-#: using/cmdline.rst:300
+#: ../Doc/using/cmdline.rst:300
 msgid ""
 "Multiple :option:`-W` options may be given; when a warning matches more than "
 "one option, the action for the last matching option is performed.  Invalid :"
@@ -514,13 +515,13 @@ msgid ""
 "invalid options when the first warning is issued)."
 msgstr ""
 
-#: using/cmdline.rst:305
+#: ../Doc/using/cmdline.rst:305
 msgid ""
 "Warnings can also be controlled from within a Python program using the :mod:"
 "`warnings` module."
 msgstr ""
 
-#: using/cmdline.rst:308
+#: ../Doc/using/cmdline.rst:308
 #, fuzzy
 msgid ""
 "The simplest form of argument is one of the following action strings (or a "
@@ -529,30 +530,31 @@ msgstr ""
 "La forme la plus simple de l'argument est l'une des chaînes d'action "
 "suivante (ou une abréviation unique):"
 
-#: using/cmdline.rst:311
-msgid "ignore"
+#: ../Doc/using/cmdline.rst:311
+msgid "``ignore``"
 msgstr ""
 
-#: using/cmdline.rst:312
+#: ../Doc/using/cmdline.rst:312
 #, fuzzy
 msgid "Ignore all warnings."
 msgstr "Ignorer tous les avertissements."
 
-#: using/cmdline.rst:314
-msgid "default"
+#: ../Doc/using/cmdline.rst:314
+#, fuzzy
+msgid "``default``"
 msgstr "default"
 
-#: using/cmdline.rst:314
+#: ../Doc/using/cmdline.rst:314
 msgid ""
 "Explicitly request the default behavior (printing each warning once per "
 "source line)."
 msgstr ""
 
-#: using/cmdline.rst:318
-msgid "all"
+#: ../Doc/using/cmdline.rst:318
+msgid "``all``"
 msgstr ""
 
-#: using/cmdline.rst:317
+#: ../Doc/using/cmdline.rst:317
 #, fuzzy
 msgid ""
 "Print a warning each time it occurs (this may generate many messages if a "
@@ -563,43 +565,44 @@ msgstr ""
 "beaucoup de messages si l'avertissement est déclenchée à plusieurs reprises "
 "pour la ligne du même source, comme à l'intérieur d'une boucle)."
 
-#: using/cmdline.rst:320
-msgid "module"
+#: ../Doc/using/cmdline.rst:320
+#, fuzzy
+msgid "``module``"
 msgstr "module"
 
-#: using/cmdline.rst:321
+#: ../Doc/using/cmdline.rst:321
 #, fuzzy
 msgid "Print each warning only the first time it occurs in each module."
 msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
 "chaque module."
 
-#: using/cmdline.rst:322
-msgid "once"
+#: ../Doc/using/cmdline.rst:322
+msgid "``once``"
 msgstr ""
 
-#: using/cmdline.rst:323
+#: ../Doc/using/cmdline.rst:323
 #, fuzzy
 msgid "Print each warning only the first time it occurs in the program."
 msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
 "le programme."
 
-#: using/cmdline.rst:325
-msgid "error"
+#: ../Doc/using/cmdline.rst:325
+msgid "``error``"
 msgstr ""
 
-#: using/cmdline.rst:325
+#: ../Doc/using/cmdline.rst:325
 #, fuzzy
 msgid "Raise an exception instead of printing a warning message."
 msgstr "Déclenche une exception au lieu d'afficher un message d'avertissement."
 
-#: using/cmdline.rst:327
+#: ../Doc/using/cmdline.rst:327
 #, fuzzy
 msgid "The full form of argument is::"
 msgstr "La forme complète de l'argument est le suivant::"
 
-#: using/cmdline.rst:331
+#: ../Doc/using/cmdline.rst:331
 #, fuzzy
 msgid ""
 "Here, *action* is as explained above but only applies to messages that match "
@@ -626,31 +629,31 @@ msgstr ""
 "correspond au numéro de ligne, où zéro correspond à n'importe quel numéro de "
 "ligne et correspond donc à l'option par défaut."
 
-#: using/cmdline.rst:343
+#: ../Doc/using/cmdline.rst:343
 msgid ":mod:`warnings` -- the warnings module"
 msgstr ""
 
-#: using/cmdline.rst:345
+#: ../Doc/using/cmdline.rst:345
 msgid ":pep:`230` -- Warning framework"
 msgstr ":pep:`230` -- Gestion des alertes"
 
-#: using/cmdline.rst:347
+#: ../Doc/using/cmdline.rst:347
 msgid ":envvar:`PYTHONWARNINGS`"
 msgstr ""
 
-#: using/cmdline.rst:352
+#: ../Doc/using/cmdline.rst:352
 msgid ""
 "Skip the first line of the source, allowing use of non-Unix forms of ``#!"
 "cmd``.  This is intended for a DOS specific hack only."
 msgstr ""
 
-#: using/cmdline.rst:355
+#: ../Doc/using/cmdline.rst:355
 #, fuzzy
 msgid "The line numbers in error messages will be off by one."
 msgstr ""
 "Les numéros de ligne dans les messages d'erreur seront désactivés un par un."
 
-#: using/cmdline.rst:360
+#: ../Doc/using/cmdline.rst:360
 msgid ""
 "Reserved for various implementation-specific options.  CPython currently "
 "defines just one, you can use ``-X faulthandler`` to enable :mod:"
@@ -658,28 +661,28 @@ msgid ""
 "through the :data:`sys._xoptions` dictionary."
 msgstr ""
 
-#: using/cmdline.rst:365
+#: ../Doc/using/cmdline.rst:365
 msgid "It is now allowed to pass :option:`-X` with CPython."
 msgstr ""
 
-#: using/cmdline.rst:368
+#: ../Doc/using/cmdline.rst:368
 msgid "The ``-X faulthandler`` option."
 msgstr ""
 
-#: using/cmdline.rst:373
+#: ../Doc/using/cmdline.rst:373
 msgid "Options you shouldn't use"
 msgstr "Options que vous ne devriez pas utiliser"
 
-#: using/cmdline.rst:377
+#: ../Doc/using/cmdline.rst:377
 #, fuzzy
 msgid "Reserved for use by Jython_."
 msgstr "Utilisation réservée à Jython_."
 
-#: using/cmdline.rst:385
+#: ../Doc/using/cmdline.rst:385
 msgid "Environment variables"
 msgstr "Variables d'environnement"
 
-#: using/cmdline.rst:387
+#: ../Doc/using/cmdline.rst:387
 msgid ""
 "These environment variables influence Python's behavior, they are processed "
 "before the command-line switches other than -E.  It is customary that "
@@ -687,7 +690,7 @@ msgid ""
 "conflict."
 msgstr ""
 
-#: using/cmdline.rst:394
+#: ../Doc/using/cmdline.rst:394
 msgid ""
 "Change the location of the standard Python libraries.  By default, the "
 "libraries are searched in :file:`{prefix}/lib/python{version}` and :file:"
@@ -696,14 +699,14 @@ msgid ""
 "file:`/usr/local`."
 msgstr ""
 
-#: using/cmdline.rst:400
+#: ../Doc/using/cmdline.rst:400
 msgid ""
 "When :envvar:`PYTHONHOME` is set to a single directory, its value replaces "
 "both :file:`{prefix}` and :file:`{exec_prefix}`.  To specify different "
 "values for these, set :envvar:`PYTHONHOME` to :file:`{prefix}:{exec_prefix}`."
 msgstr ""
 
-#: using/cmdline.rst:407
+#: ../Doc/using/cmdline.rst:407
 msgid ""
 "Augment the default search path for module files.  The format is the same as "
 "the shell's :envvar:`PATH`: one or more directory pathnames separated by :"
@@ -711,21 +714,21 @@ msgid ""
 "existent directories are silently ignored."
 msgstr ""
 
-#: using/cmdline.rst:412
+#: ../Doc/using/cmdline.rst:412
 msgid ""
 "In addition to normal directories, individual :envvar:`PYTHONPATH` entries "
 "may refer to zipfiles containing pure Python modules (in either source or "
 "compiled form). Extension modules cannot be imported from zipfiles."
 msgstr ""
 
-#: using/cmdline.rst:416
+#: ../Doc/using/cmdline.rst:416
 msgid ""
 "The default search path is installation dependent, but generally begins "
 "with :file:`{prefix}/lib/python{version}` (see :envvar:`PYTHONHOME` above).  "
 "It is *always* appended to :envvar:`PYTHONPATH`."
 msgstr ""
 
-#: using/cmdline.rst:420
+#: ../Doc/using/cmdline.rst:420
 msgid ""
 "An additional directory will be inserted in the search path in front of :"
 "envvar:`PYTHONPATH` as described above under :ref:`using-on-interface-"
@@ -733,7 +736,7 @@ msgid ""
 "the variable :data:`sys.path`."
 msgstr ""
 
-#: using/cmdline.rst:428
+#: ../Doc/using/cmdline.rst:428
 msgid ""
 "If this is the name of a readable file, the Python commands in that file are "
 "executed before the first prompt is displayed in interactive mode.  The file "
@@ -743,7 +746,7 @@ msgid ""
 "and :data:`sys.ps2` in this file."
 msgstr ""
 
-#: using/cmdline.rst:438
+#: ../Doc/using/cmdline.rst:438
 msgid ""
 "Set this to a non-empty string to cause the :mod:`time` module to require "
 "dates specified as strings to include 4-digit years, otherwise 2-digit years "
@@ -751,52 +754,52 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: using/cmdline.rst:446
+#: ../Doc/using/cmdline.rst:446
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-O` option.  If set to an integer, it is equivalent to specifying :"
 "option:`-O` multiple times."
 msgstr ""
 
-#: using/cmdline.rst:453
+#: ../Doc/using/cmdline.rst:453
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-d` option.  If set to an integer, it is equivalent to specifying :"
 "option:`-d` multiple times."
 msgstr ""
 
-#: using/cmdline.rst:460
+#: ../Doc/using/cmdline.rst:460
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-i` option."
 msgstr ""
 
-#: using/cmdline.rst:463
+#: ../Doc/using/cmdline.rst:463
 msgid ""
 "This variable can also be modified by Python code using :data:`os.environ` "
 "to force inspect mode on program termination."
 msgstr ""
 
-#: using/cmdline.rst:469
+#: ../Doc/using/cmdline.rst:469
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-u` option."
 msgstr ""
 
-#: using/cmdline.rst:475
+#: ../Doc/using/cmdline.rst:475
 msgid ""
 "If this is set to a non-empty string it is equivalent to specifying the :"
 "option:`-v` option.  If set to an integer, it is equivalent to specifying :"
 "option:`-v` multiple times."
 msgstr ""
 
-#: using/cmdline.rst:482
+#: ../Doc/using/cmdline.rst:482
 msgid ""
 "If this is set, Python ignores case in :keyword:`import` statements.  This "
 "only works on Windows and OS X."
 msgstr ""
 
-#: using/cmdline.rst:488
+#: ../Doc/using/cmdline.rst:488
 msgid ""
 "If this is set, Python won't try to write ``.pyc`` or ``.pyo`` files on the "
 "import of source modules.  This is equivalent to specifying the :option:`-B` "
@@ -806,33 +809,33 @@ msgstr ""
 "l'importation des modules source. Voir aussi :envvar:"
 "`PYTHONDONTWRITEBYTECODE`."
 
-#: using/cmdline.rst:495
+#: ../Doc/using/cmdline.rst:495
 msgid ""
 "If this variable is not set or set to ``random``, a random value is used to "
 "seed the hashes of str, bytes and datetime objects."
 msgstr ""
 
-#: using/cmdline.rst:498
+#: ../Doc/using/cmdline.rst:498
 msgid ""
 "If :envvar:`PYTHONHASHSEED` is set to an integer value, it is used as a "
 "fixed seed for generating the hash() of the types covered by the hash "
 "randomization."
 msgstr ""
 
-#: using/cmdline.rst:502
+#: ../Doc/using/cmdline.rst:502
 msgid ""
 "Its purpose is to allow repeatable hashing, such as for selftests for the "
 "interpreter itself, or to allow a cluster of python processes to share hash "
 "values."
 msgstr ""
 
-#: using/cmdline.rst:506
+#: ../Doc/using/cmdline.rst:506
 msgid ""
 "The integer must be a decimal number in the range [0,4294967295].  "
 "Specifying the value 0 will disable hash randomization."
 msgstr ""
 
-#: using/cmdline.rst:514
+#: ../Doc/using/cmdline.rst:514
 msgid ""
 "If this is set before running the interpreter, it overrides the encoding "
 "used for stdin/stdout/stderr, in the syntax ``encodingname:errorhandler``. "
@@ -840,19 +843,19 @@ msgid ""
 "`str.encode`."
 msgstr ""
 
-#: using/cmdline.rst:519
+#: ../Doc/using/cmdline.rst:519
 msgid ""
 "For stderr, the ``:errorhandler`` part is ignored; the handler will always "
 "be ``'backslashreplace'``."
 msgstr ""
 
-#: using/cmdline.rst:525
+#: ../Doc/using/cmdline.rst:525
 msgid ""
 "If this is set, Python won't add the :data:`user site-packages directory "
 "<site.USER_SITE>` to :data:`sys.path`."
 msgstr ""
 
-#: using/cmdline.rst:535
+#: ../Doc/using/cmdline.rst:535
 msgid ""
 "Defines the :data:`user base directory <site.USER_BASE>`, which is used to "
 "compute the path of the :data:`user site-packages directory <site."
@@ -860,20 +863,20 @@ msgid ""
 "for ``python setup.py install --user``."
 msgstr ""
 
-#: using/cmdline.rst:547
+#: ../Doc/using/cmdline.rst:547
 msgid ""
 "If this environment variable is set, ``sys.argv[0]`` will be set to its "
 "value instead of the value got through the C runtime.  Only works on Mac OS "
 "X."
 msgstr ""
 
-#: using/cmdline.rst:553
+#: ../Doc/using/cmdline.rst:553
 msgid ""
 "This is equivalent to the :option:`-W` option. If set to a comma separated "
 "string, it is equivalent to specifying :option:`-W` multiple times."
 msgstr ""
 
-#: using/cmdline.rst:559
+#: ../Doc/using/cmdline.rst:559
 msgid ""
 "If this environment variable is set, :func:`faulthandler.enable` is called "
 "at startup: install a handler for :const:`SIGSEGV`, :const:`SIGFPE`, :const:"
@@ -881,63 +884,63 @@ msgid ""
 "traceback.  This is equivalent to :option:`-X` ``faulthandler`` option."
 msgstr ""
 
-#: using/cmdline.rst:569
+#: ../Doc/using/cmdline.rst:569
 msgid "Debug-mode variables"
 msgstr ""
 
-#: using/cmdline.rst:571
+#: ../Doc/using/cmdline.rst:571
 msgid ""
 "Setting these variables only has an effect in a debug build of Python, that "
 "is, if Python was configured with the ``--with-pydebug`` build option."
 msgstr ""
 
-#: using/cmdline.rst:576
+#: ../Doc/using/cmdline.rst:576
 msgid "If set, Python will print threading debug info."
 msgstr ""
 
-#: using/cmdline.rst:581
+#: ../Doc/using/cmdline.rst:581
 msgid ""
 "If set, Python will dump objects and reference counts still alive after "
 "shutting down the interpreter."
 msgstr ""
 
-#: using/cmdline.rst:587
+#: ../Doc/using/cmdline.rst:587
 msgid ""
 "If set, Python will print memory allocation statistics every time a new "
 "object arena is created, and on shutdown."
 msgstr ""
 
-#: using/index.rst:5
+#: ../Doc/using/index.rst:5
 msgid "Python Setup and Usage"
 msgstr "Installation et Utilisation de Python [en]"
 
-#: using/index.rst:8
+#: ../Doc/using/index.rst:8
 msgid ""
 "This part of the documentation is devoted to general information on the "
 "setup of the Python environment on different platform, the invocation of the "
 "interpreter and things that make working with Python easier."
 msgstr ""
 
-#: using/mac.rst:6
+#: ../Doc/using/mac.rst:6
 msgid "Using Python on a Macintosh"
 msgstr ""
 
-#: using/mac.rst:8
+#: ../Doc/using/mac.rst:8
 msgid "Bob Savage <bobsavage@mac.com>"
 msgstr ""
 
-#: using/mac.rst:11
+#: ../Doc/using/mac.rst:11
 msgid ""
 "Python on a Macintosh running Mac OS X is in principle very similar to "
 "Python on any other Unix platform, but there are a number of additional "
 "features such as the IDE and the Package Manager that are worth pointing out."
 msgstr ""
 
-#: using/mac.rst:18
+#: ../Doc/using/mac.rst:18
 msgid "Getting and Installing MacPython"
 msgstr ""
 
-#: using/mac.rst:20
+#: ../Doc/using/mac.rst:20
 msgid ""
 "Mac OS X 10.8 comes with Python 2.7 pre-installed by Apple.  If you wish, "
 "you are invited to install the most recent version of Python 3 from the "
@@ -946,11 +949,11 @@ msgid ""
 "CPU's, is available there."
 msgstr ""
 
-#: using/mac.rst:26
+#: ../Doc/using/mac.rst:26
 msgid "What you get after installing is a number of things:"
 msgstr ""
 
-#: using/mac.rst:28
+#: ../Doc/using/mac.rst:28
 msgid ""
 "A :file:`MacPython 3.3` folder in your :file:`Applications` folder. In here "
 "you find IDLE, the development environment that is a standard part of "
@@ -959,7 +962,7 @@ msgid ""
 "you to package Python scripts as standalone applications on your system."
 msgstr ""
 
-#: using/mac.rst:34
+#: ../Doc/using/mac.rst:34
 msgid ""
 "A framework :file:`/Library/Frameworks/Python.framework`, which includes the "
 "Python executable and libraries. The installer adds this location to your "
@@ -967,7 +970,7 @@ msgid ""
 "things. A symlink to the Python executable is placed in /usr/local/bin/."
 msgstr ""
 
-#: using/mac.rst:39
+#: ../Doc/using/mac.rst:39
 msgid ""
 "The Apple-provided build of Python is installed in :file:`/System/Library/"
 "Frameworks/Python.framework` and :file:`/usr/bin/python`, respectively. You "
@@ -978,31 +981,31 @@ msgid ""
 "important that your paths and usages are consistent with what you want to do."
 msgstr ""
 
-#: using/mac.rst:47
+#: ../Doc/using/mac.rst:47
 msgid ""
 "IDLE includes a help menu that allows you to access Python documentation. If "
 "you are completely new to Python you should start reading the tutorial "
 "introduction in that document."
 msgstr ""
 
-#: using/mac.rst:51
+#: ../Doc/using/mac.rst:51
 msgid ""
 "If you are familiar with Python on other Unix platforms you should read the "
 "section on running Python scripts from the Unix shell."
 msgstr ""
 
-#: using/mac.rst:56
+#: ../Doc/using/mac.rst:56
 msgid "How to run a Python script"
 msgstr ""
 
-#: using/mac.rst:58
+#: ../Doc/using/mac.rst:58
 msgid ""
 "Your best way to get started with Python on Mac OS X is through the IDLE "
 "integrated development environment, see section :ref:`ide` and use the Help "
 "menu when the IDE is running."
 msgstr ""
 
-#: using/mac.rst:62
+#: ../Doc/using/mac.rst:62
 msgid ""
 "If you want to run Python scripts from the Terminal window command line or "
 "from the Finder you first need an editor to create your script. Mac OS X "
@@ -1015,21 +1018,21 @@ msgid ""
 "org/)."
 msgstr ""
 
-#: using/mac.rst:72
+#: ../Doc/using/mac.rst:72
 msgid ""
 "To run your script from the Terminal window you must make sure that :file:`/"
 "usr/local/bin` is in your shell search path."
 msgstr ""
 
-#: using/mac.rst:75
+#: ../Doc/using/mac.rst:75
 msgid "To run your script from the Finder you have two options:"
 msgstr ""
 
-#: using/mac.rst:77
+#: ../Doc/using/mac.rst:77
 msgid "Drag it to :program:`PythonLauncher`"
 msgstr ""
 
-#: using/mac.rst:79
+#: ../Doc/using/mac.rst:79
 msgid ""
 "Select :program:`PythonLauncher` as the default application to open your "
 "script (or any .py script) through the finder Info window and double-click "
@@ -1038,11 +1041,11 @@ msgid ""
 "invocation, or use its Preferences menu to change things globally."
 msgstr ""
 
-#: using/mac.rst:89
+#: ../Doc/using/mac.rst:89
 msgid "Running scripts with a GUI"
 msgstr ""
 
-#: using/mac.rst:91
+#: ../Doc/using/mac.rst:91
 msgid ""
 "With older versions of Python, there is one Mac OS X quirk that you need to "
 "be aware of: programs that talk to the Aqua window manager (in other words, "
@@ -1050,16 +1053,16 @@ msgid ""
 "`pythonw` instead of :program:`python` to start such scripts."
 msgstr ""
 
-#: using/mac.rst:96
+#: ../Doc/using/mac.rst:96
 msgid ""
 "With Python 3.3, you can use either :program:`python` or :program:`pythonw`."
 msgstr ""
 
-#: using/mac.rst:100
+#: ../Doc/using/mac.rst:100
 msgid "Configuration"
 msgstr ""
 
-#: using/mac.rst:102
+#: ../Doc/using/mac.rst:102
 msgid ""
 "Python on OS X honors all standard Unix environment variables such as :"
 "envvar:`PYTHONPATH`, but setting these variables for programs started from "
@@ -1068,61 +1071,61 @@ msgid ""
 "environment.plist`. See Apple's Technical Document QA1067 for details."
 msgstr ""
 
-#: using/mac.rst:108
+#: ../Doc/using/mac.rst:108
 msgid ""
 "For more information on installation Python packages in MacPython, see "
 "section :ref:`mac-package-manager`."
 msgstr ""
 
-#: using/mac.rst:115
+#: ../Doc/using/mac.rst:115
 msgid "The IDE"
 msgstr ""
 
-#: using/mac.rst:117
+#: ../Doc/using/mac.rst:117
 msgid ""
 "MacPython ships with the standard IDLE development environment. A good "
 "introduction to using IDLE can be found at http://hkn.eecs.berkeley.edu/"
 "~dyoo/python/idle_intro/index.html."
 msgstr ""
 
-#: using/mac.rst:125
+#: ../Doc/using/mac.rst:125
 msgid "Installing Additional Python Packages"
 msgstr ""
 
-#: using/mac.rst:127
+#: ../Doc/using/mac.rst:127
 msgid "There are several methods to install additional Python packages:"
 msgstr ""
 
-#: using/mac.rst:129
+#: ../Doc/using/mac.rst:129
 msgid ""
 "Packages can be installed via the standard Python distutils mode (``python "
 "setup.py install``)."
 msgstr ""
 
-#: using/mac.rst:132
+#: ../Doc/using/mac.rst:132
 msgid ""
 "Many packages can also be installed via the :program:`setuptools` extension "
 "or :program:`pip` wrapper, see http://www.pip-installer.org/."
 msgstr ""
 
-#: using/mac.rst:137
+#: ../Doc/using/mac.rst:137
 msgid "GUI Programming on the Mac"
 msgstr ""
 
-#: using/mac.rst:139
+#: ../Doc/using/mac.rst:139
 msgid ""
 "There are several options for building GUI applications on the Mac with "
 "Python."
 msgstr ""
 
-#: using/mac.rst:141
+#: ../Doc/using/mac.rst:141
 msgid ""
 "*PyObjC* is a Python binding to Apple's Objective-C/Cocoa framework, which "
 "is the foundation of most modern Mac development. Information on PyObjC is "
 "available from http://pyobjc.sourceforge.net."
 msgstr ""
 
-#: using/mac.rst:145
+#: ../Doc/using/mac.rst:145
 msgid ""
 "The standard Python GUI toolkit is :mod:`tkinter`, based on the cross-"
 "platform Tk toolkit (http://www.tcl.tk). An Aqua-native version of Tk is "
@@ -1130,25 +1133,25 @@ msgid ""
 "installed from http://www.activestate.com; it can also be built from source."
 msgstr ""
 
-#: using/mac.rst:150
+#: ../Doc/using/mac.rst:150
 msgid ""
 "*wxPython* is another popular cross-platform GUI toolkit that runs natively "
 "on Mac OS X. Packages and documentation are available from http://www."
 "wxpython.org."
 msgstr ""
 
-#: using/mac.rst:153
+#: ../Doc/using/mac.rst:153
 msgid ""
 "*PyQt* is another popular cross-platform GUI toolkit that runs natively on "
 "Mac OS X. More information can be found at http://www.riverbankcomputing.co."
 "uk/software/pyqt/intro."
 msgstr ""
 
-#: using/mac.rst:159
+#: ../Doc/using/mac.rst:159
 msgid "Distributing Python Applications on the Mac"
 msgstr ""
 
-#: using/mac.rst:161
+#: ../Doc/using/mac.rst:161
 msgid ""
 "The \"Build Applet\" tool that is placed in the MacPython 3.3 folder is fine "
 "for packaging small Python scripts on your own machine to run as a standard "
@@ -1156,51 +1159,51 @@ msgid ""
 "Python applications to other users."
 msgstr ""
 
-#: using/mac.rst:166
+#: ../Doc/using/mac.rst:166
 msgid ""
 "The standard tool for deploying standalone Python applications on the Mac "
 "is :program:`py2app`. More information on installing and using py2app can be "
 "found at http://undefined.org/python/#py2app."
 msgstr ""
 
-#: using/mac.rst:172
+#: ../Doc/using/mac.rst:172
 #, fuzzy
 msgid "Other Resources"
 msgstr "Autres ressources"
 
-#: using/mac.rst:174
+#: ../Doc/using/mac.rst:174
 msgid ""
 "The MacPython mailing list is an excellent support resource for Python users "
 "and developers on the Mac:"
 msgstr ""
 
-#: using/mac.rst:177
+#: ../Doc/using/mac.rst:177
 msgid "http://www.python.org/community/sigs/current/pythonmac-sig/"
 msgstr ""
 
-#: using/mac.rst:179
+#: ../Doc/using/mac.rst:179
 msgid "Another useful resource is the MacPython wiki:"
 msgstr ""
 
-#: using/mac.rst:181
+#: ../Doc/using/mac.rst:181
 msgid "http://wiki.python.org/moin/MacPython"
 msgstr ""
 
-#: using/scripts.rst:4
+#: ../Doc/using/scripts.rst:4
 msgid "Additional Tools and Scripts"
 msgstr ""
 
-#: using/scripts.rst:9
+#: ../Doc/using/scripts.rst:9
 msgid "pyvenv - Creating virtual environments"
 msgstr ""
 
-#: using/venv-create.inc:1
+#: ../Doc/using/venv-create.inc:1
 msgid ""
 "Creation of :ref:`virtual environments <venv-def>` is done by executing the "
 "``pyvenv`` script::"
 msgstr ""
 
-#: using/venv-create.inc:6
+#: ../Doc/using/venv-create.inc:6
 msgid ""
 "Running this command creates the target directory (creating any parent "
 "directories that don't exist already) and places a ``pyvenv.cfg`` file in it "
@@ -1211,60 +1214,60 @@ msgid ""
 "packages`` subdirectory (on Windows, this is ``Lib\\site-packages``)."
 msgstr ""
 
-#: using/venv-create.inc:16
+#: ../Doc/using/venv-create.inc:16
 msgid ""
 "On Windows, you may have to invoke the ``pyvenv`` script as follows, if you "
 "don't have the relevant PATH and PATHEXT settings::"
 msgstr ""
 
-#: using/venv-create.inc:21
+#: ../Doc/using/venv-create.inc:21
 msgid "or equivalently::"
 msgstr ""
 
-#: using/venv-create.inc:25
+#: ../Doc/using/venv-create.inc:25
 msgid "The command, if run with ``-h``, will show the available options::"
 msgstr ""
 
-#: using/venv-create.inc:47
+#: ../Doc/using/venv-create.inc:47
 msgid ""
 "If the target directory already exists an error will be raised, unless the "
 "``--clear`` or ``--upgrade`` option was provided."
 msgstr ""
 
-#: using/venv-create.inc:50
+#: ../Doc/using/venv-create.inc:50
 msgid ""
 "The created ``pyvenv.cfg`` file also includes the ``include-system-site-"
 "packages`` key, set to ``true`` if ``venv`` is run with the ``--system-site-"
 "packages`` option, ``false`` otherwise."
 msgstr ""
 
-#: using/venv-create.inc:54
+#: ../Doc/using/venv-create.inc:54
 msgid ""
 "Multiple paths can be given to ``pyvenv``, in which case an identical "
 "virtualenv will be created, according to the given options, at each provided "
 "path."
 msgstr ""
 
-#: using/venv-create.inc:58
+#: ../Doc/using/venv-create.inc:58
 msgid ""
 "Once a venv has been created, it can be \"activated\" using a script in the "
 "venv's binary directory. The invocation of the script is platform-specific: "
 "on a Posix platform, you would typically do::"
 msgstr ""
 
-#: using/venv-create.inc:64
+#: ../Doc/using/venv-create.inc:64
 msgid "whereas on Windows, you might do::"
 msgstr ""
 
-#: using/venv-create.inc:68
+#: ../Doc/using/venv-create.inc:68
 msgid "if you are using the ``cmd.exe`` shell, or perhaps::"
 msgstr ""
 
-#: using/venv-create.inc:72
+#: ../Doc/using/venv-create.inc:72
 msgid "if you use PowerShell."
 msgstr ""
 
-#: using/venv-create.inc:74
+#: ../Doc/using/venv-create.inc:74
 msgid ""
 "You don't specifically *need* to activate an environment; activation just "
 "prepends the venv's binary directory to your path, so that \"python\" "
@@ -1274,7 +1277,7 @@ msgid ""
 "Python automatically."
 msgstr ""
 
-#: using/venv-create.inc:80
+#: ../Doc/using/venv-create.inc:80
 msgid ""
 "You can deactivate a venv by typing \"deactivate\" in your shell. The exact "
 "mechanism is platform-specific: for example, the Bash activation script "
@@ -1283,19 +1286,19 @@ msgid ""
 "when the venv is created."
 msgstr ""
 
-#: using/unix.rst:7
+#: ../Doc/using/unix.rst:7
 msgid "Using Python on Unix platforms"
 msgstr ""
 
-#: using/unix.rst:13
+#: ../Doc/using/unix.rst:13
 msgid "Getting and installing the latest version of Python"
 msgstr ""
 
-#: using/unix.rst:16
+#: ../Doc/using/unix.rst:16
 msgid "On Linux"
 msgstr ""
 
-#: using/unix.rst:18
+#: ../Doc/using/unix.rst:18
 msgid ""
 "Python comes preinstalled on most Linux distributions, and is available as a "
 "package on all others.  However there are certain features you might want to "
@@ -1303,79 +1306,79 @@ msgid ""
 "the latest version of Python from source."
 msgstr ""
 
-#: using/unix.rst:23
+#: ../Doc/using/unix.rst:23
 msgid ""
 "In the event that Python doesn't come preinstalled and isn't in the "
 "repositories as well, you can easily make packages for your own distro.  "
 "Have a look at the following links:"
 msgstr ""
 
-#: using/unix.rst:29
+#: ../Doc/using/unix.rst:29
 msgid "http://www.debian.org/doc/manuals/maint-guide/first.en.html"
 msgstr ""
 
-#: using/unix.rst:30
+#: ../Doc/using/unix.rst:30
 msgid "for Debian users"
 msgstr ""
 
-#: using/unix.rst:31
+#: ../Doc/using/unix.rst:31
 msgid "http://en.opensuse.org/Portal:Packaging"
 msgstr ""
 
-#: using/unix.rst:32
+#: ../Doc/using/unix.rst:32
 msgid "for OpenSuse users"
 msgstr ""
 
-#: using/unix.rst:33
+#: ../Doc/using/unix.rst:33
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/"
 "RPM_Guide/ch-creating-rpms.html"
 msgstr ""
 
-#: using/unix.rst:34
+#: ../Doc/using/unix.rst:34
 msgid "for Fedora users"
 msgstr ""
 
-#: using/unix.rst:35
+#: ../Doc/using/unix.rst:35
 msgid "http://www.slackbook.org/html/package-management-making-packages.html"
 msgstr ""
 
-#: using/unix.rst:36
+#: ../Doc/using/unix.rst:36
 msgid "for Slackware users"
 msgstr ""
 
-#: using/unix.rst:40
+#: ../Doc/using/unix.rst:40
 msgid "On FreeBSD and OpenBSD"
 msgstr ""
 
-#: using/unix.rst:42
+#: ../Doc/using/unix.rst:42
 msgid "FreeBSD users, to add the package use::"
 msgstr ""
 
-#: using/unix.rst:46
+#: ../Doc/using/unix.rst:46
 msgid "OpenBSD users use::"
 msgstr ""
 
-#: using/unix.rst:50
+#: ../Doc/using/unix.rst:50
 msgid "For example i386 users get the 2.5.1 version of Python using::"
 msgstr ""
 
-#: using/unix.rst:56
+#: ../Doc/using/unix.rst:56
 msgid "On OpenSolaris"
 msgstr ""
 
-#: using/unix.rst:58
+#: ../Doc/using/unix.rst:58
 msgid ""
 "To install the newest Python versions on OpenSolaris, install `blastwave "
 "<http://www.blastwave.org/howto.html>`_ and type ``pkg_get -i python`` at "
 "the prompt."
 msgstr ""
 
-#: using/unix.rst:64
+#: ../Doc/using/unix.rst:64
 msgid "Building Python"
 msgstr ""
 
-#: using/unix.rst:66
+#: ../Doc/using/unix.rst:66
 msgid ""
 "If you want to compile CPython yourself, first thing you should do is get "
 "the `source <http://python.org/download/source/>`_. You can download either "
@@ -1384,29 +1387,29 @@ msgid ""
 "patches, you will need a clone.)"
 msgstr ""
 
-#: using/unix.rst:72
+#: ../Doc/using/unix.rst:72
 msgid "The build process consists in the usual ::"
 msgstr ""
 
-#: using/unix.rst:78
+#: ../Doc/using/unix.rst:78
 msgid ""
 "invocations. Configuration options and caveats for specific Unix platforms "
 "are extensively documented in the :source:`README` file in the root of the "
 "Python source tree."
 msgstr ""
 
-#: using/unix.rst:84
+#: ../Doc/using/unix.rst:84
 msgid ""
 "``make install`` can overwrite or masquerade the :file:`python3` binary. "
 "``make altinstall`` is therefore recommended instead of ``make install`` "
 "since it only installs :file:`{exec_prefix}/bin/python{version}`."
 msgstr ""
 
-#: using/unix.rst:90
+#: ../Doc/using/unix.rst:90
 msgid "Python-related paths and files"
 msgstr ""
 
-#: using/unix.rst:92
+#: ../Doc/using/unix.rst:92
 msgid ""
 "These are subject to difference depending on local installation "
 "conventions; :envvar:`prefix` (``${prefix}``) and :envvar:`exec_prefix` (``"
@@ -1414,125 +1417,125 @@ msgid ""
 "for GNU software; they may be the same."
 msgstr ""
 
-#: using/unix.rst:97
+#: ../Doc/using/unix.rst:97
 msgid ""
 "For example, on most Linux systems, the default for both is :file:`/usr`."
 msgstr ""
 
-#: using/unix.rst:100
+#: ../Doc/using/unix.rst:100
 msgid "File/directory"
 msgstr ""
 
-#: using/unix.rst:100
+#: ../Doc/using/unix.rst:100
 msgid "Meaning"
 msgstr "Signification"
 
-#: using/unix.rst:102
+#: ../Doc/using/unix.rst:102
 msgid ":file:`{exec_prefix}/bin/python3`"
 msgstr ""
 
-#: using/unix.rst:102
+#: ../Doc/using/unix.rst:102
 msgid "Recommended location of the interpreter."
 msgstr ""
 
-#: using/unix.rst:104
+#: ../Doc/using/unix.rst:104
 msgid ""
 ":file:`{prefix}/lib/python{version}`, :file:`{exec_prefix}/lib/"
 "python{version}`"
 msgstr ""
 
-#: using/unix.rst:104
+#: ../Doc/using/unix.rst:104
 msgid ""
 "Recommended locations of the directories containing the standard modules."
 msgstr ""
 
-#: using/unix.rst:107
+#: ../Doc/using/unix.rst:107
 msgid ""
 ":file:`{prefix}/include/python{version}`, :file:`{exec_prefix}/include/"
 "python{version}`"
 msgstr ""
 
-#: using/unix.rst:107
+#: ../Doc/using/unix.rst:107
 msgid ""
 "Recommended locations of the directories containing the include files needed "
 "for developing Python extensions and embedding the interpreter."
 msgstr ""
 
-#: using/unix.rst:115
+#: ../Doc/using/unix.rst:115
 msgid "Miscellaneous"
 msgstr ""
 
-#: using/unix.rst:117
+#: ../Doc/using/unix.rst:117
 msgid ""
 "To easily use Python scripts on Unix, you need to make them executable, e.g. "
 "with ::"
 msgstr ""
 
-#: using/unix.rst:122
+#: ../Doc/using/unix.rst:122
 msgid ""
 "and put an appropriate Shebang line at the top of the script.  A good choice "
 "is usually ::"
 msgstr ""
 
-#: using/unix.rst:127
+#: ../Doc/using/unix.rst:127
 msgid ""
 "which searches for the Python interpreter in the whole :envvar:`PATH`.  "
 "However, some Unices may not have the :program:`env` command, so you may "
 "need to hardcode ``/usr/bin/python3`` as the interpreter path."
 msgstr ""
 
-#: using/unix.rst:131
+#: ../Doc/using/unix.rst:131
 msgid ""
 "To use shell commands in your Python scripts, look at the :mod:`subprocess` "
 "module."
 msgstr ""
 
-#: using/unix.rst:135
+#: ../Doc/using/unix.rst:135
 msgid "Editors"
 msgstr ""
 
-#: using/unix.rst:137
+#: ../Doc/using/unix.rst:137
 msgid ""
 "Vim and Emacs are excellent editors which support Python very well.  For "
 "more information on how to code in Python in these editors, look at:"
 msgstr ""
 
-#: using/unix.rst:140
+#: ../Doc/using/unix.rst:140
 msgid "http://www.vim.org/scripts/script.php?script_id=790"
 msgstr ""
 
-#: using/unix.rst:141
+#: ../Doc/using/unix.rst:141
 msgid "http://sourceforge.net/projects/python-mode"
 msgstr ""
 
-#: using/unix.rst:143
+#: ../Doc/using/unix.rst:143
 msgid ""
 "Geany is an excellent IDE with support for a lot of languages. For more "
 "information, read: http://www.geany.org/"
 msgstr ""
 
-#: using/unix.rst:146
+#: ../Doc/using/unix.rst:146
 msgid ""
 "Komodo edit is another extremely good IDE.  It also has support for a lot of "
 "languages. For more information, read: http://www.activestate.com/store/"
 "productdetail.aspx?prdGuid=20f4ed15-6684-4118-a78b-d37ff4058c5f"
 msgstr ""
 
-#: using/windows.rst:7
+#: ../Doc/using/windows.rst:7
 msgid "Using Python on Windows"
 msgstr ""
 
-#: using/windows.rst:11
+#: ../Doc/using/windows.rst:11
 msgid ""
 "This document aims to give an overview of Windows-specific behaviour you "
 "should know about when using Python on Microsoft Windows."
 msgstr ""
 
-#: using/windows.rst:16
+#: ../Doc/using/windows.rst:16
 msgid "Installing Python"
 msgstr ""
 
-#: using/windows.rst:18
+#: ../Doc/using/windows.rst:18
 msgid ""
 "Unlike most Unix systems and services, Windows does not require Python "
 "natively and thus does not pre-install a version of Python.  However, the "
@@ -1540,18 +1543,18 @@ msgid ""
 "`release <http://www.python.org/download/releases/>`_ for many years."
 msgstr ""
 
-#: using/windows.rst:23
+#: ../Doc/using/windows.rst:23
 msgid ""
 "With ongoing development of Python, some platforms that used to be supported "
 "earlier are no longer supported (due to the lack of users or developers). "
 "Check :pep:`11` for details on all unsupported platforms."
 msgstr ""
 
-#: using/windows.rst:27
+#: ../Doc/using/windows.rst:27
 msgid "`Windows CE <http://pythonce.sourceforge.net/>`_ is still supported."
 msgstr ""
 
-#: using/windows.rst:28
+#: ../Doc/using/windows.rst:28
 msgid ""
 "The `Cygwin <http://cygwin.com/>`_ installer offers to install the `Python "
 "interpreter <http://cygwin.com/packages/python>`_ as well; it is located "
@@ -1560,90 +1563,96 @@ msgid ""
 "releases <http://www.tishler.net/jason/software/python/>`_)"
 msgstr ""
 
-#: using/windows.rst:35
+#: ../Doc/using/windows.rst:35
 msgid ""
 "See `Python for Windows <http://www.python.org/download/windows/>`_ for "
 "detailed information about platforms with pre-compiled installers."
 msgstr ""
 
-#: using/windows.rst:42
-msgid "Python on XP"
-msgstr "Python sur XP"
+#: ../Doc/using/windows.rst:42
+msgid ""
+"`Python on XP <http://www.richarddooling.com/index.php/2006/03/14/python-on-"
+"xp-7-minutes-to-hello-world/>`_"
+msgstr ""
 
-#: using/windows.rst:41
+#: ../Doc/using/windows.rst:41
 msgid "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"
 msgstr ""
 
-#: using/windows.rst:48
-#, fuzzy
-msgid "Installing on Windows"
-msgstr "Compiler Python sous Windows"
+#: ../Doc/using/windows.rst:48
+msgid ""
+"`Installing on Windows <http://diveintopython.net/installing_python/windows."
+"html>`_"
+msgstr ""
 
-#: using/windows.rst:45
+#: ../Doc/using/windows.rst:45
 msgid ""
 "in \"`Dive into Python: Python from novice to pro <http://diveintopython.net/"
 "index.html>`_\" by Mark Pilgrim, 2004, ISBN 1-59059-356-1"
 msgstr ""
 
-#: using/windows.rst:52
-msgid "For Windows users"
+#: ../Doc/using/windows.rst:52
+msgid ""
+"`For Windows users <http://swaroopch.com/text/Byte_of_Python:"
+"Installing_Python#For_Windows_users>`_"
 msgstr ""
 
-#: using/windows.rst:51
+#: ../Doc/using/windows.rst:51
 msgid ""
 "in \"Installing Python\" in \"`A Byte of Python <http://www.byteofpython."
 "info>`_\" by Swaroop C H, 2003"
 msgstr ""
 
-#: using/windows.rst:57
+#: ../Doc/using/windows.rst:57
 msgid "Alternative bundles"
 msgstr ""
 
-#: using/windows.rst:59
+#: ../Doc/using/windows.rst:59
 msgid ""
 "Besides the standard CPython distribution, there are modified packages "
 "including additional functionality.  The following is a list of popular "
 "versions and their key features:"
 msgstr ""
 
-#: using/windows.rst:64
-msgid "ActivePython"
+#: ../Doc/using/windows.rst:64
+msgid "`ActivePython <http://www.activestate.com/activepython/>`_"
 msgstr ""
 
-#: using/windows.rst:64
+#: ../Doc/using/windows.rst:64
 msgid "Installer with multi-platform compatibility, documentation, PyWin32"
 msgstr ""
 
-#: using/windows.rst:68
-msgid "Enthought Python Distribution"
+#: ../Doc/using/windows.rst:68
+msgid ""
+"`Enthought Python Distribution <http://www.enthought.com/products/epd.php>`_"
 msgstr ""
 
-#: using/windows.rst:67
+#: ../Doc/using/windows.rst:67
 msgid ""
 "Popular modules (such as PyWin32) with their respective documentation, tool "
 "suite for building extensible Python applications"
 msgstr ""
 
-#: using/windows.rst:70
+#: ../Doc/using/windows.rst:70
 msgid ""
 "Notice that these packages are likely to install *older* versions of Python."
 msgstr ""
 
-#: using/windows.rst:75
+#: ../Doc/using/windows.rst:75
 msgid "Configuring Python"
 msgstr ""
 
-#: using/windows.rst:77
+#: ../Doc/using/windows.rst:77
 msgid ""
 "In order to run Python flawlessly, you might have to change certain "
 "environment settings in Windows."
 msgstr ""
 
-#: using/windows.rst:84
+#: ../Doc/using/windows.rst:84
 msgid "Excursus: Setting environment variables"
 msgstr ""
 
-#: using/windows.rst:86
+#: ../Doc/using/windows.rst:86
 msgid ""
 "Windows has a built-in dialog for changing environment variables (following "
 "guide applies to XP classical view): Right-click the icon for your machine "
@@ -1652,83 +1661,83 @@ msgid ""
 "and click the :guilabel:`Environment Variables` button."
 msgstr ""
 
-#: using/windows.rst:92
+#: ../Doc/using/windows.rst:92
 msgid "In short, your path is:"
 msgstr ""
 
-#: using/windows.rst:94
+#: ../Doc/using/windows.rst:94
 msgid ""
 ":menuselection:`My Computer --> Properties --> Advanced --> Environment "
 "Variables`"
 msgstr ""
 
-#: using/windows.rst:99
+#: ../Doc/using/windows.rst:99
 msgid ""
 "In this dialog, you can add or modify User and System variables. To change "
 "System variables, you need non-restricted access to your machine (i.e. "
 "Administrator rights)."
 msgstr ""
 
-#: using/windows.rst:103
+#: ../Doc/using/windows.rst:103
 msgid ""
 "Another way of adding variables to your environment is using the :command:"
 "`set` command::"
 msgstr ""
 
-#: using/windows.rst:108
+#: ../Doc/using/windows.rst:108
 msgid ""
 "To make this setting permanent, you could add the corresponding command line "
 "to your :file:`autoexec.bat`. :program:`msconfig` is a graphical interface "
 "to this file."
 msgstr ""
 
-#: using/windows.rst:112
+#: ../Doc/using/windows.rst:112
 msgid ""
 "Viewing environment variables can also be done more straight-forward: The "
 "command prompt will expand strings wrapped into percent signs automatically::"
 msgstr ""
 
-#: using/windows.rst:117
+#: ../Doc/using/windows.rst:117
 msgid "Consult :command:`set /?` for details on this behaviour."
 msgstr ""
 
-#: using/windows.rst:122
+#: ../Doc/using/windows.rst:122
 msgid "http://support.microsoft.com/kb/100843"
 msgstr ""
 
-#: using/windows.rst:122
+#: ../Doc/using/windows.rst:122
 msgid "Environment variables in Windows NT"
 msgstr ""
 
-#: using/windows.rst:125
+#: ../Doc/using/windows.rst:125
 msgid "http://support.microsoft.com/kb/310519"
 msgstr ""
 
-#: using/windows.rst:125
+#: ../Doc/using/windows.rst:125
 msgid "How To Manage Environment Variables in Windows XP"
 msgstr "Comment gérer les variables d'environnement sous Windows XP"
 
-#: using/windows.rst:127
+#: ../Doc/using/windows.rst:127
 msgid "http://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
 msgstr ""
 
-#: using/windows.rst:128
+#: ../Doc/using/windows.rst:128
 msgid "Setting Environment variables, Louis J. Farrugia"
 msgstr "Définir les variables d'environnement, Louis J. Farrugia"
 
-#: using/windows.rst:134
+#: ../Doc/using/windows.rst:134
 #, fuzzy
 msgid "Finding the Python executable"
 msgstr "Trouver l'exécutable Python"
 
-#: using/windows.rst:138
+#: ../Doc/using/windows.rst:138
 msgid ""
 "Besides using the automatically created start menu entry for the Python "
 "interpreter, you might want to start Python in the command prompt. As of "
 "Python 3.3, the installer has an option to set that up for you."
 msgstr ""
 
-#: using/windows.rst:142
+#: ../Doc/using/windows.rst:142
 msgid ""
 "At the \"Customize Python 3.3\" screen, an option called \"Add python.exe to "
 "search path\" can be enabled to have the installer place your installation "
@@ -1737,13 +1746,13 @@ msgid ""
 "options, see :ref:`using-on-cmdline` documentation."
 msgstr ""
 
-#: using/windows.rst:148
+#: ../Doc/using/windows.rst:148
 msgid ""
 "If you don't enable this option at install time, you can always re-run the "
 "installer to choose it."
 msgstr ""
 
-#: using/windows.rst:151
+#: ../Doc/using/windows.rst:151
 msgid ""
 "The alternative is manually modifying the :envvar:`%PATH%` using the "
 "directions in :ref:`setting-envvars`. You need to set your :envvar:`%PATH%` "
@@ -1752,11 +1761,11 @@ msgid ""
 "like this (assuming the first two entries are Windows' default)::"
 msgstr ""
 
-#: using/windows.rst:161
+#: ../Doc/using/windows.rst:161
 msgid "Finding modules"
 msgstr ""
 
-#: using/windows.rst:163
+#: ../Doc/using/windows.rst:163
 msgid ""
 "Python usually stores its library (and thereby your site-packages folder) in "
 "the installation directory.  So, if you had installed Python to :file:`C:\\"
@@ -1765,17 +1774,17 @@ msgid ""
 "\\\\site-packages\\\\`."
 msgstr ""
 
-#: using/windows.rst:169
+#: ../Doc/using/windows.rst:169
 msgid "This is how :data:`sys.path` is populated on Windows:"
 msgstr ""
 
-#: using/windows.rst:171
+#: ../Doc/using/windows.rst:171
 msgid ""
 "An empty entry is added at the start, which corresponds to the current "
 "directory."
 msgstr ""
 
-#: using/windows.rst:174
+#: ../Doc/using/windows.rst:174
 msgid ""
 "If the environment variable :envvar:`PYTHONPATH` exists, as described in :"
 "ref:`using-on-envvars`, its entries are added next.  Note that on Windows, "
@@ -1783,7 +1792,7 @@ msgid ""
 "from the colon used in drive identifiers (``C:\\`` etc.)."
 msgstr ""
 
-#: using/windows.rst:179
+#: ../Doc/using/windows.rst:179
 msgid ""
 "Additional \"application paths\" can be added in the registry as subkeys of :"
 "samp:`\\\\SOFTWARE\\\\Python\\\\PythonCore\\\\{version}\\\\PythonPath` under "
@@ -1793,7 +1802,7 @@ msgid ""
 "installers only use HKLM, so HKCU is typically empty.)"
 msgstr ""
 
-#: using/windows.rst:186
+#: ../Doc/using/windows.rst:186
 msgid ""
 "If the environment variable :envvar:`PYTHONHOME` is set, it is assumed as "
 "\"Python Home\".  Otherwise, the path of the main Python executable is used "
@@ -1804,18 +1813,18 @@ msgid ""
 "the registry."
 msgstr ""
 
-#: using/windows.rst:193
+#: ../Doc/using/windows.rst:193
 msgid ""
 "If the Python Home cannot be located, no :envvar:`PYTHONPATH` is specified "
 "in the environment, and no registry entries can be found, a default path "
 "with relative entries is used (e.g. ``.\\Lib;.\\plat-win``, etc)."
 msgstr ""
 
-#: using/windows.rst:197
+#: ../Doc/using/windows.rst:197
 msgid "The end result of all this is:"
 msgstr ""
 
-#: using/windows.rst:199
+#: ../Doc/using/windows.rst:199
 msgid ""
 "When running :file:`python.exe`, or any other .exe in the main Python "
 "directory (either an installed version, or directly from the PCbuild "
@@ -1823,7 +1832,7 @@ msgid ""
 "ignored.  Other \"application paths\" in the registry are always read."
 msgstr ""
 
-#: using/windows.rst:204
+#: ../Doc/using/windows.rst:204
 msgid ""
 "When Python is hosted in another .exe (different directory, embedded via "
 "COM, etc), the \"Python Home\" will not be deduced, so the core path from "
@@ -1831,28 +1840,28 @@ msgid ""
 "always read."
 msgstr ""
 
-#: using/windows.rst:208
+#: ../Doc/using/windows.rst:208
 msgid ""
 "If Python can't find its home and there is no registry (eg, frozen .exe, "
 "some very strange installation setup) you get a path with some default, but "
 "relative, paths."
 msgstr ""
 
-#: using/windows.rst:214
+#: ../Doc/using/windows.rst:214
 msgid "Executing scripts"
 msgstr ""
 
-#: using/windows.rst:216
+#: ../Doc/using/windows.rst:216
 msgid ""
 "As of Python 3.3, Python includes a launcher which facilitates running "
 "Python scripts. See :ref:`launcher` for more information."
 msgstr ""
 
-#: using/windows.rst:220
+#: ../Doc/using/windows.rst:220
 msgid "Executing scripts without the Python launcher"
 msgstr ""
 
-#: using/windows.rst:222
+#: ../Doc/using/windows.rst:222
 msgid ""
 "Without the Python launcher installed, Python scripts (files with the "
 "extension ``.py``) will be executed by :program:`python.exe` by default.  "
@@ -1863,30 +1872,30 @@ msgid ""
 "directory).  This suppresses the terminal window on startup."
 msgstr ""
 
-#: using/windows.rst:230
+#: ../Doc/using/windows.rst:230
 msgid ""
 "You can also make all ``.py`` scripts execute with :program:`pythonw.exe`, "
 "setting this through the usual facilities, for example (might require "
 "administrative rights):"
 msgstr ""
 
-#: using/windows.rst:234
+#: ../Doc/using/windows.rst:234
 msgid "Launch a command prompt."
 msgstr ""
 
-#: using/windows.rst:235
+#: ../Doc/using/windows.rst:235
 msgid "Associate the correct file group with ``.py`` scripts::"
 msgstr ""
 
-#: using/windows.rst:239
+#: ../Doc/using/windows.rst:239
 msgid "Redirect all Python files to the new executable::"
 msgstr ""
 
-#: using/windows.rst:247
+#: ../Doc/using/windows.rst:247
 msgid "Python Launcher for Windows"
 msgstr ""
 
-#: using/windows.rst:251
+#: ../Doc/using/windows.rst:251
 msgid ""
 "The Python launcher for Windows is a utility which aids in the location and "
 "execution of different Python versions.  It allows scripts (or the command-"
@@ -1894,68 +1903,68 @@ msgid ""
 "locate and execute that version."
 msgstr ""
 
-#: using/windows.rst:257
+#: ../Doc/using/windows.rst:257
 msgid "Getting started"
 msgstr ""
 
-#: using/windows.rst:260
+#: ../Doc/using/windows.rst:260
 #, fuzzy
 msgid "From the command-line"
 msgstr "Ligne de commande"
 
-#: using/windows.rst:262
+#: ../Doc/using/windows.rst:262
 msgid ""
 "You should ensure the launcher is on your PATH - depending on how it was "
 "installed it may already be there, but check just in case it is not."
 msgstr ""
 
-#: using/windows.rst:265
+#: ../Doc/using/windows.rst:265
 msgid "From a command-prompt, execute the following command:"
 msgstr ""
 
-#: using/windows.rst:271
+#: ../Doc/using/windows.rst:271
 msgid ""
 "You should find that the latest version of Python 2.x you have installed is "
 "started - it can be exited as normal, and any additional command-line "
 "arguments specified will be sent directly to Python."
 msgstr ""
 
-#: using/windows.rst:275
+#: ../Doc/using/windows.rst:275
 msgid ""
 "If you have multiple versions of Python 2.x installed (e.g., 2.6 and 2.7) "
 "you will have noticed that Python 2.7 was started - to launch Python 2.6, "
 "try the command:"
 msgstr ""
 
-#: using/windows.rst:283
+#: ../Doc/using/windows.rst:283
 msgid "If you have a Python 3.x installed, try the command:"
 msgstr ""
 
-#: using/windows.rst:289
+#: ../Doc/using/windows.rst:289
 msgid "You should find the latest version of Python 3.x starts."
 msgstr ""
 
-#: using/windows.rst:292
+#: ../Doc/using/windows.rst:292
 msgid "From a script"
 msgstr ""
 
-#: using/windows.rst:294
+#: ../Doc/using/windows.rst:294
 msgid ""
 "Let's create a test Python script - create a file called ``hello.py`` with "
 "the following contents"
 msgstr ""
 
-#: using/windows.rst:303
+#: ../Doc/using/windows.rst:303
 msgid "From the directory in which hello.py lives, execute the command:"
 msgstr ""
 
-#: using/windows.rst:309
+#: ../Doc/using/windows.rst:309
 msgid ""
 "You should notice the version number of your latest Python 2.x installation "
 "is printed.  Now try changing the first line to be:"
 msgstr ""
 
-#: using/windows.rst:316
+#: ../Doc/using/windows.rst:316
 msgid ""
 "Re-executing the command should now print the latest Python 3.x information. "
 "As with the above command-line examples, you can specify a more explicit "
@@ -1964,11 +1973,11 @@ msgid ""
 "information printed."
 msgstr ""
 
-#: using/windows.rst:323
+#: ../Doc/using/windows.rst:323
 msgid "From file associations"
 msgstr ""
 
-#: using/windows.rst:325
+#: ../Doc/using/windows.rst:325
 msgid ""
 "The launcher should have been associated with Python files (i.e. ``.py``, ``."
 "pyw``, ``.pyc``, ``.pyo`` files) when it was installed.  This means that "
@@ -1977,17 +1986,17 @@ msgid ""
 "described above to have the script specify the version which should be used."
 msgstr ""
 
-#: using/windows.rst:331
+#: ../Doc/using/windows.rst:331
 msgid ""
 "The key benefit of this is that a single launcher can support multiple "
 "Python versions at the same time depending on the contents of the first line."
 msgstr ""
 
-#: using/windows.rst:335
+#: ../Doc/using/windows.rst:335
 msgid "Shebang Lines"
 msgstr ""
 
-#: using/windows.rst:337
+#: ../Doc/using/windows.rst:337
 msgid ""
 "If the first line of a script file starts with ``#!``, it is known as a "
 "\"shebang\" line.  Linux and other Unix like operating systems have native "
@@ -1997,34 +2006,34 @@ msgid ""
 "their use."
 msgstr ""
 
-#: using/windows.rst:344
+#: ../Doc/using/windows.rst:344
 msgid ""
 "To allow shebang lines in Python scripts to be portable between Unix and "
 "Windows, this launcher supports a number of 'virtual' commands to specify "
 "which interpreter to use.  The supported virtual commands are:"
 msgstr ""
 
-#: using/windows.rst:348
+#: ../Doc/using/windows.rst:348
 msgid "``/usr/bin/env python``"
 msgstr ""
 
-#: using/windows.rst:349
+#: ../Doc/using/windows.rst:349
 msgid "``/usr/bin/python``"
 msgstr ""
 
-#: using/windows.rst:350
+#: ../Doc/using/windows.rst:350
 msgid "``/usr/local/bin/python``"
 msgstr ""
 
-#: using/windows.rst:351
+#: ../Doc/using/windows.rst:351
 msgid "``python``"
 msgstr ""
 
-#: using/windows.rst:353
+#: ../Doc/using/windows.rst:353
 msgid "For example, if the first line of your script starts with"
 msgstr ""
 
-#: using/windows.rst:359
+#: ../Doc/using/windows.rst:359
 msgid ""
 "The default Python will be located and used.  As many Python scripts written "
 "to work on Unix will already have this line, you should find these scripts "
@@ -2033,29 +2042,29 @@ msgid ""
 "of the shebang lines starting with ``/usr``."
 msgstr ""
 
-#: using/windows.rst:366
+#: ../Doc/using/windows.rst:366
 msgid "Arguments in shebang lines"
 msgstr ""
 
-#: using/windows.rst:368
+#: ../Doc/using/windows.rst:368
 msgid ""
 "The shebang lines can also specify additional options to be passed to the "
 "Python interpreter.  For example, if you have a shebang line:"
 msgstr ""
 
-#: using/windows.rst:375
+#: ../Doc/using/windows.rst:375
 msgid "Then Python will be started with the ``-v`` option"
 msgstr ""
 
-#: using/windows.rst:378
+#: ../Doc/using/windows.rst:378
 msgid "Customization"
 msgstr ""
 
-#: using/windows.rst:381
+#: ../Doc/using/windows.rst:381
 msgid "Customization via INI files"
 msgstr ""
 
-#: using/windows.rst:383
+#: ../Doc/using/windows.rst:383
 msgid ""
 "Two .ini files will be searched by the launcher - ``py.ini`` in the current "
 "user's \"application data\" directory (i.e. the directory returned by "
@@ -2065,7 +2074,7 @@ msgid ""
 "the 'windows' version (i.e. pyw.exe)"
 msgstr ""
 
-#: using/windows.rst:390
+#: ../Doc/using/windows.rst:390
 msgid ""
 "Customization specified in the \"application directory\" will have "
 "precedence over the one next to the executable, so a user, who may not have "
@@ -2073,11 +2082,11 @@ msgid ""
 "that global .ini file)"
 msgstr ""
 
-#: using/windows.rst:396
+#: ../Doc/using/windows.rst:396
 msgid "Customizing default Python versions"
 msgstr ""
 
-#: using/windows.rst:398
+#: ../Doc/using/windows.rst:398
 msgid ""
 "In some cases, a version qualifier can be included in a command to dictate "
 "which version of Python will be used by the command. A version qualifier "
@@ -2087,13 +2096,13 @@ msgid ""
 "implementation of that version be used."
 msgstr ""
 
-#: using/windows.rst:405
+#: ../Doc/using/windows.rst:405
 msgid ""
 "For example, a shebang line of ``#!python`` has no version qualifier, while "
 "``#!python3`` has a version qualifier which specifies only a major version."
 msgstr ""
 
-#: using/windows.rst:408
+#: ../Doc/using/windows.rst:408
 msgid ""
 "If no version qualifiers are found in a command, the environment variable "
 "``PY_PYTHON`` can be set to specify the default version qualifier - the "
@@ -2102,7 +2111,7 @@ msgid ""
 "minor-32."
 msgstr ""
 
-#: using/windows.rst:413
+#: ../Doc/using/windows.rst:413
 msgid ""
 "If no minor version qualifiers are found, the environment variable "
 "``PY_PYTHON{major}`` (where ``{major}`` is the current major version "
@@ -2113,7 +2122,7 @@ msgid ""
 "version in that family."
 msgstr ""
 
-#: using/windows.rst:421
+#: ../Doc/using/windows.rst:421
 msgid ""
 "On 64-bit Windows with both 32-bit and 64-bit implementations of the same "
 "(major.minor) Python version installed, the 64-bit version will always be "
@@ -2127,31 +2136,31 @@ msgid ""
 "be used on a version specifier to change this behaviour."
 msgstr ""
 
-#: using/windows.rst:432
+#: ../Doc/using/windows.rst:432
 #, fuzzy
 msgid "Examples:"
 msgstr "Exemples : ::"
 
-#: using/windows.rst:434
+#: ../Doc/using/windows.rst:434
 msgid ""
 "If no relevant options are set, the commands ``python`` and ``python2`` will "
 "use the latest Python 2.x version installed and the command ``python3`` will "
 "use the latest Python 3.x installed."
 msgstr ""
 
-#: using/windows.rst:438
+#: ../Doc/using/windows.rst:438
 msgid ""
 "The commands ``python3.1`` and ``python2.7`` will not consult any options at "
 "all as the versions are fully specified."
 msgstr ""
 
-#: using/windows.rst:441
+#: ../Doc/using/windows.rst:441
 msgid ""
 "If ``PY_PYTHON=3``, the commands ``python`` and ``python3`` will both use "
 "the latest installed Python 3 version."
 msgstr ""
 
-#: using/windows.rst:444
+#: ../Doc/using/windows.rst:444
 msgid ""
 "If ``PY_PYTHON=3.1-32``, the command ``python`` will use the 32-bit "
 "implementation of 3.1 whereas the command ``python3`` will use the latest "
@@ -2159,13 +2168,13 @@ msgid ""
 "specified.)"
 msgstr ""
 
-#: using/windows.rst:449
+#: ../Doc/using/windows.rst:449
 msgid ""
 "If ``PY_PYTHON=3`` and ``PY_PYTHON3=3.1``, the commands ``python`` and "
 "``python3`` will both use specifically 3.1"
 msgstr ""
 
-#: using/windows.rst:452
+#: ../Doc/using/windows.rst:452
 msgid ""
 "In addition to environment variables, the same settings can be configured in "
 "the .INI file used by the launcher.  The section in the INI file is called "
@@ -2175,26 +2184,26 @@ msgid ""
 "will override things specified in the INI file."
 msgstr ""
 
-#: using/windows.rst:459
+#: ../Doc/using/windows.rst:459
 #, fuzzy
 msgid "For example:"
 msgstr "Par exemple : ::"
 
-#: using/windows.rst:461
+#: ../Doc/using/windows.rst:461
 msgid "Setting ``PY_PYTHON=3.1`` is equivalent to the INI file containing:"
 msgstr ""
 
-#: using/windows.rst:468
+#: ../Doc/using/windows.rst:468
 msgid ""
 "Setting ``PY_PYTHON=3`` and ``PY_PYTHON3=3.1`` is equivalent to the INI file "
 "containing:"
 msgstr ""
 
-#: using/windows.rst:478
+#: ../Doc/using/windows.rst:478
 msgid "Diagnostics"
 msgstr ""
 
-#: using/windows.rst:480
+#: ../Doc/using/windows.rst:480
 msgid ""
 "If an environment variable ``PYLAUNCH_DEBUG`` is set (to any value), the "
 "launcher will print diagnostic information to stderr (i.e. to the console). "
@@ -2204,28 +2213,28 @@ msgid ""
 "target Python."
 msgstr ""
 
-#: using/windows.rst:489
+#: ../Doc/using/windows.rst:489
 msgid "Additional modules"
 msgstr ""
 
-#: using/windows.rst:491
+#: ../Doc/using/windows.rst:491
 msgid ""
 "Even though Python aims to be portable among all platforms, there are "
 "features that are unique to Windows.  A couple of modules, both in the "
 "standard library and external, and snippets exist to use these features."
 msgstr ""
 
-#: using/windows.rst:495
+#: ../Doc/using/windows.rst:495
 msgid ""
 "The Windows-specific standard modules are documented in :ref:`mswin-specific-"
 "services`."
 msgstr ""
 
-#: using/windows.rst:500
+#: ../Doc/using/windows.rst:500
 msgid "PyWin32"
 msgstr "PyWin32"
 
-#: using/windows.rst:502
+#: ../Doc/using/windows.rst:502
 msgid ""
 "The `PyWin32 <http://python.net/crew/mhammond/win32/>`_ module by Mark "
 "Hammond is a collection of modules for advanced Windows-specific support.  "
@@ -2235,25 +2244,25 @@ msgstr ""
 "Hammond est une collection de modules pour un support avancé spécifique à "
 "Windows.  Cela inclut les services pour :"
 
-#: using/windows.rst:506
+#: ../Doc/using/windows.rst:506
 msgid "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
 msgstr "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
 
-#: using/windows.rst:507
+#: ../Doc/using/windows.rst:507
 msgid "Win32 API calls"
 msgstr "Appels à l'API Win32"
 
-#: using/windows.rst:508
+#: ../Doc/using/windows.rst:508
 #, fuzzy
 msgid "Registry"
 msgstr "Registre"
 
-#: using/windows.rst:509
+#: ../Doc/using/windows.rst:509
 #, fuzzy
 msgid "Event log"
 msgstr "journal d'événement"
 
-#: using/windows.rst:510
+#: ../Doc/using/windows.rst:510
 msgid ""
 "`Microsoft Foundation Classes <http://msdn.microsoft.com/en-us/library/"
 "fe1cf721%28VS.80%29.aspx>`_ (MFC) user interfaces"
@@ -2261,7 +2270,7 @@ msgstr ""
 "`Microsoft Foundation Classes <http://msdn.microsoft.com/en-us/library/"
 "fe1cf721%28VS.80%29.aspx>`_ (MFC) interfaces utilisateur"
 
-#: using/windows.rst:513
+#: ../Doc/using/windows.rst:513
 #, fuzzy
 msgid ""
 "`PythonWin <http://web.archive.org/web/20060524042422/ http://www.python.org/"
@@ -2272,28 +2281,28 @@ msgstr ""
 "windows/pythonwin/>`_ est une exemple d'application MFC livrée avec PyWin32. "
 "Il s'agit d'un IDE embarqué avec débogueur intégré."
 
-#: using/windows.rst:520
-msgid "Win32 How Do I...?"
+#: ../Doc/using/windows.rst:520
+msgid ""
+"`Win32 How Do I...? <http://timgolden.me.uk/python/win32_how_do_i.html>`_"
 msgstr ""
 
-#: using/windows.rst:520
+#: ../Doc/using/windows.rst:520
 msgid "by Tim Golden"
 msgstr "par Tim Golden"
 
-#: using/windows.rst:522
-#, fuzzy
-msgid "Python and COM"
-msgstr "Python 3.0"
+#: ../Doc/using/windows.rst:522
+msgid "`Python and COM <http://www.boddie.org.uk/python/COM.html>`_"
+msgstr ""
 
-#: using/windows.rst:523
+#: ../Doc/using/windows.rst:523
 msgid "by David and Paul Boddie"
 msgstr "par David et Paul Boddie"
 
-#: using/windows.rst:527
+#: ../Doc/using/windows.rst:527
 msgid "cx_Freeze"
 msgstr ""
 
-#: using/windows.rst:529
+#: ../Doc/using/windows.rst:529
 msgid ""
 "`cx_Freeze <http://cx-freeze.sourceforge.net/>`_ is a :mod:`distutils` "
 "extension (see :ref:`extending-distutils`) which wraps Python scripts into "
@@ -2302,28 +2311,28 @@ msgid ""
 "install Python."
 msgstr ""
 
-#: using/windows.rst:537
+#: ../Doc/using/windows.rst:537
 msgid "WConio"
 msgstr "WConio"
 
-#: using/windows.rst:539
+#: ../Doc/using/windows.rst:539
 msgid ""
 "Since Python's advanced terminal handling layer, :mod:`curses`, is "
 "restricted to Unix-like systems, there is a library exclusive to Windows as "
 "well: Windows Console I/O for Python."
 msgstr ""
 
-#: using/windows.rst:543
+#: ../Doc/using/windows.rst:543
 msgid ""
 "`WConio <http://newcenturycomputers.net/projects/wconio.html>`_ is a wrapper "
 "for Turbo-C's :file:`CONIO.H`, used to create text user interfaces."
 msgstr ""
 
-#: using/windows.rst:549
+#: ../Doc/using/windows.rst:549
 msgid "Compiling Python on Windows"
 msgstr "Compiler Python sous Windows"
 
-#: using/windows.rst:551
+#: ../Doc/using/windows.rst:551
 msgid ""
 "If you want to compile CPython yourself, first thing you should do is get "
 "the `source <http://python.org/download/source/>`_. You can download either "
@@ -2331,94 +2340,94 @@ msgid ""
 "python.org/devguide/setup#checking-out-the-code>`_."
 msgstr ""
 
-#: using/windows.rst:556
+#: ../Doc/using/windows.rst:556
 msgid ""
 "The source tree contains a build solution and project files for Microsoft "
 "Visual C++, which is the compiler used to build the official Python "
 "releases. View the :file:`readme.txt` in their respective directories:"
 msgstr ""
 
-#: using/windows.rst:561
+#: ../Doc/using/windows.rst:561
 msgid "Directory"
 msgstr "Répertoire"
 
-#: using/windows.rst:561
+#: ../Doc/using/windows.rst:561
 msgid "MSVC version"
 msgstr "version de MSVC"
 
-#: using/windows.rst:561
+#: ../Doc/using/windows.rst:561
 msgid "Visual Studio version"
 msgstr "Version de Visual Studio"
 
-#: using/windows.rst:563
+#: ../Doc/using/windows.rst:563
 msgid ":file:`PC/VC6/`"
 msgstr ":file:`PC/VC6/`"
 
-#: using/windows.rst:563
+#: ../Doc/using/windows.rst:563
 msgid "6.0"
 msgstr "6.0"
 
-#: using/windows.rst:563
+#: ../Doc/using/windows.rst:563
 msgid "97"
 msgstr "97"
 
-#: using/windows.rst:565
+#: ../Doc/using/windows.rst:565
 msgid ":file:`PC/VS7.1/`"
 msgstr ":file:`PC/VS7.1/`"
 
-#: using/windows.rst:565
+#: ../Doc/using/windows.rst:565
 msgid "7.1"
 msgstr "7.1"
 
-#: using/windows.rst:565
+#: ../Doc/using/windows.rst:565
 msgid "2003"
 msgstr "2003"
 
-#: using/windows.rst:567
+#: ../Doc/using/windows.rst:567
 msgid ":file:`PC/VS8.0/`"
 msgstr ":file:`PC/VS8.0/`"
 
-#: using/windows.rst:567
+#: ../Doc/using/windows.rst:567
 msgid "8.0"
 msgstr "8.0"
 
-#: using/windows.rst:567
+#: ../Doc/using/windows.rst:567
 msgid "2005"
 msgstr "2005"
 
-#: using/windows.rst:569
+#: ../Doc/using/windows.rst:569
 #, fuzzy
 msgid ":file:`PC/VS9.0/`"
 msgstr ":file:`PC/VS8.0/`"
 
-#: using/windows.rst:569
+#: ../Doc/using/windows.rst:569
 msgid "9.0"
 msgstr "9.0"
 
-#: using/windows.rst:569
+#: ../Doc/using/windows.rst:569
 msgid "2008"
 msgstr "2008"
 
-#: using/windows.rst:571
+#: ../Doc/using/windows.rst:571
 msgid ":file:`PCbuild/`"
 msgstr ":file:`PCbuild/`"
 
-#: using/windows.rst:571
+#: ../Doc/using/windows.rst:571
 msgid "10.0"
 msgstr ""
 
-#: using/windows.rst:571
+#: ../Doc/using/windows.rst:571
 msgid "2010"
 msgstr ""
 
-#: using/windows.rst:574
+#: ../Doc/using/windows.rst:574
 msgid ""
 "Note that any build directories within the :file:`PC` directory are not "
 "necessarily fully supported.  The :file:`PCbuild` directory contains the "
 "files for the compiler used to build the official release."
 msgstr ""
 
-#: using/windows.rst:578
+#: ../Doc/using/windows.rst:578
 #, fuzzy
 msgid ""
 "Check :file:`PCbuild/readme.txt` for general information on the build "
@@ -2427,38 +2436,43 @@ msgstr ""
 "Vérifiez :file:`PC/readme.txt` pour des informations générales sur le "
 "processus de construction."
 
-#: using/windows.rst:581
+#: ../Doc/using/windows.rst:581
 msgid "For extension modules, consult :ref:`building-on-windows`."
 msgstr ""
 
-#: using/windows.rst:588
-msgid "Python + Windows + distutils + SWIG + gcc MinGW"
+#: ../Doc/using/windows.rst:588
+msgid ""
+"`Python + Windows + distutils + SWIG + gcc MinGW <http://sebsauvage.net/"
+"python/mingw.html>`_"
 msgstr ""
 
-#: using/windows.rst:586
+#: ../Doc/using/windows.rst:586
 msgid ""
 "or \"Creating Python extensions in C/C++ with SWIG and compiling them with "
 "MinGW gcc under Windows\" or \"Installing Python extension with distutils "
 "and without Microsoft Visual C++\" by Sébastien Sauvage, 2003"
 msgstr ""
 
-#: using/windows.rst:590
-msgid "MingW -- Python extensions"
+#: ../Doc/using/windows.rst:590
+msgid ""
+"`MingW -- Python extensions <http://oldwiki.mingw.org/index.php/Python"
+"%20extensions>`_"
 msgstr ""
 
-#: using/windows.rst:591
+#: ../Doc/using/windows.rst:591
 msgid "by Trent Apted et al, 2007"
 msgstr "par Trent Apted et al, 2007"
 
-#: using/windows.rst:595
+#: ../Doc/using/windows.rst:595
 msgid "Other resources"
 msgstr "Autres ressources"
 
-#: using/windows.rst:602
-msgid "Python Programming On Win32"
+#: ../Doc/using/windows.rst:602
+msgid ""
+"`Python Programming On Win32 <http://www.oreilly.com/catalog/pythonwin32/>`_"
 msgstr ""
 
-#: using/windows.rst:600
+#: ../Doc/using/windows.rst:600
 msgid ""
 "\"Help for Windows Programmers\" by Mark Hammond and Andy Robinson, O'Reilly "
 "Media, 2000, ISBN 1-56592-621-8"
@@ -2466,20 +2480,36 @@ msgstr ""
 "\"Help for Windows Programmers\" de Mark Hammond et Andy Robinson, O'Reilly "
 "Media, 2000, ISBN 1-56592-621-8"
 
-#: using/windows.rst:605
-#, fuzzy
-msgid "A Python for Windows Tutorial"
-msgstr "Compiler Python sous Windows"
+#: ../Doc/using/windows.rst:605
+msgid ""
+"`A Python for Windows Tutorial <http://www.imladris.com/Scripts/"
+"PythonForWindows.html>`_"
+msgstr ""
 
-#: using/windows.rst:605
+#: ../Doc/using/windows.rst:605
 msgid "by Amanda Birmingham, 2004"
 msgstr "par Amanda Birmingham, 2004"
 
-#: using/windows.rst:607
-msgid "PEP 397 - Python launcher for Windows"
+#: ../Doc/using/windows.rst:607
+msgid ":pep:`397` - Python launcher for Windows"
 msgstr ""
 
-#: using/windows.rst:608
+#: ../Doc/using/windows.rst:608
 msgid ""
 "The proposal for the launcher to be included in the Python distribution."
 msgstr ""
+
+#~ msgid "Python on XP"
+#~ msgstr "Python sur XP"
+
+#, fuzzy
+#~ msgid "Installing on Windows"
+#~ msgstr "Compiler Python sous Windows"
+
+#, fuzzy
+#~ msgid "Python and COM"
+#~ msgstr "Python 3.0"
+
+#, fuzzy
+#~ msgid "A Python for Windows Tutorial"
+#~ msgstr "Compiler Python sous Windows"
