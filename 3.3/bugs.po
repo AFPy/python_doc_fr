@@ -166,6 +166,8 @@ msgid ""
 "`How to Report Bugs Effectively <http://www.chiark.greenend.org.uk/~sgtatham/"
 "bugs.html>`_"
 msgstr ""
+"`Comment rédiger des bugs de manière efficiente <http://www.chiark.greenend."
+"org.uk/~sgtatham/bugs.html>`_"
 
 #: ../Doc/bugs.rst:68
 msgid ""

@@ -6000,7 +6000,7 @@ msgstr ""
 #: ../Doc/tutorial/introduction.rst:353
 #, fuzzy
 msgid ":ref:`string-methods`"
-msgstr "string-methods"
+msgstr ":ref:`string-methods`"
 
 #: ../Doc/tutorial/introduction.rst:352
 msgid ""

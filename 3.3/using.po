@@ -552,7 +552,7 @@ msgstr ""
 
 #: ../Doc/using/cmdline.rst:318
 msgid "``all``"
-msgstr ""
+msgstr "``all``"
 
 #: ../Doc/using/cmdline.rst:317
 #, fuzzy

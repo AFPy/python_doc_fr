@@ -9,12 +9,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-22 00:52+0100\n"
 "PO-Revision-Date: 2016-03-10 22:04+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.7\n"
 
 #: library/2to3.rst:4
@@ -81474,7 +81474,7 @@ msgid ""
 "raised if the integer is not representable with the given number of bytes."
 msgstr ""
 "L'entier est représenté par *length* octets. Une exception :exc:"
-"`OverflowError`est levée s'il n'est pas possible de représenter l'entier "
+"`OverflowError` est levée s'il n'est pas possible de représenter l'entier "
 "avec le nombre d'octets donnés."
 
 #: library/stdtypes.rst:489 library/stdtypes.rst:522
@@ -81490,7 +81490,7 @@ msgstr ""
 "le nombre entier. Si *byteorder* est ``\"big\"``, l'octet le plus "
 "significatif est au début du tableau d'octets. Si *byteorder* est ``\"little"
 "\"``, l'octet le plus significatif est à la fin du tableau d'octets. Pour "
-"demander l'ordre natif des octets du système hôte, donnez:data:`sys."
+"demander l'ordre natif des octets du système hôte, donnez :data:`sys."
 "byteorder` en temps que *byteorder*."
 
 #: library/stdtypes.rst:496
@@ -81637,7 +81637,7 @@ msgstr ""
 "Notez que l'exposant est écrit en décimal plutôt qu'en hexadécimal, et qu'il "
 "donne la puissance de 2 par lequel multiplier le coefficient. Par exemple, "
 "la chaîne hexadécimale ``0x3.a7p10`` représente le nombre à virgule "
-"flottante ``(3 + 10./16 + 7./16**2) *2.0**10``, ou ``3740.0` `::"
+"flottante ``(3 + 10./16 + 7./16**2) *2.0**10``, ou ``3740.0`` ::"
 
 #: library/stdtypes.rst:612
 msgid ""
@@ -81687,8 +81687,8 @@ msgid ""
 "P)`` gives the inverse of ``n`` modulo ``P``."
 msgstr ""
 "Si ``x = m / n`` est un nombre rationnel non négatif et ``n`` n'est pas "
-"divisible par ``P``, définir ``hash(x)`` comme ``m * invmod(n, P) % P``, "
-"où ``invmod(n, P)`` donne l'inverse de ``n`` modulo ``P``."
+"divisible par ``P``, définir ``hash(x)`` comme ``m * invmod(n, P) % P``, où "
+"``invmod(n, P)`` donne l'inverse de ``n`` modulo ``P``."
 
 #: library/stdtypes.rst:648
 msgid ""
@@ -81700,14 +81700,14 @@ msgstr ""
 "Si ``x = m / n`` est un nombre rationnel non négatif et ``n`` est divisible "
 "par ``P`` (mais ``m`` ne l'est pas), alors ``n`` n'a pas de modulo inverse "
 "``P`` et la règle ci-dessus ne sont pas applicables; dans ce cas définir "
-"``hach(x)`` comme étant la valeur de la constante ``sys.hash_info.inf``."
+"``hash(x)`` comme étant la valeur de la constante ``sys.hash_info.inf``."
 
 #: library/stdtypes.rst:653
 msgid ""
 "If ``x = m / n`` is a negative rational number define ``hash(x)`` as ``-"
 "hash(-x)``.  If the resulting hash is ``-1``, replace it with ``-2``."
 msgstr ""
-"Si ``x = m / n`` est un nombre rationnel négatif définir ``hach(x)`` comme "
+"Si ``x = m / n`` est un nombre rationnel négatif définir ``hash(x)`` comme "
 "``-hash(-x)``. Si le résultat est ``-1``, le remplacer par ``-2``."
 
 #: library/stdtypes.rst:657

@@ -6097,7 +6097,7 @@ msgstr ""
 #: ../Doc/tutorial/introduction.rst:353
 #, fuzzy
 msgid ":ref:`string-methods`"
-msgstr "string-methods"
+msgstr ":ref:`string-methods`"
 
 #: ../Doc/tutorial/introduction.rst:352
 msgid ""
@@ -6110,7 +6110,7 @@ msgstr ""
 #: ../Doc/tutorial/introduction.rst:357
 #, fuzzy
 msgid ":ref:`string-formatting`"
-msgstr "Anciennes méthodes de formatage de chaînes"
+msgstr ":ref:`string-formatting`"
 
 #: ../Doc/tutorial/introduction.rst:356
 msgid ""

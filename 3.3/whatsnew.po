@@ -1743,7 +1743,7 @@ msgstr ""
 #: ../Doc/whatsnew/2.1.rst:153
 #, fuzzy
 msgid ":pep:`236` - Back to the :mod:`__future__`"
-msgstr "PEP 236 - Retour vers le __future__"
+msgstr ":pep:`236` - Retour vers le :mod:`__future__`"
 
 #: ../Doc/whatsnew/2.1.rst:154
 msgid "Written by Tim Peters, and primarily implemented by Jeremy Hylton."
@@ -2135,7 +2135,7 @@ msgstr ""
 #: ../Doc/whatsnew/2.1.rst:454
 #, fuzzy
 msgid ":pep:`232` - Function Attributes"
-msgstr "PEP 232 - Attributs de fonctions"
+msgstr ":pep:`232` - Attributs de fonctions"
 
 #: ../Doc/whatsnew/2.1.rst:455
 msgid "Written and implemented by Barry Warsaw."
@@ -3127,7 +3127,7 @@ msgstr ""
 #: ../Doc/whatsnew/2.2.rst:535
 #, fuzzy
 msgid ":pep:`234` - Iterators"
-msgstr "PEP 234 - Itérateurs"
+msgstr ":pep:`234` - Itérateurs"
 
 #: ../Doc/whatsnew/2.2.rst:535
 msgid ""
@@ -3265,7 +3265,7 @@ msgstr ""
 #: ../Doc/whatsnew/2.2.rst:662 ../Doc/whatsnew/2.3.rst:248
 #, fuzzy
 msgid ":pep:`255` - Simple Generators"
-msgstr "PEP 255 : Générateurs simples"
+msgstr ":pep:`255`: Générateurs simples"
 
 #: ../Doc/whatsnew/2.2.rst:662 ../Doc/whatsnew/2.3.rst:248
 msgid ""
@@ -8109,7 +8109,7 @@ msgstr ""
 #: ../Doc/whatsnew/2.5.rst:123
 #, fuzzy
 msgid ":pep:`308` - Conditional Expressions"
-msgstr "PEP 308 : Expressions conditionnelles"
+msgstr ":pep:`308` - Expressions conditionnelles"
 
 #: ../Doc/whatsnew/2.5.rst:123
 msgid ""
@@ -8177,7 +8177,7 @@ msgstr ""
 #: ../Doc/whatsnew/2.5.rst:201
 #, fuzzy
 msgid ":pep:`309` - Partial Function Application"
-msgstr "PEP 309 : Application partielle de fonction"
+msgstr ":pep:`309` - Application partielle de fonction"
 
 #: ../Doc/whatsnew/2.5.rst:201
 msgid ""
@@ -11352,7 +11352,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.6.rst:849
 msgid ":ref:`formatstrings`"
-msgstr ""
+msgstr ":ref:`formatstrings`"
 
 #: ../Doc/whatsnew/2.6.rst:849
 msgid "The reference documentation for format fields."

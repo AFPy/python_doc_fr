@@ -329,7 +329,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:71
 msgid "``s`` (:class:`str`) [const char \\*]"
-msgstr ""
+msgstr "``s`` (:class:`str`) [const char \\*]"
 
 #: ../Doc/c-api/arg.rst:59
 #, fuzzy
@@ -404,7 +404,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:88
 msgid "``z`` (:class:`str` or ``None``) [const char \\*]"
-msgstr ""
+msgstr "``z`` (:class:`str` ou ``None``) [const char \\*]"
 
 #: ../Doc/c-api/arg.rst:87
 msgid ""
@@ -525,7 +525,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:135 ../Doc/c-api/arg.rst:532
 msgid "``u`` (:class:`str`) [Py_UNICODE \\*]"
-msgstr ""
+msgstr "``u`` (:class:`str`) [Py_UNICODE \\*]"
 
 #: ../Doc/c-api/arg.rst:124
 #, fuzzy
@@ -558,7 +558,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:139 ../Doc/c-api/arg.rst:537
 msgid "``u#`` (:class:`str`) [Py_UNICODE \\*, int]"
-msgstr ""
+msgstr "``u#`` (:class:`str`) [Py_UNICODE \\*, int]"
 
 #: ../Doc/c-api/arg.rst:138
 #, fuzzy
@@ -572,7 +572,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:143
 msgid "``Z`` (:class:`str` or ``None``) [Py_UNICODE \\*]"
-msgstr ""
+msgstr "``Z`` (:class:`str` ou ``None``) [Py_UNICODE \\*]"
 
 #: ../Doc/c-api/arg.rst:142
 #, fuzzy
@@ -806,7 +806,7 @@ msgstr "Les nombres"
 
 #: ../Doc/c-api/arg.rst:223
 msgid "``b`` (:class:`int`) [unsigned char]"
-msgstr ""
+msgstr "``b`` (:class:`int`) [unsigned char]"
 
 #: ../Doc/c-api/arg.rst:222
 #, fuzzy
@@ -819,7 +819,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:227 ../Doc/c-api/arg.rst:558
 msgid "``B`` (:class:`int`) [unsigned char]"
-msgstr ""
+msgstr "``B`` (:class:`int`) [unsigned char]"
 
 #: ../Doc/c-api/arg.rst:226
 #, fuzzy
@@ -832,7 +832,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:230 ../Doc/c-api/arg.rst:552
 msgid "``h`` (:class:`int`) [short int]"
-msgstr ""
+msgstr "``h`` (:class:`int`) [short int]"
 
 #: ../Doc/c-api/arg.rst:230
 #, fuzzy
@@ -841,7 +841,7 @@ msgstr "Convertit un entier Python en un C :ctype:`short int`."
 
 #: ../Doc/c-api/arg.rst:234 ../Doc/c-api/arg.rst:561
 msgid "``H`` (:class:`int`) [unsigned short int]"
-msgstr ""
+msgstr "``H`` (:class:`int`) [unsigned short int]"
 
 #: ../Doc/c-api/arg.rst:233
 #, fuzzy
@@ -854,7 +854,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:237 ../Doc/c-api/arg.rst:546
 msgid "``i`` (:class:`int`) [int]"
-msgstr ""
+msgstr "``i`` (:class:`int`) [int]"
 
 #: ../Doc/c-api/arg.rst:237
 #, fuzzy
@@ -863,7 +863,7 @@ msgstr "Convertit un entier Python en un type C :ctype:`int`."
 
 #: ../Doc/c-api/arg.rst:241 ../Doc/c-api/arg.rst:564
 msgid "``I`` (:class:`int`) [unsigned int]"
-msgstr ""
+msgstr "``I`` (:class:`int`) [unsigned int]"
 
 #: ../Doc/c-api/arg.rst:240
 #, fuzzy
@@ -876,7 +876,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:244 ../Doc/c-api/arg.rst:555
 msgid "``l`` (:class:`int`) [long int]"
-msgstr ""
+msgstr "``l`` (:class:`int`) [long int]"
 
 #: ../Doc/c-api/arg.rst:244
 #, fuzzy
@@ -885,7 +885,7 @@ msgstr "Convertit un entier Python en un type  :ctype:`long int`."
 
 #: ../Doc/c-api/arg.rst:248 ../Doc/c-api/arg.rst:567
 msgid "``k`` (:class:`int`) [unsigned long]"
-msgstr ""
+msgstr "``k`` (:class:`int`) [unsigned long]"
 
 #: ../Doc/c-api/arg.rst:247
 #, fuzzy
@@ -898,7 +898,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:253 ../Doc/c-api/arg.rst:572
 msgid "``L`` (:class:`int`) [PY_LONG_LONG]"
-msgstr ""
+msgstr "``L`` (:class:`int`) [PY_LONG_LONG]"
 
 #: ../Doc/c-api/arg.rst:251
 #, fuzzy
@@ -913,7 +913,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:258 ../Doc/c-api/arg.rst:577
 msgid "``K`` (:class:`int`) [unsigned PY_LONG_LONG]"
-msgstr ""
+msgstr "``K`` (:class:`int`) [unsigned PY_LONG_LONG]"
 
 #: ../Doc/c-api/arg.rst:256
 #, fuzzy
@@ -929,7 +929,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:261 ../Doc/c-api/arg.rst:580
 msgid "``n`` (:class:`int`) [Py_ssize_t]"
-msgstr ""
+msgstr "``n`` (:class:`int`) [Py_ssize_t]"
 
 #: ../Doc/c-api/arg.rst:261
 #, fuzzy
@@ -955,7 +955,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:272 ../Doc/c-api/arg.rst:588
 msgid "``C`` (:class:`str` of length 1) [int]"
-msgstr ""
+msgstr "``C`` (:class:`str` of length 1) [int]"
 
 #: ../Doc/c-api/arg.rst:271
 #, fuzzy
@@ -968,7 +968,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:275 ../Doc/c-api/arg.rst:594
 msgid "``f`` (:class:`float`) [float]"
-msgstr ""
+msgstr "``f`` (:class:`float`) [float]"
 
 #: ../Doc/c-api/arg.rst:275
 #, fuzzy
@@ -977,7 +977,7 @@ msgstr "Convertit un nombre flottant Python vers un type C :ctype:`float`."
 
 #: ../Doc/c-api/arg.rst:278 ../Doc/c-api/arg.rst:591
 msgid "``d`` (:class:`float`) [double]"
-msgstr ""
+msgstr "``d`` (:class:`float`) [double]"
 
 #: ../Doc/c-api/arg.rst:278
 #, fuzzy
@@ -986,7 +986,7 @@ msgstr "Convertit un nombre flottant Python vers un type C :ctype:`double`."
 
 #: ../Doc/c-api/arg.rst:281
 msgid "``D`` (:class:`complex`) [Py_complex]"
-msgstr ""
+msgstr "``D`` (:class:`complex`) [Py_complex]"
 
 #: ../Doc/c-api/arg.rst:281
 #, fuzzy
@@ -1038,7 +1038,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:319 ../Doc/c-api/arg.rst:619
 msgid "``O&`` (object) [*converter*, *anything*]"
-msgstr ""
+msgstr "``O&`` (object) [*converter*, *anything*]"
 
 #: ../Doc/c-api/arg.rst:299
 #, fuzzy
@@ -1092,7 +1092,7 @@ msgstr "``Py_CLEANUP_SUPPORTED`` à été ajouté."
 
 #: ../Doc/c-api/arg.rst:328
 msgid "``p`` (:class:`bool`) [int]"
-msgstr ""
+msgstr "``p`` (:class:`bool`) [int]"
 
 #: ../Doc/c-api/arg.rst:322
 msgid ""
@@ -1105,7 +1105,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:333 ../Doc/c-api/arg.rst:622
 msgid "``(items)`` (:class:`tuple`) [*matching-items*]"
-msgstr ""
+msgstr "``(items)`` (:class:`tuple`) [*matching-items*]"
 
 #: ../Doc/c-api/arg.rst:331
 msgid ""
@@ -1374,7 +1374,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:509
 msgid "``s`` (:class:`str` or ``None``) [char \\*]"
-msgstr ""
+msgstr "``s`` (:class:`str` ou ``None``) [char \\*]"
 
 #: ../Doc/c-api/arg.rst:508
 msgid ""
@@ -1384,7 +1384,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:514
 msgid "``s#`` (:class:`str` or ``None``) [char \\*, int]"
-msgstr ""
+msgstr "``s#`` (:class:`str` ou ``None``) [char \\*, int]"
 
 #: ../Doc/c-api/arg.rst:512
 msgid ""
@@ -1395,7 +1395,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:518
 msgid "``y`` (:class:`bytes`) [char \\*]"
-msgstr ""
+msgstr "``y`` (:class:`bytes`) [char \\*]"
 
 #: ../Doc/c-api/arg.rst:517
 msgid ""
@@ -1405,7 +1405,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:522
 msgid "``y#`` (:class:`bytes`) [char \\*, int]"
-msgstr ""
+msgstr "``y#`` (:class:`bytes`) [char \\*, int]"
 
 #: ../Doc/c-api/arg.rst:521
 msgid ""
@@ -1415,7 +1415,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:525
 msgid "``z`` (:class:`str` or ``None``) [char \\*]"
-msgstr ""
+msgstr "``z`` (:class:`str` ou ``None``) [char \\*]"
 
 #: ../Doc/c-api/arg.rst:525 ../Doc/c-api/arg.rst:540
 msgid "Same as ``s``."
@@ -1423,7 +1423,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:528
 msgid "``z#`` (:class:`str` or ``None``) [char \\*, int]"
-msgstr ""
+msgstr "``z#`` (:class:`str` ou ``None``) [char \\*, int]"
 
 #: ../Doc/c-api/arg.rst:528 ../Doc/c-api/arg.rst:543
 msgid "Same as ``s#``."
@@ -1445,11 +1445,11 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:540
 msgid "``U`` (:class:`str` or ``None``) [char \\*]"
-msgstr ""
+msgstr "``U`` (:class:`str` ou ``None``) [char \\*]"
 
 #: ../Doc/c-api/arg.rst:543
 msgid "``U#`` (:class:`str` or ``None``) [char \\*, int]"
-msgstr ""
+msgstr "``U#`` (:class:`str` ou ``None``) [char \\*, int]"
 
 #: ../Doc/c-api/arg.rst:546
 msgid "Convert a plain C :c:type:`int` to a Python integer object."
@@ -1457,7 +1457,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:549
 msgid "``b`` (:class:`int`) [char]"
-msgstr ""
+msgstr "``b`` (:class:`int`) [char]"
 
 #: ../Doc/c-api/arg.rst:549
 msgid "Convert a plain C :c:type:`char` to a Python integer object."
@@ -1532,7 +1532,7 @@ msgstr "Convertit un entier Python en un type  :ctype:`long int`."
 
 #: ../Doc/c-api/arg.rst:584
 msgid "``c`` (:class:`bytes` of length 1) [char]"
-msgstr ""
+msgstr "``c`` (:class:`bytes` de taille 1) [char]"
 
 #: ../Doc/c-api/arg.rst:583
 #, fuzzy
@@ -1564,7 +1564,7 @@ msgstr "Convertit un nombre flottant Python vers un type C :ctype:`float`."
 
 #: ../Doc/c-api/arg.rst:597
 msgid "``D`` (:class:`complex`) [Py_complex \\*]"
-msgstr ""
+msgstr "``D`` (:class:`complex`) [Py_complex \\*]"
 
 #: ../Doc/c-api/arg.rst:597
 #, fuzzy
@@ -1619,7 +1619,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:625
 msgid "``[items]`` (:class:`list`) [*matching-items*]"
-msgstr ""
+msgstr "``[items]`` (:class:`list`) [*matching-items*]"
 
 #: ../Doc/c-api/arg.rst:625
 msgid ""
@@ -1629,7 +1629,7 @@ msgstr ""
 
 #: ../Doc/c-api/arg.rst:630
 msgid "``{items}`` (:class:`dict`) [*matching-items*]"
-msgstr ""
+msgstr "``{items}`` (:class:`dict`) [*matching-items*]"
 
 #: ../Doc/c-api/arg.rst:628
 msgid ""

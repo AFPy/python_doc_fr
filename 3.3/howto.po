@@ -6832,7 +6832,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:128
 msgid "``\\d``"
-msgstr ""
+msgstr "``\\d``"
 
 #: ../Doc/howto/regex.rst:128
 msgid "Matches any decimal digit; this is equivalent to the class ``[0-9]``."
@@ -6840,7 +6840,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:131
 msgid "``\\D``"
-msgstr ""
+msgstr "``\\D``"
 
 #: ../Doc/howto/regex.rst:131
 msgid ""
@@ -6849,7 +6849,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:135
 msgid "``\\s``"
-msgstr ""
+msgstr "``\\s``"
 
 #: ../Doc/howto/regex.rst:134
 msgid ""
@@ -6859,7 +6859,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:139
 msgid "``\\S``"
-msgstr ""
+msgstr "``\\S``"
 
 #: ../Doc/howto/regex.rst:138
 msgid ""
@@ -6869,7 +6869,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:143
 msgid "``\\w``"
-msgstr ""
+msgstr "``\\w``"
 
 #: ../Doc/howto/regex.rst:142
 msgid ""
@@ -6879,7 +6879,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:147
 msgid "``\\W``"
-msgstr ""
+msgstr "``\\W``"
 
 #: ../Doc/howto/regex.rst:146
 msgid ""
@@ -7704,7 +7704,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:713
 msgid "``\\A``"
-msgstr ""
+msgstr "``\\A``"
 
 #: ../Doc/howto/regex.rst:710
 msgid ""
@@ -7717,7 +7717,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:716
 msgid "``\\Z``"
-msgstr ""
+msgstr "``\\Z``"
 
 #: ../Doc/howto/regex.rst:716
 msgid "Matches only at the end of the string."
@@ -7725,7 +7725,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:751
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 #: ../Doc/howto/regex.rst:719
 msgid ""
@@ -7761,7 +7761,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:756
 msgid "``\\B``"
-msgstr ""
+msgstr "``\\B``"
 
 #: ../Doc/howto/regex.rst:754
 msgid ""
@@ -7977,7 +7977,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:954
 msgid "``(?=...)``"
-msgstr ""
+msgstr "``(?=...)``"
 
 #: ../Doc/howto/regex.rst:950
 msgid ""
@@ -7990,7 +7990,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:959
 msgid "``(?!...)``"
-msgstr ""
+msgstr "``(?!...)``"
 
 #: ../Doc/howto/regex.rst:957
 msgid ""
