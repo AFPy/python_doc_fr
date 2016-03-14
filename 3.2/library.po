@@ -81717,6 +81717,10 @@ msgid ""
 "negative infinity, or nans (respectively).  (All hashable nans have the same "
 "hash value.)"
 msgstr ""
+"Les valeurs particulières ``sys.hash_info.inf``, ``-sys.hash_info.inf`` et "
+"``sys.hash_info.nan`` sont utilisés comme valeurs de hachage pour l'infini "
+"positif, l'infini négatif, ou *nans* (respectivement). (Tous les *nans* "
+"hachables ont la même valeur de hachage.)"
 
 #: library/stdtypes.rst:662
 msgid ""
@@ -81726,6 +81730,12 @@ msgid ""
 "lies in ``range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - "
 "1))``.  Again, if the result is ``-1``, it's replaced with ``-2``."
 msgstr ""
+"Pour un nombre :class:`complex` ``z``, les valeurs de hachage des parties "
+"réelles et imaginaires sont combinés en calculant ``hash(z.real) + sys."
+"hash_info.imag * hash(z.imag)``, réduit au modulo``2**sys.hash_info.width`` "
+"de sorte qu'il se trouve dans ``range(-2**(sys.hash_info.width - 1), 2**(sys."
+"hash_info.width - 1))``. Encore une fois, si le résultat est ``-1``, il est "
+"remplacé par ``-2``."
 
 #: library/stdtypes.rst:670
 msgid ""
@@ -81736,7 +81746,7 @@ msgstr ""
 
 #: library/stdtypes.rst:725
 msgid "Iterator Types"
-msgstr ""
+msgstr "Les types Itérateurs"
 
 #: library/stdtypes.rst:733
 msgid ""
@@ -81745,12 +81755,18 @@ msgid ""
 "support iteration.  Sequences, described below in more detail, always "
 "support the iteration methods."
 msgstr ""
+"Python supporte un concept d'itération sur les conteneurs. C'est implémenté "
+"en utilisant deux méthodes distinctes qui permettent aux classes définies "
+"par l'utilisateur de devenir itérables. Les séquences, décrites plus bas en "
+"détail, supportent toujours les méthodes d'itération."
 
 #: library/stdtypes.rst:738
 msgid ""
 "One method needs to be defined for container objects to provide iteration "
 "support:"
 msgstr ""
+"Une méthode doit être définie afin que les objets conteneurs  supportent "
+"l'itération :"
 
 #: library/stdtypes.rst:745
 msgid ""
@@ -81769,6 +81785,8 @@ msgid ""
 "The iterator objects themselves are required to support the following two "
 "methods, which together form the :dfn:`iterator protocol`:"
 msgstr ""
+"Les itérateurs eux-mêmes doivent implémenter les deux méthodes suivantes, "
+"qui forment ensemble le :dfn:`iterator protocol` :"
 
 #: library/stdtypes.rst:760
 msgid ""
@@ -81793,6 +81811,10 @@ msgid ""
 "forms.  The specific types are not important beyond their implementation of "
 "the iterator protocol."
 msgstr ""
+"Python définit plusieurs objets itérateurs pour itérer sur les types "
+"standards ou spécifiques de séquence, de  dictionnaires et d'autres formes "
+"plus spécialisées. Les types spécifiques ne sont  pas importants au-delà de "
+"leur implémentation du protocole d'itération."
 
 #: library/stdtypes.rst:778
 msgid ""
@@ -81800,10 +81822,13 @@ msgid ""
 "`StopIteration`, it must continue to do so on subsequent calls. "
 "Implementations that do not obey this property are deemed broken."
 msgstr ""
+"Dès que la méthode :meth:`~iterator .__next__` lève une  exception :exc:"
+"`StopIteration`, elle doit continuer à le faire lors des appels ultérieurs."
+"Implémentations qui ne respectent pas cette propriété sont réputées cassées."
 
 #: library/stdtypes.rst:786
 msgid "Generator Types"
-msgstr ""
+msgstr "Types Générateurs"
 
 #: library/stdtypes.rst:788
 msgid ""
@@ -81814,6 +81839,13 @@ msgid ""
 "`~generator.__next__` methods. More information about generators can be "
 "found in :ref:`the documentation for the yield expression <yieldexpr>`."
 msgstr ""
+"Les :term:`generator`\\s offrent un moyen pratique d'implémenter le "
+"protocole d'itération. Si la méthode :meth:`__iter__` d'un objet conteneur "
+"est implémentée comme un générateur, elle retournera automatiquement un "
+"objet *iterator* (techniquement, un objet générateur) fournissant les "
+"méthodes :meth:`__iter__`  et :meth:`~generator.__next__`. Plus "
+"d'informationssur les générateurs peuvent être trouvés dans :ref:`la "
+"documentation de l'expression yield <yieldexpr>`."
 
 #: library/stdtypes.rst:803
 msgid ""

@@ -251,7 +251,7 @@ msgstr ""
 #: ../Doc/extending/embedding.rst:42
 #, fuzzy
 msgid ":ref:`c-api-index`"
-msgstr "c-api-index"
+msgstr ":ref:`c-api-index`"
 
 #: ../Doc/extending/embedding.rst:42
 msgid ""
