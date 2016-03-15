@@ -81939,7 +81939,7 @@ msgstr "``x in s``"
 
 #: library/stdtypes.rst:872
 msgid "``True`` if an item of *s* is equal to *x*, else ``False``"
-msgstr ""
+msgstr "``True`` si un élément de *s* est égal à *x*, sinon ``False``"
 
 #: library/stdtypes.rst:875
 msgid "``x not in s``"
@@ -81947,7 +81947,7 @@ msgstr "``x not in s``"
 
 #: library/stdtypes.rst:875
 msgid "``False`` if an item of *s* is equal to *x*, else ``True``"
-msgstr ""
+msgstr "``False`` si un élément de *s* est égal à *x*, sinon ``True``"
 
 #: library/stdtypes.rst:878
 msgid "``s + t``"
@@ -81955,7 +81955,7 @@ msgstr "``s + t``"
 
 #: library/stdtypes.rst:878
 msgid "the concatenation of *s* and *t*"
-msgstr ""
+msgstr "la concaténation de *s* et *t*"
 
 #: library/stdtypes.rst:881
 msgid "``s * n, n * s``"
@@ -81971,7 +81971,7 @@ msgstr "``s[i]``"
 
 #: library/stdtypes.rst:884
 msgid "*i*\\ th item of *s*, origin 0"
-msgstr ""
+msgstr "*i*ème élément de *s* en commençant par 0"
 
 #: library/stdtypes.rst:886
 msgid "``s[i:j]``"
@@ -81979,7 +81979,7 @@ msgstr "``s[i:j]``"
 
 #: library/stdtypes.rst:886
 msgid "slice of *s* from *i* to *j*"
-msgstr ""
+msgstr "tranche (*slice*) de *s* de *i* à *j*"
 
 #: library/stdtypes.rst:886
 msgid "(3)(4)"
@@ -81991,7 +81991,7 @@ msgstr "``s[i:j:k]``"
 
 #: library/stdtypes.rst:888
 msgid "slice of *s* from *i* to *j* with step *k*"
-msgstr ""
+msgstr "tranche (*slice*) de *s* de *i* à *j* avec un pas de *k*"
 
 #: library/stdtypes.rst:888
 msgid "(3)(5)"
@@ -82003,7 +82003,7 @@ msgstr "``len(s)``"
 
 #: library/stdtypes.rst:891
 msgid "length of *s*"
-msgstr ""
+msgstr "longueur de *s*"
 
 #: library/stdtypes.rst:893
 msgid "``min(s)``"
@@ -82011,7 +82011,7 @@ msgstr "``min(s)``"
 
 #: library/stdtypes.rst:893
 msgid "smallest item of *s*"
-msgstr ""
+msgstr "plus petit élément de *s*"
 
 #: library/stdtypes.rst:895
 msgid "``max(s)``"
@@ -82019,7 +82019,7 @@ msgstr "``max(s)``"
 
 #: library/stdtypes.rst:895
 msgid "largest item of *s*"
-msgstr ""
+msgstr "plus grand élément de *s*"
 
 #: library/stdtypes.rst:897
 msgid "``s.index(i)``"
