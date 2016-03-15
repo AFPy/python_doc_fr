@@ -49,6 +49,7 @@ PO_FILES := $(wildcard $(RELEASE)/*.po)
 MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,$(notdir $(PO_FILES))))
 
 HAS_PDFLATEX := $(shell which pdflatex)
+HAS_TILDE_IN_PATH := $(shell echo "$(PATH)" | grep -c '~')
 
 .PHONY: $(RELEASES) $(PATCHES) all build_all msgmerge_all rsync_all pull requirements build
 
@@ -71,7 +72,10 @@ gen/src/%/:
 
 requirements:
 	pip3 -q install --user -r scripts/requirements.txt
-	patch --batch -s ~/.local/lib/python3.5/site-packages/polib.py scripts/patches/polib.patch || :
+	patch --batch -s ~/.local/lib/python3.5/site-packages/polib.py scripts/patches/polib.patch >/dev/null || :
+ifneq ($(HAS_TILDE_IN_PATH),0)
+	$(error "You have a '~' in your $$PATH, sh don't support it.")
+endif
 ifeq ($(MODE),autobuild-stable)
 ifndef HAS_PDFLATEX
 	$(error "You need to install pdflatex, typically apt-get install texlive-full")
