@@ -52,6 +52,7 @@ PO_FILES := $(wildcard $(RELEASE)/*.po)
 MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,$(notdir $(PO_FILES))))
 
 HAS_PDFLATEX := $(shell which pdflatex)
+HAS_SVN := $(shell which svn)
 HAS_TILDE_IN_PATH := $(shell echo "$(PATH)" | grep -c '~')
 
 .PHONY: $(RELEASES) $(PATCHES) all build_all msgmerge_all rsync_all pull requirements build
@@ -82,6 +83,11 @@ endif
 ifeq ($(MODE),autobuild-stable)
 ifndef HAS_PDFLATEX
 	$(error "You need to install pdflatex, typically apt-get install texlive-full")
+endif
+endif
+ifeq ($(RELEASE),3.3)
+ifndef HAS_SVN
+	$(error "You need to install svn to build 3.3, typically apt-get install subversion")
 endif
 endif
 
