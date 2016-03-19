@@ -20214,7 +20214,7 @@ msgstr ""
 #: ../Doc/whatsnew/3.2.rst:1144
 #, fuzzy
 msgid "(Contributed by Raymond Hettinger in :issue:`9826` and :issue:`9840`.)"
-msgstr "(Contribution par Raymond Hettinger; :issue:`9826 ` et issue:`9840`)"
+msgstr "(Contribution par Raymond Hettinger; :issue:`9826` et issue:`9840`)"
 
 #: ../Doc/whatsnew/3.2.rst:1147 ../Doc/whatsnew/3.3.rst:1498
 #: ../Doc/whatsnew/3.4.rst:1073

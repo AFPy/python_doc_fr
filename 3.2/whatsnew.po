@@ -20011,7 +20011,7 @@ msgstr ""
 #: whatsnew/3.2.rst:1144
 #, fuzzy
 msgid "(Contributed by Raymond Hettinger in :issue:`9826` and :issue:`9840`.)"
-msgstr "(Contribution par Raymond Hettinger; :issue:`9826 ` et issue:`9840`)"
+msgstr "(Contribution par Raymond Hettinger; :issue:`9826` et issue:`9840`)"
 
 #: whatsnew/3.2.rst:1147
 msgid "logging"
