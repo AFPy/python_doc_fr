@@ -82074,6 +82074,9 @@ msgid ""
 "``len(s) + i`` or ``len(s) + j`` is substituted.  But note that ``-0`` is "
 "still ``0``."
 msgstr ""
+"Si *i* ou *j* est négatifs, l'indice est relatif à la fin de la chaîne : "
+"``len(s) + i`` ou ``len(s) + j`` est substitué. Mais notez que ``-0`` est "
+"toujours ``0``."
 
 #: library/stdtypes.rst:959
 msgid ""
@@ -82083,6 +82086,11 @@ msgid ""
 "*j* is omitted or ``None``, use ``len(s)``.  If *i* is greater than or equal "
 "to *j*, the slice is empty."
 msgstr ""
+"La tranche de *s* de *i* à *j* est définie comme la séquence d'éléments "
+"d'indice *k* tels que ``i <= k < j``. Si *i* ou *j* est supérieur à "
+"``len(s)``, ``len(s)`` est utilisé. Si *i* est omis ou ``None``,  ``0` est "
+"utilisé`. Si *j* est omis ou ``None``, ``len(s)`` est utilisé. Si *i* est "
+"supérieure ou égale à *j*, la tranche est vide."
 
 #: library/stdtypes.rst:966
 msgid ""
@@ -82095,6 +82103,14 @@ msgid ""
 "*k*).  Note, *k* cannot be zero. If *k* is ``None``, it is treated like "
 "``1``."
 msgstr ""
+"La tranche de *s* de *i* à *j* avec un pas de *k* est définie comme la "
+"séquenced'éléments d'indice ``x = i + n*k`` tels que ``0 <= n < (j-i)/k``. "
+"En d'autres termes, les indices sont ``i``, ``i+k``, ``i+2*k``, ``i+3*k`` et "
+"ainsi de suite, en arrêtant lorsque *j* est atteint (mais jamais inclus). Si "
+"*i* ou *j* est supérieur à ``len(s)``, ``len(s)`` est utilisé. Si *i* ou *j* "
+"sont omis ou ``None``, ils deviennent des valeurs \"extrêmes\" (où l'ordre "
+"dépend du signe de *k*). Remarquez, *k* ne peut pas valoir zéro. Si *k* est "
+"``None``, il est traité comme ``1``."
 
 #: library/stdtypes.rst:975
 msgid ""
@@ -82920,7 +82936,7 @@ msgstr ""
 
 #: library/stdtypes.rst:1669
 msgid "Mutable Sequence Types"
-msgstr ""
+msgstr "Types de séquences mutables"
 
 #: library/stdtypes.rst:1676
 msgid ""
@@ -82944,7 +82960,7 @@ msgstr "``s[i] = x``"
 
 #: library/stdtypes.rst:1705
 msgid "item *i* of *s* is replaced by *x*"
-msgstr ""
+msgstr "element *i* de *s* est remplacé par *x*"
 
 #: library/stdtypes.rst:1708
 msgid "``s[i:j] = t``"
@@ -82954,6 +82970,7 @@ msgstr "``s[i:j] = t``"
 msgid ""
 "slice of *s* from *i* to *j* is replaced by the contents of the iterable *t*"
 msgstr ""
+"tranche de *s* de *i* à *j* est remplacée par le contenu de l'itérable *t*"
 
 #: library/stdtypes.rst:1712
 msgid "``del s[i:j]``"
@@ -82961,7 +82978,7 @@ msgstr "``del s[i:j]``"
 
 #: library/stdtypes.rst:1712
 msgid "same as ``s[i:j] = []``"
-msgstr ""
+msgstr "identique à ``s[i:j] = []``"
 
 #: library/stdtypes.rst:1714
 msgid "``s[i:j:k] = t``"
@@ -82969,7 +82986,7 @@ msgstr "``s[i:j:k] = t``"
 
 #: library/stdtypes.rst:1714
 msgid "the elements of ``s[i:j:k]`` are replaced by those of *t*"
-msgstr ""
+msgstr "les éléments de ``s[i:j:k]`` sont remplacés par ceux de *t*"
 
 #: library/stdtypes.rst:1717
 msgid "``del s[i:j:k]``"
@@ -82977,7 +82994,7 @@ msgstr "``del s[i:j:k]``"
 
 #: library/stdtypes.rst:1717
 msgid "removes the elements of ``s[i:j:k]`` from the list"
-msgstr ""
+msgstr "supprime les éléments de ``s[i:j:k]`` de la liste"
 
 #: library/stdtypes.rst:1720
 msgid "``s.append(x)``"
