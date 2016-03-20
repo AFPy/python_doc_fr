@@ -965,7 +965,7 @@ msgstr ""
 
 #: ../Doc/reference/datamodel.rst:310
 msgid "Tuples"
-msgstr ""
+msgstr "Tuples"
 
 #: ../Doc/reference/datamodel.rst:305
 msgid ""

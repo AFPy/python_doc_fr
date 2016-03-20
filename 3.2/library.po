@@ -35814,9 +35814,9 @@ msgstr ""
 "Pour les types natifs supportant :func:`round`, les valeurs sont arrondies "
 "au multiple de 10 puissance moins *ndigits*, si deux multiples sont "
 "équidistants, l'arrondi se fait vers la valeur paire (par exemple "
-"``round(0.5) et ``round (-0.5) valent tous les deux ``0``, et ``round(1.5)`` "
-"vaut ``2``). La valeur rendue est un entier si elle est appelée avec un seul "
-"argument, sinon elle sera de même type que *number*."
+"``round(0.5)`` et ``round(-0.5)`` valent tous les deux ``0``, et "
+"``round(1.5)`` vaut ``2``). La valeur rendue est un entier si elle est "
+"appelée avec un seul argument, sinon elle sera de même type que *number*."
 
 #: library/functions.rst:1161
 msgid ""
@@ -81624,7 +81624,7 @@ msgstr ""
 "dans la section 6.4.4.2 de la norme C99, et aussi à la syntaxe utilisée à "
 "partir de Java 1.5. En particulier, la sortie de :meth:`float.hex` est "
 "utilisable comme valeur hexadécimal à virgule flottante littérale en C ou "
-"Java, et des chaînes hexadécimales produites en C via un format ``%a``ou "
+"Java, et des chaînes hexadécimales produites en C via un format ``%a`` ou "
 "Java via ``Double.toHexString`` sont acceptées par :meth:`float.fromhex`."
 
 #: library/stdtypes.rst:602
@@ -81732,7 +81732,7 @@ msgid ""
 msgstr ""
 "Pour un nombre :class:`complex` ``z``, les valeurs de hachage des parties "
 "réelles et imaginaires sont combinés en calculant ``hash(z.real) + sys."
-"hash_info.imag * hash(z.imag)``, réduit au modulo``2**sys.hash_info.width`` "
+"hash_info.imag * hash(z.imag)``, réduit au modulo ``2**sys.hash_info.width`` "
 "de sorte qu'il se trouve dans ``range(-2**(sys.hash_info.width - 1), 2**(sys."
 "hash_info.width - 1))``. Encore une fois, si le résultat est ``-1``, il est "
 "remplacé par ``-2``."
@@ -82088,8 +82088,8 @@ msgid ""
 msgstr ""
 "La tranche de *s* de *i* à *j* est définie comme la séquence d'éléments "
 "d'indice *k* tels que ``i <= k < j``. Si *i* ou *j* est supérieur à "
-"``len(s)``, ``len(s)`` est utilisé. Si *i* est omis ou ``None``,  ``0` est "
-"utilisé`. Si *j* est omis ou ``None``, ``len(s)`` est utilisé. Si *i* est "
+"``len(s)``, ``len(s)`` est utilisé. Si *i* est omis ou ``None``, ``0`` est "
+"utilisé. Si *j* est omis ou ``None``, ``len(s)`` est utilisé. Si *i* est "
 "supérieure ou égale à *j*, la tranche est vide."
 
 #: library/stdtypes.rst:966
@@ -83058,7 +83058,7 @@ msgstr "``s.reverse()``"
 
 #: library/stdtypes.rst:1740
 msgid "reverses the items of *s* in place"
-msgstr ""
+msgstr "inverse sur place les éléments de *s*"
 
 #: library/stdtypes.rst:1743
 msgid "``s.sort([key[, reverse]])``"
@@ -83074,7 +83074,7 @@ msgstr ""
 
 #: library/stdtypes.rst:1750
 msgid "*t* must have the same length as the slice it is replacing."
-msgstr ""
+msgstr "*t* doit avoir la même longueur que la tranche qu'il remplace."
 
 #: library/stdtypes.rst:1753
 msgid "*x* can be any iterable object."
@@ -83100,6 +83100,8 @@ msgid ""
 "The optional argument *i* defaults to ``-1``, so that by default the last "
 "item is removed and returned."
 msgstr ""
+"L'argument optionnel *i* vaut ``-1`` par défaut, afin que, par défaut, le "
+"dernier élément est retiré et retourné."
 
 #: library/stdtypes.rst:1771
 msgid ""
@@ -83130,6 +83132,10 @@ msgid ""
 "--- this is helpful for sorting in multiple passes (for example, sort by "
 "department, then by salary grade)."
 msgstr ""
+"La méthode :meth:`sort` est garantie stable. Un tri est stable s'il garantit "
+"de ne pas changer l'ordre relatif des éléments égaux --- cela est utile pour "
+"trier en plusieurs passes (par exemple, trier par département, puis par "
+"niveau de salaire)."
 
 #: library/stdtypes.rst:1796
 msgid ""
@@ -83138,6 +83144,10 @@ msgid ""
 "list appear empty for the duration, and raises :exc:`ValueError` if it can "
 "detect that the list has been mutated during a sort."
 msgstr ""
+"L'effet de tenter de modifier, ou même inspecter la liste pendant qu'elle se "
+"fait trier est indéfini. L'implémentation C de Python fait apparaître la "
+"liste comme vide pour la durée du traitement, et soulève :exc:`ValueError` "
+"si elle détecte que la liste a été modifiée au cours du tri."
 
 #: library/stdtypes.rst:1802
 msgid ":meth:`sort` is not supported by :class:`bytearray` objects."
