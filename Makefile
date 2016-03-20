@@ -22,10 +22,13 @@
 # - make msgmerge RELEASE=2.7
 # - make rsync RELEASE=2.7
 #
-# And finally, for the day we'll want to also build PDF and so on, we
-# already have the MODE parameter, used for build and rsync:
+# And finally, for the day we'll want to also build PDF and so on:
 #
 # - make build_all MODE=autobuild-stable
+#
+# Or, to build + rsync on afpy.org, as rsync depends on build, simply run:
+#
+# - make rsync_all MODE=autobuild-stable
 #
 # Modes are: autobuild-stable, autobuild-dev, and autobuild-html,
 # documented in gen/src/3.5/Doc/Makefile as we're only delegating the
