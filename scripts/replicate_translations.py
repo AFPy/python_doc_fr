@@ -60,8 +60,27 @@ def merge_po_files(po_files, fuzzy=False):
                     entry.flags.append('fuzzy')
         po_file.save()
 
-if __name__ == '__main__':
+
+def main():
     import sys
-    merge_po_files(sorted(glob.glob('*.po') + glob.glob('*/*.po')),
-                   '--fuzzy' in sys.argv)
+    import argparse
+    parser = argparse.ArgumentParser(
+        description='Replicate known translations betwenn po files. '
+        'Replication is done in the order of --files, or to a sorted '
+        'list of *.po + */*.po. Last file in "the fresher", the trusted one.')
+    parser.add_argument('--fuzzy', action='store_true',
+                        help='Also replicate nearly identical strings, '
+                        'but when doing so, add a fuzzy flag.')
+    parser.add_argument('--files', nargs='+',
+                        help='Instead of *.po and */*.po, use the given set of '
+                        'files. Usefull to merge work in latest version only '
+                        'like --files 3.5/library.po work.po'
+                        ' (order is important).')
+    args = parser.parse_args()
+    if args.files is None:
+        args.files = sorted(glob.glob('*.po') + glob.glob('*/*.po'))
+    merge_po_files(args.files, args.fuzzy)
     fix_style()
+
+if __name__ == '__main__':
+    main()
