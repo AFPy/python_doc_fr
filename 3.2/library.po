@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2016-03-10 22:04+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "X-Generator: Poedit 1.8.7\n"
 
 #: library/2to3.rst:4
@@ -80709,7 +80709,7 @@ msgid ""
 "The following sections describe the standard types that are built into the "
 "interpreter."
 msgstr ""
-"Les sections suivantes décrivent les types standards qui sont intégrés dans "
+"Les sections suivantes décrivent les types standards intégrés à "
 "l'interpréteur."
 
 #: library/stdtypes.rst:15
@@ -80717,7 +80717,7 @@ msgid ""
 "The principal built-in types are numerics, sequences, mappings, classes, "
 "instances and exceptions."
 msgstr ""
-"Les principaux types natifs sont les numeriques, les séquences, les "
+"Les principaux types natifs sont les numériques, les séquences, les "
 "dictionnaires, les classes, les instances et les exceptions."
 
 #: library/stdtypes.rst:18
@@ -80729,8 +80729,8 @@ msgid ""
 "when an object is written by the :func:`print` function."
 msgstr ""
 "Certaines opérations sont prises en charge par plusieurs types d'objets; en "
-"particulier, pratiquement tous les objets peuvent être comparés, testés pour "
-"la valeur de vérité, et convertis en une chaîne (avec la fonction :func:"
+"particulier, pratiquement tous les objets peuvent être comparés, testés "
+"(valeur booléenne), et convertis en une chaîne (avec la fonction :func:"
 "`repr` ou la fonction légèrement différente :func:`str`). Cette dernière est "
 "implicitement utilisée quand un objet est écrit par la fonction :func:"
 "`print`."
@@ -80745,10 +80745,9 @@ msgid ""
 "keyword:`while` condition or as operand of the Boolean operations below. The "
 "following values are considered false:"
 msgstr ""
-"Tout objet peut être testé pour la valeur de la vérité, pour une utilisation "
-"dans une condition :keyword:`if` ou :keyword:`while` ou comme opérande des "
-"opérations booléennes ci-dessous. Les valeurs suivantes sont considérées "
-"comme fausses :"
+"Tout objet peut être testé typiquement dans une condition :keyword:`if` ou :"
+"keyword:`while` ou comme opérande des opérations booléennes ci-dessous. Les "
+"valeurs suivantes sont considérées comme fausses :"
 
 #: library/stdtypes.rst:47
 msgid "``False``"
@@ -80792,10 +80791,10 @@ msgid ""
 "otherwise stated. (Important exception: the Boolean operations ``or`` and "
 "``and`` always return one of their operands.)"
 msgstr ""
-"Les opérations et fonctions natives qui ont un résultat booléen donnent "
+"Les opérations et fonctions natives dont le résultat est booléen donnent "
 "toujours ``0`` ou ``False`` pour faux et ``1`` ou ``True`` pour vrai, sauf "
 "indication contraire. (Exception importante : les opérations booléennes "
-"``or`` et ``and`` retournent toujours l'une de leurs opérandes.)"
+"``or`` et ``and`` renvoient toujours l'une de leurs opérandes.)"
 
 #: library/stdtypes.rst:79
 msgid "Boolean Operations --- :keyword:`and`, :keyword:`or`, :keyword:`not`"
@@ -80804,7 +80803,7 @@ msgstr ""
 
 #: library/stdtypes.rst:83
 msgid "These are the Boolean operations, ordered by ascending priority:"
-msgstr "Ce sont les opérations booléennes, classés par priorité ascendante :"
+msgstr "Ce sont les opérations booléennes, classées par priorité ascendante :"
 
 #: library/stdtypes.rst:88
 msgid "``x or y``"
@@ -80869,9 +80868,9 @@ msgid ""
 msgstr ""
 "Il y a huit opérations de comparaison en Python. Elles ont toutes la même "
 "priorité (qui est supérieure à celle des opérations booléennes). Les "
-"comparaisons peuvent être enchaînés arbitrairement; par exemple, ``x < y <= "
-"z`` est équivalent à ``x < y and y <= z``, sauf que *y* est évaluée une "
-"seule fois (mais dans les deux cas *z* est pas évalué du tout quand ``x < "
+"comparaisons peuvent être enchaînées arbitrairement; par exemple, ``x < y <= "
+"z`` est équivalent à ``x < y and y <= z``, sauf que *y* n'est évalué qu'une "
+"seule fois (mais dans les deux cas *z* n'est pas évalué du tout quand ``x < "
 "y`` est faux)."
 
 #: library/stdtypes.rst:141
@@ -80953,9 +80952,9 @@ msgid ""
 "compared, or in other cases where there is no defined ordering."
 msgstr ""
 "Les objets de différents types, à l'exception de différents types "
-"numériques, ne peuvent jamais être égaux. En outre, certains types (par "
-"exemple, les objets fonction) ne gèrent qu'une une notion dégénérée de la "
-"comparaisonoù deux objets de ce type sont inégaux. Les opérateurs ``<``, "
+"numériques, ne peuvent en aucun cas être égaux. En outre, certains types "
+"(par exemple, les objets fonction) ne gèrent qu'une une notion dégénérée de "
+"la comparaisonoù deux objets de ce type sont inégaux. Les opérateurs ``<``, "
 "``<=``, ``>`` et ``>=`` lèvent une exception :exc:`TypeError` lorsqu'on  "
 "compare un nombre complexe avec un autre type natif numérique, lorsque les "
 "objets sont de différents types qui ne peuvent pas être comparés, ou dans "
@@ -80966,8 +80965,8 @@ msgid ""
 "Non-identical instances of a class normally compare as non-equal unless the "
 "class defines the :meth:`__eq__` method."
 msgstr ""
-"Des instances différentes d'une classe se comparent normalement comme non "
-"égales à moins que la classe définit la méthode :meth:`__eq__`."
+"Des instances différentes d'une classe sont normalement considérées "
+"différentes à moins que la classe ne définisse la méthode :meth:`__eq__`."
 
 #: library/stdtypes.rst:186
 msgid ""
@@ -80979,7 +80978,7 @@ msgid ""
 msgstr ""
 "Les instances d'une classe ne peuvent pas être ordonnées par rapport à "
 "d'autres instances de la même classe, ou d'autres types d'objets, à moins "
-"que la classe définisse suffisamment de méthodes parmis :meth:`__lt__`, :"
+"que la classe ne définisse suffisamment de méthodes parmi :meth:`__lt__`, :"
 "meth:`__le__`, :meth:`__gt__` et :meth:`__ge__` (en général, :meth:`__lt__` "
 "et :meth:`__eq__` sont suffisantes, si vous voulez les significations "
 "classiques des opérateurs de comparaison)."
@@ -80991,7 +80990,7 @@ msgid ""
 "exception."
 msgstr ""
 "Le comportement des opérateurs :keyword:`is` et :keyword:`is not` ne peut "
-"pas être personnalisé; aussi ils peuvent être appliqués a deux objets "
+"pas être personnalisé; aussi ils peuvent être appliqués à deux objets "
 "quelconques et ne soulèvent jamais d'exception."
 
 #: library/stdtypes.rst:200
@@ -81000,7 +80999,7 @@ msgid ""
 "keyword:`not in`, are supported only by sequence types (below)."
 msgstr ""
 "Deux autres opérations avec la même priorité syntaxique, :keyword:`in` et :"
-"keyword:`not in`, sont pris en charge uniquement par des types séquence(ci-"
+"keyword:`not in`, sont pris en charge uniquement par des types séquence (ci-"
 "dessous)."
 
 #: library/stdtypes.rst:207
@@ -81064,13 +81063,14 @@ msgid ""
 "`float`, and :func:`complex` can be used to produce numbers of a specific "
 "type."
 msgstr ""
-"Python gère pleinement l'arithmétique mixte: quand un opérateur arithmétique "
-"binaire a des opérandes de types numériques différents, l'opérande avec le "
-"type \"le plus étroit\" est élargie au type de l'autre, où l'entier est plus "
-"étroit que la virgule flottante, qui est plus étroite que les complexes. Les "
-"comparaisons entre des nombres de type mixte utilisent la même règle. [2]_ "
-"Les constructeurs :func:`int`, :func:`float` et :func:`complex` peuvent être "
-"utilisé pour produire des nombres d'un type spécifique."
+"Python gère pleinement l'arithmétique mixte : quand un opérateur "
+"arithmétique binaire a des opérandes de types numériques différents, "
+"l'opérande avec le type \"le plus étroit\" est élargie au type de l'autre, "
+"où l'entier est plus étroit que la virgule flottante, qui est plus étroite "
+"que les complexes. Les comparaisons entre des nombres de type mixte "
+"utilisent la même règle. [2]_ Les constructeurs :func:`int`, :func:`float` "
+"et :func:`complex` peuvent être utilisé pour produire des nombres d'un type "
+"spécifique."
 
 #: library/stdtypes.rst:267
 msgid ""
@@ -81227,7 +81227,7 @@ msgid ""
 "``-1``, ``1//(-2)`` is ``-1``, and ``(-1)//(-2)`` is ``0``."
 msgstr ""
 "Également appelé division entière. La valeur résultante est un nombre "
-"entier, bien que le type du résultat ne soit nécessairement *int*. Le "
+"entier, bien que le type du résultat ne soit pas nécessairement *int*. Le "
 "résultat est toujours arrondi vers moins l'infini : ``1//2`` vaut ``0``, "
 "``(-1)//2`` vaut ``-1``, ``1//(-2)`` vaut ``-1``, et ``(-1)//(-2)`` vaut "
 "``0``."
@@ -81252,8 +81252,8 @@ msgid ""
 "float also accepts the strings \"nan\" and \"inf\" with an optional prefix "
 "\"+\" or \"-\" for Not a Number (NaN) and positive or negative infinity."
 msgstr ""
-"float accepte aussi les chauves \"nan\" et \"inf\" avec un préfixe optionnel "
-"\"+\" ou \"-\" pour Not a Number (NaN) et l'infini positif ou négatif."
+"float accepte aussi les chaînes \"nan\" et \"inf\" avec un préfixe optionnel "
+"\"+\" ou \"-\" pour *Not a Number* (NaN) et les infinis positif ou négatif."
 
 #: library/stdtypes.rst:346
 msgid ""
@@ -81261,7 +81261,7 @@ msgid ""
 "programming languages."
 msgstr ""
 "Python définit ``pow(0, 0)`` et ``0 ** 0`` valant ``1``, ​puisque c'est "
-"courant pour les langages de programmation."
+"courant pour les langages de programmation, et logique."
 
 #: library/stdtypes.rst:350
 msgid ""
@@ -81340,7 +81340,7 @@ msgid ""
 "number of bits that no overflow occurs during the operation)."
 msgstr ""
 "Les opérations sur les bits n'ont de sens que pour les entiers. Les nombres "
-"négatifssont traités comme leur complément à 2 (ce qui suppose un assez "
+"négatifs sont traités comme leur complément à 2 (ce qui suppose un assez "
 "grand nombre de bits afin qu'aucun débordement ne se produise pendant "
 "l'opération)."
 
@@ -81352,7 +81352,7 @@ msgid ""
 "``-``)."
 msgstr ""
 "Les priorités de toutes les opération à deux opérandes sur des bits sont "
-"inférieures auxopérations numériques et plus élevées que les comparaisons; "
+"inférieures aux opérations numériques et plus élevées que les comparaisons; "
 "l'opération unaire ``~`` a la même priorité que les autres opérations "
 "numériques unaires (``+`` et ``-``)."
 
@@ -81368,7 +81368,7 @@ msgstr "``x | y``"
 
 #: library/stdtypes.rst:409
 msgid "bitwise :dfn:`or` of *x* and *y*"
-msgstr "dfn:`ou <or>` binaire de *x* et *y*"
+msgstr ":dfn:`ou <or>` binaire de *x* et *y*"
 
 #: library/stdtypes.rst:412
 msgid "``x ^ y``"
@@ -81456,7 +81456,7 @@ msgid ""
 "Return the number of bits necessary to represent an integer in binary, "
 "excluding the sign and leading zeros::"
 msgstr ""
-"Retourne le nombre de bits nécessaires pour représenter un nombre entier en "
+"Renvoie le nombre de bits nécessaires pour représenter un nombre entier en "
 "binaire, à l'exclusion du signe et des zéros non significatifs : ::"
 
 #: library/stdtypes.rst:456
@@ -81471,7 +81471,7 @@ msgstr ""
 "nombre entier positif unique, ``k`` tel que ``2**(k-1) <= abs(x) < 2**k``. "
 "Équivalemment, quand ``abs(x)`` est assez petit pour avoir un logarithme "
 "correctement arrondi, ``k = 1 + int(log(abs(x), 2))``. Si ``x`` est nul, "
-"alors ``x.bit_length()`` retourne ``0``."
+"alors ``x.bit_length()`` donne ``0``."
 
 #: library/stdtypes.rst:473
 msgid "Return an array of bytes representing an integer."
@@ -81500,7 +81500,7 @@ msgstr ""
 "significatif est au début du tableau d'octets. Si *byteorder* est ``\"little"
 "\"``, l'octet le plus significatif est à la fin du tableau d'octets. Pour "
 "demander l'ordre natif des octets du système hôte, donnez :data:`sys."
-"byteorder` en temps que *byteorder*."
+"byteorder` comme *byteorder*."
 
 #: library/stdtypes.rst:496
 msgid ""
@@ -81511,7 +81511,7 @@ msgid ""
 msgstr ""
 "L'argument *signed* détermine si le complément à deux est utilisé pour "
 "représenter le nombre entier. Si *signed* est ``False`` et qu'un entier "
-"négatifest donné, une exception :exc:`OverflowError` est levée. La valeur "
+"négatif est donné, une exception :exc:`OverflowError` est levée. La valeur "
 "par défaut pour *signed* est ``False``."
 
 #: library/stdtypes.rst:505
@@ -81542,8 +81542,8 @@ msgid ""
 "The float type implements the :class:`numbers.Real` :term:`abstract base "
 "class`. float also has the following additional methods."
 msgstr ""
-"Le type *float* implémente la :term:`abstract base class` :class:`numbers."
-"Real` et a également les méthodes suivantes."
+"Le type *float* implémente la :term:`classe de base abstraite <abstract base "
+"class>` :class:`numbers.Real` et a également les méthodes suivantes."
 
 #: library/stdtypes.rst:543
 msgid ""
@@ -81551,7 +81551,7 @@ msgid ""
 "and with a positive denominator.  Raises :exc:`OverflowError` on infinities "
 "and a :exc:`ValueError` on NaNs."
 msgstr ""
-"Retourne une paire de nombres entiers dont le rappot est exactement égal au "
+"Renvoie une paire de nombres entiers dont le rapport est exactement égal au "
 "nombre d'origine et avec un dénominateur positif. Lève :exc:`OverflowError` "
 "avec un infini et :exc:`ValueError` avec un NaN."
 
@@ -81589,7 +81589,7 @@ msgstr ""
 "Donne une représentation d'un nombre à virgule flottante sous forme de "
 "chaîne hexadécimale. Pour les nombres à virgule flottante finis, cette "
 "représentation comprendra toujours un préfixe ``0x``, un suffixe ``p``, et "
-"exposant."
+"un exposant."
 
 #: library/stdtypes.rst:577
 msgid ""
@@ -81625,16 +81625,16 @@ msgid ""
 "by C's ``%a`` format character or Java's ``Double.toHexString`` are accepted "
 "by :meth:`float.fromhex`."
 msgstr ""
-"où l'option ``sign`` peut être soit ``+`` soit ``-``, ``integer`` et "
-"``fraction`` sont des chaînes de chiffres hexadécimales, et ``exponent`` est "
-"un entier décimal facultativement signé. La casse n'est pas significative, "
-"et il doit y avoir au moins un chiffre hexadécimal soit le nombre entier "
-"soit dans la fraction. Cette syntaxe est similaire à la syntaxe spécifiée "
-"dans la section 6.4.4.2 de la norme C99, et aussi à la syntaxe utilisée à "
-"partir de Java 1.5. En particulier, la sortie de :meth:`float.hex` est "
-"utilisable comme valeur hexadécimal à virgule flottante littérale en C ou "
-"Java, et des chaînes hexadécimales produites en C via un format ``%a`` ou "
-"Java via ``Double.toHexString`` sont acceptées par :meth:`float.fromhex`."
+"où ``sign`` peut être soit ``+`` soit ``-``, ``integer`` et ``fraction`` "
+"sont des chaînes de chiffres hexadécimales, et ``exponent`` est un entier "
+"décimal facultativement signé. La casse n'est pas significative, et il doit "
+"y avoir au moins un chiffre hexadécimal soit dans le nombre entier soit dans "
+"la fraction. Cette syntaxe est similaire à la syntaxe spécifiée dans la "
+"section 6.4.4.2 de la norme C99, et est aussi la syntaxe utilisée à partir "
+"de Java 1.5. En particulier, la sortie de :meth:`float.hex` est utilisable "
+"comme valeur hexadécimale à virgule flottante littérale en C ou Java, et des "
+"chaînes hexadécimales produites en C via un format ``%a`` ou Java via "
+"``Double.toHexString`` sont acceptées par :meth:`float.fromhex`."
 
 #: library/stdtypes.rst:602
 msgid ""
@@ -81708,7 +81708,7 @@ msgid ""
 msgstr ""
 "Si ``x = m / n`` est un nombre rationnel non négatif et ``n`` est divisible "
 "par ``P`` (mais ``m`` ne l'est pas), alors ``n`` n'a pas de modulo inverse "
-"``P`` et la règle ci-dessus ne sont pas applicables; dans ce cas définir "
+"``P`` et la règle ci-dessus n'est pas applicable; dans ce cas définir "
 "``hash(x)`` comme étant la valeur de la constante ``sys.hash_info.inf``."
 
 #: library/stdtypes.rst:653
@@ -81727,7 +81727,7 @@ msgid ""
 "hash value.)"
 msgstr ""
 "Les valeurs particulières ``sys.hash_info.inf``, ``-sys.hash_info.inf`` et "
-"``sys.hash_info.nan`` sont utilisés comme valeurs de hachage pour l'infini "
+"``sys.hash_info.nan`` sont utilisées comme valeurs de hachage pour l'infini "
 "positif, l'infini négatif, ou *nans* (respectivement). (Tous les *nans* "
 "hachables ont la même valeur de hachage.)"
 
@@ -81739,12 +81739,12 @@ msgid ""
 "lies in ``range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - "
 "1))``.  Again, if the result is ``-1``, it's replaced with ``-2``."
 msgstr ""
-"Pour un nombre :class:`complex` ``z``, les valeurs de hachage des parties "
-"réelles et imaginaires sont combinés en calculant ``hash(z.real) + sys."
-"hash_info.imag * hash(z.imag)``, réduit au modulo ``2**sys.hash_info.width`` "
-"de sorte qu'il se trouve dans ``range(-2**(sys.hash_info.width - 1), 2**(sys."
-"hash_info.width - 1))``. Encore une fois, si le résultat est ``-1``, il est "
-"remplacé par ``-2``."
+"Pour un nombre :class:`complexe <complex>` ``z``, les valeurs de hachage des "
+"parties réelles et imaginaires sont combinées en calculant ``hash(z.real) + "
+"sys.hash_info.imag * hash(z.imag)``, réduit au modulo ``2**sys.hash_info."
+"width`` de sorte qu'il se trouve dans ``range(-2**(sys.hash_info.width - 1), "
+"2**(sys.hash_info.width - 1))``. Encore une fois, si le résultat est ``-1``, "
+"il est remplacé par ``-2``."
 
 #: library/stdtypes.rst:670
 msgid ""
@@ -81795,7 +81795,7 @@ msgid ""
 "methods, which together form the :dfn:`iterator protocol`:"
 msgstr ""
 "Les itérateurs eux-mêmes doivent implémenter les deux méthodes suivantes, "
-"qui forment ensemble le :dfn:`iterator protocol` :"
+"qui forment ensemble le :dfn:`protocole d'itérateur <iterator protocol>` :"
 
 #: library/stdtypes.rst:760
 msgid ""
@@ -81833,7 +81833,8 @@ msgid ""
 msgstr ""
 "Dès que la méthode :meth:`~iterator .__next__` lève une  exception :exc:"
 "`StopIteration`, elle doit continuer à le faire lors des appels ultérieurs."
-"Implémentations qui ne respectent pas cette propriété sont réputées cassées."
+"Implémentations qui ne respectent pas cette propriété sont considérées "
+"cassées."
 
 #: library/stdtypes.rst:786
 msgid "Generator Types"
@@ -81850,11 +81851,11 @@ msgid ""
 msgstr ""
 "Les :term:`generator`\\s offrent un moyen pratique d'implémenter le "
 "protocole d'itération. Si la méthode :meth:`__iter__` d'un objet conteneur "
-"est implémentée comme un générateur, elle retournera automatiquement un "
-"objet *iterator* (techniquement, un objet générateur) fournissant les "
-"méthodes :meth:`__iter__`  et :meth:`~generator.__next__`. Plus "
-"d'informationssur les générateurs peuvent être trouvés dans :ref:`la "
-"documentation de l'expression yield <yieldexpr>`."
+"est implémentée comme un générateur, elle renverra automatiquement un objet "
+"*iterator* (techniquement, un objet générateur) fournissant les méthodes :"
+"meth:`__iter__`  et :meth:`~generator.__next__`. Plus d'informations sur les "
+"générateurs peuvent être trouvés dans :ref:`la documentation de l'expression "
+"yield <yieldexpr>`."
 
 #: library/stdtypes.rst:803
 msgid ""
@@ -81980,7 +81981,7 @@ msgstr "``s[i]``"
 
 #: library/stdtypes.rst:884
 msgid "*i*\\ th item of *s*, origin 0"
-msgstr "*i*ème élément de *s* en commençant par 0"
+msgstr "*i*\\ ème élément de *s* en commençant par 0"
 
 #: library/stdtypes.rst:886
 msgid "``s[i:j]``"
@@ -82083,7 +82084,7 @@ msgid ""
 "``len(s) + i`` or ``len(s) + j`` is substituted.  But note that ``-0`` is "
 "still ``0``."
 msgstr ""
-"Si *i* ou *j* est négatifs, l'indice est relatif à la fin de la chaîne : "
+"Si *i* ou *j* sont négatifs, l'indice est relatif à la fin de la chaîne : "
 "``len(s) + i`` ou ``len(s) + j`` est substitué. Mais notez que ``-0`` est "
 "toujours ``0``."
 
@@ -82113,7 +82114,7 @@ msgid ""
 "``1``."
 msgstr ""
 "La tranche de *s* de *i* à *j* avec un pas de *k* est définie comme la "
-"séquenced'éléments d'indice ``x = i + n*k`` tels que ``0 <= n < (j-i)/k``. "
+"séquence d'éléments d'indice ``x = i + n*k`` tels que ``0 <= n < (j-i)/k``. "
 "En d'autres termes, les indices sont ``i``, ``i+k``, ``i+2*k``, ``i+3*k`` et "
 "ainsi de suite, en arrêtant lorsque *j* est atteint (mais jamais inclus). Si "
 "*i* ou *j* est supérieur à ``len(s)``, ``len(s)`` est utilisé. Si *i* ou *j* "
@@ -82716,6 +82717,8 @@ msgid ""
 "You can use :meth:`str.maketrans` to create a translation map from character-"
 "to-character mappings in different formats."
 msgstr ""
+"Vous pouvez utiliser :meth:`str.maketrans` pour créer une table de "
+"correspondances de caractères dans différentsformats."
 
 #: library/stdtypes.rst:1420
 msgid ""
@@ -82731,6 +82734,11 @@ msgid ""
 "character(s) is not \"Lu\" (Letter, uppercase), but e.g. \"Lt\" (Letter, "
 "titlecase)."
 msgstr ""
+"Renvoie une copie de la chaîne dont tous les caractères capitalisables [4]_ "
+"sontconvertis en capitales. Notez que ``str.upper().isupper()`` pourrait "
+"être ``False`` si ``s`` contient des caractères non capitalisables ou si la "
+"catégorieUnicode d'un caractère du résultant est pas \"Lu\" (Lettre, "
+"majuscule), mais par exemple \"Lt\" (Lettre, titlecase)."
 
 #: library/stdtypes.rst:1435
 msgid ""
@@ -82771,28 +82779,38 @@ msgid ""
 "items specified by the format string, or a single mapping object (for "
 "example, a dictionary)."
 msgstr ""
+"Si *format* ne nécessite qu'un seul argument, *values* peut être un objet "
+"unique. [5]_ Si *values* est un tuple, il doit contenir exactement lenombre "
+"d'éléments spécifiés par la chaîne de format, ou un seul objet de "
+"correspondances ( *mapping object*, par exemple, un dictionnaire)."
 
 #: library/stdtypes.rst:1479
 msgid ""
 "A conversion specifier contains two or more characters and has the following "
 "components, which must occur in this order:"
 msgstr ""
+"Un indicateur de conversion contient deux ou plusieurs caractères et "
+"comporte les éléments suivants, qui doivent apparaître dans cet ordre :"
 
 #: library/stdtypes.rst:1482
 msgid "The ``'%'`` character, which marks the start of the specifier."
-msgstr ""
+msgstr "Le caractère ``'%'``, qui marque le début du marqueur."
 
 #: library/stdtypes.rst:1484
 msgid ""
 "Mapping key (optional), consisting of a parenthesised sequence of characters "
 "(for example, ``(somename)``)."
 msgstr ""
+"La clé de correspondance (facultative), composée d'une suite de caractères "
+"entre parenthèse (par exemple, ``(somename)``)."
 
 #: library/stdtypes.rst:1487
 msgid ""
 "Conversion flags (optional), which affect the result of some conversion "
 "types."
 msgstr ""
+"Des options de conversion, facultatives, qui affectent le résultat de "
+"certains types de conversion."
 
 #: library/stdtypes.rst:1490
 msgid ""
@@ -82800,6 +82818,9 @@ msgid ""
 "actual width is read from the next element of the tuple in *values*, and the "
 "object to convert comes after the minimum field width and optional precision."
 msgstr ""
+"Largeur minimum (facultative). Si elle vaut ``'*'`` (astérisque), la largeur "
+"est lue de l'élément suivant du tuple *values*, et l'objet à convertir vient "
+"après la largeur de champ minimale et la précision facultative."
 
 #: library/stdtypes.rst:1494
 msgid ""
@@ -82808,14 +82829,18 @@ msgid ""
 "next element of the tuple in *values*, and the value to convert comes after "
 "the precision."
 msgstr ""
+"Précision (facultatif), donnée sous la forme d'un '``'.'`` (point) suivi de "
+"la précision. Si la précision est ``'*'`` (un astérisque), la précision est "
+"lue à partir de l'élément suivant du tuple *values* et la valeur à convertir "
+"vient ensuite."
 
 #: library/stdtypes.rst:1499
 msgid "Length modifier (optional)."
-msgstr ""
+msgstr "Modificateur de longueur (facultatif)."
 
 #: library/stdtypes.rst:1501
 msgid "Conversion type."
-msgstr ""
+msgstr "Type de conversion."
 
 #: library/stdtypes.rst:1503
 msgid ""
@@ -82830,10 +82855,12 @@ msgid ""
 "In this case no ``*`` specifiers may occur in a format (since they require a "
 "sequential parameter list)."
 msgstr ""
+"Dans ce cas, aucune ``*`` ne peuvent se trouver dans le format (car ces "
+"``*`` nécessitent une liste (accès séquentiel) de paramètres)."
 
 #: library/stdtypes.rst:1515
 msgid "The conversion flag characters are:"
-msgstr ""
+msgstr "Les caractères indicateurs de conversion sont :"
 
 #: library/stdtypes.rst:1520
 msgid "``'#'``"
@@ -82850,7 +82877,7 @@ msgstr "``'0'``"
 
 #: library/stdtypes.rst:1523
 msgid "The conversion will be zero padded for numeric values."
-msgstr ""
+msgstr "Les valeurs numériques converties seront complétée de zéros."
 
 #: library/stdtypes.rst:1525 library/string.rst:342
 msgid "``'-'``"
@@ -82861,6 +82888,8 @@ msgid ""
 "The converted value is left adjusted (overrides the ``'0'`` conversion if "
 "both are given)."
 msgstr ""
+"La valeur convertie est ajustée à gauche (remplace la conversion ``'0'`` si "
+"les deux sont données)."
 
 #: library/stdtypes.rst:1528
 msgid "``' '``"
@@ -82871,30 +82900,37 @@ msgid ""
 "(a space) A blank should be left before a positive number (or empty string) "
 "produced by a signed conversion."
 msgstr ""
+"(un espace) Un espace doit être laissé avant un nombre positif (ou chaîne "
+"vide) produite par la conversion d'une valeur signée."
 
 #: library/stdtypes.rst:1531
 msgid ""
 "A sign character (``'+'`` or ``'-'``) will precede the conversion (overrides "
 "a \"space\" flag)."
 msgstr ""
+"Un caractère de signe (``'+'`` ou ``'-'``) précédera la valeur convertie "
+"(remplace le marqueur \"espace\")."
 
 #: library/stdtypes.rst:1535
 msgid ""
 "A length modifier (``h``, ``l``, or ``L``) may be present, but is ignored as "
 "it is not necessary for Python -- so e.g. ``%ld`` is identical to ``%d``."
 msgstr ""
+"Un modificateur de longueur (``h``, ``l`` ou ``L``) peut être présent, mais "
+"est ignoré car il est pas nécessaire pour Python - donc par exemple ``%ld`` "
+"est identique à ``%d``."
 
 #: library/stdtypes.rst:1538
 msgid "The conversion types are:"
-msgstr ""
+msgstr "Les types utilisables dans les conversion sont :"
 
 #: library/stdtypes.rst:1541
 msgid "Conversion"
-msgstr ""
+msgstr "Conversion"
 
 #: library/stdtypes.rst:1543 library/stdtypes.rst:1545
 msgid "Signed integer decimal."
-msgstr ""
+msgstr "Entier décimal signé."
 
 #: library/stdtypes.rst:1547 library/string.rst:408
 msgid "``'o'``"
@@ -82902,11 +82938,11 @@ msgstr "``'o'``"
 
 #: library/stdtypes.rst:1547
 msgid "Signed octal value."
-msgstr ""
+msgstr "Valeur octale signée."
 
 #: library/stdtypes.rst:1549
 msgid "Obsolete type -- it is identical to ``'d'``."
-msgstr ""
+msgstr "Type obsolète - identique à ``'d'``."
 
 #: library/stdtypes.rst:1549
 msgid "\\(7)"
@@ -82918,7 +82954,7 @@ msgstr "``'x'``"
 
 #: library/stdtypes.rst:1551
 msgid "Signed hexadecimal (lowercase)."
-msgstr ""
+msgstr "Hexadécimal signé (en minuscules)."
 
 #: library/stdtypes.rst:1553 library/string.rst:413
 msgid "``'X'``"
@@ -82926,7 +82962,7 @@ msgstr "``'X'``"
 
 #: library/stdtypes.rst:1553
 msgid "Signed hexadecimal (uppercase)."
-msgstr ""
+msgstr "Hexadécimal signé (capitales)."
 
 #: library/stdtypes.rst:1555 library/string.rst:433
 msgid "``'e'``"
@@ -82934,7 +82970,7 @@ msgstr "``'e'``"
 
 #: library/stdtypes.rst:1555
 msgid "Floating point exponential format (lowercase)."
-msgstr ""
+msgstr "Format exponentiel pour un *float* (minuscule)."
 
 #: library/stdtypes.rst:1557 library/string.rst:436
 msgid "``'E'``"
@@ -82942,11 +82978,11 @@ msgstr "``'E'``"
 
 #: library/stdtypes.rst:1557
 msgid "Floating point exponential format (uppercase)."
-msgstr ""
+msgstr "Format exponentiel pour un *float* (en capitales)."
 
 #: library/stdtypes.rst:1559 library/stdtypes.rst:1561
 msgid "Floating point decimal format."
-msgstr ""
+msgstr "Format décimal pour un *float*."
 
 #: library/stdtypes.rst:1561 library/string.rst:442
 msgid "``'F'``"
@@ -82961,6 +82997,8 @@ msgid ""
 "Floating point format. Uses lowercase exponential format if exponent is less "
 "than -4 or not less than precision, decimal format otherwise."
 msgstr ""
+"Format *float*. Utilise le format exponentiel minuscules si l'exposant est "
+"inférieur à -4 ou pas plus petit que la précision, sinon le format décimal."
 
 #: library/stdtypes.rst:1567 library/string.rst:469
 msgid "``'G'``"
@@ -82971,22 +83009,26 @@ msgid ""
 "Floating point format. Uses uppercase exponential format if exponent is less "
 "than -4 or not less than precision, decimal format otherwise."
 msgstr ""
+"Format *float*. Utilise le format exponentiel en capitales si l'exposant est "
+"inférieur à -4 ou pas plus petit que la précision, sinon le format décimal."
 
 #: library/stdtypes.rst:1571
 msgid "Single character (accepts integer or single character string)."
 msgstr ""
+"Un seul caractère (accepte des entiers ou une chaîne d'un seul caractère)."
 
 #: library/stdtypes.rst:1574
 msgid "String (converts any Python object using :func:`repr`)."
-msgstr ""
+msgstr "String (convertit n'importe quel objet Python avec :func:`repr`)."
 
 #: library/stdtypes.rst:1577
 msgid "String (converts any Python object using :func:`str`)."
-msgstr ""
+msgstr "String (convertit n'importe quel objet Python avec :func:`str`)."
 
 #: library/stdtypes.rst:1580
 msgid "String (converts any Python object using :func:`ascii`)."
 msgstr ""
+"String (convertit n'importe quel objet Python en utilisant :func:`ascii`)."
 
 #: library/stdtypes.rst:1583 library/string.rst:477
 msgid "``'%'``"
@@ -82995,6 +83037,8 @@ msgstr "``'%'``"
 #: library/stdtypes.rst:1583
 msgid "No argument is converted, results in a ``'%'`` character in the result."
 msgstr ""
+"Aucun argument n'est converti, donne un caractère de ``'%'`` dans le "
+"résultat."
 
 #: library/stdtypes.rst:1590
 msgid ""
@@ -83002,6 +83046,8 @@ msgid ""
 "left-hand padding and the formatting of the number if the leading character "
 "of the result is not already a zero."
 msgstr ""
+"La forme alternative insère un zéro (``'0'``) entre le rembourrage gauche et "
+"le formatage du nombre si son premier caractère  n'est pas déjà un zéro."
 
 #: library/stdtypes.rst:1595
 msgid ""
@@ -83010,50 +83056,64 @@ msgid ""
 "hand padding and the formatting of the number if the leading character of "
 "the result is not already a zero."
 msgstr ""
+"La forme alternative insère ``'0x'`` ou ``'0X'`` (respectivement pour les "
+"formats ``'x'`` et ``'X'``) entre lerembourrage de gauche et nombre formaté, "
+"si le premier caractère n'est pas déjà un zéro."
 
 #: library/stdtypes.rst:1601
 msgid ""
 "The alternate form causes the result to always contain a decimal point, even "
 "if no digits follow it."
 msgstr ""
+"La forme alternative implique la présence d'un point décimal, même si aucun "
+"chiffre ne le suit."
 
 #: library/stdtypes.rst:1604
 msgid ""
 "The precision determines the number of digits after the decimal point and "
 "defaults to 6."
 msgstr ""
+"La précision détermine le nombre de chiffres après la virgule, 6 par défaut."
 
 #: library/stdtypes.rst:1608
 msgid ""
 "The alternate form causes the result to always contain a decimal point, and "
 "trailing zeroes are not removed as they would otherwise be."
 msgstr ""
+"La forme alternative implique la présence d'un point décimal et les zéros "
+"non significatifs sont conservés (ils ne le seraient pas autrement)."
 
 #: library/stdtypes.rst:1611
 msgid ""
 "The precision determines the number of significant digits before and after "
 "the decimal point and defaults to 6."
 msgstr ""
+"La précision détermine le nombre de chiffres significatifs avant et après la "
+"virgule. 6 par défaut."
 
 #: library/stdtypes.rst:1615
 msgid "If precision is ``N``, the output is truncated to ``N`` characters."
-msgstr ""
+msgstr "Si la précision est ``N``, la sortie est tronquée à ``N`` caractères."
 
 #: library/stdtypes.rst:1619
 msgid "See :pep:`237`."
-msgstr ""
+msgstr "Voir la :pep:`237`."
 
 #: library/stdtypes.rst:1621
 msgid ""
 "Since Python strings have an explicit length, ``%s`` conversions do not "
 "assume that ``'\\0'`` is the end of the string."
 msgstr ""
+"Puisque les chaînes Python ont une longueur explicite, les conversions ``"
+"%s`` ne considèrent pas ``'\\0'`` comme la fin de la chaîne."
 
 #: library/stdtypes.rst:1626
 msgid ""
 "``%f`` conversions for numbers whose absolute value is over 1e50 are no "
 "longer replaced by ``%g`` conversions."
 msgstr ""
+"Les conversions ``%f`` pour nombres dont la valeur absolue est supérieure à "
+"1e50 ne sont plus remplacés par des conversions ``%g``."
 
 #: library/stdtypes.rst:1634
 msgid ""
@@ -83256,7 +83316,7 @@ msgid ""
 "item is removed and returned."
 msgstr ""
 "L'argument optionnel *i* vaut ``-1`` par défaut, afin que, par défaut, le "
-"dernier élément est retiré et retourné."
+"dernier élément soit retiré et renvoyé."
 
 #: library/stdtypes.rst:1771
 msgid ""
@@ -84411,11 +84471,11 @@ msgstr ""
 
 #: library/string.rst:2
 msgid ":mod:`string` --- Common string operations"
-msgstr ""
+msgstr "Opérations usuelles sur des chaînes --- :mod:`string`"
 
 #: library/string.rst:7
 msgid "**Source code:** :source:`Lib/string.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/string.py`"
 
 #: library/string.rst:13
 msgid ":ref:`typesseq`"
@@ -84427,7 +84487,7 @@ msgstr ":ref:`string-methods`"
 
 #: library/string.rst:18
 msgid "String constants"
-msgstr ""
+msgstr "Chaînes constantes"
 
 #: library/string.rst:25
 msgid ""
@@ -84435,36 +84495,45 @@ msgid ""
 "`ascii_uppercase` constants described below.  This value is not locale-"
 "dependent."
 msgstr ""
+"La concaténation des constantes :const:`ascii_lowercase` et :const:`ascii."
+"uppercase` décrites ci-dessous. Cette valeur n'est pas dépendante de "
+"l'environnement linguistique."
 
 #: library/string.rst:31
 msgid ""
 "The lowercase letters ``'abcdefghijklmnopqrstuvwxyz'``.  This value is not "
 "locale-dependent and will not change."
 msgstr ""
+"Les lettres minuscules ``'abcdefghijklmnopqrstuvwxyz``. Cette valeur de "
+"dépend pas de l'environnement linguistique et ne changera pas."
 
 #: library/string.rst:37
 msgid ""
 "The uppercase letters ``'ABCDEFGHIJKLMNOPQRSTUVWXYZ'``.  This value is not "
 "locale-dependent and will not change."
 msgstr ""
+"Les lettres majuscules ``'ABCDEFGHIJKLMNOPQRSTUVWXYZ'``. Cette valeur de "
+"dépend pas de l'environnement linguistique et ne changera pas."
 
 #: library/string.rst:43
 msgid "The string ``'0123456789'``."
-msgstr ""
+msgstr "La chaîne ``'0123456789'``."
 
 #: library/string.rst:48
 msgid "The string ``'0123456789abcdefABCDEF'``."
-msgstr ""
+msgstr "La chaîne ``'0123456789abcdefABCDEF'``."
 
 #: library/string.rst:53
 msgid "The string ``'01234567'``."
-msgstr ""
+msgstr "La chaîne ``'01234567``."
 
 #: library/string.rst:58
 msgid ""
 "String of ASCII characters which are considered punctuation characters in "
 "the ``C`` locale."
 msgstr ""
+"Chaîne de caractères ASCII considérés comme ponctuation dans l'environnement "
+"linguistique ``C``."
 
 #: library/string.rst:64
 msgid ""
@@ -84472,6 +84541,9 @@ msgid ""
 "combination of :const:`digits`, :const:`ascii_letters`, :const:"
 "`punctuation`, and :const:`whitespace`."
 msgstr ""
+"Chaîne de caractères ASCII considérés comme affichables. C'est une "
+"combinaison de :const:`digits`, :const:`ascii_letters`, :const:"
+"`punctuation`, et :const:`whitespace`."
 
 #: library/string.rst:71
 msgid ""
@@ -84479,6 +84551,9 @@ msgid ""
 "This includes the characters space, tab, linefeed, return, formfeed, and "
 "vertical tab."
 msgstr ""
+"Une chaîne comprenant tous les caractères ASCII considérés comme espaces. "
+"Sont inclus les caractères espace, tab, saut de ligne, retour du chariot, "
+"saut de page, et tabulation verticale."
 
 #: library/string.rst:81
 msgid ""
@@ -84491,7 +84566,7 @@ msgstr ""
 
 #: library/string.rst:90
 msgid "The :class:`Formatter` class has the following public methods:"
-msgstr ""
+msgstr "La classe :class:`Formatter` a les méthodes publiques suivantes : ::"
 
 #: library/string.rst:94
 msgid ""
@@ -84509,12 +84584,21 @@ msgid ""
 "`vformat` does the work of breaking up the format string into character data "
 "and replacement fields.  It calls the various methods described below."
 msgstr ""
+"Cette fonction fait le travail effectif du formatage. Elle existe comme "
+"méthode séparée au cas où vous voudriez passer un dictionnaire d'arguments "
+"prédéfini plutôt que décompresser et re-compresser le dictionnaire en "
+"arguments individuels en utilisant la syntaxe ``*args`` et ``**kwargs``. :"
+"meth:`vformat` s'occupe de découper la chaîne de format en données de "
+"caractères et champs de remplacement. Elle appelle les différentes méthodes "
+"décrites ci-dessous."
 
 #: library/string.rst:108
 msgid ""
 "In addition, the :class:`Formatter` defines a number of methods that are "
 "intended to be replaced by subclasses:"
 msgstr ""
+"De plus, la classe :class:`Formatter` définit un certain nombre de méthodes "
+"qui ont pour vocation d'être remplacées par des sous-classes :"
 
 #: library/string.rst:113
 msgid ""
@@ -84523,6 +84607,10 @@ msgid ""
 "by :meth:`vformat` to break the string into either literal text, or "
 "replacement fields."
 msgstr ""
+"Boucle sur la chaîne de format et retourne un itérable de *tuples* "
+"(*literal_text*, *field_name*, *format_spec*, *conversion*). Ceci est "
+"utilisé par :meth:`vformat` pour découper la chaîne de format en littéraux "
+"ou en champs de remplacement."
 
 #: library/string.rst:118
 msgid ""
@@ -84533,6 +84621,12 @@ msgid ""
 "field, then the values of *field_name*, *format_spec* and *conversion* will "
 "be ``None``."
 msgstr ""
+"Les valeurs dans le *tuple* représentent conceptuellement un ensemble de "
+"littéraux suivis d'un unique champ de remplacement. S'il n'y a pas de "
+"littéral, (ce qui peut arriver si deux champs de remplacement sont placés "
+"côte à côte), alors *literal_text* est une chaîne vide. S'il n'y a pas de "
+"champ de remplacement, les valeurs *field_name*, *format_spec* et "
+"*conversion* sont mises à ``None``."
 
 #: library/string.rst:127
 msgid ""
@@ -84543,6 +84637,12 @@ msgid ""
 "meth:`vformat`.  The return value *used_key* has the same meaning as the "
 "*key* parameter to :meth:`get_value`."
 msgstr ""
+"Récupère le champ *field_name* du *tuple* retourné par :meth:`parse` (voir "
+"ci-dessus), le convertit en un objet à formater. Retourne un *tuple* (*obj*, "
+"*used_key*). La version par défaut prend une chaîne de la forme définie par :"
+"pep:`3101`, telle que \"0[name]\" ou \"label.title\". *args* et *kwargs* "
+"sont tels que ceux passés à :meth:`vformat`. La valeur retournée *used_key* "
+"a le même sens que le paramètre *key* de :meth:`get_value`."
 
 #: library/string.rst:136
 msgid ""
@@ -84551,6 +84651,10 @@ msgid ""
 "argument in *args*; if it is a string, then it represents a named argument "
 "in *kwargs*."
 msgstr ""
+"récupère la valeur d'un champ donné. L'argument *key* est soit un entier, "
+"soit une chaîne. Si c'est un entier, il représente l'indice de la l'argument "
+"dans *args*. Si c'est une chaîne de caractères, elle représente le nom de "
+"l'argument dans *kwargs*."
 
 #: library/string.rst:141
 msgid ""
@@ -84558,6 +84662,9 @@ msgid ""
 "`vformat`, and the *kwargs* parameter is set to the dictionary of keyword "
 "arguments."
 msgstr ""
+"Le paramètre *args* est défini par la liste des arguments positionnels de :"
+"meth:`vformat`, et le paramètre *kwargs* est défini par le dictionnaire des "
+"arguments mot-clefs."
 
 #: library/string.rst:145
 msgid ""
@@ -84565,6 +84672,9 @@ msgid ""
 "component of the field name; Subsequent components are handled through "
 "normal attribute and indexing operations."
 msgstr ""
+"Pour les noms de champs composés, ces fonctions sont uniquement appelées sur "
+"la première composante du nom. Les composantes suivantes sont manipulées au "
+"travers des attributs normaux et des opérations sur les indices."
 
 #: library/string.rst:149
 msgid ""
@@ -84573,12 +84683,18 @@ msgid ""
 "looked up after :meth:`get_value` returns by calling the built-in :func:"
 "`getattr` function."
 msgstr ""
+"Donc par exemple, le champ-expression '0.name' amènerait :meth:`get_value` à "
+"être appelée avec un argument *key* valant 0. L'attribut ``name`` sera "
+"recherché après l'appel :meth:`get_value` en faisant appel à la primitive :"
+"func:`getattr`."
 
 #: library/string.rst:154
 msgid ""
 "If the index or keyword refers to an item that does not exist, then an :exc:"
 "`IndexError` or :exc:`KeyError` should be raised."
 msgstr ""
+"Si l'indice ou le mot-clef fait référence à un objet qui n'existe pas, alors "
+"une exception :exc:`IndexError` ou :exc:`KeyError` doit être levée."
 
 #: library/string.rst:159
 msgid ""
@@ -84589,12 +84705,23 @@ msgid ""
 "vformat.  The set of unused args can be calculated from these parameters.  :"
 "meth:`check_unused_args` is assumed to raise an exception if the check fails."
 msgstr ""
+"Implémente une vérification pour les arguments non utilisés si désiré. "
+"L'argument de cette fonction est l'ensemble des clefs qui ont été "
+"effectivement référencées dans la chaîne de format (des entiers pour les "
+"indices et des chaînes de caractères pour les arguments nommés), et une "
+"référence vers les arguments *args* et *kwargs* qui ont été passés à "
+"vformat. L'ensemble des arguments non utilisés peut être calculé sur base de "
+"ces paramètres. :meth:`check_unused_args` est censée lever une exception si "
+"la vérification échoue."
 
 #: library/string.rst:169
 msgid ""
 ":meth:`format_field` simply calls the global :func:`format` built-in.  The "
 "method is provided so that subclasses can override it."
 msgstr ""
+"La méthode :meth:`format_field` fait simplement appel à la primitive "
+"globale :func:`format`. Cette méthode est fournie afin que les sous-classes "
+"puisse la redéfinir."
 
 #: library/string.rst:174
 msgid ""
@@ -84602,10 +84729,14 @@ msgid ""
 "(as in the tuple returned by the :meth:`parse` method).  The default version "
 "understands 's' (str), 'r' (repr) and 'a' (ascii) conversion types."
 msgstr ""
+"Convertit la valeur (retournée par :meth:`get_field`) selon un type de "
+"conversion donné (comme dans le tuple retourné par la méthode :meth:"
+"`parse`). La version par défaut comprend 's' (str), 'r' (repr) et "
+"'a' (ascii) comme types de conversion."
 
 #: library/string.rst:183
 msgid "Format String Syntax"
-msgstr ""
+msgstr "Syntaxe de formatage de chaîne"
 
 #: library/string.rst:185
 msgid ""
@@ -84613,6 +84744,9 @@ msgid ""
 "same syntax for format strings (although in the case of :class:`Formatter`, "
 "subclasses can define their own format string syntax)."
 msgstr ""
+"La méthode :meth:`str.format` et la classe :class:`Formatter` utilisent la "
+"même syntaxe pour le formatage de chaînes (même si pour :class:`Formatter`, "
+"les sous-classes peuvent définir leur propre syntaxe de chaînes de format)."
 
 #: library/string.rst:189
 msgid ""
@@ -84622,10 +84756,15 @@ msgid ""
 "character in the literal text, it can be escaped by doubling: ``{{`` and ``}}"
 "``."
 msgstr ""
+"Les chaînes de formatage contiennent des \"champs de remplacement\" entourés "
+"d'accolades ``{}``. Tout ce qui n'est pas placé entre deux accolades est "
+"considéré comme littéral, qui est copié tel quel dans le résultat. Si vous "
+"avez besoin d'inclure une accolade en littéral, elles peuvent être échappées "
+"en les doublant : ``{{`` et ``}}``."
 
 #: library/string.rst:194
 msgid "The grammar for a replacement field is as follows:"
-msgstr ""
+msgstr "La grammaire pour un champ de remplacement est défini comme suit :"
 
 #: library/string.rst:206
 msgid ""
@@ -84636,10 +84775,17 @@ msgid ""
 "``'!'``, and a *format_spec*, which is preceded by a colon ``':'``.  These "
 "specify a non-default format for the replacement value."
 msgstr ""
+"En termes moins formels, un champ de remplacement peut débuter par un "
+"*field_name* qui spécifie l'objet dont la valeur va être formatée et insérée "
+"dans le résultat à l'endroit du champ de remplacement Le *field_name* peut "
+"éventuellement être suivi d'un champ *conversion* qui est précédé d'un point "
+"d'exclamation ``'!'``, et d'un *format_spec* qui est précédé par deux-points "
+"``':'``. Cela définit un format personnalisé pour le remplacement d'une "
+"valeur."
 
 #: library/string.rst:213
 msgid "See also the :ref:`formatspec` section."
-msgstr ""
+msgstr "Voir également la section :ref:`formatspec`."
 
 #: library/string.rst:215
 msgid ""
@@ -84656,16 +84802,31 @@ msgid ""
 "expression of the form ``'[index]'`` does an index lookup using :func:"
 "`__getitem__`."
 msgstr ""
+"Le champ *field_name* débute par un *arg_name* qui est soit un nombre, soit "
+"un mot-clef. Si c'est un nombre, il fait référence à un des arguments "
+"positionnels et si c'est un mot-clef, il fait référence à un des arguments "
+"nommés. Si les valeurs numériques de *arg_name* dans une chaîne de format "
+"sont 0, 1, 2, ... dans l'ordre, elles peuvent être omises (toutes ou "
+"aucune), et les nombres 0, 1, 2, ... seront automatiquement insérés dans cet "
+"ordre. Puisque *arg_name* n'est pas délimité par des guillemets, il n'est "
+"pas possible de spécifier des clefs de dictionnaire arbitraires (par exemple "
+"les chaînes ``'10'`` ou ``':-]'``) dans une chaîne de format. La valeur "
+"*arg_name* peut être suivie par un nombre d'indices ou d'expressions "
+"quelconque. Une expression de la forme ``'.name'`` sélectionne l'attribut "
+"nommé en utilisant :func:`getattr` alors qu'une expression de la forme "
+"``'[index]'`` recherche l'indice en utilisant :func:`__getitem__`."
 
 #: library/string.rst:227
 msgid ""
 "The positional argument specifiers can be omitted, so ``'{} {}'`` is "
 "equivalent to ``'{0} {1}'``."
 msgstr ""
+"Les spécificateurs de position d'argument peuvent être omis. Donc ``'{} "
+"{}'`` est équivalent à ``'{0} {1}'``."
 
 #: library/string.rst:231
 msgid "Some simple format string examples::"
-msgstr ""
+msgstr "Quelques exemples simples de formatage de chaînes : ::"
 
 #: library/string.rst:240
 msgid ""
@@ -84676,6 +84837,13 @@ msgid ""
 "converting the value to a string before calling :meth:`__format__`, the "
 "normal formatting logic is bypassed."
 msgstr ""
+"Le champ *conversion* crée une contrainte de type avant de formater. "
+"Normalement, le travail de formatage d'une valeur est fait par la méthode :"
+"meth:`__format__` de la valeur elle-même. Cependant, dans certains cas, il "
+"est désirable de forcer un type à être formaté en une chaîne, en ré-"
+"définissant  sa propre définition de formatage. En convertissant une valeur "
+"en chaîne de caractère avant d'appeler la méthode :meth:`__format__`, on "
+"outrepasse la logique usuelle de formatage."
 
 #: library/string.rst:247
 msgid ""
@@ -84683,6 +84851,9 @@ msgid ""
 "`str` on the value, ``'!r'`` which calls :func:`repr` and ``'!a'`` which "
 "calls :func:`ascii`."
 msgstr ""
+"Actuellement, trois indicateurs sont supportés : ``'!s'`` qui appelle la "
+"fonction :func:`str` sur la valeur, ``'!r'`` qui appelle la fonction :func:"
+"`repr` et ``!a`` qui appelle la fonction :func:`ascii`."
 
 #: library/string.rst:251
 msgid "Some examples::"
@@ -84695,12 +84866,19 @@ msgid ""
 "decimal precision and so on.  Each value type can define its own "
 "\"formatting mini-language\" or interpretation of the *format_spec*."
 msgstr ""
+"Le champ *format_spec* contient une spécification sur la manière selon "
+"laquelle la valeur devrait être représentée : des informations telles que la "
+"longueur du champ, l'alignement, le remplissage, la précision décimale, etc. "
+"Chaque type peut définir son propre \"mini-langage de formatage\" ou sa "
+"propre interprétation de *format_spec*."
 
 #: library/string.rst:262
 msgid ""
 "Most built-in types support a common formatting mini-language, which is "
 "described in the next section."
 msgstr ""
+"La plupart des types natifs supportent un mini-langage de formatage usuel "
+"qui est décrit dans la section suivante."
 
 #: library/string.rst:265
 msgid ""
@@ -84714,11 +84892,11 @@ msgstr ""
 
 #: library/string.rst:271
 msgid "See the :ref:`formatexamples` section for some examples."
-msgstr ""
+msgstr "Voir la section :ref:`formatexamples` pour des exemples."
 
 #: library/string.rst:277
 msgid "Format Specification Mini-Language"
-msgstr ""
+msgstr "Mini-langage de spécification de format"
 
 #: library/string.rst:279
 msgid ""
@@ -84728,6 +84906,11 @@ msgid ""
 "func:`format` function.  Each formattable type may define how the format "
 "specification is to be interpreted."
 msgstr ""
+"Les \"spécifications de format\" sont utilisées pour les champs de "
+"remplacement contenus dans une chaîne de format pour définir comment la "
+"valeur doit être représentée (voir :ref:`formatstrings`). Elles peuvent "
+"également être passées directement à la primitive :func:`format`. Chaque "
+"type formatable peut définir comment interpréter la spécification de format."
 
 #: library/string.rst:285
 msgid ""
@@ -84735,6 +84918,9 @@ msgid ""
 "specifications, although some of the formatting options are only supported "
 "by the numeric types."
 msgstr ""
+"La plupart des primitives implémentent les les options suivantes, même si "
+"certaines options de formatage ne sont supportées que pour les types "
+"numériques."
 
 #: library/string.rst:288
 msgid ""
@@ -84742,10 +84928,13 @@ msgid ""
 "same result as if you had called :func:`str` on the value. A non-empty "
 "format string typically modifies the result."
 msgstr ""
+"Une convention généralement admise est qu'une chaîne vide (``\"\"``) produit "
+"le même résultat que si vous aviez appelé :func:`str` sur la valeur. Une "
+"chaîne de format non vide modifie typiquement le résultat."
 
 #: library/string.rst:292
 msgid "The general form of a *standard format specifier* is:"
-msgstr ""
+msgstr "La forme générale d'un *spécificateur de format standard* est : ::"
 
 #: library/string.rst:303
 msgid ""
@@ -84758,11 +84947,11 @@ msgstr ""
 
 #: library/string.rst:309
 msgid "The meaning of the various alignment options is as follows:"
-msgstr ""
+msgstr "Le sens des différentes options d'alignement est donné comme suit :"
 
 #: library/string.rst:312 library/string.rst:337 library/tkinter.ttk.rst:106
 msgid "Option"
-msgstr ""
+msgstr "Option"
 
 #: library/string.rst:314
 msgid "``'<'``"
@@ -84773,6 +84962,8 @@ msgid ""
 "Forces the field to be left-aligned within the available space (this is the "
 "default for most objects)."
 msgstr ""
+"Force le champ à être aligné à gauche dans l'espace disponible (c'est le "
+"spécificateur par défaut pour la plupart des objets)."
 
 #: library/string.rst:317
 msgid "``'>'``"
@@ -84783,6 +84974,8 @@ msgid ""
 "Forces the field to be right-aligned within the available space (this is the "
 "default for numbers)."
 msgstr ""
+"Force le champ à être aligné à droite dans l'espace disponible (c'est le "
+"spécificateur par défaut pour les nombres)."
 
 #: library/string.rst:320
 msgid "``'='``"
@@ -84794,6 +84987,10 @@ msgid ""
 "digits.  This is used for printing fields in the form '+000000120'. This "
 "alignment option is only valid for numeric types."
 msgstr ""
+"Force le remplissage à être placé après le signe (s'il y en a un) mais avant "
+"les chiffres. C'est utilisé afin d'afficher des champs tels que "
+"'+0000000120'. Cette option d'alignement est valable uniquement pour les "
+"types numériques."
 
 #: library/string.rst:325
 msgid "``'^'``"
@@ -84801,7 +84998,7 @@ msgstr "``'^'``"
 
 #: library/string.rst:325
 msgid "Forces the field to be centered within the available space."
-msgstr ""
+msgstr "Force le champ à être centré dans l'espace disponible."
 
 #: library/string.rst:329
 msgid ""
@@ -84809,34 +85006,46 @@ msgid ""
 "always be the same size as the data to fill it, so that the alignment option "
 "has no meaning in this case."
 msgstr ""
+"Notons que la longueur du champ est toujours égale à la la taille nécessaire "
+"pour remplir le champ avec l'objet à moins que la valeur minimum ne soit "
+"précisée.  Ainsi, si aucune valeur n'est précisée, l'option d'alignement n'a "
+"aucun sens."
 
 #: library/string.rst:333
 msgid ""
 "The *sign* option is only valid for number types, and can be one of the "
 "following:"
 msgstr ""
+"L'option *sign* est uniquement valide pour les type numériques, et peut "
+"valoir :"
 
 #: library/string.rst:339
 msgid ""
 "indicates that a sign should be used for both positive as well as negative "
 "numbers."
 msgstr ""
+"Indique que le signe doit être affiché pour les nombres tant positifs que "
+"négatifs."
 
 #: library/string.rst:342
 msgid ""
 "indicates that a sign should be used only for negative numbers (this is the "
 "default behavior)."
 msgstr ""
+"Indique que le signe doit être affiché uniquement pour les nombres négatifs "
+"(c'est le comportement par défaut)."
 
 #: library/string.rst:345
 msgid "space"
-msgstr ""
+msgstr "espace"
 
 #: library/string.rst:345
 msgid ""
 "indicates that a leading space should be used on positive numbers, and a "
 "minus sign on negative numbers."
 msgstr ""
+"Indique qu'un espace doit précéder les nombres positifs et qu'un signe moins "
+"doit précéder les nombres négatifs."
 
 #: library/string.rst:350
 msgid ""
@@ -84851,22 +85060,39 @@ msgid ""
 "of these conversions only if a digit follows it. In addition, for ``'g'`` "
 "and ``'G'`` conversions, trailing zeros are not removed from the result."
 msgstr ""
+"L'option ``'#'`` impose l'utilisation de la \"forme alternative\" pour la "
+"conversion. La forme alternative est définie différemment pour différent "
+"types. Cette option est uniquement valide pour les types entiers flottants, "
+"complexes, et décimaux. Pour les entiers, quand l'affichage binaire, octal "
+"ou hexadécimal est utilisé, cette option ajoute le préfixe ``'0b'``, "
+"``'0o'``, ou ``'0x'`` à la valeur affichée. Pour les flottants, les "
+"complexes, et les décimaux, la forme alternative impose que le résultat de "
+"la conversion contienne toujours une virgule, même si aucun chiffre ne vient "
+"après. Normalement, une virgule apparaît dans le résultat de ces conversions "
+"seulement si un chiffre le suit. De plus, pour les conversions ``'g'`` et "
+"``'G'``, les zéros finaux ne sont pas retirés du résultat."
 
 #: library/string.rst:362
 msgid ""
 "The ``','`` option signals the use of a comma for a thousands separator. For "
 "a locale aware separator, use the ``'n'`` integer presentation type instead."
 msgstr ""
+"L'option ``','`` signale l'utilisation d'une virgule comme séparateur des "
+"milliers. Pour un séparateur conscient de l'environnement linguistique, "
+"utilisez plutôt le type de présentation entière ``'n'``."
 
 #: library/string.rst:366
 msgid "Added the ``','`` option (see also :pep:`378`)."
-msgstr ""
+msgstr "Ajout de l'option ``','`` (voir :pep:`378`)."
 
 #: library/string.rst:369
 msgid ""
 "*width* is a decimal integer defining the minimum field width.  If not "
 "specified, then the field width will be determined by the content."
 msgstr ""
+"*width* est un entier en base 10 qui définit la longueur minimale du champ. "
+"Si elle n'est pas spécifiée, alors le champ *width* est déterminé par le "
+"contenu."
 
 #: library/string.rst:372
 msgid ""
@@ -84874,6 +85100,9 @@ msgid ""
 "zero-padding for numeric types.  This is equivalent to a *fill* character of "
 "``'0'`` with an *alignment* type of ``'='``."
 msgstr ""
+"Fait précéder le champ *width* par un caractère zéro (``'0'``) active le "
+"remplissage de zéros conscient du signe pour les types numériques. C'est "
+"équivalent à un caractère de remplissage ``'0'`` avec un alignement ``'='``."
 
 #: library/string.rst:376
 msgid ""
@@ -84885,66 +85114,85 @@ msgid ""
 "will be used from the field content. The *precision* is not allowed for "
 "integer values."
 msgstr ""
+"La valeur *precision* est un nombre en base 10 indiquant combien de chiffres "
+"doivent être affichés après la virgule pour une valeur à virgule flottante "
+"formatée avec ``'f'`` ou ``'F'``, ou avant et après le point-décimal pour "
+"une valeur à virgule flottante formatée avec ``'g'`` ou ``'G'``. Pour les "
+"types non numériques, ce champ indique la taille maximale du champ - "
+"autrement dit, combien de caractères du champ sont utilisés. Le "
+"spécificateur *precision* n'est pas autorisé sur les entiers."
 
 #: library/string.rst:383
 msgid "Finally, the *type* determines how the data should be presented."
 msgstr ""
+"Finalement, le spécificateur *type* détermine comment la donnée doit être "
+"représentée."
 
 #: library/string.rst:385
 msgid "The available string presentation types are:"
-msgstr ""
+msgstr "Les types disponibles de représentation de chaîne sont :"
 
 #: library/string.rst:390
 msgid "String format. This is the default type for strings and may be omitted."
 msgstr ""
+"Format de chaîne. C'est le type par défaut pour les chaînes de caractères et "
+"peut être omis."
 
 #: library/string.rst:393
 msgid "The same as ``'s'``."
-msgstr ""
+msgstr "Paril que ``'s'``."
 
 #: library/string.rst:396
 msgid "The available integer presentation types are:"
-msgstr ""
+msgstr "Les types disponibles de représentation d'entier sont :"
 
 #: library/string.rst:401
 msgid "Binary format. Outputs the number in base 2."
-msgstr ""
+msgstr "Format binaire. Affiche le nombre en base 2."
 
 #: library/string.rst:403
 msgid ""
 "Character. Converts the integer to the corresponding unicode character "
 "before printing."
 msgstr ""
+"Caractère. Convertit l'entier en le caractère unicode associé avant de "
+"l'afficher."
 
 #: library/string.rst:406
 msgid "Decimal Integer. Outputs the number in base 10."
-msgstr ""
+msgstr "Entier décimal. Affiche le nombre en base 10."
 
 #: library/string.rst:408
 msgid "Octal format. Outputs the number in base 8."
-msgstr ""
+msgstr "Format octal. Affiche le nombre en base 8."
 
 #: library/string.rst:410
 msgid ""
 "Hex format. Outputs the number in base 16, using lower- case letters for the "
 "digits above 9."
 msgstr ""
+"Format hexa(décimal). Affiche le nombre en base 16 en utilisant les lettres "
+"minuscules pour les chiffres au-dessus de 9."
 
 #: library/string.rst:413
 msgid ""
 "Hex format. Outputs the number in base 16, using upper- case letters for the "
 "digits above 9."
 msgstr ""
+"Format hexa(décimal). Affiche le nombre en base 16 en utilisant les lettres "
+"majuscules pour les chiffres au-dessus de 9."
 
 #: library/string.rst:416
 msgid ""
 "Number. This is the same as ``'d'``, except that it uses the current locale "
 "setting to insert the appropriate number separator characters."
 msgstr ""
+"Nombre. Pareil que ``'d'`` si ce n'est que l'environnement linguistique est "
+"utilisé afin de déterminer le séparateur de nombres approprié."
 
 #: library/string.rst:420
 msgid "The same as ``'d'``."
-msgstr ""
+msgstr "Pareil que ``'d'``."
 
 #: library/string.rst:423
 msgid ""
@@ -84953,11 +85201,17 @@ msgid ""
 "None). When doing so, :func:`float` is used to convert the integer to a "
 "floating point number before formatting."
 msgstr ""
+"En plus des types de représentation ci-dessus, les entiers peuvent être "
+"formatés avec les types de représentation pour nombres flottants listés ci-"
+"dessous (à par ``'n'`` et Aucun). Dans ce cas, :func:`float` est utilisé "
+"afin de convertir l'entier en nombre flottant avant de le formater."
 
 #: library/string.rst:428
 msgid ""
 "The available presentation types for floating point and decimal values are:"
 msgstr ""
+"les types de représentation pour les nombres flottants et les valeurs "
+"décimales sont :"
 
 #: library/string.rst:433
 msgid ""
@@ -84970,6 +85224,8 @@ msgid ""
 "Exponent notation. Same as ``'e'`` except it uses an upper case 'E' as the "
 "separator character."
 msgstr ""
+"Notation par exposant. Pareil que ``'e'`` sauf l'utilisation de la lettre "
+"majuscule 'E' comme séparateur."
 
 #: library/string.rst:439
 msgid "Fixed point. Displays the number as a fixed-point number."
@@ -84980,6 +85236,8 @@ msgid ""
 "Fixed point. Same as ``'f'``, but converts ``nan`` to ``NAN`` and ``inf`` to "
 "``INF``."
 msgstr ""
+"Virgule fixe. Pareil que ``'f'`` à part ``nan`` qui devient ``NAN`` et "
+"``inf`` qui devient ``INF``."
 
 #: library/string.rst:445
 msgid ""
@@ -84987,6 +85245,9 @@ msgid ""
 "``p`` significant digits and then formats the result in either fixed-point "
 "format or in scientific notation, depending on its magnitude."
 msgstr ""
+"Format général. Pour une précision donnée ``p >= 1``, ceci arrondit le "
+"nombre à ``p`` chiffres significatifs et puis formate le résultat soit en "
+"virgule fixe soit en notation scientifique, en fonction de la magnitude."
 
 #: library/string.rst:450
 msgid ""
@@ -84998,6 +85259,14 @@ msgid ""
 "cases insignificant trailing zeros are removed from the significand, and the "
 "decimal point is also removed if there are no remaining digits following it."
 msgstr ""
+"Les règles précises sont les suivantes : supposons que le résultat formaté "
+"avec le type de représentation ``'e'`` et une précision ``1`` ait un "
+"exposant ``exp``. Alors, si ``-4 <= exp <= p``, le nombre est formaté avec "
+"le type de représentation ``'f'`` et une précision ``p-1-exp``. Sinon, le "
+"nombre est formaté avec le type de représentation ``'e'`` et une précision "
+"``p-1``. Dans les deux cas, les zéros finaux et non significatifs sont "
+"retirés, et la virgule est également retirée s'il n'y a aucun chiffre la "
+"suivant."
 
 #: library/string.rst:461
 msgid ""
@@ -85005,6 +85274,9 @@ msgid ""
 "formatted as ``inf``, ``-inf``, ``0``, ``-0`` and ``nan`` respectively, "
 "regardless of the precision."
 msgstr ""
+"Les valeurs suivantes : infini négatif, infini positif, zéro positif, zéro "
+"négatif, nan sont formatées respectivement par ``inf``, ``-inf``, ``0``, "
+"``-0`` et ``nan``, peu importe la précision."
 
 #: library/string.rst:466
 msgid "A precision of ``0`` is treated as equivalent to a precision of ``1``."
@@ -85015,18 +85287,25 @@ msgid ""
 "General format. Same as ``'g'`` except switches to ``'E'`` if the number "
 "gets too large. The representations of infinity and NaN are uppercased, too."
 msgstr ""
+"Format général. Pareil que ``'G'`` si ce n'est que ``'E'`` est utilisé si le "
+"nombre est trop grand. Également, la représentation des infinis et de Nan "
+"sont en majuscules également."
 
 #: library/string.rst:473
 msgid ""
 "Number. This is the same as ``'g'``, except that it uses the current locale "
 "setting to insert the appropriate number separator characters."
 msgstr ""
+"Nombre. Pareil que ``'g'``, si ce n'est que l'environnement linguistique est "
+"pris en compte pour insérer le séparateur approprié."
 
 #: library/string.rst:477
 msgid ""
 "Percentage. Multiplies the number by 100 and displays in fixed (``'f'``) "
 "format, followed by a percent sign."
 msgstr ""
+"Pourcentage. Multiplie le nombre par 100 et l'affiche en virgule fixe "
+"(``'f'``), suivi d'un symbole pourcent ``'%'``."
 
 #: library/string.rst:480
 msgid ""
@@ -85037,7 +85316,7 @@ msgstr ""
 
 #: library/string.rst:490
 msgid "Format examples"
-msgstr ""
+msgstr "Exemples de formats"
 
 #: library/string.rst:492
 msgid ""
@@ -85051,65 +85330,71 @@ msgid ""
 "the addition of the ``{}`` and with ``:`` used instead of ``%``. For "
 "example, ``'%03.2f'`` can be translated to ``'{:03.2f}'``."
 msgstr ""
+"Dans la plupart des cases, la syntaxe est similaire à l'ancien formatage par "
+"``%``, avec l'ajout de ``{}`` et avec ``:`` au lieu de ``%``. Par exemple : "
+"``'%03.2f'`` peut être changé en ``'{03.2f}'``."
 
 #: library/string.rst:499
 msgid ""
 "The new format syntax also supports new and different options, shown in the "
 "follow examples."
 msgstr ""
+"La nouvelle syntaxe de formatage supporte également de nouvelles options et "
+"des options différentes, montrées dans les exemples qui suivent."
 
 #: library/string.rst:502
 msgid "Accessing arguments by position::"
-msgstr ""
+msgstr "Accéder à un argument par sa position : ::"
 
 #: library/string.rst:515
 msgid "Accessing arguments by name::"
-msgstr ""
+msgstr "Accéder à un argument par son nom : ::"
 
 #: library/string.rst:523
 msgid "Accessing arguments' attributes::"
-msgstr ""
+msgstr "Accéder aux attributs d'un argument : ::"
 
 #: library/string.rst:538
 msgid "Accessing arguments' items::"
-msgstr ""
+msgstr "Accéder aux éléments d'un argument : ::"
 
 #: library/string.rst:544
 msgid "Replacing ``%s`` and ``%r``::"
-msgstr ""
+msgstr "Remplacer ``%s`` et ``%r`` : ::"
 
 #: library/string.rst:549
 msgid "Aligning the text and specifying a width::"
-msgstr ""
+msgstr "Aligner le texte et spécifier une longueur minimale : ::"
 
 #: library/string.rst:560
 msgid "Replacing ``%+f``, ``%-f``, and ``% f`` and specifying a sign::"
-msgstr ""
+msgstr "Remplacer ``%+f``, ``%-f``, et ``%f`` et spécifier un signe : ::"
 
 #: library/string.rst:569
 msgid ""
 "Replacing ``%x`` and ``%o`` and converting the value to different bases::"
 msgstr ""
+"Remplacer ``%x`` et ``%o`` et convertir la valeur dans différentes bases : ::"
 
 #: library/string.rst:578
 msgid "Using the comma as a thousands separator::"
-msgstr ""
+msgstr "Utiliser une virgule comme séparateur des milliers : ::"
 
 #: library/string.rst:583
 msgid "Expressing a percentage::"
-msgstr ""
+msgstr "Exprimer un pourcentage : ::"
 
 #: library/string.rst:590
 msgid "Using type-specific formatting::"
-msgstr ""
+msgstr "Utiliser un formatage propre au type : ::"
 
 #: library/string.rst:597
 msgid "Nesting arguments and more complex examples::"
-msgstr ""
+msgstr " Arguments imbriqués et des exemples plus complexes : ::"
 
 #: library/string.rst:631
 msgid "Template strings"
-msgstr ""
+msgstr "Chaînes modèles"
 
 #: library/string.rst:633
 msgid ""
@@ -85117,10 +85402,14 @@ msgid ""
 "Instead of the normal ``%``\\ -based substitutions, Templates support ``$``"
 "\\ -based substitutions, using the following rules:"
 msgstr ""
+"Les modèles (*templates*) fournissent des substitutions de chaînes plus "
+"simples comme décrit dans :pep:`292`. À la place des substitutions "
+"habituelles basées sur ``%``, les *Templates* supportent les substitutions "
+"basées sur ``$`` en utilisant les règles suivantes :"
 
 #: library/string.rst:637
 msgid "``$$`` is an escape; it is replaced with a single ``$``."
-msgstr ""
+msgstr "``$$`` est un échappement ; il est remplacé par un simple ``$``."
 
 #: library/string.rst:639
 msgid ""
@@ -85136,22 +85425,31 @@ msgid ""
 "valid identifier characters follow the placeholder but are not part of the "
 "placeholder, such as ``\"${noun}ification\"``."
 msgstr ""
+"``${identifier}`` est équivalent à ``$identifier``. Cette notation est "
+"requise quand un caractère valide pour une clef de substituant suit "
+"directement le substituant mais ne fait pas partie du substituant, comme ``"
+"\"${noun}ification\"``."
 
 #: library/string.rst:648
 msgid ""
 "Any other appearance of ``$`` in the string will result in a :exc:"
 "`ValueError` being raised."
 msgstr ""
+"Tout autre présence du symbole ``$`` dans une chaîne résultera en la levée "
+"d'une :exc:`ValueError`."
 
 #: library/string.rst:651
 msgid ""
 "The :mod:`string` module provides a :class:`Template` class that implements "
 "these rules.  The methods of :class:`Template` are:"
 msgstr ""
+"Le module :mod:`string` fournit une classe :class:`Template` qui implémente "
+"ces règles. Les méthodes de :class:`Template` sont :"
 
 #: library/string.rst:657
 msgid "The constructor takes a single argument which is the template string."
 msgstr ""
+"Le constructeur prend un seul argument qui est la chaîne du *template*."
 
 #: library/string.rst:662
 msgid ""
@@ -85161,6 +85459,12 @@ msgid ""
 "keywords are the placeholders.  When both *mapping* and *kwds* are given and "
 "there are duplicates, the placeholders from *kwds* take precedence."
 msgstr ""
+"Applique les substitutions du *template*, et la retourne dans une nouvelle "
+"chaîne. *mapping* est un objet dictionnaire-compatible qui lie les "
+"substituants dans le *template*. De même, vous pouvez fournir des arguments "
+"mot-clefs tels que les mot-clefs sont les substituants. Quand à la fois "
+"*mapping* et *kwds* sont donnés et qu'il y a des doublons, les substituants "
+"de *kwds* sont prioritaires."
 
 #: library/string.rst:671
 msgid ""
@@ -85170,6 +85474,12 @@ msgid ""
 "unlike with :meth:`substitute`, any other appearances of the ``$`` will "
 "simply return ``$`` instead of raising :exc:`ValueError`."
 msgstr ""
+"Comme :meth:`substitute`, si ce n'est qu'au lieu de lever une :exc:"
+"`KeyError` si un substituant n'est ni dans *mapping*, ni dans *kwds*, c'est "
+"le nom du substituant inchangé qui apparaît dans la chaîne finale. "
+"Également, à l'inverse de :meth:`substitute`, toute autre apparition de ``"
+"$`` retournera simplement ``$`` au lieu de lever une exception :exc:"
+"`ValueError`."
 
 #: library/string.rst:677
 msgid ""
@@ -85180,20 +85490,32 @@ msgid ""
 "containing dangling delimiters, unmatched braces, or placeholders that are "
 "not valid Python identifiers."
 msgstr ""
+"Bien que d'autres exceptions peuvent toujours être levées, cette méthode est "
+"dite \"safe\" (sûre) car les substitutions tentent toujours de retourner une "
+"chaîne utilisable au lieu de lever une exception. Dans un autre sens, :meth:"
+"`safe_substitute` est tout sauf sûre du fait qu'elle ignore silencieusement "
+"toute malformation dans le *template* qui contient des délimiteurs fantômes, "
+"des accolades non fermées, ou des substituants qui ne sont pas des "
+"identificateurs Python valides."
 
 #: library/string.rst:684
 msgid ":class:`Template` instances also provide one public data attribute:"
 msgstr ""
+"Les instances de la classe :class:`Template` fournissent également un "
+"attribut public :"
 
 #: library/string.rst:688
 msgid ""
 "This is the object passed to the constructor's *template* argument.  In "
 "general, you shouldn't change it, but read-only access is not enforced."
 msgstr ""
+"C'est l'objet *template* passé comme argument au constructeur. En général, "
+"vous ne devriez pas le changer, mais un accès en lecture-seule n'est pas "
+"possible à fournir."
 
 #: library/string.rst:691
 msgid "Here is an example of how to use a Template::"
-msgstr ""
+msgstr "Voici un exemple de comment utiliser un *Template* : ::"
 
 #: library/string.rst:709
 msgid ""
@@ -85202,6 +85524,11 @@ msgid ""
 "expression used to parse template strings.  To do this, you can override "
 "these class attributes:"
 msgstr ""
+"Usage avancé : vous pouvez faire dériver vos sous-classes de :class:"
+"`Template` pour personnaliser la syntaxe des substituants, les caractères "
+"délimiteurs, ou l'entièreté de l'expression rationnelle utilisée pour "
+"analyser les chaînes *templates*. Pour faire cela, vous pouvez redéfinir les "
+"attributs suivants :"
 
 #: library/string.rst:713
 msgid ""
@@ -85210,6 +85537,10 @@ msgid ""
 "*not* be a regular expression, as the implementation will call :meth:`re."
 "escape` on this string as needed."
 msgstr ""
+"*delimiter* -- La chaîne littérale décrivant le délimiteur pour introduire "
+"un substituant. Sa valeur par défaut ests ``$``. Notez qu'il ne doit *pas* "
+"être une expression rationnelle, puisque l'implémentation appellera :meth:"
+"`re.escape` sur cette chaîne si nécessaire."
 
 #: library/string.rst:718
 msgid ""
@@ -85218,6 +85549,10 @@ msgid ""
 "appropriate).  The default value is the regular expression ``[_a-z][_a-"
 "z0-9]*``."
 msgstr ""
+"*idpattern* -- L'expression rationnelle décrivant le motif pour les "
+"substituants non entourés d'accolades (les accolades sont ajoutées "
+"automatiquement si c'est approprié). La valeur par défaut de cette "
+"expression rationnelle est ``[_a-z][_a-z0-9]*``."
 
 #: library/string.rst:723
 msgid ""
@@ -85227,6 +85562,12 @@ msgid ""
 "to the flags, so custom *idpattern*\\ s must follow conventions for verbose "
 "regular expressions."
 msgstr ""
+"*flags* -- L'indicateur d'expression rationnelle  qui sera appliqué lors de "
+"la compilation de l'expression rationnelle pour reconnaître les "
+"substitutions. La valeur par défaut est ``re.IGNORECASE``. Notez que ``re."
+"VERBOSE`` sera toujours ajouté à l'indicateur. Donc, un *idpattern* "
+"personnalisé doit suivre les conventions des expressions rationnelles "
+"*verbose*."
 
 #: library/string.rst:731
 msgid ""
@@ -85236,34 +85577,48 @@ msgid ""
 "groups correspond to the rules given above, along with the invalid "
 "placeholder rule:"
 msgstr ""
+"Également, vous pouvez fournir le motif d'expression rationnelle en entier "
+"en redéfinissant l'attribut *pattern*. Si vous faites cela, la valeur doit "
+"être un objet 'expression rationnelle' avec quatre groupes de capture de "
+"noms. Les groupes de capture correspondent aux règles données au-dessus, "
+"ainsi qu'à la règle du substituant invalide :"
 
 #: library/string.rst:737
 msgid ""
 "*escaped* -- This group matches the escape sequence, e.g. ``$$``, in the "
 "default pattern."
 msgstr ""
+"*escaped* -- Ce groupe lie les séquences échappées (par exemple ``$$``) dans "
+"le motif par défaut."
 
 #: library/string.rst:740
 msgid ""
 "*named* -- This group matches the unbraced placeholder name; it should not "
 "include the delimiter in capturing group."
 msgstr ""
+"*named* -- Ce groupe lie les substituants non entourés d'accolades ; il ne "
+"devrait pas inclure le délimiteur dans le groupe de capture."
 
 #: library/string.rst:743
 msgid ""
 "*braced* -- This group matches the brace enclosed placeholder name; it "
 "should not include either the delimiter or braces in the capturing group."
 msgstr ""
+"*braced* -- Ce groupe lie le nom entouré d'accolades ; il ne devrait inclure "
+"ni le délimiteur, ni les accolades dans le groupe de capture."
 
 #: library/string.rst:746
 msgid ""
 "*invalid* -- This group matches any other delimiter pattern (usually a "
 "single delimiter), and it should appear last in the regular expression."
 msgstr ""
+"*invalid* -- Ce groupe lie tout autre motif de délimitation (habituellement, "
+"un seul délimiteur) et il devrait apparaître un dernier dans l'expression "
+"rationnelle."
 
 #: library/string.rst:751
 msgid "Helper functions"
-msgstr ""
+msgstr "Fonctions d'assistance"
 
 #: library/string.rst:755
 msgid ""
@@ -85274,6 +85629,12 @@ msgid ""
 "trailing whitespace are removed, otherwise *sep* is used to split and join "
 "the words."
 msgstr ""
+" Divise l'argument en mots en utilisant :meth:`str.split`, capitalise chaque "
+"mot en utilisant :meth:`str.capitalize` et assemble les mots capitalisés en "
+"utilisant :meth:`str.join`. Si le second argument optionnel *sep* est absent "
+"ou vaut ``None``, les séquences de caractères blancs sont remplacées par un "
+"seul espace et les espaces débutant et finissant la chaîne sont retirés. "
+"Sinon, *sep* et utilisé pour séparer et ré-assembler les mots."
 
 #: library/stringprep.rst:2
 msgid ":mod:`stringprep` --- Internet String Preparation"
