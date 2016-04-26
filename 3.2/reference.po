@@ -81,7 +81,6 @@ msgid ""
 msgstr ""
 
 #: reference/compound_stmts.rst:78
-#, fuzzy
 msgid "The :keyword:`if` statement"
 msgstr "L'instruction :keyword:`if`"
 
@@ -101,7 +100,7 @@ msgstr ""
 
 #: reference/compound_stmts.rst:104
 msgid "The :keyword:`while` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`while`"
 
 #: reference/compound_stmts.rst:112
 msgid ""
@@ -127,7 +126,7 @@ msgstr ""
 
 #: reference/compound_stmts.rst:137
 msgid "The :keyword:`for` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`for`"
 
 #: reference/compound_stmts.rst:150
 msgid ""
@@ -189,7 +188,7 @@ msgstr ""
 
 #: reference/compound_stmts.rst:215
 msgid "The :keyword:`try` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`try`"
 
 #: reference/compound_stmts.rst:223
 msgid ""
@@ -314,7 +313,7 @@ msgstr ""
 
 #: reference/compound_stmts.rst:349
 msgid "The :keyword:`with` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`with`"
 
 #: reference/compound_stmts.rst:353
 msgid ""
@@ -1372,7 +1371,7 @@ msgstr ""
 
 #: reference/datamodel.rst:611
 msgid "Built-in functions"
-msgstr ""
+msgstr "Fonctions Natives"
 
 #: reference/datamodel.rst:604
 msgid ""
@@ -1595,7 +1594,6 @@ msgid ""
 msgstr ""
 
 #: reference/datamodel.rst:880
-#, fuzzy
 msgid "Code objects"
 msgstr "Objets Code"
 
@@ -3477,9 +3475,8 @@ msgid ""
 msgstr ""
 
 #: reference/expressions.rst:282
-#, fuzzy
 msgid "Generator expressions"
-msgstr "Expressions et générateurs"
+msgstr "Générateurs (expressions)"
 
 #: reference/expressions.rst:287
 msgid "A generator expression is a compact generator notation in parentheses:"
@@ -4488,9 +4485,8 @@ msgid ":keyword:`lambda`"
 msgstr ""
 
 #: reference/expressions.rst:1290
-#, fuzzy
 msgid "Lambda expression"
-msgstr "Fonctions anonymes"
+msgstr "Expression lambda"
 
 #: reference/expressions.rst:1292
 msgid ":keyword:`if` -- :keyword:`else`"
@@ -6160,9 +6156,8 @@ msgid ""
 msgstr ""
 
 #: reference/simple_stmts.rst:436
-#, fuzzy
 msgid "The :keyword:`yield` statement"
-msgstr "L'instruction :keyword:`del`"
+msgstr "L'instruction :keyword:`yield`"
 
 #: reference/simple_stmts.rst:448
 msgid ""
@@ -6196,7 +6191,7 @@ msgstr ""
 
 #: reference/simple_stmts.rst:484
 msgid "The :keyword:`raise` statement"
-msgstr ""
+msgstr "L'instruction :keyword:`raise`"
 
 #: reference/simple_stmts.rst:495
 msgid ""

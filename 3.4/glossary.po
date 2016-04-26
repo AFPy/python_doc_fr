@@ -1247,7 +1247,6 @@ msgid "metaclass"
 msgstr "metaclasse"
 
 #: ../Doc/glossary.rst:520
-#, fuzzy
 msgid ""
 "The class of a class.  Class definitions create a class name, a class "
 "dictionary, and a list of base classes.  The metaclass is responsible for "
@@ -1542,7 +1541,6 @@ msgstr ""
 "cependant des fonctions natives, comme :func:`abs` en utilisent."
 
 #: ../Doc/glossary.rst:640
-#, fuzzy
 msgid ""
 ":dfn:`keyword-only`: specifies an argument that can be supplied only by "
 "keyword.  Keyword-only parameters can be defined by including a single var-"
@@ -1556,7 +1554,6 @@ msgstr ""
 "liste des paramètres avant avant eux. Comme kw_only1 et kw_only2 ici : ::"
 
 #: ../Doc/glossary.rst:648
-#, fuzzy
 msgid ""
 ":dfn:`var-positional`: specifies that an arbitrary sequence of positional "
 "arguments can be provided (in addition to any positional arguments already "
@@ -1792,7 +1789,6 @@ msgid "reference count"
 msgstr "nombre de références"
 
 #: ../Doc/glossary.rst:764
-#, fuzzy
 msgid ""
 "The number of references to an object.  When the reference count of an "
 "object drops to zero, it is deallocated.  Reference counting is generally "

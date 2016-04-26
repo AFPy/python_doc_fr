@@ -6019,7 +6019,6 @@ msgstr ""
 "transformations basiques et de recherche."
 
 #: tutorial/introduction.rst:403
-#, fuzzy
 msgid "string-formatting"
 msgstr "Anciennes méthodes de formatage de chaînes"
 
@@ -6031,7 +6030,6 @@ msgstr ""
 "Le formatage des chaînes avec la méthode :meth:`str.format` est décrit ici."
 
 #: tutorial/introduction.rst:406
-#, fuzzy
 msgid "old-string-formatting"
 msgstr ":ref:`old-string-formatting`"
 

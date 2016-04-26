@@ -97,17 +97,14 @@ msgid "Owner"
 msgstr "Propriétaire"
 
 #: license.rst:35
-#, fuzzy
 msgid "GPL compatible?"
 msgstr "Compatible avec la GPL ?"
 
 #: license.rst:37
-#, fuzzy
 msgid "0.9.0 thru 1.2"
 msgstr "0.9.0 à 1.2"
 
 #: license.rst:37
-#, fuzzy
 msgid "n/a"
 msgstr "n/a"
 
@@ -128,12 +125,10 @@ msgstr "CWI"
 #: license.rst:105 license.rst:107 license.rst:109 license.rst:111
 #: license.rst:113 license.rst:115 license.rst:117 license.rst:119
 #: license.rst:121 license.rst:123 license.rst:125 license.rst:127
-#, fuzzy
 msgid "yes"
 msgstr "oui"
 
 #: license.rst:39
-#, fuzzy
 msgid "1.3 thru 1.5.2"
 msgstr "1.3 à 1.5.2"
 
@@ -438,7 +433,6 @@ msgstr ""
 "compatible GPL\" ne le peuvent pas."
 
 #: license.rst:138
-#, fuzzy
 msgid ""
 "Thanks to the many outside volunteers who have worked under Guido's "
 "direction to make these releases possible."

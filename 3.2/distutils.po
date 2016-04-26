@@ -38,13 +38,12 @@ msgstr ""
 "`distutils.dist.Distribution` et :class:`distutils.cmd.Command`."
 
 #: distutils/apiref.rst:23
-#, fuzzy
 msgid ""
 "The basic do-everything function that does most everything you could ever "
 "ask for from a Distutils method."
 msgstr ""
 "La fonction de base à tout faire qui fait presque tout ce dont vous pourriez "
-"attendre d'une méthode Distutils. Voir XXXXX"
+"attendre d'une méthode Distutils."
 
 #: distutils/apiref.rst:26
 msgid ""
@@ -87,9 +86,8 @@ msgid "*version*"
 msgstr "*version*"
 
 #: distutils/apiref.rst:34
-#, fuzzy
 msgid "The version number of the package; see :mod:`distutils.version`"
-msgstr "Le numéro de version du paquet"
+msgstr "Le numéro de version du paquet, voir :mod:`distutils.version`"
 
 #: distutils/apiref.rst:38
 msgid "*description*"
@@ -200,9 +198,8 @@ msgid "A list of Python extensions to be built"
 msgstr "Une liste des extensions Python à construire"
 
 #: distutils/apiref.rst:75
-#, fuzzy
 msgid "a list of instances of :class:`distutils.core.Extension`"
-msgstr "Une liste d'instances de :class:`distutils.core.Extension'"
+msgstr "une liste d'instances de :class:`distutils.core.Extension'"
 
 #: distutils/apiref.rst:78
 msgid "*classifiers*"
@@ -230,9 +227,8 @@ msgid "the :class:`Distribution` class to use"
 msgstr "la classe :class:`Distribution` à utiliser"
 
 #: distutils/apiref.rst:81
-#, fuzzy
 msgid "a subclass of :class:`distutils.core.Distribution`"
-msgstr "Une sous classe de :class:`distutils.core.Distribution`"
+msgstr "une sous classe de :class:`distutils.core.Distribution`"
 
 #: distutils/apiref.rst:84
 msgid "*script_name*"
@@ -324,7 +320,6 @@ msgid ""
 msgstr ""
 
 #: distutils/apiref.rst:121
-#, fuzzy
 msgid ""
 "*script_name* is a file that will be read and run with :func:`exec`.  ``sys."
 "argv[0]`` will be replaced with *script* for the duration of the call.  "
@@ -403,19 +398,17 @@ msgstr ""
 "existent ailleurs."
 
 #: distutils/apiref.rst:153
-#, fuzzy
 msgid ":class:`~distutils.extension.Extension` from :mod:`distutils.extension`"
-msgstr ":class:`Extension` de :mod:`distutils.extension`"
+msgstr ""
+":class:`~distutils.extension.Extension` du module :mod:`distutils.extension`"
 
 #: distutils/apiref.rst:155
-#, fuzzy
 msgid ":class:`~distutils.cmd.Command` from :mod:`distutils.cmd`"
-msgstr ":class:`Command` de :mod:`distutils.cmd`"
+msgstr ":class:`~distutils.cmd.Command` du module :mod:`distutils.cmd`"
 
 #: distutils/apiref.rst:157
-#, fuzzy
 msgid ":class:`~distutils.dist.Distribution` from :mod:`distutils.dist`"
-msgstr ":class:`Distribution` de :mod:`distutils.dist`"
+msgstr ":class:`~distutils.dist.Distribution` du module :mod:`distutils.dist`"
 
 #: distutils/apiref.rst:159
 msgid ""
@@ -486,9 +479,8 @@ msgid ""
 msgstr ""
 
 #: distutils/apiref.rst:194
-#, fuzzy
 msgid "a list of tuples"
-msgstr "une liste de chaînes"
+msgstr "une liste de tuples"
 
 #: distutils/apiref.rst:206
 msgid "*undef_macros*"
@@ -590,9 +582,8 @@ msgstr ""
 "détecté selon l'extension de la source s'il n'est pas précisé."
 
 #: distutils/apiref.rst:267
-#, fuzzy
 msgid "*optional*"
-msgstr "*options*"
+msgstr "*optionnel*"
 
 #: distutils/apiref.rst:267
 msgid ""
@@ -2752,7 +2743,7 @@ msgstr ""
 
 #: distutils/builtdist.rst:127
 msgid "Formats"
-msgstr ""
+msgstr "Formats"
 
 #: distutils/builtdist.rst:129
 msgid ":command:`bdist_dumb`"
@@ -3952,7 +3943,6 @@ msgid ""
 msgstr ""
 
 #: distutils/introduction.rst:47
-#, fuzzy
 msgid "A Simple Example"
 msgstr "Un exemple simple"
 
@@ -4096,7 +4086,6 @@ msgid ""
 msgstr ""
 
 #: distutils/introduction.rst:155
-#, fuzzy
 msgid "module"
 msgstr "module"
 
@@ -4119,7 +4108,6 @@ msgid ""
 msgstr ""
 
 #: distutils/introduction.rst:168
-#, fuzzy
 msgid "extension module"
 msgstr "module d'extension"
 
@@ -4135,7 +4123,6 @@ msgid ""
 msgstr ""
 
 #: distutils/introduction.rst:173
-#, fuzzy
 msgid "package"
 msgstr "paquet"
 
@@ -4147,9 +4134,8 @@ msgid ""
 msgstr ""
 
 #: distutils/introduction.rst:183
-#, fuzzy
 msgid "root package"
-msgstr "*packages*"
+msgstr "paquet racine"
 
 #: distutils/introduction.rst:176
 msgid ""
@@ -4962,9 +4948,8 @@ msgid ""
 msgstr ""
 
 #: distutils/setupscript.rst:411
-#, fuzzy
 msgid "Some examples:"
-msgstr "Quelques exemples : ::"
+msgstr "Quelques exemples :"
 
 #: distutils/setupscript.rst:414
 msgid "Provides Expression"
@@ -5326,18 +5311,16 @@ msgid ""
 msgstr ""
 
 #: distutils/setupscript.rst:625
-#, fuzzy
 msgid "'short string'"
-msgstr "une chaîne de caractères"
+msgstr "'chaîne courte'"
 
 #: distutils/setupscript.rst:625
 msgid "A single line of text, not more than 200 characters."
 msgstr ""
 
 #: distutils/setupscript.rst:629
-#, fuzzy
 msgid "'long string'"
-msgstr "une chaîne de caractères"
+msgstr "'chaîne longue'"
 
 #: distutils/setupscript.rst:628
 msgid ""
@@ -5346,9 +5329,8 @@ msgid ""
 msgstr ""
 
 #: distutils/setupscript.rst:632
-#, fuzzy
 msgid "'list of strings'"
-msgstr "une liste de chaînes"
+msgstr "'liste de chaînes'"
 
 #: distutils/setupscript.rst:632
 msgid "See below."

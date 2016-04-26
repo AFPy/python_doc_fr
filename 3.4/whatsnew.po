@@ -31,7 +31,6 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../Doc/whatsnew/2.0.rst:15
-#, fuzzy
 msgid ""
 "A new release of Python, version 2.0, was released on October 16, 2000. This "
 "article covers the exciting new features in 2.0, highlights some other "
@@ -44,7 +43,6 @@ msgstr ""
 "quelques incompatibilités qui peuvent nécessiter la réécriture du code."
 
 #: ../Doc/whatsnew/2.0.rst:20
-#, fuzzy
 msgid ""
 "Python's development never completely stops between releases, and a steady "
 "flow of bug fixes and improvements are always being submitted. A host of "
@@ -67,7 +65,6 @@ msgstr ""
 "de l'amélioration de la communication résultant du passage à SourceForge."
 
 #: ../Doc/whatsnew/2.0.rst:33
-#, fuzzy
 msgid "What About Python 1.6?"
 msgstr "À propos de Python 1.6"
 
@@ -1569,7 +1566,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.1.rst:3
-#, fuzzy
 msgid "What's New in Python 2.1"
 msgstr "Nouveautés de Python 2.1"
 
@@ -1704,7 +1700,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.1.rst:123 ../Doc/whatsnew/2.2.rst:927
 msgid ":pep:`227` - Statically Nested Scopes"
-msgstr ""
+msgstr ":pep:`227` - Statically Nested Scopes"
 
 #: ../Doc/whatsnew/2.1.rst:124 ../Doc/whatsnew/2.2.rst:928
 msgid "Written and implemented by Jeremy Hylton."
@@ -1741,7 +1737,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.1.rst:153
-#, fuzzy
 msgid ":pep:`236` - Back to the :mod:`__future__`"
 msgstr ":pep:`236` - Retour vers le :mod:`__future__`"
 
@@ -1967,7 +1962,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.1.rst:295
 msgid ":pep:`230` - Warning Framework"
-msgstr ""
+msgstr ":pep:`230` - Warning Framework"
 
 #: ../Doc/whatsnew/2.1.rst:296
 msgid "Written and implemented by Guido van Rossum."
@@ -2133,7 +2128,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.1.rst:454
-#, fuzzy
 msgid ":pep:`232` - Function Attributes"
 msgstr ":pep:`232` - Attributs de fonctions"
 
@@ -2560,7 +2554,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.2.rst:3
-#, fuzzy
 msgid "What's New in Python 2.2"
 msgstr "Nouveautés de Python 2.2"
 
@@ -3125,7 +3118,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.2.rst:535
-#, fuzzy
 msgid ":pep:`234` - Iterators"
 msgstr ":pep:`234` - Itérateurs"
 
@@ -3263,7 +3255,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.2.rst:662 ../Doc/whatsnew/2.3.rst:248
-#, fuzzy
 msgid ":pep:`255` - Simple Generators"
 msgstr ":pep:`255`: Générateurs simples"
 
@@ -3411,7 +3402,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.2.rst:770
 msgid ":pep:`238` - Changing the Division Operator"
-msgstr ""
+msgstr ":pep:`238` - Changing the Division Operator"
 
 #: ../Doc/whatsnew/2.2.rst:771
 msgid ""
@@ -3978,7 +3969,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.3.rst:3
-#, fuzzy
 msgid "What's New in Python 2.3"
 msgstr "Nouveautés de Python 2.3"
 
@@ -4376,7 +4366,6 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.3.rst:473 ../Doc/whatsnew/2.3.rst:498
 #: ../Doc/whatsnew/2.6.rst:642
-#, fuzzy
 msgid "This produces the following output::"
 msgstr "Ceci produit l’affichage suivant :"
 
@@ -6136,7 +6125,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.3.rst:2009
-#, fuzzy
 msgid "Porting to Python 2.3"
 msgstr "Portage vers Python 2.3"
 
@@ -6236,7 +6224,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.4.rst:3
-#, fuzzy
 msgid "What's New in Python 2.4"
 msgstr "Nouveautés de Python 2.4"
 
@@ -6439,7 +6426,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.4.rst:212
 msgid "Written and implemented  by Barry Warsaw."
-msgstr ""
+msgstr "Écrit et implémenté par Barry Warsaw."
 
 #: ../Doc/whatsnew/2.4.rst:218
 msgid "PEP 318: Decorators for Functions and Methods"
@@ -7888,7 +7875,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.4.rst:1508
-#, fuzzy
 msgid "Porting to Python 2.4"
 msgstr "Portage vers Python 2.4"
 
@@ -7967,7 +7953,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:3
-#, fuzzy
 msgid "What's New in Python 2.5"
 msgstr "Nouveautés de Python 2.5"
 
@@ -8108,7 +8093,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:123
-#, fuzzy
 msgid ":pep:`308` - Conditional Expressions"
 msgstr ":pep:`308` - Expressions conditionnelles"
 
@@ -8176,7 +8160,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:201
-#, fuzzy
 msgid ":pep:`309` - Partial Function Application"
 msgstr ":pep:`309` - Application partielle de fonction"
 
@@ -8367,7 +8350,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:359
 msgid ":pep:`338` - Executing modules as scripts"
-msgstr ""
+msgstr ":pep:`338` - Executing modules as scripts"
 
 #: ../Doc/whatsnew/2.5.rst:360
 msgid "PEP written and  implemented by Nick Coghlan."
@@ -10546,7 +10529,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.5.rst:2227
-#, fuzzy
 msgid "Porting to Python 2.5"
 msgstr "Portage vers Python 2.5"
 
@@ -10634,7 +10616,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.6.rst:5
-#, fuzzy
 msgid "What's New in Python 2.6"
 msgstr "Nouveautés de Python 2.6"
 
@@ -11260,7 +11241,7 @@ msgstr "``b``"
 
 #: ../Doc/whatsnew/2.6.rst:810
 msgid "Binary. Outputs the number in base 2."
-msgstr ""
+msgstr "Format binaire. Affiche le nombre en base 2."
 
 #: ../Doc/whatsnew/2.6.rst:811
 msgid "``c``"
@@ -11271,6 +11252,8 @@ msgid ""
 "Character. Converts the integer to the corresponding Unicode character "
 "before printing."
 msgstr ""
+"Caractère. Convertit l'entier en le caractère unicode associé avant de "
+"l'afficher."
 
 #: ../Doc/whatsnew/2.6.rst:813
 msgid "``d``"
@@ -11297,6 +11280,8 @@ msgid ""
 "Hex format. Outputs the number in base 16, using lower-case letters for the "
 "digits above 9."
 msgstr ""
+"Format hexadécimal. Affiche le nombre en base 16 en utilisant les lettres "
+"minuscules pour les chiffres au-dessus de 9."
 
 #: ../Doc/whatsnew/2.6.rst:817
 msgid "``e``"
@@ -11338,6 +11323,8 @@ msgid ""
 "Percentage. Multiplies the number by 100 and displays in fixed ('f') format, "
 "followed by a percent sign."
 msgstr ""
+"Pourcentage. Multiplie le nombre par 100 et l'affiche en virgule fixe ('f'), "
+"suivi d'un symbole pourcent ``'%'``."
 
 #: ../Doc/whatsnew/2.6.rst:829
 msgid ""
@@ -11412,7 +11399,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.6.rst:886
 msgid ":pep:`3105` - Make print a function"
-msgstr ""
+msgstr ":pep:`3105` - Make print a function"
 
 #: ../Doc/whatsnew/2.6.rst:887
 msgid "PEP written by Georg Brandl."
@@ -11538,7 +11525,7 @@ msgstr ""
 
 #: ../Doc/whatsnew/2.6.rst:1021
 msgid ":pep:`3112` - Bytes literals in Python 3000"
-msgstr ""
+msgstr ":pep:`3112` - Bytes literals in Python 3000"
 
 #: ../Doc/whatsnew/2.6.rst:1022
 msgid "PEP written by Jason Orendorff; backported to 2.6 by Christian Heimes."
@@ -12061,7 +12048,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.6.rst:1517
-#, fuzzy
 msgid "(Contributed by Alexander Belopolsky; :issue:`1686487`.)"
 msgstr "(Contribution par Alexander Belopolsky; :issue:`1686487`.)"
 
@@ -12980,7 +12966,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.6.rst:2315
-#, fuzzy
 msgid "(Contributed by Tarek Ziadé; :issue:`2663`.)"
 msgstr "(Contribution par Tarek Ziadé; :issue:`2663`.)"
 
@@ -13978,7 +13963,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.6.rst:3232
-#, fuzzy
 msgid "Porting to Python 2.6"
 msgstr "Portage vers Python 2.6"
 
@@ -14088,7 +14072,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.7.rst:3
-#, fuzzy
 msgid "What's New in Python 2.7"
 msgstr "Nouveautés de Python 2.7"
 
@@ -15058,7 +15041,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.7.rst:961 ../Doc/whatsnew/3.1.rst:496
-#, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`4258`.)"
 msgstr "(Contribution par Mark Dickinson; :issue:`4258`.)"
 
@@ -16854,7 +16836,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/2.7.rst:2397
-#, fuzzy
 msgid "Porting to Python 2.7"
 msgstr "Portage vers Python 2.7"
 
@@ -17076,7 +17057,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.0.rst:3
-#, fuzzy
 msgid "What's New In Python 3.0"
 msgstr "Nouveautés de Python 3.0"
 
@@ -18323,7 +18303,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.0.rst:894
-#, fuzzy
 msgid "Porting To Python 3.0"
 msgstr "Portage vers Python 3.0"
 
@@ -18376,7 +18355,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:3
-#, fuzzy
 msgid "What's New In Python 3.1"
 msgstr "Nouveautés de Python 3.1"
 
@@ -18494,7 +18472,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:152
-#, fuzzy
 msgid "(Contributed by Eric Smith; :issue:`5237`.)"
 msgstr "(Contribution par Eric Smith; :issue:`5237`.)"
 
@@ -18509,7 +18486,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:161 ../Doc/whatsnew/3.2.rst:2638
-#, fuzzy
 msgid "(Contributed by Georg Brandl; :issue:`5675`.)"
 msgstr "(Contribution par Georg Brandl; :issue:`5675`.)"
 
@@ -18538,7 +18514,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:183
-#, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`4707`.)"
 msgstr "(Contribution par Mark Dickinson; :issue:`4707`.)"
 
@@ -18596,7 +18571,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:221
-#, fuzzy
 msgid "(Contributed by Eric Smith and Mark Dickinson; :issue:`1580`)"
 msgstr "(Contribution par Eric Smith et Mark Dickinson; :issue:`1580`.)"
 
@@ -18607,7 +18581,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:232
-#, fuzzy
 msgid "(Contributed by Raymond Hettinger; :issue:`1696199`.)"
 msgstr "(Contribution par Raymond Hettinger; :issue:`1696199`.)"
 
@@ -18619,7 +18592,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:238
-#, fuzzy
 msgid "(Contributed by Guilherme Polo; :issue:`2983`.)"
 msgstr "(Contribution par Guilherme Polo; :issue:`2983`.)"
 
@@ -18630,7 +18602,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:247 ../Doc/whatsnew/3.2.rst:2290
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou.)"
 msgstr "(Contribution par Antoine Pitrou)"
 
@@ -18673,7 +18644,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:300
-#, fuzzy
 msgid "(Contributed by Raymond Hettinger; :issue:`1818`.)"
 msgstr "(Contribution par Raymond Hettinger; :issue:`1818`.)"
 
@@ -18696,7 +18666,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:315
-#, fuzzy
 msgid "(Contributed by Vinay Sajip; :issue:`4384`)."
 msgstr "(Contribution par Vinay Sajip; :issue:`4384`.)"
 
@@ -18708,7 +18677,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:321
-#, fuzzy
 msgid "(Contributed by Andi Vajda; :issue:`4195`.)"
 msgstr "(Contribution par Andi Vajda; :issue:`4195`.)"
 
@@ -18719,7 +18687,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:326
-#, fuzzy
 msgid "(Contributed by Alexander Belopolsky; :issue:`4201`.)"
 msgstr "(Contribution par Alexander Belopolsky; :issue:`4201`.)"
 
@@ -18740,7 +18707,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:336
-#, fuzzy
 msgid "(Contributed by David Laban; :issue:`4739`.)"
 msgstr "(Contribution par David Laban; :issue:`4739`.)"
 
@@ -18768,7 +18734,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:367
-#, fuzzy
 msgid "(Contributed by Benjamin Peterson and Antoine Pitrou.)"
 msgstr "(Contribution par Benjamin Peterson et Antoine Pitrou)"
 
@@ -18783,7 +18748,6 @@ msgid "The :attr:`sys.version_info` tuple is now a named tuple::"
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:377
-#, fuzzy
 msgid "(Contributed by Ross Light; :issue:`4285`.)"
 msgstr "(Contribution par Ross Ligh; :issue:`4285`.)"
 
@@ -18792,7 +18756,6 @@ msgid "The :mod:`nntplib` and :mod:`imaplib` modules now support IPv6."
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:381
-#, fuzzy
 msgid "(Contributed by Derek Morr; :issue:`1655` and :issue:`1664`.)"
 msgstr "(Contribution par Derek Morr; :issue:`1655` et :issue:`1664`)"
 
@@ -18819,7 +18782,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:405
-#, fuzzy
 msgid ""
 "(Contributed by Alexandre Vassalotti and Antoine Pitrou, :issue:`6137`.)"
 msgstr ""
@@ -18848,7 +18810,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:427
-#, fuzzy
 msgid "(Contributed by Amaury Forgeot d'Arc and Antoine Pitrou.)"
 msgstr "(Contribution par Amaury Forgeot d'Arc and Antoine Pitrou)"
 
@@ -18861,7 +18822,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:434
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou, :issue:`4688`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`4688`.)"
 
@@ -18874,7 +18834,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:442
-#, fuzzy
 msgid ""
 "(Contributed by Antoine Pitrou along with a number of other participants, :"
 "issue:`4753`)."
@@ -18888,7 +18847,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:448
-#, fuzzy
 msgid ""
 "(Contributed by Antoine Pitrou and Amaury Forgeot d'Arc, :issue:`4868`.)"
 msgstr ""
@@ -18916,7 +18874,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:462
-#, fuzzy
 msgid "(Contributed by Jake McGuire and Antoine Pitrou; :issue:`5084`.)"
 msgstr "(Contribution par Jake McGuire et Antoine Pitrou; :issue:`5084`.)"
 
@@ -18937,7 +18894,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:470
-#, fuzzy
 msgid "(Contributed by Roger D. Serwy; :issue:`5150`.)"
 msgstr "(Contribution par Roger D. Serwy; :issue:`5150`.)"
 
@@ -18968,7 +18924,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:501
-#, fuzzy
 msgid "(Contributed by Mark Dickinson and Lisandro Dalcrin; :issue:`5175`.)"
 msgstr "(Contribution par Mark Dickinson et Lisandro Dalcrin; :issue:`5175`)"
 
@@ -18978,7 +18933,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:505
-#, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`4910`.)"
 msgstr "(Contribution par Mark Dickinson; :issue:`4910`)"
 
@@ -18990,7 +18944,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:510
-#, fuzzy
 msgid "(Contributed by Mark Dickinson; :issue:`5914`.)"
 msgstr "(Contribution par Mark Dickinson; :issue:`5914`)"
 
@@ -19004,12 +18957,10 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.1.rst:518
-#, fuzzy
 msgid "(Contributed by Larry Hastings; :issue:`5630`.)"
 msgstr "(Contribution par Larry Hastings; :issue:`5630`)"
 
 #: ../Doc/whatsnew/3.1.rst:521
-#, fuzzy
 msgid "Porting to Python 3.1"
 msgstr "Portage vers Python 3.1"
 
@@ -19028,7 +18979,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:3
-#, fuzzy
 msgid "What's New In Python 3.2"
 msgstr "Nouveautés de Python 3.2"
 
@@ -19479,7 +19429,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:488
-#, fuzzy
 msgid "(Contributed by Marcin Wojdyr in :issue:`1772833`)."
 msgstr "(Contribution par Marcin Wojdyr; :issue:`1772833`)"
 
@@ -19520,7 +19469,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:533
-#, fuzzy
 msgid "(Added by Antoine Pitrou; :issue:`9757`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`9757`.)"
 
@@ -19821,7 +19769,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:737
-#, fuzzy
 msgid "(Contributed by Florent Xicluna and Fredrik Lundh, :issue:`6472`.)"
 msgstr "(Contribution par Florent Xicluna et Fredrik Lundh; :issue:`6472`)"
 
@@ -20191,7 +20138,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1118
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou in :issue:`5506`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`5506`.)"
 
@@ -20212,7 +20158,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1144
-#, fuzzy
 msgid "(Contributed by Raymond Hettinger in :issue:`9826` and :issue:`9840`.)"
 msgstr "(Contribution par Raymond Hettinger; :issue:`9826` et issue:`9840`)"
 
@@ -20355,7 +20300,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1263
-#, fuzzy
 msgid "(Contributed by Michael Foord in :issue:`9110`.)"
 msgstr "(Contribution par Michael Foord; :issue:`9110`)"
 
@@ -20455,7 +20399,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1347
-#, fuzzy
 msgid "(Contributed by Giampaolo Rodolà; :issue:`8806`.)"
 msgstr "(Contribution par Giampaolo Rodolà; :issue:`8806`)"
 
@@ -20470,7 +20413,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1355
-#, fuzzy
 msgid ""
 "(Contributed by Antoine Pitrou and Brian Curtin in :issue:`7461` and :issue:"
 "`10554`.)"
@@ -20624,7 +20566,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1508
-#, fuzzy
 msgid "(Contributed by Victor Stinner.)"
 msgstr "(Contribution par Victor Stinner)"
 
@@ -20827,7 +20768,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1657
-#, fuzzy
 msgid ""
 "(Contributed by Antoine Pitrou in :issue:`9360` and Andrew Vant in :issue:"
 "`1926`.)"
@@ -20848,7 +20788,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1667
-#, fuzzy
 msgid "(Added by Antoine Pitrou, :issue:`9003`.)"
 msgstr "(Ajouté par Antoine Pitrou; :issue:`9003`.)"
 
@@ -20863,7 +20802,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1675
-#, fuzzy
 msgid "(Contributed by Lorenzo M. Catucci and Antoine Pitrou, :issue:`4471`.)"
 msgstr ""
 "(Contribution par Lorenzo M. Catucci et Antoine Pitrou; :issue:`4471`.)"
@@ -20960,7 +20898,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1743
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou, :issue:`9754`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`9754`.)"
 
@@ -21061,7 +20998,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1791
-#, fuzzy
 msgid "(Contributed by Ezio Melotti; :issue:`9424`.)"
 msgstr "(Contribution par Ezio Melotti; :issue:`9424`)"
 
@@ -21090,7 +21026,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1812
-#, fuzzy
 msgid "(Contributed by Raymond Hettinger; :issue:`9025`.)"
 msgstr "(Contribution par Raymond Hettinger; :issue:`9025`)"
 
@@ -21107,7 +21042,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1822
-#, fuzzy
 msgid "(Contributed by Giampaolo Rodolà; :issue:`8807`.)"
 msgstr "(Contribution par Giampaolo Rodolà; :issue:`8807`)"
 
@@ -21126,7 +21060,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1834
-#, fuzzy
 msgid "(Contributed by Giampaolo Rodolà; :issue:`6706`.)"
 msgstr "(Contribution par Giampaolo Rodolà; :issue:`6706`)"
 
@@ -21142,7 +21075,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1846
-#, fuzzy
 msgid "(Contributed by Neil Schemenauer and Nick Coghlan; :issue:`5178`.)"
 msgstr "(Contribution par Neil Schemenauer et Nick Coghlan; :issue:`5178`.)"
 
@@ -21159,7 +21091,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1869
-#, fuzzy
 msgid "(Contributed by Rodolpho Eckhardt and Nick Coghlan, :issue:`10220`.)"
 msgstr "(Contribution par Rodolpho Eckhardt et Nick Coghlan; :issue:`10220`.)"
 
@@ -21184,7 +21115,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1900
-#, fuzzy
 msgid "(Contributed by Ron Adam; :issue:`2001`.)"
 msgstr "(Contribution par Ron Adam; :issue:`2001`.)"
 
@@ -21215,7 +21145,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:1958
-#, fuzzy
 msgid "(Contributed by Nick Coghlan in :issue:`9147`.)"
 msgstr "(Contribution par Nick Coghlan; :issue:`9147`.)"
 
@@ -21277,7 +21206,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2006
-#, fuzzy
 msgid "(Contributed by Tarek Ziadé in :issue:`6693`.)"
 msgstr "(Contribution par Tarek Ziadé; :issue:`6693`.)"
 
@@ -21576,7 +21504,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2292
-#, fuzzy
 msgid ""
 "Regular and recursive locks now accept an optional *timeout* argument to "
 "their :meth:`~threading.Lock.acquire` method.  (Contributed by Antoine "
@@ -21587,7 +21514,6 @@ msgstr ""
 "Antoine Pitrou; :issue:`7316`)."
 
 #: ../Doc/whatsnew/3.2.rst:2296
-#, fuzzy
 msgid ""
 "Similarly, :meth:`threading.Semaphore.acquire` also gained a *timeout* "
 "argument.  (Contributed by Torsten Landschoff; :issue:`850728`.)"
@@ -21827,7 +21753,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2446
-#, fuzzy
 msgid "(Contributed by Alexander Belopolsky in :issue:`9528`.)"
 msgstr "(Contribution par Alexander Belopolsky; :issue:`9528`.)"
 
@@ -21839,7 +21764,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2452
-#, fuzzy
 msgid "(Contributed by Georg Brandl in :issue:`7962`.)"
 msgstr "(Contribution par Georg Brandl; :issue:`7962`.)"
 
@@ -21850,7 +21774,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2461
-#, fuzzy
 msgid "(Contributed by Raymond Hettinger; :issue:`5150`.)"
 msgstr "(Contribution par Raymond Hettinger; :issue:`5150`.)"
 
@@ -21918,7 +21841,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2505
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou; :issue:`9203`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`9203`.)"
 
@@ -21929,7 +21851,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2510
-#, fuzzy
 msgid "(Contributed by Amaury Forgeot D'Arc; :issue:`9210`.)"
 msgstr "(Contribution par Amaury Forgeot D'Arc; :issue:`9210`.)"
 
@@ -22083,7 +22004,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2605
-#, fuzzy
 msgid ""
 ":class:`bytearray` objects can no longer be used as filenames; instead, they "
 "should be converted to :class:`bytes`."
@@ -22099,7 +22019,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2612
-#, fuzzy
 msgid "``PyArg_Parse*()`` functions:"
 msgstr "Les fonctions ``PyArg_Parse*()`` :"
 
@@ -22204,7 +22123,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2683
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou, :issue:`10711`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`10711`.)"
 
@@ -22215,7 +22133,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2688
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou, :issue:`10272`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`10272`.)"
 
@@ -22235,7 +22152,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.2.rst:2698
-#, fuzzy
 msgid "(Contributed by Giampaolo Rodola in :issue:`6706`.)"
 msgstr "(Contribution par Giampaolo Rodola; :issue:`6706`.)"
 
@@ -22246,7 +22162,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:3
-#, fuzzy
 msgid "What's New In Python 3.3"
 msgstr "Nouveautés de Python 3.3"
 
@@ -22517,7 +22432,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:199
-#, fuzzy
 msgid "(Contributed by Stefan Krah in :issue:`10181`.)"
 msgstr "(Contribution par Stefan Krah; :issue:`10181`.)"
 
@@ -23221,7 +23135,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:784
-#, fuzzy
 msgid "(Contributed by Ezio Melotti in :issue:`12753`.)"
 msgstr "(Contribution par Ezio Melotti; :issue:`12753`.)"
 
@@ -23244,7 +23157,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:796
-#, fuzzy
 msgid "(Contributed by Petri Lehtinen in :issue:`12170`.)"
 msgstr "(Contribution par Petri Lehtinen; :issue:`12170`.)"
 
@@ -23269,7 +23181,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:809
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou in :issue:`13748`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`13748`.)"
 
@@ -23280,7 +23191,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:814
-#, fuzzy
 msgid "(Contributed by Filip Gruszczyński in :issue:`13521`.)"
 msgstr "(Contribution par Filip Gruszczyński; :issue:`13521`.)"
 
@@ -23291,7 +23201,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:819
-#, fuzzy
 msgid "(Contributed by Benjamin Peterson.)"
 msgstr "(Contribution par Benjamin Peterson)"
 
@@ -23317,7 +23226,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:836
-#, fuzzy
 msgid "(Contributed by Antoine Pitrou in :issue:`9260`.)"
 msgstr "(Contribution par Antoine Pitrou; :issue:`9260`.)"
 
@@ -23396,7 +23304,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:894
-#, fuzzy
 msgid "(Contributed by Google and Peter Moody in :pep:`3144`.)"
 msgstr "(Contribution par Google et Peter Moody; :pep:`3144`)"
 
@@ -23446,7 +23353,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:924
-#, fuzzy
 msgid "(Contributed by Darren Dale in :issue:`11610`.)"
 msgstr "(Contribution par Darren Dale; :issue:`11610`.)"
 
@@ -23467,7 +23373,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:936
-#, fuzzy
 msgid "(Contributed by Oren Tirosh and Hirokazu Yamamoto in :issue:`1172711`.)"
 msgstr "(Contribution par Oren Tirosh et Hirokazu Yamamoto; :issue:`1172711`.)"
 
@@ -23517,7 +23422,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:967
-#, fuzzy
 msgid "(Contributed by Nadeem Vawda in :issue:`5863`.)"
 msgstr "(Contribution par Nadeem Vawda; :issue:`5863`.)"
 
@@ -23530,7 +23434,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:974
-#, fuzzy
 msgid "(Contributed by Nir Aides in :issue:`1625`.)"
 msgstr "(Contribution par Nir Aides; :issue:`1625`.)"
 
@@ -23678,7 +23581,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1072
-#, fuzzy
 msgid "(Contributed by Iñigo Serna in :issue:`6755`.)"
 msgstr "(Contribution par Iñigo Serna; :issue:`6755`.)"
 
@@ -24243,7 +24145,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1454
-#, fuzzy
 msgid "(Contributed by Sijin Joseph in :issue:`8808`.)"
 msgstr "(Contribution par Sijin Joseph; :issue:`8808`.)"
 
@@ -24256,7 +24157,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1465
-#, fuzzy
 msgid "(Contributed by Meador Inge and Nick Coghlan in :issue:`13062`.)"
 msgstr "(Contribution par Meador Inge et Nick Coghlan; :issue:`13062`.)"
 
@@ -24269,7 +24169,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1472
-#, fuzzy
 msgid "(Contributed by Meador Inge in :issue:`15153`.)"
 msgstr "(Contribution par Meador Inge; :issue:`15153`.)"
 
@@ -24281,7 +24180,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1481
-#, fuzzy
 msgid "(Contributed by David Townshend in :issue:`12760`.)"
 msgstr "(Contribution par David Townshend; :issue:`12760`.)"
 
@@ -24391,7 +24289,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1570
-#, fuzzy
 msgid "(Contributed by Giampaolo Rodolà in :issue:`9795`.)"
 msgstr "(Contribution par Giampaolo Rodolà; :issue:`9795`.)"
 
@@ -24628,7 +24525,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1711
-#, fuzzy
 msgid "(Contributed by Georg Brandl in :issue:`14210`)"
 msgstr "(Contribution par Georg Brandl; :issue:`14210`.)"
 
@@ -24643,7 +24539,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1721
-#, fuzzy
 msgid "(Contributed by Richard Oudkerk in :issue:`14166`.)"
 msgstr "(Contribution par Richard Oudkerk; :issue:`14166`.)"
 
@@ -24664,7 +24559,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1737
-#, fuzzy
 msgid "(Contributed by Serhiy Storchaka in :issue:`3665`.)"
 msgstr "(Contribution par Serhiy Storchaka; :issue:`3665`.)"
 
@@ -24728,7 +24622,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1787
-#, fuzzy
 msgid "New functions:"
 msgstr "Nouvelles fonctions :"
 
@@ -24790,7 +24683,6 @@ msgid "signal"
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1823
-#, fuzzy
 msgid "The :mod:`signal` module has new functions:"
 msgstr "Le module :mod:`signal` a de nouvelles fonctions :"
 
@@ -24970,7 +24862,6 @@ msgid ":func:`~ssl.RAND_pseudo_bytes`: generate pseudo-random bytes."
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1932
-#, fuzzy
 msgid "(Contributed by Victor Stinner in :issue:`12049`.)"
 msgstr "(Contribution par Victor Stinner; :issue:`12049`.)"
 
@@ -25050,7 +24941,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:1979
-#, fuzzy
 msgid "(Contributed by Giampaolo Rodolà in :issue:`14807`.)"
 msgstr "(Contribution par Giampaolo Rodolà; :issue:`14807`.)"
 
@@ -25698,7 +25588,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:2333
-#, fuzzy
 msgid "Porting to Python 3.3"
 msgstr "Portage vers Python 3.3"
 
@@ -25709,7 +25598,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.3.rst:2341
-#, fuzzy
 msgid "Porting Python code"
 msgstr "Portage de code Python"
 
@@ -25989,7 +25877,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:3
-#, fuzzy
 msgid "What's New In Python 3.4"
 msgstr "Nouveautés de Python 3.4"
 
@@ -28851,7 +28738,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/whatsnew/3.4.rst:2240
-#, fuzzy
 msgid "Porting to Python 3.4"
 msgstr "Portage vers Python 3.4"
 
@@ -29312,15 +29198,16 @@ msgid ""
 "`Issue #26478 <https://bugs.python.org/26478>`__: Fix semantic bugs when "
 "using binary operators with dictionary views and tuples."
 msgstr ""
+"`Issue #26478 <https://bugs.python.org/26478>`__: Fix semantic bugs when "
+"using binary operators with dictionary views and tuples."
 
 #: ../../../Misc/NEWS:15
-#, fuzzy
 msgid ""
 "`Issue #26171 <https://bugs.python.org/26171>`__: Fix possible integer "
 "overflow and heap corruption in zipimporter.get_data()."
 msgstr ""
-"`Ticket #15116 <https://bugs.python.org/15116>`__ : Supprime les références "
-"à *appscript* car il n’est plus supporté."
+"`Issue #26171 <https://bugs.python.org/26171>`__: Fix possible integer "
+"overflow and heap corruption in zipimporter.get_data()."
 
 #: ../../../Misc/NEWS:19 ../../../Misc/NEWS:173 ../../../Misc/NEWS:926
 #: ../../../Misc/NEWS:1281 ../../../Misc/NEWS:1336 ../../../Misc/NEWS:1771
@@ -29332,16 +29219,15 @@ msgstr ""
 #: ../../../Misc/NEWS:6757 ../../../Misc/NEWS:7095 ../../../Misc/NEWS:7427
 #: ../../../Misc/NEWS:7731 ../../../Misc/NEWS:7937 ../../../Misc/NEWS:8621
 msgid "Library"
-msgstr ""
+msgstr "Bibliothèque"
 
 #: ../../../Misc/NEWS:21
-#, fuzzy
 msgid ""
 "`Issue #25939 <https://bugs.python.org/25939>`__: On Windows open the cert "
 "store readonly in ssl.enum_certificates."
 msgstr ""
-"`Ticket #15979 <https://bugs.python.org/15979>`__ : Améliore la traduction "
-"de *timeit*."
+"`Issue #25939 <https://bugs.python.org/25939>`__: On Windows open the cert "
+"store readonly in ssl.enum_certificates."
 
 #: ../../../Misc/NEWS:23
 msgid ""
@@ -29351,21 +29237,27 @@ msgid ""
 "path as a string from a Path, a DirEntry, or a plain string.  This is "
 "essentially a small one-off protocol."
 msgstr ""
+"`Issue #22570 <https://bugs.python.org/22570>`__: Add 'path' attribute to "
+"pathlib.Path objects, returning the same as str(), to make it more similar "
+"to DirEntry. Library code can now write getattr(p, 'path', p) to get the "
+"path as a string from a Path, a DirEntry, or a plain string.  This is "
+"essentially a small one-off protocol."
 
 #: ../../../Misc/NEWS:29
-#, fuzzy
 msgid ""
 "`Issue #26012 <https://bugs.python.org/26012>`__: Don't traverse into "
 "symlinks for ** pattern in pathlib.Path.[r]glob()."
 msgstr ""
-"`Ticket #17028 <https://bugs.python.org/17028>`__ : Permet au lanceur "
-"Windows de fournir des arguments pour Python."
+"`Issue #26012 <https://bugs.python.org/26012>`__: Don't traverse into "
+"symlinks for ** pattern in pathlib.Path.[r]glob()."
 
 #: ../../../Misc/NEWS:32
 msgid ""
 "`Issue #24120 <https://bugs.python.org/24120>`__: Ignore PermissionError "
 "when traversing a tree with pathlib.Path.[r]glob().  Patch by Ulrich Petri."
 msgstr ""
+"`Issue #24120 <https://bugs.python.org/24120>`__: Ignore PermissionError "
+"when traversing a tree with pathlib.Path.[r]glob().  Patch by Ulrich Petri."
 
 #: ../../../Misc/NEWS:35
 msgid ""
@@ -29381,6 +29273,8 @@ msgid ""
 "`Issue #26050 <https://bugs.python.org/26050>`__: Add asyncio.StreamReader."
 "readuntil() method. Patch by Марк Коренберг."
 msgstr ""
+"`Issue #26050 <https://bugs.python.org/26050>`__: Add asyncio.StreamReader."
+"readuntil() method. Patch by Марк Коренберг."
 
 #: ../../../Misc/NEWS:44 ../../../Misc/NEWS:776 ../../../Misc/NEWS:1193
 #: ../../../Misc/NEWS:1672 ../../../Misc/NEWS:1792 ../../../Misc/NEWS:2075
@@ -29398,6 +29292,9 @@ msgid ""
 "self-signed.pythontest.net.  This avoids relying on svn.python.org, which "
 "recently changed root certificate."
 msgstr ""
+"`Issue #25940 <https://bugs.python.org/25940>`__: Changed test_ssl to use "
+"self-signed.pythontest.net.  This avoids relying on svn.python.org, which "
+"recently changed root certificate."
 
 #: ../../../Misc/NEWS:51
 #, fuzzy
@@ -29432,12 +29329,16 @@ msgid ""
 "`Issue #25709 <https://bugs.python.org/25709>`__: Fixed problem with in-"
 "place string concatenation and utf-8 cache."
 msgstr ""
+"`Issue #25709 <https://bugs.python.org/25709>`__: Fixed problem with in-"
+"place string concatenation and utf-8 cache."
 
 #: ../../../Misc/NEWS:72
 msgid ""
 "`Issue #24097 <https://bugs.python.org/24097>`__: Fixed crash in object."
 "__reduce__() if slot name is freed inside __getattr__."
 msgstr ""
+"`Issue #24097 <https://bugs.python.org/24097>`__: Fixed crash in object."
+"__reduce__() if slot name is freed inside __getattr__."
 
 #: ../../../Misc/NEWS:75
 msgid ""
@@ -29446,12 +29347,18 @@ msgid ""
 "instances of subclasses of bytes, int, and float to subclasses of bytes, "
 "int, and float correspondingly."
 msgstr ""
+"`Issue #24731 <https://bugs.python.org/24731>`__: Fixed crash on converting "
+"objects with special methods __bytes__, __trunc__, and __float__ returning "
+"instances of subclasses of bytes, int, and float to subclasses of bytes, "
+"int, and float correspondingly."
 
 #: ../../../Misc/NEWS:79
 msgid ""
 "`Issue #25388 <https://bugs.python.org/25388>`__: Fixed tokenizer crash when "
 "processing undecodable source code with a null byte."
 msgstr ""
+"`Issue #25388 <https://bugs.python.org/25388>`__: Fixed tokenizer crash when "
+"processing undecodable source code with a null byte."
 
 #: ../../../Misc/NEWS:82
 msgid ""
@@ -29459,6 +29366,9 @@ msgid ""
 "__reduce__ and __reduce_ex__ now rejects builtin types with not defined "
 "__new__."
 msgstr ""
+"`Issue #22995 <https://bugs.python.org/22995>`__: Default implementation of "
+"__reduce__ and __reduce_ex__ now rejects builtin types with not defined "
+"__new__."
 
 #: ../../../Misc/NEWS:85
 msgid ""
@@ -29467,12 +29377,18 @@ msgid ""
 "objects.  These objects are not necessarily terminated by a null byte, but "
 "the functions assumed they were."
 msgstr ""
+"`Issue #24802 <https://bugs.python.org/24802>`__: Avoid buffer overreads "
+"when int(), float(), compile(), exec() and eval() are passed bytes-like "
+"objects.  These objects are not necessarily terminated by a null byte, but "
+"the functions assumed they were."
 
 #: ../../../Misc/NEWS:89
 msgid ""
 "`Issue #24402 <https://bugs.python.org/24402>`__: Fix input() to prompt to "
 "the redirected stdout when sys.stdout.fileno() fails."
 msgstr ""
+"`Issue #24402 <https://bugs.python.org/24402>`__: Fix input() to prompt to "
+"the redirected stdout when sys.stdout.fileno() fails."
 
 #: ../../../Misc/NEWS:92
 msgid ""
@@ -29480,18 +29396,25 @@ msgid ""
 "are not allowed to be subclassed from being subclassed through multiple "
 "inheritance."
 msgstr ""
+"`Issue #24806 <https://bugs.python.org/24806>`__: Prevent builtin types that "
+"are not allowed to be subclassed from being subclassed through multiple "
+"inheritance."
 
 #: ../../../Misc/NEWS:95
 msgid ""
 "`Issue #24848 <https://bugs.python.org/24848>`__: Fixed a number of bugs in "
 "UTF-7 decoding of misformed data."
 msgstr ""
+"`Issue #24848 <https://bugs.python.org/24848>`__: Fixed a number of bugs in "
+"UTF-7 decoding of misformed data."
 
 #: ../../../Misc/NEWS:97
 msgid ""
 "`Issue #25280 <https://bugs.python.org/25280>`__: Import trace messages "
 "emitted in verbose (-v) mode are no longer formatted twice."
 msgstr ""
+"`Issue #25280 <https://bugs.python.org/25280>`__: Import trace messages "
+"emitted in verbose (-v) mode are no longer formatted twice."
 
 #: ../../../Misc/NEWS:100
 msgid ""
@@ -29506,6 +29429,9 @@ msgid ""
 "sys.stderr before the io module is imported at startup) now uses the "
 "backslashreplace error handler."
 msgstr ""
+"`Issue #25182 <https://bugs.python.org/25182>`__: The stdprinter (used as "
+"sys.stderr before the io module is imported at startup) now uses the "
+"backslashreplace error handler."
 
 #: ../../../Misc/NEWS:107
 msgid ""
@@ -29516,6 +29442,12 @@ msgid ""
 "failed, instead of raising an OSError exception. Initial patch written by "
 "Marco Paolini."
 msgstr ""
+"`Issue #24891 <https://bugs.python.org/24891>`__: Fix a race condition at "
+"Python startup if the file descriptor of stdin (0), stdout (1) or stderr (2) "
+"is closed while Python is creating sys.stdin, sys.stdout and sys.stderr "
+"objects. These attributes are now set to None if the creation of the object "
+"failed, instead of raising an OSError exception. Initial patch written by "
+"Marco Paolini."
 
 #: ../../../Misc/NEWS:113
 msgid ""
@@ -29523,12 +29455,17 @@ msgid ""
 "handled correctly when python is compiled with ICC even if -fp-model strict "
 "is not specified."
 msgstr ""
+"`Issue #21167 <https://bugs.python.org/21167>`__: NAN operations are now "
+"handled correctly when python is compiled with ICC even if -fp-model strict "
+"is not specified."
 
 #: ../../../Misc/NEWS:116
 msgid ""
 "`Issue #4395 <https://bugs.python.org/4395>`__: Better testing and "
 "documentation of binary operators. Patch by Martin Panter."
 msgstr ""
+"`Issue #4395 <https://bugs.python.org/4395>`__: Better testing and "
+"documentation of binary operators. Patch by Martin Panter."
 
 #: ../../../Misc/NEWS:119
 msgid ""
@@ -29536,6 +29473,9 @@ msgid ""
 "read in bytearray. The bytearray object now always allocates place for "
 "trailing null byte and it's buffer now is always null-terminated."
 msgstr ""
+"`Issue #24467 <https://bugs.python.org/24467>`__: Fixed possible buffer over-"
+"read in bytearray. The bytearray object now always allocates place for "
+"trailing null byte and it's buffer now is always null-terminated."
 
 #: ../../../Misc/NEWS:123
 msgid ""
@@ -29544,18 +29484,26 @@ msgid ""
 "PyObject_RichCompareBool() and _PyDict_Contains() to check for and handle "
 "errors correctly."
 msgstr ""
+"`Issue #24115 <https://bugs.python.org/24115>`__: Update uses of "
+"PyObject_IsTrue(), PyObject_Not(), PyObject_IsInstance(), "
+"PyObject_RichCompareBool() and _PyDict_Contains() to check for and handle "
+"errors correctly."
 
 #: ../../../Misc/NEWS:127
 msgid ""
 "`Issue #24257 <https://bugs.python.org/24257>`__: Fixed system error in the "
 "comparison of faked types.SimpleNamespace."
 msgstr ""
+"`Issue #24257 <https://bugs.python.org/24257>`__: Fixed system error in the "
+"comparison of faked types.SimpleNamespace."
 
 #: ../../../Misc/NEWS:130
 msgid ""
 "`Issue #22939 <https://bugs.python.org/22939>`__: Fixed integer overflow in "
 "iterator object.  Patch by Clement Rouault."
 msgstr ""
+"`Issue #22939 <https://bugs.python.org/22939>`__: Fixed integer overflow in "
+"iterator object.  Patch by Clement Rouault."
 
 #: ../../../Misc/NEWS:133
 msgid ""
@@ -29563,12 +29511,17 @@ msgid ""
 "overrun when deleting a slice from the front of a bytearray and then "
 "appending some other bytes data."
 msgstr ""
+"`Issue #23985 <https://bugs.python.org/23985>`__: Fix a possible buffer "
+"overrun when deleting a slice from the front of a bytearray and then "
+"appending some other bytes data."
 
 #: ../../../Misc/NEWS:136
 msgid ""
 "`Issue #24102 <https://bugs.python.org/24102>`__: Fixed exception type "
 "checking in standard error handlers."
 msgstr ""
+"`Issue #24102 <https://bugs.python.org/24102>`__: Fixed exception type "
+"checking in standard error handlers."
 
 #: ../../../Misc/NEWS:138
 msgid ""
@@ -29581,12 +29534,16 @@ msgid ""
 "`Issue #24407 <https://bugs.python.org/24407>`__: Fix crash when dict is "
 "mutated while being updated."
 msgstr ""
+"`Issue #24407 <https://bugs.python.org/24407>`__: Fix crash when dict is "
+"mutated while being updated."
 
 #: ../../../Misc/NEWS:143
 msgid ""
 "`Issue #24096 <https://bugs.python.org/24096>`__: Make warnings."
 "warn_explicit more robust against mutation of the warnings.filters list."
 msgstr ""
+"`Issue #24096 <https://bugs.python.org/24096>`__: Make warnings."
+"warn_explicit more robust against mutation of the warnings.filters list."
 
 #: ../../../Misc/NEWS:146
 msgid ""
@@ -29594,12 +29551,17 @@ msgid ""
 "delegated generator raises an unnormalized StopIteration exception.  Patch "
 "by Stefan Behnel."
 msgstr ""
+"`Issue #23996 <https://bugs.python.org/23996>`__: Avoid a crash when a "
+"delegated generator raises an unnormalized StopIteration exception.  Patch "
+"by Stefan Behnel."
 
 #: ../../../Misc/NEWS:149
 msgid ""
 "`Issue #24022 <https://bugs.python.org/24022>`__: Fix tokenizer crash when "
 "processing undecodable source code."
 msgstr ""
+"`Issue #24022 <https://bugs.python.org/24022>`__: Fix tokenizer crash when "
+"processing undecodable source code."
 
 #: ../../../Misc/NEWS:151
 msgid ""
@@ -29608,12 +29570,18 @@ msgid ""
 "buffered I/O object, and the main thread tries to use the same I/O object "
 "(typically stdout or stderr).  A fatal error is emitted instead."
 msgstr ""
+"`Issue #23309 <https://bugs.python.org/23309>`__: Avoid a deadlock at "
+"shutdown if a daemon thread is aborted while it is holding a lock to a "
+"buffered I/O object, and the main thread tries to use the same I/O object "
+"(typically stdout or stderr).  A fatal error is emitted instead."
 
 #: ../../../Misc/NEWS:156
 msgid ""
 "`Issue #22977 <https://bugs.python.org/22977>`__: Fixed formatting Windows "
 "error messages on Wine. Patch by Martin Panter."
 msgstr ""
+"`Issue #22977 <https://bugs.python.org/22977>`__: Fixed formatting Windows "
+"error messages on Wine. Patch by Martin Panter."
 
 #: ../../../Misc/NEWS:159
 msgid ""
@@ -29626,24 +29594,32 @@ msgid ""
 "`Issue #23192 <https://bugs.python.org/23192>`__: Fixed generator lambdas.  "
 "Patch by Bruno Cauet."
 msgstr ""
+"`Issue #23192 <https://bugs.python.org/23192>`__: Fixed generator lambdas.  "
+"Patch by Bruno Cauet."
 
 #: ../../../Misc/NEWS:164
 msgid ""
 "`Issue #23629 <https://bugs.python.org/23629>`__: Fix the default __sizeof__ "
 "implementation for variable-sized objects."
 msgstr ""
+"`Issue #23629 <https://bugs.python.org/23629>`__: Fix the default __sizeof__ "
+"implementation for variable-sized objects."
 
 #: ../../../Misc/NEWS:167
 msgid ""
 "`Issue #24044 <https://bugs.python.org/24044>`__: Fix possible null pointer "
 "dereference in list.sort in out of memory conditions."
 msgstr ""
+"`Issue #24044 <https://bugs.python.org/24044>`__: Fix possible null pointer "
+"dereference in list.sort in out of memory conditions."
 
 #: ../../../Misc/NEWS:170
 msgid ""
 "`Issue #21354 <https://bugs.python.org/21354>`__: PyCFunction_New function "
 "is exposed by python DLL again."
 msgstr ""
+"`Issue #21354 <https://bugs.python.org/21354>`__: PyCFunction_New function "
+"is exposed by python DLL again."
 
 #: ../../../Misc/NEWS:175
 msgid ""
@@ -29652,18 +29628,26 @@ msgid ""
 "number of arguments has been dropped completely as it never worked correctly "
 "anyway."
 msgstr ""
+"`Issue #24903 <https://bugs.python.org/24903>`__: Fix regression in number "
+"of arguments compileall accepts when '-d' is specified.  The check on the "
+"number of arguments has been dropped completely as it never worked correctly "
+"anyway."
 
 #: ../../../Misc/NEWS:179
 msgid ""
 "`Issue #25764 <https://bugs.python.org/25764>`__: In the subprocess module, "
 "preserve any exception caused by fork() failure when preexec_fn is used."
 msgstr ""
+"`Issue #25764 <https://bugs.python.org/25764>`__: In the subprocess module, "
+"preserve any exception caused by fork() failure when preexec_fn is used."
 
 #: ../../../Misc/NEWS:182
 msgid ""
 "`Issue #6478 <https://bugs.python.org/6478>`__: _strptime's regexp cache now "
 "is reset after changing timezone with time.tzset()."
 msgstr ""
+"`Issue #6478 <https://bugs.python.org/6478>`__: _strptime's regexp cache now "
+"is reset after changing timezone with time.tzset()."
 
 #: ../../../Misc/NEWS:185
 msgid ""
@@ -29671,24 +29655,33 @@ msgid ""
 "mean of very small and very large numbers. As a side effect, statistics.mean "
 "and statistics.variance should be significantly faster."
 msgstr ""
+"`Issue #25177 <https://bugs.python.org/25177>`__: Fixed problem with the "
+"mean of very small and very large numbers. As a side effect, statistics.mean "
+"and statistics.variance should be significantly faster."
 
 #: ../../../Misc/NEWS:189
 msgid ""
 "`Issue #25718 <https://bugs.python.org/25718>`__: Fixed copying object with "
 "state with boolean value is false."
 msgstr ""
+"`Issue #25718 <https://bugs.python.org/25718>`__: Fixed copying object with "
+"state with boolean value is false."
 
 #: ../../../Misc/NEWS:191
 msgid ""
 "`Issue #10131 <https://bugs.python.org/10131>`__: Fixed deep copying of "
 "minidom documents.  Based on patch by Marian Ganisin."
 msgstr ""
+"`Issue #10131 <https://bugs.python.org/10131>`__: Fixed deep copying of "
+"minidom documents.  Based on patch by Marian Ganisin."
 
 #: ../../../Misc/NEWS:194
 msgid ""
 "`Issue #25725 <https://bugs.python.org/25725>`__: Fixed a reference leak in "
 "pickle.loads() when unpickling invalid data including tuple instructions."
 msgstr ""
+"`Issue #25725 <https://bugs.python.org/25725>`__: Fixed a reference leak in "
+"pickle.loads() when unpickling invalid data including tuple instructions."
 
 #: ../../../Misc/NEWS:197
 msgid ""
@@ -29696,30 +29689,41 @@ msgid ""
 "avoid listing duplicate global names, and search the global namespace before "
 "searching builtins."
 msgstr ""
+"`Issue #25663 <https://bugs.python.org/25663>`__: In the Readline completer, "
+"avoid listing duplicate global names, and search the global namespace before "
+"searching builtins."
 
 #: ../../../Misc/NEWS:200
 msgid ""
 "`Issue #25688 <https://bugs.python.org/25688>`__: Fixed file leak in "
 "ElementTree.iterparse() raising an error."
 msgstr ""
+"`Issue #25688 <https://bugs.python.org/25688>`__: Fixed file leak in "
+"ElementTree.iterparse() raising an error."
 
 #: ../../../Misc/NEWS:202
 msgid ""
 "`Issue #23914 <https://bugs.python.org/23914>`__: Fixed SystemError raised "
 "by unpickler on broken pickle data."
 msgstr ""
+"`Issue #23914 <https://bugs.python.org/23914>`__: Fixed SystemError raised "
+"by unpickler on broken pickle data."
 
 #: ../../../Misc/NEWS:204
 msgid ""
 "`Issue #25691 <https://bugs.python.org/25691>`__: Fixed crash on deleting "
 "ElementTree.Element attributes."
 msgstr ""
+"`Issue #25691 <https://bugs.python.org/25691>`__: Fixed crash on deleting "
+"ElementTree.Element attributes."
 
 #: ../../../Misc/NEWS:206
 msgid ""
 "`Issue #25624 <https://bugs.python.org/25624>`__: ZipFile now always writes "
 "a ZIP_STORED header for directory entries.  Patch by Dingyuan Wang."
 msgstr ""
+"`Issue #25624 <https://bugs.python.org/25624>`__: ZipFile now always writes "
+"a ZIP_STORED header for directory entries.  Patch by Dingyuan Wang."
 
 #: ../../../Misc/NEWS:209
 msgid ""
@@ -29727,12 +29731,17 @@ msgid ""
 "raised by os.makedirs(exist_ok=True) when the OS gives priority to errors "
 "such as EACCES over EEXIST."
 msgstr ""
+"`Issue #25583 <https://bugs.python.org/25583>`__: Avoid incorrect errors "
+"raised by os.makedirs(exist_ok=True) when the OS gives priority to errors "
+"such as EACCES over EEXIST."
 
 #: ../../../Misc/NEWS:212
 msgid ""
 "`Issue #25593 <https://bugs.python.org/25593>`__: Change semantics of "
 "EventLoop.stop() in asyncio."
 msgstr ""
+"`Issue #25593 <https://bugs.python.org/25593>`__: Change semantics of "
+"EventLoop.stop() in asyncio."
 
 #: ../../../Misc/NEWS:214
 msgid ""
@@ -29741,18 +29750,26 @@ msgid ""
 "kill() methods to do anything as they could potentially signal a different "
 "process."
 msgstr ""
+"`Issue #6973 <https://bugs.python.org/6973>`__: When we know a subprocess."
+"Popen process has died, do not allow the send_signal(), terminate(), or "
+"kill() methods to do anything as they could potentially signal a different "
+"process."
 
 #: ../../../Misc/NEWS:218
 msgid ""
 "`Issue #25578 <https://bugs.python.org/25578>`__: Fix (another) memory leak "
 "in SSLSocket.getpeercer()."
 msgstr ""
+"`Issue #25578 <https://bugs.python.org/25578>`__: Fix (another) memory leak "
+"in SSLSocket.getpeercer()."
 
 #: ../../../Misc/NEWS:220
 msgid ""
 "`Issue #25590 <https://bugs.python.org/25590>`__: In the Readline completer, "
 "only call getattr() once per attribute."
 msgstr ""
+"`Issue #25590 <https://bugs.python.org/25590>`__: In the Readline completer, "
+"only call getattr() once per attribute."
 
 #: ../../../Misc/NEWS:223
 msgid ""
@@ -29766,6 +29783,8 @@ msgid ""
 "`Issue #18010 <https://bugs.python.org/18010>`__: Fix the pydoc web server's "
 "module search function to handle exceptions from importing packages."
 msgstr ""
+"`Issue #18010 <https://bugs.python.org/18010>`__: Fix the pydoc web server's "
+"module search function to handle exceptions from importing packages."
 
 #: ../../../Misc/NEWS:230
 msgid ""
@@ -29773,18 +29792,25 @@ msgid ""
 "readline() now returns b'' instead of '' at the end if the FileInput was "
 "opened with binary mode. Patch by Ryosuke Ito."
 msgstr ""
+"`Issue #25510 <https://bugs.python.org/25510>`__: fileinput.FileInput."
+"readline() now returns b'' instead of '' at the end if the FileInput was "
+"opened with binary mode. Patch by Ryosuke Ito."
 
 #: ../../../Misc/NEWS:234
 msgid ""
 "`Issue #25530 <https://bugs.python.org/25530>`__: Disable the vulnerable "
 "SSLv3 protocol by default when creating ssl.SSLContext."
 msgstr ""
+"`Issue #25530 <https://bugs.python.org/25530>`__: Disable the vulnerable "
+"SSLv3 protocol by default when creating ssl.SSLContext."
 
 #: ../../../Misc/NEWS:237
 msgid ""
 "`Issue #25569 <https://bugs.python.org/25569>`__: Fix memory leak in "
 "SSLSocket.getpeercert()."
 msgstr ""
+"`Issue #25569 <https://bugs.python.org/25569>`__: Fix memory leak in "
+"SSLSocket.getpeercert()."
 
 #: ../../../Misc/NEWS:239
 msgid ""
@@ -29792,18 +29818,25 @@ msgid ""
 "for the case when largest common whitespace is a substring of smallest "
 "leading whitespace. Based on patch by Robert Li."
 msgstr ""
+"`Issue #21827 <https://bugs.python.org/21827>`__: Fixed textwrap.dedent() "
+"for the case when largest common whitespace is a substring of smallest "
+"leading whitespace. Based on patch by Robert Li."
 
 #: ../../../Misc/NEWS:243
 msgid ""
 "`Issue #25471 <https://bugs.python.org/25471>`__: Sockets returned from "
 "accept() shouldn't appear to be nonblocking."
 msgstr ""
+"`Issue #25471 <https://bugs.python.org/25471>`__: Sockets returned from "
+"accept() shouldn't appear to be nonblocking."
 
 #: ../../../Misc/NEWS:246
 msgid ""
 "`Issue #25441 <https://bugs.python.org/25441>`__: asyncio: Raise error from "
 "drain() when socket is closed."
 msgstr ""
+"`Issue #25441 <https://bugs.python.org/25441>`__: asyncio: Raise error from "
+"drain() when socket is closed."
 
 #: ../../../Misc/NEWS:248
 msgid ""
@@ -29811,12 +29844,17 @@ msgid ""
 "in SMTPHandler through better use of the email package. Thanks to user "
 "simon04 for the patch."
 msgstr ""
+"`Issue #25411 <https://bugs.python.org/25411>`__: Improved Unicode support "
+"in SMTPHandler through better use of the email package. Thanks to user "
+"simon04 for the patch."
 
 #: ../../../Misc/NEWS:251
 msgid ""
 "`Issue #25380 <https://bugs.python.org/25380>`__: Fixed protocol for the "
 "STACK_GLOBAL opcode in pickletools.opcodes."
 msgstr ""
+"`Issue #25380 <https://bugs.python.org/25380>`__: Fixed protocol for the "
+"STACK_GLOBAL opcode in pickletools.opcodes."
 
 #: ../../../Misc/NEWS:254
 msgid ""
@@ -29826,6 +29864,11 @@ msgid ""
 "method the reuseaddr option for datagram sockets defaults to True if the O/S "
 "is 'posix' (except if the platform is Cygwin). Patch by Chris Laws."
 msgstr ""
+"`Issue #23972 <https://bugs.python.org/23972>`__: Updates asyncio datagram "
+"create method allowing reuseport and reuseaddr socket options to be set "
+"prior to binding the socket. Mirroring the existing asyncio create_server "
+"method the reuseaddr option for datagram sockets defaults to True if the O/S "
+"is 'posix' (except if the platform is Cygwin). Patch by Chris Laws."
 
 #: ../../../Misc/NEWS:260
 msgid ""
@@ -29833,6 +29876,9 @@ msgid ""
 "run_coroutine_threadsafe().  This lets you submit a coroutine to a loop from "
 "another thread, returning a concurrent.futures.Future.  By Vincent Michel."
 msgstr ""
+"`Issue #25304 <https://bugs.python.org/25304>`__: Add asyncio."
+"run_coroutine_threadsafe().  This lets you submit a coroutine to a loop from "
+"another thread, returning a concurrent.futures.Future.  By Vincent Michel."
 
 #: ../../../Misc/NEWS:264
 msgid ""
@@ -29840,6 +29886,9 @@ msgid ""
 "reinitialized, the underlying condition should use a regular lock rather "
 "than a recursive lock."
 msgstr ""
+"`Issue #25319 <https://bugs.python.org/25319>`__: When threading.Event is "
+"reinitialized, the underlying condition should use a regular lock rather "
+"than a recursive lock."
 
 #: ../../../Misc/NEWS:267
 msgid ""
@@ -29847,6 +29896,9 @@ msgid ""
 "split the query from the URL at the first question mark (?) rather than the "
 "last. Patch from Xiang Zhang."
 msgstr ""
+"`Issue #25232 <https://bugs.python.org/25232>`__: Fix CGIRequestHandler to "
+"split the query from the URL at the first question mark (?) rather than the "
+"last. Patch from Xiang Zhang."
 
 #: ../../../Misc/NEWS:270
 msgid ""
@@ -29854,6 +29906,9 @@ msgid ""
 "from collapsing slashes in the query part of the URL as if it were a path. "
 "Patch from Xiang Zhang."
 msgstr ""
+"`Issue #24657 <https://bugs.python.org/24657>`__: Prevent CGIRequestHandler "
+"from collapsing slashes in the query part of the URL as if it were a path. "
+"Patch from Xiang Zhang."
 
 #: ../../../Misc/NEWS:273
 msgid ""
@@ -29861,12 +29916,17 @@ msgid ""
 "method of weakref.WeakValueDictionary now accept the self and the dict "
 "keyword arguments."
 msgstr ""
+"`Issue #22958 <https://bugs.python.org/22958>`__: Constructor and update "
+"method of weakref.WeakValueDictionary now accept the self and the dict "
+"keyword arguments."
 
 #: ../../../Misc/NEWS:276
 msgid ""
 "`Issue #22609 <https://bugs.python.org/22609>`__: Constructor of collections."
 "UserDict now accepts the self keyword argument."
 msgstr ""
+"`Issue #22609 <https://bugs.python.org/22609>`__: Constructor of collections."
+"UserDict now accepts the self keyword argument."
 
 #: ../../../Misc/NEWS:279
 msgid ""
@@ -29875,6 +29935,10 @@ msgid ""
 "64-bit size for BINUNICODE8 and BINBYTES8 opcodes no longer silently ignored "
 "on 32-bit platforms in C implementation."
 msgstr ""
+"`Issue #25262 <https://bugs.python.org/25262>`__. Added support for "
+"BINBYTES8 opcode in Python implementation of unpickler.  Highest 32 bits of "
+"64-bit size for BINUNICODE8 and BINBYTES8 opcodes no longer silently ignored "
+"on 32-bit platforms in C implementation."
 
 #: ../../../Misc/NEWS:283
 msgid ""
@@ -29882,24 +29946,33 @@ msgid ""
 "problem with auto-numbering and nested format_specs. Patch by Anthon van der "
 "Neut."
 msgstr ""
+"`Issue #25034 <https://bugs.python.org/25034>`__: Fix string.Formatter "
+"problem with auto-numbering and nested format_specs. Patch by Anthon van der "
+"Neut."
 
 #: ../../../Misc/NEWS:286
 msgid ""
 "`Issue #25233 <https://bugs.python.org/25233>`__: Rewrite the guts of "
 "asyncio.Queue and asyncio.Semaphore to be more understandable and correct."
 msgstr ""
+"`Issue #25233 <https://bugs.python.org/25233>`__: Rewrite the guts of "
+"asyncio.Queue and asyncio.Semaphore to be more understandable and correct."
 
 #: ../../../Misc/NEWS:289
 msgid ""
 "`Issue #23600 <https://bugs.python.org/23600>`__: Default implementation of "
 "tzinfo.fromutc() was returning wrong results in some cases."
 msgstr ""
+"`Issue #23600 <https://bugs.python.org/23600>`__: Default implementation of "
+"tzinfo.fromutc() was returning wrong results in some cases."
 
 #: ../../../Misc/NEWS:292
 msgid ""
 "`Issue #25203 <https://bugs.python.org/25203>`__: Failed readline."
 "set_completer_delims() no longer left the module in inconsistent state."
 msgstr ""
+"`Issue #25203 <https://bugs.python.org/25203>`__: Failed readline."
+"set_completer_delims() no longer left the module in inconsistent state."
 
 #: ../../../Misc/NEWS:295
 msgid "Prevent overflow in _Unpickler_Read."
@@ -29912,12 +29985,18 @@ msgid ""
 "the user. This restores the ability to write encoding names in uppercase "
 "like \"UTF-8\", which worked in Python 2."
 msgstr ""
+"`Issue #25047 <https://bugs.python.org/25047>`__: The XML encoding "
+"declaration written by Element Tree now respects the letter case given by "
+"the user. This restores the ability to write encoding names in uppercase "
+"like \"UTF-8\", which worked in Python 2."
 
 #: ../../../Misc/NEWS:301
 msgid ""
 "`Issue #19143 <https://bugs.python.org/19143>`__: platform module now reads "
 "Windows version from kernel32.dll to avoid compatibility shims."
 msgstr ""
+"`Issue #19143 <https://bugs.python.org/19143>`__: platform module now reads "
+"Windows version from kernel32.dll to avoid compatibility shims."
 
 #: ../../../Misc/NEWS:304
 msgid ""
@@ -29940,6 +30019,12 @@ msgid ""
 "codec is now called directly instead of calling the encode() method of the "
 "string."
 msgstr ""
+"`Issue #24684 <https://bugs.python.org/24684>`__: socket.socket."
+"getaddrinfo() now calls PyUnicode_AsEncodedString() instead of calling the "
+"encode() method of the host, to handle correctly custom string with an "
+"encode() method which doesn't return a byte string. The encoder of the IDNA "
+"codec is now called directly instead of calling the encode() method of the "
+"string."
 
 #: ../../../Misc/NEWS:318
 msgid ""
@@ -29947,6 +30032,9 @@ msgid ""
 "the \"zip\" format now adds entries for directories (including empty "
 "directories) in ZIP file."
 msgstr ""
+"`Issue #24982 <https://bugs.python.org/24982>`__: shutil.make_archive() with "
+"the \"zip\" format now adds entries for directories (including empty "
+"directories) in ZIP file."
 
 #: ../../../Misc/NEWS:321
 msgid ""
@@ -29954,24 +30042,33 @@ msgid ""
 "long sequence now correctly returns a boolean result instead of raising an "
 "exception.  Patch by A Kaptur."
 msgstr ""
+"`Issue #24857 <https://bugs.python.org/24857>`__: Comparing call_args to a "
+"long sequence now correctly returns a boolean result instead of raising an "
+"exception.  Patch by A Kaptur."
 
 #: ../../../Misc/NEWS:324
 msgid ""
 "`Issue #25019 <https://bugs.python.org/25019>`__: Fixed a crash caused by "
 "setting non-string key of expat parser. Based on patch by John Leitch."
 msgstr ""
+"`Issue #25019 <https://bugs.python.org/25019>`__: Fixed a crash caused by "
+"setting non-string key of expat parser. Based on patch by John Leitch."
 
 #: ../../../Misc/NEWS:327
 msgid ""
 "`Issue #24917 <https://bugs.python.org/24917>`__: time_strftime() buffer "
 "over-read."
 msgstr ""
+"`Issue #24917 <https://bugs.python.org/24917>`__: time_strftime() buffer "
+"over-read."
 
 #: ../../../Misc/NEWS:329
 msgid ""
 "`Issue #23144 <https://bugs.python.org/23144>`__: Make sure that HTMLParser."
 "feed() returns all the data, even when convert_charrefs is True."
 msgstr ""
+"`Issue #23144 <https://bugs.python.org/23144>`__: Make sure that HTMLParser."
+"feed() returns all the data, even when convert_charrefs is True."
 
 #: ../../../Misc/NEWS:332
 msgid ""
@@ -29979,12 +30076,17 @@ msgid ""
 "syntax error, instead of trapping user in an infinite loop.  Patch by Xavier "
 "de Gaye."
 msgstr ""
+"`Issue #16180 <https://bugs.python.org/16180>`__: Exit pdb if file has "
+"syntax error, instead of trapping user in an infinite loop.  Patch by Xavier "
+"de Gaye."
 
 #: ../../../Misc/NEWS:335
 msgid ""
 "`Issue #21112 <https://bugs.python.org/21112>`__: Fix regression in unittest."
 "expectedFailure on subclasses. Patch from Berker Peksag."
 msgstr ""
+"`Issue #21112 <https://bugs.python.org/21112>`__: Fix regression in unittest."
+"expectedFailure on subclasses. Patch from Berker Peksag."
 
 #: ../../../Misc/NEWS:338
 msgid ""
@@ -30000,24 +30102,33 @@ msgid ""
 "read_multi() now ignores the Content-Length header in part headers. Patch "
 "written by Peter Landry and reviewed by Pierre Quentel."
 msgstr ""
+"`Issue #24764 <https://bugs.python.org/24764>`__: cgi.FieldStorage."
+"read_multi() now ignores the Content-Length header in part headers. Patch "
+"written by Peter Landry and reviewed by Pierre Quentel."
 
 #: ../../../Misc/NEWS:346
 msgid ""
 "`Issue #24774 <https://bugs.python.org/24774>`__: Fix docstring in http."
 "server.test. Patch from Chiu-Hsiang Hsu."
 msgstr ""
+"`Issue #24774 <https://bugs.python.org/24774>`__: Fix docstring in http."
+"server.test. Patch from Chiu-Hsiang Hsu."
 
 #: ../../../Misc/NEWS:348
 msgid ""
 "`Issue #21159 <https://bugs.python.org/21159>`__: Improve message in "
 "configparser.InterpolationMissingOptionError. Patch from Łukasz Langa."
 msgstr ""
+"`Issue #21159 <https://bugs.python.org/21159>`__: Improve message in "
+"configparser.InterpolationMissingOptionError. Patch from Łukasz Langa."
 
 #: ../../../Misc/NEWS:351
 msgid ""
 "`Issue #23888 <https://bugs.python.org/23888>`__: Handle fractional time in "
 "cookie expiry. Patch by ssh."
 msgstr ""
+"`Issue #23888 <https://bugs.python.org/23888>`__: Handle fractional time in "
+"cookie expiry. Patch by ssh."
 
 #: ../../../Misc/NEWS:353
 msgid ""
@@ -30025,6 +30136,9 @@ msgid ""
 "binary data correctly when the type of read_data is bytes.  Initial patch by "
 "Aaron Hill."
 msgstr ""
+"`Issue #23004 <https://bugs.python.org/23004>`__: mock_open() now reads "
+"binary data correctly when the type of read_data is bytes.  Initial patch by "
+"Aaron Hill."
 
 #: ../../../Misc/NEWS:356
 msgid ""
@@ -30032,36 +30146,49 @@ msgid ""
 "compile the select module against the libc headers from the Linux Standard "
 "Base, which do not include some EPOLL macros.  Patch by Matt Frank."
 msgstr ""
+"`Issue #23652 <https://bugs.python.org/23652>`__: Make it possible to "
+"compile the select module against the libc headers from the Linux Standard "
+"Base, which do not include some EPOLL macros.  Patch by Matt Frank."
 
 #: ../../../Misc/NEWS:360
 msgid ""
 "`Issue #22932 <https://bugs.python.org/22932>`__: Fix timezones in email."
 "utils.formatdate. Patch from Dmitry Shachnev."
 msgstr ""
+"`Issue #22932 <https://bugs.python.org/22932>`__: Fix timezones in email."
+"utils.formatdate. Patch from Dmitry Shachnev."
 
 #: ../../../Misc/NEWS:363
 msgid ""
 "`Issue #23779 <https://bugs.python.org/23779>`__: imaplib raises TypeError "
 "if authenticator tries to abort. Patch from Craig Holmquist."
 msgstr ""
+"`Issue #23779 <https://bugs.python.org/23779>`__: imaplib raises TypeError "
+"if authenticator tries to abort. Patch from Craig Holmquist."
 
 #: ../../../Misc/NEWS:366
 msgid ""
 "`Issue #23319 <https://bugs.python.org/23319>`__: Fix ctypes."
 "BigEndianStructure, swap correctly bytes. Patch written by Matthieu Gautier."
 msgstr ""
+"`Issue #23319 <https://bugs.python.org/23319>`__: Fix ctypes."
+"BigEndianStructure, swap correctly bytes. Patch written by Matthieu Gautier."
 
 #: ../../../Misc/NEWS:369
 msgid ""
 "`Issue #23254 <https://bugs.python.org/23254>`__: Document how to close the "
 "TCPServer listening socket. Patch from Martin Panter."
 msgstr ""
+"`Issue #23254 <https://bugs.python.org/23254>`__: Document how to close the "
+"TCPServer listening socket. Patch from Martin Panter."
 
 #: ../../../Misc/NEWS:372
 msgid ""
 "`Issue #19450 <https://bugs.python.org/19450>`__: Update Windows and OS X "
 "installer builds to use SQLite 3.8.11."
 msgstr ""
+"`Issue #19450 <https://bugs.python.org/19450>`__: Update Windows and OS X "
+"installer builds to use SQLite 3.8.11."
 
 #: ../../../Misc/NEWS:374
 msgid ""
@@ -30069,6 +30196,9 @@ msgid ""
 "tab character instead of displaying possible completions for an empty word.  "
 "Initial patch by Martin Sekera."
 msgstr ""
+"`Issue #23441 <https://bugs.python.org/23441>`__: rcompleter now prints a "
+"tab character instead of displaying possible completions for an empty word.  "
+"Initial patch by Martin Sekera."
 
 #: ../../../Misc/NEWS:377
 msgid ""
@@ -30081,12 +30211,16 @@ msgid ""
 "`Issue #17527 <https://bugs.python.org/17527>`__: Add PATCH to wsgiref."
 "validator. Patch from Luca Sbardella."
 msgstr ""
+"`Issue #17527 <https://bugs.python.org/17527>`__: Add PATCH to wsgiref."
+"validator. Patch from Luca Sbardella."
 
 #: ../../../Misc/NEWS:382
 msgid ""
 "`Issue #24683 <https://bugs.python.org/24683>`__: Fixed crashes in _json "
 "functions called with arguments of inappropriate type."
 msgstr ""
+"`Issue #24683 <https://bugs.python.org/24683>`__: Fixed crashes in _json "
+"functions called with arguments of inappropriate type."
 
 #: ../../../Misc/NEWS:385
 msgid ""
@@ -30094,36 +30228,49 @@ msgid ""
 "correctly handles symbolic links that point to directories.  Patch by "
 "Eduardo Seabra and Thomas Kluyver."
 msgstr ""
+"`Issue #21697 <https://bugs.python.org/21697>`__: shutil.copytree() now "
+"correctly handles symbolic links that point to directories.  Patch by "
+"Eduardo Seabra and Thomas Kluyver."
 
 #: ../../../Misc/NEWS:388
 msgid ""
 "`Issue #24620 <https://bugs.python.org/24620>`__: Random.setstate() now "
 "validates the value of state last element."
 msgstr ""
+"`Issue #24620 <https://bugs.python.org/24620>`__: Random.setstate() now "
+"validates the value of state last element."
 
 #: ../../../Misc/NEWS:390
 msgid ""
 "`Issue #22153 <https://bugs.python.org/22153>`__: Improve unittest docs. "
 "Patch from Martin Panter and evilzero."
 msgstr ""
+"`Issue #22153 <https://bugs.python.org/22153>`__: Improve unittest docs. "
+"Patch from Martin Panter and evilzero."
 
 #: ../../../Misc/NEWS:392
 msgid ""
 "`Issue #24206 <https://bugs.python.org/24206>`__: Fixed __eq__ and __ne__ "
 "methods of inspect classes."
 msgstr ""
+"`Issue #24206 <https://bugs.python.org/24206>`__: Fixed __eq__ and __ne__ "
+"methods of inspect classes."
 
 #: ../../../Misc/NEWS:394
 msgid ""
 "`Issue #21750 <https://bugs.python.org/21750>`__: mock_open.read_data can "
 "now be read from each instance, as it could in Python 3.3."
 msgstr ""
+"`Issue #21750 <https://bugs.python.org/21750>`__: mock_open.read_data can "
+"now be read from each instance, as it could in Python 3.3."
 
 #: ../../../Misc/NEWS:397
 msgid ""
 "`Issue #23247 <https://bugs.python.org/23247>`__: Fix a crash in the "
 "StreamWriter.reset() of CJK codecs."
 msgstr ""
+"`Issue #23247 <https://bugs.python.org/23247>`__: Fix a crash in the "
+"StreamWriter.reset() of CJK codecs."
 
 #: ../../../Misc/NEWS:399
 msgid ""
@@ -30131,36 +30278,49 @@ msgid ""
 "reset_mock would recurse infinitely. Patch from Nicola Palumbo and Laurent "
 "De Buyst."
 msgstr ""
+"`Issue #18622 <https://bugs.python.org/18622>`__: unittest.mock.mock_open()."
+"reset_mock would recurse infinitely. Patch from Nicola Palumbo and Laurent "
+"De Buyst."
 
 #: ../../../Misc/NEWS:402
 msgid ""
 "`Issue #24608 <https://bugs.python.org/24608>`__: chunk.Chunk.read() now "
 "always returns bytes, not str."
 msgstr ""
+"`Issue #24608 <https://bugs.python.org/24608>`__: chunk.Chunk.read() now "
+"always returns bytes, not str."
 
 #: ../../../Misc/NEWS:404
 msgid ""
 "`Issue #18684 <https://bugs.python.org/18684>`__: Fixed reading out of the "
 "buffer in the re module."
 msgstr ""
+"`Issue #18684 <https://bugs.python.org/18684>`__: Fixed reading out of the "
+"buffer in the re module."
 
 #: ../../../Misc/NEWS:406
 msgid ""
 "`Issue #24259 <https://bugs.python.org/24259>`__: tarfile now raises a "
 "ReadError if an archive is truncated inside a data segment."
 msgstr ""
+"`Issue #24259 <https://bugs.python.org/24259>`__: tarfile now raises a "
+"ReadError if an archive is truncated inside a data segment."
 
 #: ../../../Misc/NEWS:409
 msgid ""
 "`Issue #24552 <https://bugs.python.org/24552>`__: Fix use after free in an "
 "error case of the _pickle module."
 msgstr ""
+"`Issue #24552 <https://bugs.python.org/24552>`__: Fix use after free in an "
+"error case of the _pickle module."
 
 #: ../../../Misc/NEWS:411
 msgid ""
 "`Issue #24514 <https://bugs.python.org/24514>`__: tarfile now tolerates "
 "number fields consisting of only whitespace."
 msgstr ""
+"`Issue #24514 <https://bugs.python.org/24514>`__: tarfile now tolerates "
+"number fields consisting of only whitespace."
 
 #: ../../../Misc/NEWS:414
 msgid ""
@@ -30170,18 +30330,27 @@ msgid ""
 "doctype() now issues a warning.  Parser's doctype() now is not called if "
 "target's doctype() is called.  Based on patch by Martin Panter."
 msgstr ""
+"`Issue #19176 <https://bugs.python.org/19176>`__: Fixed doctype() related "
+"bugs in C implementation of ElementTree. A deprecation warning no longer "
+"issued by XMLParser subclass with default doctype() method.  Direct call of "
+"doctype() now issues a warning.  Parser's doctype() now is not called if "
+"target's doctype() is called.  Based on patch by Martin Panter."
 
 #: ../../../Misc/NEWS:420
 msgid ""
 "`Issue #20387 <https://bugs.python.org/20387>`__: Restore semantic round-"
 "trip correctness in tokenize/untokenize for tab-indented blocks."
 msgstr ""
+"`Issue #20387 <https://bugs.python.org/20387>`__: Restore semantic round-"
+"trip correctness in tokenize/untokenize for tab-indented blocks."
 
 #: ../../../Misc/NEWS:423
 msgid ""
 "`Issue #24456 <https://bugs.python.org/24456>`__: Fixed possible buffer over-"
 "read in adpcm2lin() and lin2adpcm() functions of the audioop module."
 msgstr ""
+"`Issue #24456 <https://bugs.python.org/24456>`__: Fixed possible buffer over-"
+"read in adpcm2lin() and lin2adpcm() functions of the audioop module."
 
 #: ../../../Misc/NEWS:426
 msgid ""
@@ -30189,36 +30358,49 @@ msgid ""
 "decorator now works with functions with keyword arguments called \"func\" "
 "and \"self\".  Patch by Martin Panter."
 msgstr ""
+"`Issue #24336 <https://bugs.python.org/24336>`__: The contextmanager "
+"decorator now works with functions with keyword arguments called \"func\" "
+"and \"self\".  Patch by Martin Panter."
 
 #: ../../../Misc/NEWS:429
 msgid ""
 "`Issue #24489 <https://bugs.python.org/24489>`__: ensure a previously set C "
 "errno doesn't disturb cmath.polar()."
 msgstr ""
+"`Issue #24489 <https://bugs.python.org/24489>`__: ensure a previously set C "
+"errno doesn't disturb cmath.polar()."
 
 #: ../../../Misc/NEWS:431
 msgid ""
 "`Issue #5633 <https://bugs.python.org/5633>`__: Fixed timeit when the "
 "statement is a string and the setup is not."
 msgstr ""
+"`Issue #5633 <https://bugs.python.org/5633>`__: Fixed timeit when the "
+"statement is a string and the setup is not."
 
 #: ../../../Misc/NEWS:433
 msgid ""
 "`Issue #24326 <https://bugs.python.org/24326>`__: Fixed audioop.ratecv() "
 "with non-default weightB argument. Original patch by David Moore."
 msgstr ""
+"`Issue #24326 <https://bugs.python.org/24326>`__: Fixed audioop.ratecv() "
+"with non-default weightB argument. Original patch by David Moore."
 
 #: ../../../Misc/NEWS:436
 msgid ""
 "`Issue #23840 <https://bugs.python.org/23840>`__: tokenize.open() now closes "
 "the temporary binary file on error to fix a resource warning."
 msgstr ""
+"`Issue #23840 <https://bugs.python.org/23840>`__: tokenize.open() now closes "
+"the temporary binary file on error to fix a resource warning."
 
 #: ../../../Misc/NEWS:439
 msgid ""
 "`Issue #24257 <https://bugs.python.org/24257>`__: Fixed segmentation fault "
 "in sqlite3.Row constructor with faked cursor type."
 msgstr ""
+"`Issue #24257 <https://bugs.python.org/24257>`__: Fixed segmentation fault "
+"in sqlite3.Row constructor with faked cursor type."
 
 #: ../../../Misc/NEWS:442
 msgid ""
@@ -30227,6 +30409,10 @@ msgid ""
 "already exists on Windows as well as on Unix.  tempfile.mkstemp() now fails "
 "early if parent directory is not valid (not exists or is a file) on Windows."
 msgstr ""
+"`Issue #22107 <https://bugs.python.org/22107>`__: tempfile.gettempdir() and "
+"tempfile.mkdtemp() now try again when a directory with the chosen name "
+"already exists on Windows as well as on Unix.  tempfile.mkstemp() now fails "
+"early if parent directory is not valid (not exists or is a file) on Windows."
 
 #: ../../../Misc/NEWS:447
 msgid ""
@@ -30234,12 +30420,17 @@ msgid ""
 "random number range in email.utils.make_msgid() to strengthen the uniqueness "
 "of the message ID."
 msgstr ""
+"`Issue #6598 <https://bugs.python.org/6598>`__: Increased time precision and "
+"random number range in email.utils.make_msgid() to strengthen the uniqueness "
+"of the message ID."
 
 #: ../../../Misc/NEWS:450
 msgid ""
 "`Issue #24091 <https://bugs.python.org/24091>`__: Fixed various crashes in "
 "corner cases in C implementation of ElementTree."
 msgstr ""
+"`Issue #24091 <https://bugs.python.org/24091>`__: Fixed various crashes in "
+"corner cases in C implementation of ElementTree."
 
 #: ../../../Misc/NEWS:453
 msgid ""
@@ -30247,6 +30438,9 @@ msgid ""
 "raises TypeError in the case of a bad argument instead of a ValueError with "
 "a bogus FCI error number. Patch by Jeffrey Armstrong."
 msgstr ""
+"`Issue #21931 <https://bugs.python.org/21931>`__: msilib.FCICreate() now "
+"raises TypeError in the case of a bad argument instead of a ValueError with "
+"a bogus FCI error number. Patch by Jeffrey Armstrong."
 
 #: ../../../Misc/NEWS:457
 msgid ""
@@ -30254,18 +30448,25 @@ msgid ""
 "BufferedReader now raise ValueError if they called on a closed object. Patch "
 "by John Hergenroeder."
 msgstr ""
+"`Issue #23796 <https://bugs.python.org/23796>`__: peek and read1 methods of "
+"BufferedReader now raise ValueError if they called on a closed object. Patch "
+"by John Hergenroeder."
 
 #: ../../../Misc/NEWS:460
 msgid ""
 "`Issue #24521 <https://bugs.python.org/24521>`__: Fix possible integer "
 "overflows in the pickle module."
 msgstr ""
+"`Issue #24521 <https://bugs.python.org/24521>`__: Fix possible integer "
+"overflows in the pickle module."
 
 #: ../../../Misc/NEWS:462
 msgid ""
 "`Issue #22931 <https://bugs.python.org/22931>`__: Allow '[' and ']' in "
 "cookie values."
 msgstr ""
+"`Issue #22931 <https://bugs.python.org/22931>`__: Allow '[' and ']' in "
+"cookie values."
 
 #: ../../../Misc/NEWS:464
 msgid ""
@@ -30273,12 +30474,17 @@ msgid ""
 "erroneous \"kwargs\" parameters from three METH_VARARGS methods on _sqlite."
 "Connection."
 msgstr ""
+"`Issue #20274 <https://bugs.python.org/20274>`__: Remove ignored and "
+"erroneous \"kwargs\" parameters from three METH_VARARGS methods on _sqlite."
+"Connection."
 
 #: ../../../Misc/NEWS:467
 msgid ""
 "`Issue #24094 <https://bugs.python.org/24094>`__: Fix possible crash in json."
 "encode with poorly behaved dict subclasses."
 msgstr ""
+"`Issue #24094 <https://bugs.python.org/24094>`__: Fix possible crash in json."
+"encode with poorly behaved dict subclasses."
 
 #: ../../../Misc/NEWS:470
 msgid ""
@@ -30291,6 +30497,8 @@ msgid ""
 "`Issue #9246 <https://bugs.python.org/9246>`__: On POSIX, os.getcwd() now "
 "supports paths longer than 1025 bytes. Patch written by William Orr."
 msgstr ""
+"`Issue #9246 <https://bugs.python.org/9246>`__: On POSIX, os.getcwd() now "
+"supports paths longer than 1025 bytes. Patch written by William Orr."
 
 #: ../../../Misc/NEWS:476
 msgid "The keywords attribute of functools.partial is now always a dictionary."
@@ -30314,6 +30522,8 @@ msgid ""
 "`Issue #23008 <https://bugs.python.org/23008>`__: Fixed resolving attributes "
 "with boolean value is False in pydoc."
 msgstr ""
+"`Issue #23008 <https://bugs.python.org/23008>`__: Fixed resolving attributes "
+"with boolean value is False in pydoc."
 
 #: ../../../Misc/NEWS:487
 msgid ""
@@ -30328,18 +30538,25 @@ msgid ""
 "paths with embedded null character on Windows instead of silently truncate "
 "them."
 msgstr ""
+"`Issue #23908 <https://bugs.python.org/23908>`__: os functions now reject "
+"paths with embedded null character on Windows instead of silently truncate "
+"them."
 
 #: ../../../Misc/NEWS:494
 msgid ""
 "`Issue #23728 <https://bugs.python.org/23728>`__: binascii.crc_hqx() could "
 "return an integer outside of the range 0-0xffff for empty data."
 msgstr ""
+"`Issue #23728 <https://bugs.python.org/23728>`__: binascii.crc_hqx() could "
+"return an integer outside of the range 0-0xffff for empty data."
 
 #: ../../../Misc/NEWS:497
 msgid ""
 "`Issue #23811 <https://bugs.python.org/23811>`__: Add missing newline to the "
 "PyCompileError error message. Patch by Alex Shkop."
 msgstr ""
+"`Issue #23811 <https://bugs.python.org/23811>`__: Add missing newline to the "
+"PyCompileError error message. Patch by Alex Shkop."
 
 #: ../../../Misc/NEWS:500
 msgid ""
@@ -30352,6 +30569,8 @@ msgid ""
 "`Issue #22982 <https://bugs.python.org/22982>`__: Improve BOM handling when "
 "seeking to multiple positions of a writable text file."
 msgstr ""
+"`Issue #22982 <https://bugs.python.org/22982>`__: Improve BOM handling when "
+"seeking to multiple positions of a writable text file."
 
 #: ../../../Misc/NEWS:505
 msgid ""
@@ -30359,6 +30578,9 @@ msgid ""
 "multiple modules now are idempotent and more robust at shutdown. If they "
 "need to release multiple resources, all are released even if errors occur."
 msgstr ""
+"`Issue #23865 <https://bugs.python.org/23865>`__: close() methods in "
+"multiple modules now are idempotent and more robust at shutdown. If they "
+"need to release multiple resources, all are released even if errors occur."
 
 #: ../../../Misc/NEWS:509
 msgid ""
@@ -30366,12 +30588,17 @@ msgid ""
 "constructor now closes the socket if the FTP connection failed to fix a "
 "ResourceWarning."
 msgstr ""
+"`Issue #23881 <https://bugs.python.org/23881>`__: urllib.request.ftpwrapper "
+"constructor now closes the socket if the FTP connection failed to fix a "
+"ResourceWarning."
 
 #: ../../../Misc/NEWS:512
 msgid ""
 "`Issue #23400 <https://bugs.python.org/23400>`__: Raise same exception on "
 "both Python 2 and 3 if sem_open is not available.  Patch by Davin Potts."
 msgstr ""
+"`Issue #23400 <https://bugs.python.org/23400>`__: Raise same exception on "
+"both Python 2 and 3 if sem_open is not available.  Patch by Davin Potts."
 
 #: ../../../Misc/NEWS:515
 msgid ""
@@ -30380,12 +30607,18 @@ msgid ""
 "BooleanVar now validates input values (accepted bool, int, str, and "
 "Tcl_Obj).  tkinter.BooleanVar.get() now always returns bool."
 msgstr ""
+"`Issue #15133 <https://bugs.python.org/15133>`__: _tkinter.tkapp."
+"getboolean() now supports Tcl_Obj and always returns bool.  tkinter."
+"BooleanVar now validates input values (accepted bool, int, str, and "
+"Tcl_Obj).  tkinter.BooleanVar.get() now always returns bool."
 
 #: ../../../Misc/NEWS:519
 msgid ""
 "`Issue #23338 <https://bugs.python.org/23338>`__: Fixed formatting ctypes "
 "error messages on Cygwin. Patch by Makoto Kato."
 msgstr ""
+"`Issue #23338 <https://bugs.python.org/23338>`__: Fixed formatting ctypes "
+"error messages on Cygwin. Patch by Makoto Kato."
 
 #: ../../../Misc/NEWS:522
 msgid ""
@@ -30393,6 +30626,9 @@ msgid ""
 "bit integers added in Tcl 8.4 and arbitrary precision integers added in Tcl "
 "8.5."
 msgstr ""
+"`Issue #16840 <https://bugs.python.org/16840>`__: Tkinter now supports 64-"
+"bit integers added in Tcl 8.4 and arbitrary precision integers added in Tcl "
+"8.5."
 
 #: ../../../Misc/NEWS:525
 msgid ""
@@ -30400,18 +30636,25 @@ msgid ""
 "the C Py_ssize_t type to store the result of sendto() instead of the C int "
 "type."
 msgstr ""
+"`Issue #23834 <https://bugs.python.org/23834>`__: Fix socket.sendto(), use "
+"the C Py_ssize_t type to store the result of sendto() instead of the C int "
+"type."
 
 #: ../../../Misc/NEWS:528
 msgid ""
 "`Issue #21526 <https://bugs.python.org/21526>`__: Tkinter now supports new "
 "boolean type in Tcl 8.5."
 msgstr ""
+"`Issue #21526 <https://bugs.python.org/21526>`__: Tkinter now supports new "
+"boolean type in Tcl 8.5."
 
 #: ../../../Misc/NEWS:530
 msgid ""
 "`Issue #23838 <https://bugs.python.org/23838>`__: linecache now clears the "
 "cache and returns an empty result on MemoryError."
 msgstr ""
+"`Issue #23838 <https://bugs.python.org/23838>`__: linecache now clears the "
+"cache and returns an empty result on MemoryError."
 
 #: ../../../Misc/NEWS:533
 msgid ""
@@ -30420,6 +30663,10 @@ msgid ""
 "new mappings.  Import mapping is no longer applied to modules already mapped "
 "with full name mapping."
 msgstr ""
+"`Issue #18473 <https://bugs.python.org/18473>`__: Fixed 2to3 and 3to2 "
+"compatible pickle mappings.  Fixed ambigious reverse mappings.  Added many "
+"new mappings.  Import mapping is no longer applied to modules already mapped "
+"with full name mapping."
 
 #: ../../../Misc/NEWS:537
 msgid ""
@@ -30427,6 +30674,9 @@ msgid ""
 "parser now handles duplicate MIME parameter names without error, similar to "
 "how get_param behaves."
 msgstr ""
+"`Issue #23745 <https://bugs.python.org/23745>`__: The new email header "
+"parser now handles duplicate MIME parameter names without error, similar to "
+"how get_param behaves."
 
 #: ../../../Misc/NEWS:540
 msgid ""
@@ -30435,12 +30685,18 @@ msgid ""
 "unix pagers, and prevents pipepager from shutting down while the pager "
 "itself is still running."
 msgstr ""
+"`Issue #23792 <https://bugs.python.org/23792>`__: Ignore KeyboardInterrupt "
+"when the pydoc pager is active. This mimics the behavior of the standard "
+"unix pagers, and prevents pipepager from shutting down while the pager "
+"itself is still running."
 
 #: ../../../Misc/NEWS:544
 msgid ""
 "`Issue #23742 <https://bugs.python.org/23742>`__: ntpath.expandvars() no "
 "longer loses unbalanced single quotes."
 msgstr ""
+"`Issue #23742 <https://bugs.python.org/23742>`__: ntpath.expandvars() no "
+"longer loses unbalanced single quotes."
 
 #: ../../../Misc/NEWS:546
 msgid ""
@@ -30448,6 +30704,9 @@ msgid ""
 "BufferedRWPair now is closed even when closing writer failed in "
 "BufferedRWPair.close()."
 msgstr ""
+"`Issue #21802 <https://bugs.python.org/21802>`__: The reader in "
+"BufferedRWPair now is closed even when closing writer failed in "
+"BufferedRWPair.close()."
 
 #: ../../../Misc/NEWS:549
 msgid ""
@@ -30469,6 +30728,8 @@ msgid ""
 "`Issue #23647 <https://bugs.python.org/23647>`__: Increase impalib's MAXLINE "
 "to accommodate modern mailbox sizes."
 msgstr ""
+"`Issue #23647 <https://bugs.python.org/23647>`__: Increase impalib's MAXLINE "
+"to accommodate modern mailbox sizes."
 
 #: ../../../Misc/NEWS:558
 msgid ""
@@ -30476,6 +30737,9 @@ msgid ""
 "client.HTTPConnection.request now sets Content-Length to 0 for PUT, POST, "
 "and PATCH headers to avoid 411 errors from some web servers."
 msgstr ""
+"`Issue #23539 <https://bugs.python.org/23539>`__: If body is None, http."
+"client.HTTPConnection.request now sets Content-Length to 0 for PUT, POST, "
+"and PATCH headers to avoid 411 errors from some web servers."
 
 #: ../../../Misc/NEWS:562
 msgid ""
@@ -30483,6 +30747,9 @@ msgid ""
 "constructor no longer leaves the connection and socket open until the "
 "garbage collector cleans them up.  Patch by Martin Panter."
 msgstr ""
+"`Issue #22351 <https://bugs.python.org/22351>`__: The nntplib.NNTP "
+"constructor no longer leaves the connection and socket open until the "
+"garbage collector cleans them up.  Patch by Martin Panter."
 
 #: ../../../Misc/NEWS:566
 msgid ""
@@ -30490,6 +30757,9 @@ msgid ""
 "handles all days in week 0, including Dec 30 of previous year.  Based on "
 "patch by Jim Carroll."
 msgstr ""
+"`Issue #23136 <https://bugs.python.org/23136>`__: _strptime now uniformly "
+"handles all days in week 0, including Dec 30 of previous year.  Based on "
+"patch by Jim Carroll."
 
 #: ../../../Misc/NEWS:569
 msgid ""
@@ -30497,18 +30767,25 @@ msgid ""
 "NamedTemporaryFile now keeps a reference to NamedTemporaryFile instance.  "
 "Patch by Bohuslav Kabrda."
 msgstr ""
+"`Issue #23700 <https://bugs.python.org/23700>`__: Iterator of "
+"NamedTemporaryFile now keeps a reference to NamedTemporaryFile instance.  "
+"Patch by Bohuslav Kabrda."
 
 #: ../../../Misc/NEWS:572
 msgid ""
 "`Issue #22903 <https://bugs.python.org/22903>`__: The fake test case created "
 "by unittest.loader when it fails importing a test module is now picklable."
 msgstr ""
+"`Issue #22903 <https://bugs.python.org/22903>`__: The fake test case created "
+"by unittest.loader when it fails importing a test module is now picklable."
 
 #: ../../../Misc/NEWS:575
 msgid ""
 "`Issue #23568 <https://bugs.python.org/23568>`__: Add rdivmod support to "
 "MagicMock() objects. Patch by Håkan Lövdahl."
 msgstr ""
+"`Issue #23568 <https://bugs.python.org/23568>`__: Add rdivmod support to "
+"MagicMock() objects. Patch by Håkan Lövdahl."
 
 #: ../../../Misc/NEWS:578
 msgid ""
@@ -30670,6 +30947,9 @@ msgid ""
 "initializer to work with __methods__, just like configure_mock().  Patch by "
 "Kasia Jachim."
 msgstr ""
+"`Issue #23310 <https://bugs.python.org/23310>`__: Fix MagicMock's "
+"initializer to work with __methods__, just like configure_mock().  Patch by "
+"Kasia Jachim."
 
 #: ../../../Misc/NEWS:649
 msgid ""
@@ -30686,18 +30966,25 @@ msgid ""
 "classify_class_attrs() to support attributes with overloaded __eq__ and "
 "__bool__.  Patch by Mike Bayer."
 msgstr ""
+"`Issue #23898 <https://bugs.python.org/23898>`__: Fix inspect."
+"classify_class_attrs() to support attributes with overloaded __eq__ and "
+"__bool__.  Patch by Mike Bayer."
 
 #: ../../../Misc/NEWS:656
 msgid ""
 "`Issue #24298 <https://bugs.python.org/24298>`__: Fix inspect.signature() to "
 "correctly unwrap wrappers around bound methods."
 msgstr ""
+"`Issue #24298 <https://bugs.python.org/24298>`__: Fix inspect.signature() to "
+"correctly unwrap wrappers around bound methods."
 
 #: ../../../Misc/NEWS:659
 msgid ""
 "`Issue #23572 <https://bugs.python.org/23572>`__: Fixed functools."
 "singledispatch on classes with falsy metaclasses.  Patch by Ethan Furman."
 msgstr ""
+"`Issue #23572 <https://bugs.python.org/23572>`__: Fixed functools."
+"singledispatch on classes with falsy metaclasses.  Patch by Ethan Furman."
 
 #: ../../../Misc/NEWS:665
 msgid ""
@@ -30705,6 +30992,9 @@ msgid ""
 "closing the debugger window (running in the IDLE process). This prevents the "
 "RuntimeErrors that were being caught and ignored."
 msgstr ""
+"Issue 15348: Stop the debugger engine (normally in a user process) before "
+"closing the debugger window (running in the IDLE process). This prevents the "
+"RuntimeErrors that were being caught and ignored."
 
 #: ../../../Misc/NEWS:669
 msgid ""
@@ -30716,6 +31006,13 @@ msgid ""
 "vwait mechanism intended for this purpose (instead of root.mainloop & ."
 "quit). 2. In gui.run, allow any existing interaction to terminate first."
 msgstr ""
+"`Issue #24455 <https://bugs.python.org/24455>`__: Prevent IDLE from hanging "
+"when a) closing the shell while the debugger is active (15347); b) closing "
+"the debugger with the [X] button (15348); and c) activating the debugger "
+"when already active (24455). The patch by Mark Roseman does this by making "
+"two changes. 1. Suspend and resume the gui.interaction method with the tcl "
+"vwait mechanism intended for this purpose (instead of root.mainloop & ."
+"quit). 2. In gui.run, allow any existing interaction to terminate first."
 
 #: ../../../Misc/NEWS:677
 msgid ""
@@ -30729,6 +31026,8 @@ msgid ""
 "`Issue #24750 <https://bugs.python.org/24750>`__: Improve the appearance of "
 "the IDLE editor window status bar. Patch by Mark Roseman."
 msgstr ""
+"`Issue #24750 <https://bugs.python.org/24750>`__: Improve the appearance of "
+"the IDLE editor window status bar. Patch by Mark Roseman."
 
 #: ../../../Misc/NEWS:684
 msgid ""
@@ -30737,6 +31036,10 @@ msgid ""
 "introduced by the addition of IDLE Dark. Consistently use the revised "
 "idleConf.CurrentTheme everywhere in idlelib."
 msgstr ""
+"`Issue #25313 <https://bugs.python.org/25313>`__: Change the handling of new "
+"built-in text color themes to better address the compatibility problem "
+"introduced by the addition of IDLE Dark. Consistently use the revised "
+"idleConf.CurrentTheme everywhere in idlelib."
 
 #: ../../../Misc/NEWS:688
 msgid ""
@@ -30751,6 +31054,9 @@ msgid ""
 "dialog help button with some content about the other buttons and the new "
 "IDLE Dark theme."
 msgstr ""
+"`Issue #22726 <https://bugs.python.org/22726>`__: Re-activate the config "
+"dialog help button with some content about the other buttons and the new "
+"IDLE Dark theme."
 
 #: ../../../Misc/NEWS:695
 msgid ""
@@ -30762,6 +31068,13 @@ msgid ""
 "as 'Custom Dark'.  The custom theme will work with any IDLE release, and can "
 "be modified."
 msgstr ""
+"`Issue #24820 <https://bugs.python.org/24820>`__: IDLE now has an 'IDLE "
+"Dark' built-in text color theme. It is more or less IDLE Classic inverted, "
+"with a cobalt blue background. Strings, comments, keywords, ... are still "
+"green, red, orange, ... . To use it with IDLEs released before November "
+"2015, hit the 'Save as New Custom Theme' button and enter a new name, such "
+"as 'Custom Dark'.  The custom theme will work with any IDLE release, and can "
+"be modified."
 
 #: ../../../Misc/NEWS:703
 msgid ""
@@ -30770,6 +31083,10 @@ msgid ""
 "content is now in the IDLE doc chapter. 'IDLE' now means 'Integrated "
 "Development and Learning Environment'."
 msgstr ""
+"`Issue #25224 <https://bugs.python.org/25224>`__: README.txt is now an "
+"idlelib index for IDLE developers and curious users.  The previous user "
+"content is now in the IDLE doc chapter. 'IDLE' now means 'Integrated "
+"Development and Learning Environment'."
 
 #: ../../../Misc/NEWS:707
 msgid ""
@@ -30777,6 +31094,9 @@ msgid ""
 "breakpoint colors in Settings -> Custom Highlighting.  Original patch by "
 "Mark Roseman."
 msgstr ""
+"`Issue #24820 <https://bugs.python.org/24820>`__: Users can now set "
+"breakpoint colors in Settings -> Custom Highlighting.  Original patch by "
+"Mark Roseman."
 
 #: ../../../Misc/NEWS:710
 msgid ""
@@ -30785,6 +31105,10 @@ msgid ""
 "on all systems.  Found items are now always highlighted on Windows.  Initial "
 "patch by Mark Roseman."
 msgstr ""
+"`Issue #24972 <https://bugs.python.org/24972>`__: Inactive selection "
+"background now matches active selection background, as configured by users, "
+"on all systems.  Found items are now always highlighted on Windows.  Initial "
+"patch by Mark Roseman."
 
 #: ../../../Misc/NEWS:714
 msgid ""
@@ -30792,18 +31116,25 @@ msgid ""
 "completion boxes appear on Macs affected by a tk regression.  Initial patch "
 "by Mark Roseman."
 msgstr ""
+"`Issue #24570 <https://bugs.python.org/24570>`__: Idle: make calltip and "
+"completion boxes appear on Macs affected by a tk regression.  Initial patch "
+"by Mark Roseman."
 
 #: ../../../Misc/NEWS:717
 msgid ""
 "`Issue #24988 <https://bugs.python.org/24988>`__: Idle ScrolledList context "
 "menus (used in debugger) now work on Mac Aqua.  Patch by Mark Roseman."
 msgstr ""
+"`Issue #24988 <https://bugs.python.org/24988>`__: Idle ScrolledList context "
+"menus (used in debugger) now work on Mac Aqua.  Patch by Mark Roseman."
 
 #: ../../../Misc/NEWS:720
 msgid ""
 "`Issue #24801 <https://bugs.python.org/24801>`__: Make right-click for "
 "context menu work on Mac Aqua. Patch by Mark Roseman."
 msgstr ""
+"`Issue #24801 <https://bugs.python.org/24801>`__: Make right-click for "
+"context menu work on Mac Aqua. Patch by Mark Roseman."
 
 #: ../../../Misc/NEWS:723
 msgid ""
@@ -30811,6 +31142,9 @@ msgid ""
 "messageboxes with a specific widget. For Mac OSX, make them a 'sheet'.  "
 "Patch by Mark Roseman."
 msgstr ""
+"`Issue #25173 <https://bugs.python.org/25173>`__: Associate tkinter "
+"messageboxes with a specific widget. For Mac OSX, make them a 'sheet'.  "
+"Patch by Mark Roseman."
 
 #: ../../../Misc/NEWS:726
 msgid ""
@@ -30821,36 +31155,52 @@ msgid ""
 "editor. * When the Table of Contents (TOC) menu is used, put the section "
 "header at the top of the screen."
 msgstr ""
+"`Issue #25198 <https://bugs.python.org/25198>`__: Enhance the initial html "
+"viewer now used for Idle Help. * Properly indent fixed-pitch text (patch by "
+"Mark Roseman). * Give code snippet a very Sphinx-like light blueish-gray "
+"background. * Re-use initial width and height set by users for shell and "
+"editor. * When the Table of Contents (TOC) menu is used, put the section "
+"header at the top of the screen."
 
 #: ../../../Misc/NEWS:733
 msgid ""
 "`Issue #25225 <https://bugs.python.org/25225>`__: Condense and rewrite Idle "
 "doc section on text colors."
 msgstr ""
+"`Issue #25225 <https://bugs.python.org/25225>`__: Condense and rewrite Idle "
+"doc section on text colors."
 
 #: ../../../Misc/NEWS:735
 msgid ""
 "`Issue #21995 <https://bugs.python.org/21995>`__: Explain some differences "
 "between IDLE and console Python."
 msgstr ""
+"`Issue #21995 <https://bugs.python.org/21995>`__: Explain some differences "
+"between IDLE and console Python."
 
 #: ../../../Misc/NEWS:737
 msgid ""
 "`Issue #22820 <https://bugs.python.org/22820>`__: Explain need for *print* "
 "when running file from Idle editor."
 msgstr ""
+"`Issue #22820 <https://bugs.python.org/22820>`__: Explain need for *print* "
+"when running file from Idle editor."
 
 #: ../../../Misc/NEWS:739
 msgid ""
 "`Issue #25224 <https://bugs.python.org/25224>`__: Doc: augment Idle feature "
 "list and no-subprocess section."
 msgstr ""
+"`Issue #25224 <https://bugs.python.org/25224>`__: Doc: augment Idle feature "
+"list and no-subprocess section."
 
 #: ../../../Misc/NEWS:741
 msgid ""
 "`Issue #25219 <https://bugs.python.org/25219>`__: Update doc for Idle "
 "command line options. Some were missing and notes were not correct."
 msgstr ""
+"`Issue #25219 <https://bugs.python.org/25219>`__: Update doc for Idle "
+"command line options. Some were missing and notes were not correct."
 
 #: ../../../Misc/NEWS:744
 msgid ""
@@ -30858,12 +31208,17 @@ msgid ""
 "and subject to change. Use idleib.idle.* to start Idle. See idlelib.__init__."
 "__doc__."
 msgstr ""
+"`Issue #24861 <https://bugs.python.org/24861>`__: Most of idlelib is private "
+"and subject to change. Use idleib.idle.* to start Idle. See idlelib.__init__."
+"__doc__."
 
 #: ../../../Misc/NEWS:747
 msgid ""
 "`Issue #25199 <https://bugs.python.org/25199>`__: Idle: add synchronization "
 "comments for future maintainers."
 msgstr ""
+"`Issue #25199 <https://bugs.python.org/25199>`__: Idle: add synchronization "
+"comments for future maintainers."
 
 #: ../../../Misc/NEWS:749
 msgid ""
@@ -30874,24 +31229,36 @@ msgid ""
 "was written by Mark Roseman. The now unused EditorWindow.HelpDialog class "
 "and helt.txt file are deprecated."
 msgstr ""
+"`Issue #16893 <https://bugs.python.org/16893>`__: Replace help.txt with help."
+"html for Idle doc display. The new idlelib/help.html is rstripped Doc/build/"
+"html/library/idle.html. It looks better than help.txt and will better "
+"document Idle as released. The tkinter html viewer that works for this file "
+"was written by Mark Roseman. The now unused EditorWindow.HelpDialog class "
+"and helt.txt file are deprecated."
 
 #: ../../../Misc/NEWS:755
 msgid ""
 "`Issue #24199 <https://bugs.python.org/24199>`__: Deprecate unused idlelib."
 "idlever with possible removal in 3.6."
 msgstr ""
+"`Issue #24199 <https://bugs.python.org/24199>`__: Deprecate unused idlelib."
+"idlever with possible removal in 3.6."
 
 #: ../../../Misc/NEWS:757
 msgid ""
 "`Issue #24790 <https://bugs.python.org/24790>`__: Remove extraneous code "
 "(which also create 2 & 3 conflicts)."
 msgstr ""
+"`Issue #24790 <https://bugs.python.org/24790>`__: Remove extraneous code "
+"(which also create 2 & 3 conflicts)."
 
 #: ../../../Misc/NEWS:759
 msgid ""
 "`Issue #23672 <https://bugs.python.org/23672>`__: Allow Idle to edit and run "
 "files with astral chars in name. Patch by Mohd Sanad Zaki Rizvi."
 msgstr ""
+"`Issue #23672 <https://bugs.python.org/23672>`__: Allow Idle to edit and run "
+"files with astral chars in name. Patch by Mohd Sanad Zaki Rizvi."
 
 #: ../../../Misc/NEWS:762
 msgid ""
@@ -30907,24 +31274,33 @@ msgid ""
 "is run, put its name in the restart bar. Do not print false prompts. "
 "Original patch by Adnan Umer."
 msgstr ""
+"`Issue #21192 <https://bugs.python.org/21192>`__: Idle editor. When a file "
+"is run, put its name in the restart bar. Do not print false prompts. "
+"Original patch by Adnan Umer."
 
 #: ../../../Misc/NEWS:770
 msgid ""
 "`Issue #13884 <https://bugs.python.org/13884>`__: Idle menus. Remove tearoff "
 "lines. Patch by Roger Serwy."
 msgstr ""
+"`Issue #13884 <https://bugs.python.org/13884>`__: Idle menus. Remove tearoff "
+"lines. Patch by Roger Serwy."
 
 #: ../../../Misc/NEWS:772
 msgid ""
 "`Issue #23184 <https://bugs.python.org/23184>`__: remove unused names and "
 "imports in idlelib. Initial patch by Al Sweigart."
 msgstr ""
+"`Issue #23184 <https://bugs.python.org/23184>`__: remove unused names and "
+"imports in idlelib. Initial patch by Al Sweigart."
 
 #: ../../../Misc/NEWS:778
 msgid ""
 "`Issue #25616 <https://bugs.python.org/25616>`__: Tests for OrderedDict are "
 "extracted from test_collections into separate file test_ordered_dict."
 msgstr ""
+"`Issue #25616 <https://bugs.python.org/25616>`__: Tests for OrderedDict are "
+"extracted from test_collections into separate file test_ordered_dict."
 
 #: ../../../Misc/NEWS:781
 msgid ""
@@ -30932,6 +31308,9 @@ msgid ""
 "fail when an entry on sys.path cannot be written to (commonly seen in "
 "administrative installs on Windows)."
 msgstr ""
+"`Issue #25099 <https://bugs.python.org/25099>`__: Make test_compileall not "
+"fail when an entry on sys.path cannot be written to (commonly seen in "
+"administrative installs on Windows)."
 
 #: ../../../Misc/NEWS:784
 msgid ""
@@ -30939,6 +31318,9 @@ msgid ""
 "the ``-w`` command line option, a test run is no longer marked as a failure "
 "if all tests succeed when re-run."
 msgstr ""
+"`Issue #24751 <https://bugs.python.org/24751>`__: When running regrtest with "
+"the ``-w`` command line option, a test run is no longer marked as a failure "
+"if all tests succeed when re-run."
 
 #: ../../../Misc/NEWS:788
 msgid ""
@@ -30946,18 +31328,25 @@ msgid ""
 "fails if the word 'bad' appears anywhere in the name of the current "
 "directory."
 msgstr ""
+"`Issue #21520 <https://bugs.python.org/21520>`__: test_zipfile no longer "
+"fails if the word 'bad' appears anywhere in the name of the current "
+"directory."
 
 #: ../../../Misc/NEWS:791
 msgid ""
 "`Issue #23799 <https://bugs.python.org/23799>`__: Added test.support."
 "start_threads() for running and cleaning up multiple threads."
 msgstr ""
+"`Issue #23799 <https://bugs.python.org/23799>`__: Added test.support."
+"start_threads() for running and cleaning up multiple threads."
 
 #: ../../../Misc/NEWS:794
 msgid ""
 "`Issue #22390 <https://bugs.python.org/22390>`__: test.regrtest now emits a "
 "warning if temporary files or directories are left after running a test."
 msgstr ""
+"`Issue #22390 <https://bugs.python.org/22390>`__: test.regrtest now emits a "
+"warning if temporary files or directories are left after running a test."
 
 #: ../../../Misc/NEWS:797
 msgid ""
@@ -30974,7 +31363,7 @@ msgstr ""
 #: ../../../Misc/NEWS:7619 ../../../Misc/NEWS:7855 ../../../Misc/NEWS:8083
 #: ../../../Misc/NEWS:10026
 msgid "Build"
-msgstr ""
+msgstr "Build"
 
 #: ../../../Misc/NEWS:802
 msgid ""
@@ -30998,6 +31387,8 @@ msgid ""
 "`Issue #23998 <https://bugs.python.org/23998>`__: PyImport_ReInitLock() now "
 "checks for lock allocation error"
 msgstr ""
+"`Issue #23998 <https://bugs.python.org/23998>`__: PyImport_ReInitLock() now "
+"checks for lock allocation error"
 
 #: ../../../Misc/NEWS:816
 msgid ""
@@ -31008,6 +31399,12 @@ msgid ""
 "details of comparing range() objects, and default behaviour and consistency "
 "suggestions for user-defined classes. Patch from Andy Maier."
 msgstr ""
+"`Issue #12067 <https://bugs.python.org/12067>`__: Rewrite Comparisons "
+"section in the Expressions chapter of the language reference. Some of the "
+"details of comparing mixed types were incorrect or ambiguous. NotImplemented "
+"is only relevant at a lower level than the Expressions chapter. Added "
+"details of comparing range() objects, and default behaviour and consistency "
+"suggestions for user-defined classes. Patch from Andy Maier."
 
 #: ../../../Misc/NEWS:823
 msgid ""
@@ -31015,6 +31412,9 @@ msgid ""
 "argument of stack_size() in the \"threading\" and \"_thread\" modules. Patch "
 "from Mattip."
 msgstr ""
+"`Issue #24952 <https://bugs.python.org/24952>`__: Clarify the default size "
+"argument of stack_size() in the \"threading\" and \"_thread\" modules. Patch "
+"from Mattip."
 
 #: ../../../Misc/NEWS:826
 msgid ""
@@ -31027,6 +31427,8 @@ msgid ""
 "`Issue #22812 <https://bugs.python.org/22812>`__: Fix unittest discovery "
 "examples. Patch from Pam McA'Nulty."
 msgstr ""
+"`Issue #22812 <https://bugs.python.org/22812>`__: Fix unittest discovery "
+"examples. Patch from Pam McA'Nulty."
 
 #: ../../../Misc/NEWS:832
 msgid ""
@@ -31036,30 +31438,43 @@ msgid ""
 "prior to the introduction of lexical scoping for function namespaces. Patch "
 "by Ivan Levkivskyi."
 msgstr ""
+"`Issue #24129 <https://bugs.python.org/24129>`__: Clarify the reference "
+"documentation for name resolution. This includes removing the assumption "
+"that readers will be familiar with the name resolution scheme Python used "
+"prior to the introduction of lexical scoping for function namespaces. Patch "
+"by Ivan Levkivskyi."
 
 #: ../../../Misc/NEWS:837
 msgid ""
 "`Issue #20769 <https://bugs.python.org/20769>`__: Improve reload() docs. "
 "Patch by Dorian Pula."
 msgstr ""
+"`Issue #20769 <https://bugs.python.org/20769>`__: Improve reload() docs. "
+"Patch by Dorian Pula."
 
 #: ../../../Misc/NEWS:839
 msgid ""
 "`Issue #23589 <https://bugs.python.org/23589>`__: Remove duplicate sentence "
 "from the FAQ.  Patch by Yongzhi Pan."
 msgstr ""
+"`Issue #23589 <https://bugs.python.org/23589>`__: Remove duplicate sentence "
+"from the FAQ.  Patch by Yongzhi Pan."
 
 #: ../../../Misc/NEWS:841
 msgid ""
 "`Issue #24729 <https://bugs.python.org/24729>`__: Correct IO tutorial to "
 "match implementation regarding encoding parameter to open function."
 msgstr ""
+"`Issue #24729 <https://bugs.python.org/24729>`__: Correct IO tutorial to "
+"match implementation regarding encoding parameter to open function."
 
 #: ../../../Misc/NEWS:844
 msgid ""
 "`Issue #24351 <https://bugs.python.org/24351>`__: Clarify what is meant by "
 "\"identifier\" in the context of string.Template instances."
 msgstr ""
+"`Issue #24351 <https://bugs.python.org/24351>`__: Clarify what is meant by "
+"\"identifier\" in the context of string.Template instances."
 
 #: ../../../Misc/NEWS:847
 msgid ""
@@ -31067,12 +31482,17 @@ msgid ""
 "subsection with createfilehandler to tkinter doc.  Remove obsolete example "
 "from FAQ.  Patch by Martin Panter."
 msgstr ""
+"`Issue #22155 <https://bugs.python.org/22155>`__: Add File Handlers "
+"subsection with createfilehandler to tkinter doc.  Remove obsolete example "
+"from FAQ.  Patch by Martin Panter."
 
 #: ../../../Misc/NEWS:850
 msgid ""
 "`Issue #24029 <https://bugs.python.org/24029>`__: Document the name binding "
 "behavior for submodule imports."
 msgstr ""
+"`Issue #24029 <https://bugs.python.org/24029>`__: Document the name binding "
+"behavior for submodule imports."
 
 #: ../../../Misc/NEWS:852
 msgid ""
@@ -31093,18 +31513,24 @@ msgid ""
 "`Issue #25440 <https://bugs.python.org/25440>`__: Fix output of python-"
 "config --extension-suffix."
 msgstr ""
+"`Issue #25440 <https://bugs.python.org/25440>`__: Fix output of python-"
+"config --extension-suffix."
 
 #: ../../../Misc/NEWS:859
 msgid ""
 "`Issue #23330 <https://bugs.python.org/23330>`__: h2py now supports "
 "arbitrary filenames in #include."
 msgstr ""
+"`Issue #23330 <https://bugs.python.org/23330>`__: h2py now supports "
+"arbitrary filenames in #include."
 
 #: ../../../Misc/NEWS:861
 msgid ""
 "`Issue #24031 <https://bugs.python.org/24031>`__: make patchcheck now "
 "supports git checkouts, too."
 msgstr ""
+"`Issue #24031 <https://bugs.python.org/24031>`__: make patchcheck now "
+"supports git checkouts, too."
 
 #: ../../../Misc/NEWS:866
 msgid ""
@@ -31117,6 +31543,8 @@ msgid ""
 "`Issue #25022 <https://bugs.python.org/25022>`__: Removed very outdated PC/"
 "example_nt/ directory."
 msgstr ""
+"`Issue #25022 <https://bugs.python.org/25022>`__: Removed very outdated PC/"
+"example_nt/ directory."
 
 #: ../../../Misc/NEWS:873
 msgid "Python 3.4.3"
@@ -33620,7 +34048,6 @@ msgid ""
 msgstr ""
 
 #: ../../../Misc/NEWS:2121
-#, fuzzy
 msgid "Python 3.4.0"
 msgstr "Python 3.4.0"
 
@@ -33645,7 +34072,7 @@ msgstr ""
 
 #: ../../../Misc/NEWS:2140
 msgid "Release date: 2014-03-09"
-msgstr ""
+msgstr "Date de sortie : 2014-03-09"
 
 #: ../../../Misc/NEWS:2145
 msgid ""
@@ -33832,7 +34259,7 @@ msgstr ""
 
 #: ../../../Misc/NEWS:2256
 msgid "Release date: 2014-02-10"
-msgstr ""
+msgstr "Date de sortie : 2014-02-10"
 
 #: ../../../Misc/NEWS:2261
 msgid ""
@@ -34324,7 +34751,7 @@ msgstr "Python 3.4.0 Beta 3"
 
 #: ../../../Misc/NEWS:2519
 msgid "Release date: 2014-01-26"
-msgstr ""
+msgstr "Date de sortie : 2014-01-26"
 
 #: ../../../Misc/NEWS:2524
 msgid ""
@@ -36539,7 +36966,7 @@ msgstr "Python 3.4.0 Alpha 4"
 
 #: ../../../Misc/NEWS:3606
 msgid "Release date: 2013-10-20"
-msgstr ""
+msgstr "Date de sortie : 2013-10-20"
 
 #: ../../../Misc/NEWS:3611
 msgid ""
@@ -36959,7 +37386,6 @@ msgid ""
 msgstr ""
 
 #: ../../../Misc/NEWS:3825
-#, fuzzy
 msgid ""
 "`Issue #14499 <https://bugs.python.org/14499>`__: Fix several problems with "
 "OS X universal build support:"
@@ -37714,11 +38140,11 @@ msgstr ""
 
 #: ../../../Misc/NEWS:4219
 msgid "Python 3.4.0 Alpha 1"
-msgstr ""
+msgstr "Python 3.4.0 Alpha 1"
 
 #: ../../../Misc/NEWS:4221
 msgid "Release date: 2013-08-03"
-msgstr ""
+msgstr "Date de sortie : 2013-08-03"
 
 #: ../../../Misc/NEWS:4226
 msgid ""

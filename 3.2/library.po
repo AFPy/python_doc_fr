@@ -779,7 +779,6 @@ msgid ":pep:`3112`: *Bytes literals in Python 3000*"
 msgstr ":pep:`3112` : *Obtets littéraux en Python 3000*"
 
 #: library/__future__.rst:94
-#, fuzzy
 msgid "future"
 msgstr "fonctionnalité"
 
@@ -7192,7 +7191,7 @@ msgstr ""
 
 #: library/cmath.rst:2
 msgid ":mod:`cmath` --- Mathematical functions for complex numbers"
-msgstr ""
+msgstr "Fonctions mathématiques pour nombres complexes --- :mod:`cmath`"
 
 #: library/cmath.rst:8
 msgid ""
@@ -7204,6 +7203,14 @@ msgid ""
 "complex or floating-point number, respectively, and the function is then "
 "applied to the result of the conversion."
 msgstr ""
+"Ce module est toujours disponible. Il fournit l'accès aux fonctions "
+"mathématiques pour les nombres complexes.Les fonctions de ce module "
+"acceptent les entiers, les nombres flottants ou les nombres complexes comme "
+"arguments. Elles accepteront également tout objet Python ayant une méthode :"
+"meth:`__complex__` ou :meth:`__float__` : ces méthodes sont utilisées pour "
+"convertir l'objet en un nombre complexe ou respectivement un nombre "
+"flottant, et la fonction est ensuite appliquée sur le résultat de la "
+"conversion."
 
 #: library/cmath.rst:18
 msgid ""
@@ -7213,10 +7220,15 @@ msgid ""
 "other.  On platforms that do not support signed zeros the continuity is as "
 "specified below."
 msgstr ""
+"Sur les plate-formes  avec un support système et matériel des zéros signés, "
+"les fonctions incluant une coupure complexe sont continues *de chaque* côté "
+"de la coupure : le signe du zéro distingue les deux extrémités de la "
+"coupure. Sur les plate-formes ne supportant pas les zéros signés, la "
+"continuité est spécifiée en-dessous."
 
 #: library/cmath.rst:26
 msgid "Conversions to and from polar coordinates"
-msgstr ""
+msgstr "Conversion vers et à partir de coordonnées polaires"
 
 #: library/cmath.rst:28
 msgid ""
@@ -7224,6 +7236,9 @@ msgid ""
 "*Cartesian* coordinates.  It is completely determined by its *real part* ``z."
 "real`` and its *imaginary part* ``z.imag``.  In other words::"
 msgstr ""
+"Un nombre complexe Python ``z`` est stocké de manière interne en coordonnées "
+"*cartésiennes*. Il est entièrement défini par sa *partie réelle* ``z.real`` "
+"et sa *partie complexe* ``z.imag``. En d'autres termes : ::"
 
 #: library/cmath.rst:35
 msgid ""
@@ -7234,12 +7249,22 @@ msgid ""
 "radians, from the positive x-axis to the line segment that joins the origin "
 "to *z*."
 msgstr ""
+"Les *coordonnées polaires* donnent une manière alternative de représenter un "
+"nombre complexe. En coordonnées polaires, un nombre complexe *z* est défini "
+"par son module *r* et par son argument (*angle de phase*) *phi*. Le module "
+"*r* est la distance entre *z* et l'origine, alors que l'argument *phi* est "
+"l'angle (dans le sens anti-horlogique, ou trigonométrique), mesuré en "
+"radians, à partir de l'axe X positif, et vers le segment de droite joignant "
+"*z* à l'origine."
 
 #: library/cmath.rst:42
 msgid ""
 "The following functions can be used to convert from the native rectangular "
 "coordinates to polar coordinates and back."
 msgstr ""
+"Les fonctions suivantes peuvent être utilisées pour convertir à partir des "
+"coordonnées rectangulaires natives vers les coordonnées polaires, et vice-"
+"versa."
 
 #: library/cmath.rst:47
 msgid ""
@@ -7251,6 +7276,13 @@ msgid ""
 "the sign of the result is the same as the sign of ``x.imag``, even when ``x."
 "imag`` is zero::"
 msgstr ""
+"Retourne l'argument de *x*, dans un nombre flottant. ``phase(x)`` est "
+"équivalent à ``math.atan2(x.imag, x.real)``. Le résultat se situe dans "
+"l'intervalle [-π, +π], et la coupure par cette opération se situe sur l'axe "
+"X négatif, continue par au-dessus. Sur les systèmes supportant les zéros "
+"signés (ce qui inclut la plupart des systèmes utilisés actuellement), cela "
+"signifie que le signe du résultat est le même que ``x.imag`` même quand ``x."
+"imag`` vaut zéro : ::"
 
 #: library/cmath.rst:64
 msgid ""
@@ -7258,6 +7290,9 @@ msgid ""
 "the built-in :func:`abs` function.  There is no separate :mod:`cmath` module "
 "function for this operation."
 msgstr ""
+"Le module (valeur absolue) d'un nombre complexe *x* peut être calculé en "
+"utilisant la primitive :func:`abs`. Il n'y a pas de fonction spéciale du "
+"module :mod:`cmath` pour cette opération."
 
 #: library/cmath.rst:71
 msgid ""
@@ -7265,20 +7300,25 @@ msgid ""
 "phi)`` where *r* is the modulus of *x* and phi is the phase of *x*.  "
 "``polar(x)`` is equivalent to ``(abs(x), phase(x))``."
 msgstr ""
+"Retourne la représentation de *x* en coordonnées polaires. Retourne une "
+"paire ``(r, phi)`` où *r* est le module de *x* et phi est l'argument de *x*. "
+"``polar(x)`` est équivalent à ``(abs(x), phase(x))``."
 
 #: library/cmath.rst:79
 msgid ""
 "Return the complex number *x* with polar coordinates *r* and *phi*. "
 "Equivalent to ``r * (math.cos(phi) + math.sin(phi)*1j)``."
 msgstr ""
+"Retourne le nombre complexe *x* dont les coordonnées polaires sont *r* et "
+"*phi*. Équivalent à ``r * (math.cos(phi) + math.sin(phi)*1j)``."
 
 #: library/cmath.rst:84 library/math.rst:153
 msgid "Power and logarithmic functions"
-msgstr ""
+msgstr "Fonctions logarithme et exponentielle"
 
 #: library/cmath.rst:88
 msgid "Return the exponential value ``e**x``."
-msgstr ""
+msgstr "Retourne la valeur exponentielle ``e**x``."
 
 #: library/cmath.rst:93
 msgid ""
@@ -7286,21 +7326,28 @@ msgid ""
 "specified, returns the natural logarithm of *x*. There is one branch cut, "
 "from 0 along the negative real axis to -∞, continuous from above."
 msgstr ""
+"Retourne le logarithme de *x* dans la *base* précisée. Si la *base* n'est "
+"pas spécifiée, le logarithme *naturel* (népérien) de *x* est retourné. Il y "
+"a une coupure, partant de 0 sur l'axe réel négatif et vers -∞, continue par "
+"au-dessus."
 
 #: library/cmath.rst:100
 msgid ""
 "Return the base-10 logarithm of *x*. This has the same branch cut as :func:"
 "`log`."
 msgstr ""
+"Retourne le logarithme en base 10 de *x*. Elle a la même coupure que :func:"
+"`log`."
 
 #: library/cmath.rst:106
 msgid ""
 "Return the square root of *x*. This has the same branch cut as :func:`log`."
 msgstr ""
+"Retourne la racine carrée de *x*. Elle a la même coupure que :func:`log`."
 
 #: library/cmath.rst:110 library/math.rst:215
 msgid "Trigonometric functions"
-msgstr ""
+msgstr "Fonctions trigonométriques"
 
 #: library/cmath.rst:114
 msgid ""
@@ -7308,11 +7355,15 @@ msgid ""
 "from 1 along the real axis to ∞, continuous from below. The other extends "
 "left from -1 along the real axis to -∞, continuous from above."
 msgstr ""
+"Retourne l'arc cosinus de *x*. Il y a deux coupures : une allant de 1 sur "
+"l'axe réel vers ∞, continue par en-dessous ; l'autre allant de -1 sur l'axe "
+"réel vers -∞, continue par au-dessus."
 
 #: library/cmath.rst:121
 msgid ""
 "Return the arc sine of *x*. This has the same branch cuts as :func:`acos`."
 msgstr ""
+"Retourne l'arc sinus de *x*. Elle a les mêmes coupures que :func:`acos`."
 
 #: library/cmath.rst:126
 msgid ""
@@ -7321,22 +7372,25 @@ msgid ""
 "other extends from ``-1j`` along the imaginary axis to ``-∞j``, continuous "
 "from the left."
 msgstr ""
+"Retourne la tangente de *x*. l y a deux coupures : une allant de ``1j`` sur "
+"l'axe imaginaire vers ``∞j``, continue par la droite ; l'autre allant de "
+"``-1j`` sur l'axe imaginaire vers ``-∞j``, continue par la gauche."
 
 #: library/cmath.rst:134
 msgid "Return the cosine of *x*."
-msgstr ""
+msgstr "Retourne le cosinus de *x*."
 
 #: library/cmath.rst:139
 msgid "Return the sine of *x*."
-msgstr ""
+msgstr "Retourne le sinus de *x*."
 
 #: library/cmath.rst:144
 msgid "Return the tangent of *x*."
-msgstr ""
+msgstr "Retourne la tangente de *x*."
 
 #: library/cmath.rst:148 library/math.rst:277
 msgid "Hyperbolic functions"
-msgstr ""
+msgstr "Fonctions hyperboliques"
 
 #: library/cmath.rst:152
 msgid ""
@@ -7362,37 +7416,43 @@ msgstr ""
 
 #: library/cmath.rst:174 library/math.rst:300
 msgid "Return the hyperbolic cosine of *x*."
-msgstr ""
+msgstr "Retourne le cosinus hyperbolique de *x*."
 
 #: library/cmath.rst:179 library/math.rst:305
 msgid "Return the hyperbolic sine of *x*."
-msgstr ""
+msgstr "Retourne le sinus hyperbolique de *x*."
 
 #: library/cmath.rst:184 library/math.rst:310
 msgid "Return the hyperbolic tangent of *x*."
-msgstr ""
+msgstr "Retourne la tangente hyperbolique de *x*."
 
 #: library/cmath.rst:188
 msgid "Classification functions"
-msgstr ""
+msgstr "Fonctions de classifications"
 
 #: library/cmath.rst:192
 msgid ""
 "Return ``True`` if both the real and imaginary parts of *x* are finite, and "
 "``False`` otherwise."
 msgstr ""
+"Retourne ``True`` si la partie réelle *et* la partie imaginaire de *x* sont "
+"finies, et ``False`` sinon."
 
 #: library/cmath.rst:200
 msgid ""
 "Return ``True`` if either the real or the imaginary part of *x* is an "
 "infinity, and ``False`` otherwise."
 msgstr ""
+"Retourne ``True`` si soit la partie réelle *ou* la partie imaginaire de *x* "
+"est infinie, et ``False`` sinon."
 
 #: library/cmath.rst:206
 msgid ""
 "Return ``True`` if either the real or the imaginary part of *x* is a NaN, "
 "and ``False`` otherwise."
 msgstr ""
+"Retourne ``True`` si soit la partie réelle *ou* la partie imaginaire de *x* "
+"est NaN, et ``False`` sinon."
 
 #: library/cmath.rst:211 library/curses.rst:1212 library/math.rst:360
 #: library/ssl.rst:260 library/subprocess.rst:684 library/winreg.rst:455
@@ -7401,11 +7461,11 @@ msgstr ""
 
 #: library/cmath.rst:216
 msgid "The mathematical constant *π*, as a float."
-msgstr ""
+msgstr "La constante mathématique *π*, en tant que flottant."
 
 #: library/cmath.rst:221
 msgid "The mathematical constant *e*, as a float."
-msgstr ""
+msgstr "La constante mathématique *e*, en tant que flottant."
 
 #: library/cmath.rst:225
 msgid ""
@@ -7418,6 +7478,15 @@ msgid ""
 "as a real number (in which case the complex number has an imaginary part of "
 "zero)."
 msgstr ""
+"Notez que la sélection de fonctions est similaire - mais pas identique  - à "
+"celles du module :mod:`math`. La raison d'avoir deux modules est que "
+"certains utilisateurs ne sont pas intéressés par les nombres complexes, et "
+"peut-être ne savent même pas ce qu'ils sont. Ils préféreraient alors que "
+"``math.sqrt(-1)`` lève une exception au lieu de retourner un nombre "
+"complexe. Également, notez que les fonctions définies dans :mod:`cmath` "
+"retournent toujours un nombre complexe, même si le résultat peut être "
+"exprimé à l'aide d'un nombre réel (en quel cas la partie imaginaire du "
+"complexe vaut zéro)."
 
 #: library/cmath.rst:233
 msgid ""
@@ -7429,6 +7498,13 @@ msgid ""
 "choice of branch cuts for numerical purposes, a good reference should be the "
 "following:"
 msgstr ""
+"Une note sur les *coupures* : ce sont des courbes sur lesquelles la fonction "
+"n'est pas continue. Ce sont des caractéristiques nécessaires de beaucoup de "
+"fonctions complexes. Il est supposé que si vous avez besoin d'utiliser des "
+"fonctions complexes, vous comprendrez ce que sont les coupures. Consultez "
+"n'importe quel livre (pas trop élémentaire) sur les variables complexes pour "
+"plus d'informations. Pour des informations sur les choix des coupures à des "
+"fins numériques, voici une bonne référence :"
 
 #: library/cmath.rst:243
 msgid ""
@@ -7443,7 +7519,7 @@ msgstr ""
 
 #: library/cmd.rst:8
 msgid "**Source code:** :source:`Lib/cmd.py`"
-msgstr ""
+msgstr "**Code source:** :source:`Lib/cmd.py`"
 
 #: library/cmd.rst:12
 msgid ""
@@ -9040,7 +9116,7 @@ msgstr ""
 
 #: library/codecs.rst:848
 msgid "Range"
-msgstr ""
+msgstr "*Range*"
 
 #: library/codecs.rst:848
 msgid "Encoding"
@@ -11654,7 +11730,6 @@ msgstr ""
 #: library/sched.rst:53 library/sqlite3.rst:470 library/stat.rst:79
 #: library/tkinter.rst:448 library/xml.dom.pulldom.rst:28
 #: library/xmlrpc.server.rst:219
-#, fuzzy
 msgid "Example::"
 msgstr "Exemples ::"
 
@@ -12380,7 +12455,6 @@ msgstr ""
 #: library/configparser.rst:235 library/configparser.rst:296
 #: library/difflib.rst:480 library/multiprocessing.rst:808 library/re.rst:896
 #: library/time.rst:371 library/turtle.rst:1480
-#, fuzzy
 msgid "For example:"
 msgstr "Par exemple : ::"
 
@@ -13359,7 +13433,7 @@ msgstr ""
 
 #: library/contextlib.rst:7
 msgid "**Source code:** :source:`Lib/contextlib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/contextlib.py`"
 
 #: library/contextlib.rst:11
 msgid ""
@@ -18496,7 +18570,7 @@ msgstr "``KEY_OPTIONS``"
 #: library/tkinter.ttk.rst:379 library/tkinter.ttk.rst:565
 #: library/tkinter.ttk.rst:634 library/tkinter.ttk.rst:700
 msgid "Options"
-msgstr ""
+msgstr "Options"
 
 #: library/curses.rst:1370
 msgid "``KEY_PREVIOUS``"
@@ -19662,7 +19736,7 @@ msgstr ""
 
 #: library/curses.ascii.rst:39
 msgid ":const:`LF`"
-msgstr ""
+msgstr ":const:`LF`"
 
 #: library/curses.ascii.rst:39
 msgid "Line feed"
@@ -19670,7 +19744,7 @@ msgstr ""
 
 #: library/curses.ascii.rst:41
 msgid ":const:`NL`"
-msgstr ""
+msgstr ":const:`NL`"
 
 #: library/curses.ascii.rst:41
 msgid "Alias for :const:`LF`: \"New line\""
@@ -19698,7 +19772,7 @@ msgstr ":const:`CR`"
 
 #: library/curses.ascii.rst:47
 msgid "Carriage return"
-msgstr ""
+msgstr "Retour chariot"
 
 #: library/curses.ascii.rst:49
 msgid ":const:`SO`"
@@ -19814,7 +19888,7 @@ msgstr ":const:`FS`"
 
 #: library/curses.ascii.rst:77
 msgid "File separator"
-msgstr ""
+msgstr "Séparateur de fichiers"
 
 #: library/curses.ascii.rst:79
 msgid ":const:`GS`"
@@ -19822,7 +19896,7 @@ msgstr ":const:`GS`"
 
 #: library/curses.ascii.rst:79
 msgid "Group separator"
-msgstr ""
+msgstr "Séparateur de groupe"
 
 #: library/curses.ascii.rst:81
 msgid ":const:`RS`"
@@ -22577,7 +22651,7 @@ msgstr ""
 
 #: library/dbm.rst:297 library/select.rst:16
 msgid "The module defines the following:"
-msgstr ""
+msgstr "Le module définit :"
 
 #: library/dbm.rst:302
 msgid ""
@@ -23731,7 +23805,7 @@ msgstr ""
 
 #: library/decimal.rst:1058
 msgid "Returns the absolute value of *x*."
-msgstr ""
+msgstr "Renvoie la valeur absolue de *x*."
 
 #: library/decimal.rst:1063
 msgid "Return the sum of *x* and *y*."
@@ -25176,7 +25250,7 @@ msgstr ""
 
 #: library/dis.rst:7
 msgid "**Source code:** :source:`Lib/dis.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/dis.py`"
 
 #: library/dis.rst:11
 msgid ""
@@ -28039,9 +28113,8 @@ msgid ""
 msgstr ""
 
 #: library/dummy_threading.rst:7
-#, fuzzy
 msgid "**Source code:** :source:`Lib/dummy_threading.py`"
-msgstr "**Code source:** :source:`Lib/_dummy_thread.py`"
+msgstr "**Code source :** :source:`Lib/dummy_threading.py`"
 
 #: library/dummy_threading.rst:11
 msgid ""
@@ -31208,7 +31281,7 @@ msgstr ""
 
 #: library/errno.rst:134
 msgid "Invalid argument"
-msgstr ""
+msgstr "Argument invalide"
 
 #: library/errno.rst:139
 msgid "File table overflow"
@@ -32293,7 +32366,7 @@ msgstr ""
 
 #: library/filecmp.rst:8
 msgid "**Source code:** :source:`Lib/filecmp.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/filecmp.py`"
 
 #: library/filecmp.rst:12
 msgid ""
@@ -33509,7 +33582,7 @@ msgstr ""
 
 #: library/ftplib.rst:41 library/gzip.rst:24 library/zipfile.rst:26
 msgid "The module defines the following items:"
-msgstr ""
+msgstr "Le module définit les éléments suivants :"
 
 #: library/ftplib.rst:45
 msgid ""
@@ -36383,7 +36456,7 @@ msgstr ""
 
 #: library/functools.rst:11
 msgid "**Source code:** :source:`Lib/functools.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/functools.py`"
 
 #: library/functools.rst:15
 msgid ""
@@ -36866,7 +36939,7 @@ msgstr ""
 
 #: library/getopt.rst:8
 msgid "**Source code:** :source:`Lib/getopt.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/getopt.py`"
 
 #: library/getopt.rst:13
 msgid ""
@@ -37804,7 +37877,7 @@ msgstr ""
 
 #: library/glob.rst:10
 msgid "**Source code:** :source:`Lib/glob.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/glob.py`"
 
 #: library/glob.rst:14
 msgid ""
@@ -37975,7 +38048,7 @@ msgstr ""
 
 #: library/gzip.rst:7
 msgid "**Source code:** :source:`Lib/gzip.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/gzip.py`"
 
 #: library/gzip.rst:11
 msgid ""
@@ -38153,7 +38226,7 @@ msgstr ""
 
 #: library/hashlib.rst:14
 msgid "**Source code:** :source:`Lib/hashlib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/hashlib.py`"
 
 #: library/hashlib.rst:18
 msgid ""
@@ -38341,7 +38414,7 @@ msgstr ""
 
 #: library/heapq.rst:11
 msgid "**Source code:** :source:`Lib/heapq.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/heapq.py`"
 
 #: library/heapq.rst:15
 msgid ""
@@ -38657,7 +38730,7 @@ msgstr ""
 
 #: library/hmac.rst:10
 msgid "**Source code:** :source:`Lib/hmac.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/hmac.py`"
 
 #: library/hmac.rst:14
 msgid "This module implements the HMAC algorithm as described by :rfc:`2104`."
@@ -39068,7 +39141,7 @@ msgstr ""
 
 #: library/http.client.rst:14
 msgid "**Source code:** :source:`Lib/http/client.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/http/client.py`"
 
 #: library/http.client.rst:18
 msgid ""
@@ -42257,7 +42330,7 @@ msgstr ""
 
 #: library/imaplib.rst:19
 msgid "**Source code:** :source:`Lib/imaplib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/imaplib.py`"
 
 #: library/imaplib.rst:23
 msgid ""
@@ -42781,7 +42854,7 @@ msgstr ""
 
 #: library/imghdr.rst:7
 msgid "**Source code:** :source:`Lib/imghdr.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/imghdr.py`"
 
 #: library/imghdr.rst:11
 msgid ""
@@ -43913,7 +43986,7 @@ msgstr ""
 
 #: library/inspect.rst:9
 msgid "**Source code:** :source:`Lib/inspect.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/inspect.py`"
 
 #: library/inspect.rst:13
 msgid ""
@@ -44988,7 +45061,6 @@ msgid ""
 msgstr ""
 
 #: library/io.rst:147
-#, fuzzy
 msgid "sys"
 msgstr "sys"
 
@@ -45906,6 +45978,13 @@ msgid ""
 "terminated by the given string, and the line ending is returned to the "
 "caller untranslated."
 msgstr ""
+"Lors de la lecture, si *newline* est ``None``, le mode *universal newlines* "
+"est activé. Les lignes lues peuvent terminer par ``'\\n'``, ``'\\r'``, ou "
+"``'\\r\\n'``, qui sont remplacés par ``'\\n'``, avant d'être données à "
+"l'appelant. S'il vaut ``''``, le mode *universal newline* est activé mais "
+"les fin de lignes ne sont pas remplacés. S'il a n'importe quel autre valeur "
+"autorisée, les lignes sont seulement terminées par la chaîne donnée, qui est "
+"rendue tel qu'elle."
 
 #: library/io.rst:804
 msgid ""
@@ -46097,9 +46176,8 @@ msgid "**Infinite Iterators:**"
 msgstr ""
 
 #: library/itertools.rst:37 library/itertools.rst:47 library/itertools.rst:65
-#, fuzzy
 msgid "Iterator"
-msgstr "Itérateurs"
+msgstr "Itérateur"
 
 #: library/itertools.rst:37 library/itertools.rst:47 library/itertools.rst:65
 msgid "Arguments"
@@ -46107,7 +46185,7 @@ msgstr ""
 
 #: library/itertools.rst:37 library/itertools.rst:47 library/itertools.rst:65
 msgid "Results"
-msgstr ""
+msgstr "Résultats"
 
 #: library/itertools.rst:39
 msgid ":func:`count`"
@@ -46804,7 +46882,7 @@ msgstr ""
 
 #: library/json.rst:119
 msgid "Basic Usage"
-msgstr ""
+msgstr "Utilisation basique"
 
 #: library/json.rst:126
 msgid ""
@@ -47358,7 +47436,7 @@ msgstr ""
 
 #: library/keyword.rst:7
 msgid "**Source code:** :source:`Lib/keyword.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/keyword.py`"
 
 #: library/keyword.rst:11
 msgid ""
@@ -47397,7 +47475,7 @@ msgstr ""
 
 #: library/linecache.rst:8
 msgid "**Source code:** :source:`Lib/linecache.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/linecache.py`"
 
 #: library/linecache.rst:12
 msgid ""
@@ -51688,7 +51766,6 @@ msgid ""
 msgstr ""
 
 #: library/mailbox.rst:20
-#, fuzzy
 msgid "Module email"
 msgstr "Modules"
 
@@ -53371,7 +53448,7 @@ msgstr ""
 
 #: library/mailcap.rst:7
 msgid "**Source code:** :source:`Lib/mailcap.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/mailcap.py`"
 
 #: library/mailcap.rst:11
 msgid ""
@@ -53624,13 +53701,15 @@ msgstr ""
 
 #: library/math.rst:2
 msgid ":mod:`math` --- Mathematical functions"
-msgstr ""
+msgstr "Fonctions mathématiques --- :mod:`math`"
 
 #: library/math.rst:11
 msgid ""
 "This module is always available.  It provides access to the mathematical "
 "functions defined by the C standard."
 msgstr ""
+"Ce module est toujours disponible. Il fournit l'accès aux fonctions "
+"mathématiques définies par le standard C."
 
 #: library/math.rst:14
 msgid ""
@@ -53643,16 +53722,27 @@ msgid ""
 "of the unexpected complex number used as a parameter, so that the programmer "
 "can determine how and why it was generated in the first place."
 msgstr ""
+"Ces fonctions ne peuvent être utilisées avec les nombres complexes, utilisez "
+"les fonctions du même nom du module :mod:`cmath` si vous souhaitez un "
+"support des nombres complexes. La distinction entre les fonctions supportant "
+"les nombres complexes et celles ne les supportant pas set née du fait que "
+"tous les utilisateurs ne désirent pas acquérir le niveau mathématique "
+"suffisant pour comprendre les nombres complexes. Recevoir une exception à la "
+"place d'un nombre complexe permet de détecter un nombre complexe non désiré "
+"en paramètre, ainsi le programmeur peut déterminer comment et pourquoi il a "
+"été généré."
 
 #: library/math.rst:23
 msgid ""
 "The following functions are provided by this module.  Except when explicitly "
 "noted otherwise, all return values are floats."
 msgstr ""
+"Les fonctions suivantes sont fournies dans ce module. Sauf mention contraire "
+"explicite, toutes les valeurs de retour sont des flottants."
 
 #: library/math.rst:28
 msgid "Number-theoretic and representation functions"
-msgstr ""
+msgstr "Fonctions arithmétiques et de représentation"
 
 #: library/math.rst:32
 msgid ""
@@ -53669,13 +53759,15 @@ msgstr ""
 
 #: library/math.rst:45
 msgid "Return the absolute value of *x*."
-msgstr ""
+msgstr "Retourne la valeur absolue de *x*."
 
 #: library/math.rst:49
 msgid ""
 "Return *x* factorial.  Raises :exc:`ValueError` if *x* is not integral or is "
 "negative."
 msgstr ""
+"Retourne la factorielle de *x*. Lève une :exc:`ValueError` si *x* n'est pas "
+"entier ou s'il est négatif."
 
 #: library/math.rst:54
 msgid ""
@@ -53699,6 +53791,19 @@ msgid ""
 "generally preferred when working with floats, while Python's ``x % y`` is "
 "preferred when working with integers."
 msgstr ""
+"Retourne ``fmod(x, y)``, tel que défini par la bibliothèque C de la plate-"
+"forme. Notez que l'expression Python ``x % y`` peut ne pas retourner le même "
+"résultat. Le sens du standard C pour ``fmod(x, y)`` est d'être exactement "
+"(mathématiquement, à une précision infinie) égal à ``x - n*y`` pour un "
+"entier *n* tel que le résultat a le signe de *x* et une magnitude inférieure "
+"à ``abs(y)``. L'expression Python ``x % y`` retourne un résultat avec le "
+"signe de *y*, et peut ne pas être calculable exactement pour des arguments "
+"flottants. Par exemple : ``fmod(-1e-100, 1e100)`` est ``-1e-100``, mais le "
+"résultat de l'expression Python ``-1e-100 % 1e100`` est ``1e100-1e-100``, "
+"qui ne peut pas être représenté exactement par un flottant et donc qui est "
+"arrondi à ``1e100``. Pour cette raison, la fonction :func:`fmod` est "
+"généralement préférée quand des flottants sont manipulés, alors que "
+"l'expression Python ``x % y`` est préféré quand des entiers sont manipulés."
 
 #: library/math.rst:76
 msgid ""
@@ -53707,12 +53812,19 @@ msgid ""
 "zero, returns ``(0.0, 0)``, otherwise ``0.5 <= abs(m) < 1``.  This is used "
 "to \"pick apart\" the internal representation of a float in a portable way."
 msgstr ""
+"Retourne la mantisse et l'exposant de *x* dans un couple ``(m, e)``. *m* est "
+"un flottant et *e* est un entier tels que ``x == m * 2**e`` exactement. Si "
+"*x* vaut zéro, retourne ``(0, 0)``, sinon ``0.5 <= abs(m) < 1``. Ceci est "
+"utilisé pour « extraire » la représentation interne d'un flottant de manière "
+"portable."
 
 #: library/math.rst:84
 msgid ""
 "Return an accurate floating point sum of values in the iterable.  Avoids "
 "loss of precision by tracking multiple intermediate partial sums::"
 msgstr ""
+"Retourne une somme flottante exacte des valeurs dans l'itérable. Évite la "
+"perte de précision en gardant plusieurs sommes partielles intermédiaires : ::"
 
 #: library/math.rst:92
 msgid ""
@@ -53722,6 +53834,12 @@ msgid ""
 "occasionally double-round an intermediate sum causing it to be off in its "
 "least significant bit."
 msgstr ""
+"L'exactitude de cet algorithme dépend des garanties arithmétiques de "
+"IEEE-754 et des cas typiques où le mode d'arrondi est *half-even*. Sur "
+"certaines versions non-Windows, la bibliothèque C sous-jacente utilise une "
+"addition par précision étendue et peut occasionnellement effectuer un double-"
+"arrondi sur une somme intermédiaire causant la prise d'une mauvaise valeur "
+"du bit de poids faible."
 
 #: library/math.rst:98
 msgid ""
@@ -53735,29 +53853,39 @@ msgid ""
 "Return ``True`` if *x* is neither an infinity nor a NaN, and ``False`` "
 "otherwise.  (Note that ``0.0`` *is* considered finite.)"
 msgstr ""
+"Retourne ``True`` si *n* n'est ni infini, ni NaN, et ``False`` sinon. (Notez "
+"que ``0.0`` *est* considéré fini.)"
 
 #: library/math.rst:113
 msgid ""
 "Return ``True`` if *x* is a positive or negative infinity, and ``False`` "
 "otherwise."
 msgstr ""
+"Retourne ``True`` si *x* vaut l'infini positif ou négatif, et ``False`` "
+"sinon."
 
 #: library/math.rst:119
 msgid ""
 "Return ``True`` if *x* is a NaN (not a number), and ``False`` otherwise."
 msgstr ""
+"Retourne ``True`` si *x* est NaN (*Not a Number*, ou *Pas un Nombre* en "
+"français), et ``False`` sinon."
 
 #: library/math.rst:124
 msgid ""
 "Return ``x * (2**i)``.  This is essentially the inverse of function :func:"
 "`frexp`."
 msgstr ""
+"Retourne ``x * (2**i)``. C'est essentiellement l'inverse de la fonction :"
+"func:`frexp`."
 
 #: library/math.rst:130
 msgid ""
 "Return the fractional and integer parts of *x*.  Both results carry the sign "
 "of *x* and are floats."
 msgstr ""
+"Retourne les parties entières et fractionnelle de *x*. Les deux résultats "
+"ont le signe de *x* et sont flottants."
 
 #: library/math.rst:136
 msgid ""
@@ -53772,6 +53900,11 @@ msgid ""
 "pair of values, rather than returning their second return value through an "
 "'output parameter' (there is no such thing in Python)."
 msgstr ""
+"Notez que les fonctions :func:`frexp` et :func:`modf` ont un système d'appel "
+"différent de leur homologue C : elles prennent un simple argument et "
+"retournent une paire de valeurs au lieu de retourner leur seconde valeur de "
+"retour dans un 'paramètre de sortie' (il n'y a pas de telle possibilité en "
+"Python)."
 
 #: library/math.rst:145
 msgid ""
@@ -53781,10 +53914,16 @@ msgid ""
 "(the same as the platform C double type), in which case any float *x* with "
 "``abs(x) >= 2**52`` necessarily has no fractional bits."
 msgstr ""
+"Pour les fonctions :func:`ceil`, :func:`floor`, et :func:`modf`, notez que "
+"*tous* les nombres flottants de magnitude suffisamment grande sont des "
+"entiers exacts. Les flottants de Python n'ont typiquement pas plus de 53 "
+"*bits* de précision (tels que le type C ``double`` de la plate-forme), en "
+"quel cas tout flottant *x* tel que ``abs(x) >= 2**52`` n'a aucun *bit* "
+"fractionnel."
 
 #: library/math.rst:157
 msgid "Return ``e**x``."
-msgstr ""
+msgstr "Retourne ``e**x``."
 
 #: library/math.rst:162
 msgid ""
@@ -53796,25 +53935,31 @@ msgstr ""
 
 #: library/math.rst:178
 msgid "With one argument, return the natural logarithm of *x* (to base *e*)."
-msgstr ""
+msgstr "Avec un argument, retourne le logarithme naturel de *x* (en base *e*)."
 
 #: library/math.rst:180
 msgid ""
 "With two arguments, return the logarithm of *x* to the given *base*, "
 "calculated as ``log(x)/log(base)``."
 msgstr ""
+"Avec deux arguments, retourne le logarithme de *x* en la *base* donnée, "
+"calculé par ``log(x)/log(base)``."
 
 #: library/math.rst:186
 msgid ""
 "Return the natural logarithm of *1+x* (base *e*). The result is calculated "
 "in a way which is accurate for *x* near zero."
 msgstr ""
+"Retourne le logarithme naturel de *1+x* (en base *e*). Le résultat est "
+"calculé par un moyen qui reste exact pour *x* proche de zéro."
 
 #: library/math.rst:192
 msgid ""
 "Return the base-10 logarithm of *x*.  This is usually more accurate than "
 "``log(x, 10)``."
 msgstr ""
+"Retourne le logarithme de *x* en base 10. C'est habituellement plus exact "
+"que ``log(x, 10)``."
 
 #: library/math.rst:198
 msgid ""
@@ -53824,6 +53969,12 @@ msgid ""
 "If both ``x`` and ``y`` are finite, ``x`` is negative, and ``y`` is not an "
 "integer then ``pow(x, y)`` is undefined, and raises :exc:`ValueError`."
 msgstr ""
+"Retourne ``x`` élevé à la puissance ``y``. Les cas exceptionnels suivent "
+"l'annexe 'F' du standard C99 autant que possible. En particulier, ``pow(1.0, "
+"x)`` et ``pow(x, 0.0)`` retournent toujours ``1.0``, même si ``x`` est zéro "
+"ou NaN. Si à la fois ``x`` *et* ``y`` sont finis, ``x`` est négatif et ``y`` "
+"n'est pas entier, alors ``pow(x, y)`` est non défini et lève une :exc:"
+"`ValueError`."
 
 #: library/math.rst:205
 msgid ""
@@ -53831,22 +53982,25 @@ msgid ""
 "arguments to type :class:`float`.  Use ``**`` or the built-in :func:`pow` "
 "function for computing exact integer powers."
 msgstr ""
+"À l'inverse de l'opérateur interne ``**``, la fonction :func:`math.pow` "
+"convertit ses deux arguments en :class:`float`. Utilisez ``**`` ou la "
+"primitive :func:`pow` pour calculer des puissances exactes d'entiers."
 
 #: library/math.rst:212
 msgid "Return the square root of *x*."
-msgstr ""
+msgstr "Retourne la racine carrée de *x*."
 
 #: library/math.rst:220
 msgid "Return the arc cosine of *x*, in radians."
-msgstr ""
+msgstr "Retourne l'arc cosinus de *x*, en radians."
 
 #: library/math.rst:225
 msgid "Return the arc sine of *x*, in radians."
-msgstr ""
+msgstr "Retourne l'arc sinus de *x*, en radians."
 
 #: library/math.rst:230
 msgid "Return the arc tangent of *x*, in radians."
-msgstr ""
+msgstr "Retourne l'arc tangente de *x*, en radians."
 
 #: library/math.rst:235
 msgid ""
@@ -53857,28 +54011,36 @@ msgid ""
 "for the angle. For example, ``atan(1)`` and ``atan2(1, 1)`` are both "
 "``pi/4``, but ``atan2(-1, -1)`` is ``-3*pi/4``."
 msgstr ""
+"Retourne ``atan(y / x)``, en radians. Le résultat est entre ``-pi`` et "
+"``pi``. Le vecteur du plan allant de l'origine vers le point ``(x, y)`` "
+"forme cet angle avec l'axe X positif. L'intérêt de :func:`atan2` est que le "
+"signe des deux entrées est connu. Donc elle peut calculer le bon quadrant "
+"pour l'angle. par exemple ``atan(1)`` et ``atan2(1, 1)`` donnent tous deux "
+"``pi/4``, mais ``atan2(-1, -1)`` donne ``-3*pi/4``."
 
 #: library/math.rst:245
 msgid "Return the cosine of *x* radians."
-msgstr ""
+msgstr "Retourne le cosinus de *x* radians."
 
 #: library/math.rst:250
 msgid ""
 "Return the Euclidean norm, ``sqrt(x*x + y*y)``. This is the length of the "
 "vector from the origin to point ``(x, y)``."
 msgstr ""
+"Retourne la norme euclidienne ``sqrt(x*x + y*y)``. C'est la longueur du "
+"vecteur allant de l'origine au point ``(x, y)``."
 
 #: library/math.rst:256
 msgid "Return the sine of *x* radians."
-msgstr ""
+msgstr "Retourne le sinus de*x* radians."
 
 #: library/math.rst:261
 msgid "Return the tangent of *x* radians."
-msgstr ""
+msgstr "Retourne la tangente de *x* radians."
 
 #: library/math.rst:264
 msgid "Angular conversion"
-msgstr ""
+msgstr "Conversion angulaire"
 
 #: library/math.rst:269
 msgid "Converts angle *x* from radians to degrees."
@@ -53897,19 +54059,19 @@ msgstr ""
 
 #: library/math.rst:285
 msgid "Return the inverse hyperbolic cosine of *x*."
-msgstr ""
+msgstr "Retourne l'arc cosinus hyperbolique de *x*."
 
 #: library/math.rst:290
 msgid "Return the inverse hyperbolic sine of *x*."
-msgstr ""
+msgstr "Retourne l'arc sinus hyperbolique de *x*."
 
 #: library/math.rst:295
 msgid "Return the inverse hyperbolic tangent of *x*."
-msgstr ""
+msgstr "Retourne l'arc tangente hyperbolique de *x*."
 
 #: library/math.rst:314
 msgid "Special functions"
-msgstr ""
+msgstr "Fonctions spéciales"
 
 #: library/math.rst:318
 msgid ""
@@ -53944,14 +54106,16 @@ msgid ""
 "Return the natural logarithm of the absolute value of the Gamma function at "
 "*x*."
 msgstr ""
+"Retourne le logarithme naturel de la valeur absolue de la fonction gamma en "
+"*x*."
 
 #: library/math.rst:364
 msgid "The mathematical constant π = 3.141592..., to available precision."
-msgstr ""
+msgstr "La constante mathématique π = 3.141592..., à la précision disponile."
 
 #: library/math.rst:369
 msgid "The mathematical constant e = 2.718281..., to available precision."
-msgstr ""
+msgstr "La constante mathématique e = 2.718281..., à la précision disponible."
 
 #: library/math.rst:374
 msgid ""
@@ -53967,6 +54131,19 @@ msgid ""
 "are some exceptions to this rule, for example ``pow(float('nan'), 0.0)`` or "
 "``hypot(float('nan'), float('inf'))``."
 msgstr ""
+"Le module :mod:`math` consiste majoritairement en un conteneur pour les "
+"fonctions mathématiques de la bibliothèque C de la plate-forme. Le "
+"comportement dans les cas spéciaux suit l'annexe 'F' du standard C99 quand "
+"c'est approprié. L'implémentation actuelle lève une :exc:`ValueError` pour "
+"les opérations invalides telles que ``sqrt(-1.0)`` ou ``log(0.0)`` (où le "
+"standard C99 recommande de signaler que l'opération est invalide ou qu'il y "
+"a division par zéro), et une :exc:`OverflowError` pour les résultats qui "
+"débordent (par exemple ``exp(1000.0)``). NaN ne sera retourné pour toute les "
+"fonctions ci-dessus sauf si au moins un des arguments de la fonction vaut "
+"NaN. Dans ce cas, la plupart des fonctions retournera NaN, mais (à nouveau, "
+"selon l'annexe 'F' du standard C99) il y a quelques exceptions à cette "
+"règle, par exemple ``pow(float('nan'), 0.0)`` ou ``hypot(float('nan'), "
+"float('inf'))``."
 
 #: library/math.rst:386
 msgid ""
@@ -53974,6 +54151,10 @@ msgid ""
 "NaNs, and behavior for signaling NaNs remains unspecified. Typical behavior "
 "is to treat all NaNs as though they were quiet."
 msgstr ""
+"Notez que Python ne fait aucun effort pour distinguer les NaNs signalétiques "
+"des NaNs silencieux, et le comportement de signalement des NaNs reste non-"
+"spécifié. le comportement typique est de traiter tous les NaNs comme s'ils "
+"étaient silencieux."
 
 #: library/math.rst:393
 #, fuzzy
@@ -53982,7 +54163,7 @@ msgstr "Modules"
 
 #: library/math.rst:394
 msgid "Complex number versions of many of these functions."
-msgstr ""
+msgstr "Version complexe de beaucoup de ces fonctions."
 
 #: library/mimetypes.rst:2
 msgid ":mod:`mimetypes` --- Map filenames to MIME types"
@@ -54146,7 +54327,7 @@ msgstr ""
 
 #: library/mimetypes.rst:149
 msgid "An example usage of the module::"
-msgstr ""
+msgstr "Un exemple d'utilisation du module : ::"
 
 #: library/mimetypes.rst:166
 msgid "MimeTypes Objects"
@@ -57830,7 +58011,7 @@ msgstr ""
 
 #: library/netrc.rst:10
 msgid "**Source code:** :source:`Lib/netrc.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/netrc.py`"
 
 #: library/netrc.rst:14
 msgid ""
@@ -57977,7 +58158,7 @@ msgstr ""
 
 #: library/nntplib.rst:13
 msgid "**Source code:** :source:`Lib/nntplib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/nntplib.py`"
 
 #: library/nntplib.rst:17
 msgid ""
@@ -58529,9 +58710,8 @@ msgid ""
 msgstr ""
 
 #: library/numbers.rst:65 library/numbers.rst:69
-#, fuzzy
 msgid "Abstract."
-msgstr "Résumé"
+msgstr "Résumé."
 
 #: library/numbers.rst:74
 msgid ""
@@ -58717,7 +58897,7 @@ msgstr ""
 
 #: library/operator.rst:85
 msgid "Return the absolute value of *obj*."
-msgstr ""
+msgstr "Renvoie la valeur absolue de *obj*."
 
 #: library/operator.rst:91
 msgid "Return ``a + b``, for *a* and *b* numbers."
@@ -58896,7 +59076,7 @@ msgstr ""
 
 #: library/operator.rst:335
 msgid "Function"
-msgstr ""
+msgstr "Fonction"
 
 #: library/operator.rst:337
 msgid "Addition"
@@ -59261,7 +59441,7 @@ msgstr "``eq(a, b)``"
 
 #: library/operator.rst:399
 msgid "Difference"
-msgstr ""
+msgstr "Différence"
 
 #: library/operator.rst:399 library/unittest.rst:834
 msgid "``a != b``"
@@ -59387,7 +59567,7 @@ msgstr ""
 
 #: library/optparse.rst:14
 msgid "**Source code:** :source:`Lib/optparse.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/optparse.py`"
 
 #: library/optparse.rst:18
 msgid ""
@@ -59815,9 +59995,8 @@ msgid ""
 msgstr ""
 
 #: library/optparse.rst:358
-#, fuzzy
 msgid "will print ``42``."
-msgstr "imprimera ``5``."
+msgstr "affichera ``42``."
 
 #: library/optparse.rst:360
 msgid ""
@@ -59914,9 +60093,8 @@ msgid ""
 msgstr ""
 
 #: library/optparse.rst:424
-#, fuzzy
 msgid "Default values"
-msgstr "Valeur par défaut"
+msgstr "Valeurs par défaut"
 
 #: library/optparse.rst:426
 msgid ""
@@ -60940,7 +61118,6 @@ msgstr ""
 
 #: library/optparse.rst:1329 library/tkinter.ttk.rst:332
 #: library/tkinter.ttk.rst:763
-#, fuzzy
 msgid "values"
 msgstr "valeurs"
 
@@ -64500,7 +64677,7 @@ msgstr ""
 
 #: library/os.path.rst:324
 msgid "Availability:  Windows."
-msgstr ""
+msgstr "Disponibilité : Windows."
 
 #: library/os.path.rst:329
 msgid ""
@@ -67006,7 +67183,7 @@ msgstr ""
 
 #: library/pipes.rst:9
 msgid "**Source code:** :source:`Lib/pipes.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/pipes.py`"
 
 #: library/pipes.rst:13
 msgid ""
@@ -67095,7 +67272,7 @@ msgstr ""
 
 #: library/pkgutil.rst:7
 msgid "**Source code:** :source:`Lib/pkgutil.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/pkgutil.py`"
 
 #: library/pkgutil.rst:11
 msgid ""
@@ -67334,7 +67511,7 @@ msgstr ""
 
 #: library/platform.rst:9
 msgid "**Source code:** :source:`Lib/platform.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/platform.py`"
 
 #: library/platform.rst:15
 msgid ""
@@ -67652,7 +67829,7 @@ msgstr ""
 
 #: library/plistlib.rst:14
 msgid "**Source code:** :source:`Lib/plistlib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/plistlib.py`"
 
 #: library/plistlib.rst:18
 msgid ""
@@ -67771,7 +67948,7 @@ msgstr ""
 
 #: library/poplib.rst:11
 msgid "**Source code:** :source:`Lib/poplib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/poplib.py`"
 
 #: library/poplib.rst:15
 msgid ""
@@ -68060,7 +68237,7 @@ msgstr ""
 
 #: library/pprint.rst:9
 msgid "**Source code:** :source:`Lib/pprint.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/pprint.py`"
 
 #: library/pprint.rst:13
 msgid ""
@@ -69203,7 +69380,7 @@ msgstr ""
 
 #: library/py_compile.rst:11
 msgid "**Source code:** :source:`Lib/py_compile.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/py_compile.py`"
 
 #: library/py_compile.rst:15
 msgid ""
@@ -69289,7 +69466,7 @@ msgstr ""
 
 #: library/pyclbr.rst:8
 msgid "**Source code:** :source:`Lib/pyclbr.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/pyclbr.py`"
 
 #: library/pyclbr.rst:12
 msgid ""
@@ -69400,7 +69577,7 @@ msgstr ""
 
 #: library/pydoc.rst:15
 msgid "**Source code:** :source:`Lib/pydoc.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/pydoc.py`"
 
 #: library/pydoc.rst:19
 msgid ""
@@ -70296,7 +70473,7 @@ msgstr ""
 
 #: library/queue.rst:7
 msgid "**Source code:** :source:`Lib/queue.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/queue.py`"
 
 #: library/queue.rst:11
 msgid ""
@@ -70486,7 +70663,7 @@ msgstr ""
 
 #: library/quopri.rst:12
 msgid "**Source code:** :source:`Lib/quopri.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/quopri.py`"
 
 #: library/quopri.rst:16
 msgid ""
@@ -70546,7 +70723,7 @@ msgstr ""
 
 #: library/random.rst:7
 msgid "**Source code:** :source:`Lib/random.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/random.py`"
 
 #: library/random.rst:11
 msgid ""
@@ -70902,7 +71079,7 @@ msgstr ""
 
 #: library/random.rst:288
 msgid "Basic usage::"
-msgstr ""
+msgstr "Utilisation basique : ::"
 
 #: library/random.rst:313
 msgid ""
@@ -72624,7 +72801,7 @@ msgstr ""
 
 #: library/reprlib.rst:8
 msgid "**Source code:** :source:`Lib/reprlib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/reprlib.py`"
 
 #: library/reprlib.rst:12
 msgid ""
@@ -73242,7 +73419,7 @@ msgstr ""
 
 #: library/runpy.rst:8
 msgid "**Source code:** :source:`Lib/runpy.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/runpy.py`"
 
 #: library/runpy.rst:12
 msgid ""
@@ -73469,7 +73646,7 @@ msgstr ""
 
 #: library/sched.rst:10
 msgid "**Source code:** :source:`Lib/sched.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/sched.py`"
 
 #: library/sched.rst:14
 msgid ""
@@ -74334,7 +74511,7 @@ msgstr ""
 
 #: library/shelve.rst:10
 msgid "**Source code:** :source:`Lib/shelve.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/shelve.py`"
 
 #: library/shelve.rst:14
 msgid ""
@@ -74528,7 +74705,7 @@ msgstr ""
 
 #: library/shlex.rst:11
 msgid "**Source code:** :source:`Lib/shlex.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/shlex.py`"
 
 #: library/shlex.rst:15
 msgid ""
@@ -74879,7 +75056,7 @@ msgstr ""
 
 #: library/shutil.rst:13
 msgid "**Source code:** :source:`Lib/shutil.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/shutil.py`"
 
 #: library/shutil.rst:17
 msgid ""
@@ -75586,7 +75763,7 @@ msgstr ""
 
 #: library/site.rst:7
 msgid "**Source code:** :source:`Lib/site.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/site.py`"
 
 #: library/site.rst:13
 msgid ""
@@ -75778,9 +75955,8 @@ msgid ""
 msgstr ""
 
 #: library/site.rst:201
-#, fuzzy
 msgid ":pep:`370` -- Per user site-packages directory"
-msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
+msgstr ":pep:`370` -- Per user site-packages directory"
 
 #: library/smtpd.rst:2
 msgid ":mod:`smtpd` --- SMTP Server"
@@ -75788,7 +75964,7 @@ msgstr ""
 
 #: library/smtpd.rst:10
 msgid "**Source code:** :source:`Lib/smtpd.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/smtpd.py`"
 
 #: library/smtpd.rst:14
 msgid "This module offers several classes to implement SMTP (email) servers."
@@ -76040,7 +76216,7 @@ msgstr ""
 
 #: library/smtplib.rst:13
 msgid "**Source code:** :source:`Lib/smtplib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/smtplib.py`"
 
 #: library/smtplib.rst:17
 msgid ""
@@ -76514,7 +76690,7 @@ msgstr ""
 
 #: library/sndhdr.rst:13
 msgid "**Source code:** :source:`Lib/sndhdr.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/sndhdr.py`"
 
 #: library/sndhdr.rst:17
 msgid ""
@@ -78899,7 +79075,7 @@ msgstr "``NULL``"
 
 #: library/sqlite3.rst:677 library/sqlite3.rst:694
 msgid ":class:`int`"
-msgstr ""
+msgstr ":class:`int`"
 
 #: library/sqlite3.rst:677 library/sqlite3.rst:694
 msgid "``INTEGER``"
@@ -78907,7 +79083,7 @@ msgstr "``INTEGER``"
 
 #: library/sqlite3.rst:679 library/sqlite3.rst:696
 msgid ":class:`float`"
-msgstr ""
+msgstr ":class:`float`"
 
 #: library/sqlite3.rst:679 library/sqlite3.rst:696
 msgid "``REAL``"
@@ -79197,9 +79373,8 @@ msgid "Common issues"
 msgstr ""
 
 #: library/sqlite3.rst:898
-#, fuzzy
 msgid "Multithreading"
-msgstr "Threads"
+msgstr "Multi threads"
 
 #: library/sqlite3.rst:900
 msgid ""
@@ -79229,7 +79404,7 @@ msgstr ""
 
 #: library/ssl.rst:15
 msgid "**Source code:** :source:`Lib/ssl.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/ssl.py`"
 
 #: library/ssl.rst:19
 msgid ""
@@ -79403,7 +79578,6 @@ msgstr "*SSLv2*"
 
 #: library/ssl.rst:131 library/ssl.rst:132 library/ssl.rst:133
 #: library/ssl.rst:134
-#, fuzzy
 msgid "yes"
 msgstr "oui"
 
@@ -80545,9 +80719,8 @@ msgid "Block device."
 msgstr ""
 
 #: library/stat.rst:197
-#, fuzzy
 msgid "Directory."
-msgstr "Répertoire"
+msgstr "Dossier."
 
 #: library/stat.rst:201
 msgid "Character device."
@@ -82849,6 +83022,11 @@ msgid ""
 "dictionary inserted immediately after the ``'%'`` character. The mapping key "
 "selects the value to be formatted from the mapping.  For example:"
 msgstr ""
+"Lorsque l'argument de droite est un dictionnaire (ou un autre type de "
+"*mapping*), les marqueurs dans la chaîne *doivent* inclure une clé présente "
+"dans le dictionnaire, écrite entre parenthèses,  immédiatement après le "
+"caractère ``'%'``. La clé indique quelle valeur du dictionnaire doit être "
+"formatée. Par exemple :"
 
 #: library/stdtypes.rst:1512
 msgid ""
@@ -82869,7 +83047,7 @@ msgstr "``'#'``"
 #: library/stdtypes.rst:1520
 msgid ""
 "The value conversion will use the \"alternate form\" (where defined below)."
-msgstr ""
+msgstr "La conversion utilisera la \"forme alternative\" (définie ci-dessous)."
 
 #: library/stdtypes.rst:1523
 msgid "``'0'``"
@@ -82908,7 +83086,7 @@ msgid ""
 "A sign character (``'+'`` or ``'-'``) will precede the conversion (overrides "
 "a \"space\" flag)."
 msgstr ""
-"Un caractère de signe (``'+'`` ou ``'-'``) précédera la valeur convertie "
+"Un caractère de signe (``'+'`` ou ``'-'``) précéde la valeur convertie "
 "(remplace le marqueur \"espace\")."
 
 #: library/stdtypes.rst:1535
@@ -83047,7 +83225,7 @@ msgid ""
 "of the result is not already a zero."
 msgstr ""
 "La forme alternative insère un zéro (``'0'``) entre le rembourrage gauche et "
-"le formatage du nombre si son premier caractère  n'est pas déjà un zéro."
+"le formatage du nombre si son premier caractère n'est pas déjà un zéro."
 
 #: library/stdtypes.rst:1595
 msgid ""
@@ -83057,8 +83235,8 @@ msgid ""
 "the result is not already a zero."
 msgstr ""
 "La forme alternative insère ``'0x'`` ou ``'0X'`` (respectivement pour les "
-"formats ``'x'`` et ``'X'``) entre lerembourrage de gauche et nombre formaté, "
-"si le premier caractère n'est pas déjà un zéro."
+"formats ``'x'`` et ``'X'``) entre le rembourrage de gauche et nombre "
+"formaté, si le premier caractère n'est pas déjà un zéro."
 
 #: library/stdtypes.rst:1601
 msgid ""
@@ -83410,7 +83588,7 @@ msgstr ""
 
 #: library/stdtypes.rst:1847
 msgid "Added support for keyword arguments."
-msgstr ""
+msgstr "Gère les arguments nommés."
 
 #: library/stdtypes.rst:1851
 msgid "The bytes and bytearray types have an additional class method:"
@@ -86058,7 +86236,7 @@ msgstr "``b``"
 
 #: library/struct.rst:167
 msgid ":c:type:`signed char`"
-msgstr ""
+msgstr ":c:type:`signed char`"
 
 #: library/struct.rst:167 library/struct.rst:169 library/struct.rst:173
 #: library/struct.rst:175 library/struct.rst:177 library/struct.rst:179
@@ -86950,7 +87128,7 @@ msgstr ""
 
 #: library/subprocess.rst:561
 msgid "Sends the signal *signal* to the child."
-msgstr ""
+msgstr "Envoie le signal *signal* au fils."
 
 #: library/subprocess.rst:565
 msgid ""
@@ -87362,7 +87540,7 @@ msgstr ""
 
 #: library/sunau.rst:8
 msgid "**Source code:** :source:`Lib/sunau.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/sunau.py`"
 
 #: library/sunau.rst:12
 msgid ""
@@ -87681,7 +87859,7 @@ msgstr ""
 
 #: library/symbol.rst:8
 msgid "**Source code:** :source:`Lib/symbol.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/symbol.py`"
 
 #: library/symbol.rst:12
 msgid ""
@@ -89976,7 +90154,7 @@ msgstr ""
 
 #: library/tabnanny.rst:12
 msgid "**Source code:** :source:`Lib/tabnanny.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/tabnanny.py`"
 
 #: library/tabnanny.rst:16
 msgid ""
@@ -90039,7 +90217,7 @@ msgstr ""
 
 #: library/tarfile.rst:11
 msgid "**Source code:** :source:`Lib/tarfile.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/tarfile.py`"
 
 #: library/tarfile.rst:15
 msgid ""
@@ -90914,7 +91092,7 @@ msgstr ""
 
 #: library/telnetlib.rst:11
 msgid "**Source code:** :source:`Lib/telnetlib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/telnetlib.py`"
 
 #: library/telnetlib.rst:15
 msgid ""
@@ -91140,7 +91318,7 @@ msgstr ""
 
 #: library/tempfile.rst:15
 msgid "**Source code:** :source:`Lib/tempfile.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/tempfile.py`"
 
 #: library/tempfile.rst:19
 msgid ""
@@ -92242,7 +92420,7 @@ msgstr ""
 
 #: library/threading.rst:7
 msgid "**Source code:** :source:`Lib/threading.py`"
-msgstr ""
+msgstr "**Code source:** :source:`Lib/threading.py`"
 
 #: library/threading.rst:11
 msgid ""
@@ -93829,7 +94007,7 @@ msgstr ""
 
 #: library/time.rst:398
 msgid "Values"
-msgstr ""
+msgstr "Valeurs"
 
 #: library/time.rst:400
 msgid ":attr:`tm_year`"
@@ -94012,7 +94190,6 @@ msgid ""
 msgstr ""
 
 #: library/time.rst:496
-#, fuzzy
 msgid "n"
 msgstr "non"
 
@@ -94089,7 +94266,7 @@ msgstr ""
 
 #: library/timeit.rst:12
 msgid "**Source code:** :source:`Lib/timeit.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/timeit.py`"
 
 #: library/timeit.rst:16
 msgid ""
@@ -98146,7 +98323,7 @@ msgstr ""
 
 #: library/token.rst:8
 msgid "**Source code:** :source:`Lib/token.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/token.py`"
 
 #: library/token.rst:12
 msgid ""
@@ -98196,7 +98373,7 @@ msgstr ""
 
 #: library/tokenize.rst:9
 msgid "**Source code:** :source:`Lib/tokenize.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/tokenize.py`"
 
 #: library/tokenize.rst:13
 msgid ""
@@ -98359,7 +98536,7 @@ msgstr ""
 
 #: library/trace.rst:7
 msgid "**Source code:** :source:`Lib/trace.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/abc.py`"
 
 #: library/trace.rst:11
 msgid ""
@@ -98926,7 +99103,6 @@ msgid ":func:`backward` | :func:`bk` | :func:`back`"
 msgstr ":func:`backward` | :func:`bk` | :func:`back`"
 
 #: library/turtle.rst:0
-#, fuzzy
 msgid ":func:`right` | :func:`rt`"
 msgstr ":func:`right` | :func:`rt`"
 
@@ -99047,7 +99223,6 @@ msgid ":func:`pen`"
 msgstr ":func:`pen`"
 
 #: library/turtle.rst:0
-#, fuzzy
 msgid ":func:`isdown`"
 msgstr ":func:`isdown`"
 
@@ -99148,7 +99323,6 @@ msgid ":func:`tiltangle`"
 msgstr ":func:`tiltangle`"
 
 #: library/turtle.rst:0
-#, fuzzy
 msgid ":func:`tilt`"
 msgstr ":func:`tilt`"
 
@@ -99281,12 +99455,10 @@ msgid ":func:`onclick` | :func:`onscreenclick`"
 msgstr ":func:`onclick` | :func:`onscreenclick`"
 
 #: library/turtle.rst:0
-#, fuzzy
 msgid ":func:`ontimer`"
 msgstr ":func:`ontimer`"
 
 #: library/turtle.rst:0
-#, fuzzy
 msgid ":func:`mainloop` | :func:`done`"
 msgstr ":func:`mainloop` | :func:`done`"
 
@@ -101245,7 +101417,7 @@ msgstr ""
 
 #: library/types.rst:7
 msgid "**Source code:** :source:`Lib/types.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/types.py`"
 
 #: library/types.rst:11
 msgid ""
@@ -101525,7 +101697,6 @@ msgid ""
 msgstr ""
 
 #: library/unicodedata.rst:145
-#, fuzzy
 msgid "Examples:"
 msgstr "Exemples : ::"
 
@@ -102424,7 +102595,7 @@ msgstr ""
 #: library/unittest.rst:829 library/unittest.rst:950 library/unittest.rst:1078
 #: library/unittest.rst:1232
 msgid "Method"
-msgstr ""
+msgstr "Méthode"
 
 #: library/unittest.rst:829 library/unittest.rst:950 library/unittest.rst:1078
 msgid "Checks that"
@@ -102743,7 +102914,7 @@ msgstr ""
 
 #: library/unittest.rst:1080
 msgid ":meth:`assertAlmostEqual(a, b) <TestCase.assertAlmostEqual>`"
-msgstr ""
+msgstr ":meth:`assertAlmostEqual(a, b) <TestCase.assertAlmostEqual>`"
 
 #: library/unittest.rst:1080
 msgid "``round(a-b, 7) == 0``"
@@ -102852,7 +103023,7 @@ msgstr ""
 
 #: library/unittest.rst:1158
 msgid ":meth:`.assertNotRegex`."
-msgstr ""
+msgstr ":meth:`.assertNotRegex`."
 
 #: library/unittest.rst:1164
 msgid ""
@@ -102928,7 +103099,7 @@ msgstr ":meth:`assertMultiLineEqual(a, b) <TestCase.assertMultiLineEqual>`"
 
 #: library/unittest.rst:1234
 msgid "strings"
-msgstr ""
+msgstr "chaînes"
 
 #: library/unittest.rst:1237
 msgid ":meth:`assertSequenceEqual(a, b) <TestCase.assertSequenceEqual>`"
@@ -102936,7 +103107,7 @@ msgstr ":meth:`assertSequenceEqual(a, b) <TestCase.assertSequenceEqual>`"
 
 #: library/unittest.rst:1237
 msgid "sequences"
-msgstr ""
+msgstr "séquences"
 
 #: library/unittest.rst:1240
 msgid ":meth:`assertListEqual(a, b) <TestCase.assertListEqual>`"
@@ -103179,7 +103350,7 @@ msgstr ""
 
 #: library/unittest.rst:1458
 msgid "Method Name"
-msgstr ""
+msgstr "Nom de méthode"
 
 #: library/unittest.rst:1458
 msgid "Deprecated alias"
@@ -104213,7 +104384,7 @@ msgstr ""
 
 #: library/urllib.parse.rst:15
 msgid "**Source code:** :source:`Lib/urllib/parse.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/urllib/parse.py`"
 
 #: library/urllib.parse.rst:19
 msgid ""
@@ -106417,7 +106588,7 @@ msgstr ""
 
 #: library/uu.rst:8
 msgid "**Source code:** :source:`Lib/uu.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/uu.py`"
 
 #: library/uu.rst:12
 msgid ""
@@ -106721,7 +106892,7 @@ msgstr ""
 
 #: library/warnings.rst:9
 msgid "**Source code:** :source:`Lib/warnings.py`"
-msgstr ""
+msgstr "**Code source:** :source:`Lib/warnings.py`"
 
 #: library/warnings.rst:13
 msgid ""
@@ -107298,7 +107469,7 @@ msgstr ""
 
 #: library/wave.rst:9
 msgid "**Source code:** :source:`Lib/wave.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/wave.py`"
 
 #: library/wave.rst:13
 msgid ""
@@ -107463,7 +107634,7 @@ msgstr ""
 
 #: library/weakref.rst:11
 msgid "**Source code:** :source:`Lib/weakref.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/weakref.py`"
 
 #: library/weakref.rst:15
 msgid ""
@@ -109864,7 +110035,7 @@ msgstr ""
 
 #: library/xdrlib.rst:12
 msgid "**Source code:** :source:`Lib/xdrlib.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/xdrlib.py`"
 
 #: library/xdrlib.rst:16
 msgid ""
@@ -111420,7 +111591,6 @@ msgid ""
 msgstr ""
 
 #: library/xml.dom.rst:923
-#, fuzzy
 msgid "Exception"
 msgstr "Exception"
 
@@ -111533,7 +111703,6 @@ msgid ":const:`SYNTAX_ERR`"
 msgstr ":const:`SYNTAX_ERR`"
 
 #: library/xml.dom.rst:951
-#, fuzzy
 msgid ":exc:`SyntaxErr`"
 msgstr ":exc:`SyntaxErr`"
 
@@ -114066,7 +114235,6 @@ msgid ""
 msgstr ""
 
 #: library/xmlrpc.client.rst:122
-#, fuzzy
 msgid "XML-RPC Introspection"
 msgstr "Introduction"
 
@@ -114651,7 +114819,7 @@ msgstr ""
 
 #: library/zipfile.rst:9
 msgid "**Source code:** :source:`Lib/zipfile.py`"
-msgstr ""
+msgstr "**Code source :** :source:`Lib/zipfile.py`"
 
 #: library/zipfile.rst:13
 msgid ""

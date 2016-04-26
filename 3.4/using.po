@@ -69,7 +69,6 @@ msgstr ""
 "quelques méthodes d'invocation supplémentaires :"
 
 #: ../Doc/using/cmdline.rst:42
-#, fuzzy
 msgid ""
 "When called with standard input connected to a tty device, it prompts for "
 "commands and executes them until an EOF (an end-of-file character, you can "
@@ -79,7 +78,7 @@ msgstr ""
 "Quand l'interpréteur est appelé avec l'entrée standard connectée à un "
 "périphérique tty, il lit les lignes de commande et les exécute jusqu'à ce "
 "qu'un caractère EOF (un caractère fin de fichier, que vous pouvez produire "
-"avec *Ctrl-D* sous UNIX ou *Ctrl-Z, Entrée* sous Windows) soit lu."
+"avec  :kbd:`Ctrl-D` sous UNIX ou :kbd:`Ctrl-Z, Enter` sous Windows) soit lu."
 
 #: ../Doc/using/cmdline.rst:45
 msgid ""
@@ -138,15 +137,14 @@ msgstr ""
 "caractères indiquant la source du programme."
 
 #: ../Doc/using/cmdline.rst:64
-#, fuzzy
 msgid ""
 "Execute the Python code in *command*.  *command* can be one or more "
 "statements separated by newlines, with significant leading whitespace as in "
 "normal module code."
 msgstr ""
-"Exécute le code Python dans *commande*. *commande* peut être une ou "
-"plusieurs instructions, séparées par des fins de ligne, avec des blancs en "
-"début de ligne qui ne sont pas ignorés, comme dans le code d’un module."
+"Exécute le code Python dans *command*. *command* peut être une ou plusieurs "
+"instructions, séparées par des fins de ligne, dont les espaces en debut de "
+"ligne sont significatifs, comme dans le code d’un module."
 
 #: ../Doc/using/cmdline.rst:68
 msgid ""
@@ -181,7 +179,6 @@ msgstr ""
 "exemple, l'utilisation d'un trait d'union peut être autorisée)."
 
 #: ../Doc/using/cmdline.rst:84
-#, fuzzy
 msgid ""
 "Package names (including namespace packages) are also permitted. When a "
 "package name is supplied instead of a normal module, the interpreter will "
@@ -189,11 +186,11 @@ msgid ""
 "deliberately similar to the handling of directories and zipfiles that are "
 "passed to the interpreter as the script argument."
 msgstr ""
-"Les noms de paquets sont aussi autorisés. Quand un nom de paquet est donné à "
-"la place d'un module habituel, l'interpréteur exécutera ``<pkg>.__main`` "
-"comme module principal. Ce comportement est délibérement identique que pour "
-"un répertoire on un fichier zip donné à l'interpréteur comme argument à "
-"exécuter."
+"Les noms de paquets sont aussi autorisés (ainsi que les *namespace "
+"packages*). Quand un nom de paquet est donné à la place d'un module "
+"habituel, l'interpréteur exécutera ``<pkg>.__main__`` comme module "
+"principal. Ce comportement est délibérement identique à un dossier on un "
+"fichier zip donné à en argument à l'interpréteur comme script."
 
 #: ../Doc/using/cmdline.rst:93
 msgid ""
@@ -209,7 +206,6 @@ msgstr ""
 "disponible."
 
 #: ../Doc/using/cmdline.rst:98
-#, fuzzy
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be the "
 "full path to the module file (while the module file is being located, the "
@@ -217,8 +213,9 @@ msgid ""
 "the current directory will be added to the start of :data:`sys.path`."
 msgstr ""
 "Si cette option est donnée, le premier élément de :data:`sys.argv` sera le "
-"chemin complet d'accès au fichier du module. Comme pour l'option :option:`-"
-"c`, le répertoire courant sera ajouté au début de :data:`sys.path`."
+"chemin complet d'accès au fichier du module (pendant que le fichier est "
+"recherché, le premier élément sera mis à ``\"-m\"``). Comme avec l'option :"
+"option:`-c`, le dossier courant sera ajouté au début de :data:`sys.path`."
 
 #: ../Doc/using/cmdline.rst:103
 msgid ""
@@ -258,14 +255,13 @@ msgstr ""
 "standard est un terminal, l':option:`-i` est activée implicitement."
 
 #: ../Doc/using/cmdline.rst:128
-#, fuzzy
 msgid ""
 "If this option is given, the first element of :data:`sys.argv` will be ``\"-"
 "\"`` and the current directory will be added to the start of :data:`sys."
 "path`."
 msgstr ""
 "Si cette option est donnée, le premier élément de :data:`sys.argv` sera ``\"-"
-"\"`` et le répertoire courant sera ajouté au début de :data:`sys.path`."
+"\"`` et le dossier courant sera ajouté au début de :data:`sys.path`."
 
 #: ../Doc/using/cmdline.rst:135
 msgid ""
@@ -288,7 +284,6 @@ msgstr ""
 "nom du script comme donné sur la ligne de commande."
 
 #: ../Doc/using/cmdline.rst:143
-#, fuzzy
 msgid ""
 "If the script name refers directly to a Python file, the directory "
 "containing that file is added to the start of :data:`sys.path`, and the file "
@@ -299,13 +294,12 @@ msgstr ""
 "est exécuté en tant que module :mod:`__main__`."
 
 #: ../Doc/using/cmdline.rst:147
-#, fuzzy
 msgid ""
 "If the script name refers to a directory or zipfile, the script name is "
 "added to the start of :data:`sys.path` and the ``__main__.py`` file in that "
 "location is executed as the :mod:`__main__` module."
 msgstr ""
-"Si le nom du script fait référence à un répertoire ou un fichier zip, le nom "
+"Si le nom du script fait référence à un dossier ou à un fichier zip, le nom "
 "du script est ajouté au début de :data:`sys.path` et le fichier ``__main__."
 "py`` à cet endroit est exécuté en tant que module :mod:`__main__`."
 
@@ -314,7 +308,6 @@ msgid ":func:`runpy.run_path`"
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:156
-#, fuzzy
 msgid ""
 "If no interface option is given, :option:`-i` is implied, ``sys.argv[0]`` is "
 "an empty string (``\"\"``) and the current directory will be added to the "
@@ -322,9 +315,11 @@ msgid ""
 "automatically enabled, if available on your platform (see :ref:`rlcompleter-"
 "config`)."
 msgstr ""
-"Si aucune option d'interface est donnée, :option:`-i` est implicite, ``sys."
-"argv[0]`` est une chaine vide (``\"\"``) et le répertoire courant sera "
-"ajouté au début de :data:`sys.path`."
+"Si aucune option d'interface n'est donnée, :option:`-i` est implicite, ``sys."
+"argv[0]`` est une chaine vide (``\"\"``) et le dossier courant sera ajouté "
+"au début de :data:`sys.path`. Aussi, la complétion des tabulations et "
+"l'édition de l'historique seront automatiquement activés, s'ils sont "
+"disponnibles sur votre système (voir :ref:`rlcompleter-config`)."
 
 #: ../Doc/using/cmdline.rst:162
 msgid ":ref:`tut-invoking`"
@@ -335,24 +330,19 @@ msgid "Automatic enabling of tab-completion and history editing."
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:169
-#, fuzzy
 msgid "Generic options"
 msgstr "Options génériques"
 
 #: ../Doc/using/cmdline.rst:175
-#, fuzzy
 msgid "Print a short description of all command line options."
 msgstr ""
 "Affiche une brève description de toutes les options de ligne de commande."
 
 #: ../Doc/using/cmdline.rst:181
-#, fuzzy
 msgid "Print the Python version number and exit.  Example output could be::"
-msgstr ""
-"Imprimer le numéro de version de Python et termine. Exemple de sortie : ::"
+msgstr "Affiche seulement la version de Python. Par exemple : ::"
 
 #: ../Doc/using/cmdline.rst:189
-#, fuzzy
 msgid "Miscellaneous options"
 msgstr "Options diverses"
 
@@ -473,40 +463,41 @@ msgstr ""
 # I’m creating terminology here; where’s the mailing list to discuss such
 # stuff?
 #: ../Doc/using/cmdline.rst:280
-#, fuzzy
 msgid ""
 "Don't add the :data:`user site-packages directory <site.USER_SITE>` to :data:"
 "`sys.path`."
-msgstr "Ne pas ajouter le répertoire spécifique de l’utilisateur à sys.path"
+msgstr ""
+"Ne pas ajouter le :data:`user site-packages directory <site.USER_SITE>` à :"
+"data:`sys.path`."
 
 #: ../Doc/using/cmdline.rst:285 ../Doc/using/cmdline.rst:564
 #: ../Doc/using/cmdline.rst:576
-#, fuzzy
 msgid ":pep:`370` -- Per user site-packages directory"
-msgstr ":pep:`370` --  Répertoire site-packages par utilisateur "
+msgstr ":pep:`370` -- Per user site-packages directory"
 
 #: ../Doc/using/cmdline.rst:290
-#, fuzzy
 msgid ""
 "Disable the import of the module :mod:`site` and the site-dependent "
 "manipulations of :data:`sys.path` that it entails.  Also disable these "
 "manipulations if :mod:`site` is explicitly imported later (call :func:`site."
 "main` if you want them to be triggered)."
 msgstr ""
-"Désactiver l’importation du module :mod:`site` et les modifications de :data:"
-"`sys.path` spécifiques au site qu’elle implique."
+"Désactiver l’importation du module :mod:`site` et les modifications locales "
+"de :data:`sys.path` qu’il implique. Désactive aussi ces manipulations si :"
+"mod:`site` est importé explicitement pluis tard (appellez :func:`site.main` "
+"si vous voulez les déclencher)."
 
 #: ../Doc/using/cmdline.rst:298
-#, fuzzy
 msgid ""
 "Force the binary layer of the stdout and stderr streams (which is available "
 "as their ``buffer`` attribute) to be unbuffered. The text I/O layer will "
 "still be line-buffered if writing to the console, or block-buffered if "
 "redirected to a non-interactive file."
 msgstr ""
-"Force la couche binaire des flux stdin, stdout and stderr (disponible comme "
-"leur attribut ``buffer``) à ne pas mettre de données en tampon. La couche "
-"d’entrée-sortie en mode texte continuera de mettre une ligne en tampon."
+"Désactive les buffers de la couche binaire des flux stdout and stderr "
+"(disponible comme leur attribut ``buffer``). La couche d’entrée-sortie sera "
+"mise en buffer ligne par ligne lors de l'écriture sur la console, ou par "
+"blocs si elle est redirigée sur un fichier non-interactif."
 
 #: ../Doc/using/cmdline.rst:303
 msgid "See also :envvar:`PYTHONUNBUFFERED`."
@@ -529,13 +520,12 @@ msgid ""
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:323
-#, fuzzy
 msgid ""
 "By default, each warning is printed once for each source line where it "
 "occurs.  This option controls how often warnings are printed."
 msgstr ""
-"Par défaut, chaque avertissement est afficher une fois pour chaque ligne de "
-"source où elle se trouve. Cette option définit la fréquence d'affichage des "
+"Par défaut, chaque avertissement est affiché une fois pour chaque ligne de "
+"source où il se trouve. Cette option définit à quelle fréquence afficher ces "
 "avertissements."
 
 #: ../Doc/using/cmdline.rst:326
@@ -553,20 +543,18 @@ msgid ""
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:334
-#, fuzzy
 msgid ""
 "The simplest form of argument is one of the following action strings (or a "
 "unique abbreviation):"
 msgstr ""
 "La forme la plus simple de l'argument est l'une des chaînes d'action "
-"suivante (ou une abréviation unique):"
+"suivante (ou une abréviation unique) :"
 
 #: ../Doc/using/cmdline.rst:337
 msgid "``ignore``"
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:338
-#, fuzzy
 msgid "Ignore all warnings."
 msgstr "Ignorer tous les avertissements."
 
@@ -586,23 +574,20 @@ msgid "``all``"
 msgstr "``all``"
 
 #: ../Doc/using/cmdline.rst:343
-#, fuzzy
 msgid ""
 "Print a warning each time it occurs (this may generate many messages if a "
 "warning is triggered repeatedly for the same source line, such as inside a "
 "loop)."
 msgstr ""
 "Affiche un avertissement à chaque fois qu'il se produit (ce qui peut générer "
-"beaucoup de messages si l'avertissement est déclenchée à plusieurs reprises "
-"pour la ligne du même source, comme à l'intérieur d'une boucle)."
+"beaucoup de messages si l'avertissement est déclenché à plusieurs reprises, "
+"comme à l'intérieur d'une boucle)."
 
 #: ../Doc/using/cmdline.rst:346
-#, fuzzy
 msgid "``module``"
-msgstr "module"
+msgstr "``module``"
 
 #: ../Doc/using/cmdline.rst:347
-#, fuzzy
 msgid "Print each warning only the first time it occurs in each module."
 msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
@@ -613,7 +598,6 @@ msgid "``once``"
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:349
-#, fuzzy
 msgid "Print each warning only the first time it occurs in the program."
 msgstr ""
 "Affiche chaque avertissement uniquement la première fois qu'il apparaît dans "
@@ -624,17 +608,14 @@ msgid "``error``"
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:351
-#, fuzzy
 msgid "Raise an exception instead of printing a warning message."
 msgstr "Déclenche une exception au lieu d'afficher un message d'avertissement."
 
 #: ../Doc/using/cmdline.rst:353
-#, fuzzy
 msgid "The full form of argument is::"
-msgstr "La forme complète de l'argument est le suivant::"
+msgstr "La forme complète de l'argument est : ::"
 
 #: ../Doc/using/cmdline.rst:357
-#, fuzzy
 msgid ""
 "Here, *action* is as explained above but only applies to messages that match "
 "the remaining fields.  Empty fields match all values; trailing empty fields "
@@ -679,10 +660,8 @@ msgid ""
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:381
-#, fuzzy
 msgid "The line numbers in error messages will be off by one."
-msgstr ""
-"Les numéros de ligne dans les messages d'erreur seront désactivés un par un."
+msgstr "Les numéros de ligne dans les messages d'erreur seront décalés de un."
 
 #: ../Doc/using/cmdline.rst:386
 msgid ""
@@ -732,7 +711,6 @@ msgid "Options you shouldn't use"
 msgstr "Options que vous ne devriez pas utiliser"
 
 #: ../Doc/using/cmdline.rst:416
-#, fuzzy
 msgid "Reserved for use by Jython_."
 msgstr "Utilisation réservée à Jython_."
 
@@ -851,15 +829,14 @@ msgid ""
 msgstr ""
 
 #: ../Doc/using/cmdline.rst:519
-#, fuzzy
 msgid ""
 "If this is set to a non-empty string, Python won't try to write ``.pyc`` or "
 "``.pyo`` files on the import of source modules.  This is equivalent to "
 "specifying the :option:`-B` option."
 msgstr ""
-"Si donné, Python ne tentera pas d'écrire de fichier ``.pyc``` ou ``.pyo`` à "
-"l'importation des modules source. Voir aussi :envvar:"
-"`PYTHONDONTWRITEBYTECODE`."
+"S'il est donné, et est une chaîne vide, Python ne tentera pas d'écrire de "
+"fichier ``.pyc``` ou ``.pyo`` à l'importation des modules source. C'est "
+"équivalent à donner l'option :option:`-B`."
 
 #: ../Doc/using/cmdline.rst:526
 msgid ""
@@ -1239,9 +1216,8 @@ msgid ""
 msgstr ""
 
 #: ../Doc/using/mac.rst:173
-#, fuzzy
 msgid "Other Resources"
-msgstr "Autres ressources"
+msgstr "Autres Ressources"
 
 #: ../Doc/using/mac.rst:175
 msgid ""
@@ -1362,9 +1338,8 @@ msgid "Shell"
 msgstr ""
 
 #: ../Doc/using/venv-create.inc:84
-#, fuzzy
 msgid "Command to activate virtual environment"
-msgstr "Ligne de commande et environnement"
+msgstr "Commande pour activer l'environnement virtuel"
 
 #: ../Doc/using/venv-create.inc:86
 msgid "Posix"
@@ -1874,7 +1849,6 @@ msgid "Setting Environment variables, Louis J. Farrugia"
 msgstr "Définir les variables d'environnement, Louis J. Farrugia"
 
 #: ../Doc/using/windows.rst:137
-#, fuzzy
 msgid "Finding the Python executable"
 msgstr "Trouver l'exécutable Python"
 
@@ -2056,9 +2030,8 @@ msgid "Getting started"
 msgstr ""
 
 #: ../Doc/using/windows.rst:263
-#, fuzzy
 msgid "From the command-line"
-msgstr "Ligne de commande"
+msgstr "Depuis la ligne de commande"
 
 #: ../Doc/using/windows.rst:265
 msgid ""
@@ -2285,7 +2258,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/using/windows.rst:435
-#, fuzzy
 msgid "Examples:"
 msgstr "Exemples : ::"
 
@@ -2333,7 +2305,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/using/windows.rst:462
-#, fuzzy
 msgid "For example:"
 msgstr "Par exemple : ::"
 
@@ -2401,12 +2372,10 @@ msgid "Win32 API calls"
 msgstr "Appels à l'API Win32"
 
 #: ../Doc/using/windows.rst:511
-#, fuzzy
 msgid "Registry"
 msgstr "Registre"
 
 #: ../Doc/using/windows.rst:512
-#, fuzzy
 msgid "Event log"
 msgstr "journal d'événement"
 
@@ -2540,12 +2509,11 @@ msgid ""
 msgstr ""
 
 #: ../Doc/using/windows.rst:575
-#, fuzzy
 msgid ""
 "Check :file:`PCbuild/readme.txt` for general information on the build "
 "process."
 msgstr ""
-"Vérifiez :file:`PC/readme.txt` pour des informations générales sur le "
+"Consultez :file:`PC/readme.txt` pour des informations générales sur le "
 "processus de construction."
 
 #: ../Doc/using/windows.rst:578
@@ -2628,7 +2596,7 @@ msgstr ""
 #~ msgstr ":pep:`230` -- Gestion des alertes"
 
 #~ msgid "See also :envvar:`PYTHONHASHSEED`."
-#~ msgstr "Voir aussi :envvar:`PYTHONUNBUFFERED`."
+#~ msgstr "Voir aussi :envvar:`PYTHONHASHSEED`."
 
 #~ msgid "Py2exe"
 #~ msgstr "Py2exe"
