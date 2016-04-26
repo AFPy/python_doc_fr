@@ -18,9 +18,9 @@
 #
 # Also, all commands can accept a RELEASE parameter, like:
 #
-# - make build RELEASE=2.7
-# - make msgmerge RELEASE=2.7
-# - make rsync RELEASE=2.7
+# - make build RELEASE=2.7  # 3.5 is the default
+# - make msgmerge RELEASE=2.7  # 3.5 is the default
+# - make rsync RELEASE=2.7  # 3.5 is the default
 #
 # And finally, for the day we'll want to also build PDF and so on:
 #
