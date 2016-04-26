@@ -43,6 +43,8 @@ def merge_po_files(po_files, fuzzy=False):
         for entry in po_file:
             if 'fuzzy' not in entry.flags and entry.msgstr != '':
                 known_translations[entry.msgid] = entry.msgstr
+            elif entry.msgid.startswith('`Issue #'):  # Do not translate issues
+                known_translations[entry.msgid] = entry.msgid
     # Propagate them
     done = 0
     for po_file in tqdm(po_files, desc="Replicating them"):
