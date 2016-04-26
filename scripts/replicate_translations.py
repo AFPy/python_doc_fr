@@ -50,6 +50,8 @@ def merge_po_files(po_files, fuzzy=False):
         for entry in po_file:
             if entry.msgid in known_translations:
                 entry.msgstr = known_translations[entry.msgid]
+                if 'fuzzy' in entry.flags:
+                    entry.flags.remove('fuzzy')
             elif fuzzy:
                 best_match = find_best_match(list(known_translations.keys()),
                                              entry.msgid)
