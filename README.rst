@@ -14,26 +14,26 @@ Progression de la traduction:
         version    2.7    3.2    3.3    3.4    3.5
 --------------- ------ ------ ------ ------ ------
        contents   100%   100%   100%   100%   100%
-      copyright    87%    87%    87%    87%   100%
+      copyright   100%    87%   100%   100%   100%
           about   100%   100%   100%   100%   100%
-           bugs    76%    71%    71%    90%   100%
+           bugs   100%    76%    85%    95%   100%
    distributing   100%    N/A    N/A   100%   100%
          sphinx   100%   100%   100%   100%   100%
-     installing    84%    N/A    N/A   100%   100%
-        license    82%    67%    66%    68%   100%
-        install    22%    23%    23%    22%    22%
-       glossary    81%    94%    97%    98%   100%
-      extending    21%    21%    22%    23%    25%
-          using    21%    23%    18%    17%    12%
-       tutorial    94%    90%    96%    99%   100%
-            faq    26%    27%    27%    27%    29%
-      distutils    11%    10%    10%    10%    10%
-      reference     3%     3%     3%     3%     3%
-          howto     3%     2%     3%     3%     3%
-          c-api     7%     8%    10%    10%    10%
-       whatsnew     5%     5%     4%     4%     6%
-        library    12%    14%    14%    14%    14%
-      **TOTAL**    14%    15%    14%    14%    15%
+     installing    89%    N/A    N/A   100%   100%
+        license    95%    71%    72%    76%   100%
+        install    30%    31%    31%    31%    31%
+       glossary    85%    94%    97%   100%   100%
+      extending    21%    22%    22%    24%    25%
+          using    29%    33%    26%    26%    20%
+       tutorial    97%    90%    96%   100%   100%
+            faq    28%    30%    30%    31%    31%
+      distutils    13%    12%    12%    13%    13%
+      reference     4%     4%     4%     4%     4%
+          howto     3%     3%     3%     3%     3%
+          c-api     9%    10%    12%    12%    11%
+       whatsnew     6%     7%    39%    46%    40%
+        library    13%    15%    15%    15%    16%
+      **TOTAL**    16%    16%    21%    23%    22%
 =============== ====== ====== ====== ====== ======
 
 Comment qu'on fait pour aider à traduire ?
