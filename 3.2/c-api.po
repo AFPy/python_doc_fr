@@ -193,12 +193,12 @@ msgid ""
 "`PyBuffer_Release` after you have finished processing the data (or in any "
 "early abort case)."
 msgstr ""
-"Néanmoins, quand une structure :ctype:`Py_buffer` est en cours de "
+"Néanmoins, quand une structure :c:type:`Py_buffer` est en cours de "
 "remplissage, le buffer sous-jacent est verrouillé pour permettre à "
 "l'appelant d'utiliser le buffer par la suite, même à l'intérieur d'un bloc :"
-"ctype:`Py_BEGIN_ALLOW_THREADS`. Ceci sans le risque pour les données "
+"c:type:`Py_BEGIN_ALLOW_THREADS`. Ceci sans le risque pour les données "
 "mutables de voir leur taille changée ou d'être supprimées. En conséquence, "
-"**il vous appartient d'appeler** :cfunc:`PyBuffer_Release` après que vous "
+"**il vous appartient d'appeler** :c:func:`PyBuffer_Release` après que vous "
 "ayez terminé de traiter les données (ou après une interruption prémataturée "
 "du traitement de ces données)."
 
@@ -217,13 +217,13 @@ msgid ""
 "define :c:macro:`PY_SSIZE_T_CLEAN`."
 msgstr ""
 "Pour toutes les variantes de formats ``#`` (``s#``, ``y#``, etc), le type de "
-"l'argument *length* (int ou :ctype:`Py_ssize_t`) est contrôlé en définissant "
-"la macro :cmacro:`PY_SSIZE_T_CLEAN` avant d'inclure le fichier :file:`Python."
-"h`. Si la macro est définie, la longueur est de type :ctype:`Py_ssize_t`  au "
-"lieu d'être de type :ctype:`int`. Ce comportement changera dans une future "
-"version de Python, qui supportera seulement :ctype:`Py_ssize_t` a la place "
-"de :ctype:`int`. Il est préférable de toujours définir :cmacro:"
-"`PY_SSIZE_T_CLEAN`."
+"l'argument *length* (int ou :c:type:`Py_ssize_t`) est contrôlé en "
+"définissant la macro :c:macro:`PY_SSIZE_T_CLEAN` avant d'inclure le fichier :"
+"file:`Python.h`. Si la macro est définie, la longueur est de type :c:type:"
+"`Py_ssize_t` au lieu d'être de type :c:type:`int`. Ce comportement changera "
+"dans une future version de Python, qui supportera seulement :c:type:"
+"`Py_ssize_t` a la place de :c:type:`int`. Il est préférable de toujours "
+"définir :c:macro:`PY_SSIZE_T_CLEAN`."
 
 #: c-api/arg.rst:70
 msgid "s (str) [const char *]"
@@ -470,7 +470,7 @@ msgid ""
 "type:`Py_UNICODE` pointer is set to *NULL*."
 msgstr ""
 "Comme ``u``, mais l'objet Python peut aussi être ``None``, auquel cas le "
-"pointeur :ctype:`Py_UNICODE` vaut *NULL*."
+"pointeur :c:type:`Py_UNICODE` vaut *NULL*."
 
 #: c-api/arg.rst:147
 msgid "Z# (str or None) [Py_UNICODE *, int]"
@@ -482,7 +482,7 @@ msgid ""
 "c:type:`Py_UNICODE` pointer is set to *NULL*."
 msgstr ""
 "Comme ``u#``, mais l'objet Python peut également être ``None``, auquel cas "
-"le pointeur :ctype:`Py_UNICODE` vaut *NULL*."
+"le pointeur :c:type:`Py_UNICODE` vaut *NULL*."
 
 #: c-api/arg.rst:152
 msgid "U (str) [PyUnicodeObject *]"
@@ -695,7 +695,7 @@ msgid ""
 "c:type:`unsigned char`."
 msgstr ""
 "Convertit un entier Python positif ou nul en un unsigned tiny int, stocké "
-"dans un :ctype:`unsigned char`C."
+"dans un :c:type:`unsigned char` C."
 
 #: c-api/arg.rst:227 c-api/arg.rst:537
 msgid "B (int) [unsigned char]"
@@ -707,7 +707,7 @@ msgid ""
 "a C :c:type:`unsigned char`."
 msgstr ""
 "Convertit un entier Python en un tiny int sans vérifier le débordement, "
-"stocké dans un :ctype:`unsigned char` C."
+"stocké dans un :c:type:`unsigned char` C."
 
 #: c-api/arg.rst:230 c-api/arg.rst:531
 msgid "h (int) [short int]"
@@ -715,7 +715,7 @@ msgstr ""
 
 #: c-api/arg.rst:230
 msgid "Convert a Python integer to a C :c:type:`short int`."
-msgstr "Convertit un entier Python en un :ctype:`short int` C."
+msgstr "Convertit un entier Python en un :c:type:`short int` C."
 
 #: c-api/arg.rst:234 c-api/arg.rst:540
 msgid "H (int) [unsigned short int]"
@@ -726,7 +726,7 @@ msgid ""
 "Convert a Python integer to a C :c:type:`unsigned short int`, without "
 "overflow checking."
 msgstr ""
-"Convertit un entier Python en un :ctype:`unsigned short int` C, sans "
+"Convertit un entier Python en un :c:type:`unsigned short int` C, sans "
 "contrôle de débordement."
 
 #: c-api/arg.rst:237 c-api/arg.rst:525
@@ -735,7 +735,7 @@ msgstr ""
 
 #: c-api/arg.rst:237
 msgid "Convert a Python integer to a plain C :c:type:`int`."
-msgstr "Convertit un entier Python en un :ctype:`int` C."
+msgstr "Convertit un entier Python en un :c:type:`int` C."
 
 #: c-api/arg.rst:241 c-api/arg.rst:543
 msgid "I (int) [unsigned int]"
@@ -746,7 +746,7 @@ msgid ""
 "Convert a Python integer to a C :c:type:`unsigned int`, without overflow "
 "checking."
 msgstr ""
-"Convertit un entier Python en un :ctype:`unsigned int` C, sans contrôle de "
+"Convertit un entier Python en un :c:type:`unsigned int` C, sans contrôle de "
 "le débordement."
 
 #: c-api/arg.rst:244 c-api/arg.rst:534
@@ -755,7 +755,7 @@ msgstr ""
 
 #: c-api/arg.rst:244
 msgid "Convert a Python integer to a C :c:type:`long int`."
-msgstr "Convertit un entier Python en un :ctype:`long int`."
+msgstr "Convertit un entier Python en un :c:type:`long int`."
 
 #: c-api/arg.rst:248 c-api/arg.rst:546
 msgid "k (int) [unsigned long]"
@@ -766,7 +766,7 @@ msgid ""
 "Convert a Python integer to a C :c:type:`unsigned long` without overflow "
 "checking."
 msgstr ""
-"Convertit un entier Python en un :ctype:`unsigned long` C sans en vérifier "
+"Convertit un entier Python en un :c:type:`unsigned long` C sans en vérifier "
 "le débordement."
 
 #: c-api/arg.rst:253 c-api/arg.rst:551
@@ -779,9 +779,9 @@ msgid ""
 "available on platforms that support :c:type:`long long` (or :c:type:`_int64` "
 "on Windows)."
 msgstr ""
-"Convertit un entier Python en un :ctype:`long long` C. Ce format est "
-"uniquement disponible sur les plates-formes qui prennent en charge :ctype:"
-"`long long` (ou :ctype:`_int64` sous Windows)."
+"Convertit un entier Python en un :c:type:`long long` C. Ce format est "
+"uniquement disponible sur les plates-formes qui prennent en charge :c:type:"
+"`long long` (ou :c:type:`_int64` sous Windows)."
 
 #: c-api/arg.rst:258 c-api/arg.rst:556
 msgid "K (int) [unsigned PY_LONG_LONG]"
@@ -793,9 +793,9 @@ msgid ""
 "overflow checking.  This format is only available on platforms that support :"
 "c:type:`unsigned long long` (or :c:type:`unsigned _int64` on Windows)."
 msgstr ""
-"Convertit un entier Python en un :ctype:`unsigned long long` C sans en "
+"Convertit un entier Python en un :c:type:`unsigned long long` C sans en "
 "vérifier le débordement. Ce format est uniquement disponible sur les plates-"
-"formes qui prennent en charge :ctype:`unsigned long long` (ou :ctype:"
+"formes qui prennent en charge :c:type:`unsigned long long` (ou :c:type:"
 "`unsigned _int64` sous Windows)."
 
 #: c-api/arg.rst:261 c-api/arg.rst:559
@@ -804,7 +804,7 @@ msgstr ""
 
 #: c-api/arg.rst:261
 msgid "Convert a Python integer to a C :c:type:`Py_ssize_t`."
-msgstr "Convertit un entier Python en un :ctype:`short int` C."
+msgstr "Convertit un entier Python en un :c:type:`short int` C."
 
 #: c-api/arg.rst:265 c-api/arg.rst:563
 msgid "c (bytes of length 1) [char]"
@@ -829,7 +829,7 @@ msgid ""
 "1, to a C :c:type:`int`."
 msgstr ""
 "Convertit un caractère Python, représenté comme un objet :class:`str` de "
-"longueur 1, en un :ctype:`int` C."
+"longueur 1, en un :c:type:`int` C."
 
 #: c-api/arg.rst:272 c-api/arg.rst:573
 msgid "f (float) [float]"
@@ -837,7 +837,7 @@ msgstr ""
 
 #: c-api/arg.rst:272
 msgid "Convert a Python floating point number to a C :c:type:`float`."
-msgstr "Convertit un nombre flottant Python vers un :ctype:`float`."
+msgstr "Convertit un nombre flottant Python vers un :c:type:`float`."
 
 #: c-api/arg.rst:275 c-api/arg.rst:570
 msgid "d (float) [double]"
@@ -845,7 +845,7 @@ msgstr ""
 
 #: c-api/arg.rst:275
 msgid "Convert a Python floating point number to a C :c:type:`double`."
-msgstr "Convertit un nombre flottant Python vers un :ctype:`double` C."
+msgstr "Convertit un nombre flottant Python vers un :c:type:`double` C."
 
 #: c-api/arg.rst:278
 msgid "D (complex) [Py_complex]"
@@ -854,7 +854,8 @@ msgstr ""
 #: c-api/arg.rst:278
 msgid "Convert a Python complex number to a C :c:type:`Py_complex` structure."
 msgstr ""
-"Convertit un nombre complexe Python vers une structure :ctype:`Py_complex` C."
+"Convertit un nombre complexe Python vers une structure :c:type:`Py_complex` "
+"C."
 
 #: c-api/arg.rst:281
 msgid "Other objects"
@@ -1302,7 +1303,7 @@ msgstr ""
 
 #: c-api/arg.rst:534
 msgid "Convert a C :c:type:`long int` to a Python integer object."
-msgstr "Convertit un :ctype:`long int` en un int Python."
+msgstr "Convertit un :c:type:`long int` en un int Python."
 
 #: c-api/arg.rst:537
 #, fuzzy
