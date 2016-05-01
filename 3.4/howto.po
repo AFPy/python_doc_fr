@@ -424,7 +424,7 @@ msgstr ""
 
 #: ../Doc/howto/argparse.rst:614 ../Doc/howto/argparse.rst:652
 msgid "Output:"
-msgstr ""
+msgstr "Sortie :"
 
 #: ../Doc/howto/argparse.rst:635
 msgid ""
@@ -2206,9 +2206,8 @@ msgid ""
 msgstr ""
 
 #: ../Doc/howto/clinic.rst:1210
-#, fuzzy
 msgid "``type``"
-msgstr "type"
+msgstr "``type``"
 
 #: ../Doc/howto/clinic.rst:1208
 msgid ""
@@ -4928,7 +4927,7 @@ msgstr ""
 
 #: ../Doc/howto/functional.rst:617
 msgid "Built-in functions"
-msgstr ""
+msgstr "Fonctions Natives"
 
 #: ../Doc/howto/functional.rst:619
 msgid ""
@@ -9608,7 +9607,7 @@ msgstr ""
 
 #: ../Doc/howto/regex.rst:311
 msgid "Characters"
-msgstr ""
+msgstr "Caractères"
 
 #: ../Doc/howto/regex.rst:311
 msgid "Stage"
@@ -13784,7 +13783,6 @@ msgid "`Genshi <http://genshi.edgewall.org/>`_"
 msgstr "`Genshi <http://genshi.edgewall.org/>`_"
 
 #: ../Doc/howto/webservers.rst:518
-#, fuzzy
 msgid "`Jinja <http://jinja.pocoo.org/>`_"
 msgstr "`Jinja <http://jinja.pocoo.org/2/>`_"
 

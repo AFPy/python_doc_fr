@@ -74,7 +74,6 @@ msgstr ""
 "autre style."
 
 #: faq/design.rst:31
-#, fuzzy
 msgid ""
 "Many coding styles place begin/end brackets on a line by themselves.  This "
 "makes programs considerably longer and wastes valuable screen space, making "
@@ -105,18 +104,15 @@ msgid "See the next question."
 msgstr "Voir la question suivante."
 
 #: faq/design.rst:47
-#, fuzzy
 msgid "Why are floating-point calculations so inaccurate?"
 msgstr "Pourquoi les calculs à virgules flottantes sont si imprécis ?"
 
 #: faq/design.rst:49
-#, fuzzy
 msgid "Users are often surprised by results like this::"
 msgstr ""
 "Les gens sont très souvent surpris par des résultats comme celui-ci : ::"
 
 #: faq/design.rst:54
-#, fuzzy
 msgid ""
 "and think it is a bug in Python.  It's not.  This has little to do with "
 "Python, and much more to do with how the underlying platform handles "
@@ -164,7 +160,6 @@ msgstr ""
 "typique, la valeur stockée est en fait : ::"
 
 #: faq/design.rst:76
-#, fuzzy
 msgid "which is exactly::"
 msgstr "qui est, exactement : ::"
 
@@ -177,7 +172,6 @@ msgstr ""
 "sur les nombres à virgule flottante."
 
 #: faq/design.rst:83
-#, fuzzy
 msgid ""
 "For a fuller explanation, please see the :ref:`floating point arithmetic "
 "<tut-fp-issues>` chapter in the Python tutorial."
@@ -391,7 +385,6 @@ msgstr ""
 "boucle."
 
 #: faq/design.rst:201
-#, fuzzy
 msgid ""
 "The best approach is to use iterators, making it possible to loop through "
 "objects using the ``for`` statement.  For example, :term:`file objects <file "
@@ -411,7 +404,6 @@ msgstr ""
 "list.index()) mais des fonctions pour d'autres (ex : len(list)) ?"
 
 #: faq/design.rst:213
-#, fuzzy
 msgid ""
 "The major reason is history. Functions were used for those operations that "
 "were generic for a group of types and which were intended to work even for "
@@ -508,7 +500,6 @@ msgstr ""
 "méthode de chaîne, puisque dans ce cas il est facile de voir que::"
 
 #: faq/design.rst:263
-#, fuzzy
 msgid ""
 "is an instruction to a string literal to return the substrings delimited by "
 "the given separator (or, by default, arbitrary runs of white space)."
@@ -518,7 +509,6 @@ msgstr ""
 "groupes d'espaces)."
 
 #: faq/design.rst:266
-#, fuzzy
 msgid ""
 ":meth:`~str.join` is a string method because in using it you are telling the "
 "separator string to iterate over a sequence of strings and insert itself "
@@ -790,7 +780,6 @@ msgstr ""
 "système de gestion de la mémoire::"
 
 #: faq/design.rst:437
-#, fuzzy
 msgid "Why doesn't CPython use a more traditional garbage collection scheme?"
 msgstr ""
 "Pourquoi CPython n'utilise-il pas un ramasse-miette plus traditionnel ?"
@@ -4231,7 +4220,6 @@ msgid "By passing in a dictionary that gets mutated::"
 msgstr "En passant un dictionnaire, qui sera modifié : ::"
 
 #: faq/programming.rst:436
-#, fuzzy
 msgid "Or bundle up values in a class instance::"
 msgstr "Ou regrouper les valeurs dans une instance de classe::"
 
@@ -4287,7 +4275,6 @@ msgstr ""
 "héritage : ::"
 
 #: faq/programming.rst:494
-#, fuzzy
 msgid "Object can encapsulate state for several methods::"
 msgstr "Les objets peuvent encapsuler un état pour plusieurs méthodes::"
 
@@ -4445,7 +4432,6 @@ msgid "Is there an equivalent of C's \"?:\" ternary operator?"
 msgstr "Existe-t-il un équivalent à l'opérateur ternaire \"?:\" du C ?"
 
 #: faq/programming.rst:606
-#, fuzzy
 msgid "Yes, there is. The syntax is as follows::"
 msgstr "Oui, il y en a un. Sa syntaxe est la suivante : ::"
 
@@ -4594,14 +4580,13 @@ msgstr ""
 "répertoire personnel."
 
 #: faq/programming.rst:721
-#, fuzzy
 msgid ""
 ":func:`eval` also has the effect of interpreting numbers as Python "
 "expressions, so that e.g. ``eval('09')`` gives a syntax error because Python "
 "does not allow leading '0' in a decimal number (except '0')."
 msgstr ""
 ":func:`eval` a aussi pour effet d'interpréter les nombres comme comme des "
-"expression python, ainsi ``eval('09')`` produit une erreur de syntaxe par ce "
+"expression Python, ainsi ``eval('09')`` produit une erreur de syntaxe par ce "
 "que Python ne permet pas les '0' en tête d'un nombre décimal (à l'exception "
 "du nombre '0')."
 
@@ -4705,7 +4690,6 @@ msgstr ""
 "caractères de fin de ligne d'une chaine de caractère?"
 
 #: faq/programming.rst:828
-#, fuzzy
 msgid ""
 "You can use ``S.rstrip(\"\\r\\n\")`` to remove all occurrences of any line "
 "terminator from the end of the string ``S`` without removing other trailing "
@@ -4713,11 +4697,11 @@ msgid ""
 "empty lines at the end, the line terminators for all the blank lines will be "
 "removed::"
 msgstr ""
-"À partir de Python 2.2 vous pouvez utiliser ``S.rstrip(\"\\r\\n\")`` pour "
-"retirer toute occurrence de n'importe quel terminateur de ligne à la fin "
-"d'une chaine de caractère ``S``, sans retirer aucun espace de fin de ligne. "
-"Si la chaine ``S`` représente plus d'une ligne, avec plusieurs lignes vides, "
-"les terminateurs de lignes de toutes les lignes vides seront retirés::"
+"Vous pouvez utiliser ``S.rstrip(\"\\r\\n\")`` pour retirer toute occurrence "
+"de tout marqueur de fin de ligne, à la fin d'une chaîne de caractère ``S``, "
+"sans en retirer aucun espace. Si la chaîne ``S`` représente plus d'une "
+"ligne, avec plusieurs lignes vides, les marqueurs de fin de de lignes de "
+"chaque lignes vides seront retirés : ::"
 
 #: faq/programming.rst:840
 msgid ""
@@ -4753,24 +4737,22 @@ msgstr ""
 "que des espaces comme séparateur."
 
 #: faq/programming.rst:855
-#, fuzzy
 msgid ""
 "For more complicated input parsing, regular expressions are more powerful "
 "than C's :c:func:`sscanf` and better suited for the task."
 msgstr ""
 "Pour les analyses plus compliquées, les expressions rationnelles sont plus "
-"puissantes que la fonction `sscanf` de C et mieux adaptées à la tâche."
+"puissantes que la fonction :c:func:`sscanf` de C et mieux adaptées à la "
+"tâche."
 
 #: faq/programming.rst:860
-#, fuzzy
 msgid "What does 'UnicodeDecodeError' or 'UnicodeEncodeError' error  mean?"
 msgstr ""
-"Que signifient les erreurs  'UnicodeDecodeError' ou 'UnicodeEncodeError'?"
+"Que signifient les erreurs  'UnicodeDecodeError' ou 'UnicodeEncodeError' ?"
 
 #: faq/programming.rst:862
-#, fuzzy
 msgid "See the :ref:`unicode-howto`."
-msgstr "Regardez le :ref:`unicode-howto`."
+msgstr "Regardez :ref:`unicode-howto`."
 
 #: faq/programming.rst:866
 msgid "Performance"
@@ -5022,14 +5004,13 @@ msgstr ""
 "trouvés en chemin::"
 
 #: faq/programming.rst:1022
-#, fuzzy
 msgid ""
 "If all elements of the list may be used as set keys (i.e. they are all :term:"
 "`hashable`) this is often faster ::"
 msgstr ""
 "Si tous les éléments de la liste peuvent être utilisés comme des clés de "
-"dictionnaire (cad, elles sont toutes hashables) ceci est souvent plus "
-"rapide::"
+"dictionnaire (càd, qu'elles sont toutes :term:`hachables <hashable>`) ceci "
+"est souvent plus rapide : ::"
 
 #: faq/programming.rst:1027
 msgid ""
@@ -5249,10 +5230,10 @@ msgstr ""
 "chaque chaine chaine::"
 
 #: faq/programming.rst:1161
-#, fuzzy
 msgid "For versions prior to 3.0, Isorted may also be computed by ::"
 msgstr ""
-"Pour les versions antérieures à 3.0, Isorted peut également être calculé par:"
+"Pour les versions antérieures à 3.0, Isorted peut également être calculé "
+"par : ::"
 
 #: faq/programming.rst:1172
 msgid ""
@@ -5268,18 +5249,16 @@ msgstr ""
 "Comment puis-je trier une liste en fonction des valeurs d'une autre liste?"
 
 #: faq/programming.rst:1179
-#, fuzzy
 msgid ""
 "Merge them into an iterator of tuples, sort the resulting list, and then "
 "pick out the element you want. ::"
 msgstr ""
-"Fusionnez les dans un itérateur de tuples, trier la liste obtenue, puis "
+"Fusionnez les dans un itérateur de tuples, triez la liste obtenue, puis "
 "choisissez l'élément que vous voulez. ::"
 
 #: faq/programming.rst:1193
-#, fuzzy
 msgid "An alternative for the last step is::"
-msgstr "Une alternative pour la dernière étape est la suivante::"
+msgstr "Une alternative pour la dernière étape est : ::"
 
 #: faq/programming.rst:1198
 msgid ""
@@ -5381,7 +5360,6 @@ msgstr ""
 "d'une sous-classe de celui-ci?"
 
 #: faq/programming.rst:1251
-#, fuzzy
 msgid ""
 "Use the built-in function ``isinstance(obj, cls)``.  You can check if an "
 "object is an instance of any of a number of classes by providing a tuple "
@@ -5389,12 +5367,12 @@ msgid ""
 "and can also check whether an object is one of Python's built-in types, e.g. "
 "``isinstance(obj, str)`` or ``isinstance(obj, (int, float, complex))``."
 msgstr ""
-"Utilisez la fonction intégrée ``isInstance(obj, CLS)``. Vous pouvez vérifier "
+"Utilisez la fonction native ``isinstance(obj, cls)``. Vous pouvez vérifier "
 "si un objet est une instance de n'importe lequel d'un certain nombre de "
 "classes en fournissant un tuple à la place d'une seule classe, par exemple, "
-"``IsInstance (obj, (Classe1, classe2, ...))``, et peut également vérifier si "
-"un objet est l'un des types intégrés à Python, par exemple, ``IsInstance "
-"(obj, str) isInstance`` ou ``(obj, (int, float, complexes ))``."
+"``isinstance(obj, (class1, class2, ...))``, et peut également vérifier si un "
+"objet est l'un des types natifs de Python, par exemple, ``isinstance(obj, "
+"str)`` ou ``isinstance(obj, (int, float, complex))``."
 
 #: faq/programming.rst:1257
 msgid ""
@@ -5498,12 +5476,10 @@ msgstr ""
 "classe dérivée qui la surcharge?"
 
 #: faq/programming.rst:1334
-#, fuzzy
 msgid "Use the built-in :func:`super` function::"
-msgstr "Utiliser la fonction :func:`getattr`::"
+msgstr "Utiliser la fonction native :func:`super` : ::"
 
 #: faq/programming.rst:1340
-#, fuzzy
 msgid ""
 "For version prior to 3.0, you may be using classic classes: For a class "
 "definition such as ``class Derived(Base): ...`` you can call method "
@@ -5511,9 +5487,9 @@ msgid ""
 "meth(self, arguments...)``.  Here, ``Base.meth`` is an unbound method, so "
 "you need to provide the ``self`` argument."
 msgstr ""
-"Pour version antérieure à 3.0, vous pouvez utiliser des classes classiques: "
-"Pour une définition de classe telle que ``class derived(Base)...`` vous "
-"pouvez appeler la méthode ``meth()`` défini dans `` `` Base (ou l'une des "
+"Pour version antérieure à 3.0, vous pouvez utiliser des classes classiques : "
+"Pour une définition de classe telle que ``class Derived(Base): ...`` vous "
+"pouvez appeler la méthode ``meth()`` défini dans ``Base`` (ou l'une des "
 "classes de base de ``Base``) en faisant ``Base.meth(self, arguments...)``. "
 "Ici, ``Base.meth`` est une méthode non liée, vous devez donc fournir "
 "l'argument ``self``."
@@ -5588,9 +5564,8 @@ msgstr ""
 "l'intérieur d'une méthode ou non:"
 
 #: faq/programming.rst:1393
-#, fuzzy
 msgid "Static methods are possible::"
-msgstr "Les méthodes statiques sont possibles depuis Python 2.2::"
+msgstr "Les méthodes statiques sont possibles : ::"
 
 #: faq/programming.rst:1401
 msgid ""
@@ -6192,9 +6167,8 @@ msgid ""
 msgstr ""
 
 #: faq/windows.rst:169
-#, fuzzy
 msgid "How do I make an executable from a Python script?"
-msgstr "Comment construire un tableau en Python?"
+msgstr "Comment construire un exécutable depuis un script Python ?"
 
 #: faq/windows.rst:171
 msgid ""

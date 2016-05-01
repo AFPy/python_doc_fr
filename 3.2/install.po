@@ -119,7 +119,6 @@ msgstr ""
 "suite."
 
 #: install/index.rst:69
-#, fuzzy
 msgid ""
 "In that case, you would download the installer appropriate to your platform "
 "and do the obvious thing with it: run it if it's an executable installer, "
@@ -159,7 +158,6 @@ msgid "The new standard: Distutils"
 msgstr "Le nouveau standard: Distutils"
 
 #: install/index.rst:89
-#, fuzzy
 msgid ""
 "If you download a module source distribution, you can tell pretty quickly if "
 "it was packaged and distributed in the standard way, i.e. using the "
@@ -210,7 +208,6 @@ msgid "Standard Build and Install"
 msgstr "Construction standard et installation"
 
 #: install/index.rst:119
-#, fuzzy
 msgid ""
 "As described in section :ref:`inst-new-standard`, building and installing a "
 "module distribution using the Distutils is usually one simple command to run "
@@ -218,7 +215,7 @@ msgid ""
 msgstr ""
 "Comme décrit dans la section :ref:`inst-new-standard`, la construction et "
 "l'installation d'une distribution d'un module en utilisant Distutils est "
-"habituellement fait avec la commande : ::"
+"habituellement fait avec la commande dans un terminal : ::"
 
 #: install/index.rst:129
 msgid "Platform variations"
@@ -471,14 +468,12 @@ msgid "Windows"
 msgstr "Windows"
 
 #: install/index.rst:245 install/index.rst:504
-#, fuzzy
 msgid ":file:`{prefix}\\\\Lib\\\\site-packages`"
-msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
+msgstr ":file:`{prefix}\\\\Lib\\\\site-packages`"
 
 #: install/index.rst:245
-#, fuzzy
 msgid ":file:`C:\\\\Python{XY}\\\\Lib\\\\site-packages`"
-msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
+msgstr ":file:`C:\\\\Python{XY}\\\\Lib\\\\site-packages`"
 
 #: install/index.rst:245 install/index.rst:756
 msgid "\\(2)"
@@ -626,20 +621,17 @@ msgstr ""
 
 #: install/index.rst:339 install/index.rst:350 install/index.rst:401
 #: install/index.rst:450 install/index.rst:502
-#, fuzzy
 msgid "Installation directory"
-msgstr "Comment fonctionne l'installation"
+msgstr "Dossier d'installation"
 
 #: install/index.rst:341 install/index.rst:352 install/index.rst:403
 #: install/index.rst:504
-#, fuzzy
 msgid "modules"
-msgstr "module"
+msgstr "modules"
 
 #: install/index.rst:341
-#, fuzzy
 msgid ":file:`{userbase}/lib/python{X.Y}/site-packages`"
-msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
+msgstr ":file:`{userbase}/lib/python{X.Y}/site-packages`"
 
 #: install/index.rst:342 install/index.rst:353 install/index.rst:404
 #: install/index.rst:454 install/index.rst:505 install/index.rst:532
@@ -647,9 +639,8 @@ msgid "scripts"
 msgstr ""
 
 #: install/index.rst:342
-#, fuzzy
 msgid ":file:`{userbase}/bin`"
-msgstr ":file:`{prefix}`"
+msgstr ":file:`{userbase}/bin`"
 
 #: install/index.rst:343 install/index.rst:354 install/index.rst:405
 #: install/index.rst:455 install/index.rst:506 install/index.rst:533
@@ -657,9 +648,8 @@ msgid "data"
 msgstr ""
 
 #: install/index.rst:343 install/index.rst:354
-#, fuzzy
 msgid ":file:`{userbase}`"
-msgstr ":file:`{prefix}`"
+msgstr ":file:`{userbase}`"
 
 #: install/index.rst:344 install/index.rst:355 install/index.rst:406
 #: install/index.rst:456 install/index.rst:507 install/index.rst:534
@@ -667,18 +657,16 @@ msgid "C headers"
 msgstr ""
 
 #: install/index.rst:344
-#, fuzzy
 msgid ":file:`{userbase}/include/python{X.Y}{abiflags}/{distname}`"
-msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
+msgstr ":file:`{userbase}/include/python{X.Y}{abiflags}/{distname}`"
 
 #: install/index.rst:347
 msgid "And here are the values used on Windows:"
 msgstr ""
 
 #: install/index.rst:352
-#, fuzzy
 msgid ":file:`{userbase}\\\\Python{XY}\\\\site-packages`"
-msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
+msgstr ":file:`{userbase}\\\\Python{XY}\\\\site-packages`"
 
 #: install/index.rst:353
 msgid ":file:`{userbase}\\\\Scripts`"
@@ -754,9 +742,8 @@ msgid ":file:`{home}/bin`"
 msgstr ""
 
 #: install/index.rst:405
-#, fuzzy
 msgid ":file:`{home}`"
-msgstr ":file:`{prefix}`"
+msgstr ":file:`{home}`"
 
 #: install/index.rst:406
 msgid ":file:`{home}/include/python/{distname}`"
@@ -812,14 +799,12 @@ msgid ""
 msgstr ""
 
 #: install/index.rst:452 install/index.rst:529
-#, fuzzy
 msgid "Python modules"
-msgstr "installation des modules python"
+msgstr "Modules Python"
 
 #: install/index.rst:453 install/index.rst:530
-#, fuzzy
 msgid "extension modules"
-msgstr "module d'extension"
+msgstr "modules d'extension"
 
 #: install/index.rst:454
 msgid ":file:`{prefix}/bin`"
@@ -830,9 +815,8 @@ msgid ":file:`{prefix}`"
 msgstr ":file:`{prefix}`"
 
 #: install/index.rst:456
-#, fuzzy
 msgid ":file:`{prefix}/include/python{X.Y}{abiflags}/{distname}`"
-msgstr ":file:`{prefix}/lib/python{X.Y}/site-packages`"
+msgstr ":file:`{prefix}/include/python{X.Y}{abiflags}/{distname}`"
 
 #: install/index.rst:459
 msgid ""
@@ -897,9 +881,8 @@ msgid ":file:`{prefix}\\\\Scripts`"
 msgstr ""
 
 #: install/index.rst:507
-#, fuzzy
 msgid ":file:`{prefix}\\\\Include\\\\{distname}`"
-msgstr ":file:`{prefix}`"
+msgstr ":file:`{prefix}\\\\Include\\\\{distname}`"
 
 #: install/index.rst:514
 msgid "Custom Installation"
@@ -1022,7 +1005,6 @@ msgid ""
 msgstr ""
 
 #: install/index.rst:595 install/index.rst:618
-#, fuzzy
 msgid "or, equivalently, ::"
 msgstr "ou : ::"
 

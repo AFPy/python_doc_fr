@@ -984,7 +984,7 @@ msgstr ""
 
 #: howto/argparse.rst:614 howto/argparse.rst:652
 msgid "Output:"
-msgstr ""
+msgstr "Sortie :"
 
 #: howto/argparse.rst:635
 msgid ""
@@ -2994,7 +2994,7 @@ msgstr ""
 
 #: howto/functional.rst:617
 msgid "Built-in functions"
-msgstr ""
+msgstr "Fonctions Natives"
 
 #: howto/functional.rst:619
 msgid ""
@@ -6578,9 +6578,8 @@ msgid ""
 msgstr ""
 
 #: howto/pyporting.rst:698
-#, fuzzy
 msgid "Other Resources"
-msgstr "Autres ressources"
+msgstr "Autres Ressources"
 
 #: howto/pyporting.rst:700
 msgid ""
@@ -7110,7 +7109,7 @@ msgstr ""
 
 #: howto/regex.rst:300
 msgid "Characters"
-msgstr ""
+msgstr "Caractères"
 
 #: howto/regex.rst:300
 msgid "Stage"

@@ -5985,7 +5985,6 @@ msgid "The built-in function :func:`len` returns the length of a string::"
 msgstr "La fonction native :func:`len` renvoie la longueur d'une chaîne : ::"
 
 #: ../Doc/tutorial/introduction.rst:349
-#, fuzzy
 msgid ":ref:`textseq`"
 msgstr ":ref:`textseq`"
 
@@ -5998,7 +5997,6 @@ msgstr ""
 "supportent donc lesopérations classiques prises en charge par ces types."
 
 #: ../Doc/tutorial/introduction.rst:353
-#, fuzzy
 msgid ":ref:`string-methods`"
 msgstr ":ref:`string-methods`"
 

@@ -35,7 +35,6 @@ msgstr ""
 "exception Python."
 
 #: ../Doc/c-api/abstract.rst:14
-#, fuzzy
 msgid ""
 "It is not possible to use these functions on objects that are not properly "
 "initialized, such as a list object that has been created by :c:func:"
@@ -229,7 +228,6 @@ msgstr ""
 "disponibles ici: :ref:`extending-index`."
 
 #: ../Doc/c-api/arg.rst:12
-#, fuzzy
 msgid ""
 "The first three of these functions described, :c:func:`PyArg_ParseTuple`, :c:"
 "func:`PyArg_ParseTupleAndKeywords`, and :c:func:`PyArg_Parse`, all use "
@@ -286,7 +284,6 @@ msgstr ""
 "``et`` et ``et#``."
 
 #: ../Doc/c-api/arg.rst:38
-#, fuzzy
 msgid ""
 "However, when a :c:type:`Py_buffer` structure gets filled, the underlying "
 "buffer is locked so that the caller can subsequently use the buffer even "
@@ -295,21 +292,20 @@ msgid ""
 "`PyBuffer_Release` after you have finished processing the data (or in any "
 "early abort case)."
 msgstr ""
-"Néanmoins, quand une structure :ctype:`Py_buffer` est en cours de "
-"remplissage, le tampon sous-jacent est verrouillé pour permettre à "
-"l'appelant d'utiliser le buffer par la suite, même lorsqu'il est à "
-"'intérieur d'un bloc :ctype:`Py_BEGIN_ALLOW_THREADS`. Ceci sans le risque "
-"pour les données mutables de voir leur taille changée ou d'être supprimées. "
-"En conséquence, **il vous appartient d'appeler** :cfunc:`PyBuffer_Release` "
-"après que vous ayez terminé de traiter les données (ou après une "
-"interruption prémataturée du traitement de ces données)."
+"Néanmoins, quand une structure :c:type:`Py_buffer` est en cours de "
+"remplissage, le buffer sous-jacent est verrouillé pour permettre à "
+"l'appelant d'utiliser le buffer par la suite, même à l'intérieur d'un bloc :"
+"c:type:`Py_BEGIN_ALLOW_THREADS`. Ceci sans le risque pour les données "
+"mutables de voir leur taille changée ou d'être supprimées. En conséquence, "
+"**il vous appartient d'appeler** :c:func:`PyBuffer_Release` après que vous "
+"ayez terminé de traiter les données (ou après une interruption prémataturée "
+"du traitement de ces données)."
 
 #: ../Doc/c-api/arg.rst:45
 msgid "Unless otherwise stated, buffers are not NUL-terminated."
 msgstr "Sauf indication contraire, les tampons ne se terminent pas par NUL."
 
 #: ../Doc/c-api/arg.rst:49
-#, fuzzy
 msgid ""
 "For all ``#`` variants of formats (``s#``, ``y#``, etc.), the type of the "
 "length argument (int or :c:type:`Py_ssize_t`) is controlled by defining the "
@@ -320,13 +316,13 @@ msgid ""
 "define :c:macro:`PY_SSIZE_T_CLEAN`."
 msgstr ""
 "Pour toutes les variantes de formats ``#`` (``s#``, ``y#``, etc), le type de "
-"l'argument longueur (int ou :ctype:`Py_ssize_t`) est contrôlé en définissant "
-"la macro :cmacro:`PY_SSIZE_T_CLEAN` avant d'inclure le fichier :file:`Python."
-"h`. Si la macro est définie, la longueur est de type :ctype:`Py_ssize_t`  au "
-"lieu d'être de type :ctype:`int`. Ce comportement changera dans une future "
-"version de Python, qui supportera seulement :ctype:`Py_ssize_t` et plus :"
-"ctype:`int`. Il est préférable de toujours définir :cmacro:"
-"`PY_SSIZE_T_CLEAN`."
+"l'argument *length* (int ou :c:type:`Py_ssize_t`) est contrôlé en "
+"définissant la macro :c:macro:`PY_SSIZE_T_CLEAN` avant d'inclure le fichier :"
+"file:`Python.h`. Si la macro est définie, la longueur est de type :c:type:"
+"`Py_ssize_t` au lieu d'être de type :c:type:`int`. Ce comportement changera "
+"dans une future version de Python, qui supportera seulement :c:type:"
+"`Py_ssize_t` a la place de :c:type:`int`. Il est préférable de toujours "
+"définir :c:macro:`PY_SSIZE_T_CLEAN`."
 
 #: ../Doc/c-api/arg.rst:72
 msgid "``s`` (:class:`str`) [const char \\*]"
@@ -486,9 +482,8 @@ msgstr ""
 "objets assimilés à des octets."
 
 #: ../Doc/c-api/arg.rst:117
-#, fuzzy
 msgid "``S`` (:class:`bytes`) [PyBytesObject \\*]"
-msgstr "S (bytes) [PyBytesObject *]"
+msgstr "``S`` (:class:`bytes`) [PyBytesObject \\*]"
 
 #: ../Doc/c-api/arg.rst:115
 #, fuzzy
@@ -503,9 +498,8 @@ msgstr ""
 "également être de type :ctype:`PyObject\\*`."
 
 #: ../Doc/c-api/arg.rst:122
-#, fuzzy
 msgid "``Y`` (:class:`bytearray`) [PyByteArrayObject \\*]"
-msgstr "S (bytes) [PyBytesObject *]"
+msgstr "``Y`` (:class:`bytearray`) [PyByteArrayObject \\*]"
 
 #: ../Doc/c-api/arg.rst:120
 #, fuzzy
@@ -572,31 +566,28 @@ msgid "``Z`` (:class:`str` or ``None``) [Py_UNICODE \\*]"
 msgstr "``Z`` (:class:`str` ou ``None``) [Py_UNICODE \\*]"
 
 #: ../Doc/c-api/arg.rst:143
-#, fuzzy
 msgid ""
 "Like ``u``, but the Python object may also be ``None``, in which case the :c:"
 "type:`Py_UNICODE` pointer is set to *NULL*."
 msgstr ""
 "Comme ``u``, mais l'objet Python peut aussi être ``None``, auquel cas le "
-"pointeur :ctype:`Py_UNICODE` est fixé à *NULL*."
+"pointeur :c:type:`Py_UNICODE` vaut *NULL*."
 
 #: ../Doc/c-api/arg.rst:148
 msgid "``Z#`` (:class:`str` or ``None``) [Py_UNICODE \\*, int]"
 msgstr ""
 
 #: ../Doc/c-api/arg.rst:147
-#, fuzzy
 msgid ""
 "Like ``u#``, but the Python object may also be ``None``, in which case the :"
 "c:type:`Py_UNICODE` pointer is set to *NULL*."
 msgstr ""
 "Comme ``u#``, mais l'objet Python peut également être ``None``, auquel cas "
-"le pointeur :ctype:`Py_UNICODE` est fixé à *NULL*."
+"le pointeur :c:type:`Py_UNICODE` vaut *NULL*."
 
 #: ../Doc/c-api/arg.rst:153
-#, fuzzy
 msgid "``U`` (:class:`str`) [PyObject \\*]"
-msgstr "U (str) [PyObject *]"
+msgstr "``U`` (:class:`str`) [PyObject \\*]"
 
 #: ../Doc/c-api/arg.rst:151
 #, fuzzy
@@ -797,7 +788,6 @@ msgstr ""
 "chaînes de caractères utilisent l'encodage passé en tant que paramètre."
 
 #: ../Doc/c-api/arg.rst:220
-#, fuzzy
 msgid "Numbers"
 msgstr "Les nombres"
 
@@ -806,47 +796,43 @@ msgid "``b`` (:class:`int`) [unsigned char]"
 msgstr "``b`` (:class:`int`) [unsigned char]"
 
 #: ../Doc/c-api/arg.rst:223
-#, fuzzy
 msgid ""
 "Convert a nonnegative Python integer to an unsigned tiny int, stored in a C :"
 "c:type:`unsigned char`."
 msgstr ""
 "Convertit un entier Python positif ou nul en un unsigned tiny int, stocké "
-"dans un C :ctype:`unsigned char`."
+"dans un :c:type:`unsigned char` C."
 
 #: ../Doc/c-api/arg.rst:228 ../Doc/c-api/arg.rst:562
 msgid "``B`` (:class:`int`) [unsigned char]"
 msgstr "``B`` (:class:`int`) [unsigned char]"
 
 #: ../Doc/c-api/arg.rst:227
-#, fuzzy
 msgid ""
 "Convert a Python integer to a tiny int without overflow checking, stored in "
 "a C :c:type:`unsigned char`."
 msgstr ""
 "Convertit un entier Python en un tiny int sans vérifier le débordement, "
-"stocké dans un C :ctype:`unsigned char`."
+"stocké dans un :c:type:`unsigned char` C."
 
 #: ../Doc/c-api/arg.rst:231 ../Doc/c-api/arg.rst:556
 msgid "``h`` (:class:`int`) [short int]"
 msgstr "``h`` (:class:`int`) [short int]"
 
 #: ../Doc/c-api/arg.rst:231
-#, fuzzy
 msgid "Convert a Python integer to a C :c:type:`short int`."
-msgstr "Convertit un entier Python en un C :ctype:`short int`."
+msgstr "Convertit un entier Python en un :c:type:`short int` C."
 
 #: ../Doc/c-api/arg.rst:235 ../Doc/c-api/arg.rst:565
 msgid "``H`` (:class:`int`) [unsigned short int]"
 msgstr "``H`` (:class:`int`) [unsigned short int]"
 
 #: ../Doc/c-api/arg.rst:234
-#, fuzzy
 msgid ""
 "Convert a Python integer to a C :c:type:`unsigned short int`, without "
 "overflow checking."
 msgstr ""
-"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
+"Convertit un entier Python en un :c:type:`unsigned short int` C, sans "
 "contrôle de débordement."
 
 #: ../Doc/c-api/arg.rst:238 ../Doc/c-api/arg.rst:550
@@ -854,74 +840,68 @@ msgid "``i`` (:class:`int`) [int]"
 msgstr "``i`` (:class:`int`) [int]"
 
 #: ../Doc/c-api/arg.rst:238
-#, fuzzy
 msgid "Convert a Python integer to a plain C :c:type:`int`."
-msgstr "Convertit un entier Python en un type C :ctype:`int`."
+msgstr "Convertit un entier Python en un :c:type:`int` C."
 
 #: ../Doc/c-api/arg.rst:242 ../Doc/c-api/arg.rst:568
 msgid "``I`` (:class:`int`) [unsigned int]"
 msgstr "``I`` (:class:`int`) [unsigned int]"
 
 #: ../Doc/c-api/arg.rst:241
-#, fuzzy
 msgid ""
 "Convert a Python integer to a C :c:type:`unsigned int`, without overflow "
 "checking."
 msgstr ""
-"Convertit un entier Python en un type C :ctype:`unsigned int`, sans contrôle "
-"de le débordement."
+"Convertit un entier Python en un :c:type:`unsigned int` C, sans contrôle de "
+"le débordement."
 
 #: ../Doc/c-api/arg.rst:245 ../Doc/c-api/arg.rst:559
 msgid "``l`` (:class:`int`) [long int]"
 msgstr "``l`` (:class:`int`) [long int]"
 
 #: ../Doc/c-api/arg.rst:245
-#, fuzzy
 msgid "Convert a Python integer to a C :c:type:`long int`."
-msgstr "Convertit un entier Python en un type  :ctype:`long int`."
+msgstr "Convertit un entier Python en un :c:type:`long int`."
 
 #: ../Doc/c-api/arg.rst:249 ../Doc/c-api/arg.rst:571
 msgid "``k`` (:class:`int`) [unsigned long]"
 msgstr "``k`` (:class:`int`) [unsigned long]"
 
 #: ../Doc/c-api/arg.rst:248
-#, fuzzy
 msgid ""
 "Convert a Python integer to a C :c:type:`unsigned long` without overflow "
 "checking."
 msgstr ""
-"Convertit un entier Python en un type C :ctype:`unsigned int`, sans contrôle "
-"de le débordement."
+"Convertit un entier Python en un :c:type:`unsigned long` C sans en vérifier "
+"le débordement."
 
 #: ../Doc/c-api/arg.rst:254 ../Doc/c-api/arg.rst:576
 msgid "``L`` (:class:`int`) [PY_LONG_LONG]"
 msgstr "``L`` (:class:`int`) [PY_LONG_LONG]"
 
 #: ../Doc/c-api/arg.rst:252
-#, fuzzy
 msgid ""
 "Convert a Python integer to a C :c:type:`long long`.  This format is only "
 "available on platforms that support :c:type:`long long` (or :c:type:`_int64` "
 "on Windows)."
 msgstr ""
-"Convertit un entier Python en un type C :ctype:`long long`. Ce format est "
-"uniquement disponible sur les plates-formes qui prennent en charge :ctype:"
-"`long long` (ou :ctype:`_int64` sous Windows)."
+"Convertit un entier Python en un :c:type:`long long` C. Ce format est "
+"uniquement disponible sur les plates-formes qui prennent en charge :c:type:"
+"`long long` (ou :c:type:`_int64` sous Windows)."
 
 #: ../Doc/c-api/arg.rst:259 ../Doc/c-api/arg.rst:581
 msgid "``K`` (:class:`int`) [unsigned PY_LONG_LONG]"
 msgstr "``K`` (:class:`int`) [unsigned PY_LONG_LONG]"
 
 #: ../Doc/c-api/arg.rst:257
-#, fuzzy
 msgid ""
 "Convert a Python integer to a C :c:type:`unsigned long long` without "
 "overflow checking.  This format is only available on platforms that support :"
 "c:type:`unsigned long long` (or :c:type:`unsigned _int64` on Windows)."
 msgstr ""
-"Convertit un entier Python en un type C :ctype:`unsigned long long` sans en "
+"Convertit un entier Python en un :c:type:`unsigned long long` C sans en "
 "vérifier le débordement. Ce format est uniquement disponible sur les plates-"
-"formes qui prennent en charge :ctype:`unsigned long long` (ou :ctype:"
+"formes qui prennent en charge :c:type:`unsigned long long` (ou :c:type:"
 "`unsigned _int64` sous Windows)."
 
 #: ../Doc/c-api/arg.rst:262 ../Doc/c-api/arg.rst:584
@@ -929,22 +909,20 @@ msgid "``n`` (:class:`int`) [Py_ssize_t]"
 msgstr "``n`` (:class:`int`) [Py_ssize_t]"
 
 #: ../Doc/c-api/arg.rst:262
-#, fuzzy
 msgid "Convert a Python integer to a C :c:type:`Py_ssize_t`."
-msgstr "Convertit un entier Python en un C :ctype:`short int`."
+msgstr "Convertit un entier Python en un :c:type:`short int` C."
 
 #: ../Doc/c-api/arg.rst:269
 msgid "``c`` (:class:`bytes` or :class:`bytearray` of length 1) [char]"
 msgstr ""
 
 #: ../Doc/c-api/arg.rst:265
-#, fuzzy
 msgid ""
 "Convert a Python byte, represented as a :class:`bytes` or :class:`bytearray` "
 "object of length 1, to a C :c:type:`char`."
 msgstr ""
-"Convertit un octet Python, représenté comme un objet :class:`bytes` de "
-"longueur 1, en un type C :ctype:`char`."
+"Convertit un octet Python, représenté comme un objet :class:`bytes` ou :"
+"class:`bytearray` de longueur 1, en un :c:type:`char` C."
 
 #: ../Doc/c-api/arg.rst:268
 msgid "Allow :class:`bytearray` objects."
@@ -955,51 +933,46 @@ msgid "``C`` (:class:`str` of length 1) [int]"
 msgstr "``C`` (:class:`str` of length 1) [int]"
 
 #: ../Doc/c-api/arg.rst:272
-#, fuzzy
 msgid ""
 "Convert a Python character, represented as a :class:`str` object of length "
 "1, to a C :c:type:`int`."
 msgstr ""
-"Convertit un octet Python, représenté comme un objet :class:`bytes` de "
-"longueur 1, en un type C :ctype:`char`."
+"Convertit un caractère Python, représenté comme un objet :class:`str` de "
+"longueur 1, en un :c:type:`int` C."
 
 #: ../Doc/c-api/arg.rst:276 ../Doc/c-api/arg.rst:598
 msgid "``f`` (:class:`float`) [float]"
 msgstr "``f`` (:class:`float`) [float]"
 
 #: ../Doc/c-api/arg.rst:276
-#, fuzzy
 msgid "Convert a Python floating point number to a C :c:type:`float`."
-msgstr "Convertit un nombre flottant Python vers un type C :ctype:`float`."
+msgstr "Convertit un nombre flottant Python vers un :c:type:`float`."
 
 #: ../Doc/c-api/arg.rst:279 ../Doc/c-api/arg.rst:595
 msgid "``d`` (:class:`float`) [double]"
 msgstr "``d`` (:class:`float`) [double]"
 
 #: ../Doc/c-api/arg.rst:279
-#, fuzzy
 msgid "Convert a Python floating point number to a C :c:type:`double`."
-msgstr "Convertit un nombre flottant Python vers un type C :ctype:`double`."
+msgstr "Convertit un nombre flottant Python vers un :c:type:`double` C."
 
 #: ../Doc/c-api/arg.rst:282
 msgid "``D`` (:class:`complex`) [Py_complex]"
 msgstr "``D`` (:class:`complex`) [Py_complex]"
 
 #: ../Doc/c-api/arg.rst:282
-#, fuzzy
 msgid "Convert a Python complex number to a C :c:type:`Py_complex` structure."
 msgstr ""
-"Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`."
+"Convertit un nombre complexe Python vers une structure :c:type:`Py_complex` "
+"C."
 
 #: ../Doc/c-api/arg.rst:285
-#, fuzzy
 msgid "Other objects"
 msgstr "Autres Objets"
 
 #: ../Doc/c-api/arg.rst:290 ../Doc/c-api/arg.rst:609
-#, fuzzy
 msgid "``O`` (object) [PyObject \\*]"
-msgstr "O (object) [PyObject *]"
+msgstr "``O`` (object) [PyObject \\*]"
 
 #: ../Doc/c-api/arg.rst:288
 msgid ""
@@ -1013,9 +986,8 @@ msgstr ""
 "*NULL*."
 
 #: ../Doc/c-api/arg.rst:297
-#, fuzzy
 msgid "``O!`` (object) [*typeobject*, PyObject \\*]"
-msgstr "O! (object) [typeobject, PyObject *]"
+msgstr "``O!`` (object) [*typeobject*, PyObject \\*]"
 
 #: ../Doc/c-api/arg.rst:293
 #, fuzzy
@@ -1244,7 +1216,6 @@ msgstr ""
 "formats suivantes sont laissées telles quelles."
 
 #: ../Doc/c-api/arg.rst:391
-#, fuzzy
 msgid "API Functions"
 msgstr "Fonction de l'API"
 
@@ -1465,11 +1436,8 @@ msgid "Convert a plain C :c:type:`short int` to a Python integer object."
 msgstr ""
 
 #: ../Doc/c-api/arg.rst:559
-#, fuzzy
 msgid "Convert a C :c:type:`long int` to a Python integer object."
-msgstr ""
-"Convertit un entier Python en un C :ctype:`unsigned short int`, sans "
-"contrôle de débordement."
+msgstr "Convertit un :c:type:`long int` en un int Python."
 
 #: ../Doc/c-api/arg.rst:562
 #, fuzzy
@@ -1580,18 +1548,16 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/arg.rst:612
-#, fuzzy
 msgid "``S`` (object) [PyObject \\*]"
-msgstr "S (object) [PyObject *]"
+msgstr "``S`` (object) [PyObject \\*]"
 
 #: ../Doc/c-api/arg.rst:612
 msgid "Same as ``O``."
 msgstr ""
 
 #: ../Doc/c-api/arg.rst:617
-#, fuzzy
 msgid "``N`` (object) [PyObject \\*]"
-msgstr "N (object) [PyObject *]"
+msgstr "``N`` (object) [PyObject \\*]"
 
 #: ../Doc/c-api/arg.rst:615
 msgid ""
@@ -1782,9 +1748,8 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/buffer.rst:69
-#, fuzzy
 msgid "Buffer structure"
-msgstr "Les objets tampons"
+msgstr "La structure *buffer*"
 
 #: ../Doc/c-api/buffer.rst:71
 #, fuzzy
@@ -2097,7 +2062,6 @@ msgstr ""
 #: ../Doc/c-api/buffer.rst:326 ../Doc/c-api/buffer.rst:328
 #: ../Doc/c-api/buffer.rst:330 ../Doc/c-api/buffer.rst:332
 #: ../Doc/c-api/buffer.rst:334
-#, fuzzy
 msgid "yes"
 msgstr "oui"
 
@@ -2251,9 +2215,8 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/buffer.rst:423
-#, fuzzy
 msgid "Buffer-related functions"
-msgstr "Fonctions relatives aux tampons"
+msgstr "Fonctions relatives aux buffers"
 
 #: ../Doc/c-api/buffer.rst:427
 msgid ""
@@ -2432,7 +2395,6 @@ msgid "Macro version of :c:func:`PyByteArray_Size`."
 msgstr ""
 
 #: ../Doc/c-api/bytes.rst:6
-#, fuzzy
 msgid "Bytes Objects"
 msgstr "Objets bytes"
 
@@ -3410,9 +3372,8 @@ msgstr ""
 "séquences qui sont intrinsèques au langage Python."
 
 #: ../Doc/c-api/concrete.rst:78
-#, fuzzy
 msgid "Container Objects"
-msgstr "Objets Code"
+msgstr "Objets Conteneurs"
 
 #: ../Doc/c-api/concrete.rst:91 ../Doc/c-api/function.rst:6
 msgid "Function Objects"
@@ -4487,7 +4448,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/exceptions.rst:491
-#, fuzzy
 msgid "Exception Objects"
 msgstr "Objets Exception"
 
@@ -4539,9 +4499,8 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/exceptions.rst:540
-#, fuzzy
 msgid "Unicode Exception Objects"
-msgstr "Objets Exception"
+msgstr "Objets Exception Unicode"
 
 #: ../Doc/c-api/exceptions.rst:542
 msgid ""
@@ -4873,7 +4832,6 @@ msgid ":exc:`ImportError`"
 msgstr ":exc:`ImportError`"
 
 #: ../Doc/c-api/exceptions.rst:724
-#, fuzzy
 msgid ":c:data:`PyExc_IndexError`"
 msgstr ":c:data:`PyExc_IndexError`"
 
@@ -4922,7 +4880,6 @@ msgid ":exc:`MemoryError`"
 msgstr ":exc:`MemoryError`"
 
 #: ../Doc/c-api/exceptions.rst:736
-#, fuzzy
 msgid ":c:data:`PyExc_NameError`"
 msgstr ":c:data:`PyExc_NameError`"
 
@@ -7089,7 +7046,6 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/init.rst:1126
-#, fuzzy
 msgid "Name"
 msgstr "Nom"
 
@@ -8066,9 +8022,8 @@ msgid ""
 msgstr ""
 
 #: ../Doc/c-api/long.rst:6
-#, fuzzy
 msgid "Integer Objects"
-msgstr "Autres Objets"
+msgstr "Objets *Integer*"
 
 #: ../Doc/c-api/long.rst:11
 msgid ""
@@ -10794,9 +10749,8 @@ msgid ":attr:`ml_meth`"
 msgstr ""
 
 #: ../Doc/c-api/structures.rst:133
-#, fuzzy
 msgid "PyCFunction"
-msgstr "Fonction de l'API"
+msgstr "PyCFunction"
 
 #: ../Doc/c-api/structures.rst:133
 msgid "pointer to the C implementation"
@@ -11018,7 +10972,7 @@ msgstr ""
 
 #: ../Doc/c-api/structures.rst:273 ../Doc/c-api/structures.rst:274
 msgid "PyObject \\*"
-msgstr ""
+msgstr "PyObject \\*"
 
 #: ../Doc/c-api/structures.rst:274
 msgid "T_OBJECT_EX"
@@ -12357,7 +12311,7 @@ msgstr ""
 
 #: ../Doc/c-api/typeobj.rst:601
 msgid "Comparison"
-msgstr ""
+msgstr "Comparaison"
 
 #: ../Doc/c-api/typeobj.rst:603
 msgid ":const:`Py_LT`"
@@ -13688,9 +13642,8 @@ msgid ":attr:`%U`"
 msgstr ""
 
 #: ../Doc/c-api/unicode.rst:508
-#, fuzzy
 msgid "A unicode object."
-msgstr "Objets Code"
+msgstr "Un objet unicode."
 
 #: ../Doc/c-api/unicode.rst:510
 msgid ":attr:`%V`"
