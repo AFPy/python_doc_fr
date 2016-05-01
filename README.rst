@@ -32,8 +32,8 @@ Progression de la traduction:
           howto     3%     3%     3%     3%     3%
           c-api     9%    10%    12%    12%    11%
        whatsnew     6%     7%    39%    46%    40%
-        library    13%    15%    15%    15%    16%
-      **TOTAL**    16%    16%    21%    23%    22%
+        library    13%    15%    15%    15%    18%
+      **TOTAL**    16%    16%    21%    23%    23%
 =============== ====== ====== ====== ====== ======
 
 Comment qu'on fait pour aider à traduire ?
