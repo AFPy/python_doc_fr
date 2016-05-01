@@ -61935,7 +61935,7 @@ msgstr ""
 
 #: library/os.rst:2
 msgid ":mod:`os` --- Miscellaneous operating system interfaces"
-msgstr ""
+msgstr "Diverses interfaces pour le système d'exploitation --- :mod:`os`"
 
 #: library/os.rst:8
 msgid ""
@@ -61947,10 +61947,18 @@ msgid ""
 "mod:`tempfile` module, and for high-level file and directory handling see "
 "the :mod:`shutil` module."
 msgstr ""
+"Ce module fournit une manière portable d'utiliser les fonctionnalités "
+"dépendantes du système d'exploitation. Si vous voulez uniquement lire ou "
+"écrire dans un fichier, voir :func:`open`, si vous voulez manipuler des "
+"chemins, voir le module :mod:`os.path`, et si voulez lire toutes les lignes "
+"des fichiers listés par l'invite de commande, voir le module :mod:"
+"`fileinput`. Pour créer des fichiers temporaires, voir le module :mod:"
+"`tempfile`, et pour une manipulation haut niveau des fichiers et dossiers, "
+"voir le module :mod:`shutil`."
 
 #: library/os.rst:16
 msgid "Notes on the availability of these functions:"
-msgstr ""
+msgstr "Notes sur la disponibilité de ces fonctions :"
 
 #: library/os.rst:18
 msgid ""
@@ -61960,6 +61968,11 @@ msgid ""
 "information about *path* in the same format (which happens to have "
 "originated with the POSIX interface)."
 msgstr ""
+"La conception des modules natifs Python dépendants du système d'exploitation "
+"sont tels que tant qu'une même fonctionnalité est disponible, elle utilise "
+"la même interface. Par exemple, la fonction ``os.stat(path)`` retourne des "
+"informations sur les statistiques de *path* dans le même format (qui est "
+"originaire de l'interface POSIX)."
 
 #: library/os.rst:24
 msgid ""
@@ -61967,6 +61980,9 @@ msgid ""
 "through the :mod:`os` module, but using them is of course a threat to "
 "portability."
 msgstr ""
+"Les extensions propres à un certain système d'exploitation sont également "
+"disponible par le module :mod:`os`, mais les utiliser est bien entendu une "
+"menace pour la portabilité."
 
 #: library/os.rst:28
 msgid ""
@@ -61974,6 +61990,9 @@ msgid ""
 "objects, and result in an object of the same type, if a path or file name is "
 "returned."
 msgstr ""
+"Toutes les fonctions acceptant les chemins ou noms de fichiers acceptent à "
+"la fois les objets *bytes* et *string*, et résultent en un objet du même "
+"type, si un chemin ou nom de fichier est retourné."
 
 #: library/os.rst:32
 msgid ""
@@ -61981,12 +62000,18 @@ msgid ""
 "Unix systems.  It does not make any claims about its existence on a specific "
 "operating system."
 msgstr ""
+"Une note \"Disponibilité : Unix \" signifie que cette fonction est "
+"communément implémentée dans les systèmes Unix. Une telle note ne prétend "
+"pas l'existence de la fonction sur un système d'exploitation particulier."
 
 #: library/os.rst:36
 msgid ""
 "If not separately noted, all functions that claim \"Availability: Unix\" are "
 "supported on Mac OS X, which builds on a Unix core."
 msgstr ""
+"Si ce n'est pas mentionné séparément, toutes les fonctions se réclamant "
+"\"Disponibilité : Unix\" sont supportées sur Mac OS X, qui est compilé sur "
+"une unité Unix."
 
 #: library/os.rst:44
 msgid ""
@@ -61994,10 +62019,13 @@ msgid ""
 "inaccessible file names and paths, or other arguments that have the correct "
 "type, but are not accepted by the operating system."
 msgstr ""
+"Toutes les fonctions de ce module lèvent une :exc:`OSError` dans le cas d'un "
+"chemin ou nom de fichier invalide ou inaccessible, ou si d'autres arguments "
+"sont de type correct mais non supporté par le système d'exploitation."
 
 #: library/os.rst:50
 msgid "An alias for the built-in :exc:`OSError` exception."
-msgstr ""
+msgstr "Un alias pour les exceptions natives :exc:`OSError`."
 
 #: library/os.rst:55
 msgid ""
@@ -62011,16 +62039,22 @@ msgid ""
 ":attr:`sys.platform` has a finer granularity.  :func:`os.uname` gives system-"
 "dependent version information."
 msgstr ""
+":attr:`sys.platform` a une granularité plus fine. :func:`os.uname` donne des "
+"informations de version dépendantes de système."
 
 #: library/os.rst:63 library/sys.rst:757
 msgid ""
 "The :mod:`platform` module provides detailed checks for the system's "
 "identity."
 msgstr ""
+"Le module :mod:`platform` fournit des vérifications détaillées pour "
+"l'identité du système."
 
 #: library/os.rst:70
 msgid "File Names, Command Line Arguments, and Environment Variables"
 msgstr ""
+"Noms de fichiers, arguments en ligne de commande, et variables "
+"d'environnement"
 
 #: library/os.rst:72
 msgid ""
@@ -62030,6 +62064,12 @@ msgid ""
 "Python uses the file system encoding to perform this conversion (see :func:"
 "`sys.getfilesystemencoding`)."
 msgstr ""
+"En Python, les noms de fichiers, les arguments en ligne de commandes, et les "
+"variables d'environnement sont représentées en utilisant le type *string* de "
+"chaînes de caractères. Sur certains systèmes, décoder ces chaînes de "
+"caractères depuis - et vers - des *bytes* est nécessaire avant de les passer "
+"au système d'exploitation. Python utilise l'encodage système des fichiers "
+"pour réaliser ces conversions (voir :func:`sys.getfilesystemencoding`)."
 
 #: library/os.rst:78
 msgid ""
@@ -62045,16 +62085,22 @@ msgid ""
 "below 128. If the file system encoding fails to provide this guarantee, API "
 "functions may raise UnicodeErrors."
 msgstr ""
+"L'encodage système des fichiers doit garantir de pouvoir décoder "
+"correctement tous les bytes en dessous de 128.Si l'encodage système des "
+"fichiers ne peut garantir cela, les fonctions de l'API peuvent lever une :"
+"exc:`UnicodeError`."
 
 #: library/os.rst:93
 msgid "Process Parameters"
-msgstr ""
+msgstr "Paramètres de proccessus"
 
 #: library/os.rst:95
 msgid ""
 "These functions and data items provide information and operate on the "
 "current process and user."
 msgstr ""
+"Ces fonctions et valeurs fournissent des informations et agissent sur le "
+"processus actuel et sur l'utilisateur."
 
 #: library/os.rst:101
 msgid ""
@@ -62062,6 +62108,10 @@ msgid ""
 "``environ['HOME']`` is the pathname of your home directory (on some "
 "platforms), and is equivalent to ``getenv(\"HOME\")`` in C."
 msgstr ""
+"Un objet :term:`mapping` représentant la chaîne de caractères "
+"d'environnement. Par exemple ``environ['HOME']`` est le chemin vers votre "
+"répertoire personnel (sur certaines plate-formes), etest équivalent à "
+"``getenv(\"HOME\")`` en C."
 
 #: library/os.rst:105
 msgid ""
@@ -62070,6 +62120,11 @@ msgid ""
 "Changes to the environment made after this time are not reflected in ``os."
 "environ``, except for changes made by modifying ``os.environ`` directly."
 msgstr ""
+"Ce *mapping* est capturé la première fois que le module :mod:`os` est "
+"importé, typiquement pendant le démarrage de Python, lors de l'exécution de :"
+"file:`site.py`. Les changements de l'environnement opérés après cette "
+"capture ne sont pas apportés à ``os.environ``, à part les modifications "
+"directes de ``os.environ``."
 
 #: library/os.rst:110
 msgid ""
@@ -62077,6 +62132,9 @@ msgid ""
 "used to modify the environment as well as query the environment.  :func:"
 "`putenv` will be called automatically when the mapping is modified."
 msgstr ""
+"Si la plate-forme supporte la fonction :func:`putenv`, ce *mapping* peut "
+"être utilisé pour modifier l'environnement autant que pour l'interroger. :"
+"func:`putenv` sera appelée automatiquement quand le *mapping* est effectué."
 
 #: library/os.rst:114
 msgid ""
@@ -62084,18 +62142,26 @@ msgid ""
 "``'surrogateescape'`` error handler. Use :data:`environb` if you would like "
 "to use a different encoding."
 msgstr ""
+"Sur Unix, les clefs et les valeurs utilisent :func:`sys."
+"getfilesystemencoding` et le gestionnaire d'erreurs ``surrogateescape``. "
+"Utilisez :data:`environb` si vous désirez utiliser un encodage différent."
 
 #: library/os.rst:120
 msgid ""
 "Calling :func:`putenv` directly does not change ``os.environ``, so it's "
 "better to modify ``os.environ``."
 msgstr ""
+"Appeler :func:`putenv` ne change pas directement ``os.environ``, donc il est "
+"préférable de modifier ``os.environ``."
 
 #: library/os.rst:125
 msgid ""
 "On some platforms, including FreeBSD and Mac OS X, setting ``environ`` may "
 "cause memory leaks.  Refer to the system documentation for :c:func:`putenv`."
 msgstr ""
+"Sur certaines plate-formes, dont FreeBSD et Mac OS X, procéder à des "
+"assignations sur ``environ`` peut causer des fuites de mémoire. Referez-vous "
+"à la documentation système de :func:`putenv`."
 
 #: library/os.rst:129
 msgid ""
@@ -62103,6 +62169,9 @@ msgid ""
 "passed to the appropriate process-creation functions to cause  child "
 "processes to use a modified environment."
 msgstr ""
+"Si :func:`putenv` n'est pas fourni, une copie modifiée de ce *mapping* peut "
+"être passé aux fonctions appropriées de création de processus pour forcer "
+"l'utilisation d'un environnement modifié pour le processus fils."
 
 #: library/os.rst:133
 msgid ""
@@ -62111,6 +62180,11 @@ msgid ""
 "called automatically when an item is deleted from ``os.environ``, and when "
 "one of the :meth:`pop` or :meth:`clear` methods is called."
 msgstr ""
+"Si la plate-forme supporte la fonction :func:`unsetenv`, vous pouvez "
+"supprimer des éléments dans ce *mapping* pour désassigner les variables "
+"d'environnement. La fonction :func:`unsetenv` sera appelée automatiquement "
+"quand un élément est supprimé de ``os.environ``, et quand l'une des "
+"méthodes :meth:`pop` ou :meth:`clear` est appelée."
 
 #: library/os.rst:141
 msgid ""
@@ -62119,35 +62193,47 @@ msgid ""
 "synchronized (modify :data:`environb` updates :data:`environ`, and vice "
 "versa)."
 msgstr ""
+"Version *bytes* de :data:`environ` : un :term:`mapping` d'objets "
+"représentant l'environnement par des chaîne de *byets*. :data:`environ` et :"
+"data:`environb` sont synchronisés (modifier :data:`environ` modifie :data:"
+"`environb`, et vice-versa)."
 
 #: library/os.rst:146
 msgid ""
 ":data:`environb` is only available if :data:`supports_bytes_environ` is True."
 msgstr ""
+":data:`environb` est uniquement disponible si :data:`supports_byte_environ` "
+"vaut ``True``."
 
 #: library/os.rst:157
 msgid "These functions are described in :ref:`os-file-dir`."
-msgstr ""
+msgstr "Ces fonctions sont décrites dans :ref:`os-file-dir`."
 
 #: library/os.rst:162
 msgid ""
 "Encode *filename* to the filesystem encoding with ``'surrogateescape'`` "
 "error handler, or ``'strict'`` on Windows; return :class:`bytes` unchanged."
 msgstr ""
+"Encode *filenam* dans l'encodage système des fichiers avec le gestionnaire "
+"d'erreurs ``surrogateescape``, ou ``strict`` sous Widnows. Retourne :class:"
+"`bytes` inchangé."
 
 #: library/os.rst:165
 msgid ":func:`fsdecode` is the reverse function."
-msgstr ""
+msgstr ":func:`fsdecode` est la fonction inverse."
 
 #: library/os.rst:172
 msgid ""
 "Decode *filename* from the filesystem encoding with ``'surrogateescape'`` "
 "error handler, or ``'strict'`` on Windows; return :class:`str` unchanged."
 msgstr ""
+"Décode *filename* depuis l'encodage système des fichiers avec le "
+"gestionnaire d'erreurs ``surrogateescape``, ou ``strict`` sous Windows. "
+"Retourne :class:`str` inchangé."
 
 #: library/os.rst:175
 msgid ":func:`fsencode` is the reverse function."
-msgstr ""
+msgstr ":func:`fsencode` est la fonction inverse."
 
 #: library/os.rst:182
 msgid ""
@@ -62156,11 +62242,18 @@ msgid ""
 "specified, should be an environment variable dictionary to lookup the PATH "
 "in. By default, when *env* is None, :data:`environ` is used."
 msgstr ""
+"Retourne la liste des répertoires qui seront cherchés pour un exécutable "
+"donné, similairement à un *shell*, quand un processus est lancé. *env*, "
+"quand spécifié, doit être un dictionnaire de variables d'environnement pour "
+"y rechercher le *PATH*. Par défaut, quand *env* vaut ``None``, c'est :data:"
+"`environ` qui est utilisé."
 
 #: library/os.rst:193
 msgid ""
 "Return the filename corresponding to the controlling terminal of the process."
 msgstr ""
+"Retourne l'identifiant de fichier correspondant au terminal contrôlant le "
+"processus."
 
 #: library/os.rst:195 library/os.rst:203 library/os.rst:212 library/os.rst:221
 #: library/os.rst:228 library/os.rst:251 library/os.rst:272 library/os.rst:280
@@ -62188,26 +62281,30 @@ msgstr ""
 #: library/os.rst:2240 library/os.rst:2250 library/os.rst:2259
 #: library/os.path.rst:272 library/time.rst:459
 msgid "Availability: Unix."
-msgstr ""
+msgstr "Disponibilité : Unix."
 
 #: library/os.rst:200
 msgid ""
 "Return the effective group id of the current process.  This corresponds to "
 "the \"set id\" bit on the file being executed in the current process."
 msgstr ""
+"Retourne l'id du groupe effectif du processus actuel. Ça correspond au bit "
+"\"*set id*\" du fichier qui s'exécute dans le processus actuel."
 
 #: library/os.rst:210
 msgid "Return the current process's effective user id."
-msgstr ""
+msgstr "Retourne l'id de l'utilisateur effectif du processus actuel."
 
 #: library/os.rst:219
 msgid "Return the real group id of the current process."
-msgstr ""
+msgstr "Retourne l'id de groupe réel du processus actuel."
 
 #: library/os.rst:226
 msgid ""
 "Return list of supplemental group ids associated with the current process."
 msgstr ""
+"Retourne une liste d'ids de groupes additionnels associés au processus "
+"actuel."
 
 #: library/os.rst:230
 msgid ""
@@ -62225,6 +62322,20 @@ msgid ""
 "`MACOSX_DEPLOYMENT_TARGET`, can be obtained with :func:`sysconfig."
 "get_config_var`."
 msgstr ""
+"Sur Mac OS X, le comportement de :func:`getgroups` diffère légèrement des "
+"autres plate-formes Unix. Si l'interpréteur Python était compilé avec une "
+"cible de déploiement de :const:`10.5` ou moins, :func:`getgroups` retourne "
+"la liste des ids de groupes effectifs associés au processus courant de "
+"l'utilisateur ; ceci est limité à un nombre défini par le système d'entrée, "
+"typiquement 16, et peut être modifié par des appels à :func:`setgroups` si "
+"les privilèges ont été convenablement assignés. Si compilé avec une cible de "
+"déploiement supérieure à :const:`10.5`, la fonction :func:`getgroups` "
+"retourne la liste des accès du groupe actuel pour l'utilisateur associé à "
+"l'id utilisateur du processus ; la liste d'accès du groupe peut changer "
+"durant la vie du processus, elle n'est pas affecté par les appels à :func:"
+"`setgroups` et sa longueur n'est pas limitée à 16.  La valeur de la cible de "
+"déploiement, :const:`MACOSX_DEPLOYMENT_TARGET`, peut être obtenue par la "
+"fonction :func:`sysconfig.get_config_var`."
 
 #: library/os.rst:247
 msgid ""
@@ -62232,6 +62343,9 @@ msgid ""
 "the groups of which the specified username is a member, plus the specified "
 "group id."
 msgstr ""
+"Appelle la fonction système initgroups() pour initialiser la liste des "
+"groupes d'accès des groupes dont *username* est membre, plus le groupe "
+"spécifié par *gid*."
 
 #: library/os.rst:258
 msgid ""
@@ -62255,21 +62369,23 @@ msgstr ""
 #: library/os.rst:2032 library/os.path.rst:237 library/os.path.rst:250
 #: library/os.path.rst:260
 msgid "Availability: Unix, Windows."
-msgstr ""
+msgstr "Disponibilité : Unix, Windows."
 
 #: library/os.rst:269
 msgid ""
 "Return the process group id of the process with process id *pid*. If *pid* "
 "is 0, the process group id of the current process is returned."
 msgstr ""
+"Retourne l'id de groupe de processus du processus dont l'id est *pid*. Si "
+"*pid* vaut 0, l'id de groupe de processus du processus actuel est retourné."
 
 #: library/os.rst:278
 msgid "Return the id of the current process group."
-msgstr ""
+msgstr "Retourne l'id du groupe de processus actuel."
 
 #: library/os.rst:287
 msgid "Return the current process id."
-msgstr ""
+msgstr "Retourne l'id du processus actuel."
 
 #: library/os.rst:296
 msgid ""
@@ -62277,26 +62393,34 @@ msgid ""
 "the id returned is the one of the init process (1), on Windows it is still "
 "the same id, which may be already reused by another process."
 msgstr ""
+"Retourne l'id du processus parent. Quand le processus parent est terminé, "
+"sur Unix, l'id retourné est 1 pour le processus *init*, sur Windows, c'est "
+"toujours le même id, qui peut déjà avoir été réutilisé par un autre "
+"processus."
 
 #: library/os.rst:300 library/os.rst:1249 library/os.rst:2044
 msgid "Availability: Unix, Windows"
-msgstr ""
+msgstr "Disponibilité Unix, Windows"
 
 #: library/os.rst:302
 msgid "Added support for Windows."
-msgstr ""
+msgstr "Support pour Windows ajouté."
 
 #: library/os.rst:307
 msgid ""
 "Return a tuple (ruid, euid, suid) denoting the current process's real, "
 "effective, and saved user ids."
 msgstr ""
+"Retourne un *tuple* (ruid, euid, suid) dénotant les ids de l'utilisateur "
+"réel, effectif et sauvé du processus actuel."
 
 #: library/os.rst:317
 msgid ""
 "Return a tuple (rgid, egid, sgid) denoting the current process's real, "
 "effective, and saved group ids."
 msgstr ""
+"Retourne un *tuple* (rgid, egid, sgid) dénotant les ids des groupes de "
+"processus réel effectif, et sauvé du processus actuel."
 
 #: library/os.rst:329
 msgid "Return the current process's user id."
@@ -62307,6 +62431,9 @@ msgid ""
 "Return the value of the environment variable *key* if it exists, or "
 "*default* if it doesn't. *key*, *default* and the result are str."
 msgstr ""
+"Retourne la valeur de la variable d'environnement *key* si elle existe, ou "
+"*default* si elle n'existe pas. *key*, *default*, et la valeur de retour "
+"sont des :class:`str`."
 
 #: library/os.rst:339
 msgid ""
@@ -62314,20 +62441,26 @@ msgid ""
 "and ``'surrogateescape'`` error handler. Use :func:`os.getenvb` if you would "
 "like to use a different encoding."
 msgstr ""
+"Sur Unix, les clefs et les valeurs sont décodées avec :func:`sys."
+"getfilesystemencoding` et le gestionnaire d'erreurs ``surrogateescape``. "
+"Utilisez :func:`os.getenvb` si vous voulez utiliser un encodage différent."
 
 #: library/os.rst:343 library/os.rst:364 library/os.rst:537
 msgid "Availability: most flavors of Unix, Windows."
-msgstr ""
+msgstr "Disponibilité : la plupart des dérivés Unix, Windows."
 
 #: library/os.rst:348
 msgid ""
 "Return the value of the environment variable *key* if it exists, or "
 "*default* if it doesn't. *key*, *default* and the result are bytes."
 msgstr ""
+"Retourne la valeur de la variable d'environnement *key* si elle existe, ou "
+"*default* si elle n'existe pas. *key*, *default*, et la valeur de retour "
+"sont des :class:`bytes`."
 
 #: library/os.rst:351
 msgid "Availability: most flavors of Unix."
-msgstr ""
+msgstr "Disponibilité : la plupart des dérivés Unix."
 
 #: library/os.rst:360
 msgid ""
@@ -62335,12 +62468,18 @@ msgid ""
 "changes to the environment affect subprocesses started with :func:`os."
 "system`, :func:`popen` or :func:`fork` and :func:`execv`."
 msgstr ""
+"Assigne la chaîne de caractères *value* à la variable d'environnement *key*. "
+"De tels changements à l'environnement affectent les sous-processus lancés "
+"par :func:`os.system`, :func:`popen` ou :func:`fork` et :func:`execv`."
 
 #: library/os.rst:368
 msgid ""
 "On some platforms, including FreeBSD and Mac OS X, setting ``environ`` may "
 "cause memory leaks. Refer to the system documentation for putenv."
 msgstr ""
+"Sur certaines plate-formes, incluant FreeBSD et Mac OS X, assigner "
+"``environ`` peut causer des fuites de mémoire. Referez-vous à à la "
+"documentation système de putenv."
 
 #: library/os.rst:371
 msgid ""
@@ -62349,18 +62488,23 @@ msgid ""
 "however, calls to :func:`putenv` don't update ``os.environ``, so it is "
 "actually preferable to assign to items of ``os.environ``."
 msgstr ""
+"Quand :func:`putenv` est supporté, les assignations d'éléments dans ``os."
+"environ`` sont automatiquement traduites en appels correspondants à :func:"
+"`putenv`. Cependant, des appels à :func:`putenv` ne mettent pas ``os."
+"environ`` à jour. Il est donc préférable d'assigner les éléments de ``os."
+"environ``."
 
 #: library/os.rst:379
 msgid "Set the current process's effective group id."
-msgstr ""
+msgstr "Définit l'id du groupe de processus effectif du processus actuel."
 
 #: library/os.rst:386
 msgid "Set the current process's effective user id."
-msgstr ""
+msgstr "Définit l'id de l'utilisateur effectif du processus actuel."
 
 #: library/os.rst:393
 msgid "Set the current process' group id."
-msgstr ""
+msgstr "Définit l'id du groupe de processus actuel."
 
 #: library/os.rst:400
 msgid ""
@@ -62369,6 +62513,10 @@ msgid ""
 "integer identifying a group. This operation is typically available only to "
 "the superuser."
 msgstr ""
+"Place *groups* dans la liste d'ids de groupes additionnels associée. "
+"*groups* doit être une séquence, et chaque élément doit être yb ebtuer "
+"udentifiant un groupe. Cette opération est typiquement disponible uniquement "
+"pour le superutilisateur."
 
 #: library/os.rst:406
 msgid ""
@@ -62377,6 +62525,11 @@ msgid ""
 "for :func:`getgroups` for cases where it may not return the same group list "
 "set by calling setgroups()."
 msgstr ""
+"Sur Mac OS X, la longueur de *groups* ne peut pas dépasser le nombre maximum "
+"d'ids effectifs de groupes défini par le système, typiquement 16. Voir la "
+"documentation de :func:`getgroups` pour les cas où getgroups() ne "
+"retournerait pas la même liste de groupes que celle définie par l'appel à "
+"setgroups()."
 
 #: library/os.rst:413
 msgid ""
@@ -62391,38 +62544,46 @@ msgid ""
 "process with id *pid* to the process group with id *pgrp*.  See the Unix "
 "manual for the semantics."
 msgstr ""
+"Produit l'appel système :c:func:`setpgid` pour placer l'id du groupe de "
+"processus contenant le processus d'id *pid* dans le groupe de processus d'id "
+"*pgrp*. Voir le manuel Unix pour la sémantique."
 
 #: library/os.rst:430
 msgid "Set the current process's real and effective group ids."
-msgstr ""
+msgstr "Définit l'id des groupes réel et effectif du processus actuel."
 
 #: library/os.rst:437
 msgid "Set the current process's real, effective, and saved group ids."
-msgstr ""
+msgstr "Définit l'id des groupes réel, effectif et sauvé du processus actuel."
 
 #: library/os.rst:446
 msgid "Set the current process's real, effective, and saved user ids."
 msgstr ""
+"Définit l'id des utilisateurs réel, effectif et sauvé du processus actuel."
 
 #: library/os.rst:455
 msgid "Set the current process's real and effective user ids."
-msgstr ""
+msgstr "Définit l'id des utilisateurs réel et effectif du processus actuel."
 
 #: library/os.rst:462
 msgid ""
 "Call the system call :c:func:`getsid`.  See the Unix manual for the "
 "semantics."
 msgstr ""
+"Produit l'appel système :c:func:`getsid`. Voir le manuel Unix pour la "
+"sémantique."
 
 #: library/os.rst:469
 msgid ""
 "Call the system call :c:func:`setsid`.  See the Unix manual for the "
 "semantics."
 msgstr ""
+"Produit l'appel système :c:func:`setsid`. Voir le manuel Unix pour la "
+"sémantique."
 
 #: library/os.rst:478
 msgid "Set the current process's user id."
-msgstr ""
+msgstr "Définit l'id de l'utilisateur du processus actuel."
 
 #: library/os.rst:486
 msgid ""
@@ -62430,6 +62591,9 @@ msgid ""
 "platforms where :c:func:`strerror` returns ``NULL`` when given an unknown "
 "error number, :exc:`ValueError` is raised."
 msgstr ""
+"Retourne le message d'erreur correspondant au code d'erreur *code*. Sur les "
+"plate-formes où :c:func:`strerror` retourne ``NULL`` quand un numéro "
+"d'erreur inconnu est donné, une :exc:`ValueError` est levée."
 
 #: library/os.rst:495
 msgid ""
@@ -62439,7 +62603,7 @@ msgstr ""
 
 #: library/os.rst:503
 msgid "Set the current numeric umask and return the previous umask."
-msgstr ""
+msgstr "Définit le *umask* actuel et retourne la valeur précédente."
 
 #: library/os.rst:514
 msgid ""
@@ -62452,7 +62616,7 @@ msgstr ""
 
 #: library/os.rst:521
 msgid "Availability: recent flavors of Unix."
-msgstr ""
+msgstr "Disponibilité : dérivés récents de Unix."
 
 #: library/os.rst:528
 msgid ""
@@ -62460,6 +62624,9 @@ msgid ""
 "environment affect subprocesses started with :func:`os.system`, :func:"
 "`popen` or :func:`fork` and :func:`execv`."
 msgstr ""
+"Désassigne (supprime) la variable d'environnement appelée *key*. De tels "
+"changements à l'environnement affectent les sous-processus lancés avec :func:"
+"`os.system`, :func:`popen` ou :func:`fork` et :func:`execv`."
 
 #: library/os.rst:532
 msgid ""
@@ -62468,10 +62635,14 @@ msgid ""
 "however, calls to :func:`unsetenv` don't update ``os.environ``, so it is "
 "actually preferable to delete items of ``os.environ``."
 msgstr ""
+"Quand :func:`unsetenv` est supportée, la suppression d'éléments dans ``os."
+"environ`` est automatiquement interprétée en un appel correspondant à :func:"
+"`unsetenv`, mais les appels à :func:`unsetenv` ne mettent pas ``os.environ`` "
+"à jour. Donc il est préférable de supprimer les éléments de ``os.environ``."
 
 #: library/os.rst:543
 msgid "File Object Creation"
-msgstr ""
+msgstr "Création de Fichiers Objets"
 
 #: library/os.rst:545
 msgid ""
@@ -62488,12 +62659,14 @@ msgstr ""
 
 #: library/os.rst:559
 msgid "File Descriptor Operations"
-msgstr ""
+msgstr "Opérations sur les Descripteurs de Fichiers"
 
 #: library/os.rst:561
 msgid ""
 "These functions operate on I/O streams referenced using file descriptors."
 msgstr ""
+"Ces fonctions opèrent sur des flux d'E/S référencés par des descripteurs de "
+"fichiers."
 
 #: library/os.rst:563
 msgid ""
@@ -62504,6 +62677,13 @@ msgid ""
 "\"file descriptor\" is slightly deceptive; on Unix platforms, sockets and "
 "pipes are also referenced by file descriptors."
 msgstr ""
+"Les descripteurs de fichiers sont de petits entiers correspondant à un "
+"fichier qui a été ouvert par le processus courant. Par exemple, l'entrée "
+"standard est habituellement le descripteur de fichier 0, la sortie standard "
+"est 1, et le flux standard d'erreur est 2. Les autres fichiers ouverts par "
+"un processus vont se voir assigner 3, 4, 5, etc. Le nom \"descripteur de "
+"fichier\" est légèrement trompeur : sur les plate-formes Unix, les *sockets* "
+"et les *pipes* sont également référencés par des descripteurs."
 
 #: library/os.rst:570
 msgid ""
@@ -62515,7 +62695,7 @@ msgstr ""
 
 #: library/os.rst:577
 msgid "Close file descriptor *fd*."
-msgstr ""
+msgstr "Ferme le descripteur de fichier *fd*."
 
 #: library/os.rst:583
 msgid ""
@@ -62536,6 +62716,8 @@ msgid ""
 "Return a string describing the encoding of the device associated with *fd* "
 "if it is connected to a terminal; else return :const:`None`."
 msgstr ""
+"Retourne une chaîne de caractères décrivant l'encodage du périphérique "
+"associé à *fd* s'il est connecté à un terminal, sinon retourne :const:`None`."
 
 #: library/os.rst:611
 msgid "Return a duplicate of file descriptor *fd*."
@@ -62564,10 +62746,12 @@ msgid ""
 "Force write of file with filedescriptor *fd* to disk. Does not force update "
 "of metadata."
 msgstr ""
+"Force l'écriture du fichier ayant le descripteur *fd* sur le disque. Ne "
+"force pas la mise à jour des méta-données."
 
 #: library/os.rst:647
 msgid "This function is not available on MacOS."
-msgstr ""
+msgstr "Cette fonction n'est pas disponible sur MacOS."
 
 #: library/os.rst:652
 msgid ""
@@ -62579,6 +62763,15 @@ msgid ""
 "given in the ``pathconf_names`` dictionary.  For configuration variables not "
 "included in that mapping, passing an integer for *name* is also accepted."
 msgstr ""
+"Retourne les informations de la configuration du système pour un fichier "
+"ouvert. *name* spécifie la valeur de la configuration à récupérer, ça peut "
+"être une chaîne de caractères avec le nom d'une valeur système définie ; ces "
+"valeurs sont spécifiées dans certains standards (POSIX.1, Unix 95, Unix 98, "
+"et d'autres). Certaines plate-formes définissent des noms additionnels "
+"également. Les noms connus par le système d'exploitation sont donnés dans le "
+"dictionnaire ``pathconf_names``. Pour les variables de configuration qui ne "
+"sont pas inclues dans ce *mapping*, passer un entier pour *name* est "
+"également accepté."
 
 #: library/os.rst:660 library/os.rst:1222
 msgid ""
@@ -62587,6 +62780,11 @@ msgid ""
 "included in ``pathconf_names``, an :exc:`OSError` is raised with :const:"
 "`errno.EINVAL` for the error number."
 msgstr ""
+"Si *name* est une chaîne de caractères et n'est pas connu, une :exc:"
+"`ValueError` est levée. Si une valeur spécifique de *name* n'est pas "
+"supportée par le système hôte, même si elle est incluse dans "
+"``pathconf_names``, une :exc:`OSError` est levée avec :const:`errno.EINVAL` "
+"pour code d'erreur."
 
 #: library/os.rst:670
 msgid "Return status for file descriptor *fd*, like :func:`~os.stat`."
@@ -62604,6 +62802,9 @@ msgid ""
 "the native :c:func:`fsync` function; on Windows, the MS :c:func:`_commit` "
 "function."
 msgstr ""
+"Force l'écriture du fichier ayant le descripteur *fd* sur le disque. Sur "
+"Unix, cet appel appel la fonction native :c:func:`fsync`, sur Windows, la "
+"fonction MS :c:func:`_commit`."
 
 #: library/os.rst:688
 msgid ""
@@ -62611,6 +62812,10 @@ msgid ""
 "``f.flush()``, and then do ``os.fsync(f.fileno())``, to ensure that all "
 "internal buffers associated with *f* are written to disk."
 msgstr ""
+"Si vous débutez avec un :term:`fichier objet` Python mis en tampon *f*, "
+"commencez par faire ``f.flush()`` et seulement ensuite ``os.fsync(f."
+"fileno())`` pour être sûr que tous les tampons internes associés à *f* "
+"soient écrits sur le disque."
 
 #: library/os.rst:692
 msgid "Availability: Unix, and Windows."
@@ -62627,6 +62832,8 @@ msgid ""
 "Return ``True`` if the file descriptor *fd* is open and connected to a tty(-"
 "like) device, else ``False``."
 msgstr ""
+"Retourne ``True`` si le descripteur de fichier *fd* est ouvert et connecté à "
+"un périphérique tty(-compatible), sinon ``False``."
 
 #: library/os.rst:713
 msgid ""
@@ -62667,6 +62874,11 @@ msgid ""
 "meth:`~file.read` and :meth:`~file.write` methods (and many more).  To wrap "
 "a file descriptor in a file object, use :func:`fdopen`."
 msgstr ""
+"Cette fonction est destinée aux E/S de bas-niveau. Pour un usage normal, "
+"utilisez la primitive :func:`open` qui retourne un :term:`fichier objet` "
+"avec les methodes :meth:`~file.read` et :meth:`~file.write` (et plein "
+"d'autres). Pour envelopper un descripteur de fichier dans un fichier objet, "
+"utilisez :func:`fdopen`."
 
 #: library/os.rst:756
 msgid ""
@@ -62677,7 +62889,7 @@ msgstr ""
 
 #: library/os.rst:760 library/os.rst:1827
 msgid "Availability: some flavors of Unix."
-msgstr ""
+msgstr "Disponibilité : certains dérivés Unix."
 
 #: library/os.rst:765
 msgid ""
@@ -62691,6 +62903,9 @@ msgid ""
 "containing the bytes read.  If the end of the file referred to by *fd* has "
 "been reached, an empty bytes object is returned."
 msgstr ""
+"Lit au plus *n* bytes depuis le descripteur *fd*. Retourne une chaîne de "
+"bytes contenant les bytes lus. Si la fin du fichier référencé par *fd* est "
+"atteinte, un objet vide de bytes est renvoyé."
 
 #: library/os.rst:781
 msgid ""
@@ -62700,18 +62915,27 @@ msgid ""
 "or :func:`fdopen`, or :data:`sys.stdin`, use its :meth:`~file.read` or :meth:"
 "`~file.readline` methods."
 msgstr ""
+"Cette fonction est destinée aux E/S bas niveau et doit être appliquée à un "
+"descripteur de fichier comme retourné par :func:`os.open` ou :func:`pipe`. "
+"Pour lire dans un \"fichier objet\" retourné par la primitive :func:`open` "
+"ou :func:`fdopen`, ou par :data:`stdin`, utilisez sa méthode :meth:`~file."
+"read` ou :meth:`~file.readline`."
 
 #: library/os.rst:790
 msgid ""
 "Return the process group associated with the terminal given by *fd* (an open "
 "file descriptor as returned by :func:`os.open`)."
 msgstr ""
+"Retourne le groupe de processus associé au terminal donné par *fd* (un "
+"descripteur de fichier ouvert comme retourné par :func:`os.open`)."
 
 #: library/os.rst:798
 msgid ""
 "Set the process group associated with the terminal given by *fd* (an open "
 "file descriptor as returned by :func:`os.open`) to *pg*."
 msgstr ""
+"Place *pg* dans le groupe de processus associé au terminal donné par *fd* "
+"(un descripteur de fichier ouvert comme retourné par :func:`os.open`)."
 
 #: library/os.rst:806
 msgid ""
@@ -62719,12 +62943,17 @@ msgid ""
 "descriptor *fd*.  If *fd* is not associated with a terminal device, an "
 "exception is raised."
 msgstr ""
+"Retourne une chaîne de caractères spécifiant le périphérique terminal "
+"associé au descripteur de fichier *fd*. Si *fd* n'est pas associé à un "
+"périphérique terminal, une exception est levée."
 
 #: library/os.rst:815
 msgid ""
 "Write the bytestring in *str* to file descriptor *fd*. Return the number of "
 "bytes actually written."
 msgstr ""
+"Écrit la chaîne de bytes de *str* dans le descripteur de fichier *fd*. "
+"Retourne le nombre de bytes réellement écrits."
 
 #: library/os.rst:822
 msgid ""
@@ -62734,6 +62963,11 @@ msgid ""
 "`popen` or :func:`fdopen`, or :data:`sys.stdout` or :data:`sys.stderr`, use "
 "its :meth:`~file.write` method."
 msgstr ""
+"cette fonction est destinée aux E/S bas niveau et doit être appliquée à un "
+"descripteur de fichier comme retourné par :func:`os.open` ou :func:`pipe`. "
+"Pour écrire dans un \"fichier objet\" retourné par la primitive :func:"
+"`open`, :func:`popen`, ou par :func:`fdopen`, ou par :data:`sys.stdout` ou :"
+"data:`sys.stderr`, utilisez sa méthode :meth:`~file.write`."
 
 #: library/os.rst:832
 msgid "``open()`` flag constants"
@@ -62751,25 +62985,27 @@ msgstr ""
 
 #: library/os.rst:849
 msgid "These constants are available on Unix and Windows."
-msgstr ""
+msgstr "Ces constantes sont disponibles sur Unix et Windows."
 
 #: library/os.rst:861
 msgid "These constants are only available on Unix."
-msgstr ""
+msgstr "Ces constantes sont disponibles uniquement sous Unix."
 
 #: library/os.rst:872
 msgid "These constants are only available on Windows."
-msgstr ""
+msgstr "Ces constantes sont disponibles uniquement sur Windows."
 
 #: library/os.rst:881
 msgid ""
 "These constants are GNU extensions and not present if they are not defined "
 "by the C library."
 msgstr ""
+"Ces constantes sont des extensions GNU et donc ne sont pas présentes si "
+"elles ne sont pas définies dans la bibliothèque C."
 
 #: library/os.rst:888
 msgid "Files and Directories"
-msgstr ""
+msgstr "Fichiers et Répertoires"
 
 #: library/os.rst:892
 msgid ""
@@ -62782,6 +63018,15 @@ msgid ""
 "`True` if access is allowed, :const:`False` if not. See the Unix man page :"
 "manpage:`access(2)` for more information."
 msgstr ""
+"Utilise l'uid/gid réel pour tester l'accès à *path*. Notez que la plupart "
+"des opérations utiliseront l'uid/gid effectif, dès lors cette méthode peut "
+"être utilisée dans un environnement suid/sgid pour tester si l'utilisateur "
+"invoquant a les droits d'accès pour accéder à *path*. *mode* devrait être :"
+"const:`F_OK` pour tester l'existence de *path*, ou il peut être le OR (OU "
+"inclusif) d'une ou plusieurs des constantes suivantes : :const:`R_OK`, :"
+"const:`W_OK`, et :const:`X_OK` pour tester les permissions. Retourne :const:"
+"`True` si l'accès est permis, et :const:`False` s'il ne l'est pas. Voir la "
+"page de manuel Unix :manpage:`access(2)` pour plus d'informations."
 
 #: library/os.rst:905
 msgid ""
@@ -62791,10 +63036,16 @@ msgid ""
 "the file to manipulate it. It's preferable to use :term:`EAFP` techniques. "
 "For example::"
 msgstr ""
+"Utiliser :func:`access` pour vérifier si un utilisateur est autorisé (par "
+"exemple) à ouvrir un fichier avant d'effectivement le faire en utilisant :"
+"func:`open` crée une faille de sécurité : l'utilisateur peut exploiter le "
+"court intervalle de temps entre la vérification et l'ouverture du fichier "
+"pour le manipuler. Il est préférable d'utiliser les techniques :term:`EAFP`. "
+"Par exemple : ::"
 
 #: library/os.rst:916
 msgid "is better written as::"
-msgstr ""
+msgstr "est mieux écrit comme suit : ::"
 
 #: library/os.rst:931
 msgid ""
@@ -62802,6 +63053,10 @@ msgid ""
 "succeed, particularly for operations on network filesystems which may have "
 "permissions semantics beyond the usual POSIX permission-bit model."
 msgstr ""
+"Les opérations d'E/S peuvent échouer même quand :func:`access` indique "
+"qu'elles devraient réussir, particulièrement pour les opérations sur les "
+"systèmes de fichiers réseaux qui peuvent avoir une sémantique de permissions "
+"au-delà du modèle de bits de permission usuel POSIX."
 
 #: library/os.rst:938
 msgid ""
@@ -62829,7 +63084,7 @@ msgstr ""
 
 #: library/os.rst:964
 msgid "Change the current working directory to *path*."
-msgstr ""
+msgstr "Change le répertoire de travail actuel par *path*."
 
 #: library/os.rst:971
 msgid ""
@@ -62841,10 +63096,13 @@ msgstr ""
 #: library/os.rst:980
 msgid "Return a string representing the current working directory."
 msgstr ""
+"Retourne une chaîne de caractères représentant le répertoire de travail "
+"actuel."
 
 #: library/os.rst:987
 msgid "Return a bytestring representing the current working directory."
 msgstr ""
+"Retourne une chaîne de *bytes* représentant le répertoire de travail actuel."
 
 #: library/os.rst:994
 msgid ""
@@ -62852,6 +63110,9 @@ msgid ""
 "combination (bitwise OR) of the following values (as defined in the :mod:"
 "`stat` module):"
 msgstr ""
+"Définit les marqueurs de *path* par la valeur numérique *flags*. *flags* "
+"peut prendre une combinaison (OU bit-à-bit) des valeurs suivantes (comme "
+"défini dans le module :mod:`stat`) :"
 
 #: library/os.rst:997
 msgid ":data:`stat.UF_NODUMP`"
@@ -62913,6 +63174,9 @@ msgid ""
 "following values (as defined in the :mod:`stat` module) or bitwise ORed "
 "combinations of them:"
 msgstr ""
+"Change le mode de *path* par la valeur numérique *mode*. *mode* peut prendre "
+"une des valeurs suivantes (comme défini dans le module :mod:`stat`) ou une "
+"combinaison (OU bit-à-bit) de ces valeurs :"
 
 #: library/os.rst:1025
 msgid ":data:`stat.S_ISUID`"
@@ -63028,7 +63292,7 @@ msgstr ""
 
 #: library/os.rst:1094 library/os.path.rst:252 library/os.path.rst:262
 msgid "Added Windows support."
-msgstr ""
+msgstr "Support Windows ajouté."
 
 #: library/os.rst:1100
 msgid ""
@@ -63046,7 +63310,7 @@ msgstr ""
 
 #: library/os.rst:1109
 msgid "The *path* parameter became optional."
-msgstr ""
+msgstr "Le paramètre *path* est devenu optionnel."
 
 #: library/os.rst:1114
 msgid ""
@@ -63058,7 +63322,7 @@ msgstr ""
 
 #: library/os.rst:1119 library/os.rst:1251 library/os.rst:1467
 msgid "Added support for Windows 6.0 (Vista) symbolic links."
-msgstr ""
+msgstr "Support pour les liens symboliques de Windows 6.0 (Vista) ajouté."
 
 #: library/os.rst:1125
 msgid ""
@@ -63076,6 +63340,13 @@ msgid ""
 "Note that :func:`mkfifo` doesn't open the FIFO --- it just creates the "
 "rendezvous point."
 msgstr ""
+"Les FIFOs sont des tubes qui peuvent être accédés comme des fichiers "
+"normaux. Les FIFOs existent jusqu'à ce qu'ils soient retirés (par exemple, à "
+"l'aide de :func:`os.unlink`). Généralement, les FIFOs sont utilisé comme "
+"communication entre des processus de type \"client\" et \"serveur\" : le "
+"serveur ouvre le FIFO pour le lire, et le client l'ouvre pour écrire dedans. "
+"Notez que :func:`mkfifo` n'ouvre pas le FIFO --- il crée juste un point de "
+"rendez-vous."
 
 #: library/os.rst:1140
 msgid ""
@@ -63093,16 +63364,24 @@ msgid ""
 "Extract the device major number from a raw device number (usually the :attr:"
 "`st_dev` or :attr:`st_rdev` field from :c:type:`stat`)."
 msgstr ""
+"Extrait le nombre majeur de périphérique d'un nombre de périphérique brut "
+"(habituellement le champ :attr:`st_dev` ou :attr:`st_rdev` de :c:type:"
+"`stat`)."
 
 #: library/os.rst:1157
 msgid ""
 "Extract the device minor number from a raw device number (usually the :attr:"
 "`st_dev` or :attr:`st_rdev` field from :c:type:`stat`)."
 msgstr ""
+"Extrait le nombre mineur de périphérique d'un nombre de périphérique brut "
+"(habituellement le champ :attr:`st_dev` ou :attr:`st_rdev` de :c:type:"
+"`stat`)."
 
 #: library/os.rst:1163
 msgid "Compose a raw device number from the major and minor device numbers."
 msgstr ""
+"Compose un nombre de périphérique brut à partir des nombres de périphérique "
+"mineur et majeur."
 
 #: library/os.rst:1168
 msgid ""
@@ -63117,38 +63396,50 @@ msgid ""
 "It is also possible to create temporary directories; see the :mod:`tempfile` "
 "module's :func:`tempfile.mkdtemp` function."
 msgstr ""
+"Il est également possible  de créer des répertoires temporaires, voir la "
+"fonction :func:`tempfile.mkdtemp` du module :mod:`tempfile`."
 
 #: library/os.rst:1185
 msgid ""
 "Recursive directory creation function.  Like :func:`mkdir`, but makes all "
 "intermediate-level directories needed to contain the leaf directory."
 msgstr ""
+"Fonction de création récursive de répertoires. Comme :func:`mkdir` mais crée "
+"tous les répertoires de niveau-intermédiaire nécessaires pour contenir le "
+"répertoire \"feuille\"."
 
 #: library/os.rst:1188
 msgid ""
 "The default *mode* is ``0o777`` (octal).  On some systems, *mode* is "
 "ignored.  Where it is used, the current umask value is first masked out."
 msgstr ""
+"Le *mode* par défaut est ``0o777`` (en octal). Sur certains systèmes, *mode* "
+"est ignoré. Lorsque *mode* est utilisé, la valeur actuelle de *umask* est "
+"d'abord masquée."
 
 #: library/os.rst:1191
 msgid ""
 "If *exist_ok* is ``False`` (the default), an :exc:`OSError` is raised if the "
 "target directory already exists."
 msgstr ""
+"Si *exist_ok* vaut ``False`` (valeur par défaut), une :exc:`OSError` est "
+"levée si le répertoire cible existe déjà."
 
 #: library/os.rst:1196
 msgid ""
 ":func:`makedirs` will become confused if the path elements to create "
 "include :data:`pardir` (eg. \"..\" on UNIX systems)."
 msgstr ""
+"Un appel à :func:`makedirs` est confus si les éléments du chemin à créer "
+"contiennent :data:`pardir` (par exemple, \"..\" sur les systèmes UNIX)."
 
 #: library/os.rst:1199
 msgid "This function handles UNC paths correctly."
-msgstr ""
+msgstr "Cette fonction gère les chemins UNC correctement."
 
 #: library/os.rst:1201
 msgid "The *exist_ok* parameter."
-msgstr ""
+msgstr "Le paramètre *exist_ok*."
 
 #: library/os.rst:1206
 msgid ""
@@ -63168,6 +63459,15 @@ msgid ""
 "given in the ``pathconf_names`` dictionary.  For configuration variables not "
 "included in that mapping, passing an integer for *name* is also accepted."
 msgstr ""
+"Retourne des informations sur la configurations relatives à un fichier "
+"déterminé. *name* spécifie la valeur de configuration à récupérer ; ce peut "
+"être une chaîne de caractères qui est le nom d'une valeur système "
+"particulière. Ces noms sont spécifiés dans certains standards (POSIX.1, Unix "
+"95, Unix 98, etc). Certaines plate-formes définissent des noms "
+"supplémentaires également. Les noms connus du système d'exploitation hôte "
+"sont donnés dans le dictionnaire ``pathconf_names``. Pour les variables de "
+"configuration non incluses dans ce *mapping*, passer un entier pour *name* "
+"est également accepté."
 
 #: library/os.rst:1232
 msgid ""
@@ -63184,6 +63484,10 @@ msgid ""
 "relative, it may be converted to an absolute pathname using ``os.path."
 "join(os.path.dirname(path), result)``."
 msgstr ""
+"Retourne une chaîne de caractères représentant le chemin vers lequel le lien "
+"symbolique pointe. Le résultat peut être soit un chemin relatif, soit un "
+"chemin absolu. S'il est relatif, il peut être converti en chemin absolu en "
+"utilisant ``os.path.join(os.path.dirname(path), result)``."
 
 #: library/os.rst:1245
 msgid ""
@@ -63191,6 +63495,10 @@ msgid ""
 "and the call may raise an UnicodeDecodeError. If the *path* is a bytes "
 "object, the result will be a bytes object."
 msgstr ""
+"Si le chemin, *path* est une chaîne de caractères, le résultat sera "
+"également une chaîne de caractères, et l'appel à la fonction peut lever une :"
+"exc:`UnicodeDecodeError`. Si le chemin, *path*, est une chaîne de bytes, le "
+"résultat sera une chaîne de bytes."
 
 #: library/os.rst:1257
 msgid ""
@@ -63213,6 +63521,15 @@ msgid ""
 "and ``'foo'`` if they are empty. Raises :exc:`OSError` if the leaf directory "
 "could not be successfully removed."
 msgstr ""
+"Supprime des répertoires récursivement. Focntionne comme :func:`rmdir` si ce "
+"n'est que si le répertoire feuille est retiré avec succès, :func:"
+"`removedirs` essaye de supprimer successivement chaque répertoire parent "
+"mentionné dans *path* jusqu'à ce qu'un erreur ne soit levée (ce qui est "
+"ignoré car la signification générale en est qu'un répertoire parent n'est "
+"pas vide). Par exemple, ``os.removedirs('foo/bar/baz')`` supprimera d'abord "
+"le répertoire ``'foo/bar/baz'``, et ensuite supprimera ``'foo/bar'`` et puis "
+"``'foo'`` s'ils sont vides. Lève une :exc:`OSError` si le répertoire feuille "
+"n'a pas pu être supprimé avec succès."
 
 #: library/os.rst:1283
 msgid ""
@@ -63234,12 +63551,21 @@ msgid ""
 "corresponding to rightmost path segments of the old name will be pruned away "
 "using :func:`removedirs`."
 msgstr ""
+"Focntion récursive de renommage de fichiers ou répertoires. Fonctionne "
+"comme :func:`rename`, si ce n'est que la création d'un répertoire "
+"intermédiaire nécessaire pour rendre le nouveau chemin correct est essayé en "
+"premier. Après le renommage, les répertoires correspondant aux segments de "
+"chemin les plus à droite de l'ancien nom seront élagués en utilisant :func:"
+"`removedirs`."
 
 #: library/os.rst:1304
 msgid ""
 "This function can fail with the new directory structure made if you lack "
 "permissions needed to remove the leaf directory or file."
 msgstr ""
+"Cette fonction peut échouer avec la nouvelle structure de dictionnaire "
+"définie si vous n'avez pas les permissions nécessaires pour supprimer le "
+"répertoire ou fichier feuille."
 
 #: library/os.rst:1310
 msgid ""
@@ -63247,6 +63573,10 @@ msgid ""
 "empty, otherwise, :exc:`OSError` is raised.  In order to remove whole "
 "directory trees, :func:`shutil.rmtree` can be used."
 msgstr ""
+"Supprime (retire) le répertoire *path*. Ne fonctionne que lorsque le "
+"répertoire est vide, sinon une :exc:`OSError` est levée. Afin de supprimer "
+"toute la hiérarchie de dossier, la fonction :func:`shutil.rmtree` peut être "
+"utilisée."
 
 #: library/os.rst:1319
 msgid ""
@@ -63307,6 +63637,8 @@ msgid ""
 "On some Unix systems (such as Linux), the following attributes may also be "
 "available:"
 msgstr ""
+"Sur certains systèmes Unix (tels que Linux), les attributs suivants peuvent "
+"également être disponibles :"
 
 #: library/os.rst:1340
 msgid ":attr:`st_blocks` - number of blocks allocated for file"
@@ -63329,6 +63661,9 @@ msgid ""
 "On other Unix systems (such as FreeBSD), the following attributes may be "
 "available (but may be only filled out if root tries to use them):"
 msgstr ""
+"Sur d'autres systèmes Unix (tels que FreeBSD), les attributs suivants "
+"peuvent être disponibles (mais peuvent être complétés uniquement lorsque le "
+"super-utilisateur *root* tente de les utiliser)."
 
 #: library/os.rst:1348
 msgid ":attr:`st_gen` - file generation number"
@@ -63341,6 +63676,8 @@ msgstr ""
 #: library/os.rst:1351
 msgid "On Mac OS systems, the following attributes may also be available:"
 msgstr ""
+"Sur les systèmes Mac OS, les attributs suivants peuvent également être "
+"disponibles :"
 
 #: library/os.rst:1353
 msgid ":attr:`st_rsize`"
@@ -63362,6 +63699,12 @@ msgid ""
 "systems, :attr:`st_mtime` has 2-second resolution, and :attr:`st_atime` has "
 "only 1-day resolution.  See your operating system documentation for details."
 msgstr ""
+"La signification et la précision exacte des attributs :attr:`st_atime`, :"
+"attr:`st_mtime`, et :attr:`st_ctime` dépendent du système d'exploitation et "
+"du système de fichier. Par exemple sur les systèmes Windows qui utilisent un "
+"système de fichier FAT ou FAT32, :attr:`st_mtime` a une précision de 2 "
+"secondes, et :attr:`st_atime` a une précision de 1 jour. Regardez la "
+"documentation de votre système d'exploitation pour plus de détails."
 
 #: library/os.rst:1366
 msgid ""
@@ -63380,6 +63723,9 @@ msgid ""
 "useful for extracting information from a :c:type:`stat` structure. (On "
 "Windows, some items are filled with dummy values.)"
 msgstr ""
+"Le module standard :mod:`stat` définit des fonctions et des constantes qui "
+"sont utiles pour l'extraction d'informations d'une structure :c:type:`stat`. "
+"(Sur Windows, certains éléments sont remplis avec des valeurs factices.)"
 
 #: library/os.rst:1395
 msgid ""
@@ -63388,12 +63734,19 @@ msgid ""
 "floats, if it is ``False``, future calls return ints. If *newvalue* is "
 "omitted, return the current setting."
 msgstr ""
+"Détermine si :class:`stat_result` représente les horodatages par des objets "
+"à virgule flottante. Si *newvalue* vaut ``True``, les appels à :func:`~os."
+"stat` qui suivront retourneront des flottants. Si *newvalue* vaut ``False``, "
+"les appels qui suivront renverront des entiers. Si *newvalue* est omise, la "
+"valeur actuelle est retournée."
 
 #: library/os.rst:1400
 msgid ""
 "For compatibility with older Python versions, accessing :class:`stat_result` "
 "as a tuple always returns integers."
 msgstr ""
+"Pour des raisons de compatibilité avec les anciennes versions de Python, "
+"accéder un objet de type :class:`stat_result` retourne toujours des entiers."
 
 #: library/os.rst:1403
 msgid ""
@@ -63401,6 +63754,10 @@ msgid ""
 "correctly with floating point time stamps can use this function to restore "
 "the old behaviour."
 msgstr ""
+"Python renvoie des valeurs flottantes par défaut maintenant. Les "
+"applications qui ne fonctionnent pas correctement avec des horodatages "
+"flottants peuvent utiliser cette fonction pour restaurer l'ancien "
+"comportement."
 
 #: library/os.rst:1407
 msgid ""
@@ -63408,6 +63765,9 @@ msgid ""
 "depends on the system. Some systems only support second resolution; on these "
 "systems, the fraction will always be zero."
 msgstr ""
+"La précision des horodatages (qui est la plus petite fraction possible) "
+"dépend du système. Certains systèmes supportent uniquement une précision à "
+"la seconde ; sur ces systèmes, la fraction sera toujours zéro."
 
 #: library/os.rst:1411
 msgid ""
@@ -63417,6 +63777,12 @@ msgid ""
 "stamps are processed, this application should turn the feature off until the "
 "library has been corrected."
 msgstr ""
+"Il est recommandé que cette option ne soit changée qu'au lancement du "
+"programme dans le module *__main__*. Les bibliothèques ne devraient jamais "
+"changer cette option. Si une application utilise une bibliothèque qui "
+"fonctionne mal avec les horodatages en nombres flottants, cette application "
+"devrait temporairement retirer cette possibilité jusqu'à ce que la "
+"bibliothèque ait été corrigée."
 
 #: library/os.rst:1420
 msgid ""
@@ -63427,6 +63793,12 @@ msgid ""
 "`f_bavail`, :attr:`f_files`, :attr:`f_ffree`, :attr:`f_favail`, :attr:"
 "`f_flag`, :attr:`f_namemax`."
 msgstr ""
+"Exécute un appel système :c:func:`statvfs` sur le chemin donné par *path*. "
+"La valeur de retour est un objet dont les attributs décrivent le système de "
+"fichier sur le chemin donné, et correspondent auxmembres de la structure :c:"
+"type:`statvfs` nommés : :attr:`f_bsize`, :attr:`f_frsize`, :attr:"
+"`f_blocks`, :attr:`f_bfree`, :attr:`f_bavail`, :attr:`f_files`, :attr:"
+"`f_ffree`, :attr:`f_favail`, :attr:`f_flag`, :attr:`f_namemax`."
 
 #: library/os.rst:1427
 msgid ""
@@ -63435,10 +63807,14 @@ msgid ""
 "only, and if :const:`ST_NOSUID` is set, the semantics of setuid/setgid bits "
 "are disabled or not supported."
 msgstr ""
+"Deux constantes de module sont définies pour le champ-de-bits de l'attribut :"
+"attr:`f_flag` : si :const:`SR_RDONLY` est activé, le système de fichiers est "
+"monté en lecture-seule, et si :const:`ST_NOSUID` est activé, la sémantique "
+"des bits de setuid/getuid est désactivée ou non supportée."
 
 #: library/os.rst:1432
 msgid "The :const:`ST_RDONLY` and :const:`ST_NOSUID` constants were added."
-msgstr ""
+msgstr "Ajout des constantes :const:`ST_RDONLY` et :const:`ST_NOSUID`."
 
 #: library/os.rst:1441
 msgid "Create a symbolic link pointing to *source* named *link_name*."
@@ -63464,6 +63840,9 @@ msgid ""
 "`symlink` will raise a :exc:`NotImplementedError` on Windows versions "
 "earlier than 6.0."
 msgstr ""
+"Le support des liens symboliques a été introduit dans Windows 6.0 (Vista). :"
+"func:`symlink` lèvera une exception :exc:`NotImplementedError` sur les "
+"versions de Windows inférieures à 6.0."
 
 #: library/os.rst:1456
 msgid ""
@@ -63478,6 +63857,8 @@ msgstr ""
 msgid ""
 ":exc:`OSError` is raised when the function is called by an unprivileged user."
 msgstr ""
+":exc:`OSError` est levée quand la fonction est appelée par un utilisateur "
+"sans privilèges."
 
 #: library/os.rst:1473
 msgid ""
@@ -63507,6 +63888,10 @@ msgid ""
 "(including *top* itself), it yields a 3-tuple ``(dirpath, dirnames, "
 "filenames)``."
 msgstr ""
+"Génère les noms de fichier dans un arbre de répertoire en parcourant l'arbre "
+"soit de bas-en-haut, soit de haut-en-bas. Pour chaque répertoire dans "
+"l'arbre enraciné en le répertoire *rop* (incluant ledit répertoire *top*), "
+"fournit un 3-uple ``(dirpath, dirnames, filenames)``."
 
 #: library/os.rst:1507
 msgid ""
@@ -63517,6 +63902,13 @@ msgid ""
 "get a full path (which begins with *top*) to a file or directory in "
 "*dirpath*, do ``os.path.join(dirpath, name)``."
 msgstr ""
+"*dirpath* est une chaîne de caractères contenant le chemin vers le "
+"répertoire. *dirnames* est une liste de noms de sous-répertoires dans "
+"*dirpath* (en excluant ``'.'`` et ``'..'``). *filenames* est une liste de "
+"fichiers (non-répertoires) dans *dirpath*. Notez que les noms dans la liste "
+"ne contiennent aucune composante de chemin. Pour récupérer le chemin complet "
+"(qui commence à *top*) vers un répertoire dans *dirpath*, faites ``os.path."
+"join(dirpath, name)``."
 
 #: library/os.rst:1514
 msgid ""
@@ -63548,6 +63940,12 @@ msgid ""
 "the filename is available as the ``filename`` attribute of the exception "
 "object."
 msgstr ""
+"Par défaut, les erreurs d'un appel à :func:`listdir` sont ignorées. Si "
+"l'argument optionnel *onerror* est spécifié, il devrait être une fonction, "
+"il sera appelé avec un argument, une instance de :exc:`OSError`. Il peut "
+"reporter l'erreur ou continuer le parcours, ou lever l'exception pour "
+"avorter le parcours. Notez que le nom de fichier est disponible par "
+"'attribut ``filename`` de l'objet exception."
 
 #: library/os.rst:1535
 msgid ""
@@ -63555,6 +63953,10 @@ msgid ""
 "to directories. Set *followlinks* to ``True`` to visit directories pointed "
 "to by symlinks, on systems that support them."
 msgstr ""
+"Par défaut, la fonction :func:`walk` ne parcourra pas les liens symboliques "
+"qui mènent à un répertoire. Définissez *followlinks* avec``True`` pour "
+"visiter les répertoires pointés par des liens symboliques sur les systèmes "
+"qui le supporte."
 
 #: library/os.rst:1541
 msgid ""
@@ -63562,6 +63964,9 @@ msgid ""
 "recursion if a link points to a parent directory of itself. :func:`walk` "
 "does not keep track of the directories it visited already."
 msgstr ""
+"Soyez au courant que définir *followlinks* avec ``True`` peut mener à une "
+"récursion infinie si un lien pointe vers un répertoire parent de lui-même. :"
+"func:`walk` ne garde pas de trace des répertoires qu'il a déjà visité."
 
 #: library/os.rst:1547
 msgid ""
@@ -63569,6 +63974,9 @@ msgid ""
 "between resumptions of :func:`walk`.  :func:`walk` never changes the current "
 "directory, and assumes that its caller doesn't either."
 msgstr ""
+"Si vous passez un chemin relatif, ne changer pas le répertoire de travail "
+"actuel entre deux exécutions de :func:`walk`. :func:`walk` ne change jamais "
+"le répertoire actuel, et suppose que l'appelant ne le fait pas non plus."
 
 #: library/os.rst:1551
 msgid ""
@@ -63576,20 +63984,27 @@ msgid ""
 "each directory under the starting directory, except that it doesn't look "
 "under any CVS subdirectory::"
 msgstr ""
+"Cet exemple affiche le nombre de bytes pris par des fichiers non-répertoires "
+"dans chaque répertoire à partir du répertoire de départ, si ce n'est qu'il "
+"ne cherche pas après un sous-répertoire CSV : ::"
 
 #: library/os.rst:1564
 msgid ""
 "In the next example, walking the tree bottom-up is essential: :func:`rmdir` "
 "doesn't allow deleting a directory before the directory is empty::"
 msgstr ""
+"Dans le prochain exemple, parcourir l'arbre de bas-en-haut est essentiel : :"
+"func:`rmdir` ne permet pas de supprimer un répertoire avant qu'il ne soit "
+"vide : ::"
 
 #: library/os.rst:1582
 msgid "Process Management"
-msgstr ""
+msgstr "Gestion des processus"
 
 #: library/os.rst:1584
 msgid "These functions may be used to create and manage processes."
 msgstr ""
+"Ces fonctions peuvent être utilisées pour créer et gérer des processus."
 
 #: library/os.rst:1586
 msgid ""
@@ -63610,6 +64025,12 @@ msgid ""
 "function will not call the Python signal handler registered for :const:"
 "`SIGABRT` with :func:`signal.signal`."
 msgstr ""
+"Génère un signal :const:`SIGABRT` au processus actuel. Sur Linux, le "
+"comportement par défaut est de produire un vidage système (*Core Dump*) ; "
+"sur Windows, le processus retourne immédiatement un code d'erreur ``3``. "
+"Attention : aappeler cette fonction n'appellera pas le gestionnaire de "
+"signal Python enregistré par :const:`SIGABRT` à l'aide de :func:`signal."
+"signal`."
 
 #: library/os.rst:1615
 msgid ""
@@ -63618,6 +64039,10 @@ msgid ""
 "process, and will have the same process id as the caller.  Errors will be "
 "reported as :exc:`OSError` exceptions."
 msgstr ""
+"Ces fonctions exécutent toutes un nouveau programme, remplaçant le processus "
+"actuel, elles ne retournent pas. Sur Unix, le nouvel exécutable est chargé "
+"dans le processus actuel, et aura le même identifiant de processus (PID) que "
+"l'appelant. Les erreurs seront reportées par des exceptions :exc:`OSError`."
 
 #: library/os.rst:1620
 msgid ""
@@ -63662,18 +64087,30 @@ msgid ""
 "`execl`, :func:`execlp`, :func:`execv`, and :func:`execvp` all cause the new "
 "process to inherit the environment of the current process."
 msgstr ""
+"Pour les fonctions :func:`execle`, :func:`execlpe`, :func:`execve`, and :"
+"func:`execvpe` (notez qu'elle finissent toutes par \"e\"), le paramètre "
+"*env* doit être un *mapping* qui est utilisé pour définir les variables "
+"d'environnement du nouveau processus (celles-ci sont utilisées à la place de "
+"l'environnement du nouveau processus). Les fonctions :func:`execl`, :func:"
+"`execlp`, :func:`execv`, et :func:`execvp` causent toutes un héritage de "
+"l'environnement du processus actuel par le processus fils."
 
 #: library/os.rst:1657
 msgid ""
 "Exit the process with status *n*, without calling cleanup handlers, flushing "
 "stdio buffers, etc."
 msgstr ""
+"Quitte le processus avec le statut *n*, sans appeler les gestionnaires de "
+"nettoyage, sans purger les tampons des fichiers, etc."
 
 #: library/os.rst:1664
 msgid ""
 "The standard way to exit is ``sys.exit(n)``.  :func:`_exit` should normally "
 "only be used in the child process after a :func:`fork`."
 msgstr ""
+"La méthode standard pour quitter est ``sys.exit(n)``. :func:`_exit` devrait "
+"normalement être utilisé uniquement par le processus fils après un :func:"
+"`fork`."
 
 #: library/os.rst:1667
 msgid ""
@@ -63682,6 +64119,10 @@ msgid ""
 "programs written in Python, such as a mail server's external command "
 "delivery program."
 msgstr ""
+"Les codes de sortie suivants sont définis et peuvent être utilisés avec :"
+"func:`_exit`, mais ils ne sont pas nécessaires. Ils sont typiquement "
+"utilisés pour les programmes systèmes écrits en Python, comme un programme "
+"de gestion de l'exécution des commandes d'un serveur de mails."
 
 #: library/os.rst:1673
 msgid ""
@@ -63689,61 +64130,80 @@ msgid ""
 "some variation.  These constants are defined where they are defined by the "
 "underlying platform."
 msgstr ""
+"Certaines de ces valeurs peuvent ne pas être disponibles sur toutes les "
+"plate-formes Unix étant donné qu'il en existe des variations. Ces constantes "
+"sont définies là où elles sont définies par la plate-forme sous-jacente."
 
 #: library/os.rst:1680
 msgid "Exit code that means no error occurred."
-msgstr ""
+msgstr "Code de sortie signifiant qu'aucune erreur n'est arrivée."
 
 #: library/os.rst:1687
 msgid ""
 "Exit code that means the command was used incorrectly, such as when the "
 "wrong number of arguments are given."
 msgstr ""
+"Code de sortie signifiant que les commandes n'ont pas été utilisées "
+"correctement, comme quand le mauvais nombre d'arguments a été donné."
 
 #: library/os.rst:1695
 msgid "Exit code that means the input data was incorrect."
 msgstr ""
+"Code de sortie signifiant que les données en entrées étaient incorrectes."
 
 #: library/os.rst:1702
 msgid "Exit code that means an input file did not exist or was not readable."
 msgstr ""
+"Code de sortie signifiant qu'un des fichiers d'entrée n'existe pas ou n'est "
+"pas lisible."
 
 #: library/os.rst:1709
 msgid "Exit code that means a specified user did not exist."
-msgstr ""
+msgstr "Code de sortie signifiant qu'un utilisateur spécifié n'existe pas."
 
 #: library/os.rst:1716
 msgid "Exit code that means a specified host did not exist."
-msgstr ""
+msgstr "Code de sortie signifiant qu'un hôte spécifié n'existe pas."
 
 #: library/os.rst:1723
 msgid "Exit code that means that a required service is unavailable."
-msgstr ""
+msgstr "Code de sortie signifiant qu'un service requis n'est pas disponible."
 
 #: library/os.rst:1730
 msgid "Exit code that means an internal software error was detected."
 msgstr ""
+"Code de sortie signifiant qu'une erreur interne d'un programme a été "
+"détectée."
 
 #: library/os.rst:1737
 msgid ""
 "Exit code that means an operating system error was detected, such as the "
 "inability to fork or create a pipe."
 msgstr ""
+"Code de sortie signifiant qu'une erreur du système d'exploitation a été "
+"détectée, comme l'incapacité à réaliser un *fork* ou à créer un tuyau "
+"(*pipe*)."
 
 #: library/os.rst:1745
 msgid ""
 "Exit code that means some system file did not exist, could not be opened, or "
 "had some other kind of error."
 msgstr ""
+"Code de sortie signifiant qu'un fichier n'existe pas, n'a pas pu être "
+"ouvert, ou avait une autre erreur."
 
 #: library/os.rst:1753
 msgid "Exit code that means a user specified output file could not be created."
 msgstr ""
+"Code de sortie signifiant qu'un fichier spécifié par l'utilisateur n'a pas "
+"pu être créé."
 
 #: library/os.rst:1760
 msgid ""
 "Exit code that means that an error occurred while doing I/O on some file."
 msgstr ""
+"Code de sortie signifiant qu'une erreur est apparue pendant une E/S sur un "
+"fichier."
 
 #: library/os.rst:1767
 msgid ""
@@ -63751,32 +64211,44 @@ msgid ""
 "that may not really be an error, such as a network connection that couldn't "
 "be made during a retryable operation."
 msgstr ""
+"Code de sortie signifiant qu'un échec temporaire est apparu. Cela indique "
+"quelque chose qui pourrait ne pas être une erreur, comme une connexion au "
+"réseau qui n'a pas pu être établie pendant une opération ré-essayable."
 
 #: library/os.rst:1776
 msgid ""
 "Exit code that means that a protocol exchange was illegal, invalid, or not "
 "understood."
 msgstr ""
+"Code de sortie signifiant qu'un protocole d'échange est illégal, invalide, "
+"ou non-compris."
 
 #: library/os.rst:1784
 msgid ""
 "Exit code that means that there were insufficient permissions to perform the "
 "operation (but not intended for file system problems)."
 msgstr ""
+"Code de sortie signifiant qu'il manque certaines permissions pour réaliser "
+"une opération (mais n'est pas destiné au problèmes de système de fichiers)."
 
 #: library/os.rst:1792
 msgid "Exit code that means that some kind of configuration error occurred."
-msgstr ""
+msgstr "Code de sortie signifiant qu'une erreur de configuration est apparue."
 
 #: library/os.rst:1799
 msgid "Exit code that means something like \"an entry was not found\"."
 msgstr ""
+"Code de sortie signifiant quelque chose comme \"une entrée n'a pas été "
+"trouvée\"."
 
 #: library/os.rst:1806
 msgid ""
 "Fork a child process.  Return ``0`` in the child and the child's process id "
 "in the parent.  If an error occurs :exc:`OSError` is raised."
 msgstr ""
+"*Fork* un processus fils. Retourne ``0`` dans le processus fils et l'id du "
+"processus fils dans le processus père. Si une erreur apparaît, une :exc:"
+"`OSError` est levée."
 
 #: library/os.rst:1809
 msgid ""
@@ -63787,6 +64259,7 @@ msgstr ""
 #: library/os.rst:1814
 msgid "See :mod:`ssl` for applications that use the SSL module with fork()."
 msgstr ""
+"Voit :mod:`ssl` pour les application qui utilisent le module SSL avec fork()."
 
 #: library/os.rst:1821
 msgid ""
@@ -63796,12 +64269,20 @@ msgid ""
 "the master end of the pseudo-terminal.  For a more portable approach, use "
 "the :mod:`pty` module.  If an error occurs :exc:`OSError` is raised."
 msgstr ""
+"Fork un processus fils, en utilisant un nouveau pseudo-terminal  comme "
+"terminal contrôlant le fils. Retourne une paire ``(pid, fd)`` où *pid* vaut "
+"``0`` dans le fils et l'id du processus fils dans le parent, et *fd* est le "
+"descripteur de fichier de la partie maître du pseudo-terminal. Pour une "
+"approche plus portable, utilisez le module :mod:`pty`. Si une erreur "
+"apparaît, une :exc:`OSError` est levée."
 
 #: library/os.rst:1836
 msgid ""
 "Send signal *sig* to the process *pid*.  Constants for the specific signals "
 "available on the host platform are defined in the :mod:`signal` module."
 msgstr ""
+"Envoie le signal *sig* au processus *pid*. Les constantes pour les signaux "
+"spécifiques à la plate-forme hôte sont définies dans le module :mod:`signal`."
 
 #: library/os.rst:1839
 msgid ""
@@ -63812,26 +64293,36 @@ msgid ""
 "TerminateProcess API, and the exit code will be set to *sig*. The Windows "
 "version of :func:`kill` additionally takes process handles to be killed."
 msgstr ""
+"Windows : les signaux :data:`signal.CTRL_C_EVENT` et :data:`signal."
+"CTRL_BREAK_EVENT` sont des signaux spéciaux qui ne peuvent être envoyés "
+"qu'aux processus consoles qui partagent une console commune (par exemple, "
+"certains sous-processus). Toute autre valeur pour *sig* amènera le processus "
+"a être tué sans condition par l'API TerminateProcess, et le code de retour "
+"sera mis à *sig*. La version Windows de :func:`kill` prend en plus les "
+"identificateurs de processus à tuer."
 
 #: library/os.rst:1847
-#, fuzzy
 msgid "Windows support."
-msgstr "Windows"
+msgstr "Support par Windows."
 
 #: library/os.rst:1857
 msgid "Send the signal *sig* to the process group *pgid*."
-msgstr ""
+msgstr "Envoie le signal*sig* au groupe de processus *pgid*."
 
 #: library/os.rst:1864
 msgid ""
 "Add *increment* to the process's \"niceness\".  Return the new niceness."
 msgstr ""
+"Ajoute *increment*  à la priorité du processus. Retourne la nouvelle "
+"priorité."
 
 #: library/os.rst:1871
 msgid ""
 "Lock program segments into memory.  The value of *op* (defined in ``<sys/"
 "lock.h>``) determines which segments are locked."
 msgstr ""
+"Verrouille les segments du programme en mémoire. La valeur de *op* (définie "
+"dans ``<sys/lock.h>``) détermine quels segments sont verrouillés."
 
 #: library/os.rst:1880
 msgid ""
@@ -63841,7 +64332,7 @@ msgstr ""
 
 #: library/os.rst:1893
 msgid "Execute the program *path* in a new process."
-msgstr ""
+msgstr "Exécute le programme *path* dans un nouveau processus."
 
 #: library/os.rst:1895
 msgid ""
@@ -63850,6 +64341,10 @@ msgid ""
 "is preferable to using these functions.  Check especially the :ref:"
 "`subprocess-replacements` section.)"
 msgstr ""
+"(Notez que le module :mod:`subprocess` fournit des outils plus puissants "
+"pour générer de nouveaux processus et récupérer leur valeur de retour. Il "
+"est préférable d'utiliser ce module que ces fonctions. Voyez surtout la "
+"section :ref:`subprocess-replacements`.)"
 
 #: library/os.rst:1900
 msgid ""
@@ -63859,6 +64354,12 @@ msgid ""
 "killed the process.  On Windows, the process id will actually be the process "
 "handle, so can be used with the :func:`waitpid` function."
 msgstr ""
+"Si *mode* vaut :const:`P_NOWAIT`, cette fonction retourne le pid du nouveau "
+"processus, et si *mode* vaut :const:`P_WAIT`, la fonction retourne le code "
+"de sortie du processus s'il se termine normalement, ou ``-signal`` où "
+"*signal* est le signal qui a tué le processus. Sur Windows, l'id du "
+"processus sera en fait l'identificateur du processus (*process handle*) et "
+"peut donc être utilisé avec la fonction :func:`waitpid`."
 
 #: library/os.rst:1906
 msgid ""
@@ -63896,12 +64397,24 @@ msgid ""
 "keys and values in the *env* dictionary must be strings; invalid keys or "
 "values will cause the function to fail, with a return value of ``127``."
 msgstr ""
+"Pour les fonctions :func:`spawnle`, :func:`spawnlpe`, :func:`spawnve`, et :"
+"func:`spawnvpe` (notez qu'elles finissent toutes par \"e\"), le paramètre "
+"*env* doit être un *mapping* qui est utilisé pour définir les variables "
+"d'environnement du nouveau processus (celles-ci sont utilisées à la place de "
+"l'environnement du nouveau processus). Les fonctions :func:`spawnl`, :func:"
+"`spawnlp`, :func:`spawnv`, et :func:`spawnvp` causent toutes un héritage de "
+"l'environnement du processus actuel par le processus fils. Notez que les "
+"clefs et les valeurs du dictionnaire *env* oivent être des chaînes de "
+"caractères. Des valeurs invalides pour les clefs ou les valeurs causera un "
+"échec de la fonction qui retournera ``127``."
 
 #: library/os.rst:1934
 msgid ""
 "As an example, the following calls to :func:`spawnlp` and :func:`spawnvpe` "
 "are equivalent::"
 msgstr ""
+"Par exemple, les appels suivants à :func:`spawnlp` et :func:`spawnvpe` sont "
+"équivalents : ::"
 
 #: library/os.rst:1943
 msgid ""
@@ -63910,6 +64423,11 @@ msgid ""
 "`spawnle` and :func:`spawnve` are not thread-safe on Windows; we advise you "
 "to use the :mod:`subprocess` module instead."
 msgstr ""
+"Disponibilité : Unix, Windows. :func:`spawnlp`, :func:`spawnlpe`, :func:"
+"`spawnvp`, et :func:`spawnvpe` ne sont pas disponibles sur Windows. :func:"
+"`spawnle` et :func:`spawnve` ne sont pas sécurisés pour les appels "
+"concurrents (*thread-safe*) sur Windows, il est conseillé d'utiliser le "
+"module :mod:`subprocess` à la place."
 
 #: library/os.rst:1952
 msgid ""
@@ -63945,7 +64463,7 @@ msgstr "Disponibilité : Windows."
 
 #: library/os.rst:1985
 msgid "Start a file with its associated application."
-msgstr ""
+msgstr "lance un fichier avec son application associée."
 
 #: library/os.rst:1987
 msgid ""
@@ -63955,6 +64473,11 @@ msgid ""
 "the file is opened with whatever application (if any) its extension is "
 "associated."
 msgstr ""
+"Quand *operation* n'est pas spécifié ou vaut ``'open'``, l'effet est le même "
+"qu'un double clic sur le fichier dans Windows Explorer, ou que de passer le "
+"nom du fichier en argument du programme :program:`start` depuis l'invite de "
+"commande interactif : le fichier est ouvert avec l'application associée à "
+"l'extension (s'il y en a une)."
 
 #: library/os.rst:1992
 msgid ""
@@ -63963,6 +64486,11 @@ msgid ""
 "Microsoft are ``'print'`` and  ``'edit'`` (to be used on files) as well as "
 "``'explore'`` and ``'find'`` (to be used on directories)."
 msgstr ""
+"Quand une autre *operation* est donnée, ce doit être une \"commande-verbe\" "
+"qui spécifie ce qui devrait être fait avec le fichier. Les verbes habituels "
+"documentés par Microsoft sotn ``'print'`` et ``'edit'`` (qui doivent être "
+"utilisés sur des fichiers) ainsi que ``'explore'`` et ``'find'`` (qui "
+"doivent être utilisés sur des répertoires)."
 
 #: library/os.rst:1997
 msgid ""
@@ -63974,6 +64502,14 @@ msgid ""
 "`ShellExecute` function doesn't work if it is.  Use the :func:`os.path."
 "normpath` function to ensure that the path is properly encoded for Win32."
 msgstr ""
+":func:`startfile` retourne dès que l'application associée est lancée.Il n'y "
+"a aucune option permettant d'attendre que l'application ne se ferme et aucun "
+"moyen de récupérer le statu de sortie de l'application. Le paramètre *path* "
+"est relatif au répertoire actuel. Si vous voulez utiliser un chemin absolu, "
+"assurez-vous que le premier caractère ne soit pas un slash (``'/'``). La "
+"fonction Win32 :c:func:`ShellExecute` sous-jacente ne fonctionne pas sinon. "
+"Utilisez la fonction :func:`os.path.normpath` pour vous assurer que le "
+"chemin est encodé correctement pour Win32."
 
 #: library/os.rst:2010
 msgid ""
@@ -63983,6 +64519,12 @@ msgid ""
 "environment of the executed command. If *command* generates any output, it "
 "will be sent to the interpreter standard output stream."
 msgstr ""
+"Exécute la commande (une chaîne de caractères) dans un sous-invite de "
+"commandes. C'est implémenté en appelant la fonction standard C :c:func:"
+"`system` et a les mêmes limitations. les changements sur :data:`sys.stdin`, "
+"etc. ne sont pas reflétés dans l'environnement de la commande exécutée. Si "
+"*command* génère une sortie, elle sera envoyée à l'interpréteur standard de  "
+"flux."
 
 #: library/os.rst:2016
 msgid ""
@@ -63991,6 +64533,10 @@ msgid ""
 "meaning of the return value of the C :c:func:`system` function, so the "
 "return value of the Python function is system-dependent."
 msgstr ""
+"Sur Unix, la valeur de retour est le statut de sortie du processus encodé "
+"dans le format spécifié pour :func:`wait`. Notez que POSIX ne spécifie pas "
+"le sens de la valeur de retour de la fonction C :c:func:`system`, donc la "
+"valeur de retour de la fonction Python est dépendante du système."
 
 #: library/os.rst:2021
 msgid ""
@@ -64000,6 +64546,12 @@ msgid ""
 "status of the command run; on systems using a non-native shell, consult your "
 "shell documentation."
 msgstr ""
+"Sur Windows, la valeur de retour est celle retournée par l'invite de "
+"commande système après avoir lancé *command*. L'invite de commande est donné "
+"par la variable d'environnement Windows :envvar:`COMSPEC`. Elle vaut "
+"habituellement :program:`cmd.exe`, qui retourne le stat de sortie de la "
+"commande lancée. Sur les systèmes qui utilisent un invite de commande non-"
+"natif, consultez la documentation propre à l'invite."
 
 #: library/os.rst:2027
 msgid ""
@@ -64008,6 +64560,11 @@ msgid ""
 "to using this function.  See the :ref:`subprocess-replacements` section in "
 "the :mod:`subprocess` documentation for some helpful recipes."
 msgstr ""
+"Le module :mod:`subprocess` fournit des outils plus puissants pour générer "
+"de nouveaux processus et pour récupérer leur résultat. Il est préférable "
+"d'utiliser ce module plutôt que d'utiliser cette fonction. Voir la section :"
+"ref:`subprocess-replacements` de la documentation du module :mod:"
+"`subprocess` pour des informations plus précises et utiles."
 
 #: library/os.rst:2037
 msgid ""
@@ -64027,10 +64584,16 @@ msgid ""
 "status (if the signal number is zero); the high bit of the low byte is set "
 "if a core file was produced."
 msgstr ""
+"Attend qu'un processus fils soit complété, et retourne un *tuple* contenant "
+"son pid et son stat de sortie : un nombre de 16 bits dont le *byte* de poids "
+"faible est le nombre correspondant au signal qui a tué le processus, et dont "
+"le *byte* de poids fort est le statut de sortie (si la signal vaut ``0``). "
+"Le bit de poids fort du *byte* de poids faible est mis à 1 si un (fichier "
+"système) *core file* a été produit."
 
 #: library/os.rst:2060
 msgid "The details of this function differ on Unix and Windows."
-msgstr ""
+msgstr "Les détails de cette fonction diffèrent sur Unix et Windows."
 
 #: library/os.rst:2062
 msgid ""
@@ -64040,6 +64603,11 @@ msgid ""
 "the value of the integer *options*, which should be ``0`` for normal "
 "operation."
 msgstr ""
+"Sur Unix : attend qu'un processus fils donné par son id de processus *pid* "
+"soit complété , et retourne un *tuple* contenant son pid et son statut de "
+"sortie (encodé comme pour :func:`wait`). La sémantique de cet appel est "
+"affecté par la valeur de l'argument entier *options*, qui devrait valoir "
+"``0`` pour les opérations normales."
 
 #: library/os.rst:2067
 msgid ""
@@ -64050,12 +64618,21 @@ msgid ""
 "is less than ``-1``, status is requested for any process in the process "
 "group ``-pid`` (the absolute value of *pid*)."
 msgstr ""
+"Si *pid* est plus grand que ``0``, :func:`waitpid` introduit une requête "
+"pour des informations sur le statut du processus spécifié. Si *pid* vaut "
+"``0``, la requête est pour le statut de tous les fils dans le groupe de "
+"processus du processus actuel. Si *pid* vaut ``-1``, la requête concerne "
+"tous les processus fils du processus actuel. Si *pid* est inférieur à "
+"``-1``, une requête est faite pour le statut de chaque processus du groupe "
+"de processus donné par ``-pid`` (la valeur absolue de *pid*)."
 
 #: library/os.rst:2074
 msgid ""
 "An :exc:`OSError` is raised with the value of errno when the syscall returns "
 "-1."
 msgstr ""
+"Une :exc:`OSError` est levée avec la valeur de errno quand l'appel système "
+"retourne ``-1``."
 
 #: library/os.rst:2077
 msgid ""
@@ -64093,6 +64670,9 @@ msgid ""
 "status is available immediately. The function returns ``(0, 0)`` in this "
 "case."
 msgstr ""
+"L'option de :func:`waitpid` pour retourner immédiatement si aucun statut de "
+"processus fils n'est disponible dans l'immédiat. La fonction retourne ``(0, "
+"0)`` dans ce cas."
 
 #: library/os.rst:2118
 msgid ""
@@ -64109,6 +64689,8 @@ msgid ""
 "This option causes child processes to be reported if they have been stopped "
 "but their current state has not been reported since they were stopped."
 msgstr ""
+"Cette option cause les processus fils à être reportés s'ils ont été stoppés "
+"mais que leur état actuel n'a pas été reporté depuis qu'ils ont été stoppés."
 
 #: library/os.rst:2132
 msgid ""
@@ -64116,12 +64698,17 @@ msgid ""
 "`system`, :func:`wait`, or :func:`waitpid` as a parameter.  They may be used "
 "to determine the disposition of a process."
 msgstr ""
+"Les fonctions suivantes prennent un code de statu tel que retourné par :func:"
+"`system`, :func:`wait`, ou :func:`waitpid` en paramètre. Ils peuvent être "
+"utilisés pour déterminer la disposition d'un processus."
 
 #: library/os.rst:2138
 msgid ""
 "Return ``True`` if a core dump was generated for the process, otherwise "
 "return ``False``."
 msgstr ""
+"Retourne ``True`` si un vidage système (*core dump*) a été généré pour le "
+"processus, sinon, retourne ``False``."
 
 #: library/os.rst:2146
 msgid ""
@@ -64133,36 +64720,44 @@ msgstr ""
 msgid ""
 "Return ``True`` if the process has been stopped, otherwise return ``False``."
 msgstr ""
+"Retourne ``True`` si le processus a été arrête, sinon retourne ``False``."
 
 #: library/os.rst:2162
 msgid ""
 "Return ``True`` if the process exited due to a signal, otherwise return "
 "``False``."
 msgstr ""
+"Retourne ``True`` si le processus s'est terminé à cause d'un signal, sinon, "
+"retourne ``False``."
 
 #: library/os.rst:2170
 msgid ""
 "Return ``True`` if the process exited using the :manpage:`exit(2)` system "
 "call, otherwise return ``False``."
 msgstr ""
+"Retourne ``True`` si le processus s'est terminé en faisant un appel système :"
+"manpage:`exit(2)`, sinon, retourne ``False``."
 
 #: library/os.rst:2178
 msgid ""
 "If ``WIFEXITED(status)`` is true, return the integer parameter to the :"
 "manpage:`exit(2)` system call.  Otherwise, the return value is meaningless."
 msgstr ""
+"Si ``WIFEXITED(status)`` vaut ``True``, retourne le paramètre entier de "
+"l'appel système :manpage:`exit(2)`. Sinon, la valeur de retour n'a pas de "
+"signification."
 
 #: library/os.rst:2186
 msgid "Return the signal which caused the process to stop."
-msgstr ""
+msgstr "Retourne le signal qui a causé l'arrêt du processus."
 
 #: library/os.rst:2193
 msgid "Return the signal which caused the process to exit."
-msgstr ""
+msgstr "Retourne le signal qui a amené le processus à quitter."
 
 #: library/os.rst:2201
 msgid "Miscellaneous System Information"
-msgstr ""
+msgstr "Diverses informations sur le système"
 
 #: library/os.rst:2206
 msgid ""
@@ -64174,12 +64769,23 @@ msgid ""
 "keys of the ``confstr_names`` dictionary.  For configuration variables not "
 "included in that mapping, passing an integer for *name* is also accepted."
 msgstr ""
+"Retourne les valeurs de configuration en chaînes de caractères. *name* "
+"spécifie la valeur de configuration à récupérer. Ce peut être une chaîne de "
+"caractères représentant le nom d'une valeur système définie dans un nombre "
+"de standards (POSIX, Unix 95, Unix 98, et d'autres). Certaines plate-formes "
+"définissent des noms supplémentaires également. Les noms connus par le "
+"système d'exploitation hôte sont données dans les clefs du dictionnaire "
+"``confstr_names``. Pour les variables de configuration qui ne sont pas "
+"incluses dans ce *mapping*, passer un entier pour *name* est également "
+"accepté."
 
 #: library/os.rst:2214
 msgid ""
 "If the configuration value specified by *name* isn't defined, ``None`` is "
 "returned."
 msgstr ""
+"Si la valeur de configuration spécifiée par *name* n'est pas définie, "
+"``None`` est retourné."
 
 #: library/os.rst:2217
 msgid ""
@@ -64188,10 +64794,15 @@ msgid ""
 "included in ``confstr_names``, an :exc:`OSError` is raised with :const:"
 "`errno.EINVAL` for the error number."
 msgstr ""
+"Si *name* est une chaîne de caractères et n'est pas connue, une :exc:"
+"`ValueError` est levée. Si une valeur spécifique pour *name* n'est pas "
+"supportée par le système hôte, même si elle est incluse dans "
+"``confstr_names``, uen :exc:`OSError` est levée avec :const:`errno.EINVAL` "
+"pour numéro d'erreur."
 
 #: library/os.rst:2222
 msgid "Availability: Unix"
-msgstr ""
+msgstr "Disponibilité : Unix"
 
 #: library/os.rst:2227
 msgid ""
@@ -64199,6 +64810,9 @@ msgid ""
 "defined for those names by the host operating system. This can be used to "
 "determine the set of names known to the system."
 msgstr ""
+"Dictionnaire liant les noms acceptés par :func:`confstr` aux valeurs "
+"entières définies pour ces noms par le système d'exploitation hôte. Cela "
+"peut être utilisé pour déterminer l'ensemble des noms connus du système."
 
 #: library/os.rst:2236
 msgid ""
@@ -64206,6 +64820,9 @@ msgid ""
 "last 1, 5, and 15 minutes or raises :exc:`OSError` if the load average was "
 "unobtainable."
 msgstr ""
+"Retourne le nombre de processus dans la file d'exécution du système en "
+"moyenne dans les dernières 1, 5, et 15 minutes, ou lève une :exc:`OSError` "
+"si la charge moyenne est impossible à récupérer."
 
 #: library/os.rst:2245
 msgid ""
@@ -64215,6 +64832,11 @@ msgid ""
 "dictionary that provides information on the known names is given by "
 "``sysconf_names``."
 msgstr ""
+"Retourne les valeurs de configuration en nombres entiers. Si la valeur de "
+"configuration définie par *name* n'est pas spécifiée, ``-1`` est retourné. "
+"Les commentaires concernant le paramètre *name* de :func:`confstr` "
+"s'appliquent également ici, le dictionnaire qui fournit les informations sur "
+"les noms connus est donné par ``sysconf_names``."
 
 #: library/os.rst:2255
 msgid ""
@@ -64222,18 +64844,25 @@ msgid ""
 "defined for those names by the host operating system. This can be used to "
 "determine the set of names known to the system."
 msgstr ""
+"Dictionnaire liant les noms acceptés par :func:`sysconf` aux valeurs "
+"entières définies pour ces noms par le système d'exploitation hôte. Cela "
+"peut être utilisé pour déterminer l'ensemble des noms connus du système."
 
 #: library/os.rst:2261
 msgid ""
 "The following data values are used to support path manipulation operations.  "
 "These are defined for all platforms."
 msgstr ""
+"Les valeurs suivantes sont utilisées pour gérer les opérations de "
+"manipulations de chemins. Elles sont définies pour toutes les plate-formes."
 
 #: library/os.rst:2264
 msgid ""
 "Higher-level operations on pathnames are defined in the :mod:`os.path` "
 "module."
 msgstr ""
+"Des opérations de plus haut niveau sur les chemins sont définies dans le "
+"module :mod:`os.path`."
 
 #: library/os.rst:2269
 msgid ""
@@ -64241,6 +64870,9 @@ msgid ""
 "directory. This is ``'.'`` for Windows and POSIX. Also available via :mod:"
 "`os.path`."
 msgstr ""
+"La chaîne de caractère constante utilisée par le système d'exploitation pour "
+"référencer le répertoire actuel. Ça vaut ``'.'`` pour Windows et POSIX. "
+"Également disponible par :mod:`os.path`."
 
 #: library/os.rst:2276
 msgid ""
@@ -64248,6 +64880,9 @@ msgid ""
 "directory. This is ``'..'`` for Windows and POSIX. Also available via :mod:"
 "`os.path`."
 msgstr ""
+"La chaîne decaractère constante utilisée par le système d'exploitation pour "
+"référencer le répertoire parent. Ça vaut ``'..'`` pour Windows et POSIX. "
+"Également disponible par :mod:`os.path`."
 
 #: library/os.rst:2283
 msgid ""
@@ -64257,6 +64892,12 @@ msgid ""
 "func:`os.path.split` and :func:`os.path.join` --- but it is occasionally "
 "useful. Also available via :mod:`os.path`."
 msgstr ""
+"Le caractère utilisé par le système d'exploitation pour séparer les "
+"composantes des chemins. C'est ``'/'`` pour POSIX, et ``'\\\\'`` pour "
+"Windows. Notez que ce n'est pas suffisant pour pouvoir analyser ou "
+"concaténer correctement des chemins (utilisez alors :func:`os.path.split` "
+"et :func:`os.path.join`), mais ça peut s'avérer utile occasionnellement.  "
+"Également disponible par :mod:`os.path`."
 
 #: library/os.rst:2292
 msgid ""
@@ -64265,12 +64906,19 @@ msgid ""
 "to ``'/'`` on Windows systems where ``sep`` is a backslash. Also available "
 "via :mod:`os.path`."
 msgstr ""
+"Un caractère alternatif utilisé par le système d'exploitation pour séparer "
+"les composantes des chemins, ou ``None`` si un seul séparateur existe. Ça "
+"vaut ``'/'`` sur Windows où ``sep`` est un backslash ``'\\'``. Également "
+"disponible par :mod:`os.path`."
 
 #: library/os.rst:2300
 msgid ""
 "The character which separates the base filename from the extension; for "
 "example, the ``'.'`` in :file:`os.py`. Also available via :mod:`os.path`."
 msgstr ""
+"Le caractère qui sépare la base du nom d'un fichier et son extension. Par "
+"exemple, le ``'.'`` de :file:`os.py`. Également disponible par :mod:`os."
+"path`."
 
 #: library/os.rst:2306
 msgid ""
@@ -64278,6 +64926,10 @@ msgid ""
 "path components (as in :envvar:`PATH`), such as ``':'`` for POSIX or ``';'`` "
 "for Windows. Also available via :mod:`os.path`."
 msgstr ""
+"Le caractère conventionnellement utilisé par le système d'exploitation pour "
+"séparer la recherche des composantes de chemin (comme dans la variable "
+"d'environnement :envvar:`PATH`). Cela vaut ``':'`` pour POSIX, ou ``';'`` "
+"pour Windows. Également disponible par :mod:`os.path`."
 
 #: library/os.rst:2313
 msgid ""
@@ -64294,20 +64946,30 @@ msgid ""
 "linesep* as a line terminator when writing files opened in text mode (the "
 "default); use a single ``'\\n'`` instead, on all platforms."
 msgstr ""
+"La chaîne de caractères utilisée pour séparer (ou plutôt pour terminer) les "
+"lignes sur la plate-forme actuelle. Ce peut être un caractère unique (comme "
+"``'\\n'`` pour POSIX,) ou plusieurs caractères (comme ``'\\r\\n'`` pour "
+"Windows). N'utilisez pas *os.linesep* comme terminateur de ligne quand vous "
+"écrivez dans un fichier ouvert en mode *texte* (par défaut). Utilisez un "
+"unique ``'\\n'`` à la place, sur toutes les plate-formes."
 
 #: library/os.rst:2328
 msgid ""
 "The file path of the null device. For example: ``'/dev/null'`` for POSIX, "
 "``'nul'`` for Windows.  Also available via :mod:`os.path`."
 msgstr ""
+"Le chemin de fichier du périphérique *null*. Par exemple : ``'/dev/null'`` "
+"pour POSIX, ``'nul'`` our Windows. Également disponible par :mod:`os.path`."
 
 #: library/os.rst:2335
 msgid "Miscellaneous Functions"
-msgstr ""
+msgstr "Diverses fonctions"
 
 #: library/os.rst:2340
 msgid "Return a string of *n* random bytes suitable for cryptographic use."
 msgstr ""
+"Retourne une chaîne de *n* bytes aléatoires applicables à un usage "
+"cryptographique."
 
 #: library/os.rst:2342
 msgid ""
@@ -80638,7 +81300,7 @@ msgstr ""
 
 #: library/stat.rst:118
 msgid "Inode number."
-msgstr ""
+msgstr "Numéro d'*inode*."
 
 #: library/stat.rst:123
 msgid "Device inode resides on."
@@ -83614,17 +84276,23 @@ msgid ""
 "been mapped through the given translation table, which must be a bytes "
 "object of length 256."
 msgstr ""
+"Renvoie une copie du *bytes* ou *bytearray* dont tous les octets de  "
+"*delete* sont supprimés, et les octets restants changés par la table de "
+"correspondance donnée, qui doit être un objet *bytes* d'une longueur de 256."
 
 #: library/stdtypes.rst:1875
 msgid ""
 "You can use the :func:`bytes.maketrans` method to create a translation table."
 msgstr ""
+"Vous pouvez utiliser la méthode :func:`bytes.maketrans` pour créer une table "
+"de correspondance."
 
 #: library/stdtypes.rst:1877
 msgid ""
 "Set the *table* argument to ``None`` for translations that only delete "
 "characters::"
 msgstr ""
+"Donnez ``None`` comme *table* pour seulement supprimer des caractères : ::"
 
 #: library/stdtypes.rst:1887
 msgid ""
