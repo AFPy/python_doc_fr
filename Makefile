@@ -44,7 +44,7 @@ RELEASE := 3.5
 RELEASES := 2.7 3.3 3.4 3.5
 
 # May be overriden by calling make MODE=autobuild-stable for a full build
-MODE := autobuild-html
+MODE := autobuild-dev-html
 
 PATCHES := $(wildcard scripts/patches/$(RELEASE)/*.patch)
 
