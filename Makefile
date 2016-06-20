@@ -105,8 +105,12 @@ gen/src/%/mo/fr/LC_MESSAGES/:
 $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/
 	msgfmt $< -o $@
 
-build: requirements gen/src/$(RELEASE)/ $(PATCHES) $(MO_FILES)
+build: requirements pull gen/src/$(RELEASE)/ $(PATCHES) $(MO_FILES)
+ifeq ($(RELEASE)$(MODE),3.3autobuild-dev-html)
+	$(MAKE) -C gen/src/$(RELEASE)/Doc/ autobuild-html
+else
 	$(MAKE) -C gen/src/$(RELEASE)/Doc/ $(MODE)
+endif
 
 rsync: build
 	# You'll need your ssh public key to be in afpy.org:/home/pythondoc/.ssh/authorized_keys
