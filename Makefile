@@ -75,7 +75,7 @@ gen/src/%/:
 	git clone --depth 1 --branch "$(RELEASE)" https://github.com/python/cpython.git $@
 
 requirements:
-	pip3 -q install --user -r scripts/requirements.txt
+	python3 -m pip -q install --user -r scripts/requirements.txt
 	patch --batch -s ~/.local/lib/python3.5/site-packages/polib.py scripts/patches/polib.patch >/dev/null || :
 ifneq ($(HAS_TILDE_IN_PATH),0)
 	$(error "You have a '~' in your $$PATH, sh don't support it.")
