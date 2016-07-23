@@ -159,6 +159,12 @@ un ticket si vous n'êtes pas d'acord) :
 Comment générer la doc localement ?
 -----------------------------------
 
+Vous aurez besoin de ``pdflatex``, ``svn``, ``markdown``, et ``gettext``, je
+vous conseille un : ::
+
+  apt-get install texlive-full subversion markdown gettext python3-pip
+
+
 La doc de Python est générée par un Makefile, nous utilisons aussi un
 Makefile lançant le leur.
 
