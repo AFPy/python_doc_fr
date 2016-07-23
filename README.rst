@@ -88,7 +88,7 @@ Norme et style
 --------------
 
 Si vous utilisez git et faites des pull requests, cette section est
-importante, pour les mails et les tickets, on s'en occupera pur vous.
+importante, pour les mails et les tickets, on s'en occupera pour vous.
 
 Afin de ne pas générer des diff illisibles remplis de plus de
 différences de norme que de différences de texte, autremment dit, afin
