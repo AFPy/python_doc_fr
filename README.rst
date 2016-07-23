@@ -221,3 +221,13 @@ de lancer : ::
   $ rsync -az www/ afpy.org:/home/mandark/www/
 
 tout simplement.
+
+Rendre les ``git show`` lisibles
+--------------------------------
+
+On vous a préparé un script, ``scripts/podiff``, et on a configuré
+``.gitattributes``, il ne vous reste plus qu'a executer:
+
+    git config diff.podiff.textconv scripts/podiff
+
+et vos ``git show`` deviendront un peu plus lisibles.
