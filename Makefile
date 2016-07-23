@@ -53,6 +53,8 @@ MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.
 
 HAS_PDFLATEX := $(shell which pdflatex)
 HAS_SVN := $(shell which svn)
+HAS_MARKDOWN := $(shell which markdown)
+HAS_GETTEXT := $(shell which gettext)
 HAS_TILDE_IN_PATH := $(shell echo "$(PATH)" | grep -c '~')
 
 .PHONY: $(RELEASES) $(PATCHES) all build_all msgmerge_all rsync_all pull requirements build
@@ -88,6 +90,12 @@ endif
 ifeq ($(RELEASE),3.3)
 ifndef HAS_SVN
 	$(error "You need to install svn to build 3.3, typically apt-get install subversion")
+endif
+ifndef HAS_MARKDOWN
+	$(error "You need to install markdown, typically apt-get install markdown")
+endif
+ifndef HAS_GETTEXT
+	$(error "You need to install gettext, typically apt-get install gettext")
 endif
 endif
 
