@@ -1,0 +1,37 @@
+485a486
+>             'Language',
+489d489
+<             'Language',
+956,958d955
+<         if self.obsolete:
+<             return _BaseEntry.__unicode__(self, wrapwidth)
+< 
+961c958,961
+<         comments = [('comment', '#. '), ('tcomment', '# ')]
+---
+>         if self.obsolete:
+>             comments = [('tcomment', '# ')]
+>         else:
+>             comments = [('comment', '#. '), ('tcomment', '# ')]
+978c978
+<         if self.occurrences:
+---
+>         if not self.obsolete and self.occurrences:
+1007a1008,1011
+>         if self.obsolete:
+>             prefix = "#~| "
+>         else:
+>             prefix = "#| "
+1011c1015
+<                 ret += self._str_field(f, "#| ", "", val, wrapwidth)
+---
+>                 ret += self._str_field(f, prefix, "", val, wrapwidth)
+1015,1018d1018
+< 
+<         assert isinstance(ret, text_type)
+<         #if type(ret) != types.UnicodeType:
+<         #    return unicode(ret, self.encoding)
+1493c1493
+<                     fil, line = occurrence.split(':')
+---
+>                     fil, line = occurrence.rsplit(':', 1)
