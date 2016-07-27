@@ -84823,6 +84823,9 @@ msgid ""
 "buffer protocol.  Built-in objects that support the buffer protocol include :"
 "class:`bytes` and :class:`bytearray`."
 msgstr ""
+"Crée une :class:`memoryview` faisant référence à *obj*. *obj* doit supporter "
+"le *buffer protocol*. Les objets natifs pendant en charge le *buffer "
+"protocol* sont :class:`bytes` et :class:`bytearray`."
 
 #: library/stdtypes.rst:2375
 msgid ""
@@ -84831,6 +84834,11 @@ msgid ""
 "such as :class:`bytes` and :class:`bytearray`, an element is a single byte, "
 "but other types such as :class:`array.array` may have bigger elements."
 msgstr ""
+"Une :class:`memoryview` a la notion d'*element*, qui est l'unité de  mémoire "
+"atomique géré par l'objet *obj* d'origine. Pour de nombreux types simples "
+"comme :class:`bytes` et :class:`bytearray`, l'élément est l'octet, mais pour "
+"d'autres types tels que :class:`array.array` les éléments peuvent être plus "
+"grands."
 
 #: library/stdtypes.rst:2381
 msgid ""
@@ -84858,13 +84866,15 @@ msgstr ""
 
 #: library/stdtypes.rst:2419
 msgid ":class:`memoryview` has several methods:"
-msgstr ""
+msgstr "La :class:`memoryview` dispose de plusieurs méthodes :"
 
 #: library/stdtypes.rst:2423
 msgid ""
 "Return the data in the buffer as a bytestring.  This is equivalent to "
 "calling the :class:`bytes` constructor on the memoryview. ::"
 msgstr ""
+"Renvoie les données du *buffer* sous forme de *bytes*. Cela  équivaut à "
+"appeler le constructeur :class:`bytes` sur le memoryview. ::"
 
 #: library/stdtypes.rst:2434
 msgid "Return the data in the buffer as a list of integers. ::"
@@ -84885,16 +84895,21 @@ msgid ""
 "a :class:`ValueError` (except :meth:`release()` itself which can be called "
 "multiple times)::"
 msgstr ""
+"Après le premier appel de cette méthode, toute nouvelle opération  sur la "
+"*view* léve une :class:`ValueError` (sauf :meth:`release()` elle-même qui "
+"peut être appelée plusieurs fois) : ::"
 
 #: library/stdtypes.rst:2458
 msgid ""
 "The context management protocol can be used for a similar effect, using the "
 "``with`` statement::"
 msgstr ""
+"Le protocole de gestion de contexte peut être utilisé pour obtenir un effet "
+"similaire, via l'instruction ``with`` : ::"
 
 #: library/stdtypes.rst:2472
 msgid "There are also several readonly attributes available:"
-msgstr ""
+msgstr "Plusieurs attributs en lecture seule sont également disponibles :"
 
 #: library/stdtypes.rst:2476
 msgid ""
@@ -84926,7 +84941,7 @@ msgstr ""
 
 #: library/stdtypes.rst:2508
 msgid "A bool indicating whether the memory is read only."
-msgstr ""
+msgstr "Un booléen indiquant si la mémoire est en lecture seule."
 
 #: library/stdtypes.rst:2516
 msgid "Context Manager Types"

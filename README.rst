@@ -16,12 +16,12 @@ Progression de la traduction:
        contents   100%   100%   100%   100%   100%
       copyright   100%   100%   100%   100%   100%
           about   100%   100%   100%   100%   100%
-           bugs   100%    76%    85%    95%    90%
+           bugs   100%    76%    85%    95%   100%
    distributing   100%    N/A    N/A   100%   100%
          sphinx   100%   100%   100%   100%   100%
      installing    89%    N/A    N/A   100%   100%
         license    95%    71%    72%    76%    96%
-        install    30%    31%    31%    31%    46%
+        install    45%    46%    46%    46%    47%
        glossary    85%    94%    97%   100%    98%
       extending    21%    22%    22%    24%    23%
           using    29%    33%    26%    26%    20%
