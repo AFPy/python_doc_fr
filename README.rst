@@ -19,8 +19,8 @@ Progression de la traduction:
            bugs   100%   100%   100%   100%   100%
    distributing   100%    N/A    N/A   100%   100%
          sphinx   100%   100%   100%   100%   100%
-     installing    89%    N/A    N/A   100%   100%
-        license    95%    71%    72%    76%    96%
+     installing   100%    N/A    N/A   100%   100%
+        license   100%   100%   100%   100%   100%
         install    45%    46%    46%    46%    47%
        glossary    85%    94%    97%   100%    98%
       extending    21%    22%    22%    24%    23%
@@ -33,7 +33,7 @@ Progression de la traduction:
           c-api     9%    10%    12%    12%    11%
        whatsnew     6%     7%    39%    46%    38%
         library    14%    16%    17%    18%    18%
-      **TOTAL**    16%    17%    22%    24%    23%
+      **TOTAL**    16%    17%    23%    24%    23%
 =============== ====== ====== ====== ====== ======
 
 Comment qu'on fait pour aider à traduire ?
