@@ -14,7 +14,7 @@ Progression de la traduction:
         version    2.7    3.2    3.3    3.4    3.5
 --------------- ------ ------ ------ ------ ------
        contents   100%   100%   100%   100%   100%
-      copyright   100%    87%   100%   100%   100%
+      copyright   100%   100%   100%   100%   100%
           about   100%   100%   100%   100%   100%
            bugs   100%    76%    85%    95%    90%
    distributing   100%    N/A    N/A   100%   100%
