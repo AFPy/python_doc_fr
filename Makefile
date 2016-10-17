@@ -36,8 +36,8 @@
 #
 
 # May be overriden by calling make RELEASE=2.7
-RELEASE := 3.5
-RELEASES := 2.7 3.4 3.5
+RELEASE := 3.6
+RELEASES := 2.7 3.4 3.5 3.6
 
 # May be overriden by calling make MODE=autobuild-stable for a full build
 MODE := autobuild-dev-html
@@ -101,7 +101,7 @@ index_page:
 clean:
 	rm -fr gen
 
-msgmerge:
+msgmerge: gen/src/$(RELEASE)/
 	mkdir -p $(RELEASE)/
 	cd gen/src/$(RELEASE) && sphinx-build -Q -b gettext Doc pot/
 	for POT in gen/src/$(RELEASE)/pot/*; \
