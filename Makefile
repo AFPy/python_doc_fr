@@ -87,6 +87,7 @@ $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/
 
 build: requirements pull gen/src/$(RELEASE)/ $(PATCHES) $(MO_FILES)
 	$(MAKE) -C gen/src/$(RELEASE)/Doc/ $(MODE)
+	@echo "Doc translated in gen/src/$(RELEASE)/Doc/build/html/"
 
 rsync: build
 	# You'll need your ssh public key to be in afpy.org:/home/pythondoc/.ssh/authorized_keys
