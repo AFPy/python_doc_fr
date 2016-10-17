@@ -10,31 +10,31 @@ Votre aide est la bienvenue que ce soit pour maintenir les traductions
 
 Progression de la traduction:
 
-=============== ====== ====== ====== ====== ======
-        version    2.7    3.2    3.3    3.4    3.5
---------------- ------ ------ ------ ------ ------
-       contents   100%   100%   100%   100%   100%
-      copyright   100%   100%   100%   100%   100%
-          about   100%   100%   100%   100%   100%
-           bugs   100%   100%   100%   100%   100%
-   distributing   100%    N/A    N/A   100%   100%
-         sphinx   100%   100%   100%   100%   100%
-     installing   100%    N/A    N/A   100%   100%
-        license   100%   100%   100%   100%   100%
-        install    45%    46%    46%    46%    47%
-       glossary    85%    94%    97%   100%    98%
-      extending    21%    22%    22%    24%    23%
-          using    29%    33%    26%    26%    20%
-       tutorial    97%    90%    96%   100%    98%
-            faq    28%    30%    30%    31%    30%
-      distutils    13%    12%    12%    13%    13%
-      reference     4%     4%     4%     4%     4%
-          howto     3%     3%     3%     3%     3%
-          c-api     9%    10%    12%    12%    11%
-       whatsnew     6%     7%    39%    46%    38%
-        library    14%    16%    17%    18%    18%
-      **TOTAL**    16%    17%    23%    24%    23%
-=============== ====== ====== ====== ====== ======
+=============== ====== ====== ======
+        version    2.7    3.4    3.5
+--------------- ------ ------ ------
+       contents   100%   100%   100%
+      copyright   100%   100%   100%
+          about   100%   100%   100%
+           bugs   100%   100%   100%
+   distributing   100%   100%   100%
+         sphinx   100%   100%   100%
+     installing   100%   100%   100%
+        license   100%   100%   100%
+        install    45%    46%    47%
+       glossary    85%   100%    98%
+      extending    21%    24%    23%
+          using    29%    26%    20%
+       tutorial    97%   100%    98%
+            faq    28%    31%    30%
+      distutils    13%    13%    13%
+      reference     4%     4%     4%
+          howto     3%     3%     3%
+          c-api     9%    12%    11%
+       whatsnew     6%    46%    38%
+        library    14%    18%    18%
+      **TOTAL**    16%    24%    23%
+=============== ====== ====== ======
 
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------

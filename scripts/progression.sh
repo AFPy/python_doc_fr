@@ -10,9 +10,11 @@ then
     exit 0
 fi
 
-printf "=============== ====== ====== ====== ====== ======\n"
-printf "        version    2.7    3.2    3.3    3.4    3.5\n"
-printf -- "--------------- ------ ------ ------ ------ ------\n"
+python3 -c "import sys; print('===============' + ' ======' * len(sys.argv[1:]))" 2.* 3.*
+printf "        version"
+printf "    %s" 2.* 3.*
+printf "\n"
+python3 -c "import sys; print('---------------' + ' ------' * len(sys.argv[1:]))" 2.* 3.*
 files='contents copyright about bugs distributing sphinx installing license
 install glossary extending using tutorial faq distutils reference howto c-api
 whatsnew library'
@@ -20,7 +22,7 @@ whatsnew library'
 for file in $files
 do
     printf "%15s " "$file"
-    for version in 2.7 3.2 3.3 3.4 3.5
+    for version in 2.* 3.*
     do
         if [ -f "$version/$file.po" ]
         then
@@ -41,11 +43,10 @@ do
 done
 
 printf "%15s " '**TOTAL**'
-for version in 2.7 3.2 3.3 3.4 3.5
+for version in 2.* 3.*
 do
     printf "%5s%% " \
         "$((100 * ${translated_by_ver[$(echo $version | tr -d .)]} /
             ${total_by_ver[$(echo $version | tr -d .)]}))"
 done
-printf "\n"
-printf "=============== ====== ====== ====== ====== ======\n"
+python3 -c "import sys; print('\n===============' + ' ======' * len(sys.argv[1:]))" 2.* 3.*

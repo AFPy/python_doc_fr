@@ -8,14 +8,6 @@ Les traductions sont hébergées sur [github](https://github.com/AFPy/python_doc
        ([tgz](2.7.tar.gz),
         [tbz2](2.7.tar.bz2),
         [zip](2.7.zip))
- - [Documentation de Python 3.2](3.2/)
-       ([tgz](3.2.tar.gz),
-        [tbz2](3.2.tar.bz2),
-        [zip](3.2.zip))
- - [Documentation de Python 3.3](3.3/)
-       ([tgz](3.3.tar.gz),
-        [tbz2](3.3.tar.bz2),
-        [zip](3.3.zip))
  - [Documentation de Python 3.4](3.4/)
        ([tgz](3.4.tar.gz),
         [tbz2](3.4.tar.bz2),

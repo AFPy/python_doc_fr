@@ -34,14 +34,10 @@
 # documented in gen/src/3.5/Doc/Makefile as we're only delegating the
 # real work to the Python Doc Makefile.
 #
-# We're not compiling 3.2, it's too old, don't even have
-# autobuild-html, use an old version of sphinx-doc using the
-# deprecated sphinx.ext.refcounting so fsck it, I just don't want to
-# have 'if's everywhere for its compatibility.
 
 # May be overriden by calling make RELEASE=2.7
 RELEASE := 3.5
-RELEASES := 2.7 3.3 3.4 3.5
+RELEASES := 2.7 3.4 3.5
 
 # May be overriden by calling make MODE=autobuild-stable for a full build
 MODE := autobuild-dev-html
