@@ -10,31 +10,31 @@ Votre aide est la bienvenue que ce soit pour maintenir les traductions
 
 Progression de la traduction:
 
-=============== ====== ====== ======
-        version    2.7    3.4    3.5
---------------- ------ ------ ------
-       contents   100%   100%   100%
-      copyright   100%   100%   100%
-          about   100%   100%   100%
-           bugs   100%   100%   100%
-   distributing   100%   100%   100%
-         sphinx   100%   100%   100%
-     installing   100%   100%   100%
-        license   100%   100%   100%
-        install    45%    46%    47%
-       glossary    85%   100%    98%
-      extending    21%    24%    23%
-          using    29%    26%    20%
-       tutorial    97%   100%    98%
-            faq    28%    31%    30%
-      distutils    13%    13%    13%
-      reference     4%     4%     4%
-          howto     3%     3%     3%
-          c-api     9%    12%    11%
-       whatsnew     6%    46%    38%
-        library    14%    18%    18%
-      **TOTAL**    16%    24%    23%
-=============== ====== ====== ======
+=============== ====== ====== ====== ======
+        version    2.7    3.4    3.5    3.6
+--------------- ------ ------ ------ ------
+       contents   100%   100%   100%   100%
+      copyright   100%   100%   100%   100%
+          about   100%   100%   100%   100%
+           bugs   100%   100%   100%   100%
+   distributing   100%   100%   100%   100%
+         sphinx   100%   100%   100%    96%
+     installing   100%   100%   100%    66%
+        license   100%   100%   100%   100%
+        install    45%    46%    47%    47%
+       glossary    85%   100%    98%    96%
+      extending    21%    24%    23%    23%
+          using    29%    26%    20%    17%
+       tutorial    97%   100%    98%    96%
+            faq    28%    31%    30%    30%
+      distutils    13%    13%    13%    13%
+      reference     4%     4%     4%     4%
+          howto     3%     3%     3%     3%
+          c-api     9%    12%    11%    11%
+       whatsnew     6%    46%    41%    43%
+        library    14%    18%    18%    17%
+      **TOTAL**    16%    24%    23%    23%
+=============== ====== ====== ====== ======
 
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
@@ -47,7 +47,7 @@ pour vous), soit : ::
   $ cd python_doc_fr
   $ PATH=$PATH:~/.local/bin/ # Vous devriez mettre ça dans votre ~/.bashrc
   $ make # Génère la doc en HTML chez vous
-  $ x-www-browser gen/src/3.5/Doc/build/html/index.html
+  $ x-www-browser gen/src/3.6/Doc/build/html/index.html
 
 Éditer les fichiers avec l'éditeur de votre choix, il en existe beaucoup:
 
@@ -122,7 +122,7 @@ Aides à la traduction
 * Consultez aussi le site de `traduc.org <http://traduc.org>`_
   qui contient de nombreuses informations pour les traducteurs.
 * glossary.po tout simplement, ou
-  `le glossaire traduit <http://www.afpy.org/doc/python/3.5/glossary.html>`_
+  `le glossaire traduit <http://www.afpy.org/doc/python/3.6/glossary.html>`_
 
 Uniformisation du vocabulaire
 -----------------------------
