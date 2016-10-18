@@ -18,9 +18,9 @@
 #
 # Also, all commands can accept a RELEASE parameter, like:
 #
-# - make build RELEASE=2.7  # 3.5 is the default
-# - make msgmerge RELEASE=2.7  # 3.5 is the default
-# - make rsync RELEASE=2.7  # 3.5 is the default
+# - make build RELEASE=2.7  # 3.6 is the default
+# - make msgmerge RELEASE=2.7  # 3.6 is the default
+# - make rsync RELEASE=2.7  # 3.6 is the default
 #
 # And finally, for the day we'll want to also build PDF and so on:
 #
@@ -31,7 +31,7 @@
 # - make rsync_all MODE=autobuild-stable
 #
 # Modes are: autobuild-stable, autobuild-dev, and autobuild-html,
-# documented in gen/src/3.5/Doc/Makefile as we're only delegating the
+# documented in gen/src/3.6/Doc/Makefile as we're only delegating the
 # real work to the Python Doc Makefile.
 #
 
