@@ -6,7 +6,7 @@
 # - make msgmerge # To merge pot from upstream
 # - make rsync # To send generated doc to afpy.org
 #
-# All (build, msgmerge, and rsync) have theyr _all counterparts to
+# All (build, msgmerge, and rsync) have their _all counterparts to
 # apply them to all versions:
 #
 # - make build_all
