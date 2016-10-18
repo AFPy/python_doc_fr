@@ -42,12 +42,10 @@ RELEASES := 2.7 3.4 3.5 3.6
 # May be overriden by calling make MODE=autobuild-stable for a full build
 MODE := autobuild-dev-html
 
-PATCHES := $(wildcard scripts/patches/$(RELEASE)/*.patch)
-
 PO_FILES := $(wildcard $(RELEASE)/*.po)
 MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,$(notdir $(PO_FILES))))
 
-.PHONY: $(RELEASES) $(PATCHES) all build_all msgmerge_all rsync_all pull requirements build
+.PHONY: $(RELEASES) all build_all msgmerge_all rsync_all pull requirements build
 
 all: pull build index_page
 
@@ -68,16 +66,10 @@ gen/src/%/:
 
 requirements:
 	python3 -m pip -q install --user -r scripts/requirements.txt
-	patch --batch -s ~/.local/lib/python3.5/site-packages/polib.py scripts/patches/polib.patch >/dev/null || :
 	./scripts/check_requirements.sh svn pdflatex markdown gettext
 
 pull: gen/src/$(RELEASE)/
 	git -C gen/src/$(RELEASE) pull --ff-only
-
-$(PATCHES):
-	[ -f gen/src/$(RELEASE)/$(notdir $@) ] || ( \
-	    cp $@ gen/src/$(RELEASE)/$(notdir $@) && \
-	    git -C gen/src/$(RELEASE) apply $(notdir $@))
 
 gen/src/%/mo/fr/LC_MESSAGES/:
 	mkdir -p $@
@@ -85,8 +77,8 @@ gen/src/%/mo/fr/LC_MESSAGES/:
 $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/
 	msgfmt $< -o $@
 
-build: requirements pull gen/src/$(RELEASE)/ $(PATCHES) $(MO_FILES)
-	$(MAKE) -C gen/src/$(RELEASE)/Doc/ $(MODE)
+build: requirements pull gen/src/$(RELEASE)/ $(MO_FILES)
+	$(MAKE) -C gen/src/$(RELEASE)/Doc/ SPHINXOPTS='-D locale_dirs=../mo -D language=fr' $(MODE)
 	@echo "Doc translated in gen/src/$(RELEASE)/Doc/build/html/"
 
 rsync: build
