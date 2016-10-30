@@ -95,16 +95,6 @@ clean:
 	rm -fr gen
 
 msgmerge: gen/src/$(RELEASE)/
-	mkdir -p $(RELEASE)/
-	cd gen/src/$(RELEASE) && sphinx-build -Q -b gettext Doc pot/
-	for POT in gen/src/$(RELEASE)/pot/*; \
-	do \
-	    PO="$$(basename $${POT%.pot}.po)"; \
-	    if [ -f "$(RELEASE)/$$PO" ]; \
-	    then \
-	        msgmerge -U "$(RELEASE)/$$PO" "$$POT"; \
-	    else \
-	        msgcat -o "$(RELEASE)/$$PO" "$$POT"; \
-	    fi \
-	done
+	cd gen/src/$(RELEASE) && sphinx-build -Q -b gettext -D gettext_compact=0 Doc pot/
+	scripts/bulk-msgmerge.sh gen/src/$(RELEASE)/pot/ $(RELEASE)/
 	@echo "You may commit this by using git commit -u -m '$(RELEASE): merge pot files'"
