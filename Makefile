@@ -24,11 +24,11 @@
 #
 # And finally, for the day we'll want to also build PDF and so on:
 #
-# - make build_all MODE=autobuild-stable
+# - make build_all MODE=autobuild-dev
 #
 # Or, to build + rsync on afpy.org, as rsync depends on build, simply run:
 #
-# - make rsync_all MODE=autobuild-stable
+# - make rsync_all
 #
 # Modes are: autobuild-stable, autobuild-dev, and autobuild-html,
 # documented in gen/src/3.6/Doc/Makefile as we're only delegating the
@@ -81,7 +81,8 @@ build: requirements pull gen/src/$(RELEASE)/ $(MO_FILES)
 	$(MAKE) -C gen/src/$(RELEASE)/Doc/ SPHINXOPTS='-D locale_dirs=../mo -D language=fr' $(MODE)
 	@echo "Doc translated in gen/src/$(RELEASE)/Doc/build/html/"
 
-rsync: build
+rsync:
+	$(MAKE) build MODE=autobuild-dev
 	# You'll need your ssh public key to be in afpy.org:/home/pythondoc/.ssh/authorized_keys
 	rsync -a --delete-delay gen/src/$(RELEASE)/Doc/build/html/ pythondoc@afpy.org:/home/pythondoc/www/$(RELEASE)
 	rsync -a gen/src/$(RELEASE)/Doc/dist/ pythondoc@afpy.org:/home/pythondoc/www/$(RELEASE)/archives/
