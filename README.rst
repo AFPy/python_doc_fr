@@ -10,31 +10,11 @@ Votre aide est la bienvenue que ce soit pour maintenir les traductions
 
 Progression de la traduction:
 
-=============== ====== ====== ======
-        version    2.7    3.5    3.6
---------------- ------ ------ ------
-       contents   100%   100%   100%
-      copyright   100%   100%   100%
-          about   100%   100%   100%
-           bugs   100%   100%   100%
-   distributing   100%   100%   100%
-         sphinx   100%   100%   100%
-     installing   100%   100%    66%
-        license   100%   100%   100%
-        install    45%    47%    47%
-       glossary    85%    99%   100%
-      extending    21%    24%    24%
-          using    29%    20%    17%
-       tutorial    97%   100%    97%
-            faq    28%    30%    30%
-      distutils    13%    13%    13%
-      reference     4%     4%     4%
-          howto     3%     3%     3%
-          c-api     9%    11%    11%
-       whatsnew     6%    41%    43%
-        library    14%    18%    17%
-      **TOTAL**    16%    24%    24%
-=============== ====== ====== ======
+====== ====== ======
+   2.7    3.5    3.6
+------ ------ ------
+   23%    23%    23%
+====== ====== ======
 
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
