@@ -19,13 +19,16 @@ Progression de la traduction:
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
 
-Pour cela récupérez les fichiers *.po* de la partie qui vous
-intéresse, soit via `Download ZIP` (si `git` n'est pas encore fait
-pour vous), soit : ::
+Soit sur
+[transifex/python-doc](https://www.transifex.com/python-doc/), et le
+reste de cette section ne vous concerne pas. Soit "à la main": pour
+cela récupérez les fichiers *.po* de la partie qui vous intéresse,
+soit via `Download ZIP` (si `git` n'est pas encore fait pour vous),
+soit : ::
 
   $ git clone https://github.com/AFPy/python_doc_fr.git # Ou votre fork
   $ cd python_doc_fr
-  $ PATH=$PATH:~/.local/bin/ # Vous devriez mettre ça dans votre ~/.bashrc
+  $ PATH=$PATH:$HOME/.local/bin/ # Vous devriez mettre ça dans votre ~/.bashrc
   $ make # Génère la doc en HTML chez vous
   $ x-www-browser gen/src/3.6/Doc/build/html/index.html
 

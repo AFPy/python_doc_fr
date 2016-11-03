@@ -49,6 +49,9 @@ MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.
 
 all: pull build index_page
 
+.tx/config:
+	./scripts/gen_tx_config.py .tx/config
+
 build_all: RULE=build
 build_all: $(RELEASES)
 
