@@ -1,6 +1,9 @@
 Traduction française de docs.python.org
 =======================================
 
+> /!\ Pour vous simplifier les merge futurs dû au récent découpage des
+> fichiers, faites nous une PR, on s'occupe du merge.
+
 Ce projet vise à mettre à disposition sur le site de l'afpy une
 `traduction en français <http://www.afpy.org/doc/python/>`_ de la
 documentation officielle de Python.
