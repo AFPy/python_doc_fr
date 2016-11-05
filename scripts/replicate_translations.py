@@ -39,7 +39,11 @@ def merge_po_files(po_files, fuzzy=False):
     known_translations = {}
     # Aggregate all known translations
     for po_file in tqdm(po_files, desc="Searching known translations"):
-        po_file = polib.pofile(po_file)
+        try:
+            po_file = polib.pofile(po_file)
+        except OSError as err:
+            print("Skipping {}".format(po_file))
+            continue
         for entry in po_file:
             if 'fuzzy' not in entry.flags and entry.msgstr != '':
                 known_translations[entry.msgid] = entry.msgstr
