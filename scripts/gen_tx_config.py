@@ -16,15 +16,17 @@ def parse_args():
     return parser.parse_args()
 
 
-def conf_for_file(slug, root, po_file):
+def conf_for_file(project_slug, root, po_file):
+    resource_slug = po_file.replace('/', '--').replace('.po', '')
+    if resource_slug == 'glossary':
+        # Reserved by transifex :-(
+        resource_slug = 'glossary-1'
     return """[{}.{}]
 trans.fr = {}
 type = PO
 source_lang = en
 
-""".format(slug,
-           po_file.replace('/', '--').replace('.po', ''),
-           os.path.join(root, po_file))
+""".format(project_slug, resource_slug, os.path.join(root, po_file))
 
 
 def main(config):
