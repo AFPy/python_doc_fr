@@ -50,6 +50,7 @@ MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.
 all: pull build index_page
 
 .tx/config:
+	mkdir -p .tx/
 	./scripts/gen_tx_config.py .tx/config
 
 build_all: RULE=build
@@ -101,3 +102,11 @@ msgmerge: gen/src/$(RELEASE)/
 	cd gen/src/$(RELEASE) && sphinx-build -Q -b gettext -D gettext_compact=0 Doc pot/
 	scripts/bulk-msgmerge.sh gen/src/$(RELEASE)/pot/ $(RELEASE)/
 	@echo "You may commit this by using git commit -u -m '$(RELEASE): merge pot files'"
+
+txpull: .tx/config
+	-tx pull --skip
+	./scripts/replicate_translations.py --files $(shell find .tx/ -name '*.po') $(shell find $(RELEASE)/ -name '*.po')
+
+txpush: .tx/config
+	cp -a $(RELEASE) .tx/
+	-tx push -t --skip

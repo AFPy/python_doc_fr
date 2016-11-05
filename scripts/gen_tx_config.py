@@ -26,7 +26,7 @@ trans.fr = {}
 type = PO
 source_lang = en
 
-""".format(project_slug, resource_slug, os.path.join(root, po_file))
+""".format(project_slug, resource_slug, os.path.join('.tx', root, po_file))
 
 
 def main(config):
