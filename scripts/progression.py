@@ -2,6 +2,7 @@
 """ Check translation progress and format output """
 import re
 import sys
+from collections import OrderedDict
 from os import getcwd, listdir
 from os.path import join, isdir
 from polib import pofile
@@ -16,17 +17,17 @@ def usage():
 def check_progress():
     """ Check translation progress for each subdirectory of each version """
     main_path = getcwd()
-    status_dict = dict()
+    status_dict = OrderedDict()
     # for each version
     for ver in listdir(main_path):
         if ver[:2] in ("2.", "3."):
-            status_dict[ver] = dict()
+            status_dict[ver] = OrderedDict()
             ver_path = join(main_path, ver)
             ver_total = 0
             ver_translated = 0
 
             # for each .po file in the root folder of the version
-            for elem in listdir(ver_path):
+            for elem in sorted(listdir(ver_path)):
                 elem_path = join(ver_path, elem)
                 if elem.endswith(".po"):
                     pof = pofile(elem_path)
@@ -108,13 +109,14 @@ if __name__ == "__main__":
     msg = format_progress(res)
 
     # if output is specified store results in it
-    #FIXME: it will erase the README.rst instead of updating it
     if len(sys.argv) == 3 and sys.argv[1] == "--update-readme":
         with open(sys.argv[2], 'r+') as f:
             old_readme = f.read()
             f.seek(0)
             table_boundaries = '============ ====== ====== ======'
-            new_readme = re.sub(table_boundaries + '.*' + table_boundaries, msg, old_readme, flags=re.S)
+            new_readme = re.sub(table_boundaries + '.*' + table_boundaries,
+                                msg.strip(),
+                                old_readme, flags=re.S)
             f.write(new_readme)
             f.truncate()
     else:
