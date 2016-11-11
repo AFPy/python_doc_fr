@@ -34,8 +34,8 @@ def check_version_progress(ver_path):
             status[elem] = postat(*[join(elem_path, fic) for
                                     fic in listdir(elem_path) if
                                     fic.endswith('.po')])
-    status["Total"] = (sum(translated for translated, _ in status.values()),
-                       sum(total for _, total in status.values()))
+    status["~total~"] = (sum(translated for translated, _ in status.values()),
+                         sum(total for _, total in status.values()))
     return status
 
 
@@ -51,39 +51,19 @@ def check_progress():
 
 
 def format_progress(progress):
-    tmp = "=" * 12  # block name column
-    tmp += " ======" * len(progress)  # version columns
-    tmp += "\n"
-    tmp2 = tmp.replace("=", "-")
-
-    # make title columns
-    res = tmp
-    res += " " * 12
-    for ver in progress:
-        res += " %6s" % ver
-    res += "\n" + tmp2
-    # for each block, add a ligne
-    #TODO: change the access at 2.7 by something more adaptative
-    for block in progress["2.7"]:
-        if block == "Total":
-            continue
-        if block.endswith(".po"):
-            blockname = block[:-3]
-        else:
-            blockname = block
-        res += "%12s" % blockname
-        for ver in progress:
-            res += " %5d%%" % (100. * progress[ver][block][0] / progress[ver][block][1])
-        res += "\n"
-
-    # Add total line
-    res += "%12s" % "Total"
-    for ver in progress:
-        res += " %5d%%" % (100. * progress[ver]["Total"][0] / progress[ver]["Total"][1])
-    res += "\n"
-
-    res += tmp
-    return res
+    from tabulate import tabulate
+    from itertools import chain
+    lines = sorted(set(chain(*[list(d.keys()) for d in progress.values()])))
+    columns = list(progress.keys())
+    def format(x):
+        if x is None:
+            return 'ø'
+        return "%d%%" % (100. * x[0] / x[1])
+    table = [[line] + [format(progress[column].get(line))
+                       for column in columns]
+             for line in lines]
+    return tabulate(table, columns, tablefmt='rst',
+                    stralign='right')
 
 
 def parse_args():
