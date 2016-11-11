@@ -77,8 +77,7 @@ def format_progress(progress):
     res += " " * 12
     for ver in progress:
         res += " %6s" % ver
-    res += "\n"
-
+    res += "\n" + tmp2
     # for each block, add a ligne
     #TODO: change the access at 2.7 by something more adaptative
     for block in progress["2.7"]:
@@ -88,14 +87,12 @@ def format_progress(progress):
             blockname = block[:-3]
         else:
             blockname = block
-        res += tmp2
         res += "%12s" % blockname
         for ver in progress:
             res += " %5d%%" % progress[ver][block]
         res += "\n"
 
     # Add total line
-    res += tmp2
     res += "%12s" % "Total"
     for ver in progress:
         res += " %5d%%" % progress[ver]["Total"]
