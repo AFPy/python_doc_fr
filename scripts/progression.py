@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """ Check translation progress and format output """
+import re
 import sys
 from os import getcwd, listdir
 from os.path import join, isdir
@@ -109,8 +110,12 @@ if __name__ == "__main__":
     # if output is specified store results in it
     #FIXME: it will erase the README.rst instead of updating it
     if len(sys.argv) == 3 and sys.argv[1] == "--update-readme":
-        with open(sys.argv[2], 'w') as f:
-            for elem in msg:
-                f.write(elem)
+        with open(sys.argv[2], 'r+') as f:
+            old_readme = f.read()
+            f.seek(0)
+            table_boundaries = '============ ====== ====== ======'
+            new_readme = re.sub(table_boundaries + '.*' + table_boundaries, msg, old_readme, flags=re.S)
+            f.write(new_readme)
+            f.truncate()
     else:
         print(msg)
