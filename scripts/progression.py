@@ -71,14 +71,14 @@ def format_progress(progress):
     tmp += " ======" * len(progress)  # version columns
     tmp += "\n"
     tmp2 = tmp.replace("=", "-")
-    
+
     # make title columns
     res = tmp
     res += " " * 12
     for ver in progress:
         res += " %6s" % ver
     res += "\n"
-    
+
     # for each block, add a ligne
     #TODO: change the access at 2.7 by something more adaptative
     for block in progress["2.7"]:
