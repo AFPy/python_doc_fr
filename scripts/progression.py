@@ -8,6 +8,18 @@ from os.path import join, isdir
 from polib import pofile
 
 
+def postat(*args):
+    """From one or many po files path, give a tuple of (translated, total).
+    """
+    total = 0
+    translated = 0
+    for pofile_path in args:
+        po_file = pofile(pofile_path)
+        total += len(po_file)
+        translated += len(po_file.translated_entries())
+    return translated, total
+
+
 def check_version_progress(ver_path):
     status = OrderedDict()
     ver_total = 0
@@ -15,39 +27,15 @@ def check_version_progress(ver_path):
     for elem in sorted(listdir(ver_path)):
         elem_path = join(ver_path, elem)
         if elem.endswith(".po"):
-            pof = pofile(elem_path)
-            pof_total = len(pof)
-            pof_translated = len(pof.translated_entries())
-
-            # store data for this file
-            status[elem] = 100. * pof_translated / pof_total
-
-            # store data for version
-            ver_total += pof_total
-            ver_translated += pof_translated
-
+            # Stats for a po file
+            status[elem] = postat(elem_path)
         elif isdir(elem_path):
-            module_total = 0
-            module_translated = 0
-            for fic in listdir(elem_path):
-                if fic.endswith(".po"):
-                    pof = pofile(join(elem_path, fic))
-                    pof_total = len(pof)
-                    pof_translated = len(pof.translated_entries())
-
-                    # store data for module
-                    module_total += pof_total
-                    module_translated += pof_translated
-
-            # store data for this module
-            status[elem] = 100. * module_translated / module_total
-
-            # store data for version
-            ver_total += module_total
-            ver_translated += module_translated
-        else:
-            pass
-    status["Total"] = 100. * ver_translated / ver_total
+            # Stats for a module (directory of po files)
+            status[elem] = postat(*[join(elem_path, fic) for
+                                    fic in listdir(elem_path) if
+                                    fic.endswith('.po')])
+    status["Total"] = (sum(translated for translated, _ in status.values()),
+                       sum(total for _, total in status.values()))
     return status
 
 
@@ -85,13 +73,13 @@ def format_progress(progress):
             blockname = block
         res += "%12s" % blockname
         for ver in progress:
-            res += " %5d%%" % progress[ver][block]
+            res += " %5d%%" % (100. * progress[ver][block][0] / progress[ver][block][1])
         res += "\n"
 
     # Add total line
     res += "%12s" % "Total"
     for ver in progress:
-        res += " %5d%%" % progress[ver]["Total"]
+        res += " %5d%%" % (100. * progress[ver]["Total"][0] / progress[ver]["Total"][1])
     res += "\n"
 
     res += tmp
