@@ -8,12 +8,6 @@ from os.path import join, isdir
 from polib import pofile
 
 
-def usage():
-    """ Print usage """
-    msg = "progression.py --update-readme README.rst"
-    print(msg)
-
-
 def check_progress():
     """ Check translation progress for each subdirectory of each version """
     main_path = getcwd()
@@ -103,21 +97,38 @@ def format_progress(progress):
     res += tmp
     return res
 
-if __name__ == "__main__":
+
+def parse_args():
+    from argparse import ArgumentParser, FileType
+    parser = ArgumentParser(
+        description='Count translated blocks per file.')
+    parser.add_argument('--update-readme',
+                        type=FileType('r+'),
+                        help='Update rst table in README.rst file.',
+                        default=None,
+                        metavar='README.rst',
+                        dest='readme')
+    return parser.parse_args()
+
+
+def main(readme=None):
     # whatever options are passed : check the progress
     res = check_progress()
     msg = format_progress(res)
 
     # if output is specified store results in it
-    if len(sys.argv) == 3 and sys.argv[1] == "--update-readme":
-        with open(sys.argv[2], 'r+') as f:
-            old_readme = f.read()
-            f.seek(0)
-            table_boundaries = '============ ====== ====== ======'
-            new_readme = re.sub(table_boundaries + '.*' + table_boundaries,
-                                msg.strip(),
-                                old_readme, flags=re.S)
-            f.write(new_readme)
-            f.truncate()
+    if readme:
+        old_readme = readme.read()
+        readme.seek(0)
+        table_boundaries = '============ ====== ====== ======'
+        new_readme = re.sub(table_boundaries + '.*' + table_boundaries,
+                            msg.strip(),
+                            old_readme, flags=re.S)
+        readme.write(new_readme)
+        readme.truncate()
     else:
         print(msg)
+
+
+if __name__ == "__main__":
+    main(**(vars(parse_args())))
