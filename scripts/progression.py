@@ -8,57 +8,57 @@ from os.path import join, isdir
 from polib import pofile
 
 
+def check_version_progress(ver_path):
+    status = OrderedDict()
+    ver_total = 0
+    ver_translated = 0
+    for elem in sorted(listdir(ver_path)):
+        elem_path = join(ver_path, elem)
+        if elem.endswith(".po"):
+            pof = pofile(elem_path)
+            pof_total = len(pof)
+            pof_translated = len(pof.translated_entries())
+
+            # store data for this file
+            status[elem] = 100. * pof_translated / pof_total
+
+            # store data for version
+            ver_total += pof_total
+            ver_translated += pof_translated
+
+        elif isdir(elem_path):
+            module_total = 0
+            module_translated = 0
+            for fic in listdir(elem_path):
+                if fic.endswith(".po"):
+                    pof = pofile(join(elem_path, fic))
+                    pof_total = len(pof)
+                    pof_translated = len(pof.translated_entries())
+
+                    # store data for module
+                    module_total += pof_total
+                    module_translated += pof_translated
+
+            # store data for this module
+            status[elem] = 100. * module_translated / module_total
+
+            # store data for version
+            ver_total += module_total
+            ver_translated += module_translated
+        else:
+            pass
+    status["Total"] = 100. * ver_translated / ver_total
+    return status
+
+
 def check_progress():
     """ Check translation progress for each subdirectory of each version """
     main_path = getcwd()
     status_dict = OrderedDict()
-    # for each version
     for ver in listdir(main_path):
         if ver[:2] in ("2.", "3."):
-            status_dict[ver] = OrderedDict()
             ver_path = join(main_path, ver)
-            ver_total = 0
-            ver_translated = 0
-
-            # for each .po file in the root folder of the version
-            for elem in sorted(listdir(ver_path)):
-                elem_path = join(ver_path, elem)
-                if elem.endswith(".po"):
-                    pof = pofile(elem_path)
-                    pof_total = len(pof)
-                    pof_translated = len(pof.translated_entries())
-
-                    # store data for this file
-                    status_dict[ver][elem] = 100. * pof_translated / pof_total
-
-                    # store data for version
-                    ver_total += pof_total
-                    ver_translated += pof_translated
-
-                elif isdir(elem_path):
-                    module_total = 0
-                    module_translated = 0
-                    for fic in listdir(elem_path):
-                        if fic.endswith(".po"):
-                            pof = pofile(join(elem_path, fic))
-                            pof_total = len(pof)
-                            pof_translated = len(pof.translated_entries())
-
-                            # store data for module
-                            module_total += pof_total
-                            module_translated += pof_translated
-
-                    # store data for this module
-                    status_dict[ver][elem] = 100. * module_translated / module_total
-
-                    # store data for version
-                    ver_total += module_total
-                    ver_translated += module_translated
-                else:
-                    pass
-
-            status_dict[ver]["Total"] = 100. * ver_translated / ver_total
-
+            status_dict[ver] = check_version_progress(ver_path)
     return status_dict
 
 
