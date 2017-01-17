@@ -1326,7 +1326,7 @@ msgstr ""
 
 #: ../Doc/faq/design.rst:741
 msgid "For instance, take the following incomplete snippet::"
-msgstr ""
+msgstr "Par exemple, prenez la bribe incomplète suivante::"
 
 #: ../Doc/faq/design.rst:747
 msgid ""
@@ -1336,6 +1336,11 @@ msgid ""
 "variable named \"x\", will it be used inside the with block?  As you see, "
 "the dynamic nature of Python makes such choices much harder."
 msgstr ""
+"Cette bribe suppose que \"a\" doit avoir un attribut de membre s'appelant \"x\"."
+"Cependant, rien ne dit ceci à l'interpréteur en Python. Que se passera-t-il "
+"si \"a\" est, disons par exemple, un entier ? S'il y a une variable globale "
+"appelée \"x\", sera t'elle utilisée dans le bloc ? Comme vous pouvez le constater, "
+"la nature dynamique de Python rend de tels choix plus compliqués."
 
 #: ../Doc/faq/design.rst:753
 msgid ""
@@ -1343,10 +1348,13 @@ msgid ""
 "code volume) can, however, easily be achieved in Python by assignment.  "
 "Instead of::"
 msgstr ""
+"Le premier avantage de \"with\" et des fonctionnalités similaires (réduction "
+"du volume de code) peut, cependant, être accompli en Python par les assignements."
+"Au lieu de::"
 
 #: ../Doc/faq/design.rst:760
 msgid "write this::"
-msgstr ""
+msgstr "Ecrivez::"
 
 #: ../Doc/faq/design.rst:767
 msgid ""
@@ -1354,20 +1362,27 @@ msgid ""
 "bindings are resolved at run-time in Python, and the second version only "
 "needs to perform the resolution once."
 msgstr ""
+"Ce la a également pour effet secondaire d'augmenter la vitesse d'éxécution "
+"car les liens entre les noms sont réalisés en *run-time* avec Python, et la "
+"deuxième version n'a besoin d'effectuer la résolution qu'une seule fois."
 
 #: ../Doc/faq/design.rst:773
 msgid "Why are colons required for the if/while/def/class statements?"
 msgstr ""
+"Pourquoi doit on utiliser deux points pour les déclarations de type "
+"if/while/def/class ?"
 
 #: ../Doc/faq/design.rst:775
 msgid ""
 "The colon is required primarily to enhance readability (one of the results "
 "of the experimental ABC language).  Consider this::"
 msgstr ""
+"La première fonctionnalité des deux points et d'améliorer la lisibilité (une "
+"des conséquences de l'expérimental langage ABC). Considérons::"
 
 #: ../Doc/faq/design.rst:781
 msgid "versus ::"
-msgstr ""
+msgstr "versus ::"
 
 #: ../Doc/faq/design.rst:786
 msgid ""
@@ -1375,6 +1390,9 @@ msgid ""
 "colon sets off the example in this FAQ answer; it's a standard usage in "
 "English."
 msgstr ""
+"Remarquez la façon dont le second est plus facile à lire. Remarquez également "
+"la manière dont deux points font se déduire un example dan cette question de FAQ; "
+"c'est un usage standard en anglais."
 
 #: ../Doc/faq/design.rst:789
 msgid ""
@@ -1383,20 +1401,26 @@ msgid ""
 "needs to be increased instead of having to do a more elaborate parsing of "
 "the program text."
 msgstr ""
+"Une autre raison moins significative est que les deux points rendent le travail "
+"des éditeurs plus facile en mettant l'accent sur la syntaxe; ils peuvent se fier "
+"aux deux points pour décider quand l'indentation requiert d'être améliorée plutôt "
+"que de faire une analyse grammaticale plus poussée du texte du programme."
 
 #: ../Doc/faq/design.rst:795
 msgid "Why does Python allow commas at the end of lists and tuples?"
-msgstr ""
+msgstr "Pourquoi Python autorise les virgules à la fin des listes et des *tuples*?"
 
 #: ../Doc/faq/design.rst:797
 msgid ""
 "Python lets you add a trailing comma at the end of lists, tuples, and "
 "dictionaries::"
 msgstr ""
+"Python vous laisse ajouter une virgule à la fin des listes, *tuples* "
+"et dictionnaires::"
 
 #: ../Doc/faq/design.rst:808
 msgid "There are several reasons to allow this."
-msgstr ""
+msgstr "Il y a plusieurs raisons pour ça."
 
 #: ../Doc/faq/design.rst:810
 msgid ""
@@ -1405,12 +1429,19 @@ msgid ""
 "remember to add a comma to the previous line.  The lines can also be "
 "reordered without creating a syntax error."
 msgstr ""
+"Quand vous avez une valeur littérale pour une liste, un *tuple* ou un "
+"dictionnaire dispersée à travers plusieurs lignes, il est plus simple "
+"d'ajouter plusieurs éléments, car vous n'avez pas à vous souvenir d'ajouter "
+"la virgule à la ligne précédente. Les lignes peuvent aussi être réordonnées "
+"sans créer d'erreurs syntaxiques."
 
 #: ../Doc/faq/design.rst:815
 msgid ""
 "Accidentally omitting the comma can lead to errors that are hard to "
 "diagnose. For example::"
 msgstr ""
+"Oublier accidentellement de mettre la virgule peut consuire à des erreurs "
+"difficiles à diagnostiquer. Par exemple::"
 
 #: ../Doc/faq/design.rst:825
 msgid ""
@@ -1418,9 +1449,14 @@ msgid ""
 "\"fee\", \"fiefoo\" and \"fum\".  Always adding the comma avoids this source "
 "of error."
 msgstr ""
+"Cette liste ressemble à une liste de quatre éléments, mais il n'y en a en réalité "
+"que trois : \"fee\", \"fiefoo\" et \"fum\". Toujours ajouter la virgule évite cette 
+"source d'erreurs."
 
 #: ../Doc/faq/design.rst:828
 msgid ""
 "Allowing the trailing comma may also make programmatic code generation "
 "easier."
 msgstr ""
+"Permettre de mettre une virgule à la fin peut aussi rendre la génération "
+"de code programmatique plus facile."
