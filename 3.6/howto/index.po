@@ -27,7 +27,12 @@ msgid ""
 "HOWTO collection, this collection is an effort to foster documentation "
 "that's more detailed than the Python Library Reference."
 msgstr ""
+"Les HOWTOs de Python sont des documents qui couvrent un point unique et "
+"spécifique d'un sujet et tente de le couvrir complétement et dans les règles."
+"Calquer sur la collection HOWTO du Projet de Documentation Linux, cette collection "
+"a pour but d'entretenir une documentatio plus détaillée que celle de la "
+"*Python Library Reference*"
 
 #: ../Doc/howto/index.rst:11
 msgid "Currently, the HOWTOs are:"
-msgstr ""
+msgstr "Actuellement, les HOWTOs sont:"
