@@ -17,7 +17,7 @@ from subprocess import check_output
 
 def fix_style(all_files=False, no_wrap=False):
     find_modified_files = "git status | grep 'modified.*\.po$' | rev | cut -d' ' -f1 | rev"
-    for po in tqdm(glob('*/*.po') if all_files else
+    for po in tqdm(glob('**/*.po', recursive=True) if all_files else
                    check_output(find_modified_files, shell=True).decode().split(),
                    desc="Fixing indentation in po files"):
         check_output('tac {} | tac | msgcat - -o {} {}'.format(
@@ -25,7 +25,6 @@ def fix_style(all_files=False, no_wrap=False):
                      shell=True)
 
 if __name__ == '__main__':
-    import sys
     import argparse
     parser = argparse.ArgumentParser(
         description='Ensure po files are using the standard gettext format')
