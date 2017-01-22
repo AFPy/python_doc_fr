@@ -104,9 +104,6 @@ msgid ""
 "Here's a *very* brief summary of what started it all, written by Guido van "
 "Rossum:"
 msgstr ""
-"Voici un *très* court résumé de comment cela a commencé, écris par Guido van"
-"Rossum et traduit par la communauté :"
-
 
 #: ../Doc/faq/general.rst:70
 msgid ""
@@ -445,7 +442,7 @@ msgstr ""
 
 #: ../Doc/faq/general.rst:301
 msgid "How stable is Python?"
-msgstr "À quel point Python est-il stable ?"
+msgstr ""
 
 #: ../Doc/faq/general.rst:303
 msgid ""
@@ -453,9 +450,6 @@ msgid ""
 "18 months since 1991, and this seems likely to continue.  Currently there "
 "are usually around 18 months between major releases."
 msgstr ""
-"Très stable. Une nouvelle vertion stable de Python est publiée tous les 6 à"
-"18 mois depuis 1991 et cela continu encore. De nos jours, les versions majeurs "
-"sortent tous les 18 mois."
 
 #: ../Doc/faq/general.rst:307
 msgid ""
@@ -480,15 +474,13 @@ msgstr ""
 
 #: ../Doc/faq/general.rst:323
 msgid "How many people are using Python?"
-msgstr "Combien de personnes utilisent Python ?"
+msgstr ""
 
 #: ../Doc/faq/general.rst:325
 msgid ""
 "There are probably tens of thousands of users, though it's difficult to "
 "obtain an exact count."
-msgstr
-"Il y en a probablement des dizaines de milliers, même s'il est difficile
-"d'obtenir un chiffre exact."
+msgstr ""
 
 #: ../Doc/faq/general.rst:328
 msgid ""
@@ -496,10 +488,6 @@ msgid ""
 "it's available from many different sites and packaged with many Linux "
 "distributions, so download statistics don't tell the whole story either."
 msgstr ""
-"Python est disponible librement, il n'y a donc pas de chiffre de vente."
-"Il est aussi disponible depuis different sites web et enpaqueter avec de "
-"nombreuses distributions Linux donc les statistiques de téléchargements ne"
-"ne décrivent pas l'ampleur de l'utilisation de son utilisation."
 
 #: ../Doc/faq/general.rst:332
 msgid ""
@@ -509,7 +497,7 @@ msgstr ""
 
 #: ../Doc/faq/general.rst:337
 msgid "Have any significant projects been done in Python?"
-msgstr "Y'a-t-il des projets significatifs qui ont été réalisé en Python ?"
+msgstr ""
 
 #: ../Doc/faq/general.rst:339
 msgid ""
@@ -518,8 +506,6 @@ msgid ""
 "python.org/community/workshops/>`_ will reveal contributions from many "
 "different companies and organizations."
 msgstr ""
-"La liste des projets qui utilise Python est disponible ici : "
-"https://www.python.org/about/success."
 
 #: ../Doc/faq/general.rst:344
 msgid ""
@@ -533,7 +519,7 @@ msgstr ""
 
 #: ../Doc/faq/general.rst:353
 msgid "What new developments are expected for Python in the future?"
-msgstr "Que peut-on attendre de Python dans les prochaines années ?"
+msgstr ""
 
 #: ../Doc/faq/general.rst:355
 msgid ""
@@ -553,7 +539,6 @@ msgstr ""
 #: ../Doc/faq/general.rst:366
 msgid "Is it reasonable to propose incompatible changes to Python?"
 msgstr ""
-"Est-il raisonable de proposer des changements non-rétrocompatible à Python ?"
 
 #: ../Doc/faq/general.rst:368
 msgid ""
@@ -564,8 +549,6 @@ msgid ""
 "documentation; many books have been written about Python, and we don't want "
 "to invalidate them all at a single stroke."
 msgstr ""
-"En général, non. Il est a déjà des millions de lignes de code écritent en "
-"Python dans le monde donc n'importe quel chamngement qui affecte plus "
 
 #: ../Doc/faq/general.rst:375
 msgid ""
@@ -576,11 +559,11 @@ msgstr ""
 
 #: ../Doc/faq/general.rst:381
 msgid "Is Python a good language for beginning programmers?"
-msgstr "Python est-il un bon langage pour les apprentis-programmeurs ?"
+msgstr ""
 
 #: ../Doc/faq/general.rst:383
 msgid "Yes."
-msgstr "Oui."
+msgstr ""
 
 #: ../Doc/faq/general.rst:385
 msgid ""
@@ -594,13 +577,6 @@ msgid ""
 "basic concepts such as loops and procedures.  They can probably even work "
 "with user-defined objects in their very first course."
 msgstr ""
-"Il est encore commun pour les étudiants de commencer par apprendre les "
-"langage typée et static tel que Pascal, C, Java ou le C++. Les étudiants "
-"pourrait apprendre plus facilement avec un langage tel que Python : un langage "
-"simple, typé, avec une vaste librairie standard. Ils peuvent alors se focaliser "
-"sur les compétences les plus importanes de la programmation tel que les boucles "
-"Avec Python, les étudiants peuvent même commencer par créer des objets "
-" dés le premier cours."
 
 #: ../Doc/faq/general.rst:395
 msgid ""
