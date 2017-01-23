@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../Doc/faq/installed.rst:3
 msgid "\"Why is Python Installed on my Computer?\" FAQ"
-msgstr "Pourquoi Python est installé sur mon PC ?"
+msgstr "\"Pourquoi Python est-il installé sur mon ordinateur ?\" FAQ"
 
 #: ../Doc/faq/installed.rst:6
 msgid "What is Python?"
@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Python est un langage de programmation. Il est utilisé pour différentes "
 "applications. Il est utilisé dans les universités et les lycées car c'est un "
-"langage facile à apprendre. Il est aussi par des professionnels chez Google ou "
+"langage facile à apprendre. Il est aussi utilisé par des professionnels chez Google ou "
 "à la NASA."
 
 #: ../Doc/faq/installed.rst:13
@@ -62,7 +62,7 @@ msgid ""
 "might have installed it."
 msgstr ""
 "Un autre utilisateur de votre système a peut-être voulu apprendre à programmer : "
-"vous allez devoir vous renseigner sur qui a utilisé votre système et a put"
+"vous allez devoir vous renseigner sur qui a utilisé votre système et a pu"
 "installer Python."
 
 #: ../Doc/faq/installed.rst:26
