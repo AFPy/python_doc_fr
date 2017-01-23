@@ -564,7 +564,7 @@ msgid ""
 "documentation; many books have been written about Python, and we don't want "
 "to invalidate them all at a single stroke."
 msgstr ""
-"En général, non. Il existe a déjà des millions de lignes de code écritent en "
+"En général, non. Il existe déjà des millions de lignes de code écritent en "
 "Python dans le monde donc n'importe quel chamngement qui affecte plus "
 
 #: ../Doc/faq/general.rst:375
