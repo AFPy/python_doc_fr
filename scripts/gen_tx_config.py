@@ -5,6 +5,7 @@ import argparse
 
 # Map of tx projects slugs with our directories:
 PROJECTS = {'python-35': '3.5/',
+            'python-36': '3.6/',
             'python-27': '2.7/'}
 
 
