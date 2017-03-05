@@ -236,3 +236,16 @@ On vous a préparé un script, ``scripts/podiff``, et on a configuré
     git config diff.podiff.textconv scripts/podiff
 
 et vos ``git show`` deviendront un peu plus lisibles.
+
+Transifex synchronisation
+-------------------------
+
+To configure:
+
+ - python3 -m pip install transifex-client
+ - tx init
+ - ./scripts/gen_tx_config.py .tx/config
+
+To pull:
+
+ - tx pull -l fr
