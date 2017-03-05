@@ -38,6 +38,8 @@ def main(config):
                 root = root + '/'
             for relative_root, dirs, files in os.walk(root):
                 for po_file in files:
+                    if not po_file.endswith('.po'):
+                        continue
                     config_file.write(conf_for_file(slug, root, os.path.join(
                         relative_root, po_file)[len(root):]))
 
