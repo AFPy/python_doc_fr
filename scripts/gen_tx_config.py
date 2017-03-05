@@ -21,7 +21,7 @@ def conf_for_file(project_slug, root, po_file):
     resource_slug = po_file[:-3].replace('/', '--').replace('.', '_')
     if resource_slug == 'glossary':
         # Reserved by transifex :-(
-        resource_slug = 'glossary-1'
+        resource_slug = 'glossary_'
     return """[{}.{}]
 trans.fr = {}
 type = PO
