@@ -83,7 +83,7 @@ $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/
 	msgfmt $< -o $@
 
 build: requirements pull gen/src/$(RELEASE)/ $(MO_FILES)
-	$(MAKE) -C gen/src/$(RELEASE)/Doc/ SPHINXOPTS='-D locale_dirs=../mo -D language=fr' $(MODE)
+	$(MAKE) -C gen/src/$(RELEASE)/Doc/ SPHINXOPTS='-D locale_dirs=../mo -D language=fr -D gettext_compact=0' $(MODE)
 	@echo "Doc translated in gen/src/$(RELEASE)/Doc/build/html/"
 
 rsync:
