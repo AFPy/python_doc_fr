@@ -42,8 +42,8 @@ RELEASES := 2.7 3.4 3.5 3.6
 # May be overriden by calling make MODE=autobuild-stable for a full build
 MODE := autobuild-dev-html
 
-PO_FILES := $(wildcard $(RELEASE)/*.po)
-MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,$(notdir $(PO_FILES))))
+PO_FILES := $(patsubst $(RELEASE)/%,%,$(wildcard $(RELEASE)/*.po $(RELEASE)/*/*.po))
+MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,$(PO_FILES)))
 
 .PHONY: $(RELEASES) all build_all msgmerge_all rsync_all pull requirements build
 
@@ -79,6 +79,7 @@ gen/src/%/mo/fr/LC_MESSAGES/:
 	mkdir -p $@
 
 $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/
+	mkdir -p $(dir $@)
 	msgfmt $< -o $@
 
 build: requirements pull gen/src/$(RELEASE)/ $(MO_FILES)
