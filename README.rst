@@ -43,7 +43,7 @@ Comment qu'on fait pour aider à traduire ?
 
 * Soit sur [transifex/python-doc](https://www.transifex.com/python-doc/),
   et le reste de cette section ne vous concerne pas.
-* Soit "à la main": pour cela récupérez les fichiers *.po* de la partie qui vous intéresse,
+* Soit "à la main" : pour cela récupérez les fichiers *.po* de la partie qui vous intéresse,
 
   * Soit via `Download ZIP` (si `git` n'est pas encore fait pour vous),
   * Soit :
