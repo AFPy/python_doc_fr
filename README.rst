@@ -10,7 +10,7 @@ documentation officielle de Python.
 Votre aide est la bienvenue que ce soit pour maintenir les traductions
 à jour, les relire, les améliorer ou traduire de nouveaux blocs.
 
-Progression de la traduction:
+Progression de la traduction :
 
 ============  =====  =====  =====
           ..    2.7    3.6    3.5
@@ -41,12 +41,11 @@ distributing   100%   100%   100%
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
 
-Soit sur
-[transifex/python-doc](https://www.transifex.com/python-doc/), et le
-reste de cette section ne vous concerne pas. Soit "à la main": pour
-cela récupérez les fichiers *.po* de la partie qui vous intéresse,
-soit via `Download ZIP` (si `git` n'est pas encore fait pour vous),
-soit : ::
+* Soit sur [transifex/python-doc](https://www.transifex.com/python-doc/),
+  et le reste de cette section ne vous concerne pas.
+* Soit "à la main": pour cela récupérez les fichiers *.po* de la partie qui vous intéresse,
+  * Soit via `Download ZIP` (si `git` n'est pas encore fait pour vous),
+  * Soit : ::
 
   $ git clone https://github.com/AFPy/python_doc_fr.git # Ou votre fork
   $ cd python_doc_fr
@@ -54,7 +53,7 @@ soit : ::
   $ make # Génère la doc en HTML chez vous
   $ x-www-browser gen/src/3.6/Doc/build/html/index.html
 
-Éditer les fichiers avec l'éditeur de votre choix, il en existe beaucoup:
+Éditer les fichiers avec l'éditeur de votre choix, il en existe beaucoup :
 
 * Le classique, fortement conseillé: `poedit <http://www.poedit.net/>`_
 * gted
@@ -69,9 +68,9 @@ Puis vous n'avez plus qu'à vous occuper du texte en français.
 
 Une fois votre contribution écrite, transmettez-la nous :
 
-* soit par un pull-request (si vous avez fait un fork du dépot)
-* soit en la joignant à un `ticket github <https://github.com/AFPy/python_doc_fr/issues>`_
-* soit par mail à la `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_
+* Soit par un pull-request (si vous avez fait un fork du dépot)
+* Soit en la joignant à un `ticket github <https://github.com/AFPy/python_doc_fr/issues>`_
+* Soit par mail à la `liste traductions <http://lists.afpy.org/mailman/listinfo/traductions>`_
 
 Quoi traduire, ne pas traduire, quel style ?
 
