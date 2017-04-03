@@ -160,6 +160,8 @@ un ticket si vous n'êtes pas d'acord) :
 * socket => socket ("Je veux mon niveau ! Chausette ! Chausette !")
 * statement => instruction
 * underscore => tiret bas ?
+* little-endian, big-endian: `petit-boutise, gros-boutiste
+  <https://fr.wikipedia.org/wiki/Endianness>`_
 
 Comment générer la doc localement ?
 -----------------------------------
