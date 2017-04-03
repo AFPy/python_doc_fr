@@ -81,7 +81,7 @@ Quoi traduire, ne pas traduire, quel style ?
   ``./scripts/replicate_translations.py``
 * Attention, ``install.po`` est à peu près inutile, aucun (?) lien ne
   pointe dessus.
-* Pour le moment, nous laissons à part ``licence.po``,
+* Pas de traduction pour ``licence.po``,
   `voir le ticket #30 <https://github.com/AFPy/python_doc_fr/issues/30>`.
 * Les référence *:ref:`...`*, *:term:`...`* ne sont pas à traduire
 * Les mots anglais, nous les mettons en *italique* (en les entourant
