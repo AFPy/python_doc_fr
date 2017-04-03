@@ -37,7 +37,7 @@
 
 # May be overriden by calling make RELEASE=2.7
 RELEASE := 3.6
-RELEASES := 2.7 3.4 3.5 3.6
+RELEASES := 2.7 3.5 3.6
 
 # May be overriden by calling make MODE=autobuild-stable for a full build
 MODE := autobuild-dev-html
@@ -45,69 +45,103 @@ MODE := autobuild-dev-html
 PO_FILES := $(patsubst $(RELEASE)/%,%,$(wildcard $(RELEASE)/*.po $(RELEASE)/*/*.po))
 MO_FILES := $(addprefix gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/,$(patsubst %.po,%.mo,$(PO_FILES)))
 
-.PHONY: $(RELEASES) all build_all msgmerge_all rsync_all pull requirements build
+CPYTHON_DOCS := $(addsuffix /Doc/,$(addprefix gen/src/,$(RELEASES)))
+CPYTHON_POTS := $(subst /Doc/,/pot/,$(CPYTHON_DOCS))
 
-all: pull build index_page
+.PHONY: all
+all: pull build www/index.html
+
 
 .tx/config:
 	mkdir -p .tx/
 	./scripts/gen_tx_config.py .tx/config
 
+
+gen/src/%/pot/: gen/src/%/Doc/
+	cd gen/src/$* && sphinx-build -Q -b gettext -D gettext_compact=0 Doc pot/
+
+
+gen/src/%/Doc/:
+	git clone --depth 1 --branch "$*" https://github.com/python/cpython.git $(subst /Doc/,,$@)
+
+
+$(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po
+	mkdir -p $(dir $@)
+	msgfmt $< -o $@
+
+
+www/index.html:
+	markdown scripts/index.md | sed '/%s/{r /dev/stdin\
+	 d}' scripts/index.tpl > www/index.html
+
+
+
+## Scripts:
+
+.PHONY: build_all
 build_all: RULE=build
 build_all: $(RELEASES)
 
+
+.PHONY: msgmerge_all
 msgmerge_all: RULE=msgmerge
 msgmerge_all: $(RELEASES)
 
+
+.PHONY: rsync_all
 rsync_all: RULE=rsync
 rsync_all: $(RELEASES)
 
-$(RELEASES):
-	$(MAKE) $(RULE) RELEASE=$@ MODE=$(MODE)
 
-gen/src/%/:
-	git clone --depth 1 --branch "$(RELEASE)" https://github.com/python/cpython.git $@
-
+.PHONY: requirements
 requirements:
 	python3 -m pip -q install --user -r scripts/requirements.txt
 	./scripts/check_requirements.sh svn pdflatex markdown gettext
 
+
+.PHONY: $(RELEASES)
+$(RELEASES):
+	$(MAKE) $(RULE) RELEASE=$@ MODE=$(MODE)
+
+
+.PHONY: pull
 pull: gen/src/$(RELEASE)/
 	git -C gen/src/$(RELEASE) pull --ff-only
 
-gen/src/%/mo/fr/LC_MESSAGES/:
-	mkdir -p $@
 
-$(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/
-	mkdir -p $(dir $@)
-	msgfmt $< -o $@
+.PHONY: clean
+clean:
+	rm -fr gen
 
-build: requirements pull gen/src/$(RELEASE)/ $(MO_FILES)
+
+.PHONY: build
+build: requirements pull gen/src/$(RELEASE)/Doc/ $(MO_FILES)
 	$(MAKE) -C gen/src/$(RELEASE)/Doc/ SPHINXOPTS='-D locale_dirs=../mo -D language=fr -D gettext_compact=0' $(MODE)
 	@echo "Doc translated in gen/src/$(RELEASE)/Doc/build/html/"
 
+
+.PHONY: rsync
 rsync:
 	$(MAKE) build MODE=autobuild-dev
 	# You'll need your ssh public key to be in afpy.org:/home/pythondoc/.ssh/authorized_keys
 	rsync -a --delete-delay gen/src/$(RELEASE)/Doc/build/html/ pythondoc@afpy.org:/home/pythondoc/www/$(RELEASE)
 	rsync -a gen/src/$(RELEASE)/Doc/dist/ pythondoc@afpy.org:/home/pythondoc/www/$(RELEASE)/archives/
 
-index_page:
-	markdown scripts/index.md | sed '/%s/{r /dev/stdin\
-	 d}' scripts/index.tpl > www/index.html
 
-clean:
-	rm -fr gen
-
-msgmerge: gen/src/$(RELEASE)/
-	cd gen/src/$(RELEASE) && sphinx-build -Q -b gettext -D gettext_compact=0 Doc pot/
+.PHONY: msgmerge
+msgmerge: gen/src/$(RELEASE)/Doc/pot/
 	scripts/bulk-msgmerge.sh gen/src/$(RELEASE)/pot/ $(RELEASE)/
 	@echo "You may commit this by using git commit -u -m '$(RELEASE): merge pot files'"
 
+
+.PHONY: txpull
 txpull: .tx/config
 	-tx pull --skip
 	./scripts/replicate_translations.py --files $(shell find .tx/ -name '*.po') $(shell find $(RELEASE)/ -name '*.po')
 
-txpush: .tx/config
-	cp -a $(RELEASE) .tx/
+
+.PHONY: txpush
+txpush: .tx/config $(CPYTHON_POTS)
+	-tx push -s --skip
+	cp -a $(RELEASES) .tx/
 	-tx push -t --skip
