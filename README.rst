@@ -46,13 +46,15 @@ Comment qu'on fait pour aider à traduire ?
 * Soit "à la main": pour cela récupérez les fichiers *.po* de la partie qui vous intéresse,
 
   * Soit via `Download ZIP` (si `git` n'est pas encore fait pour vous),
-  * Soit : ::
+  * Soit :
+  
+  ::
 
-  $ git clone https://github.com/AFPy/python_doc_fr.git # Ou votre fork
-  $ cd python_doc_fr
-  $ PATH=$PATH:$HOME/.local/bin/ # Vous devriez mettre ça dans votre ~/.bashrc
-  $ make # Génère la doc en HTML chez vous
-  $ x-www-browser gen/src/3.6/Doc/build/html/index.html
+    $ git clone https://github.com/AFPy/python_doc_fr.git # Ou votre fork
+    $ cd python_doc_fr
+    $ PATH=$PATH:$HOME/.local/bin/ # Vous devriez mettre ça dans votre ~/.bashrc
+    $ make # Génère la doc en HTML chez vous
+    $ x-www-browser gen/src/3.6/Doc/build/html/index.html
 
 Éditer les fichiers avec l'éditeur de votre choix, il en existe beaucoup :
 
