@@ -18,6 +18,7 @@ def parse_args():
 
 
 def conf_for_file(project_slug, root, po_file):
+    version = root.strip('/')
     resource_slug = po_file[:-3].replace('/', '--').replace('.', '_')
     if resource_slug == 'glossary':
         # Reserved by transifex :-(
@@ -26,8 +27,11 @@ def conf_for_file(project_slug, root, po_file):
 trans.fr = {}
 type = PO
 source_lang = en
+source_file = {}
 
-""".format(project_slug, resource_slug, os.path.join('.tx', root, po_file))
+""".format(project_slug, resource_slug,
+           os.path.join('.tx', root, po_file),
+           os.path.join('gen', 'src', version, 'pot', po_file[:-3] + '.pot'))
 
 
 def main(config):

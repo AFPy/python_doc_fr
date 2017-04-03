@@ -248,6 +248,4 @@ To configure:
  - tx init
  - ./scripts/gen_tx_config.py .tx/config
 
-To pull:
-
- - tx pull -l fr
+To pull and push use ``make txpull`` and ``make txpush``.
