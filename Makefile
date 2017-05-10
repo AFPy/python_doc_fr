@@ -95,7 +95,7 @@ rsync_all: $(RELEASES)
 
 .PHONY: requirements
 requirements:
-	./scripts/check_requirements.sh svn pdflatex markdown gettext
+	./scripts/check_requirements.sh pdflatex markdown gettext
 
 
 .PHONY: $(RELEASES)
