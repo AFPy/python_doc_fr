@@ -71,7 +71,7 @@ $(MO_FILES): gen/src/$(RELEASE)/mo/fr/LC_MESSAGES/%.mo: $(RELEASE)/%.po
 
 
 www/index.html:
-	markdown scripts/index.md | sed '/%s/{r /dev/stdin\
+	markdown_py scripts/index.md | sed '/%s/{r /dev/stdin\
 	 d}' scripts/index.tpl > www/index.html
 
 
@@ -95,7 +95,7 @@ rsync_all: $(RELEASES)
 
 .PHONY: requirements
 requirements:
-	./scripts/check_requirements.sh pdflatex markdown gettext
+	./scripts/check_requirements.sh pdflatex gettext
 
 
 .PHONY: $(RELEASES)
