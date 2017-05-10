@@ -95,7 +95,6 @@ rsync_all: $(RELEASES)
 
 .PHONY: requirements
 requirements:
-	python3 -m pip -q install --user -r scripts/requirements.txt
 	./scripts/check_requirements.sh svn pdflatex markdown gettext
 
 
