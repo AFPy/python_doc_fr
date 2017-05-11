@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../Doc/faq/installed.rst:3
 msgid "\"Why is Python Installed on my Computer?\" FAQ"
-msgstr ""
+msgstr "\"Pourquoi Python est-il installé sur mon ordinateur ?\" FAQ"
 
 #: ../Doc/faq/installed.rst:6
 msgid "What is Python?"
@@ -33,6 +33,10 @@ msgid ""
 "professional software developers at places such as Google, NASA, and "
 "Lucasfilm Ltd."
 msgstr ""
+"Python est un langage de programmation. Il est utilisé pour différentes "
+"applications. Il est utilisé dans les universités et les lycées car c'est un "
+"langage facile à apprendre. Il est aussi utilisé par des professionnels chez Google ou "
+"à la NASA."
 
 #: ../Doc/faq/installed.rst:13
 msgid ""
@@ -42,13 +46,15 @@ msgstr ""
 
 #: ../Doc/faq/installed.rst:18
 msgid "Why is Python installed on my machine?"
-msgstr ""
+msgstr "Pourquoi Python est installé sur ma machine ?"
 
 #: ../Doc/faq/installed.rst:20
 msgid ""
 "If you find Python installed on your system but don't remember installing "
 "it, there are several possible ways it could have gotten there."
 msgstr ""
+"Si vous avez Python installé sur vore système mais que vous ne vous rappelez "
+"pas l'avoir installé, il y a plusieurs possibilités qui peuvent l'expliquer :"
 
 #: ../Doc/faq/installed.rst:23
 msgid ""
@@ -56,6 +62,9 @@ msgid ""
 "installed it; you'll have to figure out who's been using the machine and "
 "might have installed it."
 msgstr ""
+"Un autre utilisateur de votre système a peut-être voulu apprendre à programmer : "
+"vous allez devoir vous renseigner sur qui a utilisé votre système et a pu"
+"installer Python."
 
 #: ../Doc/faq/installed.rst:26
 msgid ""
