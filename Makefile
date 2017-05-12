@@ -104,7 +104,8 @@ $(RELEASES):
 
 
 .PHONY: pull
-pull: gen/src/$(RELEASE)/
+pull:
+	mkdir -p gen/src/$(RELEASE)/
 	git -C gen/src/$(RELEASE) pull --ff-only
 
 
