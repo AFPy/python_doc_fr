@@ -24,7 +24,7 @@ distributing   100%   100%   100%
    distutils    13%    13%    33%
    extending    21%    24%    24%
          faq    29%    32%    32%
- glossary.po    85%   100%    94%
+ glossary.po    85%   100%    99%
        howto     6%     6%     6%
      install    45%    46%    43%
   installing   100%   100%    66%
