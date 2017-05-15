@@ -21,22 +21,23 @@ Progression de la traduction :
  contents.po   100%   100%   100%
 copyright.po   100%   100%   100%
 distributing   100%   100%   100%
-   distutils    13%    13%    13%
+   distutils    13%    33%    13%
    extending    21%    24%    24%
          faq    29%    32%    32%
- glossary.po    85%   100%   100%
+ glossary.po    85%    94%   100%
        howto     6%     6%     6%
-     install    45%    46%    46%
+     install    45%    43%    46%
   installing   100%    66%   100%
      library    16%    19%    20%
   license.po   100%   100%   100%
    reference     4%     5%     5%
-   sphinx.po   100%   100%   100%
-    tutorial    97%   100%   100%
+   sphinx.po   100%    93%   100%
+    tutorial    97%    96%   100%
        using    31%    19%    21%
-    whatsnew     6%    42%    41%
-     ~total~    18%    25%    25%
+    whatsnew     6%     6%    41%
+     ~total~    18%    18%    25%
 ============  =====  =====  =====
+
 
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
@@ -47,7 +48,7 @@ Comment qu'on fait pour aider à traduire ?
 
   * Soit via `Download ZIP` (si `git` n'est pas encore fait pour vous),
   * Soit :
-  
+
   ::
 
     $ git clone https://github.com/AFPy/python_doc_fr.git # Ou votre fork
