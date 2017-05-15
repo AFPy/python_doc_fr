@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Check translation progress and format output """
+
 import re
-import sys
 from collections import OrderedDict
 from os import getcwd, listdir
 from os.path import join, isdir
@@ -22,8 +22,6 @@ def postat(*args):
 
 def check_version_progress(ver_path):
     status = OrderedDict()
-    ver_total = 0
-    ver_translated = 0
     for elem in sorted(listdir(ver_path)):
         elem_path = join(ver_path, elem)
         if elem.endswith(".po"):
@@ -43,7 +41,7 @@ def check_progress():
     """ Check translation progress for each subdirectory of each version """
     main_path = getcwd()
     status_dict = OrderedDict()
-    for ver in listdir(main_path):
+    for ver in sorted(listdir(main_path)):
         if ver[:2] in ("2.", "3."):
             ver_path = join(main_path, ver)
             status_dict[ver] = check_version_progress(ver_path)
@@ -88,7 +86,7 @@ def main(readme=None):
     if readme:
         old_readme = readme.read()
         readme.seek(0)
-        table_boundaries = '============ ====== ====== ======'
+        table_boundaries = '============  =====  =====  ====='
         new_readme = re.sub(table_boundaries + '.*' + table_boundaries,
                             msg.strip(),
                             old_readme, flags=re.S)

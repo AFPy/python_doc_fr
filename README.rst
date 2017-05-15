@@ -13,29 +13,29 @@ Votre aide est la bienvenue que ce soit pour maintenir les traductions
 Progression de la traduction :
 
 ============  =====  =====  =====
-          ..    2.7    3.6    3.5
+          ..    2.7    3.5    3.6
 ============  =====  =====  =====
     about.po   100%   100%   100%
      bugs.po   100%   100%   100%
-       c-api     9%    11%    12%
+       c-api     9%    12%    11%
  contents.po   100%   100%   100%
 copyright.po   100%   100%   100%
 distributing   100%   100%   100%
-   distutils    13%    33%    13%
+   distutils    13%    13%    33%
    extending    21%    24%    24%
          faq    29%    32%    32%
- glossary.po    85%    94%   100%
+ glossary.po    85%   100%    94%
        howto     6%     6%     6%
-     install    45%    43%    46%
-  installing   100%    66%   100%
-     library    16%    19%    20%
+     install    45%    46%    43%
+  installing   100%   100%    66%
+     library    16%    20%    19%
   license.po   100%   100%   100%
    reference     4%     5%     5%
-   sphinx.po   100%    93%   100%
-    tutorial    97%    96%   100%
-       using    31%    19%    21%
-    whatsnew     6%     6%    41%
-     ~total~    18%    18%    25%
+   sphinx.po   100%   100%    93%
+    tutorial    97%   100%    96%
+       using    31%    21%    19%
+    whatsnew     6%    41%     6%
+     ~total~    18%    25%    18%
 ============  =====  =====  =====
 
 
