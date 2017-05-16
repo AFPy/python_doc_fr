@@ -142,6 +142,6 @@ txpull: .tx/config
 
 .PHONY: txpush
 txpush: .tx/config $(CPYTHON_POTS)
-	-tx push -s --skip
+	# -tx push -s --skip
 	cp -a $(RELEASES) .tx/
 	-tx push -t --skip
