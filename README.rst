@@ -40,7 +40,7 @@ distributing   100%   100%   100%
 Comment qu'on fait pour aider à traduire ?
 ------------------------------------------
 
-* Soit sur [transifex/python-doc](https://www.transifex.com/python-doc/),
+* Soit sur `transifex/python-doc <https://www.transifex.com/python-doc/>`_,
   et le reste de cette section ne vous concerne pas.
 * Soit "à la main" : pour cela récupérez les fichiers *.po* de la partie qui vous intéresse,
 
