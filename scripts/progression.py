@@ -15,7 +15,7 @@ def postat(*args):
     translated = 0
     for pofile_path in args:
         po_file = pofile(pofile_path)
-        total += len(po_file)
+        total += len([entry for entry in po_file if not entry.obsolete])
         translated += len(po_file.translated_entries())
     return translated, total
 

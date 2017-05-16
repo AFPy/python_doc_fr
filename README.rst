@@ -24,7 +24,7 @@ distributing   100%   100%   100%
    distutils    13%    13%    33%
    extending    21%    24%    24%
          faq    29%    32%    32%
- glossary.po    85%   100%    99%
+ glossary.po    85%   100%   100%
        howto     6%     6%     6%
      install    45%    46%    43%
   installing   100%   100%    66%
@@ -32,10 +32,10 @@ distributing   100%   100%   100%
   license.po   100%   100%   100%
    reference     4%     5%     5%
    sphinx.po   100%   100%    93%
-    tutorial    97%   100%    96%
+    tutorial    97%   100%    98%
        using    31%    21%    19%
-    whatsnew     6%    41%     6%
-     ~total~    18%    25%    18%
+    whatsnew     6%    41%     7%
+     ~total~    18%    25%    19%
 ============  =====  =====  =====
 
 
