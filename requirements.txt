@@ -3,3 +3,4 @@ polib
 tqdm
 tabulate
 markdown
+transifex-client
