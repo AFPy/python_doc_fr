@@ -32,7 +32,7 @@ distributing   100%   100%   100%
   license.po   100%   100%   100%
    reference     4%     5%     5%
    sphinx.po   100%   100%   100%
-    tutorial    97%   100%    98%
+    tutorial   100%   100%   100%
        using    31%    21%    19%
     whatsnew     6%    41%     7%
      ~total~    18%    25%    19%
