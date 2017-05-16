@@ -21,21 +21,21 @@ Progression de la traduction :
  contents.po   100%   100%   100%
 copyright.po   100%   100%   100%
 distributing   100%   100%   100%
-   distutils    13%    13%    33%
+   distutils    32%    33%    33%
    extending    21%    24%    24%
-         faq    29%    32%    32%
+         faq    29%    33%    32%
  glossary.po    85%   100%   100%
-       howto     6%     6%     6%
+       howto     7%     6%     6%
      install    45%    46%    43%
   installing   100%   100%    66%
      library    16%    20%    19%
   license.po   100%   100%   100%
-   reference     4%     5%     5%
+   reference     5%     5%     5%
    sphinx.po   100%   100%   100%
     tutorial   100%   100%   100%
        using    31%    21%    19%
     whatsnew     6%    41%     7%
-     ~total~    18%    25%    19%
+     ~total~    19%    25%    19%
 ============  =====  =====  =====
 
 
