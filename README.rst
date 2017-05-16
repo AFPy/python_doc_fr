@@ -31,7 +31,7 @@ distributing   100%   100%   100%
      library    16%    20%    19%
   license.po   100%   100%   100%
    reference     4%     5%     5%
-   sphinx.po   100%   100%    93%
+   sphinx.po   100%   100%   100%
     tutorial    97%   100%    98%
        using    31%    21%    19%
     whatsnew     6%    41%     7%
