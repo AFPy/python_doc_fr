@@ -90,6 +90,7 @@ Quoi traduire, ne pas traduire, quel style ?
 * Les "::" de fin de paragraphes se traduisent " : ::" en français,
   pour créer l'espace précédent le ":" du français.
 
+
 Norme et style
 --------------
 
@@ -106,16 +107,18 @@ pouvez donc utiliser cette ligne pour remettre vos traductions en forme:
 
     ./scripts/fix_style.py
 
+
 Quelles sont les priorités ?
 ----------------------------
 La quantité de textes à traduire est énorme et il serait très facile de
 disperser notre énergie dans des textes destinés aux utilisateurs très avancés,
 il nous paraît nécessaire de fixer des priorités:
 
-1. Avant tout et surtout : maintenir les textes déjà complets (tutorial.po, glossary.po).
-3. les bases du langage (reference.po)
-4. la notice d'installation de Python (using.po)
-5. la foire aux questions (faq.po)
+1. Avant tout et surtout : maintenir les textes déjà complets (proches de 100%).
+2. les bases du langage (``/reference/``)
+3. la notice d'installation de Python (``/using/``)
+4. la foire aux questions (``/faq/``)
+
 
 Aides à la traduction
 ---------------------
@@ -129,6 +132,7 @@ Aides à la traduction
   qui contient de nombreuses informations pour les traducteurs.
 * glossary.po tout simplement, ou
   `le glossaire traduit <http://www.afpy.org/doc/python/3.6/glossary.html>`_
+
 
 Uniformisation du vocabulaire
 -----------------------------
