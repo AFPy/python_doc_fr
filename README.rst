@@ -1,3 +1,10 @@
+Deprecated Repository
+=====================
+
+This repository have moved to `python/python-docs-fr
+<https://github.com/python/python-docs-fr>`_.
+
+
 Traduction française de docs.python.org
 =======================================
 
